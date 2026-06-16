@@ -1,10 +1,11 @@
 {
   "association": {
     "nom": "Bruz en Action",
-    "description": "Association citoyenne de veille municipale — Bruz (35)",
-    "fondee_en": 2025,
-    "mission": "Suivre et rendre publics les engagements pris par le maire Jean-René Houssin sur le mandat 2026-2031.",
-    "positionnement": "Non-partisan — veille, transparence, communication publique."
+    "description": "L'association citoyenne de Bruz (35) — informer, participer, agir.",
+    "fondee_en": 2026,
+    "mission": "S'informer, participer et agir ensemble pour une vie locale plus transparente à Bruz.",
+    "tagline": "Citoyens de Bruz, acteurs de notre ville.",
+    "positionnement": "Association non partisane — ouverte à tous les Bruzois."
   },
   "bureau": {
     "president": "Naoufal Hajjar",

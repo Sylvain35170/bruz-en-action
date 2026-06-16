@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "last_updated": "2026-06-16",
+    "source": "Référentiel veille Bruz en Action"
+  },
+  "evenements": [
+    {
+      "id": "E01",
+      "titre": "Championnat de France Boccia NE",
+      "date": "2026-06-25",
+      "categorie": "Sport & Handisport",
+      "organisateur": "JAB Handisport + CD35",
+      "lieu": "Bruz",
+      "note": "Melenn & Mireille qualifiés — événement à soutenir !",
+      "score": 3
+    },
+    {
+      "id": "E02",
+      "titre": "Week-end Buissonnier #5",
+      "date": "2026-06-27",
+      "date_fin": "2026-06-28",
+      "categorie": "Culture",
+      "organisateur": "Grand Logis",
+      "lieu": "Grand Logis, Bruz",
+      "note": "Spectacles gratuits en plein air",
+      "score": 3
+    },
+    {
+      "id": "E03",
+      "titre": "Forum des associations",
+      "date": "2026-09-05",
+      "categorie": "Vie associative",
+      "organisateur": "Ville de Bruz",
+      "lieu": "Bruz",
+      "note": "Occasion idéale pour faire connaître l'association",
+      "score": 3
+    },
+    {
+      "id": "E04",
+      "titre": "Les Foulées Bruzoises",
+      "date": "2026-10-01",
+      "categorie": "Sport",
+      "organisateur": "Les Foulées Bruzoises",
+      "lieu": "Bruz",
+      "note": "Date approximative — à confirmer",
+      "score": 3
+    },
+    {
+      "id": "E05",
+      "titre": "Trans Musicales — 48e édition",
+      "date": "2026-12-02",
+      "date_fin": "2026-12-06",
+      "categorie": "Culture",
+      "organisateur": "Association Trans Musicales",
+      "lieu": "Parc Expo, Rennes",
+      "note": "",
+      "score": 3
+    },
+    {
+      "id": "E06",
+      "titre": "Téléthon",
+      "date": "2026-12-04",
+      "categorie": "Solidarité",
+      "organisateur": "AFM-Téléthon + associations",
+      "lieu": "Bruz",
+      "note": "1er week-end de décembre",
+      "score": 3
+    }
+  ]
+}

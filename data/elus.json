@@ -1,0 +1,22 @@
+{
+  "meta": {
+    "last_updated": "2026-06-16",
+    "note": "Citations et prises de position publiques des élus — sources vérifiables uniquement"
+  },
+  "elus": [
+    {
+      "id": "JRH",
+      "nom": "Jean-René Houssin",
+      "role": "Maire de Bruz",
+      "photo": null,
+      "citations": [
+        {
+          "texte": "Bruz mérite une gouvernance transparente et au plus près de ses habitants.",
+          "source": "Discours d'investiture — mars 2026",
+          "lien": null,
+          "date": "2026-03-01"
+        }
+      ]
+    }
+  ]
+}
