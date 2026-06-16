@@ -1,26 +1,153 @@
+/* ── Google Fonts ── */
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@500;600;700&display=swap');
 @import "tailwindcss";
 
+/* ── Design tokens — Bruz en Action ── */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Neutrals */
+  --slate-50:  #f8fafc;
+  --slate-100: #f1f5f9;
+  --slate-200: #e2e8f0;
+  --slate-300: #cbd5e1;
+  --slate-400: #94a3b8;
+  --slate-500: #64748b;
+  --slate-600: #475569;
+  --slate-700: #334155;
+  --slate-800: #1e293b;
+  --slate-900: #0f172a;
+
+  /* Brand */
+  --night-900: #0f172a;
+  --night-700: #1e3a5f;
+  --night-gradient: linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%);
+  --brand-accent: #38bdf8;
+
+  /* Surfaces */
+  --surface-page:   var(--slate-50);
+  --surface-card:   #ffffff;
+  --surface-sunken: var(--slate-100);
+
+  /* Text */
+  --text-strong:         var(--slate-900);
+  --text-body:           var(--slate-700);
+  --text-muted:          var(--slate-500);
+  --text-faint:          var(--slate-400);
+  --text-on-dark:        #ffffff;
+  --text-on-dark-muted:  rgba(255,255,255,0.72);
+  --text-on-dark-faint:  rgba(255,255,255,0.5);
+
+  /* Borders */
+  --border-subtle:  var(--slate-200);
+  --border-default: var(--slate-300);
+  --link-on-dark:   var(--brand-accent);
+
+  /* Status colors */
+  --status-todo:       #64748b; --status-todo-tint:       #f1f5f9;
+  --status-progress:   #d97706; --status-progress-tint:   #fffbeb;
+  --status-done:       #16a34a; --status-done-tint:       #f0fdf4;
+  --status-partial:    #2563eb; --status-partial-tint:    #eff6ff;
+  --status-abandoned:  #dc2626; --status-abandoned-tint:  #fef2f2;
+  --status-na:         #94a3b8; --status-na-tint:         #f8fafc;
+
+  /* Typography */
+  --font-sans: 'Public Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
+  --fw-regular:  400;
+  --fw-medium:   500;
+  --fw-semibold: 600;
+  --fw-bold:     700;
+  --fw-black:    800;
+  --fs-display: 3rem;
+  --fs-h1:      2.25rem;
+  --fs-h2:      1.75rem;
+  --fs-h3:      1.25rem;
+  --fs-lg:      1.125rem;
+  --fs-base:    1rem;
+  --fs-sm:      0.875rem;
+  --fs-xs:      0.75rem;
+  --fs-2xs:     0.6875rem;
+  --lh-tight:   1.1;
+  --lh-snug:    1.25;
+  --lh-normal:  1.5;
+  --lh-relaxed: 1.65;
+  --ls-tight:  -0.02em;
+  --ls-normal:  0;
+  --ls-wide:    0.04em;
+  --ls-label:   0.08em;
+
+  /* Spacing */
+  --space-1:  0.25rem;
+  --space-2:  0.5rem;
+  --space-3:  0.75rem;
+  --space-4:  1rem;
+  --space-5:  1.25rem;
+  --space-6:  1.5rem;
+  --space-8:  2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --container-max: 1120px;
+  --container-pad: 1.5rem;
+  --section-gap:   4rem;
+  --grid-gap:      1.25rem;
+
+  /* Effects */
+  --radius-sm:   6px;
+  --radius-md:   10px;
+  --radius-lg:   14px;
+  --radius-pill: 9999px;
+  --pillar-bar-height: 4px;
+  --shadow-xs: 0 1px 2px rgba(15,23,42,.05);
+  --shadow-sm: 0 1px 3px rgba(15,23,42,.08), 0 1px 2px rgba(15,23,42,.04);
+  --shadow-md: 0 4px 12px rgba(15,23,42,.08);
+  --glass-bg:     rgba(255,255,255,0.08);
+  --glass-border: rgba(255,255,255,0.16);
+  --dur-base: 220ms;
+  --ease-out: cubic-bezier(0.16,1,0.3,1);
+  --focus-ring-color: rgba(37,99,235,0.4);
+  --focus-ring-width: 3px;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+/* ── Base resets ── */
+*, *::before, *::after { box-sizing: border-box; }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: var(--fs-base);
+  line-height: var(--lh-normal);
+  color: var(--text-body);
+  background: var(--surface-page);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+  color: var(--text-strong);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-snug);
+  letter-spacing: var(--ls-tight);
+}
+
+a { color: var(--link-on-dark); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.tabular { font-variant-numeric: tabular-nums; font-feature-settings: 'tnum' 1; }
+
+.eyebrow {
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-bold);
+  letter-spacing: var(--ls-label);
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+:focus-visible {
+  outline: var(--focus-ring-width) solid var(--focus-ring-color);
+  outline-offset: 2px;
+}
+
+@media (max-width: 640px) {
+  .bea-hero { grid-template-columns: 1fr !important; }
+  .bea-foot { grid-template-columns: 1fr !important; }
 }

@@ -1,5 +1,6 @@
 export interface Pilier {
   id: number;
+  emoji?: string;
   label: string;
   color: string;
 }

@@ -2,24 +2,553 @@
   "meta": {
     "source": "Programme Un nouvel élan pour Bruz — mandat 2026-2031",
     "last_updated": "2026-06-16",
-    "updated_by": "init",
-    "total_promesses": 0
+    "updated_by": "import_excel",
+    "total_promesses": 50
   },
   "piliers": [
-    { "id": 1, "label": "Cadre de vie", "color": "#16A34A" },
-    { "id": 2, "label": "Dynamisme économique", "color": "#2563EB" },
-    { "id": 3, "label": "Sécurité", "color": "#DC2626" },
-    { "id": 4, "label": "Solidarité", "color": "#9333EA" },
-    { "id": 5, "label": "Écologie", "color": "#059669" },
-    { "id": 6, "label": "Finances publiques", "color": "#D97706" }
+    {
+      "id": 1,
+      "emoji": "🚌",
+      "label": "Mobilités",
+      "color": "#0ea5e9"
+    },
+    {
+      "id": 2,
+      "emoji": "🚔",
+      "label": "Sécurité & Propreté",
+      "color": "#dc2626"
+    },
+    {
+      "id": 3,
+      "emoji": "🏘",
+      "label": "Urbanisme",
+      "color": "#7c3aed"
+    },
+    {
+      "id": 4,
+      "emoji": "💼",
+      "label": "Économie & Commerce",
+      "color": "#2563eb"
+    },
+    {
+      "id": 5,
+      "emoji": "🎭",
+      "label": "Sport, Culture & Asso.",
+      "color": "#ec4899"
+    },
+    {
+      "id": 6,
+      "emoji": "👥",
+      "label": "Services & Solidarité",
+      "color": "#9333ea"
+    },
+    {
+      "id": 7,
+      "emoji": "🗳",
+      "label": "Démocratie locale",
+      "color": "#f59e0b"
+    },
+    {
+      "id": 8,
+      "emoji": "💰",
+      "label": "Finances",
+      "color": "#d97706"
+    },
+    {
+      "id": 9,
+      "emoji": "🏙",
+      "label": "Relations Métropole",
+      "color": "#6366f1"
+    },
+    {
+      "id": 10,
+      "emoji": "🌿",
+      "label": "Transition écologique",
+      "color": "#16a34a"
+    }
   ],
   "statuts": [
-    { "id": "non_commence", "label": "Non commencé", "color": "#6B7280" },
-    { "id": "en_cours",     "label": "En cours",      "color": "#F59E0B" },
-    { "id": "tenu",         "label": "Tenu",           "color": "#16A34A" },
-    { "id": "partiel",      "label": "Partiellement tenu", "color": "#3B82F6" },
-    { "id": "abandonne",    "label": "Abandonné",      "color": "#DC2626" },
-    { "id": "inconnu",      "label": "Non évaluable",  "color": "#9CA3AF" }
+    {
+      "id": "non_commence",
+      "label": "Non commencé",
+      "color": "#6B7280"
+    },
+    {
+      "id": "en_cours",
+      "label": "En cours",
+      "color": "#F59E0B"
+    },
+    {
+      "id": "tenu",
+      "label": "Tenu",
+      "color": "#16A34A"
+    },
+    {
+      "id": "partiel",
+      "label": "Partiellement tenu",
+      "color": "#3B82F6"
+    },
+    {
+      "id": "abandonne",
+      "label": "Abandonné",
+      "color": "#DC2626"
+    },
+    {
+      "id": "inconnu",
+      "label": "Non évaluable",
+      "color": "#9CA3AF"
+    }
   ],
-  "promesses": []
+  "promesses": [
+    {
+      "id": 1,
+      "ref": "M1",
+      "titre": "Obtenir le terminus du trambus T4 à la gare de Bruz",
+      "pilier_id": 1,
+      "statut_id": "non_commence",
+      "horizon": "2026-2027",
+      "detail": "Négocier avec Rennes Métropole un tracé s'arrêtant à la gare (et non en centre-ville). Démarrage T4 prévu 2031."
+    },
+    {
+      "id": 2,
+      "ref": "M2",
+      "titre": "Créer 2 circuits de navettes électriques intra-muros",
+      "pilier_id": 1,
+      "statut_id": "non_commence",
+      "horizon": "2027-2028",
+      "detail": "Navette Est (verte) + navette Ouest/Sud (rouge), 36 places, cadence 15 min. Couvre : lycées, collèges, EHPAD, stade, gare, Pont-Réan, Haye de Pan."
+    },
+    {
+      "id": 3,
+      "ref": "M3",
+      "titre": "Aménager 60 nouvelles places de stationnement proches du centre",
+      "pilier_id": 1,
+      "statut_id": "non_commence",
+      "horizon": "2026-2027",
+      "detail": "Compenser la pression sur le stationnement liée aux aménagements en cours."
+    },
+    {
+      "id": 4,
+      "ref": "M4",
+      "titre": "Installer des bornes de recharge électrique supplémentaires",
+      "pilier_id": 1,
+      "statut_id": "non_commence",
+      "horizon": "2026-2027",
+      "detail": "Nombre et emplacements à préciser."
+    },
+    {
+      "id": 5,
+      "ref": "M5",
+      "titre": "Optimiser le plan de circulation",
+      "pilier_id": 1,
+      "statut_id": "non_commence",
+      "horizon": "2026-2028",
+      "detail": "Réflexion globale sur circulations et stationnements, en concertation avec commerçants."
+    },
+    {
+      "id": 6,
+      "ref": "M6",
+      "titre": "Relier les quartiers par connexions piétonnes et cyclables sécurisées",
+      "pilier_id": 1,
+      "statut_id": "non_commence",
+      "horizon": "2027-2029",
+      "detail": "Liaisons entre quartiers, centre-ville et équipements publics."
+    },
+    {
+      "id": 7,
+      "ref": "S1",
+      "titre": "Doubler les effectifs de la police municipale",
+      "pilier_id": 2,
+      "statut_id": "non_commence",
+      "horizon": "2026-2028",
+      "detail": "Atteindre le double de l'effectif actuel."
+    },
+    {
+      "id": 8,
+      "ref": "S2",
+      "titre": "Ouvrir un hôtel de police visible et accessible",
+      "pilier_id": 2,
+      "statut_id": "non_commence",
+      "horizon": "2027-2029",
+      "detail": "Nouveau bâtiment dédié à la police municipale."
+    },
+    {
+      "id": 9,
+      "ref": "S3",
+      "titre": "Améliorer et renforcer la vidéoprotection",
+      "pilier_id": 2,
+      "statut_id": "non_commence",
+      "horizon": "2026-2027",
+      "detail": "Zones sensibles prioritaires."
+    },
+    {
+      "id": 10,
+      "ref": "S4",
+      "titre": "Réorganiser la planification du nettoyage de la ville",
+      "pilier_id": 2,
+      "statut_id": "non_commence",
+      "horizon": "2026",
+      "detail": "Réactivité des services, propreté des espaces publics."
+    },
+    {
+      "id": 11,
+      "ref": "S5",
+      "titre": "Établir des conventions pour la disponibilité des sapeurs-pompiers volontaires",
+      "pilier_id": 2,
+      "statut_id": "non_commence",
+      "horizon": "2026-2027",
+      "detail": "Faciliter la libération des agents par leurs employeurs."
+    },
+    {
+      "id": 12,
+      "ref": "S6",
+      "titre": "Créer des espaces adaptés aux animaux domestiques (parcs canins)",
+      "pilier_id": 2,
+      "statut_id": "non_commence",
+      "horizon": "2027-2028",
+      "detail": "Nombre et emplacements à préciser."
+    },
+    {
+      "id": 13,
+      "ref": "U1",
+      "titre": "Maîtriser strictement la densification",
+      "pilier_id": 3,
+      "statut_id": "non_commence",
+      "horizon": "2026-2031",
+      "detail": "Refuser tout projet dégradant le cadre de vie. Adapter densité selon identité de chaque quartier."
+    },
+    {
+      "id": 14,
+      "ref": "U2",
+      "titre": "Mettre en concurrence aménageurs ZAC Multisites",
+      "pilier_id": 3,
+      "statut_id": "non_commence",
+      "horizon": "2026-2027",
+      "detail": "Garanties pour Bruz via mise en concurrence publics/privés."
+    },
+    {
+      "id": 15,
+      "ref": "U3",
+      "titre": "Organiser une concertation quartier par quartier",
+      "pilier_id": 3,
+      "statut_id": "non_commence",
+      "horizon": "2026-2027",
+      "detail": "Associer les habitants aux évolutions de leur quartier."
+    },
+    {
+      "id": 16,
+      "ref": "U4",
+      "titre": "Accélérer la rénovation énergétique des bâtiments municipaux",
+      "pilier_id": 3,
+      "statut_id": "non_commence",
+      "horizon": "2026-2031",
+      "detail": "Réduire la consommation énergétique du patrimoine communal."
+    },
+    {
+      "id": 17,
+      "ref": "E1",
+      "titre": "Nommer un adjoint dédié à la vie économique et à l'artisanat",
+      "pilier_id": 4,
+      "statut_id": "non_commence",
+      "horizon": "2026",
+      "detail": "Création d'un poste d'adjoint spécialisé."
+    },
+    {
+      "id": 18,
+      "ref": "E2",
+      "titre": "Organiser des rencontres trimestrielles avec les commerçants",
+      "pilier_id": 4,
+      "statut_id": "non_commence",
+      "horizon": "2026-2031",
+      "detail": "4 réunions par an minimum."
+    },
+    {
+      "id": 19,
+      "ref": "E3",
+      "titre": "Encourager les animations commerciales",
+      "pilier_id": 4,
+      "statut_id": "non_commence",
+      "horizon": "2026-2031",
+      "detail": "Braderie, carnaval, marché à manger, etc."
+    },
+    {
+      "id": 20,
+      "ref": "E4",
+      "titre": "Affirmer la présence de la Ville au Campus de Ker Lann",
+      "pilier_id": 4,
+      "statut_id": "non_commence",
+      "horizon": "2026-2028",
+      "detail": "Renforcer les liens communes / campus."
+    },
+    {
+      "id": 21,
+      "ref": "E5",
+      "titre": "Privilégier les circuits courts et l'économie locale",
+      "pilier_id": 4,
+      "statut_id": "non_commence",
+      "horizon": "2026-2031",
+      "detail": "Marchés publics, politique d'achats communaux."
+    },
+    {
+      "id": 22,
+      "ref": "SC1",
+      "titre": "Construire un nouveau boulodrome couvert",
+      "pilier_id": 5,
+      "statut_id": "non_commence",
+      "horizon": "2027-2029",
+      "detail": "Équipement couvert permettant la pratique toute l'année."
+    },
+    {
+      "id": 23,
+      "ref": "SC2",
+      "titre": "Créer une salle d'arts martiaux",
+      "pilier_id": 5,
+      "statut_id": "non_commence",
+      "horizon": "2027-2030",
+      "detail": "Nouveau équipement dédié."
+    },
+    {
+      "id": 24,
+      "ref": "SC3",
+      "titre": "Aménager des espaces de jeux collectifs",
+      "pilier_id": 5,
+      "statut_id": "non_commence",
+      "horizon": "2027-2028",
+      "detail": "Street ball, volley, pump track."
+    },
+    {
+      "id": 25,
+      "ref": "SC4",
+      "titre": "Organiser un festival national du spectacle vivant",
+      "pilier_id": 5,
+      "statut_id": "non_commence",
+      "horizon": "2027-2028",
+      "detail": "Événement annuel à créer."
+    },
+    {
+      "id": 26,
+      "ref": "SC5",
+      "titre": "Édifier un observatoire d'astronomie",
+      "pilier_id": 5,
+      "statut_id": "non_commence",
+      "horizon": "2028-2031",
+      "detail": "Équipement culturel et pédagogique."
+    },
+    {
+      "id": 27,
+      "ref": "SC6",
+      "titre": "Développer le sport adapté et le handisport",
+      "pilier_id": 5,
+      "statut_id": "non_commence",
+      "horizon": "2026-2031",
+      "detail": "Programmes et équipements accessibles."
+    },
+    {
+      "id": 28,
+      "ref": "SC7",
+      "titre": "Accueillir l'Université du Temps Libre",
+      "pilier_id": 5,
+      "statut_id": "non_commence",
+      "horizon": "2027-2028",
+      "detail": "Partenariat formation continue seniors."
+    },
+    {
+      "id": 29,
+      "ref": "SC8",
+      "titre": "Rénover la Maison des jeunes",
+      "pilier_id": 5,
+      "statut_id": "non_commence",
+      "horizon": "2027-2029",
+      "detail": "Réhabilitation du bâtiment existant."
+    },
+    {
+      "id": 30,
+      "ref": "SC9",
+      "titre": "Célébrer les mérites sportifs chaque année",
+      "pilier_id": 5,
+      "statut_id": "non_commence",
+      "horizon": "2026-2031",
+      "detail": "Cérémonie annuelle de remise de prix."
+    },
+    {
+      "id": 31,
+      "ref": "P1",
+      "titre": "Déployer une Maison France Services",
+      "pilier_id": 6,
+      "statut_id": "non_commence",
+      "horizon": "2026-2027",
+      "detail": "Guichet unique pour les démarches administratives des Bruzois."
+    },
+    {
+      "id": 32,
+      "ref": "P2",
+      "titre": "Instaurer une commission locale d'attribution de logement",
+      "pilier_id": 6,
+      "statut_id": "non_commence",
+      "horizon": "2026-2027",
+      "detail": "Avec l'ensemble des bailleurs sociaux."
+    },
+    {
+      "id": 33,
+      "ref": "P3",
+      "titre": "Organiser un repas annuel des aînés",
+      "pilier_id": 6,
+      "statut_id": "non_commence",
+      "horizon": "2026-2031",
+      "detail": "Événement convivial annuel."
+    },
+    {
+      "id": 34,
+      "ref": "P4",
+      "titre": "Étendre la sécurité aux entrées/sorties de toutes les écoles",
+      "pilier_id": 6,
+      "statut_id": "non_commence",
+      "horizon": "2026-2027",
+      "detail": "Dispositifs de sécurisation aux abords scolaires."
+    },
+    {
+      "id": 35,
+      "ref": "P5",
+      "titre": "Améliorer l'accessibilité PMR",
+      "pilier_id": 6,
+      "statut_id": "non_commence",
+      "horizon": "2026-2031",
+      "detail": "Bâtiments et espaces publics accessibles aux personnes à mobilité réduite."
+    },
+    {
+      "id": 36,
+      "ref": "P6",
+      "titre": "Remettre à plat la gestion de la piscine de la Conterie",
+      "pilier_id": 6,
+      "statut_id": "non_commence",
+      "horizon": "2026",
+      "detail": "Audit et transparence sur la gestion actuelle. Délégation ou régie à revoir."
+    },
+    {
+      "id": 37,
+      "ref": "D1",
+      "titre": "Désigner des élus référents par quartier",
+      "pilier_id": 7,
+      "statut_id": "non_commence",
+      "horizon": "2026",
+      "detail": "Un élu identifié et joignable pour chaque quartier."
+    },
+    {
+      "id": 38,
+      "ref": "D2",
+      "titre": "Organiser des réunions régulières dans chaque quartier",
+      "pilier_id": 7,
+      "statut_id": "non_commence",
+      "horizon": "2026-2031",
+      "detail": "Fréquence et calendrier à préciser."
+    },
+    {
+      "id": 39,
+      "ref": "D3",
+      "titre": "Créer un Conseil municipal des jeunes",
+      "pilier_id": 7,
+      "statut_id": "non_commence",
+      "horizon": "2026-2027",
+      "detail": "Organe consultatif jeunesse."
+    },
+    {
+      "id": 40,
+      "ref": "D4",
+      "titre": "Mettre en place un Conseil des sages (seniors)",
+      "pilier_id": 7,
+      "statut_id": "non_commence",
+      "horizon": "2026-2027",
+      "detail": "Organe consultatif pour les seniors."
+    },
+    {
+      "id": 41,
+      "ref": "D5",
+      "titre": "Publier un compte-rendu clair des décisions municipales",
+      "pilier_id": 7,
+      "statut_id": "non_commence",
+      "horizon": "2026-2031",
+      "detail": "Transparence des délibérations du conseil municipal."
+    },
+    {
+      "id": 42,
+      "ref": "F1",
+      "titre": "Maintenir la fiscalité locale (pas d'augmentation)",
+      "pilier_id": 8,
+      "statut_id": "non_commence",
+      "horizon": "2026-2031",
+      "detail": "Engagement explicite de ne pas augmenter les taux communaux."
+    },
+    {
+      "id": 43,
+      "ref": "F2",
+      "titre": "Gestion stricte et transparente de l'argent public",
+      "pilier_id": 8,
+      "statut_id": "non_commence",
+      "horizon": "2026-2031",
+      "detail": "Maîtrise des dépenses, endettement utile et responsable."
+    },
+    {
+      "id": 44,
+      "ref": "R1",
+      "titre": "Obtenir droit à l'expérimentation et différenciation pour Bruz",
+      "pilier_id": 9,
+      "statut_id": "non_commence",
+      "horizon": "2026-2028",
+      "detail": "Adapter les politiques métropolitaines aux spécificités de Bruz."
+    },
+    {
+      "id": 45,
+      "ref": "R2",
+      "titre": "Négocier une gouvernance plus équilibrée avec Rennes",
+      "pilier_id": 9,
+      "statut_id": "non_commence",
+      "horizon": "2026-2031",
+      "detail": "Rééquilibrage entre ville-centre et communes périphériques."
+    },
+    {
+      "id": 46,
+      "ref": "R3",
+      "titre": "Rendre compte aux habitants des décisions métropolitaines",
+      "pilier_id": 9,
+      "statut_id": "non_commence",
+      "horizon": "2026-2031",
+      "detail": "Communication régulière sur les arbitrages de Rennes Métropole."
+    },
+    {
+      "id": 47,
+      "ref": "EC1",
+      "titre": "Végétaliser les espaces publics et créer des îlots de fraîcheur",
+      "pilier_id": 10,
+      "statut_id": "non_commence",
+      "horizon": "2026-2029",
+      "detail": "Programme de plantation et d'aménagement."
+    },
+    {
+      "id": 48,
+      "ref": "EC2",
+      "titre": "Soutenir l'installation de fermes bio",
+      "pilier_id": 10,
+      "statut_id": "non_commence",
+      "horizon": "2027-2031",
+      "detail": "Aides et foncier pour agriculture biologique locale."
+    },
+    {
+      "id": 49,
+      "ref": "EC3",
+      "titre": "Préserver les continuités écologiques",
+      "pilier_id": 10,
+      "statut_id": "non_commence",
+      "horizon": "2026-2031",
+      "detail": "Trames vertes et bleues sur le territoire."
+    },
+    {
+      "id": 50,
+      "ref": "EC4",
+      "titre": "Rétablir la collecte de végétaux chez les personnes âgées",
+      "pilier_id": 10,
+      "statut_id": "non_commence",
+      "horizon": "2026",
+      "detail": "Service de ramassage des déchets verts à domicile (seniors)."
+    }
+  ]
 }
