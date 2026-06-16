@@ -4,6 +4,7 @@ import actusData from "../data/actus.json";
 import metaData from "../data/meta.json";
 import evenementsData from "../data/evenements.json";
 import elusData from "../data/elus.json";
+import dossiersData from "../data/dossiers.json";
 import PromessesSection from "../components/PromessesSection";
 import type { Pilier, Statut, Promesse, Actu } from "../types";
 
@@ -23,6 +24,7 @@ export default function Home() {
   const { association, bureau, contact, reseaux_sociaux, sources_surveillees } = metaData;
   const { evenements } = evenementsData;
   const { elus } = elusData;
+  const { dossiers } = dossiersData;
 
   const total = promesses.length;
   const tenues = promesses.filter(p => p.statut_id === "tenu").length;
@@ -268,6 +270,63 @@ export default function Home() {
                 </p>
               </div>
             )}
+          </div>
+        </div>
+      </section>
+
+      {/* ── DOSSIERS ── */}
+      <section style={{ background: "var(--surface-card)", borderBottom: "1px solid var(--border-subtle)" }}>
+        <div style={{ maxWidth: "var(--container-max)", margin: "0 auto", padding: "48px var(--container-pad)" }}>
+          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", marginBottom: "var(--space-8)", flexWrap: "wrap", gap: 12 }}>
+            <div>
+              <span className="eyebrow">Nos dossiers</span>
+              <h2 style={{ fontSize: "var(--fs-h2)", margin: "8px 0 0" }}>Enquêtes & analyses</h2>
+            </div>
+            <p style={{ color: "var(--text-muted)", fontSize: "var(--fs-sm)", margin: 0 }}>
+              Sujets clés du mandat suivis en continu
+            </p>
+          </div>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(320px, 1fr))", gap: "var(--grid-gap)" }}>
+            {dossiers.map(d => (
+              <div key={d.id} style={{
+                background: "var(--surface-page)", border: "1px solid var(--border-subtle)",
+                borderRadius: "var(--radius-lg)", padding: "var(--space-6)", display: "flex", flexDirection: "column", gap: "var(--space-4)",
+                borderTop: `3px solid ${d.statut === "a_venir" ? "var(--text-faint)" : "var(--brand-accent)"}`,
+              }}>
+                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", gap: 8 }}>
+                  <span style={{
+                    display: "inline-block", padding: "3px 10px", borderRadius: "var(--radius-pill)",
+                    background: "var(--surface-sunken)", color: "var(--text-muted)",
+                    fontSize: "var(--fs-2xs)", fontWeight: "var(--fw-bold)", letterSpacing: "var(--ls-label)", textTransform: "uppercase",
+                  }}>{d.categorie}</span>
+                  {d.statut === "a_venir" && (
+                    <span style={{ fontSize: "var(--fs-2xs)", color: "var(--text-faint)", fontWeight: "var(--fw-semibold)" }}>À venir</span>
+                  )}
+                  {d.statut === "en_cours" && (
+                    <span style={{ fontSize: "var(--fs-2xs)", color: "#d97706", fontWeight: "var(--fw-semibold)" }}>● En cours</span>
+                  )}
+                </div>
+                <div>
+                  <h3 style={{ margin: "0 0 8px", fontSize: "var(--fs-base)", fontWeight: "var(--fw-bold)", color: "var(--text-strong)", lineHeight: "var(--lh-snug)" }}>{d.titre}</h3>
+                  <p style={{ margin: 0, fontSize: "var(--fs-sm)", color: "var(--text-muted)", lineHeight: "var(--lh-relaxed)" }}>{d.chapeau}</p>
+                </div>
+                {d.points_cles.length > 0 && (
+                  <ul style={{ margin: 0, paddingLeft: "1.2em", display: "flex", flexDirection: "column", gap: 4 }}>
+                    {d.points_cles.map((pt, i) => (
+                      <li key={i} style={{ fontSize: "var(--fs-xs)", color: "var(--text-body)", lineHeight: "var(--lh-relaxed)" }}>{pt}</li>
+                    ))}
+                  </ul>
+                )}
+                {d.sources.length > 0 && (
+                  <div style={{ marginTop: "auto", paddingTop: "var(--space-2)", display: "flex", flexDirection: "column", gap: 4 }}>
+                    <span style={{ fontSize: "var(--fs-2xs)", color: "var(--text-faint)", textTransform: "uppercase", letterSpacing: "var(--ls-label)", fontWeight: "var(--fw-bold)" }}>Sources</span>
+                    {d.sources.map((s, i) => (
+                      <a key={i} href={s.url} target="_blank" rel="noopener noreferrer" style={{ fontSize: "var(--fs-xs)", color: "#2563eb" }}>{s.label} ↗</a>
+                    ))}
+                  </div>
+                )}
+              </div>
+            ))}
           </div>
         </div>
       </section>

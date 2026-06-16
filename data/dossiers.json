@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "last_updated": "2026-06-16",
+    "note": "Dossiers thématiques — sources vérifiables uniquement"
+  },
+  "dossiers": [
+    {
+      "id": "D01",
+      "titre": "Trambus T4 : le terminus de Bruz en question",
+      "categorie": "Mobilités",
+      "statut": "en_cours",
+      "date_ouverture": "2026-06-16",
+      "chapeau": "La future ligne T4 reliera le métro Saint-Jacques-Gaîté à Bruz via Ker Lann d'ici 2031. Mais où s'arrêtera exactement la ligne en ville ? La réponse engage l'avenir de la mobilité bruzoise pour plusieurs décennies.",
+      "points_cles": [
+        "Livraison prévue 2030–2031 par Rennes Métropole (ligne T4 : Saint-Jacques-Gaîté → Ker Lann → Bruz)",
+        "Terminus envisagé : Ker Lann (favori de la Métropole) — contre-proposition : gare SNCF + navettes vers centre-ville et quartiers Est/Ouest",
+        "Jean-René Houssin a fait de la négociation du terminus sa première priorité face à Rennes Métropole",
+        "Enjeu clé : le tracé définitif conditionne les PLU, les projets immobiliers et la mobilité douce autour de la gare"
+      ],
+      "promesses_liees": [2, 3, 4],
+      "sources": [
+        { "label": "France Bleu : le terminus T4, enjeu des municipales 2026", "url": "https://www.francebleu.fr/emissions/l-info-d-ici-ici-armorique/municipales-2026-a-bruz-le-terminus-de-la-ligne-trambus-t4-un-des-enjeux-du-scrutin-5029860" },
+        { "label": "SEMTCAR : projet T4 (Trajectoires Rennes Métropole)", "url": "https://semtcar.alkante.com/accueil/les_projets/t4" }
+      ]
+    },
+    {
+      "id": "D02",
+      "titre": "ZAC Multisites : 1 700 logements à construire d'ici 2040",
+      "categorie": "Urbanisme",
+      "statut": "en_cours",
+      "date_ouverture": "2026-06-16",
+      "chapeau": "La Zone d'Aménagement Concerté Multisites prévoit 1 700 nouveaux logements répartis sur 6 secteurs (31 ha), dont 5 en renouvellement urbain. Un projet structurant qui redéfinira plusieurs quartiers de Bruz d'ici 2035–2040.",
+      "points_cles": [
+        "6 secteurs identifiés dont 5 en renouvellement urbain (friches, terrains sous-utilisés) — 1 seul en extension urbaine (Mons Rouaudière)",
+        "Réunion publique du 18 septembre 2025 : environ 170 participants, périmètre final et répartition des logements présentés",
+        "Avis de la Mission Régionale d'Autorité Environnementale (MRAE) rendu le 8 août 2025",
+        "Phase de réalisation engagée à partir de 2026 — livraisons échelonnées jusqu'à 2035–2040",
+        "La nouvelle municipalité hérite du dossier et devra arbitrer sur les densités, les typologies et les équipements"
+      ],
+      "promesses_liees": [],
+      "sources": [
+        { "label": "Ville de Bruz : page projet ZAC Multisites", "url": "https://www.ville-bruz.fr/projets/bruz-demain-zone-amenagement-concerte-multisites/" },
+        { "label": "L'Essentiel : réunion publique septembre 2025", "url": "https://www.lessentiel.fr/rennes/notre-ville/2025-09-18/bruz-le-projet-urbain-de-la-zac-multisites-en-debat-lors-dune-reunion" },
+        { "label": "Avis MRAE n°2025APB75 (PDF)", "url": "https://www.mrae.developpement-durable.gouv.fr/IMG/pdf/12419_avis_zac_bruz_35_2025apb75.pdf" }
+      ]
+    },
+    {
+      "id": "D03",
+      "titre": "Finances de la commune : état des lieux 2026",
+      "categorie": "Finances",
+      "statut": "en_cours",
+      "date_ouverture": "2026-06-16",
+      "chapeau": "Quel budget la nouvelle municipalité a-t-elle hérité ? Quels sont les grands équilibres financiers de Bruz à l'entame du mandat 2026–2031 ? Ce dossier compile les données disponibles et suit les prochaines délibérations budgétaires.",
+      "points_cles": [
+        "Dernier conseil municipal sous Salmon : 26 janvier 2026 — délibérations disponibles en open data (Mégalis Bretagne)",
+        "Taxes locales 2023 collectées : 10,2 M€ (contre 7,3 M€ en 2013, +40 % sur 10 ans)",
+        "Prochain CM public : vendredi 3 juillet 2026 à Halle Pagnol — séance ouverte aux habitants",
+        "Délibérations en open data sur data.megalis.bretagne.bzh"
+      ],
+      "promesses_liees": [],
+      "sources": [
+        { "label": "Délibérations CM du 26 janvier 2026 (Mégalis Bretagne)", "url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1012951/21bd3878cc769dc3c96713f7dbb019757fe7212a3ed3451773809fc1a36ed80a.pdf" },
+        { "label": "Taxes locales Bruz — simulation-impots.net", "url": "https://www.simulation-impots.net/impots-locaux/impots-ville-bruz-35170/" },
+        { "label": "Conseil municipal de Bruz — séances et archives", "url": "https://www.ville-bruz.fr/ma-ville-de-bruz/conseil-municipal/conseil-municipal/" }
+      ]
+    },
+    {
+      "id": "D04",
+      "titre": "Fiscalité 2020–2026 : ce qu'a fait la mandature Salmon",
+      "categorie": "Finances",
+      "statut": "en_cours",
+      "date_ouverture": "2026-06-16",
+      "chapeau": "Pendant six ans, Philippe Salmon a dirigé Bruz avec une coalition de gauche. Quel bilan fiscal ? Les taxes ont-elles augmenté ? Ce dossier compare les taux votés et les recettes réelles sur la période, avec les données publiques disponibles.",
+      "points_cles": [
+        "Taxes locales collectées : +40 % entre 2013 et 2023 (7,3 M€ → 10,2 M€), dans un contexte de forte croissance démographique de Bruz",
+        "Taxe d'habitation : supprimée progressivement (réforme nationale 2020–2023), pas une décision municipale",
+        "Taxe foncière : seul levier municipal réel — les taux votés sont à comparer avec les communes similaires (à documenter)",
+        "À investiguer : évolution du taux communal de TFB (taxe foncière bâtie) 2020–2026 vs communes comparables"
+      ],
+      "promesses_liees": [],
+      "sources": [
+        { "label": "Impôts locaux Bruz — historique taux", "url": "https://www.impots-locaux.org/impots-locaux-bruz-35170/" },
+        { "label": "Proxiti — taxe foncière Bruz", "url": "https://www.proxiti.info/taxe-fonciere.php?o=35047" }
+      ]
+    },
+    {
+      "id": "D05",
+      "titre": "Carte de Bruz : projets et quartiers",
+      "categorie": "Urbanisme",
+      "statut": "a_venir",
+      "date_ouverture": "2026-06-16",
+      "chapeau": "Une carte interactive de Bruz pour visualiser les zones de projet (ZAC, trambus, équipements), les quartiers et les points d'intérêt. En cours de conception.",
+      "points_cles": [
+        "Visualisation des 6 secteurs ZAC Multisites sur la carte communale",
+        "Tracé du corridor trambus T4 et localisation des terminus envisagés",
+        "Localisation des équipements sportifs, culturels et administratifs"
+      ],
+      "promesses_liees": [],
+      "sources": [
+        { "label": "OpenStreetMap — Bruz", "url": "https://www.openstreetmap.org/relation/115942" }
+      ]
+    }
+  ]
+}
