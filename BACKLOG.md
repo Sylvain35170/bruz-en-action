@@ -2,15 +2,15 @@
 
 ## 🔴 En cours
 
-- [ ] **Design** — attente export HTML depuis claude.ai/design (prompt rédigé)
+- [ ] **Vérifier déploiement GitHub Pages** — activer source "GitHub Actions" dans Settings → Pages
 
 ## 🟠 Prioritaire
 
-- [ ] **GitHub** — créer le repo distant et pousser (besoin : compte/org GitHub)
-- [ ] **Intégrer le design** — une fois export Claude Design reçu, remplacer l'UI actuelle
-- [ ] **Script import_excel.py** — finaliser le script de mise à jour auto depuis l'Excel
-- [ ] **Piliers UI** — grille 10 piliers (actuellement codée pour 6) à revoir après design
-- [ ] **Filtres promesses** — ajouter filtre "horizon" (année cible) dans PromessesSection
+- [ ] **HelloAsso** — renseigner l'URL dans `data/meta.json` (`contact.hello_asso_url`)
+- [ ] **Réseaux sociaux** — renseigner facebook/instagram dans `data/meta.json`
+- [ ] **Parole des élus** — alimenter `data/elus.json` avec vraies citations sourcées
+- [ ] **Script import_excel.py** — finaliser la mise à jour auto des statuts depuis l'Excel
+- [ ] **CRs réunions** — réimporter les docx (encodage zip raté sur les accents)
 
 ## 🟡 À faire
 
@@ -30,7 +30,8 @@
 ## ✅ Terminé
 
 - Init projet Next.js 16 + Tailwind v4 + TypeScript
-- Structure données JSON (10 piliers, 5 statuts, 50 promesses)
-- Import référentiel Excel → 50 promesses peuplées
+- Import référentiel Excel → 50 promesses, 10 thèmes peuplés
 - Logo extrait et intégré (PDF → PNG recadré)
-- Repo git local initialisé, premier commit
+- Design system Claude Design intégré (tokens, typo Public Sans, glassmorphism)
+- Refonte ton : engagement citoyen positif, CTA HelloAsso, agenda, parole des élus
+- Repo GitHub public (Sylvain35170/bruz-en-action) + déploiement GitHub Pages configuré

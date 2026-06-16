@@ -117,6 +117,7 @@ export default function Home() {
 
             {/* Présentation */}
             <div>
+              <Image src="/logo.png" alt={association.nom} width={200} height={63} style={{ objectFit: "contain", marginBottom: 24 }} />
               <span className="eyebrow">Qui sommes-nous ?</span>
               <h2 style={{ fontSize: "var(--fs-h2)", margin: "10px 0 20px" }}>Une association née du besoin de s'informer ensemble</h2>
               <p style={{ color: "var(--text-body)", fontSize: "var(--fs-base)", lineHeight: "var(--lh-relaxed)", margin: "0 0 16px" }}>
