@@ -1,4 +1,4 @@
-import Image from "next/image";
+const LOGO = "/bruz-en-action/logo.png";
 import promessesData from "../data/promesses.json";
 import actusData from "../data/actus.json";
 import metaData from "../data/meta.json";
@@ -44,7 +44,8 @@ export default function Home() {
 
           {/* Top bar */}
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 12, paddingBottom: 32, borderBottom: "1px solid rgba(255,255,255,0.1)" }}>
-            <Image src="/logo.png" alt={association.nom} width={180} height={56} style={{ objectFit: "contain", filter: "brightness(0) invert(1)" }} priority />
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src={LOGO} alt={association.nom} width={180} height={56} style={{ objectFit: "contain", filter: "brightness(0) invert(1)" }} />
             <div style={{ display: "flex", gap: 12, alignItems: "center", flexWrap: "wrap" }}>
               {hasSocial && reseaux_sociaux.facebook && (
                 <a href={reseaux_sociaux.facebook} target="_blank" rel="noopener noreferrer" style={{ fontSize: "var(--fs-xs)", color: "var(--text-on-dark-muted)", fontWeight: "var(--fw-semibold)" }}>Facebook</a>
@@ -117,7 +118,8 @@ export default function Home() {
 
             {/* Présentation */}
             <div>
-              <Image src="/logo.png" alt={association.nom} width={200} height={63} style={{ objectFit: "contain", marginBottom: 24 }} />
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={LOGO} alt={association.nom} width={200} height={63} style={{ objectFit: "contain", marginBottom: 24 }} />
               <span className="eyebrow">Qui sommes-nous ?</span>
               <h2 style={{ fontSize: "var(--fs-h2)", margin: "10px 0 20px" }}>Une association née du besoin de s'informer ensemble</h2>
               <p style={{ color: "var(--text-body)", fontSize: "var(--fs-base)", lineHeight: "var(--lh-relaxed)", margin: "0 0 16px" }}>
@@ -377,7 +379,8 @@ export default function Home() {
         <div style={{ maxWidth: "var(--container-max)", margin: "0 auto", padding: "48px var(--container-pad)" }}>
           <div style={{ display: "grid", gridTemplateColumns: "minmax(0,1.2fr) minmax(0,2fr)", gap: 40 }} className="bea-foot">
             <div>
-              <Image src="/logo.png" alt={association.nom} width={160} height={50} style={{ objectFit: "contain", filter: "brightness(0) invert(1)" }} />
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={LOGO} alt={association.nom} width={160} height={50} style={{ objectFit: "contain", filter: "brightness(0) invert(1)" }} />
               <p style={{ fontSize: "var(--fs-sm)", lineHeight: "var(--lh-relaxed)", maxWidth: 320, marginTop: 16, color: "var(--text-on-dark-muted)" }}>
                 {association.description}
               </p>
