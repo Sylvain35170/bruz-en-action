@@ -1,0 +1,29 @@
+{
+  "association": {
+    "nom": "Bruz en Action",
+    "description": "Association citoyenne de veille municipale — Bruz (35)",
+    "fondee_en": 2025,
+    "mission": "Suivre et rendre publics les engagements pris par le maire Jean-René Houssin sur le mandat 2026-2031.",
+    "positionnement": "Non-partisan — veille, transparence, communication publique."
+  },
+  "bureau": {
+    "president": "Naoufal Hajjar",
+    "secretaire": "Sylvain Bertrand",
+    "tresorier": "Gilbert Houet"
+  },
+  "contact": {
+    "email": "",
+    "hello_asso_url": ""
+  },
+  "reseaux_sociaux": {
+    "facebook": "",
+    "instagram": "",
+    "twitter": ""
+  },
+  "sources_surveillees": [
+    { "id": "campagne", "label": "Site Un nouvel élan pour Bruz", "url": "https://www.unnouvelelanpourbruz.com/" },
+    { "id": "mairie",   "label": "Site Ville de Bruz",            "url": "https://www.ville-bruz.fr/" },
+    { "id": "facebook_camp", "label": "Facebook campagne", "url": "https://www.facebook.com/p/Un-nouvel-élan-pour-Bruz-61583588075262/" },
+    { "id": "instagram_camp", "label": "Instagram campagne", "url": "https://www.instagram.com/unnouvelelanpourbruz/" }
+  ]
+}

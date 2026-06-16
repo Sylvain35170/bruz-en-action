@@ -1,0 +1,25 @@
+{
+  "meta": {
+    "source": "Programme Un nouvel élan pour Bruz — mandat 2026-2031",
+    "last_updated": "2026-06-16",
+    "updated_by": "init",
+    "total_promesses": 0
+  },
+  "piliers": [
+    { "id": 1, "label": "Cadre de vie", "color": "#16A34A" },
+    { "id": 2, "label": "Dynamisme économique", "color": "#2563EB" },
+    { "id": 3, "label": "Sécurité", "color": "#DC2626" },
+    { "id": 4, "label": "Solidarité", "color": "#9333EA" },
+    { "id": 5, "label": "Écologie", "color": "#059669" },
+    { "id": 6, "label": "Finances publiques", "color": "#D97706" }
+  ],
+  "statuts": [
+    { "id": "non_commence", "label": "Non commencé", "color": "#6B7280" },
+    { "id": "en_cours",     "label": "En cours",      "color": "#F59E0B" },
+    { "id": "tenu",         "label": "Tenu",           "color": "#16A34A" },
+    { "id": "partiel",      "label": "Partiellement tenu", "color": "#3B82F6" },
+    { "id": "abandonne",    "label": "Abandonné",      "color": "#DC2626" },
+    { "id": "inconnu",      "label": "Non évaluable",  "color": "#9CA3AF" }
+  ],
+  "promesses": []
+}
