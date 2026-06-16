@@ -110,6 +110,64 @@ export default function Home() {
         </div>
       </header>
 
+      {/* ── QUI SOMMES-NOUS ── */}
+      <section style={{ background: "var(--surface-card)", borderBottom: "1px solid var(--border-subtle)" }}>
+        <div style={{ maxWidth: "var(--container-max)", margin: "0 auto", padding: "64px var(--container-pad)" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "minmax(0,1fr) minmax(0,1fr)", gap: 48, alignItems: "start" }} className="bea-foot">
+
+            {/* Présentation */}
+            <div>
+              <span className="eyebrow">Qui sommes-nous ?</span>
+              <h2 style={{ fontSize: "var(--fs-h2)", margin: "10px 0 20px" }}>Une association née du besoin de s'informer ensemble</h2>
+              <p style={{ color: "var(--text-body)", fontSize: "var(--fs-base)", lineHeight: "var(--lh-relaxed)", margin: "0 0 16px" }}>
+                <strong>Bruz en Action</strong> est une association citoyenne créée en {association.fondee_en} par des habitants de Bruz qui voulaient mieux suivre la vie municipale — sans parti pris, sans étiquette politique.
+              </p>
+              <p style={{ color: "var(--text-body)", fontSize: "var(--fs-base)", lineHeight: "var(--lh-relaxed)", margin: "0 0 16px" }}>
+                Notre conviction : une démocratie locale vivante passe par des citoyens informés et actifs. On suit les engagements pris pendant la campagne, on relaie les événements de la commune, et on crée des occasions de se rencontrer et d'agir ensemble.
+              </p>
+              <p style={{ color: "var(--text-body)", fontSize: "var(--fs-base)", lineHeight: "var(--lh-relaxed)", margin: 0 }}>
+                <strong>Ouverte à tous les Bruzois</strong>, sans condition d'opinion. Adhérer, c'est simplement dire qu'on tient à notre ville.
+              </p>
+            </div>
+
+            {/* Ce qu'on fait + Bureau */}
+            <div style={{ display: "flex", flexDirection: "column", gap: 24 }}>
+              {/* Nos 3 piliers d'action */}
+              {[
+                { icon: "👁️", titre: "On informe", texte: "Suivi des 50 engagements du programme municipal. Chaque évolution est sourcée et publiée ici." },
+                { icon: "📅", titre: "On relaie", texte: "L'agenda des événements de Bruz — associations, manifestations sportives, culturelles et citoyennes." },
+                { icon: "🤝", titre: "On agit", texte: "Réunions, interpellations des élus, participation aux conseils de quartier. L'asso est un collectif, pas juste un site." },
+              ].map(({ icon, titre, texte }) => (
+                <div key={titre} style={{ display: "flex", gap: 16, alignItems: "flex-start" }}>
+                  <span style={{ fontSize: 24, flexShrink: 0, lineHeight: 1, marginTop: 2 }}>{icon}</span>
+                  <div>
+                    <p style={{ margin: "0 0 4px", fontWeight: "var(--fw-bold)", color: "var(--text-strong)", fontSize: "var(--fs-base)" }}>{titre}</p>
+                    <p style={{ margin: 0, color: "var(--text-muted)", fontSize: "var(--fs-sm)", lineHeight: "var(--lh-relaxed)" }}>{texte}</p>
+                  </div>
+                </div>
+              ))}
+
+              {/* Bureau */}
+              <div style={{ marginTop: 8, padding: "20px 24px", background: "var(--surface-sunken)", borderRadius: "var(--radius-lg)", borderLeft: "4px solid #2563eb" }}>
+                <span className="eyebrow" style={{ marginBottom: 12, display: "block" }}>Le bureau</span>
+                <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+                  {[
+                    { role: "Présidence", nom: bureau.president },
+                    { role: "Secrétariat", nom: bureau.secretaire },
+                    { role: "Trésorerie", nom: bureau.tresorier },
+                  ].map(({ role, nom }) => (
+                    <div key={role} style={{ display: "flex", justifyContent: "space-between" }}>
+                      <span style={{ fontSize: "var(--fs-sm)", color: "var(--text-muted)" }}>{role}</span>
+                      <span style={{ fontSize: "var(--fs-sm)", fontWeight: "var(--fw-semibold)", color: "var(--text-strong)" }}>{nom}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ── AGENDA ── */}
       <section style={{ background: "var(--surface-card)", borderBottom: "1px solid var(--border-subtle)" }}>
         <div style={{ maxWidth: "var(--container-max)", margin: "0 auto", padding: "48px var(--container-pad)" }}>
