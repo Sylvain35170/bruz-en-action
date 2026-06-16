@@ -1,17 +1,21 @@
 {
   "meta": {
     "last_updated": "2026-06-16",
-    "source": "Référentiel veille Bruz en Action"
+    "source": "Ville de Bruz, Grand Logis, Handisport, Les Trans"
   },
   "evenements": [
     {
       "id": "E01",
       "titre": "Championnat de France Boccia NE",
       "date": "2026-06-25",
+      "date_fin": "2026-06-28",
       "categorie": "Sport & Handisport",
-      "organisateur": "JAB Handisport + CD35",
-      "lieu": "Bruz",
-      "note": "Melenn & Mireille qualifiés — événement à soutenir !",
+      "organisateur": "JAB Handisport + CD Handisport 35",
+      "lieu": "Complexe sportif du campus de Ker Lann, Bruz",
+      "note": "Melenn & Mireille qualifiés — village handisport le 27/06 (14h–18h)",
+      "lien": "https://www.ville-bruz.fr/agenda/championnat-de-france-de-boccia/",
+      "lien_label": "Agenda Ville de Bruz",
+      "lien_article": "https://jabruz.fr/handisport-saison-2025-2026-la-boccia-pour-tous-et-les-prochains-championnats-de-france-a-bruz/",
       "score": 3
     },
     {
@@ -20,29 +24,35 @@
       "date": "2026-06-27",
       "date_fin": "2026-06-28",
       "categorie": "Culture",
-      "organisateur": "Grand Logis",
-      "lieu": "Grand Logis, Bruz",
-      "note": "Spectacles gratuits en plein air",
+      "organisateur": "Le Grand Logis",
+      "lieu": "Dans les rues de Bruz",
+      "note": "Spectacles gratuits en plein air — le Grand Logis investit la ville",
+      "lien": "https://legrandlogis-bruz.fr/spectacle/week-end-buissonnier-5/",
+      "lien_label": "Programme Grand Logis",
       "score": 3
     },
     {
       "id": "E03",
       "titre": "Forum des associations",
-      "date": "2026-09-05",
+      "date": "2026-09-06",
       "categorie": "Vie associative",
       "organisateur": "Ville de Bruz",
-      "lieu": "Bruz",
-      "note": "Occasion idéale pour faire connaître l'association",
+      "lieu": "Stade Siméon Belliard, Bruz",
+      "note": "Occasion idéale pour faire connaître Bruz en Action",
+      "lien": "https://www.ville-bruz.fr/agenda/forum-des-associations/",
+      "lien_label": "Site Ville de Bruz",
       "score": 3
     },
     {
       "id": "E04",
-      "titre": "Les Foulées Bruzoises",
-      "date": "2026-10-01",
+      "titre": "Les Foulées Nature Bruzoises",
+      "date": "2026-10-11",
       "categorie": "Sport",
-      "organisateur": "Les Foulées Bruzoises",
-      "lieu": "Bruz",
-      "note": "Date approximative — à confirmer",
+      "organisateur": "Foulées Nature Bruzoises",
+      "lieu": "Campus de Ker Lann, Bruz",
+      "note": "",
+      "lien": "https://www.klikego.com/inscription/foulees-bruzoises-2026/course-a-pied-running/1493697833382-10",
+      "lien_label": "Inscriptions Klikego",
       "score": 3
     },
     {
@@ -52,18 +62,23 @@
       "date_fin": "2026-12-06",
       "categorie": "Culture",
       "organisateur": "Association Trans Musicales",
-      "lieu": "Parc Expo, Rennes",
+      "lieu": "Parc Expo + salles, Rennes",
       "note": "",
+      "lien": "https://www.lestrans.com/actu-festival/rendez-vous-du-2-au-6-decembre-2026/",
+      "lien_label": "Les Trans Musicales",
       "score": 3
     },
     {
       "id": "E06",
       "titre": "Téléthon",
       "date": "2026-12-04",
+      "date_fin": "2026-12-05",
       "categorie": "Solidarité",
       "organisateur": "AFM-Téléthon + associations",
       "lieu": "Bruz",
-      "note": "1er week-end de décembre",
+      "note": "",
+      "lien": "https://www.telethon.fr/",
+      "lien_label": "AFM-Téléthon",
       "score": 3
     }
   ]

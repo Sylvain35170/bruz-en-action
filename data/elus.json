@@ -11,10 +11,16 @@
       "photo": null,
       "citations": [
         {
-          "texte": "Bruz mérite une gouvernance transparente et au plus près de ses habitants.",
-          "source": "Discours d'investiture — mars 2026",
-          "lien": null,
+          "texte": "Je veux être le maire de tous les Bruzois.",
+          "source": "Discours d'installation — TVR, mars 2026",
+          "lien": "https://www.tvr.bzh/article/e548e45-retour-sur-le-premier-tour-des-municipales-a-bruz",
           "date": "2026-03-01"
+        },
+        {
+          "texte": "L'une de mes premières priorités sera de négocier le terminus du trambus avec Rennes-Métropole.",
+          "source": "Programme Un nouvel élan pour Bruz",
+          "lien": "https://www.unnouvelelanpourbruz.com/",
+          "date": "2026-02-01"
         }
       ]
     }

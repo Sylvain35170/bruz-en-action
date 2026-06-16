@@ -208,6 +208,22 @@ export default function Home() {
                 {ev.note && (
                   <p style={{ margin: 0, fontSize: "var(--fs-xs)", color: "#2563eb", fontStyle: "italic" }}>{ev.note}</p>
                 )}
+                <div style={{ marginTop: "auto", paddingTop: "var(--space-2)", display: "flex", gap: 8, flexWrap: "wrap" }}>
+                  {"lien" in ev && ev.lien && (
+                    <a href={ev.lien as string} target="_blank" rel="noopener noreferrer" style={{
+                      fontSize: "var(--fs-xs)", color: "#2563eb", fontWeight: "var(--fw-semibold)",
+                    }}>
+                      {"lien_label" in ev ? String(ev.lien_label) : "En savoir plus"} ↗
+                    </a>
+                  )}
+                  {"lien_article" in ev && ev.lien_article && (
+                    <a href={ev.lien_article as string} target="_blank" rel="noopener noreferrer" style={{
+                      fontSize: "var(--fs-xs)", color: "var(--text-muted)",
+                    }}>
+                      Article JAB ↗
+                    </a>
+                  )}
+                </div>
               </div>
             ))}
           </div>
@@ -236,7 +252,7 @@ export default function Home() {
                       <p style={{ margin: 0, fontSize: "var(--fs-xs)", color: "var(--text-muted)" }}>{elu.role}</p>
                     </div>
                     {cit.lien ? (
-                      <a href={cit.lien} target="_blank" rel="noopener noreferrer" style={{ fontSize: "var(--fs-xs)", color: "#2563eb" }}>Source ↗</a>
+                      <a href={cit.lien} target="_blank" rel="noopener noreferrer" style={{ fontSize: "var(--fs-xs)", color: "#2563eb" }}>{cit.source} ↗</a>
                     ) : (
                       <span style={{ fontSize: "var(--fs-xs)", color: "var(--text-faint)" }}>{cit.source}</span>
                     )}
