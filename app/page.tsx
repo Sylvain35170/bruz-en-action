@@ -195,7 +195,7 @@ export default function Home() {
                   }}>
                     {ev.categorie}
                   </span>
-                  <span className="tabular" style={{ fontSize: "var(--fs-xs)", color: "var(--brand-accent)", fontWeight: "var(--fw-bold)", whiteSpace: "nowrap", color: "#2563eb" }}>
+                  <span className="tabular" style={{ fontSize: "var(--fs-xs)", color: "#2563eb", fontWeight: "var(--fw-bold)", whiteSpace: "nowrap" }}>
                     {fmtShort(ev.date)}{ev.date_fin ? ` → ${fmtShort(ev.date_fin)}` : ""}
                   </span>
                 </div>
