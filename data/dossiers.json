@@ -13,14 +13,17 @@
       "chapeau": "La future ligne T4 reliera le métro Saint-Jacques-Gaîté à Bruz via Ker Lann d'ici 2031. Mais où s'arrêtera exactement la ligne en ville ? La réponse engage l'avenir de la mobilité bruzoise pour plusieurs décennies.",
       "points_cles": [
         "Livraison prévue 2030–2031 par Rennes Métropole (ligne T4 : Saint-Jacques-Gaîté → Ker Lann → Bruz)",
-        "Terminus envisagé : Ker Lann (favori de la Métropole) — contre-proposition : gare SNCF + navettes vers centre-ville et quartiers Est/Ouest",
-        "Jean-René Houssin a fait de la négociation du terminus sa première priorité face à Rennes Métropole",
-        "Enjeu clé : le tracé définitif conditionne les PLU, les projets immobiliers et la mobilité douce autour de la gare"
+        "Le T4 est un trambus (bus guidé sur voie propre) — moins coûteux qu'un tram sur rail, capacité ~100–150 passagers/rame, vitesse commerciale élevée grâce au site propre intégral",
+        "Décision Métropole (5 fév. 2026) : le tracé T4 traversera la ZAC Ker Lann, imposant une densité de 60 logements/ha sur le site pour justifier l'infrastructure",
+        "Position Houssin (engagement de campagne, confirmé dans délégations d'avril) : positionner le terminus à la gare SNCF + 2 circuits de navettes électriques vers les quartiers — contre l'option Ker Lann seule défendue par la Métropole",
+        "Enjeu urbanistique majeur : le terminus conditionne les PLU, les projets immobiliers (ZAC Multisites, ZAC Ker Lann), et la stratégie de mobilité douce de toute la commune",
+        "La commune doit peser dans les arbitrages métropolitains — délégation explicite confiée à Patrick Roullé (conseiller délégué Transition écologique et mobilités)"
       ],
       "promesses_liees": [2, 3, 4],
       "sources": [
         { "label": "France Bleu : le terminus T4, enjeu des municipales 2026", "url": "https://www.francebleu.fr/emissions/l-info-d-ici-ici-armorique/municipales-2026-a-bruz-le-terminus-de-la-ligne-trambus-t4-un-des-enjeux-du-scrutin-5029860" },
-        { "label": "SEMTCAR : projet T4 (Trajectoires Rennes Métropole)", "url": "https://semtcar.alkante.com/accueil/les_projets/t4" }
+        { "label": "Délibération Conseil Métropolitain 5 fév. 2026 — ZAC Ker Lann + T4 (Mégalis)", "url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1012938/b6b1dc7396fa9a9946d085d957775ce4477276f63f188b960bb4886c785ccce2.pdf" },
+        { "label": "Bruz Mag n°260 — délégations et priorités mobilités", "url": "https://www.ville-bruz.fr/wp-content/uploads/2026/05/Bruz-Mag-n%C2%B0260-de-mai-juin-2026.pdf" }
       ]
     },
     {
@@ -31,11 +34,12 @@
       "date_ouverture": "2026-06-16",
       "chapeau": "La Zone d'Aménagement Concerté Multisites prévoit 1 700 nouveaux logements répartis sur 6 secteurs (31 ha), dont 5 en renouvellement urbain. Un projet structurant qui redéfinira plusieurs quartiers de Bruz d'ici 2035–2040.",
       "points_cles": [
-        "6 secteurs identifiés dont 5 en renouvellement urbain (friches, terrains sous-utilisés) — 1 seul en extension urbaine (Mons Rouaudière)",
+        "6 secteurs : Gare, Grand-Pâtis, Haye de Pan, Maison des Associations, Noë, Mons — dont 5 en renouvellement urbain (friches, terrains sous-utilisés) et 1 seul en extension urbaine (Mons Rouaudière)",
         "Réunion publique du 18 septembre 2025 : environ 170 participants, périmètre final et répartition des logements présentés",
-        "Avis de la Mission Régionale d'Autorité Environnementale (MRAE) rendu le 8 août 2025",
+        "Avis MRAE (8 août 2025) : avis rendu sur le dossier de création — à consulter pour contraintes environnementales",
         "Phase de réalisation engagée à partir de 2026 — livraisons échelonnées jusqu'à 2035–2040",
-        "La nouvelle municipalité hérite du dossier et devra arbitrer sur les densités, les typologies et les équipements"
+        "Engagement Houssin : adapter la densification selon l'identité et la capacité de chaque quartier, privilégier le renouvellement urbain plutôt que l'étalement, accélérer la rénovation énergétique des bâtiments municipaux",
+        "À distinguer de la ZAC Ker Lann (165 ha au nord, compétence Rennes Métropole) — la ZAC Multisites est pilotée par la commune"
       ],
       "promesses_liees": [],
       "sources": [
