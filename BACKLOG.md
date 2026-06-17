@@ -24,13 +24,12 @@
 
 - Alertes email/RSS quand une promesse change de statut
 - Export PDF du tableau de bord par pilier
-- Page individuelle par dossier (Next.js dynamic routes)
 
 ## ✅ Terminé
 
 - Section Dossiers homepage : Trambus T4, ZAC Multisites, Finances 2026, Fiscalité Salmon — sourcés et déployés
 - Pages dédiées `/dossiers/[id]` : 5 pages statiques (points clés, sources, sidebar, liens mairie)
-- Section Conseil municipal : 10 élus avec rôles/délégations, stats élection, prochain CM 3 juil.
+- **Liste complète 33 élus 2026-2032** — Bruz Mag n°260 : maire + 9 adjoints + 11 délégués + 5 conseillers + 7 opposition, homepage restructurée en 3 niveaux
 
 ## ✅ Terminé (antérieur)
 
