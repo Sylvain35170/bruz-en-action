@@ -6,11 +6,23 @@
 
 ## 🟠 Prioritaire — Fonctionnalités
 
-- [ ] **Agent de veille multi-source** — cron GitHub Actions : mairie, Facebook, Instagram, presse locale → actus auto
-- [ ] **Réseaux sociaux** — renseigner facebook/instagram dans `data/meta.json`
 - [ ] **Parole des élus** — enrichir `data/elus.json` au fil du mandat
 
-## 🟡 À faire
+## 🟡 À faire — Agents de veille
+
+- [ ] **Agent Mégalis** — scan automatique des nouveaux IDs délibérations Bruz + Rennes Métropole → MAJ `cms.json` (cron GitHub Actions hebdomadaire)
+- [ ] **Agent mairie** — scrape `ville-bruz.fr/actualites/` + `conseil-municipal/` → détection nouveaux CR, arrêtés, délibérations
+- [ ] **Agent Bruz Mag** — détection nouveau numéro (PDF mairie) → extraction OCR + résumé → MAJ `cms.json`
+- [ ] **Agent presse locale** — scrape Ouest-France/Semaine à Bruz sur mots-clés Bruz → actus auto dans `data/actus.json`
+- [ ] **Comptes officiels à surveiller** — Facebook Ville de Bruz (`@villedebruz`), compte Houssin, compte Bruz Métropole ; renseigner dans `data/meta.json` → sources_surveillees
+
+## 🟡 À faire — Dossiers à instruire
+
+- [ ] **D06 — Piscine de Bruz** : état du bâtiment actuel, promesse de rénovation/nouveau équipement ?, coût estimé, timeline. Sources : délibérations budget, Bruz Mag, programme Houssin
+- [ ] **D07 — Sécurité / police municipale** : effectifs actuels, promesse de renforcement (confirmée dans délégations 8 avr.), vidéoprotection — où en est-on ? Sources : délibérations, budget, Bruz Mag
+- [ ] **D08 — City stade / équipements sportifs** : état des terrains de proximité, projets neufs ou rénovation, lien avec ZAC Multisites (secteur Mons ?). Sources : mairie, délégation Fabrice Jan (sport)
+
+## 🟡 À faire — Technique
 
 - [ ] **Images** — photos de Bruz / événements / asso (à fournir)
 - [ ] **Script import_excel.py** — mise à jour auto des statuts depuis l'Excel
@@ -23,6 +35,7 @@
 
 - Alertes email/RSS quand une promesse change de statut
 - Export PDF du tableau de bord par pilier
+- Page `/metro` dédiée aux décisions Rennes Métropole impactant Bruz (T4, PLUiH, eau/assainissement)
 
 ## ✅ Terminé
 
