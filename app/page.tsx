@@ -493,10 +493,10 @@ export default function Home() {
                   </ul>
                 )}
                 <div style={{ marginTop: "auto", paddingTop: "var(--space-3)", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 8 }}>
-                  <a href={`/bruz-en-action/dossiers/${d.id}`} style={{
+                  <a href={"lien_externe" in d && d.lien_externe ? String(d.lien_externe) : `/bruz-en-action/dossiers/${d.id}`} style={{
                     fontSize: "var(--fs-xs)", fontWeight: "var(--fw-bold)", color: "var(--brand-accent)",
                   }}>
-                    Lire le dossier →
+                    {"lien_externe" in d && d.lien_externe ? "Ouvrir la carte →" : "Lire le dossier →"}
                   </a>
                   <span style={{ fontSize: "var(--fs-2xs)", color: "var(--text-faint)" }}>{d.sources.length} source{d.sources.length > 1 ? "s" : ""}</span>
                 </div>

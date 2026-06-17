@@ -87,9 +87,10 @@
       "id": "D05",
       "titre": "Carte de Bruz : projets et quartiers",
       "categorie": "Urbanisme",
-      "statut": "a_venir",
-      "date_ouverture": "2026-06-16",
-      "chapeau": "Une carte interactive de Bruz pour visualiser les zones de projet (ZAC, trambus, équipements), les quartiers et les points d'intérêt. En cours de conception.",
+      "statut": "publie",
+      "date_ouverture": "2026-06-17",
+      "lien_externe": "/bruz-en-action/carte",
+      "chapeau": "Carte interactive de Bruz : visualisez les 6 secteurs ZAC Multisites (1 700 logements), le corridor trambus T4 et les équipements clés de la commune.",
       "points_cles": [
         "Visualisation des 6 secteurs ZAC Multisites sur la carte communale",
         "Tracé du corridor trambus T4 et localisation des terminus envisagés",

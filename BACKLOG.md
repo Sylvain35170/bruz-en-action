@@ -2,7 +2,7 @@
 
 ## 🔴 En cours
 
-- [ ] **Carte de la commune** — carte interactive Bruz (OpenStreetMap/Leaflet) avec zones ZAC + corridor T4
+*(rien)*
 
 ## 🟠 Prioritaire — Fonctionnalités
 
@@ -26,6 +26,7 @@
 
 ## ✅ Terminé
 
+- **Carte interactive `/carte`** — Leaflet + OSM, 6 secteurs ZAC Multisites (coords réelles Nominatim), corridor T4 (21 stations), équipements. D05 mis à jour et lié.
 - Section Dossiers homepage : Trambus T4, ZAC Multisites, Finances 2026, Fiscalité Salmon — sourcés et déployés
 - Pages dédiées `/dossiers/[id]` : 5 pages statiques (points clés, sources, sidebar, liens mairie)
 - **Liste complète 33 élus 2026-2032** — Bruz Mag n°260 : maire + 9 adjoints + 11 délégués + 5 conseillers + 7 opposition, homepage restructurée en 3 niveaux
