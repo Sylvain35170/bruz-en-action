@@ -42,8 +42,37 @@ export default function Home() {
     <div style={{ minHeight: "100vh", display: "flex", flexDirection: "column", background: "var(--surface-page)" }}>
 
       {/* ── HEADER ── */}
-      <header style={{ background: "var(--night-gradient)", color: "#fff" }}>
-        <div style={{ maxWidth: "var(--container-max)", margin: "0 auto", padding: "20px var(--container-pad) 44px" }}>
+      <header style={{
+        position: "relative",
+        background: "var(--night-gradient)",
+        color: "#fff",
+        overflow: "hidden",
+      }}>
+        {/* Photo de fond */}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/bruz-en-action/bruz-place.jpg"
+          alt=""
+          aria-hidden="true"
+          style={{
+            position: "absolute", inset: 0, width: "100%", height: "100%",
+            objectFit: "cover", objectPosition: "center 60%",
+            opacity: 0.22, pointerEvents: "none", userSelect: "none",
+          }}
+        />
+        {/* Attribution photo */}
+        <a
+          href="https://commons.wikimedia.org/wiki/File:Bruz-place.jpg"
+          target="_blank" rel="noopener noreferrer"
+          style={{
+            position: "absolute", bottom: 8, right: 12,
+            fontSize: 10, color: "rgba(255,255,255,0.45)",
+            textDecoration: "none", zIndex: 1,
+          }}
+        >
+          Photo : Yves LC — CC BY-SA 4.0
+        </a>
+        <div style={{ position: "relative", zIndex: 1, maxWidth: "var(--container-max)", margin: "0 auto", padding: "20px var(--container-pad) 44px" }}>
 
           {/* Top bar */}
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 12, paddingBottom: 32, borderBottom: "1px solid rgba(255,255,255,0.1)" }}>
@@ -113,6 +142,7 @@ export default function Home() {
           </div>
         </div>
       </header>
+
 
       {/* ── QUI SOMMES-NOUS ── */}
       <section style={{ background: "var(--surface-card)", borderBottom: "1px solid var(--border-subtle)" }}>
