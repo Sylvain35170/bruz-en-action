@@ -188,7 +188,7 @@ export default function Home() {
           </div>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "var(--grid-gap)" }}>
             {evenements.map(ev => (
-              <div key={ev.id} style={{
+              <div key={ev.id} className="bea-fade" style={{
                 background: "var(--surface-page)", border: "1px solid var(--border-subtle)",
                 borderRadius: "var(--radius-lg)", padding: "var(--space-5)", display: "flex", flexDirection: "column", gap: "var(--space-3)",
               }}>
@@ -269,49 +269,69 @@ export default function Home() {
             ))}
           </div>
 
-          {/* Séances du conseil municipal */}
-          <h3 style={{ fontSize: "var(--fs-sm)", fontWeight: "var(--fw-bold)", color: "var(--text-muted)", textTransform: "uppercase", letterSpacing: "var(--ls-label)", marginBottom: 12 }}>
+          {/* Timeline des séances */}
+          <h3 style={{ fontSize: "var(--fs-sm)", fontWeight: "var(--fw-bold)", color: "var(--text-muted)", textTransform: "uppercase", letterSpacing: "var(--ls-label)", marginBottom: 20 }}>
             Séances
           </h3>
-          <div style={{ display: "flex", flexDirection: "column", gap: 12, marginBottom: 32 }}>
-            {cmsData.seances.map(cm => (
-              <div key={cm.id} style={{
-                background: cm.statut === "a_venir" ? "#f0f9ff" : "var(--surface-card)",
-                border: `1px solid ${cm.statut === "a_venir" ? "#bae6fd" : "var(--border-subtle)"}`,
-                borderLeft: `4px solid ${cm.statut === "a_venir" ? "#0ea5e9" : cm.points_cles.length > 0 ? "#3b82f6" : "#cbd5e1"}`,
-                borderRadius: "var(--radius-lg)", padding: "16px 20px",
-              }}>
-                <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: cm.points_cles.length > 0 ? 10 : 0, flexWrap: "wrap" }}>
-                  <span style={{ fontSize: "var(--fs-xs)", fontWeight: "var(--fw-bold)", color: "var(--text-strong)" }}>
-                    {new Date(cm.date).toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" })}
-                  </span>
-                  {cm.statut === "a_venir" && (
-                    <span style={{ padding: "2px 8px", borderRadius: 999, background: "#0ea5e9", color: "#fff", fontSize: "var(--fs-2xs)", fontWeight: "var(--fw-bold)" }}>À venir</span>
-                  )}
-                  <span style={{ fontSize: "var(--fs-xs)", color: "var(--text-muted)" }}>{cm.titre}</span>
-                  {cm.lieu && <span style={{ fontSize: "var(--fs-2xs)", color: "var(--text-faint)", marginLeft: "auto" }}>{cm.lieu}</span>}
-                </div>
-                {cm.points_cles.length > 0 && (
-                  <ul style={{ margin: 0, padding: 0, listStyle: "none", display: "flex", flexDirection: "column", gap: 5 }}>
-                    {cm.points_cles.map((pt, i) => (
-                      <li key={i} style={{ display: "flex", gap: 8, fontSize: "var(--fs-xs)", color: "var(--text-body)", lineHeight: 1.5 }}>
-                        <span style={{ color: "#3b82f6", flexShrink: 0 }}>→</span>{pt}
-                      </li>
-                    ))}
-                  </ul>
-                )}
-                {cm.points_cles.length === 0 && cm.statut === "passe" && (
-                  <p style={{ margin: 0, fontSize: "var(--fs-xs)", color: "var(--text-faint)", fontStyle: "italic" }}>Contenu à venir — <a href={cmsData.meta.youtube} target="_blank" rel="noopener noreferrer" style={{ color: "#2563eb" }}>audio YouTube ↗</a></p>
-                )}
-                {cm.sources.length > 0 && (
-                  <div style={{ marginTop: 8, display: "flex", gap: 12, flexWrap: "wrap" }}>
-                    {cm.sources.map((s, i) => (
-                      <a key={i} href={s.url} target="_blank" rel="noopener noreferrer" style={{ fontSize: "var(--fs-2xs)", color: "#2563eb" }}>{s.label} ↗</a>
-                    ))}
+          <div style={{ position: "relative", paddingLeft: 32, marginBottom: 32 }}>
+            {/* Ligne verticale */}
+            <div style={{ position: "absolute", left: 7, top: 8, bottom: 8, width: 2, background: "var(--slate-200)", borderRadius: 2 }} />
+            <div style={{ display: "flex", flexDirection: "column", gap: 0 }}>
+              {cmsData.seances.map((cm, idx) => {
+                const isAvenir = cm.statut === "a_venir";
+                const hasPts = cm.points_cles.length > 0;
+                const dotColor = isAvenir ? "#0ea5e9" : hasPts ? "#3b82f6" : "#cbd5e1";
+                return (
+                  <div key={cm.id} className="bea-fade" style={{ position: "relative", paddingBottom: idx < cmsData.seances.length - 1 ? 24 : 0 }}>
+                    {/* Dot */}
+                    <div className={isAvenir ? "bea-pulse" : ""} style={{
+                      position: "absolute", left: -28, top: 4,
+                      width: 16, height: 16, borderRadius: "50%",
+                      background: dotColor, border: "2px solid #fff",
+                      boxShadow: `0 0 0 2px ${dotColor}`,
+                    }} />
+                    {/* Contenu */}
+                    <div style={{
+                      background: isAvenir ? "#f0f9ff" : "var(--surface-card)",
+                      border: `1px solid ${isAvenir ? "#bae6fd" : "var(--border-subtle)"}`,
+                      borderRadius: "var(--radius-lg)", padding: "14px 18px",
+                    }}>
+                      <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: hasPts ? 10 : 0, flexWrap: "wrap" }}>
+                        <span style={{ fontSize: "var(--fs-xs)", fontWeight: "var(--fw-black)", color: "var(--text-strong)", whiteSpace: "nowrap" }}>
+                          {new Date(cm.date).toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" })}
+                        </span>
+                        {isAvenir && (
+                          <span style={{ padding: "1px 8px", borderRadius: 999, background: "#0ea5e9", color: "#fff", fontSize: "var(--fs-2xs)", fontWeight: "var(--fw-bold)" }}>À venir</span>
+                        )}
+                        <span style={{ fontSize: "var(--fs-xs)", color: "var(--text-muted)" }}>{cm.titre}</span>
+                        {cm.lieu && <span style={{ fontSize: "var(--fs-2xs)", color: "var(--text-faint)", marginLeft: "auto" }}>{cm.lieu}</span>}
+                      </div>
+                      {hasPts && (
+                        <ul style={{ margin: 0, padding: 0, listStyle: "none", display: "flex", flexDirection: "column", gap: 5 }}>
+                          {cm.points_cles.map((pt, i) => (
+                            <li key={i} style={{ display: "flex", gap: 8, fontSize: "var(--fs-xs)", color: "var(--text-body)", lineHeight: 1.5 }}>
+                              <span style={{ color: "#3b82f6", flexShrink: 0 }}>→</span>{pt}
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                      {!hasPts && cm.statut === "passe" && (
+                        <p style={{ margin: 0, fontSize: "var(--fs-xs)", color: "var(--text-faint)", fontStyle: "italic" }}>
+                          Compte-rendu à paraître — <a href={cmsData.meta.youtube} target="_blank" rel="noopener noreferrer" style={{ color: "#2563eb" }}>audio YouTube ↗</a>
+                        </p>
+                      )}
+                      {cm.sources.length > 0 && (
+                        <div style={{ marginTop: 8, display: "flex", gap: 12, flexWrap: "wrap" }}>
+                          {cm.sources.map((s, i) => (
+                            <a key={i} href={s.url} target="_blank" rel="noopener noreferrer" style={{ fontSize: "var(--fs-2xs)", color: "#2563eb" }}>{s.label} ↗</a>
+                          ))}
+                        </div>
+                      )}
+                    </div>
                   </div>
-                )}
-              </div>
-            ))}
+                );
+              })}
+            </div>
           </div>
 
           {/* Maire + adjoints */}
@@ -499,18 +519,33 @@ export default function Home() {
       {/* ── SUIVI DES PROMESSES ── */}
       <div style={{ background: "var(--surface-card)", borderBottom: "1px solid var(--border-subtle)", boxShadow: "var(--shadow-xs)" }}>
         <div style={{ maxWidth: "var(--container-max)", margin: "0 auto", padding: "28px var(--container-pad)" }}>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))", gap: "var(--grid-gap)" }}>
-            {[
-              { value: total, label: "Engagements suivis", color: "var(--slate-900)", tint: "var(--slate-50)" },
-              { value: tenues, label: "Tenus", color: "var(--status-done)", tint: "var(--status-done-tint)" },
-              { value: enCours, label: "En cours", color: "var(--status-progress)", tint: "var(--status-progress-tint)" },
-              { value: nonCommences, label: "Non commencés", color: "var(--status-todo)", tint: "var(--status-todo-tint)" },
-            ].map(({ value, label, color, tint }) => (
-              <div key={label} style={{ background: tint, borderRadius: "var(--radius-lg)", padding: "20px 24px", display: "flex", alignItems: "center", gap: 16 }}>
-                <p className="tabular" style={{ fontSize: "var(--fs-display)", fontWeight: "var(--fw-black)", color, margin: 0, lineHeight: 1 }}>{value}</p>
-                <p style={{ fontSize: "var(--fs-xs)", fontWeight: "var(--fw-medium)", color: "var(--text-muted)", margin: 0, lineHeight: "var(--lh-snug)" }}>{label}</p>
-              </div>
-            ))}
+          {/* Barre de progression segmentée */}
+          <div style={{ marginBottom: 20 }}>
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: 8 }}>
+              <span style={{ fontSize: "var(--fs-sm)", fontWeight: "var(--fw-bold)", color: "var(--text-strong)" }}>
+                Avancement du mandat — {total} engagements
+              </span>
+              <span style={{ fontSize: "var(--fs-sm)", fontWeight: "var(--fw-black)", color: "var(--status-done)" }}>
+                {score} % tenus
+              </span>
+            </div>
+            <div className="bea-progress-bar">
+              <div className="bea-progress-seg" style={{ width: `${(tenues / total) * 100}%`, background: "var(--status-done)" }} />
+              <div className="bea-progress-seg" style={{ width: `${(enCours / total) * 100}%`, background: "var(--status-progress)" }} />
+              <div className="bea-progress-seg" style={{ width: `${(nonCommences / total) * 100}%`, background: "var(--slate-200)" }} />
+            </div>
+            <div style={{ display: "flex", gap: 20, marginTop: 8, flexWrap: "wrap" }}>
+              {[
+                { color: "var(--status-done)", label: `${tenues} tenus` },
+                { color: "var(--status-progress)", label: `${enCours} en cours` },
+                { color: "var(--slate-300)", label: `${nonCommences} non commencés` },
+              ].map(({ color, label }) => (
+                <span key={label} style={{ display: "flex", alignItems: "center", gap: 6, fontSize: "var(--fs-xs)", color: "var(--text-muted)" }}>
+                  <span style={{ width: 10, height: 10, borderRadius: 3, background: color, flexShrink: 0 }} />
+                  {label}
+                </span>
+              ))}
+            </div>
           </div>
         </div>
       </div>
