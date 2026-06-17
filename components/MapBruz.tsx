@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import "leaflet/dist/leaflet.css";
 
 const BRUZ_CENTER: [number, number] = [48.0245, -1.7490];
 
