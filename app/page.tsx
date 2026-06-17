@@ -232,44 +232,106 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── PAROLE DES ÉLUS ── */}
+      {/* ── CONSEIL MUNICIPAL ── */}
       <section style={{ background: "var(--surface-page)" }}>
         <div style={{ maxWidth: "var(--container-max)", margin: "0 auto", padding: "48px var(--container-pad)" }}>
-          <span className="eyebrow">La parole des élus</span>
-          <h2 style={{ fontSize: "var(--fs-h2)", margin: "8px 0 24px" }}>Ce qu'ils ont dit</h2>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(340px, 1fr))", gap: "var(--grid-gap)" }}>
-            {elus.map(elu =>
-              elu.citations.map((cit, i) => (
-                <div key={`${elu.id}-${i}`} style={{
-                  background: "var(--surface-card)", border: "1px solid var(--border-subtle)",
-                  borderRadius: "var(--radius-lg)", padding: "var(--space-6)", boxShadow: "var(--shadow-sm)",
-                  borderLeft: "4px solid #2563eb",
-                }}>
-                  <blockquote style={{ margin: 0, fontSize: "var(--fs-lg)", fontWeight: "var(--fw-medium)", color: "var(--text-strong)", lineHeight: "var(--lh-relaxed)", fontStyle: "italic" }}>
-                    « {cit.texte} »
-                  </blockquote>
-                  <div style={{ marginTop: "var(--space-4)", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 8 }}>
-                    <div>
-                      <p style={{ margin: 0, fontWeight: "var(--fw-bold)", color: "var(--text-strong)", fontSize: "var(--fs-sm)" }}>{elu.nom}</p>
-                      <p style={{ margin: 0, fontSize: "var(--fs-xs)", color: "var(--text-muted)" }}>{elu.role}</p>
-                    </div>
-                    {cit.lien ? (
-                      <a href={cit.lien} target="_blank" rel="noopener noreferrer" style={{ fontSize: "var(--fs-xs)", color: "#2563eb" }}>{cit.source} ↗</a>
-                    ) : (
-                      <span style={{ fontSize: "var(--fs-xs)", color: "var(--text-faint)" }}>{cit.source}</span>
-                    )}
-                  </div>
-                </div>
-              ))
-            )}
-            {/* Placeholder si vide */}
-            {elus.every(e => e.citations.length === 0) && (
-              <div style={{ gridColumn: "1/-1", padding: "32px 24px", textAlign: "center", border: "2px dashed var(--border-subtle)", borderRadius: "var(--radius-lg)" }}>
-                <p style={{ color: "var(--text-muted)", margin: 0, fontSize: "var(--fs-sm)" }}>
-                  Les prises de position publiques des élus seront ajoutées ici au fil du mandat.
-                </p>
+          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", marginBottom: "var(--space-8)", flexWrap: "wrap", gap: 12 }}>
+            <div>
+              <span className="eyebrow">Conseil municipal 2026–2032</span>
+              <h2 style={{ fontSize: "var(--fs-h2)", margin: "8px 0 0" }}>L'équipe municipale</h2>
+            </div>
+            <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
+              <a href="https://www.ville-bruz.fr/actualites/decouvrez-les-elus-du-conseil-municipal-de-bruz/" target="_blank" rel="noopener noreferrer"
+                style={{ fontSize: "var(--fs-xs)", color: "#2563eb", fontWeight: "var(--fw-semibold)" }}>
+                Page officielle ↗
+              </a>
+              <a href="https://www.youtube.com/playlist?list=PLnSe2hJFinqpupninWlKBHSmzmwLW-8i7" target="_blank" rel="noopener noreferrer"
+                style={{ fontSize: "var(--fs-xs)", color: "#2563eb", fontWeight: "var(--fw-semibold)" }}>
+                CMs en audio (YouTube) ↗
+              </a>
+            </div>
+          </div>
+
+          {/* Résultats élection */}
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(180px, 1fr))", gap: "var(--space-4)", marginBottom: 36 }}>
+            {[
+              { label: "Sièges majorité", val: `${elusData.composition.majorite.sieges}/33`, sub: elusData.composition.majorite.score },
+              { label: "Sièges opposition", val: `${elusData.composition.opposition.sieges}/33`, sub: elusData.composition.opposition.score },
+              { label: "Participation", val: elusData.composition.participation, sub: `1er tour — ${new Date(elusData.composition.date_election).toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" })}` },
+              { label: "Contact élus", val: "elus@", sub: elusData.meta.contact_elus },
+            ].map(({ label, val, sub }) => (
+              <div key={label} style={{ background: "var(--surface-card)", border: "1px solid var(--border-subtle)", borderRadius: "var(--radius-lg)", padding: "var(--space-4)" }}>
+                <p style={{ margin: "0 0 4px", fontSize: "var(--fs-2xs)", color: "var(--text-muted)", textTransform: "uppercase", letterSpacing: "var(--ls-label)", fontWeight: "var(--fw-bold)" }}>{label}</p>
+                <p style={{ margin: "0 0 2px", fontSize: "var(--fs-lg)", fontWeight: "var(--fw-bold)", color: "var(--text-strong)" }}>{val}</p>
+                <p style={{ margin: 0, fontSize: "var(--fs-2xs)", color: "var(--text-faint)" }}>{sub}</p>
               </div>
-            )}
+            ))}
+          </div>
+
+          {/* Grille élus */}
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))", gap: "var(--space-4)" }}>
+            {elus.filter(e => e.groupe === "majorite").map(elu => (
+              <div key={elu.id} style={{
+                background: "var(--surface-card)", border: "1px solid var(--border-subtle)",
+                borderRadius: "var(--radius-lg)", padding: "var(--space-4)",
+                borderLeft: elu.role === "Maire de Bruz" ? "4px solid var(--brand-accent)" : "4px solid #3b82f6",
+              }}>
+                <p style={{ margin: "0 0 2px", fontWeight: "var(--fw-bold)", color: "var(--text-strong)", fontSize: "var(--fs-sm)" }}>{elu.nom}</p>
+                <p style={{ margin: "0 0 6px", fontSize: "var(--fs-xs)", color: "#2563eb", fontWeight: "var(--fw-semibold)" }}>{elu.role}</p>
+                {elu.delegation && (
+                  <p style={{ margin: 0, fontSize: "var(--fs-xs)", color: "var(--text-muted)" }}>{elu.delegation}</p>
+                )}
+                {elu.citations && elu.citations.length > 0 && (
+                  <p style={{ margin: "8px 0 0", fontSize: "var(--fs-xs)", color: "var(--text-body)", fontStyle: "italic", lineHeight: "var(--lh-relaxed)" }}>
+                    « {elu.citations[0].texte} »
+                    {elu.citations[0].lien && (
+                      <> <a href={elu.citations[0].lien} target="_blank" rel="noopener noreferrer" style={{ color: "#2563eb", marginLeft: 4 }}>↗</a></>
+                    )}
+                  </p>
+                )}
+              </div>
+            ))}
+            {/* Opposition */}
+            {elus.filter(e => e.groupe === "opposition").map(elu => (
+              <div key={elu.id} style={{
+                background: "var(--surface-card)", border: "1px solid var(--border-subtle)",
+                borderRadius: "var(--radius-lg)", padding: "var(--space-4)",
+                borderLeft: "4px solid #94a3b8",
+              }}>
+                <p style={{ margin: "0 0 2px", fontWeight: "var(--fw-bold)", color: "var(--text-strong)", fontSize: "var(--fs-sm)" }}>{elu.nom}</p>
+                <p style={{ margin: "0 0 6px", fontSize: "var(--fs-xs)", color: "var(--text-muted)", fontWeight: "var(--fw-semibold)" }}>{elu.role}</p>
+                <p style={{ margin: 0, fontSize: "var(--fs-xs)", color: "var(--text-faint)" }}>Opposition — {elusData.composition.opposition.sieges} sièges</p>
+              </div>
+            ))}
+            {/* Lien vers mairie pour liste complète */}
+            <div style={{
+              background: "var(--surface-sunken)", border: "2px dashed var(--border-subtle)",
+              borderRadius: "var(--radius-lg)", padding: "var(--space-4)",
+              display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", textAlign: "center", gap: 8,
+            }}>
+              <p style={{ margin: 0, fontSize: "var(--fs-xs)", color: "var(--text-muted)", lineHeight: 1.5 }}>
+                + 11 conseillers délégués et 14 conseillers<br />— liste complète sur le site de la Ville
+              </p>
+              <a href="https://www.ville-bruz.fr/actualites/decouvrez-les-elus-du-conseil-municipal-de-bruz/" target="_blank" rel="noopener noreferrer"
+                style={{ fontSize: "var(--fs-xs)", color: "#2563eb", fontWeight: "var(--fw-semibold)" }}>
+                Voir tous les élus ↗
+              </a>
+            </div>
+          </div>
+
+          {/* Prochain CM */}
+          <div style={{ marginTop: 32, padding: "16px 20px", background: "#fffbeb", border: "1px solid #fcd34d", borderRadius: "var(--radius-lg)", display: "flex", gap: 16, alignItems: "center", flexWrap: "wrap" }}>
+            <span style={{ fontSize: "var(--fs-xl)" }}>📅</span>
+            <div>
+              <p style={{ margin: 0, fontWeight: "var(--fw-bold)", color: "#92400e", fontSize: "var(--fs-sm)" }}>Prochain conseil municipal public</p>
+              <p style={{ margin: 0, fontSize: "var(--fs-xs)", color: "#78350f" }}>
+                Vendredi 3 juillet 2026 — Halle Pagnol, Bruz — Séance ouverte au public
+              </p>
+            </div>
+            <a href="https://www.ville-bruz.fr/ma-ville-de-bruz/conseil-municipal/conseil-municipal/" target="_blank" rel="noopener noreferrer"
+              style={{ marginLeft: "auto", fontSize: "var(--fs-xs)", color: "#2563eb", fontWeight: "var(--fw-semibold)", whiteSpace: "nowrap" }}>
+              Agenda mairie ↗
+            </a>
           </div>
         </div>
       </section>
@@ -317,14 +379,14 @@ export default function Home() {
                     ))}
                   </ul>
                 )}
-                {d.sources.length > 0 && (
-                  <div style={{ marginTop: "auto", paddingTop: "var(--space-2)", display: "flex", flexDirection: "column", gap: 4 }}>
-                    <span style={{ fontSize: "var(--fs-2xs)", color: "var(--text-faint)", textTransform: "uppercase", letterSpacing: "var(--ls-label)", fontWeight: "var(--fw-bold)" }}>Sources</span>
-                    {d.sources.map((s, i) => (
-                      <a key={i} href={s.url} target="_blank" rel="noopener noreferrer" style={{ fontSize: "var(--fs-xs)", color: "#2563eb" }}>{s.label} ↗</a>
-                    ))}
-                  </div>
-                )}
+                <div style={{ marginTop: "auto", paddingTop: "var(--space-3)", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 8 }}>
+                  <a href={`/bruz-en-action/dossiers/${d.id}`} style={{
+                    fontSize: "var(--fs-xs)", fontWeight: "var(--fw-bold)", color: "var(--brand-accent)",
+                  }}>
+                    Lire le dossier →
+                  </a>
+                  <span style={{ fontSize: "var(--fs-2xs)", color: "var(--text-faint)" }}>{d.sources.length} source{d.sources.length > 1 ? "s" : ""}</span>
+                </div>
               </div>
             ))}
           </div>

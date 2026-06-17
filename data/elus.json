@@ -1,28 +1,132 @@
 {
   "meta": {
-    "last_updated": "2026-06-16",
-    "note": "Citations et prises de position publiques des élus — sources vérifiables uniquement"
+    "last_updated": "2026-06-17",
+    "mandat": "2026-2032",
+    "source_principale": "https://www.ville-bruz.fr/actualites/decouvrez-les-elus-du-conseil-municipal-de-bruz/",
+    "contact_elus": "elus@ville-bruz.fr",
+    "tel_cabinet": "02 99 05 44 22",
+    "note": "Citations sourcées uniquement — délégations votées en CM du 8 avril 2026"
+  },
+  "composition": {
+    "total_sieges": 33,
+    "majorite": { "sieges": 26, "liste": "Un nouvel élan pour Bruz", "score": "56,39 %", "chef_file": "Jean-René Houssin" },
+    "opposition": { "sieges": 7, "chef_file": "Marie-Pierre Durand", "score": "43,61 %" },
+    "participation": "59,05 %",
+    "date_election": "2026-03-15",
+    "date_installation": "2026-03-20"
   },
   "elus": [
     {
       "id": "JRH",
       "nom": "Jean-René Houssin",
       "role": "Maire de Bruz",
-      "photo": null,
+      "groupe": "majorite",
+      "delegation": null,
+      "lien_mairie": "https://www.ville-bruz.fr/actualites/decouvrez-les-elus-du-conseil-municipal-de-bruz/",
       "citations": [
         {
           "texte": "Je veux être le maire de tous les Bruzois.",
-          "source": "Discours d'installation — TVR, mars 2026",
+          "source": "Discours d'installation — TVR, 20 mars 2026",
           "lien": "https://www.tvr.bzh/article/e548e45-retour-sur-le-premier-tour-des-municipales-a-bruz",
-          "date": "2026-03-01"
+          "date": "2026-03-20"
         },
         {
-          "texte": "L'une de mes premières priorités sera de négocier le terminus du trambus avec Rennes-Métropole.",
+          "texte": "L'une de mes premières priorités sera de négocier le terminus du trambus avec Rennes Métropole.",
           "source": "Programme Un nouvel élan pour Bruz",
           "lien": "https://www.unnouvelelanpourbruz.com/",
           "date": "2026-02-01"
         }
       ]
+    },
+    {
+      "id": "SB",
+      "nom": "Sylvie Briend",
+      "role": "1ère adjointe",
+      "groupe": "majorite",
+      "delegation": "Ressources humaines & Communication",
+      "lien_mairie": "https://www.ville-bruz.fr/actualites/decouvrez-les-elus-du-conseil-municipal-de-bruz/",
+      "citations": []
+    },
+    {
+      "id": "JPD",
+      "nom": "Jean-Patrick Desguérets",
+      "role": "2ème adjoint",
+      "groupe": "majorite",
+      "delegation": "Urbanisme & Aménagement",
+      "lien_mairie": "https://www.ville-bruz.fr/actualites/decouvrez-les-elus-du-conseil-municipal-de-bruz/",
+      "citations": []
+    },
+    {
+      "id": "EV",
+      "nom": "Émilie Vitter",
+      "role": "3ème adjointe",
+      "groupe": "majorite",
+      "delegation": "Vie culturelle",
+      "lien_mairie": "https://www.ville-bruz.fr/actualites/decouvrez-les-elus-du-conseil-municipal-de-bruz/",
+      "citations": []
+    },
+    {
+      "id": "ALT",
+      "nom": "André Le Tulzo",
+      "role": "4ème adjoint",
+      "groupe": "majorite",
+      "delegation": "Finances",
+      "lien_mairie": "https://www.ville-bruz.fr/actualites/decouvrez-les-elus-du-conseil-municipal-de-bruz/",
+      "citations": []
+    },
+    {
+      "id": "SL",
+      "nom": "Sylvie Lerussard",
+      "role": "5ème adjointe",
+      "groupe": "majorite",
+      "delegation": "Affaires sociales",
+      "lien_mairie": "https://www.ville-bruz.fr/actualites/decouvrez-les-elus-du-conseil-municipal-de-bruz/",
+      "citations": []
+    },
+    {
+      "id": "GD",
+      "nom": "Gilles Daniel",
+      "role": "6ème adjoint",
+      "groupe": "majorite",
+      "delegation": "Développement économique",
+      "lien_mairie": "https://www.ville-bruz.fr/actualites/decouvrez-les-elus-du-conseil-municipal-de-bruz/",
+      "citations": []
+    },
+    {
+      "id": "LAD",
+      "nom": "Laure-Anne Daron",
+      "role": "7ème adjointe",
+      "groupe": "majorite",
+      "delegation": "Sports & Associations",
+      "lien_mairie": "https://www.ville-bruz.fr/actualites/decouvrez-les-elus-du-conseil-municipal-de-bruz/",
+      "citations": []
+    },
+    {
+      "id": "PP",
+      "nom": "Philippe Pagès",
+      "role": "8ème adjoint",
+      "groupe": "majorite",
+      "delegation": "Sécurité & Prévention",
+      "lien_mairie": "https://www.ville-bruz.fr/actualites/decouvrez-les-elus-du-conseil-municipal-de-bruz/",
+      "citations": []
+    },
+    {
+      "id": "FL",
+      "nom": "Françoise Lotton",
+      "role": "9ème adjointe",
+      "groupe": "majorite",
+      "delegation": "Éducation & Jeunesse",
+      "lien_mairie": "https://www.ville-bruz.fr/actualites/decouvrez-les-elus-du-conseil-municipal-de-bruz/",
+      "citations": []
+    },
+    {
+      "id": "MPD",
+      "nom": "Marie-Pierre Durand",
+      "role": "Cheffe de file de l'opposition",
+      "groupe": "opposition",
+      "delegation": null,
+      "lien_mairie": "https://www.ville-bruz.fr/actualites/decouvrez-les-elus-du-conseil-municipal-de-bruz/",
+      "citations": []
     }
   ]
 }

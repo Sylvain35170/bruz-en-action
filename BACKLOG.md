@@ -2,15 +2,7 @@
 
 ## 🔴 En cours
 
-- [ ] **Section Dossiers** — cartes thématiques sur la homepage + data/dossiers.json
-
-## 🟠 Prioritaire — Dossiers à créer
-
-- [ ] **Dossier Trambus T4** — terminus Ker Lann vs gare, négociation Rennes Métropole, livraison 2031
-- [ ] **Dossier ZAC multisite** — zones d'aménagement concertées en cours à Bruz (à rechercher)
-- [ ] **Dossier Finances de la commune** — budget 2026, investissements, dette (sources CM janv. 2026)
-- [ ] **Dossier Fiscalité mandature précédente** — évolution taux, comparatif communes similaires
-- [ ] **Carte de la commune** — carte interactive Bruz (OpenStreetMap/Leaflet) avec zones/projets
+- [ ] **Carte de la commune** — carte interactive Bruz (OpenStreetMap/Leaflet) avec zones ZAC + corridor T4
 
 ## 🟠 Prioritaire — Fonctionnalités
 
@@ -35,6 +27,10 @@
 - Page individuelle par dossier (Next.js dynamic routes)
 
 ## ✅ Terminé
+
+- Section Dossiers homepage : Trambus T4, ZAC Multisites, Finances 2026, Fiscalité Salmon — sourcés et déployés
+
+## ✅ Terminé (antérieur)
 
 - Init projet Next.js 16 + Tailwind v4 + TypeScript
 - Import référentiel Excel → 50 promesses, 10 thèmes peuplés
