@@ -119,9 +119,10 @@ export default async function DossierPage({ params }: { params: Promise<{ id: st
               <p style={{ margin: "0 0 12px", fontSize: 14, color: "#0c4a6e", lineHeight: 1.6 }}>
                 Bruz en Action est une association citoyenne non partisane. Si vous avez connaissance de décisions, de documents publics ou de faits en lien avec ce dossier, contactez-nous.
               </p>
-              <a href={`mailto:${metaData.contact.email || "contact@bruz-en-action.fr"}`}
+              <a href={contact.hello_asso_url || "https://www.helloasso.com/associations/bruz-en-action"}
+                target="_blank" rel="noopener noreferrer"
                 style={{ fontSize: 14, fontWeight: 600, color: "#0369a1", textDecoration: "underline" }}>
-                Nous écrire →
+                Nous contacter via HelloAsso →
               </a>
             </section>
           </div>
