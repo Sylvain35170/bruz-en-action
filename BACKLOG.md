@@ -30,6 +30,7 @@
 - Pages dédiées `/dossiers/[id]` : 5 pages statiques (points clés, sources, sidebar, liens mairie)
 - **Liste complète 33 élus 2026-2032** — Bruz Mag n°260 : maire + 9 adjoints + 11 délégués + 5 conseillers + 7 opposition, homepage restructurée en 3 niveaux
 - **Résumés CM** — 4 séances (20 mars installation, 8 avril délégations/indemnités, 18 mai, 3 juil. à venir) — points clés sourcés Bruz Mag n°260 + Semaine à Bruz n°850
+- **Coups de peinture** — barre de progression promesses, timeline CM avec dot pulsant, animations fade-in, og:image (Bruz-place.jpg CC BY-SA 4.0), favicon
 
 ## ✅ Terminé (antérieur)
 
