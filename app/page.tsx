@@ -48,7 +48,7 @@ export default function Home() {
           {/* Top bar */}
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 12, paddingBottom: 32, borderBottom: "1px solid rgba(255,255,255,0.1)" }}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={LOGO} alt={association.nom} width={180} height={56} style={{ objectFit: "contain", filter: "brightness(0) invert(1)" }} />
+            <img src={LOGO} alt={association.nom} width={160} height={50} style={{ objectFit: "contain", background: "rgba(255,255,255,0.92)", borderRadius: 8, padding: "4px 10px" }} />
             <div style={{ display: "flex", gap: 12, alignItems: "center", flexWrap: "wrap" }}>
               {hasSocial && reseaux_sociaux.facebook && (
                 <a href={reseaux_sociaux.facebook} target="_blank" rel="noopener noreferrer" style={{ fontSize: "var(--fs-xs)", color: "var(--text-on-dark-muted)", fontWeight: "var(--fw-semibold)" }}>Facebook</a>
@@ -580,7 +580,7 @@ export default function Home() {
           <div style={{ display: "grid", gridTemplateColumns: "minmax(0,1.2fr) minmax(0,2fr)", gap: 40 }} className="bea-foot">
             <div>
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={LOGO} alt={association.nom} width={160} height={50} style={{ objectFit: "contain", filter: "brightness(0) invert(1)" }} />
+              <img src={LOGO} alt={association.nom} width={160} height={50} style={{ objectFit: "contain", background: "rgba(255,255,255,0.92)", borderRadius: 8, padding: "4px 10px" }} />
               <p style={{ fontSize: "var(--fs-sm)", lineHeight: "var(--lh-relaxed)", maxWidth: 320, marginTop: 16, color: "var(--text-on-dark-muted)" }}>
                 {association.description}
               </p>

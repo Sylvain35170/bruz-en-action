@@ -45,7 +45,7 @@ export default async function DossierPage({ params }: { params: Promise<{ id: st
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
             <a href="/bruz-en-action" style={{ display: "flex", alignItems: "center", gap: 12, textDecoration: "none" }}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={LOGO} alt={association.nom} width={140} height={44} style={{ objectFit: "contain", filter: "brightness(0) invert(1)" }} />
+              <img src={LOGO} alt={association.nom} width={140} height={44} style={{ objectFit: "contain", background: "rgba(255,255,255,0.92)", borderRadius: 8, padding: "4px 8px" }} />
             </a>
             <nav style={{ display: "flex", gap: 20, alignItems: "center" }}>
               <a href="/bruz-en-action" style={{ color: "rgba(255,255,255,0.7)", textDecoration: "none", fontSize: 14, fontWeight: 500 }}>← Accueil</a>
