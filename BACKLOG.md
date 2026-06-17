@@ -29,6 +29,8 @@
 ## ✅ Terminé
 
 - Section Dossiers homepage : Trambus T4, ZAC Multisites, Finances 2026, Fiscalité Salmon — sourcés et déployés
+- Pages dédiées `/dossiers/[id]` : 5 pages statiques (points clés, sources, sidebar, liens mairie)
+- Section Conseil municipal : 10 élus avec rôles/délégations, stats élection, prochain CM 3 juil.
 
 ## ✅ Terminé (antérieur)
 

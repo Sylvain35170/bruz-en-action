@@ -268,56 +268,73 @@ export default function Home() {
             ))}
           </div>
 
-          {/* Grille élus */}
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))", gap: "var(--space-4)" }}>
-            {elus.filter(e => e.groupe === "majorite").map(elu => (
+          {/* Maire + adjoints */}
+          <h3 style={{ fontSize: "var(--fs-sm)", fontWeight: "var(--fw-bold)", color: "var(--text-muted)", textTransform: "uppercase", letterSpacing: "var(--ls-label)", marginBottom: 12 }}>
+            Maire &amp; adjoints
+          </h3>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(230px, 1fr))", gap: "var(--space-3)", marginBottom: 28 }}>
+            {elus.filter(e => e.type === "maire" || e.type === "adjoint").map(elu => (
               <div key={elu.id} style={{
                 background: "var(--surface-card)", border: "1px solid var(--border-subtle)",
                 borderRadius: "var(--radius-lg)", padding: "var(--space-4)",
-                borderLeft: elu.role === "Maire de Bruz" ? "4px solid var(--brand-accent)" : "4px solid #3b82f6",
+                borderLeft: elu.type === "maire" ? "4px solid var(--brand-accent)" : "4px solid #3b82f6",
               }}>
                 <p style={{ margin: "0 0 2px", fontWeight: "var(--fw-bold)", color: "var(--text-strong)", fontSize: "var(--fs-sm)" }}>{elu.nom}</p>
-                <p style={{ margin: "0 0 6px", fontSize: "var(--fs-xs)", color: "#2563eb", fontWeight: "var(--fw-semibold)" }}>{elu.role}</p>
-                {elu.delegation && (
-                  <p style={{ margin: 0, fontSize: "var(--fs-xs)", color: "var(--text-muted)" }}>{elu.delegation}</p>
-                )}
+                <p style={{ margin: "0 0 4px", fontSize: "var(--fs-xs)", color: "#2563eb", fontWeight: "var(--fw-semibold)" }}>{elu.role}</p>
+                {elu.delegation && <p style={{ margin: 0, fontSize: "var(--fs-xs)", color: "var(--text-muted)" }}>{elu.delegation}</p>}
                 {elu.citations && elu.citations.length > 0 && (
-                  <p style={{ margin: "8px 0 0", fontSize: "var(--fs-xs)", color: "var(--text-body)", fontStyle: "italic", lineHeight: "var(--lh-relaxed)" }}>
+                  <p style={{ margin: "8px 0 0", fontSize: "var(--fs-xs)", color: "var(--text-body)", fontStyle: "italic", lineHeight: 1.5 }}>
                     « {elu.citations[0].texte} »
-                    {elu.citations[0].lien && (
-                      <> <a href={elu.citations[0].lien} target="_blank" rel="noopener noreferrer" style={{ color: "#2563eb", marginLeft: 4 }}>↗</a></>
-                    )}
+                    {elu.citations[0].lien && <> <a href={elu.citations[0].lien} target="_blank" rel="noopener noreferrer" style={{ color: "#2563eb" }}>↗</a></>}
                   </p>
                 )}
               </div>
             ))}
-            {/* Opposition */}
-            {elus.filter(e => e.groupe === "opposition").map(elu => (
+          </div>
+
+          {/* Conseillers délégués */}
+          <h3 style={{ fontSize: "var(--fs-sm)", fontWeight: "var(--fw-bold)", color: "var(--text-muted)", textTransform: "uppercase", letterSpacing: "var(--ls-label)", marginBottom: 12 }}>
+            Conseillers délégués
+          </h3>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))", gap: "var(--space-3)", marginBottom: 28 }}>
+            {elus.filter(e => e.type === "delegue").map(elu => (
               <div key={elu.id} style={{
                 background: "var(--surface-card)", border: "1px solid var(--border-subtle)",
-                borderRadius: "var(--radius-lg)", padding: "var(--space-4)",
-                borderLeft: "4px solid #94a3b8",
+                borderRadius: "var(--radius-md)", padding: "12px 14px",
               }}>
-                <p style={{ margin: "0 0 2px", fontWeight: "var(--fw-bold)", color: "var(--text-strong)", fontSize: "var(--fs-sm)" }}>{elu.nom}</p>
-                <p style={{ margin: "0 0 6px", fontSize: "var(--fs-xs)", color: "var(--text-muted)", fontWeight: "var(--fw-semibold)" }}>{elu.role}</p>
-                <p style={{ margin: 0, fontSize: "var(--fs-xs)", color: "var(--text-faint)" }}>Opposition — {elusData.composition.opposition.sieges} sièges</p>
+                <p style={{ margin: "0 0 2px", fontWeight: "var(--fw-bold)", color: "var(--text-strong)", fontSize: "var(--fs-xs)" }}>{elu.nom}</p>
+                {elu.delegation && <p style={{ margin: 0, fontSize: "var(--fs-2xs)", color: "var(--text-muted)" }}>{elu.delegation}</p>}
               </div>
             ))}
-            {/* Lien vers mairie pour liste complète */}
-            <div style={{
-              background: "var(--surface-sunken)", border: "2px dashed var(--border-subtle)",
-              borderRadius: "var(--radius-lg)", padding: "var(--space-4)",
-              display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", textAlign: "center", gap: 8,
-            }}>
-              <p style={{ margin: 0, fontSize: "var(--fs-xs)", color: "var(--text-muted)", lineHeight: 1.5 }}>
-                + 11 conseillers délégués et 14 conseillers<br />— liste complète sur le site de la Ville
+          </div>
+
+          {/* Conseillers sans délégation + Opposition */}
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "var(--space-5)", flexWrap: "wrap" }}>
+            <div style={{ background: "var(--surface-card)", border: "1px solid var(--border-subtle)", borderRadius: "var(--radius-lg)", padding: "var(--space-4)" }}>
+              <p style={{ margin: "0 0 10px", fontSize: "var(--fs-2xs)", fontWeight: "var(--fw-bold)", color: "var(--text-muted)", textTransform: "uppercase", letterSpacing: "var(--ls-label)" }}>Conseillers — Majorité</p>
+              <div style={{ display: "flex", flexWrap: "wrap", gap: "6px 12px" }}>
+                {elus.filter(e => e.type === "conseiller" && e.groupe === "majorite").map(e => (
+                  <span key={e.id} style={{ fontSize: "var(--fs-xs)", color: "var(--text-body)" }}>{e.nom}</span>
+                ))}
+              </div>
+            </div>
+            <div style={{ background: "var(--surface-card)", border: "1px solid var(--border-subtle)", borderRadius: "var(--radius-lg)", padding: "var(--space-4)", borderLeft: "4px solid #94a3b8" }}>
+              <p style={{ margin: "0 0 10px", fontSize: "var(--fs-2xs)", fontWeight: "var(--fw-bold)", color: "var(--text-muted)", textTransform: "uppercase", letterSpacing: "var(--ls-label)" }}>
+                Opposition — {elusData.composition.opposition.sieges} sièges ({elusData.composition.opposition.liste})
               </p>
-              <a href="https://www.ville-bruz.fr/actualites/decouvrez-les-elus-du-conseil-municipal-de-bruz/" target="_blank" rel="noopener noreferrer"
-                style={{ fontSize: "var(--fs-xs)", color: "#2563eb", fontWeight: "var(--fw-semibold)" }}>
-                Voir tous les élus ↗
-              </a>
+              <div style={{ display: "flex", flexWrap: "wrap", gap: "6px 12px" }}>
+                {elus.filter(e => e.groupe === "opposition").map(e => (
+                  <span key={e.id} style={{ fontSize: "var(--fs-xs)", color: "var(--text-body)" }}>
+                    {e.nom}{e.nom === "Philippe Salmon" ? " (ex-maire)" : ""}
+                  </span>
+                ))}
+              </div>
+              <a href="https://bruz2026.fr" target="_blank" rel="noopener noreferrer" style={{ display: "inline-block", marginTop: 10, fontSize: "var(--fs-xs)", color: "#2563eb" }}>Site de l'opposition ↗</a>
             </div>
           </div>
+          <p style={{ marginTop: 12, fontSize: "var(--fs-xs)", color: "var(--text-faint)" }}>
+            Source : <a href="https://www.ville-bruz.fr/wp-content/uploads/2026/05/Bruz-Mag-n%C2%B0260-de-mai-juin-2026.pdf" target="_blank" rel="noopener noreferrer" style={{ color: "#2563eb" }}>Bruz Mag n°260 (mai-juin 2026)</a>
+          </p>
 
           {/* Prochain CM */}
           <div style={{ marginTop: 32, padding: "16px 20px", background: "#fffbeb", border: "1px solid #fcd34d", borderRadius: "var(--radius-lg)", display: "flex", gap: 16, alignItems: "center", flexWrap: "wrap" }}>

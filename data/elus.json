@@ -2,7 +2,8 @@
   "meta": {
     "last_updated": "2026-06-17",
     "mandat": "2026-2032",
-    "source_principale": "https://www.ville-bruz.fr/actualites/decouvrez-les-elus-du-conseil-municipal-de-bruz/",
+    "source": "Bruz Mag n°260 (mai-juin 2026) + ville-bruz.fr",
+    "source_url": "https://www.ville-bruz.fr/wp-content/uploads/2026/05/Bruz-Mag-n°260-de-mai-juin-2026.pdf",
     "contact_elus": "elus@ville-bruz.fr",
     "tel_cabinet": "02 99 05 44 22",
     "note": "Citations sourcées uniquement — délégations votées en CM du 8 avril 2026"
@@ -10,7 +11,7 @@
   "composition": {
     "total_sieges": 33,
     "majorite": { "sieges": 26, "liste": "Un nouvel élan pour Bruz", "score": "56,39 %", "chef_file": "Jean-René Houssin" },
-    "opposition": { "sieges": 7, "chef_file": "Marie-Pierre Durand", "score": "43,61 %" },
+    "opposition": { "sieges": 7, "liste": "Bruz avec vous", "chef_file": "Marie-Pierre Durand", "score": "43,61 %" },
     "participation": "59,05 %",
     "date_election": "2026-03-15",
     "date_installation": "2026-03-20"
@@ -21,6 +22,7 @@
       "nom": "Jean-René Houssin",
       "role": "Maire de Bruz",
       "groupe": "majorite",
+      "type": "maire",
       "delegation": null,
       "lien_mairie": "https://www.ville-bruz.fr/actualites/decouvrez-les-elus-du-conseil-municipal-de-bruz/",
       "citations": [
@@ -43,6 +45,7 @@
       "nom": "Sylvie Briend",
       "role": "1ère adjointe",
       "groupe": "majorite",
+      "type": "adjoint",
       "delegation": "Ressources humaines & Communication",
       "lien_mairie": "https://www.ville-bruz.fr/actualites/decouvrez-les-elus-du-conseil-municipal-de-bruz/",
       "citations": []
@@ -52,7 +55,8 @@
       "nom": "Jean-Patrick Desguérets",
       "role": "2ème adjoint",
       "groupe": "majorite",
-      "delegation": "Urbanisme & Aménagement",
+      "type": "adjoint",
+      "delegation": "Aménagement de la Ville & Urbanisme",
       "lien_mairie": "https://www.ville-bruz.fr/actualites/decouvrez-les-elus-du-conseil-municipal-de-bruz/",
       "citations": []
     },
@@ -61,6 +65,7 @@
       "nom": "Émilie Vitter",
       "role": "3ème adjointe",
       "groupe": "majorite",
+      "type": "adjoint",
       "delegation": "Vie culturelle",
       "lien_mairie": "https://www.ville-bruz.fr/actualites/decouvrez-les-elus-du-conseil-municipal-de-bruz/",
       "citations": []
@@ -70,6 +75,7 @@
       "nom": "André Le Tulzo",
       "role": "4ème adjoint",
       "groupe": "majorite",
+      "type": "adjoint",
       "delegation": "Finances",
       "lien_mairie": "https://www.ville-bruz.fr/actualites/decouvrez-les-elus-du-conseil-municipal-de-bruz/",
       "citations": []
@@ -79,7 +85,8 @@
       "nom": "Sylvie Lerussard",
       "role": "5ème adjointe",
       "groupe": "majorite",
-      "delegation": "Affaires sociales",
+      "type": "adjoint",
+      "delegation": "Affaires sociales & Solidarités",
       "lien_mairie": "https://www.ville-bruz.fr/actualites/decouvrez-les-elus-du-conseil-municipal-de-bruz/",
       "citations": []
     },
@@ -88,7 +95,8 @@
       "nom": "Gilles Daniel",
       "role": "6ème adjoint",
       "groupe": "majorite",
-      "delegation": "Développement économique",
+      "type": "adjoint",
+      "delegation": "Vie économique & Informatique",
       "lien_mairie": "https://www.ville-bruz.fr/actualites/decouvrez-les-elus-du-conseil-municipal-de-bruz/",
       "citations": []
     },
@@ -97,7 +105,8 @@
       "nom": "Laure-Anne Daron",
       "role": "7ème adjointe",
       "groupe": "majorite",
-      "delegation": "Sports & Associations",
+      "type": "adjoint",
+      "delegation": "Vie associative & Sportive",
       "lien_mairie": "https://www.ville-bruz.fr/actualites/decouvrez-les-elus-du-conseil-municipal-de-bruz/",
       "citations": []
     },
@@ -106,7 +115,8 @@
       "nom": "Philippe Pagès",
       "role": "8ème adjoint",
       "groupe": "majorite",
-      "delegation": "Sécurité & Prévention",
+      "type": "adjoint",
+      "delegation": "Prévention & Sécurité",
       "lien_mairie": "https://www.ville-bruz.fr/actualites/decouvrez-les-elus-du-conseil-municipal-de-bruz/",
       "citations": []
     },
@@ -115,15 +125,238 @@
       "nom": "Françoise Lotton",
       "role": "9ème adjointe",
       "groupe": "majorite",
-      "delegation": "Éducation & Jeunesse",
+      "type": "adjoint",
+      "delegation": "Éducation, Enfance & Jeunesse",
+      "lien_mairie": "https://www.ville-bruz.fr/actualites/decouvrez-les-elus-du-conseil-municipal-de-bruz/",
+      "citations": []
+    },
+    {
+      "id": "PR",
+      "nom": "Patrick Roullé",
+      "role": "Conseiller municipal délégué",
+      "groupe": "majorite",
+      "type": "delegue",
+      "delegation": "Transition écologique & Mobilités",
+      "lien_mairie": "https://www.ville-bruz.fr/actualites/decouvrez-les-elus-du-conseil-municipal-de-bruz/",
+      "citations": []
+    },
+    {
+      "id": "FJ",
+      "nom": "Fabrice Jan",
+      "role": "Conseiller municipal délégué",
+      "groupe": "majorite",
+      "type": "delegue",
+      "delegation": "Sports",
+      "lien_mairie": "https://www.ville-bruz.fr/actualites/decouvrez-les-elus-du-conseil-municipal-de-bruz/",
+      "citations": []
+    },
+    {
+      "id": "CL",
+      "nom": "Carol Léost",
+      "role": "Conseiller municipal délégué",
+      "groupe": "majorite",
+      "type": "delegue",
+      "delegation": "Voirie & Propreté",
+      "lien_mairie": "https://www.ville-bruz.fr/actualites/decouvrez-les-elus-du-conseil-municipal-de-bruz/",
+      "citations": []
+    },
+    {
+      "id": "JDG",
+      "nom": "Jérôme De Gayardon",
+      "role": "Conseiller municipal délégué",
+      "groupe": "majorite",
+      "type": "delegue",
+      "delegation": "Habitat & Aménagement urbain",
+      "lien_mairie": "https://www.ville-bruz.fr/actualites/decouvrez-les-elus-du-conseil-municipal-de-bruz/",
+      "citations": []
+    },
+    {
+      "id": "VB",
+      "nom": "Vincent Benjamin",
+      "role": "Conseiller municipal délégué",
+      "groupe": "majorite",
+      "type": "delegue",
+      "delegation": "Animation de la Ville",
+      "lien_mairie": "https://www.ville-bruz.fr/actualites/decouvrez-les-elus-du-conseil-municipal-de-bruz/",
+      "citations": []
+    },
+    {
+      "id": "YDM",
+      "nom": "Yves De Montzey",
+      "role": "Conseiller municipal délégué",
+      "groupe": "majorite",
+      "type": "delegue",
+      "delegation": "Accessibilité & Établissements recevant du public",
+      "lien_mairie": "https://www.ville-bruz.fr/actualites/decouvrez-les-elus-du-conseil-municipal-de-bruz/",
+      "citations": []
+    },
+    {
+      "id": "NL",
+      "nom": "Nathalie Lemosquet",
+      "role": "Conseillère municipale déléguée",
+      "groupe": "majorite",
+      "type": "delegue",
+      "delegation": "Petite enfance & Jeunesse",
+      "lien_mairie": "https://www.ville-bruz.fr/actualites/decouvrez-les-elus-du-conseil-municipal-de-bruz/",
+      "citations": []
+    },
+    {
+      "id": "PD",
+      "nom": "Perrine Delville",
+      "role": "Conseillère municipale déléguée",
+      "groupe": "majorite",
+      "type": "delegue",
+      "delegation": "Gestion du patrimoine & Travaux",
+      "lien_mairie": "https://www.ville-bruz.fr/actualites/decouvrez-les-elus-du-conseil-municipal-de-bruz/",
+      "citations": []
+    },
+    {
+      "id": "CH",
+      "nom": "Catherine Henninot",
+      "role": "Conseillère municipale déléguée",
+      "groupe": "majorite",
+      "type": "delegue",
+      "delegation": "Environnement & Mobilités douces",
+      "lien_mairie": "https://www.ville-bruz.fr/actualites/decouvrez-les-elus-du-conseil-municipal-de-bruz/",
+      "citations": []
+    },
+    {
+      "id": "BH",
+      "nom": "Béatrix Hubert",
+      "role": "Conseillère municipale déléguée",
+      "groupe": "majorite",
+      "type": "delegue",
+      "delegation": "Vie culturelle & Médiathèque",
+      "lien_mairie": "https://www.ville-bruz.fr/actualites/decouvrez-les-elus-du-conseil-municipal-de-bruz/",
+      "citations": []
+    },
+    {
+      "id": "PDO",
+      "nom": "Philippe Dohollou",
+      "role": "Conseiller municipal délégué",
+      "groupe": "majorite",
+      "type": "delegue",
+      "delegation": "Parentalité, personnes en situation de handicap & Aînés",
+      "lien_mairie": "https://www.ville-bruz.fr/actualites/decouvrez-les-elus-du-conseil-municipal-de-bruz/",
+      "citations": []
+    },
+    {
+      "id": "TDLR",
+      "nom": "Thomas De La Rivière",
+      "role": "Conseiller municipal",
+      "groupe": "majorite",
+      "type": "conseiller",
+      "delegation": null,
+      "lien_mairie": "https://www.ville-bruz.fr/actualites/decouvrez-les-elus-du-conseil-municipal-de-bruz/",
+      "citations": []
+    },
+    {
+      "id": "HDA",
+      "nom": "Huguette Dallemagne",
+      "role": "Conseillère municipale",
+      "groupe": "majorite",
+      "type": "conseiller",
+      "delegation": null,
+      "lien_mairie": "https://www.ville-bruz.fr/actualites/decouvrez-les-elus-du-conseil-municipal-de-bruz/",
+      "citations": []
+    },
+    {
+      "id": "MDE",
+      "nom": "Marie Demaret",
+      "role": "Conseillère municipale",
+      "groupe": "majorite",
+      "type": "conseiller",
+      "delegation": null,
+      "lien_mairie": "https://www.ville-bruz.fr/actualites/decouvrez-les-elus-du-conseil-municipal-de-bruz/",
+      "citations": []
+    },
+    {
+      "id": "LA",
+      "nom": "Lydie Andrin",
+      "role": "Conseillère municipale",
+      "groupe": "majorite",
+      "type": "conseiller",
+      "delegation": null,
+      "lien_mairie": "https://www.ville-bruz.fr/actualites/decouvrez-les-elus-du-conseil-municipal-de-bruz/",
+      "citations": []
+    },
+    {
+      "id": "SR",
+      "nom": "Stéphane Robert",
+      "role": "Conseiller municipal",
+      "groupe": "majorite",
+      "type": "conseiller",
+      "delegation": null,
       "lien_mairie": "https://www.ville-bruz.fr/actualites/decouvrez-les-elus-du-conseil-municipal-de-bruz/",
       "citations": []
     },
     {
       "id": "MPD",
       "nom": "Marie-Pierre Durand",
-      "role": "Cheffe de file de l'opposition",
+      "role": "Conseillère municipale — cheffe de l'opposition",
       "groupe": "opposition",
+      "type": "conseiller",
+      "delegation": null,
+      "lien_mairie": "https://www.ville-bruz.fr/actualites/decouvrez-les-elus-du-conseil-municipal-de-bruz/",
+      "lien_opposition": "https://bruz2026.fr",
+      "citations": []
+    },
+    {
+      "id": "JBC",
+      "nom": "Jean-Baptiste Chevé",
+      "role": "Conseiller municipal",
+      "groupe": "opposition",
+      "type": "conseiller",
+      "delegation": null,
+      "lien_mairie": "https://www.ville-bruz.fr/actualites/decouvrez-les-elus-du-conseil-municipal-de-bruz/",
+      "citations": []
+    },
+    {
+      "id": "MDI",
+      "nom": "Marion Diaz",
+      "role": "Conseillère municipale",
+      "groupe": "opposition",
+      "type": "conseiller",
+      "delegation": null,
+      "lien_mairie": "https://www.ville-bruz.fr/actualites/decouvrez-les-elus-du-conseil-municipal-de-bruz/",
+      "citations": []
+    },
+    {
+      "id": "MDEL",
+      "nom": "Marion Delaunay",
+      "role": "Conseillère municipale",
+      "groupe": "opposition",
+      "type": "conseiller",
+      "delegation": null,
+      "lien_mairie": "https://www.ville-bruz.fr/actualites/decouvrez-les-elus-du-conseil-municipal-de-bruz/",
+      "citations": []
+    },
+    {
+      "id": "BC",
+      "nom": "Bruno Chevalier",
+      "role": "Conseiller municipal",
+      "groupe": "opposition",
+      "type": "conseiller",
+      "delegation": null,
+      "lien_mairie": "https://www.ville-bruz.fr/actualites/decouvrez-les-elus-du-conseil-municipal-de-bruz/",
+      "citations": []
+    },
+    {
+      "id": "PSA",
+      "nom": "Philippe Salmon",
+      "role": "Conseiller municipal — ancien maire (2020–2026)",
+      "groupe": "opposition",
+      "type": "conseiller",
+      "delegation": null,
+      "lien_mairie": "https://www.ville-bruz.fr/actualites/decouvrez-les-elus-du-conseil-municipal-de-bruz/",
+      "citations": []
+    },
+    {
+      "id": "GP",
+      "nom": "Gaëlle Pierre",
+      "role": "Conseillère municipale",
+      "groupe": "opposition",
+      "type": "conseiller",
       "delegation": null,
       "lien_mairie": "https://www.ville-bruz.fr/actualites/decouvrez-les-elus-du-conseil-municipal-de-bruz/",
       "citations": []
