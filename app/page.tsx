@@ -79,6 +79,8 @@ export default function Home() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src={LOGO} alt={association.nom} width={160} height={50} style={{ objectFit: "contain", background: "rgba(255,255,255,0.92)", borderRadius: 8, padding: "4px 10px" }} />
             <div style={{ display: "flex", gap: 12, alignItems: "center", flexWrap: "wrap" }}>
+              <a href="/bruz-en-action/conseils" style={{ fontSize: "var(--fs-xs)", color: "var(--text-on-dark-muted)", fontWeight: "var(--fw-semibold)" }}>🏛️ Conseils</a>
+              <a href="/bruz-en-action/carte" style={{ fontSize: "var(--fs-xs)", color: "var(--text-on-dark-muted)", fontWeight: "var(--fw-semibold)" }}>🗺️ Carte</a>
               {hasSocial && reseaux_sociaux.facebook && (
                 <a href={reseaux_sociaux.facebook} target="_blank" rel="noopener noreferrer" style={{ fontSize: "var(--fs-xs)", color: "var(--text-on-dark-muted)", fontWeight: "var(--fw-semibold)" }}>Facebook</a>
               )}
@@ -432,8 +434,21 @@ export default function Home() {
             Source : <a href="https://www.ville-bruz.fr/wp-content/uploads/2026/05/Bruz-Mag-n%C2%B0260-de-mai-juin-2026.pdf" target="_blank" rel="noopener noreferrer" style={{ color: "#2563eb" }}>Bruz Mag n°260 (mai-juin 2026)</a>
           </p>
 
+          {/* Lien page dédiée */}
+          <div style={{ marginTop: 24, textAlign: "center" }}>
+            <a href="/bruz-en-action/conseils" style={{
+              display: "inline-flex", alignItems: "center", gap: 8,
+              padding: "10px 22px", borderRadius: "var(--radius-pill)",
+              border: "1.5px solid #3b82f6", color: "#2563eb",
+              fontSize: "var(--fs-sm)", fontWeight: "var(--fw-semibold)", textDecoration: "none",
+              background: "#eff6ff",
+            }}>
+              Voir tous les conseils municipaux + Rennes Métropole →
+            </a>
+          </div>
+
           {/* Prochain CM */}
-          <div style={{ marginTop: 32, padding: "16px 20px", background: "#fffbeb", border: "1px solid #fcd34d", borderRadius: "var(--radius-lg)", display: "flex", gap: 16, alignItems: "center", flexWrap: "wrap" }}>
+          <div style={{ marginTop: 20, padding: "16px 20px", background: "#fffbeb", border: "1px solid #fcd34d", borderRadius: "var(--radius-lg)", display: "flex", gap: 16, alignItems: "center", flexWrap: "wrap" }}>
             <span style={{ fontSize: "var(--fs-xl)" }}>📅</span>
             <div>
               <p style={{ margin: 0, fontWeight: "var(--fw-bold)", color: "#92400e", fontSize: "var(--fs-sm)" }}>Prochain conseil municipal public</p>

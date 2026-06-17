@@ -30,7 +30,9 @@
 - Section Dossiers homepage : Trambus T4, ZAC Multisites, Finances 2026, Fiscalité Salmon — sourcés et déployés
 - Pages dédiées `/dossiers/[id]` : 5 pages statiques (points clés, sources, sidebar, liens mairie)
 - **Liste complète 33 élus 2026-2032** — Bruz Mag n°260 : maire + 9 adjoints + 11 délégués + 5 conseillers + 7 opposition, homepage restructurée en 3 niveaux
-- **Résumés CM** — 4 séances (20 mars installation, 8 avril délégations/indemnités, 18 mai, 3 juil. à venir) — points clés sourcés Bruz Mag n°260 + Semaine à Bruz n°850
+- **Résumés CM enrichis** — CMs jan/mars/avr enrichis depuis Mégalis + Bruz Mag n°260 ; section Conseil Métropolitain ajoutée (ZAC Ker Lann + T4, 5 fév. 2026)
+- **Fix carte Leaflet** — CSS global pour static export GitHub Pages (tuiles OSM + tracés ZAC/T4 visibles)
+- **Dossiers enrichis** — D01 T4 : trambus expliqué, terminus gare = priorité Houssin, densité 60 lgts/ha ; D02 ZAC : 6 secteurs nommés, distinction Multisites/Ker Lann
 - **Coups de peinture** — barre de progression promesses, timeline CM avec dot pulsant, animations fade-in, og:image, favicon, photo hero (Bruz-place.jpg CC BY-SA 4.0 Yves LC)
 
 ## ✅ Terminé (antérieur)
