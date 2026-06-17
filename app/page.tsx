@@ -5,6 +5,7 @@ import metaData from "../data/meta.json";
 import evenementsData from "../data/evenements.json";
 import elusData from "../data/elus.json";
 import dossiersData from "../data/dossiers.json";
+import cmsData from "../data/cms.json";
 import PromessesSection from "../components/PromessesSection";
 import type { Pilier, Statut, Promesse, Actu } from "../types";
 
@@ -264,6 +265,51 @@ export default function Home() {
                 <p style={{ margin: "0 0 4px", fontSize: "var(--fs-2xs)", color: "var(--text-muted)", textTransform: "uppercase", letterSpacing: "var(--ls-label)", fontWeight: "var(--fw-bold)" }}>{label}</p>
                 <p style={{ margin: "0 0 2px", fontSize: "var(--fs-lg)", fontWeight: "var(--fw-bold)", color: "var(--text-strong)" }}>{val}</p>
                 <p style={{ margin: 0, fontSize: "var(--fs-2xs)", color: "var(--text-faint)" }}>{sub}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* Séances du conseil municipal */}
+          <h3 style={{ fontSize: "var(--fs-sm)", fontWeight: "var(--fw-bold)", color: "var(--text-muted)", textTransform: "uppercase", letterSpacing: "var(--ls-label)", marginBottom: 12 }}>
+            Séances
+          </h3>
+          <div style={{ display: "flex", flexDirection: "column", gap: 12, marginBottom: 32 }}>
+            {cmsData.seances.map(cm => (
+              <div key={cm.id} style={{
+                background: cm.statut === "a_venir" ? "#f0f9ff" : "var(--surface-card)",
+                border: `1px solid ${cm.statut === "a_venir" ? "#bae6fd" : "var(--border-subtle)"}`,
+                borderLeft: `4px solid ${cm.statut === "a_venir" ? "#0ea5e9" : cm.points_cles.length > 0 ? "#3b82f6" : "#cbd5e1"}`,
+                borderRadius: "var(--radius-lg)", padding: "16px 20px",
+              }}>
+                <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: cm.points_cles.length > 0 ? 10 : 0, flexWrap: "wrap" }}>
+                  <span style={{ fontSize: "var(--fs-xs)", fontWeight: "var(--fw-bold)", color: "var(--text-strong)" }}>
+                    {new Date(cm.date).toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" })}
+                  </span>
+                  {cm.statut === "a_venir" && (
+                    <span style={{ padding: "2px 8px", borderRadius: 999, background: "#0ea5e9", color: "#fff", fontSize: "var(--fs-2xs)", fontWeight: "var(--fw-bold)" }}>À venir</span>
+                  )}
+                  <span style={{ fontSize: "var(--fs-xs)", color: "var(--text-muted)" }}>{cm.titre}</span>
+                  {cm.lieu && <span style={{ fontSize: "var(--fs-2xs)", color: "var(--text-faint)", marginLeft: "auto" }}>{cm.lieu}</span>}
+                </div>
+                {cm.points_cles.length > 0 && (
+                  <ul style={{ margin: 0, padding: 0, listStyle: "none", display: "flex", flexDirection: "column", gap: 5 }}>
+                    {cm.points_cles.map((pt, i) => (
+                      <li key={i} style={{ display: "flex", gap: 8, fontSize: "var(--fs-xs)", color: "var(--text-body)", lineHeight: 1.5 }}>
+                        <span style={{ color: "#3b82f6", flexShrink: 0 }}>→</span>{pt}
+                      </li>
+                    ))}
+                  </ul>
+                )}
+                {cm.points_cles.length === 0 && cm.statut === "passe" && (
+                  <p style={{ margin: 0, fontSize: "var(--fs-xs)", color: "var(--text-faint)", fontStyle: "italic" }}>Contenu à venir — <a href={cmsData.meta.youtube} target="_blank" rel="noopener noreferrer" style={{ color: "#2563eb" }}>audio YouTube ↗</a></p>
+                )}
+                {cm.sources.length > 0 && (
+                  <div style={{ marginTop: 8, display: "flex", gap: 12, flexWrap: "wrap" }}>
+                    {cm.sources.map((s, i) => (
+                      <a key={i} href={s.url} target="_blank" rel="noopener noreferrer" style={{ fontSize: "var(--fs-2xs)", color: "#2563eb" }}>{s.label} ↗</a>
+                    ))}
+                  </div>
+                )}
               </div>
             ))}
           </div>

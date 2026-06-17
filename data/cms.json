@@ -1,0 +1,65 @@
+{
+  "meta": {
+    "last_updated": "2026-06-17",
+    "source_principale": "Bruz Mag n°260 (mars-avril 2026) + Semaine à Bruz n°850",
+    "youtube": "https://www.youtube.com/playlist?list=PLnSe2hJFinqpupninWlKBHSmzmwLW-8i7",
+    "deliberations_megalis": "https://data.megalis.bretagne.bzh/organization/commune-de-bruz"
+  },
+  "seances": [
+    {
+      "id": "CM-2026-07-03",
+      "date": "2026-07-03",
+      "statut": "a_venir",
+      "lieu": "Halle Pagnol, Bruz — 19h",
+      "titre": "Prochain conseil municipal",
+      "points_cles": [],
+      "sources": []
+    },
+    {
+      "id": "CM-2026-05-18",
+      "date": "2026-05-18",
+      "statut": "passe",
+      "lieu": "Halle Pagnol, Bruz — 19h",
+      "titre": "Séance de mai 2026",
+      "points_cles": [],
+      "note": "Contenu non encore disponible publiquement — à compléter dès publication Mégalis ou Bruz Mag n°261",
+      "sources": [
+        { "label": "Audio sur YouTube (chaîne Ville de Bruz)", "url": "https://www.youtube.com/playlist?list=PLnSe2hJFinqpupninWlKBHSmzmwLW-8i7" }
+      ]
+    },
+    {
+      "id": "CM-2026-04-08",
+      "date": "2026-04-08",
+      "statut": "passe",
+      "lieu": "Halle Pagnol, Bruz",
+      "titre": "Délégations, indemnités et premières décisions",
+      "points_cles": [
+        "Délégations attribuées aux 11 conseillers municipaux délégués (urbanisme, transition écologique, petite enfance, etc.)",
+        "Indemnités de fonction votées : maire 5 076 € brut/mois (×2,8 vs l'indemnité Salmon de 1 818 €) — contesté par l'opposition",
+        "Conseil d'administration du CCAS : représentants réduits de 12 à 8 (dont moins d'acteurs associatifs) — l'opposition s'y oppose",
+        "Premiers chantiers lancés : sécurité et propreté citées comme priorités immédiates par la majorité"
+      ],
+      "sources": [
+        { "label": "Bruz Mag n°260, p. 16-17 — expression majorité et minorité", "url": "https://www.ville-bruz.fr/wp-content/uploads/2026/05/Bruz-Mag-n%C2%B0260-de-mai-juin-2026.pdf" },
+        { "label": "Audio CM sur YouTube", "url": "https://www.youtube.com/playlist?list=PLnSe2hJFinqpupninWlKBHSmzmwLW-8i7" }
+      ]
+    },
+    {
+      "id": "CM-2026-03-20",
+      "date": "2026-03-20",
+      "statut": "passe",
+      "lieu": "Halle Pagnol, Bruz — 19h",
+      "titre": "Installation du nouveau conseil municipal",
+      "points_cles": [
+        "Élection de Jean-René Houssin au poste de maire de Bruz (liste Divers Droite, 56,39 % des voix, 26/33 sièges)",
+        "Élection des 9 adjoints : Sylvie Briend (RH & comm.), Jean-Patrick Desguérets (urbanisme), Émilie Vitter (culture), André Le Tulzo (finances), Sylvie Lerussard (social), Gilles Daniel (éco. & info), Laure-Anne Daron (sport & asso.), Philippe Pagès (sécurité), Françoise Lotton (éducation)",
+        "7 conseillers de l'opposition (Bruz avec vous, conduits par Marie-Pierre Durand) prennent leurs sièges",
+        "Séance ouverte au public — discours d'installation : « Je veux être le maire de tous les Bruzois »"
+      ],
+      "sources": [
+        { "label": "Semaine à Bruz n°850 (19 mars – 2 avril 2026)", "url": "https://www.ville-bruz.fr/wp-content/uploads/2026/03/Semaine-a-Bruz-n%C2%B0850-du-19-mars-au-2-avril-2026.pdf" },
+        { "label": "TVR — résultats et installation Houssin", "url": "https://www.tvr.bzh/article/e548e45-retour-sur-le-premier-tour-des-municipales-a-bruz" }
+      ]
+    }
+  ]
+}
