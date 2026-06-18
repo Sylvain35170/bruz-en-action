@@ -80,6 +80,7 @@ export default function Home() {
             <img src={LOGO} alt={association.nom} width={160} height={50} style={{ objectFit: "contain", background: "rgba(255,255,255,0.92)", borderRadius: 8, padding: "4px 10px" }} />
             <div style={{ display: "flex", gap: 12, alignItems: "center", flexWrap: "wrap" }}>
               <a href="/bruz-en-action/conseils" style={{ fontSize: "var(--fs-xs)", color: "var(--text-on-dark-muted)", fontWeight: "var(--fw-semibold)" }}>🏛️ Conseils</a>
+              <a href="/bruz-en-action/dossiers" style={{ fontSize: "var(--fs-xs)", color: "var(--text-on-dark-muted)", fontWeight: "var(--fw-semibold)" }}>📁 Dossiers</a>
               <a href="/bruz-en-action/carte" style={{ fontSize: "var(--fs-xs)", color: "var(--text-on-dark-muted)", fontWeight: "var(--fw-semibold)" }}>🗺️ Carte</a>
               {hasSocial && reseaux_sociaux.facebook && (
                 <a href={reseaux_sociaux.facebook} target="_blank" rel="noopener noreferrer" style={{ fontSize: "var(--fs-xs)", color: "var(--text-on-dark-muted)", fontWeight: "var(--fw-semibold)" }}>Facebook</a>
@@ -158,13 +159,26 @@ export default function Home() {
               <span className="eyebrow">Qui sommes-nous ?</span>
               <h2 style={{ fontSize: "var(--fs-h2)", margin: "10px 0 20px" }}>Une association née du besoin de s'informer ensemble</h2>
               <p style={{ color: "var(--text-body)", fontSize: "var(--fs-base)", lineHeight: "var(--lh-relaxed)", margin: "0 0 16px" }}>
-                <strong>Bruz en Action</strong> est une association citoyenne créée en {association.fondee_en} par des habitants de Bruz qui voulaient mieux suivre la vie municipale — sans parti pris, sans étiquette politique.
+                <strong>Bruz en Action</strong> est née de l'engagement de citoyens ayant soutenu Jean-René Houssin et la liste <em>« Un nouvel élan pour Bruz »</em>. C'est parce que nous croyons à ce projet que nous décidons d'en suivre et d'en accompagner la réalisation.
               </p>
-              <p style={{ color: "var(--text-body)", fontSize: "var(--fs-base)", lineHeight: "var(--lh-relaxed)", margin: "0 0 16px" }}>
-                Notre conviction : une démocratie locale vivante passe par des citoyens informés et actifs. On suit les engagements pris pendant la campagne, on relaie les événements de la commune, et on crée des occasions de se rencontrer et d'agir ensemble.
-              </p>
+
+              {/* Citation statuts — Art. 2 */}
+              <blockquote style={{
+                margin: "0 0 20px", padding: "14px 20px",
+                borderLeft: "3px solid var(--brand-accent)",
+                background: "var(--surface-sunken)",
+                borderRadius: "0 var(--radius-md) var(--radius-md) 0",
+              }}>
+                <p style={{ margin: 0, fontSize: "var(--fs-sm)", color: "var(--text-body)", lineHeight: "var(--lh-relaxed)", fontStyle: "italic" }}>
+                  « Soutenir, promouvoir et valoriser l'action publique locale menée dans la commune de Bruz ; favoriser la participation citoyenne et le dialogue entre les habitants et leurs représentants ; contribuer au débat public local dans le respect des valeurs républicaines. »
+                </p>
+                <p style={{ margin: "6px 0 0", fontSize: "var(--fs-2xs)", color: "var(--text-faint)", fontStyle: "normal", letterSpacing: "var(--ls-label)", textTransform: "uppercase" }}>
+                  Article 2 — Objet des statuts · Bruz en Action, {association.fondee_en}
+                </p>
+              </blockquote>
+
               <p style={{ color: "var(--text-body)", fontSize: "var(--fs-base)", lineHeight: "var(--lh-relaxed)", margin: 0 }}>
-                <strong>Ouverte à tous les Bruzois</strong>, sans condition d'opinion. Adhérer, c'est simplement dire qu'on tient à notre ville.
+                <strong>Bruz en Action appartient aux Bruzois.</strong> Notre seule boussole : l'amélioration concrète du quotidien de ceux qui vivent et travaillent à Bruz.
               </p>
             </div>
 
@@ -172,9 +186,9 @@ export default function Home() {
             <div style={{ display: "flex", flexDirection: "column", gap: 24 }}>
               {/* Nos 3 piliers d'action */}
               {[
-                { icon: "👁️", titre: "On informe", texte: "Suivi des 50 engagements du programme municipal. Chaque évolution est sourcée et publiée ici." },
-                { icon: "📅", titre: "On relaie", texte: "L'agenda des événements de Bruz — associations, manifestations sportives, culturelles et citoyennes." },
-                { icon: "🤝", titre: "On agit", texte: "Réunions, interpellations des élus, participation aux conseils de quartier. L'asso est un collectif, pas juste un site." },
+                { icon: "📋", titre: "On suit", texte: "Les engagements pris pendant la campagne : documentés, sourcés, rendus publics au fil du mandat. 50 promesses suivies, chaque évolution tracée." },
+                { icon: "👂", titre: "On écoute", texte: "Préoccupations, propositions, questions des habitants. L'asso est le canal entre les Bruzois et ceux qu'ils ont élus." },
+                { icon: "🤝", titre: "On transmet", texte: "Dialogue constructif avec la majorité municipale. Ce que les habitants remontent, nous le portons — avec bienveillance, sans complaisance." },
               ].map(({ icon, titre, texte }) => (
                 <div key={titre} style={{ display: "flex", gap: 16, alignItems: "flex-start" }}>
                   <span style={{ fontSize: 24, flexShrink: 0, lineHeight: 1, marginTop: 2 }}>{icon}</span>
@@ -472,51 +486,73 @@ export default function Home() {
               <span className="eyebrow">Nos dossiers</span>
               <h2 style={{ fontSize: "var(--fs-h2)", margin: "8px 0 0" }}>Enquêtes & analyses</h2>
             </div>
-            <p style={{ color: "var(--text-muted)", fontSize: "var(--fs-sm)", margin: 0 }}>
-              Sujets clés du mandat suivis en continu
-            </p>
+            <a href="/bruz-en-action/dossiers" style={{
+              fontSize: "var(--fs-sm)", fontWeight: "var(--fw-semibold)", color: "#2563eb",
+              display: "flex", alignItems: "center", gap: 4, textDecoration: "none",
+            }}>
+              Tous les dossiers ({dossiers.length}) →
+            </a>
           </div>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(320px, 1fr))", gap: "var(--grid-gap)" }}>
-            {dossiers.map(d => (
-              <div key={d.id} style={{
-                background: "var(--surface-page)", border: "1px solid var(--border-subtle)",
-                borderRadius: "var(--radius-lg)", padding: "var(--space-6)", display: "flex", flexDirection: "column", gap: "var(--space-4)",
-                borderTop: `3px solid ${d.statut === "a_venir" ? "var(--text-faint)" : "var(--brand-accent)"}`,
-              }}>
-                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", gap: 8 }}>
-                  <span style={{
-                    display: "inline-block", padding: "3px 10px", borderRadius: "var(--radius-pill)",
-                    background: "var(--surface-sunken)", color: "var(--text-muted)",
-                    fontSize: "var(--fs-2xs)", fontWeight: "var(--fw-bold)", letterSpacing: "var(--ls-label)", textTransform: "uppercase",
-                  }}>{d.categorie}</span>
-                  {d.statut === "a_venir" && (
-                    <span style={{ fontSize: "var(--fs-2xs)", color: "var(--text-faint)", fontWeight: "var(--fw-semibold)" }}>À venir</span>
-                  )}
-                  {d.statut === "en_cours" && (
-                    <span style={{ fontSize: "var(--fs-2xs)", color: "#d97706", fontWeight: "var(--fw-semibold)" }}>● En cours</span>
-                  )}
+
+          {/* 4 dossiers rotatifs : featured d'abord, puis par last_activity desc */}
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "var(--grid-gap)" }}>
+            {([...dossiers] as (typeof dossiers[0] & { featured?: boolean; last_activity?: string })[])
+              .sort((a, b) => {
+                if (a.featured && !b.featured) return -1;
+                if (!a.featured && b.featured) return 1;
+                const ad = a.last_activity ?? a.date_ouverture;
+                const bd = b.last_activity ?? b.date_ouverture;
+                return bd.localeCompare(ad);
+              })
+              .slice(0, 4)
+              .map(d => (
+                <div key={d.id} style={{
+                  background: "var(--surface-page)", border: "1px solid var(--border-subtle)",
+                  borderRadius: "var(--radius-lg)", padding: "var(--space-5)", display: "flex", flexDirection: "column", gap: "var(--space-3)",
+                  borderTop: `3px solid ${d.featured ? "var(--brand-accent)" : d.statut === "a_venir" ? "var(--text-faint)" : "#3b82f6"}`,
+                }}>
+                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", gap: 8 }}>
+                    <span style={{
+                      display: "inline-block", padding: "3px 10px", borderRadius: "var(--radius-pill)",
+                      background: "var(--surface-sunken)", color: "var(--text-muted)",
+                      fontSize: "var(--fs-2xs)", fontWeight: "var(--fw-bold)", letterSpacing: "var(--ls-label)", textTransform: "uppercase",
+                    }}>{d.categorie}</span>
+                    {d.featured
+                      ? <span style={{ fontSize: "var(--fs-2xs)", color: "var(--brand-accent)", fontWeight: "var(--fw-bold)" }}>● Actif</span>
+                      : d.statut === "en_cours" && <span style={{ fontSize: "var(--fs-2xs)", color: "#d97706", fontWeight: "var(--fw-semibold)" }}>En cours</span>
+                    }
+                  </div>
+                  <div>
+                    <h3 style={{ margin: "0 0 6px", fontSize: "var(--fs-base)", fontWeight: "var(--fw-bold)", color: "var(--text-strong)", lineHeight: "var(--lh-snug)" }}>{d.titre}</h3>
+                    <p style={{ margin: 0, fontSize: "var(--fs-sm)", color: "var(--text-muted)", lineHeight: "var(--lh-relaxed)" }}>{d.chapeau}</p>
+                  </div>
+                  <div style={{ marginTop: "auto", paddingTop: "var(--space-2)", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                    <a href={"lien_externe" in d && d.lien_externe ? String(d.lien_externe) : `/bruz-en-action/dossiers/${d.id}`} style={{
+                      fontSize: "var(--fs-xs)", fontWeight: "var(--fw-bold)", color: "var(--brand-accent)",
+                    }}>
+                      {"lien_externe" in d && d.lien_externe ? "Ouvrir la carte →" : "Lire le dossier →"}
+                    </a>
+                    {d.last_activity && (
+                      <span style={{ fontSize: "var(--fs-2xs)", color: "var(--text-faint)" }}>
+                        Màj {new Date(d.last_activity).toLocaleDateString("fr-FR", { day: "numeric", month: "short" })}
+                      </span>
+                    )}
+                  </div>
                 </div>
-                <div>
-                  <h3 style={{ margin: "0 0 8px", fontSize: "var(--fs-base)", fontWeight: "var(--fw-bold)", color: "var(--text-strong)", lineHeight: "var(--lh-snug)" }}>{d.titre}</h3>
-                  <p style={{ margin: 0, fontSize: "var(--fs-sm)", color: "var(--text-muted)", lineHeight: "var(--lh-relaxed)" }}>{d.chapeau}</p>
-                </div>
-                {d.points_cles.length > 0 && (
-                  <ul style={{ margin: 0, paddingLeft: "1.2em", display: "flex", flexDirection: "column", gap: 4 }}>
-                    {d.points_cles.map((pt, i) => (
-                      <li key={i} style={{ fontSize: "var(--fs-xs)", color: "var(--text-body)", lineHeight: "var(--lh-relaxed)" }}>{pt}</li>
-                    ))}
-                  </ul>
-                )}
-                <div style={{ marginTop: "auto", paddingTop: "var(--space-3)", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 8 }}>
-                  <a href={"lien_externe" in d && d.lien_externe ? String(d.lien_externe) : `/bruz-en-action/dossiers/${d.id}`} style={{
-                    fontSize: "var(--fs-xs)", fontWeight: "var(--fw-bold)", color: "var(--brand-accent)",
-                  }}>
-                    {"lien_externe" in d && d.lien_externe ? "Ouvrir la carte →" : "Lire le dossier →"}
-                  </a>
-                  <span style={{ fontSize: "var(--fs-2xs)", color: "var(--text-faint)" }}>{d.sources.length} source{d.sources.length > 1 ? "s" : ""}</span>
-                </div>
-              </div>
-            ))}
+              ))
+            }
+          </div>
+
+          <div style={{ marginTop: 20, textAlign: "center" }}>
+            <a href="/bruz-en-action/dossiers" style={{
+              display: "inline-flex", alignItems: "center", gap: 8,
+              padding: "10px 22px", borderRadius: "var(--radius-pill)",
+              border: "1.5px solid #3b82f6", color: "#2563eb",
+              fontSize: "var(--fs-sm)", fontWeight: "var(--fw-semibold)", textDecoration: "none",
+              background: "#eff6ff",
+            }}>
+              Voir tous les dossiers →
+            </a>
           </div>
         </div>
       </section>

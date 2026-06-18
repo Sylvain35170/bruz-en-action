@@ -1,11 +1,12 @@
 {
   "association": {
     "nom": "Bruz en Action",
-    "description": "L'association citoyenne de Bruz (35) — informer, participer, agir.",
+    "description": "Association citoyenne loi 1901 — suivre les engagements de la majorité municipale, collecter les préoccupations des habitants et les transmettre dans un esprit de dialogue constructif.",
     "fondee_en": 2026,
-    "mission": "S'informer, participer et agir ensemble pour une vie locale plus transparente à Bruz.",
+    "mission": "Suivre la réalisation du programme « Un nouvel élan pour Bruz », documenter les engagements pris, collecter les préoccupations des Bruzois et les transmettre à la majorité municipale. Notre seule boussole : l'amélioration concrète du quotidien de ceux qui vivent et travaillent à Bruz.",
     "tagline": "Citoyens de Bruz, acteurs de notre ville.",
-    "positionnement": "Association non partisane — ouverte à tous les Bruzois."
+    "positionnement": "Association citoyenne loi 1901 — née du soutien à la liste « Un nouvel élan pour Bruz », engagée pour la réalisation de ce projet au service de tous les Bruzois.",
+    "objet_statutaire": "Soutenir, promouvoir et valoriser l'action publique locale menée dans la commune de Bruz ; favoriser la participation citoyenne et le dialogue entre les habitants et leurs représentants ; contribuer au débat public local dans le respect des valeurs républicaines."
   },
   "bureau": {
     "president": "Naoufal Hajjar",

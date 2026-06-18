@@ -71,6 +71,7 @@ export default async function DossierPage({ params }: { params: Promise<{ id: st
               <img src={LOGO} alt={association.nom} width={140} height={44} style={{ objectFit: "contain", background: "rgba(255,255,255,0.92)", borderRadius: 8, padding: "4px 8px" }} />
             </a>
             <nav style={{ display: "flex", gap: 20, alignItems: "center" }}>
+              <a href="/bruz-en-action/dossiers" style={{ color: "rgba(255,255,255,0.7)", textDecoration: "none", fontSize: 14, fontWeight: 500 }}>📁 Dossiers</a>
               <a href="/bruz-en-action" style={{ color: "rgba(255,255,255,0.7)", textDecoration: "none", fontSize: 14, fontWeight: 500 }}>← Accueil</a>
               {hasHelloAsso && (
                 <a href={contact.hello_asso_url} target="_blank" rel="noopener noreferrer"
