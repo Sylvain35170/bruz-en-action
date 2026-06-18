@@ -11,7 +11,6 @@
 ## 🟡 À faire — Agents de veille
 
 - [ ] **Bruz Mag URL** — URL de téléchargement PDF absente de la nav mairie ; en attendant couvert par Google News RSS
-- [ ] **`.gitignore`** — ajouter `scripts/**/__pycache__/` et `*.pyc` (commités par erreur)
 - [ ] **Comptes officiels** — Facebook Ville de Bruz, Houssin, Bruz Métropole → `data/meta.json` sources_surveillees
 
 ## 🟡 À faire — Dossiers à instruire
@@ -36,6 +35,7 @@
 
 ## ✅ Terminé
 
+- **Pipeline veille automatique** — 5 agents (YouTube CMs, mairie actus, Google News presse, Bruz Mag, enrichissement dossiers) + orchestrateur + launchd 17h ; actus presse matchées par mots-clés → `dossiers.json` actus_recentes
 - **Page `/dossiers`** — index complet, tri featured + last_activity, badge actif, couleur par catégorie, compteur actus
 - **Rotation dossiers homepage** — 4 cards rotatifs (featured first + last_activity desc), lien "Tous les dossiers"
 - **dossiers.json** — champs `featured` et `last_activity` ajoutés (D01–D05), prêts pour agent 6
