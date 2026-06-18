@@ -43,12 +43,13 @@ def match_dossier(text: str) -> list[str]:
 
 
 def build_news_item(source: dict, source_type: str) -> dict:
+    # Schéma actus.json : source_url, detail, source_label (pas url/contenu/source)
     return {
         "date": source.get("date", today())[:10],
         "titre": source.get("titre", "")[:120],
-        "detail": source.get("contenu", "")[:300],
-        "source_url": source.get("url", ""),
-        "source_label": source.get("source", source_type),
+        "detail": (source.get("detail") or source.get("contenu") or "")[:300],
+        "source_url": source.get("source_url") or source.get("url") or "",
+        "source_label": source.get("source_label") or source.get("source") or source_type,
     }
 
 
@@ -67,7 +68,7 @@ def run() -> bool:
         d.setdefault("last_activity", d.get("date_ouverture", today()))
 
     known_urls_by_dossier: dict[str, set[str]] = {
-        d["id"]: {a.get("source_url", "") for a in d.get("actus_recentes", [])}
+        d["id"]: {a.get("source_url", "") for a in d.get("actus_recentes", []) if a.get("source_url")}
         for d in dossiers
     }
 
@@ -75,13 +76,15 @@ def run() -> bool:
 
     # --- Depuis actus.json ---
     for actu in actus_data.get("actus", []):
-        texte = actu.get("titre", "") + " " + actu.get("contenu", "")
+        texte = actu.get("titre", "") + " " + (actu.get("detail") or actu.get("contenu") or "")
         for dossier_id in match_dossier(texte):
             if dossier_id not in dossier_map:
                 continue
-            url = actu.get("url", "")
-            if url in known_urls_by_dossier[dossier_id]:
+            url = actu.get("source_url") or actu.get("url") or ""
+            if url and url in known_urls_by_dossier[dossier_id]:
                 continue
+            if not url:
+                continue  # ignorer les actus sans URL (évite les doublons)
             news = build_news_item(actu, "Presse / Mairie")
             dossier_map[dossier_id]["actus_recentes"].insert(0, news)
             known_urls_by_dossier[dossier_id].add(url)
