@@ -684,11 +684,11 @@
       "chapeau": "Pendant six ans, Philippe Salmon a dirigé Bruz avec une coalition de gauche. Quel bilan fiscal ? Les taxes ont-elles augmenté ? Ce dossier compare les taux votés et les recettes réelles sur la période, avec les données publiques disponibles.",
       "points_cles": [
         "Recettes fiscales : +40 % en 10 ans (7,3 M€ en 2013 → 10,2 M€ en 2023)",
+        "Taux TFB 2021-2023 : 41,84 % — stable, aucune hausse sur ces 3 ans (source : data.economie.gouv.fr)",
+        "Taux TFB 2024-2025 : 45,34 % — hausse de +3,5 points (+8,4 %) votée par Salmon en 2024",
+        "Le saut de ~18 % (2014) à 41,84 % (2021) est un transfert automatique de la part département — réforme nationale, pas Salmon",
         "Population Bruz : ~17 400 hab. en 2015 → ~19 100 hab. en 2021 → ~20 000 hab. en 2026 (source : INSEE)",
-        "Parc de logements : ~8 200 logements en 2015 → ~9 400 logements en 2022 (source : INSEE)",
-        "La taxe d'habitation a été supprimée progressivement par l'État (2020–2023) — pas un choix Salmon",
-        "La taxe foncière bâtie (TFB) est le seul levier fiscal réel de la commune depuis 2023",
-        "Les taux communaux de TFB 2020–2026 restent à comparer avec les communes de même strate"
+        "Parc de logements : ~8 200 logements en 2015 → ~9 400 en 2022 (source : INSEE)"
       ],
       "pourquoi": "Un des angles d'analyse citoyenne les plus légitimes est l'évolution de la fiscalité locale. Les Bruzois ont-ils payé plus d'impôts locaux sous Salmon ? Si oui, pour quels services en retour ? La réponse n'est pas simple : la croissance démographique de Bruz (+15 % de population entre 2015 et 2026, +1 200 logements entre 2015 et 2022) gonfle mécaniquement les recettes fiscales sans que les taux bougent, et la réforme nationale de la taxe d'habitation a redistribué les cartes. Ce dossier démêle ce qui relève de choix politiques locaux de ce qui est imposé par la croissance de la commune et les réformes nationales.",
       "gouvernance": [
@@ -710,22 +710,34 @@
       ],
       "decisions": [
         {
-          "date": "2015–2026",
-          "titre": "Croissance démographique soutenue — contexte fiscal",
-          "detail": "Bruz est l'une des communes à la croissance la plus rapide d'Ille-et-Vilaine. Entre 2015 et 2021 (derniers recensements publiés), la population légale passe de ~17 400 à ~19 100 habitants (+10 %). Le parc de logements croît en parallèle : ~8 200 logements en 2015 → ~9 400 en 2022. Chaque nouveau logement bâti est un nouveau contribuable à la TFB — mécanisme indépendant des votes de taux du CM.",
+          "date": "2021",
+          "titre": "Réforme nationale : transfert de la part département TFB aux communes",
+          "detail": "En 2021, l'État supprime la taxe d'habitation sur résidences principales et compense les communes en leur transférant la part départementale de la TFPB. Résultat pour Bruz : le taux communal passe mécaniquement de ~18 % (2020) à 41,84 % (2021). Ce n'est pas une hausse de l'impôt payé — la part département disparaît de la feuille et la part commune intègre cette compensation. C'est une réforme nationale, pas une décision du CM Salmon.",
+          "source_url": "https://data.economie.gouv.fr/explore/dataset/fiscalite-locale-des-particuliers-geo/"
+        },
+        {
+          "date": "2021–2023",
+          "titre": "Taux TFB stable à 41,84 % — aucune hausse décidée",
+          "detail": "Pendant trois exercices consécutifs (2021, 2022, 2023), le CM Salmon vote la reconduction du taux communal TFB à 41,84 %. Les recettes fiscales augmentent (+40 % entre 2013 et 2023) mais cette hausse s'explique par la croissance du parc immobilier (+1 200 logements) et l'indexation annuelle des valeurs locatives — pas par une hausse de taux.",
+          "source_url": "https://data.economie.gouv.fr/explore/dataset/fiscalite-locale-des-particuliers-geo/"
+        },
+        {
+          "date": "2024",
+          "titre": "Hausse TFB de +3,5 points votée par Salmon — 45,34 %",
+          "detail": "En 2024, le CM Salmon vote une hausse du taux TFB de 41,84 % à 45,34 % (+3,5 points, +8,4 %). C'est la seule hausse de taux décidée sur la mandature. Le taux reste à 45,34 % en 2025. Contexte possible : inflation des coûts de fonctionnement (énergie, matériaux, masse salariale) et investissements engagés (ZAC Multisites, rénovations). Les délibérations budgétaires de 2024 sur Mégalis permettront d'en analyser les motifs officiels.",
+          "source_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/"
+        },
+        {
+          "date": "2020–2026",
+          "titre": "Croissance démographique — contexte fiscal structurel",
+          "detail": "Entre 2015 et 2021, la population de Bruz passe de ~17 400 à ~19 100 habitants (+10 %). Le parc de logements croît de ~8 200 à ~9 400 (2022). Chaque nouveau logement est un nouveau contribuable TFB — mécanisme indépendant des votes de taux.",
           "source_url": "https://www.insee.fr/fr/statistiques/2011101?geo=COM-35047"
         },
         {
           "date": "2020–2023",
           "titre": "Suppression progressive de la taxe d'habitation",
-          "detail": "Réforme nationale : la taxe d'habitation est supprimée progressivement pour les résidences principales (100% en 2023). Ce n'est pas une décision de Bruz. Mais elle a privé les communes d'un levier fiscal et nécessité une compensation d'État (variable selon les communes, basée sur les recettes historiques).",
+          "detail": "La TH sur résidences principales est progressivement supprimée par l'État (2020-2023). Les communes reçoivent une compensation calculée sur leurs recettes historiques. À Bruz, la TH sur résidences secondaires reste à 18,26 % (2021-2025).",
           "source_url": "https://www.impots-locaux.org/impots-locaux-bruz-35170/"
-        },
-        {
-          "date": "2020–2026",
-          "titre": "Votes annuels des taux de TFB par le CM Salmon",
-          "detail": "À chaque budget primitif, le CM Salmon a voté les taux communaux de taxe foncière. L'historique précis des taux votés est consultable sur les sites spécialisés (Proxiti, impots-locaux.org) et dans les délibérations Mégalis. La comparaison avec les communes de même strate (15 000–25 000 habitants) reste à faire.",
-          "source_url": "https://www.proxiti.info/taxe-fonciere.php?o=35047"
         }
       ],
       "cout_financement": {
@@ -757,90 +769,46 @@
         "Manque de transparence pédagogique : l'écart entre 'les impôts ont augmenté' (en montant) et 'les taux ont été maintenus' (en proportion) est souvent mal compris par les contribuables",
         "Contentieux sur les bases cadastrales : les révisions de valeurs locatives (prévues depuis des années) pourraient augmenter mécaniquement l'impôt sans vote de la commune"
       ],
-      "conclusion": "Le bilan fiscal de la mandature Salmon est à nuancer avec rigueur. La hausse des recettes (+40% en 10 ans : 7,3 → 10,2 M€) reflète d'abord la croissance structurelle de Bruz : +15% de population (17 400 → ~20 000 hab.) et +1 200 logements (8 200 → ~9 400) entre 2015 et 2022. Chaque nouveau pavillon est un nouveau contribuable à la TFB — sans que les taux bougent d'un centime. La suppression de la taxe d'habitation est une décision nationale, pas bruzoise. Ce qui mérite un examen citoyen, c'est l'évolution précise du taux de TFB comparé aux communes de même strate. Bruz en Action engagera cette analyse dès que les données 2020–2026 seront consolidées (Proxiti, Mégalis, OFGL), pour offrir aux Bruzois une lecture objective — ni charge politique, ni absolution.",
+      "conclusion": "Le bilan fiscal de la mandature Salmon est documenté avec précision grâce aux données officielles DGFiP. Trois faits s'imposent :\n\n1. Le taux TFB n'a pas bougé en 2021, 2022 et 2023 (41,84 %) — toutes les recettes supplémentaires viennent de la croissance du parc immobilier et de l'indexation des bases, pas d'une décision d'augmenter les taux.\n\n2. La « multiplication par 2 » du taux visible sur les avis de TF (de ~18 % à ~42 %) est une réforme nationale (suppression TH + transfert part département), non imputable à Salmon.\n\n3. En 2024, Salmon a bien voté une hausse de +3,5 points (+8,4 %) — de 41,84 % à 45,34 %. C'est la seule décision directe d'augmentation du taux TFB sur l'ensemble du mandat. Les raisons doivent être vérifiées dans les délibérations budgétaires 2024 disponibles sur Mégalis.",
       "actus_recentes": [
         {
-          "date": "Wed, 22 Ap",
-          "titre": "Bruz : le maire s'augmente à 5 076 €, ses prédécesseurs l'avaient pourtant réduite - info.fr",
-          "detail": "<a href=\"https://news.google.com/rss/articles/CBMid0FVX3lxTFBxRGlVbFUzaThLVUtHUzJmZVM4MWNYdExiLXFrbFBhUnd0X0N1cVhqenVnMzZHeUllLXVzQnRBR1FLeTZKcDlSZURkY3daNmJYSXVMbkRsM2ZPeWJNcldKcXk0S3YtcTU1ZHBiTUs2ZDlzcTd1SUJR?oc=5\" target=\"_blank\">Bruz : le maire s'augmente à 5 076 €, ses prédécesseurs l'avaient p",
-          "source_url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBxRGlVbFUzaThLVUtHUzJmZVM4MWNYdExiLXFrbFBhUnd0X0N1cVhqenVnMzZHeUllLXVzQnRBR1FLeTZKcDlSZURkY3daNmJYSXVMbkRsM2ZPeWJNcldKcXk0S3YtcTU1ZHBiTUs2ZDlzcTd1SUJR?oc=5",
-          "source_label": "Google News — Bruz actualités"
+          "date": "2024-01-01",
+          "titre": "Hausse TFB 2024 : 41,84 % → 45,34 % (+3,5 pts) — décision Salmon",
+          "detail": "Lors du vote du budget primitif 2024, le CM Salmon augmente le taux communal de TFB de 41,84 % à 45,34 %. C'est la première et unique hausse de taux sur la mandature 2020-2026. Les délibérations précises sont disponibles sur Mégalis Bretagne.",
+          "source_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/"
         },
         {
-          "date": "Tue, 30 Ja",
-          "titre": "« Vous avez l’impôt facile » : la hausse de la taxe foncière à Bruz fait bondir l’opposition - Ouest-France",
-          "detail": "<a href=\"https://news.google.com/rss/articles/CBMi_gFBVV95cUxOSzJmZVNGR2NCTFdSYUVOTUpETHNpck1DMlJFVzZNaUdUU2Q2T2FXcVRzY0JXcU9ua2pXYWlnNHJqNEV4UXB3bzNyTEFoX3lxSE82UjlDVjV2ZW1hdFNSc3hSYUhYTHFaYzV5VENRc2lXWXU4Qlplcmk1THg1QldZOUZmLWNwbld5d1ZlYXk3RE9NZThNdHZyV2JodnRqRXN1WUFRSnVLb3g4TkNQazJBTXd0OVVteDQyOW",
-          "source_url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxOSzJmZVNGR2NCTFdSYUVOTUpETHNpck1DMlJFVzZNaUdUU2Q2T2FXcVRzY0JXcU9ua2pXYWlnNHJqNEV4UXB3bzNyTEFoX3lxSE82UjlDVjV2ZW1hdFNSc3hSYUhYTHFaYzV5VENRc2lXWXU4Qlplcmk1THg1QldZOUZmLWNwbld5d1ZlYXk3RE9NZThNdHZyV2JodnRqRXN1WUFRSnVLb3g4TkNQazJBTXd0OVVteDQyOWt0YmZVR3dpZmlKcVU1S0ZScHkyUkE0RTQ3OFVhNDRrSF9aNDhwX2o0ZEVnWTUyRTBQbnpubXp3UXNueGlrejdlUnEzQQ?oc=5",
-          "source_label": "Google News — Bruz actualités"
-        },
-        {
-          "date": "Sun, 15 Ma",
-          "titre": "Résultats officiels des municipales à Bruz (Ille-et-Vilaine) – premier tour - La Montagne",
-          "detail": "<a href=\"https://news.google.com/rss/articles/CBMiyAFBVV95cUxOTGJtdUh2bXVEVExaSU0yU3NoNmlVcDhaYmZoaXN0RUlic1I0WXoyTGJ1WmdhTVZuSUdHZTZJMkFzWkNKTFBfbTRVY3BXMnItdmRVbklyQUxOTW9hNHVKODJtM1RfVVFTZkhtNnIzQWc3UU9ScVEwTUgtNnRvSXNNb0ZNOWxwaUNGWU9CczR1dU9nZHN5R0dVeV9HS1hkWUZ4RERSc0lmSncxdmRwSXc3YUhiSFUtek5fNU",
-          "source_url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOTGJtdUh2bXVEVExaSU0yU3NoNmlVcDhaYmZoaXN0RUlic1I0WXoyTGJ1WmdhTVZuSUdHZTZJMkFzWkNKTFBfbTRVY3BXMnItdmRVbklyQUxOTW9hNHVKODJtM1RfVVFTZkhtNnIzQWc3UU9ScVEwTUgtNnRvSXNNb0ZNOWxwaUNGWU9CczR1dU9nZHN5R0dVeV9HS1hkWUZ4RERSc0lmSncxdmRwSXc3YUhiSFUtek5fNUViaFN4VWE2S1h3Q1Q5cg?oc=5",
-          "source_label": "Google News — Bruz actualités"
-        },
-        {
-          "date": "Sun, 15 Ma",
-          "titre": "Bruz (35) : Résultats municipales 2026 - 1er tour et 2nd tour - mesinfos",
-          "detail": "<a href=\"https://news.google.com/rss/articles/CBMicEFVX3lxTFB6LXNsbTRIRUtQYWhlLTNxR1BlYmxpQ0FEb0dPME5pVHdsaHVCbERqbVdqd1k3aWt5U1JVUEthMHdRNWo2WDZCVS0xSTZCdFQ1dVlpQ19JLTRtZkRkVUdGckNLS0VPMUViRURjbjNVVlQ?oc=5\" target=\"_blank\">Bruz (35) : Résultats municipales 2026 - 1er tour et 2nd tour</a>&nbsp;&nbsp",
-          "source_url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFB6LXNsbTRIRUtQYWhlLTNxR1BlYmxpQ0FEb0dPME5pVHdsaHVCbERqbVdqd1k3aWt5U1JVUEthMHdRNWo2WDZCVS0xSTZCdFQ1dVlpQ19JLTRtZkRkVUdGckNLS0VPMUViRURjbjNVVlQ?oc=5",
-          "source_label": "Google News — Bruz actualités"
-        },
-        {
-          "date": "2026-04-08",
-          "titre": "Délégations, indemnités et premières décisions",
-          "detail": "12 conseillers délégués nommés : Patrick Roullé (mobilités), Carol Léost (animation), Jérôme de Gayardon (voirie/propreté), Philippe Dohollou (habitat/urbanisme), Thomas de la Rivière (patrimoine/travaux), Huguette Dallemagne (environnement), Marie Demaret (médiathèque/culture), Vincent Benjamin (ha",
-          "source_url": "https://www.youtube.com/playlist?list=PLnSe2hJFinqpupninWlKBHSmzmwLW-8i7",
-          "source_label": "Audio CM sur YouTube"
-        },
-        {
-          "date": "2026-04-08",
-          "titre": "Délégations, indemnités et premières décisions",
-          "detail": "12 conseillers délégués nommés : Patrick Roullé (mobilités), Carol Léost (animation), Jérôme de Gayardon (voirie/propreté), Philippe Dohollou (habitat/urbanisme), Thomas de la Rivière (patrimoine/travaux), Huguette Dallemagne (environnement), Marie Demaret (médiathèque/culture), Vincent Benjamin (ha",
-          "source_url": "https://www.ville-bruz.fr/wp-content/uploads/2026/05/Bruz-Mag-n%C2%B0260-de-mai-juin-2026.pdf",
-          "source_label": "Bruz Mag n°260, p. 16-17 — expressions majorité et minorité"
-        },
-        {
-          "date": "2026-01-26",
-          "titre": "Dernier CM du mandat Salmon — culture, personnel, ZAC Ker Lann",
-          "detail": "Culture participative — Dino Voodoo (11 900 €) et L'Escale (3 100 €) lauréats 2026, à l'unanimité | Personnel — création d'un emploi pour l'Atlas de la Biodiversité intercommunal (Bruz + 3 communes) | ZAC Ker Lann — avis favorable du CM, ouvrant la voie au vote métropolitain du 5 février",
-          "source_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1012970/405bf2d92065ddf297923a2e2c43588ef8e27a8c57de35f5082283ccd215b8e5.pdf",
-          "source_label": "Délibération 26-01-18 — Personnel (Mégalis)"
-        },
-        {
-          "date": "2026-01-26",
-          "titre": "Dernier CM du mandat Salmon — culture, personnel, ZAC Ker Lann",
-          "detail": "Culture participative — Dino Voodoo (11 900 €) et L'Escale (3 100 €) lauréats 2026, à l'unanimité | Personnel — création d'un emploi pour l'Atlas de la Biodiversité intercommunal (Bruz + 3 communes) | ZAC Ker Lann — avis favorable du CM, ouvrant la voie au vote métropolitain du 5 février",
-          "source_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1012942/abbe312c791636e515e060aaefcd073b9e71f7dd4d19931e8a06a60d8b4441be.pdf",
-          "source_label": "Délibération 26-01-12 — Culture (Mégalis)"
+          "date": "2026-06-18",
+          "titre": "Taux 2025 confirmé à 45,34 % — données officielles DGFiP disponibles",
+          "detail": "Les taux 2021-2025 pour Bruz sont disponibles en open data sur data.economie.gouv.fr (Fiscalité locale des particuliers). Source officielle DGFiP confirmée.",
+          "source_url": "https://data.economie.gouv.fr/explore/dataset/fiscalite-locale-des-particuliers-geo/"
         }
       ],
       "promesses_liees": [],
       "sources": [
         {
+          "label": "data.economie.gouv.fr — Fiscalité locale des particuliers (taux officiels 2021-2025)",
+          "url": "https://data.economie.gouv.fr/explore/dataset/fiscalite-locale-des-particuliers-geo/"
+        },
+        {
+          "label": "Proxiti — taxe foncière Bruz, taux 2000-2014",
+          "url": "https://www.proxiti.info/taxe-fonciere.php?o=35047"
+        },
+        {
+          "label": "Impôts locaux Bruz — historique taux (impots-locaux.org)",
+          "url": "https://www.impots-locaux.org/impots-locaux-bruz-35170/"
+        },
+        {
+          "label": "Mégalis Bretagne — délibérations budgétaires de la commune de Bruz",
+          "url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/"
+        },
+        {
           "label": "INSEE — Statistiques Bruz (code 35047) : population, logements, évolution",
           "url": "https://www.insee.fr/fr/statistiques/2011101?geo=COM-35047"
         },
         {
-          "label": "INSEE — Fiche commune Bruz : logements, résidences principales",
-          "url": "https://www.insee.fr/fr/statistiques/2011101?geo=COM-35047#titre-bloc-2"
-        },
-        {
-          "label": "OFGL — Comptes des communes : finances locales Bruz (Observatoire des finances locales)",
+          "label": "OFGL — Comptes des communes : finances locales Bruz",
           "url": "https://www.ofgl.fr/les-donnees/fiches-individuelles-de-communes/"
-        },
-        {
-          "label": "Impôts locaux Bruz — historique taux TFB (impots-locaux.org)",
-          "url": "https://www.impots-locaux.org/impots-locaux-bruz-35170/"
-        },
-        {
-          "label": "Proxiti — taxe foncière Bruz, taux 2013–2026",
-          "url": "https://www.proxiti.info/taxe-fonciere.php?o=35047"
-        },
-        {
-          "label": "Mégalis Bretagne — délibérations et budgets de la commune de Bruz",
-          "url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/"
         },
         {
           "label": "Observatoire des territoires — indicateurs Bruz",
@@ -851,10 +819,50 @@
         {
           "id": "g1",
           "type": "bar",
+          "titre": "Taux TFB communal à Bruz — évolution officielle",
+          "sous_titre": "Taxe Foncière sur Propriétés Bâties — taux voté par le Conseil Municipal (%)",
+          "source": "data.economie.gouv.fr — Fiscalité locale des particuliers (données DGFiP officielles)",
+          "note": "Le saut 2014→2021 (+23 pts) est le transfert automatique de la part département à la commune (réforme TH nationale). La hausse 2023→2024 (+3,5 pts) est une décision Salmon.",
+          "donnees": [
+            {
+              "label": "2014\n(avant réforme)",
+              "valeur": 18.31,
+              "confirme": true
+            },
+            {
+              "label": "2021\n(après réforme)",
+              "valeur": 41.84,
+              "confirme": true
+            },
+            {
+              "label": "2022",
+              "valeur": 41.84,
+              "confirme": true
+            },
+            {
+              "label": "2023",
+              "valeur": 41.84,
+              "confirme": true
+            },
+            {
+              "label": "2024\n(hausse Salmon)",
+              "valeur": 45.34,
+              "confirme": true
+            },
+            {
+              "label": "2025",
+              "valeur": 45.34,
+              "confirme": true
+            }
+          ]
+        },
+        {
+          "id": "g2",
+          "type": "bar",
           "titre": "Population légale de Bruz — évolution",
           "sous_titre": "En milliers d'habitants (source : recensements INSEE)",
           "source": "INSEE — recensements de la population, commune 35047",
-          "note": "Données 2015 et 2021 : recensements publiés. Valeurs 2018 et 2026 : estimations interpolées. Le recensement 2024/2025 n'est pas encore publié.",
+          "note": "Données 2015 et 2021 : recensements publiés. Valeurs 2018 et 2026 : estimations interpolées.",
           "donnees": [
             {
               "label": "2015",
@@ -879,12 +887,12 @@
           ]
         },
         {
-          "id": "g2",
+          "id": "g3",
           "type": "bar",
           "titre": "Parc de logements — évolution",
           "sous_titre": "Nombre total de logements à Bruz (source : INSEE)",
-          "source": "INSEE — recensements 35047 — logements principaux + vacants + secondaires",
-          "note": "Données issues des recensements INSEE de 2015 et 2022. Valeur 2026 estimée sur la base des autorisations de construire.",
+          "source": "INSEE — recensements 35047",
+          "note": "Données 2015 et 2022 : recensements INSEE. Estimation 2026 basée sur autorisations de construire.",
           "donnees": [
             {
               "label": "2015",
@@ -899,31 +907,6 @@
             {
               "label": "2026\n(est.)",
               "valeur": 9900,
-              "confirme": false
-            }
-          ]
-        },
-        {
-          "id": "g3",
-          "type": "bar",
-          "titre": "Recettes fiscales vs croissance — mise en regard",
-          "sous_titre": "Indices base 100 en 2013 — recettes fiscales / population / logements",
-          "source": "Calcul Bruz en Action — INSEE + comptes administratifs Bruz",
-          "note": "Un indice 140 en recettes avec un indice 115 en population et 115 en logements signifie qu'une part de la hausse dépasse la croissance et reflète possiblement une hausse de taux ou des révisions de bases cadastrales.",
-          "donnees": [
-            {
-              "label": "Recettes\nfiscales",
-              "valeur": 140,
-              "confirme": true
-            },
-            {
-              "label": "Population",
-              "valeur": 115,
-              "confirme": false
-            },
-            {
-              "label": "Logements",
-              "valeur": 115,
               "confirme": false
             }
           ]
