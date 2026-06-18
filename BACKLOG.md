@@ -10,13 +10,9 @@
 
 ## 🟡 À faire — Agents de veille
 
-- [ ] **Tester agent Mégalis** — vérifier la découverte de nouveaux docs sur la page org Mégalis (scraping HTML)
-- [ ] **Tester agent mairie** — vérifier les sélecteurs CSS sur `ville-bruz.fr/actualites/`
-- [ ] **Tester agent Bruz Mag** — vérifier la détection PDF + extraction pdfplumber
-- [ ] **Tester agent presse** — vérifier le RSS Ouest-France Bruz + fallback La Semaine
-- [ ] **Tester agent dossiers** — vérifier les injections actus_recentes + last_activity
-- [ ] **Installer les dépendances Python** — `pip install -r scripts/requirements.txt`
-- [ ] **Comptes officiels à surveiller** — Facebook Ville de Bruz (`@villedebruz`), compte Houssin, compte Bruz Métropole ; renseigner dans `data/meta.json` → sources_surveillees
+- [ ] **Bruz Mag URL** — URL de téléchargement PDF absente de la nav mairie ; en attendant couvert par Google News RSS
+- [ ] **`.gitignore`** — ajouter `scripts/**/__pycache__/` et `*.pyc` (commités par erreur)
+- [ ] **Comptes officiels** — Facebook Ville de Bruz, Houssin, Bruz Métropole → `data/meta.json` sources_surveillees
 
 ## 🟡 À faire — Dossiers à instruire
 

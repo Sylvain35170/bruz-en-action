@@ -6,3 +6,7 @@ node_modules/
 input/BEA/Statut /IMG_4281.HEIC
 input/BEA/Statut /IMG_4282.HEIC
 design-system/
+__pycache__/
+*.pyc
+*.pyo
+out/
