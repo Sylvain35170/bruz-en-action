@@ -25,8 +25,8 @@ except ImportError:
 AGENT_NAME = "bruz_mag"
 
 SOURCES_PRESSE = [
-    "https://www.ville-bruz.fr/ma-ville-de-bruz/publications/bruz-magazine/",
-    "https://www.ville-bruz.fr/actualites/",
+    "https://www.ville-bruz.fr/ma-ville-de-bruz/actualites/",
+    "https://www.ville-bruz.fr/ma-ville-de-bruz/",
 ]
 
 # Pattern : Bruz-Mag-n°260-de-mai-juin-2026.pdf

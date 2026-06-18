@@ -18,26 +18,27 @@ from utils import DATA_DIR, fetch, load_json, log, save_json, today, dedup
 
 AGENT_NAME = "presse"
 
-# Flux RSS publics — pas de scraping, pas de friction
+# Flux RSS publics — Google News RSS (fiable, pas d'auth requise)
+import urllib.parse as _urlparse
+
+def _gnews(query: str) -> str:
+    q = _urlparse.quote(query)
+    return f"https://news.google.com/rss/search?q={q}&hl=fr&gl=FR&ceid=FR:fr"
+
+
 RSS_SOURCES = [
     {
-        "label": "Ouest-France — Bruz",
-        "url": "https://www.ouest-france.fr/rss/commune/bruz-35170",
+        "label": "Google News — Bruz actualités",
+        "url": _gnews("Bruz Ille-et-Vilaine conseil municipal"),
     },
     {
-        "label": "Ouest-France — Bruz (recherche)",
-        "url": "https://www.ouest-france.fr/rss/recherche/bruz",
+        "label": "Google News — Bruz Houssin",
+        "url": _gnews("Bruz Houssin municipalité 2026"),
     },
 ]
 
-# Pages web à scraper si RSS insuffisant
-WEB_SOURCES = [
-    {
-        "label": "La Semaine de Bruz",
-        "url": "https://www.lasemaine.fr/bruz/",
-        "selectors": ["article h2 a", ".article-title a", "h3 a"],
-    },
-]
+# Pages web à scraper (fallback uniquement si RSS vide)
+WEB_SOURCES: list[dict] = []
 
 MOTS_CLES = ["bruz", "houssin", "conseil municipal", "zac", "t4", "trambus"]
 
@@ -62,10 +63,11 @@ def parse_rss(content: bytes, label: str) -> list[dict]:
             items.append({
                 "id": f"presse-{hash(url) & 0xFFFFFF:06x}",
                 "titre": titre,
-                "url": url,
-                "source": label,
+                "source_url": url,
+                "source_label": label,
                 "date": date_pub[:10],
-                "contenu": desc[:300],
+                "detail": desc[:300],
+                "type": "presse",
             })
     except Exception as e:
         log(f"RSS parse {label}: {e}", "WARN")
@@ -74,7 +76,7 @@ def parse_rss(content: bytes, label: str) -> list[dict]:
 
 def run() -> bool:
     actus_data = load_json(DATA_DIR / "actus.json")
-    existing = {a["url"] for a in actus_data.get("actus", [])}
+    existing = {a.get("source_url", "") for a in actus_data.get("actus", [])}
     nouvelles = []
 
     # RSS
@@ -85,9 +87,9 @@ def run() -> bool:
             continue
         items = parse_rss(r.content, src["label"])
         for item in items:
-            if item["url"] not in existing:
+            if item["source_url"] not in existing:
                 nouvelles.append(item)
-                existing.add(item["url"])
+                existing.add(item["source_url"])
                 log(f"  🆕 {item['titre'][:70]}", "NEW")
 
     # Web scraping (fallback)
@@ -116,10 +118,11 @@ def run() -> bool:
                         nouvelles.append({
                             "id": f"presse-{hash(url) & 0xFFFFFF:06x}",
                             "titre": titre,
-                            "url": url,
-                            "source": src["label"],
+                            "source_url": url,
+                            "source_label": src["label"],
                             "date": today(),
-                            "contenu": "",
+                            "detail": "",
+                            "type": "presse",
                         })
                         existing.add(url)
                         log(f"  🆕 {titre[:70]}", "NEW")
@@ -128,7 +131,7 @@ def run() -> bool:
         log("Presse : aucune nouvelle publication.", "INFO")
         return False
 
-    actus_data["actus"] = dedup(nouvelles + actus_data.get("actus", []), "url")
+    actus_data["actus"] = dedup(nouvelles + actus_data.get("actus", []), "source_url")
     actus_data.setdefault("meta", {})["last_updated"] = today()
     save_json(DATA_DIR / "actus.json", actus_data)
     log(f"Presse : {len(nouvelles)} nouvelle(s) actu(s) → actus.json", "OK")

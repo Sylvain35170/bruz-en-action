@@ -24,9 +24,9 @@ AGENT_NAME = "mairie"
 SOURCES = [
     {
         "id": "actualites",
-        "url": "https://www.ville-bruz.fr/actualites/",
+        "url": "https://www.ville-bruz.fr/ma-ville-de-bruz/actualites/",
         "label": "Mairie de Bruz — Actualités",
-        "selectors": ["article", ".post", ".actualite", ".news-item"],
+        "selectors": ["article", ".post", ".actualite", ".news-item", "h2 a", "h3 a"],
     },
     {
         "id": "conseil",
@@ -66,11 +66,11 @@ def scrape_source(source: dict) -> list[dict]:
             items.append({
                 "id": f"mairie-{hash(url) & 0xFFFFFF:06x}",
                 "titre": titre,
-                "url": url,
-                "source": source["label"],
-                "date": today(),
-                "date_publication": date_pub[:10] if date_pub else today(),
-                "contenu": "",
+                "source_url": url,
+                "source_label": source["label"],
+                "date": date_pub[:10] if date_pub else today(),
+                "detail": "",
+                "type": "mairie",
             })
 
     return items
@@ -78,23 +78,23 @@ def scrape_source(source: dict) -> list[dict]:
 
 def run() -> bool:
     actus_data = load_json(DATA_DIR / "actus.json")
-    existing = {a["url"] for a in actus_data.get("actus", [])}
+    existing = {a.get("source_url", "") for a in actus_data.get("actus", [])}
     nouvelles = []
 
     for source in SOURCES:
         log(f"Scan {source['label']}…")
         items = scrape_source(source)
         for item in items:
-            if item["url"] not in existing:
+            if item["source_url"] not in existing:
                 nouvelles.append(item)
-                existing.add(item["url"])
+                existing.add(item["source_url"])
                 log(f"  🆕 {item['titre'][:70]}", "NEW")
 
     if not nouvelles:
         log("Mairie : aucune nouvelle publication.", "INFO")
         return False
 
-    actus_data["actus"] = dedup(nouvelles + actus_data.get("actus", []), "url")
+    actus_data["actus"] = dedup(nouvelles + actus_data.get("actus", []), "source_url")
     actus_data.setdefault("meta", {})["last_updated"] = today()
     save_json(DATA_DIR / "actus.json", actus_data)
     log(f"Mairie : {len(nouvelles)} nouvelle(s) actu(s) → actus.json", "OK")
