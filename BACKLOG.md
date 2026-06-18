@@ -10,10 +10,12 @@
 
 ## 🟡 À faire — Agents de veille
 
-- [ ] **Agent Mégalis** — scan automatique des nouveaux IDs délibérations Bruz + Rennes Métropole → MAJ `cms.json` (cron GitHub Actions hebdomadaire)
-- [ ] **Agent mairie** — scrape `ville-bruz.fr/actualites/` + `conseil-municipal/` → détection nouveaux CR, arrêtés, délibérations
-- [ ] **Agent Bruz Mag** — détection nouveau numéro (PDF mairie) → extraction OCR + résumé → MAJ `cms.json`
-- [ ] **Agent presse locale** — scrape Ouest-France/Semaine à Bruz sur mots-clés Bruz → actus auto dans `data/actus.json`
+- [ ] **Tester agent Mégalis** — vérifier la découverte de nouveaux docs sur la page org Mégalis (scraping HTML)
+- [ ] **Tester agent mairie** — vérifier les sélecteurs CSS sur `ville-bruz.fr/actualites/`
+- [ ] **Tester agent Bruz Mag** — vérifier la détection PDF + extraction pdfplumber
+- [ ] **Tester agent presse** — vérifier le RSS Ouest-France Bruz + fallback La Semaine
+- [ ] **Tester agent dossiers** — vérifier les injections actus_recentes + last_activity
+- [ ] **Installer les dépendances Python** — `pip install -r scripts/requirements.txt`
 - [ ] **Comptes officiels à surveiller** — Facebook Ville de Bruz (`@villedebruz`), compte Houssin, compte Bruz Métropole ; renseigner dans `data/meta.json` → sources_surveillees
 
 ## 🟡 À faire — Dossiers à instruire
