@@ -15,9 +15,7 @@
 
 ## 🟡 À faire — Dossiers à instruire
 
-- [ ] **D06 — Piscine de Bruz** : état du bâtiment actuel, promesse de rénovation/nouveau équipement ?, coût estimé, timeline. Sources : délibérations budget, Bruz Mag, programme Houssin
-- [ ] **D07 — Sécurité / police municipale** : effectifs actuels, promesse de renforcement (confirmée dans délégations 8 avr.), vidéoprotection — où en est-on ? Sources : délibérations, budget, Bruz Mag
-- [ ] **D08 — City stade / équipements sportifs** : état des terrains de proximité, projets neufs ou rénovation, lien avec ZAC Multisites (secteur Mons ?). Sources : mairie, délégation Fabrice Jan (sport)
+- [ ] **D09 et suivants** — nouveaux dossiers à ouvrir selon l'actualité (cinéma Grand Logis / Cinéville, école, Manoir de la Noë…)
 
 ## 🟡 À faire — Technique
 
@@ -35,6 +33,7 @@
 
 ## ✅ Terminé
 
+- **D06 Piscine · D07 Sécurité PM · D08 Équipements sportifs** — dossiers créés, pages générées, actus_recentes alimentées, catégories colorées dans l'index
 - **Pipeline veille automatique** — 5 agents (YouTube CMs, mairie actus, Google News presse, Bruz Mag, enrichissement dossiers) + orchestrateur + launchd 17h ; actus presse matchées par mots-clés → `dossiers.json` actus_recentes
 - **Page `/dossiers`** — index complet, tri featured + last_activity, badge actif, couleur par catégorie, compteur actus
 - **Rotation dossiers homepage** — 4 cards rotatifs (featured first + last_activity desc), lien "Tous les dossiers"
