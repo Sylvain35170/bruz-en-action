@@ -127,27 +127,24 @@ export default async function SeancePage({ params }: { params: Promise<{ id: str
           {/* Colonne principale */}
           <div>
 
-            {/* Contexte */}
-            {seance.contexte && (
-              <section style={{ marginBottom: 40 }}>
-                <SectionTitle>Contexte</SectionTitle>
-                <div style={{ background: "#fff", border: "1px solid #e2e8f0", borderRadius: 12, padding: "20px 24px" }}>
-                  <p style={{ margin: 0, fontSize: 16, lineHeight: 1.8, color: "#334155" }}>{seance.contexte}</p>
-                </div>
+            {/* YouTube */}
+            {seance.youtube_url && (
+              <section style={{ marginBottom: 36 }}>
+                <a href={seance.youtube_url} target="_blank" rel="noopener noreferrer"
+                  style={{ display: "flex", alignItems: "center", gap: 14, padding: "18px 22px", background: "#fef2f2", border: "1px solid #fecaca", borderRadius: 12, textDecoration: "none" }}>
+                  <span style={{ fontSize: 32, lineHeight: 1 }}>▶</span>
+                  <div>
+                    <div style={{ fontWeight: 700, fontSize: 15, color: "#dc2626", marginBottom: 2 }}>Écouter la séance en audio</div>
+                    <div style={{ fontSize: 13, color: "#7f1d1d" }}>Enregistrement complet disponible sur YouTube</div>
+                  </div>
+                </a>
               </section>
             )}
 
-            {/* Note si données manquantes */}
-            {seance.note && (
-              <div style={{ background: "#fef9c3", border: "1px solid #fde68a", borderRadius: 10, padding: "14px 18px", marginBottom: 32, fontSize: 14, color: "#713f12" }}>
-                ℹ️ {seance.note}
-              </div>
-            )}
-
-            {/* À retenir */}
+            {/* Points clés */}
             {seance.points_cles?.length > 0 && (
               <section style={{ marginBottom: 40 }}>
-                <SectionTitle>À retenir</SectionTitle>
+                <SectionTitle>Points clés</SectionTitle>
                 <ul style={{ margin: 0, padding: 0, listStyle: "none", display: "flex", flexDirection: "column", gap: 10 }}>
                   {seance.points_cles.map((pt: string, i: number) => (
                     <li key={i} style={{
@@ -163,96 +160,11 @@ export default async function SeancePage({ params }: { params: Promise<{ id: str
               </section>
             )}
 
-            {/* Délibérations */}
-            {deliberations.length > 0 && (
-              <section style={{ marginBottom: 40 }}>
-                <SectionTitle>Délibérations votées</SectionTitle>
-                <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
-                  {deliberations.map((d, i) => (
-                    <div key={i} style={{ background: "#fff", border: "1px solid #e2e8f0", borderRadius: 10, padding: "16px 20px" }}>
-                      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", gap: 12, marginBottom: 8, flexWrap: "wrap" }}>
-                        <div>
-                          {d.numero && <span style={{ fontSize: 11, fontWeight: 700, color: "#94a3b8", textTransform: "uppercase", letterSpacing: "0.06em", marginRight: 8 }}>{d.numero}</span>}
-                          <span style={{ fontSize: 15, fontWeight: 700, color: "#0f172a" }}>{d.titre}</span>
-                        </div>
-                        {d.vote && (
-                          <span style={{
-                            fontSize: 11, fontWeight: 700, padding: "3px 10px", borderRadius: 999, flexShrink: 0,
-                            background: d.vote.toLowerCase().includes("unanim") ? "#f0fdf4" : d.vote.toLowerCase().includes("contre") ? "#fff7ed" : "#f8fafc",
-                            color: d.vote.toLowerCase().includes("unanim") ? "#15803d" : d.vote.toLowerCase().includes("contre") ? "#c2410c" : "#475569",
-                            border: `1px solid ${d.vote.toLowerCase().includes("unanim") ? "#bbf7d0" : d.vote.toLowerCase().includes("contre") ? "#fed7aa" : "#e2e8f0"}`,
-                          }}>{d.vote}</span>
-                        )}
-                      </div>
-                      <p style={{ margin: 0, fontSize: 14, lineHeight: 1.7, color: "#475569" }}>{d.detail}</p>
-                      {d.source_url && (
-                        <a href={d.source_url} target="_blank" rel="noopener noreferrer"
-                          style={{ display: "inline-block", marginTop: 10, fontSize: 13, color: "#2563eb" }}>
-                          Délibération complète (PDF) ↗
-                        </a>
-                      )}
-                    </div>
-                  ))}
-                </div>
-              </section>
-            )}
-
-            {/* Points chauds */}
-            {pointsChauds.length > 0 && (
-              <section style={{ marginBottom: 40 }}>
-                <SectionTitle>Points de débat</SectionTitle>
-                <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
-                  {pointsChauds.map((p, i) => {
-                    const style = TENSION_STYLE[p.tension] ?? TENSION_STYLE.modérée;
-                    return (
-                      <div key={i} style={{ background: style.bg, border: `1px solid ${style.border}`, borderRadius: 10, padding: "16px 20px" }}>
-                        <div style={{ fontSize: 14, fontWeight: 700, color: style.color, marginBottom: 8 }}>
-                          {style.icon} {p.sujet}
-                        </div>
-                        <p style={{ margin: 0, fontSize: 14, lineHeight: 1.7, color: style.color }}>{p.detail}</p>
-                      </div>
-                    );
-                  })}
-                </div>
-              </section>
-            )}
-
-            {/* Impact Bruzois */}
-            {impactBruzois.length > 0 && (
-              <section style={{ marginBottom: 40 }}>
-                <SectionTitle>Ce que ça change pour les Bruzois</SectionTitle>
-                <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
-                  {impactBruzois.map((item, i) => (
-                    <div key={i} style={{
-                      display: "flex", gap: 12, padding: "13px 16px",
-                      background: "#f0fdf4", border: "1px solid #bbf7d0",
-                      borderRadius: 10, fontSize: 15, lineHeight: 1.6, color: "#14532d",
-                    }}>
-                      <span style={{ flexShrink: 0 }}>✓</span>
-                      {item}
-                    </div>
-                  ))}
-                </div>
-              </section>
-            )}
-
-            {/* À surveiller */}
-            {aSurveiller.length > 0 && (
-              <section style={{ marginBottom: 40 }}>
-                <SectionTitle>Ce qu'on surveille ensuite</SectionTitle>
-                <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
-                  {aSurveiller.map((item, i) => (
-                    <div key={i} style={{
-                      display: "flex", gap: 12, padding: "13px 16px",
-                      background: "#f8fafc", border: "1px solid #e2e8f0",
-                      borderRadius: 10, fontSize: 15, lineHeight: 1.6, color: "#334155",
-                    }}>
-                      <span style={{ color: "#64748b", flexShrink: 0 }}>→</span>
-                      {item}
-                    </div>
-                  ))}
-                </div>
-              </section>
+            {/* Pas encore de contenu */}
+            {!seance.youtube_url && (!seance.points_cles || seance.points_cles.length === 0) && (
+              <div style={{ background: "#fef9c3", border: "1px solid #fde68a", borderRadius: 10, padding: "16px 20px", fontSize: 14, color: "#713f12" }}>
+                ℹ️ Compte rendu à paraître.
+              </div>
             )}
 
             {/* Navigation prev/next */}
@@ -306,15 +218,17 @@ export default async function SeancePage({ params }: { params: Promise<{ id: str
               </div>
             )}
 
-            {/* Liens officiels */}
+            {/* Liens utiles */}
             <div style={{ background: "#fff", border: "1px solid #e2e8f0", borderRadius: 12, padding: 20 }}>
               <h3 style={{ margin: "0 0 14px", fontSize: 13, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.06em", color: "#64748b" }}>
-                Liens officiels
+                Liens utiles
               </h3>
-              <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
-                <a href="https://www.ville-bruz.fr/ma-ville-de-bruz/conseil-municipal/conseil-municipal/" target="_blank" rel="noopener noreferrer" style={{ fontSize: 13, color: "#2563eb" }}>Conseil municipal (CRs + délibérations) ↗</a>
-                <a href="https://data.megalis.bretagne.bzh/organization/commune-de-bruz" target="_blank" rel="noopener noreferrer" style={{ fontSize: 13, color: "#2563eb" }}>Open data Mégalis Bretagne ↗</a>
-                <a href="https://www.youtube.com/playlist?list=PLnSe2hJFinqpupninWlKBHSmzmwLW-8i7" target="_blank" rel="noopener noreferrer" style={{ fontSize: 13, color: "#2563eb" }}>CMs en audio sur YouTube ↗</a>
+              <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+                <a href="https://www.ville-bruz.fr/ma-ville-de-bruz/conseil-municipal/conseil-municipal/" target="_blank" rel="noopener noreferrer" style={{ fontSize: 13, color: "#2563eb" }}>🏛️ Délibérations officielles ↗</a>
+                <a href="https://data.megalis.bretagne.bzh/organization/commune-de-bruz" target="_blank" rel="noopener noreferrer" style={{ fontSize: 13, color: "#2563eb" }}>📂 Open data Mégalis ↗</a>
+                <a href="https://www.youtube.com/playlist?list=PLnSe2hJFinqpupninWlKBHSmzmwLW-8i7" target="_blank" rel="noopener noreferrer" style={{ fontSize: 13, color: "#2563eb" }}>▶ Séances audio YouTube ↗</a>
+                <a href="https://www.ville-bruz.fr/bruz-mag/" target="_blank" rel="noopener noreferrer" style={{ fontSize: 13, color: "#2563eb" }}>📰 Bruz Mag (bimestriel) ↗</a>
+                <a href="https://www.lasemainedanslebocage.fr/communes/bruz" target="_blank" rel="noopener noreferrer" style={{ fontSize: 13, color: "#2563eb" }}>🗞️ La Semaine dans le Bocage ↗</a>
               </div>
             </div>
 

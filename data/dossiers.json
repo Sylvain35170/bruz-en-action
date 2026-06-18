@@ -1024,67 +1024,78 @@
     },
     {
       "id": "D06",
-      "titre": "Piscine de Bruz : rénovation ou reconstruction ?",
+      "titre": "Piscine de la Conterie : un déficit que les communes n'arrivent plus à éponger",
       "categorie": "Équipements",
       "statut": "en_cours",
       "featured": true,
       "last_activity": "Tue, 04 Ju",
       "date_ouverture": "2026-06-18",
-      "chapeau": "La piscine municipale de Bruz (piscine de la Conterie, construction 1970) est vieillissante. La majorité a promis une réflexion sur son avenir. Quel calendrier ? Quel coût ? Quelle solution ?",
+      "chapeau": "La Conterie est une piscine intercommunale gérée par un syndicat de 12 communes dont Bruz. Depuis la chute de fréquentation post-Covid, le déficit annuel dépasse 400 000 € — et chaque commune membre doit combler sa part. Pour Bruz, c'est 162 000 € supplémentaires au budget 2025. Majorité et minorité s'interrogent sur la viabilité du modèle.",
       "points_cles": [
-        "La piscine de la Conterie date des années 1970 — entretien coûteux, énergie élevée",
-        "Les inscriptions à la natation sont encore actives (saison 2025-2026)",
-        "Aucune délibération de rénovation ou reconstruction votée à ce stade",
-        "Dossier budgétaire à suivre : investissement estimé à plusieurs millions d'euros",
-        "À surveiller : inscriptions au PPI (Plan Pluriannuel d'Investissement) 2026-2032"
+        "La Conterie est intercommunale — 12 communes membres, siège à Chartres-de-Bretagne, ouverte en 2008",
+        "Fréquentation en chute libre : 260 000 visiteurs en 2019 → 190 000 en 2024 (-27%)",
+        "Déficit annuel : ~400 000 €, réparti entre les communes membres",
+        "Bruz : +162 000 € de contribution au budget 2025 pour absorber le déficit",
+        "Majorité et minorité bruzoise partagent la même inquiétude sur l'avenir du syndicat"
       ],
-      "pourquoi": "La piscine de la Conterie est un équipement structurant pour les Bruzois (natation scolaire, clubs, public). Son vieillissement impose une décision à moyen terme. La majorité Houssin a évoqué ce dossier sans encore l'inscrire au budget.",
+      "pourquoi": "La piscine de la Conterie est l'équipement aquatique de référence pour les Bruzois (natation scolaire, clubs, accès grand public). Mais le syndicat intercommunal qui la gère accumule les déficits depuis la crise Covid. La fréquentation ne remonte pas, et les communes doivent combler le trou chaque année. La question n'est plus technique (le bâtiment tient), elle est financière : combien de temps les communes acceptent-elles de subventionner un équipement déficitaire ?",
       "gouvernance": {
-        "pilote": "Adjoint(e) aux sports / équipements sportifs",
+        "pilote": "Syndicat Intercommunal Piscine de la Conterie (12 communes)",
         "partenaires": [
-          "Commune de Bruz",
-          "Rennes Métropole (éventuel co-financement)"
+          "Commune de Bruz (membre du syndicat)",
+          "Chartres-de-Bretagne, Chavagne, Pont-Péan, Corps-Nuds, Laillé, Noyal-Châtillon, Orgères, Saint-Armel, Saint-Erblon, Vern-sur-Seiche, Bourgbarré"
         ],
         "instances": [
-          "Conseil municipal",
-          "Commission finances"
+          "Comité syndical (représentants des 12 communes)",
+          "Conseil municipal de Bruz"
         ]
       },
       "decisions": [
         {
-          "date": "2026-06-18",
-          "type": "Veille ouverte",
-          "description": "Aucune délibération votée. Dossier en observation. Inscriptions natation actives pour 2025-2026.",
+          "date": "2025",
+          "type": "Budget syndicat",
+          "description": "Le budget 2025 du syndicat acte une hausse collective de 620 000 € pour couvrir le déficit. Bruz absorbe +162 000 €. Pont-Péan : +77% soit +30 000 €.",
+          "statut": "alerte"
+        },
+        {
+          "date": "2026-06-04",
+          "type": "Presse",
+          "description": "Ouest-France : « Où va la piscine ? » — majorité et minorité de Bruz s'inquiètent pour l'avenir de la Conterie.",
           "statut": "info"
         }
       ],
       "cout_financement": {
-        "enveloppe_estimee": "Non arrêtée",
-        "note": "Rénovation lourde : 5-10 M€ estimés. Reconstruction neuve : 15-25 M€. Cofinancement Rennes Métropole possible selon le projet retenu.",
+        "enveloppe_estimee": "~400 000 € de déficit annuel (syndicat)",
+        "note": "Bruz contribue à hauteur de sa quote-part (population / usage). En 2025, la contribution bruzoise augmente de 162 000 €. À ce rythme, la viabilité du modèle est questionnée par toutes les communes membres.",
         "sources_financement": [
-          "Budget communal",
-          "DETR / DSIL (subventions État)",
-          "Rennes Métropole (éventuel)"
+          "Contributions des communes membres (principale ressource)",
+          "Recettes billetterie et activités (en baisse)"
         ]
       },
       "impact_qualite_vie": [
-        "Équipement de proximité essentiel : natation scolaire obligatoire, clubs sportifs (natation, water-polo), accès grand public. Une fermeture prolongée impacterait directement les familles bruzoise."
+        "La Conterie assure la natation scolaire pour les élèves de Bruz — une obligation légale. Une sortie du syndicat ou une fermeture imposerait de trouver une alternative, complexe et coûteuse.",
+        "Clubs de natation, aquagym, accès grand public — la fréquentation bruzoise reste significative malgré la baisse globale."
       ],
       "risques": [
-        "Fermeture préventive pour raisons de sécurité si diagnostic défavorable",
-        "Coût élevé non anticipé au budget primitif 2026",
-        "Délai de construction d'un nouveau bassin : 3-5 ans minimum"
+        "Escalade du déficit si la fréquentation continue de stagner",
+        "Pression sur le budget communal : chaque euro versé au syndicat est un euro de moins pour d'autres investissements",
+        "Dissolution du syndicat : possible mais complexe (que ferait Bruz pour la natation scolaire ?)",
+        "Fracture politique si la majorité tarde à se positionner"
       ],
-      "conclusion": "Dossier à suivre de près. La décision d'investissement doit apparaître dans le PPI. Bruz en Action surveillera l'inscription au budget et les conclusions de tout diagnostic technique.",
+      "conclusion": "Le vrai sujet n'est pas l'état du bâtiment, c'est le modèle économique. La Conterie perd de la fréquentation, les communes comblent le trou, et personne n'a encore de solution claire. Bruz en Action suivra les délibérations du syndicat et la position que prendra la majorité Houssin.",
       "promesses_liees": [],
       "sources": [
         {
-          "label": "Mairie de Bruz — Natation (piscine Conterie)",
-          "url": "https://www.ville-bruz.fr/actualites/ouverture-des-inscriptions-a-la-natation-pi"
+          "label": "Piscine.fm — Communes autour de Rennes face au défi financier de la Conterie",
+          "url": "https://www.piscine.fm/face-a-des-defis-financiers-ces-communes-autour-de-rennes-sunissent-pour-preserver-leurs-piscines"
         },
         {
-          "label": "Ouest-France — « Où va la piscine ? »",
-          "url": "https://news.google.com/search?q=piscine+bruz"
+          "label": "Mairie de Bruz — Piscine de la Conterie",
+          "url": "https://www.ville-bruz.fr/mes-loisirs/faire-du-sport/piscine-de-la-conterie/"
+        },
+        {
+          "label": "Syndicat Intercommunal Piscine de la Conterie — Comersis",
+          "url": "https://comersis.fr/epci.php?epci=253514608"
         }
       ],
       "actus_recentes": [

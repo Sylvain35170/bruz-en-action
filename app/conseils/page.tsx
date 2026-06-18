@@ -124,7 +124,9 @@ export default function Conseils() {
 
                 <div style={{ display: "flex", flexDirection: "column", gap: 4 }}>
                   {seancesPasses.map((cm, idx) => {
-                    const hasPts = cm.points_cles.length > 0;
+                    const hasPts = cm.points_cles && cm.points_cles.length > 0;
+                    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+                    const ytUrl: string | undefined = (cm as any).youtube_url;
                     return (
                       <div key={cm.id} style={{ position: "relative", paddingBottom: idx < seancesPasses.length - 1 ? 28 : 0 }}>
                         {/* Dot */}
@@ -135,50 +137,40 @@ export default function Conseils() {
                           border: "2px solid #fff", boxShadow: `0 0 0 2px ${hasPts ? "#3b82f6" : "#cbd5e1"}`,
                         }} />
 
-                        <a href={`/bruz-en-action/conseils/${cm.id}`} style={{ textDecoration: "none", display: "block" }}>
-                          <div style={{
-                            background: "#fff", border: "1px solid #e2e8f0",
-                            borderRadius: 12, padding: "18px 20px",
-                            borderTop: `3px solid ${hasPts ? "#3b82f6" : "#e2e8f0"}`,
-                            transition: "box-shadow 0.15s",
-                          }}>
-                            {/* En-tête */}
-                            <div style={{ display: "flex", alignItems: "baseline", gap: 12, marginBottom: hasPts ? 14 : 4, flexWrap: "wrap" }}>
-                              <span style={{ fontWeight: 800, fontSize: 15, color: "#0f172a" }}>{formatDateShort(cm.date)}</span>
-                              <span style={{ fontSize: 14, color: "#475569", fontWeight: 500 }}>{cm.titre}</span>
-                              {cm.lieu && <span style={{ fontSize: 12, color: "#94a3b8", marginLeft: "auto" }}>{cm.lieu}</span>}
-                            </div>
-
-                            {/* Points clés */}
-                            {hasPts && (
-                              <ul style={{ margin: "0 0 14px", padding: 0, listStyle: "none", display: "flex", flexDirection: "column", gap: 8 }}>
-                                {cm.points_cles.slice(0, 2).map((pt, i) => (
-                                  <li key={i} style={{ display: "flex", gap: 10, fontSize: 14, color: "#334155", lineHeight: 1.6 }}>
-                                    <span style={{ color: "#3b82f6", fontWeight: 700, flexShrink: 0, marginTop: 1 }}>→</span>
-                                    <span>{pt}</span>
-                                  </li>
-                                ))}
-                                {cm.points_cles.length > 2 && (
-                                  <li style={{ fontSize: 13, color: "#94a3b8", paddingLeft: 22 }}>
-                                    +{cm.points_cles.length - 2} point{cm.points_cles.length - 2 > 1 ? "s" : ""} supplémentaire{cm.points_cles.length - 2 > 1 ? "s" : ""}…
-                                  </li>
-                                )}
-                              </ul>
+                        <div style={{
+                          background: "#fff", border: "1px solid #e2e8f0",
+                          borderRadius: 12, padding: "18px 20px",
+                          borderTop: `3px solid ${hasPts ? "#3b82f6" : "#e2e8f0"}`,
+                        }}>
+                          {/* En-tête */}
+                          <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: hasPts ? 12 : 4, flexWrap: "wrap" }}>
+                            <span style={{ fontWeight: 800, fontSize: 15, color: "#0f172a" }}>{formatDateShort(cm.date)}</span>
+                            <span style={{ fontSize: 13, color: "#475569", fontWeight: 500, flex: 1 }}>{cm.titre}</span>
+                            {ytUrl && (
+                              <a href={ytUrl} target="_blank" rel="noopener noreferrer"
+                                style={{ display: "inline-flex", alignItems: "center", gap: 5, padding: "3px 10px", borderRadius: 999, background: "#fef2f2", border: "1px solid #fecaca", color: "#dc2626", fontSize: 12, fontWeight: 700, textDecoration: "none", flexShrink: 0 }}>
+                                ▶ YouTube
+                              </a>
                             )}
-
-                            {/* Note si vide */}
-                            {!hasPts && "note" in cm && (
-                              <p style={{ margin: "6px 0 12px", fontSize: 13, color: "#94a3b8", fontStyle: "italic" }}>
-                                {(cm as typeof cm & { note?: string }).note}
-                              </p>
-                            )}
-
-                            {/* Lien analyse */}
-                            <div style={{ fontSize: 13, fontWeight: 600, color: "#2563eb" }}>
-                              {hasPts ? "Lire l'analyse complète →" : "Voir la fiche →"}
-                            </div>
                           </div>
-                        </a>
+
+                          {/* Points clés */}
+                          {hasPts && (
+                            <ul style={{ margin: "0 0 12px", padding: 0, listStyle: "none", display: "flex", flexDirection: "column", gap: 6 }}>
+                              {cm.points_cles.slice(0, 3).map((pt: string, i: number) => (
+                                <li key={i} style={{ display: "flex", gap: 8, fontSize: 13, color: "#334155", lineHeight: 1.6 }}>
+                                  <span style={{ color: "#3b82f6", fontWeight: 700, flexShrink: 0 }}>→</span>
+                                  <span>{pt}</span>
+                                </li>
+                              ))}
+                            </ul>
+                          )}
+
+                          {/* Lien fiche */}
+                          <a href={`/bruz-en-action/conseils/${cm.id}`} style={{ fontSize: 12, fontWeight: 600, color: "#2563eb", textDecoration: "none" }}>
+                            Détail →
+                          </a>
+                        </div>
                       </div>
                     );
                   })}
