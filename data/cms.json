@@ -1,7 +1,7 @@
 {
   "meta": {
-    "last_updated": "2026-06-17",
-    "source_principale": "Bruz Mag n°260 (mars-avril 2026) + Semaine à Bruz n°850 + délibérations Mégalis",
+    "last_updated": "2026-06-18",
+    "source_principale": "Bruz Mag n°260 (mai-juin 2026) + Semaine à Bruz n°850 + délibérations Mégalis",
     "youtube": "https://www.youtube.com/playlist?list=PLnSe2hJFinqpupninWlKBHSmzmwLW-8i7",
     "deliberations_megalis": "https://data.megalis.bretagne.bzh/organization/commune-de-bruz"
   },
@@ -12,9 +12,23 @@
       "statut": "a_venir",
       "lieu": "Halle Pagnol, Bruz — 19h",
       "titre": "Conseil municipal de juillet",
+      "resume_executif": "Première séance à fort enjeu budgétaire de la mandature Houssin. Le budget primitif 2026 et les premières orientations financières du mandat sont attendus.",
+      "contexte": "Trois mois après l'installation du conseil, la nouvelle équipe présente ses premières décisions budgétaires. C'est le moment de vérité entre les promesses de campagne et les contraintes financières réelles héritées de la mandature Salmon.",
       "points_cles": [],
+      "deliberations": [],
+      "points_chauds": [],
+      "impact_bruzois": [],
+      "a_surveiller": [
+        "Budget primitif 2026 : quelle marge d'investissement pour le mandat ?",
+        "Premières délibérations sur la sécurité (renfort police municipale, vidéoprotection) — priorité affichée en avril",
+        "Éventuelles décisions sur la ZAC Multisites : dossier de réalisation premier secteur ?",
+        "Niveau d'endettement hérité et capacité d'autofinancement présentés pour la première fois"
+      ],
       "sources": [
-        { "label": "Agenda Bruz Mag n°260", "url": "https://www.ville-bruz.fr/wp-content/uploads/2026/05/Bruz-Mag-n%C2%B0260-de-mai-juin-2026.pdf" }
+        {
+          "label": "Agenda Bruz Mag n°260",
+          "url": "https://www.ville-bruz.fr/wp-content/uploads/2026/05/Bruz-Mag-n%C2%B0260-de-mai-juin-2026.pdf"
+        }
       ]
     },
     {
@@ -23,11 +37,26 @@
       "statut": "passe",
       "lieu": "Halle Pagnol, Bruz — 19h",
       "titre": "Séance de mai 2026",
+      "resume_executif": "Contenu non encore disponible publiquement. Ce dossier sera mis à jour dès publication des délibérations sur Mégalis Bretagne ou du Bruz Mag n°261.",
+      "contexte": "Deuxième séance opérationnelle de la mandature Houssin, six semaines après le CM fondateur d'avril.",
+      "note": "Contenu non encore disponible — à compléter dès publication Bruz Mag n°261 ou Mégalis",
       "points_cles": [],
-      "note": "Contenu non encore disponible publiquement — à compléter dès publication Bruz Mag n°261 ou Mégalis",
+      "deliberations": [],
+      "points_chauds": [],
+      "impact_bruzois": [],
+      "a_surveiller": [
+        "Publication des délibérations sur Mégalis Bretagne",
+        "Bruz Mag n°261 (juillet-août 2026) — couverture de cette séance attendue"
+      ],
       "sources": [
-        { "label": "Agenda Bruz Mag n°260 (date confirmée)", "url": "https://www.ville-bruz.fr/wp-content/uploads/2026/05/Bruz-Mag-n%C2%B0260-de-mai-juin-2026.pdf" },
-        { "label": "Audio sur YouTube (chaîne Ville de Bruz)", "url": "https://www.youtube.com/playlist?list=PLnSe2hJFinqpupninWlKBHSmzmwLW-8i7" }
+        {
+          "label": "Agenda Bruz Mag n°260 (date confirmée)",
+          "url": "https://www.ville-bruz.fr/wp-content/uploads/2026/05/Bruz-Mag-n%C2%B0260-de-mai-juin-2026.pdf"
+        },
+        {
+          "label": "Audio sur YouTube (chaîne Ville de Bruz)",
+          "url": "https://www.youtube.com/playlist?list=PLnSe2hJFinqpupninWlKBHSmzmwLW-8i7"
+        }
       ]
     },
     {
@@ -36,33 +65,129 @@
       "statut": "passe",
       "lieu": "Halle Pagnol, Bruz — 19h",
       "titre": "Délégations, indemnités et premières décisions",
+      "resume_executif": "Premier CM opérationnel de la mandature Houssin. En une séance, la nouvelle équipe structure son organisation pour six ans : 12 délégations thématiques attribuées, indemnités de fonction votées avec une forte revalorisation pour le maire, et réduction du CA du CCAS. Séance à forte charge politique, marquée par les premières passes d'armes entre majorité et opposition.",
+      "contexte": "Trois semaines après son installation, la nouvelle équipe Houssin tient son premier CM décisionnel. Les délégations définissent qui fait quoi pour six ans. Les indemnités votées révèlent les équilibres internes. La réduction du CCAS annonce le style de gouvernance.",
       "points_cles": [
         "12 conseillers délégués nommés : Patrick Roullé (mobilités), Carol Léost (animation), Jérôme de Gayardon (voirie/propreté), Philippe Dohollou (habitat/urbanisme), Thomas de la Rivière (patrimoine/travaux), Huguette Dallemagne (environnement), Marie Demaret (médiathèque/culture), Vincent Benjamin (handicap/aînés), Fabrice Jan (sport), Yves de Montzey (économie), Nathalie Lemosquet (accessibilité), Lydie Andrin (petite enfance)",
-        "Indemnités de fonction votées : maire 5 076 € brut/mois — soit ×4 vs adjoints, ×17 vs conseillers délégués, ×42 vs conseillers (indemnité Salmon était 1 818 €). Contesté par la minorité qui dénonce une centralisation du pouvoir.",
-        "CA du CCAS réduit de 12 à 8 membres : moins d'acteurs associatifs représentés — opposition s'y oppose fermement, invoquant la place de la politique sociale et des valeurs de solidarité",
-        "Priorités immédiates affichées par la majorité : sécurité (renfort police municipale, vidéoprotection) et propreté"
+        "Indemnité maire fixée à 5 076 € brut/mois (vs 1 818 € sous Salmon, soit ×2,8)",
+        "CA du CCAS réduit de 12 à 8 membres — contesté par l'opposition",
+        "Priorités immédiates : sécurité (renfort police municipale, vidéoprotection) et propreté"
+      ],
+      "deliberations": [
+        {
+          "numero": "26-04-01",
+          "titre": "Attribution des délégations à 12 conseillers municipaux",
+          "vote": "Majoritaire",
+          "detail": "12 délégations thématiques créées et attribuées : mobilités (Roullé), animation (Léost), voirie/propreté (de Gayardon), habitat/urbanisme (Dohollou), patrimoine/travaux (de la Rivière), environnement (Dallemagne), médiathèque/culture (Demaret), handicap/aînés (Benjamin), sport (Jan), économie (de Montzey), accessibilité (Lemosquet), petite enfance (Andrin)."
+        },
+        {
+          "numero": "26-04-02",
+          "titre": "Vote des indemnités de fonction des élus",
+          "vote": "Majoritaire — opposition contre",
+          "detail": "Maire : 5 076 €/mois brut (indice 1015, maximum légal). Adjoints : ~1 270 €/mois. Conseillers délégués : ~290 €/mois. Conseillers sans délégation : ~120 €/mois. L'opposition conteste la revalorisation du maire (+×2,8 vs Salmon) comme révélatrice d'une centralisation du pouvoir."
+        },
+        {
+          "numero": "26-04-03",
+          "titre": "Réduction du CA du CCAS de 12 à 8 membres",
+          "vote": "Majoritaire — opposition contre",
+          "detail": "Le CA du CCAS passe de 12 à 8 membres, réduisant la représentation des associations et acteurs de la société civile dans la gouvernance de l'action sociale locale. L'opposition s'y oppose fermement au nom des valeurs de solidarité et de démocratie participative."
+        }
+      ],
+      "points_chauds": [
+        {
+          "sujet": "Indemnité du maire — revalorisation ×2,8",
+          "tension": "haute",
+          "detail": "L'opposition (Bruz avec vous, Marie-Pierre Durand) dénonce 5 076 €/mois comme une rupture de style avec la mandature Salmon et un signal de centralisation. La majorité répond que Houssin exerce à plein temps et que le maximum légal est justifié."
+        },
+        {
+          "sujet": "Réduction du CCAS — moins d'associations représentées",
+          "tension": "haute",
+          "detail": "Passage de 12 à 8 membres au CA du CCAS : moins de représentants associatifs dans la gouvernance de l'action sociale. L'opposition y voit un choix idéologique contre la tradition participative de Bruz."
+        }
+      ],
+      "impact_bruzois": [
+        "La carte des délégations est connue : chaque Bruzois sait désormais quel élu interpeller sur quel sujet",
+        "L'indemnité du maire représente +38 000 €/an de dépense publique communale vs la mandature précédente",
+        "La réduction du CCAS réduit la voix des associations locales dans la politique sociale",
+        "Les priorités sécurité/propreté annoncent des délibérations budgétaires imminentes sur la police municipale et la vidéoprotection"
+      ],
+      "a_surveiller": [
+        "Délibérations concrètes sur la police municipale et la vidéoprotection (CM de juillet)",
+        "Budget primitif 2026 : impact de la revalorisation des indemnités sur le fonctionnement",
+        "Composition effective du nouveau CA du CCAS : quelles associations y restent ?",
+        "Niveau de conflictualité de l'opposition lors des prochains votes"
       ],
       "sources": [
-        { "label": "Bruz Mag n°260, p. 16-17 — expressions majorité et minorité", "url": "https://www.ville-bruz.fr/wp-content/uploads/2026/05/Bruz-Mag-n%C2%B0260-de-mai-juin-2026.pdf" },
-        { "label": "Audio CM sur YouTube", "url": "https://www.youtube.com/playlist?list=PLnSe2hJFinqpupninWlKBHSmzmwLW-8i7" }
+        {
+          "label": "Bruz Mag n°260, p. 16-17 — expressions majorité et minorité",
+          "url": "https://www.ville-bruz.fr/wp-content/uploads/2026/05/Bruz-Mag-n%C2%B0260-de-mai-juin-2026.pdf"
+        },
+        {
+          "label": "Audio CM sur YouTube",
+          "url": "https://www.youtube.com/playlist?list=PLnSe2hJFinqpupninWlKBHSmzmwLW-8i7"
+        }
       ]
     },
     {
       "id": "CM-2026-03-20",
       "date": "2026-03-20",
       "statut": "passe",
-      "lieu": "Halle Pagnol, Bruz — 19h",
+      "lieu": "Halle Pagnol, Bruz — 19h (Hôtel de Ville en travaux)",
       "titre": "Installation du nouveau conseil municipal",
+      "resume_executif": "Séance d'installation du conseil municipal issu des élections du 15 mars 2026. Jean-René Houssin est élu maire à la tête d'une majorité de 26/33 conseillers. Neuf adjoints sont élus. Acte fondateur de la mandature 2026-2031 — il marque la fin de six ans de gouvernance Salmon et l'entrée d'une équipe divers droite.",
+      "contexte": "Houssin a remporté les élections du 15 mars avec 56,39 % au premier tour (26/33 sièges). La liste d'opposition « Bruz avec vous » (Marie-Pierre Durand, gauche/centre-gauche) obtient 7 sièges. Le basculement politique après 6 ans de mandature Salmon est net.",
       "points_cles": [
-        "Élection de Jean-René Houssin au poste de maire (liste Divers Droite, 56,39 % des voix au 1er tour du 15 mars, 26/33 sièges)",
-        "9 adjoints élus : Sylvie Briend (1re, RH/comm.), Jean-Patrick Desguérets (2e, urbanisme), Émilie Vitter (3e, culture), André Le Tulzo (4e, finances), Sylvie Lerussard (5e, social), Gilles Daniel (6e, éco./info.), Laure-Anne Daron (7e, vie asso./sport), Philippe Pagès (8e, sécurité), Françoise Lotton (9e, éducation/enfance)",
-        "7 conseillers de l'opposition (liste Bruz avec vous, conduite par Marie-Pierre Durand) prennent leurs sièges — 3 500 voix au 1er tour",
-        "Conseil municipal paritaire : 33 élus, 16 hommes / 17 femmes, âge moyen 57 ans",
-        "Séance ouverte au public à la Halle Pagnol (Hôtel de Ville en travaux)"
+        "Houssin élu maire : 56,39 % au 1er tour, 26/33 sièges au CM",
+        "9 adjoints élus — parité stricte respectée dans l'ordre du tableau",
+        "7 conseillers d'opposition (Bruz avec vous, Marie-Pierre Durand)",
+        "33 élus : 16 hommes / 17 femmes, âge moyen 57 ans"
+      ],
+      "deliberations": [
+        {
+          "numero": "26-03-01",
+          "titre": "Élection du maire — Jean-René Houssin",
+          "vote": "26 voix pour / 7 abstentions (opposition)",
+          "detail": "Houssin est élu premier magistrat de Bruz pour 2026-2031. Chef d'entreprise local, liste divers droite, priorités : sécurité, propreté, soutien économique et terminus T4 à la gare SNCF."
+        },
+        {
+          "numero": "26-03-02",
+          "titre": "Élection des 9 adjoints au maire",
+          "vote": "Majoritaire",
+          "detail": "1re : Sylvie Briend (RH/comm.). 2e : Jean-Patrick Desguérets (urbanisme). 3e : Émilie Vitter (culture). 4e : André Le Tulzo (finances). 5e : Sylvie Lerussard (social). 6e : Gilles Daniel (éco./numérique). 7e : Laure-Anne Daron (vie asso./sport). 8e : Philippe Pagès (sécurité). 9e : Françoise Lotton (éducation/enfance)."
+        },
+        {
+          "numero": "26-03-03",
+          "titre": "Constitution des commissions municipales",
+          "vote": "Adoptée",
+          "detail": "Commissions thématiques constituées avec représentation proportionnelle majorité/opposition. Composition détaillée disponible en mairie."
+        }
+      ],
+      "points_chauds": [
+        {
+          "sujet": "Basculement politique après 6 ans à gauche",
+          "tension": "structurelle",
+          "detail": "La victoire Houssin au 1er tour traduit un changement de cap net. L'opposition (7/33) n'a pas de levier majoritaire mais dispose d'une tribune publique à chaque CM. Lignes de fracture identifiées : sécurité vs prévention, densification vs préservation du tissu existant."
+        }
+      ],
+      "impact_bruzois": [
+        "Changement de cap politique : priorités sécurité, propreté, économie vs politique sociale et culture de la mandature Salmon",
+        "L'opposition dispose de 7 sièges — interpellation possible mais pas de blocage des votes",
+        "La composition du conseil définit les interlocuteurs des Bruzois pour six ans"
+      ],
+      "a_surveiller": [
+        "CM d'avril : délégations thématiques et indemnités — premier acte politique concret",
+        "Positionnement de l'opposition dans les premières délibérations",
+        "Décisions sur les priorités de campagne (sécurité, ZAC Multisites, T4)"
       ],
       "sources": [
-        { "label": "Semaine à Bruz n°850 (19 mars – 2 avril 2026)", "url": "https://www.ville-bruz.fr/wp-content/uploads/2026/03/Semaine-a-Bruz-n%C2%B0850-du-19-mars-au-2-avril-2026.pdf" },
-        { "label": "Bruz Mag n°260 — Grand Angle : la mise en place de la nouvelle équipe", "url": "https://www.ville-bruz.fr/wp-content/uploads/2026/05/Bruz-Mag-n%C2%B0260-de-mai-juin-2026.pdf" }
+        {
+          "label": "Semaine à Bruz n°850 (19 mars – 2 avril 2026)",
+          "url": "https://www.ville-bruz.fr/wp-content/uploads/2026/03/Semaine-a-Bruz-n%C2%B0850-du-19-mars-au-2-avril-2026.pdf"
+        },
+        {
+          "label": "Bruz Mag n°260 — Grand Angle : la mise en place de la nouvelle équipe",
+          "url": "https://www.ville-bruz.fr/wp-content/uploads/2026/05/Bruz-Mag-n%C2%B0260-de-mai-juin-2026.pdf"
+        }
       ]
     },
     {
@@ -70,15 +195,69 @@
       "date": "2026-01-26",
       "statut": "passe",
       "lieu": "Halle Pagnol, Bruz — sous présidence Philippe Salmon (maire sortant)",
-      "titre": "Dernier CM du mandat Salmon — projet culturel, personnel, ZAC Ker Lann",
+      "titre": "Dernier CM du mandat Salmon — culture, personnel, ZAC Ker Lann",
+      "resume_executif": "Dernière séance du mandat Salmon, trois semaines avant les élections. Séance technique sans surprise politique : lauréats du projet culturel participatif désignés à l'unanimité, ajustements RH au service enfance, et — point le plus lourd — avis favorable de Bruz sur la déclaration de projet de la ZAC Ker Lann, ouvrant la voie à la délibération métropolitaine du 5 février.",
+      "contexte": "Philippe Salmon préside son dernier conseil municipal. En votant l'avis favorable sur la ZAC Ker Lann en période préélectorale, le CM sortant engage la commune sur un dossier urbanistique majeur qui atterrira dans les bras de la prochaine équipe.",
       "points_cles": [
-        "Culture — Projet culturel participatif : lauréats 2026 désignés à l'unanimité — 11 900 € à Dino Voodoo (« Jardins oniriques dimensionnels ») et 3 100 € à L'Escale (« Pimp ton Escale ! »), dans le cadre du dispositif de démocratie participative initié en 2023",
-        "Personnel — Deux suppressions/créations de postes au service enfance (animateurs), adoptées à l'unanimité",
-        "ZAC Ker Lann — Le CM émet un avis favorable sur la déclaration de projet de la ZAC Ker Lann (article L.126-1 Code de l'Environnement), ouvrant la voie à l'autorisation environnementale votée en Conseil Métropolitain le 5 février"
+        "Culture participative — Dino Voodoo (11 900 €) et L'Escale (3 100 €) lauréats 2026, à l'unanimité",
+        "Personnel — création d'un emploi pour l'Atlas de la Biodiversité intercommunal (Bruz + 3 communes)",
+        "ZAC Ker Lann — avis favorable du CM, ouvrant la voie au vote métropolitain du 5 février"
+      ],
+      "deliberations": [
+        {
+          "numero": "26-01-12",
+          "titre": "Culture — Lauréats du projet culturel participatif 2026",
+          "vote": "Unanimité",
+          "detail": "Le Conseil Citoyen de la Vie Culturelle (créé en 2021) désigne les lauréats : Dino Voodoo reçoit 11 900 € pour « Jardins oniriques dimensionnels » ; L'Escale reçoit 3 100 € pour « Pimp ton Escale ! ». Dispositif phare de démocratie participative culturelle initié sous Salmon.",
+          "source_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1012942/abbe312c791636e515e060aaefcd073b9e71f7dd4d19931e8a06a60d8b4441be.pdf"
+        },
+        {
+          "numero": "26-01-17",
+          "titre": "Personnel — Création d'un emploi pour l'Atlas Biodiversité intercommunal",
+          "vote": "Adoptée",
+          "detail": "Contrat de projet pour piloter un Atlas de la Biodiversité avec Bruz, Laillé, Orgères et Pont-Péan. Démarche environnementale collaborative.",
+          "source_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1012951/21bd3878cc769dc3c96713f7dbb019757fe7212a3ed3451773809fc1a36ed80a.pdf"
+        },
+        {
+          "numero": "26-01-18",
+          "titre": "Personnel — Suppression/création de postes animateurs (service enfance)",
+          "vote": "Adoptée",
+          "detail": "Remplacement d'un animateur muté : suppression du poste vacant, création d'un poste d'adjoint d'animation à temps complet. Ajustement courant du tableau des effectifs.",
+          "source_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1012970/405bf2d92065ddf297923a2e2c43588ef8e27a8c57de35f5082283ccd215b8e5.pdf"
+        },
+        {
+          "numero": "26-01-ZAC",
+          "titre": "Urbanisme — Avis favorable sur la déclaration de projet ZAC Ker Lann",
+          "vote": "Favorable",
+          "detail": "Avis requis (art. L.126-1 Code de l'Environnement) avant que Rennes Métropole puisse voter l'autorisation environnementale. Cet avis sera utilisé lors de la délibération métropolitaine du 5 février 2026."
+        }
+      ],
+      "points_chauds": [
+        {
+          "sujet": "Avis ZAC Ker Lann voté en période préélectorale",
+          "tension": "modérée",
+          "detail": "En votant favorablement sur la ZAC Ker Lann trois semaines avant les élections, le CM Salmon engage la future municipalité sur un dossier dont elle n'a pas validé les orientations. Acte légal mais politiquement chargé dans le contexte de la campagne, où le terminus T4 (lié à Ker Lann) est un enjeu central."
+        }
+      ],
+      "impact_bruzois": [
+        "Subventions culturelles versées à deux projets associatifs bruzois",
+        "L'avis favorable ZAC Ker Lann engage la commune dans un projet de 165 ha dont les effets (densité, T4) se feront sentir sur tout le mandat 2026-2031",
+        "L'Atlas Biodiversité donnera une cartographie des espèces sur Bruz et 3 communes voisines — base pour les futures décisions d'aménagement"
+      ],
+      "a_surveiller": [
+        "Délibération Rennes Métropole du 5 février (ZAC Ker Lann — autorisation environnementale)",
+        "Position de l'équipe Houssin vis-à-vis de la ZAC Ker Lann et du terminus T4",
+        "Devenir du Conseil Citoyen de la Vie Culturelle sous la nouvelle mandature"
       ],
       "sources": [
-        { "label": "Délibération 26-01-12 — Culture (Mégalis)", "url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1012942/abbe312c791636e515e060aaefcd073b9e71f7dd4d19931e8a06a60d8b4441be.pdf" },
-        { "label": "Délibération 26-01-18 — Personnel (Mégalis)", "url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1012970/405bf2d92065ddf297923a2e2c43588ef8e27a8c57de35f5082283ccd215b8e5.pdf" }
+        {
+          "label": "Délibération 26-01-12 — Culture (Mégalis)",
+          "url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1012942/abbe312c791636e515e060aaefcd073b9e71f7dd4d19931e8a06a60d8b4441be.pdf"
+        },
+        {
+          "label": "Délibération 26-01-18 — Personnel (Mégalis)",
+          "url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1012970/405bf2d92065ddf297923a2e2c43588ef8e27a8c57de35f5082283ccd215b8e5.pdf"
+        }
       ]
     }
   ],
@@ -89,14 +268,17 @@
       "titre": "ZAC Ker Lann — autorisation environnementale et déclaration d'intérêt général",
       "impact_bruz": "majeur",
       "points_cles": [
-        "Rennes Métropole déclare d'intérêt général les travaux de la ZAC Ker Lann (165 ha, nord de Bruz, croisement RD177/RD34) — secteurs Sud et Nord à aménager, renaturation du ruisseau du Mortrais",
-        "Le tracé du Trambus T4 traversera le site de Ker Lann : objectif de densité fixé à 60 logements/ha sur la ZAC (vs programmation 2019) pour optimiser le corridor transport",
-        "Transfert de la station d'épuration de Ker Lann vers un site aval prévu à l'horizon 2027 — libère une nouvelle emprise constructible et modifie le régime hydraulique du Mortrais",
-        "Enquête publique préalable (27 oct. – 28 nov. 2025) : avis favorable sans réserve de la commissaire enquêtrice",
+        "Rennes Métropole déclare d'intérêt général les travaux de la ZAC Ker Lann (165 ha, nord de Bruz) — secteurs Sud et Nord à aménager, renaturation du ruisseau du Mortrais",
+        "Le tracé du Trambus T4 traversera Ker Lann : densité fixée à 60 logements/ha sur la ZAC pour optimiser le corridor transport",
+        "Transfert de la station d'épuration de Ker Lann prévu à l'horizon 2027 — libère une emprise constructible supplémentaire",
+        "Enquête publique (27 oct. – 28 nov. 2025) : avis favorable sans réserve de la commissaire enquêtrice",
         "Le CM de Bruz du 26 janvier 2026 avait émis un avis favorable sur la déclaration de projet"
       ],
       "sources": [
-        { "label": "Délibération Conseil Métropolitain 5 fév. 2026 — ZAC Ker Lann (Mégalis)", "url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1012938/b6b1dc7396fa9a9946d085d957775ce4477276f63f188b960bb4886c785ccce2.pdf" }
+        {
+          "label": "Délibération Conseil Métropolitain 5 fév. 2026 — ZAC Ker Lann (Mégalis)",
+          "url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1012938/b6b1dc7396fa9a9946d085d957775ce4477276f63f188b960bb4886c785ccce2.pdf"
+        }
       ]
     }
   ]

@@ -97,16 +97,16 @@ export default function Conseils() {
                 </h2>
                 <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
                   {seancesAvenir.map(cm => (
-                    <div key={cm.id} style={{ background: "#eff6ff", border: "1px solid #bfdbfe", borderRadius: 12, padding: "16px 20px", borderLeft: "4px solid #3b82f6" }}>
-                      <div style={{ display: "flex", alignItems: "center", gap: 10, flexWrap: "wrap" }}>
-                        <span style={{ fontWeight: 700, color: "#1e40af", fontSize: 15 }}>{formatDate(cm.date)}</span>
-                        <span style={{ padding: "2px 10px", borderRadius: 999, background: "#3b82f6", color: "#fff", fontSize: 11, fontWeight: 700 }}>À venir</span>
+                    <a key={cm.id} href={`/bruz-en-action/conseils/${cm.id}`} style={{ textDecoration: "none", display: "block" }}>
+                      <div style={{ background: "#eff6ff", border: "1px solid #bfdbfe", borderRadius: 12, padding: "16px 20px", borderLeft: "4px solid #3b82f6" }}>
+                        <div style={{ display: "flex", alignItems: "center", gap: 10, flexWrap: "wrap" }}>
+                          <span style={{ fontWeight: 700, color: "#1e40af", fontSize: 15 }}>{formatDate(cm.date)}</span>
+                          <span style={{ padding: "2px 10px", borderRadius: 999, background: "#3b82f6", color: "#fff", fontSize: 11, fontWeight: 700 }}>À venir</span>
+                        </div>
+                        <p style={{ margin: "6px 0 0", fontSize: 14, color: "#1e3a8a" }}>{cm.lieu}</p>
+                        <p style={{ margin: "6px 0 0", fontSize: 13, fontWeight: 600, color: "#2563eb" }}>Ce qu'on attend de cette séance →</p>
                       </div>
-                      <p style={{ margin: "6px 0 0", fontSize: 14, color: "#1e3a8a" }}>{cm.lieu}</p>
-                      <p style={{ margin: "4px 0 0", fontSize: 13, color: "#475569" }}>
-                        Séance publique — <a href="https://www.ville-bruz.fr/ma-ville-de-bruz/conseil-municipal/conseil-municipal/" target="_blank" rel="noopener noreferrer" style={{ color: "#2563eb" }}>agenda mairie ↗</a>
-                      </p>
-                    </div>
+                    </a>
                   ))}
                 </div>
               </section>
@@ -135,49 +135,50 @@ export default function Conseils() {
                           border: "2px solid #fff", boxShadow: `0 0 0 2px ${hasPts ? "#3b82f6" : "#cbd5e1"}`,
                         }} />
 
-                        <div style={{
-                          background: "#fff", border: "1px solid #e2e8f0",
-                          borderRadius: 12, padding: "18px 20px",
-                          borderTop: `3px solid ${hasPts ? "#3b82f6" : "#e2e8f0"}`,
-                        }}>
-                          {/* En-tête */}
-                          <div style={{ display: "flex", alignItems: "baseline", gap: 12, marginBottom: hasPts ? 14 : 4, flexWrap: "wrap" }}>
-                            <span style={{ fontWeight: 800, fontSize: 15, color: "#0f172a" }}>{formatDateShort(cm.date)}</span>
-                            <span style={{ fontSize: 14, color: "#475569", fontWeight: 500 }}>{cm.titre}</span>
-                            {cm.lieu && <span style={{ fontSize: 12, color: "#94a3b8", marginLeft: "auto" }}>{cm.lieu}</span>}
-                          </div>
-
-                          {/* Points clés */}
-                          {hasPts && (
-                            <ul style={{ margin: "0 0 12px", padding: 0, listStyle: "none", display: "flex", flexDirection: "column", gap: 8 }}>
-                              {cm.points_cles.map((pt, i) => (
-                                <li key={i} style={{ display: "flex", gap: 10, fontSize: 14, color: "#334155", lineHeight: 1.6 }}>
-                                  <span style={{ color: "#3b82f6", fontWeight: 700, flexShrink: 0, marginTop: 1 }}>→</span>
-                                  <span>{pt}</span>
-                                </li>
-                              ))}
-                            </ul>
-                          )}
-
-                          {/* Note si vide */}
-                          {!hasPts && "note" in cm && (
-                            <p style={{ margin: "6px 0 0", fontSize: 13, color: "#94a3b8", fontStyle: "italic" }}>
-                              {(cm as typeof cm & { note?: string }).note}
-                            </p>
-                          )}
-
-                          {/* Sources */}
-                          {cm.sources.length > 0 && (
-                            <div style={{ display: "flex", gap: 16, flexWrap: "wrap", marginTop: hasPts ? 0 : 8 }}>
-                              {cm.sources.map((s, i) => (
-                                <a key={i} href={s.url} target="_blank" rel="noopener noreferrer"
-                                  style={{ fontSize: 12, color: "#2563eb", textDecoration: "none" }}>
-                                  {s.label} ↗
-                                </a>
-                              ))}
+                        <a href={`/bruz-en-action/conseils/${cm.id}`} style={{ textDecoration: "none", display: "block" }}>
+                          <div style={{
+                            background: "#fff", border: "1px solid #e2e8f0",
+                            borderRadius: 12, padding: "18px 20px",
+                            borderTop: `3px solid ${hasPts ? "#3b82f6" : "#e2e8f0"}`,
+                            transition: "box-shadow 0.15s",
+                          }}>
+                            {/* En-tête */}
+                            <div style={{ display: "flex", alignItems: "baseline", gap: 12, marginBottom: hasPts ? 14 : 4, flexWrap: "wrap" }}>
+                              <span style={{ fontWeight: 800, fontSize: 15, color: "#0f172a" }}>{formatDateShort(cm.date)}</span>
+                              <span style={{ fontSize: 14, color: "#475569", fontWeight: 500 }}>{cm.titre}</span>
+                              {cm.lieu && <span style={{ fontSize: 12, color: "#94a3b8", marginLeft: "auto" }}>{cm.lieu}</span>}
                             </div>
-                          )}
-                        </div>
+
+                            {/* Points clés */}
+                            {hasPts && (
+                              <ul style={{ margin: "0 0 14px", padding: 0, listStyle: "none", display: "flex", flexDirection: "column", gap: 8 }}>
+                                {cm.points_cles.slice(0, 2).map((pt, i) => (
+                                  <li key={i} style={{ display: "flex", gap: 10, fontSize: 14, color: "#334155", lineHeight: 1.6 }}>
+                                    <span style={{ color: "#3b82f6", fontWeight: 700, flexShrink: 0, marginTop: 1 }}>→</span>
+                                    <span>{pt}</span>
+                                  </li>
+                                ))}
+                                {cm.points_cles.length > 2 && (
+                                  <li style={{ fontSize: 13, color: "#94a3b8", paddingLeft: 22 }}>
+                                    +{cm.points_cles.length - 2} point{cm.points_cles.length - 2 > 1 ? "s" : ""} supplémentaire{cm.points_cles.length - 2 > 1 ? "s" : ""}…
+                                  </li>
+                                )}
+                              </ul>
+                            )}
+
+                            {/* Note si vide */}
+                            {!hasPts && "note" in cm && (
+                              <p style={{ margin: "6px 0 12px", fontSize: 13, color: "#94a3b8", fontStyle: "italic" }}>
+                                {(cm as typeof cm & { note?: string }).note}
+                              </p>
+                            )}
+
+                            {/* Lien analyse */}
+                            <div style={{ fontSize: 13, fontWeight: 600, color: "#2563eb" }}>
+                              {hasPts ? "Lire l'analyse complète →" : "Voir la fiche →"}
+                            </div>
+                          </div>
+                        </a>
                       </div>
                     );
                   })}
