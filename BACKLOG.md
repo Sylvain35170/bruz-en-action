@@ -39,6 +39,12 @@
 
 ## ✅ Terminé
 
+- **Page `/dossiers`** — index complet, tri featured + last_activity, badge actif, couleur par catégorie, compteur actus
+- **Rotation dossiers homepage** — 4 cards rotatifs (featured first + last_activity desc), lien "Tous les dossiers"
+- **dossiers.json** — champs `featured` et `last_activity` ajoutés (D01–D05), prêts pour agent 6
+- **"Qui sommes-nous" refondé** — citation Art. 2 statuts, origine Houssin/Un nouvel élan assumée, 3 piliers On suit / On écoute / On transmet
+- **meta.json** — description, mission, positionnement alignés sur les statuts loi 1901
+- **Nav enrichie** — lien 📁 Dossiers dans toutes les pages
 - **Carte interactive `/carte`** — Leaflet + OSM, 6 secteurs ZAC Multisites (coords réelles Nominatim), corridor T4 (21 stations), équipements. D05 mis à jour et lié.
 - Section Dossiers homepage : Trambus T4, ZAC Multisites, Finances 2026, Fiscalité Salmon — sourcés et déployés
 - Pages dédiées `/dossiers/[id]` : 5 pages statiques (points clés, sources, sidebar, liens mairie)
