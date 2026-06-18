@@ -1,7 +1,80 @@
 {
   "meta": {
-    "last_updated": "2026-06-16",
-    "updated_by": "init"
+    "last_updated": "2026-06-18",
+    "note": "Actus de suivi des promesses — une actu = un événement daté lié à une ou plusieurs promesses"
   },
-  "actus": []
+  "actus": [
+    {
+      "id": "A001",
+      "date": "2026-04-08",
+      "titre": "Patrick Roullé nommé délégué mobilités",
+      "detail": "Le CM du 8 avril 2026 confie explicitement la délégation Transition écologique et mobilités à Patrick Roullé. C'est l'interlocuteur officiel de Bruz sur le dossier T4 et les navettes électriques pour le mandat 2026-2031.",
+      "type": "decision",
+      "promesses_liees": [1, 2, 5, 6],
+      "dossier_lie": "D01",
+      "cm_lie": "CM-2026-04-08",
+      "source_label": "Bruz Mag n°260 — délégations avril 2026",
+      "source_url": "https://www.ville-bruz.fr/wp-content/uploads/2026/05/Bruz-Mag-n%C2%B0260-de-mai-juin-2026.pdf"
+    },
+    {
+      "id": "A002",
+      "date": "2026-04-08",
+      "titre": "Philippe Pagès nommé 8e adjoint à la sécurité",
+      "detail": "Le CM du 8 avril consacre la sécurité comme priorité n°1 en nommant un adjoint dédié (Pagès) et en affichant explicitement le renforcement de la police municipale et de la vidéoprotection comme premières décisions attendues.",
+      "type": "decision",
+      "promesses_liees": [7, 8, 9],
+      "dossier_lie": null,
+      "cm_lie": "CM-2026-04-08",
+      "source_label": "Bruz Mag n°260 — délégations avril 2026",
+      "source_url": "https://www.ville-bruz.fr/wp-content/uploads/2026/05/Bruz-Mag-n%C2%B0260-de-mai-juin-2026.pdf"
+    },
+    {
+      "id": "A003",
+      "date": "2026-04-08",
+      "titre": "Jean-Patrick Desguérets nommé 2e adjoint à l'urbanisme",
+      "detail": "Le CM du 8 avril confie l'urbanisme au 2e adjoint Desguérets, et Philippe Dohollou reçoit la délégation habitat/urbanisme opérationnelle. La ZAC Multisites et la maîtrise de la densification relèvent de ce binôme.",
+      "type": "decision",
+      "promesses_liees": [13, 14, 15],
+      "dossier_lie": "D02",
+      "cm_lie": "CM-2026-04-08",
+      "source_label": "Bruz Mag n°260 — délégations avril 2026",
+      "source_url": "https://www.ville-bruz.fr/wp-content/uploads/2026/05/Bruz-Mag-n%C2%B0260-de-mai-juin-2026.pdf"
+    },
+    {
+      "id": "A004",
+      "date": "2026-04-08",
+      "titre": "André Le Tulzo nommé 4e adjoint aux finances",
+      "detail": "Le CM du 8 avril confie les finances à Le Tulzo. La promesse de maintien de la fiscalité et de transparence budgétaire est désormais portée par cet adjoint.",
+      "type": "decision",
+      "promesses_liees": [43, 44],
+      "dossier_lie": "D03",
+      "cm_lie": "CM-2026-04-08",
+      "source_label": "Bruz Mag n°260 — délégations avril 2026",
+      "source_url": "https://www.ville-bruz.fr/wp-content/uploads/2026/05/Bruz-Mag-n%C2%B0260-de-mai-juin-2026.pdf"
+    },
+    {
+      "id": "A005",
+      "date": "2026-02-05",
+      "titre": "Rennes Métropole valide le tracé T4 via Ker Lann (60 lgts/ha)",
+      "detail": "Le Conseil Métropolitain du 5 février approuve l'autorisation environnementale de la ZAC Ker Lann et fixe la densité à 60 logements/ha autour du corridor T4. Cette décision entre en tension avec la promesse de Houssin (terminus gare).",
+      "type": "alerte",
+      "promesses_liees": [1],
+      "dossier_lie": "D01",
+      "cm_lie": null,
+      "source_label": "Délibération Conseil Métropolitain 5 fév. 2026 (Mégalis)",
+      "source_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1012938/b6b1dc7396fa9a9946d085d957775ce4477276f63f188b960bb4886c785ccce2.pdf"
+    },
+    {
+      "id": "A006",
+      "date": "2026-03-20",
+      "titre": "Houssin élu maire — programme de mandat engagé",
+      "detail": "Élection de Jean-René Houssin au premier tour avec 56,39 % des voix. Toutes les promesses du programme « Un nouvel élan pour Bruz » sont désormais formellement engagées pour le mandat 2026-2031.",
+      "type": "election",
+      "promesses_liees": [],
+      "dossier_lie": null,
+      "cm_lie": "CM-2026-03-20",
+      "source_label": "Semaine à Bruz n°850",
+      "source_url": "https://www.ville-bruz.fr/wp-content/uploads/2026/03/Semaine-a-Bruz-n%C2%B0850-du-19-mars-au-2-avril-2026.pdf"
+    }
+  ]
 }

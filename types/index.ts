@@ -21,12 +21,16 @@ export interface Promesse {
 }
 
 export interface Actu {
-  id: number;
+  id: string;
   date: string;
   titre: string;
-  contenu: string;
-  lien?: string;
-  promesse_ids?: number[];
+  detail: string;
+  type: string;
+  promesses_liees: number[];
+  dossier_lie: string | null;
+  cm_lie: string | null;
+  source_label?: string;
+  source_url?: string;
 }
 
 export interface SourceSurvellee {

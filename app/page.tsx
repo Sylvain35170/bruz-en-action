@@ -682,7 +682,7 @@ export default function Home() {
                 <div key={actu.id} style={{ background: "var(--surface-card)", border: "1px solid var(--border-subtle)", borderRadius: "var(--radius-lg)", padding: "var(--space-6)", boxShadow: "var(--shadow-sm)" }}>
                   <p style={{ fontSize: "var(--fs-xs)", color: "var(--text-faint)", margin: "0 0 4px" }}>{actu.date}</p>
                   <p style={{ fontWeight: "var(--fw-bold)", color: "var(--text-strong)", margin: "0 0 6px" }}>{actu.titre}</p>
-                  <p style={{ fontSize: "var(--fs-sm)", color: "var(--text-muted)", margin: 0 }}>{actu.contenu}</p>
+                  <p style={{ fontSize: "var(--fs-sm)", color: "var(--text-muted)", margin: 0 }}>{actu.detail}</p>
                 </div>
               ))}
             </div>

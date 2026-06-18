@@ -134,14 +134,17 @@ export default function PromessesSection({ promesses, piliers, statuts }: Props)
                     const statut = getStatut(p.statut_id);
                     const css = STATUT_CSS[p.statut_id] ?? { color: "#94a3b8", tint: "#f8fafc" };
                     return (
-                      <tr key={p.id} style={{ borderBottom: i < filtered.length - 1 ? "1px solid var(--border-subtle)" : "none" }}>
+                      <tr key={p.id} style={{ borderBottom: i < filtered.length - 1 ? "1px solid var(--border-subtle)" : "none", cursor: "pointer" }}
+                        onClick={() => { window.location.href = `/bruz-en-action/promesses/${p.id}`; }}>
                         <td style={{ padding: "14px 16px", fontSize: "var(--fs-sm)", color: "var(--text-strong)", fontWeight: "var(--fw-medium)", maxWidth: 480 }}>
-                          <span style={{ display: "block" }}>{p.titre}</span>
-                          {(p as any).ref && (
-                            <span style={{ fontSize: "var(--fs-2xs)", color: "var(--text-faint)", fontFamily: "var(--font-mono)", marginTop: 2 }}>
-                              {(p as any).ref}
-                            </span>
-                          )}
+                          <a href={`/bruz-en-action/promesses/${p.id}`} style={{ textDecoration: "none", color: "inherit" }}>
+                            <span style={{ display: "block" }}>{p.titre}</span>
+                            {(p as any).ref && (
+                              <span style={{ fontSize: "var(--fs-2xs)", color: "var(--text-faint)", fontFamily: "var(--font-mono)", marginTop: 2 }}>
+                                {(p as any).ref}
+                              </span>
+                            )}
+                          </a>
                         </td>
                         <td style={{ padding: "14px 16px", whiteSpace: "nowrap" }}>
                           {pilier && (
