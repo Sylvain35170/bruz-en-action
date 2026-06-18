@@ -52,6 +52,7 @@
 - **Fix carte Leaflet** — CSS global pour static export GitHub Pages (tuiles OSM + tracés ZAC/T4 visibles)
 - **Pages promesses `/promesses/[id]`** — 50 pages statiques : détail, historique actus, dossiers liés, nav prev/next ; tableau homepage cliquable
 - **actus.json** — schema + 6 actus seeds (délégations, ZAC Ker Lann, élection)
+- **D04 taux TFB officiels DGFiP** — données data.economie.gouv.fr : 2021-2023 stable 41,84 %, hausse 2024 → 45,34 % (+3,5 pts, décision Salmon) ; réforme nationale 2021 expliquée ; graphique 6 points confirmés
 - **D04 démographie mandature Salmon** — population 17,4K→19,1K→~20K hab., parc 8200→9400 logements, 3 graphiques SVG (pop/logements/indices base 100), 7 sources (INSEE, OFGL, Proxiti, Mégalis, Observatoire territoires)
 - **Graphiques SVG dossiers finances** — D03/D04 : recettes fiscales 2013→2023, structure recettes estimée ; composants SvgBarChart + SvgHorizontalBarChart inline ; corrections population 18K→20K et budget 20-25→30-40 M€
 - **Pages dossiers refondues** — D01–D04 : 7 nouvelles sections par dossier (pourquoi, gouvernance, décisions, coût/financement, impact qualité de vie, risques systémiques, conclusion + actus récentes)
