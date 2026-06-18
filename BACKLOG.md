@@ -19,6 +19,7 @@
 
 ## 🟡 À faire — Technique
 
+- [ ] **Agent QA testeur** — script Python qui curl les pages clés du site GitHub Pages après chaque deploy et vérifie : HTTP 200, présence de texte attendu (titre dossier, section "Qui sommes-nous", nav), absence de "undefined" ou erreurs JS côté HTML. Lancé en post-hook du `git push` ou via launchd.
 - [ ] **Images** — photos de Bruz / événements / asso (à fournir)
 - [ ] **Script import_excel.py** — mise à jour auto des statuts depuis l'Excel
 - [ ] **CRs réunions** — réimporter les docx (encodage zip raté sur les accents)
