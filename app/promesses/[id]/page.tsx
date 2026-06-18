@@ -55,9 +55,10 @@ export default async function PromessePage({ params }: { params: Promise<{ id: s
   const statut = STATUT_STYLE[promesse.statut_id] ?? STATUT_STYLE.non_commence;
   const statutLabel = promessesData.statuts.find(s => s.id === promesse.statut_id);
 
-  const actusLiees = actusData.actus
-    .filter(a => a.promesses_liees.includes(promesse.id))
-    .sort((a, b) => b.date.localeCompare(a.date));
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const actusLiees = (actusData.actus as any[])
+    .filter((a: { promesses_liees?: number[] }) => a.promesses_liees?.includes(Number(promesse.id)))
+    .sort((a: { date: string }, b: { date: string }) => b.date.localeCompare(a.date));
 
   const dossiersLies = dossiersData.dossiers.filter(
     // eslint-disable-next-line @typescript-eslint/no-explicit-any

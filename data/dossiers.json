@@ -20,7 +20,7 @@
         "Position Houssin : terminus à la gare SNCF + 2 circuits de navettes électriques vers les quartiers",
         "La délégation mobilités est confiée à Patrick Roullé (conseiller délégué Transition écologique et mobilités)"
       ],
-      "pourquoi": "Bruz est une commune en forte croissance (plus de 18 000 habitants) dont la mobilité quotidienne dépend encore massivement de la voiture. La saturation de la RN137 et des accès vers Rennes rend indispensable une alternative en transport collectif lourd. Le T4 est cette opportunité — mais son terminus conditionne tout : les zones constructibles, les PLU, la valorisation foncière, et la stratégie de mobilité douce de la commune pour les trente prochaines années. La décision n'appartient pas à Bruz seule : c'est Rennes Métropole qui pilote, et la commune doit peser.",
+      "pourquoi": "Bruz est une commune en forte croissance (plus de 20 000 habitants) dont la mobilité quotidienne dépend encore massivement de la voiture. La saturation de la RN137 et des accès vers Rennes rend indispensable une alternative en transport collectif lourd. Le T4 est cette opportunité — mais son terminus conditionne tout : les zones constructibles, les PLU, la valorisation foncière, et la stratégie de mobilité douce de la commune pour les trente prochaines années. La décision n'appartient pas à Bruz seule : c'est Rennes Métropole qui pilote, et la commune doit peser.",
       "gouvernance": [
         {
           "acteur": "Rennes Métropole",
@@ -67,9 +67,18 @@
         "montant": "Coût global T4 non encore officiel — estimé plusieurs centaines de M€",
         "detail": "Le T4 est un projet d'infrastructure métropolitaine dont le coût complet (études, travaux, matériel roulant) n'a pas encore été officiellement publié. À titre de comparaison, les lignes trambus récentes en France oscillent entre 20 et 40 M€/km selon les contraintes de site. Le financement sera réparti entre Rennes Métropole, l'État et la Région Bretagne via contrat de plan. La part communale de Bruz n'est pas directement engagée, mais la commune participera aux études d'impact et d'aménagement.",
         "repartition": [
-          { "source": "Rennes Métropole", "detail": "Maîtrise d'ouvrage — part majoritaire du financement" },
-          { "source": "État (appel à projets transports)", "detail": "Subvention via appels à projets DGITM / plan de relance" },
-          { "source": "Région Bretagne", "detail": "Cofinancement via Contrat de Plan État-Région (CPER)" }
+          {
+            "source": "Rennes Métropole",
+            "detail": "Maîtrise d'ouvrage — part majoritaire du financement"
+          },
+          {
+            "source": "État (appel à projets transports)",
+            "detail": "Subvention via appels à projets DGITM / plan de relance"
+          },
+          {
+            "source": "Région Bretagne",
+            "detail": "Cofinancement via Contrat de Plan État-Région (CPER)"
+          }
         ]
       },
       "impact_qualite_vie": [
@@ -101,11 +110,24 @@
           "source_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1012938/b6b1dc7396fa9a9946d085d957775ce4477276f63f188b960bb4886c785ccce2.pdf"
         }
       ],
-      "promesses_liees": [2, 3, 4],
+      "promesses_liees": [
+        2,
+        3,
+        4
+      ],
       "sources": [
-        { "label": "France Bleu : le terminus T4, enjeu des municipales 2026", "url": "https://www.francebleu.fr/emissions/l-info-d-ici-ici-armorique/municipales-2026-a-bruz-le-terminus-de-la-ligne-trambus-t4-un-des-enjeux-du-scrutin-5029860" },
-        { "label": "Délibération Conseil Métropolitain 5 fév. 2026 — ZAC Ker Lann + T4 (Mégalis)", "url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1012938/b6b1dc7396fa9a9946d085d957775ce4477276f63f188b960bb4886c785ccce2.pdf" },
-        { "label": "Bruz Mag n°260 — délégations et priorités mobilités", "url": "https://www.ville-bruz.fr/wp-content/uploads/2026/05/Bruz-Mag-n%C2%B0260-de-mai-juin-2026.pdf" }
+        {
+          "label": "France Bleu : le terminus T4, enjeu des municipales 2026",
+          "url": "https://www.francebleu.fr/emissions/l-info-d-ici-ici-armorique/municipales-2026-a-bruz-le-terminus-de-la-ligne-trambus-t4-un-des-enjeux-du-scrutin-5029860"
+        },
+        {
+          "label": "Délibération Conseil Métropolitain 5 fév. 2026 — ZAC Ker Lann + T4 (Mégalis)",
+          "url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1012938/b6b1dc7396fa9a9946d085d957775ce4477276f63f188b960bb4886c785ccce2.pdf"
+        },
+        {
+          "label": "Bruz Mag n°260 — délégations et priorités mobilités",
+          "url": "https://www.ville-bruz.fr/wp-content/uploads/2026/05/Bruz-Mag-n%C2%B0260-de-mai-juin-2026.pdf"
+        }
       ]
     },
     {
@@ -170,9 +192,18 @@
         "montant": "Coût global non encore publié — chiffrage par secteur à venir",
         "detail": "Le coût total d'une ZAC de 31 ha avec 1 700 logements comprend les acquisitions foncières, les travaux de viabilisation (réseaux, voiries, espaces publics) et les équipements publics associés. Ces coûts sont en partie récupérés via la cession des charges foncières aux promoteurs et constructeurs. Le budget détaillé par secteur sera présenté dans les dossiers de réalisation que la commune devra soumettre au vote du Conseil Municipal.",
         "repartition": [
-          { "source": "Commune de Bruz (avance)", "detail": "Financement initial des études et des acquisitions foncières prioritaires" },
-          { "source": "Cessions aux promoteurs / bailleurs", "detail": "Recettes issues de la vente des droits à construire aux opérateurs — principale source de financement d'une ZAC" },
-          { "source": "Subventions logement social", "detail": "Aides de l'État et d'Action Logement pour la quote-part de logements sociaux (taux légal minimum 25% en zone tendue)" }
+          {
+            "source": "Commune de Bruz (avance)",
+            "detail": "Financement initial des études et des acquisitions foncières prioritaires"
+          },
+          {
+            "source": "Cessions aux promoteurs / bailleurs",
+            "detail": "Recettes issues de la vente des droits à construire aux opérateurs — principale source de financement d'une ZAC"
+          },
+          {
+            "source": "Subventions logement social",
+            "detail": "Aides de l'État et d'Action Logement pour la quote-part de logements sociaux (taux légal minimum 25% en zone tendue)"
+          }
         ]
       },
       "impact_qualite_vie": [
@@ -205,9 +236,18 @@
       ],
       "promesses_liees": [],
       "sources": [
-        { "label": "Ville de Bruz : page projet ZAC Multisites", "url": "https://www.ville-bruz.fr/projets/bruz-demain-zone-amenagement-concerte-multisites/" },
-        { "label": "L'Essentiel : réunion publique septembre 2025", "url": "https://www.lessentiel.fr/rennes/notre-ville/2025-09-18/bruz-le-projet-urbain-de-la-zac-multisites-en-debat-lors-dune-reunion" },
-        { "label": "Avis MRAE n°2025APB75 (PDF)", "url": "https://www.mrae.developpement-durable.gouv.fr/IMG/pdf/12419_avis_zac_bruz_35_2025apb75.pdf" }
+        {
+          "label": "Ville de Bruz : page projet ZAC Multisites",
+          "url": "https://www.ville-bruz.fr/projets/bruz-demain-zone-amenagement-concerte-multisites/"
+        },
+        {
+          "label": "L'Essentiel : réunion publique septembre 2025",
+          "url": "https://www.lessentiel.fr/rennes/notre-ville/2025-09-18/bruz-le-projet-urbain-de-la-zac-multisites-en-debat-lors-dune-reunion"
+        },
+        {
+          "label": "Avis MRAE n°2025APB75 (PDF)",
+          "url": "https://www.mrae.developpement-durable.gouv.fr/IMG/pdf/12419_avis_zac_bruz_35_2025apb75.pdf"
+        }
       ]
     },
     {
@@ -268,13 +308,25 @@
         }
       ],
       "cout_financement": {
-        "montant": "Budget annuel communal estimé ~20–25 M€ (à confirmer sur BP 2026)",
-        "detail": "Le budget d'une commune comme Bruz (~18 000 habitants) comprend une section de fonctionnement (salaires, services, entretien) et une section d'investissement (travaux, équipements). Les recettes de fonctionnement proviennent principalement des dotations d'État (DGF), des impôts locaux et des produits des services. Le budget primitif 2026, à présenter par la nouvelle équipe, donnera la photographie réelle de la situation héritée.",
+        "montant": "Budget annuel communal ~30–40 M€ (BP 2026 à voter — estimation strate 15 000–25 000 hab.)",
+        "detail": "Le budget d'une commune de 20 000 habitants comme Bruz comprend une section de fonctionnement (~20–28 M€) et une section d'investissement (~8–12 M€). Pour référence, les recettes fiscales directes seules représentent déjà 10,2 M€ en 2023 — ce qui positionne Bruz dans la fourchette haute de la strate. Les autres recettes de fonctionnement (DGF ~1,5 M€, produits des services ~3–4 M€, transferts Métropole) complètent ce total. Le budget primitif 2026, que la nouvelle équipe devra voter avant fin 2026, donnera la photographie exacte.",
         "repartition": [
-          { "source": "Impôts locaux (TFB, CFE…)", "detail": "10,2 M€ collectés en 2023 — principal levier fiscal de la commune" },
-          { "source": "Dotation Globale de Fonctionnement (État)", "detail": "Dotation forfaitaire versée par l'État — soumise aux réformes nationales successives" },
-          { "source": "Produits des services communaux", "detail": "Cantine, garderie, eau, locations… recettes propres complémentaires" },
-          { "source": "Subventions et emprunts (investissement)", "detail": "Financement des projets d'investissement via subventions DETR, DSIL, et emprunts bancaires" }
+          {
+            "source": "Impôts locaux (TFB, CFE…)",
+            "detail": "10,2 M€ collectés en 2023 — principal levier fiscal de la commune"
+          },
+          {
+            "source": "Dotation Globale de Fonctionnement (État)",
+            "detail": "Dotation forfaitaire versée par l'État — soumise aux réformes nationales successives"
+          },
+          {
+            "source": "Produits des services communaux",
+            "detail": "Cantine, garderie, eau, locations… recettes propres complémentaires"
+          },
+          {
+            "source": "Subventions et emprunts (investissement)",
+            "detail": "Financement des projets d'investissement via subventions DETR, DSIL, et emprunts bancaires"
+          }
         ]
       },
       "impact_qualite_vie": [
@@ -306,9 +358,70 @@
       ],
       "promesses_liees": [],
       "sources": [
-        { "label": "Délibérations CM du 26 janvier 2026 (Mégalis Bretagne)", "url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1012951/21bd3878cc769dc3c96713f7dbb019757fe7212a3ed3451773809fc1a36ed80a.pdf" },
-        { "label": "Taxes locales Bruz — simulation-impots.net", "url": "https://www.simulation-impots.net/impots-locaux/impots-ville-bruz-35170/" },
-        { "label": "Conseil municipal de Bruz — séances et archives", "url": "https://www.ville-bruz.fr/ma-ville-de-bruz/conseil-municipal/conseil-municipal/" }
+        {
+          "label": "Délibérations CM du 26 janvier 2026 (Mégalis Bretagne)",
+          "url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1012951/21bd3878cc769dc3c96713f7dbb019757fe7212a3ed3451773809fc1a36ed80a.pdf"
+        },
+        {
+          "label": "Taxes locales Bruz — simulation-impots.net",
+          "url": "https://www.simulation-impots.net/impots-locaux/impots-ville-bruz-35170/"
+        },
+        {
+          "label": "Conseil municipal de Bruz — séances et archives",
+          "url": "https://www.ville-bruz.fr/ma-ville-de-bruz/conseil-municipal/conseil-municipal/"
+        }
+      ],
+      "graphiques": [
+        {
+          "id": "g1",
+          "type": "bar",
+          "titre": "Recettes fiscales directes de Bruz",
+          "sous_titre": "Taxe foncière bâtie (TFB) + TFNB + CFE — en M€",
+          "source": "Comptes administratifs commune de Bruz — OFGL / DGFiP",
+          "note": "Données 2013 et 2023 issues des bilans publiés. Données intermédiaires 2014–2022 à compléter via comptes administratifs Mégalis.",
+          "donnees": [
+            {
+              "label": "2013",
+              "valeur": 7.3,
+              "confirme": true
+            },
+            {
+              "label": "2023",
+              "valeur": 10.2,
+              "confirme": true
+            }
+          ]
+        },
+        {
+          "id": "g2",
+          "type": "horizontal_bar",
+          "titre": "Estimation structure des recettes de fonctionnement 2023",
+          "sous_titre": "Ordre de grandeur — à consolider sur le BP 2026",
+          "source": "Ratios de référence OFGL pour communes 15 000–25 000 habitants",
+          "note": "Estimations à titre indicatif — seul le BP 2026 donnera les montants réels.",
+          "donnees": [
+            {
+              "label": "Impôts locaux (TFB/CFE)",
+              "valeur": 10.2,
+              "confirme": true
+            },
+            {
+              "label": "Produits des services",
+              "valeur": 3.8,
+              "confirme": false
+            },
+            {
+              "label": "DGF (dotation État)",
+              "valeur": 1.5,
+              "confirme": false
+            },
+            {
+              "label": "Autres recettes",
+              "valeur": 2.5,
+              "confirme": false
+            }
+          ]
+        }
       ]
     },
     {
@@ -362,9 +475,18 @@
         "montant": "N/A — dossier de recettes, pas de dépenses",
         "detail": "Ce dossier analyse les recettes fiscales, pas les dépenses. La question centrale est : les taux communaux ont-ils été augmentés au-delà de l'inflation et de la croissance démographique ? La hausse de 40% des recettes entre 2013 et 2023 s'explique en partie par la croissance du nombre de propriétés imposables à Bruz (nouvelles constructions), pas nécessairement par une hausse des taux. Une analyse rigoureuse nécessite de croiser taux votés × bases × nombre de contribuables.",
         "repartition": [
-          { "source": "Taxe foncière bâtie (TFB)", "detail": "Principal impôt local restant après suppression TH — payé par les propriétaires" },
-          { "source": "Taxe foncière non bâtie (TFNB)", "detail": "Taxe sur les terrains non construits — poids limité à Bruz" },
-          { "source": "Cotisation Foncière des Entreprises (CFE)", "detail": "Impôt local sur les entreprises — levier limité mais important pour le tissu économique local" }
+          {
+            "source": "Taxe foncière bâtie (TFB)",
+            "detail": "Principal impôt local restant après suppression TH — payé par les propriétaires"
+          },
+          {
+            "source": "Taxe foncière non bâtie (TFNB)",
+            "detail": "Taxe sur les terrains non construits — poids limité à Bruz"
+          },
+          {
+            "source": "Cotisation Foncière des Entreprises (CFE)",
+            "detail": "Impôt local sur les entreprises — levier limité mais important pour le tissu économique local"
+          }
         ]
       },
       "impact_qualite_vie": [
@@ -388,8 +510,56 @@
       ],
       "promesses_liees": [],
       "sources": [
-        { "label": "Impôts locaux Bruz — historique taux", "url": "https://www.impots-locaux.org/impots-locaux-bruz-35170/" },
-        { "label": "Proxiti — taxe foncière Bruz", "url": "https://www.proxiti.info/taxe-fonciere.php?o=35047" }
+        {
+          "label": "Impôts locaux Bruz — historique taux",
+          "url": "https://www.impots-locaux.org/impots-locaux-bruz-35170/"
+        },
+        {
+          "label": "Proxiti — taxe foncière Bruz",
+          "url": "https://www.proxiti.info/taxe-fonciere.php?o=35047"
+        }
+      ],
+      "graphiques": [
+        {
+          "id": "g1",
+          "type": "bar",
+          "titre": "Évolution des recettes fiscales — mandat Salmon et avant",
+          "sous_titre": "En M€ — TFB + TFNB + CFE (hors taxe d'habitation supprimée en 2020–2023)",
+          "source": "Comptes administratifs Bruz — OFGL / DGFiP",
+          "note": "Les taux de TFB votés chaque année par le CM sont disponibles sur Proxiti et Mégalis. L'augmentation des recettes en montant absolu s'explique en partie par la croissance du nombre de propriétés imposables (+500–1 000 hab./an).",
+          "donnees": [
+            {
+              "label": "2013\n(réf.)",
+              "valeur": 7.3,
+              "confirme": true
+            },
+            {
+              "label": "2023\n(fin Salmon)",
+              "valeur": 10.2,
+              "confirme": true
+            }
+          ]
+        },
+        {
+          "id": "g2",
+          "type": "bar",
+          "titre": "Recette fiscale par habitant — contexte",
+          "sous_titre": "Comparaison 2013 vs 2023 (population estimée 17 000 → 20 000 hab.)",
+          "source": "Calcul Bruz en Action sur données OFGL + INSEE",
+          "note": "Le ratio par habitant monte moins vite que le total, car la population a aussi augmenté. C'est ce ratio qui mesure la vraie pression fiscale par ménage.",
+          "donnees": [
+            {
+              "label": "2013\n(~17K hab.)",
+              "valeur": 430,
+              "confirme": false
+            },
+            {
+              "label": "2023\n(~20K hab.)",
+              "valeur": 510,
+              "confirme": false
+            }
+          ]
+        }
       ]
     },
     {
@@ -409,7 +579,10 @@
       ],
       "promesses_liees": [],
       "sources": [
-        { "label": "OpenStreetMap — Bruz", "url": "https://www.openstreetmap.org/relation/115942" }
+        {
+          "label": "OpenStreetMap — Bruz",
+          "url": "https://www.openstreetmap.org/relation/115942"
+        }
       ]
     }
   ]

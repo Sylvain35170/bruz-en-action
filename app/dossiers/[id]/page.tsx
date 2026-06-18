@@ -35,6 +35,125 @@ function SectionTitle({ children }: { children: React.ReactNode }) {
   );
 }
 
+type GraphiqueDonnee = { label: string; valeur: number; confirme?: boolean };
+type Graphique = {
+  id: string;
+  type: "bar" | "horizontal_bar";
+  titre: string;
+  sous_titre?: string;
+  source?: string;
+  note?: string;
+  donnees: GraphiqueDonnee[];
+};
+
+function SvgBarChart({ g }: { g: Graphique }) {
+  const W = 560, H = 200, PAD_L = 40, PAD_B = 48, PAD_T = 20, BAR_GAP = 0.35;
+  const max = Math.max(...g.donnees.map(d => d.valeur)) * 1.15;
+  const chartH = H - PAD_T - PAD_B;
+  const barW = ((W - PAD_L) / g.donnees.length) * (1 - BAR_GAP);
+  const barSpacing = (W - PAD_L) / g.donnees.length;
+
+  return (
+    <div style={{ background: "#fff", border: "1px solid #e2e8f0", borderRadius: 12, padding: "20px 24px", marginBottom: 24 }}>
+      <div style={{ fontSize: 15, fontWeight: 700, color: "#0f172a", marginBottom: 2 }}>{g.titre}</div>
+      {g.sous_titre && <div style={{ fontSize: 12, color: "#64748b", marginBottom: 12 }}>{g.sous_titre}</div>}
+      <svg viewBox={`0 0 ${W} ${H}`} style={{ width: "100%", maxWidth: W, display: "block" }}>
+        {/* Grille horizontale */}
+        {[0, 0.25, 0.5, 0.75, 1].map(p => {
+          const y = PAD_T + chartH * (1 - p);
+          return (
+            <g key={p}>
+              <line x1={PAD_L} y1={y} x2={W} y2={y} stroke="#f1f5f9" strokeWidth={p === 0 ? 0 : 1} />
+              {p > 0 && (
+                <text x={PAD_L - 4} y={y + 4} textAnchor="end" fontSize={9} fill="#94a3b8">
+                  {(max * p).toFixed(max * p > 100 ? 0 : 1)}
+                </text>
+              )}
+            </g>
+          );
+        })}
+        {/* Axe X */}
+        <line x1={PAD_L} y1={PAD_T + chartH} x2={W} y2={PAD_T + chartH} stroke="#e2e8f0" strokeWidth={1} />
+        {/* Barres */}
+        {g.donnees.map((d, i) => {
+          const bH = (d.valeur / max) * chartH;
+          const x = PAD_L + i * barSpacing + (barSpacing - barW) / 2;
+          const y = PAD_T + chartH - bH;
+          const fill = d.confirme === false ? "#94a3b8" : "#e84d0e";
+          const lines = d.label.split("\n");
+          return (
+            <g key={i}>
+              <rect x={x} y={y} width={barW} height={bH} rx={4} fill={fill} />
+              <text x={x + barW / 2} y={y - 5} textAnchor="middle" fontSize={10} fontWeight="bold" fill="#0f172a">
+                {d.valeur}
+              </text>
+              {lines.map((line, li) => (
+                <text key={li} x={x + barW / 2} y={PAD_T + chartH + 14 + li * 11} textAnchor="middle" fontSize={10} fill="#475569">
+                  {line}
+                </text>
+              ))}
+            </g>
+          );
+        })}
+      </svg>
+      {/* Légende confirmation */}
+      {g.donnees.some(d => d.confirme === false) && (
+        <div style={{ display: "flex", gap: 16, marginTop: 8 }}>
+          <span style={{ fontSize: 11, color: "#64748b", display: "flex", alignItems: "center", gap: 5 }}>
+            <span style={{ width: 12, height: 12, background: "#e84d0e", borderRadius: 2, display: "inline-block" }} /> Donnée confirmée
+          </span>
+          <span style={{ fontSize: 11, color: "#64748b", display: "flex", alignItems: "center", gap: 5 }}>
+            <span style={{ width: 12, height: 12, background: "#94a3b8", borderRadius: 2, display: "inline-block" }} /> Estimation indicative
+          </span>
+        </div>
+      )}
+      {g.note && <p style={{ margin: "10px 0 0", fontSize: 11, color: "#94a3b8", lineHeight: 1.5, fontStyle: "italic" }}>{g.note}</p>}
+      {g.source && <p style={{ margin: "4px 0 0", fontSize: 11, color: "#cbd5e1" }}>Source : {g.source}</p>}
+    </div>
+  );
+}
+
+function SvgHorizontalBarChart({ g }: { g: Graphique }) {
+  const ROW_H = 40, PAD_L = 190, PAD_R = 50, BAR_MAX_W = 280;
+  const svgH = g.donnees.length * ROW_H + 20;
+  const max = Math.max(...g.donnees.map(d => d.valeur));
+
+  return (
+    <div style={{ background: "#fff", border: "1px solid #e2e8f0", borderRadius: 12, padding: "20px 24px", marginBottom: 24 }}>
+      <div style={{ fontSize: 15, fontWeight: 700, color: "#0f172a", marginBottom: 2 }}>{g.titre}</div>
+      {g.sous_titre && <div style={{ fontSize: 12, color: "#64748b", marginBottom: 12 }}>{g.sous_titre}</div>}
+      <svg viewBox={`0 0 ${PAD_L + BAR_MAX_W + PAD_R} ${svgH}`} style={{ width: "100%", display: "block" }}>
+        {g.donnees.map((d, i) => {
+          const y = i * ROW_H + 10;
+          const bW = (d.valeur / max) * BAR_MAX_W;
+          const fill = d.confirme === false ? "#94a3b8" : "#e84d0e";
+          return (
+            <g key={i}>
+              <text x={PAD_L - 8} y={y + 14} textAnchor="end" fontSize={11} fill="#334155">{d.label}</text>
+              <rect x={PAD_L} y={y + 2} width={bW} height={22} rx={4} fill={fill} />
+              <text x={PAD_L + bW + 6} y={y + 17} fontSize={11} fontWeight="bold" fill="#0f172a">
+                {d.valeur} M€
+              </text>
+            </g>
+          );
+        })}
+      </svg>
+      {g.donnees.some(d => d.confirme === false) && (
+        <div style={{ display: "flex", gap: 16, marginTop: 8 }}>
+          <span style={{ fontSize: 11, color: "#64748b", display: "flex", alignItems: "center", gap: 5 }}>
+            <span style={{ width: 12, height: 12, background: "#e84d0e", borderRadius: 2, display: "inline-block" }} /> Donnée confirmée
+          </span>
+          <span style={{ fontSize: 11, color: "#64748b", display: "flex", alignItems: "center", gap: 5 }}>
+            <span style={{ width: 12, height: 12, background: "#94a3b8", borderRadius: 2, display: "inline-block" }} /> Estimation indicative
+          </span>
+        </div>
+      )}
+      {g.note && <p style={{ margin: "10px 0 0", fontSize: 11, color: "#94a3b8", lineHeight: 1.5, fontStyle: "italic" }}>{g.note}</p>}
+      {g.source && <p style={{ margin: "4px 0 0", fontSize: 11, color: "#cbd5e1" }}>Source : {g.source}</p>}
+    </div>
+  );
+}
+
 function Card({ children, accent }: { children: React.ReactNode; accent?: boolean }) {
   return (
     <div style={{
@@ -200,6 +319,18 @@ export default async function DossierPage({ params }: { params: Promise<{ id: st
                         ))}
                       </div>
                     </div>
+                  </section>
+                )}
+
+                {/* Graphiques */}
+                {dossier.graphiques?.length > 0 && (
+                  <section style={{ marginBottom: 40 }}>
+                    <SectionTitle>Visualisations</SectionTitle>
+                    {dossier.graphiques.map((g: Graphique) =>
+                      g.type === "horizontal_bar"
+                        ? <SvgHorizontalBarChart key={g.id} g={g} />
+                        : <SvgBarChart key={g.id} g={g} />
+                    )}
                   </section>
                 )}
 
