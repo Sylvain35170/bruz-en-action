@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-06-16",
+    "last_updated": "2026-06-18",
     "note": "Dossiers thématiques — sources vérifiables uniquement"
   },
   "dossiers": [
@@ -9,15 +9,97 @@
       "titre": "Trambus T4 : le terminus de Bruz en question",
       "categorie": "Mobilités",
       "statut": "en_cours",
+      "featured": true,
+      "last_activity": "2026-06-18",
       "date_ouverture": "2026-06-16",
       "chapeau": "La future ligne T4 reliera le métro Saint-Jacques-Gaîté à Bruz via Ker Lann d'ici 2031. Mais où s'arrêtera exactement la ligne en ville ? La réponse engage l'avenir de la mobilité bruzoise pour plusieurs décennies.",
       "points_cles": [
         "Livraison prévue 2030–2031 par Rennes Métropole (ligne T4 : Saint-Jacques-Gaîté → Ker Lann → Bruz)",
-        "Le T4 est un trambus (bus guidé sur voie propre) — moins coûteux qu'un tram sur rail, capacité ~100–150 passagers/rame, vitesse commerciale élevée grâce au site propre intégral",
-        "Décision Métropole (5 fév. 2026) : le tracé T4 traversera la ZAC Ker Lann, imposant une densité de 60 logements/ha sur le site pour justifier l'infrastructure",
-        "Position Houssin (engagement de campagne, confirmé dans délégations d'avril) : positionner le terminus à la gare SNCF + 2 circuits de navettes électriques vers les quartiers — contre l'option Ker Lann seule défendue par la Métropole",
-        "Enjeu urbanistique majeur : le terminus conditionne les PLU, les projets immobiliers (ZAC Multisites, ZAC Ker Lann), et la stratégie de mobilité douce de toute la commune",
-        "La commune doit peser dans les arbitrages métropolitains — délégation explicite confiée à Patrick Roullé (conseiller délégué Transition écologique et mobilités)"
+        "Le T4 est un trambus (bus guidé sur voie propre) — moins coûteux qu'un tram sur rail, capacité ~100–150 passagers/rame",
+        "Décision Métropole (5 fév. 2026) : le tracé T4 traversera la ZAC Ker Lann, imposant une densité de 60 logements/ha",
+        "Position Houssin : terminus à la gare SNCF + 2 circuits de navettes électriques vers les quartiers",
+        "La délégation mobilités est confiée à Patrick Roullé (conseiller délégué Transition écologique et mobilités)"
+      ],
+      "pourquoi": "Bruz est une commune en forte croissance (plus de 18 000 habitants) dont la mobilité quotidienne dépend encore massivement de la voiture. La saturation de la RN137 et des accès vers Rennes rend indispensable une alternative en transport collectif lourd. Le T4 est cette opportunité — mais son terminus conditionne tout : les zones constructibles, les PLU, la valorisation foncière, et la stratégie de mobilité douce de la commune pour les trente prochaines années. La décision n'appartient pas à Bruz seule : c'est Rennes Métropole qui pilote, et la commune doit peser.",
+      "gouvernance": [
+        {
+          "acteur": "Rennes Métropole",
+          "role": "Maîtrise d'ouvrage",
+          "detail": "Compétence exclusive sur les transports urbains et la définition du tracé T4. Le Conseil Métropolitain vote les délibérations qui engagent le projet."
+        },
+        {
+          "acteur": "Commune de Bruz",
+          "role": "Partenaire et représentée au Conseil Métropolitain",
+          "detail": "Le maire de Bruz siège au Conseil Métropolitain. Patrick Roullé est délégué explicitement aux mobilités et à la transition écologique depuis avril 2026."
+        },
+        {
+          "acteur": "STAR (réseau de transport métropolitain)",
+          "role": "Future autorité exploitante",
+          "detail": "Opérera la ligne T4 après mise en service, sous délégation de Rennes Métropole."
+        },
+        {
+          "acteur": "État / Région Bretagne",
+          "role": "Cofinanceurs",
+          "detail": "Les projets de transport guidé bénéficient de subventions de l'État (CVAE, appels à projets) et du Conseil Régional dans le cadre des contrats de plan."
+        }
+      ],
+      "decisions": [
+        {
+          "date": "2026-04",
+          "titre": "Délégations municipales — Patrick Roullé nommé délégué mobilités",
+          "detail": "La répartition des délégations au sein de l'équipe Houssin confie explicitement la transition écologique et les mobilités à Patrick Roullé, conseiller municipal. C'est l'interlocuteur Bruz sur le dossier T4.",
+          "source_url": "https://www.ville-bruz.fr/wp-content/uploads/2026/05/Bruz-Mag-n%C2%B0260-de-mai-juin-2026.pdf"
+        },
+        {
+          "date": "2026-02-05",
+          "titre": "Conseil Métropolitain — tracé T4 et ZAC Ker Lann",
+          "detail": "Délibération actant que le tracé T4 traversera la ZAC Ker Lann et imposant une densité minimale de 60 logements/ha sur ce secteur pour rentabiliser l'infrastructure. Cette décision crée une tension avec la position de Bruz qui préfère le terminus gare.",
+          "source_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1012938/b6b1dc7396fa9a9946d085d957775ce4477276f63f188b960bb4886c785ccce2.pdf"
+        },
+        {
+          "date": "2026-03",
+          "titre": "Campagne municipale — engagement Houssin sur le terminus gare",
+          "detail": "Lors de la campagne, Houssin s'engage à défendre un terminus T4 à la gare SNCF de Bruz, accompagné de deux circuits de navettes électriques vers les quartiers. Cet engagement est repris dans les délégations d'avril.",
+          "source_url": "https://www.francebleu.fr/emissions/l-info-d-ici-ici-armorique/municipales-2026-a-bruz-le-terminus-de-la-ligne-trambus-t4-un-des-enjeux-du-scrutin-5029860"
+        }
+      ],
+      "cout_financement": {
+        "montant": "Coût global T4 non encore officiel — estimé plusieurs centaines de M€",
+        "detail": "Le T4 est un projet d'infrastructure métropolitaine dont le coût complet (études, travaux, matériel roulant) n'a pas encore été officiellement publié. À titre de comparaison, les lignes trambus récentes en France oscillent entre 20 et 40 M€/km selon les contraintes de site. Le financement sera réparti entre Rennes Métropole, l'État et la Région Bretagne via contrat de plan. La part communale de Bruz n'est pas directement engagée, mais la commune participera aux études d'impact et d'aménagement.",
+        "repartition": [
+          { "source": "Rennes Métropole", "detail": "Maîtrise d'ouvrage — part majoritaire du financement" },
+          { "source": "État (appel à projets transports)", "detail": "Subvention via appels à projets DGITM / plan de relance" },
+          { "source": "Région Bretagne", "detail": "Cofinancement via Contrat de Plan État-Région (CPER)" }
+        ]
+      },
+      "impact_qualite_vie": [
+        "Réduction du temps de trajet Bruz–Rennes Centre : de 30–45 min en voiture à ~20 min en trambus sans aléa trafic",
+        "Désengorgement de la RN137 et des axes routiers nord — moins de bouchons aux heures de pointe pour les automobilistes qui restent",
+        "Accès aux emplois et services métropolitains sans voiture, notamment pour les ménages sans véhicule ou à mobilité réduite",
+        "Valorisation foncière autour des stations et du terminus — opportunité pour le commerce local et les investisseurs, mais risque de hausse des loyers",
+        "Impulsion pour les modes doux (vélos, piétons) si les aménagements autour des stations sont bien conçus",
+        "Impact sur l'urbanisme des quartiers traversés : nuisances temporaires en phase chantier (2028–2031 estimé)"
+      ],
+      "risques": [
+        "Si le terminus est fixé à Ker Lann et non à la gare SNCF : rupture de charge pénalisante pour les usagers venant des quartiers ouest et du centre-ville, et perte de la correspondance TER",
+        "La densité de 60 lgts/ha imposée sur Ker Lann par la Métropole peut entrer en conflit avec le PLU de Bruz et les objectifs de la ZAC Multisites",
+        "Retard de livraison : tout glissement au-delà de 2031 repousse les bénéfices et prolonge la dépendance à la voiture",
+        "Risque de sous-fréquentation si la desserte des quartiers n'est pas assurée par des rabattements efficaces (navettes, pistes cyclables)",
+        "Décision métropolitaine sans adhésion communale : Bruz pèse peu si elle ne coordonne pas sa position avec d'autres communes membres"
+      ],
+      "conclusion": "Le T4 est le projet de transport le plus structurant pour Bruz depuis la création du réseau STAR. L'enjeu n'est pas de savoir si la ligne viendra — elle viendra — mais où elle s'arrêtera et dans quelles conditions urbanistiques. La position d'Houssin (terminus gare) est clairement affirmée et cohérente avec l'intérêt des Bruzois. La délégation confiée à Roullé est le levier opérationnel. Bruz en Action doit surveiller les délibérations du Conseil Métropolitain et les prises de position officielles de la commune dans les mois qui viennent.",
+      "actus_recentes": [
+        {
+          "date": "2026-06-18",
+          "titre": "Dossier ouvert — suivi continu engagé",
+          "detail": "Bruz en Action ouvre le suivi formel du dossier T4. Les prochaines étapes attendues : délibérations métropolitaines sur le tracé précis et le dossier de concertation public."
+        },
+        {
+          "date": "2026-02-05",
+          "titre": "Conseil Métropolitain valide le tracé via Ker Lann",
+          "detail": "Le Conseil de Rennes Métropole délibère sur la ZAC Ker Lann et confirme le passage du T4 sur ce secteur, avec densité imposée à 60 lgts/ha.",
+          "source_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1012938/b6b1dc7396fa9a9946d085d957775ce4477276f63f188b960bb4886c785ccce2.pdf"
+        }
       ],
       "promesses_liees": [2, 3, 4],
       "sources": [
@@ -31,15 +113,95 @@
       "titre": "ZAC Multisites : 1 700 logements à construire d'ici 2040",
       "categorie": "Urbanisme",
       "statut": "en_cours",
+      "featured": true,
+      "last_activity": "2026-06-18",
       "date_ouverture": "2026-06-16",
       "chapeau": "La Zone d'Aménagement Concerté Multisites prévoit 1 700 nouveaux logements répartis sur 6 secteurs (31 ha), dont 5 en renouvellement urbain. Un projet structurant qui redéfinira plusieurs quartiers de Bruz d'ici 2035–2040.",
       "points_cles": [
-        "6 secteurs : Gare, Grand-Pâtis, Haye de Pan, Maison des Associations, Noë, Mons — dont 5 en renouvellement urbain (friches, terrains sous-utilisés) et 1 seul en extension urbaine (Mons Rouaudière)",
-        "Réunion publique du 18 septembre 2025 : environ 170 participants, périmètre final et répartition des logements présentés",
-        "Avis MRAE (8 août 2025) : avis rendu sur le dossier de création — à consulter pour contraintes environnementales",
-        "Phase de réalisation engagée à partir de 2026 — livraisons échelonnées jusqu'à 2035–2040",
-        "Engagement Houssin : adapter la densification selon l'identité et la capacité de chaque quartier, privilégier le renouvellement urbain plutôt que l'étalement, accélérer la rénovation énergétique des bâtiments municipaux",
-        "À distinguer de la ZAC Ker Lann (165 ha au nord, compétence Rennes Métropole) — la ZAC Multisites est pilotée par la commune"
+        "6 secteurs : Gare, Grand-Pâtis, Haye de Pan, Maison des Associations, Noë, Mons — dont 5 en renouvellement urbain",
+        "Réunion publique du 18 septembre 2025 : environ 170 participants, périmètre présenté",
+        "Avis MRAE (8 août 2025) : contraintes environnementales à intégrer",
+        "Phase de réalisation engagée à partir de 2026 — livraisons jusqu'à 2035–2040",
+        "Bruz pilote ce projet directement (à distinguer de la ZAC Ker Lann, compétence Métropole)"
+      ],
+      "pourquoi": "Bruz est l'une des communes les plus dynamiques de l'agglomération rennaise. Sa croissance démographique soutenue (+500 à +1 000 habitants par an certaines années) génère une demande en logements que le marché libre ne peut pas absorber seul. La ZAC Multisites est la réponse structurelle de la commune : planifier l'accueil de 1 700 nouveaux logements de façon cohérente, en priorité sur des terrains déjà artificialisés (renouvellement urbain), plutôt que de laisser l'étalement urbain consommer les terres agricoles. C'est aussi une occasion de restructurer plusieurs quartiers en retard et de créer de la mixité sociale.",
+      "gouvernance": [
+        {
+          "acteur": "Commune de Bruz",
+          "role": "Maîtrise d'ouvrage et pilote du projet",
+          "detail": "Bruz est entièrement compétente sur la ZAC Multisites. La commune désigne l'aménageur, approuve les dossiers de création et de réalisation, et vote au CM les délibérations clés."
+        },
+        {
+          "acteur": "Aménageur (à désigner)",
+          "role": "Opérateur technique",
+          "detail": "La commune doit désigner un aménageur (SEM, EPA ou opérateur privé) qui prend en charge les études, les acquisitions foncières et la viabilisation des secteurs."
+        },
+        {
+          "acteur": "MRAE (Mission Régionale d'Autorité Environnementale)",
+          "role": "Autorité environnementale",
+          "detail": "A rendu un avis en août 2025 sur le dossier de création. Ses prescriptions s'imposent au projet et doivent être intégrées dans les dossiers de réalisation par secteur."
+        },
+        {
+          "acteur": "Rennes Métropole",
+          "role": "Cadre PLUiH",
+          "detail": "Le Plan Local d'Urbanisme intercommunal tenu par la Métropole encadre les droits à construire. Toute densification significative doit être compatible avec le PLUiH."
+        }
+      ],
+      "decisions": [
+        {
+          "date": "2025-08-08",
+          "titre": "Avis MRAE n°2025APB75 — contraintes environnementales identifiées",
+          "detail": "La Mission Régionale d'Autorité Environnementale rend son avis sur le dossier de création de la ZAC Multisites. L'avis identifie des enjeux environnementaux (biodiversité, eaux pluviales, déplacements) et formule des recommandations que la commune doit prendre en compte.",
+          "source_url": "https://www.mrae.developpement-durable.gouv.fr/IMG/pdf/12419_avis_zac_bruz_35_2025apb75.pdf"
+        },
+        {
+          "date": "2025-09-18",
+          "titre": "Réunion publique de concertation — 170 participants",
+          "detail": "La mairie organise une réunion publique présentant le périmètre final des 6 secteurs et la répartition des 1 700 logements. Environ 170 habitants y participent. Les observations recueillies sont intégrées au dossier.",
+          "source_url": "https://www.lessentiel.fr/rennes/notre-ville/2025-09-18/bruz-le-projet-urbain-de-la-zac-multisites-en-debat-lors-dune-reunion"
+        },
+        {
+          "date": "2026-01",
+          "titre": "Engagement Houssin — densification choisie, renouvellement prioritaire",
+          "detail": "Dans le cadre de la campagne puis en prenant ses fonctions, Houssin confirme la poursuite de la ZAC Multisites en réorientant la méthode : respecter l'identité de chaque quartier, limiter l'extension urbaine au seul secteur Mons Rouaudière, et accélérer la rénovation énergétique des bâtiments communaux existants."
+        }
+      ],
+      "cout_financement": {
+        "montant": "Coût global non encore publié — chiffrage par secteur à venir",
+        "detail": "Le coût total d'une ZAC de 31 ha avec 1 700 logements comprend les acquisitions foncières, les travaux de viabilisation (réseaux, voiries, espaces publics) et les équipements publics associés. Ces coûts sont en partie récupérés via la cession des charges foncières aux promoteurs et constructeurs. Le budget détaillé par secteur sera présenté dans les dossiers de réalisation que la commune devra soumettre au vote du Conseil Municipal.",
+        "repartition": [
+          { "source": "Commune de Bruz (avance)", "detail": "Financement initial des études et des acquisitions foncières prioritaires" },
+          { "source": "Cessions aux promoteurs / bailleurs", "detail": "Recettes issues de la vente des droits à construire aux opérateurs — principale source de financement d'une ZAC" },
+          { "source": "Subventions logement social", "detail": "Aides de l'État et d'Action Logement pour la quote-part de logements sociaux (taux légal minimum 25% en zone tendue)" }
+        ]
+      },
+      "impact_qualite_vie": [
+        "Nouveaux logements à prix maîtrisés (dont logements sociaux) permettant à des ménages locaux de rester à Bruz malgré la hausse du foncier",
+        "Requalification de friches et de terrains sous-utilisés au cœur des quartiers — amélioration du cadre de vie existant",
+        "Pression supplémentaire sur les équipements scolaires, sportifs et médicaux si les infrastructures ne suivent pas le rythme des livraisons",
+        "Modification du paysage urbain dans les secteurs touchés — impacts sur le voisinage immédiat pendant et après les travaux",
+        "Création potentielle de nouveaux commerces et services de proximité dans les secteurs densifiés (Gare, Grand-Pâtis)"
+      ],
+      "risques": [
+        "Saturation des capacités scolaires si les 1 700 logements arrivent sans anticipation d'une nouvelle école ou d'extensions de groupes scolaires existants",
+        "Hausse des prix fonciers dans les secteurs ZAC si la demande dépasse l'offre créée — paradoxe classique des ZAC en zones tendues",
+        "Blocage par contentieux sur l'avis MRAE : si les prescriptions environnementales ne sont pas suffisamment intégrées, des recours peuvent retarder les dossiers de réalisation",
+        "Risque de fragmentation si les 6 secteurs sont traités de façon incohérente (aménageurs différents, calendriers décalés, manque de vision d'ensemble)",
+        "Dépendance au foncier communal disponible : certains secteurs nécessitent des acquisitions à l'amiable ou par voie d'expropriation — délais imprévisibles"
+      ],
+      "conclusion": "La ZAC Multisites est la réponse urbanistique la plus ambitieuse de Bruz depuis des décennies. Son principe — priorité au renouvellement urbain sur l'étalement — est sain et aligné avec les engagements de Houssin. Mais l'exécution sera longue (2026–2040), coûteuse, et exposée à des contentieux. Bruz en Action doit surveiller deux points : la prise en compte des prescriptions MRAE dans les dossiers de réalisation secteur par secteur, et le niveau de logements sociaux effectivement programmés pour chaque secteur.",
+      "actus_recentes": [
+        {
+          "date": "2026-06-18",
+          "titre": "Dossier ouvert — suivi des dossiers de réalisation par secteur",
+          "detail": "Bruz en Action ouvre le suivi formel de la ZAC Multisites. La prochaine étape attendue : présentation en Conseil Municipal des dossiers de réalisation pour les premiers secteurs (Gare, Grand-Pâtis)."
+        },
+        {
+          "date": "2025-09-18",
+          "titre": "Réunion publique — 170 habitants mobilisés",
+          "detail": "La concertation préalable a réuni 170 participants, signe d'un fort intérêt citoyen. Les observations formulées sont disponibles en mairie.",
+          "source_url": "https://www.lessentiel.fr/rennes/notre-ville/2025-09-18/bruz-le-projet-urbain-de-la-zac-multisites-en-debat-lors-dune-reunion"
+        }
       ],
       "promesses_liees": [],
       "sources": [
@@ -53,13 +215,94 @@
       "titre": "Finances de la commune : état des lieux 2026",
       "categorie": "Finances",
       "statut": "en_cours",
+      "featured": true,
+      "last_activity": "2026-07-03",
       "date_ouverture": "2026-06-16",
       "chapeau": "Quel budget la nouvelle municipalité a-t-elle hérité ? Quels sont les grands équilibres financiers de Bruz à l'entame du mandat 2026–2031 ? Ce dossier compile les données disponibles et suit les prochaines délibérations budgétaires.",
       "points_cles": [
-        "Dernier conseil municipal sous Salmon : 26 janvier 2026 — délibérations disponibles en open data (Mégalis Bretagne)",
-        "Taxes locales 2023 collectées : 10,2 M€ (contre 7,3 M€ en 2013, +40 % sur 10 ans)",
-        "Prochain CM public : vendredi 3 juillet 2026 à Halle Pagnol — séance ouverte aux habitants",
-        "Délibérations en open data sur data.megalis.bretagne.bzh"
+        "Taxes locales 2023 collectées : 10,2 M€ (contre 7,3 M€ en 2013, +40 % en 10 ans)",
+        "Dernier CM sous Salmon : 26 janvier 2026 — délibérations disponibles en open data",
+        "Premier CM Houssin avec un enjeu budgétaire : 3 juillet 2026 à Halle Pagnol",
+        "Le détail du budget primitif 2026 n'a pas encore été publié — à suivre"
+      ],
+      "pourquoi": "Toute équipe municipale hérite de la situation financière de son prédécesseur. Comprendre les grands équilibres — recettes fiscales, capacité d'autofinancement, niveau d'endettement, investissements en cours — est indispensable pour juger si les promesses de campagne sont finançables dans le mandat. La nouvelle équipe Houssin doit présenter son premier budget avant la fin 2026. Ce dossier établit l'état des lieux avant ce premier vote.",
+      "gouvernance": [
+        {
+          "acteur": "Maire (Houssin)",
+          "role": "Présente le budget primitif et les décisions modificatives",
+          "detail": "Le maire prépare et défend le budget devant le Conseil Municipal. Il dispose du pouvoir exécutif sur les dépenses autorisées."
+        },
+        {
+          "acteur": "Conseil Municipal",
+          "role": "Vote le budget et les délibérations financières",
+          "detail": "Le vote du budget est une prérogative exclusive du CM. La majorité Houssin dispose des voix suffisantes pour l'adopter."
+        },
+        {
+          "acteur": "Direction des Finances communale",
+          "role": "Préparation et exécution budgétaire",
+          "detail": "L'administration communale prépare les documents budgétaires, suit l'exécution et produit les comptes administratifs."
+        },
+        {
+          "acteur": "Trésorerie publique / DGFIP",
+          "role": "Contrôle et paiement",
+          "detail": "Le comptable public (DGFIP) est distinct de l'ordonnateur (maire). Il contrôle la régularité des dépenses et assure le paiement."
+        },
+        {
+          "acteur": "Préfecture d'Ille-et-Vilaine",
+          "role": "Contrôle de légalité",
+          "detail": "Les délibérations budgétaires sont transmises à la Préfecture qui peut exercer un contrôle de légalité."
+        }
+      ],
+      "decisions": [
+        {
+          "date": "2026-01-26",
+          "titre": "Dernier CM sous Salmon — délibérations disponibles",
+          "detail": "Dernier conseil municipal de la mandature sortante. Les délibérations sont disponibles en open data sur Mégalis Bretagne. Ce CM permet de mesurer les engagements pluriannuels laissés à la nouvelle équipe.",
+          "source_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1012951/21bd3878cc769dc3c96713f7dbb019757fe7212a3ed3451773809fc1a36ed80a.pdf"
+        },
+        {
+          "date": "2026-07-03",
+          "titre": "Premier CM Houssin à enjeu budgétaire — Halle Pagnol",
+          "detail": "Séance publique ouverte aux habitants. C'est la première occasion de voir les orientations budgétaires de la nouvelle équipe, avant le vote du budget primitif 2026.",
+          "source_url": "https://www.ville-bruz.fr/ma-ville-de-bruz/conseil-municipal/conseil-municipal/"
+        }
+      ],
+      "cout_financement": {
+        "montant": "Budget annuel communal estimé ~20–25 M€ (à confirmer sur BP 2026)",
+        "detail": "Le budget d'une commune comme Bruz (~18 000 habitants) comprend une section de fonctionnement (salaires, services, entretien) et une section d'investissement (travaux, équipements). Les recettes de fonctionnement proviennent principalement des dotations d'État (DGF), des impôts locaux et des produits des services. Le budget primitif 2026, à présenter par la nouvelle équipe, donnera la photographie réelle de la situation héritée.",
+        "repartition": [
+          { "source": "Impôts locaux (TFB, CFE…)", "detail": "10,2 M€ collectés en 2023 — principal levier fiscal de la commune" },
+          { "source": "Dotation Globale de Fonctionnement (État)", "detail": "Dotation forfaitaire versée par l'État — soumise aux réformes nationales successives" },
+          { "source": "Produits des services communaux", "detail": "Cantine, garderie, eau, locations… recettes propres complémentaires" },
+          { "source": "Subventions et emprunts (investissement)", "detail": "Financement des projets d'investissement via subventions DETR, DSIL, et emprunts bancaires" }
+        ]
+      },
+      "impact_qualite_vie": [
+        "Le niveau du budget communal détermine directement la qualité et la gratuité des services publics locaux : écoles, équipements sportifs, médiathèque, voirie, espaces verts",
+        "La capacité d'investissement conditionne la rénovation du patrimoine communal et la création de nouveaux équipements (promesses Houssin)",
+        "Le niveau d'endettement hérité peut contraindre la marge de manœuvre de la nouvelle équipe sur son propre programme",
+        "La pression fiscale locale (taux de TFB) impacte directement le pouvoir d'achat des propriétaires bruzois"
+      ],
+      "risques": [
+        "Si la nouvelle équipe découvre des engagements pluriannuels non identifiés (marchés publics, DSP, garanties d'emprunt) : réduction de la marge de manœuvre réelle",
+        "Baisse des dotations d'État dans le cadre du redressement budgétaire national — risque systémique qui touche toutes les communes",
+        "Tension entre les promesses de campagne (nouveaux équipements, police renforcée) et les contraintes budgétaires réelles — nécessite une programmation pluriannuelle réaliste",
+        "Absence de transparence sur le budget hérité avant le premier CM : la zone d'ombre entre la fin Salmon et le premier vote Houssin laisse un angle mort"
+      ],
+      "conclusion": "Les finances de Bruz seront un sujet central du mandat 2026–2031. La montée des recettes fiscales (+40 % en 10 ans) reflète en grande partie la croissance démographique, pas nécessairement une hausse de pression par habitant. Mais le budget primitif 2026 que votera l'équipe Houssin sera le premier document de vérité. Bruz en Action doit assister au CM du 3 juillet, consulter les documents mis en ligne, et suivre les comptes administratifs annuels pour mesurer les écarts entre les annonces et les réalisations.",
+      "actus_recentes": [
+        {
+          "date": "2026-07-03",
+          "titre": "À venir — CM public Halle Pagnol",
+          "detail": "Prochaine séance du Conseil Municipal ouverte aux habitants. Enjeu : premières orientations budgétaires de la mandature Houssin.",
+          "source_url": "https://www.ville-bruz.fr/ma-ville-de-bruz/conseil-municipal/conseil-municipal/"
+        },
+        {
+          "date": "2026-01-26",
+          "titre": "Dernier CM Salmon — archives Mégalis disponibles",
+          "detail": "Les délibérations du dernier CM sous Philippe Salmon sont en open data sur Mégalis Bretagne.",
+          "source_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1012951/21bd3878cc769dc3c96713f7dbb019757fe7212a3ed3451773809fc1a36ed80a.pdf"
+        }
       ],
       "promesses_liees": [],
       "sources": [
@@ -73,13 +316,75 @@
       "titre": "Fiscalité 2020–2026 : ce qu'a fait la mandature Salmon",
       "categorie": "Finances",
       "statut": "en_cours",
+      "featured": false,
+      "last_activity": "2026-06-18",
       "date_ouverture": "2026-06-16",
       "chapeau": "Pendant six ans, Philippe Salmon a dirigé Bruz avec une coalition de gauche. Quel bilan fiscal ? Les taxes ont-elles augmenté ? Ce dossier compare les taux votés et les recettes réelles sur la période, avec les données publiques disponibles.",
       "points_cles": [
-        "Taxes locales collectées : +40 % entre 2013 et 2023 (7,3 M€ → 10,2 M€), dans un contexte de forte croissance démographique de Bruz",
-        "Taxe d'habitation : supprimée progressivement (réforme nationale 2020–2023), pas une décision municipale",
-        "Taxe foncière : seul levier municipal réel — les taux votés sont à comparer avec les communes similaires (à documenter)",
-        "À investiguer : évolution du taux communal de TFB (taxe foncière bâtie) 2020–2026 vs communes comparables"
+        "Recettes fiscales : +40 % en 10 ans (7,3 M€ en 2013 → 10,2 M€ en 2023)",
+        "La taxe d'habitation a été supprimée progressivement par l'État (2020–2023) — pas un choix Salmon",
+        "La taxe foncière bâtie (TFB) est le seul levier fiscal réel de la commune depuis 2023",
+        "Les taux communaux de TFB 2020–2026 restent à comparer avec les communes de même strate"
+      ],
+      "pourquoi": "Un des angles d'analyse citoyenne les plus légitimes est l'évolution de la fiscalité locale. Les Bruzois ont-ils payé plus d'impôts locaux sous Salmon ? Si oui, pour quels services en retour ? La réponse n'est pas simple : la croissance démographique gonfle mécaniquement les recettes sans que les taux bougent, et la réforme nationale de la taxe d'habitation a redistribué les cartes. Ce dossier démêle ce qui relève de choix politiques locaux de ce qui est imposé par les réformes nationales.",
+      "gouvernance": [
+        {
+          "acteur": "Conseil Municipal (vote des taux)",
+          "role": "Seul organe compétent pour voter les taux communaux",
+          "detail": "Chaque année, le CM vote les taux de la taxe foncière bâtie (TFB), taxe foncière non bâtie (TFNB) et cotisation foncière des entreprises (CFE). C'est le principal acte fiscal de l'année."
+        },
+        {
+          "acteur": "DGFIP (Direction Générale des Finances Publiques)",
+          "role": "Calcul des bases et recouvrement",
+          "detail": "C'est l'État qui calcule les bases d'imposition (valeurs locatives cadastrales) et recouvre les impôts locaux pour le compte de la commune. La commune vote un taux ; l'État applique ce taux sur les bases qu'il gère."
+        },
+        {
+          "acteur": "Rennes Métropole",
+          "role": "Taxe additionnelle",
+          "detail": "La Métropole lève également une part de fiscalité locale. Les taux communaux et métropolitains s'additionnent sur la feuille d'impôt du contribuable."
+        }
+      ],
+      "decisions": [
+        {
+          "date": "2020–2023",
+          "titre": "Suppression progressive de la taxe d'habitation",
+          "detail": "Réforme nationale : la taxe d'habitation est supprimée progressivement pour les résidences principales (100% en 2023). Ce n'est pas une décision de Bruz. Mais elle a privé les communes d'un levier fiscal et nécessité une compensation d'État (variable selon les communes).",
+          "source_url": "https://www.impots-locaux.org/impots-locaux-bruz-35170/"
+        },
+        {
+          "date": "2020–2026",
+          "titre": "Votes annuels des taux de TFB par le CM Salmon",
+          "detail": "À chaque budget primitif, le CM Salmon a voté les taux communaux de taxe foncière. L'historique précis des taux votés est consultable sur les sites spécialisés (Proxiti, impots-locaux.org) et dans les délibérations Mégalis. La comparaison avec les communes de même strate (15 000–25 000 habitants) reste à faire.",
+          "source_url": "https://www.proxiti.info/taxe-fonciere.php?o=35047"
+        }
+      ],
+      "cout_financement": {
+        "montant": "N/A — dossier de recettes, pas de dépenses",
+        "detail": "Ce dossier analyse les recettes fiscales, pas les dépenses. La question centrale est : les taux communaux ont-ils été augmentés au-delà de l'inflation et de la croissance démographique ? La hausse de 40% des recettes entre 2013 et 2023 s'explique en partie par la croissance du nombre de propriétés imposables à Bruz (nouvelles constructions), pas nécessairement par une hausse des taux. Une analyse rigoureuse nécessite de croiser taux votés × bases × nombre de contribuables.",
+        "repartition": [
+          { "source": "Taxe foncière bâtie (TFB)", "detail": "Principal impôt local restant après suppression TH — payé par les propriétaires" },
+          { "source": "Taxe foncière non bâtie (TFNB)", "detail": "Taxe sur les terrains non construits — poids limité à Bruz" },
+          { "source": "Cotisation Foncière des Entreprises (CFE)", "detail": "Impôt local sur les entreprises — levier limité mais important pour le tissu économique local" }
+        ]
+      },
+      "impact_qualite_vie": [
+        "Une hausse des taux de TFB réduit le pouvoir d'achat des propriétaires — y compris les locataires qui voient indirectement leurs charges augmenter",
+        "À l'inverse, maintenir des taux bas peut signifier moins de services publics ou plus d'endettement pour financer les investissements",
+        "La question de la juste fiscalité dans une commune en croissance est structurelle : les nouveaux arrivants utilisent des équipements financés par les anciens, le rattrapage prend du temps",
+        "L'attractivité résidentielle de Bruz peut être affectée par une fiscalité perçue comme trop élevée par rapport aux communes voisines"
+      ],
+      "risques": [
+        "Risque de hausse compensatoire de la TFB sous la mandature Houssin : si les dotations d'État diminuent et que les investissements promis sont maintenus, la pression fiscale peut augmenter",
+        "Manque de transparence pédagogique : l'écart entre 'les impôts ont augmenté' (en montant) et 'les taux ont été maintenus' (en proportion) est souvent mal compris par les contribuables",
+        "Contentieux sur les bases cadastrales : les révisions de valeurs locatives (prévues depuis des années) pourraient augmenter mécaniquement l'impôt sans vote de la commune"
+      ],
+      "conclusion": "Le bilan fiscal de la mandature Salmon est à nuancer. La hausse des recettes (+40% en 10 ans) reflète d'abord la croissance de Bruz et non nécessairement une décision de hausser les taux. La suppression de la taxe d'habitation est une réforme nationale. Ce qui mérite analyse, c'est l'évolution précise du taux de TFB comparé aux communes de même strate. Bruz en Action engagera cette analyse dès que les données 2020–2026 seront consolidées, pour offrir aux Bruzois une lecture objective — ni charge politique, ni absolution.",
+      "actus_recentes": [
+        {
+          "date": "2026-06-18",
+          "titre": "Dossier en cours de documentation — données fiscales à consolider",
+          "detail": "L'historique précis des taux de TFB 2020–2026 est en cours de collecte via les sources publiques (Mégalis, Proxiti, délibérations CM). Publication prévue dès consolidation."
+        }
       ],
       "promesses_liees": [],
       "sources": [
@@ -92,6 +397,8 @@
       "titre": "Carte de Bruz : projets et quartiers",
       "categorie": "Urbanisme",
       "statut": "publie",
+      "featured": false,
+      "last_activity": "2026-06-17",
       "date_ouverture": "2026-06-17",
       "lien_externe": "/bruz-en-action/carte",
       "chapeau": "Carte interactive de Bruz : visualisez les 6 secteurs ZAC Multisites (1 700 logements), le corridor trambus T4 et les équipements clés de la commune.",
