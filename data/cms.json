@@ -204,7 +204,8 @@
       ],
       "deliberations_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/",
       "source_label": "Ville de Bruz — YouTube",
-      "date_publication": "2026-03-12"
+      "date_publication": "2026-03-12",
+      "id": "CM-2026-03-09"
     },
     {
       "id": "CM-2026-01-26",
@@ -290,7 +291,8 @@
       ],
       "deliberations_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2025/",
       "source_label": "Ville de Bruz — YouTube",
-      "date_publication": "2025-12-19"
+      "date_publication": "2025-12-19",
+      "id": "CM-2025-12-15"
     },
     {
       "date": "2025-11-24",
@@ -306,7 +308,8 @@
       ],
       "deliberations_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2025/",
       "source_label": "Ville de Bruz — YouTube",
-      "date_publication": "2025-11-29"
+      "date_publication": "2025-11-29",
+      "id": "CM-2025-11-24"
     },
     {
       "date": "2025-10-13",
@@ -322,7 +325,8 @@
       ],
       "deliberations_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2025/",
       "source_label": "Ville de Bruz — YouTube",
-      "date_publication": "2025-10-14"
+      "date_publication": "2025-10-14",
+      "id": "CM-2025-10-13"
     },
     {
       "date": "2025-09-22",
@@ -338,7 +342,8 @@
       ],
       "deliberations_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2025/",
       "source_label": "Ville de Bruz — YouTube",
-      "date_publication": "2025-09-25"
+      "date_publication": "2025-09-25",
+      "id": "CM-2025-09-22"
     },
     {
       "date": "2025-06-30",
@@ -354,7 +359,8 @@
       ],
       "deliberations_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2025/",
       "source_label": "Ville de Bruz — YouTube",
-      "date_publication": "2025-07-08"
+      "date_publication": "2025-07-08",
+      "id": "CM-2025-06-30"
     },
     {
       "date": "2025-06-02",
@@ -370,7 +376,8 @@
       ],
       "deliberations_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2025/",
       "source_label": "Ville de Bruz — YouTube",
-      "date_publication": "2025-06-03"
+      "date_publication": "2025-06-03",
+      "id": "CM-2025-06-02"
     },
     {
       "date": "2025-03-31",
@@ -386,7 +393,8 @@
       ],
       "deliberations_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2025/",
       "source_label": "Ville de Bruz — YouTube",
-      "date_publication": "2025-04-02"
+      "date_publication": "2025-04-02",
+      "id": "CM-2025-03-31"
     },
     {
       "date": "2025-03-03",
@@ -402,7 +410,8 @@
       ],
       "deliberations_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2025/",
       "source_label": "Ville de Bruz — YouTube",
-      "date_publication": "2025-03-05"
+      "date_publication": "2025-03-05",
+      "id": "CM-2025-03-03"
     },
     {
       "date": "2025-01-27",
@@ -418,7 +427,8 @@
       ],
       "deliberations_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2025/",
       "source_label": "Ville de Bruz — YouTube",
-      "date_publication": "2025-02-06"
+      "date_publication": "2025-02-06",
+      "id": "CM-2025-01-27"
     }
   ],
   "conseil_metropolitain": [

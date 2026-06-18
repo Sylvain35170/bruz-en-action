@@ -953,6 +953,249 @@
         }
       ],
       "actus_recentes": []
+    },
+    {
+      "id": "D06",
+      "titre": "Piscine de Bruz : rénovation ou reconstruction ?",
+      "categorie": "Équipements",
+      "statut": "en_cours",
+      "featured": true,
+      "last_activity": "Tue, 04 Ju",
+      "date_ouverture": "2026-06-18",
+      "chapeau": "La piscine municipale de Bruz (piscine de la Conterie, construction 1970) est vieillissante. La majorité a promis une réflexion sur son avenir. Quel calendrier ? Quel coût ? Quelle solution ?",
+      "points_cles": [
+        "La piscine de la Conterie date des années 1970 — entretien coûteux, énergie élevée",
+        "Les inscriptions à la natation sont encore actives (saison 2025-2026)",
+        "Aucune délibération de rénovation ou reconstruction votée à ce stade",
+        "Dossier budgétaire à suivre : investissement estimé à plusieurs millions d'euros",
+        "À surveiller : inscriptions au PPI (Plan Pluriannuel d'Investissement) 2026-2032"
+      ],
+      "pourquoi": "La piscine de la Conterie est un équipement structurant pour les Bruzois (natation scolaire, clubs, public). Son vieillissement impose une décision à moyen terme. La majorité Houssin a évoqué ce dossier sans encore l'inscrire au budget.",
+      "gouvernance": {
+        "pilote": "Adjoint(e) aux sports / équipements sportifs",
+        "partenaires": [
+          "Commune de Bruz",
+          "Rennes Métropole (éventuel co-financement)"
+        ],
+        "instances": [
+          "Conseil municipal",
+          "Commission finances"
+        ]
+      },
+      "decisions": [
+        {
+          "date": "2026-06-18",
+          "type": "Veille ouverte",
+          "description": "Aucune délibération votée. Dossier en observation. Inscriptions natation actives pour 2025-2026.",
+          "statut": "info"
+        }
+      ],
+      "cout_financement": {
+        "enveloppe_estimee": "Non arrêtée",
+        "note": "Rénovation lourde : 5-10 M€ estimés. Reconstruction neuve : 15-25 M€. Cofinancement Rennes Métropole possible selon le projet retenu.",
+        "sources_financement": [
+          "Budget communal",
+          "DETR / DSIL (subventions État)",
+          "Rennes Métropole (éventuel)"
+        ]
+      },
+      "impact_qualite_vie": [
+        "Équipement de proximité essentiel : natation scolaire obligatoire, clubs sportifs (natation, water-polo), accès grand public. Une fermeture prolongée impacterait directement les familles bruzoise."
+      ],
+      "risques": [
+        "Fermeture préventive pour raisons de sécurité si diagnostic défavorable",
+        "Coût élevé non anticipé au budget primitif 2026",
+        "Délai de construction d'un nouveau bassin : 3-5 ans minimum"
+      ],
+      "conclusion": "Dossier à suivre de près. La décision d'investissement doit apparaître dans le PPI. Bruz en Action surveillera l'inscription au budget et les conclusions de tout diagnostic technique.",
+      "promesses_liees": [],
+      "sources": [
+        {
+          "label": "Mairie de Bruz — Natation (piscine Conterie)",
+          "url": "https://www.ville-bruz.fr/actualites/ouverture-des-inscriptions-a-la-natation-pi"
+        },
+        {
+          "label": "Ouest-France — « Où va la piscine ? »",
+          "url": "https://news.google.com/search?q=piscine+bruz"
+        }
+      ],
+      "actus_recentes": [
+        {
+          "date": "Tue, 04 Ju",
+          "titre": "« Où va la piscine ? » La majorité et la minorité de Bruz s’inquiètent pour l’avenir de la Conterie - Ouest-France",
+          "detail": "<a href=\"https://news.google.com/rss/articles/CBMihwJBVV95cUxNekI2SjM2UFAwLThpeUpTbjBJaXNTQmRkVmtWZFpoNXpMLXVBTmV3YzlSalhlaHVVNFNGVHNYWDdiOGxrNEx3TEs0Z2U0LWhwd0xidlFGeUc0bFhBSFhnanF4Umo5NFFrdF9fQVc4VGJka0xyam94UWNPMEtFTE16SThETER4b2Y2RXdKbllQUUhCcFBxdHBWQncwYmxiM2pLLXM2WU0wX3o5MTIxLTVHa1Ezd3NmWWdGMm",
+          "source_url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxNekI2SjM2UFAwLThpeUpTbjBJaXNTQmRkVmtWZFpoNXpMLXVBTmV3YzlSalhlaHVVNFNGVHNYWDdiOGxrNEx3TEs0Z2U0LWhwd0xidlFGeUc0bFhBSFhnanF4Umo5NFFrdF9fQVc4VGJka0xyam94UWNPMEtFTE16SThETER4b2Y2RXdKbllQUUhCcFBxdHBWQncwYmxiM2pLLXM2WU0wX3o5MTIxLTVHa1Ezd3NmWWdGMm1BX3hWaVNrUENlM1NBY2FJT0dHa1hJSFMtTlQtbG9XdUdqamxtcmVoSjV0dlRCSkJJaVdZZ25KcWx0d19GYWFBYTZZTXlLM0htUTIxMA?oc=5",
+          "source_label": "Google News — Bruz actualités"
+        },
+        {
+          "date": "2026-06-18",
+          "titre": "Ouverture des inscriptions à la natation : piscine de la Conterie",
+          "detail": "",
+          "source_url": "https://www.ville-bruz.fr/actualites/ouverture-des-inscriptions-a-la-natation-piscine-de-la-conterie/",
+          "source_label": "Mairie de Bruz — Actualités"
+        }
+      ]
+    },
+    {
+      "id": "D07",
+      "titre": "Sécurité et police municipale : quel renforcement ?",
+      "categorie": "Services publics",
+      "statut": "en_cours",
+      "featured": true,
+      "last_activity": "2026-06-18",
+      "date_ouverture": "2026-06-18",
+      "chapeau": "Jean-René Houssin a inscrit la sécurité dans ses priorités. Une délégation dédiée existe depuis le CM d'installation (mars 2026). Effectifs, vidéoprotection, coopération avec la gendarmerie : où en est-on ?",
+      "points_cles": [
+        "Délégation sécurité / police municipale attribuée au CM d'installation du 20 mars 2026",
+        "Police municipale de Bruz : effectifs actuels à préciser (hors périmètre Rennes Métropole)",
+        "Programme Houssin : renforcement des patrouilles et extension de la vidéoprotection",
+        "Bruz dépend de la gendarmerie nationale (commune non éligible à la police nationale)",
+        "Voisins vigilants : campagne lancée en 2025, à confirmer pour 2026"
+      ],
+      "pourquoi": "Avec 20 000 habitants et une croissance démographique forte, Bruz doit adapter ses moyens de sécurité. Le programme électoral de Houssin incluait un volet sécurité explicite. Ce dossier suit la mise en œuvre concrète.",
+      "gouvernance": {
+        "pilote": "Élu(e) délégué(e) à la sécurité (délégation CM mars 2026)",
+        "partenaires": [
+          "Gendarmerie nationale",
+          "Préfecture d'Ille-et-Vilaine",
+          "Rennes Métropole"
+        ],
+        "instances": [
+          "Conseil municipal",
+          "CLSPD (Conseil Local de Sécurité et de Prévention de la Délinquance)"
+        ]
+      },
+      "decisions": [
+        {
+          "date": "2026-03-20",
+          "type": "Délégation",
+          "description": "Attribution d'une délégation sécurité / police municipale dans les délégations du CM d'installation.",
+          "statut": "vote"
+        }
+      ],
+      "cout_financement": {
+        "enveloppe_estimee": "Non arrêtée publiquement",
+        "note": "Recrutement agent PM : ~35-45 k€/an charges incluses. Vidéoprotection : caméra + infrastructure ~15-25 k€/unité. À suivre au budget 2027.",
+        "sources_financement": [
+          "Budget communal",
+          "FIPD (Fonds interministériel de prévention de la délinquance)"
+        ]
+      },
+      "impact_qualite_vie": [
+        "Sentiment de sécurité, dissuasion des incivilités, réponse aux attentes des habitants sur les questions de tranquillité publique. Enjeu fort dans les nouveaux quartiers en développement (ZAC Multisites)."
+      ],
+      "risques": [
+        "Difficulté de recrutement d'agents de police municipale (marché tendu nationalement)",
+        "Coût des équipements de vidéoprotection sous-estimé",
+        "Tension entre sécurité et libertés publiques — nécessité d'un cadre délibéré"
+      ],
+      "conclusion": "La délégation existe mais aucune décision concrète n'a encore été votée. Bruz en Action suivra le premier budget intégrant des crédits sécurité et toute délibération sur la vidéoprotection.",
+      "promesses_liees": [],
+      "sources": [
+        {
+          "label": "CM installation Bruz — mars 2026 (délégations)",
+          "url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/"
+        },
+        {
+          "label": "Ouest-France — Voisins attentifs Bruz",
+          "url": "https://www.ouest-france.fr/bretagne/bruz-35170/"
+        }
+      ],
+      "actus_recentes": [
+        {
+          "date": "2026-04-08",
+          "titre": "Délégations, indemnités et premières décisions",
+          "detail": "12 conseillers délégués nommés : Patrick Roullé (mobilités), Carol Léost (animation), Jérôme de Gayardon (voirie/propreté), Philippe Dohollou (habitat/urbanisme), Thomas de la Rivière (patrimoine/travaux), Huguette Dallemagne (environnement), Marie Demaret (médiathèque/culture), Vincent Benjamin (ha",
+          "source_url": "https://www.youtube.com/playlist?list=PLnSe2hJFinqpupninWlKBHSmzmwLW-8i7",
+          "source_label": "Audio CM sur YouTube"
+        },
+        {
+          "date": "2026-04-08",
+          "titre": "Délégations, indemnités et premières décisions",
+          "detail": "12 conseillers délégués nommés : Patrick Roullé (mobilités), Carol Léost (animation), Jérôme de Gayardon (voirie/propreté), Philippe Dohollou (habitat/urbanisme), Thomas de la Rivière (patrimoine/travaux), Huguette Dallemagne (environnement), Marie Demaret (médiathèque/culture), Vincent Benjamin (ha",
+          "source_url": "https://www.ville-bruz.fr/wp-content/uploads/2026/05/Bruz-Mag-n%C2%B0260-de-mai-juin-2026.pdf",
+          "source_label": "Bruz Mag n°260, p. 16-17 — expressions majorité et minorité"
+        }
+      ]
+    },
+    {
+      "id": "D08",
+      "titre": "Équipements sportifs de proximité : city stades et terrains",
+      "categorie": "Équipements",
+      "statut": "en_cours",
+      "featured": false,
+      "last_activity": "2026-06-18",
+      "date_ouverture": "2026-06-18",
+      "chapeau": "Bruz grandit vite. Les équipements sportifs de proximité (city stades, terrains synthétiques, gymnases) doivent suivre. Fabrice Jan, délégué au sport, porte ce dossier depuis le CM de mars 2026.",
+      "points_cles": [
+        "Délégation sport / équipements sportifs : Fabrice Jan (CM installation mars 2026)",
+        "City stade : équipements multi-sports de proximité pour les quartiers",
+        "Lien potentiel avec la ZAC Multisites : équipements à prévoir dans les nouveaux quartiers",
+        "Gymnases et terrains : état du parc existant à évaluer",
+        "Budget sports : à suivre dans les délibérations budgétaires"
+      ],
+      "pourquoi": "Une commune de 20 000 habitants en forte croissance doit planifier ses équipements sportifs en amont des nouveaux quartiers. Ce dossier est complémentaire de la ZAC Multisites (D02) : les futurs 1 700 logements nécessiteront des espaces sportifs.",
+      "gouvernance": {
+        "pilote": "Fabrice Jan — délégué au sport (délégation CM mars 2026)",
+        "partenaires": [
+          "Clubs sportifs bruzois",
+          "Rennes Métropole",
+          "SDJES (ex-DDCS)"
+        ],
+        "instances": [
+          "Conseil municipal",
+          "Commission vie sportive"
+        ]
+      },
+      "decisions": [
+        {
+          "date": "2026-03-20",
+          "type": "Délégation",
+          "description": "Attribution de la délégation sport / équipements sportifs à Fabrice Jan.",
+          "statut": "vote"
+        }
+      ],
+      "cout_financement": {
+        "enveloppe_estimee": "Non arrêtée",
+        "note": "City stade : 80-150 k€. Terrain synthétique : 500 k€-1,5 M€. Gymnase neuf : 3-8 M€. Subventions CNDS/FDVA possibles.",
+        "sources_financement": [
+          "Budget communal",
+          "Rennes Métropole",
+          "État (CNDS, DETR)"
+        ]
+      },
+      "impact_qualite_vie": [
+        "Accès au sport pour tous, animations de quartier, lien social dans les nouveaux secteurs résidentiels. Enjeu particulier pour la jeunesse bruzoise dans les quartiers en développement."
+      ],
+      "risques": [
+        "Arbitrages budgétaires défavorables face aux priorités (piscine, sécurité)",
+        "Planification insuffisante dans les ZAC (réservations foncières)",
+        "Vieillissement du parc existant non traité"
+      ],
+      "conclusion": "Dossier à instruire en lien avec la ZAC Multisites. À surveiller : toute délibération sur le PPI 2026-2032 incluant des équipements sportifs, et les premiers budgets d'investissement de la mandature.",
+      "promesses_liees": [],
+      "sources": [
+        {
+          "label": "CM installation Bruz — mars 2026 (délégation Fabrice Jan)",
+          "url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/"
+        }
+      ],
+      "actus_recentes": [
+        {
+          "date": "2026-04-08",
+          "titre": "Délégations, indemnités et premières décisions",
+          "detail": "12 conseillers délégués nommés : Patrick Roullé (mobilités), Carol Léost (animation), Jérôme de Gayardon (voirie/propreté), Philippe Dohollou (habitat/urbanisme), Thomas de la Rivière (patrimoine/travaux), Huguette Dallemagne (environnement), Marie Demaret (médiathèque/culture), Vincent Benjamin (ha",
+          "source_url": "https://www.youtube.com/playlist?list=PLnSe2hJFinqpupninWlKBHSmzmwLW-8i7",
+          "source_label": "Audio CM sur YouTube"
+        },
+        {
+          "date": "2026-04-08",
+          "titre": "Délégations, indemnités et premières décisions",
+          "detail": "12 conseillers délégués nommés : Patrick Roullé (mobilités), Carol Léost (animation), Jérôme de Gayardon (voirie/propreté), Philippe Dohollou (habitat/urbanisme), Thomas de la Rivière (patrimoine/travaux), Huguette Dallemagne (environnement), Marie Demaret (médiathèque/culture), Vincent Benjamin (ha",
+          "source_url": "https://www.ville-bruz.fr/wp-content/uploads/2026/05/Bruz-Mag-n%C2%B0260-de-mai-juin-2026.pdf",
+          "source_label": "Bruz Mag n°260, p. 16-17 — expressions majorité et minorité"
+        }
+      ]
     }
   ]
 }

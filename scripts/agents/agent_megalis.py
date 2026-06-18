@@ -91,6 +91,7 @@ def run() -> bool:
         if vid_id in known_ids or item["date_cm"] in known_dates:
             continue
         seance = {
+            "id": f"CM-{item['date_cm']}",
             "date": item["date_cm"],
             "titre": item["titre"],
             "youtube_id": vid_id,

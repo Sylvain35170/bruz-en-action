@@ -23,9 +23,9 @@ DOSSIER_KEYWORDS: dict[str, list[str]] = {
     "D03": ["budget", "finances", "budget primitif", "conseil municipal", "bp 2026", "dotation"],
     "D04": ["fiscalité", "taxe foncière", "tfb", "salmon", "impôts locaux", "taux communal"],
     "D05": ["carte", "equipement", "quartier", "openstreetmap"],
-    "D06": ["piscine", "équipement sportif", "rénovation", "bassin"],
-    "D07": ["police municipale", "sécurité", "vidéoprotection", "pm", "renfort"],
-    "D08": ["city stade", "stade", "terrain de sport", "équipement", "fabrice jan"],
+    "D06": ["piscine", "conterie", "natation", "bassin", "équipement aquatique"],
+    "D07": ["police municipale", "sécurité", "vidéoprotection", "voisins vigilants", "gendarmerie", "clspd", "tranquillité"],
+    "D08": ["city stade", "terrain synthétique", "équipements sportifs", "gymnase", "fabrice jan", "sport bruz"],
 }
 
 # Seuil : nb de jours depuis last_activity pour retirer le featured

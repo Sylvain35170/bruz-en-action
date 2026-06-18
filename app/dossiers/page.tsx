@@ -25,6 +25,8 @@ const CATEGORIE_COLOR: Record<string, string> = {
   Mobilités: "#0ea5e9",
   Urbanisme: "#8b5cf6",
   Finances: "#16a34a",
+  "Équipements": "#f59e0b",
+  "Services publics": "#ef4444",
 };
 
 export default function DossiersPage() {
