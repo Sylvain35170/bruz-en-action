@@ -29,8 +29,7 @@
 - [ ] **Images** — photos de Bruz / événements / asso (à fournir)
 - [ ] **Script import_excel.py** — mise à jour auto des statuts depuis l'Excel
 - [ ] **CRs réunions** — réimporter les docx (encodage zip raté sur les accents)
-- [ ] **Actus** — workflow de saisie des actus de suivi promesses
-- [ ] **Page détail promesse** — fiche individuelle avec historique actus liées
+- [ ] **Actus** — enrichir au fil des décisions (schema en place, 6 seeds)
 - [ ] **SEO** — og:image, description, sitemap
 
 ## 💡 Idées
@@ -55,6 +54,8 @@
 - **Page `/conseils`** — timeline CMs passées + section Rennes Métropole + sidebar (Mégalis, YouTube, chiffres conseil) ; nav header enrichie
 - **Résumés CM enrichis** — CMs jan/mars/avr enrichis depuis Mégalis + Bruz Mag n°260 ; section Conseil Métropolitain ajoutée (ZAC Ker Lann + T4, 5 fév. 2026)
 - **Fix carte Leaflet** — CSS global pour static export GitHub Pages (tuiles OSM + tracés ZAC/T4 visibles)
+- **Pages promesses `/promesses/[id]`** — 50 pages statiques : détail, historique actus, dossiers liés, nav prev/next ; tableau homepage cliquable
+- **actus.json** — schema + 6 actus seeds (délégations, ZAC Ker Lann, élection)
 - **Pages dossiers refondues** — D01–D04 : 7 nouvelles sections par dossier (pourquoi, gouvernance, décisions, coût/financement, impact qualité de vie, risques systémiques, conclusion + actus récentes)
 - **Coups de peinture** — barre de progression promesses, timeline CM avec dot pulsant, animations fade-in, og:image, favicon, photo hero (Bruz-place.jpg CC BY-SA 4.0 Yves LC)
 
