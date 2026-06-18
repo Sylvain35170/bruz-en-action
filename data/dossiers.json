@@ -640,6 +640,148 @@
       ],
       "actus_recentes": [],
       "promesses_liees": []
+    },
+    {
+      "id": "D09",
+      "titre": "Grand Logis : quel avenir pour la salle de cinéma ?",
+      "categorie": "Culture",
+      "statut": "en_cours",
+      "featured": false,
+      "last_activity": "2026-06-18",
+      "date_ouverture": "2026-06-18",
+      "chapeau": "Le Grand Logis abrite la seule salle de cinéma de Bruz. Dans une commune qui dépasse 20 000 habitants, la question de l'avenir de cet équipement culturel — rénover, agrandir, déléguer à un opérateur privé comme Cinéville ? — mérite d'être posée.",
+      "ce_quon_sait": [
+        "Le Grand Logis est la salle culturelle municipale de Bruz — elle accueille cinéma, spectacles et expositions",
+        "Bruz n'a pas d'autre salle de cinéma sur son territoire — le Grand Logis est un équipement unique",
+        "La délégation culture au CM 2026 a été attribuée — élu(e) délégué(e) à confirmer (Bruz Mag n°260)",
+        "L'hypothèse d'un opérateur privé type Cinéville a circulé — aucune délibération à ce jour",
+        "La capacité et l'état du bâtiment ne sont pas documentés publiquement"
+      ],
+      "qui_decide": [
+        {
+          "nom": "Conseil municipal",
+          "role": "Décide du statut et du financement du Grand Logis — budget culture voté annuellement"
+        },
+        {
+          "nom": "Élu(e) délégué(e) à la culture",
+          "role": "Pilote le dossier au quotidien — identité à confirmer via Bruz Mag n°260"
+        }
+      ],
+      "decisions": [
+        {
+          "date": "2026-04",
+          "description": "CM installation : délégation culture attribuée (élu à confirmer)",
+          "source_url": "https://www.ville-bruz.fr/wp-content/uploads/2026/05/Bruz-Mag-n%C2%B0260-de-mai-juin-2026.pdf"
+        }
+      ],
+      "ce_quon_suit": [
+        "Toute délibération sur le devenir du Grand Logis — régie directe, DSP, partenariat privé ?",
+        "Le budget culture 2026 — quelle enveloppe pour le Grand Logis ?",
+        "Une éventuelle procédure de délégation de service public à un opérateur cinéma"
+      ],
+      "sources": [
+        {
+          "label": "Grand Logis — site officiel",
+          "url": "https://www.legrandlogis.fr/"
+        },
+        {
+          "label": "Bruz Mag n°260 — délégations municipales",
+          "url": "https://www.ville-bruz.fr/wp-content/uploads/2026/05/Bruz-Mag-n%C2%B0260-de-mai-juin-2026.pdf"
+        }
+      ],
+      "actus_recentes": [],
+      "promesses_liees": []
+    },
+    {
+      "id": "D10",
+      "titre": "Écoles : Bruz peut-elle absorber 1 700 logements de plus ?",
+      "categorie": "Éducation",
+      "statut": "en_cours",
+      "featured": false,
+      "last_activity": "2026-06-18",
+      "date_ouverture": "2026-06-18",
+      "chapeau": "La ZAC Multisites prévoit 1 700 nouveaux logements. Si chaque logement accueille en moyenne 0,5 enfant scolarisable, c'est 850 élèves supplémentaires à absorber. Les écoles actuelles ont-elles la capacité ? Ce dossier suit la planification scolaire du mandat.",
+      "ce_quon_sait": [
+        "Bruz compte plusieurs écoles primaires publiques et privées — capacités exactes non publiées",
+        "La ZAC Multisites (1 700 logements) va générer un besoin scolaire significatif sur 10 ans",
+        "La planification des équipements scolaires relève conjointement de la commune (bâtiments) et de l'Éducation Nationale (effectifs)",
+        "La délégation scolaire au CM 2026 a été attribuée — élu(e) à confirmer",
+        "Aucune délibération sur une nouvelle école ou extension de capacité n'a été publiée à ce jour"
+      ],
+      "qui_decide": [
+        {
+          "nom": "Commune de Bruz",
+          "role": "Propriétaire des bâtiments scolaires — finance et décide les constructions"
+        },
+        {
+          "nom": "Inspection Académique 35",
+          "role": "Détermine les ouvertures et fermetures de classes, les effectifs autorisés"
+        }
+      ],
+      "decisions": [
+        {
+          "date": "2026-04",
+          "description": "CM installation : délégation scolaire / éducation attribuée (élu à confirmer)",
+          "source_url": "https://www.ville-bruz.fr/wp-content/uploads/2026/05/Bruz-Mag-n%C2%B0260-de-mai-juin-2026.pdf"
+        }
+      ],
+      "ce_quon_suit": [
+        "Le plan scolaire du mandat — combien d'élèves supplémentaires prévus, quelle réponse ?",
+        "Toute délibération sur la construction ou l'extension d'une école primaire",
+        "Les ouvertures/fermetures de classes annoncées par l'Inspection Académique 35"
+      ],
+      "sources": [
+        {
+          "label": "Ville de Bruz — vie scolaire",
+          "url": "https://www.ville-bruz.fr/vivre-a-bruz/enfance-et-education/"
+        },
+        {
+          "label": "Inspection Académique 35 — secteurs scolaires",
+          "url": "https://www.ac-rennes.fr/"
+        }
+      ],
+      "actus_recentes": [],
+      "promesses_liees": []
+    },
+    {
+      "id": "D11",
+      "titre": "Manoir de la Noë : que va devenir ce patrimoine ?",
+      "categorie": "Patrimoine",
+      "statut": "en_cours",
+      "featured": false,
+      "last_activity": "2026-06-18",
+      "date_ouverture": "2026-06-18",
+      "chapeau": "Le Manoir de la Noë est un bâtiment patrimonial sur le territoire de Bruz. Son avenir — rénovation, reconversion, vente, mise à disposition associative — est un sujet qui revient dans les débats locaux. Ce dossier suit les décisions de la mandature.",
+      "ce_quon_sait": [
+        "Le Manoir de la Noë est un bâtiment ancien sur le territoire de Bruz — statut de propriété à confirmer (commune ou privé)",
+        "Plusieurs pistes ont été évoquées localement : rénovation patrimoniale, usage associatif, projet culturel",
+        "Aucune délibération officielle sur le Manoir de la Noë n'est disponible sur Mégalis à ce jour",
+        "Le contexte budgétaire contraint de la commune rend une rénovation lourde incertaine sans cofinancement"
+      ],
+      "qui_decide": [
+        {
+          "nom": "Commune de Bruz (si propriétaire)",
+          "role": "Décide du devenir du bâtiment — délibération au CM requise pour toute cession ou travaux"
+        },
+        {
+          "nom": "DRAC Bretagne",
+          "role": "Compétente si le bâtiment est inscrit ou classé — subventions patrimoine possibles"
+        }
+      ],
+      "decisions": [],
+      "ce_quon_suit": [
+        "La clarification du statut du bâtiment — communal ou privé ?",
+        "Toute délibération du CM sur le Manoir de la Noë (travaux, vente, bail)",
+        "Un éventuel dossier de subvention patrimoine (DRAC, Région Bretagne)"
+      ],
+      "sources": [
+        {
+          "label": "Open data Mégalis — délibérations Bruz",
+          "url": "https://data.megalis.bretagne.bzh/organization/commune-de-bruz"
+        }
+      ],
+      "actus_recentes": [],
+      "promesses_liees": []
     }
   ]
 }
