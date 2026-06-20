@@ -341,13 +341,6 @@ export default function Home() {
                       <p style={{ fontSize: 13, fontWeight: 700, color: "#0f172a", margin: 0, lineHeight: 1.5, flex: 1 }}>{actu.titre}</p>
                       <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
                         <p style={{ fontSize: 11, color: "#94a3b8", margin: 0 }}>{actu.source_label}</p>
-                        {!isMailrie && (
-                          <a href={`https://www.google.com/search?q=${encodeURIComponent(actu.titre)}`}
-                            target="_blank" rel="noopener noreferrer"
-                            style={{ fontSize: 11, color: "#0284c7", textDecoration: "none", fontWeight: 600, flexShrink: 0 }}>
-                            Rechercher →
-                          </a>
-                        )}
                       </div>
                     </div>
                   </div>
