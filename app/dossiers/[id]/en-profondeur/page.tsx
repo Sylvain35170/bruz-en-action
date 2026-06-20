@@ -6,7 +6,7 @@ import SiteFooter from "../../../../components/SiteFooter";
 const LOGO = "/bruz-en-action/logo.png";
 
 // Seuls les dossiers avec une page "En profondeur" sont listés ici
-const EN_PROFONDEUR_IDS = ["D01"];
+const EN_PROFONDEUR_IDS = ["D01", "D02"];
 
 export function generateStaticParams() {
   return EN_PROFONDEUR_IDS.map(id => ({ id }));
@@ -85,18 +85,149 @@ export default async function EnProfondeurPage({ params }: { params: Promise<{ i
             </span>
             <span style={{ fontSize: 12, color: "rgba(255,255,255,0.4)" }}>{dossier.id}</span>
           </div>
-          <h1 style={{ fontSize: "clamp(1.4rem, 3vw, 2.2rem)", fontWeight: 800, lineHeight: 1.2, margin: "0 0 16px", maxWidth: 720, color: "#fff" }}>
-            Trambus T4 à Bruz : pourquoi ça compte, qui décide, et quelle vision pour la ville ?
-          </h1>
-          <p style={{ fontSize: 16, lineHeight: 1.75, color: "rgba(255,255,255,0.75)", maxWidth: 680, margin: 0 }}>
-            Le T4 n'est pas un simple projet de transport. C'est une décision qui va remodeler Bruz pour trente ans.
-            Voici ce qu'il faut comprendre — et les deux visions qui s'affrontent sur le terminus.
-          </p>
+          {id === "D01" && (<>
+            <h1 style={{ fontSize: "clamp(1.4rem, 3vw, 2.2rem)", fontWeight: 800, lineHeight: 1.2, margin: "0 0 16px", maxWidth: 720, color: "#fff" }}>
+              Trambus T4 à Bruz : pourquoi ça compte, qui décide, et quelle vision pour la ville ?
+            </h1>
+            <p style={{ fontSize: 16, lineHeight: 1.75, color: "rgba(255,255,255,0.75)", maxWidth: 680, margin: 0 }}>
+              Le T4 n'est pas un simple projet de transport. C'est une décision qui va remodeler Bruz pour trente ans.
+              Voici ce qu'il faut comprendre — et les deux visions qui s'affrontent sur le terminus.
+            </p>
+          </>)}
+          {id === "D02" && (<>
+            <h1 style={{ fontSize: "clamp(1.4rem, 3vw, 2.2rem)", fontWeight: 800, lineHeight: 1.2, margin: "0 0 16px", maxWidth: 720, color: "#fff" }}>
+              1 700 logements à Bruz : ce que ça change vraiment pour les habitants
+            </h1>
+            <p style={{ fontSize: 16, lineHeight: 1.75, color: "rgba(255,255,255,0.75)", maxWidth: 680, margin: 0 }}>
+              La ZAC Multisites va transformer Bruz en profondeur d'ici 2035. Mais construire des logements, ce n'est pas juste poser des briques.
+              Voici les vraies questions — sur les écoles, la densité, les équipements — et ce qu'on va surveiller.
+            </p>
+          </>)}
         </div>
       </section>
 
       <main style={{ flex: 1 }}>
         <div style={{ maxWidth: 860, margin: "0 auto", padding: "48px 24px" }}>
+
+        {/* ── CONTENU D02 ── */}
+        {id === "D02" && (<>
+
+          <section style={{ marginBottom: 48 }}>
+            <SectionTitle>C'est quoi la ZAC Multisites ?</SectionTitle>
+            <InfoBox icon="🏗️" titre="Une Zone d'Aménagement Concerté sur plusieurs quartiers">
+              La ZAC Multisites est un outil d'urbanisme qui permet à la commune de <strong>maîtriser la création de logements</strong> sur plusieurs secteurs en même temps.
+              Création officielle votée au conseil municipal de décembre 2025 — 1 700 nouveaux logements prévus d'ici 2035.
+            </InfoBox>
+            <InfoBox icon="🗺️" titre="Plusieurs secteurs, dont Ker Lann en tête">
+              Les 1 700 logements sont répartis sur plusieurs quartiers de Bruz.
+              Le secteur <strong>Ker Lann</strong> est le plus contraint : Rennes Métropole y impose une densité de <strong>60 logements à l'hectare</strong> dans le cadre du tracé T4.
+              Le Vert-Buisson est le premier secteur identifié publiquement — 67 logements déjà en projet.
+            </InfoBox>
+            <InfoBox icon="⚖️" titre="Bruz décide — mais pas seule">
+              La ZAC est sous maîtrise d'ouvrage communale. Mais Rennes Métropole impose les densités liées au T4 sur Ker Lann,
+              et l'Inspection Académique 35 pilote les ouvertures de classes.
+              <strong> La commune construit, mais l'État et la Métropole fixent des contraintes.</strong>
+            </InfoBox>
+          </section>
+
+          <section style={{ marginBottom: 48 }}>
+            <SectionTitle>Ce que 1 700 logements impliquent concrètement</SectionTitle>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px,1fr))", gap: 16, marginBottom: 24 }}>
+              {[
+                { icon: "👶", titre: "~850 enfants scolarisables", texte: "À raison de 0,5 enfant par logement en moyenne, la ZAC va générer un besoin scolaire considérable. Aucun plan d'école neuve n'a été annoncé à ce jour." },
+                { icon: "🚗", titre: "Pression sur la mobilité", texte: "Plus d'habitants = plus de flux. Sans T4 en service avant 2031, les nouveaux arrivants dépendront de la voiture pour rejoindre Rennes." },
+                { icon: "🌳", titre: "Espaces verts sous tension", texte: "La densification réduit mécaniquement les espaces ouverts. La charte de bonnes pratiques présentée en réunion publique reste à concrétiser." },
+                { icon: "💶", titre: "Recettes fiscales à terme", texte: "1 700 logements = base taxable en hausse. Mais les équipements à financer (écoles, voirie, réseaux) précèdent les recettes de plusieurs années." },
+              ].map(({ icon, titre, texte }) => (
+                <div key={titre} style={{ background: "#fff", border: "1px solid #e2e8f0", borderRadius: 12, padding: "18px 20px" }}>
+                  <div style={{ fontSize: 24, marginBottom: 10 }}>{icon}</div>
+                  <div style={{ fontSize: 14, fontWeight: 700, color: "#0f172a", marginBottom: 6 }}>{titre}</div>
+                  <div style={{ fontSize: 13, color: "#64748b", lineHeight: 1.6 }}>{texte}</div>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          <section style={{ marginBottom: 48 }}>
+            <SectionTitle>Les questions sans réponse publique</SectionTitle>
+            <p style={{ fontSize: 14, color: "#64748b", lineHeight: 1.7, marginBottom: 24 }}>
+              La création de la ZAC a été votée. Mais plusieurs questions essentielles restent sans réponse documentée.
+            </p>
+            <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
+              {[
+                { q: "Combien d'écoles supplémentaires ?", d: "Aucune délibération sur la construction ou l'extension d'une école primaire n'a été publiée à ce jour. Le plan scolaire du mandat n'est pas connu." },
+                { q: "Quel calendrier secteur par secteur ?", d: "La ZAC couvre plusieurs quartiers mais aucun planning de mise en chantier n'a été rendu public. Qui commence quand ?" },
+                { q: "Quelle mixité sociale ?", d: "Quelle part de logements sociaux dans les 1 700 ? La loi SRU impose des quotas — Bruz est-elle en conformité ?" },
+                { q: "Quels équipements en face ?", d: "Crèches, gymnases, espaces verts — aucun chiffrage public des équipements à créer en parallèle des logements." },
+                { q: "Quelle concertation réelle ?", d: "La réunion publique de 2025 a été jugée trop unilatérale par la presse locale. Les habitants auront-ils voix au chapitre sur la densité ?" },
+              ].map(({ q, d }, i) => (
+                <div key={i} style={{ background: "#fff", border: "1px solid #e2e8f0", borderLeft: "3px solid #e84d0e", borderRadius: 8, padding: "16px 20px" }}>
+                  <div style={{ fontSize: 14, fontWeight: 700, color: "#0f172a", marginBottom: 6 }}>{q}</div>
+                  <div style={{ fontSize: 13, color: "#64748b", lineHeight: 1.6 }}>{d}</div>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          <section style={{ marginBottom: 48 }}>
+            <div style={{ background: "#fff8f5", border: "1px solid #fed7aa", borderLeft: "4px solid #e84d0e", borderRadius: 12, padding: "24px 28px" }}>
+              <div style={{ fontSize: 11, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.08em", color: "#e84d0e", marginBottom: 10 }}>Notre lecture — position de Bruz en Action</div>
+              <p style={{ margin: "0 0 14px", fontSize: 15, fontWeight: 700, color: "#0f172a", lineHeight: 1.5 }}>
+                Construire, oui — mais pas sans plan scolaire ni concertation réelle.
+              </p>
+              <p style={{ margin: "0 0 12px", fontSize: 14, color: "#334155", lineHeight: 1.75 }}>
+                Bruz a besoin de logements. La commune grandit, les prix immobiliers poussent les familles plus loin,
+                et une ville dynamique doit accueillir de nouveaux habitants. La ZAC Multisites est une réponse légitime à ce besoin.
+              </p>
+              <p style={{ margin: "0 0 12px", fontSize: 14, color: "#334155", lineHeight: 1.75 }}>
+                Mais 1 700 logements sans calendrier d'école, sans chiffrage des équipements et sans concertation documentée,
+                c'est une promesse à moitié tenue. Les équipements doivent <em>précéder</em> les habitants — pas les rattraper dix ans après.
+              </p>
+              <p style={{ margin: 0, fontSize: 14, color: "#64748b", lineHeight: 1.75, fontStyle: "italic" }}>
+                Vous avez des informations sur le plan scolaire ou le calendrier de la ZAC ?{" "}
+                <a href={`mailto:${metaData.contact.email}?subject=${encodeURIComponent("[D02] ZAC Multisites — informations")}`} style={{ color: "#e84d0e" }}>Partagez-les avec nous</a>.
+              </p>
+            </div>
+          </section>
+
+          <section style={{ marginBottom: 48 }}>
+            <SectionTitle>Ce qu'on va surveiller</SectionTitle>
+            <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+              {[
+                { periode: "2026", description: "Révision du PLU pour intégrer les nouvelles densités — vote au conseil municipal.", importance: "haute" },
+                { periode: "2026–2027", description: "Annonce d'un plan scolaire : construction ou extension d'école primaire ?", importance: "haute" },
+                { periode: "2026–2028", description: "Dépôts de permis de construire secteur par secteur — le calendrier réel va se révéler.", importance: "moyenne" },
+                { periode: "2027–2030", description: "Premiers chantiers — impact sur la circulation, la qualité de vie des riverains.", importance: "neutre" },
+                { periode: "2031+", description: "Arrivée du T4 : les logements Ker Lann auront-ils la densité promise à Rennes Métropole ?", importance: "neutre" },
+              ].map((item, i) => (
+                <div key={i} style={{ display: "flex", gap: 16, background: "#fff", border: "1px solid #e2e8f0", borderRadius: 10, padding: "14px 18px", alignItems: "flex-start" }}>
+                  <div style={{ flexShrink: 0, minWidth: 80 }}>
+                    <span style={{ fontSize: 12, fontWeight: 800, color: item.importance === "haute" ? "#e84d0e" : "#64748b" }}>{item.periode}</span>
+                  </div>
+                  <div style={{ fontSize: 14, color: "#334155", lineHeight: 1.6 }}>
+                    {item.description}
+                    {item.importance === "haute" && <span style={{ display: "inline-block", marginLeft: 8, fontSize: 10, fontWeight: 700, textTransform: "uppercase", color: "#e84d0e", background: "#fff1ee", padding: "1px 6px", borderRadius: 999 }}>À surveiller</span>}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          <div style={{ borderTop: "1px solid #e2e8f0", paddingTop: 32, display: "flex", gap: 16, alignItems: "center", flexWrap: "wrap" }}>
+            <a href={`/bruz-en-action/dossiers/${id}`}
+              style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "10px 20px", background: "#0f172a", color: "#fff", borderRadius: 999, textDecoration: "none", fontSize: 14, fontWeight: 700 }}>
+              ← Retour au dossier D02
+            </a>
+            <a href="/bruz-en-action/carte"
+              style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "10px 20px", background: "#fff", border: "1px solid #e2e8f0", color: "#0f172a", borderRadius: 999, textDecoration: "none", fontSize: 14, fontWeight: 600 }}>
+              🗺️ Voir la carte ZAC
+            </a>
+          </div>
+
+        </>)}
+
+        {/* ── CONTENU D01 ── */}
+        {id === "D01" && (<>
 
           {/* C'est quoi le T4 */}
           <section style={{ marginBottom: 48 }}>
@@ -243,7 +374,7 @@ export default async function EnProfondeurPage({ params }: { params: Promise<{ i
             </div>
           </section>
 
-          {/* Retour dossier */}
+          {/* Retour dossier — D01 */}
           <div style={{ borderTop: "1px solid #e2e8f0", paddingTop: 32, display: "flex", gap: 16, alignItems: "center", flexWrap: "wrap" }}>
             <a href={`/bruz-en-action/dossiers/${id}`}
               style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "10px 20px", background: "#0f172a", color: "#fff", borderRadius: 999, textDecoration: "none", fontSize: 14, fontWeight: 700 }}>
@@ -254,6 +385,8 @@ export default async function EnProfondeurPage({ params }: { params: Promise<{ i
               🗺️ Voir la carte T4
             </a>
           </div>
+
+        </>)}
 
         </div>
       </main>
