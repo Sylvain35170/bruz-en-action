@@ -15,27 +15,27 @@ const CANAUX: Section[] = [
   {
     icon: "🏛️",
     titre: "Assister aux conseils municipaux",
-    contenu: "Les séances du conseil municipal sont publiques. Tout habitant peut y assister en observateur. C'est l'endroit où les décisions officielles sont votées.",
-    detail: "Dates et comptes-rendus disponibles sur notre page /conseils ou sur ville-bruz.fr.",
+    contenu: "Le conseil municipal, c'est l'endroit où les décisions officielles se prennent et se votent. Les séances sont publiques — n'importe quel habitant peut s'asseoir en tribune et observer. C'est bien plus accessible qu'on ne le pense.",
+    detail: "Dates et comptes-rendus disponibles sur notre page Conseils ou sur ville-bruz.fr.",
     lien: { label: "Voir les CMs →", url: "/bruz-en-action/conseils" },
   },
   {
     icon: "✉️",
-    titre: "Questions écrites aux élus",
-    contenu: "Vous pouvez adresser une question écrite à la mairie ou directement à un élu délégué. La réponse n'est pas garantie dans un délai légal strict, mais elle engage moralement.",
+    titre: "Écrire aux élus",
+    contenu: "Pas besoin de se déplacer pour interpeller la mairie. Un courrier ou un email bien formulé, adressé à la mairie ou à l'élu délégué au sujet qui vous concerne, peut suffire à obtenir une réponse ou à faire avancer un sujet.",
     detail: "Mairie de Bruz — 1 place Charles de Gaulle — 35170 Bruz",
     lien: { label: "Contacter la mairie →", url: "https://www.ville-bruz.fr/la-ville/la-mairie/contact/" },
   },
   {
     icon: "📋",
     titre: "Permanences des élus",
-    contenu: "Le maire et les adjoints tiennent des permanences pour recevoir les habitants sur rendez-vous. C'est le canal direct pour exposer un problème local.",
+    contenu: "Le maire et ses adjoints reçoivent les habitants sur rendez-vous. C'est le canal le plus direct pour parler d'un sujet concret — un trottoir défoncé, une inquiétude sur un projet, une question de voisinage. Plus simple qu'un email, souvent plus efficace.",
     lien: { label: "Permanences sur ville-bruz.fr →", url: "https://www.ville-bruz.fr/la-ville/la-mairie/permanences/" },
   },
   {
     icon: "🗳️",
-    titre: "Pétitions et concertations",
-    contenu: "Pour les projets soumis à concertation publique (PLU, ZAC, voirie), des registres ou formulaires en ligne permettent de déposer un avis. Rennes Métropole organise également des concertations sur les projets métropolitains (T4, PLUiH).",
+    titre: "Concertations et consultations",
+    contenu: "Quand un grand projet est soumis à concertation publique — PLU, ZAC, voirie — chaque habitant peut déposer un avis. C'est un droit peu connu mais réel. Rennes Métropole organise aussi ses propres consultations sur les projets à l'échelle de l'agglo (T4, PLUiH).",
     lien: { label: "Métropole — concertations →", url: "https://www.metropole.rennes.fr/" },
   },
 ];
@@ -77,9 +77,9 @@ export default function InteragirPage() {
           <h1 style={{ fontSize: "clamp(1.5rem,3vw,2.2rem)", fontWeight: 800, lineHeight: 1.2, margin: "0 0 16px", color: "#fff" }}>
             Interagir avec la mairie
           </h1>
-          <p style={{ fontSize: 16, color: "rgba(255,255,255,0.75)", margin: 0, maxWidth: 600, lineHeight: 1.75 }}>
-            Vos droits, les canaux officiels, et comment nous, Bruz en Action, engageons le dialogue avec la municipalité.
-            Bienveillant, sourcé, et exigeant.
+          <p style={{ fontSize: 16, color: "rgba(255,255,255,0.75)", margin: 0, maxWidth: 640, lineHeight: 1.85 }}>
+            La mairie de Bruz est proche et à l'écoute. Mais la démocratie locale, ça se nourrit de citoyens présents,
+            curieux, et qui posent des questions. Voici comment s'y retrouver — et comment nous, Bruz en Action, on s'y prend.
           </p>
         </div>
       </section>
@@ -94,10 +94,10 @@ export default function InteragirPage() {
             </h2>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px,1fr))", gap: 16, marginBottom: 24 }}>
               {[
-                { icon: "🤝", titre: "Bienveillance", texte: "Nous soutenons la majorité Houssin et son projet. Nous ne cherchons pas à déstabiliser — nous cherchons à comprendre et à partager." },
-                { icon: "📌", titre: "Exigence", texte: "La bienveillance ne signifie pas la complaisance. Les promesses ont été faites : nous les suivons. Les renoncements seront documentés." },
-                { icon: "📄", titre: "Les faits d'abord", texte: "Nous n'attaquons pas les personnes. Nous parlons des décisions, des délibérations, des chiffres publics. Toute affirmation est sourcée." },
-                { icon: "🔄", titre: "Correction bienvenue", texte: "Nous ne sommes pas des professionnels de la politique. Si nous nous trompons, signalez-le. Nous corrigeons sans ego." },
+                { icon: "🤝", titre: "Bienveillance", texte: "Nous avons soutenu Jean-René Houssin et nous croyons sincèrement en son projet pour Bruz. Notre rôle n'est pas de chercher la petite bête — c'est d'aider à comprendre et à valoriser ce qui se passe dans notre ville." },
+                { icon: "📌", titre: "Exigence", texte: "Mais la confiance, ça se mérite dans la durée. Les engagements pris devant les Bruzois, on les suit de près. Si quelque chose change de cap ou est abandonné, on le dit — clairement, et sans ménagement." },
+                { icon: "📄", titre: "Les faits d'abord", texte: "On ne s'en prend jamais aux personnes. On parle des décisions, des délibérations, des chiffres publics. Et on ne publie rien sans pouvoir citer sa source — vous pouvez tout vérifier." },
+                { icon: "🔄", titre: "Correction bienvenue", texte: "On n'est pas omniscients, et la politique locale est complexe. Si on rate quelque chose ou si on se plante, on veut le savoir. Une correction bien faite vaut mieux qu'un article approximatif." },
               ].map(({ icon, titre, texte }) => (
                 <div key={titre} style={{ background: "#fff", border: "1px solid #e2e8f0", borderRadius: 12, padding: "18px 20px" }}>
                   <div style={{ fontSize: 22, marginBottom: 10 }}>{icon}</div>
@@ -140,24 +140,26 @@ export default function InteragirPage() {
             </h2>
             <div style={{ background: "#fff8f5", border: "1px solid #fed7aa", borderLeft: "4px solid #e84d0e", borderRadius: 12, padding: "24px 28px", marginBottom: 24 }}>
               <div style={{ fontSize: 15, fontWeight: 700, color: "#0f172a", marginBottom: 12 }}>
-                La loi CADA : tout document administratif est accessible à tout citoyen
+                Vous avez le droit de tout lire — délibérations, marchés, rapports, budgets
               </div>
               <p style={{ margin: "0 0 12px", fontSize: 14, color: "#334155", lineHeight: 1.75 }}>
-                En vertu de la loi du 17 juillet 1978, tout document produit par une administration (mairie, métropole, préfecture…)
-                est <strong>communicable sur demande</strong> — délibérations, marchés publics, budgets, comptes-rendus, rapports d'expertise.
+                Vous avez entendu parler d'une délibération, d'un marché public, d'un rapport commandé par la mairie ? La loi du 17 juillet 1978
+                donne à tout citoyen le droit d'en demander communication. Pas besoin d'être journaliste ou conseiller municipal —
+                c'est un droit universel, souvent méconnu.
               </p>
               <p style={{ margin: 0, fontSize: 14, color: "#334155", lineHeight: 1.75 }}>
-                Délai de réponse légal : <strong>1 mois</strong>.
-                En cas de refus ou de silence, vous pouvez saisir la{" "}
-                <a href="https://www.cada.fr/" target="_blank" rel="noopener noreferrer" style={{ color: "#e84d0e", fontWeight: 600 }}>Commission d'Accès aux Documents Administratifs (CADA)</a>.
+                L'administration a <strong>1 mois</strong> pour répondre. En cas de refus ou de silence,
+                la{" "}
+                <a href="https://www.cada.fr/" target="_blank" rel="noopener noreferrer" style={{ color: "#e84d0e", fontWeight: 600 }}>CADA (Commission d'Accès aux Documents Administratifs)</a>{" "}
+                peut être saisie gratuitement en ligne.
               </p>
             </div>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px,1fr))", gap: 14 }}>
               {[
-                { etape: "1", titre: "Identifier le document", texte: "Nommez précisément ce que vous cherchez : numéro de délibération, date du CM, objet du marché." },
-                { etape: "2", titre: "Adresser la demande", texte: "Courrier ou email à la mairie. Indiquez votre nom, l'objet exact, et la base légale (loi du 17 juillet 1978)." },
-                { etape: "3", titre: "Attendre 1 mois", texte: "Délai légal de réponse. Si silence ou refus non motivé → saisine CADA gratuite en ligne." },
-                { etape: "4", titre: "Consulter / recevoir", texte: "Consultation sur place ou envoi par email selon le document. Gratuit pour les documents numériques." },
+                { etape: "1", titre: "Cibler le document", texte: "Nommez précisément ce que vous cherchez : numéro de délibération, date du CM, objet d'un marché... Plus c'est précis, plus c'est rapide." },
+                { etape: "2", titre: "Envoyer la demande", texte: "Un email ou un courrier à la mairie suffit. Mentionnez votre nom, l'objet exact, et la loi du 17 juillet 1978 comme base légale." },
+                { etape: "3", titre: "Patienter 1 mois", texte: "C'est le délai légal. Si la mairie ne répond pas ou refuse sans motif valable, vous pouvez saisir la CADA — c'est gratuit et en ligne." },
+                { etape: "4", titre: "Lire et partager", texte: "Consultation sur place ou envoi par email. Les documents numériques sont transmis gratuitement. Et si vous trouvez quelque chose d'intéressant, on est preneurs !" },
               ].map(({ etape, titre, texte }) => (
                 <div key={etape} style={{ background: "#fff", border: "1px solid #e2e8f0", borderRadius: 12, padding: "16px 18px" }}>
                   <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 8 }}>
@@ -183,11 +185,11 @@ export default function InteragirPage() {
             </h2>
             <div style={{ background: "#fff", border: "1px solid #e2e8f0", borderRadius: 12, overflow: "hidden" }}>
               {[
-                { icon: "📬", titre: "Signalement avant publication", texte: "Avant de publier une correction ou une alerte, nous contactons la mairie pour vérification. On ne publie pas pour nuire." },
-                { icon: "📎", titre: "Toujours une source", texte: "Chaque affirmation dans nos dossiers et suivis de promesses est sourcée (Mégalis, ville-bruz.fr, presse locale, CADA). Pas d'affirmation sans référence." },
-                { icon: "🔔", titre: "Présence aux CMs", texte: "Nous suivons les conseils municipaux — en salle ou via les vidéos YouTube. C'est là que les décisions se prennent." },
-                { icon: "🗣️", titre: "Dialogue ouvert", texte: "Des élus ou leurs équipes souhaitent nous contacter ? Notre email est public. Nous répondons à toute prise de contact constructive." },
-                { icon: "🔒", titre: "Indépendance éditoriale", texte: "Toute information transmise par un élu est réputée validée par le maire avant de nous parvenir. Nous ne sommes pas un relais de communication municipal — nous restons une organisation citoyenne indépendante." },
+                { icon: "📬", titre: "On vérifie avant de publier", texte: "Avant de publier une correction ou une mise au point, on contacte la mairie. Pas par crainte — par honnêteté. Si on se trompe, on le dit d'abord à ceux que ça concerne." },
+                { icon: "📎", titre: "Toujours une source", texte: "Rien n'est affirmé sans référence vérifiable. Les données viennent des délibérations Mégalis, du site ville-bruz.fr, de la presse locale ou de demandes CADA. Vous pouvez tout contrôler." },
+                { icon: "🔔", titre: "On suit les CMs de près", texte: "On essaie d'être présents — en salle quand c'est possible, sinon via les vidéos YouTube. C'est en suivant les conseils municipaux qu'on peut vraiment rendre compte de ce qui se décide." },
+                { icon: "🗣️", titre: "Porte ouverte", texte: "Si des élus ou leurs équipes souhaitent nous contacter, notre email est public et on répond. On préfère un échange direct à un malentendu qui traîne." },
+                { icon: "🔒", titre: "Notre indépendance", texte: "Si un élu nous transmet une information, on considère qu'elle a été validée par le maire avant de nous parvenir. Bruz en Action reste une association citoyenne indépendante — pas un canal de communication de la majorité." },
               ].map(({ icon, titre, texte }, i, arr) => (
                 <div key={titre} style={{ display: "flex", gap: 16, padding: "18px 22px", borderBottom: i < arr.length - 1 ? "1px solid #f1f5f9" : "none", alignItems: "flex-start" }}>
                   <span style={{ fontSize: 20, flexShrink: 0, marginTop: 2 }}>{icon}</span>
@@ -204,10 +206,10 @@ export default function InteragirPage() {
           <section>
             <div style={{ background: "#fff", border: "1px solid #e2e8f0", borderRadius: 12, padding: "24px 28px" }}>
               <div style={{ fontSize: 16, fontWeight: 700, color: "#0f172a", marginBottom: 8 }}>
-                Une info, une correction, une question ?
+                Vous avez quelque chose à nous dire ?
               </div>
-              <p style={{ margin: "0 0 16px", fontSize: 14, color: "#64748b", lineHeight: 1.7 }}>
-                Si vous avez assisté à un CM, obtenu un document CADA, ou repéré une inexactitude sur ce site — faites-le nous savoir.
+              <p style={{ margin: "0 0 16px", fontSize: 14, color: "#64748b", lineHeight: 1.75 }}>
+                Vous avez assisté à un CM, obtenu un document intéressant, repéré une inexactitude sur ce site — ou simplement une idée à partager ? On lit tout, on répond à ce qu'on peut.
               </p>
               <SignalementButton reference="Interaction mairie" />
             </div>
