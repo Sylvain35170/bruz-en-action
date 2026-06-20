@@ -26,6 +26,9 @@
     { "id": "campagne", "label": "Site Un nouvel élan pour Bruz", "url": "https://www.unnouvelelanpourbruz.com/" },
     { "id": "mairie",   "label": "Site Ville de Bruz",            "url": "https://www.ville-bruz.fr/" },
     { "id": "facebook_camp", "label": "Facebook campagne", "url": "https://www.facebook.com/p/Un-nouvel-élan-pour-Bruz-61583588075262/" },
-    { "id": "instagram_camp", "label": "Instagram campagne", "url": "https://www.instagram.com/unnouvelelanpourbruz/" }
+    { "id": "instagram_camp",   "label": "Instagram campagne",    "url": "https://www.instagram.com/unnouvelelanpourbruz/" },
+    { "id": "facebook_mairie",  "label": "Facebook Ville de Bruz", "url": "https://www.facebook.com/villedebruz" },
+    { "id": "facebook_houssin", "label": "Facebook Jean-René Houssin (maire)", "url": "https://www.facebook.com/jeanrene.houssin/" },
+    { "id": "facebook_metropole", "label": "Facebook Rennes Métropole", "url": "https://www.facebook.com/metropole.rennes" }
   ]
 }
