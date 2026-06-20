@@ -74,6 +74,7 @@ export default function Home() {
               <a href="/bruz-en-action/promesses" style={{ fontSize: 13, color: "rgba(255,255,255,0.75)", fontWeight: 600, textDecoration: "none" }}>✅ Promesses</a>
               <a href="/bruz-en-action/elus" style={{ fontSize: 13, color: "rgba(255,255,255,0.75)", fontWeight: 600, textDecoration: "none" }}>👥 Élus</a>
               <a href="/bruz-en-action/carte" style={{ fontSize: 13, color: "rgba(255,255,255,0.75)", fontWeight: 600, textDecoration: "none" }}>🗺️ Carte</a>
+              <a href="/bruz-en-action/interagir" style={{ fontSize: 13, color: "rgba(255,255,255,0.75)", fontWeight: 600, textDecoration: "none" }}>💬 Interagir</a>
               {hasSocial && reseaux_sociaux.facebook && (
                 <a href={reseaux_sociaux.facebook} target="_blank" rel="noopener noreferrer" style={{ fontSize: 13, color: "rgba(255,255,255,0.6)", textDecoration: "none" }}>Facebook</a>
               )}
