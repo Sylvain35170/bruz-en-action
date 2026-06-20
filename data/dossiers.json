@@ -131,8 +131,7 @@
       ],
       "sources": [
         {
-          "label": "Réunion publique ZAC Multisites — L'Essentiel",
-          "url": "https://www.lessentiel.fr/rennes/notre-vie-locale/bruz-les-habitants-ont-eu-leur-reunion-publique-sur-la-zac-multisites-un-projet-de-1-700-logements"
+          "label": "Réunion publique ZAC Multisites — L'Essentiel (article supprimé)"
         },
         {
           "label": "Open data Mégalis — délibérations Bruz",
@@ -151,8 +150,7 @@
           "date": "2025-09-21",
           "titre": "ZAC multisites : une présentation sans possibilité de poser des questions",
           "detail": "La réunion publique est jugée trop unilatérale — pas de débat ouvert sur les options retenues.",
-          "source_url": "https://www.lessentiel.fr/rennes/notre-vie-locale/bruz-les-habitants-ont-eu-leur-reunion-publique-sur-la-zac-multisites-un-projet-de-1-700-logements",
-          "source_label": "L'Essentiel"
+          "source_label": "L'Essentiel (article supprimé)"
         },
         {
           "date": "2025-09-15",
@@ -277,7 +275,7 @@
         },
         {
           "label": "OFGL — finances des communes",
-          "url": "https://www.ofgl.fr/publications/bases-de-donnees-statistiques/"
+          "url": "https://www.data.gouv.fr/fr/organizations/observatoire-des-finances-et-de-la-gestion-publique-locale/"
         }
       ],
       "actus_recentes": [
@@ -423,7 +421,7 @@
       "sources": [
         {
           "label": "DGFiP — Fiscalité locale des particuliers (taux officiels)",
-          "url": "https://data.economie.gouv.fr/explore/dataset/taux-imposition-com/table/?refine.commune=BRUZ"
+          "url": "https://www.data.gouv.fr/fr/datasets/impots-locaux/"
         },
         {
           "label": "Open data Mégalis — délibérations Bruz",
@@ -449,7 +447,7 @@
           "date": "2026-06-18",
           "titre": "Taux 2025 confirmé à 45,34 % — données officielles DGFiP disponibles",
           "detail": "Les données DGFiP confirment que le taux 2025 est identique à 2024 — pas de hausse supplémentaire.",
-          "source_url": "https://data.economie.gouv.fr/explore/dataset/taux-imposition-com/table/?refine.commune=BRUZ",
+          "source_url": "https://www.data.gouv.fr/fr/datasets/impots-locaux/",
           "source_label": "DGFiP"
         }
       ],
@@ -583,7 +581,7 @@
       "sources": [
         {
           "label": "Données délinquance communes — data.gouv.fr",
-          "url": "https://www.data.gouv.fr/fr/datasets/crimes-et-delits-enregistres-par-les-services-de-gendarmerie-et-de-police/"
+          "url": "https://www.data.gouv.fr/fr/datasets/crimes-et-delits-enregistres-par-les-services-de-gendarmerie-et-de-police-depuis-2012/"
         }
       ],
       "actus_recentes": [],
@@ -732,8 +730,7 @@
       ],
       "sources": [
         {
-          "label": "Ville de Bruz — vie scolaire",
-          "url": "https://www.ville-bruz.fr/vivre-a-bruz/enfance-et-education/"
+          "label": "Ville de Bruz — vie scolaire (lien à mettre à jour)"
         },
         {
           "label": "Inspection Académique 35 — secteurs scolaires",

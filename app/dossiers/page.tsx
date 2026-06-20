@@ -76,7 +76,7 @@ export default function DossiersPage() {
           <span style={{ fontSize: 11, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", color: "rgba(255,255,255,0.45)" }}>
             Enquêtes &amp; analyses
           </span>
-          <h1 style={{ fontSize: "clamp(1.6rem, 3vw, 2.4rem)", fontWeight: 800, lineHeight: 1.2, margin: "12px 0 16px" }}>
+          <h1 style={{ fontSize: "clamp(1.6rem, 3vw, 2.4rem)", fontWeight: 800, lineHeight: 1.2, margin: "12px 0 16px", color: "#fff" }}>
             Tous les dossiers
           </h1>
           <p style={{ fontSize: 17, color: "rgba(255,255,255,0.72)", maxWidth: 620, margin: "0 0 24px", lineHeight: 1.7 }}>

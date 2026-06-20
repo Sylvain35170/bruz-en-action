@@ -56,12 +56,17 @@ export default function Promesses() {
           <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#f97316", display: "block", marginBottom: 8 }}>
             Transparence municipale
           </span>
-          <h1 style={{ fontSize: "clamp(1.5rem,3vw,2.2rem)", fontWeight: 800, lineHeight: 1.2, margin: "0 0 12px" }}>
+          <h1 style={{ fontSize: "clamp(1.5rem,3vw,2.2rem)", fontWeight: 800, lineHeight: 1.2, margin: "0 0 12px", color: "#fff" }}>
             Les {total} engagements du mandat
           </h1>
-          <p style={{ fontSize: 15, color: "rgba(255,255,255,0.7)", margin: "0 0 28px", maxWidth: 560 }}>
+          <p style={{ fontSize: 15, color: "rgba(255,255,255,0.7)", margin: "0 0 16px", maxWidth: 560 }}>
             Chaque promesse du programme 2026-2031, suivie depuis sa source publique.
           </p>
+          <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 28, flexWrap: "wrap" }}>
+            <span style={{ fontSize: 12, fontWeight: 600, color: "rgba(255,255,255,0.5)", background: "rgba(255,255,255,0.08)", border: "1px solid rgba(255,255,255,0.15)", borderRadius: 999, padding: "4px 12px" }}>
+              🗓 Mise à jour trimestrielle — Prochaine : septembre 2026
+            </span>
+          </div>
 
           {/* Barre de progression */}
           <div style={{ maxWidth: 640 }}>
@@ -92,8 +97,31 @@ export default function Promesses() {
 
       <main style={{ flex: 1 }}>
 
+        {/* Posture éditoriale */}
+        <div style={{ maxWidth: 1120, margin: "0 auto", padding: "32px 24px 0" }}>
+          <div style={{ background: "#fff", border: "1px solid #e2e8f0", borderLeft: "3px solid #f97316", borderRadius: 10, padding: "16px 20px", display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20 }}>
+            <div>
+              <div style={{ fontSize: 12, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.08em", color: "#64748b", marginBottom: 6 }}>Notre posture</div>
+              <p style={{ margin: 0, fontSize: 13, color: "#475569", lineHeight: 1.7 }}>
+                Nous savons que les choses prennent du temps : millefeuille administratif, complexités juridiques, contraintes budgétaires. Nous documentons cela sans l'ignorer.
+                En revanche, tout <strong style={{ color: "#0f172a" }}>changement de cap ou renoncement explicite sera documenté</strong> — c'est notre engagement envers les habitants.
+              </p>
+            </div>
+            <div>
+              <div style={{ fontSize: 12, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.08em", color: "#64748b", marginBottom: 6 }}>Vous avez repéré une erreur ?</div>
+              <p style={{ margin: "0 0 10px", fontSize: 13, color: "#475569", lineHeight: 1.7 }}>
+                Nous ne sommes pas des professionnels de la politique. Si vous constatez une inexactitude, une imprécision, ou qu'il manque une promesse — signalez-le.
+              </p>
+              <a href={`mailto:${metaData.contact.email || "contact@bruz-en-action.fr"}`}
+                style={{ fontSize: 13, fontWeight: 600, color: "#2563eb", textDecoration: "none" }}>
+                Nous contacter →
+              </a>
+            </div>
+          </div>
+        </div>
+
         {/* Piliers */}
-        <div style={{ maxWidth: 1120, margin: "0 auto", padding: "40px 24px 0" }}>
+        <div style={{ maxWidth: 1120, margin: "0 auto", padding: "32px 24px 0" }}>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: 16, marginBottom: 40 }}>
             {piliers.map(pilier => {
               const count = countByPilier(pilier.id);

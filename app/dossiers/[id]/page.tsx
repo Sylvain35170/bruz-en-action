@@ -177,7 +177,7 @@ export default async function DossierPage({ params }: { params: Promise<{ id: st
               ● {STATUT_LABEL[dossier.statut] ?? dossier.statut}
             </span>
           </div>
-          <h1 style={{ fontSize: "clamp(1.4rem, 3vw, 2.2rem)", fontWeight: 800, lineHeight: 1.2, margin: "0 0 16px", maxWidth: 720 }}>
+          <h1 style={{ fontSize: "clamp(1.4rem, 3vw, 2.2rem)", fontWeight: 800, lineHeight: 1.2, margin: "0 0 16px", maxWidth: 720, color: "#fff" }}>
             {dossier.titre}
           </h1>
           <p style={{ fontSize: 17, lineHeight: 1.75, color: "rgba(255,255,255,0.8)", maxWidth: 680, margin: 0 }}>

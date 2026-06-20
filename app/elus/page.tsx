@@ -44,7 +44,7 @@ export default function Elus() {
           <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#f97316", display: "block", marginBottom: 8 }}>
             Démocratie locale
           </span>
-          <h1 style={{ fontSize: "clamp(1.5rem,3vw,2.2rem)", fontWeight: 800, lineHeight: 1.2, margin: "0 0 12px" }}>
+          <h1 style={{ fontSize: "clamp(1.5rem,3vw,2.2rem)", fontWeight: 800, lineHeight: 1.2, margin: "0 0 12px", color: "#fff" }}>
             Conseil municipal 2026–2032
           </h1>
           <p style={{ fontSize: 15, color: "rgba(255,255,255,0.7)", margin: 0 }}>

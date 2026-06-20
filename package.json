@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "qa": "node qa/check-links.mjs"
   },
   "dependencies": {
     "@types/leaflet": "^1.9.21",
