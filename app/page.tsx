@@ -316,19 +316,43 @@ export default function Home() {
 
       {/* ── ACTUS ── */}
       {lastActus.length > 0 && (
-        <section style={{ background: "var(--surface-card)", borderBottom: "1px solid var(--border-subtle)" }}>
-          <div style={{ maxWidth: "var(--container-max)", margin: "0 auto", padding: "40px var(--container-pad)" }}>
-            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", marginBottom: 20 }}>
-              <h2 style={{ fontSize: "clamp(1.2rem,2vw,1.6rem)", fontWeight: 800, margin: 0, color: "#0f172a" }}>Dernières actualités</h2>
+        <section style={{ background: "var(--surface-page)", borderBottom: "1px solid var(--border-subtle)" }}>
+          <div style={{ maxWidth: "var(--container-max)", margin: "0 auto", padding: "48px var(--container-pad)" }}>
+            <div style={{ marginBottom: 24 }}>
+              <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#64748b", display: "block", marginBottom: 4 }}>Veille citoyenne</span>
+              <h2 style={{ fontSize: "clamp(1.2rem,2vw,1.5rem)", fontWeight: 800, margin: 0, color: "#0f172a" }}>Dernières actualités</h2>
             </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
-              {lastActus.map(actu => (
-                <div key={actu.id} style={{ background: "#fff", border: "1px solid #e2e8f0", borderRadius: 10, padding: "16px 20px" }}>
-                  <p style={{ fontSize: 11, color: "#94a3b8", margin: "0 0 4px", textTransform: "uppercase", letterSpacing: "0.06em" }}>{actu.date}</p>
-                  <p style={{ fontWeight: 700, color: "#0f172a", margin: "0 0 6px", fontSize: 14 }}>{actu.titre}</p>
-                  <p style={{ fontSize: 13, color: "#64748b", margin: 0, lineHeight: 1.6 }}>{actu.detail}</p>
-                </div>
-              ))}
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px,1fr))", gap: 16 }}>
+              {lastActus.map(actu => {
+                const isMailrie = actu.type === "mairie";
+                const color = isMailrie ? "#16a34a" : actu.type === "presse" ? "#0284c7" : "#7c3aed";
+                const typeLabel = isMailrie ? "Mairie" : actu.type === "presse" ? "Presse" : "CM";
+                const inner = (
+                  <div style={{ height: "100%", display: "flex", flexDirection: "column", background: "#fff", border: "1px solid #e2e8f0", borderRadius: 12, overflow: "hidden" }}>
+                    <div style={{ height: 3, background: color }} />
+                    <div style={{ padding: "16px 18px 18px", flex: 1, display: "flex", flexDirection: "column", gap: 8 }}>
+                      <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+                        <span style={{ fontSize: 10, fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", color, padding: "2px 8px", borderRadius: 999, border: `1px solid ${color}44`, background: `${color}10` }}>
+                          {typeLabel}
+                        </span>
+                        <span style={{ fontSize: 11, color: "#94a3b8" }}>{actu.date}</span>
+                      </div>
+                      <p style={{ fontSize: 13, fontWeight: 700, color: "#0f172a", margin: 0, lineHeight: 1.5, flex: 1 }}>{actu.titre}</p>
+                      <p style={{ fontSize: 11, color: "#94a3b8", margin: 0 }}>
+                        {actu.source_label}
+                        {!isMailrie && <span style={{ color: "#cbd5e1", marginLeft: 6 }}>· lien non garanti</span>}
+                      </p>
+                    </div>
+                  </div>
+                );
+                return isMailrie && actu.source_url ? (
+                  <a key={actu.id} href={actu.source_url} target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", display: "block" }}>
+                    {inner}
+                  </a>
+                ) : (
+                  <div key={actu.id}>{inner}</div>
+                );
+              })}
             </div>
           </div>
         </section>
