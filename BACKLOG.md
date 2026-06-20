@@ -17,6 +17,8 @@
 
 
 ## 🟡 À faire — Technique
+- [ ] **QA sur Archipel** — porter `qa/check-links.mjs` (ou équivalent) sur le projet Archipel
+- [ ] **Lien ville-bruz.fr éducation** — URL `/vivre-a-bruz/enfance-et-education/` a changé (404), trouver la nouvelle URL mairie pour D10
 - [ ] **Images** — remplacer og-image.jpg + footer par vraies photos quand disponibles (events / asso)
 - [ ] **Script import_excel.py** — mise à jour auto des statuts depuis l'Excel
 - [ ] **CRs réunions** — réimporter les docx (encodage zip raté sur les accents)
@@ -32,6 +34,10 @@
 
 ## ✅ Terminé
 
+- **Bouton signalement mailto structuré** — composant SignalementButton (footer + dossiers + promesses), template parseable par agent IA
+- **Refonte bloc actus homepage** — grid cards par type, presse non cliquable (liens Google News expirés), lien recherche Google sur titre
+- **Fix titres hero invisibles + liens cassés + QA link-checker** — color: #fff sur 5 pages, 6 URLs corrigées dans dossiers.json, script qa/check-links.mjs (npm run qa)
+- **Posture éditoriale promesses** — badge trimestriel (prochaine MAJ sept. 2026), bloc posture ancrage réel + invitation à signaler les erreurs
 - **Enrichissement CMs mandat Houssin** — 3 séances depuis transcriptions YouTube (20 mars : résultats électoraux + 9 adjoints + transparence ; 8 avril : 11 délib, indemnités ×2.8, Plan B, SIEM Covid ; 18 mai : 29 délib, CCAS, restauration scolaire, crèche)
 - **agent_enrichissement_cm.py** — YouTube RSS → transcription → claude CLI → cms.json (fallback règles si CLI indispo)
 - **agent_qa.py** — QA post-deploy automatique : 10 pages GitHub Pages, lancé 90s après push
