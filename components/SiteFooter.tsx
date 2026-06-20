@@ -1,4 +1,5 @@
 import metaData from "../data/meta.json";
+import SignalementButton from "./SignalementButton";
 
 const { association, contact, reseaux_sociaux } = metaData;
 
@@ -68,6 +69,11 @@ export default function SiteFooter() {
             ))}
           </nav>
         </div>
+      </div>
+
+      {/* Signalement */}
+      <div style={{ maxWidth: "var(--container-max, 1120px)", margin: "0 auto", padding: "20px 24px 0" }}>
+        <SignalementButton variant="footer" />
       </div>
 
       {/* Bas de page */}

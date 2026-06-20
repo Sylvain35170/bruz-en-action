@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import dossiersData from "../../../data/dossiers.json";
 import metaData from "../../../data/meta.json";
 import SiteFooter from "../../../components/SiteFooter";
+import SignalementButton from "../../../components/SignalementButton";
 
 const LOGO = "/bruz-en-action/logo.png";
 
@@ -334,13 +335,10 @@ export default async function DossierPage({ params }: { params: Promise<{ id: st
               <h3 style={{ margin: "0 0 6px", fontSize: 15, fontWeight: 700, color: "#0369a1" }}>
                 Vous avez des infos sur ce dossier ?
               </h3>
-              <p style={{ margin: "0 0 12px", fontSize: 13, color: "#0c4a6e", lineHeight: 1.6 }}>
-                Témoignage, document public, correction — contactez Bruz en Action.
+              <p style={{ margin: "0 0 14px", fontSize: 13, color: "#0c4a6e", lineHeight: 1.6 }}>
+                Témoignage, document public, inexactitude à corriger — on lit tout et on répond.
               </p>
-              <a href={contact.hello_asso_url || "#"} target="_blank" rel="noopener noreferrer"
-                style={{ fontSize: 13, fontWeight: 600, color: "#0369a1", textDecoration: "underline" }}>
-                Nous contacter →
-              </a>
+              <SignalementButton reference={`${dossier.id} — ${dossier.titre}`} />
             </section>
           </div>
 

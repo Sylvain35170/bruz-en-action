@@ -2,6 +2,7 @@ import promessesData from "../../data/promesses.json";
 import metaData from "../../data/meta.json";
 import PromessesSection from "../../components/PromessesSection";
 import SiteFooter from "../../components/SiteFooter";
+import SignalementButton from "../../components/SignalementButton";
 import type { Pilier, Statut, Promesse } from "../../types";
 
 const LOGO = "/bruz-en-action/logo.png";
@@ -112,10 +113,7 @@ export default function Promesses() {
               <p style={{ margin: "0 0 10px", fontSize: 13, color: "#475569", lineHeight: 1.7 }}>
                 Nous ne sommes pas des professionnels de la politique. Si vous constatez une inexactitude, une imprécision, ou qu'il manque une promesse — signalez-le.
               </p>
-              <a href={`mailto:${metaData.contact.email || "contact@bruz-en-action.fr"}`}
-                style={{ fontSize: 13, fontWeight: 600, color: "#2563eb", textDecoration: "none" }}>
-                Nous contacter →
-              </a>
+              <SignalementButton reference="Promesses" />
             </div>
           </div>
         </div>
