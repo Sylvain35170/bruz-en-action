@@ -1,7 +1,7 @@
 {
   "meta": {
-    "last_updated": "2026-06-18",
-    "source_principale": "Bruz Mag n°260 (mai-juin 2026) + Semaine à Bruz n°850 + délibérations Mégalis",
+    "last_updated": "2026-06-19",
+    "source_principale": "Transcriptions YouTube (Ville de Bruz) + Bruz Mag n°260 + délibérations Mégalis",
     "youtube": "https://www.youtube.com/playlist?list=PLnSe2hJFinqpupninWlKBHSmzmwLW-8i7",
     "deliberations_megalis": "https://data.megalis.bretagne.bzh/organization/commune-de-bruz"
   },
@@ -36,26 +36,235 @@
       "date": "2026-05-18",
       "statut": "passe",
       "lieu": "Halle Pagnol, Bruz — 19h",
-      "titre": "Séance de mai 2026",
-      "resume_executif": "Contenu non encore disponible publiquement. Ce dossier sera mis à jour dès publication des délibérations sur Mégalis Bretagne ou du Bruz Mag n°261.",
-      "contexte": "Deuxième séance opérationnelle de la mandature Houssin, six semaines après le CM fondateur d'avril.",
-      "note": "Contenu non encore disponible — à compléter dès publication Bruz Mag n°261 ou Mégalis",
-      "points_cles": [],
-      "deliberations": [],
-      "points_chauds": [],
-      "impact_bruzois": [],
+      "titre": "Séance de mai 2026 — cantine, foncier ZAC, vie sociale",
+      "resume_executif": "Séance dense (36 délibérations) marquée par plusieurs enjeux structurants du début de mandat. Point fort : la saturation de la cantine du Verbisson (500 convives / 284 places) pousse la ville à garantir 900 000 € d'emprunt pour que l'OGEC Saint-Rose de Lima construise sa propre cantine à horizon 2027-2028. La réserve foncière ZAC Noé se densifie avec l'acquisition du 12 rue de la Noé (345 000 €). L'hôtel de ville rouvre dans quelques semaines après rénovation thermique. L'opposition monte au créneau sur les besoins sociaux croissants (CCAS en tension) et sur le maintien du comité ville handicap.",
+      "contexte": "Deuxième séance opérationnelle de la mandature Houssin, six semaines après le CM fondateur d'avril. Séance longue et technique avec 36 délibérations couvrant finances, urbanisme, éducation, culture et vie associative. Toutes votées à l'unanimité, mais trois sujets ont donné lieu à des interventions politiques de l'opposition.",
+      "points_cles": [
+        "Restauration scolaire — garantie ville de 900 000 € pour la nouvelle cantine OGEC Saint-Rose de Lima (projet à horizon 2027-2028) ; saturation actuelle : 500 convives pour 284 places au Verbisson",
+        "Foncier ZAC — acquisition 12 rue de la Noé (608 m², maison 115 m²) pour 345 000 €, réserve foncière renouvellement urbain",
+        "Hôtel de ville — réouverture imminente (quelques semaines) après rénovation thermique ; derniers ajustements +25 518 €",
+        "CCAS — hausse des besoins sociaux (aides ponctuelles en forte progression) ; départ d'un agent ; maire s'engage sur remplacement et réorganisation des horaires",
+        "Avenue Legot — gel de l'urbanisation pendant 2 ans (périmètre de prise en considération) le temps d'une étude urbaine",
+        "Restaurant Carpédium (43 av. Jules Tricot) — cédé au locataire-gérant pour 383 552 € (prix réduit suite à traitement charpente capricorne/lyctus)"
+      ],
+      "deliberations": [
+        {
+          "numero": "26-05-01",
+          "titre": "Finance — Garantie Agence France Locale 2026",
+          "vote": "Unanimité",
+          "detail": "Renouvellement annuel obligatoire de la garantie accordée au groupe Agence France Locale (banque publique de développement). Montant : 0 emprunt en cours. Délibération technique."
+        },
+        {
+          "numero": "26-05-02",
+          "titre": "Finance — Révision AP/CP rénovation hôtel de ville (+150 000 €)",
+          "vote": "Unanimité",
+          "detail": "Ajouts en cours de chantier : assurance dommage ouvrage (23 000 €) + travaux de finition et aléas. Autorisation de programme portée à 2 250 000 €. Rouverture prévue dans quelques semaines."
+        },
+        {
+          "numero": "26-05-03",
+          "titre": "Finance — Décision modificative budget principal",
+          "vote": "Unanimité",
+          "detail": "Intégration des 150 000 € ci-dessus + restitution d'une contribution directe versée à tort (3 629 €)."
+        },
+        {
+          "numero": "26-05-04",
+          "titre": "Finance — Rapport utilisation DSU 2025 (629 214 €)",
+          "vote": "Unanimité",
+          "detail": "Dotation de Solidarité Urbaine perçue en 2025 : 629 214 € (vs 602 136 € en 2024). Dépenses sociales et urbaines : 2 135 878 €, soit 29 % de couverture par la DSU. Rapport obligatoire pour conserver le bénéfice de la dotation."
+        },
+        {
+          "numero": "26-05-05",
+          "titre": "Finance — Garantie emprunt OGEC Saint-Rose de Lima (900 000 €)",
+          "vote": "Unanimité",
+          "detail": "Cautionnement solidaire à hauteur de 50 % d'un emprunt de 1 800 000 € (taux fixe 3,71 %, 240 mois) pour la construction d'une nouvelle cantine sur le site de Saint-Rose de Lima. La ville a sollicité ce décroisement après saturation du Verbisson (500 convives / 284 places)."
+        },
+        {
+          "numero": "26-05-06",
+          "titre": "Finance — Taxe sur la publicité extérieure 2027",
+          "vote": "Unanimité",
+          "detail": "Tarifs 2027 : enseignes ≤12 m² → 25 €/m² ; 12-50 m² → 50,10 €/m² ; >50 m² → 100,40 €/m². Supports numériques : 75,40 €/m² (<50 m²), 148,80 €/m² (>50 m²). Délibération technique annuelle."
+        },
+        {
+          "numero": "26-05-07",
+          "titre": "Finance — Rénovation thermique hôtel de ville (+25 518 €)",
+          "vote": "Unanimité",
+          "detail": "Travaux supplémentaires : WC extérieur + éclairage 3 zones salle du conseil. Modification de marchés lots 1,2,4,5,6,7,8,9."
+        },
+        {
+          "numero": "26-05-08",
+          "titre": "Formation — Orientations formation des élus 2026",
+          "vote": "Unanimité",
+          "detail": "Thèmes retenus : action publique locale, gestion/finances/fiscalité, marchés publics, transition écologique, RH, efficacité personnelle. Formation obligatoire dans l'année pour les élus délégués."
+        },
+        {
+          "numero": "26-05-09",
+          "titre": "Aménagement — Acquisition 12 rue de la Noé (345 000 €)",
+          "vote": "Unanimité",
+          "detail": "608 m² + maison 115 m² acquis via Rennes Métropole (programme PAF). Convention de mise à réserve 5 ans, gestion AIVS. Réserve foncière pour l'opération de renouvellement urbain dans le périmètre de la ZAC créée le 18 décembre 2025."
+        },
+        {
+          "numero": "26-05-10",
+          "titre": "Aménagement — Contrat de préusage La Pavée (pâturage chevaux)",
+          "vote": "Unanimité",
+          "detail": "Mise à disposition gratuite de 22 782 m² (route de Chartres) à Éric Granier contre entretien du terrain. Durée 1 an renouvelable. Clause de préservation des bocagères."
+        },
+        {
+          "numero": "26-05-11",
+          "titre": "Aménagement — Contrat de préusage Châtillon (pâturage moutons)",
+          "vote": "Unanimité",
+          "detail": "~2 500 m² clôturés dans le parc de Châtillon (parcelle 10 495 m²) mis à disposition de Marine Cronier pour pâturage de moutons. Gratuit contre entretien, 1 an renouvelable."
+        },
+        {
+          "numero": "26-05-12",
+          "titre": "Aménagement — Grand Pâtis, avenant Île au Vivant (+20 m²)",
+          "vote": "Unanimité",
+          "detail": "L'association ajoute 20 m² couverts pour abriter son food truck. Loyer mis à jour : 840 €/an (10,50 €/m²). Association producteurs locaux Ille-et-Vilaine."
+        },
+        {
+          "numero": "26-05-13",
+          "titre": "Aménagement — Grand Pâtis, avenant artiste Ninos (réduction surface)",
+          "vote": "Unanimité",
+          "detail": "L'artiste réduit sa surface louée (suppression 302 m²), ne conservant que vestiaires + 2 ateliers + partie atelier 1. Nouveau loyer : 500 €/an (42 €/mois par prélèvement)."
+        },
+        {
+          "numero": "26-05-14",
+          "titre": "Aménagement — Désaffectation 81 m² avenue du Bois de Carcé",
+          "vote": "Unanimité",
+          "detail": "Ancien transformateur GRDF désaffecté (désaffectation constatée le 15 avril 2026 par la police municipale). Rétrocession gratuite à la ville, déclassement du domaine public vers domaine privé."
+        },
+        {
+          "numero": "26-05-15",
+          "titre": "Aménagement — Cession 81 m² avenue du Bois de Carcé (~10 050 €)",
+          "vote": "Unanimité",
+          "detail": "Cession aux riverains immédiats à 148 €/m² (DGFiP moins 10 %), soit ~11 988 € brut, moins 2 000 € de démolition de l'ancien transformateur. Frais à la charge de l'acquéreur."
+        },
+        {
+          "numero": "26-05-16",
+          "titre": "Aménagement — Avenue Legot : périmètre de prise en considération (sursis à statuer 2 ans)",
+          "vote": "Unanimité",
+          "detail": "Gel de l'urbanisation sur l'avenue Legot (+ impasse du Vaugillard, allée du Vaugillard, partie avenue des Romains). Plan d'épannelage de 2009 jugé obsolète. Étude urbaine en cours. Valable 10 ans max si la réalisation n'est pas engagée."
+        },
+        {
+          "numero": "26-05-17",
+          "titre": "Aménagement — Commission communale des impôts directs",
+          "vote": "Unanimité",
+          "detail": "Liste de 32 contribuables brusois soumise au directeur des services fiscaux, comme à chaque début de mandat."
+        },
+        {
+          "numero": "26-05-18",
+          "titre": "Aménagement — Cession restaurant Carpédium (383 552 €)",
+          "vote": "Unanimité",
+          "detail": "43 avenue Jules Tricot (ex-hôtel de la garde, propriété ville depuis 2008 : 1 220 m², rez-de-chaussée restaurant + chambres). Cédé au locataire-gérant (SARL Femme). Prix initial 395 000 € réduit à 383 552 € après découverte de capricornes et lyctus dans la charpente (traitement déduit)."
+        },
+        {
+          "numero": "26-05-19",
+          "titre": "Transition écologique — Représentant ville à l'ALEC (Thomas de la Rivière)",
+          "vote": "Unanimité (main levée)",
+          "detail": "Bruz adhère à l'ALEC Pays de Rennes depuis 2021. Thomas de la Rivière (délégué patrimoine/travaux) désigné interlocuteur énergie et représentant aux AG."
+        },
+        {
+          "numero": "26-05-20",
+          "titre": "Éducation — Subvention crèche Jardin des Lutins (102 000 €/an)",
+          "vote": "Unanimité",
+          "detail": "Subvention annuelle de fonctionnement à la crèche associative, conformément à la convention signée le 18 décembre 2023."
+        },
+        {
+          "numero": "26-05-21",
+          "titre": "Éducation — Participation communale écoles privées (511 457 €)",
+          "vote": "Unanimité",
+          "detail": "Participation contractuelle obligatoire (principe de parité public/privé) pour la Providence et Saint-Rose de Lima. Coût moyen maternelle : 1 645,39 €/élève ; élémentaire : 340,64 €/élève. Effectifs : 233 maternelle + 376 élémentaire."
+        },
+        {
+          "numero": "26-05-22",
+          "titre": "Éducation — Convention RPE intercommunal Bruz-Laillé-Pompéan (1 an)",
+          "vote": "Unanimité",
+          "detail": "Renouvellement de la convention du Relais Petite Enfance (créé 2022), intégrant les deux avenants précédents + clause de remplacement d'animatrice absente. Durée 1 an pour laisser les nouvelles équipes s'approprier le sujet."
+        },
+        {
+          "numero": "26-05-23 à 27",
+          "titre": "Éducation — Participations écoles privées hors commune et dispositifs spéciaux",
+          "vote": "Unanimité",
+          "detail": "Sainte-Marie Chartres (1 024 €), Sainte-Marie Pontréan (13 902 €), RASED (453 €), classe ULIS Guichen (260,27 €), classes transplantées Pontréan + Chartres (42 € × 2)."
+        },
+        {
+          "numero": "26-05-28",
+          "titre": "Culture — Tarifs Grand Logi 2026-2027",
+          "vote": "Unanimité",
+          "detail": "Séances scolaires ouvertes aux EHPAD et maisons de retraite de Bruz à 8 €/résident. Grille tarifaire bar ajoutée pour les événements spéciaux (ex. semaine britannique)."
+        },
+        {
+          "numero": "26-05-29",
+          "titre": "Culture — Charte DaVyB médiathèque (accessibilité handicap)",
+          "vote": "Unanimité",
+          "detail": "Adhésion au dispositif 'Dans vos bibliothèques' (médiathèque départementale Ille-et-Vilaine) : accès à une offre de lecture adaptée pour les personnes handicapées (moteur, mental, trouble 10) via la plateforme numérique Elliter."
+        },
+        {
+          "numero": "26-05-30",
+          "titre": "Animation — Subvention Arrêt d'Adeg (700 €)",
+          "vote": "Unanimité",
+          "detail": "Participation au relais de la Redadeg (fête de la langue bretonne) pour 2 km le 15 mai 2026. Fonds reversés à des projets de promotion du breton."
+        },
+        {
+          "numero": "26-05-31 à 33",
+          "titre": "Animation — Fête de la Bretagne et Fête de la Musique",
+          "vote": "Unanimité",
+          "detail": "Fête Bretagne 19-23 mai : conventions Brusoeg et Galots du Boel (culture bretonne) + stands restauration associations Albany Braise et Solidarité Amitié Brusoise. Fête Musique 21 juin : stands Bruz Solidarité, Criandis, Brusic."
+        },
+        {
+          "numero": "26-05-34",
+          "titre": "Vie associative — Régularisation subvention Joan d'Arc (+1 186 €)",
+          "vote": "Unanimité",
+          "detail": "Erreur de saisie sur les déplacements de la section hand. Subvention portée à 69 570,60 € (vs 68 384,60 €)."
+        },
+        {
+          "numero": "26-05-35 à 36",
+          "titre": "Personnel — CDG35 (médiation préalable obligatoire + missions facultatives)",
+          "vote": "Unanimité",
+          "detail": "Adhésion à la procédure de médiation préalable obligatoire CDG35 pour les litiges RH individuels. Convention pour les missions facultatives du centre de gestion."
+        }
+      ],
+      "points_chauds": [
+        {
+          "sujet": "CCAS — hausse des besoins sociaux et tension sur les moyens humains",
+          "tension": "modérée",
+          "detail": "L'opposition (Marion Diaz) alerte sur la hausse des aides ponctuelles CCAS et le départ non remplacé d'un agent. Elle interroge aussi sur la composition du conseil d'administration (associations représentées). Le maire rassure : poste pourvu, réorganisation des horaires d'accueil prévue. 4 associations retenues pour le CA : UDAF (obligatoire), BPA, Wicker + une 4e."
+        },
+        {
+          "sujet": "Restauration scolaire — saturation et future politique tarifaire",
+          "tension": "constructive",
+          "detail": "L'opposition (Chavé) développe les enjeux de la saturation du Verbisson (500 convives / 284 places) et plaide pour une tarification progressive basée sur le quotient familial dans toutes les écoles privées. Le maire accueille favorablement et promet d'associer l'opposition au travail tarifaire futur."
+        },
+        {
+          "sujet": "Comité ville handicap — maintien incertain",
+          "tension": "faible",
+          "detail": "L'opposition (Devenprieur?) rappelle le travail du comité ville handicap initié sous Salmon (dupliqué par d'autres communes) et demande s'il sera maintenu. Le maire répond prudemment : 'on réfléchit', sans engagement. L'accessibilité PMR reste un chantier ouvert."
+        }
+      ],
+      "impact_bruzois": [
+        "Hôtel de ville : réouverture dans quelques semaines après rénovation thermique complète",
+        "Restauration scolaire privée : nouvelle cantine sur le site Saint-Rose de Lima à horizon 2027-2028, libérant le Verbisson",
+        "ZAC Noé : réserve foncière du 12 rue de la Noé permettra une opération de renouvellement urbain dans le périmètre ZAC",
+        "Avenue Legot : aucun permis ne pourra être accordé sur 2 ans sans accord du maire — attente de l'étude urbaine",
+        "Restaurant Carpédium : bâtiment patrimonial cédé au gérant, préservé dans le tissu commercial du centre",
+        "Accessibilité lecture : la médiathèque ouvre l'accès Elliter aux personnes empêchées de lire"
+      ],
       "a_surveiller": [
-        "Publication des délibérations sur Mégalis Bretagne",
-        "Bruz Mag n°261 (juillet-août 2026) — couverture de cette séance attendue"
+        "Ouverture de l'hôtel de ville rénové : calendrier exact à confirmer",
+        "Construction de la nouvelle cantine OGEC : appel d'offres, planning 2027-2028",
+        "Politique tarifaire restauration scolaire privée : concertation opposition annoncée",
+        "Remplacement de l'agent CCAS et réorganisation des horaires d'accueil",
+        "Maintien ou dissolution du comité ville handicap",
+        "Étude urbaine avenue Legot : résultats et projet d'aménagement à venir",
+        "Budget primitif 2026 : attendu au CM de juillet"
       ],
       "sources": [
         {
-          "label": "Agenda Bruz Mag n°260 (date confirmée)",
-          "url": "https://www.ville-bruz.fr/wp-content/uploads/2026/05/Bruz-Mag-n%C2%B0260-de-mai-juin-2026.pdf"
+          "label": "Vidéo YouTube — Conseil Municipal du 18 mai 2026 (Ville de Bruz)",
+          "url": "https://youtu.be/MAMOqsqz6zY"
         },
         {
-          "label": "Audio sur YouTube (chaîne Ville de Bruz)",
-          "url": "https://www.youtube.com/playlist?list=PLnSe2hJFinqpupninWlKBHSmzmwLW-8i7"
+          "label": "Délibérations Mégalis Bretagne — Commune de Bruz 2026",
+          "url": "https://data.megalis.bretagne.bzh/organization/commune-de-bruz"
         }
       ]
     },
@@ -76,33 +285,91 @@
       "deliberations": [
         {
           "numero": "26-04-01",
-          "titre": "Attribution des délégations à 12 conseillers municipaux",
-          "vote": "Majoritaire",
-          "detail": "12 délégations thématiques créées et attribuées : mobilités (Roullé), animation (Léost), voirie/propreté (de Gayardon), habitat/urbanisme (Dohollou), patrimoine/travaux (de la Rivière), environnement (Dallemagne), médiathèque/culture (Demaret), handicap/aînés (Benjamin), sport (Jan), économie (de Montzey), accessibilité (Lemosquet), petite enfance (Andrin)."
+          "titre": "CCAS — Fixation à 8 membres du CA (4 élus + 4 nommés)",
+          "vote": "Unanimité",
+          "detail": "Réduction de 12 à 8 membres. Membres élus : Sylvie Lorissard, Vincent Benjamin, Béatrice Subert (majorité) + Marie-Pierre Duran (opposition). Associations nommées : UDAF (obligatoire), BPA, Wicker + 1 autre. L'opposition interpelle sur l'avenir du budget d'aides ponctuelles créé sous Salmon."
         },
         {
           "numero": "26-04-02",
-          "titre": "Vote des indemnités de fonction des élus",
-          "vote": "Majoritaire — opposition contre",
-          "detail": "Maire : 5 076 €/mois brut (indice 1015, maximum légal). Adjoints : ~1 270 €/mois. Conseillers délégués : ~290 €/mois. Conseillers sans délégation : ~120 €/mois. L'opposition conteste la revalorisation du maire (+×2,8 vs Salmon) comme révélatrice d'une centralisation du pouvoir."
+          "titre": "Commission d'appel d'offres + Commission DSP + Commission marché",
+          "vote": "Unanimité",
+          "detail": "CAO (5 titulaires : Letulzo, Briend, Daron, de la Rivière, G. Pierre + 5 suppléants dont Marion Diaz). DSP : mêmes profils + Bruno Delaunay. Commission marché : 8 délégués dont Philippe Salmon et Marion Chevalier."
         },
         {
           "numero": "26-04-03",
-          "titre": "Réduction du CA du CCAS de 12 à 8 membres",
-          "vote": "Majoritaire — opposition contre",
-          "detail": "Le CA du CCAS passe de 12 à 8 membres, réduisant la représentation des associations et acteurs de la société civile dans la gouvernance de l'action sociale locale. L'opposition s'y oppose fermement au nom des valeurs de solidarité et de démocratie participative."
+          "titre": "SIEM musique Rif Sud — 3 délégués",
+          "vote": "27 pour / 6 abstentions (opposition)",
+          "detail": "Yves de Montzey, Émilie Viter, Philippe Salmon. L'opposition (Duran) s'abstient et expose un contentieux 2020 : le bureau syndical avait autorisé 70 000 € de remboursements Covid sans vote du comité, impactant les communes sans concertation. Critique de la gouvernance sortante au moment de la passation."
+        },
+        {
+          "numero": "26-04-04 à 18",
+          "titre": "Désignation dans 15 organismes sociaux, éducatifs et économiques",
+          "vote": "Unanimité",
+          "detail": "Piscine de la Conterie (Letulzo + Daron), RPE Bruz-Laillé-Pompéan (Loton + Lemosquet), collège/lycée (Loton), Maison de l'Enfance/L'Arche/ACIA (Vincent Benjamin ×3), PAE emploi + Relais Emploi + Em'emploi (Gilles Daniel ×3), Les Quatre Saisons épicerie sociale (Daron + de Gayardon), L'Escale centre social (Roulet + Briend)."
+        },
+        {
+          "numero": "26-04-19",
+          "titre": "Plan B / Manoir de la Noé — désignation de 2 représentants",
+          "vote": "Unanimité",
+          "detail": "Patrick Roulet et Laure-Anne Daron désignés. Long débat : tiers-lieu Plan B (projet citoyen 5 ans, lauréat Nos Lieux Communs Rennes Métropole) ≠ guinguette estivale (convention 2 ans, ville). Houssin confirme que la guinguette est maintenue cet été malgré des réserves sur l'emplacement. L'opposition demande que les élus accompagnent sans reprendre la main sur la dynamique associative."
+        },
+        {
+          "numero": "26-04-20 à 24",
+          "titre": "Structures intercommunales et économiques (5 désignations)",
+          "vote": "Unanimité (avec 2 séries de déports)",
+          "detail": "SPLA Territoire Public (Jean-Patrick Désguérets, déport obligatoire), SPLS NOS Saint-Grégoire (Thomas de la Rivière + 3 administrateurs dont Bruno Delaunay côté opposition, déport pour 4 élus), CNAS agents (Sylvie Briend), SCIC Nourrir l'avenir restauration collective (Patrick Roulet), Réseco économie écologique (Gilles Daniel + Roulet)."
+        },
+        {
+          "numero": "26-04-25 à 27",
+          "titre": "Déontologie, impôts et défense",
+          "vote": "Unanimité",
+          "detail": "Commission intercommunale impôts directs : Naoufal Hajjar, Colot Wenemi, François Rapill proposés à Rennes Métropole. Référents déontologues (mandat entier) : Dominique Couturier (magistrat honoraire, ex-président TJ Rennes) + Jean-Éric Jequel (professeur droit public Rennes 1), 80 €/dossier. Correspondant défense : Philippe Pagès."
+        },
+        {
+          "numero": "26-04-28",
+          "titre": "8 commissions municipales créées",
+          "vote": "Unanimité",
+          "detail": "Urbanisme/aménagement · RH/finances · Vie économique · Éducation/enfance/jeunesse · Communication/animation · Transition écologique/mobilité · Affaires sociales/solidarité · Culture/vie asso./sportive. Composition proportionnelle avec représentation de l'opposition."
+        },
+        {
+          "numero": "26-04-29 à 30",
+          "titre": "12 délégations au maire + délégation emprunt",
+          "vote": "Unanimité",
+          "detail": "Marchés : jusqu'à 214 000 € HT (fournitures) et 500 000 € HT (travaux). Autres : assurances, régies, biens mobiliers <4 600 €, préemption urbaine, associations, subventions, urbanisme, participation public. Emprunt : 5 M€/an max à taux fixe ou variable, ligne trésorerie 4 M€."
+        },
+        {
+          "numero": "26-04-31 à 32",
+          "titre": "Indemnités de fonction et majorations DSU",
+          "vote": "26 pour / 7 abstentions (opposition)",
+          "detail": "Enveloppe globale : 21 510 €/mois avec majorations DSU + chef-lieu de canton. Taux : maire 90 % (5 076 € brut), 1er adjoint 20 % (~1 200 €), adjoints 19 %, 1er conseiller délégué ~850 €, autres délégués ~361 €, simples conseillers ~123 €. 7 abstentions de l'opposition."
+        },
+        {
+          "numero": "26-04-33",
+          "titre": "Personnel — 3 créations/suppressions de postes",
+          "vote": "Unanimité",
+          "detail": "Création : régisseur son Grand Logi (technicien) + cuisinier restauration + agent espaces verts. Suppressions des 3 postes vacants correspondants (mutation ×2 + retraite ×1)."
         }
       ],
       "points_chauds": [
         {
-          "sujet": "Indemnité du maire — revalorisation ×2,8",
+          "sujet": "Indemnité du maire — revalorisation ×2,8 et centralisation",
           "tension": "haute",
-          "detail": "L'opposition (Bruz avec vous, Marie-Pierre Durand) dénonce 5 076 €/mois comme une rupture de style avec la mandature Salmon et un signal de centralisation. La majorité répond que Houssin exerce à plein temps et que le maximum légal est justifié."
+          "detail": "Salmon (opposition) dénonce l'écart : 5 076 € pour le maire vs ~361 € pour la majorité des délégués, et rappelle qu'en campagne Houssin avait critiqué ses propres indemnités. La majorité répond : franchissement du seuil de 20 000 habitants élargit légalement l'enveloppe. L'opposition demande la publication intégrale de toutes les indemnités perçues. 7 abstentions."
         },
         {
-          "sujet": "Réduction du CCAS — moins d'associations représentées",
+          "sujet": "CCAS — réduction à 8 membres et avenir du budget d'aides",
           "tension": "haute",
-          "detail": "Passage de 12 à 8 membres au CA du CCAS : moins de représentants associatifs dans la gouvernance de l'action sociale. L'opposition y voit un choix idéologique contre la tradition participative de Bruz."
+          "detail": "L'opposition alerte sur les besoins sociaux croissants et la réduction du nombre d'associations au CA du CCAS. Elle demande si le budget d'aides ponctuelles créé sous Salmon sera maintenu. Houssin répond sans s'engager, mais annonce vouloir relancer les visites à domicile aux personnes âgées et réorganiser les horaires d'accueil du CCAS."
+        },
+        {
+          "sujet": "Plan B / Manoir de la Noé — guinguette vs tiers-lieu citoyen",
+          "tension": "modérée",
+          "detail": "L'opposition (Chevalier) défend le projet Plan B construit sur plusieurs années et récompensé par Rennes Métropole, contre des déclarations ambiguës de Houssin sur la guinguette. Le maire clarifie : guinguette maintenue cet été, mais position de principe sur l'emplacement. Les 2 représentants désignés sont attendus en soutien — pas en reprise en main."
+        },
+        {
+          "sujet": "SIEM musique — contentieux Covid 2020",
+          "tension": "faible",
+          "detail": "L'opposition (Duran) s'abstient et expose un vieux litige : des remboursements de 70 000 € décidés sans vote du comité syndical en 2020, impactant les communes sans concertation. La nouvelle équipe Houssin n'était pas encore installée à l'époque. 6 abstentions."
         }
       ],
       "impact_bruzois": [
@@ -145,28 +412,45 @@
       "deliberations": [
         {
           "numero": "26-03-01",
-          "titre": "Élection du maire — Jean-René Houssin",
-          "vote": "26 voix pour / 7 abstentions (opposition)",
-          "detail": "Houssin est élu premier magistrat de Bruz pour 2026-2031. Chef d'entreprise local, liste divers droite, priorités : sécurité, propreté, soutien économique et terminus T4 à la gare SNCF."
+          "titre": "Résultats officiels des élections du 15 mars 2026",
+          "vote": "—",
+          "detail": "Inscrits : 13 470. Votants : 8 308. Suffrages exprimés : 8 134. Majorité absolue : 4 068. Résultats : Un nouvel élan pour Bruz (Houssin) 4 587 voix → 26 sièges ; Bruz avec vous (Durand) 3 547 voix → 7 sièges."
         },
         {
           "numero": "26-03-02",
-          "titre": "Élection des 9 adjoints au maire",
-          "vote": "Majoritaire",
-          "detail": "1re : Sylvie Briend (RH/comm.). 2e : Jean-Patrick Desguérets (urbanisme). 3e : Émilie Vitter (culture). 4e : André Le Tulzo (finances). 5e : Sylvie Lerussard (social). 6e : Gilles Daniel (éco./numérique). 7e : Laure-Anne Daron (vie asso./sport). 8e : Philippe Pagès (sécurité). 9e : Françoise Lotton (éducation/enfance)."
+          "titre": "Élection du maire — Jean-René Houssin",
+          "vote": "26 voix / 7 bulletins blancs",
+          "detail": "Houssin élu premier magistrat de Bruz pour 2026-2031. Doyen d'âge préside la séance. Discours inaugural : engagement de terrain, accessibilité, intérêt général pour toutes et tous. Opposition (Salmon) : promesse de passation constructive des dossiers, vigilance sur culture, solidarité, transitions, agents municipaux."
         },
         {
           "numero": "26-03-03",
-          "titre": "Constitution des commissions municipales",
-          "vote": "Adoptée",
-          "detail": "Commissions thématiques constituées avec représentation proportionnelle majorité/opposition. Composition détaillée disponible en mairie."
+          "titre": "Élection des 9 adjoints au maire",
+          "vote": "26 voix (liste unique)",
+          "detail": "1re : Sylvie Briend (RH/communication). 2e : Jean-Patrick Désguérets (urbanisme). 3e : Émilie Viter (culture). 4e : André Le Tulzo (finances). 5e : Sylvie Lorissard (social). 6e : Gilles Daniel (économie/numérique). 7e : Laure-Anne Daron (vie asso./sport). 8e : Philippe Pagès (sécurité). 9e : Françoise Loton (éducation/enfance)."
+        },
+        {
+          "numero": "26-03-04",
+          "titre": "Charte de l'élu local + 3 délégations au maire",
+          "vote": "Unanimité",
+          "detail": "Lecture de la charte (art. L1111-1 à L1111-4 CGCT). Délégations simplifiées : cimetières, baux <12 ans, actions en justice et transactions jusqu'à 1 000 €."
+        },
+        {
+          "numero": "26-03-05",
+          "titre": "Nombre d'adjoints fixé à 9",
+          "vote": "Unanimité",
+          "detail": "Maximum légal pour une commune de ~13 470 habitants : 30 % de 33 = 9,9 → arrondi à 9. Plafond utilisé en intégralité."
         }
       ],
       "points_chauds": [
         {
-          "sujet": "Basculement politique après 6 ans à gauche",
+          "sujet": "Basculement politique et ton de l'opposition",
           "tension": "structurelle",
-          "detail": "La victoire Houssin au 1er tour traduit un changement de cap net. L'opposition (7/33) n'a pas de levier majoritaire mais dispose d'une tribune publique à chaque CM. Lignes de fracture identifiées : sécurité vs prévention, densification vs préservation du tissu existant."
+          "detail": "Victoire Houssin au 1er tour (56 % sur 8 134 suffrages). L'opposition dispose de 7/33 sièges, sans pouvoir de blocage. Salmon promet une passation constructive. Les lignes de fracture se dessinent : sécurité, solidarité, culture, transitions."
+        },
+        {
+          "sujet": "Demande de transparence patrimoniale et déontologique",
+          "tension": "modérée",
+          "detail": "L'opposition (Salmon) propose 2 mesures : déclaration volontaire de patrimoine auprès de la HATVP (obligatoire >20k hab., Bruz vient de franchir ce seuil) et création d'une commission de déontologie avec registre de déport. Houssin accepte la 1re sans difficulté ; sur la 2e, il demande plus de réflexion avant de s'engager."
         }
       ],
       "impact_bruzois": [

@@ -17,11 +17,12 @@ sys.path.insert(0, str(Path(__file__).parent))
 from utils import ROOT, log, git_commit_push
 
 AGENTS = [
-    ("Mégalis",   "agents.agent_megalis"),
-    ("Mairie",    "agents.agent_mairie"),
-    ("Bruz Mag",  "agents.agent_bruz_mag"),
-    ("Presse",    "agents.agent_presse"),
-    ("Dossiers",  "agents.agent_dossiers"),  # toujours en dernier
+    ("Enrichissement CMs", "agents.agent_enrichissement_cm"),  # avant les autres
+    ("Mégalis",            "agents.agent_megalis"),
+    ("Mairie",             "agents.agent_mairie"),
+    ("Bruz Mag",           "agents.agent_bruz_mag"),
+    ("Presse",             "agents.agent_presse"),
+    ("Dossiers",           "agents.agent_dossiers"),  # toujours en dernier
 ]
 
 
@@ -54,6 +55,14 @@ def main() -> None:
         pushed = git_commit_push(message)
         if pushed:
             log("Push réussi → GitHub Pages va se rebuilder.", "OK")
+            # QA post-deploy : attend 90s que GitHub Pages rebuild, puis vérifie
+            log("\n── Agent QA ────────────────────────────────")
+            try:
+                import importlib
+                qa = importlib.import_module("agents.agent_qa")
+                qa.run(wait_seconds=90)
+            except Exception as e:
+                log(f"Agent QA a planté : {e}", "ERR")
         else:
             log("Commit/push échoué — vérifier les logs git.", "ERR")
     else:
