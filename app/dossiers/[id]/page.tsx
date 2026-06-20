@@ -14,7 +14,20 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   const { id } = await params;
   const dossier = dossiersData.dossiers.find(d => d.id === id);
   if (!dossier) return {};
-  return { title: `${dossier.titre} — Bruz en Action`, description: dossier.chapeau };
+  const title = `${dossier.titre} — Bruz en Action`;
+  const description = dossier.chapeau;
+  return {
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+      url: `https://sylvain35170.github.io/bruz-en-action/dossiers/${id}`,
+      siteName: "Bruz en Action",
+      locale: "fr_FR",
+      type: "article",
+    },
+  };
 }
 
 const STATUT_LABEL: Record<string, string> = {

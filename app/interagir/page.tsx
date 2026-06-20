@@ -7,6 +7,14 @@ const LOGO = "/bruz-en-action/logo.png";
 export const metadata = {
   title: "Interagir avec la mairie — Bruz en Action",
   description: "Vos droits, les canaux officiels, et comment Bruz en Action s'engage avec la municipalité. Bienveillant, sourcé, exigeant.",
+  openGraph: {
+    title: "Interagir avec la mairie — Bruz en Action",
+    description: "Vos droits, les canaux officiels, et comment Bruz en Action s'engage avec la municipalité. Bienveillant, sourcé, exigeant.",
+    url: "https://sylvain35170.github.io/bruz-en-action/interagir",
+    siteName: "Bruz en Action",
+    locale: "fr_FR",
+    type: "website",
+  },
 };
 
 type Section = { icon: string; titre: string; contenu: string; detail?: string; lien?: { label: string; url: string } };

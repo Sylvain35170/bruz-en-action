@@ -8,6 +8,14 @@ const LOGO = "/bruz-en-action/logo.png";
 export const metadata = {
   title: "Conseils municipaux — Bruz en Action",
   description: "Suivi des séances du conseil municipal de Bruz 2026-2031 : résumés, délibérations, décisions de Rennes Métropole impactant Bruz.",
+  openGraph: {
+    title: "Conseils municipaux — Bruz en Action",
+    description: "Suivi des séances du conseil municipal de Bruz 2026-2031 : résumés, délibérations, décisions de Rennes Métropole impactant Bruz.",
+    url: "https://sylvain35170.github.io/bruz-en-action/conseils",
+    siteName: "Bruz en Action",
+    locale: "fr_FR",
+    type: "website",
+  },
 };
 
 const STATUT_STYLE: Record<string, { bg: string; color: string; label: string }> = {

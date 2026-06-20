@@ -10,6 +10,14 @@ const d05 = dossiersData.dossiers.find(d => d.id === "D05");
 export const metadata = {
   title: "Carte de Bruz — Bruz en Action",
   description: "Carte interactive de Bruz : zones ZAC Multisites, corridor trambus T4 et équipements.",
+  openGraph: {
+    title: "Carte de Bruz — Bruz en Action",
+    description: "Carte interactive de Bruz : zones ZAC Multisites, corridor trambus T4 et équipements.",
+    url: "https://sylvain35170.github.io/bruz-en-action/carte",
+    siteName: "Bruz en Action",
+    locale: "fr_FR",
+    type: "website",
+  },
 };
 
 export default function CartePage() {

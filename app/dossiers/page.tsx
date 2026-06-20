@@ -7,6 +7,14 @@ const LOGO = "/bruz-en-action/logo.png";
 export const metadata = {
   title: "Dossiers — Bruz en Action",
   description: "Tous les dossiers thématiques suivis par Bruz en Action : T4, ZAC, finances, fiscalité…",
+  openGraph: {
+    title: "Dossiers — Bruz en Action",
+    description: "Tous les dossiers thématiques suivis par Bruz en Action : T4, ZAC, finances, fiscalité…",
+    url: "https://sylvain35170.github.io/bruz-en-action/dossiers",
+    siteName: "Bruz en Action",
+    locale: "fr_FR",
+    type: "website",
+  },
 };
 
 type Dossier = typeof dossiersData.dossiers[0] & {

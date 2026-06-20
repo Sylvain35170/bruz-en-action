@@ -20,9 +20,19 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   const { id } = await params;
   const seance = cmsData.seances.find(s => s.id === id) as Seance;
   if (!seance) return {};
+  const title = `${seance.titre} — Conseil municipal de Bruz`;
+  const description = seance.resume_executif ?? seance.titre;
   return {
-    title: `${seance.titre} — Conseil municipal de Bruz`,
-    description: seance.resume_executif ?? seance.titre,
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+      url: `https://sylvain35170.github.io/bruz-en-action/conseils/${id}`,
+      siteName: "Bruz en Action",
+      locale: "fr_FR",
+      type: "article",
+    },
   };
 }
 

@@ -7,6 +7,14 @@ const LOGO = "/bruz-en-action/logo.png";
 export const metadata = {
   title: "Élus municipaux — Bruz en Action",
   description: "Composition du conseil municipal de Bruz 2026-2032 : maire, adjoints, conseillers délégués, opposition.",
+  openGraph: {
+    title: "Élus municipaux — Bruz en Action",
+    description: "Composition du conseil municipal de Bruz 2026-2032 : maire, adjoints, conseillers délégués, opposition.",
+    url: "https://sylvain35170.github.io/bruz-en-action/elus",
+    siteName: "Bruz en Action",
+    locale: "fr_FR",
+    type: "website",
+  },
 };
 
 export default function Elus() {

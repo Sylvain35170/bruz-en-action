@@ -33,9 +33,19 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   const { id } = await params;
   const promesse = promessesData.promesses.find(p => String(p.id) === id);
   if (!promesse) return {};
+  const title = `${promesse.titre} — Bruz en Action`;
+  const description = `Suivi de la promesse ${promesse.ref} : ${promesse.detail}`;
   return {
-    title: `${promesse.titre} — Bruz en Action`,
-    description: `Suivi de la promesse ${promesse.ref} : ${promesse.detail}`,
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+      url: `https://sylvain35170.github.io/bruz-en-action/promesses/${id}`,
+      siteName: "Bruz en Action",
+      locale: "fr_FR",
+      type: "article",
+    },
   };
 }
 

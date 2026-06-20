@@ -10,6 +10,14 @@ const LOGO = "/bruz-en-action/logo.png";
 export const metadata = {
   title: "Suivi des promesses — Bruz en Action",
   description: "Les 50 engagements du programme municipal de Bruz 2026-2031, suivis depuis leur source publique.",
+  openGraph: {
+    title: "Suivi des promesses — Bruz en Action",
+    description: "Les 50 engagements du programme municipal de Bruz 2026-2031, suivis depuis leur source publique.",
+    url: "https://sylvain35170.github.io/bruz-en-action/promesses",
+    siteName: "Bruz en Action",
+    locale: "fr_FR",
+    type: "website",
+  },
 };
 
 export default function Promesses() {
