@@ -187,6 +187,7 @@ export default function InteragirPage() {
                 { icon: "📎", titre: "Toujours une source", texte: "Chaque affirmation dans nos dossiers et suivis de promesses est sourcée (Mégalis, ville-bruz.fr, presse locale, CADA). Pas d'affirmation sans référence." },
                 { icon: "🔔", titre: "Présence aux CMs", texte: "Nous suivons les conseils municipaux — en salle ou via les vidéos YouTube. C'est là que les décisions se prennent." },
                 { icon: "🗣️", titre: "Dialogue ouvert", texte: "Des élus ou leurs équipes souhaitent nous contacter ? Notre email est public. Nous répondons à toute prise de contact constructive." },
+                { icon: "🔒", titre: "Indépendance éditoriale", texte: "Toute information transmise par un élu est réputée validée par le maire avant de nous parvenir. Nous ne sommes pas un relais de communication municipal — nous restons une organisation citoyenne indépendante." },
               ].map(({ icon, titre, texte }, i, arr) => (
                 <div key={titre} style={{ display: "flex", gap: 16, padding: "18px 22px", borderBottom: i < arr.length - 1 ? "1px solid #f1f5f9" : "none", alignItems: "flex-start" }}>
                   <span style={{ fontSize: 20, flexShrink: 0, marginTop: 2 }}>{icon}</span>
