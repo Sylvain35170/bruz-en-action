@@ -3,6 +3,7 @@ import promessesData from "../../../data/promesses.json";
 import actusData from "../../../data/actus.json";
 import dossiersData from "../../../data/dossiers.json";
 import metaData from "../../../data/meta.json";
+import SiteFooter from "../../../components/SiteFooter";
 
 const LOGO = "/bruz-en-action/logo.png";
 
@@ -322,11 +323,7 @@ export default async function PromessePage({ params }: { params: Promise<{ id: s
       </main>
 
       {/* Footer */}
-      <footer style={{ background: "#0f172a", color: "rgba(255,255,255,0.6)", padding: "32px 24px", textAlign: "center" }}>
-        <a href="/bruz-en-action" style={{ color: "rgba(255,255,255,0.5)", textDecoration: "none", fontSize: 13 }}>
-          ← Retour à l'accueil — {association.nom}
-        </a>
-      </footer>
+      <SiteFooter />
     </div>
   );
 }

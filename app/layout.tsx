@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     description: "Association citoyenne de Bruz (35) — suivi des 50 engagements du mandat 2026-2031",
     url: "https://sylvain35170.github.io/bruz-en-action",
     siteName: "Bruz en Action",
-    images: [{ url: "https://upload.wikimedia.org/wikipedia/commons/7/74/Bruz-place.jpg", width: 3648, height: 2352, alt: "La place de Bruz (CC BY-SA 4.0 Yves LC)" }],
+    images: [{ url: "https://sylvain35170.github.io/bruz-en-action/og-image.jpg", width: 1200, height: 1200, alt: "Bruz en Action — association citoyenne de Bruz" }],
     locale: "fr_FR",
     type: "website",
   },

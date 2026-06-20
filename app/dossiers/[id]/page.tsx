@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import dossiersData from "../../../data/dossiers.json";
 import metaData from "../../../data/meta.json";
+import SiteFooter from "../../../components/SiteFooter";
 
 const LOGO = "/bruz-en-action/logo.png";
 
@@ -396,11 +397,7 @@ export default async function DossierPage({ params }: { params: Promise<{ id: st
         </div>
       </main>
 
-      <footer style={{ background: "#0f172a", color: "rgba(255,255,255,0.6)", padding: "24px", textAlign: "center" }}>
-        <a href="/bruz-en-action/dossiers" style={{ color: "rgba(255,255,255,0.5)", textDecoration: "none", fontSize: 13 }}>
-          ← Tous les dossiers — {association.nom}
-        </a>
-      </footer>
+      <SiteFooter />
     </div>
   );
 }

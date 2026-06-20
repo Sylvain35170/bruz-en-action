@@ -1,6 +1,7 @@
 import promessesData from "../../data/promesses.json";
 import metaData from "../../data/meta.json";
 import PromessesSection from "../../components/PromessesSection";
+import SiteFooter from "../../components/SiteFooter";
 import type { Pilier, Statut, Promesse } from "../../types";
 
 const LOGO = "/bruz-en-action/logo.png";
@@ -121,9 +122,7 @@ export default function Promesses() {
         <PromessesSection promesses={promesses} piliers={piliers} statuts={statuts} />
       </main>
 
-      <footer style={{ background: "#0f172a", color: "rgba(255,255,255,0.5)", padding: "24px", textAlign: "center", fontSize: 13 }}>
-        <a href="/bruz-en-action" style={{ color: "rgba(255,255,255,0.5)", textDecoration: "none" }}>← Retour à l'accueil — {association.nom}</a>
-      </footer>
+      <SiteFooter />
     </div>
   );
 }

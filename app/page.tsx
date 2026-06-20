@@ -140,6 +140,52 @@ export default function Home() {
         </div>
       )}
 
+      {/* ── QUI SOMMES-NOUS ── */}
+      <section style={{ background: "#fff", borderBottom: "1px solid var(--border-subtle)" }}>
+        <div style={{ maxWidth: "var(--container-max)", margin: "0 auto", padding: "56px var(--container-pad)", display: "flex", gap: 48, alignItems: "center", flexWrap: "wrap" }}>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/bruz-en-action/og-image.jpg"
+            alt="Bruz En Action — présentation de l'association"
+            style={{ width: "min(340px, 100%)", borderRadius: 16, boxShadow: "0 8px 32px rgba(0,0,0,0.12)", flexShrink: 0 }}
+          />
+          <div style={{ flex: 1, minWidth: 260 }}>
+            <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#f97316", display: "block", marginBottom: 10 }}>
+              Qui sommes-nous ?
+            </span>
+            <h2 style={{ fontSize: "clamp(1.4rem,2.8vw,2rem)", fontWeight: 900, color: "#0f172a", margin: "0 0 16px", lineHeight: 1.2 }}>
+              Une association citoyenne<br />au service de Bruz
+            </h2>
+            <p style={{ fontSize: 16, color: "#475569", lineHeight: 1.75, margin: "0 0 16px" }}>
+              <strong>Bruz En Action</strong> {association.mission}
+            </p>
+            <p style={{ fontSize: 15, color: "#64748b", lineHeight: 1.7, margin: "0 0 28px" }}>
+              Nous croyons qu&apos;une ville se construit <strong>avec ses habitants</strong> — en favorisant le dialogue,
+              soutenant les initiatives locales et participant activement à la vie de Bruz dans un esprit
+              d&apos;écoute, de partage et d&apos;action.
+            </p>
+            <div style={{ display: "flex", gap: 16, flexWrap: "wrap", alignItems: "center" }}>
+              {reseaux_sociaux.facebook && (
+                <a href={reseaux_sociaux.facebook} target="_blank" rel="noopener noreferrer" style={{
+                  padding: "10px 20px", borderRadius: 999, background: "#1877f2", color: "#fff",
+                  fontSize: 14, fontWeight: 700, textDecoration: "none",
+                }}>
+                  Suivre sur Facebook
+                </a>
+              )}
+              {contact.hello_asso_url && (
+                <a href={contact.hello_asso_url} target="_blank" rel="noopener noreferrer" style={{
+                  padding: "10px 20px", borderRadius: 999, border: "2px solid #f97316", color: "#f97316",
+                  fontSize: 14, fontWeight: 700, textDecoration: "none",
+                }}>
+                  ❤️ Adhérer
+                </a>
+              )}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ── DOSSIERS ── */}
       <section style={{ background: "var(--surface-card)", borderBottom: "1px solid var(--border-subtle)" }}>
         <div style={{ maxWidth: "var(--container-max)", margin: "0 auto", padding: "48px var(--container-pad)" }}>

@@ -1,5 +1,6 @@
 import dossiersData from "../../data/dossiers.json";
 import metaData from "../../data/meta.json";
+import SiteFooter from "../../components/SiteFooter";
 
 const LOGO = "/bruz-en-action/logo.png";
 
@@ -171,11 +172,7 @@ export default function DossiersPage() {
       </main>
 
       {/* Footer */}
-      <footer style={{ background: "#0f172a", color: "rgba(255,255,255,0.5)", padding: "32px 24px", textAlign: "center" }}>
-        <a href="/bruz-en-action" style={{ color: "rgba(255,255,255,0.45)", textDecoration: "none", fontSize: 13 }}>
-          ← Retour à l&apos;accueil — {association.nom}
-        </a>
-      </footer>
+      <SiteFooter />
     </div>
   );
 }

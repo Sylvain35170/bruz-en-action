@@ -1,6 +1,7 @@
 import cmsData from "../../data/cms.json";
 import elusData from "../../data/elus.json";
 import metaData from "../../data/meta.json";
+import SiteFooter from "../../components/SiteFooter";
 
 const LOGO = "/bruz-en-action/logo.png";
 
@@ -296,12 +297,7 @@ export default function Conseils() {
       </main>
 
       {/* FOOTER */}
-      <footer style={{ background: "#0f172a", color: "rgba(255,255,255,0.5)" }}>
-        <div style={{ maxWidth: 1120, margin: "0 auto", padding: "24px", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 12 }}>
-          <span style={{ fontSize: 12 }}>© {association.fondee_en} {association.nom} · Association loi 1901</span>
-          <a href="/bruz-en-action" style={{ fontSize: 12, color: "rgba(255,255,255,0.4)", textDecoration: "none" }}>← Retour accueil</a>
-        </div>
-      </footer>
+      <SiteFooter />
     </div>
   );
 }

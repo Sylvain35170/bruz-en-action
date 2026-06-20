@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import cmsData from "../../../data/cms.json";
 import metaData from "../../../data/meta.json";
+import SiteFooter from "../../../components/SiteFooter";
 
 const LOGO = "/bruz-en-action/logo.png";
 
@@ -250,11 +251,7 @@ export default async function SeancePage({ params }: { params: Promise<{ id: str
       </main>
 
       {/* Footer */}
-      <footer style={{ background: "#0f172a", color: "rgba(255,255,255,0.6)", padding: "32px 24px", textAlign: "center" }}>
-        <a href="/bruz-en-action/conseils" style={{ color: "rgba(255,255,255,0.5)", textDecoration: "none", fontSize: 13 }}>
-          ← Retour aux conseils municipaux — {association.nom}
-        </a>
-      </footer>
+      <SiteFooter />
     </div>
   );
 }
