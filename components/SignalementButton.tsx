@@ -35,7 +35,7 @@ function buildMailto(ref?: string) {
     "EMAIL DE CONTACT (optionnel) :",
     "",
     "---",
-    "Envoyé depuis www.archipel-formation.fr/bruz-en-action",
+    "Envoyé depuis sylvain35170.github.io/bruz-en-action",
   ].join("\n");
 
   return `mailto:${EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
