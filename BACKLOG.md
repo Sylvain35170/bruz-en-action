@@ -17,8 +17,6 @@
 
 
 ## 🟡 À faire — Technique
-
-- [ ] **Agent QA testeur** — script Python qui curl les pages clés du site GitHub Pages après chaque deploy et vérifie : HTTP 200, présence de texte attendu (titre dossier, section "Qui sommes-nous", nav), absence de "undefined" ou erreurs JS côté HTML. Lancé en post-hook du `git push` ou via launchd.
 - [ ] **Images** — remplacer og-image.jpg + footer par vraies photos quand disponibles (events / asso)
 - [ ] **Script import_excel.py** — mise à jour auto des statuts depuis l'Excel
 - [ ] **CRs réunions** — réimporter les docx (encodage zip raté sur les accents)
@@ -34,6 +32,11 @@
 
 ## ✅ Terminé
 
+- **Enrichissement CMs mandat Houssin** — 3 séances depuis transcriptions YouTube (20 mars : résultats électoraux + 9 adjoints + transparence ; 8 avril : 11 délib, indemnités ×2.8, Plan B, SIEM Covid ; 18 mai : 29 délib, CCAS, restauration scolaire, crèche)
+- **agent_enrichissement_cm.py** — YouTube RSS → transcription → claude CLI → cms.json (fallback règles si CLI indispo)
+- **agent_qa.py** — QA post-deploy automatique : 10 pages GitHub Pages, lancé 90s après push
+- **agent_presse.py** — flux Ouest France via Google News + filtrage bruit (sport/emploi)
+- **meta.json** — Instagram bruz_en_action ajouté
 - **D09/D10/D11** — Grand Logis (cinéma), Écoles (capacité ZAC), Manoir de la Noë (patrimoine)
 - **Refonte dossiers fond + forme** — nouveau schéma citoyen (ce_quon_sait · qui_decide · decisions · ce_quon_suit), 8 dossiers réécrits, page [id] allégée de 10 à 5 sections
 - **Nettoyage actus_recentes** — suppression doublons + actus hors-sujet dans D01-D08 ; D08 recadré sur le démontage du city stade Plaine Yann-Fañch
