@@ -15,25 +15,30 @@
 
 ## 🟡 À faire — Dossiers à instruire
 
-- [ ] **D09 et suivants** — nouveaux dossiers à ouvrir selon l'actualité (cinéma Grand Logis / Cinéville, école, Manoir de la Noë…)
 
 ## 🟡 À faire — Technique
 
 - [ ] **Agent QA testeur** — script Python qui curl les pages clés du site GitHub Pages après chaque deploy et vérifie : HTTP 200, présence de texte attendu (titre dossier, section "Qui sommes-nous", nav), absence de "undefined" ou erreurs JS côté HTML. Lancé en post-hook du `git push` ou via launchd.
-- [ ] **Images** — photos de Bruz / événements / asso (à fournir)
+- [ ] **Images** — remplacer og-image.jpg + footer par vraies photos quand disponibles (events / asso)
 - [ ] **Script import_excel.py** — mise à jour auto des statuts depuis l'Excel
 - [ ] **CRs réunions** — réimporter les docx (encodage zip raté sur les accents)
 - [ ] **Actus** — enrichir au fil des décisions (schema en place, 6 seeds)
-- [ ] **SEO** — og:image, description, sitemap
+- [ ] **SEO** — description, sitemap
 
 ## 💡 Idées
 
 - Alertes email/RSS quand une promesse change de statut
 - Export PDF du tableau de bord par pilier
 - Page `/metro` dédiée aux décisions Rennes Métropole impactant Bruz (T4, PLUiH, eau/assainissement)
+- Page `/liens` — liens utiles (mairie, Bruz Mag, La Semaine, Mégalis, YouTube, HelloAsso…)
 
 ## ✅ Terminé
 
+- **D09/D10/D11** — Grand Logis (cinéma), Écoles (capacité ZAC), Manoir de la Noë (patrimoine)
+- **Refonte dossiers fond + forme** — nouveau schéma citoyen (ce_quon_sait · qui_decide · decisions · ce_quon_suit), 8 dossiers réécrits, page [id] allégée de 10 à 5 sections
+- **Nettoyage actus_recentes** — suppression doublons + actus hors-sujet dans D01-D08 ; D08 recadré sur le démontage du city stade Plaine Yann-Fañch
+- **Restructuration site** — homepage allégée (hero + dossiers + agenda + barre promesses + actus) ; pages dédiées /elus et /promesses créées ; /conseils et /conseils/[id] simplifiés (YouTube + points clés) ; nav enrichie (Dossiers · Conseils · Promesses · Élus · Carte)
+- **D06 angle corrigé** — piscine de la Conterie : déficit syndicat intercommunal (~400k€, Bruz +162k€ en 2025), pas rénovation/reconstruction
 - **D06 Piscine · D07 Sécurité PM · D08 Équipements sportifs** — dossiers créés, pages générées, actus_recentes alimentées, catégories colorées dans l'index
 - **Pipeline veille automatique** — 5 agents (YouTube CMs, mairie actus, Google News presse, Bruz Mag, enrichissement dossiers) + orchestrateur + launchd 17h ; actus presse matchées par mots-clés → `dossiers.json` actus_recentes
 - **Page `/dossiers`** — index complet, tri featured + last_activity, badge actif, couleur par catégorie, compteur actus
@@ -57,6 +62,7 @@
 - **Graphiques SVG dossiers finances** — D03/D04 : recettes fiscales 2013→2023, structure recettes estimée ; composants SvgBarChart + SvgHorizontalBarChart inline ; corrections population 18K→20K et budget 20-25→30-40 M€
 - **Pages dossiers refondues** — D01–D04 : 7 nouvelles sections par dossier (pourquoi, gouvernance, décisions, coût/financement, impact qualité de vie, risques systémiques, conclusion + actus récentes)
 - **Coups de peinture** — barre de progression promesses, timeline CM avec dot pulsant, animations fade-in, og:image, favicon, photo hero (Bruz-place.jpg CC BY-SA 4.0 Yves LC)
+- **Logo + image asso** — logo extrait de l'image Facebook (fond transparent) ; section "Qui sommes-nous" homepage ; SiteFooter avec image sur toutes les pages (8) ; og-image.jpg mis à jour
 
 ## ✅ Terminé (antérieur)
 
