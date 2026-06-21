@@ -6,7 +6,7 @@ import SiteFooter from "../../../../components/SiteFooter";
 const LOGO = "/bruz-en-action/logo.png";
 
 // Seuls les dossiers avec une page "En profondeur" sont listés ici
-const EN_PROFONDEUR_IDS = ["D01", "D02"];
+const EN_PROFONDEUR_IDS = ["D01", "D02", "D03"];
 
 export function generateStaticParams() {
   return EN_PROFONDEUR_IDS.map(id => ({ id }));
@@ -103,11 +103,188 @@ export default async function EnProfondeurPage({ params }: { params: Promise<{ i
               Voici les vraies questions — sur les écoles, la densité, les équipements — et ce qu'on va surveiller.
             </p>
           </>)}
+          {id === "D03" && (<>
+            <h1 style={{ fontSize: "clamp(1.4rem, 3vw, 2.2rem)", fontWeight: 800, lineHeight: 1.2, margin: "0 0 16px", maxWidth: 720, color: "#fff" }}>
+              Les finances de Bruz : ce que tout citoyen devrait savoir avant le CM du 3 juillet
+            </h1>
+            <p style={{ fontSize: 16, lineHeight: 1.75, color: "rgba(255,255,255,0.75)", maxWidth: 680, margin: 0 }}>
+              Budget voté dans la tension, projets qui s'accumulent, dette non publiée.
+              Avant que la nouvelle équipe présente ses premières orientations financières, voici les questions qu'on se pose — et les chiffres qu'on attend.
+            </p>
+          </>)}
         </div>
       </section>
 
       <main style={{ flex: 1 }}>
         <div style={{ maxWidth: 860, margin: "0 auto", padding: "48px 24px" }}>
+
+        {/* ── CONTENU D03 ── */}
+        {id === "D03" && (<>
+
+          <section style={{ marginBottom: 48 }}>
+            <SectionTitle>Les chiffres de base</SectionTitle>
+            <InfoBox icon="💶" titre="10,2 M€ de recettes fiscales directes (2023)">
+              Taxe foncière bâtie, TFNB et CFE combinées. En 2013, ce chiffre était de 7,3 M€ — soit une hausse de <strong>+40 % en dix ans</strong>, tirée à la fois par la croissance de la base taxable (nouveaux habitants, nouvelles entreprises) et les hausses de taux votées.
+            </InfoBox>
+            <InfoBox icon="🏛️" titre="La DGF : une dotation de l'État qui stagne">
+              La Dotation Globale de Fonctionnement versée par l'État à Bruz est estimée à environ 1,5 M€ — stable depuis plusieurs années. Elle couvre une part marginale des dépenses de fonctionnement et <strong>ne peut pas financer les investissements</strong>.
+            </InfoBox>
+            <InfoBox icon="📊" titre="La dette : un angle mort du débat public">
+              Le ratio dette/habitant et la capacité de désendettement de Bruz <strong>ne sont pas encore publiés pour 2026</strong>. C'est pourtant le chiffre clé pour évaluer la marge de manœuvre de la nouvelle équipe. On attend le compte administratif 2025.
+            </InfoBox>
+          </section>
+
+          <section style={{ marginBottom: 48 }}>
+            <SectionTitle>Les questions que tout citoyen devrait poser</SectionTitle>
+            <p style={{ fontSize: 14, color: "#64748b", lineHeight: 1.7, marginBottom: 20 }}>
+              Pas besoin d'être expert-comptable. Ces questions sont celles de n'importe quel contribuable bruzois soucieux de la bonne utilisation des deniers publics.
+            </p>
+            <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
+              {[
+                {
+                  q: "Quel est le montant exact du budget 2026 ?",
+                  d: "Le budget a été voté le 9 mars 2026 — mais le montant global (section fonctionnement + investissement) n'a pas été communiqué clairement au public. Le compte administratif 2025 donnera les chiffres réels de l'exercice précédent."
+                },
+                {
+                  q: "Quelle est la dette de Bruz par habitant ?",
+                  d: "C'est l'indicateur de référence pour comparer les communes. Pour une ville de 20 000 habitants, la moyenne nationale tourne autour de 700–900 €/habitant. Où se situe Bruz ? La réponse n'est pas publiée."
+                },
+                {
+                  q: "Combien d'années faudrait-il pour rembourser la dette avec l'épargne brute ?",
+                  d: "La capacité de désendettement (dette / épargne brute annuelle) est le thermomètre financier d'une commune. Au-delà de 12 ans, les marges sont sérieusement contraintes. Pour Bruz : inconnu."
+                },
+                {
+                  q: "Comment le budget d'investissement 2026 se répartit-il entre les projets ?",
+                  d: "T4 (co-financement Métropole), ZAC Multisites, rénovation piscine Conterie, voirie, numérique… Quelle ligne pour quel montant ? Aucune répartition publique n'a été communiquée à ce jour."
+                },
+                {
+                  q: "Quel gain fiscal attend-on de Safran ?",
+                  d: "L'arrivée du groupe Safran à Bruz génère une CFE (cotisation foncière des entreprises) significative. Au CM du 20 mars 2026, la majorité est restée prudente sur les chiffres. Le montant attendu n'a pas été communiqué."
+                },
+                {
+                  q: "Les tarifs des services municipaux vont-ils augmenter ?",
+                  d: "Piscine, restauration scolaire, activités sportives, crèches… Les tarifs relèvent des délibérations du conseil. Aucune révision tarifaire n'a été votée publiquement depuis l'installation de la nouvelle équipe."
+                },
+              ].map(({ q, d }, i) => (
+                <div key={i} style={{ background: "#fff", border: "1px solid #e2e8f0", borderLeft: "3px solid #e84d0e", borderRadius: 8, padding: "16px 20px" }}>
+                  <div style={{ fontSize: 14, fontWeight: 700, color: "#0f172a", marginBottom: 6 }}>{q}</div>
+                  <div style={{ fontSize: 13, color: "#64748b", lineHeight: 1.6 }}>{d}</div>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          <section style={{ marginBottom: 48 }}>
+            <SectionTitle>Les projets qui s'accumulent</SectionTitle>
+            <p style={{ fontSize: 14, color: "#64748b", lineHeight: 1.7, marginBottom: 20 }}>
+              Bruz dit ne pas être une ville riche. Pourtant les engagements financiers du mandat sont nombreux.
+            </p>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px,1fr))", gap: 14 }}>
+              {[
+                { icon: "🚌", label: "T4 Trambus", detail: "Co-financement Métropole : la part de Bruz reste à chiffrer. Mise en service 2031.", lien: "/bruz-en-action/dossiers/D01" },
+                { icon: "🏗️", label: "ZAC Multisites", detail: "1 700 logements = coût d'équipements publics à anticiper : voirie, réseaux, école.", lien: "/bruz-en-action/dossiers/D02" },
+                { icon: "🏊", label: "Piscine Conterie", detail: "Déficit chronique estimé à plusieurs centaines de milliers d'€/an. Rénovation non budgétée.", lien: "/bruz-en-action/dossiers/D06" },
+                { icon: "🏫", label: "Écoles", detail: "1 700 logements = ~850 enfants scolarisables. Aucun plan de construction scolaire annoncé.", lien: "/bruz-en-action/dossiers/D10" },
+                { icon: "🏛️", label: "Hôtel de Ville", detail: "Travaux de rénovation en cours — retour des services prévu fin juin 2026.", lien: null },
+                { icon: "🔒", label: "Police municipale", detail: "Renforcement promis — coût en personnel et équipements non chiffré publiquement.", lien: "/bruz-en-action/dossiers/D07" },
+              ].map(({ icon, label, detail, lien }) => (
+                <div key={label} style={{ background: "#fff", border: "1px solid #e2e8f0", borderRadius: 10, padding: "16px 18px" }}>
+                  <div style={{ fontSize: 22, marginBottom: 8 }}>{icon}</div>
+                  <div style={{ fontSize: 14, fontWeight: 700, color: "#0f172a", marginBottom: 6 }}>{label}</div>
+                  <div style={{ fontSize: 12, color: "#64748b", lineHeight: 1.5, marginBottom: lien ? 10 : 0 }}>{detail}</div>
+                  {lien && <a href={lien} style={{ fontSize: 11, color: "#e84d0e", fontWeight: 700, textDecoration: "none" }}>Voir le dossier ↗</a>}
+                </div>
+              ))}
+            </div>
+          </section>
+
+          <section style={{ marginBottom: 48 }}>
+            <SectionTitle>L'enjeu du CM du 3 juillet 2026</SectionTitle>
+            <div style={{ background: "#fefce8", border: "1px solid #fde68a", borderLeft: "4px solid #d97706", borderRadius: 12, padding: "20px 24px" }}>
+              <div style={{ fontSize: 13, fontWeight: 700, color: "#92400e", marginBottom: 10 }}>📅 Conseil municipal — vendredi 3 juillet, 19h — Halle Pagnol</div>
+              <p style={{ margin: "0 0 12px", fontSize: 14, color: "#334155", lineHeight: 1.7 }}>
+                C'est la <strong>première séance budgétaire à fort enjeu du mandat Houssin</strong>. Trois mois après l'installation du conseil, la nouvelle équipe va présenter ses premières décisions financières : budget primitif 2026, orientations d'investissement, capacité d'emprunt.
+              </p>
+              <p style={{ margin: 0, fontSize: 14, color: "#334155", lineHeight: 1.7 }}>
+                C'est le moment de vérité entre les promesses de campagne et les contraintes financières héritées de la mandature Salmon.{" "}
+                <strong>La séance est ouverte au public.</strong>
+              </p>
+            </div>
+          </section>
+
+          <section style={{ marginBottom: 48 }}>
+            <SectionTitle>L'effet Safran</SectionTitle>
+            <p style={{ fontSize: 14, color: "#475569", lineHeight: 1.7, marginBottom: 16 }}>
+              L'arrivée du groupe Safran à Bruz est présentée comme une bonne nouvelle économique. C'en est probablement une — mais ses effets sur les finances communales méritent d'être précisés.
+            </p>
+            <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+              {[
+                { label: "Ce qui est sûr", texte: "Safran génère une CFE (cotisation foncière des entreprises) au bénéfice de Bruz. C'est une recette réelle, versée annuellement.", couleur: "#059669", bg: "#f0fdf4", border: "#bbf7d0" },
+                { label: "Ce qui n'est pas dit", texte: "Le montant de cette CFE n'a pas été communiqué. Au CM du 20 mars 2026, la majorité est restée évasive. On parle de centaines de milliers d'euros — ou de millions ?", couleur: "#d97706", bg: "#fffbeb", border: "#fde68a" },
+                { label: "Ce qui est ignoré", texte: "L'arrivée de salariés Safran = nouveaux habitants potentiels = pression sur les équipements (écoles, transports, logements). La recette fiscale doit être mise en face de ces coûts.", couleur: "#dc2626", bg: "#fef2f2", border: "#fecaca" },
+              ].map(({ label, texte, couleur, bg, border }) => (
+                <div key={label} style={{ background: bg, border: `1px solid ${border}`, borderRadius: 10, padding: "14px 18px" }}>
+                  <div style={{ fontSize: 12, fontWeight: 800, textTransform: "uppercase", letterSpacing: "0.06em", color: couleur, marginBottom: 6 }}>{label}</div>
+                  <div style={{ fontSize: 13, color: "#334155", lineHeight: 1.6 }}>{texte}</div>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          <section style={{ marginBottom: 48 }}>
+            <div style={{ background: "#fff8f5", border: "1px solid #fed7aa", borderLeft: "4px solid #e84d0e", borderRadius: 12, padding: "24px 28px" }}>
+              <div style={{ fontSize: 11, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.08em", color: "#e84d0e", marginBottom: 10 }}>Notre lecture — position de Bruz en Action</div>
+              <p style={{ margin: "0 0 14px", fontSize: 15, fontWeight: 700, color: "#0f172a", lineHeight: 1.5 }}>
+                La transparence financière n'est pas optionnelle.
+              </p>
+              <p style={{ margin: "0 0 12px", fontSize: 14, color: "#334155", lineHeight: 1.75 }}>
+                Une commune bien gérée, c'est une commune qui documente ses choix et les explique aux habitants. Le budget voté en mars 2026 dans une ambiance tendue mérite une lecture publique claire : où vont les 10 M€ de recettes fiscales, quelle est la dette réelle, quels projets sont financés et lesquels ne le sont pas.
+              </p>
+              <p style={{ margin: "0 0 12px", fontSize: 14, color: "#334155", lineHeight: 1.75 }}>
+                Ce n'est pas une critique — c'est une attente légitime. Bruz en Action n'a pas de position sur le niveau de dépenses ou le taux d'imposition. On a une position sur l'accès à l'information : les Bruzois ont le droit de comprendre ce que la commune fait de leur argent.
+              </p>
+              <p style={{ margin: 0, fontSize: 14, color: "#64748b", lineHeight: 1.75, fontStyle: "italic" }}>
+                Vous avez accès à des données financières sur Bruz que nous n'avons pas ?{" "}
+                <a href={`mailto:${metaData.contact.email}?subject=${encodeURIComponent("[D03] Finances — données à partager")}`} style={{ color: "#e84d0e" }}>Partagez-les avec nous</a>.
+              </p>
+            </div>
+          </section>
+
+          <section style={{ marginBottom: 48 }}>
+            <SectionTitle>Ce qu'on va surveiller</SectionTitle>
+            <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+              {[
+                { periode: "3 juillet 2026", description: "CM — budget primitif 2026 : montants par poste, capacité d'emprunt, orientations d'investissement.", importance: "haute" },
+                { periode: "Été 2026", description: "Compte administratif 2025 : les chiffres réels de l'exercice — dont la dette et l'épargne brute.", importance: "haute" },
+                { periode: "2026", description: "Montant officialisé de la CFE Safran et impact sur les recettes communales.", importance: "haute" },
+                { periode: "2026–2027", description: "Révision éventuelle des tarifs des services : cantine, piscine, activités — pas encore votée.", importance: "moyenne" },
+                { periode: "2027+", description: "Premier bilan financier de la mandature : taux d'exécution du budget d'investissement.", importance: "neutre" },
+              ].map((item, i) => (
+                <div key={i} style={{ display: "flex", gap: 16, background: "#fff", border: "1px solid #e2e8f0", borderRadius: 10, padding: "14px 18px", alignItems: "flex-start" }}>
+                  <div style={{ flexShrink: 0, minWidth: 100 }}>
+                    <span style={{ fontSize: 12, fontWeight: 800, color: item.importance === "haute" ? "#e84d0e" : "#64748b" }}>{item.periode}</span>
+                  </div>
+                  <div style={{ fontSize: 14, color: "#334155", lineHeight: 1.6 }}>
+                    {item.description}
+                    {item.importance === "haute" && <span style={{ display: "inline-block", marginLeft: 8, fontSize: 10, fontWeight: 700, textTransform: "uppercase", color: "#e84d0e", background: "#fff1ee", padding: "1px 6px", borderRadius: 999 }}>À surveiller</span>}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          <div style={{ borderTop: "1px solid #e2e8f0", paddingTop: 32, display: "flex", gap: 16, alignItems: "center", flexWrap: "wrap" }}>
+            <a href={`/bruz-en-action/dossiers/${id}`}
+              style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "10px 20px", background: "#0f172a", color: "#fff", borderRadius: 999, textDecoration: "none", fontSize: 14, fontWeight: 700 }}>
+              ← Retour au dossier D03
+            </a>
+            <a href="/bruz-en-action/conseils/CM-2026-07-03"
+              style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "10px 20px", background: "#fff", border: "1px solid #e2e8f0", color: "#0f172a", borderRadius: 999, textDecoration: "none", fontSize: 14, fontWeight: 600 }}>
+              🏛️ CM du 3 juillet 2026
+            </a>
+          </div>
+
+        </>)}
 
         {/* ── CONTENU D02 ── */}
         {id === "D02" && (<>
