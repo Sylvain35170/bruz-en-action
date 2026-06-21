@@ -1,9 +1,10 @@
 {
   "meta": {
-    "last_updated": "2026-06-19",
+    "last_updated": "2026-06-21",
     "source_principale": "Transcriptions YouTube (Ville de Bruz) + Bruz Mag n°260 + délibérations Mégalis",
     "youtube": "https://www.youtube.com/playlist?list=PLnSe2hJFinqpupninWlKBHSmzmwLW-8i7",
-    "deliberations_megalis": "https://data.megalis.bretagne.bzh/organization/commune-de-bruz"
+    "deliberations_megalis": "https://data.megalis.bretagne.bzh/organization/commune-de-bruz",
+    "derniere_semaine_bruz": 856
   },
   "seances": [
     {
@@ -28,6 +29,10 @@
         {
           "label": "Agenda Bruz Mag n°260",
           "url": "https://www.ville-bruz.fr/wp-content/uploads/2026/05/Bruz-Mag-n%C2%B0260-de-mai-juin-2026.pdf"
+        },
+        {
+          "label": "Semaine à Bruz n°856 (11-25 juin 2026) — confirmation date et lieu",
+          "url": "https://www.ville-bruz.fr/wp-content/uploads/2026/06/Semaine-a-Bruz-n%C2%B0856-du-11-au-25-juin-2026.pdf"
         }
       ]
     },

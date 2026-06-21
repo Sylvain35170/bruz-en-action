@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Agent Bruz Mag — Détection d'un nouveau numéro du magazine municipal.
+Agent Bruz Mag — Détection des bulletins municipaux de Bruz.
 
-Scrape la page presse/publications de ville-bruz.fr pour détecter un nouveau
-PDF du Bruz Mag, extrait le texte, résume les articles clés → data/cms.json.
+Scrape /ma-ville-de-bruz/bulletins-municipaux/ pour détecter :
+- Un nouveau Bruz Mag (bimestriel, n°260…)
+- Une nouvelle Semaine à Bruz (bimensuel, n°856…)
+Les deux sont injectés dans data/cms.json.
 """
 
 import re
@@ -32,8 +34,12 @@ SOURCES_PRESSE = [
 # Pattern : Bruz-Mag-n°260-de-mai-juin-2026.pdf
 MAG_PATTERN = re.compile(r"[Bb]ruz.?[Mm]ag.?n[°o]?(\d+)", re.I)
 
+# Pattern : Semaine-a-Bruz-n°856-du-11-au-25-juin-2026.pdf
+SEMAINE_PATTERN = re.compile(r"[Ss]emaine.?[àa].?[Bb]ruz.?n[°o]?(\d+)", re.I)
+
 
 def find_mag_links(soup: BeautifulSoup, base_url: str) -> list[dict]:
+    """Détecte les Bruz Mag dans la page."""
     results = []
     for a in soup.find_all("a", href=True):
         href = a["href"]
@@ -43,6 +49,22 @@ def find_mag_links(soup: BeautifulSoup, base_url: str) -> list[dict]:
             num = int(m.group(1))
             url = href if href.startswith("http") else "https://www.ville-bruz.fr" + href
             results.append({"numero": num, "url": url, "titre": text or f"Bruz Mag n°{num}"})
+    return results
+
+
+def find_semaine_links(soup: BeautifulSoup, base_url: str) -> list[dict]:
+    """Détecte les numéros de La Semaine à Bruz dans la page."""
+    results = []
+    seen_urls: set[str] = set()
+    for a in soup.find_all("a", href=True):
+        href = a["href"]
+        text = a.get_text(strip=True)
+        m = SEMAINE_PATTERN.search(href) or SEMAINE_PATTERN.search(text)
+        if m and href.endswith(".pdf") and href not in seen_urls:
+            seen_urls.add(href)
+            num = int(m.group(1))
+            url = href if href.startswith("http") else "https://www.ville-bruz.fr" + href
+            results.append({"numero": num, "url": url, "titre": text or f"Semaine à Bruz n°{num}"})
     return results
 
 
@@ -70,43 +92,59 @@ def extract_mag_summary(pdf_bytes: bytes) -> list[str]:
 def run() -> bool:
     cms = load_json(DATA_DIR / "cms.json")
     known_mag_nums: set[int] = set()
+    known_semaine_nums: set[int] = set()
 
     # Numéros déjà connus depuis les sources cms.json
     for seance in cms.get("seances", []):
         for src in seance.get("sources", []):
-            m = MAG_PATTERN.search(src.get("label", "") + src.get("url", ""))
-            if m:
+            combined = src.get("label", "") + src.get("url", "")
+            if m := MAG_PATTERN.search(combined):
                 known_mag_nums.add(int(m.group(1)))
+            if m := SEMAINE_PATTERN.search(combined):
+                known_semaine_nums.add(int(m.group(1)))
 
-    # Aussi depuis meta cms
-    meta_mag = cms.get("meta", {}).get("dernier_bruz_mag", 0)
-    if meta_mag:
-        known_mag_nums.add(int(meta_mag))
+    meta = cms.get("meta", {})
+    if meta.get("dernier_bruz_mag"):
+        known_mag_nums.add(int(meta["dernier_bruz_mag"]))
+    if meta.get("derniere_semaine_bruz"):
+        known_semaine_nums.add(int(meta["derniere_semaine_bruz"]))
 
     new_mags = []
+    new_semaines = []
+
     for source_url in SOURCES_PRESSE:
         log(f"Scan {source_url}…")
         r = fetch(source_url)
         if not r:
             continue
         soup = BeautifulSoup(r.text, "html.parser")
+
         for mag in find_mag_links(soup, source_url):
             if mag["numero"] in known_mag_nums:
                 continue
-            log(f"  🆕 Bruz Mag n°{mag['numero']} détecté — téléchargement…", "NEW")
+            log(f"  🆕 Bruz Mag n°{mag['numero']} — téléchargement…", "NEW")
             r_pdf = fetch(mag["url"], timeout=30)
             if not r_pdf or len(r_pdf.content) < 10_000:
                 continue
-            titres = extract_mag_summary(r_pdf.content)
-            mag["points_cles"] = titres
+            mag["points_cles"] = extract_mag_summary(r_pdf.content)
             new_mags.append(mag)
             known_mag_nums.add(mag["numero"])
 
-    if not new_mags:
-        log("Bruz Mag : aucun nouveau numéro détecté.", "INFO")
+        for sem in find_semaine_links(soup, source_url):
+            if sem["numero"] in known_semaine_nums:
+                continue
+            log(f"  🆕 Semaine à Bruz n°{sem['numero']} — téléchargement…", "NEW")
+            r_pdf = fetch(sem["url"], timeout=30)
+            if not r_pdf or len(r_pdf.content) < 10_000:
+                continue
+            sem["points_cles"] = extract_mag_summary(r_pdf.content)
+            new_semaines.append(sem)
+            known_semaine_nums.add(sem["numero"])
+
+    if not new_mags and not new_semaines:
+        log("Bulletins : aucun nouveau numéro détecté.", "INFO")
         return False
 
-    # Injecter dans cms.json
     for mag in new_mags:
         cms["seances"].insert(0, {
             "id": f"BM-{mag['numero']}",
@@ -117,10 +155,25 @@ def run() -> bool:
             "sources": [{"label": mag["titre"], "url": mag["url"]}],
             "type": "bruz_mag",
         })
-    cms["meta"]["last_updated"] = today()
-    cms["meta"]["dernier_bruz_mag"] = max(m["numero"] for m in new_mags)
+    for sem in new_semaines:
+        cms["seances"].insert(0, {
+            "id": f"SAB-{sem['numero']}",
+            "date": today(),
+            "statut": "passe",
+            "titre": sem["titre"],
+            "points_cles": sem["points_cles"],
+            "sources": [{"label": sem["titre"], "url": sem["url"]}],
+            "type": "semaine_bruz",
+        })
+
+    meta["last_updated"] = today()
+    if new_mags:
+        meta["dernier_bruz_mag"] = max(m["numero"] for m in new_mags)
+    if new_semaines:
+        meta["derniere_semaine_bruz"] = max(s["numero"] for s in new_semaines)
+    cms["meta"] = meta
     save_json(DATA_DIR / "cms.json", cms)
-    log(f"Bruz Mag : {len(new_mags)} nouveau(x) numéro(s) → cms.json", "OK")
+    log(f"Bulletins : {len(new_mags)} Bruz Mag, {len(new_semaines)} Semaine à Bruz → cms.json", "OK")
     return True
 
 
