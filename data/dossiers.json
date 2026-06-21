@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-06-18",
+    "last_updated": "2026-06-21",
     "version": "3.0"
   },
   "dossiers": [
@@ -412,7 +412,7 @@
             },
             {
               "label": "2026\n(est.)",
-              "valeur": 20.0,
+              "valeur": 20,
               "confirme": false
             }
           ]
@@ -779,6 +779,98 @@
         }
       ],
       "actus_recentes": [],
+      "promesses_liees": []
+    },
+    {
+      "id": "D12",
+      "titre": "City stade du CoSEC : un équipement jeunesse de plus qui disparaît ?",
+      "categorie": "Équipements",
+      "statut": "en_cours",
+      "featured": false,
+      "last_activity": "2026-06-21",
+      "date_ouverture": "2026-06-21",
+      "chapeau": "Après le city stade de la Plaine Yann-Fañch (démonté en 2025), c'est celui du CoSEC Éric Tabarly qui est dans le viseur. Un deuxième équipement sportif de proximité pour les adolescents supprimé en moins de deux ans — sans solution de remplacement annoncée.",
+      "ce_quon_sait": [
+        "Le CoSEC Éric Tabarly est le principal complexe omnisports de Bruz",
+        "Le city stade du CoSEC accueille notamment des entraînements de tennis de table (ALB Bruz)",
+        "En 2025, le city stade de la Plaine Yann-Fañch a déjà été démoli lors de la rénovation (D08)",
+        "Fabrice Jan est délégué au sport depuis mars 2026 — interlocuteur pour les équipements jeunesse"
+      ],
+      "qui_decide": [
+        {
+          "nom": "Services techniques de la mairie",
+          "role": "Gestion et programmation des équipements sportifs"
+        },
+        {
+          "nom": "Fabrice Jan (Bruz)",
+          "role": "Délégué au sport depuis mars 2026"
+        }
+      ],
+      "decisions": [],
+      "ce_quon_suit": [
+        "La décision officielle sur l'avenir du city stade du CoSEC",
+        "Un équipement de remplacement est-il prévu — où, quand, pour qui ?",
+        "Budget sport 2026-2027 : ligne dédiée aux équipements de proximité jeunesse ?",
+        "Le schéma directeur des équipements sportifs du mandat"
+      ],
+      "sources": [],
+      "actus_recentes": [],
+      "promesses_liees": []
+    },
+    {
+      "id": "D13",
+      "titre": "Canicule à Bruz : la commune est-elle prête ?",
+      "categorie": "Environnement",
+      "statut": "en_cours",
+      "featured": false,
+      "last_activity": "2026-06-21",
+      "date_ouverture": "2026-06-21",
+      "chapeau": "Avec des étés de plus en plus chauds, Bruz doit adapter ses équipements, ses espaces publics et son plan de crise. Îlots de fraîcheur, populations vulnérables, végétalisation, piscine Conterie, bâtiments communaux : ce que la commune fait — et ce qu'elle ne fait pas encore.",
+      "ce_quon_sait": [
+        "La France connaît des canicules de plus en plus fréquentes et intenses depuis 2003",
+        "Les communes ont l'obligation d'activer un plan canicule (ORSAN) en cas de vigilance météo",
+        "Bruz dispose de la piscine de la Conterie comme équipement rafraîchissant — mais son avenir est incertain (D06)",
+        "La médiathèque et certains équipements communaux climatisés peuvent servir d'îlots de fraîcheur",
+        "La végétalisation des espaces publics est un levier de long terme — aucun plan chiffré annoncé à Bruz",
+        "Les personnes âgées et les jeunes enfants sont les plus exposés — Bruz a un tissu associatif actif"
+      ],
+      "qui_decide": [
+        {
+          "nom": "Mairie de Bruz",
+          "role": "Active le plan canicule communal, gère les équipements"
+        },
+        {
+          "nom": "Préfecture d'Ille-et-Vilaine",
+          "role": "Déclenche les niveaux de vigilance (Météo-France)"
+        },
+        {
+          "nom": "CCAS de Bruz",
+          "role": "Suivi des personnes vulnérables — registre communal"
+        }
+      ],
+      "decisions": [],
+      "ce_quon_suit": [
+        "Le plan canicule communal est-il à jour et publié ?",
+        "Les îlots de fraîcheur identifiés et communiqués aux habitants",
+        "La végétalisation des rues et espaces publics — programme pluriannuel ?",
+        "La climatisation des bâtiments scolaires — quelle priorité dans le budget ?",
+        "Le sort de la piscine Conterie (D06) : fermeture = moins de capacité rafraîchissement"
+      ],
+      "sources": [
+        {
+          "label": "Plan national canicule — Santé publique France",
+          "url": "https://www.santepubliquefrance.fr/determinants-de-sante/climat/fortes-chaleurs-et-canicule"
+        }
+      ],
+      "actus_recentes": [
+        {
+          "date": "2026-06-21",
+          "titre": "Vigilance canicule — que propose Bruz à ses habitants ?",
+          "detail": "Avec les premières chaleurs de l'été 2026, la question de la préparation de Bruz aux épisodes caniculaires se pose. Médiathèque, piscine Conterie, espaces verts : l'inventaire des ressources disponibles — et des manques.",
+          "source_url": null,
+          "source_label": "Bruz en Action"
+        }
+      ],
       "promesses_liees": []
     }
   ]
