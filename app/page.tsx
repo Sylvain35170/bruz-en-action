@@ -68,7 +68,7 @@ export default function Home() {
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 12, paddingBottom: 32, borderBottom: "1px solid rgba(255,255,255,0.1)" }}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src={LOGO} alt={association.nom} width={160} height={50} style={{ objectFit: "contain", background: "rgba(255,255,255,0.92)", borderRadius: 8, padding: "4px 10px" }} />
-            <div style={{ display: "flex", gap: 16, alignItems: "center", flexWrap: "wrap" }}>
+            <div className="bea-nav-links" style={{ display: "flex", gap: 16, alignItems: "center", flexWrap: "wrap" }}>
               <a href="/bruz-en-action/dossiers" style={{ fontSize: 13, color: "rgba(255,255,255,0.75)", fontWeight: 600, textDecoration: "none" }}>📁 Dossiers</a>
               <a href="/bruz-en-action/conseils" style={{ fontSize: 13, color: "rgba(255,255,255,0.75)", fontWeight: 600, textDecoration: "none" }}>🏛️ Conseils</a>
               <a href="/bruz-en-action/promesses" style={{ fontSize: 13, color: "rgba(255,255,255,0.75)", fontWeight: 600, textDecoration: "none" }}>✅ Promesses</a>

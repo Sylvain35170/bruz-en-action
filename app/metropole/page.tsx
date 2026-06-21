@@ -76,7 +76,7 @@ export default function MetropolePage() {
               { n: dossiers.filter(d => d.actus_recentes.length > 0).length, label: "Avec actus récentes", color: "#0284c7" },
               { n: dossiers.reduce((acc, d) => acc + d.lien_dossiers_communaux.length, 0), label: "Liens avec dossiers Bruz", color: "#7c3aed" },
             ].map(({ n, label, color }) => (
-              <div key={label} style={{ background: "rgba(255,255,255,0.08)", border: "1px solid rgba(255,255,255,0.12)", borderRadius: 10, padding: "12px 18px", textAlign: "center" }}>
+              <div key={label} style={{ background: "rgba(255,255,255,0.08)", border: "1px solid rgba(255,255,255,0.12)", borderRadius: 10, padding: "12px 18px", textAlign: "center", minWidth: 90 }}>
                 <div style={{ fontSize: 24, fontWeight: 900, color }}>{n}</div>
                 <div style={{ fontSize: 11, color: "rgba(255,255,255,0.6)", textTransform: "uppercase", letterSpacing: "0.06em", marginTop: 2 }}>{label}</div>
               </div>

@@ -103,7 +103,7 @@ function SvgBarChart({ g }: { g: Graphique }) {
 }
 
 function SvgHorizontalBarChart({ g }: { g: Graphique }) {
-  const ROW_H = 40, PAD_L = 190, PAD_R = 50, BAR_MAX_W = 280;
+  const ROW_H = 40, PAD_L = 130, PAD_R = 50, BAR_MAX_W = 240;
   const svgH = g.donnees.length * ROW_H + 20;
   const max = Math.max(...g.donnees.map(d => d.valeur));
   return (
@@ -227,7 +227,7 @@ export default async function DossierPage({ params }: { params: Promise<{ id: st
       )}
 
       <main style={{ flex: 1 }}>
-        <div style={{ maxWidth: 1120, margin: "0 auto", padding: "40px 24px", display: "grid", gridTemplateColumns: "1fr minmax(0, 280px)", gap: 48, alignItems: "start" }}>
+        <div style={{ maxWidth: 1120, margin: "0 auto", padding: "40px 24px", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 600px), 1fr))", gap: 48, alignItems: "start" }}>
 
           {/* Colonne principale */}
           <div>
