@@ -76,6 +76,7 @@ export default function Home() {
               <a href="/bruz-en-action/carte" style={{ fontSize: 13, color: "rgba(255,255,255,0.75)", fontWeight: 600, textDecoration: "none" }}>🗺️ Carte</a>
               <a href="/bruz-en-action/interagir" style={{ fontSize: 13, color: "rgba(255,255,255,0.75)", fontWeight: 600, textDecoration: "none" }}>💬 Interagir</a>
               <a href="/bruz-en-action/chronologie" style={{ fontSize: 13, color: "rgba(255,255,255,0.75)", fontWeight: 600, textDecoration: "none" }}>🕐 Chronologie</a>
+              <a href="/bruz-en-action/metropole" style={{ fontSize: 13, color: "rgba(255,255,255,0.75)", fontWeight: 600, textDecoration: "none" }}>🏙️ Métropole</a>
               {hasSocial && reseaux_sociaux.facebook && (
                 <a href={reseaux_sociaux.facebook} target="_blank" rel="noopener noreferrer" style={{ fontSize: 13, color: "rgba(255,255,255,0.6)", textDecoration: "none" }}>Facebook</a>
               )}
@@ -433,6 +434,7 @@ export default function Home() {
                   { href: "/bruz-en-action/elus", label: "👥 Élus 2026-2032" },
                   { href: "/bruz-en-action/carte", label: "🗺️ Carte de Bruz" },
                   { href: "/bruz-en-action/chronologie", label: "🕐 Chronologie" },
+                  { href: "/bruz-en-action/metropole", label: "🏙️ Rennes Métropole" },
                 ].map(({ href, label }) => (
                   <a key={href} href={href} style={{ fontSize: 13, color: "rgba(255,255,255,0.55)", textDecoration: "none" }}>{label}</a>
                 ))}

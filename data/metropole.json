@@ -1,0 +1,231 @@
+{
+  "meta": {
+    "last_updated": "2026-06-21",
+    "version": "1.0",
+    "description": "Dossiers sur les décisions de Rennes Métropole qui impactent Bruz"
+  },
+  "dossiers": [
+    {
+      "id": "M01",
+      "titre": "T4 Trambus : ce que Rennes Métropole impose à Bruz",
+      "categorie": "Mobilités",
+      "statut": "en_cours",
+      "featured": true,
+      "last_activity": "2026-06-21",
+      "lien_dossiers_communaux": ["D01"],
+      "chapeau": "Le T4 est une décision métropolitaine — Bruz ne vote pas le tracé. Rennes Métropole impose le terminus, la densité de Ker Lann, et le calendrier. Ce que la commune peut faire : négocier. Ce qu'elle doit faire : s'adapter.",
+      "ce_quon_sait": [
+        "Budget total T4 estimé à ~530 M€ — financement État, Région, Métropole, communes",
+        "Tracé via Ker Lann validé par le Conseil Métropolitain en février 2026",
+        "Mise en service prévue 2031 — terminus à la gare de Bruz ou en centre-ville selon la décision finale",
+        "Rennes Métropole impose 60 logements/ha sur le secteur Ker Lann (ZAC Multisites)",
+        "La participation financière de Bruz au T4 n'a pas été communiquée publiquement"
+      ],
+      "qui_decide": [
+        { "nom": "Conseil Métropolitain de Rennes", "role": "Maître d'ouvrage du T4 — tracé, financement, calendrier" },
+        { "nom": "SNCF Réseau / État", "role": "Co-financement et approbation du projet" },
+        { "nom": "Mairie de Bruz", "role": "Négociation du terminus — pas de droit de veto sur le tracé" }
+      ],
+      "decisions": [
+        {
+          "date": "2026-02-05",
+          "description": "Conseil Métropolitain : validation du tracé T4 via Ker Lann — densité 60 lgts/ha imposée",
+          "source_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1012938/b6b1dc7396fa9a9946d085d957775ce4477276f63f188b960bb4886c785ccce2.pdf"
+        }
+      ],
+      "ce_quon_suit": [
+        "La décision finale sur le terminus (gare vs centre-ville de Bruz)",
+        "La part de financement communal de Bruz dans le T4",
+        "L'avancement du projet et les étapes d'enquête publique",
+        "Les impacts sur la ZAC Multisites (densité imposée secteur Ker Lann)"
+      ],
+      "sources": [
+        { "label": "Mégalis — délibération T4 Ker Lann", "url": "https://data.megalis.bretagne.bzh/organization/commune-de-bruz" },
+        { "label": "Rennes Métropole — projet T4", "url": "https://metropole.rennes.fr/" }
+      ],
+      "actus_recentes": [
+        {
+          "date": "2026-02-05",
+          "titre": "Tracé T4 via Ker Lann validé — 60 logements/ha imposés à Bruz",
+          "detail": "Le Conseil Métropolitain valide le tracé passant par Ker Lann. Conséquence directe : Rennes Métropole impose une densité de 60 lgts/ha sur ce secteur de la ZAC Multisites.",
+          "source_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1012938/b6b1dc7396fa9a9946d085d957775ce4477276f63f188b960bb4886c785ccce2.pdf",
+          "source_label": "Mégalis Bretagne"
+        }
+      ]
+    },
+    {
+      "id": "M02",
+      "titre": "PLUiH : les règles d'urbanisme que Rennes Métropole impose à Bruz",
+      "categorie": "Urbanisme",
+      "statut": "en_cours",
+      "featured": true,
+      "last_activity": "2026-06-21",
+      "lien_dossiers_communaux": ["D02"],
+      "chapeau": "Le Plan Local d'Urbanisme intercommunal et de l'Habitat (PLUiH) fixe ce qu'on peut construire où, à quelle densité, et avec quelle mixité sociale. C'est Rennes Métropole qui décide — pas Bruz. Sa révision en cours va redéfinir l'avenir du territoire pour dix ans.",
+      "ce_quon_sait": [
+        "Le PLUiH de Rennes Métropole s'applique à toutes les communes du territoire, dont Bruz",
+        "Il définit les zones constructibles, les densités autorisées, les espaces naturels protégés",
+        "Une révision est en cours depuis 2024 pour intégrer les objectifs du ZAN (Zéro Artificialisation Nette)",
+        "Le PLH (Programme Local de l'Habitat) intégré fixe les objectifs de logements sociaux par commune",
+        "Bruz est concernée par les densités imposées à Ker Lann dans le cadre du T4"
+      ],
+      "qui_decide": [
+        { "nom": "Conseil Métropolitain de Rennes", "role": "Vote le PLUiH et ses révisions" },
+        { "nom": "Communes membres", "role": "Consultées — mais la décision finale appartient à la Métropole" },
+        { "nom": "État (Préfecture)", "role": "Contrôle de légalité — vérifie la conformité avec les lois nationales (SRU, ZAN...)" }
+      ],
+      "decisions": [
+        {
+          "date": "2024",
+          "description": "Lancement de la révision du PLUiH pour intégrer les objectifs ZAN (Zéro Artificialisation Nette)",
+          "source_url": "https://metropole.rennes.fr/"
+        }
+      ],
+      "ce_quon_suit": [
+        "Le calendrier de la révision PLUiH et la date de vote au Conseil Métropolitain",
+        "Les nouvelles densités imposées à Bruz, notamment sur les secteurs ZAC",
+        "Les objectifs de logements sociaux (quota SRU) pour Bruz dans le PLH",
+        "Les zones naturelles ou agricoles protégées autour de Bruz"
+      ],
+      "sources": [
+        { "label": "Rennes Métropole — PLUiH", "url": "https://metropole.rennes.fr/" }
+      ],
+      "actus_recentes": []
+    },
+    {
+      "id": "M03",
+      "titre": "Incinérateur de Villejean : un scandale qui concerne aussi Bruz",
+      "categorie": "Environnement",
+      "statut": "en_cours",
+      "featured": true,
+      "last_activity": "2026-06-21",
+      "lien_dossiers_communaux": [],
+      "chapeau": "L'unité d'incinération des ordures ménagères (UIOM) de Villejean, gérée par Rennes Métropole, fait l'objet de controverses sur ses émissions et leur impact sur la santé des riverains. Bruz est dans le périmètre d'influence. Ce que la mairie fait — ou ne fait pas.",
+      "ce_quon_sait": [
+        "L'UIOM de Villejean est gérée par Rennes Métropole — les déchets de Bruz y sont traités",
+        "Des associations de riverains et de défense de l'environnement ont alerté sur les émissions (dioxines, métaux lourds)",
+        "La compétence traitement des déchets appartient à Rennes Métropole — Bruz ne peut pas y mettre fin seule",
+        "Le bilan annuel des émissions est publié par l'exploitant — soumis à arrêté préfectoral",
+        "Des alternatives à l'incinération (méthanisation, compostage) existent mais nécessitent des investissements lourds"
+      ],
+      "qui_decide": [
+        { "nom": "Rennes Métropole", "role": "Autorité organisatrice du traitement des déchets — finance et supervise l'UIOM" },
+        { "nom": "Préfecture d'Ille-et-Vilaine", "role": "Autorisation d'exploiter et contrôle des normes d'émissions (ICPE)" },
+        { "nom": "Mairie de Bruz", "role": "Peut interpeller la Métropole — représentants de Bruz au Conseil Métropolitain peuvent voter des évolutions" }
+      ],
+      "decisions": [],
+      "ce_quon_suit": [
+        "Les résultats des contrôles annuels d'émissions de l'UIOM de Villejean",
+        "Toute délibération métropolitaine sur l'avenir de l'incinérateur ou les alternatives",
+        "La position des représentants de Bruz au Conseil Métropolitain sur ce sujet",
+        "Les études épidémiologiques dans le périmètre d'influence (dont Bruz)"
+      ],
+      "sources": [
+        { "label": "Rennes Métropole — collecte et traitement déchets", "url": "https://metropole.rennes.fr/" },
+        { "label": "DREAL Bretagne — installations classées (ICPE)", "url": "https://www.bretagne.developpement-durable.gouv.fr/" }
+      ],
+      "actus_recentes": []
+    },
+    {
+      "id": "M04",
+      "titre": "Métro de Rennes : fiabilité, pannes et financement — ce que ça coûte à Bruz",
+      "categorie": "Mobilités",
+      "statut": "en_cours",
+      "featured": false,
+      "last_activity": "2026-06-21",
+      "lien_dossiers_communaux": ["D01"],
+      "chapeau": "Le réseau métro de Rennes (lignes A et B) connaît des problèmes de fiabilité récurrents. Ses déficits de fonctionnement sont financés par Rennes Métropole — dont Bruz est membre contributeur. Et c'est ce même réseau que le T4 doit rejoindre en 2031.",
+      "ce_quon_sait": [
+        "Rennes dispose de deux lignes de métro automatiques (A et B) exploitées par STAR (Keolis)",
+        "Des incidents de fiabilité ont été rapportés à plusieurs reprises — arrêts prolongés, pannes",
+        "Le coût du réseau STAR est financé en partie par le versement mobilité des entreprises et en partie par la Métropole",
+        "Bruz contribue au financement du réseau STAR via sa participation à Rennes Métropole",
+        "Le T4 (trambus) doit s'interconnecter avec le métro en 2031 — la fiabilité du métro conditionne l'attractivité du T4"
+      ],
+      "qui_decide": [
+        { "nom": "Rennes Métropole", "role": "Autorité organisatrice des transports — finance et supervise le réseau STAR" },
+        { "nom": "Keolis (STAR)", "role": "Exploitant délégué du réseau métro et bus" },
+        { "nom": "Conseil Métropolitain", "role": "Vote le budget transport et les investissements sur le réseau" }
+      ],
+      "decisions": [],
+      "ce_quon_suit": [
+        "Les rapports de fiabilité du métro publiés par STAR et Rennes Métropole",
+        "Le coût annuel du réseau STAR et la part financée par les communes membres",
+        "Les investissements prévus pour améliorer la fiabilité des deux lignes",
+        "L'interconnexion prévue T4 ↔ métro en 2031 : quel terminus, quelle fréquence ?"
+      ],
+      "sources": [
+        { "label": "STAR — réseau de transports Rennes Métropole", "url": "https://www.star.fr/" },
+        { "label": "Rennes Métropole — mobilités", "url": "https://metropole.rennes.fr/" }
+      ],
+      "actus_recentes": []
+    },
+    {
+      "id": "M05",
+      "titre": "Eau et assainissement : qui décide du prix et de la qualité à Bruz ?",
+      "categorie": "Services publics",
+      "statut": "en_cours",
+      "featured": false,
+      "last_activity": "2026-06-21",
+      "lien_dossiers_communaux": [],
+      "chapeau": "L'eau potable et l'assainissement ne relèvent plus de la mairie de Bruz depuis le transfert de compétences à Rennes Métropole. Les tarifs, la qualité et les investissements sur les réseaux sont décidés à l'échelle métropolitaine.",
+      "ce_quon_sait": [
+        "La compétence eau potable et assainissement appartient à Rennes Métropole depuis 2020",
+        "Les tarifs de l'eau à Bruz sont fixés par délibération métropolitaine — la mairie n'a plus la main",
+        "La qualité de l'eau fait l'objet de contrôles réglementaires publiés par l'ARS Bretagne",
+        "Les investissements sur les réseaux (canalisations, stations d'épuration) sont programmés par la Métropole",
+        "Bruz étant en expansion démographique, des extensions de réseaux sont à prévoir avec la ZAC Multisites"
+      ],
+      "qui_decide": [
+        { "nom": "Rennes Métropole", "role": "Fixe les tarifs, programme les investissements, supervise la qualité" },
+        { "nom": "ARS Bretagne", "role": "Contrôle réglementaire de la qualité de l'eau potable" },
+        { "nom": "Mairie de Bruz", "role": "Peut interpeller la Métropole — mais n'a plus de compétence directe sur l'eau" }
+      ],
+      "decisions": [],
+      "ce_quon_suit": [
+        "Les délibérations métropolitaines sur les tarifs de l'eau applicables à Bruz",
+        "Les investissements sur les réseaux dans le secteur de Bruz (ZAC Multisites, Ker Lann)",
+        "Les résultats des contrôles qualité eau publiés par l'ARS",
+        "Le bilan de la station d'épuration desservant Bruz"
+      ],
+      "sources": [
+        { "label": "ARS Bretagne — qualité eau potable", "url": "https://www.bretagne.ars.sante.fr/" },
+        { "label": "Rennes Métropole — eau et assainissement", "url": "https://metropole.rennes.fr/" }
+      ],
+      "actus_recentes": []
+    },
+    {
+      "id": "M06",
+      "titre": "Représentants de Bruz au Conseil Métropolitain : qui vote quoi ?",
+      "categorie": "Gouvernance",
+      "statut": "en_cours",
+      "featured": false,
+      "last_activity": "2026-06-21",
+      "lien_dossiers_communaux": [],
+      "chapeau": "Bruz dispose de plusieurs sièges au Conseil Métropolitain de Rennes. Ces élus votent des décisions qui impactent directement les Bruzois — T4, PLUiH, eau, déchets. Qui sont-ils et comment votent-ils ?",
+      "ce_quon_sait": [
+        "Bruz dispose de représentants au Conseil Métropolitain — leur nombre est fonction de la population communale",
+        "Ces élus votent les grandes décisions métropolitaines (T4, PLUiH, budget, tarifs eau...)",
+        "Les comptes-rendus du Conseil Métropolitain sont publics sur le site de Rennes Métropole",
+        "Les votes nominatifs ne sont pas systématiquement mis en avant dans la communication de la Métropole",
+        "Jean-René Houssin (maire) siège probablement au Conseil Métropolitain de droit"
+      ],
+      "qui_decide": [
+        { "nom": "Conseil Métropolitain de Rennes", "role": "Organe délibérant de Rennes Métropole — 43 communes membres" },
+        { "nom": "Représentants de Bruz", "role": "Élus Bruzois siégeant au Conseil — voix de la commune à l'échelle métropolitaine" }
+      ],
+      "decisions": [],
+      "ce_quon_suit": [
+        "L'identité exacte des représentants de Bruz au Conseil Métropolitain et leurs délégations",
+        "Leurs votes sur les sujets qui concernent directement Bruz (T4, PLUiH, eau, déchets)",
+        "Toute prise de position publique des élus Bruzois sur les dossiers métropolitains",
+        "Les commissions métropolitaines auxquelles siègent les représentants de Bruz"
+      ],
+      "sources": [
+        { "label": "Rennes Métropole — Conseil Métropolitain", "url": "https://metropole.rennes.fr/" },
+        { "label": "Mégalis — délibérations Rennes Métropole", "url": "https://data.megalis.bretagne.bzh/" }
+      ],
+      "actus_recentes": []
+    }
+  ]
+}

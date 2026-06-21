@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import dossiers from "@/data/dossiers.json";
 import promessesData from "@/data/promesses.json";
 import cmsData from "@/data/cms.json";
+import metropoleData from "@/data/metropole.json";
 
 export const dynamic = "force-static";
 
@@ -17,6 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/carte`, priority: 0.6, changeFrequency: "monthly" },
     { url: `${BASE}/interagir`, priority: 0.6, changeFrequency: "monthly" },
     { url: `${BASE}/metro`, priority: 0.7, changeFrequency: "weekly" },
+    { url: `${BASE}/metropole`, priority: 0.9, changeFrequency: "weekly" },
     { url: `${BASE}/liens`, priority: 0.5, changeFrequency: "monthly" },
     { url: `${BASE}/chronologie`, priority: 0.8, changeFrequency: "weekly" },
   ];
@@ -41,5 +43,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: s.date,
   }));
 
-  return [...staticRoutes, ...dossierRoutes, ...promesseRoutes, ...cmRoutes];
+  const metropoleRoutes: MetadataRoute.Sitemap = metropoleData.dossiers.map((d) => ({
+    url: `${BASE}/metropole/${d.id}`,
+    priority: d.featured ? 0.8 : 0.6,
+    changeFrequency: "weekly" as const,
+    lastModified: d.last_activity,
+  }));
+
+  return [...staticRoutes, ...dossierRoutes, ...promesseRoutes, ...cmRoutes, ...metropoleRoutes];
 }
