@@ -62,6 +62,7 @@ export default function SiteFooter() {
               { href: "/bruz-en-action/elus", label: "Élus" },
               { href: "/bruz-en-action/carte", label: "Carte" },
               { href: "/bruz-en-action/interagir", label: "Interagir" },
+              { href: "/bruz-en-action/chronologie", label: "Chronologie" },
             ].map(({ href, label }) => (
               <a key={href} href={href}
                 style={{ fontSize: 13, color: "rgba(255,255,255,0.5)", textDecoration: "none" }}>
