@@ -24,7 +24,7 @@ const SECTIONS = [
     liens: [
       { label: "Site officiel", url: "https://www.ville-bruz.fr/", desc: "Actualités, services, agenda" },
       { label: "Conseil municipal — délibérations", url: "https://www.ville-bruz.fr/ma-ville-de-bruz/conseil-municipal/conseil-municipal/", desc: "Comptes-rendus et délibérations officielles" },
-      { label: "Bruz Mag", url: "https://www.ville-bruz.fr/bruz-mag/", desc: "Magazine municipal bimestriel" },
+      { label: "Bruz Mag & Bulletins municipaux", url: "https://www.ville-bruz.fr/ma-ville-de-bruz/bulletins-municipaux/", desc: "Télécharger les PDFs du magazine municipal bimestriel" },
       { label: "Agenda", url: "https://www.ville-bruz.fr/mes-loisirs/agenda/", desc: "Événements et manifestations" },
       { label: "Facebook Ville de Bruz", url: "https://www.facebook.com/villedebruz", desc: "Page officielle de la mairie" },
       { label: "Facebook Jean-René Houssin", url: "https://www.facebook.com/jeanrene.houssin/", desc: "Profil du maire" },

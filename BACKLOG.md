@@ -10,7 +10,6 @@
 
 ## 🟡 À faire — Agents de veille
 
-- [ ] **Bruz Mag URL** — URL de téléchargement PDF absente de la nav mairie ; en attendant couvert par Google News RSS
 
 ## 🟡 À faire — Dossiers à instruire
 
