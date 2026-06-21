@@ -13,7 +13,6 @@
 
 ## 🟡 À faire — Dossiers à instruire
 
-- [ ] **D07 en profondeur** — Sécurité / Police municipale
 - [ ] **D10 en profondeur** — Écoles + Vert-Buisson
 - [ ] **D12** — City stade CoSEC : instruire (décision, remplacement ?)
 - [ ] **D13** — Canicule : plan municipal, îlots de fraîcheur
