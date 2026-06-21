@@ -10,3 +10,9 @@ __pycache__/
 *.pyc
 *.pyo
 out/
+tsconfig.tsbuildinfo
+public/file.svg
+public/globe.svg
+public/next.svg
+public/vercel.svg
+public/window.svg

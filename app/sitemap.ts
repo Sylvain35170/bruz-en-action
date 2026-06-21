@@ -3,6 +3,8 @@ import dossiers from "@/data/dossiers.json";
 import promessesData from "@/data/promesses.json";
 import cmsData from "@/data/cms.json";
 
+export const dynamic = "force-static";
+
 const BASE = "https://sylvain35170.github.io/bruz-en-action";
 
 export default function sitemap(): MetadataRoute.Sitemap {
