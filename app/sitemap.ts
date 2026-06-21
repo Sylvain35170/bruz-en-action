@@ -16,6 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/interagir`, priority: 0.6, changeFrequency: "monthly" },
     { url: `${BASE}/metro`, priority: 0.7, changeFrequency: "weekly" },
     { url: `${BASE}/liens`, priority: 0.5, changeFrequency: "monthly" },
+    { url: `${BASE}/chronologie`, priority: 0.8, changeFrequency: "weekly" },
   ];
 
   const dossierRoutes: MetadataRoute.Sitemap = dossiers.dossiers.map((d) => ({
