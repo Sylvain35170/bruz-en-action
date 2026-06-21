@@ -6,7 +6,7 @@ import SiteFooter from "../../../../components/SiteFooter";
 const LOGO = "/bruz-en-action/logo.png";
 
 // Seuls les dossiers avec une page "En profondeur" sont listés ici
-const EN_PROFONDEUR_IDS = ["D01", "D02", "D03"];
+const EN_PROFONDEUR_IDS = ["D01", "D02", "D03", "D07"];
 
 export function generateStaticParams() {
   return EN_PROFONDEUR_IDS.map(id => ({ id }));
@@ -103,6 +103,14 @@ export default async function EnProfondeurPage({ params }: { params: Promise<{ i
               Voici les vraies questions — sur les écoles, la densité, les équipements — et ce qu'on va surveiller.
             </p>
           </>)}
+          {id === "D07" && (<>
+            <h1 style={{ fontSize: "clamp(1.4rem, 3vw, 2.2rem)", fontWeight: 800, lineHeight: 1.2, margin: "0 0 16px", maxWidth: 720, color: "#fff" }}>
+              Sécurité à Bruz : gendarmerie, police municipale et caméras — qui fait quoi, et qu'est-ce qui va changer ?
+            </h1>
+            <p style={{ fontSize: 16, lineHeight: 1.75, color: "rgba(255,255,255,0.75)", maxWidth: 680, margin: 0 }}>
+              Le programme Houssin promet un renforcement de la police municipale. Mais que peut vraiment faire une PM dans une commune sous régime de gendarmerie ? Et la vidéosurveillance, c'est pour quand ?
+            </p>
+          </>)}
           {id === "D03" && (<>
             <h1 style={{ fontSize: "clamp(1.4rem, 3vw, 2.2rem)", fontWeight: 800, lineHeight: 1.2, margin: "0 0 16px", maxWidth: 720, color: "#fff" }}>
               Les finances de Bruz : ce que tout citoyen devrait savoir avant le CM du 3 juillet
@@ -117,6 +125,152 @@ export default async function EnProfondeurPage({ params }: { params: Promise<{ i
 
       <main style={{ flex: 1 }}>
         <div style={{ maxWidth: 860, margin: "0 auto", padding: "48px 24px" }}>
+
+        {/* ── CONTENU D07 ── */}
+        {id === "D07" && (<>
+
+          <section style={{ marginBottom: 48 }}>
+            <SectionTitle>Qui s'occupe de la sécurité à Bruz ?</SectionTitle>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px,1fr))", gap: 14, marginBottom: 24 }}>
+              {[
+                { icon: "🎖️", label: "Gendarmerie nationale", detail: "Compétence principale : police judiciaire, sécurité routière, enquêtes, interventions d'urgence. Bruz dépend du groupement de gendarmerie d'Ille-et-Vilaine. L'État paie, l'État décide des effectifs.", couleur: "#1d4ed8" },
+                { icon: "🚔", label: "Police municipale (PM)", detail: "Compétence communale : stationnement, tranquillité publique, arrêtés du maire, présence préventive. Effectifs et équipements décidés et financés par la commune. Le maire est l'autorité de police.", couleur: "#e84d0e" },
+                { icon: "📞", label: "CCAS & médiation", detail: "Prévention sociale, accompagnement des personnes vulnérables, médiation de quartier. Complémentaire aux forces de l'ordre — souvent plus efficace sur les incivilités du quotidien.", couleur: "#059669" },
+              ].map(({ icon, label, detail, couleur }) => (
+                <div key={label} style={{ background: "#fff", border: "1px solid #e2e8f0", borderLeft: `3px solid ${couleur}`, borderRadius: 10, padding: "18px 20px" }}>
+                  <div style={{ display: "flex", gap: 10, alignItems: "center", marginBottom: 10 }}>
+                    <span style={{ fontSize: 20 }}>{icon}</span>
+                    <span style={{ fontSize: 14, fontWeight: 700, color: "#0f172a" }}>{label}</span>
+                  </div>
+                  <div style={{ fontSize: 13, color: "#64748b", lineHeight: 1.6 }}>{detail}</div>
+                </div>
+              ))}
+            </div>
+            <p style={{ fontSize: 13, color: "#94a3b8", margin: 0 }}>
+              Conséquence pratique : la commune peut renforcer sa PM, mais elle ne peut pas augmenter les effectifs de gendarmerie — c'est une décision de l'État.
+            </p>
+          </section>
+
+          <section style={{ marginBottom: 48 }}>
+            <SectionTitle>Ce que la PM peut faire — et ce qu'elle ne peut pas</SectionTitle>
+            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 14 }}>
+              <div style={{ background: "#f0fdf4", border: "1px solid #bbf7d0", borderRadius: 10, padding: "18px 20px" }}>
+                <div style={{ fontSize: 13, fontWeight: 700, color: "#059669", marginBottom: 12, textTransform: "uppercase", letterSpacing: "0.06em" }}>✓ Ce qu'elle peut faire</div>
+                {["Verbaliser le stationnement illicite", "Contrôler les débits de boissons", "Relever les infractions au code de la route (certaines)", "Faire respecter les arrêtés municipaux (bruit, propreté)", "Présence préventive dans les quartiers", "Assistance aux opérations de police judiciaire (sous autorité gendarmerie)"].map(item => (
+                  <div key={item} style={{ fontSize: 13, color: "#334155", lineHeight: 1.6, padding: "4px 0", borderBottom: "1px solid #d1fae5" }}>{item}</div>
+                ))}
+              </div>
+              <div style={{ background: "#fef2f2", border: "1px solid #fecaca", borderRadius: 10, padding: "18px 20px" }}>
+                <div style={{ fontSize: 13, fontWeight: 700, color: "#dc2626", marginBottom: 12, textTransform: "uppercase", letterSpacing: "0.06em" }}>✗ Ce qu'elle ne peut pas faire</div>
+                {["Conduire des enquêtes judiciaires", "Procéder à des gardes à vue", "Intervenir sur les crimes et délits (réservé gendarmerie)", "Augmenter les patrouilles de nuit sans budget dédié", "Décider seule d'installer des caméras (vote CM requis)"].map(item => (
+                  <div key={item} style={{ fontSize: 13, color: "#334155", lineHeight: 1.6, padding: "4px 0", borderBottom: "1px solid #fecaca" }}>{item}</div>
+                ))}
+              </div>
+            </div>
+          </section>
+
+          <section style={{ marginBottom: 48 }}>
+            <SectionTitle>La promesse de renforcement — où en est-on ?</SectionTitle>
+            <InfoBox icon="📋" titre="Ce qui était promis">
+              Le programme « Un nouvel élan pour Bruz » mentionne un renforcement de la police municipale. La délégation sécurité a été attribuée à un élu au CM d'avril 2026. C'est le premier acte — le reste n'est pas encore annoncé.
+            </InfoBox>
+            <InfoBox icon="❓" titre="Ce qu'on ne sait pas">
+              Les effectifs actuels de la PM de Bruz ne sont <strong>pas publiés</strong>. On ne sait pas combien d'agents sont en poste, quels sont leurs horaires de patrouille, ni quel est le budget PM dans les comptes 2026. Sans base de référence, impossible de mesurer un « renforcement ».
+            </InfoBox>
+            <InfoBox icon="🔍" titre="Ce qu'on attend">
+              Une délibération précise : X agents supplémentaires, budget alloué, calendrier de recrutement, périmètre d'intervention élargi. Sans ça, le « renforcement » reste une intention sans contenu mesurable.
+            </InfoBox>
+          </section>
+
+          <section style={{ marginBottom: 48 }}>
+            <SectionTitle>La vidéosurveillance : un débat qui arrive</SectionTitle>
+            <p style={{ fontSize: 14, color: "#475569", lineHeight: 1.7, marginBottom: 20 }}>
+              Plusieurs communes voisines ont investi dans des systèmes de vidéoprotection. À Bruz, aucune délibération n'a encore été votée. C'est un sujet qui divise — voici les arguments des deux côtés.
+            </p>
+            <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+              {[
+                { camp: "Arguments pour", items: ["Effet dissuasif reconnu sur les incivilités et dégradations", "Aide à l'élucidation des faits après coup (preuve judiciaire)", "Sentiment de sécurité pour certains habitants et commerçants", "Coût amorti sur 10 ans si bien dimensionné"], couleur: "#059669", bg: "#f0fdf4", border: "#bbf7d0" },
+                { camp: "Arguments contre", items: ["Coût d'installation et maintenance élevé (dizaines de milliers €/caméra)", "Efficacité préventive contestée par plusieurs études", "Impact sur les libertés individuelles — encadrement légal strict (CNIL, CSI)", "Risque de déplacement des délits vers des zones non couvertes"], couleur: "#dc2626", bg: "#fef2f2", border: "#fecaca" },
+              ].map(({ camp, items, couleur, bg, border }) => (
+                <div key={camp} style={{ background: bg, border: `1px solid ${border}`, borderRadius: 10, padding: "16px 20px" }}>
+                  <div style={{ fontSize: 13, fontWeight: 700, color: couleur, marginBottom: 10 }}>{camp}</div>
+                  {items.map(item => <div key={item} style={{ fontSize: 13, color: "#334155", lineHeight: 1.7, paddingLeft: 12, borderLeft: `2px solid ${border}`, marginBottom: 6 }}>{item}</div>)}
+                </div>
+              ))}
+            </div>
+            <p style={{ fontSize: 13, color: "#94a3b8", marginTop: 16 }}>
+              Si la mairie souhaite installer des caméras, cela nécessitera une délibération du conseil municipal, une autorisation préfectorale et un avis de la CNIL. Ce sera un moment de débat public.
+            </p>
+          </section>
+
+          <section style={{ marginBottom: 48 }}>
+            <SectionTitle>Les questions citoyennes</SectionTitle>
+            <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
+              {[
+                { q: "Combien d'agents de PM à Bruz aujourd'hui ?", d: "Non publié. C'est pourtant la base pour évaluer toute promesse de renforcement." },
+                { q: "Quel est le budget PM 2026 ?", d: "Non communiqué dans le budget voté en mars. Une ligne dédiée existe — son montant n'est pas public." },
+                { q: "Quelles sont les plages horaires de patrouille ?", d: "La PM patrouille-t-elle la nuit ? Les week-ends ? Aucune information publique disponible." },
+                { q: "Quels sont les chiffres de délinquance à Bruz ?", d: "Les données du Ministère de l'Intérieur (data.gouv.fr) sont publiques par commune — mais elles n'ont jamais été présentées en CM ni commentées par la mairie." },
+                { q: "Une convention PM-gendarmerie existe-t-elle ?", d: "Les communes peuvent signer des conventions de coordination avec la gendarmerie. Bruz en a-t-elle une ? Avec quel contenu ?" },
+              ].map(({ q, d }, i) => (
+                <div key={i} style={{ background: "#fff", border: "1px solid #e2e8f0", borderLeft: "3px solid #e84d0e", borderRadius: 8, padding: "16px 20px" }}>
+                  <div style={{ fontSize: 14, fontWeight: 700, color: "#0f172a", marginBottom: 6 }}>{q}</div>
+                  <div style={{ fontSize: 13, color: "#64748b", lineHeight: 1.6 }}>{d}</div>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          <section style={{ marginBottom: 48 }}>
+            <div style={{ background: "#fff8f5", border: "1px solid #fed7aa", borderLeft: "4px solid #e84d0e", borderRadius: 12, padding: "24px 28px" }}>
+              <div style={{ fontSize: 11, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.08em", color: "#e84d0e", marginBottom: 10 }}>Notre lecture — position de Bruz en Action</div>
+              <p style={{ margin: "0 0 14px", fontSize: 15, fontWeight: 700, color: "#0f172a", lineHeight: 1.5 }}>
+                Le sentiment de sécurité, ça se construit avec des données — pas des slogans.
+              </p>
+              <p style={{ margin: "0 0 12px", fontSize: 14, color: "#334155", lineHeight: 1.75 }}>
+                Bruz en Action n'a pas de position sur le niveau de sécurité à Bruz — la délinquance est faible comparée aux villes de taille similaire. Mais on a une attente : que les décisions sur la PM et la vidéosurveillance s'appuient sur des données publiques, pas sur un sentiment ou une posture politique.
+              </p>
+              <p style={{ margin: 0, fontSize: 14, color: "#334155", lineHeight: 1.75 }}>
+                Publier les effectifs PM, les chiffres de délinquance en CM, et budgéter clairement le « renforcement » promis — c'est le minimum pour que les Bruzois puissent juger sur pièces.
+              </p>
+            </div>
+          </section>
+
+          <section style={{ marginBottom: 48 }}>
+            <SectionTitle>Ce qu'on va surveiller</SectionTitle>
+            <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+              {[
+                { periode: "CM juillet 2026", description: "Budget PM dans les comptes 2026 — en hausse par rapport à 2025 ?", importance: "haute" },
+                { periode: "2026", description: "Délibération sur les effectifs PM ou le recrutement d'agents supplémentaires.", importance: "haute" },
+                { periode: "2026", description: "Toute délibération sur la vidéoprotection — localisation, coût, autorisation préfectorale.", importance: "haute" },
+                { periode: "2026–2027", description: "Publication des chiffres de délinquance Bruz par le Ministère — en CM ou en communication.", importance: "moyenne" },
+                { periode: "2026–2032", description: "Bilan à mi-mandat : le renforcement promis s'est-il traduit en agents et en présence terrain ?", importance: "neutre" },
+              ].map((item, i) => (
+                <div key={i} style={{ display: "flex", gap: 16, background: "#fff", border: "1px solid #e2e8f0", borderRadius: 10, padding: "14px 18px", alignItems: "flex-start" }}>
+                  <div style={{ flexShrink: 0, minWidth: 100 }}>
+                    <span style={{ fontSize: 12, fontWeight: 800, color: item.importance === "haute" ? "#e84d0e" : "#64748b" }}>{item.periode}</span>
+                  </div>
+                  <div style={{ fontSize: 14, color: "#334155", lineHeight: 1.6 }}>
+                    {item.description}
+                    {item.importance === "haute" && <span style={{ display: "inline-block", marginLeft: 8, fontSize: 10, fontWeight: 700, textTransform: "uppercase", color: "#e84d0e", background: "#fff1ee", padding: "1px 6px", borderRadius: 999 }}>À surveiller</span>}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          <div style={{ borderTop: "1px solid #e2e8f0", paddingTop: 32, display: "flex", gap: 16, alignItems: "center", flexWrap: "wrap" }}>
+            <a href={`/bruz-en-action/dossiers/${id}`}
+              style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "10px 20px", background: "#0f172a", color: "#fff", borderRadius: 999, textDecoration: "none", fontSize: 14, fontWeight: 700 }}>
+              ← Retour au dossier D07
+            </a>
+            <a href="https://www.data.gouv.fr/fr/datasets/crimes-et-delits-enregistres-par-les-services-de-gendarmerie-et-de-police-depuis-2012/" target="_blank" rel="noopener noreferrer"
+              style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "10px 20px", background: "#fff", border: "1px solid #e2e8f0", color: "#0f172a", borderRadius: 999, textDecoration: "none", fontSize: 14, fontWeight: 600 }}>
+              📊 Données délinquance ↗
+            </a>
+          </div>
+
+        </>)}
 
         {/* ── CONTENU D03 ── */}
         {id === "D03" && (<>
