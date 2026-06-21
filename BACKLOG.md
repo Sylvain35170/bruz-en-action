@@ -16,7 +16,6 @@
 - [ ] **D10 en profondeur** — Écoles + Vert-Buisson
 - [ ] **D12** — City stade CoSEC : instruire (décision, remplacement ?)
 - [ ] **D13** — Canicule : plan municipal, îlots de fraîcheur
-- [ ] **Enrichir /metro** — incinérateur Villejan + fiabilité métro Rennes
 - [ ] **Nouveaux dossiers** — Bonnat-Sablat (préemption), travaux Bruz
 
 ## 🟡 À faire — Technique
