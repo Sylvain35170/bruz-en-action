@@ -1,3 +1,7 @@
+# Pipeline éditorial — fichiers locaux, jamais commités
+data/actus_queue.json
+scripts/proposals/
+
 node_modules/
 .next/
 .env*

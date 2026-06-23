@@ -16,7 +16,7 @@ from pathlib import Path
 from xml.etree import ElementTree
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
-from utils import DATA_DIR, fetch, load_json, log, save_json, today, dedup
+from utils import DATA_DIR, fetch, load_json, log, save_json, today, dedup, known_urls, append_to_queue
 
 AGENT_NAME = "presse"
 
@@ -104,8 +104,7 @@ def parse_rss(content: bytes, label: str) -> list[dict]:
 
 
 def run() -> bool:
-    actus_data = load_json(DATA_DIR / "actus.json")
-    existing = {a.get("source_url", "") for a in actus_data.get("actus", [])}
+    existing = known_urls()
     nouvelles = []
 
     # RSS
@@ -160,11 +159,9 @@ def run() -> bool:
         log("Presse : aucune nouvelle publication.", "INFO")
         return False
 
-    actus_data["actus"] = dedup(nouvelles + actus_data.get("actus", []), "source_url")
-    actus_data.setdefault("meta", {})["last_updated"] = today()
-    save_json(DATA_DIR / "actus.json", actus_data)
-    log(f"Presse : {len(nouvelles)} nouvelle(s) actu(s) → actus.json", "OK")
-    return True
+    n = append_to_queue(nouvelles)
+    log(f"Presse : {n} nouvelle(s) actu(s) → queue", "OK")
+    return n > 0
 
 
 if __name__ == "__main__":

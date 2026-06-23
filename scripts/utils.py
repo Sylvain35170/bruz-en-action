@@ -11,6 +11,8 @@ import requests
 
 ROOT = Path(__file__).parent.parent
 DATA_DIR = ROOT / "data"
+QUEUE_FILE = DATA_DIR / "actus_queue.json"
+PROPOSALS_DIR = ROOT / "scripts" / "proposals"
 HEADERS = {"User-Agent": "BruzEnAction-CitoyenBot/1.0 (contact: sylv.bertrand@gmail.com)"}
 
 
@@ -54,6 +56,36 @@ def fetch(url: str, timeout: int = 15) -> requests.Response | None:
     except Exception as e:
         log(f"fetch {url} → {e}", "WARN")
         return None
+
+
+def known_urls() -> set[str]:
+    """URLs déjà connues : actus.json publiées + queue en attente."""
+    actus = load_json(DATA_DIR / "actus.json")
+    queue = load_json(QUEUE_FILE)
+    return (
+        {a.get("source_url", "") for a in actus.get("actus", [])} |
+        {i.get("source_url", "") for i in queue.get("items", [])}
+    )
+
+
+def append_to_queue(new_items: list[dict]) -> int:
+    """Ajoute des items à la queue si non-dupliqués. Retourne le nb ajouté."""
+    queue = load_json(QUEUE_FILE)
+    items = queue.get("items", [])
+    existing = {i.get("source_url", "") for i in items}
+    added = 0
+    for item in new_items:
+        url = item.get("source_url", "")
+        if url and url not in existing:
+            items.append(item)
+            existing.add(url)
+            added += 1
+    if added:
+        QUEUE_FILE.write_text(
+            json.dumps({"items": items, "meta": {"last_updated": today()}},
+                       ensure_ascii=False, indent=2), encoding="utf-8"
+        )
+    return added
 
 
 def git_commit_push(message: str) -> bool:
