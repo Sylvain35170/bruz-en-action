@@ -20,6 +20,7 @@
 
 ## 🟡 À faire — Technique
 
+- [ ] **Config mailer** — créer `~/.bruz-mailer.json` avec App Password Gmail pour activer l'envoi email
 - [ ] **QA sur Archipel** — porter `qa/check-links.mjs` (ou équivalent) sur le projet Archipel
 - [ ] **Images** — remplacer og-image.jpg + footer par vraies photos quand disponibles (events / asso)
 - [ ] **Script import_excel.py** — mise à jour auto des statuts depuis l'Excel
