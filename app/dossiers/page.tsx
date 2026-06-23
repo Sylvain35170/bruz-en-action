@@ -1,8 +1,7 @@
 import dossiersData from "../../data/dossiers.json";
 import metaData from "../../data/meta.json";
+import NavBar from "../../components/NavBar";
 import SiteFooter from "../../components/SiteFooter";
-
-const LOGO = "/bruz-en-action/logo.png";
 
 export const metadata = {
   title: "Dossiers — Bruz en Action",
@@ -58,23 +57,7 @@ export default function DossiersPage() {
       {/* Header */}
       <header style={{ background: "linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%)", color: "#fff" }}>
         <div style={{ maxWidth: 1120, margin: "0 auto", padding: "16px 24px" }}>
-          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-            <a href="/bruz-en-action" style={{ textDecoration: "none" }}>
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={LOGO} alt={association.nom} width={140} height={44} style={{ objectFit: "contain", background: "rgba(255,255,255,0.92)", borderRadius: 8, padding: "4px 8px" }} />
-            </a>
-            <nav style={{ display: "flex", gap: 20, alignItems: "center" }}>
-              <a href="/bruz-en-action/conseils" style={{ color: "rgba(255,255,255,0.7)", textDecoration: "none", fontSize: 14, fontWeight: 500 }}>🏛️ Conseils</a>
-              <a href="/bruz-en-action/carte" style={{ color: "rgba(255,255,255,0.7)", textDecoration: "none", fontSize: 14, fontWeight: 500 }}>🗺️ Carte</a>
-              <a href="/bruz-en-action" style={{ color: "rgba(255,255,255,0.7)", textDecoration: "none", fontSize: 14, fontWeight: 500 }}>← Accueil</a>
-              {contact.hello_asso_url && (
-                <a href={contact.hello_asso_url} target="_blank" rel="noopener noreferrer"
-                  style={{ padding: "7px 16px", borderRadius: 999, background: "#f97316", color: "#fff", fontSize: 13, fontWeight: 700, textDecoration: "none" }}>
-                  ❤️ Adhérer
-                </a>
-              )}
-            </nav>
-          </div>
+          <NavBar />
         </div>
       </header>
 

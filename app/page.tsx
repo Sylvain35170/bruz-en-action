@@ -1,3 +1,4 @@
+import NavBar from "../components/NavBar";
 const LOGO = "/bruz-en-action/logo.png";
 import promessesData from "../data/promesses.json";
 import actusData from "../data/actus.json";
@@ -65,30 +66,8 @@ export default function Home() {
         <div style={{ position: "relative", zIndex: 1, maxWidth: "var(--container-max)", margin: "0 auto", padding: "20px var(--container-pad) 44px" }}>
 
           {/* Nav */}
-          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 12, paddingBottom: 32, borderBottom: "1px solid rgba(255,255,255,0.1)" }}>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={LOGO} alt={association.nom} width={160} height={50} style={{ objectFit: "contain", background: "rgba(255,255,255,0.92)", borderRadius: 8, padding: "4px 10px" }} />
-            <div className="bea-nav-links" style={{ display: "flex", gap: 16, alignItems: "center", flexWrap: "wrap" }}>
-              <a href="/bruz-en-action/dossiers" style={{ fontSize: 13, color: "rgba(255,255,255,0.75)", fontWeight: 600, textDecoration: "none" }}>📁 Dossiers</a>
-              <a href="/bruz-en-action/conseils" style={{ fontSize: 13, color: "rgba(255,255,255,0.75)", fontWeight: 600, textDecoration: "none" }}>🏛️ Conseils</a>
-              <a href="/bruz-en-action/promesses" style={{ fontSize: 13, color: "rgba(255,255,255,0.75)", fontWeight: 600, textDecoration: "none" }}>✅ Promesses</a>
-              <a href="/bruz-en-action/elus" style={{ fontSize: 13, color: "rgba(255,255,255,0.75)", fontWeight: 600, textDecoration: "none" }}>👥 Élus</a>
-              <a href="/bruz-en-action/carte" style={{ fontSize: 13, color: "rgba(255,255,255,0.75)", fontWeight: 600, textDecoration: "none" }}>🗺️ Carte</a>
-              <a href="/bruz-en-action/interagir" style={{ fontSize: 13, color: "rgba(255,255,255,0.75)", fontWeight: 600, textDecoration: "none" }}>💬 Interagir</a>
-              <a href="/bruz-en-action/chronologie" style={{ fontSize: 13, color: "rgba(255,255,255,0.75)", fontWeight: 600, textDecoration: "none" }}>🕐 Chronologie</a>
-              <a href="/bruz-en-action/metropole" style={{ fontSize: 13, color: "rgba(255,255,255,0.75)", fontWeight: 600, textDecoration: "none" }}>🏙️ Métropole</a>
-              {hasSocial && reseaux_sociaux.facebook && (
-                <a href={reseaux_sociaux.facebook} target="_blank" rel="noopener noreferrer" style={{ fontSize: 13, color: "rgba(255,255,255,0.6)", textDecoration: "none" }}>Facebook</a>
-              )}
-              {hasHelloAsso && (
-                <a href={contact.hello_asso_url} target="_blank" rel="noopener noreferrer" style={{
-                  padding: "8px 18px", borderRadius: 999, background: "#f97316",
-                  color: "#fff", fontSize: 13, fontWeight: 700, textDecoration: "none",
-                }}>
-                  ❤️ Adhérer
-                </a>
-              )}
-            </div>
+          <div style={{ paddingBottom: 32, borderBottom: "1px solid rgba(255,255,255,0.1)" }}>
+            <NavBar />
           </div>
 
           {/* Hero */}

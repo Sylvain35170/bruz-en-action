@@ -1,10 +1,9 @@
 import { notFound } from "next/navigation";
 import dossiersData from "../../../data/dossiers.json";
 import metaData from "../../../data/meta.json";
+import NavBar from "../../../components/NavBar";
 import SiteFooter from "../../../components/SiteFooter";
 import SignalementButton from "../../../components/SignalementButton";
-
-const LOGO = "/bruz-en-action/logo.png";
 
 export function generateStaticParams() {
   return dossiersData.dossiers.map(d => ({ id: d.id }));
@@ -162,21 +161,7 @@ export default async function DossierPage({ params }: { params: Promise<{ id: st
       {/* Header */}
       <header style={{ background: "linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%)", color: "#fff" }}>
         <div style={{ maxWidth: 1120, margin: "0 auto", padding: "16px 24px" }}>
-          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-            <a href="/bruz-en-action" style={{ display: "flex", alignItems: "center", gap: 12, textDecoration: "none" }}>
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={LOGO} alt={association.nom} width={140} height={44} style={{ objectFit: "contain", background: "rgba(255,255,255,0.92)", borderRadius: 8, padding: "4px 8px" }} />
-            </a>
-            <nav style={{ display: "flex", gap: 20, alignItems: "center" }}>
-              <a href="/bruz-en-action/dossiers" style={{ color: "rgba(255,255,255,0.7)", textDecoration: "none", fontSize: 14, fontWeight: 500 }}>← Dossiers</a>
-              {hasHelloAsso && (
-                <a href={contact.hello_asso_url} target="_blank" rel="noopener noreferrer"
-                  style={{ padding: "7px 16px", borderRadius: 999, background: "#f97316", color: "#fff", fontSize: 13, fontWeight: 700, textDecoration: "none" }}>
-                  ❤️ Adhérer
-                </a>
-              )}
-            </nav>
-          </div>
+          <NavBar />
         </div>
       </header>
 

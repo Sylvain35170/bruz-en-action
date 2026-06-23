@@ -2,9 +2,8 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import metropoleData from "../../../data/metropole.json";
 import metaData from "../../../data/meta.json";
+import NavBar from "../../../components/NavBar";
 import SiteFooter from "../../../components/SiteFooter";
-
-const LOGO = "/bruz-en-action/logo.png";
 
 const CATEGORIE_COLORS: Record<string, string> = {
   "Mobilités": "#2563eb",
@@ -52,15 +51,7 @@ export default async function MetropoleDossierPage({ params }: { params: Promise
       {/* Header */}
       <header style={{ background: "linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%)", color: "#fff" }}>
         <div style={{ maxWidth: 1120, margin: "0 auto", padding: "16px 24px" }}>
-          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-            <a href="/bruz-en-action" style={{ display: "flex", alignItems: "center", gap: 12, textDecoration: "none" }}>
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={LOGO} alt={association.nom} width={140} height={44} style={{ objectFit: "contain", background: "rgba(255,255,255,0.92)", borderRadius: 8, padding: "4px 8px" }} />
-            </a>
-            <nav style={{ display: "flex", gap: 20, alignItems: "center" }}>
-              <a href="/bruz-en-action/metropole" style={{ color: "rgba(255,255,255,0.7)", textDecoration: "none", fontSize: 14, fontWeight: 500 }}>← Métropole</a>
-            </nav>
-          </div>
+          <NavBar />
         </div>
       </header>
 

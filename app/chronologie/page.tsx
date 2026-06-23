@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
 import dossiers from "../../data/dossiers.json";
 import metaData from "../../data/meta.json";
+import NavBar from "../../components/NavBar";
 import SiteFooter from "../../components/SiteFooter";
-
-const LOGO = "/bruz-en-action/logo.png";
 
 export const metadata: Metadata = {
   title: "Chronologie — Bruz en Action",
@@ -120,21 +119,7 @@ export default function ChronologiePage() {
       {/* Header */}
       <header style={{ background: "linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%)", color: "#fff" }}>
         <div style={{ maxWidth: 1120, margin: "0 auto", padding: "16px 24px" }}>
-          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-            <a href="/bruz-en-action" style={{ display: "flex", alignItems: "center", gap: 12, textDecoration: "none" }}>
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={LOGO} alt={association.nom} width={140} height={44} style={{ objectFit: "contain", background: "rgba(255,255,255,0.92)", borderRadius: 8, padding: "4px 8px" }} />
-            </a>
-            <nav style={{ display: "flex", gap: 20, alignItems: "center" }}>
-              {[
-                { href: "/bruz-en-action/dossiers", label: "Dossiers" },
-                { href: "/bruz-en-action/promesses", label: "Promesses" },
-                { href: "/bruz-en-action/conseils", label: "CMs" },
-              ].map(({ href, label }) => (
-                <a key={href} href={href} style={{ color: "rgba(255,255,255,0.7)", textDecoration: "none", fontSize: 14, fontWeight: 500 }}>{label}</a>
-              ))}
-            </nav>
-          </div>
+          <NavBar />
         </div>
       </header>
 

@@ -152,9 +152,9 @@ a:hover { text-decoration: underline; }
 @media (max-width: 640px) {
   .bea-hero { grid-template-columns: 1fr !important; }
   .bea-foot { grid-template-columns: 1fr !important; }
-  /* Nav principale homepage : masquer les liens secondaires sur mobile */
-  .bea-nav-links { display: none !important; }
-  .bea-nav-logo-only { display: flex !important; }
+  /* Nav : masquer liens desktop, afficher hamburger */
+  .bea-nav-desktop { display: none !important; }
+  .bea-hamburger { display: flex !important; }
   /* Padding réduit sur mobile */
   .bea-header-inner { padding: 12px 16px !important; }
 }
