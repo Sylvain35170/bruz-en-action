@@ -24,8 +24,8 @@ AGENT_NAME = "megalis"
 YOUTUBE_RSS = "https://www.youtube.com/feeds/videos.xml?channel_id=UCfaKRNhoJ4chuaEtWV-bWjg"
 CM_TITLE_PATTERN = re.compile(r"conseil\s+municipal", re.I)
 
-# Mégalis PDF base URL (pour injection manuelle si hash connu)
-MEGALIS_BASE = "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation"
+# Mégalis — portail open data commune de Bruz (URL OpenData/Deliberation timeout)
+MEGALIS_ORG_URL = "https://data.megalis.bretagne.bzh/organization/commune-de-bruz"
 
 
 def parse_youtube_rss(content: bytes) -> list[dict]:
@@ -103,7 +103,7 @@ def run() -> bool:
                     "url": item["youtube_url"],
                 }
             ],
-            "deliberations_url": f"{MEGALIS_BASE}/{item['date_cm'][:4]}/",
+            "deliberations_url": MEGALIS_ORG_URL,
             "source_label": item["source_label"],
             "date_publication": item["date_publication"],
         }
