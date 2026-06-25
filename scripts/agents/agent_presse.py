@@ -53,6 +53,22 @@ MOTS_THEME = ["trambus", "t4 ", " t4,", "zac multisites", "rennes métropole"]
 
 FENETRE_JOURS = 7
 
+HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; BruzEnAction/1.0)"}
+
+
+def _resolve_url(url: str) -> str:
+    """Suit le redirect Google News pour stocker l'URL finale de l'article."""
+    if "news.google.com" not in url:
+        return url
+    try:
+        import requests
+        r = requests.head(url, allow_redirects=True, timeout=6, headers=HEADERS)
+        final = r.url
+        # Garder le redirect Google News si la résolution échoue (URL inchangée)
+        return final if final != url else url
+    except Exception:
+        return url
+
 # Articles à exclure systématiquement
 MOTS_EXCLUS = [
     # Emploi
@@ -107,10 +123,11 @@ def parse_rss(content: bytes, label: str) -> list[dict]:
             # Filtre 3 : exclure le bruit (sport, emploi, communes hors périmètre)
             if any(k in texte for k in MOTS_EXCLUS):
                 continue
+            final_url = _resolve_url(url)
             items.append({
                 "id": f"presse-{hash(url) & 0xFFFFFF:06x}",
                 "titre": titre,
-                "source_url": url,
+                "source_url": final_url,
                 "source_label": label,
                 "date": date_pub[:10],
                 "detail": desc[:300],
