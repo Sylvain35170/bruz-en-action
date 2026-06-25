@@ -819,6 +819,41 @@
       "source_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1012938/b6b1dc7396fa9a9946d085d957775ce4477276f63f188b960bb4886c785ccce2.pdf"
     },
     {
+      "id": "bea-D13-canicule-2026",
+      "titre": "Canicule à Bruz : ce que la commune fait, ce que d'autres font",
+      "date": "2026-06-25",
+      "type": "analyse",
+      "dossier": "D13",
+      "source_label": "Bruz en Action",
+      "source_url": null,
+      "detail": "Avec la vigilance rouge déclenchée le 22 juin 2026 en Ille-et-Vilaine, Bruz a activé son plan canicule. Voici ce que la commune a mis en place — et ce que font d'autres villes pour aller plus loin.",
+      "contenu": {
+        "intro": "L'épisode caniculaire de juin 2026 a mis Bruz à l'épreuve. La commune a répondu avec les outils dont elle dispose. Mais face à des étés qui s'annoncent durablement plus chauds, la question se pose : est-ce suffisant, et que font d'autres communes pour préparer leur territoire ?",
+        "sections": [
+          {
+            "titre": "Ce que Bruz a mis en place",
+            "contenu": "Dès le 22 juin, la mairie a activé son dispositif canicule. Côté équipements : le bassin nordique extérieur de la piscine de la Conterie a été ouvert en horaires élargis (7h30-20h) — même si les salles intérieures étaient fermées pour travaux techniques jusqu'au 3 juillet. Dans les écoles, ventilateurs et brumisateurs ont été installés, les repas chauds remplacés par des pique-niques avec pains de glace obligatoires. Les activités sportives ont été suspendues dans les équipements municipaux. La collecte des déchets a été décalée aux heures fraîches pour protéger les agents. Le CCAS a activé son registre des personnes vulnérables (02 99 57 12 47). Ces mesures sont cohérentes avec les obligations légales (article L121-6-1 du Code de l'action sociale et des familles, loi du 30 juin 2004). En revanche, aucune carte ni liste publique des espaces de fraîcheur n'a été communiquée aux habitants pendant l'épisode."
+          },
+          {
+            "titre": "Ce que font d'autres communes",
+            "contenu": "Plusieurs villes de taille comparable ont développé des approches plus structurées. À Nantes, près de 150 espaces de fraîcheur sont identifiés et cartographiés — parcs ombragés, squares avec sol perméable et eau — et la carte est accessible en ligne dès le déclenchement de l'alerte. À Rennes, tous les parcs et jardins restent ouverts 24h/24 pendant les canicules et une carte interactive recense fontaines, brumisateurs et bassins à pied. En Bretagne, des collectifs d'urbanistes travaillent depuis 2025 à cartographier les itinéraires vélo ombragés reliant squares et points d'eau, alimentés par des bassins de rétention de pluie. À Saint-Martin-d'Hères (Isère), un service de transport en véhicule climatisé emmène les personnes à mobilité réduite vers des lieux de fraîcheur. D'autres communes ouvrent leurs piscines gratuitement pendant les pics de chaleur, ou prolongent les horaires des médiathèques climatisées."
+          },
+          {
+            "titre": "Ce qu'on peut attendre de Bruz",
+            "contenu": "Bruz n'est pas une grande métropole et certains dispositifs supposent des moyens importants. Mais quelques actions simples sont accessibles à toute commune : publier une liste des espaces frais disponibles (médiathèque, mairie, équipements climatisés) avec leurs horaires dès le déclenchement de l'alerte ; informer sur le registre CCAS et ses modalités d'inscription ; et, à plus long terme, intégrer un volet canicule dans le Plan Communal de Sauvegarde (PCS), rendu obligatoire depuis la loi Matras de 2021. Ces questions méritent d'être posées en conseil municipal — notamment dans le contexte du budget 2027."
+          }
+        ],
+        "sources": [
+          "Mairie de Bruz — ville-bruz.fr (juin 2026)",
+          "Nantes Infos — plan canicule 2026",
+          "France 3 Bretagne — cartes îlots de fraîcheur villes bretonnes",
+          "STEFI.ai — obligations légales du maire face à la canicule",
+          "Code de l'action sociale et des familles, art. L121-6-1",
+          "Loi Matras du 25 novembre 2021 (PCS)"
+        ]
+      }
+    },
+    {
       "id": "presse-447a42",
       "titre": "Écoles, collèges, lycées à Bruz… Face à la canicule, ils s'adaptent",
       "source_url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPRVRManV5MHFaR1RhclJobE5yZGdiS2YwSjBsREM0SkdfVWhjcUNfLXNudW9KdTQwUnI4emE1UVV2U3JSZ0JOaTJXNXYxTE11ZEw1d3RFb2lZd2JEWHc0RDVZejZsbW1CTWQxT1Q5SGFUd0djQUszaHREeURJRGwxQVp5MUllNzAxeWJ4ajF4TWl0UXdzLUJVSW9VSVVJb1ZRd2haaHI0MnVhalFnbHY3eml2RUZEYXI1TUFyMVNYNkN4d2tkdmhWVlFRTjRzZGw4N2tHbERiOGdxVm1fQQ?oc=5",

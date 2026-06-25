@@ -870,6 +870,13 @@
       "actus_recentes": [
         {
           "date": "2026-06-25",
+          "titre": "Analyse BEA — Canicule à Bruz : ce que la commune fait, ce que d'autres font",
+          "detail": "Dispositifs activés par Bruz comparés aux pratiques de Nantes, Rennes et d'autres communes. Points d'attention : absence de carte îlots de fraîcheur, piscine intérieure fermée pendant la vague de chaleur, PCS à compléter.",
+          "source_url": null,
+          "source_label": "Bruz en Action"
+        },
+        {
+          "date": "2026-06-25",
           "titre": "Canicule : mesures mises en place dans les écoles publiques",
           "detail": "La mairie publie les dispositions d'exception déployées dans les écoles publiques bruzaises pour faire face aux fortes chaleurs. Ces mesures visent à assurer la sécurité, le bien-être et la continuité pédagogique des élèves.",
           "source_url": "https://www.ville-bruz.fr/actualites/canicule-mesures-mises-en-place-dans-les-ecoles-publiques/",
