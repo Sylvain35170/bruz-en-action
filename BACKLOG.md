@@ -4,7 +4,6 @@
 
 *(rien)*
 
-
 ## 🟠 Prioritaire — Fonctionnalités
 
 - [ ] **Parole des élus** — enrichir `data/elus.json` au fil du mandat
@@ -19,20 +18,22 @@
 - [ ] **D12** — City stade CoSEC : instruire (décision, remplacement ?)
 - [ ] **D13** — Canicule : suivre si mairie publie carte îlots / chiffres CCAS / PCS mis à jour
 - [ ] **Nouveaux dossiers** — Bonnat-Sablat (préemption), travaux Bruz
+- [ ] **idees_ailleurs** — alimenter les dossiers D01–D12 avec des pratiques d'autres communes (champ JSON en place, vide sur tous sauf D13)
+
+## 🟡 À faire — Design & Illustrations
+
+- [ ] **Images** — remplacer og-image.jpg + footer par vraies photos quand disponibles (events / asso)
 
 ## 🟡 À faire — Technique
 
-- [ ] **QA sur Archipel** — porter `qa/check-links.mjs` (ou équivalent) sur le projet Archipel
-- [ ] **Images** — remplacer og-image.jpg + footer par vraies photos quand disponibles (events / asso)
+- [ ] **Agent Gmail signalements** — lire emails labelisés [SIGNALEMENT], parser template structuré, ouvrir tickets JSON
 - [ ] **Script import_excel.py** — mise à jour auto des statuts depuis l'Excel
 - [ ] **CRs réunions** — réimporter les docx (encodage zip raté sur les accents)
-- [ ] **Actus** — enrichir au fil des décisions (schema + `resume` en place, liens purgés, futurs résolus)
-- [ ] **Page index /articles** — liste toutes les analyses BEA (route [id] créée, index manque)
+- [ ] **Actus** — enrichir au fil des décisions
 
 ## 💡 Idées
 
 - Alertes email/RSS quand une promesse change de statut
 - Export PDF du tableau de bord par pilier
-- Page index `/articles` — liste toutes les analyses BEA (route [id] créée, index manque)
 - Page `/programme` — résumé narratif campagne "Un nouvel élan pour Bruz"
 - Page "Coup de pouce / Coup de cœur" — à définir
