@@ -897,7 +897,33 @@
           "source_label": "Ouest-France"
         }
       ],
-      "promesses_liees": []
+      "promesses_liees": [],
+      "idees_ailleurs": [
+        {
+          "commune": "Rennes",
+          "idee": "Carte interactive des espaces frais publiée dès l'alerte rouge",
+          "pourquoi_bruz": "Bruz dispose de la médiathèque, de gymnases couverts et de parcs — une liste publique serait simple à produire et utile immédiatement.",
+          "source_url": "https://ici.rennes.fr/actualites/2026-06-19-canicule-rennes-active-son-plan-d-action/"
+        },
+        {
+          "commune": "Rennes",
+          "idee": "Appels téléphoniques proactifs aux personnes inscrites au registre CCAS, pas seulement activation du registre",
+          "pourquoi_bruz": "Le CCAS de Bruz a activé son registre — mais a-t-il appelé les inscrits ? La distinction est importante pour les personnes isolées.",
+          "source_url": "https://ici.rennes.fr/actualites/2026-06-19-canicule-rennes-active-son-plan-d-action/"
+        },
+        {
+          "commune": "Nantes Métropole",
+          "idee": "270 espaces frais référencés sur une carte en ligne (parcs, pataugeoires, fontaines, centres communautaires)",
+          "pourquoi_bruz": "À l'échelle de Bruz, une dizaine de lieux suffirait. La plateforme gogocarto.fr permet de le faire de façon collaborative et gratuite.",
+          "source_url": "https://metropole.nantes.fr/actualites/fortes-chaleurs-270-lieux-ou-se-mettre-au-frais-a-nantes-et-dans-la-metropole"
+        },
+        {
+          "commune": "~30 communes en France (expérimentation nationale)",
+          "idee": "Adaptation thermique des écoles par solutions low-tech (géotextiles, brasseurs d'air, végétalisation des cours) pour moins de 100 000 €",
+          "pourquoi_bruz": "Bruz n'est pas dans le programme. Le Fonds vert finance ce type de travaux depuis 2025 — une candidature est possible.",
+          "source_url": "https://vert.eco/climat/canicule-six-solutions-low-tech-pour-adapter-50-000-ecoles-maintenant-et-a-bas-cout/"
+        }
+      ]
     }
   ]
 }

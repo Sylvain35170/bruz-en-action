@@ -155,6 +155,7 @@ export default async function DossierPage({ params }: { params: Promise<{ id: st
   const actus: { date: string; titre: string; detail: string; source_url?: string; source_label?: string; article_id?: string }[] = dossier.actus_recentes ?? [];
   const sources: { label: string; url: string }[] = dossier.sources ?? [];
   const graphiques: Graphique[] = dossier.graphiques ?? [];
+  const ideesAilleurs: { commune: string; idee: string; pourquoi_bruz: string; source_url?: string }[] = dossier.idees_ailleurs ?? [];
 
   return (
     <div style={{ minHeight: "100vh", display: "flex", flexDirection: "column", fontFamily: "var(--font-sans, system-ui)", background: "#f8fafc" }}>
@@ -231,6 +232,41 @@ export default async function DossierPage({ params }: { params: Promise<{ id: st
                     }}>
                       <span style={{ color: "#e84d0e", fontWeight: 800, flexShrink: 0, marginTop: 1 }}>→</span>
                       <span>{pt}</span>
+                    </div>
+                  ))}
+                </div>
+              </section>
+            )}
+
+            {/* Idées d'ailleurs */}
+            {ideesAilleurs.length > 0 && (
+              <section style={{ marginBottom: 36 }}>
+                <SectionTitle>Ce que font d'autres communes</SectionTitle>
+                <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+                  {ideesAilleurs.map((item, i) => (
+                    <div key={i} style={{
+                      background: "#fff", border: "1px solid #e2e8f0",
+                      borderLeft: "3px solid #7c3aed", borderRadius: 10, padding: "16px 20px",
+                    }}>
+                      <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 8 }}>
+                        <span style={{
+                          fontSize: 11, fontWeight: 800, textTransform: "uppercase",
+                          letterSpacing: "0.08em", color: "#7c3aed",
+                          background: "#f5f3ff", padding: "2px 10px", borderRadius: 999,
+                        }}>{item.commune}</span>
+                      </div>
+                      <p style={{ margin: "0 0 8px", fontSize: 14, fontWeight: 600, color: "#0f172a", lineHeight: 1.5 }}>
+                        {item.idee}
+                      </p>
+                      <p style={{ margin: 0, fontSize: 13, color: "#64748b", lineHeight: 1.6, fontStyle: "italic" }}>
+                        → Pour Bruz : {item.pourquoi_bruz}
+                      </p>
+                      {item.source_url && (
+                        <a href={item.source_url} target="_blank" rel="noopener noreferrer"
+                          style={{ display: "inline-block", marginTop: 8, fontSize: 12, color: "#7c3aed", textDecoration: "none" }}>
+                          Source ↗
+                        </a>
+                      )}
                     </div>
                   ))}
                 </div>
