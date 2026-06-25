@@ -41,7 +41,10 @@ export default function Home() {
     })
     .slice(0, 4);
 
-  const lastActus = actus.slice(0, 3);
+  const lastActus = [...actus]
+    .filter(a => a.type !== "analyse" && a.date && a.date.length >= 8)
+    .sort((a, b) => b.date.localeCompare(a.date))
+    .slice(0, 3);
   const { evenements } = evenementsData;
   const prochainEvts = evenements
     .filter(e => new Date(e.date) >= new Date())
