@@ -182,6 +182,7 @@ export default function ChronologiePage() {
                   {groupEvents.map((ev, i) => {
                     const color = DOSSIER_COLORS[ev.dossier_id] ?? "#64748b";
                     const isDecision = ev.type === "decision";
+                    const dossierHref = `/bruz-en-action/dossiers/${ev.dossier_id}`;
                     return (
                       <div key={i} style={{ position: "relative", display: "flex", gap: 14, alignItems: "flex-start" }}>
                         {/* Dot */}
@@ -189,29 +190,42 @@ export default function ChronologiePage() {
 
                         {/* Card */}
                         <div style={{ flex: 1, background: "#fff", border: "1px solid #e2e8f0", borderLeft: `3px solid ${color}`, borderRadius: 8, padding: "12px 16px" }}>
-                          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", gap: 8, flexWrap: "wrap", marginBottom: 6 }}>
-                            <div style={{ display: "flex", gap: 8, alignItems: "center", flexWrap: "wrap" }}>
-                              <span style={{ fontSize: 11, fontWeight: 700, color: "#94a3b8", textTransform: "uppercase", letterSpacing: "0.05em" }}>
-                                {formatDate(ev.date)}
-                              </span>
-                              <span style={{ fontSize: 10, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.06em",
-                                color: isDecision ? "#e84d0e" : "#0284c7",
-                                background: isDecision ? "#fff1ee" : "#f0f9ff",
-                                padding: "1px 7px", borderRadius: 999 }}>
-                                {isDecision ? "Décision" : "Actu"}
-                              </span>
-                            </div>
-                            <a href={`/bruz-en-action/dossiers/${ev.dossier_id}`}
-                              style={{ fontSize: 11, fontWeight: 700, color, textDecoration: "none", flexShrink: 0 }}>
+                          {/* Ligne haute : date + badges */}
+                          <div style={{ display: "flex", gap: 8, alignItems: "center", flexWrap: "wrap", marginBottom: 8 }}>
+                            <span style={{ fontSize: 11, fontWeight: 700, color: "#94a3b8", textTransform: "uppercase", letterSpacing: "0.05em" }}>
+                              {formatDate(ev.date)}
+                            </span>
+                            <span style={{ fontSize: 10, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.06em",
+                              color: isDecision ? "#e84d0e" : "#0284c7",
+                              background: isDecision ? "#fff1ee" : "#f0f9ff",
+                              padding: "1px 7px", borderRadius: 999 }}>
+                              {isDecision ? "Décision" : "Actu"}
+                            </span>
+                            <a href={dossierHref}
+                              style={{ fontSize: 10, fontWeight: 700, color: "#fff", background: color, padding: "1px 8px", borderRadius: 999, textDecoration: "none" }}>
                               {ev.dossier_id}
                             </a>
                           </div>
-                          <p style={{ margin: 0, fontSize: 13, color: "#334155", lineHeight: 1.6 }}>{ev.texte}</p>
-                          {ev.source_url && (
-                            <a href={ev.source_url} target="_blank" rel="noopener noreferrer"
-                              style={{ display: "inline-block", marginTop: 8, fontSize: 11, color: "#64748b", textDecoration: "none" }}>
-                              Source ↗
-                            </a>
+
+                          {/* Texte — cliquable vers le dossier */}
+                          <a href={dossierHref} style={{ textDecoration: "none", display: "block", marginBottom: ev.source_url ? 10 : 0 }}>
+                            <p style={{ margin: 0, fontSize: 13, color: "#0f172a", lineHeight: 1.6, fontWeight: 500 }}>{ev.texte}</p>
+                          </a>
+
+                          {/* Pied de carte : source externe + lien dossier */}
+                          {(ev.source_url) && (
+                            <div style={{ display: "flex", gap: 12, alignItems: "center", flexWrap: "wrap", borderTop: "1px solid #f1f5f9", paddingTop: 8 }}>
+                              {ev.source_url && (
+                                <a href={ev.source_url} target="_blank" rel="noopener noreferrer"
+                                  style={{ fontSize: 12, color: "#0284c7", textDecoration: "none", fontWeight: 600 }}>
+                                  Voir la source ↗
+                                </a>
+                              )}
+                              <a href={dossierHref}
+                                style={{ fontSize: 12, color: color, textDecoration: "none", fontWeight: 600, marginLeft: "auto" }}>
+                                Dossier {ev.dossier_id} →
+                              </a>
+                            </div>
                           )}
                         </div>
                       </div>
