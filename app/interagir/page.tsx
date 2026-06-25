@@ -55,14 +55,14 @@ export default function InteragirPage() {
     <div style={{ minHeight: "100vh", display: "flex", flexDirection: "column", background: "#f8fafc" }}>
 
       {/* Header */}
-      <header style={{ background: "linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%)", color: "#fff" }}>
+      <header style={{ background: "linear-gradient(135deg, #1B3A6B 0%, #2A5298 100%)", color: "#fff" }}>
         <div style={{ maxWidth: 1120, margin: "0 auto", padding: "16px 24px" }}>
           <NavBar />
         </div>
       </header>
 
       {/* Hero */}
-      <section style={{ background: "linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%)", color: "#fff", paddingBottom: 48 }}>
+      <section style={{ background: "linear-gradient(135deg, #1B3A6B 0%, #2A5298 100%)", color: "#fff", paddingBottom: 48 }}>
         <div style={{ maxWidth: 1120, margin: "0 auto", padding: "40px 24px 0" }}>
           <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#f97316", display: "block", marginBottom: 8 }}>
             Engagement citoyen
@@ -82,7 +82,7 @@ export default function InteragirPage() {
 
           {/* Notre posture */}
           <section style={{ marginBottom: 52 }}>
-            <h2 style={{ fontSize: 20, fontWeight: 800, margin: "0 0 20px", color: "#0f172a", paddingBottom: 10, borderBottom: "2px solid #e84d0e", display: "inline-block" }}>
+            <h2 style={{ fontSize: 20, fontWeight: 800, margin: "0 0 20px", color: "#0f172a", paddingBottom: 10, borderBottom: "2px solid #E8920E", display: "inline-block" }}>
               Notre posture
             </h2>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px,1fr))", gap: 16, marginBottom: 24 }}>
@@ -103,7 +103,7 @@ export default function InteragirPage() {
 
           {/* Canaux officiels */}
           <section style={{ marginBottom: 52 }}>
-            <h2 style={{ fontSize: 20, fontWeight: 800, margin: "0 0 20px", color: "#0f172a", paddingBottom: 10, borderBottom: "2px solid #e84d0e", display: "inline-block" }}>
+            <h2 style={{ fontSize: 20, fontWeight: 800, margin: "0 0 20px", color: "#0f172a", paddingBottom: 10, borderBottom: "2px solid #E8920E", display: "inline-block" }}>
               Les canaux officiels
             </h2>
             <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
@@ -128,10 +128,10 @@ export default function InteragirPage() {
 
           {/* Droit CADA */}
           <section style={{ marginBottom: 52 }}>
-            <h2 style={{ fontSize: 20, fontWeight: 800, margin: "0 0 20px", color: "#0f172a", paddingBottom: 10, borderBottom: "2px solid #e84d0e", display: "inline-block" }}>
+            <h2 style={{ fontSize: 20, fontWeight: 800, margin: "0 0 20px", color: "#0f172a", paddingBottom: 10, borderBottom: "2px solid #E8920E", display: "inline-block" }}>
               Votre droit d'accès aux documents
             </h2>
-            <div style={{ background: "#fff8f5", border: "1px solid #fed7aa", borderLeft: "4px solid #e84d0e", borderRadius: 12, padding: "24px 28px", marginBottom: 24 }}>
+            <div style={{ background: "#fff8f5", border: "1px solid #fed7aa", borderLeft: "4px solid #E8920E", borderRadius: 12, padding: "24px 28px", marginBottom: 24 }}>
               <div style={{ fontSize: 15, fontWeight: 700, color: "#0f172a", marginBottom: 12 }}>
                 Vous avez le droit de tout lire — délibérations, marchés, rapports, budgets
               </div>
@@ -143,7 +143,7 @@ export default function InteragirPage() {
               <p style={{ margin: 0, fontSize: 14, color: "#334155", lineHeight: 1.75 }}>
                 L'administration a <strong>1 mois</strong> pour répondre. En cas de refus ou de silence,
                 la{" "}
-                <a href="https://www.cada.fr/" target="_blank" rel="noopener noreferrer" style={{ color: "#e84d0e", fontWeight: 600 }}>CADA (Commission d'Accès aux Documents Administratifs)</a>{" "}
+                <a href="https://www.cada.fr/" target="_blank" rel="noopener noreferrer" style={{ color: "#E8920E", fontWeight: 600 }}>CADA (Commission d'Accès aux Documents Administratifs)</a>{" "}
                 peut être saisie gratuitement en ligne.
               </p>
             </div>
@@ -156,7 +156,7 @@ export default function InteragirPage() {
               ].map(({ etape, titre, texte }) => (
                 <div key={etape} style={{ background: "#fff", border: "1px solid #e2e8f0", borderRadius: 12, padding: "16px 18px" }}>
                   <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 8 }}>
-                    <span style={{ width: 28, height: 28, borderRadius: "50%", background: "#0f172a", color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 13, fontWeight: 800, flexShrink: 0 }}>{etape}</span>
+                    <span style={{ width: 28, height: 28, borderRadius: "50%", background: "#1B3A6B", color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 13, fontWeight: 800, flexShrink: 0 }}>{etape}</span>
                     <span style={{ fontSize: 13, fontWeight: 700, color: "#0f172a" }}>{titre}</span>
                   </div>
                   <p style={{ margin: 0, fontSize: 12, color: "#64748b", lineHeight: 1.6 }}>{texte}</p>
@@ -173,7 +173,7 @@ export default function InteragirPage() {
 
           {/* Comment BEA interagit */}
           <section style={{ marginBottom: 52 }}>
-            <h2 style={{ fontSize: 20, fontWeight: 800, margin: "0 0 20px", color: "#0f172a", paddingBottom: 10, borderBottom: "2px solid #e84d0e", display: "inline-block" }}>
+            <h2 style={{ fontSize: 20, fontWeight: 800, margin: "0 0 20px", color: "#0f172a", paddingBottom: 10, borderBottom: "2px solid #E8920E", display: "inline-block" }}>
               Comment Bruz en Action s'engage
             </h2>
             <div style={{ background: "#fff", border: "1px solid #e2e8f0", borderRadius: 12, overflow: "hidden" }}>

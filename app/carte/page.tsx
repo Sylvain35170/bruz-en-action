@@ -27,7 +27,7 @@ export default function CartePage() {
     <div style={{ minHeight: "100vh", display: "flex", flexDirection: "column", background: "var(--surface-page, #f9fafb)" }}>
 
       {/* ── HEADER ── */}
-      <header style={{ background: "linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%)", color: "#fff" }}>
+      <header style={{ background: "linear-gradient(135deg, #1B3A6B 0%, #2A5298 100%)", color: "#fff" }}>
         <div style={{ maxWidth: 1120, margin: "0 auto", padding: "16px 24px" }}>
           <NavBar />
         </div>

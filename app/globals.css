@@ -18,11 +18,12 @@
   --slate-800: #1e293b;
   --slate-900: #0f172a;
 
-  /* Brand */
-  --night-900: #0f172a;
-  --night-700: #1e3a5f;
-  --night-gradient: linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%);
-  --brand-accent: #38bdf8;
+  /* Brand — Bruz en Action palette */
+  --night-900: #1B3A6B;
+  --night-700: #2A5298;
+  --night-gradient: linear-gradient(135deg, #1B3A6B 0%, #2A5298 100%);
+  --brand-orange: #E8920E;
+  --brand-accent: #4A7EC7;
 
   /* Surfaces */
   --surface-page:   var(--slate-50);
@@ -125,7 +126,7 @@ body {
 
 h1, h2, h3, h4 {
   margin: 0;
-  color: var(--text-strong);
+  color: inherit;
   font-weight: var(--fw-bold);
   line-height: var(--lh-snug);
   letter-spacing: var(--ls-tight);

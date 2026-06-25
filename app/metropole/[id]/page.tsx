@@ -49,14 +49,14 @@ export default async function MetropoleDossierPage({ params }: { params: Promise
     <div style={{ minHeight: "100vh", display: "flex", flexDirection: "column", fontFamily: "var(--font-sans, system-ui)", background: "#f8fafc" }}>
 
       {/* Header */}
-      <header style={{ background: "linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%)", color: "#fff" }}>
+      <header style={{ background: "linear-gradient(135deg, #1B3A6B 0%, #2A5298 100%)", color: "#fff" }}>
         <div style={{ maxWidth: 1120, margin: "0 auto", padding: "16px 24px" }}>
           <NavBar />
         </div>
       </header>
 
       {/* Hero */}
-      <section style={{ background: "linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%)", color: "#fff", paddingBottom: 48 }}>
+      <section style={{ background: "linear-gradient(135deg, #1B3A6B 0%, #2A5298 100%)", color: "#fff", paddingBottom: 48 }}>
         <div style={{ maxWidth: 1120, margin: "0 auto", padding: "36px 24px 0" }}>
           <div style={{ display: "flex", gap: 10, alignItems: "center", marginBottom: 16, flexWrap: "wrap" }}>
             <span style={{ padding: "3px 10px", borderRadius: 999, background: "rgba(232,77,14,0.2)", color: "#f97316", fontSize: 12, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.08em" }}>
@@ -92,7 +92,7 @@ export default async function MetropoleDossierPage({ params }: { params: Promise
 
           {/* Ce qu'on sait */}
           <section style={{ marginBottom: 40 }}>
-            <h2 style={{ fontSize: 18, fontWeight: 800, margin: "0 0 16px", color: "#0f172a", paddingBottom: 8, borderBottom: "2px solid #e84d0e", display: "inline-block" }}>Ce qu'on sait</h2>
+            <h2 style={{ fontSize: 18, fontWeight: 800, margin: "0 0 16px", color: "#0f172a", paddingBottom: 8, borderBottom: "2px solid #E8920E", display: "inline-block" }}>Ce qu'on sait</h2>
             <ul style={{ margin: 0, padding: 0, listStyle: "none", display: "flex", flexDirection: "column", gap: 10 }}>
               {dossier.ce_quon_sait.map((item, i) => (
                 <li key={i} style={{ display: "flex", gap: 12, padding: "12px 16px", background: "#fff", border: "1px solid #e2e8f0", borderRadius: 8, fontSize: 14, color: "#334155", lineHeight: 1.6 }}>
@@ -105,7 +105,7 @@ export default async function MetropoleDossierPage({ params }: { params: Promise
 
           {/* Qui décide */}
           <section style={{ marginBottom: 40 }}>
-            <h2 style={{ fontSize: 18, fontWeight: 800, margin: "0 0 16px", color: "#0f172a", paddingBottom: 8, borderBottom: "2px solid #e84d0e", display: "inline-block" }}>Qui décide ?</h2>
+            <h2 style={{ fontSize: 18, fontWeight: 800, margin: "0 0 16px", color: "#0f172a", paddingBottom: 8, borderBottom: "2px solid #E8920E", display: "inline-block" }}>Qui décide ?</h2>
             <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
               {dossier.qui_decide.map((q, i) => (
                 <div key={i} style={{ background: "#fff", border: "1px solid #e2e8f0", borderRadius: 8, padding: "14px 18px", display: "flex", gap: 14 }}>
@@ -122,7 +122,7 @@ export default async function MetropoleDossierPage({ params }: { params: Promise
           {/* Décisions */}
           {decisions.length > 0 && (
             <section style={{ marginBottom: 40 }}>
-              <h2 style={{ fontSize: 18, fontWeight: 800, margin: "0 0 16px", color: "#0f172a", paddingBottom: 8, borderBottom: "2px solid #e84d0e", display: "inline-block" }}>Décisions clés</h2>
+              <h2 style={{ fontSize: 18, fontWeight: 800, margin: "0 0 16px", color: "#0f172a", paddingBottom: 8, borderBottom: "2px solid #E8920E", display: "inline-block" }}>Décisions clés</h2>
               <div style={{ position: "relative", paddingLeft: 20 }}>
                 <div style={{ position: "absolute", left: 5, top: 6, bottom: 6, width: 2, background: "#e2e8f0" }} />
                 <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
@@ -146,7 +146,7 @@ export default async function MetropoleDossierPage({ params }: { params: Promise
 
           {/* Ce qu'on suit */}
           <section style={{ marginBottom: 40 }}>
-            <h2 style={{ fontSize: 18, fontWeight: 800, margin: "0 0 16px", color: "#0f172a", paddingBottom: 8, borderBottom: "2px solid #e84d0e", display: "inline-block" }}>Ce qu'on surveille</h2>
+            <h2 style={{ fontSize: 18, fontWeight: 800, margin: "0 0 16px", color: "#0f172a", paddingBottom: 8, borderBottom: "2px solid #E8920E", display: "inline-block" }}>Ce qu'on surveille</h2>
             <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
               {dossier.ce_quon_suit.map((item, i) => (
                 <div key={i} style={{ display: "flex", gap: 12, padding: "12px 16px", background: "#fefce8", border: "1px solid #fde68a", borderRadius: 8, fontSize: 14, lineHeight: 1.6, color: "#713f12" }}>
@@ -160,7 +160,7 @@ export default async function MetropoleDossierPage({ params }: { params: Promise
           {/* Actus */}
           {actus.length > 0 && (
             <section style={{ marginBottom: 40 }}>
-              <h2 style={{ fontSize: 18, fontWeight: 800, margin: "0 0 16px", color: "#0f172a", paddingBottom: 8, borderBottom: "2px solid #e84d0e", display: "inline-block" }}>Dernières actus</h2>
+              <h2 style={{ fontSize: 18, fontWeight: 800, margin: "0 0 16px", color: "#0f172a", paddingBottom: 8, borderBottom: "2px solid #E8920E", display: "inline-block" }}>Dernières actus</h2>
               <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
                 {actus.map((a, i) => (
                   <div key={i} style={{ background: "#fff", border: "1px solid #e2e8f0", borderRadius: 10, padding: "14px 18px" }}>
@@ -185,7 +185,7 @@ export default async function MetropoleDossierPage({ params }: { params: Promise
           {/* Sources */}
           {dossier.sources.length > 0 && (
             <section style={{ marginBottom: 40 }}>
-              <h2 style={{ fontSize: 18, fontWeight: 800, margin: "0 0 16px", color: "#0f172a", paddingBottom: 8, borderBottom: "2px solid #e84d0e", display: "inline-block" }}>Sources</h2>
+              <h2 style={{ fontSize: 18, fontWeight: 800, margin: "0 0 16px", color: "#0f172a", paddingBottom: 8, borderBottom: "2px solid #E8920E", display: "inline-block" }}>Sources</h2>
               <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
                 {dossier.sources.map((s, i) => (
                   <a key={i} href={s.url} target="_blank" rel="noopener noreferrer"
@@ -198,13 +198,13 @@ export default async function MetropoleDossierPage({ params }: { params: Promise
           )}
 
           {/* Signalement */}
-          <div style={{ background: "#fff8f5", border: "1px solid #fed7aa", borderLeft: "4px solid #e84d0e", borderRadius: 12, padding: "20px 24px" }}>
-            <div style={{ fontSize: 13, fontWeight: 700, color: "#e84d0e", marginBottom: 8 }}>Vous avez des informations sur ce dossier ?</div>
+          <div style={{ background: "#fff8f5", border: "1px solid #fed7aa", borderLeft: "4px solid #E8920E", borderRadius: 12, padding: "20px 24px" }}>
+            <div style={{ fontSize: 13, fontWeight: 700, color: "#E8920E", marginBottom: 8 }}>Vous avez des informations sur ce dossier ?</div>
             <p style={{ fontSize: 13, color: "#64748b", margin: "0 0 12px", lineHeight: 1.6 }}>
               Délibérations, documents, témoignages — partagez-les avec nous.
             </p>
             <a href={`mailto:${contact.email}?subject=${encodeURIComponent(`[${dossier.id}] ${dossier.titre}`)}`}
-              style={{ fontSize: 13, color: "#e84d0e", fontWeight: 700, textDecoration: "none" }}>
+              style={{ fontSize: 13, color: "#E8920E", fontWeight: 700, textDecoration: "none" }}>
               Nous écrire ↗
             </a>
           </div>

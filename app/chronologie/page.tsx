@@ -117,14 +117,14 @@ export default function ChronologiePage() {
     <div style={{ minHeight: "100vh", display: "flex", flexDirection: "column", fontFamily: "var(--font-sans, system-ui)", background: "#f8fafc" }}>
 
       {/* Header */}
-      <header style={{ background: "linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%)", color: "#fff" }}>
+      <header style={{ background: "linear-gradient(135deg, #1B3A6B 0%, #2A5298 100%)", color: "#fff" }}>
         <div style={{ maxWidth: 1120, margin: "0 auto", padding: "16px 24px" }}>
           <NavBar />
         </div>
       </header>
 
       {/* Hero */}
-      <section style={{ background: "linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%)", color: "#fff", paddingBottom: 48 }}>
+      <section style={{ background: "linear-gradient(135deg, #1B3A6B 0%, #2A5298 100%)", color: "#fff", paddingBottom: 48 }}>
         <div style={{ maxWidth: 1120, margin: "0 auto", padding: "36px 24px 0" }}>
           <h1 style={{ fontSize: "clamp(1.4rem, 3vw, 2rem)", fontWeight: 800, lineHeight: 1.2, margin: "0 0 12px", color: "#fff" }}>
             Chronologie
@@ -134,7 +134,7 @@ export default function ChronologiePage() {
           </p>
           <div style={{ display: "flex", gap: 16, flexWrap: "wrap" }}>
             {[
-              { n: decisions, label: "Décisions clés", color: "#e84d0e" },
+              { n: decisions, label: "Décisions clés", color: "#E8920E" },
               { n: actus, label: "Actus documentées", color: "#0284c7" },
               { n: dossiersImpliques, label: "Dossiers concernés", color: "#7c3aed" },
             ].map(({ n, label, color }) => (
@@ -153,7 +153,7 @@ export default function ChronologiePage() {
           {/* Légende */}
           <div style={{ display: "flex", gap: 20, marginBottom: 32, flexWrap: "wrap" }}>
             <div style={{ display: "flex", alignItems: "center", gap: 8, fontSize: 13, color: "#475569" }}>
-              <span style={{ width: 10, height: 10, borderRadius: "50%", background: "#e84d0e", display: "inline-block" }} />
+              <span style={{ width: 10, height: 10, borderRadius: "50%", background: "#E8920E", display: "inline-block" }} />
               Décision officielle
             </div>
             <div style={{ display: "flex", alignItems: "center", gap: 8, fontSize: 13, color: "#475569" }}>
@@ -171,7 +171,7 @@ export default function ChronologiePage() {
               <div key={key} style={{ marginBottom: 36 }}>
                 {/* Mois */}
                 <div style={{ position: "relative", display: "flex", alignItems: "center", marginBottom: 16 }}>
-                  <div style={{ position: "absolute", left: -28, width: 16, height: 16, borderRadius: "50%", background: "#0f172a", border: "3px solid #f8fafc", boxShadow: "0 0 0 2px #cbd5e1", flexShrink: 0 }} />
+                  <div style={{ position: "absolute", left: -28, width: 16, height: 16, borderRadius: "50%", background: "#1B3A6B", border: "3px solid #f8fafc", boxShadow: "0 0 0 2px #cbd5e1", flexShrink: 0 }} />
                   <span style={{ fontSize: 13, fontWeight: 800, textTransform: "uppercase", letterSpacing: "0.1em", color: "#0f172a" }}>
                     {formatMonthKey(key)}
                   </span>
@@ -186,7 +186,7 @@ export default function ChronologiePage() {
                     return (
                       <div key={i} style={{ position: "relative", display: "flex", gap: 14, alignItems: "flex-start" }}>
                         {/* Dot */}
-                        <div style={{ position: "absolute", left: -24, top: 14, width: 10, height: 10, borderRadius: "50%", background: isDecision ? "#e84d0e" : "#0284c7", border: "2px solid #f8fafc", flexShrink: 0 }} />
+                        <div style={{ position: "absolute", left: -24, top: 14, width: 10, height: 10, borderRadius: "50%", background: isDecision ? "#E8920E" : "#0284c7", border: "2px solid #f8fafc", flexShrink: 0 }} />
 
                         {/* Card */}
                         <div style={{ flex: 1, background: "#fff", border: "1px solid #e2e8f0", borderLeft: `3px solid ${color}`, borderRadius: 8, padding: "12px 16px" }}>
@@ -196,7 +196,7 @@ export default function ChronologiePage() {
                               {formatDate(ev.date)}
                             </span>
                             <span style={{ fontSize: 10, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.06em",
-                              color: isDecision ? "#e84d0e" : "#0284c7",
+                              color: isDecision ? "#E8920E" : "#0284c7",
                               background: isDecision ? "#fff1ee" : "#f0f9ff",
                               padding: "1px 7px", borderRadius: 999 }}>
                               {isDecision ? "Décision" : "Actu"}

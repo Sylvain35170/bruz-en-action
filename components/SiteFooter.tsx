@@ -5,7 +5,7 @@ const { association, contact, reseaux_sociaux } = metaData;
 
 export default function SiteFooter() {
   return (
-    <footer style={{ background: "#0f172a", color: "rgba(255,255,255,0.6)" }}>
+    <footer style={{ background: "#1B3A6B", color: "rgba(255,255,255,0.6)" }}>
       {/* Bande image + présentation */}
       <div style={{ borderBottom: "1px solid rgba(255,255,255,0.08)" }}>
         <div style={{

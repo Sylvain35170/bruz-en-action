@@ -78,7 +78,7 @@ export default function NavBar() {
           <div style={{
             position: "absolute", top: 0, right: 0,
             width: "min(300px, 85vw)", height: "100%",
-            background: "#0f172a",
+            background: "#1B3A6B",
             display: "flex", flexDirection: "column",
             padding: "20px 16px",
           }} onClick={e => e.stopPropagation()}>

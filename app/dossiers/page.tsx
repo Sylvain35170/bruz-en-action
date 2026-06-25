@@ -61,14 +61,14 @@ export default function DossiersPage() {
     <div style={{ minHeight: "100vh", display: "flex", flexDirection: "column", background: "var(--surface-page, #f9fafb)" }}>
 
       {/* Header */}
-      <header style={{ background: "linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%)", color: "#fff" }}>
+      <header style={{ background: "linear-gradient(135deg, #1B3A6B 0%, #2A5298 100%)", color: "#fff" }}>
         <div style={{ maxWidth: 1120, margin: "0 auto", padding: "16px 24px" }}>
           <NavBar />
         </div>
       </header>
 
       {/* Hero */}
-      <section style={{ background: "linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%)", color: "#fff", paddingBottom: 48 }}>
+      <section style={{ background: "linear-gradient(135deg, #1B3A6B 0%, #2A5298 100%)", color: "#fff", paddingBottom: 48 }}>
         <div style={{ maxWidth: 1120, margin: "0 auto", padding: "40px 24px 0" }}>
           <span style={{ fontSize: 11, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", color: "rgba(255,255,255,0.45)" }}>
             Enquêtes &amp; analyses
@@ -198,7 +198,7 @@ export default function DossiersPage() {
 
           {/* Note bas de page */}
           <p style={{ marginTop: 40, fontSize: 12, color: "#94a3b8", textAlign: "center" }}>
-            Les dossiers marqués <strong style={{ color: "var(--brand-accent, #e84d0e)" }}>● Actif</strong> remontent automatiquement en tête selon les dernières actualités collectées.
+            Les dossiers marqués <strong style={{ color: "var(--brand-accent, #E8920E)" }}>● Actif</strong> remontent automatiquement en tête selon les dernières actualités collectées.
           </p>
         </div>
       </main>
