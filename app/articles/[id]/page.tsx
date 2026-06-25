@@ -80,7 +80,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ id: st
           <h1 style={{ fontSize: 26, fontWeight: 900, color: "#0f172a", lineHeight: 1.25, margin: "0 0 16px" }}>
             {article.titre}
           </h1>
-          <p style={{ margin: 0, fontSize: 16, lineHeight: 1.7, color: "#475569", borderLeft: "3px solid #E8920E", paddingLeft: 16 }}>
+          <p style={{ margin: 0, fontSize: 16, lineHeight: 1.7, color: "#475569", borderLeft: "3px solid #E8A040", paddingLeft: 16 }}>
             {contenu.intro}
           </p>
         </div>
@@ -89,7 +89,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ id: st
         <div style={{ display: "flex", flexDirection: "column", gap: 32 }}>
           {contenu.sections.map((s, i) => (
             <section key={i}>
-              <h2 style={{ fontSize: 18, fontWeight: 800, color: "#0f172a", margin: "0 0 12px", paddingBottom: 8, borderBottom: "2px solid #E8920E", display: "inline-block" }}>
+              <h2 style={{ fontSize: 18, fontWeight: 800, color: "#0f172a", margin: "0 0 12px", paddingBottom: 8, borderBottom: "2px solid #E8A040", display: "inline-block" }}>
                 {s.titre}
               </h2>
               <p style={{ margin: 0, fontSize: 15, lineHeight: 1.8, color: "#334155" }}>
@@ -117,7 +117,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ id: st
         {article.dossier && (
           <div style={{ marginTop: 40 }}>
             <Link href={`/bruz-en-action/dossiers/${article.dossier}`}
-              style={{ display: "inline-flex", alignItems: "center", gap: 6, fontSize: 14, fontWeight: 600, color: "#E8920E", textDecoration: "none" }}>
+              style={{ display: "inline-flex", alignItems: "center", gap: 6, fontSize: 14, fontWeight: 600, color: "#E8A040", textDecoration: "none" }}>
               ← Retour au dossier {article.dossier}
             </Link>
           </div>

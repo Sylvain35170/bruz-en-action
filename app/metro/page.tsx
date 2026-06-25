@@ -67,14 +67,14 @@ export default function MetroPage() {
     <div style={{ minHeight: "100vh", display: "flex", flexDirection: "column", fontFamily: "var(--font-sans, system-ui)", background: "#f8fafc" }}>
 
       {/* Header */}
-      <header style={{ background: "linear-gradient(135deg, #1B3A6B 0%, #2A5298 100%)", color: "#fff" }}>
+      <header style={{ background: "linear-gradient(135deg, #0E2F62 0%, #1A4177 100%)", color: "#fff" }}>
         <div style={{ maxWidth: 1120, margin: "0 auto", padding: "16px 24px" }}>
           <NavBar />
         </div>
       </header>
 
       {/* Hero */}
-      <section style={{ background: "linear-gradient(135deg, #1B3A6B 0%, #2A5298 100%)", color: "#fff", paddingBottom: 40 }}>
+      <section style={{ background: "linear-gradient(135deg, #0E2F62 0%, #1A4177 100%)", color: "#fff", paddingBottom: 40 }}>
         <div style={{ maxWidth: 1120, margin: "0 auto", padding: "36px 24px 0" }}>
           <div style={{ display: "inline-block", padding: "3px 10px", borderRadius: 999, background: "rgba(232,77,14,0.2)", color: "#f97316", fontSize: 12, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.08em", marginBottom: 16 }}>
             Au-delà de la mairie
@@ -94,7 +94,7 @@ export default function MetroPage() {
 
           {/* Qui décide quoi */}
           <section style={{ marginBottom: 48 }}>
-            <h2 style={{ fontSize: 20, fontWeight: 800, margin: "0 0 20px", color: "#0f172a", paddingBottom: 10, borderBottom: "2px solid #E8920E", display: "inline-block" }}>
+            <h2 style={{ fontSize: 20, fontWeight: 800, margin: "0 0 20px", color: "#0f172a", paddingBottom: 10, borderBottom: "2px solid #E8A040", display: "inline-block" }}>
               Ce que décide Rennes Métropole
             </h2>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(220px, 1fr))", gap: 12, marginBottom: 20 }}>
@@ -113,7 +113,7 @@ export default function MetroPage() {
 
           {/* Décisions récentes */}
           <section style={{ marginBottom: 48 }}>
-            <h2 style={{ fontSize: 20, fontWeight: 800, margin: "0 0 20px", color: "#0f172a", paddingBottom: 10, borderBottom: "2px solid #E8920E", display: "inline-block" }}>
+            <h2 style={{ fontSize: 20, fontWeight: 800, margin: "0 0 20px", color: "#0f172a", paddingBottom: 10, borderBottom: "2px solid #E8A040", display: "inline-block" }}>
               Décisions Métropole qui impactent Bruz
             </h2>
             <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
@@ -131,7 +131,7 @@ export default function MetroPage() {
                     </div>
                     {d.dossier && (
                       <a href={`/bruz-en-action/dossiers/${d.dossier}`}
-                        style={{ fontSize: 12, color: "#E8920E", fontWeight: 600, textDecoration: "none" }}>
+                        style={{ fontSize: 12, color: "#E8A040", fontWeight: 600, textDecoration: "none" }}>
                         → Dossier {d.dossier}
                       </a>
                     )}
@@ -165,13 +165,13 @@ export default function MetroPage() {
 
           {/* Signal */}
           <section>
-            <div style={{ background: "#fff8f5", border: "1px solid #fed7aa", borderLeft: "4px solid #E8920E", borderRadius: 12, padding: "20px 24px" }}>
-              <div style={{ fontSize: 13, fontWeight: 700, color: "#E8920E", marginBottom: 8 }}>Vous avez repéré une décision Métropole qui impacte Bruz ?</div>
+            <div style={{ background: "#fff8f5", border: "1px solid #fed7aa", borderLeft: "4px solid #E8A040", borderRadius: 12, padding: "20px 24px" }}>
+              <div style={{ fontSize: 13, fontWeight: 700, color: "#E8A040", marginBottom: 8 }}>Vous avez repéré une décision Métropole qui impacte Bruz ?</div>
               <p style={{ fontSize: 13, color: "#64748b", margin: "0 0 12px", lineHeight: 1.6 }}>
                 Si vous avez connaissance d'une délibération, d'un vote ou d'une décision au Conseil Métropolitain qui concerne Bruz et n'apparaît pas ici, signalez-le.
               </p>
               <a href={`mailto:${contact.email}?subject=${encodeURIComponent("[METRO] Décision à signaler")}`}
-                style={{ fontSize: 13, color: "#E8920E", fontWeight: 700, textDecoration: "none" }}>
+                style={{ fontSize: 13, color: "#E8A040", fontWeight: 700, textDecoration: "none" }}>
                 Nous écrire ↗
               </a>
             </div>

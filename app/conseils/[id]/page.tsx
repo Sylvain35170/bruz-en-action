@@ -56,7 +56,7 @@ function SectionTitle({ children }: { children: React.ReactNode }) {
   return (
     <h2 style={{
       fontSize: 19, fontWeight: 800, margin: "0 0 16px", color: "#0f172a",
-      paddingBottom: 10, borderBottom: "2px solid #E8920E", display: "inline-block",
+      paddingBottom: 10, borderBottom: "2px solid #E8A040", display: "inline-block",
     }}>{children}</h2>
   );
 }
@@ -87,7 +87,7 @@ export default async function SeancePage({ params }: { params: Promise<{ id: str
     <div style={{ minHeight: "100vh", display: "flex", flexDirection: "column", fontFamily: "var(--font-sans, system-ui)", background: "#f8fafc" }}>
 
       {/* Header */}
-      <header style={{ background: "linear-gradient(135deg, #1B3A6B 0%, #2A5298 100%)", color: "#fff" }}>
+      <header style={{ background: "linear-gradient(135deg, #0E2F62 0%, #1A4177 100%)", color: "#fff" }}>
         <div style={{ maxWidth: 1120, margin: "0 auto", padding: "16px 24px" }}>
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
             <a href="/bruz-en-action" style={{ display: "flex", alignItems: "center", gap: 12, textDecoration: "none" }}>
@@ -108,7 +108,7 @@ export default async function SeancePage({ params }: { params: Promise<{ id: str
       </header>
 
       {/* Hero */}
-      <section style={{ background: "linear-gradient(135deg, #1B3A6B 0%, #2A5298 100%)", color: "#fff", paddingBottom: 48 }}>
+      <section style={{ background: "linear-gradient(135deg, #0E2F62 0%, #1A4177 100%)", color: "#fff", paddingBottom: 48 }}>
         <div style={{ maxWidth: 1120, margin: "0 auto", padding: "40px 24px 0" }}>
           <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 16, flexWrap: "wrap" }}>
             <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#f97316" }}>
@@ -160,10 +160,10 @@ export default async function SeancePage({ params }: { params: Promise<{ id: str
                   {seance.points_cles.map((pt: string, i: number) => (
                     <li key={i} style={{
                       display: "flex", gap: 12, padding: "13px 16px",
-                      background: "#fff", border: "1px solid #e2e8f0", borderLeft: "3px solid #E8920E",
+                      background: "#fff", border: "1px solid #e2e8f0", borderLeft: "3px solid #E8A040",
                       borderRadius: 8, fontSize: 15, lineHeight: 1.6, color: "#334155",
                     }}>
-                      <span style={{ color: "#E8920E", fontWeight: 800, flexShrink: 0 }}>→</span>
+                      <span style={{ color: "#E8A040", fontWeight: 800, flexShrink: 0 }}>→</span>
                       {pt}
                     </li>
                   ))}

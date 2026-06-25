@@ -25,14 +25,14 @@ export default function Elus() {
     <div style={{ minHeight: "100vh", display: "flex", flexDirection: "column", background: "#f8fafc" }}>
 
       {/* Header */}
-      <header style={{ background: "linear-gradient(135deg, #1B3A6B 0%, #2A5298 100%)", color: "#fff" }}>
+      <header style={{ background: "linear-gradient(135deg, #0E2F62 0%, #1A4177 100%)", color: "#fff" }}>
         <div style={{ maxWidth: 1120, margin: "0 auto", padding: "16px 24px" }}>
           <NavBar />
         </div>
       </header>
 
       {/* Hero */}
-      <div style={{ background: "linear-gradient(135deg, #1B3A6B 0%, #2A5298 100%)", color: "#fff", paddingBottom: 48 }}>
+      <div style={{ background: "linear-gradient(135deg, #0E2F62 0%, #1A4177 100%)", color: "#fff", paddingBottom: 48 }}>
         <div style={{ maxWidth: 1120, margin: "0 auto", padding: "40px 24px 0" }}>
           <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#f97316", display: "block", marginBottom: 8 }}>
             Démocratie locale
@@ -65,14 +65,14 @@ export default function Elus() {
 
         {/* Maire + adjoints */}
         <section style={{ marginBottom: 48 }}>
-          <h2 style={{ fontSize: 17, fontWeight: 800, color: "#0f172a", margin: "0 0 20px", paddingBottom: 10, borderBottom: "2px solid #E8920E", display: "inline-block" }}>
+          <h2 style={{ fontSize: 17, fontWeight: 800, color: "#0f172a", margin: "0 0 20px", paddingBottom: 10, borderBottom: "2px solid #E8A040", display: "inline-block" }}>
             Maire &amp; adjoints
           </h2>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: 16 }}>
             {elus.filter(e => e.type === "maire" || e.type === "adjoint").map(elu => (
               <div key={elu.id} style={{
                 background: "#fff", border: "1px solid #e2e8f0", borderRadius: 12, padding: "16px 20px",
-                borderLeft: elu.type === "maire" ? "4px solid #E8920E" : "4px solid #3b82f6",
+                borderLeft: elu.type === "maire" ? "4px solid #E8A040" : "4px solid #3b82f6",
               }}>
                 <p style={{ margin: "0 0 2px", fontWeight: 700, color: "#0f172a", fontSize: 15 }}>{elu.nom}</p>
                 <p style={{ margin: "0 0 4px", fontSize: 13, color: "#2563eb", fontWeight: 600 }}>{elu.role}</p>
@@ -90,7 +90,7 @@ export default function Elus() {
 
         {/* Conseillers délégués */}
         <section style={{ marginBottom: 48 }}>
-          <h2 style={{ fontSize: 17, fontWeight: 800, color: "#0f172a", margin: "0 0 20px", paddingBottom: 10, borderBottom: "2px solid #E8920E", display: "inline-block" }}>
+          <h2 style={{ fontSize: 17, fontWeight: 800, color: "#0f172a", margin: "0 0 20px", paddingBottom: 10, borderBottom: "2px solid #E8A040", display: "inline-block" }}>
             Conseillers délégués
           </h2>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(220px, 1fr))", gap: 12 }}>

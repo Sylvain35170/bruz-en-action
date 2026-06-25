@@ -88,14 +88,14 @@ export default async function PromessePage({ params }: { params: Promise<{ id: s
     <div style={{ minHeight: "100vh", display: "flex", flexDirection: "column", fontFamily: "var(--font-sans, system-ui)", background: "#f8fafc" }}>
 
       {/* Header */}
-      <header style={{ background: "linear-gradient(135deg, #1B3A6B 0%, #2A5298 100%)", color: "#fff" }}>
+      <header style={{ background: "linear-gradient(135deg, #0E2F62 0%, #1A4177 100%)", color: "#fff" }}>
         <div style={{ maxWidth: 1120, margin: "0 auto", padding: "16px 24px" }}>
           <NavBar />
         </div>
       </header>
 
       {/* Hero */}
-      <section style={{ background: "linear-gradient(135deg, #1B3A6B 0%, #2A5298 100%)", color: "#fff", paddingBottom: 48 }}>
+      <section style={{ background: "linear-gradient(135deg, #0E2F62 0%, #1A4177 100%)", color: "#fff", paddingBottom: 48 }}>
         <div style={{ maxWidth: 1120, margin: "0 auto", padding: "40px 24px 0" }}>
           <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 16, flexWrap: "wrap" }}>
             {pilier && (
@@ -137,7 +137,7 @@ export default async function PromessePage({ params }: { params: Promise<{ id: s
             {/* Détail */}
             {promesse.detail && (
               <section style={{ marginBottom: 40 }}>
-                <h2 style={{ fontSize: 19, fontWeight: 800, margin: "0 0 16px", color: "#0f172a", paddingBottom: 10, borderBottom: "2px solid #E8920E", display: "inline-block" }}>
+                <h2 style={{ fontSize: 19, fontWeight: 800, margin: "0 0 16px", color: "#0f172a", paddingBottom: 10, borderBottom: "2px solid #E8A040", display: "inline-block" }}>
                   La promesse en détail
                 </h2>
                 <div style={{ background: "#fff", border: "1px solid #e2e8f0", borderRadius: 12, padding: "20px 24px" }}>
@@ -149,7 +149,7 @@ export default async function PromessePage({ params }: { params: Promise<{ id: s
             {/* Dossiers liés */}
             {dossiersLies.length > 0 && (
               <section style={{ marginBottom: 40 }}>
-                <h2 style={{ fontSize: 19, fontWeight: 800, margin: "0 0 16px", color: "#0f172a", paddingBottom: 10, borderBottom: "2px solid #E8920E", display: "inline-block" }}>
+                <h2 style={{ fontSize: 19, fontWeight: 800, margin: "0 0 16px", color: "#0f172a", paddingBottom: 10, borderBottom: "2px solid #E8A040", display: "inline-block" }}>
                   Dossiers associés
                 </h2>
                 <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
@@ -169,7 +169,7 @@ export default async function PromessePage({ params }: { params: Promise<{ id: s
 
             {/* Historique actus */}
             <section style={{ marginBottom: 40 }}>
-              <h2 style={{ fontSize: 19, fontWeight: 800, margin: "0 0 16px", color: "#0f172a", paddingBottom: 10, borderBottom: "2px solid #E8920E", display: "inline-block" }}>
+              <h2 style={{ fontSize: 19, fontWeight: 800, margin: "0 0 16px", color: "#0f172a", paddingBottom: 10, borderBottom: "2px solid #E8A040", display: "inline-block" }}>
                 Historique du suivi
               </h2>
 

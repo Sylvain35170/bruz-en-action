@@ -77,7 +77,7 @@ function SvgBarChart({ g }: { g: Graphique }) {
           const bH = (d.valeur / max) * chartH;
           const x = PAD_L + i * barSpacing + (barSpacing - barW) / 2;
           const y = PAD_T + chartH - bH;
-          const fill = d.confirme === false ? "#94a3b8" : "#E8920E";
+          const fill = d.confirme === false ? "#94a3b8" : "#E8A040";
           const lines = d.label.split("\n");
           return (
             <g key={i}>
@@ -92,7 +92,7 @@ function SvgBarChart({ g }: { g: Graphique }) {
       </svg>
       {g.donnees.some(d => d.confirme === false) && (
         <div style={{ display: "flex", gap: 16, marginTop: 8 }}>
-          <span style={{ fontSize: 11, color: "#64748b", display: "flex", alignItems: "center", gap: 5 }}><span style={{ width: 12, height: 12, background: "#E8920E", borderRadius: 2, display: "inline-block" }} /> Donnée confirmée</span>
+          <span style={{ fontSize: 11, color: "#64748b", display: "flex", alignItems: "center", gap: 5 }}><span style={{ width: 12, height: 12, background: "#E8A040", borderRadius: 2, display: "inline-block" }} /> Donnée confirmée</span>
           <span style={{ fontSize: 11, color: "#64748b", display: "flex", alignItems: "center", gap: 5 }}><span style={{ width: 12, height: 12, background: "#94a3b8", borderRadius: 2, display: "inline-block" }} /> Estimation indicative</span>
         </div>
       )}
@@ -114,7 +114,7 @@ function SvgHorizontalBarChart({ g }: { g: Graphique }) {
         {g.donnees.map((d, i) => {
           const y = i * ROW_H + 10;
           const bW = (d.valeur / max) * BAR_MAX_W;
-          const fill = d.confirme === false ? "#94a3b8" : "#E8920E";
+          const fill = d.confirme === false ? "#94a3b8" : "#E8A040";
           return (
             <g key={i}>
               <text x={PAD_L - 8} y={y + 14} textAnchor="end" fontSize={11} fill="#334155">{d.label}</text>
@@ -132,7 +132,7 @@ function SvgHorizontalBarChart({ g }: { g: Graphique }) {
 
 function SectionTitle({ children }: { children: React.ReactNode }) {
   return (
-    <h2 style={{ fontSize: 17, fontWeight: 800, margin: "0 0 16px", color: "#0f172a", paddingBottom: 8, borderBottom: "2px solid #E8920E", display: "inline-block" }}>
+    <h2 style={{ fontSize: 17, fontWeight: 800, margin: "0 0 16px", color: "#0f172a", paddingBottom: 8, borderBottom: "2px solid #E8A040", display: "inline-block" }}>
       {children}
     </h2>
   );
@@ -161,14 +161,14 @@ export default async function DossierPage({ params }: { params: Promise<{ id: st
     <div style={{ minHeight: "100vh", display: "flex", flexDirection: "column", fontFamily: "var(--font-sans, system-ui)", background: "#f8fafc" }}>
 
       {/* Header */}
-      <header style={{ background: "linear-gradient(135deg, #1B3A6B 0%, #2A5298 100%)", color: "#fff" }}>
+      <header style={{ background: "linear-gradient(135deg, #0E2F62 0%, #1A4177 100%)", color: "#fff" }}>
         <div style={{ maxWidth: 1120, margin: "0 auto", padding: "16px 24px" }}>
           <NavBar />
         </div>
       </header>
 
       {/* Hero */}
-      <section style={{ background: "linear-gradient(135deg, #1B3A6B 0%, #2A5298 100%)", color: "#fff", paddingBottom: 48 }}>
+      <section style={{ background: "linear-gradient(135deg, #0E2F62 0%, #1A4177 100%)", color: "#fff", paddingBottom: 48 }}>
         <div style={{ maxWidth: 1120, margin: "0 auto", padding: "40px 24px 0" }}>
           <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 16, flexWrap: "wrap" }}>
             <span style={{ padding: "3px 10px", borderRadius: 999, background: "rgba(255,255,255,0.1)", color: "rgba(255,255,255,0.8)", fontSize: 12, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.08em" }}>
@@ -192,11 +192,11 @@ export default async function DossierPage({ params }: { params: Promise<{ id: st
         <div style={{ background: "linear-gradient(90deg, #fff8f5, #fff)", borderBottom: "1px solid #fed7aa", padding: "16px 24px" }}>
           <div style={{ maxWidth: 1120, margin: "0 auto", display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: 12 }}>
             <div>
-              <span style={{ fontSize: 12, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.08em", color: "#E8920E", display: "block", marginBottom: 2 }}>Analyse éditoriale</span>
+              <span style={{ fontSize: 12, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.08em", color: "#E8A040", display: "block", marginBottom: 2 }}>Analyse éditoriale</span>
               <span style={{ fontSize: 14, color: "#334155" }}>Pourquoi ça compte, les deux visions du terminus, notre lecture</span>
             </div>
             <a href={`/bruz-en-action/dossiers/${dossier.id}/en-profondeur`}
-              style={{ flexShrink: 0, display: "inline-flex", alignItems: "center", gap: 8, padding: "10px 20px", background: "#E8920E", color: "#fff", borderRadius: 999, textDecoration: "none", fontSize: 14, fontWeight: 700 }}>
+              style={{ flexShrink: 0, display: "inline-flex", alignItems: "center", gap: 8, padding: "10px 20px", background: "#E8A040", color: "#fff", borderRadius: 999, textDecoration: "none", fontSize: 14, fontWeight: 700 }}>
               Lire en profondeur →
             </a>
           </div>
@@ -230,7 +230,7 @@ export default async function DossierPage({ params }: { params: Promise<{ id: st
                       borderBottom: i < ceQuOnSait.length - 1 ? "1px solid #f1f5f9" : "none",
                       fontSize: 14, lineHeight: 1.65, color: "#334155",
                     }}>
-                      <span style={{ color: "#E8920E", fontWeight: 800, flexShrink: 0, marginTop: 1 }}>→</span>
+                      <span style={{ color: "#E8A040", fontWeight: 800, flexShrink: 0, marginTop: 1 }}>→</span>
                       <span>{pt}</span>
                     </div>
                   ))}
@@ -283,7 +283,7 @@ export default async function DossierPage({ params }: { params: Promise<{ id: st
                       background: "#fff", border: "1px solid #e2e8f0", borderRadius: 10,
                       padding: "14px 18px", display: "flex", gap: 16, alignItems: "flex-start",
                     }}>
-                      <div style={{ flexShrink: 0, width: 8, height: 8, borderRadius: "50%", background: "#E8920E", marginTop: 7 }} />
+                      <div style={{ flexShrink: 0, width: 8, height: 8, borderRadius: "50%", background: "#E8A040", marginTop: 7 }} />
                       <div>
                         <div style={{ fontSize: 14, fontWeight: 800, color: "#0f172a", marginBottom: 3 }}>{q.nom}</div>
                         <div style={{ fontSize: 13, color: "#64748b", lineHeight: 1.5 }}>{q.role}</div>
@@ -303,7 +303,7 @@ export default async function DossierPage({ params }: { params: Promise<{ id: st
                   <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
                     {decisions.map((d, i) => (
                       <div key={i} style={{ position: "relative" }}>
-                        <div style={{ position: "absolute", left: -18, top: 5, width: 8, height: 8, borderRadius: "50%", background: "#E8920E", border: "2px solid #fff", boxShadow: "0 0 0 2px #E8920E" }} />
+                        <div style={{ position: "absolute", left: -18, top: 5, width: 8, height: 8, borderRadius: "50%", background: "#E8A040", border: "2px solid #fff", boxShadow: "0 0 0 2px #E8A040" }} />
                         <div style={{ background: "#fff", border: "1px solid #e2e8f0", borderRadius: 8, padding: "12px 16px" }}>
                           <div style={{ fontSize: 11, fontWeight: 700, color: "#94a3b8", textTransform: "uppercase", letterSpacing: "0.06em", marginBottom: 5 }}>
                             {new Date(d.date + (d.date.length <= 7 ? "-01" : "")).toLocaleDateString("fr-FR", { month: "long", year: "numeric" })}
@@ -371,7 +371,7 @@ export default async function DossierPage({ params }: { params: Promise<{ id: st
                       <p style={{ margin: 0, fontSize: 13, lineHeight: 1.6, color: "#64748b" }}>{a.detail}</p>
                       {a.article_id && (
                         <Link href={`/bruz-en-action/articles/${a.article_id}`}
-                          style={{ display: "inline-block", marginTop: 8, fontSize: 12, fontWeight: 600, color: "#E8920E" }}>
+                          style={{ display: "inline-block", marginTop: 8, fontSize: 12, fontWeight: 600, color: "#E8A040" }}>
                           Lire l'analyse →
                         </Link>
                       )}

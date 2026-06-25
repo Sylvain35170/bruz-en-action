@@ -35,14 +35,14 @@ export default function MetropolePage() {
     <div style={{ minHeight: "100vh", display: "flex", flexDirection: "column", fontFamily: "var(--font-sans, system-ui)", background: "#f8fafc" }}>
 
       {/* Header */}
-      <header style={{ background: "linear-gradient(135deg, #1B3A6B 0%, #2A5298 100%)", color: "#fff" }}>
+      <header style={{ background: "linear-gradient(135deg, #0E2F62 0%, #1A4177 100%)", color: "#fff" }}>
         <div style={{ maxWidth: 1120, margin: "0 auto", padding: "16px 24px" }}>
           <NavBar />
         </div>
       </header>
 
       {/* Hero */}
-      <section style={{ background: "linear-gradient(135deg, #1B3A6B 0%, #2A5298 100%)", color: "#fff", paddingBottom: 48 }}>
+      <section style={{ background: "linear-gradient(135deg, #0E2F62 0%, #1A4177 100%)", color: "#fff", paddingBottom: 48 }}>
         <div style={{ maxWidth: 1120, margin: "0 auto", padding: "36px 24px 0" }}>
           <div style={{ display: "inline-block", padding: "3px 10px", borderRadius: 999, background: "rgba(232,77,14,0.2)", color: "#f97316", fontSize: 12, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.08em", marginBottom: 16 }}>
             Au-delà de la mairie
@@ -57,7 +57,7 @@ export default function MetropolePage() {
           </p>
           <div style={{ display: "flex", gap: 16, flexWrap: "wrap" }}>
             {[
-              { n: dossiers.length, label: "Dossiers suivis", color: "#E8920E" },
+              { n: dossiers.length, label: "Dossiers suivis", color: "#E8A040" },
               { n: dossiers.filter(d => d.actus_recentes.length > 0).length, label: "Avec actus récentes", color: "#0284c7" },
               { n: dossiers.reduce((acc, d) => acc + d.lien_dossiers_communaux.length, 0), label: "Liens avec dossiers Bruz", color: "#7c3aed" },
             ].map(({ n, label, color }) => (
@@ -75,7 +75,7 @@ export default function MetropolePage() {
         <div style={{ maxWidth: 1120, margin: "0 auto", padding: "24px 24px" }}>
           <div style={{ display: "flex", gap: 24, flexWrap: "wrap", alignItems: "flex-start" }}>
             <div style={{ flex: 1, minWidth: 280 }}>
-              <div style={{ fontSize: 12, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.08em", color: "#E8920E", marginBottom: 8 }}>Ce que décide Rennes Métropole</div>
+              <div style={{ fontSize: 12, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.08em", color: "#E8A040", marginBottom: 8 }}>Ce que décide Rennes Métropole</div>
               <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
                 {["Transports (T4, métro, bus)", "Urbanisme (PLUiH)", "Eau & assainissement", "Collecte des déchets", "Logement (PLH)", "Environnement"].map(comp => (
                   <span key={comp} style={{ fontSize: 12, padding: "4px 10px", background: "#f1f5f9", borderRadius: 999, color: "#475569", fontWeight: 500 }}>{comp}</span>

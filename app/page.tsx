@@ -187,15 +187,15 @@ export default function Home() {
             {topDossiers.map(d => (
               <a key={d.id} href={"lien_externe" in d && d.lien_externe ? String(d.lien_externe) : `/bruz-en-action/dossiers/${d.id}`}
                 style={{ textDecoration: "none", display: "flex", flexDirection: "column", background: "#fff", border: "1px solid #e2e8f0", borderRadius: 12, padding: "20px", gap: 10,
-                  borderTop: `3px solid ${d.featured ? "#E8920E" : "#3b82f6"}` }}>
+                  borderTop: `3px solid ${d.featured ? "#E8A040" : "#3b82f6"}` }}>
                 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                   <span style={{ fontSize: 11, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.08em", color: "#64748b", padding: "2px 8px", background: "#f1f5f9", borderRadius: 999 }}>{d.categorie}</span>
-                  {d.featured && <span style={{ fontSize: 11, color: "#E8920E", fontWeight: 700 }}>● Actif</span>}
+                  {d.featured && <span style={{ fontSize: 11, color: "#E8A040", fontWeight: 700 }}>● Actif</span>}
                 </div>
                 <h3 style={{ margin: 0, fontSize: 15, fontWeight: 700, color: "#0f172a", lineHeight: 1.4 }}>{d.titre}</h3>
                 <p style={{ margin: 0, fontSize: 13, color: "#64748b", lineHeight: 1.6 }}>{d.chapeau}</p>
                 <div style={{ marginTop: "auto", paddingTop: 8, display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                  <span style={{ fontSize: 13, fontWeight: 700, color: "#E8920E" }}>Lire →</span>
+                  <span style={{ fontSize: 13, fontWeight: 700, color: "#E8A040" }}>Lire →</span>
                   {d.last_activity && (
                     <span style={{ fontSize: 11, color: "#94a3b8" }}>Màj {fmtShort(d.last_activity)}</span>
                   )}
@@ -370,7 +370,7 @@ export default function Home() {
       </section>
 
       {/* ── REJOINDRE ── */}
-      <section style={{ background: "linear-gradient(135deg, #2A5298 0%, #1B3A6B 100%)", color: "#fff" }}>
+      <section style={{ background: "linear-gradient(135deg, #1A4177 0%, #0E2F62 100%)", color: "#fff" }}>
         <div style={{ maxWidth: "var(--container-max)", margin: "0 auto", padding: "64px var(--container-pad)", textAlign: "center" }}>
           <h2 style={{ color: "#fff", fontSize: "clamp(1.4rem,3vw,2rem)", margin: "0 0 16px" }}>
             Rejoignez le mouvement citoyen
@@ -398,7 +398,7 @@ export default function Home() {
       </section>
 
       {/* ── FOOTER ── */}
-      <footer style={{ background: "#1B3A6B", color: "rgba(255,255,255,0.5)" }}>
+      <footer style={{ background: "#0E2F62", color: "rgba(255,255,255,0.5)" }}>
         <div style={{ maxWidth: "var(--container-max)", margin: "0 auto", padding: "40px var(--container-pad)" }}>
           <div style={{ display: "flex", gap: 32, flexWrap: "wrap", justifyContent: "space-between", marginBottom: 32 }}>
             <div>

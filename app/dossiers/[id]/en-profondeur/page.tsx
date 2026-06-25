@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
 
 function SectionTitle({ children }: { children: React.ReactNode }) {
   return (
-    <h2 style={{ fontSize: 20, fontWeight: 800, margin: "0 0 20px", color: "#0f172a", paddingBottom: 10, borderBottom: "2px solid #E8920E", display: "inline-block" }}>
+    <h2 style={{ fontSize: 20, fontWeight: 800, margin: "0 0 20px", color: "#0f172a", paddingBottom: 10, borderBottom: "2px solid #E8A040", display: "inline-block" }}>
       {children}
     </h2>
   );
@@ -55,14 +55,14 @@ export default async function EnProfondeurPage({ params }: { params: Promise<{ i
     <div style={{ minHeight: "100vh", display: "flex", flexDirection: "column", fontFamily: "var(--font-sans, system-ui)", background: "#f8fafc" }}>
 
       {/* Header */}
-      <header style={{ background: "linear-gradient(135deg, #1B3A6B 0%, #2A5298 100%)", color: "#fff" }}>
+      <header style={{ background: "linear-gradient(135deg, #0E2F62 0%, #1A4177 100%)", color: "#fff" }}>
         <div style={{ maxWidth: 1120, margin: "0 auto", padding: "16px 24px" }}>
           <NavBar />
         </div>
       </header>
 
       {/* Hero */}
-      <section style={{ background: "linear-gradient(135deg, #1B3A6B 0%, #2A5298 100%)", color: "#fff", paddingBottom: 48 }}>
+      <section style={{ background: "linear-gradient(135deg, #0E2F62 0%, #1A4177 100%)", color: "#fff", paddingBottom: 48 }}>
         <div style={{ maxWidth: 1120, margin: "0 auto", padding: "40px 24px 0" }}>
           <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 16 }}>
             <span style={{ padding: "3px 10px", borderRadius: 999, background: "rgba(232,77,14,0.2)", color: "#f97316", fontSize: 12, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.08em" }}>
@@ -119,7 +119,7 @@ export default async function EnProfondeurPage({ params }: { params: Promise<{ i
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px,1fr))", gap: 14, marginBottom: 24 }}>
               {[
                 { icon: "🎖️", label: "Gendarmerie nationale", detail: "Compétence principale : police judiciaire, sécurité routière, enquêtes, interventions d'urgence. Bruz dépend du groupement de gendarmerie d'Ille-et-Vilaine. L'État paie, l'État décide des effectifs.", couleur: "#1d4ed8" },
-                { icon: "🚔", label: "Police municipale (PM)", detail: "Compétence communale : stationnement, tranquillité publique, arrêtés du maire, présence préventive. Effectifs et équipements décidés et financés par la commune. Le maire est l'autorité de police.", couleur: "#E8920E" },
+                { icon: "🚔", label: "Police municipale (PM)", detail: "Compétence communale : stationnement, tranquillité publique, arrêtés du maire, présence préventive. Effectifs et équipements décidés et financés par la commune. Le maire est l'autorité de police.", couleur: "#E8A040" },
                 { icon: "📞", label: "CCAS & médiation", detail: "Prévention sociale, accompagnement des personnes vulnérables, médiation de quartier. Complémentaire aux forces de l'ordre — souvent plus efficace sur les incivilités du quotidien.", couleur: "#059669" },
               ].map(({ icon, label, detail, couleur }) => (
                 <div key={label} style={{ background: "#fff", border: "1px solid #e2e8f0", borderLeft: `3px solid ${couleur}`, borderRadius: 10, padding: "18px 20px" }}>
@@ -198,7 +198,7 @@ export default async function EnProfondeurPage({ params }: { params: Promise<{ i
                 { q: "Quels sont les chiffres de délinquance à Bruz ?", d: "Les données du Ministère de l'Intérieur (data.gouv.fr) sont publiques par commune — mais elles n'ont jamais été présentées en CM ni commentées par la mairie." },
                 { q: "Une convention PM-gendarmerie existe-t-elle ?", d: "Les communes peuvent signer des conventions de coordination avec la gendarmerie. Bruz en a-t-elle une ? Avec quel contenu ?" },
               ].map(({ q, d }, i) => (
-                <div key={i} style={{ background: "#fff", border: "1px solid #e2e8f0", borderLeft: "3px solid #E8920E", borderRadius: 8, padding: "16px 20px" }}>
+                <div key={i} style={{ background: "#fff", border: "1px solid #e2e8f0", borderLeft: "3px solid #E8A040", borderRadius: 8, padding: "16px 20px" }}>
                   <div style={{ fontSize: 14, fontWeight: 700, color: "#0f172a", marginBottom: 6 }}>{q}</div>
                   <div style={{ fontSize: 13, color: "#64748b", lineHeight: 1.6 }}>{d}</div>
                 </div>
@@ -207,8 +207,8 @@ export default async function EnProfondeurPage({ params }: { params: Promise<{ i
           </section>
 
           <section style={{ marginBottom: 48 }}>
-            <div style={{ background: "#fff8f5", border: "1px solid #fed7aa", borderLeft: "4px solid #E8920E", borderRadius: 12, padding: "24px 28px" }}>
-              <div style={{ fontSize: 11, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.08em", color: "#E8920E", marginBottom: 10 }}>Notre lecture — position de Bruz en Action</div>
+            <div style={{ background: "#fff8f5", border: "1px solid #fed7aa", borderLeft: "4px solid #E8A040", borderRadius: 12, padding: "24px 28px" }}>
+              <div style={{ fontSize: 11, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.08em", color: "#E8A040", marginBottom: 10 }}>Notre lecture — position de Bruz en Action</div>
               <p style={{ margin: "0 0 14px", fontSize: 15, fontWeight: 700, color: "#0f172a", lineHeight: 1.5 }}>
                 Le sentiment de sécurité, ça se construit avec des données — pas des slogans.
               </p>
@@ -233,11 +233,11 @@ export default async function EnProfondeurPage({ params }: { params: Promise<{ i
               ].map((item, i) => (
                 <div key={i} style={{ display: "flex", gap: 16, background: "#fff", border: "1px solid #e2e8f0", borderRadius: 10, padding: "14px 18px", alignItems: "flex-start" }}>
                   <div style={{ flexShrink: 0, minWidth: 100 }}>
-                    <span style={{ fontSize: 12, fontWeight: 800, color: item.importance === "haute" ? "#E8920E" : "#64748b" }}>{item.periode}</span>
+                    <span style={{ fontSize: 12, fontWeight: 800, color: item.importance === "haute" ? "#E8A040" : "#64748b" }}>{item.periode}</span>
                   </div>
                   <div style={{ fontSize: 14, color: "#334155", lineHeight: 1.6 }}>
                     {item.description}
-                    {item.importance === "haute" && <span style={{ display: "inline-block", marginLeft: 8, fontSize: 10, fontWeight: 700, textTransform: "uppercase", color: "#E8920E", background: "#fff1ee", padding: "1px 6px", borderRadius: 999 }}>À surveiller</span>}
+                    {item.importance === "haute" && <span style={{ display: "inline-block", marginLeft: 8, fontSize: 10, fontWeight: 700, textTransform: "uppercase", color: "#E8A040", background: "#fff1ee", padding: "1px 6px", borderRadius: 999 }}>À surveiller</span>}
                   </div>
                 </div>
               ))}
@@ -246,7 +246,7 @@ export default async function EnProfondeurPage({ params }: { params: Promise<{ i
 
           <div style={{ borderTop: "1px solid #e2e8f0", paddingTop: 32, display: "flex", gap: 16, alignItems: "center", flexWrap: "wrap" }}>
             <a href={`/bruz-en-action/dossiers/${id}`}
-              style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "10px 20px", background: "#1B3A6B", color: "#fff", borderRadius: 999, textDecoration: "none", fontSize: 14, fontWeight: 700 }}>
+              style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "10px 20px", background: "#0E2F62", color: "#fff", borderRadius: 999, textDecoration: "none", fontSize: 14, fontWeight: 700 }}>
               ← Retour au dossier D07
             </a>
             <a href="https://www.data.gouv.fr/fr/datasets/crimes-et-delits-enregistres-par-les-services-de-gendarmerie-et-de-police-depuis-2012/" target="_blank" rel="noopener noreferrer"
@@ -305,7 +305,7 @@ export default async function EnProfondeurPage({ params }: { params: Promise<{ i
                   d: "Piscine, restauration scolaire, activités sportives, crèches… Les tarifs relèvent des délibérations du conseil. Aucune révision tarifaire n'a été votée publiquement depuis l'installation de la nouvelle équipe."
                 },
               ].map(({ q, d }, i) => (
-                <div key={i} style={{ background: "#fff", border: "1px solid #e2e8f0", borderLeft: "3px solid #E8920E", borderRadius: 8, padding: "16px 20px" }}>
+                <div key={i} style={{ background: "#fff", border: "1px solid #e2e8f0", borderLeft: "3px solid #E8A040", borderRadius: 8, padding: "16px 20px" }}>
                   <div style={{ fontSize: 14, fontWeight: 700, color: "#0f172a", marginBottom: 6 }}>{q}</div>
                   <div style={{ fontSize: 13, color: "#64748b", lineHeight: 1.6 }}>{d}</div>
                 </div>
@@ -331,7 +331,7 @@ export default async function EnProfondeurPage({ params }: { params: Promise<{ i
                   <div style={{ fontSize: 22, marginBottom: 8 }}>{icon}</div>
                   <div style={{ fontSize: 14, fontWeight: 700, color: "#0f172a", marginBottom: 6 }}>{label}</div>
                   <div style={{ fontSize: 12, color: "#64748b", lineHeight: 1.5, marginBottom: lien ? 10 : 0 }}>{detail}</div>
-                  {lien && <a href={lien} style={{ fontSize: 11, color: "#E8920E", fontWeight: 700, textDecoration: "none" }}>Voir le dossier ↗</a>}
+                  {lien && <a href={lien} style={{ fontSize: 11, color: "#E8A040", fontWeight: 700, textDecoration: "none" }}>Voir le dossier ↗</a>}
                 </div>
               ))}
             </div>
@@ -371,8 +371,8 @@ export default async function EnProfondeurPage({ params }: { params: Promise<{ i
           </section>
 
           <section style={{ marginBottom: 48 }}>
-            <div style={{ background: "#fff8f5", border: "1px solid #fed7aa", borderLeft: "4px solid #E8920E", borderRadius: 12, padding: "24px 28px" }}>
-              <div style={{ fontSize: 11, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.08em", color: "#E8920E", marginBottom: 10 }}>Notre lecture — position de Bruz en Action</div>
+            <div style={{ background: "#fff8f5", border: "1px solid #fed7aa", borderLeft: "4px solid #E8A040", borderRadius: 12, padding: "24px 28px" }}>
+              <div style={{ fontSize: 11, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.08em", color: "#E8A040", marginBottom: 10 }}>Notre lecture — position de Bruz en Action</div>
               <p style={{ margin: "0 0 14px", fontSize: 15, fontWeight: 700, color: "#0f172a", lineHeight: 1.5 }}>
                 La transparence financière n'est pas optionnelle.
               </p>
@@ -384,7 +384,7 @@ export default async function EnProfondeurPage({ params }: { params: Promise<{ i
               </p>
               <p style={{ margin: 0, fontSize: 14, color: "#64748b", lineHeight: 1.75, fontStyle: "italic" }}>
                 Vous avez accès à des données financières sur Bruz que nous n'avons pas ?{" "}
-                <a href={`mailto:${metaData.contact.email}?subject=${encodeURIComponent("[D03] Finances — données à partager")}`} style={{ color: "#E8920E" }}>Partagez-les avec nous</a>.
+                <a href={`mailto:${metaData.contact.email}?subject=${encodeURIComponent("[D03] Finances — données à partager")}`} style={{ color: "#E8A040" }}>Partagez-les avec nous</a>.
               </p>
             </div>
           </section>
@@ -401,11 +401,11 @@ export default async function EnProfondeurPage({ params }: { params: Promise<{ i
               ].map((item, i) => (
                 <div key={i} style={{ display: "flex", gap: 16, background: "#fff", border: "1px solid #e2e8f0", borderRadius: 10, padding: "14px 18px", alignItems: "flex-start" }}>
                   <div style={{ flexShrink: 0, minWidth: 100 }}>
-                    <span style={{ fontSize: 12, fontWeight: 800, color: item.importance === "haute" ? "#E8920E" : "#64748b" }}>{item.periode}</span>
+                    <span style={{ fontSize: 12, fontWeight: 800, color: item.importance === "haute" ? "#E8A040" : "#64748b" }}>{item.periode}</span>
                   </div>
                   <div style={{ fontSize: 14, color: "#334155", lineHeight: 1.6 }}>
                     {item.description}
-                    {item.importance === "haute" && <span style={{ display: "inline-block", marginLeft: 8, fontSize: 10, fontWeight: 700, textTransform: "uppercase", color: "#E8920E", background: "#fff1ee", padding: "1px 6px", borderRadius: 999 }}>À surveiller</span>}
+                    {item.importance === "haute" && <span style={{ display: "inline-block", marginLeft: 8, fontSize: 10, fontWeight: 700, textTransform: "uppercase", color: "#E8A040", background: "#fff1ee", padding: "1px 6px", borderRadius: 999 }}>À surveiller</span>}
                   </div>
                 </div>
               ))}
@@ -414,7 +414,7 @@ export default async function EnProfondeurPage({ params }: { params: Promise<{ i
 
           <div style={{ borderTop: "1px solid #e2e8f0", paddingTop: 32, display: "flex", gap: 16, alignItems: "center", flexWrap: "wrap" }}>
             <a href={`/bruz-en-action/dossiers/${id}`}
-              style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "10px 20px", background: "#1B3A6B", color: "#fff", borderRadius: 999, textDecoration: "none", fontSize: 14, fontWeight: 700 }}>
+              style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "10px 20px", background: "#0E2F62", color: "#fff", borderRadius: 999, textDecoration: "none", fontSize: 14, fontWeight: 700 }}>
               ← Retour au dossier D03
             </a>
             <a href="/bruz-en-action/conseils/CM-2026-07-03"
@@ -477,7 +477,7 @@ export default async function EnProfondeurPage({ params }: { params: Promise<{ i
                 { q: "Quels équipements en face ?", d: "Crèches, gymnases, espaces verts — aucun chiffrage public des équipements à créer en parallèle des logements." },
                 { q: "Quelle concertation réelle ?", d: "La réunion publique de 2025 a été jugée trop unilatérale par la presse locale. Les habitants auront-ils voix au chapitre sur la densité ?" },
               ].map(({ q, d }, i) => (
-                <div key={i} style={{ background: "#fff", border: "1px solid #e2e8f0", borderLeft: "3px solid #E8920E", borderRadius: 8, padding: "16px 20px" }}>
+                <div key={i} style={{ background: "#fff", border: "1px solid #e2e8f0", borderLeft: "3px solid #E8A040", borderRadius: 8, padding: "16px 20px" }}>
                   <div style={{ fontSize: 14, fontWeight: 700, color: "#0f172a", marginBottom: 6 }}>{q}</div>
                   <div style={{ fontSize: 13, color: "#64748b", lineHeight: 1.6 }}>{d}</div>
                 </div>
@@ -486,8 +486,8 @@ export default async function EnProfondeurPage({ params }: { params: Promise<{ i
           </section>
 
           <section style={{ marginBottom: 48 }}>
-            <div style={{ background: "#fff8f5", border: "1px solid #fed7aa", borderLeft: "4px solid #E8920E", borderRadius: 12, padding: "24px 28px" }}>
-              <div style={{ fontSize: 11, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.08em", color: "#E8920E", marginBottom: 10 }}>Notre lecture — position de Bruz en Action</div>
+            <div style={{ background: "#fff8f5", border: "1px solid #fed7aa", borderLeft: "4px solid #E8A040", borderRadius: 12, padding: "24px 28px" }}>
+              <div style={{ fontSize: 11, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.08em", color: "#E8A040", marginBottom: 10 }}>Notre lecture — position de Bruz en Action</div>
               <p style={{ margin: "0 0 14px", fontSize: 15, fontWeight: 700, color: "#0f172a", lineHeight: 1.5 }}>
                 Construire, oui — mais pas sans plan scolaire ni concertation réelle.
               </p>
@@ -501,7 +501,7 @@ export default async function EnProfondeurPage({ params }: { params: Promise<{ i
               </p>
               <p style={{ margin: 0, fontSize: 14, color: "#64748b", lineHeight: 1.75, fontStyle: "italic" }}>
                 Vous avez des informations sur le plan scolaire ou le calendrier de la ZAC ?{" "}
-                <a href={`mailto:${metaData.contact.email}?subject=${encodeURIComponent("[D02] ZAC Multisites — informations")}`} style={{ color: "#E8920E" }}>Partagez-les avec nous</a>.
+                <a href={`mailto:${metaData.contact.email}?subject=${encodeURIComponent("[D02] ZAC Multisites — informations")}`} style={{ color: "#E8A040" }}>Partagez-les avec nous</a>.
               </p>
             </div>
           </section>
@@ -518,11 +518,11 @@ export default async function EnProfondeurPage({ params }: { params: Promise<{ i
               ].map((item, i) => (
                 <div key={i} style={{ display: "flex", gap: 16, background: "#fff", border: "1px solid #e2e8f0", borderRadius: 10, padding: "14px 18px", alignItems: "flex-start" }}>
                   <div style={{ flexShrink: 0, minWidth: 80 }}>
-                    <span style={{ fontSize: 12, fontWeight: 800, color: item.importance === "haute" ? "#E8920E" : "#64748b" }}>{item.periode}</span>
+                    <span style={{ fontSize: 12, fontWeight: 800, color: item.importance === "haute" ? "#E8A040" : "#64748b" }}>{item.periode}</span>
                   </div>
                   <div style={{ fontSize: 14, color: "#334155", lineHeight: 1.6 }}>
                     {item.description}
-                    {item.importance === "haute" && <span style={{ display: "inline-block", marginLeft: 8, fontSize: 10, fontWeight: 700, textTransform: "uppercase", color: "#E8920E", background: "#fff1ee", padding: "1px 6px", borderRadius: 999 }}>À surveiller</span>}
+                    {item.importance === "haute" && <span style={{ display: "inline-block", marginLeft: 8, fontSize: 10, fontWeight: 700, textTransform: "uppercase", color: "#E8A040", background: "#fff1ee", padding: "1px 6px", borderRadius: 999 }}>À surveiller</span>}
                   </div>
                 </div>
               ))}
@@ -531,7 +531,7 @@ export default async function EnProfondeurPage({ params }: { params: Promise<{ i
 
           <div style={{ borderTop: "1px solid #e2e8f0", paddingTop: 32, display: "flex", gap: 16, alignItems: "center", flexWrap: "wrap" }}>
             <a href={`/bruz-en-action/dossiers/${id}`}
-              style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "10px 20px", background: "#1B3A6B", color: "#fff", borderRadius: 999, textDecoration: "none", fontSize: 14, fontWeight: 700 }}>
+              style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "10px 20px", background: "#0E2F62", color: "#fff", borderRadius: 999, textDecoration: "none", fontSize: 14, fontWeight: 700 }}>
               ← Retour au dossier D02
             </a>
             <a href="/bruz-en-action/carte"
@@ -618,8 +618,8 @@ export default async function EnProfondeurPage({ params }: { params: Promise<{ i
               </div>
 
               {/* Nouvelle majorité */}
-              <div style={{ background: "#fff", border: "2px solid #E8920E", borderRadius: 16, overflow: "hidden" }}>
-                <div style={{ background: "linear-gradient(135deg, #1B3A6B 0%, #2A5298 100%)", padding: "14px 20px" }}>
+              <div style={{ background: "#fff", border: "2px solid #E8A040", borderRadius: 16, overflow: "hidden" }}>
+                <div style={{ background: "linear-gradient(135deg, #0E2F62 0%, #1A4177 100%)", padding: "14px 20px" }}>
                   <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "rgba(255,255,255,0.7)", marginBottom: 4 }}>Nouvelle majorité · Houssin (2026–2032)</div>
                   <div style={{ fontSize: 16, fontWeight: 800, color: "#fff" }}>Terminus gare SNCF + hub multimodal</div>
                 </div>
@@ -633,7 +633,7 @@ export default async function EnProfondeurPage({ params }: { params: Promise<{ i
                       "Déploiement plus rapide, coûts de génie civil réduits côté Bruz",
                     ].map((pt, i) => (
                       <div key={i} style={{ display: "flex", gap: 10, fontSize: 13, color: "#334155", lineHeight: 1.6 }}>
-                        <span style={{ color: "#E8920E", flexShrink: 0 }}>→</span>
+                        <span style={{ color: "#E8A040", flexShrink: 0 }}>→</span>
                         {pt}
                       </div>
                     ))}
@@ -645,8 +645,8 @@ export default async function EnProfondeurPage({ params }: { params: Promise<{ i
 
           {/* Notre lecture */}
           <section style={{ marginBottom: 48 }}>
-            <div style={{ background: "#fff8f5", border: "1px solid #fed7aa", borderLeft: "4px solid #E8920E", borderRadius: 12, padding: "24px 28px" }}>
-              <div style={{ fontSize: 11, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.08em", color: "#E8920E", marginBottom: 10 }}>Notre lecture — position de Bruz en Action</div>
+            <div style={{ background: "#fff8f5", border: "1px solid #fed7aa", borderLeft: "4px solid #E8A040", borderRadius: 12, padding: "24px 28px" }}>
+              <div style={{ fontSize: 11, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.08em", color: "#E8A040", marginBottom: 10 }}>Notre lecture — position de Bruz en Action</div>
               <p style={{ margin: "0 0 14px", fontSize: 15, fontWeight: 700, color: "#0f172a", lineHeight: 1.5 }}>
                 Le hub multimodal gare SNCF nous semble la stratégie la plus pragmatique pour Bruz.
               </p>
@@ -662,7 +662,7 @@ export default async function EnProfondeurPage({ params }: { params: Promise<{ i
               </p>
               <p style={{ margin: 0, fontSize: 14, color: "#64748b", lineHeight: 1.75, fontStyle: "italic" }}>
                 Nous soutenons la majorité Houssin et nous assumons cette posture.
-                Si vous avez des arguments contraires documentés, <a href={`mailto:${metaData.contact.email}?subject=${encodeURIComponent("[D01] Argumentation terminus T4")}`} style={{ color: "#E8920E" }}>faites-les nous parvenir</a>.
+                Si vous avez des arguments contraires documentés, <a href={`mailto:${metaData.contact.email}?subject=${encodeURIComponent("[D01] Argumentation terminus T4")}`} style={{ color: "#E8A040" }}>faites-les nous parvenir</a>.
               </p>
             </div>
           </section>
@@ -679,11 +679,11 @@ export default async function EnProfondeurPage({ params }: { params: Promise<{ i
               ].map((item, i) => (
                 <div key={i} style={{ display: "flex", gap: 16, background: "#fff", border: "1px solid #e2e8f0", borderRadius: 10, padding: "14px 18px", alignItems: "flex-start" }}>
                   <div style={{ flexShrink: 0, minWidth: 80 }}>
-                    <span style={{ fontSize: 12, fontWeight: 800, color: item.importance === "haute" ? "#E8920E" : "#64748b" }}>{item.periode}</span>
+                    <span style={{ fontSize: 12, fontWeight: 800, color: item.importance === "haute" ? "#E8A040" : "#64748b" }}>{item.periode}</span>
                   </div>
                   <div style={{ fontSize: 14, color: "#334155", lineHeight: 1.6 }}>
                     {item.description}
-                    {item.importance === "haute" && <span style={{ display: "inline-block", marginLeft: 8, fontSize: 10, fontWeight: 700, textTransform: "uppercase", color: "#E8920E", background: "#fff1ee", padding: "1px 6px", borderRadius: 999 }}>À surveiller</span>}
+                    {item.importance === "haute" && <span style={{ display: "inline-block", marginLeft: 8, fontSize: 10, fontWeight: 700, textTransform: "uppercase", color: "#E8A040", background: "#fff1ee", padding: "1px 6px", borderRadius: 999 }}>À surveiller</span>}
                   </div>
                 </div>
               ))}
@@ -693,7 +693,7 @@ export default async function EnProfondeurPage({ params }: { params: Promise<{ i
           {/* Retour dossier — D01 */}
           <div style={{ borderTop: "1px solid #e2e8f0", paddingTop: 32, display: "flex", gap: 16, alignItems: "center", flexWrap: "wrap" }}>
             <a href={`/bruz-en-action/dossiers/${id}`}
-              style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "10px 20px", background: "#1B3A6B", color: "#fff", borderRadius: 999, textDecoration: "none", fontSize: 14, fontWeight: 700 }}>
+              style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "10px 20px", background: "#0E2F62", color: "#fff", borderRadius: 999, textDecoration: "none", fontSize: 14, fontWeight: 700 }}>
               ← Retour au dossier {id}
             </a>
             <a href="/bruz-en-action/carte"

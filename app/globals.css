@@ -19,10 +19,10 @@
   --slate-900: #0f172a;
 
   /* Brand — Bruz en Action palette */
-  --night-900: #1B3A6B;
-  --night-700: #2A5298;
-  --night-gradient: linear-gradient(135deg, #1B3A6B 0%, #2A5298 100%);
-  --brand-orange: #E8920E;
+  --night-900: #0E2F62;
+  --night-700: #1A4177;
+  --night-gradient: linear-gradient(135deg, #0E2F62 0%, #1A4177 100%);
+  --brand-orange: #E8A040;
   --brand-accent: #4A7EC7;
 
   /* Surfaces */
