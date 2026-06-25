@@ -823,7 +823,7 @@
       "categorie": "Environnement",
       "statut": "en_cours",
       "featured": false,
-      "last_activity": "2026-06-21",
+      "last_activity": "2026-06-25",
       "date_ouverture": "2026-06-21",
       "chapeau": "Avec des étés de plus en plus chauds, Bruz doit adapter ses équipements, ses espaces publics et son plan de crise. Îlots de fraîcheur, populations vulnérables, végétalisation, piscine Conterie, bâtiments communaux : ce que la commune fait — et ce qu'elle ne fait pas encore.",
       "ce_quon_sait": [
@@ -863,6 +863,27 @@
         }
       ],
       "actus_recentes": [
+        {
+          "date": "2026-06-25",
+          "titre": "Canicule : mesures mises en place dans les écoles publiques",
+          "detail": "La mairie publie les dispositions d'exception déployées dans les écoles publiques bruzaises pour faire face aux fortes chaleurs. Ces mesures visent à assurer la sécurité, le bien-être et la continuité pédagogique des élèves.",
+          "source_url": "https://www.ville-bruz.fr/actualites/canicule-mesures-mises-en-place-dans-les-ecoles-publiques/",
+          "source_label": "Mairie de Bruz — Actualités"
+        },
+        {
+          "date": "2026-06-25",
+          "titre": "Fermeture partielle de la piscine de la Conterie",
+          "detail": "En raison de la canicule, la piscine municipale de la Conterie ajuste son fonctionnement avec des horaires réduits.",
+          "source_url": "https://www.ville-bruz.fr/actualites/fermeture-partielle-de-la-piscine-de-la-conterie/",
+          "source_label": "Mairie de Bruz — Actualités"
+        },
+        {
+          "date": "2026-06-22",
+          "titre": "Écoles, collèges, lycées à Bruz… Face à la canicule, ils s'adaptent",
+          "detail": "Reportage Ouest-France sur les adaptations des établissements scolaires bruzois face aux fortes chaleurs de l'été 2026.",
+          "source_url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPRVRManV5MHFaR1RhclJobE5yZGdiS2YwSjBsREM0SkdfVWhjcUNfLXNudW9KdTQwUnI4emE1UVV2U3JSZ0JOaTJXNXYxTE11ZEw1d3RFb2lZd2JEWHc0RDVZejZsbW1CTWQxT1Q5SGFUd0djQUszaHREeURJRGwxQVp5MUllNzAxeWJ4ajF4TWl0UXdzLUJVSW9VSVVJb1ZRd2haaHI0MnVhalFnbHY3eml2RUZEYXI1TUFyMVNYNkN4d2tkdmhWVlFRTjRzZGw4N2tHbERiOGdxVm1fQQ?oc=5",
+          "source_label": "Ouest-France"
+        },
         {
           "date": "2026-06-21",
           "titre": "Vigilance canicule — que propose Bruz à ses habitants ?",

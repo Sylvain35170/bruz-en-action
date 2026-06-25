@@ -819,6 +819,37 @@
       "source_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1012938/b6b1dc7396fa9a9946d085d957775ce4477276f63f188b960bb4886c785ccce2.pdf"
     },
     {
+      "id": "presse-447a42",
+      "titre": "Écoles, collèges, lycées à Bruz… Face à la canicule, ils s'adaptent",
+      "source_url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPRVRManV5MHFaR1RhclJobE5yZGdiS2YwSjBsREM0SkdfVWhjcUNfLXNudW9KdTQwUnI4emE1UVV2U3JSZ0JOaTJXNXYxTE11ZEw1d3RFb2lZd2JEWHc0RDVZejZsbW1CTWQxT1Q5SGFUd0djQUszaHREeURJRGwxQVp5MUllNzAxeWJ4ajF4TWl0UXdzLUJVSW9VSVVJb1ZRd2haaHI0MnVhalFnbHY3eml2RUZEYXI1TUFyMVNYNkN4d2tkdmhWVlFRTjRzZGw4N2tHbERiOGdxVm1fQQ?oc=5",
+      "source_label": "Ouest-France",
+      "date": "2026-06-22",
+      "resume": "Ouest-France publie un reportage sur les adaptations des établissements scolaires bruzois face aux fortes chaleurs de l'été 2026. Les écoles, collèges et lycées déploient des mesures pour assurer le confort et la sécurité des élèves.",
+      "dossier": "D13",
+      "type": "presse",
+      "lien_expire_risque": true
+    },
+    {
+      "id": "mairie-d56c48",
+      "titre": "Canicule : mesures mises en place dans les écoles publiques",
+      "source_url": "https://www.ville-bruz.fr/actualites/canicule-mesures-mises-en-place-dans-les-ecoles-publiques/",
+      "source_label": "Mairie de Bruz — Actualités",
+      "date": "2026-06-25",
+      "resume": "La mairie publie les dispositions d'exception déployées dans les écoles publiques bruzaises pour faire face aux fortes chaleurs. Ces mesures visent à assurer la sécurité, le bien-être et la continuité pédagogique des élèves.",
+      "dossier": "D13",
+      "type": "mairie"
+    },
+    {
+      "id": "mairie-b4de54",
+      "titre": "Fermeture partielle de la piscine de la Conterie",
+      "source_url": "https://www.ville-bruz.fr/actualites/fermeture-partielle-de-la-piscine-de-la-conterie/",
+      "source_label": "Mairie de Bruz — Actualités",
+      "date": "2026-06-25",
+      "resume": "En raison de la canicule, la piscine municipale de la Conterie ajuste son fonctionnement avec des horaires réduits. Illustre l'impact des conditions climatiques extrêmes sur les équipements publics bruzois.",
+      "dossier": "D13",
+      "type": "mairie"
+    },
+    {
       "id": "A006",
       "date": "2026-03-20",
       "titre": "Houssin élu maire — programme de mandat engagé",
