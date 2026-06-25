@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import Link from "next/link";
 import dossiersData from "../../../data/dossiers.json";
 import metaData from "../../../data/meta.json";
 import NavBar from "../../../components/NavBar";
@@ -151,7 +152,7 @@ export default async function DossierPage({ params }: { params: Promise<{ id: st
   const quiDecide: { nom: string; role: string }[] = dossier.qui_decide ?? [];
   const decisions: { date: string; description: string; source_url?: string }[] = dossier.decisions ?? [];
   const ceQuOnSuit: string[] = dossier.ce_quon_suit ?? [];
-  const actus: { date: string; titre: string; detail: string; source_url?: string; source_label?: string }[] = dossier.actus_recentes ?? [];
+  const actus: { date: string; titre: string; detail: string; source_url?: string; source_label?: string; article_id?: string }[] = dossier.actus_recentes ?? [];
   const sources: { label: string; url: string }[] = dossier.sources ?? [];
   const graphiques: Graphique[] = dossier.graphiques ?? [];
 
@@ -332,7 +333,13 @@ export default async function DossierPage({ params }: { params: Promise<{ id: st
                       </div>
                       <div style={{ fontSize: 14, fontWeight: 700, color: "#0f172a", marginBottom: 4 }}>{a.titre}</div>
                       <p style={{ margin: 0, fontSize: 13, lineHeight: 1.6, color: "#64748b" }}>{a.detail}</p>
-                      {a.source_url && (
+                      {a.article_id && (
+                        <Link href={`/bruz-en-action/articles/${a.article_id}`}
+                          style={{ display: "inline-block", marginTop: 8, fontSize: 12, fontWeight: 600, color: "#e84d0e" }}>
+                          Lire l'analyse →
+                        </Link>
+                      )}
+                      {!a.article_id && a.source_url && (
                         <a href={a.source_url} target="_blank" rel="noopener noreferrer"
                           style={{ display: "inline-block", marginTop: 8, fontSize: 12, color: "#2563eb" }}>
                           Lire l'article ↗
