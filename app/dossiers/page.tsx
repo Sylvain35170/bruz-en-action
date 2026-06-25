@@ -21,6 +21,7 @@ type Dossier = typeof dossiersData.dossiers[0] & {
   last_activity?: string;
   lien_externe?: string;
   actus_recentes?: { date: string; titre: string }[];
+  chapeau?: string;
 };
 
 const STATUT_LABEL: Record<string, string> = {
@@ -30,11 +31,16 @@ const STATUT_LABEL: Record<string, string> = {
 };
 
 const CATEGORIE_COLOR: Record<string, string> = {
-  Mobilités: "#0ea5e9",
-  Urbanisme: "#8b5cf6",
-  Finances: "#16a34a",
-  "Équipements": "#f59e0b",
-  "Services publics": "#ef4444",
+  Mobilités: "#0369a1",
+  Urbanisme: "#6d28d9",
+  Finances: "#15803d",
+  Équipements: "#b45309",
+  "Services publics": "#dc2626",
+  Environnement: "#059669",
+  Éducation: "#ea580c",
+  Sécurité: "#374151",
+  Culture: "#be185d",
+  Patrimoine: "#65a30d",
 };
 
 export default function DossiersPage() {
@@ -97,56 +103,91 @@ export default function DossiersPage() {
               const catColor = CATEGORIE_COLOR[d.categorie] ?? "#64748b";
               const href = d.lien_externe ?? `/bruz-en-action/dossiers/${d.id}`;
 
+              const lastActu = d.actus_recentes?.[0];
+              const lastActuDate = lastActu?.date
+                ? new Date(lastActu.date).toLocaleDateString("fr-FR", { day: "numeric", month: "short" })
+                : null;
+
               return (
                 <a key={d.id} href={href} style={{ textDecoration: "none", display: "flex", flexDirection: "column" }}>
                   <div style={{
-                    background: "#fff", border: "1px solid #e2e8f0",
-                    borderTop: `3px solid ${d.featured ? "var(--brand-accent, #e84d0e)" : catColor}`,
-                    borderRadius: 12, padding: 24,
-                    display: "flex", flexDirection: "column", gap: 12, height: "100%",
+                    border: "1px solid #e2e8f0", borderRadius: 14, overflow: "hidden",
+                    display: "flex", flexDirection: "column", height: "100%",
+                    boxShadow: "0 1px 4px rgba(0,0,0,0.06)",
+                    transition: "box-shadow 0.15s",
                   }}>
-                    {/* Méta */}
-                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", gap: 8 }}>
+                    {/* Bandeau coloré — catégorie + titre */}
+                    <div style={{
+                      background: catColor,
+                      padding: "20px 20px 18px",
+                      position: "relative",
+                    }}>
+                      {d.featured && (
+                        <span style={{
+                          position: "absolute", top: 12, right: 12,
+                          fontSize: 10, fontWeight: 700, color: "#fff",
+                          background: "rgba(255,255,255,0.25)", padding: "2px 8px", borderRadius: 999,
+                          letterSpacing: "0.06em", textTransform: "uppercase",
+                        }}>● Actif</span>
+                      )}
                       <span style={{
-                        padding: "3px 10px", borderRadius: 999,
-                        background: `color-mix(in srgb, ${catColor} 10%, white)`,
-                        color: catColor, fontSize: 11, fontWeight: 700,
-                        letterSpacing: "0.07em", textTransform: "uppercase",
+                        fontSize: 10, fontWeight: 800, letterSpacing: "0.12em",
+                        textTransform: "uppercase", color: "rgba(255,255,255,0.75)",
+                        display: "block", marginBottom: 8,
                       }}>{d.categorie}</span>
-                      <div style={{ display: "flex", gap: 8, alignItems: "center", flexShrink: 0 }}>
-                        {d.featured && (
-                          <span style={{ fontSize: 10, fontWeight: 700, color: "var(--brand-accent, #e84d0e)", letterSpacing: "0.06em", textTransform: "uppercase" }}>
-                            ● Actif
-                          </span>
-                        )}
-                        <span style={{ fontSize: 12, color: "#94a3b8" }}>{STATUT_LABEL[d.statut] ?? d.statut}</span>
-                      </div>
+                      <h2 style={{
+                        margin: 0, fontSize: 15, fontWeight: 700, color: "#fff",
+                        lineHeight: 1.4,
+                      }}>{d.titre}</h2>
                     </div>
 
-                    {/* Titre + chapeau */}
-                    <h2 style={{ margin: 0, fontSize: 16, fontWeight: 700, color: "#0f172a", lineHeight: 1.4 }}>{d.titre}</h2>
-                    <p style={{ margin: 0, fontSize: 13, color: "#64748b", lineHeight: 1.6 }}>{d.chapeau}</p>
-
-                    {/* Pied de carte */}
+                    {/* Corps blanc */}
                     <div style={{
-                      marginTop: "auto", paddingTop: 12,
-                      borderTop: "1px solid #f1f5f9",
-                      display: "flex", justifyContent: "space-between", alignItems: "center",
+                      background: "#fff", padding: "16px 20px",
+                      display: "flex", flexDirection: "column", gap: 12, flex: 1,
                     }}>
-                      <span style={{ fontSize: 12, color: "#2563eb", fontWeight: 700 }}>
-                        {d.lien_externe ? "Ouvrir la carte →" : "Lire le dossier →"}
-                      </span>
-                      <div style={{ display: "flex", gap: 10, alignItems: "center" }}>
-                        {newsCount > 0 && (
-                          <span style={{ fontSize: 11, color: "#64748b" }}>
-                            {newsCount} actu{newsCount > 1 ? "s" : ""}
+                      {/* Chapeau tronqué */}
+                      {d.chapeau && (
+                        <p style={{
+                          margin: 0, fontSize: 13, color: "#475569", lineHeight: 1.6,
+                          display: "-webkit-box", WebkitLineClamp: 3,
+                          WebkitBoxOrient: "vertical" as const, overflow: "hidden",
+                        }}>{d.chapeau}</p>
+                      )}
+
+                      {/* Dernière actu */}
+                      {lastActu && (
+                        <div style={{
+                          borderLeft: `3px solid ${catColor}`, paddingLeft: 10,
+                          marginTop: 4,
+                        }}>
+                          <span style={{ fontSize: 10, color: "#94a3b8", textTransform: "uppercase", letterSpacing: "0.06em", fontWeight: 700 }}>
+                            Dernière actu · {lastActuDate}
                           </span>
-                        )}
-                        {d.last_activity && (
-                          <span style={{ fontSize: 11, color: "#94a3b8" }}>
-                            Màj {new Date(d.last_activity).toLocaleDateString("fr-FR", { day: "numeric", month: "short" })}
-                          </span>
-                        )}
+                          <p style={{
+                            margin: "3px 0 0", fontSize: 12, color: "#334155", lineHeight: 1.5,
+                            display: "-webkit-box", WebkitLineClamp: 2,
+                            WebkitBoxOrient: "vertical" as const, overflow: "hidden",
+                          }}>{lastActu.titre}</p>
+                        </div>
+                      )}
+
+                      {/* Pied */}
+                      <div style={{
+                        marginTop: "auto", paddingTop: 12,
+                        borderTop: "1px solid #f1f5f9",
+                        display: "flex", justifyContent: "space-between", alignItems: "center",
+                      }}>
+                        <span style={{ fontSize: 12, fontWeight: 700, color: catColor }}>
+                          {d.lien_externe ? "Ouvrir la carte →" : "Lire le dossier →"}
+                        </span>
+                        <span style={{
+                          fontSize: 11, color: "#94a3b8",
+                          padding: "2px 8px", borderRadius: 999, background: "#f8fafc",
+                          border: "1px solid #e2e8f0",
+                        }}>
+                          {STATUT_LABEL[d.statut] ?? d.statut}
+                        </span>
                       </div>
                     </div>
                   </div>
