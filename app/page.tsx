@@ -125,14 +125,22 @@ export default function Home() {
         </div>
       )}
 
+      {/* ── ILLUSTRATION HERO ── */}
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src="/bruz-en-action/illus-hero.png"
+        alt="Illustration de Bruz — citoyens et ville"
+        style={{ width: "100%", maxHeight: 280, objectFit: "cover", objectPosition: "center top", display: "block" }}
+      />
+
       {/* ── QUI SOMMES-NOUS ── */}
       <section style={{ background: "#fff", borderBottom: "1px solid var(--border-subtle)" }}>
         <div style={{ maxWidth: "var(--container-max)", margin: "0 auto", padding: "56px var(--container-pad)", display: "flex", gap: 48, alignItems: "center", flexWrap: "wrap" }}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/bruz-en-action/og-image.jpg"
-            alt="Bruz En Action — présentation de l'association"
-            style={{ width: "min(340px, 100%)", borderRadius: 16, boxShadow: "0 8px 32px rgba(0,0,0,0.12)", flexShrink: 0 }}
+            src="/bruz-en-action/illus-asso.png"
+            alt="Bruz En Action — citoyens engagés"
+            style={{ width: "min(380px, 100%)", borderRadius: 16, flexShrink: 0 }}
           />
           <div style={{ flex: 1, minWidth: 260 }}>
             <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#f97316", display: "block", marginBottom: 10 }}>
