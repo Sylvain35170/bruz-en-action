@@ -222,18 +222,18 @@ export default async function DossierPage({ params }: { params: Promise<{ id: st
             {ceQuOnSait.length > 0 && (
               <section style={{ marginBottom: 36 }}>
                 <SectionTitle>Ce qu'on sait</SectionTitle>
-                <ul style={{ margin: 0, padding: 0, listStyle: "none", display: "flex", flexDirection: "column", gap: 8 }}>
+                <div style={{ background: "#fff", border: "1px solid #e2e8f0", borderRadius: 10, padding: "4px 0" }}>
                   {ceQuOnSait.map((pt, i) => (
-                    <li key={i} style={{
-                      display: "flex", gap: 12, padding: "12px 16px",
-                      background: "#fff", border: "1px solid #e2e8f0", borderLeft: "3px solid #e84d0e",
-                      borderRadius: 8, fontSize: 15, lineHeight: 1.6, color: "#334155",
+                    <div key={i} style={{
+                      display: "flex", gap: 14, padding: "13px 20px",
+                      borderBottom: i < ceQuOnSait.length - 1 ? "1px solid #f1f5f9" : "none",
+                      fontSize: 14, lineHeight: 1.65, color: "#334155",
                     }}>
-                      <span style={{ color: "#e84d0e", fontWeight: 800, flexShrink: 0 }}>→</span>
-                      {pt}
-                    </li>
+                      <span style={{ color: "#e84d0e", fontWeight: 800, flexShrink: 0, marginTop: 1 }}>→</span>
+                      <span>{pt}</span>
+                    </div>
                   ))}
-                </ul>
+                </div>
               </section>
             )}
 
@@ -303,15 +303,15 @@ export default async function DossierPage({ params }: { params: Promise<{ id: st
             {ceQuOnSuit.length > 0 && (
               <section style={{ marginBottom: 36 }}>
                 <SectionTitle>Ce qu'on surveille</SectionTitle>
-                <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+                <div style={{ background: "#fffbeb", border: "1px solid #fde68a", borderRadius: 10, padding: "4px 0" }}>
                   {ceQuOnSuit.map((item, i) => (
                     <div key={i} style={{
-                      display: "flex", gap: 12, padding: "12px 16px",
-                      background: "#fef9c3", border: "1px solid #fde68a",
-                      borderRadius: 8, fontSize: 14, lineHeight: 1.6, color: "#713f12",
+                      display: "flex", gap: 14, padding: "12px 20px",
+                      borderBottom: i < ceQuOnSuit.length - 1 ? "1px solid #fef3c7" : "none",
+                      fontSize: 14, lineHeight: 1.65, color: "#78350f",
                     }}>
-                      <span style={{ flexShrink: 0 }}>👁</span>
-                      {item}
+                      <span style={{ flexShrink: 0, marginTop: 1 }}>👁</span>
+                      <span>{item}</span>
                     </div>
                   ))}
                 </div>
