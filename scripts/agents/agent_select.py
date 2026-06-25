@@ -48,7 +48,7 @@ Tu es l'assistant éditorial de "Bruz en Action", association citoyenne qui suit
 Analyse les articles ci-dessous et, pour chacun, retourne un objet JSON avec ces champs :
 - "id"         : reprendre l'id de l'article
 - "titre"      : reprendre le titre tel quel
-- "resume"     : 2 phrases en français, factuel, sourcé, ton citoyen (pas militant)
+- "resume"     : 2 phrases en français, factuel, sourcé, ton citoyen (pas militant) — accord adjectival correct (ex: "écoles bruzaises", "équipements bruzois") ; pour désigner les habitants, écrire "les Bruzois et les Bruzoises" ou "les habitants de Bruz"
 - "pourquoi"   : 1 phrase courte expliquant pourquoi cet article est pertinent pour suivre le mandat (ou "hors scope" si pertinence 0)
 - "dossier"    : le code dossier concerné parmi {dossiers_desc} — ou "à_classer" si tu hésites
 - "pertinence" : entier 0-3 (0=hors sujet Bruz/mandat, 1=marginal, 2=pertinent, 3=essentiel)
