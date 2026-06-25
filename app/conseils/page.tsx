@@ -34,7 +34,7 @@ function formatDateShort(iso: string) {
 export default function Conseils() {
   const { association, contact } = metaData;
   const hasHelloAsso = Boolean(contact.hello_asso_url);
-  const seancesPasses = cmsData.seances.filter(s => s.statut === "passe").reverse();
+  const seancesPasses = cmsData.seances.filter(s => s.statut === "passe").sort((a, b) => b.date.localeCompare(a.date));
   const seancesAvenir = cmsData.seances.filter(s => s.statut === "a_venir");
   const metroDecisions = (cmsData as typeof cmsData & { conseil_metropolitain?: { id: string; date: string; titre: string; impact_bruz: string; points_cles: string[]; sources: { label: string; url: string }[] }[] }).conseil_metropolitain ?? [];
 

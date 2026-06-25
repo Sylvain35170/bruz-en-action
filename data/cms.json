@@ -10,24 +10,20 @@
   "seances": [
     {
       "id": "BM-258",
-      "date": "2026-06-24",
+      "date": "2026-01-15",
       "statut": "passe",
-      "titre": "Télécharger(ouverture dans un nouvel onglet)",
+      "titre": "Bruz Mag #258 — Janvier-Février 2026",
       "points_cles": [
-        "Janvier - Février 2026 I #258",
         "Transition(S)",
-        "Jeunes Maraîchers,",
+        "Jeunes Maraîchers",
         "Grand Angle Terres Durables",
-        "Grandir Ensemble,",
-        "Les Écoles Au Cœur",
-        "De La Vie Locale",
+        "Grandir Ensemble — Les écoles au cœur de la vie locale",
         "Traversée Outre-Manche",
-        "Sur Grand Écran",
-        "Www.Ville-Bruz.Fr"
+        "Sur grand écran"
       ],
       "sources": [
         {
-          "label": "Télécharger(ouverture dans un nouvel onglet)",
+          "label": "Bruz Mag #258 (PDF)",
           "url": "https://www.ville-bruz.fr/wp-content/uploads/2026/03/Bruz-Mag-n°258-Janvier-fevrier-2026.pdf"
         }
       ],
@@ -35,24 +31,17 @@
     },
     {
       "id": "BM-259",
-      "date": "2026-06-24",
+      "date": "2026-03-15",
       "statut": "passe",
-      "titre": "Télécharger(ouverture dans un nouvel onglet)",
+      "titre": "Bruz Mag #259 — Mars-Avril 2026",
       "points_cles": [
-        "Mars - Avril 2026 I #259",
-        "Vie Municipale",
-        "Les Élections Municipales",
-        "Grand Angle",
-        "Et Communautaires :",
-        "La Ville Et Les Autres",
-        "Mode D'Emploi",
-        "Collectivités :",
-        "Du Choix Au Prêt, Suivez",
-        "Le Parcours Des Documents"
+        "Vie municipale — Les élections municipales",
+        "Grand Angle — La ville et les autres collectivités",
+        "Mode d'emploi — Du choix au prêt, le parcours des documents"
       ],
       "sources": [
         {
-          "label": "Télécharger(ouverture dans un nouvel onglet)",
+          "label": "Bruz Mag #259 (PDF)",
           "url": "https://www.ville-bruz.fr/wp-content/uploads/2026/02/Bruz-Mag-n°259-mars-avril-2026.pdf"
         }
       ],
