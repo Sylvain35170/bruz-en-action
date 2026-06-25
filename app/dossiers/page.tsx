@@ -116,6 +116,13 @@ export default function DossiersPage() {
                     boxShadow: "0 1px 4px rgba(0,0,0,0.06)",
                     transition: "box-shadow 0.15s",
                   }}>
+                    {/* Illustration si disponible */}
+                    {(d as any).image && (
+                      // eslint-disable-next-line @next/next/no-img-element
+                      <img src={(d as any).image} alt={d.titre}
+                        style={{ width: "100%", height: 140, objectFit: "cover", objectPosition: "center", display: "block" }} />
+                    )}
+
                     {/* Bandeau coloré — catégorie + titre */}
                     <div style={{
                       background: catColor,

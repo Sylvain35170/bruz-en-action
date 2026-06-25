@@ -22,7 +22,8 @@
 
 ## 🟡 À faire — Design & Illustrations
 
-- [ ] **Images** — remplacer og-image.jpg + footer par vraies photos quand disponibles (events / asso)
+- [ ] **Vignettes dossiers** — illustrations Gemini par thème (D01 mobilité, D02 urbanisme, D06 piscine, D10 éducation, D13 canicule) — prompts prêts
+- [ ] **og-image** — remplacer par un visuel BEA aux bonnes couleurs quand disponible
 
 ## 🟡 À faire — Technique
 

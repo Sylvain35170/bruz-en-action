@@ -84,7 +84,8 @@
         2,
         3,
         4
-      ]
+      ],
+      "image": "/bruz-en-action/illus-d01-mobilite.png"
     },
     {
       "id": "D02",
@@ -167,7 +168,8 @@
           "source_label": "Ouest-France"
         }
       ],
-      "promesses_liees": []
+      "promesses_liees": [],
+      "image": "/bruz-en-action/illus-d02-urbanisme.png"
     },
     {
       "id": "D03",
@@ -538,7 +540,8 @@
           "source_label": "Ville de Bruz"
         }
       ],
-      "promesses_liees": []
+      "promesses_liees": [],
+      "image": "/bruz-en-action/illus-d06-piscine.png"
     },
     {
       "id": "D07",
@@ -739,7 +742,8 @@
         }
       ],
       "actus_recentes": [],
-      "promesses_liees": []
+      "promesses_liees": [],
+      "image": "/bruz-en-action/illus-d10-education.png"
     },
     {
       "id": "D11",
@@ -923,7 +927,8 @@
           "pourquoi_bruz": "Bruz n'est pas dans le programme. Le Fonds vert finance ce type de travaux depuis 2025 — une candidature est possible.",
           "source_url": "https://vert.eco/climat/canicule-six-solutions-low-tech-pour-adapter-50-000-ecoles-maintenant-et-a-bas-cout/"
         }
-      ]
+      ],
+      "image": "/bruz-en-action/illus-d13-canicule.png"
     }
   ]
 }

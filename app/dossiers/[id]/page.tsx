@@ -203,6 +203,13 @@ export default async function DossierPage({ params }: { params: Promise<{ id: st
         </div>
       )}
 
+      {/* Illustration dossier */}
+      {dossier.image && (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img src={dossier.image} alt={`Illustration — ${dossier.titre}`}
+          style={{ width: "100%", maxHeight: 260, objectFit: "cover", objectPosition: "center", display: "block" }} />
+      )}
+
       {/* Lien carte D05 */}
       {dossier.lien_externe && (
         <div style={{ background: "#f0f9ff", borderBottom: "1px solid #bae6fd", padding: "16px 24px", textAlign: "center" }}>
