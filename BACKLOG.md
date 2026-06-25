@@ -4,6 +4,7 @@
 
 *(rien)*
 
+
 ## 🟠 Prioritaire — Fonctionnalités
 
 - [ ] **Parole des élus** — enrichir `data/elus.json` au fil du mandat
@@ -16,7 +17,7 @@
 
 - [ ] **D10 en profondeur** — Écoles + Vert-Buisson
 - [ ] **D12** — City stade CoSEC : instruire (décision, remplacement ?)
-- [ ] **D13** — Canicule : plan municipal, îlots de fraîcheur
+- [ ] **D13** — Canicule : suivre si mairie publie carte îlots / chiffres CCAS / PCS mis à jour (analyse BEA publiée 25/06)
 - [ ] **Nouveaux dossiers** — Bonnat-Sablat (préemption), travaux Bruz
 
 ## 🟡 À faire — Technique
@@ -25,12 +26,12 @@
 - [ ] **Images** — remplacer og-image.jpg + footer par vraies photos quand disponibles (events / asso)
 - [ ] **Script import_excel.py** — mise à jour auto des statuts depuis l'Excel
 - [ ] **CRs réunions** — réimporter les docx (encodage zip raté sur les accents)
-- [ ] **Actus** — enrichir au fil des décisions (schema en place, seeds en place)
+- [ ] **Actus** — enrichir au fil des décisions (schema + `resume` + `lien_expire_risque` en place)
 
 ## 💡 Idées
 
 - Alertes email/RSS quand une promesse change de statut
 - Export PDF du tableau de bord par pilier
-- Page `/articles` ou `/analyses` — textes éditoriaux BEA (décryptages, positions)
+- Page index `/articles` — liste toutes les analyses BEA (route [id] créée, index manque)
 - Page `/programme` — résumé narratif campagne "Un nouvel élan pour Bruz"
 - Page "Coup de pouce / Coup de cœur" — à définir

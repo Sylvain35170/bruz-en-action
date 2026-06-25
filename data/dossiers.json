@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-06-21",
+    "last_updated": "2026-06-25",
     "version": "3.0"
   },
   "dossiers": [
@@ -868,6 +868,13 @@
         }
       ],
       "actus_recentes": [
+        {
+          "date": "2026-06-25",
+          "titre": "Chaleur et action municipale",
+          "detail": "La canicule de juin 2026 a mis Bruz à l'épreuve. La commune a réagi dans les délais attendus. Reste à regarder ce que font d'autres villes pour s'adapter structurellement — et ce que Bruz pourrait en tirer.",
+          "source_url": null,
+          "source_label": "Bruz en Action"
+        },
         {
           "date": "2026-06-25",
           "titre": "Analyse BEA — Canicule à Bruz : ce que la commune fait, ce que d'autres font",

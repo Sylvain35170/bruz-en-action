@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-06-18",
+    "last_updated": "2026-06-25",
     "note": "Actus de suivi des promesses — une actu = un événement daté lié à une ou plusieurs promesses"
   },
   "actus": [
@@ -895,6 +895,17 @@
       "cm_lie": "CM-2026-03-20",
       "source_label": "Semaine à Bruz n°850",
       "source_url": "https://www.ville-bruz.fr/wp-content/uploads/2026/03/Semaine-a-Bruz-n%C2%B0850-du-19-mars-au-2-avril-2026.pdf"
+    },
+    {
+      "id": "bea-d13-chaleur-action",
+      "titre": "Chaleur et action municipale",
+      "source_url": null,
+      "source_label": "Bruz en Action",
+      "date": "2026-06-25",
+      "resume": "La canicule de juin 2026 a mis Bruz à l'épreuve. La commune a réagi dans les délais attendus. Reste à regarder ce que font d'autres villes pour s'adapter structurellement — et ce que Bruz pourrait en tirer.",
+      "detail": "Le 22 juin, l'Ille-et-Vilaine passait en vigilance rouge canicule. À Bruz, comme dans les communes voisines, la machine s'est mise en route : activation du plan communal, ventilateurs et brumisateurs dans les écoles, repas froids servis avec pains de glace, collecte des déchets décalée aux heures les moins chaudes, registre du CCAS mis en alerte pour le suivi des personnes vulnérables. La commune de 20 000 habitants a répondu dans les délais attendus.\n\nEn Bretagne comme ailleurs, certaines villes ont commencé à travailler en amont. Rennes et quelques communes de la métropole ont cartographié leurs espaces accessibles pendant les épisodes de chaleur : salles climatisées, points d'eau, parcs ombragés. Ces cartes, simples à consulter, permettent aux habitants de savoir où aller sans chercher. Une plateforme nationale collaborative, gogocarto.fr, recense ces îlots commune par commune — Bruz n'y est pas encore référencée.\n\nSur les bâtiments scolaires, le débat est ouvert au niveau national : climatisation, isolation renforcée, solutions low-tech (géotextiles, brasseurs d'air, végétalisation des cours). Depuis 2025, une trentaine d'écoles expérimentent des adaptations à bas coût, sous 100 000 €. Certaines communes de taille comparable à Bruz s'y sont engagées.\n\nBruz en Action continuera de suivre quelques points ouverts : la publication éventuelle d'une liste des espaces frais accessibles, les chiffres du registre CCAS, et la question des bâtiments scolaires à plus long terme. La canicule de juin 2026 ne sera probablement pas la dernière.",
+      "dossier": "D13",
+      "type": "analyse"
     }
   ]
 }
