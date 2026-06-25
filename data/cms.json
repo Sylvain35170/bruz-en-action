@@ -1,12 +1,63 @@
 {
   "meta": {
-    "last_updated": "2026-06-21",
+    "last_updated": "2026-06-24",
     "source_principale": "Transcriptions YouTube (Ville de Bruz) + Bruz Mag n°260 + délibérations Mégalis",
     "youtube": "https://www.youtube.com/playlist?list=PLnSe2hJFinqpupninWlKBHSmzmwLW-8i7",
     "deliberations_megalis": "https://data.megalis.bretagne.bzh/organization/commune-de-bruz",
-    "derniere_semaine_bruz": 856
+    "derniere_semaine_bruz": 856,
+    "dernier_bruz_mag": 259
   },
   "seances": [
+    {
+      "id": "BM-258",
+      "date": "2026-06-24",
+      "statut": "passe",
+      "titre": "Télécharger(ouverture dans un nouvel onglet)",
+      "points_cles": [
+        "Janvier - Février 2026 I #258",
+        "Transition(S)",
+        "Jeunes Maraîchers,",
+        "Grand Angle Terres Durables",
+        "Grandir Ensemble,",
+        "Les Écoles Au Cœur",
+        "De La Vie Locale",
+        "Traversée Outre-Manche",
+        "Sur Grand Écran",
+        "Www.Ville-Bruz.Fr"
+      ],
+      "sources": [
+        {
+          "label": "Télécharger(ouverture dans un nouvel onglet)",
+          "url": "https://www.ville-bruz.fr/wp-content/uploads/2026/03/Bruz-Mag-n°258-Janvier-fevrier-2026.pdf"
+        }
+      ],
+      "type": "bruz_mag"
+    },
+    {
+      "id": "BM-259",
+      "date": "2026-06-24",
+      "statut": "passe",
+      "titre": "Télécharger(ouverture dans un nouvel onglet)",
+      "points_cles": [
+        "Mars - Avril 2026 I #259",
+        "Vie Municipale",
+        "Les Élections Municipales",
+        "Grand Angle",
+        "Et Communautaires :",
+        "La Ville Et Les Autres",
+        "Mode D'Emploi",
+        "Collectivités :",
+        "Du Choix Au Prêt, Suivez",
+        "Le Parcours Des Documents"
+      ],
+      "sources": [
+        {
+          "label": "Télécharger(ouverture dans un nouvel onglet)",
+          "url": "https://www.ville-bruz.fr/wp-content/uploads/2026/02/Bruz-Mag-n°259-mars-avril-2026.pdf"
+        }
+      ],
+      "type": "bruz_mag"
+    },
     {
       "id": "CM-2026-07-03",
       "date": "2026-07-03",

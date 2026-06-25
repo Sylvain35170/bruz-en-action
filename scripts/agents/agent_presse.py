@@ -10,7 +10,7 @@ Ouest-France a un RSS par commune : on l'utilise en priorité (pas de scraping H
 """
 
 import sys
-from datetime import datetime
+from datetime import datetime, date, timedelta
 from email.utils import parsedate_to_datetime
 from pathlib import Path
 from xml.etree import ElementTree
@@ -28,41 +28,46 @@ def _gnews(query: str) -> str:
     return f"https://news.google.com/rss/search?q={q}&hl=fr&gl=FR&ceid=FR:fr"
 
 
+# Requêtes ciblées par thématique communale / métropolitaine
+# Chaque requête force "Bruz" comme sujet principal
 RSS_SOURCES = [
-    # Ouest-France Bruz — via Google News (OF bloque le scraping direct)
-    # Google News indexe leurs articles et fournit le lien d'origine.
-    # actus.json constitue l'archive permanente car OF supprime les vieux liens.
-    {
-        "label": "Ouest-France — Bruz",
-        "url": _gnews("site:ouest-france.fr Bruz"),
-    },
-    {
-        "label": "Ouest-France — Bruz Conseil Municipal",
-        "url": _gnews("site:ouest-france.fr Bruz conseil municipal"),
-    },
-    # Sources complémentaires
-    {
-        "label": "Google News — Bruz actualités",
-        "url": _gnews("Bruz Ille-et-Vilaine actualités"),
-    },
-    {
-        "label": "Google News — Bruz Houssin",
-        "url": _gnews("Bruz Houssin municipalité 2026"),
-    },
+    {"label": "CM Bruz",          "url": _gnews('Bruz "conseil municipal"')},
+    {"label": "Transport Bruz",   "url": _gnews("Bruz trambus OR T4 OR transport OR gare")},
+    {"label": "Urbanisme Bruz",   "url": _gnews("Bruz logement OR urbanisme OR ZAC OR construction OR aménagement")},
+    {"label": "Budget Bruz",      "url": _gnews('Bruz budget OR fiscalité OR "taxe foncière" OR finances')},
+    {"label": "Équipements Bruz", "url": _gnews("Bruz piscine OR école OR gymnase OR équipement OR salle")},
+    {"label": "Sécurité Bruz",    "url": _gnews("Bruz police OR sécurité OR vidéoprotection")},
+    {"label": "Environnement Bruz","url": _gnews("Bruz environnement OR canicule OR espaces verts OR biodiversité")},
+    {"label": "Bruz Houssin",     "url": _gnews("Houssin Bruz")},
+    {"label": "Métropole Bruz",   "url": _gnews('"Rennes Métropole" Bruz')},
 ]
 
 # Pages web à scraper (fallback uniquement si RSS vide)
 WEB_SOURCES: list[dict] = []
 
-MOTS_CLES = ["bruz", "houssin", "conseil municipal", "zac", "t4", "trambus"]
+# Le titre DOIT contenir au moins un de ces termes (Bruz est le sujet)
+MOTS_SUJET = ["bruz", "houssin", "conterie", "ker lann", "vert-buisson", "cosec"]
 
-# Articles à exclure (résultats sportifs, offres d'emploi, faits divers hors sujet)
+# Thématiques acceptées même sans "bruz" dans le titre (métropole / intercommunalité)
+MOTS_THEME = ["trambus", "t4 ", " t4,", "zac multisites", "rennes métropole"]
+
+FENETRE_JOURS = 7
+
+# Articles à exclure systématiquement
 MOTS_EXCLUS = [
+    # Emploi
     "offre d'emploi", "recrutement", "cdi", "cdd", "h/f", "f/h",
-    "1-0", "1-1", "2-0", "2-1", "3-0", "3-1", "3-2",  # scores sportifs
-    "volley", "football", "basket", "rugby", "natation", "athlétisme",
-    "us gosné", "fc bruz", "jeanne d'arc",
-    "nécrologie", "avis de décès",
+    # Scores sportifs
+    "1-0", "1-1", "2-0", "2-1", "3-0", "3-1", "3-2", "4-0", "4-1",
+    # Clubs sportifs locaux hors mandat municipal
+    "us gosné", "fc bruz", "jeanne d'arc", "stade rennais", "en avant",
+    # Faits divers sans rapport avec la commune
+    "nécrologie", "avis de décès", "accident mortel", "incendie criminel",
+    # Communes hors périmètre (articles parasites Google News)
+    "saint-malo", "saint-grégoire", "montauban-de-bretagne", "tresboeuf",
+    "dinard", "cancale", "vitré", "redon", "fougères", "cesson",
+    # Divers hors scope
+    "ina.fr", "météo", "horoscope", "station-service", "essence", "gasoil",
 ]
 
 
@@ -83,10 +88,23 @@ def parse_rss(content: bytes, label: str) -> list[dict]:
             desc = item.findtext("description", "").strip()
             if not titre or not url:
                 continue
-            # Filtrer sur mots-clés Bruz + exclure bruit (sport, emploi, faits divers)
+            # Filtre 1 : fenêtre glissante 7 jours
+            date_min = date.today() - timedelta(days=FENETRE_JOURS)
+            try:
+                article_date = date.fromisoformat(date_pub[:10])
+                if article_date < date_min:
+                    continue
+            except ValueError:
+                pass  # date inconnue → on garde
+
+            # Filtre 2 : Bruz doit être le sujet (dans le titre) ou thématique intercommunale
+            titre_lower = titre.lower()
             texte = (titre + " " + desc).lower()
-            if not any(k in texte for k in MOTS_CLES):
+            est_sujet = any(k in titre_lower for k in MOTS_SUJET)
+            est_theme = any(k in texte for k in MOTS_THEME)
+            if not est_sujet and not est_theme:
                 continue
+            # Filtre 3 : exclure le bruit (sport, emploi, communes hors périmètre)
             if any(k in texte for k in MOTS_EXCLUS):
                 continue
             items.append({

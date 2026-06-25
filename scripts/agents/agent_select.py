@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Agent Select — Tri et enrichissement éditorial via Claude CLI.
+Agent Select — Tri et enrichissement éditorial via SDK Anthropic.
 
-Lit actus_queue.json, envoie les items à Claude (Haiku, batch unique),
+Lit actus_queue.json, envoie les items à Claude (Haiku, par batches),
 récupère pour chaque item :
   - resume      : 2 phrases en français
   - dossier     : D01-D13 ou "à_classer"
@@ -49,6 +49,7 @@ Analyse les articles ci-dessous et, pour chacun, retourne un objet JSON avec ces
 - "id"         : reprendre l'id de l'article
 - "titre"      : reprendre le titre tel quel
 - "resume"     : 2 phrases en français, factuel, sourcé, ton citoyen (pas militant)
+- "pourquoi"   : 1 phrase courte expliquant pourquoi cet article est pertinent pour suivre le mandat (ou "hors scope" si pertinence 0)
 - "dossier"    : le code dossier concerné parmi {dossiers_desc} — ou "à_classer" si tu hésites
 - "pertinence" : entier 0-3 (0=hors sujet Bruz/mandat, 1=marginal, 2=pertinent, 3=essentiel)
 - "source_url" : reprendre source_url tel quel
@@ -61,21 +62,37 @@ Articles à analyser :
 """
 
 
+BATCH_SIZE = 5
+TIMEOUT_S  = 75
+
+
 def _call_claude(prompt: str) -> str | None:
+    import os
+    env = {**os.environ, "BRUZ_AGENT": "1"}
     try:
         result = subprocess.run(
             [CLAUDE_CLI, "--print", "--model", MODEL, prompt],
-            capture_output=True, text=True, timeout=120,
+            capture_output=True, text=True, timeout=TIMEOUT_S, env=env,
         )
         if result.returncode != 0:
             log(f"Claude CLI erreur : {result.stderr[:300]}", "ERR")
             return None
         return result.stdout.strip()
     except subprocess.TimeoutExpired:
-        log("Claude CLI timeout (120s)", "ERR")
+        log(f"Claude CLI timeout ({TIMEOUT_S}s)", "ERR")
         return None
     except FileNotFoundError:
         log("claude CLI introuvable — vérifier PATH", "ERR")
+        return None
+
+
+def _parse_proposals(raw: str) -> list[dict] | None:
+    try:
+        start = raw.find("[")
+        end = raw.rfind("]") + 1
+        return json.loads(raw[start:end])
+    except (json.JSONDecodeError, ValueError) as e:
+        log(f"Select : JSON invalide ({e})", "ERR")
         return None
 
 
@@ -87,33 +104,55 @@ def run() -> bool:
         log("Select : queue vide — rien à traiter.", "INFO")
         return False
 
-    log(f"Select : {len(items)} item(s) à analyser via Claude…")
+    log(f"Select : {len(items)} item(s) à analyser via Claude (batches de {BATCH_SIZE})…")
 
-    # Préparer le prompt avec les items (on ne passe que les champs utiles)
     items_light = [
-        {"id": i.get("id"), "titre": i.get("titre"), "detail": i.get("detail", ""),
-         "source_url": i.get("source_url"), "date": i.get("date"), "type": i.get("type")}
+        {"id": i.get("id"), "titre": i.get("titre"),
+         "detail": (i.get("detail") or "")[:300],
+         "source_url": i.get("source_url"), "source_label": i.get("source_label", ""),
+         "date": i.get("date"), "type": i.get("type")}
         for i in items
     ]
-    prompt = PROMPT_TEMPLATE.format(
-        dossiers_desc=DOSSIERS_DESC,
-        items_json=json.dumps(items_light, ensure_ascii=False, indent=2),
+
+    all_proposals: list[dict] = []
+    failed_items: list[dict] = []
+
+    for batch_start in range(0, len(items_light), BATCH_SIZE):
+        batch = items_light[batch_start:batch_start + BATCH_SIZE]
+        log(f"  Batch {batch_start + 1}–{batch_start + len(batch)} / {len(items_light)}…")
+        prompt = PROMPT_TEMPLATE.format(
+            dossiers_desc=DOSSIERS_DESC,
+            items_json=json.dumps(batch, ensure_ascii=False, indent=2),
+        )
+        raw = _call_claude(prompt)
+        if not raw:
+            log(f"  Batch {batch_start + 1} échoué — items conservés en queue.", "WARN")
+            failed_items.extend(items[batch_start:batch_start + BATCH_SIZE])
+            continue
+        parsed = _parse_proposals(raw)
+        if parsed is None:
+            log(f"  Batch {batch_start + 1} JSON invalide — items conservés.", "WARN")
+            failed_items.extend(items[batch_start:batch_start + BATCH_SIZE])
+            continue
+        # Enrichir avec source_label (non retourné par Claude, copié depuis l'item original)
+        source_by_id = {i.get("id"): i.get("source_label", "") for i in items_light[batch_start:batch_start + BATCH_SIZE]}
+        for p in parsed:
+            p["source_label"] = source_by_id.get(p.get("id"), "")
+        all_proposals.extend(parsed)
+
+    if not all_proposals and failed_items:
+        log("Select : tous les batches ont échoué — queue inchangée.", "ERR")
+        return False
+
+    # Remettre les items échoués en queue
+    QUEUE_FILE.write_text(
+        json.dumps({"items": failed_items, "meta": {"last_updated": today()}},
+                   ensure_ascii=False, indent=2), encoding="utf-8"
     )
+    if failed_items:
+        log(f"  {len(failed_items)} item(s) réinjectés en queue pour le prochain run.", "WARN")
 
-    raw = _call_claude(prompt)
-    if not raw:
-        log("Select : échec Claude CLI — queue conservée pour le prochain run.", "WARN")
-        return False
-
-    # Parser le JSON retourné
-    try:
-        # Extraire le JSON si Claude a ajouté du texte malgré la consigne
-        start = raw.find("[")
-        end = raw.rfind("]") + 1
-        proposals = json.loads(raw[start:end])
-    except (json.JSONDecodeError, ValueError) as e:
-        log(f"Select : JSON invalide ({e}) — queue conservée.", "ERR")
-        return False
+    proposals = all_proposals
 
     # Écrire proposals/YYYY-MM-DD.json
     PROPOSALS_DIR.mkdir(parents=True, exist_ok=True)

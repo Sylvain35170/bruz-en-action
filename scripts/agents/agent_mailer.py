@@ -21,7 +21,7 @@ App Password Gmail : https://myaccount.google.com/apppasswords
 import json
 import smtplib
 import sys
-from datetime import date
+from datetime import date, timedelta
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from pathlib import Path
@@ -53,18 +53,24 @@ def _build_email(proposals: list[dict], date_str: str) -> tuple[str, str]:
     sujet = f"[Bruz en Action] {n} proposition{'s' if n > 1 else ''} à examiner — {date_str}"
 
     lignes = []
+    BORDER_COLOR = {0: "#cbd5e1", 1: "#fbbf24", 2: "#f97316", 3: "#ef4444"}
     for p in proposals:
         score = p.get("pertinence", 1)
         badge = PERTINENCE_LABEL.get(score, "")
         dossier = p.get("dossier", "à_classer")
+        source_label = p.get("source_label", "")
+        pourquoi = p.get("pourquoi", "")
+        border = BORDER_COLOR.get(score, "#e2e8f0")
         lignes.append(f"""
-<div style="border-left:3px solid #e2e8f0;padding:12px 16px;margin:12px 0;background:#f8fafc">
-  <div style="font-size:11px;color:#64748b;margin-bottom:4px">
-    {badge} &nbsp;·&nbsp; {dossier} &nbsp;·&nbsp; {p.get('date','')}
+<div style="border-left:4px solid {border};padding:12px 16px;margin:14px 0;background:#f8fafc">
+  <div style="font-size:11px;color:#94a3b8;margin-bottom:6px;line-height:1.8">
+    <strong>Collecté via :</strong> {source_label or '—'} &nbsp;·&nbsp; {p.get('date','')}<br>
+    <strong>Dossier :</strong> {dossier} &nbsp;·&nbsp; {badge}
   </div>
-  <div style="font-weight:600;color:#0f172a;margin-bottom:6px">{p.get('titre','')}</div>
-  <div style="color:#475569;font-size:14px;line-height:1.6">{p.get('resume','')}</div>
-  <a href="{p.get('source_url','#')}" style="font-size:12px;color:#3b82f6;margin-top:6px;display:inline-block">
+  <div style="font-weight:600;color:#0f172a;font-size:15px;margin-bottom:6px">{p.get('titre','')}</div>
+  <div style="color:#475569;font-size:14px;line-height:1.6;margin-bottom:6px">{p.get('resume','')}</div>
+  {f'<div style="font-size:12px;color:#64748b;font-style:italic;margin-bottom:6px">💡 {pourquoi}</div>' if pourquoi else ''}
+  <a href="{p.get('source_url','#')}" style="font-size:12px;color:#3b82f6;display:inline-block">
     → Voir la source
   </a>
 </div>""")
@@ -102,8 +108,12 @@ def run() -> bool:
         log(f"Mailer : lecture proposals échouée ({e})", "ERR")
         return False
 
-    # Ne garder que les pertinents (score >= 1)
-    pertinents = [p for p in all_proposals if p.get("pertinence", 0) >= 1]
+    # Ne garder que les pertinents (score >= 1) et récents (7 jours)
+    date_min = (date.today() - timedelta(days=7)).isoformat()
+    pertinents = [
+        p for p in all_proposals
+        if p.get("pertinence", 0) >= 1 and p.get("date", "") >= date_min
+    ]
 
     if not pertinents:
         log("Mailer : aucun item pertinent — email non envoyé.", "INFO")
