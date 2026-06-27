@@ -756,57 +756,6 @@
       "promesses_liees": []
     },
     {
-      "id": "D09",
-      "titre": "Grand Logis : quel avenir pour la salle de cinéma ?",
-      "categorie": "Culture",
-      "statut": "en_cours",
-      "featured": false,
-      "last_activity": "2026-06-18",
-      "date_ouverture": "2026-06-18",
-      "chapeau": "Le Grand Logis est la salle culturelle municipale de Bruz — cinéma, spectacles, expositions. Depuis l'ouverture de Cinéville à Bruz (6 salles, 991 places), la question de l'avenir de l'équipement public face à la concurrence d'un multiplexe privé mérite d'être posée.",
-      "ce_quon_sait": [
-        "Le Grand Logis est la salle culturelle municipale de Bruz — elle accueille cinéma, spectacles et expositions",
-        "Cinéville a ouvert à Bruz (6 salles, 991 places) — le Grand Logis coexiste désormais avec un multiplexe privé sur le même territoire",
-        "La délégation culture au CM 2026 a été attribuée — élu(e) délégué(e) à confirmer (Bruz Mag n°260)",
-        "L'hypothèse d'un opérateur privé type Cinéville a circulé — aucune délibération à ce jour",
-        "La capacité et l'état du bâtiment ne sont pas documentés publiquement"
-      ],
-      "qui_decide": [
-        {
-          "nom": "Conseil municipal",
-          "role": "Décide du statut et du financement du Grand Logis — budget culture voté annuellement"
-        },
-        {
-          "nom": "Élu(e) délégué(e) à la culture",
-          "role": "Pilote le dossier au quotidien — identité à confirmer via Bruz Mag n°260"
-        }
-      ],
-      "decisions": [
-        {
-          "date": "2026-04",
-          "description": "CM installation : délégation culture attribuée (élu à confirmer)",
-          "source_url": "https://www.ville-bruz.fr/wp-content/uploads/2026/05/Bruz-Mag-n%C2%B0260-de-mai-juin-2026.pdf"
-        }
-      ],
-      "ce_quon_suit": [
-        "Toute délibération sur le devenir du Grand Logis — régie directe, DSP, partenariat privé ?",
-        "Le budget culture 2026 — quelle enveloppe pour le Grand Logis ?",
-        "Une éventuelle procédure de délégation de service public à un opérateur cinéma"
-      ],
-      "sources": [
-        {
-          "label": "Grand Logis — site officiel",
-          "url": "https://www.legrandlogis.fr/"
-        },
-        {
-          "label": "Bruz Mag n°260 — délégations municipales",
-          "url": "https://www.ville-bruz.fr/wp-content/uploads/2026/05/Bruz-Mag-n%C2%B0260-de-mai-juin-2026.pdf"
-        }
-      ],
-      "actus_recentes": [],
-      "promesses_liees": []
-    },
-    {
       "id": "D10",
       "titre": "Écoles : Bruz peut-elle absorber 1 700 logements de plus ?",
       "categorie": "Éducation",

@@ -150,10 +150,10 @@ const STATS_CONTEXT: Record<string, StatContexte[]> = {
     { label: "Logements vacants", valeur: `${d.logements.logements_vacants_pct} %`, source: "INSEE RP2023", source_url: INSEE_URL, annee: 2023 },
   ],
   D03: [ // Budget / Finances
-    { label: "Dette par habitant (2023)", valeur: "81 €", source: "CFU 2023 Bruz", source_url: "https://data.megalis.bretagne.bzh/organization/commune-de-bruz", annee: 2023 },
+    { label: "Dette par habitant (2024)", valeur: "466 €", source: "DGFiP 2024 / decomptes-publics.fr", source_url: "https://www.decomptes-publics.fr/villes/35047-35170-bruz", annee: 2024 },
     { label: "Épargne brute (2023)", valeur: "27,3 %", source: "CFU 2023 Bruz", source_url: "https://data.megalis.bretagne.bzh/organization/commune-de-bruz", annee: 2023 },
-    { label: "Fiscalité locale (2023)", valeur: "13,8 M€", source: "CFU 2023 Bruz", source_url: "https://data.megalis.bretagne.bzh/organization/commune-de-bruz", annee: 2023 },
-    { label: "Personnel / dépenses (2023)", valeur: "57 %", source: "CFU 2023 Bruz", source_url: "https://data.megalis.bretagne.bzh/organization/commune-de-bruz", annee: 2023 },
+    { label: "Fiscalité locale (2024)", valeur: "~13,9 M€", source: "DGFiP 2024 / decomptes-publics.fr", source_url: "https://www.decomptes-publics.fr/villes/35047-35170-bruz", annee: 2024 },
+    { label: "Rigidité structurelle (2024)", valeur: "44 %", source: "DGFiP 2024 / decomptes-publics.fr", source_url: "https://www.decomptes-publics.fr/villes/35047-35170-bruz", annee: 2024 },
   ],
   D06: [ // Piscine Conterie
     { label: "Habitants", valeur: d.demographie.population_recensement.toLocaleString("fr-FR"), source: "INSEE RP2023", source_url: INSEE_URL, annee: 2023 },
