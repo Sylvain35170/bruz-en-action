@@ -21,6 +21,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/metropole`, priority: 0.9, changeFrequency: "weekly" },
     { url: `${BASE}/liens`, priority: 0.5, changeFrequency: "monthly" },
     { url: `${BASE}/chronologie`, priority: 0.8, changeFrequency: "weekly" },
+    { url: `${BASE}/programme`, priority: 0.8, changeFrequency: "yearly" },
   ];
 
   const dossierRoutes: MetadataRoute.Sitemap = dossiers.dossiers.map((d) => ({

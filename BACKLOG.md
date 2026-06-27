@@ -22,7 +22,7 @@
 
 ## 🟡 À faire — Design & Illustrations
 
-- [ ] **Vignettes dossiers** — illustrations Gemini par thème (D01 mobilité, D02 urbanisme, D06 piscine, D10 éducation, D13 canicule) — prompts prêts
+- [ ] **Vignettes dossiers restants** — D03 finances, D04 taxe, D07 sécurité, D09 culture, D11 patrimoine (prompts à générer)
 - [ ] **og-image** — remplacer par un visuel BEA aux bonnes couleurs quand disponible
 
 ## 🟡 À faire — Technique
@@ -32,9 +32,10 @@
 - [ ] **CRs réunions** — réimporter les docx (encodage zip raté sur les accents)
 - [ ] **Actus** — enrichir au fil des décisions
 
+## 🟡 À faire — Technique
+
 ## 💡 Idées
 
 - Alertes email/RSS quand une promesse change de statut
 - Export PDF du tableau de bord par pilier
-- Page `/programme` — résumé narratif campagne "Un nouvel élan pour Bruz"
 - Page "Coup de pouce / Coup de cœur" — à définir

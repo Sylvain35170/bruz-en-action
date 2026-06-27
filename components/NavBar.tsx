@@ -8,6 +8,7 @@ const NAV_LINKS = [
   { href: "/bruz-en-action/dossiers", label: "📁 Dossiers" },
   { href: "/bruz-en-action/conseils", label: "🏛️ Conseils" },
   { href: "/bruz-en-action/promesses", label: "✅ Promesses" },
+  { href: "/bruz-en-action/programme", label: "📋 Programme" },
   { href: "/bruz-en-action/elus", label: "👥 Élus" },
   { href: "/bruz-en-action/carte", label: "🗺️ Carte" },
   { href: "/bruz-en-action/interagir", label: "💬 Interagir" },

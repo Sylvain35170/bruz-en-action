@@ -284,6 +284,29 @@ export default async function PromessePage({ params }: { params: Promise<{ id: s
               </div>
             </div>
 
+            {/* Source programme */}
+            {promesse.source && (
+              <div style={{ background: "#fefce8", border: "1px solid #fde68a", borderRadius: 12, padding: 20 }}>
+                <h3 style={{ margin: "0 0 10px", fontSize: 13, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.06em", color: "#92400e" }}>
+                  📄 Source officielle
+                </h3>
+                <p style={{ margin: "0 0 8px", fontSize: 12, color: "#78350f", lineHeight: 1.5, fontStyle: "italic" }}>
+                  « {promesse.source.verbatim} »
+                </p>
+                <p style={{ margin: "0 0 10px", fontSize: 12, color: "#92400e" }}>
+                  Programme « Un nouvel élan pour Bruz » — {promesse.source.section} (p.{promesse.source.page})
+                </p>
+                <a
+                  href={`/bruz-en-action/docs/${promesse.source.doc}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ fontSize: 12, fontWeight: 700, color: "#92400e", textDecoration: "underline" }}
+                >
+                  Consulter le programme PDF →
+                </a>
+              </div>
+            )}
+
             {/* Autres promesses du même pilier */}
             {autresPromesses.length > 0 && pilier && (
               <div style={{ background: "#fff", border: "1px solid #e2e8f0", borderRadius: 12, padding: 20 }}>
