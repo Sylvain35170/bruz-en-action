@@ -6,12 +6,41 @@
   "actus": [
     {
       "id": "mairie-boccia2026",
-      "titre": "Bruz accueille le Championnat de France de Boccia 2026",
-      "source_url": "https://www.ville-bruz.fr",
-      "source_label": "Mairie de Bruz — Événement sportif",
+      "titre": "Bruz accueille le Championnat de France de Boccia — une première",
+      "source_url": "https://www.ville-bruz.fr/agenda/championnat-de-france-de-boccia/",
+      "source_label": "Mairie de Bruz",
       "date": "2026-06-27",
-      "detail": "Bruz accueille aujourd'hui le Championnat de France de Boccia, sport paralympique de précision. Un événement national qui met la ville à l'honneur.",
-      "type": "mairie"
+      "type": "analyse",
+      "promesses_liees": ["27"],
+      "detail": "Ce week-end, le complexe de Ker Lann accueille le Championnat de France de boccia — une première pour Bruz. Deux Bruzois qualifiés, un village handisport ouvert à tous, et un signal concret sur la promesse de développer le sport adapté.",
+      "resume": "Le Championnat de France de boccia se tient à Bruz les 27 et 28 juin 2026, organisé par la section handisport de la JAB avec le CD Handisport 35. Deux athlètes bruzois sont en compétition.",
+      "contenu": {
+        "intro": "Ce samedi 27 et dimanche 28 juin, le complexe sportif du campus de Ker Lann accueille le Championnat de France de boccia. Une première pour Bruz — et un événement qui dépasse le cadre sportif : il illustre concrètement l'engagement de la ville sur le sport adapté, promesse n°27 du programme municipal.",
+        "sections": [
+          {
+            "titre": "La boccia, c'est quoi ?",
+            "contenu": "La boccia est souvent décrite comme une pétanque qui se joue assis. Sur un terrain intérieur de 10 m × 6 m, deux équipes s'affrontent avec des balles en cuir — 6 rouges contre 6 bleues — en cherchant à placer leurs balles le plus près possible d'une cible blanche (le « jack »). La discipline exige précision, stratégie et concentration, mais très peu de force physique : c'est l'un des rares sports de compétition accessible aux personnes avec un handicap moteur sévère, y compris celles qui ne peuvent pas lancer elles-mêmes (une rampe guidée par la tête ou le menton est autorisée). Conçue à l'origine pour les athlètes paralysés cérébraux, la boccia est aujourd'hui ouverte à toutes les personnes avec un handicap moteur, mais aussi sans handicap. En France, l'intérêt pour la discipline a fortement progressé depuis la médaille d'or d'Aurélie Aubert aux Jeux paralympiques de Paris 2024."
+          },
+          {
+            "titre": "Bruz, ville hôte — et deux Bruzois en compétition",
+            "contenu": "Le Championnat de France est co-organisé par la section handisport de la Jeanne d'Arc de Bruz (JAB), le Comité Départemental Handisport 35, le Handisport Rennes Club et la Ville de Bruz. Le club bruzois propose chaque vendredi des séances « Boccia pour TOUS » (16h–17h30, salle Tabarly, rue Pierre de Coubertin), ouvertes aux personnes avec ou sans handicap. Ce championnat national met en lumière ce travail de fond. Deux Bruzois — Melenn et Mireille — se sont qualifiés et participent à la compétition. Note : la journée du vendredi 26 juin avait été annulée en raison de l'alerte canicule ; la compétition reprend normalement ce samedi pour les phases de poule, et dimanche pour les finales."
+          },
+          {
+            "titre": "Ce week-end à Ker Lann — entrée libre",
+            "contenu": "Le programme du samedi 27 juin : compétitions en phases de poule toute la journée, et de 14h à 18h un village handisport avec initiations gratuites au para-athlétisme, au tennis fauteuil et au para-cyclisme. Dimanche 28 juin : phases finales et remises de prix l'après-midi. Le site est entièrement accessible aux personnes à mobilité réduite. Adresse : Complexe sportif du campus de Ker Lann, 4 rue Maryse Bastié, Bruz. Entrée gratuite, spectateurs bienvenus."
+          },
+          {
+            "titre": "Un signal sur la promesse n°27",
+            "contenu": "La promesse n°27 du programme municipal s'engage à « développer le sport adapté et le handisport » à Bruz. Accueillir un championnat national en est une illustration concrète — même si l'initiative revient aux clubs (JAB, CD Handisport 35) plutôt qu'à la municipalité seule. C'est le type de signal qu'on peut noter positivement, sans préjuger des actions à venir sur l'équipement, les financements ou le soutien associatif. À suivre dans la durée."
+          }
+        ],
+        "sources": [
+          "Ville de Bruz — agenda officiel (ville-bruz.fr)",
+          "JAB Bruz Handisport — article saison 2025-2026 (jabruz.fr)",
+          "CD Handisport 35",
+          "Programme municipal « Un nouvel élan pour Bruz » 2026-2032, promesse n°27"
+        ]
+      }
     },
     {
       "id": "presse-84aab9",

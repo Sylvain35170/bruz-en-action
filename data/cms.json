@@ -1,13 +1,38 @@
 {
   "meta": {
-    "last_updated": "2026-06-24",
+    "last_updated": "2026-06-27",
     "source_principale": "Transcriptions YouTube (Ville de Bruz) + Bruz Mag n°260 + délibérations Mégalis",
     "youtube": "https://www.youtube.com/playlist?list=PLnSe2hJFinqpupninWlKBHSmzmwLW-8i7",
     "deliberations_megalis": "https://data.megalis.bretagne.bzh/organization/commune-de-bruz",
-    "derniere_semaine_bruz": 856,
+    "derniere_semaine_bruz": 857,
     "dernier_bruz_mag": 259
   },
   "seances": [
+    {
+      "id": "SAB-857",
+      "date": "2026-06-27",
+      "statut": "passe",
+      "titre": "Télécharger(ouverture dans un nouvel onglet)",
+      "points_cles": [
+        "Du 25/06 Au 09/07 Bimensuel D’Information De La Ville De Bruz",
+        "Championnat De Week-End",
+        "Infos Pratiques",
+        "Associations",
+        "Du 25 Juin Au 9 Juillet",
+        "À Voir, À Faire",
+        "Accompagnements",
+        "Numéros D'Urgence",
+        "Contacts / Horaires",
+        "L'Escale En Fête !"
+      ],
+      "sources": [
+        {
+          "label": "Télécharger(ouverture dans un nouvel onglet)",
+          "url": "https://www.ville-bruz.fr/wp-content/uploads/2026/06/Semaine-a-Bruz-n°857-du-25-juin-au-9-juillet-2026.pdf"
+        }
+      ],
+      "type": "semaine_bruz"
+    },
     {
       "id": "BM-258",
       "date": "2026-01-15",

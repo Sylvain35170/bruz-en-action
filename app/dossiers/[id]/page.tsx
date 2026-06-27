@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import dossiersData from "../../../data/dossiers.json";
 import metaData from "../../../data/meta.json";
+import bruzData from "../../../data/bruz.json";
 import NavBar from "../../../components/NavBar";
 import SiteFooter from "../../../components/SiteFooter";
 import SignalementButton from "../../../components/SignalementButton";
@@ -129,6 +130,48 @@ function SvgHorizontalBarChart({ g }: { g: Graphique }) {
     </div>
   );
 }
+
+type StatContexte = { label: string; valeur: string; source: string; source_url: string; annee: number };
+
+const INSEE_URL = "https://www.insee.fr/fr/statistiques/2011101?geo=COM-35047";
+const d = bruzData;
+
+const STATS_CONTEXT: Record<string, StatContexte[]> = {
+  D01: [ // T4 / transports
+    { label: "Habitants", valeur: d.demographie.population_recensement.toLocaleString("fr-FR"), source: "INSEE RP2023", source_url: INSEE_URL, annee: 2023 },
+    { label: "Croissance annuelle", valeur: d.demographie.taux_croissance_annuel_2017_2023, source: "INSEE RP2023", source_url: INSEE_URL, annee: 2023 },
+    { label: "Solde migratoire", valeur: d.demographie.solde_migratoire, source: "INSEE RP2023", source_url: INSEE_URL, annee: 2023 },
+    { label: "Taux d'activité 15-64 ans", valeur: `${d.structure_population.taux_activite_15_64_ans} %`, source: "INSEE RP2023", source_url: INSEE_URL, annee: 2023 },
+  ],
+  D02: [ // ZAC Multisites / logements
+    { label: "Résidences principales", valeur: d.logements.residences_principales.toLocaleString("fr-FR"), source: "INSEE RP2023", source_url: INSEE_URL, annee: 2023 },
+    { label: "Croissance résidences (2012→2023)", valeur: `+${(d.logements.residences_principales - d.logements.evolution_residences_principales["2012"]).toLocaleString("fr-FR")}`, source: "INSEE RP2023", source_url: INSEE_URL, annee: 2023 },
+    { label: "Propriétaires", valeur: `${d.logements.proprietaires_pct} %`, source: "INSEE RP2023", source_url: INSEE_URL, annee: 2023 },
+    { label: "Logements vacants", valeur: `${d.logements.logements_vacants_pct} %`, source: "INSEE RP2023", source_url: INSEE_URL, annee: 2023 },
+  ],
+  D03: [ // Budget
+    { label: "Revenu médian / UC", valeur: `${d.emploi_revenus.revenu_median_uc.toLocaleString("fr-FR")} €`, source: "INSEE Filosofi 2023", source_url: INSEE_URL, annee: 2023 },
+    { label: "Taux de pauvreté", valeur: `${d.emploi_revenus.taux_pauvrete_pct} %`, source: "INSEE Filosofi 2023", source_url: INSEE_URL, annee: 2023 },
+    { label: "Taux de chômage", valeur: `${d.emploi_revenus.taux_chomage_15_64_ans} %`, source: "INSEE RP2023", source_url: INSEE_URL, annee: 2023 },
+    { label: "Emplois sur place", valeur: d.emploi_revenus.emplois_sur_place.toLocaleString("fr-FR"), source: "INSEE RP2023", source_url: INSEE_URL, annee: 2023 },
+  ],
+  D06: [ // Piscine Conterie
+    { label: "Habitants", valeur: d.demographie.population_recensement.toLocaleString("fr-FR"), source: "INSEE RP2023", source_url: INSEE_URL, annee: 2023 },
+    { label: "Ménages", valeur: d.menages.total_menages.toLocaleString("fr-FR"), source: "INSEE RP2023", source_url: INSEE_URL, annee: 2023 },
+    { label: "Taille moy. des ménages", valeur: `${d.menages.taille_moyenne} pers.`, source: "INSEE RP2023", source_url: INSEE_URL, annee: 2023 },
+  ],
+  D07: [ // Police municipale
+    { label: "Vols et dégradations (2024)", valeur: d.securite.faits_constates_2024.vols_et_degradations.toString(), source: "Police/Gendarmerie nationales", source_url: "https://www.bien-dans-ma-ville.fr/bruz-35047/", annee: 2024 },
+    { label: "Cambriolages (2024)", valeur: d.securite.faits_constates_2024.cambriolages.toString(), source: "Police/Gendarmerie nationales", source_url: "https://www.bien-dans-ma-ville.fr/bruz-35047/", annee: 2024 },
+    { label: "Violences physiques/sexuelles (2024)", valeur: d.securite.faits_constates_2024.violences_physiques_et_sexuelles.toString(), source: "Police/Gendarmerie nationales", source_url: "https://www.bien-dans-ma-ville.fr/bruz-35047/", annee: 2024 },
+    { label: "Faits liés aux stupéfiants (2024)", valeur: d.securite.faits_constates_2024.stupefiants.toString(), source: "Police/Gendarmerie nationales", source_url: "https://www.bien-dans-ma-ville.fr/bruz-35047/", annee: 2024 },
+  ],
+  D10: [ // Écoles
+    { label: "Moins de 15 ans", valeur: `${d.structure_population.moins_de_15_ans_pct} %`, source: "INSEE RP2023", source_url: INSEE_URL, annee: 2023 },
+    { label: "Résidences principales", valeur: d.logements.residences_principales.toLocaleString("fr-FR"), source: "INSEE RP2023", source_url: INSEE_URL, annee: 2023 },
+    { label: "Croissance résidences (2012→2023)", valeur: `+${(d.logements.residences_principales - d.logements.evolution_residences_principales["2012"]).toLocaleString("fr-FR")}`, source: "INSEE RP2023", source_url: INSEE_URL, annee: 2023 },
+  ],
+};
 
 function SectionTitle({ children }: { children: React.ReactNode }) {
   return (
@@ -416,6 +459,27 @@ export default async function DossierPage({ params }: { params: Promise<{ id: st
 
           {/* Sidebar */}
           <aside style={{ display: "flex", flexDirection: "column", gap: 20, position: "sticky", top: 24 }}>
+
+            {/* Chiffres de contexte */}
+            {STATS_CONTEXT[dossier.id] && (
+              <div style={{ background: "#fff", border: "1px solid #e2e8f0", borderRadius: 12, padding: "16px 20px" }}>
+                <h3 style={{ margin: "0 0 14px", fontSize: 12, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.06em", color: "#64748b" }}>
+                  Chiffres de contexte
+                </h3>
+                <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+                  {STATS_CONTEXT[dossier.id].map((s, i) => (
+                    <div key={i} style={{ paddingBottom: 10, borderBottom: i < STATS_CONTEXT[dossier.id].length - 1 ? "1px solid #f1f5f9" : "none" }}>
+                      <div style={{ fontSize: 11, color: "#94a3b8", marginBottom: 2 }}>{s.label}</div>
+                      <div style={{ fontSize: 18, fontWeight: 800, color: "#0f172a", lineHeight: 1.2 }}>{s.valeur}</div>
+                      <a href={s.source_url} target="_blank" rel="noopener noreferrer"
+                        style={{ fontSize: 10, color: "#cbd5e1", textDecoration: "none" }}>
+                        {s.source} {s.annee} ↗
+                      </a>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
 
             {/* Sources */}
             {sources.length > 0 && (

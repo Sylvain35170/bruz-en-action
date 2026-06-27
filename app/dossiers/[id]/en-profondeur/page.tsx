@@ -323,7 +323,7 @@ export default async function EnProfondeurPage({ params }: { params: Promise<{ i
                 { icon: "🚌", label: "T4 Trambus", detail: "Co-financement Métropole : la part de Bruz reste à chiffrer. Mise en service 2031.", lien: "/bruz-en-action/dossiers/D01" },
                 { icon: "🏗️", label: "ZAC Multisites", detail: "1 700 logements = coût d'équipements publics à anticiper : voirie, réseaux, école.", lien: "/bruz-en-action/dossiers/D02" },
                 { icon: "🏊", label: "Piscine Conterie", detail: "Déficit chronique estimé à plusieurs centaines de milliers d'€/an. Rénovation non budgétée.", lien: "/bruz-en-action/dossiers/D06" },
-                { icon: "🏫", label: "Écoles", detail: "1 700 logements = ~850 enfants scolarisables. Aucun plan de construction scolaire annoncé.", lien: "/bruz-en-action/dossiers/D10" },
+                { icon: "🏫", label: "Écoles", detail: "1 700 logements = ~850 enfants scolarisables supplémentaires. Un 4e groupe scolaire est en construction à Ker Lann Sud — anticiper les capacités reste un défi clé du mandat.", lien: "/bruz-en-action/dossiers/D10" },
                 { icon: "🏛️", label: "Hôtel de Ville", detail: "Travaux de rénovation en cours — retour des services prévu fin juin 2026.", lien: null },
                 { icon: "🔒", label: "Police municipale", detail: "Renforcement promis — coût en personnel et équipements non chiffré publiquement.", lien: "/bruz-en-action/dossiers/D07" },
               ].map(({ icon, label, detail, lien }) => (
@@ -534,7 +534,7 @@ export default async function EnProfondeurPage({ params }: { params: Promise<{ i
               <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px,1fr))", gap: 10 }}>
                 {[
                   { nom: "Préfecture d'Ille-et-Vilaine", role: "Contrôle de légalité des délibérations communales. Les actes ZAC et modifications de PLU lui sont transmis — elle peut les déférer au tribunal administratif." },
-                  { nom: "Inspection Académique 35", role: "Pilote les ouvertures et fermetures de classes. Sans son accord, impossible d'absorber les ~850 enfants attendus. L'IA n'a aucune obligation de suivre le calendrier de la ZAC." },
+                  { nom: "Inspection Académique 35", role: "Pilote les ouvertures et fermetures de classes dans les groupes scolaires existants. Avec ~850 enfants supplémentaires attendus, c'est un défi de planification que la municipalité devra anticiper avec elle." },
                   { nom: "Enquête publique (commissaire-enquêteur)", role: "Toute modification du PLU passe par une enquête publique obligatoire. C'est le moment légal pour les habitants de déposer leurs observations au dossier." },
                 ].map(({ nom, role }) => (
                   <div key={nom} style={{ background: "#f8fafc", border: "1px solid #e2e8f0", borderRadius: 10, padding: "14px 16px" }}>
@@ -753,7 +753,7 @@ export default async function EnProfondeurPage({ params }: { params: Promise<{ i
             <SectionTitle>Ce que 1 700 logements impliquent concrètement</SectionTitle>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px,1fr))", gap: 16 }}>
               {[
-                { icon: "👶", titre: "~850 enfants scolarisables", texte: "À raison de 0,5 enfant par logement en moyenne, la ZAC va générer un besoin scolaire considérable. Aucun plan d'école neuve n'a été annoncé à ce jour." },
+                { icon: "👶", titre: "~850 enfants scolarisables", texte: "À raison de 0,5 enfant par logement en moyenne, la ZAC va générer un besoin scolaire substantiel. Bruz dispose déjà de 3 groupes publics (Champ l'Évêque, Jacques Prévert, Vert Buisson) et d'un 4e en construction à Ker Lann Sud — planifier son calendrier sera l'un des défis du mandat." },
                 { icon: "🚗", titre: "Pression sur la mobilité", texte: "Plus d'habitants = plus de flux. Sans T4 en service avant 2031, les nouveaux arrivants dépendront de la voiture pour rejoindre Rennes." },
                 { icon: "🌳", titre: "Espaces verts sous tension", texte: "La densification réduit mécaniquement les espaces ouverts. La charte de bonnes pratiques présentée en réunion publique reste à concrétiser." },
                 { icon: "💶", titre: "Recettes fiscales à terme", texte: "1 700 logements = base taxable en hausse. Mais les équipements à financer (écoles, voirie, réseaux) précèdent les recettes de plusieurs années." },

@@ -1,0 +1,232 @@
+{
+  "_meta": {
+    "description": "Base de connaissance factuelle sur la commune de Bruz — source de vérité pour les agents et les pages du site",
+    "derniere_mise_a_jour": "2026-06-27",
+    "sources_primaires": [
+      "https://www.insee.fr/fr/statistiques/2011101?geo=COM-35047",
+      "https://www.ville-bruz.fr",
+      "https://annuaire-education.fr",
+      "http://bruzplainedevie.fr"
+    ]
+  },
+
+  "identite": {
+    "nom": "Bruz",
+    "code_insee": "35047",
+    "code_postal": "35170",
+    "departement": "Ille-et-Vilaine (35)",
+    "region": "Bretagne",
+    "intercommunalite": "Rennes Métropole (50 communes)",
+    "situation": "12 km au sud-ouest de Rennes",
+    "rang_departemental": "4e commune la plus peuplée du département"
+  },
+
+  "demographie": {
+    "population_reference": 20461,
+    "annee_reference_legale": 2023,
+    "en_vigueur": "1er janvier 2026",
+    "source_legale": "INSEE — Populations de référence 2023 (décret du 26 décembre 2025)",
+    "population_recensement": 19683,
+    "annee_recensement": 2023,
+    "note": "Bruz a franchi le seuil des 20 000 habitants avec les populations de référence 2023",
+    "evolution": {
+      "1999": 13207,
+      "2012": 16670,
+      "2017": 18266,
+      "2023": 19683
+    },
+    "taux_croissance_annuel_2017_2023": "1,3 %",
+    "solde_naturel": "0,3 %/an",
+    "solde_migratoire": "0,9 %/an",
+    "superficie_km2": 30,
+    "naissances_2024": 162,
+    "deces_2024": 136,
+    "source_url": "https://www.insee.fr/fr/statistiques/2011101?geo=COM-35047"
+  },
+
+  "structure_population": {
+    "annee_reference": 2023,
+    "source": "INSEE RP2023",
+    "moins_de_15_ans_pct": 17.7,
+    "25_39_ans_pct": 17.7,
+    "65_ans_et_plus_pct": 15.6,
+    "taux_activite_15_64_ans": 72.4,
+    "taux_emploi_15_64_ans": 65.7,
+    "diplomes_bac_plus_2_et_plus_pct": 41.3,
+    "sans_diplome_pct": 11.7,
+    "note": "Population jeune et diplômée — profil péri-urbain cadres/techniciens"
+  },
+
+  "menages": {
+    "annee_reference": 2023,
+    "source": "INSEE RP2023",
+    "total_menages": 9320,
+    "taille_moyenne": 2.08,
+    "menages_une_personne_pct": 44.1,
+    "couples_avec_enfants_pct": 23.0,
+    "note": "44 % de ménages d'une personne — chiffre élevé, à surveiller avec la croissance démographique"
+  },
+
+  "logements": {
+    "annee_reference": 2023,
+    "source": "INSEE RP2023 — https://www.insee.fr/fr/statistiques/2011101?geo=COM-35047",
+    "total_logements": 10225,
+    "residences_principales": 9301,
+    "residences_principales_pct": 91.0,
+    "residences_secondaires_pct": 4.7,
+    "logements_vacants_pct": 4.3,
+    "proprietaires_pct": 52.4,
+    "locataires_pct": 46.6,
+    "hlm_pct": 13.8,
+    "maisons_pct": 45.7,
+    "appartements_pct": 53.3,
+    "evolution_residences_principales": {
+      "2012": 7297,
+      "2017": 8316,
+      "2023": 9301
+    },
+    "note": "+2 004 résidences principales en 11 ans (2012→2023). La ZAC Multisites prévoit +1 700 logements supplémentaires d'ici 2035."
+  },
+
+  "emploi_revenus": {
+    "annee_reference": 2023,
+    "source": "INSEE RP2023 / Filosofi 2023 — https://www.insee.fr/fr/statistiques/2011101?geo=COM-35047",
+    "taux_chomage_15_64_ans": 9.3,
+    "taux_chomage_jeunes_15_24_ans": 19.0,
+    "emplois_sur_place": 12249,
+    "salaries_pct": 91.3,
+    "revenu_median_uc": 28230,
+    "taux_pauvrete_pct": 11.0,
+    "etablissements_fin_2024": 621,
+    "secteurs_etablissements": {
+      "commerce_transport_services_pct": 69.7,
+      "administration_education_sante_pct": 13.4,
+      "construction_pct": 8.7,
+      "industrie_pct": 6.6,
+      "agriculture_pct": 1.6
+    }
+  },
+
+  "gouvernance": {
+    "mandat_en_cours": "2026-2032",
+    "liste_majoritaire": "Un nouvel élan pour Bruz",
+    "maire": "À compléter",
+    "nombre_elus": 33,
+    "note": "33 élus dont maire, adjoints, délégués et opposition — voir data/elus.json"
+  },
+
+  "education": {
+    "ecoles_primaires_publiques": [
+      {
+        "nom": "Champ l'Évêque",
+        "type": "maternelle + élémentaire publique",
+        "adresse": "53 rue Du Guesclin, 35170 Bruz",
+        "code_uai": "0351813F"
+      },
+      {
+        "nom": "Jacques Prévert",
+        "type": "maternelle + élémentaire publique",
+        "adresse": "2 rue Emile Desprès, 35170 Bruz",
+        "code_uai": "0352241W"
+      },
+      {
+        "nom": "Vert Buisson",
+        "type": "maternelle + élémentaire publique",
+        "adresse": "Mail de l'Île aux Moines, 35170 Bruz",
+        "code_uai": "0352674S"
+      }
+    ],
+    "ecoles_privees": [
+      {
+        "nom": "La Providence Centre",
+        "type": "primaire privée sous contrat",
+        "reseau": "Ensemble Scolaire Sainte Théodore Guérin"
+      },
+      {
+        "nom": "La Providence Vert Buisson",
+        "type": "primaire privée sous contrat",
+        "reseau": "Ensemble Scolaire Sainte Théodore Guérin"
+      }
+    ],
+    "projets": [
+      {
+        "nom": "4e groupe scolaire public — Ker Lann Sud",
+        "statut": "en construction",
+        "capacite_prevue": "14 classes (phase 1 : 8 classes)",
+        "localisation": "ZAC Ker Lann Sud, Bruz",
+        "source": "http://bruzplainedevie.fr/un-quatrieme-groupe-scolaire-a-bruz.html"
+      }
+    ],
+    "college": {
+      "nom": "Collège Pierre Brossolette",
+      "type": "public",
+      "code_uai": "0350002M"
+    },
+    "enseignement_superieur": {
+      "campus": "Ker Lann",
+      "etablissements": "~15",
+      "etudiants": "~6 000"
+    }
+  },
+
+  "equipements": {
+    "piscine": {
+      "nom": "Piscine de la Conterie",
+      "gestionnaire": "Syndicat intercommunal (12 communes membres)",
+      "deficit_annuel_estime": "400 000 €",
+      "contribution_bruz_2025": "162 000 €",
+      "note": "Modèle financier sous tension — aucune décision de rénovation prise à ce jour"
+    },
+    "mediatheque": {
+      "note": "À compléter"
+    },
+    "salle_spectacle": {
+      "note": "À compléter"
+    }
+  },
+
+  "urbanisme": {
+    "zac_multisites": {
+      "logements_prevus": 1700,
+      "horizon": "2035",
+      "date_creation_officielle": "2025-12",
+      "description": "ZAC répartie sur plusieurs secteurs de la commune, dont Ker Lann Sud",
+      "impact_scolaire_estime": "~850 enfants scolarisables supplémentaires (base 0,5 enfant/logement)"
+    },
+    "secteurs_principaux": ["Ker Lann", "Vert Buisson", "Cicé-Blossac", "Centre-ville"]
+  },
+
+  "transports": {
+    "t4_tramway": {
+      "description": "Prolongement de la ligne b du métro de Rennes vers Bruz",
+      "horizon_mise_en_service": "2031 (estimé)",
+      "pilote": "Rennes Métropole",
+      "note": "Condition structurante pour la mobilité des nouveaux habitants de la ZAC"
+    }
+  },
+
+  "securite": {
+    "note_methodologie": "Faits constatés = plaintes enregistrées par la gendarmerie de Bruz, pas les crimes commis. Source primaire : statistiques police/gendarmerie nationales publiées sur data.gouv.fr",
+    "faits_constates_2024": {
+      "source": "bien-dans-ma-ville.fr d'après statistiques police/gendarmerie 2024 — https://www.bien-dans-ma-ville.fr/bruz-35047/",
+      "violences_physiques_et_sexuelles": 124,
+      "cambriolages": 68,
+      "vols_et_degradations": 477,
+      "stupefiants": 498
+    },
+    "analyse_vs_references_nationales": {
+      "source": "bien-dans-ma-ville.fr — comparaison aux seuils nationaux 2024",
+      "violences_physiques": "Nettement inférieur aux seuils nationaux",
+      "cambriolages": "Au-dessus des références nationales",
+      "stupefiants": "Au-dessus des niveaux nationaux de référence",
+      "vols_petite_delinquance": "Au-dessus de la moyenne nationale"
+    },
+    "a_verifier": "Chiffres bruts à croiser avec data.gouv.fr (base communale délinquance) pour validation et évolution sur plusieurs années"
+  },
+
+  "finances_communales": {
+    "taxe_fonciere_batie_taux": "45,34 %",
+    "annee_taux": 2026,
+    "note_budget": "Budget 2026 voté en mars 2026 après débats tendus — commune décrite comme 'pas riche' face à l'accumulation des projets (T4, ZAC, piscine). Chiffres détaillés à intégrer après publication du compte administratif."
+  }
+}
