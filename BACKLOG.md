@@ -18,7 +18,8 @@
 - [ ] **D10 en profondeur** — Écoles + Vert-Buisson
 - [ ] **D12** — City stade Siméon Belliard : suivre délibération reconstruction (250-300k€ annoncés, calendrier non précisé) + issue procédure judiciaire riverains
 - [ ] **D13** — Canicule : suivre si mairie publie carte îlots / chiffres CCAS / PCS mis à jour
-- [ ] **Nouveaux dossiers** — Bonnat-Sablat (préemption), travaux Bruz
+- [ ] **Nouveaux dossiers** — Bonnat-Sablat (préemption), agenda travaux Bruz (qui/quoi/durée/planning)
+- [ ] **D11** — Plan B / Manoir de la Noë : suivre renouvellement convention guinguette après été 2026 + statut pérenne Plan B + toute délibération CM
 - [ ] **idees_ailleurs** — alimenter les dossiers D01–D12 avec des pratiques d'autres communes (champ JSON en place, vide sur tous sauf D13)
 
 ## 🟡 À faire — Design & Illustrations
