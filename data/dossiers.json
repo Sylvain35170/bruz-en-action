@@ -105,12 +105,24 @@
       ],
       "qui_decide": [
         {
-          "nom": "Commune de Bruz",
-          "role": "Maîtrise d'ouvrage de la ZAC — les délibérations se votent au conseil municipal"
+          "nom": "Jean-Patrick Desguérets",
+          "role": "2ème adjoint, délégation Aménagement de la Ville & Urbanisme — pilote opérationnel de la ZAC, présente les délibérations d'urbanisme en CM"
         },
         {
-          "nom": "Rennes Métropole",
-          "role": "Impose les densités liées au T4 — décision contraignante sur le secteur Ker Lann"
+          "nom": "Jérôme De Gayardon",
+          "role": "Conseiller délégué Habitat & Aménagement urbain — suit la mixité sociale, les quotas HLM, la répartition par type de logements"
+        },
+        {
+          "nom": "Jean-René Houssin",
+          "role": "Maire de Bruz — porteur politique, négocie avec Rennes Métropole sur les densités et le tracé T4"
+        },
+        {
+          "nom": "Rennes Métropole (50 communes)",
+          "role": "Impose 60 lgts/ha sur Ker Lann via le T4 — contrainte juridiquement opposable. Pilote aussi le PLUi intercommunal."
+        },
+        {
+          "nom": "Inspection Académique 35",
+          "role": "Pilote les ouvertures de classes — condition nécessaire pour absorber les ~850 enfants scolarisables attendus. N'est tenue par aucun calendrier ZAC."
         }
       ],
       "decisions": [
@@ -787,37 +799,67 @@
     },
     {
       "id": "D12",
-      "titre": "City stade du CoSEC : un équipement jeunesse de plus qui disparaît ?",
+      "titre": "City stade de Siméon Belliard : 380 000 € mal implantés, la reconstruction est-elle au rendez-vous ?",
       "categorie": "Équipements",
       "statut": "en_cours",
       "featured": false,
-      "last_activity": "2026-06-21",
+      "last_activity": "2026-06-27",
       "date_ouverture": "2026-06-21",
-      "chapeau": "Après le city stade de la Plaine Yann-Fañch (démonté en 2025), c'est celui du CoSEC Éric Tabarly qui est dans le viseur. Un deuxième équipement sportif de proximité pour les adolescents supprimé en moins de deux ans — sans solution de remplacement annoncée.",
+      "chapeau": "Un city stade — terrain multisports clôturé, gratuit, sans inscription, pensé pour les 12-25 ans — installé en 2023 au stade Siméon Belliard pour 380 000 €, a été démonté fin mai 2026 après deux ans de nuisances sonores subies par les riverains (jusqu'à 80 dB relevés sur les terrasses). La nouvelle municipalité a agi vite. Elle promet une reconstruction près du skate-park pour 250 à 300 000 € supplémentaires. Ce dossier suit la concrétisation de cet engagement — et le coût total d'une implantation mal pensée.",
       "ce_quon_sait": [
-        "Le CoSEC Éric Tabarly est le principal complexe omnisports de Bruz",
-        "Le city stade du CoSEC accueille notamment des entraînements de tennis de table (ALB Bruz)",
-        "En 2025, le city stade de la Plaine Yann-Fañch a déjà été démoli lors de la rénovation (D08)",
-        "Fabrice Jan est délégué au sport depuis mars 2026 — interlocuteur pour les équipements jeunesse"
+        "Un city stade est un terrain multisports extérieur clôturé (grilles métalliques), en accès libre et gratuit, sans inscription ni licence. Public cible : les 12-25 ans — une tranche d'âge peu couverte par les aires de jeux (trop enfants) et les clubs sportifs (coût, engagement).",
+        "Deux terrains de foot à 5 composant le city stade ont été installés en 2023 au stade Siméon Belliard pour 380 000 € sous la précédente mandature (Salmon)",
+        "L'équipement se trouvait à 20 mètres de quatre maisons riveraines — jusqu'à 70-80 dB mesurés sur les terrasses",
+        "Les riverains ont attaqué la commune en justice pour obtenir le démontage de la structure",
+        "Les 27 et 28 mai 2026, la nouvelle municipalité a fait démonter la structure (coût : 8 000 €)",
+        "Jean-René Houssin avait qualifié l'équipement de « mal pensé » pendant la campagne et après son élection",
+        "Il ne reste sur site que le terrain de basket avec ses deux paniers",
+        "Houssin a annoncé une reconstruction « un peu plus loin sur le même site, près du skate-park » pour 250 000 à 300 000 €",
+        "En 2025, le city stade de la Plaine Yann-Fañch a également été supprimé lors du réaménagement (→ D08)"
       ],
       "qui_decide": [
         {
-          "nom": "Services techniques de la mairie",
-          "role": "Gestion et programmation des équipements sportifs"
+          "nom": "Jean-René Houssin, maire de Bruz",
+          "role": "A décidé le démontage et s'est engagé sur la reconstruction — calendrier à préciser"
         },
         {
-          "nom": "Fabrice Jan (Bruz)",
-          "role": "Délégué au sport depuis mars 2026"
+          "nom": "Tribunal administratif",
+          "role": "Procédure judiciaire riverains vs commune toujours en cours"
         }
       ],
-      "decisions": [],
-      "ce_quon_suit": [
-        "La décision officielle sur l'avenir du city stade du CoSEC",
-        "Un équipement de remplacement est-il prévu — où, quand, pour qui ?",
-        "Budget sport 2026-2027 : ligne dédiée aux équipements de proximité jeunesse ?",
-        "Le schéma directeur des équipements sportifs du mandat"
+      "decisions": [
+        {
+          "date": "2023",
+          "description": "Installation du city stade de Siméon Belliard — 380 000 € (mandature Salmon)",
+          "source_url": "https://www.ouest-france.fr/bretagne/bruz-35170/au-sud-de-rennes-les-terrains-de-foot-a-380-000-euros-demontes-trois-ans-apres-leur-installation-f9c9845c-5d0b-11f1-ade7-1fdeb3d4b4fb"
+        },
+        {
+          "date": "2026-05-27",
+          "description": "Démontage du city stade décidé par Jean-René Houssin — coût 8 000 €. Seul le terrain de basket demeure.",
+          "source_url": "https://www.ouest-france.fr/bretagne/bruz-35170/au-sud-de-rennes-les-terrains-de-foot-a-380-000-euros-demontes-trois-ans-apres-leur-installation-f9c9845c-5d0b-11f1-ade7-1fdeb3d4b4fb"
+        },
+        {
+          "date": "2026-06",
+          "description": "Engagement du maire : reconstruction près du skate-park pour 250 000 à 300 000 €. Calendrier non précisé.",
+          "source_url": "https://www.ouest-france.fr/bretagne/bruz-35170/au-sud-de-rennes-les-terrains-de-foot-a-380-000-euros-demontes-trois-ans-apres-leur-installation-f9c9845c-5d0b-11f1-ade7-1fdeb3d4b4fb"
+        }
       ],
-      "sources": [],
+      "ce_quon_suit": [
+        "Le calendrier officiel et le budget voté pour la reconstruction (250-300 000 € annoncés — délibération à venir)",
+        "L'emplacement définitif « près du skate-park » — plans, concertation usagers ?",
+        "L'issue de la procédure judiciaire : les riverains vont-ils se désister maintenant que la structure est démontée ?",
+        "Le coût total de la mauvaise implantation initiale : 380 000 € + 8 000 € démontage + 250-300 000 € reconstruction = ~640 000 €"
+      ],
+      "sources": [
+        {
+          "label": "Ouest-France — « Les terrains de foot à 380 000 € démontés trois ans après leur installation » (01/06/2026)",
+          "url": "https://www.ouest-france.fr/bretagne/bruz-35170/au-sud-de-rennes-les-terrains-de-foot-a-380-000-euros-demontes-trois-ans-apres-leur-installation-f9c9845c-5d0b-11f1-ade7-1fdeb3d4b4fb"
+        },
+        {
+          "label": "Ouest-France — « Ces aires de jeux qui exaspèrent des habitants de Rennes et sa métropole »",
+          "url": "https://www.ouest-france.fr/bretagne/bruz-35170/plus-aucun-repit-ces-aires-de-jeux-qui-exasperent-des-habitants-de-rennes-et-sa-metropole-17b38cda-58f1-11f0-a250-ccec68869d1d"
+        }
+      ],
       "actus_recentes": [],
       "promesses_liees": []
     },
