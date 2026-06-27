@@ -1,0 +1,159 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1456 720" width="1456" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0E2F62"/>
+      <stop offset="100%" stop-color="#1A4177"/>
+    </linearGradient>
+    <linearGradient id="bar1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E8A040"/>
+      <stop offset="100%" stop-color="#c47a20"/>
+    </linearGradient>
+    <linearGradient id="bar2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4a90d9"/>
+      <stop offset="100%" stop-color="#2563a8"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#E8A040" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#E8A040" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#E8A040" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Fond -->
+  <rect width="1456" height="720" fill="url(#bg)"/>
+
+  <!-- Grille de fond -->
+  <g opacity="0.06" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="180" x2="1456" y2="180"/>
+    <line x1="0" y1="300" x2="1456" y2="300"/>
+    <line x1="0" y1="420" x2="1456" y2="420"/>
+    <line x1="0" y1="540" x2="1456" y2="540"/>
+    <line x1="240" y1="0" x2="240" y2="720"/>
+    <line x1="480" y1="0" x2="480" y2="720"/>
+    <line x1="720" y1="0" x2="720" y2="720"/>
+    <line x1="960" y1="0" x2="960" y2="720"/>
+    <line x1="1200" y1="0" x2="1200" y2="720"/>
+  </g>
+
+  <!-- Bande lumineuse centrale -->
+  <rect x="0" y="280" width="1456" height="160" fill="url(#glow)"/>
+
+  <!-- ─── GRAPHIQUE À BARRES (gauche) ─── -->
+  <g transform="translate(120, 100)">
+    <!-- Titre graphique -->
+    <text x="0" y="0" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#E8A040" letter-spacing="2" text-anchor="start">RECETTES FISCALES</text>
+    <text x="0" y="20" font-family="system-ui, sans-serif" font-size="11" fill="rgba(255,255,255,0.5)" letter-spacing="1">BRUZ — M€</text>
+
+    <!-- Axe Y labels -->
+    <text x="-10" y="80" font-family="system-ui, sans-serif" font-size="11" fill="rgba(255,255,255,0.4)" text-anchor="end">12</text>
+    <text x="-10" y="140" font-family="system-ui, sans-serif" font-size="11" fill="rgba(255,255,255,0.4)" text-anchor="end">9</text>
+    <text x="-10" y="200" font-family="system-ui, sans-serif" font-size="11" fill="rgba(255,255,255,0.4)" text-anchor="end">6</text>
+    <text x="-10" y="260" font-family="system-ui, sans-serif" font-size="11" fill="rgba(255,255,255,0.4)" text-anchor="end">3</text>
+
+    <!-- Ligne axe X -->
+    <line x1="0" y1="280" x2="420" y2="280" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+
+    <!-- Barres années -->
+    <!-- 2013 : 7.3M -->
+    <rect x="10" y="147" width="44" height="133" rx="3" fill="url(#bar2)" opacity="0.7"/>
+    <text x="32" y="140" font-family="system-ui, sans-serif" font-size="10" fill="rgba(255,255,255,0.6)" text-anchor="middle">7.3</text>
+    <text x="32" y="298" font-family="system-ui, sans-serif" font-size="10" fill="rgba(255,255,255,0.4)" text-anchor="middle">2013</text>
+
+    <!-- barres intermédiaires estimées -->
+    <rect x="64" y="138" width="44" height="142" rx="3" fill="url(#bar2)" opacity="0.55"/>
+    <text x="86" y="298" font-family="system-ui, sans-serif" font-size="10" fill="rgba(255,255,255,0.4)" text-anchor="middle">2016</text>
+
+    <rect x="118" y="125" width="44" height="155" rx="3" fill="url(#bar2)" opacity="0.65"/>
+    <text x="140" y="298" font-family="system-ui, sans-serif" font-size="10" fill="rgba(255,255,255,0.4)" text-anchor="middle">2019</text>
+
+    <rect x="172" y="113" width="44" height="167" rx="3" fill="url(#bar2)" opacity="0.75"/>
+    <text x="194" y="298" font-family="system-ui, sans-serif" font-size="10" fill="rgba(255,255,255,0.4)" text-anchor="middle">2021</text>
+
+    <!-- 2023 : 10.2M — barre orange mise en avant -->
+    <rect x="226" y="87" width="52" height="193" rx="3" fill="url(#bar1)"/>
+    <text x="252" y="80" font-family="system-ui, sans-serif" font-size="12" font-weight="800" fill="#E8A040" text-anchor="middle">10.2</text>
+    <text x="252" y="298" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#E8A040" text-anchor="middle">2023</text>
+
+    <!-- Flèche +40% -->
+    <line x1="50" y1="120" x2="236" y2="80" stroke="#E8A040" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.6"/>
+    <text x="148" y="100" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#E8A040" text-anchor="middle">+40 %</text>
+    <text x="148" y="115" font-family="system-ui, sans-serif" font-size="10" fill="rgba(255,255,255,0.4)" text-anchor="middle">en 10 ans</text>
+
+    <!-- Note -->
+    <text x="0" y="330" font-family="system-ui, sans-serif" font-size="10" fill="rgba(255,255,255,0.3)">TFB + TFNB + CFE — source : comptes administratifs</text>
+  </g>
+
+  <!-- ─── SÉPARATEUR VERTICAL ─── -->
+  <line x1="620" y1="80" x2="620" y2="640" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+
+  <!-- ─── BLOC CENTRAL — 3 INDICATEURS ─── -->
+  <g transform="translate(680, 100)">
+    <text x="0" y="0" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#E8A040" letter-spacing="2">INDICATEURS CLÉS</text>
+
+    <!-- Carte 1 : Budget voté -->
+    <rect x="0" y="30" width="220" height="110" rx="10" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <text x="16" y="58" font-family="system-ui, sans-serif" font-size="11" fill="rgba(255,255,255,0.5)" letter-spacing="1">BUDGET 2026</text>
+    <text x="16" y="90" font-family="system-ui, sans-serif" font-size="28" font-weight="800" fill="#ffffff">Voté</text>
+    <text x="16" y="112" font-family="system-ui, sans-serif" font-size="11" fill="rgba(255,255,255,0.5)">CM du 9 mars 2026</text>
+    <rect x="0" y="30" width="4" height="110" rx="2" fill="#E8A040"/>
+
+    <!-- Carte 2 : Safran -->
+    <rect x="240" y="30" width="220" height="110" rx="10" fill="rgba(232,160,64,0.1)" stroke="rgba(232,160,64,0.3)" stroke-width="1"/>
+    <text x="256" y="58" font-family="system-ui, sans-serif" font-size="11" fill="#E8A040" letter-spacing="1">EFFET SAFRAN</text>
+    <text x="256" y="88" font-family="system-ui, sans-serif" font-size="24" font-weight="800" fill="#E8A040">CFE ?</text>
+    <text x="256" y="112" font-family="system-ui, sans-serif" font-size="11" fill="rgba(255,255,255,0.5)">Montant non communiqué</text>
+    <rect x="240" y="30" width="4" height="110" rx="2" fill="#E8A040"/>
+
+    <!-- Carte 3 : Dette -->
+    <rect x="0" y="160" width="220" height="110" rx="10" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <text x="16" y="188" font-family="system-ui, sans-serif" font-size="11" fill="rgba(255,255,255,0.5)" letter-spacing="1">DETTE / HABITANT</text>
+    <text x="16" y="220" font-family="system-ui, sans-serif" font-size="28" font-weight="800" fill="rgba(255,255,255,0.4)">—</text>
+    <text x="16" y="242" font-family="system-ui, sans-serif" font-size="11" fill="rgba(255,255,255,0.4)">Non publié pour 2026</text>
+    <rect x="0" y="160" width="4" height="110" rx="2" fill="rgba(255,255,255,0.2)"/>
+
+    <!-- Carte 4 : DGF -->
+    <rect x="240" y="160" width="220" height="110" rx="10" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <text x="256" y="188" font-family="system-ui, sans-serif" font-size="11" fill="rgba(255,255,255,0.5)" letter-spacing="1">DGF ÉTAT</text>
+    <text x="256" y="218" font-family="system-ui, sans-serif" font-size="26" font-weight="800" fill="#ffffff">~1.5 M€</text>
+    <text x="256" y="242" font-family="system-ui, sans-serif" font-size="11" fill="rgba(255,255,255,0.4)">Dotation stagnante</text>
+    <rect x="240" y="160" width="4" height="110" rx="2" fill="#4a90d9"/>
+
+    <!-- Projets qui s'accumulent -->
+    <text x="0" y="310" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="rgba(255,255,255,0.7)" letter-spacing="1">PROJETS À FINANCER</text>
+    <g transform="translate(0, 325)">
+      <rect x="0" y="0" width="460" height="36" rx="6" fill="rgba(255,255,255,0.04)"/>
+      <text x="14" y="23" font-family="system-ui, sans-serif" font-size="12" fill="rgba(255,255,255,0.7)">🚌 T4 Trambus</text>
+      <text x="150" y="23" font-family="system-ui, sans-serif" font-size="12" fill="rgba(255,255,255,0.7)">🏗️ ZAC Multisites</text>
+      <text x="310" y="23" font-family="system-ui, sans-serif" font-size="12" fill="rgba(255,255,255,0.7)">🏊 Piscine</text>
+    </g>
+    <g transform="translate(0, 368)">
+      <rect x="0" y="0" width="460" height="36" rx="6" fill="rgba(255,255,255,0.04)"/>
+      <text x="14" y="23" font-family="system-ui, sans-serif" font-size="12" fill="rgba(255,255,255,0.7)">🏫 Écoles</text>
+      <text x="150" y="23" font-family="system-ui, sans-serif" font-size="12" fill="rgba(255,255,255,0.7)">🏛️ Hôtel de Ville</text>
+      <text x="310" y="23" font-family="system-ui, sans-serif" font-size="12" fill="rgba(255,255,255,0.7)">🔒 Police municipale</text>
+    </g>
+  </g>
+
+  <!-- ─── SÉPARATEUR VERTICAL ─── -->
+  <line x1="1220" y1="80" x2="1220" y2="640" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+
+  <!-- ─── BLOC DROIT — QUESTION CITOYENNE ─── -->
+  <g transform="translate(1255, 240)">
+    <text x="0" y="0" font-family="system-ui, sans-serif" font-size="40" fill="rgba(255,255,255,0.07)" font-weight="900">?</text>
+    <text x="30" y="-10" font-family="system-ui, sans-serif" font-size="38" fill="rgba(232,160,64,0.15)" font-weight="900">€</text>
+
+    <text x="0" y="60" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#E8A040" letter-spacing="1">LA QUESTION</text>
+    <text x="0" y="85" font-family="system-ui, sans-serif" font-size="13" fill="rgba(255,255,255,0.75)" style="white-space: pre">Bruz peut-elle</text>
+    <text x="0" y="105" font-family="system-ui, sans-serif" font-size="13" fill="rgba(255,255,255,0.75)">tout financer ?</text>
+
+    <line x1="0" y1="125" x2="140" y2="125" stroke="rgba(232,160,64,0.4)" stroke-width="1"/>
+
+    <text x="0" y="150" font-family="system-ui, sans-serif" font-size="11" fill="rgba(255,255,255,0.45)">Ce dossier suit</text>
+    <text x="0" y="168" font-family="system-ui, sans-serif" font-size="11" fill="rgba(255,255,255,0.45)">les arbitrages</text>
+    <text x="0" y="186" font-family="system-ui, sans-serif" font-size="11" fill="rgba(255,255,255,0.45)">du mandat</text>
+    <text x="0" y="204" font-family="system-ui, sans-serif" font-size="11" fill="rgba(255,255,255,0.45)">2026–2032.</text>
+  </g>
+
+  <!-- ─── LABEL BEA ─── -->
+  <text x="1446" y="712" font-family="system-ui, sans-serif" font-size="10" fill="rgba(255,255,255,0.2)" text-anchor="end">Bruz en Action — D03 Finances</text>
+</svg>

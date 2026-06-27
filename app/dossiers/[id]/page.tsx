@@ -187,25 +187,29 @@ export default async function DossierPage({ params }: { params: Promise<{ id: st
         </div>
       </section>
 
-      {/* Lien "En profondeur" pour D01 et D02 */}
-      {(dossier.id === "D01" || dossier.id === "D02") && (
-        <div style={{ background: "linear-gradient(90deg, #fff8f5, #fff)", borderBottom: "1px solid #fed7aa", padding: "16px 24px" }}>
-          <div style={{ maxWidth: 1120, margin: "0 auto", display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: 12 }}>
-            <div>
-              <span style={{ fontSize: 12, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.08em", color: "#E8A040", display: "block", marginBottom: 2 }}>Analyse éditoriale</span>
-              <span style={{ fontSize: 14, color: "#334155" }}>
-                {dossier.id === "D01"
-                  ? "Pourquoi ça compte, les deux visions du terminus, notre lecture"
-                  : "Les acteurs nommés, la densité expliquée en chiffres, notre lecture"}
-              </span>
+      {/* Lien "En profondeur" */}
+      {(["D01", "D02", "D03", "D07"] as string[]).includes(dossier.id) && (() => {
+        const subtitles: Record<string, string> = {
+          D01: "Pourquoi ça compte, les deux visions du terminus, notre lecture",
+          D02: "Les acteurs nommés, la densité expliquée en chiffres, notre lecture",
+          D03: "La dette, l'effet Safran, les projets qui s'accumulent — notre lecture",
+          D07: "Ce que la PM peut faire, la vidéosurveillance, notre lecture",
+        };
+        return (
+          <div style={{ background: "linear-gradient(90deg, #fff8f5, #fff)", borderBottom: "1px solid #fed7aa", padding: "16px 24px" }}>
+            <div style={{ maxWidth: 1120, margin: "0 auto", display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: 12 }}>
+              <div>
+                <span style={{ fontSize: 12, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.08em", color: "#E8A040", display: "block", marginBottom: 2 }}>Analyse éditoriale</span>
+                <span style={{ fontSize: 14, color: "#334155" }}>{subtitles[dossier.id]}</span>
+              </div>
+              <a href={`/bruz-en-action/dossiers/${dossier.id}/en-profondeur`}
+                style={{ flexShrink: 0, display: "inline-flex", alignItems: "center", gap: 8, padding: "10px 20px", background: "#E8A040", color: "#fff", borderRadius: 999, textDecoration: "none", fontSize: 14, fontWeight: 700 }}>
+                Lire en profondeur →
+              </a>
             </div>
-            <a href={`/bruz-en-action/dossiers/${dossier.id}/en-profondeur`}
-              style={{ flexShrink: 0, display: "inline-flex", alignItems: "center", gap: 8, padding: "10px 20px", background: "#E8A040", color: "#fff", borderRadius: 999, textDecoration: "none", fontSize: 14, fontWeight: 700 }}>
-              Lire en profondeur →
-            </a>
           </div>
-        </div>
-      )}
+        );
+      })()}
 
       {/* Illustration dossier */}
       {dossier.image && (
