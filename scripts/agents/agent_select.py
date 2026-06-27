@@ -158,7 +158,7 @@ def run() -> bool:
     PROPOSALS_DIR.mkdir(parents=True, exist_ok=True)
     proposal_file = PROPOSALS_DIR / f"{today()}.json"
 
-    # Si un fichier du jour existe déjà, fusionner
+    # Si un fichier du jour existe déjà, fusionner en dédupliquant par URL puis par titre
     existing_proposals = []
     if proposal_file.exists():
         try:
@@ -166,7 +166,19 @@ def run() -> bool:
         except Exception:
             pass
 
-    all_proposals = existing_proposals + proposals
+    merged = existing_proposals + proposals
+    seen_urls: set[str] = set()
+    seen_titles: set[str] = set()
+    all_proposals = []
+    for p in merged:
+        url_key = p.get("source_url", "")
+        title_key = p.get("titre", "").lower()[:50]
+        if url_key in seen_urls or title_key in seen_titles:
+            continue
+        if url_key:
+            seen_urls.add(url_key)
+        seen_titles.add(title_key)
+        all_proposals.append(p)
     proposal_file.write_text(
         json.dumps(all_proposals, ensure_ascii=False, indent=2), encoding="utf-8"
     )

@@ -1,9 +1,18 @@
 {
   "meta": {
-    "last_updated": "2026-06-25",
+    "last_updated": "2026-06-27",
     "note": "Actus de suivi des promesses — une actu = un événement daté lié à une ou plusieurs promesses"
   },
   "actus": [
+    {
+      "id": "mairie-boccia2026",
+      "titre": "Bruz accueille le Championnat de France de Boccia 2026",
+      "source_url": "https://www.ville-bruz.fr",
+      "source_label": "Mairie de Bruz — Événement sportif",
+      "date": "2026-06-27",
+      "detail": "Bruz accueille aujourd'hui le Championnat de France de Boccia, sport paralympique de précision. Un événement national qui met la ville à l'honneur.",
+      "type": "mairie"
+    },
     {
       "id": "presse-84aab9",
       "titre": "Municipales : à Bruz, les promesses de 2020 ont-elles été tenues par la majorité sortante ? - Ouest-France",

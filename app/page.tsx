@@ -1,5 +1,19 @@
 import NavBar from "../components/NavBar";
 const LOGO = "/bruz-en-action/logo.png";
+
+const CATEGORIE_COLOR: Record<string, string> = {
+  Mobilités: "#0369a1",
+  Urbanisme: "#6d28d9",
+  Finances: "#15803d",
+  Équipements: "#b45309",
+  "Services publics": "#dc2626",
+  Environnement: "#059669",
+  Éducation: "#ea580c",
+  Sécurité: "#374151",
+  Culture: "#be185d",
+  Patrimoine: "#65a30d",
+};
+
 import promessesData from "../data/promesses.json";
 import actusData from "../data/actus.json";
 import metaData from "../data/meta.json";
@@ -31,7 +45,16 @@ export default function Home() {
 
   const prochainCM = cmsData.seances.find(s => s.statut === "a_venir");
 
-  const topDossiers = ([...dossiers] as (typeof dossiers[0] & { featured?: boolean; last_activity?: string })[])
+  type DossierExt = typeof dossiers[0] & {
+    featured?: boolean;
+    last_activity?: string;
+    lien_externe?: string;
+    actus_recentes?: { date: string; titre: string }[];
+    chapeau?: string;
+    image?: string;
+  };
+
+  const topDossiers = ([...dossiers] as DossierExt[])
     .sort((a, b) => {
       if (a.featured && !b.featured) return -1;
       if (!a.featured && b.featured) return 1;
@@ -191,25 +214,68 @@ export default function Home() {
               Tous les dossiers ({dossiers.length}) →
             </a>
           </div>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: 16 }}>
-            {topDossiers.map(d => (
-              <a key={d.id} href={"lien_externe" in d && d.lien_externe ? String(d.lien_externe) : `/bruz-en-action/dossiers/${d.id}`}
-                style={{ textDecoration: "none", display: "flex", flexDirection: "column", background: "#fff", border: "1px solid #e2e8f0", borderRadius: 12, padding: "20px", gap: 10,
-                  borderTop: `3px solid ${d.featured ? "#E8A040" : "#3b82f6"}` }}>
-                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                  <span style={{ fontSize: 11, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.08em", color: "#64748b", padding: "2px 8px", background: "#f1f5f9", borderRadius: 999 }}>{d.categorie}</span>
-                  {d.featured && <span style={{ fontSize: 11, color: "#E8A040", fontWeight: 700 }}>● Actif</span>}
-                </div>
-                <h3 style={{ margin: 0, fontSize: 15, fontWeight: 700, color: "#0f172a", lineHeight: 1.4 }}>{d.titre}</h3>
-                <p style={{ margin: 0, fontSize: 13, color: "#64748b", lineHeight: 1.6 }}>{d.chapeau}</p>
-                <div style={{ marginTop: "auto", paddingTop: 8, display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                  <span style={{ fontSize: 13, fontWeight: 700, color: "#E8A040" }}>Lire →</span>
-                  {d.last_activity && (
-                    <span style={{ fontSize: 11, color: "#94a3b8" }}>Màj {fmtShort(d.last_activity)}</span>
-                  )}
-                </div>
-              </a>
-            ))}
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(300px,100%), 1fr))", gap: 20 }}>
+            {topDossiers.map(d => {
+              const catColor = CATEGORIE_COLOR[d.categorie] ?? "#64748b";
+              const href = d.lien_externe ?? `/bruz-en-action/dossiers/${d.id}`;
+              const lastActu = d.actus_recentes?.[0];
+              const lastActuDate = lastActu?.date
+                ? new Date(lastActu.date).toLocaleDateString("fr-FR", { day: "numeric", month: "short" })
+                : null;
+              return (
+                <a key={d.id} href={href} style={{ textDecoration: "none", display: "flex", flexDirection: "column" }}>
+                  <div style={{
+                    border: "1px solid #e2e8f0", borderRadius: 14, overflow: "hidden",
+                    display: "flex", flexDirection: "column", height: "100%",
+                    boxShadow: "0 1px 4px rgba(0,0,0,0.06)",
+                  }}>
+                    {d.image && (
+                      // eslint-disable-next-line @next/next/no-img-element
+                      <img src={d.image} alt={d.titre}
+                        style={{ width: "100%", height: 130, objectFit: "cover", objectPosition: "center", display: "block" }} />
+                    )}
+                    <div style={{ background: catColor, padding: "18px 20px 16px", position: "relative" }}>
+                      {d.featured && (
+                        <span style={{
+                          position: "absolute", top: 10, right: 12,
+                          fontSize: 10, fontWeight: 700, color: "#fff",
+                          background: "rgba(255,255,255,0.25)", padding: "2px 8px", borderRadius: 999,
+                          letterSpacing: "0.06em", textTransform: "uppercase",
+                        }}>● Actif</span>
+                      )}
+                      <span style={{ fontSize: 10, fontWeight: 800, letterSpacing: "0.12em", textTransform: "uppercase", color: "rgba(255,255,255,0.75)", display: "block", marginBottom: 6 }}>{d.categorie}</span>
+                      <h3 style={{ margin: 0, fontSize: 15, fontWeight: 700, color: "#fff", lineHeight: 1.4 }}>{d.titre}</h3>
+                    </div>
+                    <div style={{ background: "#fff", padding: "14px 20px", display: "flex", flexDirection: "column", gap: 10, flex: 1 }}>
+                      {d.chapeau && (
+                        <p style={{
+                          margin: 0, fontSize: 13, color: "#475569", lineHeight: 1.6,
+                          display: "-webkit-box", WebkitLineClamp: 3,
+                          WebkitBoxOrient: "vertical" as const, overflow: "hidden",
+                        }}>{d.chapeau}</p>
+                      )}
+                      {lastActu && (
+                        <div style={{ borderLeft: `3px solid ${catColor}`, paddingLeft: 10 }}>
+                          <span style={{ fontSize: 10, color: "#94a3b8", textTransform: "uppercase", letterSpacing: "0.06em", fontWeight: 700 }}>
+                            Dernière actu · {lastActuDate}
+                          </span>
+                          <p style={{
+                            margin: "3px 0 0", fontSize: 12, color: "#334155", lineHeight: 1.5,
+                            display: "-webkit-box", WebkitLineClamp: 2,
+                            WebkitBoxOrient: "vertical" as const, overflow: "hidden",
+                          }}>{lastActu.titre}</p>
+                        </div>
+                      )}
+                      <div style={{ marginTop: "auto", paddingTop: 10, borderTop: "1px solid #f1f5f9" }}>
+                        <span style={{ fontSize: 12, fontWeight: 700, color: catColor }}>
+                          {d.lien_externe ? "Ouvrir la carte →" : "Lire le dossier →"}
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              );
+            })}
           </div>
         </div>
       </section>
@@ -276,6 +342,9 @@ export default function Home() {
             <div>
               <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#64748b", display: "block", marginBottom: 6 }}>Transparence</span>
               <h2 style={{ fontSize: "clamp(1.2rem,2vw,1.6rem)", fontWeight: 800, margin: 0, color: "#0f172a" }}>Suivi des {total} engagements</h2>
+              <span style={{ fontSize: 12, color: "#94a3b8", marginTop: 4, display: "block" }}>
+                Prochain bilan : automne 2026 · Mis à jour le {new Date(promessesData.meta.last_updated).toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" })}
+              </span>
             </div>
             <a href="/bruz-en-action/promesses" style={{ fontSize: 14, fontWeight: 600, color: "#2563eb", textDecoration: "none" }}>
               Voir le détail →
