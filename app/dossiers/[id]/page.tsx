@@ -149,11 +149,11 @@ const STATS_CONTEXT: Record<string, StatContexte[]> = {
     { label: "Propriétaires", valeur: `${d.logements.proprietaires_pct} %`, source: "INSEE RP2023", source_url: INSEE_URL, annee: 2023 },
     { label: "Logements vacants", valeur: `${d.logements.logements_vacants_pct} %`, source: "INSEE RP2023", source_url: INSEE_URL, annee: 2023 },
   ],
-  D03: [ // Budget
-    { label: "Revenu médian / UC", valeur: `${d.emploi_revenus.revenu_median_uc.toLocaleString("fr-FR")} €`, source: "INSEE Filosofi 2023", source_url: INSEE_URL, annee: 2023 },
-    { label: "Taux de pauvreté", valeur: `${d.emploi_revenus.taux_pauvrete_pct} %`, source: "INSEE Filosofi 2023", source_url: INSEE_URL, annee: 2023 },
-    { label: "Taux de chômage", valeur: `${d.emploi_revenus.taux_chomage_15_64_ans} %`, source: "INSEE RP2023", source_url: INSEE_URL, annee: 2023 },
-    { label: "Emplois sur place", valeur: d.emploi_revenus.emplois_sur_place.toLocaleString("fr-FR"), source: "INSEE RP2023", source_url: INSEE_URL, annee: 2023 },
+  D03: [ // Budget / Finances
+    { label: "Dette par habitant (2023)", valeur: "81 €", source: "CFU 2023 Bruz", source_url: "https://data.megalis.bretagne.bzh/organization/commune-de-bruz", annee: 2023 },
+    { label: "Épargne brute (2023)", valeur: "27,3 %", source: "CFU 2023 Bruz", source_url: "https://data.megalis.bretagne.bzh/organization/commune-de-bruz", annee: 2023 },
+    { label: "Fiscalité locale (2023)", valeur: "13,8 M€", source: "CFU 2023 Bruz", source_url: "https://data.megalis.bretagne.bzh/organization/commune-de-bruz", annee: 2023 },
+    { label: "Personnel / dépenses (2023)", valeur: "57 %", source: "CFU 2023 Bruz", source_url: "https://data.megalis.bretagne.bzh/organization/commune-de-bruz", annee: 2023 },
   ],
   D06: [ // Piscine Conterie
     { label: "Habitants", valeur: d.demographie.population_recensement.toLocaleString("fr-FR"), source: "INSEE RP2023", source_url: INSEE_URL, annee: 2023 },
@@ -199,6 +199,8 @@ export default async function DossierPage({ params }: { params: Promise<{ id: st
   const sources: { label: string; url: string }[] = dossier.sources ?? [];
   const graphiques: Graphique[] = dossier.graphiques ?? [];
   const ideesAilleurs: { commune: string; idee: string; pourquoi_bruz: string; source_url?: string }[] = dossier.idees_ailleurs ?? [];
+  const contextePedagogique: string[] = dossier.contexte_pedagogique ?? [];
+  const glossaire: { terme: string; definition: string }[] = dossier.glossaire ?? [];
 
   return (
     <div style={{ minHeight: "100vh", display: "flex", flexDirection: "column", fontFamily: "var(--font-sans, system-ui)", background: "#f8fafc" }}>
@@ -276,6 +278,29 @@ export default async function DossierPage({ params }: { params: Promise<{ id: st
 
           {/* Colonne principale */}
           <div>
+
+            {/* Contexte pédagogique */}
+            {contextePedagogique.length > 0 && (
+              <section style={{ marginBottom: 36 }}>
+                <SectionTitle>Pour comprendre</SectionTitle>
+                <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+                  {contextePedagogique.map((para, i) => (
+                    <div key={i} style={{
+                      background: "#f0f9ff",
+                      border: "1px solid #bae6fd",
+                      borderLeft: "3px solid #0369a1",
+                      borderRadius: 8,
+                      padding: "12px 16px",
+                      fontSize: 14,
+                      lineHeight: 1.7,
+                      color: "#0c4a6e",
+                    }}>
+                      {para}
+                    </div>
+                  ))}
+                </div>
+              </section>
+            )}
 
             {/* Ce qu'on sait */}
             {ceQuOnSait.length > 0 && (
@@ -475,6 +500,23 @@ export default async function DossierPage({ params }: { params: Promise<{ id: st
                         style={{ fontSize: 10, color: "#cbd5e1", textDecoration: "none" }}>
                         {s.source} {s.annee} ↗
                       </a>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Glossaire */}
+            {glossaire.length > 0 && (
+              <div style={{ background: "#fff", border: "1px solid #e2e8f0", borderRadius: 12, padding: "16px 20px" }}>
+                <h3 style={{ margin: "0 0 14px", fontSize: 12, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.06em", color: "#64748b" }}>
+                  Glossaire
+                </h3>
+                <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+                  {glossaire.map((entry, i) => (
+                    <div key={i} style={{ paddingBottom: 12, borderBottom: i < glossaire.length - 1 ? "1px solid #f1f5f9" : "none" }}>
+                      <div style={{ fontSize: 13, fontWeight: 700, color: "#0369a1", marginBottom: 3 }}>{entry.terme}</div>
+                      <div style={{ fontSize: 12, color: "#475569", lineHeight: 1.6 }}>{entry.definition}</div>
                     </div>
                   ))}
                 </div>

@@ -185,65 +185,120 @@
     },
     {
       "id": "D03",
-      "titre": "Finances de la commune : ce que Bruz peut — et ne peut pas — se payer",
+      "titre": "Les finances de Bruz en clair : recettes, dépenses, arbitrages",
       "categorie": "Finances",
       "statut": "en_cours",
       "featured": true,
       "last_activity": "2026-06-27",
       "date_ouverture": "2026-06-16",
       "image": "/bruz-en-action/illus-d03-finances.png",
-      "chapeau": "Budget 2026 de Bruz voté en mars lors d'une séance tendue. La commune dit ne pas être riche, mais les projets s'accumulent : T4, ZAC, piscine, équipements. Ce dossier suit les arbitrages budgétaires du mandat.",
+      "chapeau": "Budget 2023 de Bruz : 27,3 M€ de recettes, une dette quasi nulle (81 €/habitant), un taux d'épargne brute de 27 %. Sur le papier, la commune est en bonne santé financière. Mais les grands projets du mandat — 4e groupe scolaire (9,5 M€), rénovation de l'Hôtel de Ville (1,4 M€), ZAC Multisites — vont peser de plus en plus. Ce dossier suit les arbitrages budgétaires du mandat 2026-2031.",
+      "contexte_pedagogique": [
+        "Un budget communal fonctionne en deux sections séparées et étanches. La section fonctionnement couvre les dépenses récurrentes : salaires (57 % des dépenses à Bruz en 2023), énergie, entretien, subventions aux associations. La section investissement finance les travaux et équipements durables. Règle d'or : il est interdit d'emprunter pour payer du fonctionnement.",
+        "Les recettes de fonctionnement viennent de trois grandes sources : la fiscalité locale (taxes votées chaque année par le Conseil Municipal), les dotations de l'État (dont la DGF), et les produits des services municipaux (cantines, médiathèque, périscolaire…). L'État ne finance pas directement les investissements locaux — la commune doit trouver des subventions ou emprunter.",
+        "La marge de manœuvre d'une commune se mesure par son taux d'épargne brute : la part des recettes de fonctionnement qui reste après toutes les dépenses courantes. Ce solde peut aller en investissement ou rembourser de la dette. À Bruz en 2023 : 27 %, un niveau confortable. Le seuil d'alerte est généralement fixé à 15 % — en dessous, la commune est en difficulté.",
+        "En 2023, Bruz a financé ses investissements sans contracter de nouvel emprunt. Son encours de dette s'élève à 81 €/habitant — un niveau exceptionnel pour une commune de cette taille. Le ratio d'endettement (dette / recettes de fonctionnement) est de 3,9 ans, bien en dessous du seuil de vigilance habituellement retenu à 8 ans."
+      ],
       "ce_quon_sait": [
-        "Budget 2026 voté au CM du 9 mars 2026 après débats — montant global à confirmer sur le compte administratif",
-        "Recettes fiscales directes : 7,3 M€ en 2013 → 10,2 M€ en 2023 (croissance liée aux taux et à la base taxable)",
-        "Arrivée de Safran à Bruz : impact fiscal attendu (CFE) mais pas encore chiffré officiellement",
-        "La DGF (dotation État) est contrainte — elle ne peut pas financer les investissements",
-        "La dette communale et son ratio par habitant ne sont pas encore publiés pour 2026"
+        "Recettes réelles de fonctionnement 2023 : 27,3 M€ (dont 4,8 M€ exceptionnels liés à la dissolution de la SPL NOA / ZAC Vert Buisson, non reconductibles). La base récurrente est d'environ 22,5 M€.",
+        "Fiscalité locale (chapitre 731 : taxes foncières, droits de mutation, TLPE…) : 12,7 M€ en 2022 → 13,8 M€ en 2023 (+8,4 %). En 2014, avant la réforme de la taxe d'habitation, ce chapitre était à 7,6 M€.",
+        "Dépenses réelles de fonctionnement 2023 : 17,5 M€ — dont personnel 10 M€ (57 %), charges générales 4,5 M€ (26 %), gestion courante 2,7 M€ (15 %), intérêts de la dette 240 k€ (moins de 1 %).",
+        "Masse salariale 2023 : 10 M€, 224 équivalents temps plein (ETP) ville, en hausse de 3,35 % par rapport à 2022 sous l'effet des mesures nationales de revalorisation du point d'indice.",
+        "Encours de dette 2023 : 1,63 M€ soit 81 €/habitant. Aucun nouvel emprunt contracté en 2023. Ratio d'endettement (encours / recettes réelles) : 3,9 ans.",
+        "Résultat de fonctionnement 2023 : excédent de 7,5 M€ (gonflé par l'exceptionnel ZAC). Affecté en recettes d'investissement pour le budget 2024.",
+        "Dépenses d'investissement réelles 2023 : 5,6 M€ sur 10,2 M€ budgétés (taux de réalisation : 55 %). Faible taux lié aux grands chantiers pluriannuels : 4e groupe scolaire (AP total 9,5 M€), rénovation Hôtel de Ville (AP 1,4 M€).",
+        "Budget primitif 2026 voté au CM du 9 mars 2026 après débats — montant global à confirmer sur le Compte Financier Unique 2026 (disponible courant 2027)."
+      ],
+      "glossaire": [
+        {
+          "terme": "DGF",
+          "definition": "Dotation Globale de Fonctionnement — transfert de l'État aux communes, calculé selon la population et des critères de péréquation. À Bruz en 2023 : environ 272 €/habitant. Contrainte depuis 2014, elle ne peut pas financer des investissements."
+        },
+        {
+          "terme": "TFB / TFNB",
+          "definition": "Taxe Foncière sur les Propriétés Bâties / Non Bâties — impôts payés par les propriétaires. Le taux est voté chaque année par le Conseil Municipal. À Bruz : 45,34 % en 2025 (voir dossier D04)."
+        },
+        {
+          "terme": "CFE",
+          "definition": "Cotisation Foncière des Entreprises — impôt local payé par les entreprises, basé sur la valeur locative de leurs locaux. L'arrivée de Safran à Bruz (ZAC Ker Lann) devrait générer une recette CFE significative — montant non encore chiffré officiellement."
+        },
+        {
+          "terme": "BP / CFU",
+          "definition": "BP = Budget Primitif (prévisionnel, voté en mars). Depuis 2023, Bruz adopte le Compte Financier Unique (CFU), qui fusionne le compte administratif (réalisé) et le compte de gestion en un seul document annuel."
+        },
+        {
+          "terme": "CAF / Épargne brute",
+          "definition": "Capacité d'Autofinancement — excédent des recettes de fonctionnement sur les dépenses courantes. C'est la marge disponible pour financer les investissements sans emprunter. Taux à Bruz en 2023 : 27 % (seuil d'alerte : 15 %)."
+        },
+        {
+          "terme": "FCTVA",
+          "definition": "Fonds de Compensation de la TVA — l'État rembourse aux communes environ 20 % de la TVA payée sur leurs investissements. À Bruz en 2023 : 343 k€ perçus."
+        },
+        {
+          "terme": "FPIC / FNGIR",
+          "definition": "Mécanismes nationaux de redistribution entre communes. Le FPIC transfère des ressources des communes favorisées vers les moins favorisées. Le FNGIR compense les pertes liées aux réformes fiscales. Bruz est généralement contributrice nette."
+        },
+        {
+          "terme": "ETP",
+          "definition": "Équivalent Temps Plein — unité de mesure des effectifs tenant compte du temps de travail. Bruz emploie 224 ETP ville en 2023, en progression de 1,9 % depuis 2022."
+        }
       ],
       "qui_decide": [
         {
           "nom": "Conseil municipal",
-          "role": "Vote le budget chaque année en mars — section fonctionnement et investissement"
+          "role": "Vote le budget chaque année en mars — section fonctionnement et investissement séparément. Peut modifier les taux d'imposition."
         },
         {
-          "nom": "Préfecture / DGFIP",
-          "role": "Contrôle de légalité budgétaire et publication des données fiscales officielles"
+          "nom": "Préfecture / DGFiP",
+          "role": "Contrôle de légalité budgétaire. Publication des données fiscales officielles sur data.economie.gouv.fr."
         }
       ],
       "decisions": [
         {
           "date": "2026-03-09",
-          "description": "Vote du budget 2026 — adopté après débats tendus sur les priorités d'investissement",
+          "description": "Vote du budget primitif 2026 — adopté après débats tendus sur les priorités d'investissement",
           "source_url": "https://youtu.be/52ALytkTry0"
         },
         {
+          "date": "2024-02-21",
+          "description": "Adoption du Compte Financier Unique 2023 — premier CFU de Bruz (expérimentation nationale). Excédent de fonctionnement : 7,5 M€. Aucun nouvel emprunt contracté.",
+          "source_url": "https://data.megalis.bretagne.bzh/organization/commune-de-bruz"
+        },
+        {
           "date": "2025-12-15",
-          "description": "Vote du budget 2025 (CM décembre) — séance qui inclut également le vote ZAC Multisites",
+          "description": "Vote du budget 2025 (CM décembre) — séance incluant également le vote ZAC Multisites",
           "source_url": "https://data.megalis.bretagne.bzh/organization/commune-de-bruz"
         }
       ],
       "ce_quon_suit": [
-        "Le compte administratif 2025 : les chiffres réels vs le budget voté",
-        "L'impact fiscal de l'arrivée de Safran — la commune a-t-elle chiffré un gain attendu ?",
-        "La dette communale et la capacité de désendettement — clé pour évaluer la marge d'investissement"
+        "Le Compte Financier Unique 2025 : les chiffres réels 2025 seront disponibles début 2026 — clé pour mesurer l'impact des grands chantiers",
+        "L'impact fiscal de l'arrivée de Safran (ZAC Ker Lann) : la commune a-t-elle chiffré un gain CFE attendu ? À quel horizon ?",
+        "L'évolution de la dette : les grands projets du mandat nécessiteront-ils des emprunts ? À quel niveau l'encours va-t-il monter ?",
+        "Le taux d'épargne brute : descend-il sous 20 % avec l'augmentation des charges (inflation, personnel) ? Sous 15 % = signal d'alarme",
+        "Le budget primitif 2027 : premier budget préparé entièrement par la nouvelle majorité — arbitrages entre équipements, fiscalité et dette"
       ],
       "graphiques": [
         {
           "id": "g1",
           "type": "bar",
-          "titre": "Recettes fiscales directes de Bruz",
-          "sous_titre": "Taxe foncière bâtie (TFB) + TFNB + CFE — en M€",
-          "source": "Comptes administratifs commune de Bruz — OFGL / DGFiP",
-          "note": "Données 2013 et 2023 issues des bilans publiés. Données intermédiaires 2014–2022 à compléter via comptes administratifs Mégalis.",
+          "titre": "Fiscalité locale (chapitre 731) — recettes réelles",
+          "sous_titre": "Taxes foncières, droits de mutation, TLPE, taxes sur l'électricité — en M€",
+          "source": "2014 : compte administratif Bruz. 2022-2023 : Compte Financier Unique 2023, Mégalis Bretagne",
+          "note": "Le saut entre 2014 et 2022 s'explique largement par la réforme nationale de la taxe d'habitation (2021) : la part départementale de la TFB a été transférée aux communes. Cette hausse est une décision nationale, pas une décision locale de Bruz.",
           "donnees": [
             {
-              "label": "2013",
-              "valeur": 7.3,
+              "label": "2014\n(avant réforme TH)",
+              "valeur": 7.6,
+              "confirme": true
+            },
+            {
+              "label": "2022",
+              "valeur": 12.7,
               "confirme": true
             },
             {
               "label": "2023",
-              "valeur": 10.2,
+              "valeur": 13.8,
               "confirme": true
             }
           ]
@@ -251,46 +306,80 @@
         {
           "id": "g2",
           "type": "horizontal_bar",
-          "titre": "Estimation structure des recettes de fonctionnement 2023",
-          "sous_titre": "Ordre de grandeur — à consolider sur le BP 2026",
-          "source": "Ratios de référence OFGL pour communes 15 000–25 000 habitants",
-          "note": "Estimations indicatives — seul le compte administratif 2026 donnera les montants réels.",
+          "titre": "Structure des recettes de fonctionnement 2023",
+          "sous_titre": "Recettes réelles confirmées (hors 4,8 M€ exceptionnels ZAC Vert Buisson) — en M€",
+          "source": "Compte Financier Unique 2023 — Ville de Bruz / Mégalis Bretagne",
+          "note": "4,8 M€ de recettes exceptionnelles en 2023 (dissolution SPL NOA) portent le total à 27,3 M€. Ce produit est non reconductible — la base récurrente est d'environ 22,5 M€.",
           "donnees": [
             {
-              "label": "Impôts locaux (TFB/CFE)",
-              "valeur": 10.2,
+              "label": "Fiscalité locale",
+              "valeur": 13.8,
               "confirme": true
             },
             {
-              "label": "Produits des services",
-              "valeur": 3.8,
-              "confirme": false
+              "label": "Dotations État",
+              "valeur": 3.4,
+              "confirme": true
             },
             {
-              "label": "DGF (dotation État)",
-              "valeur": 1.5,
-              "confirme": false
+              "label": "Péréquation (FPIC…)",
+              "valeur": 2.2,
+              "confirme": true
             },
             {
-              "label": "Autres recettes",
-              "valeur": 2.5,
-              "confirme": false
+              "label": "Services municipaux",
+              "valeur": 1.8,
+              "confirme": true
+            }
+          ]
+        },
+        {
+          "id": "g3",
+          "type": "horizontal_bar",
+          "titre": "Structure des dépenses réelles de fonctionnement 2023",
+          "sous_titre": "17,5 M€ de dépenses réelles (hors opérations d'ordre) — en M€",
+          "source": "Compte Financier Unique 2023 — Ville de Bruz / Mégalis Bretagne",
+          "note": "Le personnel représente 57 % des dépenses réelles (10 M€, 224 ETP). Les intérêts de la dette (240 k€) sont quasi-inexistants : aucun nouvel emprunt contracté en 2023, encours total de 81 €/habitant.",
+          "donnees": [
+            {
+              "label": "Personnel",
+              "valeur": 10.0,
+              "confirme": true
+            },
+            {
+              "label": "Charges générales",
+              "valeur": 4.5,
+              "confirme": true
+            },
+            {
+              "label": "Gestion courante",
+              "valeur": 2.7,
+              "confirme": true
+            },
+            {
+              "label": "Intérêts de la dette",
+              "valeur": 0.2,
+              "confirme": true
             }
           ]
         }
       ],
       "sources": [
         {
-          "label": "CM 9 mars 2026 — vote du budget (YouTube)",
-          "url": "https://youtu.be/52ALytkTry0"
-        },
-        {
-          "label": "Open data Mégalis — délibérations Bruz",
+          "label": "Compte Financier Unique 2023 — Ville de Bruz (Mégalis)",
           "url": "https://data.megalis.bretagne.bzh/organization/commune-de-bruz"
         },
         {
-          "label": "OFGL — finances des communes",
-          "url": "https://www.data.gouv.fr/fr/organizations/observatoire-des-finances-et-de-la-gestion-publique-locale/"
+          "label": "CM 9 mars 2026 — vote du budget 2026 (YouTube)",
+          "url": "https://youtu.be/52ALytkTry0"
+        },
+        {
+          "label": "DGFiP — Fiscalité locale des particuliers (taux officiels)",
+          "url": "https://www.data.gouv.fr/fr/datasets/impots-locaux/"
+        },
+        {
+          "label": "OFGL — Observatoire des finances locales",
+          "url": "https://data.ofgl.fr/pages/accueil/"
         }
       ],
       "actus_recentes": [
