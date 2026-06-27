@@ -14,6 +14,7 @@
 
 ## 🟡 À faire — Dossiers à instruire
 
+- [ ] **D02 en profondeur** — vérifier les chiffres La Courrouze / Baud-Chardonnet quand sources disponibles
 - [ ] **D10 en profondeur** — Écoles + Vert-Buisson
 - [ ] **D12** — City stade Siméon Belliard : suivre délibération reconstruction (250-300k€ annoncés, calendrier non précisé) + issue procédure judiciaire riverains
 - [ ] **D13** — Canicule : suivre si mairie publie carte îlots / chiffres CCAS / PCS mis à jour
@@ -22,7 +23,7 @@
 
 ## 🟡 À faire — Design & Illustrations
 
-- [ ] **Vignettes dossiers restants** — D03 finances, D04 taxe, D07 sécurité, D09 culture, D11 patrimoine (prompts à générer)
+- [ ] **Vignettes dossiers restants** — D04 taxe, D07 sécurité, D09 culture, D11 patrimoine (prompts à générer) — D03 ✅ SVG fait
 - [ ] **og-image** — remplacer par un visuel BEA aux bonnes couleurs quand disponible
 
 ## 🟡 À faire — Technique
