@@ -446,9 +446,312 @@ export default async function EnProfondeurPage({ params }: { params: Promise<{ i
             </InfoBox>
           </section>
 
+          {/* ACTEURS */}
+          <section style={{ marginBottom: 48 }}>
+            <SectionTitle>Les acteurs — qui fait quoi ?</SectionTitle>
+            <p style={{ fontSize: 14, color: "#64748b", lineHeight: 1.7, marginBottom: 28 }}>
+              La ZAC Multisites implique plusieurs niveaux de décision. Voici les personnes et institutions qui pèsent réellement dans ce dossier.
+            </p>
+
+            {/* Mairie de Bruz */}
+            <div style={{ marginBottom: 24 }}>
+              <div style={{ fontSize: 11, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.08em", color: "#0E2F62", marginBottom: 12, display: "flex", alignItems: "center", gap: 10 }}>
+                <span style={{ width: 20, height: 2, background: "#0E2F62", display: "inline-block", flexShrink: 0 }} />
+                Mairie de Bruz
+              </div>
+              <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+                {[
+                  {
+                    nom: "Jean-Patrick Desguérets",
+                    titre: "2ème adjoint — Aménagement de la Ville & Urbanisme",
+                    roleZac: "Pilote opérationnel de la ZAC au quotidien. C'est lui qui présente les délibérations d'urbanisme en conseil municipal, suit les échanges avec les aménageurs et instruits les demandes de permis.",
+                    badge: "Pilote opérationnel",
+                    couleur: "#0E2F62",
+                  },
+                  {
+                    nom: "Jérôme De Gayardon",
+                    titre: "Conseiller délégué — Habitat & Aménagement urbain",
+                    roleZac: "Suit les aspects logement et mixité sociale : quotas HLM au titre de la loi SRU, conventionnement des logements sociaux, répartition entre accession et locatif.",
+                    badge: "Logement & mixité",
+                    couleur: "#1A4177",
+                  },
+                  {
+                    nom: "Jean-René Houssin",
+                    titre: "Maire de Bruz",
+                    roleZac: "Porteur politique du projet. Négocie directement avec Rennes Métropole sur les densités et le terminus T4. Signe les arrêtés de création de ZAC et préside le conseil municipal qui vote les délibérations.",
+                    badge: "Décision politique",
+                    couleur: "#0f172a",
+                  },
+                ].map(({ nom, titre, roleZac, badge, couleur }) => (
+                  <div key={nom} style={{ background: "#fff", border: "1px solid #e2e8f0", borderLeft: `3px solid ${couleur}`, borderRadius: 10, padding: "16px 20px" }}>
+                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", flexWrap: "wrap", gap: 8, marginBottom: 10 }}>
+                      <div>
+                        <div style={{ fontSize: 15, fontWeight: 800, color: "#0f172a" }}>{nom}</div>
+                        <div style={{ fontSize: 12, color: "#64748b", marginTop: 2 }}>{titre}</div>
+                      </div>
+                      <span style={{ fontSize: 10, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.06em", background: "#f1f5f9", color: "#475569", padding: "3px 10px", borderRadius: 999, flexShrink: 0 }}>{badge}</span>
+                    </div>
+                    <div style={{ fontSize: 13, color: "#475569", lineHeight: 1.65, borderTop: "1px solid #f1f5f9", paddingTop: 10 }}>
+                      <strong style={{ color: "#0f172a" }}>Rôle dans la ZAC : </strong>{roleZac}
+                    </div>
+                  </div>
+                ))}
+                <p style={{ fontSize: 11, color: "#94a3b8", margin: "4px 0 0", fontStyle: "italic" }}>
+                  Source : <a href="https://www.ville-bruz.fr/actualites/decouvrez-les-elus-du-conseil-municipal-de-bruz/" target="_blank" rel="noopener noreferrer" style={{ color: "#2563eb" }}>Ville de Bruz — liste des élus 2026–2032 ↗</a>
+                </p>
+              </div>
+            </div>
+
+            {/* Rennes Métropole */}
+            <div style={{ marginBottom: 24 }}>
+              <div style={{ fontSize: 11, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.08em", color: "#7c3aed", marginBottom: 12, display: "flex", alignItems: "center", gap: 10 }}>
+                <span style={{ width: 20, height: 2, background: "#7c3aed", display: "inline-block", flexShrink: 0 }} />
+                Rennes Métropole
+              </div>
+              <div style={{ background: "#faf5ff", border: "1px solid #e9d5ff", borderLeft: "3px solid #7c3aed", borderRadius: 10, padding: "16px 20px" }}>
+                <div style={{ fontSize: 15, fontWeight: 800, color: "#0f172a", marginBottom: 3 }}>Rennes Métropole — 50 communes, ~460 000 habitants</div>
+                <div style={{ fontSize: 12, color: "#7c3aed", marginBottom: 14 }}>EPCI — compétences : urbanisme, mobilités, habitat intercommunal</div>
+                <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+                  {[
+                    { label: "Sur Ker Lann", detail: "Impose 60 logements/ha dans le cadre du tracé T4. C'est une densité minimale contraignante, pas une recommandation — Bruz doit s'y conformer pour obtenir les financements T4 et la desserte." },
+                    { label: "Sur le PLUi", detail: "Pilote le Plan Local d'Urbanisme intercommunal qui s'imposera à toutes les communes du territoire. La révision en cours fixe les règles de densité pour les années à venir." },
+                    { label: "Point clé", detail: "Bruz est membre de Rennes Métropole et y vote au Conseil Métropolitain. La Métropole n'est pas un acteur extérieur — les élus bruzois y siègent et peuvent peser sur les décisions." },
+                  ].map(({ label, detail }) => (
+                    <div key={label} style={{ fontSize: 13, color: "#334155", lineHeight: 1.65 }}>
+                      <strong style={{ color: "#7c3aed" }}>{label} : </strong>{detail}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* État & contrôle */}
+            <div>
+              <div style={{ fontSize: 11, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.08em", color: "#64748b", marginBottom: 12, display: "flex", alignItems: "center", gap: 10 }}>
+                <span style={{ width: 20, height: 2, background: "#94a3b8", display: "inline-block", flexShrink: 0 }} />
+                État & contrôle de légalité
+              </div>
+              <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px,1fr))", gap: 10 }}>
+                {[
+                  { nom: "Préfecture d'Ille-et-Vilaine", role: "Contrôle de légalité des délibérations communales. Les actes ZAC et modifications de PLU lui sont transmis — elle peut les déférer au tribunal administratif." },
+                  { nom: "Inspection Académique 35", role: "Pilote les ouvertures et fermetures de classes. Sans son accord, impossible d'absorber les ~850 enfants attendus. L'IA n'a aucune obligation de suivre le calendrier de la ZAC." },
+                  { nom: "Enquête publique (commissaire-enquêteur)", role: "Toute modification du PLU passe par une enquête publique obligatoire. C'est le moment légal pour les habitants de déposer leurs observations au dossier." },
+                ].map(({ nom, role }) => (
+                  <div key={nom} style={{ background: "#f8fafc", border: "1px solid #e2e8f0", borderRadius: 10, padding: "14px 16px" }}>
+                    <div style={{ fontSize: 13, fontWeight: 700, color: "#334155", marginBottom: 6 }}>{nom}</div>
+                    <div style={{ fontSize: 12, color: "#64748b", lineHeight: 1.6 }}>{role}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+
+          {/* DENSITÉ */}
+          <section style={{ marginBottom: 48 }}>
+            <SectionTitle>La densité : ce que 60 lgts/ha signifie vraiment</SectionTitle>
+            <p style={{ fontSize: 14, color: "#64748b", lineHeight: 1.7, marginBottom: 24 }}>
+              Le chiffre de 60 logements par hectare est mentionné dans les délibérations — mais rarement expliqué. Que signifie-t-il concrètement pour les habitants du secteur Ker Lann ?
+            </p>
+
+            {/* Repère : 1 ha */}
+            <div style={{ background: "#fff", border: "1px solid #e2e8f0", borderRadius: 12, padding: "20px 24px", marginBottom: 16 }}>
+              <div style={{ fontSize: 15, fontWeight: 800, color: "#0f172a", marginBottom: 14 }}>Point de repère : 1 hectare</div>
+              <div style={{ display: "flex", gap: 24, alignItems: "center", flexWrap: "wrap" }}>
+                <div style={{ flex: 1, minWidth: 180 }}>
+                  {[
+                    { label: "Surface", valeur: "10 000 m²" },
+                    { label: "Soit", valeur: "1,4 terrain de football (100 × 70 m)" },
+                    { label: "Soit", valeur: "un carré de 100 m de côté" },
+                    { label: "Ou encore", valeur: "~10 maisons avec jardins de 1 000 m²" },
+                  ].map(({ label, valeur }) => (
+                    <div key={label} style={{ display: "flex", gap: 12, fontSize: 13, color: "#334155", marginBottom: 7 }}>
+                      <span style={{ color: "#94a3b8", minWidth: 52, flexShrink: 0 }}>{label}</span>
+                      <span style={{ fontWeight: 600 }}>{valeur}</span>
+                    </div>
+                  ))}
+                </div>
+                <svg viewBox="0 0 210 160" style={{ width: 210, flexShrink: 0 }}>
+                  <rect x="10" y="10" width="120" height="120" fill="#f0f9ff" stroke="#0369a1" strokeWidth="2" rx="4" />
+                  <text x="70" y="72" textAnchor="middle" fontSize="13" fill="#0369a1" fontWeight="800">1 ha</text>
+                  <text x="70" y="89" textAnchor="middle" fontSize="9" fill="#64748b">10 000 m²</text>
+                  <text x="70" y="102" textAnchor="middle" fontSize="9" fill="#64748b">100 m × 100 m</text>
+                  <rect x="142" y="20" width="58" height="41" fill="#f0fdf4" stroke="#059669" strokeWidth="1.5" rx="3" />
+                  <text x="171" y="38" textAnchor="middle" fontSize="8" fill="#059669" fontWeight="700">terrain ⚽</text>
+                  <text x="171" y="51" textAnchor="middle" fontSize="8" fill="#059669">100 × 70 m</text>
+                  <rect x="142" y="68" width="58" height="29" fill="#f0fdf4" stroke="#059669" strokeWidth="1" rx="3" strokeDasharray="3,2" />
+                  <text x="171" y="87" textAnchor="middle" fontSize="8" fill="#94a3b8">× 0,4 ha</text>
+                  <text x="70" y="148" textAnchor="middle" fontSize="9" fill="#0369a1">= 1,4 terrains de foot</text>
+                </svg>
+              </div>
+            </div>
+
+            {/* Comparatif densités */}
+            <div style={{ background: "#fff", border: "1px solid #e2e8f0", borderRadius: 12, padding: "20px 24px", marginBottom: 16 }}>
+              <div style={{ fontSize: 15, fontWeight: 800, color: "#0f172a", marginBottom: 4 }}>Comparatif — logements et habitants par hectare</div>
+              <div style={{ fontSize: 12, color: "#64748b", marginBottom: 18 }}>Ratio appliqué : 2,3 habitants/logement (moyenne nationale)</div>
+              {((): React.ReactNode => {
+                const data: { label: string; lgts: number; couleur: string; isRef: boolean }[] = [
+                  { label: "Lotissement pavillonnaire", lgts: 15, couleur: "#86efac", isRef: false },
+                  { label: "Centre-bourg Bruz (estimation)", lgts: 25, couleur: "#6ee7b7", isRef: false },
+                  { label: "Ker Lann — objectif Métropole", lgts: 60, couleur: "#E8A040", isRef: true },
+                  { label: "Quartier dense (référence nat.)", lgts: 80, couleur: "#f87171", isRef: false },
+                ];
+                const MAX = 95;
+                const BAR_W = 260;
+                const ROW_H = 52;
+                const PAD_L = 190;
+                const SVG_W = PAD_L + BAR_W + 90;
+                const SVG_H = data.length * ROW_H + 32;
+                return (
+                  <svg viewBox={`0 0 ${SVG_W} ${SVG_H}`} style={{ width: "100%", display: "block" }}>
+                    <text x={PAD_L} y={14} fontSize={9} fill="#94a3b8" fontWeight="700">LGTS / HA</text>
+                    <text x={PAD_L + BAR_W + 10} y={14} fontSize={9} fill="#94a3b8" fontWeight="700">HAB / HA</text>
+                    {data.map(({ label, lgts, couleur, isRef }, i) => {
+                      const y = i * ROW_H + 22;
+                      const bW = (lgts / MAX) * BAR_W;
+                      return (
+                        <g key={i}>
+                          {isRef && <rect x={2} y={y - 2} width={SVG_W - 4} height={ROW_H - 8} fill="#fff8f5" rx={6} />}
+                          <text x={PAD_L - 10} y={y + 13} textAnchor="end" fontSize={11} fill={isRef ? "#0f172a" : "#64748b"} fontWeight={isRef ? "700" : "400"}>{label}</text>
+                          <rect x={PAD_L} y={y + 2} width={bW} height={ROW_H - 20} rx={4} fill={couleur} />
+                          <text x={PAD_L + bW + 6} y={y + 16} fontSize={12} fontWeight="700" fill="#0f172a">{lgts}</text>
+                          <text x={PAD_L + BAR_W + 10} y={y + 16} fontSize={12} fill="#64748b">≈ {Math.round(lgts * 2.3)}</text>
+                          {isRef && (
+                            <text x={PAD_L + bW + 28} y={y + 30} fontSize={9} fill="#E8A040" fontWeight="700">← Ker Lann</text>
+                          )}
+                        </g>
+                      );
+                    })}
+                  </svg>
+                );
+              })()}
+              <p style={{ margin: "8px 0 0", fontSize: 11, color: "#94a3b8", fontStyle: "italic" }}>
+                Estimation centre-bourg Bruz basée sur les typologies de bâti observées. Sources références : CEREMA, observatoires locaux de l'habitat.
+              </p>
+            </div>
+
+            {/* Ce que ça implique en termes de bâti */}
+            <div style={{ background: "#fff", border: "1px solid #e2e8f0", borderRadius: 12, padding: "20px 24px", marginBottom: 16 }}>
+              <div style={{ fontSize: 15, fontWeight: 800, color: "#0f172a", marginBottom: 16 }}>Ce que 60 lgts/ha implique en termes de bâti</div>
+              {[
+                { label: "Surface de terrain par logement", detail: "10 000 m² ÷ 60 lgts = 167 m² de terrain par logement — toutes circulations, parkings et espaces verts compris.", couleur: "#0369a1" },
+                { label: "Maison individuelle ? Impossible", detail: "Une maison avec jardin nécessite 400 à 600 m² minimum. À 60 lgts/ha, on est structurellement en habitat collectif.", couleur: "#dc2626" },
+                { label: "Hauteur attendue : R+2 à R+4", detail: "Le calcul réel donne 2 à 3 niveaux sur une emprise de 20-25 % (scénario courant dans les ZAC bretonnes), ou jusqu'à R+4-5 au plus près de la station T4 pour dégager plus d'espaces au sol. Pas de tours, mais aucun pavillon.", couleur: "#7c3aed" },
+                { label: "À l'échelle de Ker Lann", detail: "Si Ker Lann concentre ~30 % des 1 700 logements (soit ~510 lgts) sur 8,5 ha, on obtient exactement 60 lgts/ha — soit ~1 170 habitants sur cette zone, l'équivalent d'un petit quartier.", couleur: "#E8A040" },
+              ].map(({ label, detail, couleur }) => (
+                <div key={label} style={{ display: "flex", gap: 14, paddingBottom: 14, marginBottom: 14, borderBottom: "1px solid #f1f5f9" }}>
+                  <div style={{ flexShrink: 0, width: 4, background: couleur, borderRadius: 2, alignSelf: "stretch" }} />
+                  <div>
+                    <div style={{ fontSize: 13, fontWeight: 700, color: "#0f172a", marginBottom: 4 }}>{label}</div>
+                    <div style={{ fontSize: 13, color: "#64748b", lineHeight: 1.65 }}>{detail}</div>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* ZAN */}
+            <div style={{ background: "#f0f9ff", border: "1px solid #bae6fd", borderLeft: "4px solid #0369a1", borderRadius: 12, padding: "20px 24px", marginBottom: 16 }}>
+              <div style={{ fontSize: 13, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.06em", color: "#0369a1", marginBottom: 12 }}>Pourquoi 60 lgts/ha est un minimum, pas un maximum</div>
+              <p style={{ margin: "0 0 16px", fontSize: 14, color: "#0c4a6e", lineHeight: 1.75 }}>
+                Pendant des décennies, construire de nouveaux logements à Bruz signifiait prendre de nouvelles terres : champs, prairies, lisières de forêt.
+                Ce modèle est désormais interdit par la loi <strong>Zéro Artificialisation Nette (ZAN)</strong> votée en 2021.
+              </p>
+              <div style={{ display: "flex", flexDirection: "column", gap: 0, marginBottom: 16, border: "1px solid #bae6fd", borderRadius: 8, overflow: "hidden" }}>
+                {[
+                  { etape: "Avant le ZAN", texte: "On construisait 15 maisons/ha sur des champs. Résultat : la ville s'étalait, les terres agricoles disparaissaient, les routes se saturaient.", icon: "🌾" },
+                  { etape: "Avec le ZAN (2021→2031)", texte: "L'État impose de diviser par 2 la consommation de terres vierges. Si Bruz veut construire 1 700 logements, elle doit le faire sur beaucoup moins de surface — donc beaucoup plus dense.", icon: "⚖️" },
+                  { etape: "Objectif 2050", texte: "Zéro hectare de terrain naturel ou agricole consommé net. Toute nouvelle construction devra compenser en renaturant une surface équivalente ailleurs.", icon: "🌱" },
+                ].map(({ etape, texte, icon }, i) => (
+                  <div key={etape} style={{ display: "flex", gap: 14, padding: "14px 16px", background: i % 2 === 0 ? "#f0f9ff" : "#e0f2fe", borderBottom: i < 2 ? "1px solid #bae6fd" : "none" }}>
+                    <span style={{ fontSize: 20, flexShrink: 0 }}>{icon}</span>
+                    <div>
+                      <div style={{ fontSize: 12, fontWeight: 700, color: "#0369a1", marginBottom: 3 }}>{etape}</div>
+                      <div style={{ fontSize: 13, color: "#0c4a6e", lineHeight: 1.6 }}>{texte}</div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+              <div style={{ background: "#0369a1", borderRadius: 8, padding: "12px 16px" }}>
+                <div style={{ fontSize: 13, color: "#fff", lineHeight: 1.65 }}>
+                  <strong>Pour Ker Lann, concrètement :</strong> sans le ZAN, Bruz aurait pu construire ces 510 logements sur ~30 ha à 17 lgts/ha (pavillonnaire). Avec le ZAN, elle doit tenir sur ~8,5 ha. D'où les 60 lgts/ha imposés. Et d'ici 2035-2050, les révisions du PLU pousseront probablement encore plus haut.
+                </div>
+              </div>
+            </div>
+
+            {/* Exemples métropolitains */}
+            <div style={{ background: "#fff", border: "1px solid #e2e8f0", borderRadius: 12, padding: "20px 24px", marginBottom: 16 }}>
+              <div style={{ fontSize: 15, fontWeight: 800, color: "#0f172a", marginBottom: 4 }}>Exemples concrets dans Rennes Métropole</div>
+              <p style={{ margin: "0 0 16px", fontSize: 13, color: "#64748b", lineHeight: 1.6 }}>
+                Ces ZAC sont déjà livrées ou en cours — les habitants de Bruz peuvent y aller voir ce que 60 lgts/ha donne en vrai.
+              </p>
+              <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+                {[
+                  {
+                    nom: "La Courrouze",
+                    lieu: "Rennes / Saint-Jacques-de-la-Lande",
+                    periode: "2010–2020 — livré",
+                    densite: "~62 lgts/ha",
+                    hauteur: "R+3 à R+7 (plus haut près du métro)",
+                    logements: "~3 000 logements sur ~48 ha",
+                    note: "La référence la plus proche de Ker Lann : même densité, même métropole, déjà habité. Un mix de collectif moyen (R+3-4) et de quelques immeubles plus hauts sur les axes structurants.",
+                    couleur: "#0E2F62",
+                  },
+                  {
+                    nom: "Baud-Chardonnet",
+                    lieu: "Rennes (éco-quartier)",
+                    periode: "2018–2026 — en cours",
+                    densite: "~56 lgts/ha",
+                    hauteur: "R+3 à R+6",
+                    logements: "~1 400 logements sur ~25 ha",
+                    note: "Éco-quartier ZAN-compatible cité en référence par Rennes Métropole. Bâtiments bioclimatiques, rez-de-chaussée actifs, espaces verts intégrés. Comparable à ce que Ker Lann devrait viser.",
+                    couleur: "#059669",
+                  },
+                ].map(({ nom, lieu, periode, densite, hauteur, logements, note, couleur }) => (
+                  <div key={nom} style={{ border: "1px solid #e2e8f0", borderLeft: `3px solid ${couleur}`, borderRadius: 10, padding: "16px 20px" }}>
+                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", flexWrap: "wrap", gap: 8, marginBottom: 10 }}>
+                      <div>
+                        <div style={{ fontSize: 15, fontWeight: 800, color: "#0f172a" }}>{nom}</div>
+                        <div style={{ fontSize: 12, color: "#64748b" }}>{lieu} · {periode}</div>
+                      </div>
+                      <span style={{ fontSize: 11, fontWeight: 700, background: "#f1f5f9", color: "#475569", padding: "3px 10px", borderRadius: 999, flexShrink: 0 }}>{densite}</span>
+                    </div>
+                    <div style={{ display: "flex", gap: 16, flexWrap: "wrap", marginBottom: 10 }}>
+                      <span style={{ fontSize: 12, color: "#334155" }}>🏢 {hauteur}</span>
+                      <span style={{ fontSize: 12, color: "#334155" }}>🏠 {logements}</span>
+                    </div>
+                    <div style={{ fontSize: 13, color: "#64748b", lineHeight: 1.65, fontStyle: "italic" }}>{note}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Pour vs contre densité */}
+            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 }}>
+              <div style={{ background: "#f0fdf4", border: "1px solid #bbf7d0", borderRadius: 10, padding: "14px 16px" }}>
+                <div style={{ fontSize: 12, fontWeight: 700, color: "#059669", marginBottom: 10 }}>Arguments pour cette densité</div>
+                {[
+                  "Réduit l'étalement urbain et préserve les terres agricoles (ZAN)",
+                  "Rentabilise les équipements publics (école, crèche, bus)",
+                  "Condition du T4 : sans densité, pas de financement de la ligne",
+                  "Logements collectifs = prix d'accession plus abordables",
+                ].map(pt => <div key={pt} style={{ fontSize: 12, color: "#334155", lineHeight: 1.6, paddingLeft: 10, borderLeft: "2px solid #bbf7d0", marginBottom: 5 }}>{pt}</div>)}
+              </div>
+              <div style={{ background: "#fef2f2", border: "1px solid #fecaca", borderRadius: 10, padding: "14px 16px" }}>
+                <div style={{ fontSize: 12, fontWeight: 700, color: "#dc2626", marginBottom: 10 }}>Points de vigilance</div>
+                {[
+                  "Aucune maison individuelle possible à ces densités",
+                  "Pression accrue sur les espaces verts et la qualité de vie",
+                  "Risque de déficit d'équipements si les écoles ne suivent pas",
+                  "Sentiment de densification rapide pour les riverains actuels",
+                ].map(pt => <div key={pt} style={{ fontSize: 12, color: "#334155", lineHeight: 1.6, paddingLeft: 10, borderLeft: "2px solid #fecaca", marginBottom: 5 }}>{pt}</div>)}
+              </div>
+            </div>
+          </section>
+
+          {/* IMPLICATIONS */}
           <section style={{ marginBottom: 48 }}>
             <SectionTitle>Ce que 1 700 logements impliquent concrètement</SectionTitle>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px,1fr))", gap: 16, marginBottom: 24 }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px,1fr))", gap: 16 }}>
               {[
                 { icon: "👶", titre: "~850 enfants scolarisables", texte: "À raison de 0,5 enfant par logement en moyenne, la ZAC va générer un besoin scolaire considérable. Aucun plan d'école neuve n'a été annoncé à ce jour." },
                 { icon: "🚗", titre: "Pression sur la mobilité", texte: "Plus d'habitants = plus de flux. Sans T4 en service avant 2031, les nouveaux arrivants dépendront de la voiture pour rejoindre Rennes." },
@@ -464,6 +767,7 @@ export default async function EnProfondeurPage({ params }: { params: Promise<{ i
             </div>
           </section>
 
+          {/* QUESTIONS SANS RÉPONSE */}
           <section style={{ marginBottom: 48 }}>
             <SectionTitle>Les questions sans réponse publique</SectionTitle>
             <p style={{ fontSize: 14, color: "#64748b", lineHeight: 1.7, marginBottom: 24 }}>
@@ -472,10 +776,11 @@ export default async function EnProfondeurPage({ params }: { params: Promise<{ i
             <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
               {[
                 { q: "Combien d'écoles supplémentaires ?", d: "Aucune délibération sur la construction ou l'extension d'une école primaire n'a été publiée à ce jour. Le plan scolaire du mandat n'est pas connu." },
-                { q: "Quel calendrier secteur par secteur ?", d: "La ZAC couvre plusieurs quartiers mais aucun planning de mise en chantier n'a été rendu public. Qui commence quand ?" },
-                { q: "Quelle mixité sociale ?", d: "Quelle part de logements sociaux dans les 1 700 ? La loi SRU impose des quotas — Bruz est-elle en conformité ?" },
-                { q: "Quels équipements en face ?", d: "Crèches, gymnases, espaces verts — aucun chiffrage public des équipements à créer en parallèle des logements." },
-                { q: "Quelle concertation réelle ?", d: "La réunion publique de 2025 a été jugée trop unilatérale par la presse locale. Les habitants auront-ils voix au chapitre sur la densité ?" },
+                { q: "Quel aménageur pour la ZAC ?", d: "Une ZAC implique généralement une SEM ou une SPL comme aménageur (ex. Territoires 35, Foncier en Bretagne...). Le nom de l'opérateur mandaté par Bruz n'a pas été communiqué publiquement." },
+                { q: "Quel calendrier secteur par secteur ?", d: "La ZAC couvre plusieurs quartiers mais aucun planning de mise en chantier n'a été rendu public. Qui commence quand, dans quel ordre ?" },
+                { q: "Quelle mixité sociale ?", d: "Quelle part de logements sociaux dans les 1 700 ? La loi SRU impose des quotas — Bruz est-elle en conformité et à quel niveau vise-t-elle ?" },
+                { q: "Quels équipements prévus et à quel coût ?", d: "Crèches, gymnases, espaces verts — aucun chiffrage public des équipements à créer en parallèle des logements. C'est pourtant un engagement de la commune envers les futurs habitants." },
+                { q: "Quelle concertation réelle ?", d: "La réunion publique de 2025 a été jugée trop unilatérale par la presse locale. Les habitants auront-ils voix au chapitre sur la densité lors de l'enquête publique PLU ?" },
               ].map(({ q, d }, i) => (
                 <div key={i} style={{ background: "#fff", border: "1px solid #e2e8f0", borderLeft: "3px solid #E8A040", borderRadius: 8, padding: "16px 20px" }}>
                   <div style={{ fontSize: 14, fontWeight: 700, color: "#0f172a", marginBottom: 6 }}>{q}</div>
@@ -485,35 +790,43 @@ export default async function EnProfondeurPage({ params }: { params: Promise<{ i
             </div>
           </section>
 
+          {/* NOTRE LECTURE */}
           <section style={{ marginBottom: 48 }}>
             <div style={{ background: "#fff8f5", border: "1px solid #fed7aa", borderLeft: "4px solid #E8A040", borderRadius: 12, padding: "24px 28px" }}>
               <div style={{ fontSize: 11, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.08em", color: "#E8A040", marginBottom: 10 }}>Notre lecture — position de Bruz en Action</div>
               <p style={{ margin: "0 0 14px", fontSize: 15, fontWeight: 700, color: "#0f172a", lineHeight: 1.5 }}>
-                Construire, oui — mais pas sans plan scolaire ni concertation réelle.
+                Construire dense, oui — mais en l'assumant, et avec les équipements derrière.
               </p>
               <p style={{ margin: "0 0 12px", fontSize: 14, color: "#334155", lineHeight: 1.75 }}>
                 Bruz a besoin de logements. La commune grandit, les prix immobiliers poussent les familles plus loin,
                 et une ville dynamique doit accueillir de nouveaux habitants. La ZAC Multisites est une réponse légitime à ce besoin.
               </p>
               <p style={{ margin: "0 0 12px", fontSize: 14, color: "#334155", lineHeight: 1.75 }}>
-                Mais 1 700 logements sans calendrier d'école, sans chiffrage des équipements et sans concertation documentée,
+                La densité de 60 lgts/ha imposée sur Ker Lann est une condition du T4 — on ne peut pas avoir la ligne sans la densité.
+                C'est un choix politique clair : <strong>accepter la densification en échange d'une desserte en transport en commun</strong>.
+                Ce choix mérite d'être assumé publiquement, pas présenté comme une contrainte subie de la Métropole.
+              </p>
+              <p style={{ margin: "0 0 12px", fontSize: 14, color: "#334155", lineHeight: 1.75 }}>
+                Mais 1 700 logements sans aménageur identifié publiquement, sans calendrier d'école et sans chiffrage des équipements,
                 c'est une promesse à moitié tenue. Les équipements doivent <em>précéder</em> les habitants — pas les rattraper dix ans après.
               </p>
               <p style={{ margin: 0, fontSize: 14, color: "#64748b", lineHeight: 1.75, fontStyle: "italic" }}>
-                Vous avez des informations sur le plan scolaire ou le calendrier de la ZAC ?{" "}
+                Vous avez des informations sur le plan scolaire, l'aménageur ou le calendrier de la ZAC ?{" "}
                 <a href={`mailto:${metaData.contact.email}?subject=${encodeURIComponent("[D02] ZAC Multisites — informations")}`} style={{ color: "#E8A040" }}>Partagez-les avec nous</a>.
               </p>
             </div>
           </section>
 
+          {/* CE QU'ON SURVEILLE */}
           <section style={{ marginBottom: 48 }}>
             <SectionTitle>Ce qu'on va surveiller</SectionTitle>
             <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
               {[
-                { periode: "2026", description: "Révision du PLU pour intégrer les nouvelles densités — vote au conseil municipal.", importance: "haute" },
-                { periode: "2026–2027", description: "Annonce d'un plan scolaire : construction ou extension d'école primaire ?", importance: "haute" },
+                { periode: "2026", description: "Révision du PLU : vote en conseil municipal intégrant les nouvelles densités Ker Lann.", importance: "haute" },
+                { periode: "2026", description: "Nom de l'aménageur mandaté pour la ZAC — délibération attendue en CM.", importance: "haute" },
+                { periode: "2026–2027", description: "Plan scolaire du mandat : construction ou extension d'école primaire annoncée ?", importance: "haute" },
                 { periode: "2026–2028", description: "Dépôts de permis de construire secteur par secteur — le calendrier réel va se révéler.", importance: "moyenne" },
-                { periode: "2027–2030", description: "Premiers chantiers — impact sur la circulation, la qualité de vie des riverains.", importance: "neutre" },
+                { periode: "2027–2030", description: "Premiers chantiers — impact sur la circulation et la qualité de vie des riverains.", importance: "neutre" },
                 { periode: "2031+", description: "Arrivée du T4 : les logements Ker Lann auront-ils la densité promise à Rennes Métropole ?", importance: "neutre" },
               ].map((item, i) => (
                 <div key={i} style={{ display: "flex", gap: 16, background: "#fff", border: "1px solid #e2e8f0", borderRadius: 10, padding: "14px 18px", alignItems: "flex-start" }}>
@@ -537,6 +850,10 @@ export default async function EnProfondeurPage({ params }: { params: Promise<{ i
             <a href="/bruz-en-action/carte"
               style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "10px 20px", background: "#fff", border: "1px solid #e2e8f0", color: "#0f172a", borderRadius: 999, textDecoration: "none", fontSize: 14, fontWeight: 600 }}>
               🗺️ Voir la carte ZAC
+            </a>
+            <a href="/bruz-en-action/dossiers/D10"
+              style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "10px 20px", background: "#fff", border: "1px solid #e2e8f0", color: "#0f172a", borderRadius: 999, textDecoration: "none", fontSize: 14, fontWeight: 600 }}>
+              🏫 Dossier Écoles
             </a>
           </div>
 
