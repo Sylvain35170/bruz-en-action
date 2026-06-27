@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-06-25",
+    "last_updated": "2026-06-27",
     "version": "3.0"
   },
   "dossiers": [
@@ -849,42 +849,134 @@
     },
     {
       "id": "D11",
-      "titre": "Manoir de la Noë : que va devenir ce patrimoine ?",
+      "titre": "Manoir de la Noë : Plan B, un tiers-lieu citoyen face à la ville",
       "categorie": "Patrimoine",
       "statut": "en_cours",
       "featured": false,
-      "last_activity": "2026-06-18",
+      "last_activity": "2026-06-27",
       "date_ouverture": "2026-06-18",
-      "chapeau": "Le Manoir de la Noë est un bâtiment patrimonial sur le territoire de Bruz. Son avenir — rénovation, reconversion, vente, mise à disposition associative — est un sujet qui revient dans les débats locaux. Ce dossier suit les décisions de la mandature.",
+      "chapeau": "Le Manoir de la Noë abrite depuis avril 2026 l'association Plan B, lauréate de l'appel à projets «Nos Lieux Communs» de Rennes Métropole. Tiers-lieu citoyen construit sur cinq ans de mobilisation bénévole, Plan B propose un bar associatif ouvert à tous et des activités de transition. La question du mandat : la ville accompagnera-t-elle ce projet dans la durée, ou la guinguette estivale reprendra-t-elle la main ?",
       "ce_quon_sait": [
-        "Le Manoir de la Noë est un bâtiment ancien sur le territoire de Bruz — statut de propriété à confirmer (commune ou privé)",
-        "Plusieurs pistes ont été évoquées localement : rénovation patrimoniale, usage associatif, projet culturel",
-        "Aucune délibération officielle sur le Manoir de la Noë n'est disponible sur Mégalis à ce jour",
-        "Le contexte budgétaire contraint de la commune rend une rénovation lourde incertaine sans cofinancement"
+        "Le Manoir de la Noë est un bâtiment communal situé 26 rue de la Noë, 35170 Bruz",
+        "Plan B est lauréate de l'appel à projets «Nos Lieux Communs» de Rennes Métropole (2024-2025) — 32 projets déposés, 15 retenus par vote citoyen parmi 16 sites mis à disposition par les communes",
+        "Plan B a lancé des chantiers participatifs bénévoles dès janvier 2026 pour rénover le manoir (dépose des moquettes, travaux collectifs)",
+        "Le bar associatif Plan B a ouvert au public le 10 avril 2026 — entrée libre, vendredi 18h-23h / dimanche 15h-19h. Concerts, food trucks, événements.",
+        "Plan B héberge le Repair Café de Bruz chaque 2e samedi du mois",
+        "La ville organise en parallèle une guinguette estivale «Un été au manoir» (convention 2 ans) qui cohabite avec le projet Plan B",
+        "Rennes Métropole a été récompensée par le think tank Décider Ensemble pour ce dispositif de participation citoyenne",
+        "La nature exacte de la convention entre la ville et Plan B (durée, conditions financières) n'est pas documentée publiquement"
       ],
       "qui_decide": [
         {
-          "nom": "Commune de Bruz (si propriétaire)",
-          "role": "Décide du devenir du bâtiment — délibération au CM requise pour toute cession ou travaux"
+          "nom": "Association Plan B",
+          "role": "Porte le projet tiers-lieu — gère le lieu au quotidien (bar, Repair Café, événements). Projet citoyen construit sur 5 ans, lauréat Rennes Métropole."
+        },
+        {
+          "nom": "Commune de Bruz",
+          "role": "Propriétaire du bâtiment — définit les conditions de mise à disposition. Patrick Roulet et Laure-Anne Daron désignés représentants de la ville auprès de Plan B (CM avril 2026)."
+        },
+        {
+          "nom": "Rennes Métropole",
+          "role": "A sélectionné Plan B dans le cadre de «Nos Lieux Communs» — légitimité institutionnelle externe au projet."
         },
         {
           "nom": "DRAC Bretagne",
-          "role": "Compétente si le bâtiment est inscrit ou classé — subventions patrimoine possibles"
+          "role": "Compétente si le bâtiment est inscrit ou classé — subventions patrimoine possibles pour la rénovation."
         }
       ],
-      "decisions": [],
+      "decisions": [
+        {
+          "date": "2025",
+          "description": "Rennes Métropole sélectionne Plan B parmi 15 lauréats de «Nos Lieux Communs» — Manoir de la Noë mis à disposition",
+          "source_url": "https://metropole.rennes.fr/nos-lieux-communs-16-lieux-dans-la-metropole-autour-des-transitions"
+        },
+        {
+          "date": "2025-12",
+          "description": "La Ville de Bruz confie officiellement les clés du Manoir de la Noë à l'association Plan B (Ouest-France)",
+          "source_url": null
+        },
+        {
+          "date": "2026-01",
+          "description": "Lancement des chantiers participatifs — bénévoles Plan B commencent la rénovation (dépose des moquettes)",
+          "source_url": "https://fabriquecitoyenne.fr/blog/plan-b-les-chantiers-participatifs-ont-debute"
+        },
+        {
+          "date": "2026-04-08",
+          "description": "CM Bruz : Patrick Roulet et Laure-Anne Daron désignés représentants de la ville auprès de Plan B. Long débat : guinguette estivale (convention 2 ans, ville) vs tiers-lieu citoyen Plan B. L'opposition demande que les élus accompagnent sans reprendre la main.",
+          "source_url": null
+        },
+        {
+          "date": "2026-04-10",
+          "description": "Ouverture publique du bar associatif Plan B — entrée libre, ven./dim. Repair Café + concerts + food trucks.",
+          "source_url": "https://fabriquecitoyenne.fr/blog/le-repair-cafe-de-bruz-sinstalle-au-manoir-de-la-noe"
+        }
+      ],
       "ce_quon_suit": [
-        "La clarification du statut du bâtiment — communal ou privé ?",
-        "Toute délibération du CM sur le Manoir de la Noë (travaux, vente, bail)",
-        "Un éventuel dossier de subvention patrimoine (DRAC, Région Bretagne)"
+        "La nature et la durée de la convention entre la ville et Plan B — bail ? mise à disposition gratuite ? quelle durée ?",
+        "Le renouvellement (ou non) de la convention guinguette «Un été au manoir» après l'été 2026",
+        "Toute délibération du CM sur le Manoir de la Noë : travaux, renouvellement de bail, statut pérenne",
+        "Si Plan B obtient une délibération actant un statut juridique stable — ou reste dans un flou contractuel renouvelable au bon vouloir de la majorité",
+        "Un éventuel dossier de subvention patrimoine (DRAC, Région Bretagne) pour financer la rénovation du bâtiment"
       ],
       "sources": [
+        {
+          "label": "Plan B — site officiel",
+          "url": "http://planb-bruz.fr/"
+        },
+        {
+          "label": "La Fabrique Citoyenne — chantiers participatifs (jan. 2026)",
+          "url": "https://fabriquecitoyenne.fr/blog/plan-b-les-chantiers-participatifs-ont-debute"
+        },
+        {
+          "label": "La Fabrique Citoyenne — ouverture Plan B (10 avril 2026)",
+          "url": "https://fabriquecitoyenne.fr/blog/le-repair-cafe-de-bruz-sinstalle-au-manoir-de-la-noe"
+        },
+        {
+          "label": "Rennes Métropole — Nos Lieux Communs (16 lauréats)",
+          "url": "https://metropole.rennes.fr/nos-lieux-communs-16-lieux-dans-la-metropole-autour-des-transitions"
+        },
         {
           "label": "Open data Mégalis — délibérations Bruz",
           "url": "https://data.megalis.bretagne.bzh/organization/commune-de-bruz"
         }
       ],
-      "actus_recentes": [],
+      "actus_recentes": [
+        {
+          "date": "2026-06-18",
+          "titre": "Un été au manoir saison #3",
+          "detail": "La ville annonce la 3e édition de la guinguette estivale au Manoir de la Noë — convention 2 ans, cohabitation avec le projet Plan B.",
+          "source_url": "https://www.ville-bruz.fr/actualites/un-ete-au-manoir-saison-3/",
+          "source_label": "Mairie de Bruz"
+        },
+        {
+          "date": "2026-04-10",
+          "titre": "Ouverture publique du bar associatif Plan B",
+          "detail": "Le tiers-lieu Plan B ouvre au Manoir de la Noë — bar associatif + Repair Café + événements culturels. Entrée libre.",
+          "source_url": "https://fabriquecitoyenne.fr/blog/le-repair-cafe-de-bruz-sinstalle-au-manoir-de-la-noe",
+          "source_label": "La Fabrique Citoyenne"
+        },
+        {
+          "date": "2026-04-08",
+          "titre": "CM du 8 avril : débat guinguette vs tiers-lieu citoyen",
+          "detail": "Patrick Roulet et Laure-Anne Daron désignés représentants de la ville. L'opposition (Chevalier) défend l'autonomie de Plan B face aux déclarations ambiguës de Houssin sur la guinguette.",
+          "source_url": null,
+          "source_label": "Conseil municipal de Bruz"
+        },
+        {
+          "date": "2026-01",
+          "titre": "Chantiers participatifs Plan B — début des travaux",
+          "detail": "Les bénévoles de Plan B commencent à rénover le Manoir de la Noë : dépose des moquettes en janvier, chantier suivant le 8 février.",
+          "source_url": "https://fabriquecitoyenne.fr/blog/plan-b-les-chantiers-participatifs-ont-debute",
+          "source_label": "La Fabrique Citoyenne"
+        },
+        {
+          "date": "2025-12",
+          "titre": "La Ville de Bruz confie les clés du Manoir à l'association Plan B",
+          "detail": "Ouest-France annonce la désignation officielle de Plan B comme gestionnaire du Manoir de la Noë.",
+          "source_url": null,
+          "source_label": "Ouest-France"
+        }
+      ],
       "promesses_liees": []
     },
     {

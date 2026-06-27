@@ -26,14 +26,18 @@
 - [ ] **Vignettes dossiers restants** — D04 taxe, D07 sécurité, D09 culture, D11 patrimoine (prompts à générer) — D03 ✅ SVG fait
 - [ ] **og-image** — remplacer par un visuel BEA aux bonnes couleurs quand disponible
 
+## 🟡 À faire — Données & Connaissance
+
+- [ ] **bruz.json** — compléter les champs `"À compléter"` : maire, médiathèque, salle de spectacle, chiffres budget 2026 détaillés (fonctionnement/investissement — CFU 2025 disponible courant 2026)
+- [ ] **D03 — données intermédiaires 2015-2021** — compléter g1 (fiscalité locale) avec les années manquantes via comptes administratifs Mégalis
+- [ ] **D03 — comparaison communes similaires** — trouver ratio dette/hab moyen OFGL pour communes 15-25k hab (situer les 81€/hab de Bruz)
+- [ ] **STATS_CONTEXT** — ajouter mapping pour D04, D08, D09, D11, D12, D13 quand stats pertinentes identifiées
+
 ## 🟡 À faire — Technique
 
-- [ ] **Agent Gmail signalements** — lire emails labelisés [SIGNALEMENT], parser template structuré, ouvrir tickets JSON
 - [ ] **Script import_excel.py** — mise à jour auto des statuts depuis l'Excel
 - [ ] **CRs réunions** — réimporter les docx (encodage zip raté sur les accents)
 - [ ] **Actus** — enrichir au fil des décisions
-
-## 🟡 À faire — Technique
 
 ## 💡 Idées
 

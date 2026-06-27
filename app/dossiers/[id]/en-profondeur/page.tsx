@@ -3,6 +3,7 @@ import dossiersData from "../../../../data/dossiers.json";
 import metaData from "../../../../data/meta.json";
 import NavBar from "../../../../components/NavBar";
 import SiteFooter from "../../../../components/SiteFooter";
+import { formatNomPrenom } from "../../../utils";
 
 // Seuls les dossiers avec une page "En profondeur" sont listés ici
 const EN_PROFONDEUR_IDS = ["D01", "D02", "D03", "D07"];
@@ -486,7 +487,7 @@ export default async function EnProfondeurPage({ params }: { params: Promise<{ i
                   <div key={nom} style={{ background: "#fff", border: "1px solid #e2e8f0", borderLeft: `3px solid ${couleur}`, borderRadius: 10, padding: "16px 20px" }}>
                     <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", flexWrap: "wrap", gap: 8, marginBottom: 10 }}>
                       <div>
-                        <div style={{ fontSize: 15, fontWeight: 800, color: "#0f172a" }}>{nom}</div>
+                        <div style={{ fontSize: 15, fontWeight: 800, color: "#0f172a" }}>{formatNomPrenom(nom)}</div>
                         <div style={{ fontSize: 12, color: "#64748b", marginTop: 2 }}>{titre}</div>
                       </div>
                       <span style={{ fontSize: 10, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.06em", background: "#f1f5f9", color: "#475569", padding: "3px 10px", borderRadius: 999, flexShrink: 0 }}>{badge}</span>

@@ -2,6 +2,7 @@ import elusData from "../../data/elus.json";
 import metaData from "../../data/meta.json";
 import NavBar from "../../components/NavBar";
 import SiteFooter from "../../components/SiteFooter";
+import { formatNomPrenom } from "../utils";
 
 export const metadata = {
   title: "Élus municipaux — Bruz en Action",
@@ -74,7 +75,7 @@ export default function Elus() {
                 background: "#fff", border: "1px solid #e2e8f0", borderRadius: 12, padding: "16px 20px",
                 borderLeft: elu.type === "maire" ? "4px solid #E8A040" : "4px solid #3b82f6",
               }}>
-                <p style={{ margin: "0 0 2px", fontWeight: 700, color: "#0f172a", fontSize: 15 }}>{elu.nom}</p>
+                <p style={{ margin: "0 0 2px", fontWeight: 700, color: "#0f172a", fontSize: 15 }}>{formatNomPrenom(elu.nom)}</p>
                 <p style={{ margin: "0 0 4px", fontSize: 13, color: "#2563eb", fontWeight: 600 }}>{elu.role}</p>
                 {elu.delegation && <p style={{ margin: 0, fontSize: 13, color: "#64748b" }}>{elu.delegation}</p>}
                 {elu.citations && elu.citations.length > 0 && (
@@ -96,7 +97,7 @@ export default function Elus() {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(220px, 1fr))", gap: 12 }}>
             {elus.filter(e => e.type === "delegue").map(elu => (
               <div key={elu.id} style={{ background: "#fff", border: "1px solid #e2e8f0", borderRadius: 10, padding: "12px 16px" }}>
-                <p style={{ margin: "0 0 3px", fontWeight: 700, color: "#0f172a", fontSize: 14 }}>{elu.nom}</p>
+                <p style={{ margin: "0 0 3px", fontWeight: 700, color: "#0f172a", fontSize: 14 }}>{formatNomPrenom(elu.nom)}</p>
                 {elu.delegation && <p style={{ margin: 0, fontSize: 12, color: "#64748b" }}>{elu.delegation}</p>}
               </div>
             ))}
@@ -111,7 +112,7 @@ export default function Elus() {
             </h2>
             <div style={{ display: "flex", flexWrap: "wrap", gap: "6px 16px" }}>
               {elus.filter(e => e.type === "conseiller" && e.groupe === "majorite").map(e => (
-                <span key={e.id} style={{ fontSize: 14, color: "#334155" }}>{e.nom}</span>
+                <span key={e.id} style={{ fontSize: 14, color: "#334155" }}>{formatNomPrenom(e.nom)}</span>
               ))}
             </div>
           </section>
@@ -123,7 +124,7 @@ export default function Elus() {
             <div style={{ display: "flex", flexWrap: "wrap", gap: "6px 16px", marginBottom: 12 }}>
               {elus.filter(e => e.groupe === "opposition").map(e => (
                 <span key={e.id} style={{ fontSize: 14, color: "#334155" }}>
-                  {e.nom}{e.nom === "Philippe Salmon" ? " (ex-maire)" : ""}
+                  {formatNomPrenom(e.nom)}{e.nom === "Philippe Salmon" ? " (ex-maire)" : ""}
                 </span>
               ))}
             </div>
