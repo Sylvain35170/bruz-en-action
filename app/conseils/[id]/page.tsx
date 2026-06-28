@@ -89,16 +89,16 @@ export default async function SeancePage({ params }: { params: Promise<{ id: str
       {/* Header */}
       <header style={{ background: "linear-gradient(135deg, #0E2F62 0%, #1A4177 100%)", color: "#fff" }}>
         <div style={{ maxWidth: 1120, margin: "0 auto", padding: "16px 24px" }}>
-          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-            <a href="/bruz-en-action" style={{ display: "flex", alignItems: "center", gap: 12, textDecoration: "none" }}>
+          <div className="bea-cm-header-nav" style={{ display: "flex", justifyContent: "space-between", alignItems: "center", gap: 12 }}>
+            <a href="/bruz-en-action" style={{ display: "flex", alignItems: "center", gap: 12, textDecoration: "none", flexShrink: 0 }}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={LOGO} alt={association.nom} width={140} height={44} style={{ objectFit: "contain", background: "rgba(255,255,255,0.92)", borderRadius: 8, padding: "4px 8px" }} />
+              <img src={LOGO} alt={association.nom} width={120} height={38} style={{ objectFit: "contain", background: "rgba(255,255,255,0.92)", borderRadius: 8, padding: "4px 8px" }} />
             </a>
-            <nav style={{ display: "flex", gap: 20, alignItems: "center" }}>
-              <a href="/bruz-en-action/conseils" style={{ color: "rgba(255,255,255,0.7)", textDecoration: "none", fontSize: 14, fontWeight: 500 }}>← Conseils municipaux</a>
+            <nav style={{ display: "flex", gap: 12, alignItems: "center", flexWrap: "wrap", justifyContent: "flex-end" }}>
+              <a href="/bruz-en-action/conseils" style={{ color: "rgba(255,255,255,0.85)", textDecoration: "none", fontSize: 13, fontWeight: 600, whiteSpace: "nowrap" }}>← Conseils</a>
               {hasHelloAsso && (
                 <a href={contact.hello_asso_url} target="_blank" rel="noopener noreferrer"
-                  style={{ padding: "7px 16px", borderRadius: 999, background: "#f97316", color: "#fff", fontSize: 13, fontWeight: 700, textDecoration: "none" }}>
+                  style={{ padding: "7px 14px", borderRadius: 999, background: "#f97316", color: "#fff", fontSize: 13, fontWeight: 700, textDecoration: "none", whiteSpace: "nowrap" }}>
                   ❤️ Adhérer
                 </a>
               )}
@@ -133,7 +133,7 @@ export default async function SeancePage({ params }: { params: Promise<{ id: str
       </section>
 
       <main style={{ flex: 1 }}>
-        <div style={{ maxWidth: 1120, margin: "0 auto", padding: "48px 24px", display: "grid", gridTemplateColumns: "1fr minmax(0, 288px)", gap: 48, alignItems: "start" }}>
+        <div className="bea-conseils-grid" style={{ maxWidth: 1120, margin: "0 auto", padding: "48px 24px", display: "grid", gridTemplateColumns: "1fr minmax(0, 288px)", gap: 48, alignItems: "start" }}>
 
           {/* Colonne principale */}
           <div>

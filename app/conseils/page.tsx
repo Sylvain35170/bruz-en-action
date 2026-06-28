@@ -79,7 +79,7 @@ export default function Conseils() {
       </div>
 
       <main style={{ flex: 1 }}>
-        <div style={{ maxWidth: 1120, margin: "0 auto", padding: "48px 24px", display: "grid", gridTemplateColumns: "1fr minmax(0, 300px)", gap: 40, alignItems: "start" }}>
+        <div className="bea-conseils-grid" style={{ maxWidth: 1120, margin: "0 auto", padding: "48px 24px", display: "grid", gridTemplateColumns: "1fr minmax(0, 300px)", gap: 40, alignItems: "start" }}>
 
           {/* COLONNE PRINCIPALE */}
           <div>
