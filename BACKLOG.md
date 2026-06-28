@@ -25,7 +25,7 @@
 
 ## 🟡 À faire — Design & Illustrations
 
-- [ ] **Vignettes dossiers restants** — D04 taxe, D07 sécurité, D09 culture, D11 patrimoine (prompts à générer) — D03 ✅ SVG fait
+- [ ] **Vignettes dossiers restants** — D04 taxe, D07 sécurité, D11 patrimoine (prompts à générer) — D03 ✅ SVG fait
 - [ ] **og-image** — remplacer par un visuel BEA aux bonnes couleurs quand disponible
 
 ## 🟡 À faire — Données & Connaissance
@@ -35,7 +35,7 @@
 - [ ] **D03 — comparaison communes similaires** — trouver ratio dette/hab moyen OFGL pour communes 15-25k hab (situer les 466 €/hab 2024 de Bruz — contexte changé vs 81 €/hab 2023)
 - [ ] **D03 — CFU 2024 Bruz** — récupérer le document officiel sur Mégalis (WebFetch JS non fonctionnel) pour confirmer les chiffres 2024 estimés : dette 9,4 M€, fiscalité 13,9 M€
 - [ ] **D03 — CFU 2025 Bruz** — à récupérer sur Mégalis dès publication (délai légal : 30 juin 2026, non disponible à ce jour)
-- [ ] **STATS_CONTEXT** — ajouter mapping pour D04, D08, D09, D11, D12, D13 quand stats pertinentes identifiées
+- [ ] **STATS_CONTEXT** — ajouter mapping pour D04, D08, D11, D12, D13 quand stats pertinentes identifiées
 
 ## 🟡 À faire — Technique
 
