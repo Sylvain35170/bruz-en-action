@@ -139,7 +139,7 @@ export default async function EnProfondeurPage({ params }: { params: Promise<{ i
 
           <section style={{ marginBottom: 48 }}>
             <SectionTitle>Ce que la PM peut faire — et ce qu'elle ne peut pas</SectionTitle>
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 14 }}>
+            <div className="bea-grid-2col" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 14 }}>
               <div style={{ background: "#f0fdf4", border: "1px solid #bbf7d0", borderRadius: 10, padding: "18px 20px" }}>
                 <div style={{ fontSize: 13, fontWeight: 700, color: "#059669", marginBottom: 12, textTransform: "uppercase", letterSpacing: "0.06em" }}>✓ Ce qu'elle peut faire</div>
                 {["Verbaliser le stationnement illicite", "Contrôler les débits de boissons", "Relever les infractions au code de la route (certaines)", "Faire respecter les arrêtés municipaux (bruit, propreté)", "Présence préventive dans les quartiers", "Assistance aux opérations de police judiciaire (sous autorité gendarmerie)"].map(item => (
@@ -727,7 +727,7 @@ export default async function EnProfondeurPage({ params }: { params: Promise<{ i
             </div>
 
             {/* Pour vs contre densité */}
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 }}>
+            <div className="bea-grid-2col" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 }}>
               <div style={{ background: "#f0fdf4", border: "1px solid #bbf7d0", borderRadius: 10, padding: "14px 16px" }}>
                 <div style={{ fontSize: 12, fontWeight: 700, color: "#059669", marginBottom: 10 }}>Arguments pour cette densité</div>
                 {[
@@ -909,7 +909,7 @@ export default async function EnProfondeurPage({ params }: { params: Promise<{ i
               Là où la ligne se termine, c'est là que la ville se développe.
               Un terminus en centre-ville change tout vs un terminus en gare. Voici les deux lectures en présence.
             </p>
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20 }}>
+            <div className="bea-grid-2col" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20 }}>
 
               {/* Ancienne majorité */}
               <div style={{ background: "#fff", border: "2px solid #e2e8f0", borderRadius: 16, overflow: "hidden" }}>

@@ -93,7 +93,7 @@ export default function Promesses() {
 
         {/* Posture éditoriale */}
         <div style={{ maxWidth: 1120, margin: "0 auto", padding: "32px 24px 0" }}>
-          <div style={{ background: "#fff", border: "1px solid #e2e8f0", borderLeft: "3px solid #f97316", borderRadius: 10, padding: "16px 20px", display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20 }}>
+          <div className="bea-grid-2col" style={{ background: "#fff", border: "1px solid #e2e8f0", borderLeft: "3px solid #f97316", borderRadius: 10, padding: "16px 20px", display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20 }}>
             <div>
               <div style={{ fontSize: 12, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.08em", color: "#64748b", marginBottom: 6 }}>Notre posture</div>
               <p style={{ margin: 0, fontSize: 13, color: "#475569", lineHeight: 1.7 }}>

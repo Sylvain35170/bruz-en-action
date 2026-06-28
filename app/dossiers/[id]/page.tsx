@@ -483,7 +483,7 @@ export default async function DossierPage({ params }: { params: Promise<{ id: st
           </div>
 
           {/* Sidebar */}
-          <aside style={{ display: "flex", flexDirection: "column", gap: 20, position: "sticky", top: 24 }}>
+          <aside className="bea-sidebar" style={{ display: "flex", flexDirection: "column", gap: 20, position: "sticky", top: 24 }}>
 
             {/* Chiffres de contexte */}
             {STATS_CONTEXT[dossier.id] && (

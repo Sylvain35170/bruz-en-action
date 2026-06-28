@@ -129,7 +129,7 @@ export default async function PromessePage({ params }: { params: Promise<{ id: s
       </section>
 
       <main style={{ flex: 1 }}>
-        <div style={{ maxWidth: 1120, margin: "0 auto", padding: "48px 24px", display: "grid", gridTemplateColumns: "1fr minmax(0, 288px)", gap: 48, alignItems: "start" }}>
+        <div className="bea-page-grid" style={{ maxWidth: 1120, margin: "0 auto", padding: "48px 24px", display: "grid", gridTemplateColumns: "1fr minmax(0, 288px)", gap: 48, alignItems: "start" }}>
 
           {/* Colonne principale */}
           <div>
