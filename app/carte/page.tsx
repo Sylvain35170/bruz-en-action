@@ -34,20 +34,20 @@ export default function CartePage() {
       </header>
 
       {/* ── TITRE ── */}
-      <div style={{ background: "var(--surface-card, #fff)", borderBottom: "1px solid #e2e8f0", padding: "32px 24px" }}>
-        <div style={{ maxWidth: 1120, margin: "0 auto" }}>
-          <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#f97316", display: "block", marginBottom: 8 }}>
+      <section style={{ background: "linear-gradient(135deg, #0E2F62 0%, #1A4177 100%)", color: "#fff", paddingBottom: 40 }}>
+        <div style={{ maxWidth: 1120, margin: "0 auto", padding: "40px 24px 0" }}>
+          <span style={{ fontSize: 11, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", color: "rgba(255,255,255,0.45)" }}>
             Urbanisme · Projets
           </span>
-          <h1 style={{ margin: "0 0 8px", fontSize: "clamp(1.4rem, 3vw, 2rem)", fontWeight: 800, color: "#0f172a" }}>
+          <h1 style={{ fontSize: "clamp(1.6rem, 3vw, 2.4rem)", fontWeight: 800, lineHeight: 1.2, margin: "12px 0 16px", color: "#fff" }}>
             Carte de Bruz — projets &amp; quartiers
           </h1>
-          <p style={{ margin: 0, fontSize: 15, color: "#64748b", maxWidth: 640, lineHeight: 1.6 }}>
+          <p style={{ fontSize: 16, color: "rgba(255,255,255,0.72)", maxWidth: 640, margin: 0, lineHeight: 1.7 }}>
             Visualisation des zones de projet actives sur la commune : ZAC Multisites (1 700 logements à horizon 2040) et corridor Trambus T4.
-            Tous les tracés sont <strong>indicatifs</strong> — sources mairie et Rennes Métropole.
+            Tous les tracés sont <strong style={{ color: "#fff" }}>indicatifs</strong> — sources mairie et Rennes Métropole.
           </p>
         </div>
-      </div>
+      </section>
 
       {/* ── CARTE ── */}
       <div style={{ maxWidth: 1120, margin: "0 auto", padding: "32px 24px", width: "100%", boxSizing: "border-box", flex: 1 }}>
