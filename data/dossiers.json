@@ -286,7 +286,7 @@
           "titre": "Fiscalité locale (chapitre 731) — recettes réelles",
           "sous_titre": "Taxes foncières, droits de mutation, TLPE, taxes sur l'électricité — en M€",
           "source": "2014 : compte administratif Bruz. 2022-2023 : CFU 2023, Mégalis Bretagne. 2024 : estimation DGFiP via decomptes-publics.fr",
-          "note": "Le saut entre 2014 et 2022 s'explique largement par la réforme nationale de la taxe d'habitation (2021) : la part départementale de la TFB a été transférée aux communes. Cette hausse est une décision nationale, pas une décision locale de Bruz. La donnée 2024 est une estimation (DGFiP par habitant) — le CFU 2024 confirmera le chiffre définitif.",
+          "note": "Le saut entre 2014 et 2022 s'explique largement par la réforme nationale de la taxe d'habitation (2021) : la part départementale de la TFB a été transférée aux communes. Cette hausse est une décision nationale, pas une décision locale de Bruz. La donnée 2024 est une estimation (DGFiP par habitant) — le CFU 2024 confirmera le chiffre définitif. Les données 2015–2021 ne sont pas disponibles sans accès direct aux comptes administratifs Mégalis (portail JS, WebFetch non fonctionnel).",
           "donnees": [
             {
               "label": "2014\n(avant réforme TH)",
@@ -369,6 +369,48 @@
               "confirme": true
             }
           ]
+        },
+        {
+          "id": "g4",
+          "type": "bar",
+          "titre": "Dette par habitant : Bruz vs communes de même taille",
+          "sous_titre": "Encours de dette bancaire fin 2023 — médiane par strate de population (hors Paris)",
+          "source": "OFGL — Dossier dette 2024 (données DGFiP 2023 provisoires). Bruz : CFU 2023 Mégalis Bretagne. Estimation 2024 : decomptes-publics.fr",
+          "note": "Bruz 2023 (81 €/hab) se situe très largement sous le 1er quartile de sa strate (communes 20 000–49 999 hab, médiane OFGL : 888 €/hab). En 2024, après la ZAC Multisites, la dette estimée à 466 €/hab reste sous la médiane de la strate. Bruz est donc une commune structurellement peu endettée par rapport à ses pairs — ce qui lui donne des marges d'emprunt pour financer le T4 et les équipements liés à la croissance démographique.",
+          "donnees": [
+            {
+              "label": "Bruz 2023",
+              "valeur": 81,
+              "confirme": true,
+              "couleur": "#0E2F62"
+            },
+            {
+              "label": "Médiane strate\n20k–50k hab (2023)",
+              "valeur": 888,
+              "confirme": true,
+              "couleur": "#94a3b8"
+            },
+            {
+              "label": "3e quartile strate\n20k–50k hab (2023)",
+              "valeur": 1318,
+              "confirme": true,
+              "couleur": "#cbd5e1"
+            },
+            {
+              "label": "Bruz 2024\n(estimé)",
+              "valeur": 466,
+              "confirme": false,
+              "couleur": "#1A4177"
+            }
+          ],
+          "ofgl_strate_20k_50k": {
+            "annee": 2023,
+            "source": "OFGL Dossier dette 2024 — données DGFiP provisoires, budgets principaux et annexes consolidés",
+            "mediane_dette_hab": 888,
+            "premier_quartile": 743,
+            "troisieme_quartile": 1318,
+            "delai_desendettement_median_ans": 4.8
+          }
         }
       ],
       "sources": [

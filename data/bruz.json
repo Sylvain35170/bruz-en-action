@@ -110,7 +110,7 @@
   "gouvernance": {
     "mandat_en_cours": "2026-2032",
     "liste_majoritaire": "Un nouvel élan pour Bruz",
-    "maire": "À compléter",
+    "maire": "Jean-René Houssin",
     "nombre_elus": 33,
     "note": "33 élus dont maire, adjoints, délégués et opposition — voir data/elus.json"
   },
@@ -178,10 +178,23 @@
       "note": "Modèle financier sous tension — aucune décision de rénovation prise à ce jour"
     },
     "mediatheque": {
-      "note": "À compléter"
+      "nom": "Médiathèque de Bruz — Le Grand Logis",
+      "adresse": "10 avenue du Général de Gaulle, 35170 Bruz",
+      "telephone": "02 99 05 30 60",
+      "site": "https://www.mediatheque-bruz.fr",
+      "gestionnaire": "Ville de Bruz",
+      "source": "ville-bruz.fr + mediatheque-bruz.fr"
     },
     "salle_spectacle": {
-      "note": "À compléter"
+      "nom": "Le Grand Logis",
+      "adresse": "10 avenue du Général de Gaulle, 35170 Bruz",
+      "site": "https://legrandlogis-bruz.fr",
+      "salles": [
+        { "nom": "Grande salle", "capacite": "400 places assises" },
+        { "nom": "Salle Molière", "capacite": "50 places assises" }
+      ],
+      "note": "Le Musikhall (Parc Expo Rennes Aéroport, Bruz) accueille jusqu'à 7 000 personnes — salle d'envergure nationale, distincte des équipements municipaux.",
+      "source": "agendaculturel.fr + legrandlogis-bruz.fr"
     }
   },
 
