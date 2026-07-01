@@ -43,6 +43,7 @@
 
 - [ ] **CRs réunions** — réimporter les docx (encodage zip raté sur les accents) — fichiers source à relocaliser
 - [ ] **Actus** — enrichir au fil des décisions
+- [ ] **actus.json — dates RSS tronquées** — 73 items avec des dates non-ISO (ex. "Wed, 22 Ap", tronquées côté Google News RSS). Corrigées côté tri homepage (`app/page.tsx`, 2026-07-01) mais la donnée reste fausse en base — reconstituer les vraies dates ou les marquer `date: null`
 
 ## 💡 Idées
 
