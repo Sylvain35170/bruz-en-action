@@ -64,8 +64,9 @@ export default function Home() {
     })
     .slice(0, 4);
 
+  const isoDate = /^\d{4}-\d{2}-\d{2}$/;
   const lastActus = [...actus]
-    .filter(a => a.type !== "analyse" && a.date && a.date.length >= 8)
+    .filter(a => a.type !== "analyse" && a.date && isoDate.test(a.date))
     .sort((a, b) => b.date.localeCompare(a.date))
     .slice(0, 3);
   const { evenements } = evenementsData;
