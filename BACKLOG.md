@@ -48,4 +48,3 @@
 
 - Alertes email/RSS quand une promesse change de statut
 - Export PDF du tableau de bord par pilier
-- Page "Coup de pouce / Coup de cœur" — à définir
