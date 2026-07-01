@@ -638,43 +638,122 @@
     },
     {
       "id": "D06",
-      "titre": "Piscine de la Conterie : un déficit que les communes n'arrivent plus à éponger",
+      "titre": "Piscine de la Conterie : la contribution de Bruz a triplé en cinq ans",
       "categorie": "Équipements",
       "statut": "en_cours",
       "featured": false,
-      "last_activity": "2026-06-18",
+      "last_activity": "2026-06-17",
       "date_ouverture": "2026-06-18",
-      "chapeau": "La piscine de la Conterie est gérée par un syndicat intercommunal de 12 communes. Son déficit annuel dépasse 400 000 €, épongé chaque année par les communes membres — dont Bruz à hauteur de 162 000 € en 2025. À quel moment ce modèle devient-il intenable ?",
+      "chapeau": "La piscine intercommunale de la Conterie (12 communes, gérée à Chartres-de-Bretagne) traverse une double crise financière et sociale depuis la fin du Covid. La contribution de Bruz, principale contributrice, est passée de 162 800 € en 2019 à 477 886 € en 2025 — une hausse de +64 % rien qu'entre 2024 et 2025. Une nouvelle présidence a été élue en avril 2026 avec un plan de redressement à 420 000 € d'investissements. Ce dossier suit si la trajectoire s'inverse vraiment.",
       "ce_quon_sait": [
-        "Syndicat intercommunal de la piscine de la Conterie : 12 communes membres",
-        "Déficit annuel du syndicat : environ 400 000 € — réparti entre communes selon une clé de répartition",
-        "Part de Bruz en 2025 : 162 000 € inscrits au budget communal",
-        "Fréquentation en baisse : de 260 000 à environ 190 000 entrées sur les dernières années",
-        "L'avenir de l'équipement est en débat : rénovation lourde ou changement de modèle ?"
+        "Le syndicat intercommunal de la piscine de la Conterie regroupe 12 communes (Bourgbarré, Bruz, Chartres-de-Bretagne, Chavagne, Corps-Nuds, Laillé, Noyal-Châtillon-sur-Seiche, Orgères, Pont-Péan, Saint-Armel, Saint-Erblon, Vern-sur-Seiche) — Bruz est la principale contributrice et utilisatrice",
+        "Participation Bruz : ~162 800 € (2019-2022, stable depuis 2007 selon la formule RPK) → 227 272 € (votée juin 2024) → 237 100,50 € (ajustée sept. 2024) → 389 434,50 € (budget voté avril 2025) → 477 886 € (déc. 2025, après une rallonge de 88 452 €) — soit une multiplication par ~3 en 5 ans",
+        "Participation totale des 12 communes : 640 000 €/an stable jusqu'en 2022 → 965 000 € (2024) → 1 585 000 € (budget initial 2025) → 1 945 000 € (2025 final, après deux rallonges de 620 000 € et 360 000 €) → ~1,9 M€ (2026, quasi stable)",
+        "Fréquentation en baisse structurelle : 260 000 entrées (2019, avant travaux) → 209 608 (2022, rapport d'activité officiel du syndicat) → recettes historiquement basses en 2025 (880 000 € contre 1 000 060 € en 2024), pénalisées par un mois de fermeture",
+        "En janvier-février 2025, la piscine a fermé un mois entier après une alerte du syndicat national des maîtres-nageurs sur la qualité de l'air et de l'eau — les mesures n'ont finalement détecté aucun problème",
+        "Crise sociale en parallèle : grèves des maîtres-nageurs en mai 2024 pour dénoncer des conditions de travail dégradées, plusieurs arrêts de travail contraignant à fermer des bassins",
+        "Le budget 2025 du syndicat a nécessité un délai exceptionnel de la préfecture pour être voté, faute d'accord entre les 12 communes — deux propositions initiales (1 585 000 € puis 2 330 000 €) ont été rejetées avant qu'une version « a minima » ne passe le 30 avril 2025",
+        "Une Délégation de Service Public (DSP) a été envisagée par plusieurs élus comme alternative à la régie directe actuelle — pour l'instant seule la salle de fitness a fait l'objet de négociations, restées sans suite",
+        "En avril 2026, Philippe Bonnin (maire de Chartres-de-Bretagne pendant 30 ans, président du syndicat) n'a pas été candidat à sa réélection à la présidence — Françoise Louapre (maire de Laillé) lui succède, avec André Le Tulzo (Bruz) parmi les 5 nouveaux vice-présidents",
+        "Plan de relance 2026 : 420 000 € d'investissements prévus (contre moins de 200 000 € cumulés sur les 4 années précédentes), notamment le remplacement de la chaudière à gaz — un audit 2025 recommande de maintenir un niveau d'investissement élevé pendant 4 à 5 ans",
+        "Vern-sur-Seiche, commune régulièrement critique de la gestion du syndicat, a présenté un candidat concurrent à l'élection de la présidence en avril 2026 (battu) et a révélé qu'un audit chiffre à 360 000 € les travaux de maintenance nécessaires dans les deux ans",
+        "Les élus d'opposition qui réclamaient un audit complet de la gestion en 2024-2025 (Vincent Saulnier, Jean-René Houssin) sont depuis mars 2026 dans la majorité municipale de Bruz — Houssin est désormais maire"
       ],
       "qui_decide": [
         {
-          "nom": "Syndicat intercommunal des 12 communes",
-          "role": "Décide collectivement de l'avenir de l'équipement et du montant des contributions annuelles"
+          "nom": "Syndicat intercommunal de la piscine de la Conterie",
+          "role": "Vote chaque année le budget et la clé de répartition des participations communales — présidé depuis avril 2026 par Françoise Louapre (maire de Laillé)"
         },
         {
           "nom": "Conseil municipal de Bruz",
-          "role": "Vote la participation annuelle au syndicat dans le cadre du budget"
+          "role": "Vote la participation annuelle de la commune au syndicat, dans le cadre du budget communal"
+        },
+        {
+          "nom": "André Le Tulzo",
+          "role": "Vice-président du syndicat représentant Bruz depuis avril 2026"
         }
       ],
       "decisions": [
         {
-          "date": "2025",
-          "description": "Budget Bruz 2025 : 162 000 € de participation inscrite au titre du syndicat de la piscine",
-          "source_url": "https://data.megalis.bretagne.bzh/organization/commune-de-bruz"
+          "date": "2024-06-03",
+          "description": "CM Bruz vote une participation 2024 de 227 272 € au syndicat de la Conterie (contre 162 800 € en 2019) — l'opposition (Jean-René Houssin) s'inquiète publiquement",
+          "source_url": "https://www.ouest-france.fr/bretagne/bruz-35170/ou-va-la-piscine-la-majorite-et-la-minorite-de-bruz-sinquietent-pour-lavenir-de-la-conterie-a879ac0c-2271-11ef-9bcd-06e7ce6da751"
+        },
+        {
+          "date": "2024-09-23",
+          "description": "CM Bruz vote un complément d'environ 10 000 € (participation 2024 ajustée à 237 100,50 €) — l'opposition évoque une contribution qui a « touché le fond »",
+          "source_url": "https://www.ouest-france.fr/bretagne/bruz-35170/crise-financiere-et-climat-social-tendu-a-la-conterie-avez-vous-touche-le-fond-de-la-piscine-78a62662-7a88-11ef-a25e-ad5d3544d350"
+        },
+        {
+          "date": "2025-04-30",
+          "description": "Le comité syndical vote le budget 2025 « a minima » : rallonge collective de 620 000 € (participation totale 1 585 000 €) — deux options plus coûteuses avaient été rejetées ; création de 4 commissions thématiques",
+          "source_url": "https://www.ouest-france.fr/bretagne/rennes-35000/piscine-de-la-conterie-pres-de-rennes-combien-va-payer-chaque-commune-pour-la-maintenir-a-flot-59a3421e-330f-11f0-82aa-3134ba899709"
+        },
+        {
+          "date": "2025-05-19",
+          "description": "CM Chartres-de-Bretagne approuve les participations 2025 par commune : Bruz 389 434,50 € (contre 237 100,50 € en 2024), soit +64,3 % en un an",
+          "source_url": "https://www.chartresdebretagne.fr/wp-content/uploads/2025/07/Proces-verbal-19-05-2025.pdf"
+        },
+        {
+          "date": "2025-12",
+          "description": "Nouvelle rallonge collective de 360 000 € votée en fin d'année (recettes -255 000 €, charges +106 000 €) — part de Bruz portée à 477 886 € (+88 452 €)",
+          "source_url": "https://www.ouest-france.fr/bretagne/rennes-35000/piscine-de-la-conterie-au-sud-de-rennes-une-nouvelle-rallonge-de-360-000-euros-pour-les-communes-f192d5b4-e0a5-11f0-8231-0b73c898c870"
+        },
+        {
+          "date": "2026-04-22",
+          "description": "Élection de la nouvelle présidence du syndicat : Françoise Louapre (maire de Laillé) succède à Philippe Bonnin, non-candidat ; hausse des indemnités des élus syndicaux adoptée de justesse (12 pour, 10 contre, 2 blancs)",
+          "source_url": "https://www.ouest-france.fr/bretagne/bruz-35170/une-nouvelle-presidente-pour-remettre-a-flot-cette-piscine-en-difficulte-au-sud-de-rennes-df3e9f0a-3f10-11f1-ac09-2dd9a94cc119"
+        },
+        {
+          "date": "2026-05-14",
+          "description": "Plan d'investissement 2026 annoncé : 420 000 € (remplacement chaudière gaz, maintenance) — participation communale totale quasi stable (~1,9 M€, contre 1 945 000 € en 2025)",
+          "source_url": "https://www.ouest-france.fr/bretagne/chartres-de-bretagne-35131/maintenant-ca-va-rouler-apres-la-crise-420-000-euros-pour-relancer-cette-piscine-au-sud-de-rennes-d98a4b6a-4eae-11f1-88ee-769cab556f2f"
         }
       ],
       "ce_quon_suit": [
-        "La décision du syndicat sur l'avenir de l'équipement — rénovation ou dissolution ?",
-        "L'évolution de la participation de Bruz dans les budgets 2026 et suivants",
-        "Le seuil de fréquentation en dessous duquel le syndicat ne peut plus justifier l'équipement"
+        "La participation de Bruz au budget 2026/2027 du syndicat redescend-elle réellement, comme l'annonce la nouvelle présidente ?",
+        "Le plan d'investissement de 420 000 € (2026) suffit-il à enrayer la panne technique récurrente et à faire remonter la fréquentation ?",
+        "Le climat social se stabilise-t-il durablement après les grèves de 2024 et les créations de postes annoncées (comptabilité/RH, directeur adjoint) ?",
+        "L'audit chiffrant 360 000 € de travaux (révélé par Vern-sur-Seiche) est-il confirmé et budgété par le nouveau comité syndical ?",
+        "La majorité Houssin, aujourd'hui aux commandes à Bruz après avoir réclamé un audit complet en opposition, engage-t-elle cet audit ou une réforme de gouvernance du syndicat ?"
       ],
       "sources": [
+        {
+          "label": "Syndicat Conterie — Rapport d'activités 2022 (officiel, préfecture)",
+          "url": "https://data.megalis.bretagne.bzh/OpenData/213503634/Deliberation/2024/559261/a52c8257a71a16387d76f7ffa075ece25161a4228a6e2d452d74be94c06faed7.pdf"
+        },
+        {
+          "label": "PV CM Chartres-de-Bretagne 19/05/2025 — participations communales 2025",
+          "url": "https://www.chartresdebretagne.fr/wp-content/uploads/2025/07/Proces-verbal-19-05-2025.pdf"
+        },
+        {
+          "label": "Ouest-France — « Où va la piscine ? » (04/06/2024)",
+          "url": "https://www.ouest-france.fr/bretagne/bruz-35170/ou-va-la-piscine-la-majorite-et-la-minorite-de-bruz-sinquietent-pour-lavenir-de-la-conterie-a879ac0c-2271-11ef-9bcd-06e7ce6da751"
+        },
+        {
+          "label": "Ouest-France — Crise financière et climat social tendu (24/09/2024)",
+          "url": "https://www.ouest-france.fr/bretagne/bruz-35170/crise-financiere-et-climat-social-tendu-a-la-conterie-avez-vous-touche-le-fond-de-la-piscine-78a62662-7a88-11ef-a25e-ad5d3544d350"
+        },
+        {
+          "label": "Ouest-France — Combien va payer chaque commune (18/05/2025)",
+          "url": "https://www.ouest-france.fr/bretagne/rennes-35000/piscine-de-la-conterie-pres-de-rennes-combien-va-payer-chaque-commune-pour-la-maintenir-a-flot-59a3421e-330f-11f0-82aa-3134ba899709"
+        },
+        {
+          "label": "Ouest-France — « Vous êtes en campagne » (03/06/2025)",
+          "url": "https://www.ouest-france.fr/bretagne/bruz-35170/vous-etes-en-campagne-a-bruz-un-conseil-municipal-tendu-sur-fond-delections-municipales-85dd1df2-4055-11f0-8e2a-4849b47199cd"
+        },
+        {
+          "label": "Ouest-France — Nouvelle rallonge de 360 000 € (29/12/2025)",
+          "url": "https://www.ouest-france.fr/bretagne/rennes-35000/piscine-de-la-conterie-au-sud-de-rennes-une-nouvelle-rallonge-de-360-000-euros-pour-les-communes-f192d5b4-e0a5-11f0-8231-0b73c898c870"
+        },
+        {
+          "label": "Ouest-France — Une nouvelle présidente (23/04/2026)",
+          "url": "https://www.ouest-france.fr/bretagne/bruz-35170/une-nouvelle-presidente-pour-remettre-a-flot-cette-piscine-en-difficulte-au-sud-de-rennes-df3e9f0a-3f10-11f1-ac09-2dd9a94cc119"
+        },
+        {
+          "label": "Ouest-France — « Maintenant ça va rouler » (14/05/2026)",
+          "url": "https://www.ouest-france.fr/bretagne/chartres-de-bretagne-35131/maintenant-ca-va-rouler-apres-la-crise-420-000-euros-pour-relancer-cette-piscine-au-sud-de-rennes-d98a4b6a-4eae-11f1-88ee-769cab556f2f"
+        },
         {
           "label": "Piscine de la Conterie — inscriptions (mairie)",
           "url": "https://www.ville-bruz.fr/actualites/ouverture-des-inscriptions-a-la-natation-piscine-de-la-conterie/"
@@ -682,18 +761,39 @@
       ],
       "actus_recentes": [
         {
-          "date": "2025-07-04",
-          "titre": "« Où va la piscine ? » Majorité et minorité s'inquiètent pour l'avenir de la Conterie",
-          "detail": "Débat au CM de Bruz sur le coût et l'avenir de la piscine — les deux camps reconnaissent le problème.",
-          "source_url": null,
+          "date": "2024-06-04",
+          "titre": "« Où va la piscine ? » La majorité et la minorité de Bruz s'inquiètent pour l'avenir de la Conterie",
+          "detail": "Au CM du 3 juin 2024, l'opposition (Houssin) interpelle la majorité sur la hausse de la participation (227 272 € en 2024) et le climat social dégradé.",
+          "source_url": "https://www.ouest-france.fr/bretagne/bruz-35170/ou-va-la-piscine-la-majorite-et-la-minorite-de-bruz-sinquietent-pour-lavenir-de-la-conterie-a879ac0c-2271-11ef-9bcd-06e7ce6da751",
           "source_label": "Ouest-France"
         },
         {
-          "date": "2026-06-18",
-          "titre": "Inscriptions natation 2026 — piscine de la Conterie",
-          "detail": "La piscine est ouverte pour la saison — les questions financières restent entières.",
-          "source_url": "https://www.ville-bruz.fr/actualites/ouverture-des-inscriptions-a-la-natation-piscine-de-la-conterie/",
-          "source_label": "Ville de Bruz"
+          "date": "2025-05-18",
+          "titre": "Piscine de la Conterie : combien va payer chaque commune ?",
+          "detail": "Après un vote budgétaire retardé par la préfecture, le syndicat adopte une rallonge de 620 000 € pour 2025 — participation Bruz portée à 389 434,50 €.",
+          "source_url": "https://www.ouest-france.fr/bretagne/rennes-35000/piscine-de-la-conterie-pres-de-rennes-combien-va-payer-chaque-commune-pour-la-maintenir-a-flot-59a3421e-330f-11f0-82aa-3134ba899709",
+          "source_label": "Ouest-France"
+        },
+        {
+          "date": "2025-12-29",
+          "titre": "Nouvelle rallonge de 360 000 € pour les communes",
+          "detail": "Recettes en baisse, charges en hausse : le syndicat demande un dernier effort en 2025, portant la part de Bruz à 477 886 €.",
+          "source_url": "https://www.ouest-france.fr/bretagne/rennes-35000/piscine-de-la-conterie-au-sud-de-rennes-une-nouvelle-rallonge-de-360-000-euros-pour-les-communes-f192d5b4-e0a5-11f0-8231-0b73c898c870",
+          "source_label": "Ouest-France"
+        },
+        {
+          "date": "2026-04-23",
+          "titre": "Une nouvelle présidente pour remettre à flot cette piscine en difficulté",
+          "detail": "Françoise Louapre (maire de Laillé) élue présidente du syndicat, succédant à Philippe Bonnin, non-candidat après 30 ans de mandat.",
+          "source_url": "https://www.ouest-france.fr/bretagne/bruz-35170/une-nouvelle-presidente-pour-remettre-a-flot-cette-piscine-en-difficulte-au-sud-de-rennes-df3e9f0a-3f10-11f1-ac09-2dd9a94cc119",
+          "source_label": "Ouest-France"
+        },
+        {
+          "date": "2026-06-17",
+          "titre": "Fermeture partielle pour travaux du 22 juin au 3 juillet 2026",
+          "detail": "Bassins sportif et ludique fermés pour maintenance de la centrale de traitement de l'air — le bassin nordique extérieur reste accessible.",
+          "source_url": "https://www.ouest-france.fr/bretagne/rennes-35000/pourquoi-cette-piscine-au-sud-de-rennes-va-etre-partiellement-fermee-pendant-deux-semaines-dbcaa116-6a62-11f1-a3cf-41dac410473f",
+          "source_label": "Ouest-France"
         }
       ],
       "promesses_liees": [],
@@ -701,49 +801,104 @@
     },
     {
       "id": "D07",
-      "titre": "Police municipale : quel renforcement sur le mandat ?",
+      "titre": "Police municipale : un renforcement d'effectifs et d'équipement engagé",
       "categorie": "Sécurité",
       "statut": "en_cours",
       "featured": false,
-      "last_activity": "2026-06-18",
+      "last_activity": "2026-06-01",
       "date_ouverture": "2026-06-18",
-      "chapeau": "Bruz est sous régime de gendarmerie nationale. La commune a aussi une police municipale dont les effectifs et les moyens sont peu documentés publiquement. Le programme Houssin prévoit un renforcement — ce dossier suit les décisions concrètes.",
+      "chapeau": "Bruz reste sous régime de gendarmerie nationale, mais sa police municipale grandit : effectif porté à 8 agents, un poste supplémentaire en cours de recrutement, agents désormais armés (catégories B et D) et équipés de caméras-piétons. Ce dossier suit si le renforcement promis par la majorité Houssin se traduit dans les faits — et à quel rythme.",
       "ce_quon_sait": [
-        "Bruz dépend de la gendarmerie nationale pour la police judiciaire et la sécurité routière",
-        "La commune dispose d'une police municipale — effectifs exacts non publiés",
-        "Le programme Houssin mentionne le renforcement de la PM — délégation attribuée au CM de mars 2026",
-        "Les statistiques de délinquance à Bruz sont disponibles sur data.gouv.fr (Ministère de l'Intérieur)",
-        "L'installation de caméras de surveillance nécessite une délibération du CM — aucune votée à ce jour"
+        "L'équipe de police municipale de Bruz compte actuellement 8 agents : 1 responsable, 3 policiers municipaux, 2 ASVP (agents de surveillance de la voie publique), 1 secrétaire et 2 agents de surveillance du passage des écoles",
+        "Un poste supplémentaire d'agent de police municipale est en cours de recrutement (création de poste, offre publiée en 2026, candidatures closes le 09/07/2026, entretiens le 20/07/2026) — l'effectif passerait à 9 agents s'il est pourvu",
+        "Les policiers municipaux de Bruz sont habilités au port d'armes des catégories B et D et portent un gilet pare-balles — équipement nettement renforcé par rapport à une police municipale non armée",
+        "Équipement de patrouille : véhicules, VTT/VAE, radios, caméras-piétons, terminal de verbalisation électronique (PVe), cinémomètre",
+        "Un dispositif de vidéoprotection existe déjà sur la commune — les agents en assurent le suivi selon la fiche de poste 2026 — mais sa date d'installation et la délibération d'origine ne sont pas documentées publiquement",
+        "Délégation municipale « Prévention et sécurité » attribuée à Philippe Pagès, 8ème adjoint, pour le mandat 2026-2032",
+        "Le programme de la liste « Un nouvel élan pour Bruz » (Houssin) s'engage à « renforcer les moyens de notre police municipale », sans chiffrage précis d'effectifs ou de budget",
+        "Bruz dépend de la brigade de gendarmerie nationale pour la sécurité publique et la police judiciaire — une brigade territoriale mobile a été déployée mi-février 2026 sur les 37 communes de la compagnie de Chartres-de-Bretagne (fourgon aménagé), avec un effectif passant de 4 à 6 militaires au 1er août 2026",
+        "Les statistiques de délinquance par commune sont disponibles publiquement sur data.gouv.fr (Ministère de l'Intérieur) mais n'ont pas encore été exploitées pour ce dossier"
       ],
       "qui_decide": [
         {
-          "nom": "Conseil municipal",
-          "role": "Vote les effectifs PM, le budget, et tout dispositif de vidéosurveillance"
+          "nom": "Conseil municipal de Bruz",
+          "role": "Vote les effectifs, le budget de la police municipale et toute délibération sur la vidéoprotection"
         },
         {
-          "nom": "Gendarmerie nationale (groupement 35)",
-          "role": "Compétence principale pour la sécurité publique sur la commune"
+          "nom": "Philippe Pagès",
+          "role": "8ème adjoint délégué à la Prévention et sécurité — pilote le renforcement annoncé"
+        },
+        {
+          "nom": "Gendarmerie nationale — compagnie de Chartres-de-Bretagne",
+          "role": "Compétence principale pour la sécurité publique et la police judiciaire sur la commune"
         }
       ],
       "decisions": [
         {
           "date": "2026-04",
-          "description": "CM installation : délégation sécurité / police municipale attribuée (élu délégué à préciser)",
-          "source_url": "https://www.ville-bruz.fr/wp-content/uploads/2026/05/Bruz-Mag-n%C2%B0260-de-mai-juin-2026.pdf"
+          "description": "Installation du nouveau conseil municipal : délégation « Prévention et sécurité » attribuée à Philippe Pagès (8ème adjoint)",
+          "source_url": "https://www.ville-bruz.fr/ma-ville-de-bruz/conseil-municipal/vos-elus-2/"
+        },
+        {
+          "date": "2026-02",
+          "description": "Déploiement d'une brigade territoriale mobile de gendarmerie sur les 37 communes de la compagnie de Chartres-de-Bretagne, présentée au préfet de Bretagne lors d'une installation sur le marché de Bruz",
+          "source_url": "https://www.tvr.bzh/article/b53ae25-une-brigade-territoriale-mobile-de-la-gendarmerie"
+        },
+        {
+          "date": "2026-06",
+          "description": "Publication d'une offre de création de poste d'agent de police municipale supplémentaire — premier renforcement d'effectif concret depuis l'installation du nouveau conseil",
+          "source_url": "https://www.ville-bruz.fr/offres-emploi/agent-de-police-municipale-f-h/"
         }
       ],
       "ce_quon_suit": [
-        "Le budget alloué à la PM dans les comptes 2026 — en hausse ou stable ?",
-        "Toute délibération sur la vidéosurveillance ou l'extension des effectifs PM",
-        "Les chiffres de délinquance annuels publiés par le Ministère de l'Intérieur"
+        "Le poste créé (clôture des candidatures le 09/07/2026) sera-t-il pourvu, et l'effectif PM passera-t-il réellement de 8 à 9 agents ?",
+        "Le budget alloué à la police municipale dans les comptes 2026/2027 — en hausse mesurable ou stable ?",
+        "Depuis quand et sous quelle délibération le dispositif de vidéoprotection existant a-t-il été installé — une extension est-elle prévue ?",
+        "L'effectif réel de la brigade territoriale mobile de gendarmerie atteint-il les 6 militaires annoncés au 1er août 2026 ?",
+        "Les statistiques de délinquance 2026 (data.gouv.fr), comparées aux années précédentes, confirment-elles un besoin de renforcement ?"
       ],
       "sources": [
+        {
+          "label": "Police municipale — Ville de Bruz (page générale)",
+          "url": "https://www.ville-bruz.fr/mon-quotidien/tranquilite-publique-et-securite/police-municipale/"
+        },
+        {
+          "label": "Offre d'emploi — Agent de police municipale F/H (2026)",
+          "url": "https://www.ville-bruz.fr/offres-emploi/agent-de-police-municipale-f-h/"
+        },
+        {
+          "label": "Vos élus — Ville de Bruz (délégations, màj 03/06/2026)",
+          "url": "https://www.ville-bruz.fr/ma-ville-de-bruz/conseil-municipal/vos-elus-2/"
+        },
+        {
+          "label": "Programme municipal — Un nouvel élan pour Bruz",
+          "url": "https://www.unnouvelelanpourbruz.com/"
+        },
+        {
+          "label": "TVR — Brigade territoriale mobile de gendarmerie au sud de Rennes",
+          "url": "https://www.tvr.bzh/article/b53ae25-une-brigade-territoriale-mobile-de-la-gendarmerie"
+        },
         {
           "label": "Données délinquance communes — data.gouv.fr",
           "url": "https://www.data.gouv.fr/fr/datasets/crimes-et-delits-enregistres-par-les-services-de-gendarmerie-et-de-police-depuis-2012/"
         }
       ],
-      "actus_recentes": [],
+      "actus_recentes": [
+        {
+          "date": "2026-02-15",
+          "titre": "Une brigade territoriale mobile de gendarmerie déployée au sud de Rennes",
+          "detail": "Un fourgon aménagé sillonne les 37 communes de la compagnie de Chartres-de-Bretagne pour accueillir le public et recueillir des renseignements — présenté au préfet sur le marché de Bruz.",
+          "source_url": "https://www.tvr.bzh/article/b53ae25-une-brigade-territoriale-mobile-de-la-gendarmerie",
+          "source_label": "TVR"
+        },
+        {
+          "date": "2026-06-01",
+          "titre": "Création d'un poste supplémentaire d'agent de police municipale",
+          "detail": "Offre d'emploi publiée pour renforcer l'équipe (actuellement 8 agents) — candidatures closes le 9 juillet, entretiens le 20 juillet 2026.",
+          "source_url": "https://www.ville-bruz.fr/offres-emploi/agent-de-police-municipale-f-h/",
+          "source_label": "Ville de Bruz"
+        }
+      ],
       "promesses_liees": [],
       "image": "/bruz-en-action/illus-d07-securite.png"
     },
