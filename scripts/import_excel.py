@@ -1,5 +1,10 @@
 """
-import_excel.py — Convertit input/promesses_source.xlsx → data/promesses.json
+import_excel.py — Met à jour les statuts de data/promesses.json depuis le référentiel Excel
+de l'association (input/BEA/referentiel_promesses_bruz.xlsx, feuille "Suivi des promesses").
+
+Ne reconstruit pas promesses.json : met à jour uniquement les promesses existantes,
+identifiées par leur `ref` (ex. "M1"), pour ne pas écraser `detail` / `source` (citations
+du programme officiel) qui ne viennent pas de l'Excel.
 
 Usage : python3 scripts/import_excel.py
 """
@@ -16,64 +21,89 @@ except ImportError:
     sys.exit(1)
 
 ROOT = Path(__file__).parent.parent
-INPUT_FILE = ROOT / "input" / "promesses_source.xlsx"
+INPUT_FILE = ROOT / "input" / "BEA" / "referentiel_promesses_bruz.xlsx"
 OUTPUT_FILE = ROOT / "data" / "promesses.json"
+SHEET_NAME = "Suivi des promesses"
+HEADER_ROW = 3
 
-COLONNES_ATTENDUES = [
-    "id", "pilier_id", "titre", "description",
-    "statut", "date_statut", "source_url", "notes"
-]
+STATUT_MAP = {
+    "à faire": "non_commence",
+    "en cours": "en_cours",
+    "tenu": "tenu",
+    "tenue": "tenu",
+    "partiellement tenu": "partiel",
+    "partiel": "partiel",
+    "abandonné": "abandonne",
+    "abandonnée": "abandonne",
+    "non évaluable": "inconnu",
+    "inconnu": "inconnu",
+}
 
-def load_existing():
-    if OUTPUT_FILE.exists():
-        with open(OUTPUT_FILE) as f:
-            return json.load(f)
-    return {}
+
+def load_rows():
+    wb = openpyxl.load_workbook(INPUT_FILE, data_only=True)
+    ws = wb[SHEET_NAME]
+    headers = [c.value for c in next(ws.iter_rows(min_row=HEADER_ROW, max_row=HEADER_ROW))]
+    rows = {}
+    for row in ws.iter_rows(min_row=HEADER_ROW + 1, values_only=True):
+        if not any(row):
+            continue
+        record = dict(zip(headers, row))
+        ref = str(record.get("N°", "") or "").strip()
+        if ref:
+            rows[ref] = record
+    return rows
+
 
 def main():
     if not INPUT_FILE.exists():
         print(f"❌ Fichier introuvable : {INPUT_FILE}")
         sys.exit(1)
 
-    wb = openpyxl.load_workbook(INPUT_FILE, data_only=True)
-    ws = wb.active
+    excel_rows = load_rows()
+    print(f"{len(excel_rows)} promesse(s) lues dans l'Excel.")
 
-    headers = [cell.value for cell in next(ws.iter_rows(min_row=1, max_row=1))]
-    print(f"Colonnes détectées : {headers}")
+    data = json.load(open(OUTPUT_FILE, encoding="utf-8"))
+    promesses = data["promesses"]
 
-    existing = load_existing()
-    promesses = []
-
-    for row in ws.iter_rows(min_row=2, values_only=True):
-        if not any(row):
+    seen_refs = set()
+    updated = 0
+    for promesse in promesses:
+        ref = promesse.get("ref")
+        excel_row = excel_rows.get(ref)
+        if not excel_row:
             continue
-        record = dict(zip(headers, row))
-        promesses.append({
-            "id":          str(record.get("id", "")),
-            "pilier_id":   int(record.get("pilier_id", 0)),
-            "titre":       str(record.get("titre", "")),
-            "description": str(record.get("description", "") or ""),
-            "statut":      str(record.get("statut", "non_commence")),
-            "date_statut": str(record.get("date_statut", "") or ""),
-            "source_url":  str(record.get("source_url", "") or ""),
-            "notes":       str(record.get("notes", "") or ""),
-        })
+        seen_refs.add(ref)
 
-    output = {
-        **existing,
-        "meta": {
-            **existing.get("meta", {}),
-            "last_updated": str(date.today()),
-            "updated_by": "import_excel.py",
-            "total_promesses": len(promesses),
-        },
-        "promesses": promesses,
-    }
+        statut_brut = str(excel_row.get("Statut", "") or "").strip().lower()
+        statut_id = STATUT_MAP.get(statut_brut)
+        if statut_brut and not statut_id:
+            print(f"⚠️  {ref} : statut Excel inconnu « {statut_brut} » → ignoré")
+        elif statut_id and statut_id != promesse.get("statut_id"):
+            print(f"  {ref} : {promesse.get('statut_id')} → {statut_id}")
+            promesse["statut_id"] = statut_id
+            updated += 1
 
-    with open(OUTPUT_FILE, "w") as f:
-        json.dump(output, f, ensure_ascii=False, indent=2)
+        horizon = str(excel_row.get("Horizon\n(année cible)", "") or "").strip()
+        if horizon and horizon != promesse.get("horizon"):
+            promesse["horizon"] = horizon
 
-    print(f"✅ {len(promesses)} promesses exportées → {OUTPUT_FILE}")
+        commentaires = str(excel_row.get("Commentaires", "") or "").strip()
+        if commentaires:
+            promesse["commentaires_asso"] = commentaires
+
+    missing_in_json = set(excel_rows) - seen_refs
+    if missing_in_json:
+        print(f"⚠️  Réf. présentes dans l'Excel mais absentes de promesses.json : {sorted(missing_in_json)}")
+
+    data["meta"]["last_updated"] = str(date.today())
+    data["meta"]["updated_by"] = "import_excel.py"
+
+    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+
+    print(f"✅ {updated} statut(s) mis à jour → {OUTPUT_FILE}")
+
 
 if __name__ == "__main__":
     main()

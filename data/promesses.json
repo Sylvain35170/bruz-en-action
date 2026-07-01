@@ -1,8 +1,8 @@
 {
   "meta": {
     "source": "Programme Un nouvel élan pour Bruz — mandat 2026-2031",
-    "last_updated": "2026-06-16",
-    "updated_by": "import_excel",
+    "last_updated": "2026-07-01",
+    "updated_by": "import_excel.py",
     "total_promesses": 50
   },
   "piliers": [

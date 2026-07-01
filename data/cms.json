@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-06-27",
+    "last_updated": "2026-07-01",
     "source_principale": "Transcriptions YouTube (Ville de Bruz) + Bruz Mag n°260 + délibérations Mégalis",
     "youtube": "https://www.youtube.com/playlist?list=PLnSe2hJFinqpupninWlKBHSmzmwLW-8i7",
     "deliberations_megalis": "https://data.megalis.bretagne.bzh/organization/commune-de-bruz",
@@ -8,70 +8,6 @@
     "dernier_bruz_mag": 259
   },
   "seances": [
-    {
-      "id": "SAB-857",
-      "date": "2026-06-27",
-      "statut": "passe",
-      "titre": "Télécharger(ouverture dans un nouvel onglet)",
-      "points_cles": [
-        "Du 25/06 Au 09/07 Bimensuel D’Information De La Ville De Bruz",
-        "Championnat De Week-End",
-        "Infos Pratiques",
-        "Associations",
-        "Du 25 Juin Au 9 Juillet",
-        "À Voir, À Faire",
-        "Accompagnements",
-        "Numéros D'Urgence",
-        "Contacts / Horaires",
-        "L'Escale En Fête !"
-      ],
-      "sources": [
-        {
-          "label": "Télécharger(ouverture dans un nouvel onglet)",
-          "url": "https://www.ville-bruz.fr/wp-content/uploads/2026/06/Semaine-a-Bruz-n°857-du-25-juin-au-9-juillet-2026.pdf"
-        }
-      ],
-      "type": "semaine_bruz"
-    },
-    {
-      "id": "BM-258",
-      "date": "2026-01-15",
-      "statut": "passe",
-      "titre": "Bruz Mag #258 — Janvier-Février 2026",
-      "points_cles": [
-        "Transition(S)",
-        "Jeunes Maraîchers",
-        "Grand Angle Terres Durables",
-        "Grandir Ensemble — Les écoles au cœur de la vie locale",
-        "Traversée Outre-Manche",
-        "Sur grand écran"
-      ],
-      "sources": [
-        {
-          "label": "Bruz Mag #258 (PDF)",
-          "url": "https://www.ville-bruz.fr/wp-content/uploads/2026/03/Bruz-Mag-n°258-Janvier-fevrier-2026.pdf"
-        }
-      ],
-      "type": "bruz_mag"
-    },
-    {
-      "id": "BM-259",
-      "date": "2026-03-15",
-      "statut": "passe",
-      "titre": "Bruz Mag #259 — Mars-Avril 2026",
-      "points_cles": [
-        "Vie municipale — Les élections municipales",
-        "Grand Angle — La ville et les autres collectivités",
-        "Mode d'emploi — Du choix au prêt, le parcours des documents"
-      ],
-      "sources": [
-        {
-          "label": "Bruz Mag #259 (PDF)",
-          "url": "https://www.ville-bruz.fr/wp-content/uploads/2026/02/Bruz-Mag-n°259-mars-avril-2026.pdf"
-        }
-      ],
-      "type": "bruz_mag"
-    },
     {
       "id": "CM-2026-07-03",
       "date": "2026-07-03",
@@ -100,6 +36,31 @@
           "url": "https://www.ville-bruz.fr/wp-content/uploads/2026/06/Semaine-a-Bruz-n%C2%B0856-du-11-au-25-juin-2026.pdf"
         }
       ]
+    },
+    {
+      "id": "SAB-857",
+      "date": "2026-06-27",
+      "statut": "passe",
+      "titre": "Télécharger(ouverture dans un nouvel onglet)",
+      "points_cles": [
+        "Du 25/06 Au 09/07 Bimensuel D’Information De La Ville De Bruz",
+        "Championnat De Week-End",
+        "Infos Pratiques",
+        "Associations",
+        "Du 25 Juin Au 9 Juillet",
+        "À Voir, À Faire",
+        "Accompagnements",
+        "Numéros D'Urgence",
+        "Contacts / Horaires",
+        "L'Escale En Fête !"
+      ],
+      "sources": [
+        {
+          "label": "Télécharger(ouverture dans un nouvel onglet)",
+          "url": "https://www.ville-bruz.fr/wp-content/uploads/2026/06/Semaine-a-Bruz-n°857-du-25-juin-au-9-juillet-2026.pdf"
+        }
+      ],
+      "type": "semaine_bruz"
     },
     {
       "id": "CM-2026-05-18",
@@ -545,6 +506,24 @@
       ]
     },
     {
+      "id": "BM-259",
+      "date": "2026-03-15",
+      "statut": "passe",
+      "titre": "Bruz Mag #259 — Mars-Avril 2026",
+      "points_cles": [
+        "Vie municipale — Les élections municipales",
+        "Grand Angle — La ville et les autres collectivités",
+        "Mode d'emploi — Du choix au prêt, le parcours des documents"
+      ],
+      "sources": [
+        {
+          "label": "Bruz Mag #259 (PDF)",
+          "url": "https://www.ville-bruz.fr/wp-content/uploads/2026/02/Bruz-Mag-n°259-mars-avril-2026.pdf"
+        }
+      ],
+      "type": "bruz_mag"
+    },
+    {
       "date": "2026-03-09",
       "titre": "Conseil Municipal du lundi 9 mars 2026 – Vote du budget",
       "youtube_id": "52ALytkTry0",
@@ -632,11 +611,39 @@
       ]
     },
     {
+      "id": "BM-258",
+      "date": "2026-01-15",
+      "statut": "passe",
+      "titre": "Bruz Mag #258 — Janvier-Février 2026",
+      "points_cles": [
+        "Transition(S)",
+        "Jeunes Maraîchers",
+        "Grand Angle Terres Durables",
+        "Grandir Ensemble — Les écoles au cœur de la vie locale",
+        "Traversée Outre-Manche",
+        "Sur grand écran"
+      ],
+      "sources": [
+        {
+          "label": "Bruz Mag #258 (PDF)",
+          "url": "https://www.ville-bruz.fr/wp-content/uploads/2026/03/Bruz-Mag-n°258-Janvier-fevrier-2026.pdf"
+        }
+      ],
+      "type": "bruz_mag"
+    },
+    {
       "date": "2025-12-15",
-      "titre": "Conseil Municipal du lundi 15 décembre 2025 – Vote de la ZAC Multisites",
+      "titre": "Budget 2026, financement de la piscine de la Conterie et amorce du dossier ZAC Multisites",
       "youtube_id": "V18APiHT924",
       "youtube_url": "https://youtu.be/V18APiHT924",
-      "points_cles": [],
+      "points_cles": [
+        "Intervention citoyenne d'un collectif d'habitants contre le projet ZAC Multisites (bétonisation d'1 hectare, 120 logements près de la Maison des associations)",
+        "Participation complémentaire 2025 au syndicat de la piscine de la Conterie : 88 452 €, portant la contribution annuelle de Bruz à environ 477 800 € (x3 depuis le début du mandat précédent) — adoptée avec 7 votes contre",
+        "Subvention d'équilibre au budget restauration réduite de 440 000 € à 320 000 € grâce à des économies de fonctionnement",
+        "Demande de subvention DSIL de 285 240 € pour la mise aux normes des salles de sport du complexe de Kerlan (achat initial 420 000 €, valeur estimée après travaux ~2 M€ contre 4 M€ pour un équipement neuf)",
+        "Nouveau contrat de concession de mobilier urbain de 10 ans avec AFI Ouest à compter du 1er janvier 2026 (40 planimètres, 1 colonne culturelle, 10 panneaux d'affichage libre)",
+        "Rapport déchets 2024 : Bruz 2e commune de la métropole pour la fréquentation de sa déchetterie (117 756 passages), mais hausse de 38 % de la taxe d'enlèvement des ordures ménagères liée aux malfaçons de l'usine de valorisation énergétique de Villejean"
+      ],
       "sources": [
         {
           "label": "Vidéo YouTube",
@@ -646,14 +653,121 @@
       "deliberations_url": "https://data.megalis.bretagne.bzh/organization/commune-de-bruz",
       "source_label": "Ville de Bruz — YouTube",
       "date_publication": "2025-12-19",
-      "id": "CM-2025-12-15"
+      "id": "CM-2025-12-15",
+      "resume_executif": "Avant l'ouverture officielle du conseil, un collectif d'habitants emmené par Thomas Kéré a interpellé le maire sur le projet de ZAC Multisites, dénonçant la bétonisation d'un hectare d'espace vert près de la Maison des associations pour 120 logements ; le maire a répondu que l'étude urbaine durait depuis 5 ans et promis une association des riverains aux décisions futures, sans toutefois que la transcription fournie ne couvre le vote de cette ZAC. Le conseil a ensuite adopté plusieurs délibérations financières courantes (subvention restauration réduite à 320 000 €, syndicat de musique, crédits anticipés 2026, rénovation hôtel de ville, mise aux normes des salles de sport de Kerlan avec demande de subvention DSIL de 285 240 €, nouveau contrat de mobilier urbain avec AFI Ouest). Le sujet le plus tendu de la séance a été la participation complémentaire de 88 452 € au syndicat de la piscine de la Conterie, portant la contribution 2025 de Bruz à environ 477 800 €, avec une opposition virulente de M. Sonnier dénonçant une gestion « sans stratégie » et un vote contre de 7 élus. Deux rapports métropolitains (déchets et eau potable) ont également donné lieu à des échanges sur la hausse des coûts liée aux travaux de l'usine de valorisation énergétique de Villejean et sur la sécurisation de la ressource en eau face à la pression démographique.",
+      "deliberations": [
+        {
+          "numero": "n/a",
+          "titre": "Rapport d'activité de développement durable de Rennes Métropole 2024",
+          "vote": "Prise d'acte",
+          "detail": "Présentation par le maire des trois axes du rapport (préservation des ressources, solidarités métropolitaines, transitions) ; critiques de l'opposition (Roulet) sur le manque d'évaluation concrète de la participation citoyenne et des objectifs de BRS (1700 logements/an)."
+        },
+        {
+          "numero": "n/a",
+          "titre": "Subvention d'équilibre au budget annexe restauration 2025",
+          "vote": "Unanimité",
+          "detail": "Réduction de la subvention votée en début d'année de 440 000 € à 320 000 €, grâce à des économies sur fluides, alimentation et personnel."
+        },
+        {
+          "numero": "n/a",
+          "titre": "Participation 2026 au syndicat de musique Rive Sud",
+          "vote": "Unanimité",
+          "detail": "Versement de la première phase (30 % du montant 2025) à hauteur de 118 763 € en janvier 2026."
+        },
+        {
+          "numero": "n/a",
+          "titre": "Participation complémentaire 2025 au syndicat intercommunal de la piscine de la Conterie",
+          "vote": "7 votes contre",
+          "detail": "Participation supplémentaire de 88 452 € pour couvrir un déficit accru (106 000 € de charges en plus, 255 000 € de recettes en moins), portant la contribution 2025 de Bruz à environ 477 800 €. Vif débat entre M. Sonnier (opposition, critique une gestion sans stratégie) et le maire (invoque le manque d'investissement historique et les malfaçons de la chaudière)."
+        },
+        {
+          "numero": "n/a",
+          "titre": "Participation 2026 au syndicat intercommunal de la piscine de la Conterie",
+          "vote": "7 abstentions",
+          "detail": "Premier versement de janvier fixé à 194 717 € (50 % du montant 2025 hors participation exceptionnelle)."
+        },
+        {
+          "numero": "n/a",
+          "titre": "Ouverture de crédits anticipés sur le programme d'investissement 2026",
+          "vote": "Unanimité",
+          "detail": "Autorisation classique permettant d'engager des dépenses d'investissement avant le vote du budget primitif 2026, dans la limite du quart des crédits 2025."
+        },
+        {
+          "numero": "AP/CP 20-231",
+          "titre": "Révision de l'autorisation de programme et crédits de paiement (rénovation hôtel de ville)",
+          "vote": "Unanimité",
+          "detail": "Diminution de 300 000 € des crédits de paiement 2025 non utilisés, reportés sur 2026."
+        },
+        {
+          "numero": "n/a",
+          "titre": "Décision modificative n°3 du budget principal 2025",
+          "vote": "Unanimité",
+          "detail": "Intègre le report de 300 000 € et une augmentation de 35 000 € du chapitre 041 (opérations d'ordre) suite au remboursement d'une avance de travaux de 77 000 € sur le chantier de la plaine Yannick Fonchequener."
+        },
+        {
+          "numero": "n/a",
+          "titre": "Mise aux normes des salles de sport du complexe de Kerlan – demande de subvention DSIL",
+          "vote": "Unanimité",
+          "detail": "Demande de subvention de 285 240 € à l'État pour financer les travaux (éclairage et sol du gymnase B, ascenseur PMR, buts de hand rabattables, contrôle d'accès)."
+        },
+        {
+          "numero": "n/a",
+          "titre": "Concession de service de mobilier urbain publicitaire et non publicitaire",
+          "vote": "Unanimité",
+          "detail": "Attribution à AFI Ouest (seule candidature) d'un contrat de concession de 10 ans à partir du 1er janvier 2026, sans dépense pour la ville, incluant 40 planimètres, une colonne culturelle et 10 panneaux d'affichage libre."
+        }
+      ],
+      "points_chauds": [
+        {
+          "sujet": "Projet ZAC Multisites",
+          "tension": "modérée",
+          "detail": "Un collectif d'habitants (porte-parole Thomas Kéré) dénonce la bétonisation d'un hectare de verdure près de la Maison des associations pour 120 logements et l'enclavement du quartier. Le maire reconnaît la légitimité des questions et promet une association future des habitants, sans qu'un vote sur le fond du projet n'apparaisse dans cette partie de la séance."
+        },
+        {
+          "sujet": "Dérive financière de la piscine de la Conterie",
+          "tension": "haute",
+          "detail": "M. Sonnier (opposition) accuse la majorité de « payer sans piloter » face à une contribution communale multipliée par trois en quelques années (~160 000 € à ~500 000 €), réclamant un audit et une trajectoire financière pluriannuelle. Le maire renvoie la responsabilité au manque d'investissement historique (y compris sous la mandature de l'opposition) et annonce un audit technique, deux recrutements et un plan de travaux pour 2026."
+        },
+        {
+          "sujet": "Hausse du coût de la gestion des déchets (TEOM)",
+          "tension": "modérée",
+          "detail": "M. Roulet pointe une hausse de 38 % en un an et de 147 % en dix ans de la taxe d'enlèvement des ordures ménagères, liée au surcoût du détournement routier pendant l'arrêt de l'usine de valorisation énergétique de Villejean. Le maire attribue la situation à des malfaçons imprévisibles et espère une réouverture et une baisse des tarifs en 2026."
+        },
+        {
+          "sujet": "Sécurisation de la ressource en eau potable",
+          "tension": "faible",
+          "detail": "M. Roulet interroge sur la hausse des infractions sur les périmètres de captage (+42 %), la présence de pesticides et l'impact des investissements massifs (76 M€ dont l'usine de Villejean concernant Bruz) sur les futurs tarifs. Mme Pierre renvoie une réponse détaillée à une prochaine commission."
+        }
+      ],
+      "impact_bruzois": [
+        "Poursuite de la hausse de la contribution communale au syndicat de la piscine de la Conterie (~500 000 € en 2025), avec un plan de travaux annoncé pour 2026",
+        "Rénovation programmée des salles de sport de Kerlan (accessibilité PMR, sécurité, confort) sous réserve de l'obtention de la subvention DSIL",
+        "Renouvellement du mobilier urbain d'information et d'affichage municipal pour les 10 prochaines années",
+        "Bonne performance de la déchetterie des Garennes (2e fréquentation de la métropole) mais alourdissement de la fiscalité déchets pour les habitants",
+        "Poursuite du débat sur l'avenir du quartier de la Maison des associations dans le cadre de la ZAC Multisites"
+      ],
+      "a_surveiller": [
+        "Vote effectif du projet ou des limites de la ZAC Multisites et modalités de concertation avec les riverains promises par le maire",
+        "Résultats de l'audit technique de la piscine de la Conterie et présentation du plan pluriannuel de travaux au budget 2026",
+        "Calendrier de réouverture de l'usine de valorisation énergétique de Villejean et son effet sur la taxe d'enlèvement des ordures ménagères",
+        "Réponses détaillées attendues en commission sur la sécurisation de la ressource en eau et les captages sensibles concernant Bruz",
+        "Arrivée du directeur adjoint de la piscine de la Conterie (mars 2026) et effets des deux recrutements sur la gestion de l'équipement"
+      ],
+      "statut": "passe"
     },
     {
       "date": "2025-11-24",
-      "titre": "Conseil Municipal du lundi 24 novembre 2025",
+      "titre": "Tensions pré-électorales sur la communication municipale, avenants de travaux et avis sur la ZAC de Kerlan (670 logements)",
       "youtube_id": "2g1KzIc9g-8",
       "youtube_url": "https://youtu.be/2g1KzIc9g-8",
-      "points_cles": [],
+      "points_cles": [
+        "Passe d'armes entre le maire sortant et le groupe « Unir pour agir » (candidat Houssin) sur la neutralité de la communication municipale avant les municipales de mars 2026",
+        "ACTEE+ : candidature validée pour un schéma directeur immobilier énergétique de 150 000 € TTC, subventionné à 60 % par la FNCCR",
+        "Syndicat de la piscine de la Conterie : régularisation de 3 années de factures impayées (2022-2024, environ 6 750 € au total) au titre du dispositif Sortir!, gestion critiquée par l'opposition",
+        "École primaire de Kerlan : budget total de 11 M€, emprunt d'environ 4 M€ en cours de négociation, ouverture visée à la rentrée 2027 (ALSH dès février 2027)",
+        "Avis favorable rendu sur l'autorisation environnementale de la ZAC de Kerlan secteurs sud/nord : 670 logements, 116 000 m² d'activités, renaturation du Mortrait",
+        "Délibération sur le rapport annuel déchets retirée de l'ordre du jour, reportée au conseil du 15 décembre 2025"
+      ],
       "sources": [
         {
           "label": "Vidéo YouTube",
@@ -663,14 +777,116 @@
       "deliberations_url": "https://data.megalis.bretagne.bzh/organization/commune-de-bruz",
       "source_label": "Ville de Bruz — YouTube",
       "date_publication": "2025-11-29",
-      "id": "CM-2025-11-24"
+      "id": "CM-2025-11-24",
+      "resume_executif": "Le conseil municipal du 24 novembre 2025, exceptionnellement tenu dans une salle provisoire (l'hôtel de ville étant en travaux), s'est ouvert sur un vif échange entre la majorité sortante et la liste challengeuse « Unir pour agir » (portée par le candidat Houssin) au sujet de la neutralité de la communication municipale (édito du Brumag, relais d'un appel à manifester) dans les six mois précédant les élections municipales de mars 2026. Sur le fond, neuf délibérations ont toutes été adoptées à l'unanimité : candidature au programme ACTEE+ pour un schéma directeur immobilier énergétique (150 000 €), tarifs publics 2026 (+1,5 %), régularisation de trois années de factures impayées au syndicat de la piscine de la Conterie dans le cadre du dispositif Sortir!, ouvertures dominicales des commerces, avenants sur les marchés de travaux de la future école de Kerlan et de la rénovation thermique de l'hôtel de ville, chantier participatif de plantation de haie bocagère, avis favorable à l'autorisation environnementale du secteur sud/nord de la ZAC de Kerlan, et convention pour des ombrières photovoltaïques place de Bretagne. L'opposition (dont le futur maire Houssin) a interpellé l'exécutif sur la gestion défaillante du syndicat de la piscine, sur le financement encore flou de l'école de Kerlan (budget total de 11 M€, emprunt d'environ 4 M€ en négociation) et sur l'absence de garanties précises dans l'avis rendu sur la ZAC de Kerlan (bruit routier, zones humides, trambus). Une déclaration liminaire a par ailleurs rappelé les chiffres nationaux des violences faites aux femmes à l'approche du 25 novembre, journée internationale de lutte contre ces violences.",
+      "deliberations": [
+        {
+          "numero": "non précisé (1re délibération)",
+          "titre": "Demande de subvention pour le programme ACTEE+ (schéma directeur immobilier énergétique)",
+          "vote": "Unanimité",
+          "detail": "La ville sollicite la FNCCR pour financer à hauteur de 60 % HT l'élaboration de son schéma directeur immobilier énergétique (SDIE), inscrit au budget 2025 pour 150 000 € TTC, dans le cadre du dispositif national ACTEE+."
+        },
+        {
+          "numero": "2",
+          "titre": "Tarifs publics municipaux 2026",
+          "vote": "Unanimité",
+          "detail": "Mise à jour des tarifs des prestations municipales avec une hausse de 1,5 % pour tenir compte de l'inflation et s'aligner sur les tarifs éducation votés en juin 2025."
+        },
+        {
+          "numero": "non précisé",
+          "titre": "Prise en charge du dispositif Sortir! auprès du syndicat de la piscine de la Conterie",
+          "vote": "Unanimité",
+          "detail": "Régularisation des factures 2022 (32,20 €), 2023 (3277,43 €) et 2024 (3441,20 €) correspondant à la prise en charge par la ville de 50 % du tarif remisé accordé aux titulaires de la carte Sortir!. L'opposition a dénoncé un défaut de suivi administratif du syndicat (facturation en retard sur 3 exercices)."
+        },
+        {
+          "numero": "non précisé",
+          "titre": "Ouvertures dominicales et jours fériés des commerces pour 2026",
+          "vote": "Unanimité",
+          "detail": "Autorisation de 3 dimanches d'ouverture parmi 6 proposés (2 et 9 août, 21 novembre, 6/13/20 décembre) pour les commerces de détail, et de 5 dimanches pour les concessions automobiles (18 janvier, 15 mars, 14 juin, 13 septembre, 11 octobre), dans le cadre de l'accord du Pays de Rennes."
+        },
+        {
+          "numero": "non précisé",
+          "titre": "Avenants aux marchés de travaux de la nouvelle école primaire de Kerlan",
+          "vote": "Unanimité",
+          "detail": "Ajustements techniques sur les lots terrassement, gros œuvre, charpente bois/bardage, couverture et serrurerie, pour une baisse d'environ 10 488 € HT (12 585 € TTC). Budget total du projet : 11 M€, emprunt d'environ 4 M€ en négociation, ouverture visée rentrée 2027."
+        },
+        {
+          "numero": "non précisé",
+          "titre": "Avenants au marché de rénovation thermique de l'hôtel de ville",
+          "vote": "Unanimité",
+          "detail": "Ajustements de chantier en site occupé et travaux complémentaires identifiés en cours d'opération, pour un montant total de 31 599,76 €, dans le cadre du programme communal de maîtrise des consommations énergétiques."
+        },
+        {
+          "numero": "non précisé",
+          "titre": "Convention de chantier participatif de plantation de haie bocagère (secteur de la Massu)",
+          "vote": "Unanimité",
+          "detail": "Convention avec Eau du Bassin Rennais pour l'encadrement de deux classes de CE1-CE2 de l'école Champ l'Évêque lors d'un chantier de plantation prévu le 16 janvier 2026 (reportable en cas d'intempérie)."
+        },
+        {
+          "numero": "non précisé",
+          "titre": "Avis sur l'autorisation environnementale unique de la ZAC de Kerlan (secteurs sud, nord et Mortrait)",
+          "vote": "Unanimité (avis favorable)",
+          "detail": "Avis favorable au dossier d'autorisation environnementale porté par Territoires Publics pour les deux derniers secteurs à urbaniser de la ZAC (670 logements sur 66 000 m² au sud, 116 000 m² d'activités au nord) et pour la renaturation du Mortrait suite au déplacement de la station d'épuration. L'opposition demandait un avis conditionné à des points de vigilance (bruit, zones humides, trambus) qui n'a pas été retenu."
+        },
+        {
+          "numero": "non précisé",
+          "titre": "Convention d'occupation temporaire du domaine public pour des ombrières photovoltaïques, place de Bretagne",
+          "vote": "Unanimité",
+          "detail": "Convention de 20 ans avec Rennes Métropole (maître d'ouvrage unique de la requalification de la place), moyennant une redevance annuelle de 208 €, pour l'installation d'ombrières photovoltaïques sur le parking, dans le cadre de l'obligation légale d'ici 2028."
+        }
+      ],
+      "points_chauds": [
+        {
+          "sujet": "Neutralité de la communication municipale en période pré-électorale",
+          "tension": "haute",
+          "detail": "M. Roulet (groupe « Unir pour agir », candidat Houssin) accuse le maire sortant d'avoir utilisé l'édito du Brumag et les moyens municipaux (relais d'un appel à manifester) à des fins de communication de candidat, en infraction avec l'article L52-1 du code électoral. Le maire répond point par point, dément toute promotion personnelle, produit une analyse juridique externe, et rappelle des précédents symétriques de l'ancienne majorité (rassemblement organisé par M. Loapre, pavoisement des drapeaux ukrainien et israélien). Aucun vote, simple échange contradictoire."
+        },
+        {
+          "sujet": "Gestion administrative du syndicat de la piscine de la Conterie",
+          "tension": "modérée",
+          "detail": "M. Houssin (opposition) dénonce la régularisation tardive de trois années de factures et l'absence de données chiffrées sur les bénéficiaires du dispositif Sortir!. La majorité (M. Camarec) explique ce retard par l'absence de direction pendant près de deux ans et annonce le recrutement en cours d'un directeur adjoint et d'un responsable administratif ; les chiffres précis restent à transmettre."
+        },
+        {
+          "sujet": "Financement de la nouvelle école primaire de Kerlan",
+          "tension": "modérée",
+          "detail": "M. Sonnier (opposition) demande le coût total TTC de l'opération, la répartition fonds propres/subventions/emprunt et le respect du calendrier. L'adjoint aux finances (M. Leroi) reconnaît ne pas disposer de tous les chiffres en séance (emprunt d'environ 4 M€ en cours de négociation sur un budget total de 11 M€) et propose une réponse détaillée en commission le lendemain."
+        },
+        {
+          "sujet": "Avis sur l'autorisation environnementale de la ZAC de Kerlan",
+          "tension": "modérée",
+          "detail": "M. Roulet demande un avis « conditionné » assorti de points de vigilance (préservation des haies bocagères, zones humides compensatoires, phasage du trambus, risques hydrauliques, imperméabilisation) et interroge l'impact du bruit routier de la RD177 sur les 670 futurs logements. L'adjoint à l'urbanisme (M. Jolie) répond, avec une pointe d'agacement, que ces points ont déjà été traités dans les études amont de la ZAC multisites et refuse de conditionner l'avis."
+        }
+      ],
+      "impact_bruzois": [
+        "Ouverture d'une nouvelle école primaire à Kerlan visée pour la rentrée 2027 (ALSH dès février 2027), permettant de désengorger les écoles Champ l'Évêque et Verbuisson",
+        "Maintien du tarif réduit de 50 % à la piscine de la Conterie pour les titulaires de la carte Sortir!, sous surveillance renforcée de la gestion du syndicat",
+        "Arrivée programmée de 670 logements au secteur sud de Kerlan (2027-2028) avec commerces de proximité, école et espaces verts",
+        "Hausse de 1,5 % des tarifs publics municipaux à partir de 2026",
+        "Ouvertures dominicales des commerces limitées à 3 dates en 2026 (2 et 9 août, 21 novembre, 6/13/20 décembre)",
+        "Réaménagement de la place de Bretagne avec ombrières photovoltaïques, après plusieurs mois de concertation avec les commerçants"
+      ],
+      "a_surveiller": [
+        "Chiffrage précis et définitif du financement de l'école de Kerlan (coût total TTC, montant et conditions de l'emprunt), promis en commission par l'adjoint aux finances",
+        "Communication du nombre réel de Bruzois bénéficiaires du dispositif Sortir! à la piscine de la Conterie, non disponible en séance",
+        "Examen du rapport annuel sur le prix et la qualité du service public de gestion des déchets, reporté au conseil du 15 décembre 2025",
+        "Adoption attendue du dossier de ZAC de Kerlan lors du conseil de décembre 2025",
+        "Poursuite des tensions entre majorité sortante et liste « Unir pour agir » sur la communication municipale à l'approche des élections de mars 2026"
+      ],
+      "statut": "passe"
     },
     {
       "date": "2025-10-13",
-      "titre": "Conseil Municipal du lundi 13 octobre 2025",
+      "titre": "Conseil municipal du 13 octobre 2025 : CLECT Opéra/Musical, éducation et culture",
       "youtube_id": "909eVdTl6LA",
       "youtube_url": "https://youtu.be/909eVdTl6LA",
-      "points_cles": [],
+      "points_cles": [
+        "Transfert de charges Opéra/Musical de Rennes à Rennes Métropole : 3 783 998 €/an jusqu'en 2039, puis 38 603 €/an ; recette nette Musical de 26 602 €/an",
+        "Loyer du Musical en forte hausse (150 000 → ~600-700 000 €) pour une jauge portée de 7 000 à 9 000-9 500 places, 17 M€ de travaux prévus",
+        "Ouverture anticipée à novembre 2025 (au lieu de 2026) d'une unité d'enseignement externalisée (6 à 12 enfants) à l'école du Verbuisson, en convention avec l'IME Le Trisquel (ADAPI)",
+        "Partenariat Rennes Métropole/CLPS 'Parlons français à l'école de nos enfants' à l'école Jacques Prévert dès le 18 novembre 2025, coût net pour Bruz : environ 4 500 €",
+        "Élections municipales de mars 2026 : la ville confie la propagande électorale à un prestataire externe (Relais Emploi, insertion), pas de régie municipale",
+        "Prochains conseils municipaux délocalisés à l'Alpagnole en raison des travaux de la mairie"
+      ],
       "sources": [
         {
           "label": "Vidéo YouTube",
@@ -680,14 +896,134 @@
       "deliberations_url": "https://data.megalis.bretagne.bzh/organization/commune-de-bruz",
       "source_label": "Ville de Bruz — YouTube",
       "date_publication": "2025-10-14",
-      "id": "CM-2025-10-13"
+      "id": "CM-2025-10-13",
+      "resume_executif": "Ce conseil a été marqué par un échange tendu sur l'absentéisme de certains élus de la majorité, l'opposition dénonçant une atteinte à la légitimité démocratique. Sur le fond, le conseil a approuvé le rapport de la CLECT actant le transfert de charges de l'Opéra et du Musical de Rennes à Rennes Métropole, avec des débats sur la hausse du loyer du Musical (de 150 000 à environ 600-700 000 €) liée à l'agrandissement de sa jauge à 9 000-9 500 places. Plusieurs conventions ont été votées à l'unanimité : externalisation d'une unité d'enseignement (UEE) pour enfants en situation de handicap à l'école du Verbuisson dès novembre 2025, partenariat CLPS/Rennes Métropole pour l'accompagnement de parents non francophones à l'école Jacques Prévert, et plusieurs conventions culturelles (lecture publique, Institut Polytechnique UniLaSalle, prêt d'objets médiévaux). Le conseil a aussi acté la vente du Carpédium (43 avenue Jules Tricot), des mouvements de personnel et le choix d'un prestataire externe pour la propagande électorale des municipales de mars 2026.",
+      "deliberations": [
+        {
+          "numero": "1",
+          "titre": "Décisions du maire prises par délégation (1er avril - 30 septembre 2025)",
+          "vote": "Prise d'acte",
+          "detail": "Liste des décisions prises par délégation présentée sans remarque."
+        },
+        {
+          "numero": "2",
+          "titre": "Rapport de la CLECT du 11 septembre 2025 - transfert Opéra et Musical à Rennes Métropole",
+          "vote": "Unanimité (rapport adopté en CLECT par 22 voix pour et 2 abstentions)",
+          "detail": "Charge nette transférée à Rennes Métropole au titre de l'Opéra : 3 783 998 €/an jusqu'en 2039, puis 38 603 €/an ; produit net du Musical transféré : 26 602 €/an. Débat sur la hausse du loyer du Musical et l'abandon du projet de Zénith."
+        },
+        {
+          "numero": "3",
+          "titre": "Cession du 43 avenue Jules Tricot (Carpédium, ancien hôtel de la gare)",
+          "vote": "Unanimité",
+          "detail": "Modification de la délibération du 30 juin 2025 pour permettre la vente à toute société se substituant à la SARL locataire-gérante."
+        },
+        {
+          "numero": "4",
+          "titre": "Convention de coopération pour l'externalisation d'une unité d'enseignement (UEE) à l'école du Verbuisson",
+          "vote": "Unanimité",
+          "detail": "Convention tripartite IME Le Trisquel (ADAPI)/Éducation nationale/ville de Bruz pour l'accueil de 6 à 12 enfants en situation de handicap dès novembre 2025, en avance sur le calendrier initial lié au 4e groupe scolaire."
+        },
+        {
+          "numero": "5",
+          "titre": "Mise à disposition des locaux de l'école du Verbuisson à l'IME Le Trisquel",
+          "vote": "Unanimité",
+          "detail": "Convention complémentaire à la délibération n°4 pour la mise à disposition matérielle des locaux."
+        },
+        {
+          "numero": "6",
+          "titre": "Convention de partenariat CLPS / Rennes Métropole - dispositif 'hospitalité' 2025-2026",
+          "vote": "Unanimité",
+          "detail": "Ateliers 'Parlons français à l'école de nos enfants' pour des parents peu francophones, à l'école Jacques Prévert dès le 18 novembre 2025, financés à 65 % par Rennes Métropole ; coût net ville estimé à 4 500 €."
+        },
+        {
+          "numero": "7",
+          "titre": "Convention de mise à disposition des locaux de l'école Jacques Prévert pour le CLPS",
+          "vote": "Unanimité",
+          "detail": "Locaux finalement trouvés dans l'école plutôt qu'à la maison des enfants, initialement envisagée."
+        },
+        {
+          "numero": "8",
+          "titre": "Convention de partenariat pour le développement de la lecture publique (schéma départemental 2023-2028)",
+          "vote": "Unanimité",
+          "detail": "Convention tripartite Département/Rennes Métropole/communes (dont le SIRENOR) jusqu'au 31 décembre 2028, portant sur la mutualisation des ressources documentaires et l'accès des bibliothèques à la médiathèque départementale (MDIV)."
+        },
+        {
+          "numero": "9",
+          "titre": "Renouvellement de la convention avec l'Institut Polytechnique UniLaSalle Rennes",
+          "vote": "Unanimité",
+          "detail": "Partenariat culturel/scientifique reconduit pour un an (rentrée 2025-2026) : conférences 'Grain de science', ateliers étudiants, dépôt de livres à la médiathèque (120 documents deux fois par an), sans frais supplémentaires."
+        },
+        {
+          "numero": "10",
+          "titre": "Convention de mise à disposition d'objets - exposition médecine médiévale",
+          "vote": "Unanimité",
+          "detail": "Prêt d'objets par l'association Les Simples Médecines pour une exposition au Grand Logis du 14 au 22 novembre 2025, dans le cadre d'un atelier le 22 novembre."
+        },
+        {
+          "numero": "11",
+          "titre": "Convention avec la préfecture pour l'adressage, la mise sous pli et le colisage de la propagande électorale (municipales 2026)",
+          "vote": "Unanimité",
+          "detail": "La ville confie la mission à un prestataire externe (Relais Emploi, structure d'insertion) plutôt qu'en régie municipale, en vue des élections des 15 et 22 mars 2026."
+        },
+        {
+          "numero": "12",
+          "titre": "Suppression et création de postes",
+          "vote": "Unanimité",
+          "detail": "Modification du tableau des effectifs concernant 5 postes dans 3 services, pour remplacer des agents partis ou sur le départ."
+        },
+        {
+          "numero": "13",
+          "titre": "Création d'un emploi non permanent d'accroissement saisonnier (animation/accompagnement d'enfants)",
+          "vote": "Unanimité",
+          "detail": "Délibération déjà présentée au conseil précédent mais non votée par omission ; recrutement à hauteur de 31h35, rémunération selon grille du cadre d'emploi."
+        }
+      ],
+      "points_chauds": [
+        {
+          "sujet": "Absentéisme chronique de conseillers municipaux de la majorité",
+          "tension": "haute",
+          "detail": "L'opposition (M. Roulet, Mme Chevalier) dénonce l'absence prolongée et non justifiée de plusieurs élus de la majorité (pouvoirs donnés systématiquement, absences sans justification relevées dans les PV 2024-2025), questionnant le maintien de leur mandat et de leurs indemnités. Le maire reconnaît déplorer ces absences mais défend la légitimité des pouvoirs donnés ; l'échange se conclut sans mesure concrète annoncée."
+        },
+        {
+          "sujet": "Hausse du loyer du Musical et opportunité du projet face au Zénith abandonné",
+          "tension": "modérée",
+          "detail": "M. Houssin (opposition) s'interroge sur la forte hausse du loyer du Musical (150 000 à ~600-700 000 €) jugée disproportionnée par rapport à l'augmentation de jauge, et relance le débat sur l'abandon du projet de Zénith. Le maire répond que la hausse reflète aussi l'amélioration acoustique et la capacité de réception, sans lien avec Rennes ou Rennes Métropole en tant que propriétaires."
+        },
+        {
+          "sujet": "Débat dérivé sur le financement métropolitain (école de musique, secteur gare/ZAC)",
+          "tension": "faible",
+          "detail": "M. Houssin évoque la possibilité de métropoliser l'école de musique déficitaire ; le maire renvoie à la responsabilité départementale et rappelle que l'ancienne majorité avait renoncé au soutien métropolitain sur le secteur gare, ce que M. Houssin conteste comme hors sujet."
+        }
+      ],
+      "impact_bruzois": [
+        "Ouverture anticipée dès novembre 2025 d'un dispositif inclusif pour enfants en situation de handicap au sein de l'école du Verbuisson",
+        "Accompagnement des parents peu francophones à l'école Jacques Prévert dès le 18 novembre 2025, pour mieux comprendre le fonctionnement du système scolaire",
+        "Nouvelle exposition culturelle temporaire sur la médecine médiévale au Grand Logis du 14 au 22 novembre 2025",
+        "Vente actée du Carpédium (ancien hôtel de la gare) à un repreneur potentiellement différent de l'exploitant actuel",
+        "Prochains conseils municipaux délocalisés à l'Alpagnole pendant les travaux de la mairie"
+      ],
+      "a_surveiller": [
+        "Suites données (ou non) au débat sur l'absentéisme des élus de la majorité et d'éventuelles conséquences sur les mandats/indemnités",
+        "Évolution du chantier du Musical (17 M€ de travaux) et impact final sur le loyer versé par la ville/métropole",
+        "Mise en œuvre effective de l'UEE au Verbuisson dès novembre 2025 et de l'atelier CLPS à Jacques Prévert dès le 18 novembre 2025",
+        "Organisation matérielle des conseils municipaux à l'Alpagnole pendant les travaux de la mairie",
+        "Préparatifs des élections municipales de mars 2026 (propagande électorale, bureaux de vote)"
+      ],
+      "statut": "passe"
     },
     {
       "date": "2025-09-22",
-      "titre": "Conseil Municipal du lundi 22 septembre 2025",
+      "titre": "Conseil municipal du 22 septembre 2025 : ZAC Multisites, foncier et logement social",
       "youtube_id": "sUa9mrL8DGM",
       "youtube_url": "https://youtu.be/sUa9mrL8DGM",
-      "points_cles": [],
+      "points_cles": [
+        "Plan d'action égalité femmes-hommes 2025-2027 adopté à l'unanimité (4 axes, 15 actions)",
+        "Bilan de la concertation de la ZAC Multisites adopté avec 7 abstentions de l'opposition",
+        "Suppression du secteur des Rosiers (zone humide) : 280 à 300 logements à reloger, questions sur l'école et la densité",
+        "Acquisitions foncières : 12 avenue du Général de Gaulle (223 437,82 €) et 39 rue Toulier (462 600 €) via l'EPF Bretagne",
+        "Nouvelle convention cadre Ville-CCAS et avis favorable sur le plan métropolitain de gestion de la demande de logement social 2025-2031",
+        "Portage foncier de la ville supérieur à 10,7 M€, dont 6 M€ sur le seul secteur gare"
+      ],
       "sources": [
         {
           "label": "Vidéo YouTube",
@@ -697,14 +1033,103 @@
       "deliberations_url": "https://data.megalis.bretagne.bzh/organization/commune-de-bruz",
       "source_label": "Ville de Bruz — YouTube",
       "date_publication": "2025-09-25",
-      "id": "CM-2025-09-22"
+      "id": "CM-2025-09-22",
+      "resume_executif": "Le conseil adopte à l'unanimité un plan d'action égalité femmes-hommes 2025-2027 et une nouvelle convention cadre avec le CCAS, ainsi qu'un avis favorable sur le plan métropolitain de gestion de la demande de logement social 2025-2031. Plusieurs délibérations foncières sont votées (acquisitions au 12 avenue du Général de Gaulle et au 39 rue Toulier via l'EPF Bretagne, échanges et rétrocessions liés au programme Pagnol). Le bilan de la concertation sur la ZAC Multisites est approuvé mais avec 7 abstentions de l'opposition, qui interroge la suppression du secteur des Rosiers (zone humide) et ses conséquences sur le nombre de logements, la densité et le futur groupe scolaire. La séance s'ouvre sur une prise de position du maire sur la reconnaissance de l'État palestinien, contestée par un élu au nom de la neutralité municipale.",
+      "deliberations": [
+        {
+          "numero": "1",
+          "titre": "Délocalisation de la salle du conseil municipal pendant les travaux de l'hôtel de ville",
+          "vote": "Unanimité",
+          "detail": "Les travaux de rénovation de l'hôtel de ville rendent la salle du conseil inutilisable environ 6 à 7 mois ; les séances sont délocalisées à la salle Alpagnole à compter de novembre 2025."
+        },
+        {
+          "numero": "2",
+          "titre": "Adoption du plan d'action égalité femmes-hommes 2025-2027",
+          "vote": "Unanimité",
+          "detail": "Suite à la charte européenne signée en 2022 et à un diagnostic (cabinet Équation Territoriale), la ville se dote de 4 axes et 15 actions ciblant éducation, sport/vie associative et espace public."
+        },
+        {
+          "numero": "3",
+          "titre": "Avenant à la convention de transmission électronique des actes avec la préfecture",
+          "vote": "Unanimité",
+          "detail": "Précise les modalités de transmission électronique des documents budgétaires, notamment avec la généralisation du CFU."
+        },
+        {
+          "numero": "4",
+          "titre": "Acquisition du 12 avenue du Général de Gaulle auprès de Rennes Métropole",
+          "vote": "Unanimité",
+          "detail": "Rachat d'une parcelle de 665 m² au prix de 223 437,82 € hors frais d'acte, avant la fin du portage foncier métropolitain prévu au 30 septembre 2026."
+        },
+        {
+          "numero": "5",
+          "titre": "Dénomination des voies du secteur sud de la ZAC de Kerlan",
+          "vote": "Unanimité",
+          "detail": "Création de 8 nouvelles voies nommées d'après des oiseaux menacés présents en Bretagne, dont l'école rue des Macareux."
+        },
+        {
+          "numero": "6",
+          "titre": "Acquisition du 39 rue Toulier / rue de la Cité via l'EPF Bretagne",
+          "vote": "Unanimité",
+          "detail": "Bien de 1 347 m² (restaurant, salle de sport, logements) acquis au prix de 462 600 € net vendeur, dans le périmètre de la ZAC Multisites et des réserves foncières déclarées d'utilité publique."
+        },
+        {
+          "numero": "7",
+          "titre": "Bilan de la concertation préalable à la création de la ZAC Multisites",
+          "vote": "Majoritaire (7 abstentions)",
+          "detail": "Concertation menée de 2024 à 2025 (panel de 30 citoyens, réunions publiques, plus de 1000 Bruzois mobilisés) ; l'opposition s'abstient en raison des incertitudes sur la suppression du secteur des Rosiers."
+        },
+        {
+          "numero": "8",
+          "titre": "Échange de lots de copropriété au sein de l'ensemble Pagnol (Bouygues Immobilier)",
+          "vote": "Unanimité",
+          "detail": "Échange à titre gratuit de lots de stationnement suite à la suppression de deux places lors des travaux de sécurisation."
+        },
+        {
+          "numero": "9",
+          "titre": "Constatation des ouvrages réalisés en dation de paiement (Bouygues Immobilier)",
+          "vote": "Unanimité",
+          "detail": "Constat de la réalisation des obligations de construction (places de stationnement, halle couverte de 960 m², équipements bus)."
+        },
+        {
+          "numero": "10",
+          "titre": "Rétrocession des espaces communs du programme Pagnol",
+          "vote": "Unanimité",
+          "detail": "Rétrocession gratuite à la ville d'une parcelle de 115 m² et d'un volume sous la halle Pagnol, à titre gratuit, frais à la charge de Bouygues Immobilier."
+        },
+        {
+          "numero": "11",
+          "titre": "Convention cadre entre la ville de Bruz et le CCAS",
+          "vote": "Unanimité",
+          "detail": "Nouvelle convention précisant les missions extralégales du CCAS (exclusion, logement, personnes âgées/handicap) et les moyens alloués par la ville."
+        },
+        {
+          "numero": "12",
+          "titre": "Avis sur le plan partenarial de gestion de la demande de logement social et d'information des demandeurs (2025-2031)",
+          "vote": "Unanimité (avis favorable)",
+          "detail": "Réforme portée par Rennes Métropole pour réduire les refus de logements sociaux via un système de candidature ; Bruz compte environ 5000 demandes pour 55 attributions en 2024."
+        }
+      ],
+      "points_chauds": [],
+      "impact_bruzois": [],
+      "a_surveiller": [
+        "Publication des délibérations sur Mégalis Bretagne",
+        "Bruz Mag — prochain numéro"
+      ],
+      "statut": "passe"
     },
     {
       "date": "2025-06-30",
-      "titre": "Conseil Municipal du lundi 30 juin 2025",
+      "titre": "Conseil communautaire, PCAET métropolitain et bilan du centre social l'Escale",
       "youtube_id": "2VIBj3YqgJI",
       "youtube_url": "https://youtu.be/2VIBj3YqgJI",
-      "points_cles": [],
+      "points_cles": [
+        "Accord local : 111 sièges au conseil métropolitain 2026-2032, Bruz conserve son nombre de sièges (vote à l'unanimité)",
+        "Centre social l'Escale : 253 adhérents au 25/02/2024, proche de 300 fin juin 2025, 53 bénévoles (3500h de bénévolat, soit 2,5 ETP)",
+        "Subvention municipale à l'Escale : 144 000 €, soit 50% du budget ; bonus CAF de 50 000 € lié au statut associatif",
+        "Bilan financier l'Escale : budget 2024 d'environ 299 000 €, prévisionnel 2025 autour de 330 000 €",
+        "Énergie ville de Bruz : -31% de consommation énergétique 2019-2024, -34% de CO2, mais seulement 5% d'énergie renouvelable (objectif PCET 25%)",
+        "Avis favorable donné au PCAET de Rennes Métropole avec réserves sur mobilité (covoiturage, ferroviaire), logement (passoires thermiques) et gouvernance du COPIL"
+      ],
       "sources": [
         {
           "label": "Vidéo YouTube",
@@ -714,14 +1139,49 @@
       "deliberations_url": "https://data.megalis.bretagne.bzh/organization/commune-de-bruz",
       "source_label": "Ville de Bruz — YouTube",
       "date_publication": "2025-07-08",
-      "id": "CM-2025-06-30"
+      "id": "CM-2025-06-30",
+      "resume_executif": "Le conseil municipal du 30 juin 2025 a validé à l'unanimité l'accord local fixant à 111 le nombre de sièges du futur conseil métropolitain de Rennes Métropole pour le mandat 2026-2032, Bruz conservant sa représentation. Un avis favorable a été donné au projet de Plan Climat Air Énergie Territorial (PCAET) métropolitain, avec de nombreuses remarques sur la mobilité, le logement et l'énergie. La séance a également accueilli deux présentations : celle de l'Assemblée citoyenne de Rennes Métropole et le bilan d'activité 2024 du centre social associatif l'Escale, dont la fréquentation a quasiment doublé en un an (de 160 à près de 300 adhérents). L'opposition a critiqué la forme de la présentation de l'Escale, jugée insuffisamment démocratique faute de débat en commission sociale.",
+      "deliberations": [
+        {
+          "numero": "non énoncé",
+          "titre": "Approbation du procès-verbal du conseil municipal du 2 juin 2025",
+          "vote": "Unanimité (pas de remarque)",
+          "detail": "Aucune observation formulée par les élus sur le précédent procès-verbal."
+        },
+        {
+          "numero": "non énoncé",
+          "titre": "Composition du conseil communautaire de Rennes Métropole pour le mandat 2026-2032",
+          "vote": "Unanimité",
+          "detail": "Accord local fixant à 111 le nombre total de sièges (101 de droit commun + 10 supplémentaires), réparti entre les 43 communes. Rennes, Cesson-Sévigné et Laillé perdent chacune un siège ; Orgères et Saint-Gilles en gagnent un. Bruz conserve sa représentation actuelle."
+        },
+        {
+          "numero": "non énoncé",
+          "titre": "Avis de la commune sur le projet de Plan Climat Air Énergie Territorial (PCAET) de Rennes Métropole",
+          "vote": "Favorable (adopté, opposition constructive mais pas de vote contre mentionné explicitement)",
+          "detail": "Avis favorable assorti de recommandations : justice sociale dans la rénovation énergétique, création d'un organe de suivi, objectifs par commune, développement du covoiturage et du photovoltaïque. L'opposition (M. Roulet, M. Kermarek) a demandé un traitement plus opérationnel des enjeux ferroviaires et du stationnement à Bruz."
+        }
+      ],
+      "points_chauds": [],
+      "impact_bruzois": [],
+      "a_surveiller": [
+        "Publication des délibérations sur Mégalis Bretagne",
+        "Bruz Mag — prochain numéro"
+      ],
+      "statut": "passe"
     },
     {
       "date": "2025-06-02",
-      "titre": "Conseil Municipal du lundi 2 juin 2025",
+      "titre": "Charte participation citoyenne, SIM Rif Sud, piscine de la Contrie et aménagement plaine Yann Fanch Kemener",
       "youtube_id": "lik0KmeQ16A",
       "youtube_url": "https://youtu.be/lik0KmeQ16A",
-      "points_cles": [],
+      "points_cles": [
+        "Charte 'participation citoyenne' (ex-voisins vigilants) actualisée à l'unanimité, pilotée par la gendarmerie",
+        "Participation au SIM Rif Sud portée à 395 875€ (+30% en 3 ans), suite au désengagement du Département",
+        "Participation à la piscine de la Contrie : 389 434,50€, hausse de 135% en 5 ans — adoptée avec 7 voix contre",
+        "Marché d'aménagement de la plaine Yann Fanch Kemener attribué pour 654 000€ TTC (jeux, sport, paysager)",
+        "Subvention de 1000€ votée pour 'Territoire en résistance pour le grand âge' face à la crise des EHPAD",
+        "Don de barnums par Emmaüs (4330,80€) suite au vol de matériel prêté par la ville"
+      ],
       "sources": [
         {
           "label": "Vidéo YouTube",
@@ -731,14 +1191,79 @@
       "deliberations_url": "https://data.megalis.bretagne.bzh/organization/commune-de-bruz",
       "source_label": "Ville de Bruz — YouTube",
       "date_publication": "2025-06-03",
-      "id": "CM-2025-06-02"
+      "id": "CM-2025-06-02",
+      "resume_executif": "Le conseil municipal du 2 juin 2025 a validé l'actualisation de la charte 'voisins vigilants' rebaptisée 'participation citoyenne', piloté par la gendarmerie. Les finances ont occupé l'essentiel de la séance : hausse de 30% en 3 ans de la participation au syndicat de musique Rif Sud (395 875€) et surtout une augmentation de 135% en 5 ans de la contribution à la piscine intercommunale de la Contrie (389 434,50€), votée contre l'avis de l'opposition (7 voix contre). Un marché de 654 000€ TTC a été attribué pour l'aménagement de la plaine Yann Fanch Kemener, incluant jeux, espace sportif et aménagements paysagers, financé en partie par l'excédent de la ZAC du Verbuisson. La ville a également voté une subvention de 1000€ à l'association 'Territoire en résistance pour le grand âge', face à la crise financière des EHPAD.",
+      "deliberations": [
+        {
+          "numero": "non communiqué",
+          "titre": "Actualisation de la charte 'voisins attentifs' — dispositif participation citoyenne",
+          "vote": "Unanimité",
+          "detail": "Mise à jour de la charte encadrant les référents de quartier, pilotée par la gendarmerie dans le cadre du dispositif national 'participation citoyenne' du ministère de l'Intérieur. Réunion publique de recrutement prévue le 4 juin 2025."
+        },
+        {
+          "numero": "non communiqué",
+          "titre": "Participation 2025 au syndicat de musique Rif Sud",
+          "vote": "Unanimité",
+          "detail": "Participation totale de 395 875€ versée en trois fois, incluant un versement exceptionnel de 26 966€ pour compenser le désengagement du Département (perte de 43 836€ de subvention de fonctionnement)."
+        },
+        {
+          "numero": "non communiqué",
+          "titre": "Participation 2025 au syndicat intercommunal de la piscine de la Contrie",
+          "vote": "7 voix contre (opposition), le reste pour",
+          "detail": "Participation de 389 434,50€ (24,7% du budget total de 1 585 000€), en hausse de 135% en 5 ans. L'opposition dénonce le manque de transparence et de plan d'action pluriannuel malgré son soutien de principe à l'équipement."
+        },
+        {
+          "numero": "non communiqué",
+          "titre": "Décision modificative n°2 du budget principal 2025",
+          "vote": "Unanimité",
+          "detail": "Intègre les dépassements de subventions (SIM +23 875€, piscine Contrie +91 435€), le remboursement de cautions à la SPL Néotoa dissoute (11 575€) et une régularisation comptable de 595€, équilibrés par emprunt et baisse d'autofinancement."
+        },
+        {
+          "numero": "non communiqué",
+          "titre": "Tarifs TLPE (taxe locale sur la publicité extérieure) 2026",
+          "vote": "Unanimité",
+          "detail": "Application des tarifs maximum fixés par arrêté (indexation +1,8%), avec maintien de l'exonération pour les enseignes au sol de moins de 12m²."
+        },
+        {
+          "numero": "non communiqué",
+          "titre": "Don de barnums par Emmaüs suite à un vol",
+          "vote": "Unanimité",
+          "detail": "Intégration à l'inventaire communal de barnums donnés par Emmaüs (4 330,80€) pour remplacer ceux prêtés par la ville et volés dans les locaux de l'association."
+        },
+        {
+          "numero": "non communiqué",
+          "titre": "Adhésion à l'association 'Territoire en résistance pour le grand âge'",
+          "vote": "Unanimité",
+          "detail": "Participation de 1000€ pour soutenir les frais d'avocats (7500€ engagés) dans le cadre d'un recours gracieux contre l'État concernant le déficit des EHPAD publics, dont celui de Bruz."
+        },
+        {
+          "numero": "non communiqué",
+          "titre": "Attribution des marchés d'aménagement de la plaine Yann Fanch Kemener",
+          "vote": "Non précisé (pas d'opposition mentionnée explicitement au vote, débat contradictoire)",
+          "detail": "Trois lots attribués (terrassement à Jourdanière Nature, jeux/mobilier à SDU, paysager à Le Roi Paysage) pour un montant total d'environ 654 000€ TTC, incluant le remplacement d'une structure de jeux obsolète (2008)."
+        }
+      ],
+      "points_chauds": [],
+      "impact_bruzois": [],
+      "a_surveiller": [
+        "Publication des délibérations sur Mégalis Bretagne",
+        "Bruz Mag — prochain numéro"
+      ],
+      "statut": "passe"
     },
     {
       "date": "2025-03-31",
-      "titre": "Conseil Municipal du lundi 31 mars 2025",
+      "titre": "Conseil municipal du 31 mars 2025 : subventions, transferts fonciers et personnel",
       "youtube_id": "N2VUQhM4XG4",
       "youtube_url": "https://youtu.be/N2VUQhM4XG4",
-      "points_cles": [],
+      "points_cles": [
+        "Subvention de 39 067 € au Point Accueil Emploi Rennes Sud (PAE), en baisse par rapport à l'an dernier suite à un nouveau mode de calcul (1,85 €/habitant)",
+        "Cession de 97 m² de terrain à la société Biomérieux au prix de 0,40 €/m² (environ 38,80 €) pour régulariser une clôture",
+        "Obligation réelle environnementale (ORE) de 99 ans sur des parcelles agricoles bio à la ferme de Mérol, la ville de Bruz devenant tiers garant",
+        "Lancement de la 2e édition du projet culturel participatif doté de 15 000 € de budget d'investissement",
+        "Refus implicite d'une prime exceptionnelle pour les agents mobilisés lors des inondations : seuls des heures supplémentaires et indemnités d'astreinte (23 500 €, soit 38 245 € avec le matériel PCS) ont été versés",
+        "Hommage rendu à Giselle Poulin, mercière historique de Bruz pendant plus de 44 ans"
+      ],
       "sources": [
         {
           "label": "Vidéo YouTube",
@@ -748,14 +1273,207 @@
       "deliberations_url": "https://data.megalis.bretagne.bzh/organization/commune-de-bruz",
       "source_label": "Ville de Bruz — YouTube",
       "date_publication": "2025-04-02",
-      "id": "CM-2025-03-31"
+      "id": "CM-2025-03-31",
+      "resume_executif": "Ce conseil municipal a traité une vingtaine de délibérations, toutes adoptées à l'unanimité, portant principalement sur des sujets techniques et financiers. Les points marquants concernent le financement du Point Accueil Emploi Rennes Sud (39 067 €), la cession d'une emprise foncière à Biomérieux, une obligation réelle environnementale de 99 ans sur des terres agricoles bio à la ferme de Mérol, et plusieurs conventions éducatives et associatives. L'opposition a interrogé la majorité sur une éventuelle prime exceptionnelle pour les agents mobilisés lors des inondations, à laquelle il n'a pas été donné suite, ainsi que sur l'idée d'un véritable budget participatif élargi au-delà du seul volet culturel.",
+      "deliberations": [
+        {
+          "numero": "n/a",
+          "titre": "Convention avec l'association Accueil Accompagnement pour l'Emploi Rennes Sud (PAE)",
+          "vote": "Unanimité",
+          "detail": "Renouvellement de la convention pour 1 an ; subvention 2025 de 39 067 € (37 429 € en fonctionnement, 1 638 € en provision retraite), calculée désormais sur un taux fixe de 1,85 €/habitant."
+        },
+        {
+          "numero": "n/a",
+          "titre": "Maîtrise d'œuvre du 4e groupe scolaire — avenant n°2",
+          "vote": "Unanimité",
+          "detail": "Suite à la liquidation judiciaire de l'atelier Fil Fil (cotraitant), l'agence Bigre Architecture reprend les prestations ; le montant total de rémunération reste inchangé à 988 514,14 € HT."
+        },
+        {
+          "numero": "n/a",
+          "titre": "Régat — avenant n°1 à la convention d'adhésion à la centrale d'achat",
+          "vote": "Unanimité",
+          "detail": "Ajout d'une fonction 'grossiste' permettant de commander de petites quantités via un centre logistique ; cotisations inchangées, gratuites pour CCAS et caisses des écoles."
+        },
+        {
+          "numero": "n/a",
+          "titre": "Contrat de prêt à usage — 14 rue de la Noé Rousselet",
+          "vote": "Unanimité",
+          "detail": "Mise à disposition gratuite d'environ 235 m² de terrain à M. et Mme Rousselet en échange de son entretien, pour une durée d'un an renouvelable."
+        },
+        {
+          "numero": "n/a",
+          "titre": "Transfert de propriété à Rennes Métropole — déchetterie des Garennes",
+          "vote": "Unanimité",
+          "detail": "Régularisation du transfert en pleine propriété (biens mobiliers et immobiliers) suite au transfert de la compétence déchets, via avenant n°8 à la convention de 2001 ; opération à titre gratuit."
+        },
+        {
+          "numero": "n/a",
+          "titre": "Désaffectation et déclassement d'une emprise à Kerlann (parcelle BL64)",
+          "vote": "Unanimité",
+          "detail": "Désaffectation de 97 m² en zone naturelle protégée (NP), incohérente avec la topographie du terrain de Biomérieux, en vue de sa cession."
+        },
+        {
+          "numero": "n/a",
+          "titre": "Cession de l'emprise à Biomérieux",
+          "vote": "Unanimité",
+          "detail": "Vente de 97 m² au prix de 0,40 €/m² (environ 38,80 €), frais d'acte à la charge de l'acquéreur."
+        },
+        {
+          "numero": "n/a",
+          "titre": "Obligation réelle environnementale — ferme de Mérol",
+          "vote": "Unanimité",
+          "detail": "ORE de 99 ans imposant une exploitation en agriculture biologique sur les parcelles ZH 76, ZH 77 et ZK 19 à Bruz ; la ville est désignée tiers garant, chargée du suivi via rapports de certification et photos aériennes."
+        },
+        {
+          "numero": "n/a",
+          "titre": "Servitude réseau d'eau potable — zone de l'Épron",
+          "vote": "Unanimité",
+          "detail": "Convention de servitude avec le CEBR (Collectivité Eau du Bassin Rennais) pour régulariser des canalisations sous les parcelles BO 148 et BO 177, frais d'acte à la charge du CEBR."
+        },
+        {
+          "numero": "n/a",
+          "titre": "Règlement de fonctionnement du service jeunesse",
+          "vote": "Unanimité",
+          "detail": "Adoption du règlement intérieur de la maison des jeunes (11-25 ans), encadré par la DRAJES, la CAF et la MSA."
+        },
+        {
+          "numero": "n/a",
+          "titre": "Convention de partenariat service enfance / résidence senior Les Girandières",
+          "vote": "Unanimité",
+          "detail": "Animations partagées mensuelles entre résidents et enfants de l'accueil de loisirs du Vert Buisson, du 1er avril 2025 au 5 juillet 2026."
+        },
+        {
+          "numero": "n/a",
+          "titre": "Convention de partenariat service enfance / résidence Les Bruyères",
+          "vote": "Unanimité",
+          "detail": "Animations partagées mensuelles entre résidents et enfants du périscolaire Jacques Prévert, du 1er avril 2025 au 5 juillet 2026."
+        },
+        {
+          "numero": "n/a",
+          "titre": "Relais Petite Enfance intercommunal — avenant n°2",
+          "vote": "Unanimité",
+          "detail": "Convention Bruz-Laillé-Pont-Péan précisant l'organisation du temps de travail et les frais kilométriques des deux animatrices du RPE."
+        },
+        {
+          "numero": "n/a",
+          "titre": "Indemnité forfaitaire d'itinérance — animatrices du RPE",
+          "vote": "Unanimité",
+          "detail": "Indemnité annuelle fixée à 500 € (plafond réglementaire 615 €), versée en 4 fois, plus indemnités kilométriques réelles hors territoire du RPE."
+        },
+        {
+          "numero": "n/a",
+          "titre": "Subventions classes transplantées 2025",
+          "vote": "Unanimité",
+          "detail": "1 092 € (école Champ l'Évêque, Péaule), 3 822 € (La Providence Centre, Londres), 1 785 € (La Providence Vert Buisson, La Bourboule), 189 € (Sainte-Marie de Pont-Péan) — 20% des frais dans la limite de 7 €/jour/élève."
+        },
+        {
+          "numero": "n/a",
+          "titre": "Participation aux frais de restauration scolaire — classe ULIS Notre-Dame des Miracles",
+          "vote": "Unanimité",
+          "detail": "Prise en charge de la différence de coût de repas pour un enfant bruzois scolarisé en classe ULIS à Rennes, faute de place à La Providence."
+        },
+        {
+          "numero": "n/a",
+          "titre": "Participation aux frais de scolarisation — classe ULIS Notre-Dame des Miracles",
+          "vote": "Unanimité",
+          "detail": "Participation de 327,06 € pour l'année scolaire 2024-2025."
+        },
+        {
+          "numero": "n/a",
+          "titre": "Convention de partenariat — Fête de la Bretagne avec Bruzoneg",
+          "vote": "Unanimité",
+          "detail": "Événement du 16 au 21 mai 2025, déplacé place du Docteur Jolly, avec le soutien de la région Bretagne ; l'association Du Yezh s'est retirée du partenariat faute de bénévoles."
+        },
+        {
+          "numero": "n/a",
+          "titre": "Conventions partenariales associations 2025 (buvettes/stands événements)",
+          "vote": "Unanimité",
+          "detail": "Conventions standardisées pour Fête du sport, Fête de la musique, Forum des associations et Marché de Noël avec plusieurs associations locales (Bruz Solidarité, Les Crayons, ALB, Baby Gym, Kid's Sport, l'Olivier, etc.)."
+        },
+        {
+          "numero": "n/a",
+          "titre": "Projet culturel participatif — 2e édition",
+          "vote": "Unanimité",
+          "detail": "Budget de 15 000 € confié au Conseil Citoyen de la Vie Culturelle (CCVC) pour financer un projet citoyen d'investissement culturel ; appel à projets jusqu'au 30 mai 2025."
+        },
+        {
+          "numero": "n/a",
+          "titre": "Organisation générale du temps partiel (mise à jour réglementaire)",
+          "vote": "Unanimité",
+          "detail": "Mise en conformité avec le décret du 30 décembre 2024 élargissant le temps partiel aux agents à temps non complet et contractuels sous condition d'ancienneté."
+        },
+        {
+          "numero": "n/a",
+          "titre": "Avancements de grade 2025",
+          "vote": "Unanimité",
+          "detail": "Créations/suppressions de postes pour 4 agents (infrastructures, espaces verts, enfance-jeunesse) et annulation d'une nomination non conforme aux conditions statutaires."
+        },
+        {
+          "numero": "n/a",
+          "titre": "Subvention au Comité National d'Action Sociale (CNAS) 2025",
+          "vote": "Unanimité",
+          "detail": "Cotisation annuelle de 65 298 € pour l'ensemble des agents, plus 222 €/74 € pour les nouveaux arrivants selon la date d'entrée."
+        },
+        {
+          "numero": "n/a",
+          "titre": "Suppression/création de postes et mise à jour du tableau des effectifs",
+          "vote": "Unanimité",
+          "detail": "Remplacement du poste de responsable enfance-jeunesse à la direction Éducation."
+        }
+      ],
+      "points_chauds": [
+        {
+          "sujet": "Prime exceptionnelle pour les agents mobilisés lors des inondations",
+          "tension": "modérée",
+          "detail": "L'opposition (M. Houssin) relance la question posée au conseil précédent. La majorité (Mme Chevalier) répond que seules des heures supplémentaires et primes d'astreinte ont été versées (23 500 €, 38 245 € avec le matériel PCS), sans prime exceptionnelle à ce stade ; le sujet reste en débat interne à la majorité."
+        },
+        {
+          "sujet": "Budget participatif élargi vs. projet culturel participatif",
+          "tension": "faible",
+          "detail": "L'opposition (M. Salmon) propose un véritable budget participatif ouvert à d'autres thématiques (cadre de vie, biodiversité, espaces publics). La majorité (Mme Duran, Mme Pinard) répond avoir déjà privilégié une démarche participative intégrée aux projets existants plutôt qu'un dispositif budgétaire dédié, jugé plus lourd en ressources humaines."
+        },
+        {
+          "sujet": "Absence du montant de la subvention (15 000 €) dans la délibération sur le projet culturel participatif",
+          "tension": "faible",
+          "detail": "M. Houssin signale que le montant de 15 000 € ne figure pas dans le texte de la délibération ni son annexe ; la majorité reconnaît l'oubli et accepte de l'ajouter avant le vote."
+        },
+        {
+          "sujet": "Assurance des véhicules personnels des animatrices du RPE en déplacement professionnel",
+          "tension": "faible",
+          "detail": "Mme Lorissard demande confirmation que les deux agentes disposent bien d'une couverture assurance adaptée à l'usage professionnel de leur véhicule personnel ; la majorité indique que le service vérifie encore ce point."
+        }
+      ],
+      "impact_bruzois": [
+        "Poursuite du soutien municipal à l'emploi local via le PAE Rennes Sud, malgré une subvention en légère baisse",
+        "Sécurisation juridique et poursuite du chantier du 4e groupe scolaire malgré la défaillance d'un sous-traitant",
+        "Renforcement du lien intergénérationnel via les partenariats enfance/résidences seniors (Les Girandières, Les Bruyères)",
+        "Maintien de la prise en charge municipale pour les familles dont l'enfant est scolarisé en classe ULIS hors de Bruz, faute de place",
+        "15 000 € de budget participatif culturel ouvert aux citoyens et citoyennes bruzois pour un nouveau projet d'intérêt général",
+        "Poursuite de la conversion en agriculture biologique de terres agricoles à la ferme de Mérol, avec un engagement de 99 ans"
+      ],
+      "a_surveiller": [
+        "Décision de la majorité sur une éventuelle prime exceptionnelle post-inondations pour les agents municipaux",
+        "Vérification de l'assurance des véhicules personnels des animatrices du RPE en déplacement professionnel",
+        "Sélection et lauréats de la 2e édition du projet culturel participatif (appel à projets jusqu'au 30 mai 2025)",
+        "Étude en cours avec l'inspection académique pour une éventuelle classe ULIS dans le futur 4e groupe scolaire",
+        "Recherche d'une association pour tenir la buvette de la Fête de l'enfance, faute de reconduction de l'association de parents d'élèves",
+        "Bilan d'activité 2024 du PAE Rennes Sud, à diffuser après validation par l'assemblée générale du jeudi suivant"
+      ],
+      "statut": "passe"
     },
     {
       "date": "2025-03-03",
-      "titre": "Conseil Municipal du lundi 3 mars 2025 - vote du budget",
+      "titre": "Vote du budget 2025 et compte financier unique 2024",
       "youtube_id": "YqD9sOGF90g",
       "youtube_url": "https://youtu.be/YqD9sOGF90g",
-      "points_cles": [],
+      "points_cles": [
+        "Budget principal 2025 : 38,2 M€ de dépenses (23,6 M€ fonctionnement / 14,6 M€ investissement), recours à un emprunt de 1,4 M€",
+        "CFU 2024 : excédent de fonctionnement de 3 498 825,55 € et excédent global d'investissement de 4 236 778 €",
+        "4e groupe scolaire : 1,32 M€ dépensés sur 11 M€ prévus, engagement de 5 M€ supplémentaires en 2025",
+        "Rénovation hôtel de ville : budget porté de 1,44 M€ à 2,1 M€ (surcoût acté en commission MAPA)",
+        "Opposition : vote contre le budget principal (dénonce +9% de dépenses réelles réalisé/BP et recours à la manne exceptionnelle SPL Noyal), vote pour les budgets annexes",
+        "Débat prolongé sur le déficit chronique de la piscine de la Conterie (~1 M€ de participation communale, 25% à charge de Bruz)"
+      ],
       "sources": [
         {
           "label": "Vidéo YouTube",
@@ -765,14 +1483,96 @@
       "deliberations_url": "https://data.megalis.bretagne.bzh/organization/commune-de-bruz",
       "source_label": "Ville de Bruz — YouTube",
       "date_publication": "2025-03-05",
-      "id": "CM-2025-03-03"
+      "id": "CM-2025-03-03",
+      "resume_executif": "Le conseil municipal du 3 mars 2025 a validé le compte financier unique (CFU) 2024, l'affectation des résultats, la révision des autorisations de programme (4e groupe scolaire et hôtel de ville), puis voté le budget primitif 2025 de 38,2 millions d'euros. L'opposition a voté contre le budget principal, dénonçant une hausse des dépenses de fonctionnement masquée par des comparaisons biaisées et un recours à des ressources exceptionnelles non pérennes (dissolution de la SPL Noyal). La majorité a défendu une gestion maîtrisée, justifiée par les investissements structurants (4e groupe scolaire, hôtel de ville, ZAC Multisites) et l'entretien du service public. Le déficit chronique de la piscine de la Conterie et le climat social de l'équipement ont animé un débat prolongé. La séance s'est ouverte par une déclaration unanime de soutien à l'Ukraine et de défense des principes démocratiques.",
+      "deliberations": [
+        {
+          "numero": "1",
+          "titre": "Désignation du président de séance pour l'approbation du CFU 2024",
+          "vote": "Unanimité",
+          "detail": "Monsieur Letulzo est désigné président de séance pour la présentation et le vote des comptes financiers uniques."
+        },
+        {
+          "numero": "2-3",
+          "titre": "Approbation des comptes financiers uniques (CFU) 2024 - budget principal, budget annexe restauration, budget annexe de l'aérodrome",
+          "vote": "Adopté (budget principal et restauration ; détail non précisé pour l'aérodrome)",
+          "detail": "Excédent de fonctionnement de 3 498 825,55 € et résultat global d'investissement excédentaire de 4 236 778 € pour le budget principal ; le budget restauration présente 1 169 173,21 € de recettes de fonctionnement ; le budget aérodrome enregistre une subvention de 175 766 € de la ville pour compenser la cession gratuite de terrains."
+        },
+        {
+          "numero": "4",
+          "titre": "Affectation des résultats 2024",
+          "vote": "Unanimité",
+          "detail": "Affectation de l'excédent de fonctionnement de 3 498 825,55 € en recette d'investissement et report du solde d'exécution d'investissement de 4 236 778 €."
+        },
+        {
+          "numero": "5",
+          "titre": "Révision et modification des autorisations de programme et crédits de paiement (4e groupe scolaire et hôtel de ville)",
+          "vote": "Unanimité",
+          "detail": "4e groupe scolaire : engagement de 5 M€ en 2025 sur une enveloppe résiduelle de 9,68 M€. Hôtel de ville : enveloppe portée à 2,1 M€, avec engagement de 1,71 M€ en 2025 pour un reste à réaliser de 291 441,13 €."
+        },
+        {
+          "numero": "6",
+          "titre": "Vote du budget primitif 2025 (budget principal, restauration, aérodrome) et autorisations d'engagement de dépenses imprévues",
+          "vote": "Majoritaire (opposition contre le budget principal, opposition pour les budgets annexes)",
+          "detail": "Budget principal équilibré à 23,6 M€ en fonctionnement et 14,6 M€ en investissement, avec un emprunt de 1,4 M€ ; budget restauration équilibré à 1 322 987 € en fonctionnement ; autorisations de dépenses imprévues de 100 000 € par section."
+        }
+      ],
+      "points_chauds": [
+        {
+          "sujet": "Déficit et climat social de la piscine de la Conterie",
+          "tension": "haute",
+          "detail": "L'opposition (Loton, Athanaz) pointe une participation communale passée de 160 000 € à 372 000 € et un déficit cumulé de 1 M€ depuis le Covid. Houssin évoque la possibilité d'une fermeture ou délégation de service public si la situation ne se redresse pas, tout en écartant cette option pour l'instant. Ravaux et Letulzo attribuent les fermetures répétées à un climat social dégradé et des craintes de maladie professionnelle liées au chlore."
+        },
+        {
+          "sujet": "Contestation de la méthode budgétaire par l'opposition",
+          "tension": "haute",
+          "detail": "Loton dénonce une hausse réelle des dépenses de +9% (réalisé 2024 vs BP 2025) contre les +1% affichés (BP 2024 vs BP 2025), et l'usage de la manne exceptionnelle de la dissolution de la SPL Noyal (4,8 M€ en 2023) comme amortisseur. Letulzo rétorque qu'il faut comparer BP à BP, pas réalisé à BP."
+        },
+        {
+          "sujet": "Pertinence du 4e groupe scolaire face à la baisse des effectifs",
+          "tension": "modérée",
+          "detail": "L'opposition s'interroge sur la fermeture de 3 classes élémentaires annoncée par Ouest-France alors que le groupe scolaire est en construction. La majorité (Houssin, Kermarec) répond que l'équipement anticipe l'arrivée de 650 logements à Kerlann à terme et vise un horizon de 50 ans."
+        },
+        {
+          "sujet": "Hausse de la fiscalité locale depuis 2020",
+          "tension": "modérée",
+          "detail": "L'opposition rappelle une hausse de la taxe foncière de 12,6% en 2024 (après +6,5% en début de mandat), générant près de 4 M€ de recettes fiscales supplémentaires. La majorité assume ce choix comme nécessaire au financement de son programme."
+        },
+        {
+          "sujet": "Prime exceptionnelle pour les agents mobilisés lors des inondations",
+          "tension": "faible",
+          "detail": "Un élu (nom non identifié avec certitude dans la transcription) propose une délibération au prochain conseil pour valoriser l'engagement des agents municipaux lors des récentes inondations ; le maire Houssin accueille favorablement la proposition."
+        }
+      ],
+      "impact_bruzois": [
+        "Poursuite des grands chantiers : 4e groupe scolaire, rénovation énergétique de l'hôtel de ville, équipements sportifs de Kerlann",
+        "Réaménagement des cours d'école (Champ-Lévêque, Verbuisson, Jacques Prévert) et de la plaine Yann-Fanch-Kemener",
+        "Incertitude sur la pérennité et la qualité de service de la piscine de la Conterie (fermetures intempestives)",
+        "Poursuite des études pour la ZAC Multisites et lancement du schéma directeur immobilier et énergétique (SDIE)",
+        "Pas de nouvelle hausse d'impôts annoncée pour 2025, malgré des charges de fonctionnement en augmentation"
+      ],
+      "a_surveiller": [
+        "Décision sur l'avenir de la piscine de la Conterie (redressement, DSP ou fermeture) dans les prochains mois",
+        "Suivi de l'exécution du budget 2025 et de la trajectoire d'endettement (emprunt de 1,4 M€ contracté)",
+        "Éventuelle délibération sur une prime exceptionnelle pour les agents mobilisés lors des inondations",
+        "Avancement des travaux du 4e groupe scolaire et cohérence avec la prospective scolaire (baisse puis hausse attendue des effectifs)",
+        "Publication du schéma directeur immobilier et énergétique (SDIE) et des projets d'énergies renouvelables évoqués par Madame Pierre"
+      ],
+      "statut": "passe"
     },
     {
       "date": "2025-01-27",
-      "titre": "Conseil Municipal du lundi 27 janvier 2025",
+      "titre": "Inondations exceptionnelles, don à Mayotte et orientations budgétaires 2025",
       "youtube_id": "PKsgJCAyu5A",
       "youtube_url": "https://youtu.be/PKsgJCAyu5A",
-      "points_cles": [],
+      "points_cles": [
+        "Inondations : niveau proche de la crue de 2001, centre d'hébergement ouvert (salle Magnolia, 50 places), aide proposée par Rennes Métropole et la ville de Chartres",
+        "Don à la Croix-Rouge pour Mayotte : 2 500 € adoptés à l'unanimité (l'opposition proposait 5 000 €)",
+        "Épargne brute 2024 : 3,6 M€ (meilleur niveau depuis 2019 hors 2023, année d'un excédent exceptionnel de 4,8 M€ lié à la clôture de la SPL Noë)",
+        "Masse salariale : de 219,27 ETP (2020) à 234,01 ETP (2024), soit +14 postes (+20 selon l'opposition en intégrant Escale et subventions)",
+        "Investissement 2024 : 3,2 M€ financés sans emprunt ; réendettement prévu à partir de 2025 (3 M€ en 2025, 2 M€ en 2026, 2 M€ en 2029)",
+        "Hausse de la taxe foncière : +6,5 % en début de mandat puis +12,6 % en 2024"
+      ],
       "sources": [
         {
           "label": "Vidéo YouTube",
@@ -782,7 +1582,47 @@
       "deliberations_url": "https://data.megalis.bretagne.bzh/organization/commune-de-bruz",
       "source_label": "Ville de Bruz — YouTube",
       "date_publication": "2025-02-06",
-      "id": "CM-2025-01-27"
+      "id": "CM-2025-01-27",
+      "resume_executif": "Le conseil municipal du 27 janvier 2025 s'ouvre sur la gestion de crise liée à des inondations comparables à celles de 2001, avec ouverture d'un centre d'hébergement et mobilisation des services techniques. Le conseil adopte à l'unanimité un don de 2 500 € à la Croix-Rouge pour Mayotte, après un débat sur une proposition d'opposition de le porter à 5 000 €. Le débat d'orientation budgétaire 2025 donne lieu à un affrontement entre la majorité, qui défend une trajectoire d'investissement (4e groupe scolaire, rénovation de l'Hôtel de Ville, ZAC multisites) financée sans recours à l'emprunt en 2024, et l'opposition, qui dénonce une hausse de la masse salariale (+20 postes en 5 ans) et des impôts, et qualifie la prospective d'« insincère ». Deux délibérations d'urbanisme sont votées à l'unanimité : cession d'une place de stationnement au parking Pagnol et déclassement rétroactif de parcelles liées à un projet de desserte ferroviaire de 1981.",
+      "deliberations": [
+        {
+          "numero": "26-05-01",
+          "titre": "Délégations de pouvoir du maire (urbanisme, marchés publics, vie associative, culture, population)",
+          "vote": "Unanimité",
+          "detail": "Approbation des décisions prises par le maire dans le cadre de ses délégations de pouvoir sur plusieurs domaines de compétence."
+        },
+        {
+          "numero": "26-05-02",
+          "titre": "Don de solidarité à la population de Mayotte (cyclone Chido)",
+          "vote": "Unanimité",
+          "detail": "Don de 2 500 € à la Croix-Rouge après débat avec l'opposition qui proposait de porter le montant à 5 000 €, jugé non justifié par la majorité au regard des finances communales."
+        },
+        {
+          "numero": "26-05-03",
+          "titre": "Rapport d'orientation budgétaire (ROB) 2025",
+          "vote": "Débat pris acte (pas de vote)",
+          "detail": "Présentation du contexte macroéconomique, de la situation financière 2024 et des orientations 2025-2029 : 4e groupe scolaire, rénovation énergétique de l'Hôtel de Ville, ZAC multisites, réendettement progressif."
+        },
+        {
+          "numero": "26-05-04",
+          "titre": "Cession d'une place de stationnement au parking Pagnol",
+          "vote": "Unanimité",
+          "detail": "Vente d'une place (lot 112) à un riverain pour 14 000 €, conformément à l'avis du pôle d'évaluation domaniale, frais notariés à la charge de l'acquéreur."
+        },
+        {
+          "numero": "26-05-05",
+          "titre": "Déclassement rétroactif de parcelles liées au projet de desserte ferroviaire du Chanigueil (arrêté préfectoral de 1981)",
+          "vote": "Non conclu dans l'extrait fourni",
+          "detail": "Régularisation foncière de parcelles acquises en 1981 pour un projet jamais réalisé, revendues en 1988 et 2002 sans déclassement préalable du domaine public — notamment dans le cadre de la vente du site à la société Atlante."
+        }
+      ],
+      "points_chauds": [],
+      "impact_bruzois": [],
+      "a_surveiller": [
+        "Publication des délibérations sur Mégalis Bretagne",
+        "Bruz Mag — prochain numéro"
+      ],
+      "statut": "passe"
     }
   ],
   "conseil_metropolitain": [
