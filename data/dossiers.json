@@ -1495,9 +1495,9 @@
       "idees_ailleurs": [
         {
           "commune": "Chartres-de-Bretagne",
-          "idee": "Commune voisine de Bruz (5 km) — vérifier si une MSP y existe, ce qui crée un angle comparatif immédiat pour les Bruzois",
-          "pourquoi_bruz": "Bruz est plus peuplée (20 000 hab vs ~8 000) et ne dispose pas de MSP identifiée — l'écart mérite d'être documenté",
-          "source_url": null
+          "idee": "MSP Chartres-de-Bretagne confirmée — Rue de la Poterie, 35131, référencée sur sante.fr (annuaire officiel, classification L6223-3 du code de la santé publique). Une vraie maison de santé agréée, à 5 km de Bruz",
+          "pourquoi_bruz": "Chartres-de-Bretagne (~8 000 hab.) dispose d'une MSP officielle alors que Bruz (20 000 hab., 2,5x plus peuplée) n'en a aucune — écart net qui mérite d'être creusé",
+          "source_url": "https://www.sante.fr/maison-de-sante-l6223-3/chartres-de-bretagne/msp-chartres-de-bretagne"
         },
         {
           "commune": "Rennes Métropole / communes",
