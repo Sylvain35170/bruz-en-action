@@ -26,7 +26,6 @@ const DOSSIER_COLORS: Record<string, string> = {
   D05: "#0891b2", // carte — cyan
   D06: "#d97706", // piscine — ambre
   D07: "#374151", // sécurité — gris anthracite
-  D08: "#64748b", // city stade — gris
   D09: "#db2777", // culture — rose
   D10: "#ea580c", // éducation — orange
   D11: "#65a30d", // patrimoine — vert clair

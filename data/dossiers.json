@@ -903,58 +903,6 @@
       "image": "/bruz-en-action/illus-d07-securite.png"
     },
     {
-      "id": "D08",
-      "titre": "Démontage du city stade de la Plaine Yann-Fañch : qu'est-ce qui remplace ?",
-      "categorie": "Équipements",
-      "statut": "en_cours",
-      "featured": false,
-      "last_activity": "2026-06-18",
-      "date_ouverture": "2026-06-18",
-      "chapeau": "Dans le réaménagement de la Plaine Yann-Fañch Kemener (travaux sept. 2025, réouverture déc. 2025), le city stade a été supprimé. À la place : un « espace sportif ouvert à tous ». Les adolescents qui utilisaient le terrain clôturé ont-ils vraiment un équivalent ?",
-      "ce_quon_sait": [
-        "Le city stade de la Plaine Yann-Fañch Kemener a été démonté lors du réaménagement (sept. 2025)",
-        "Réouverture de la plaine en décembre 2025 avec jeux enfants et un « espace sportif ouvert à tous »",
-        "Le city stade était principalement utilisé par les adolescents et jeunes adultes du quartier",
-        "La consultation habitants a eu lieu avant les travaux — mais pas de retour public sur les usagers du city stade",
-        "Fabrice Jan est délégué au sport depuis mars 2026 — c'est lui qui répond sur ce dossier"
-      ],
-      "qui_decide": [
-        {
-          "nom": "Services techniques de la mairie",
-          "role": "Ont conduit le réaménagement — décision prise sous la mandature Salmon"
-        },
-        {
-          "nom": "Fabrice Jan (Bruz)",
-          "role": "Délégué au sport depuis mars 2026 — interlocuteur pour les suites éventuelles"
-        }
-      ],
-      "decisions": [
-        {
-          "date": "2025-09",
-          "description": "Démarrage du réaménagement de la Plaine Yann-Fañch — le city stade est démoli",
-          "source_url": "https://www.ville-bruz.fr/projets/amenagement-plaine-yann-fanch-kemener/"
-        },
-        {
-          "date": "2025-12",
-          "description": "Réouverture de la plaine — jeux enfants + espace sportif ouvert, plantations prévues début 2026",
-          "source_url": "https://www.ville-bruz.fr/projets/amenagement-plaine-yann-fanch-kemener/"
-        }
-      ],
-      "ce_quon_suit": [
-        "La réponse officielle de Fabrice Jan sur ce qui remplace le city stade pour les adolescents",
-        "Toute délibération sur un nouvel équipement de type city stade dans ce quartier ou dans les ZAC",
-        "Le budget sport 2026 — inclut-il un équipement de proximité pour la jeunesse ?"
-      ],
-      "sources": [
-        {
-          "label": "Mairie de Bruz — Réaménagement Plaine Yann-Fañch",
-          "url": "https://www.ville-bruz.fr/projets/amenagement-plaine-yann-fanch-kemener/"
-        }
-      ],
-      "actus_recentes": [],
-      "promesses_liees": []
-    },
-    {
       "id": "D10",
       "titre": "Écoles : Bruz peut-elle absorber 1 700 logements de plus ?",
       "categorie": "Éducation",
@@ -1145,7 +1093,7 @@
       "categorie": "Équipements",
       "statut": "en_cours",
       "featured": false,
-      "last_activity": "2026-06-27",
+      "last_activity": "2026-07-01",
       "date_ouverture": "2026-06-21",
       "chapeau": "Un city stade — terrain multisports clôturé, gratuit, sans inscription, pensé pour les 12-25 ans — installé en 2023 au stade Siméon Beliard pour 380 000 €, a été démonté fin mai 2026 après deux ans de nuisances sonores subies par les riverains (jusqu'à 80 dB relevés sur les terrasses). La nouvelle municipalité a agi vite. Elle promet une reconstruction près du skate-park pour 250 à 300 000 € supplémentaires. Ce dossier suit la concrétisation de cet engagement — et le coût total d'une implantation mal pensée.",
       "ce_quon_sait": [
@@ -1157,7 +1105,7 @@
         "Jean-René Houssin avait qualifié l'équipement de « mal pensé » pendant la campagne et après son élection",
         "Il ne reste sur site que le terrain de basket avec ses deux paniers",
         "Houssin a annoncé une reconstruction « un peu plus loin sur le même site, près du skate-park » pour 250 000 à 300 000 €",
-        "En 2025, le city stade de la Plaine Yann-Fañch a également été supprimé lors du réaménagement (→ D08)"
+        "Le city stade de la Plaine Yann-Fañch Kemener, un temps confondu avec celui de Siméon Beliard, n'a lui jamais été démonté — il a été conservé lors du réaménagement de la plaine (655 000 €, réouverture déc. 2025) ; seuls les jeux d'enfants vétustes ont été remplacés"
       ],
       "qui_decide": [
         {

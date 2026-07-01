@@ -25,7 +25,7 @@ DOSSIER_KEYWORDS: dict[str, list[str]] = {
     "D05": ["carte", "equipement", "quartier", "openstreetmap"],
     "D06": ["piscine", "conterie", "natation", "bassin", "équipement aquatique"],
     "D07": ["police municipale", "sécurité", "vidéoprotection", "voisins vigilants", "gendarmerie", "clspd", "tranquillité"],
-    "D08": ["city stade", "terrain synthétique", "équipements sportifs", "gymnase", "fabrice jan", "sport bruz"],
+    "D12": ["city stade", "terrain synthétique", "équipements sportifs", "gymnase", "fabrice jan", "sport bruz", "siméon beliard"],
 }
 
 # Seuil : nb de jours depuis last_activity pour retirer le featured

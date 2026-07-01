@@ -34,11 +34,10 @@ D04 = fiscalité / taxe foncière / impôts locaux
 D05 = équipements publics / carte / quartiers
 D06 = piscine / La Conterie / équipement aquatique
 D07 = police municipale / sécurité / vidéoprotection
-D08 = sports / city stade / gymnase / équipements sportifs
 D09 = vie associative / associations / culture
 D10 = écoles / enseignement / Vert-Buisson
-D11 = environnement / espaces verts / biodiversité
-D12 = CoSEC / salle de spectacle / équipement culturel
+D11 = Manoir de la Noë / Plan B / patrimoine / tiers-lieu citoyen
+D12 = city stade / Siméon Beliard / gymnase / équipements sportifs
 D13 = canicule / plan municipal / îlots de fraîcheur / climat
 """.strip()
 
