@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-06-27",
+    "last_updated": "2026-07-01",
     "note": "Actus de suivi des promesses — une actu = un événement daté lié à une ou plusieurs promesses"
   },
   "actus": [
@@ -11,7 +11,9 @@
       "source_label": "Mairie de Bruz",
       "date": "2026-06-27",
       "type": "analyse",
-      "promesses_liees": ["27"],
+      "promesses_liees": [
+        "27"
+      ],
       "detail": "Ce week-end, le complexe de Ker Lann accueille le Championnat de France de boccia — une première pour Bruz. Deux Bruzois qualifiés, un village handisport ouvert à tous, et un signal concret sur la promesse de développer le sport adapté.",
       "resume": "Le Championnat de France de boccia se tient à Bruz les 27 et 28 juin 2026, organisé par la section handisport de la JAB avec le CD Handisport 35. Deux athlètes bruzois sont en compétition.",
       "contenu": {
@@ -944,6 +946,37 @@
       "detail": "Le 22 juin, l'Ille-et-Vilaine passait en vigilance rouge canicule. À Bruz (20 000 habitants), le plan communal s'est enclenché : ventilateurs et brumisateurs dans les écoles, repas froids avec pains de glace, collecte des déchets décalée aux heures fraîches (5h–13h et 20h–3h), activités sportives suspendues, registre CCAS activé. Des mesures classiques, dans les délais attendus.\n\nCe que font Rennes et Nantes permet de situer Bruz sur l'échelle de préparation.\n\n**Rennes : une carte, des lieux, des appels**\n\nDès le passage en alerte rouge, Rennes a rendu accessible une carte interactive de ses espaces frais — parcs ouverts 24h/24, pataugeoires jusqu'à 22h45, deux bars à eau installés place de l'Hôtel de Ville et esplanade Charles-de-Gaulle, Les Champs Libres climatisés ouverts dès 10h. Le CCAS a déclenché une campagne d'appels téléphoniques aux personnes inscrites au registre vulnérables — pas seulement le registre activé, mais un contact proactif. Les EHPAD disposant d'espaces climatisés ont ouvert leurs portes au public pendant la journée.\n\n**Nantes Métropole : 270 lieux référencés**\n\nNantes Métropole répertorie près de 270 espaces frais sur une carte en ligne, couvrant six communes (dont Saint-Herblain, Rezé, Orvault). 18 pataugeoires, des miroirs d'eau, des fontaines, des centres communautaires climatisés. La carte est accessible depuis le site de la métropole, mise à jour en temps réel pendant l'épisode.\n\n**Ce qu'on ne trouve pas encore à Bruz**\n\nAucune carte ou liste publique d'espaces frais n'existe sur le territoire bruzois. La mairie recommande de \"trouver un endroit climatisé ou frais 2 à 3 heures par jour\" sans indiquer où. Pour une commune de 20 000 habitants disposant d'une médiathèque, d'équipements sportifs couverts et d'espaces verts, la ressource existe — elle n'est simplement pas cartographiée ni communiquée.\n\nCôté CCAS, le registre des personnes vulnérables a bien été activé (02 99 57 12 47). Mais aucun chiffre n'est publié : combien de personnes suivies ? Des appels ont-ils été passés, ou l'inscription suffit-elle à déclencher un suivi ? La question reste ouverte.\n\nUn point de calendrier mérite d'être noté : la fermeture de la salle intérieure de la piscine Conterie pour travaux techniques est tombée exactement du 22 juin au 3 juillet. Le bassin nordique extérieur restait accessible — mais la coïncidence illustre l'intérêt d'anticiper les périodes de tension lors de la programmation des travaux sur les équipements publics.\n\nEnfin, le Plan Communal de Sauvegarde (PCS) de Bruz — obligatoire pour les communes de plus de 10 000 habitants — est-il à jour et intègre-t-il les scénarios canicule ? La réponse n'est pas publique.\n\n**Ce qu'on suit**\n\nLa canicule de juin 2026 ne sera probablement pas la dernière. Le Fonds vert finance depuis 2025 des travaux d'adaptation thermique des bâtiments publics, dont les écoles — sous condition de prise en compte du confort d'été. Bruz a-t-elle candidaté ? La réponse n'est pas publique à ce jour.",
       "dossier": "D13",
       "type": "analyse"
+    },
+    {
+      "id": "mairie-3133d1",
+      "titre": "L'Ille-et-Vilaine passe en vigilance sécheresse",
+      "source_url": "https://www.ville-bruz.fr/actualites/alerte-secheresse/",
+      "source_label": "Mairie de Bruz — Actualités",
+      "date": "2026-07-01",
+      "resume": "L'Ille-et-Vilaine passe en vigilance sécheresse, impactant la gestion des ressources en eau à Bruz. La mairie active ses protocoles de restriction et ses mesures de sensibilisation face à cette alerte climatique.",
+      "dossier": "D13",
+      "type": "mairie"
+    },
+    {
+      "id": "presse-aa1104",
+      "titre": "À Bruz, la cuisine centrale garde ses trois carottes, les étoiles de la restauration scolaire",
+      "source_url": null,
+      "source_label": "Équipements Bruz — presse",
+      "date": "2026-06-28",
+      "resume": "La cuisine centrale bruzaise maintient sa reconnaissance en restauration scolaire, avec sa notation « trois carottes ». Ce service public assure la qualité des repas servis aux élèves des écoles bruzaises.",
+      "dossier": "D10",
+      "type": "presse",
+      "lien_expire_risque": true
+    },
+    {
+      "id": "of-c51623",
+      "titre": "Bruz. De nouveaux terrains à bâtir au sud de la commune",
+      "source_url": "https://www.ouest-france.fr/bretagne/bruz-35170/bruz-de-nouveaux-terrains-a-batir-au-sud-de-la-commune-34e64674-5a50-4ce5-831b-91f70efec037",
+      "source_label": "Ouest-France",
+      "date": "2026-06-29",
+      "resume": "De nouveaux terrains résidentiels s'aménagent au sud de Bruz, dans le quartier des Louvrais-Coudrais, prolongeant le domaine du Verger construit entre 2019 et 2025. Le projet poursuit l'offre de logements individuels et collectifs au sud de la commune.",
+      "dossier": "D02",
+      "type": "presse"
     }
   ]
 }

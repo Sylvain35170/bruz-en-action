@@ -1,7 +1,7 @@
 {
   "meta": {
     "description": "Initiatives locales que Bruz en Action met en lumière — causes, commerces, associations",
-    "last_update": "2026-06-30"
+    "last_update": "2026-07-01"
   },
   "items": [
     {
@@ -28,13 +28,13 @@
     },
     {
       "id": "CP03",
-      "type": "cause",
-      "titre": "Maintien du service de garde médicale le week-end",
-      "chapeau": "Plusieurs médecins généralistes de Bruz ont alerté sur la fragilité du système de garde du week-end. BEA soutient la pétition en cours.",
-      "besoin": "signatures",
-      "lien": null,
+      "type": "commerce",
+      "titre": "Les Gamins du Marais",
+      "chapeau": "Nouvelle ferme maraîchère bio installée à Bruz — légumes locaux, frais et de saison, en circuit court. Écologie, alimentation saine et vente directe : présents au marché des Halles Pagnol le vendredi matin (8h-13h).",
+      "besoin": "clients",
+      "lien": "https://lesgaminsdumarais.fr/",
       "contact": null,
-      "date_ajout": "2026-06-30",
+      "date_ajout": "2026-07-01",
       "active": true
     }
   ]
