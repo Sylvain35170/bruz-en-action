@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "description": "Initiatives locales que Bruz en Action met en lumière — causes, commerces, associations",
+    "last_update": "2026-06-30"
+  },
+  "items": [
+    {
+      "id": "CP01",
+      "type": "association",
+      "titre": "Les Restos du Cœur de Bruz",
+      "chapeau": "L'antenne bruzoise cherche des bénévoles pour la distribution hebdomadaire du mercredi matin.",
+      "besoin": "bénévoles",
+      "lien": "https://www.restosducoeur.org",
+      "contact": null,
+      "date_ajout": "2026-06-30",
+      "active": true
+    },
+    {
+      "id": "CP02",
+      "type": "commerce",
+      "titre": "La Cabane à Vélos",
+      "chapeau": "Nouvel atelier de réparation participatif ouvert en avril 2026 — venez réparer votre vélo avec l'aide de bénévoles mécaniciens.",
+      "besoin": "clients",
+      "lien": null,
+      "contact": null,
+      "date_ajout": "2026-06-30",
+      "active": true
+    },
+    {
+      "id": "CP03",
+      "type": "cause",
+      "titre": "Maintien du service de garde médicale le week-end",
+      "chapeau": "Plusieurs médecins généralistes de Bruz ont alerté sur la fragilité du système de garde du week-end. BEA soutient la pétition en cours.",
+      "besoin": "signatures",
+      "lien": null,
+      "contact": null,
+      "date_ajout": "2026-06-30",
+      "active": true
+    }
+  ]
+}

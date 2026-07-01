@@ -150,6 +150,28 @@ a:hover { text-decoration: underline; }
   outline-offset: 2px;
 }
 
+/* Drawer links — hover + active states */
+.bea-drawer-link {
+  display: block;
+  padding: 13px 12px;
+  border-radius: 8px;
+  color: rgba(255,255,255,0.85);
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.15s, color 0.15s;
+}
+.bea-drawer-link:hover {
+  background: rgba(255,255,255,0.12);
+  color: #fff;
+}
+.bea-drawer-link.active {
+  background: rgba(255,255,255,0.18);
+  color: #fff;
+  border-left: 3px solid var(--brand-orange);
+  padding-left: 9px;
+}
+
 @media (max-width: 640px) {
   .bea-hero { grid-template-columns: 1fr !important; }
   .bea-foot { grid-template-columns: 1fr !important; }

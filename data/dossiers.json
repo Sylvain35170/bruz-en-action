@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-06-27",
+    "last_updated": "2026-06-28",
     "version": "3.0"
   },
   "dossiers": [
@@ -608,7 +608,8 @@
           "source_label": "DGFiP"
         }
       ],
-      "promesses_liees": []
+      "promesses_liees": [],
+      "image": "/bruz-en-action/illus-d04-taxe.png"
     },
     {
       "id": "D05",
@@ -743,7 +744,8 @@
         }
       ],
       "actus_recentes": [],
-      "promesses_liees": []
+      "promesses_liees": [],
+      "image": "/bruz-en-action/illus-d07-securite.png"
     },
     {
       "id": "D08",
@@ -979,7 +981,8 @@
           "source_label": "Ouest-France"
         }
       ],
-      "promesses_liees": []
+      "promesses_liees": [],
+      "image": "/bruz-en-action/illus-d11-patrimoine.png"
     },
     {
       "id": "D12",
@@ -1280,6 +1283,106 @@
         }
       ],
       "promesses_liees": []
+    },
+    {
+      "id": "D15",
+      "titre": "Offre de soins à Bruz : médecins, désert médical, et après ?",
+      "categorie": "Santé",
+      "statut": "en_cours",
+      "featured": false,
+      "last_activity": "2026-06-28",
+      "date_ouverture": "2026-06-28",
+      "chapeau": "Bruz grandit vite — 20 000 habitants aujourd'hui, 1 700 logements de plus à venir. Mais l'offre médicale suit-elle ? Aucun spécialiste en ville, une maison de santé absente, et un programme municipal qui ne mentionne pas l'accès aux soins. Ce dossier suit ce que les Bruzois peuvent ou ne peuvent pas trouver chez eux.",
+      "ce_quon_sait": [
+        "Bruz compte environ 25 médecins généralistes pour ~20 000 habitants (source : Doqi.fr / Ameli annuaire santé) — soit ~125 médecins pour 100 000 hab, sous la moyenne nationale (~148/100 000 selon Drees 2023)",
+        "Principaux cabinets : Cabinet Vert Buisson (2 place du Vert Buisson, tél. 02 22 91 06 30), SCM Bruz Médical (54 av. Alphonse Legault, tél. 02 99 52 65 25), cabinets rue de Gavrinis et rue Chateaubriand",
+        "Quasi-totalité des généralistes en secteur 1 (tarifs conventionnés Sécurité sociale) — une seule praticienne non conventionnée recensée",
+        "Aucun spécialiste (cardiologue, dermatologue, ophtalmologue, pédiatre) n'est installé à Bruz même — tous à Rennes (8-15 km)",
+        "Aucune maison de santé pluriprofessionnelle (MSP) officiellement identifiée sur la commune",
+        "6 pharmacies en ville, 10 cabinets infirmiers répertoriés par la mairie",
+        "La page santé de la mairie invite les praticiens à s'inscrire par mail (infocom@ville-bruz.fr) — indicateur d'un annuaire géré de façon passive, potentiellement incomplet",
+        "Le Dr Pierre Teglia (Cabinet du Vert Buisson, installé depuis 2009) accepte de nouveaux patients en priorité pour les Bruzois sans médecin traitant",
+        "L'ARS Bretagne a soumis un nouveau zonage médecin à consultation (avril-mai 2026) — l'arrêté est attendu pour l'été 2026 ; le classement de Bruz (sous-dotée / intermédiaire / bien dotée) n'est pas encore officiel",
+        "Le programme Houssin 2026 ne comporte aucun engagement explicite sur l'offre de soins ou l'accès aux médecins"
+      ],
+      "qui_decide": [
+        {
+          "nom": "ARS Bretagne",
+          "role": "Classe les communes en zones de zonage médecin (sous-dotée, intermédiaire, bien dotée) — ouvre ou ferme les aides à l'installation des médecins"
+        },
+        {
+          "nom": "Mairie de Bruz",
+          "role": "Peut faciliter l'installation (locaux, subventions) et porter un projet de MSP ou centre de santé municipal — aucun engagement public à ce jour"
+        },
+        {
+          "nom": "Rennes Métropole",
+          "role": "Peut intervenir via les contrats locaux de santé (CLS) signés avec l'ARS"
+        },
+        {
+          "nom": "CPAM Ille-et-Vilaine",
+          "role": "Accompagne les démarches de médecin traitant et oriente les patients sans MG via le 116 117"
+        }
+      ],
+      "decisions": [],
+      "ce_quon_suit": [
+        "Publication du nouveau zonage médecin ARS Bretagne (été 2026) : Bruz sera-t-elle classée sous-dotée ? Ce classement ouvre les aides à l'installation",
+        "Une délibération du conseil municipal sur un projet de MSP ou centre de santé municipal a-t-elle été ou sera-t-elle présentée ?",
+        "La ZAC Multisites (+1 700 logements, ~3 500 à 4 000 habitants supplémentaires) intègre-t-elle un espace dédié à la santé dans les cahiers des charges des aménageurs ?",
+        "La Maison France Services (promise dans le programme) intégrera-t-elle des permanences de professionnels de santé ou d'assistants médicaux ?",
+        "Combien de Bruzois sont sans médecin traitant déclaré ? La CPAM publie ce chiffre par commune — à surveiller"
+      ],
+      "sources": [
+        {
+          "label": "Annuaire santé Ameli — médecins généralistes Bruz",
+          "url": "https://annuairesante.ameli.fr/trouver-un-professionnel-de-sante/medecin-generaliste/35-ille-et-vilaine-bruz/professionlabel-01-05"
+        },
+        {
+          "label": "Doqi.fr — 25 médecins généralistes à Bruz",
+          "url": "https://www.doqi.fr/medecins-generalistes/bruz-35170"
+        },
+        {
+          "label": "Dr Pierre Teglia — Cabinet Vert Buisson (accepte nouveaux patients)",
+          "url": "https://docteur-teglia.sante.pro/"
+        },
+        {
+          "label": "ARS Bretagne — zonage médecin 2026, consultation terminée, arrêté à venir",
+          "url": "https://www.bretagne.ars.sante.fr/zonage-medecin-2026-lars-bretagne-soumet-la-carte-actualisee-la-concertation-jusquau-15-mai-2026"
+        },
+        {
+          "label": "Mairie de Bruz — page santé physique",
+          "url": "https://www.ville-bruz.fr/mon-quotidien/sante/sante-physique/"
+        }
+      ],
+      "actus_recentes": [
+        {
+          "date": "2026-06-28",
+          "titre": "Bruz n'a pas de maison de santé — et son programme municipal n'en promet pas",
+          "detail": "Bruz compte environ 25 médecins généralistes pour 20 000 habitants, soit un ratio (~125/100 000 hab) inférieur à la moyenne nationale. Aucun spécialiste n'est installé en ville : cardiologues, dermatologues, ophtalmologues, pédiatres — tout se passe à Rennes. Aucune maison de santé pluriprofessionnelle (MSP) n'existe sur la commune. Le programme de Jean-René Houssin, élu en mars 2026, ne comporte aucun engagement explicite sur l'offre de soins.\n\nL'ARS Bretagne a soumis un nouveau zonage médecin à consultation jusqu'au 15 mai 2026. L'arrêté définitif est attendu pour l'été 2026. Si Bruz est classée \"sous-dotée\", des aides à l'installation des médecins (majoration des actes, aides à l'équipement) deviendraient accessibles — un levier que la commune pourrait alors mobiliser.\n\nLa question devient plus aiguë avec les 1 700 logements de la ZAC Multisites : à raison d'environ 2 personnes par logement, cela représente 3 000 à 4 000 habitants supplémentaires dans les prochaines années, sans renforcement de l'offre médicale identifié dans les cahiers des charges des aménageurs.",
+          "source_url": null,
+          "source_label": "Bruz en Action"
+        }
+      ],
+      "promesses_liees": [],
+      "idees_ailleurs": [
+        {
+          "commune": "Chartres-de-Bretagne",
+          "idee": "Commune voisine de Bruz (5 km) — vérifier si une MSP y existe, ce qui crée un angle comparatif immédiat pour les Bruzois",
+          "pourquoi_bruz": "Bruz est plus peuplée (20 000 hab vs ~8 000) et ne dispose pas de MSP identifiée — l'écart mérite d'être documenté",
+          "source_url": null
+        },
+        {
+          "commune": "Rennes Métropole / communes",
+          "idee": "Contrat Local de Santé (CLS) signé avec l'ARS — permet de coordonner les acteurs et d'obtenir des financements pour attirer des professionnels de santé",
+          "pourquoi_bruz": "Bruz pourrait solliciter un CLS via Rennes Métropole ou directement avec l'ARS Bretagne — aucune démarche visible à ce jour",
+          "source_url": "https://www.bretagne.ars.sante.fr/les-contrats-locaux-de-sante"
+        },
+        {
+          "commune": "Vezin-le-Coquet",
+          "idee": "Commune de taille similaire dans Rennes Métropole — dispose d'une maison de santé pluriprofessionnelle (MSP)",
+          "pourquoi_bruz": "Démontre qu'une commune de l'agglo rennaise peut créer une MSP — un modèle concret à étudier pour Bruz",
+          "source_url": null
+        }
+      ]
     }
   ]
 }
