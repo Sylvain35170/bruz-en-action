@@ -44,6 +44,7 @@
 - [ ] **Script import_excel.py** — mise à jour auto des statuts depuis l'Excel
 - [ ] **CRs réunions** — réimporter les docx (encodage zip raté sur les accents)
 - [ ] **Actus** — enrichir au fil des décisions
+- [ ] **Agent veille cassé depuis le 18/06** — launchd bloqué par macOS (Dossier Documents), cause : `/opt/homebrew/bin/python3` signé "adhoc", perd sa permission à chaque `brew upgrade python`. Fix GUI en cours (Réglages → Confidentialité → Dossier Documents / Accès complet au disque, toggle off/on sur python3). Après reboot : relancer le job (`launchctl kickstart -k gui/$(id -u)/com.bruz-en-action.veille`) et vérifier `scripts/veille.log`. Envisager `brew pin python@3.14` pour limiter la récidive.
 
 ## 💡 Idées
 

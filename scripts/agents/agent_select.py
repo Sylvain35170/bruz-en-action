@@ -6,7 +6,7 @@ Agent Select — Tri et enrichissement éditorial via SDK Anthropic.
 Lit actus_queue.json, envoie les items à Claude (Haiku, par batches),
 récupère pour chaque item :
   - resume      : 2 phrases en français
-  - dossier     : D01-D13 ou "à_classer"
+  - dossier     : un ID de DOSSIERS_DESC ou "à_classer"
   - pertinence  : 0-3 (0 = hors sujet, 3 = très pertinent)
 
 Écrit le résultat dans scripts/proposals/YYYY-MM-DD.json.
@@ -15,6 +15,7 @@ Items avec pertinence 0 apparaissent dans les proposals avec flag "ignore".
 """
 
 import json
+import shutil
 import subprocess
 import sys
 from pathlib import Path
@@ -23,22 +24,28 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 from utils import DATA_DIR, QUEUE_FILE, PROPOSALS_DIR, load_json, log, save_json, today
 
 AGENT_NAME = "select"
-CLAUDE_CLI = "claude"
+# Chemin complet nécessaire : sous launchd, PATH ne contient que /usr/bin:/bin:/usr/sbin:/sbin,
+# donc "claude" seul (résolu via PATH) échoue silencieusement (exit 78) hors shell interactif.
+CLAUDE_CLI = shutil.which("claude") or "/opt/homebrew/bin/claude"
 MODEL = "claude-haiku-4-5-20251001"
 
+# Tenu à jour manuellement — doit rester synchronisé avec les id/titre/categorie
+# de data/dossiers.json. D08 et D09 ont été retirés (prémisses fausses/fabriquées) ;
+# D16-D18 sont des sujets identifiés au backlog mais pas encore ouverts en dossier.
 DOSSIERS_DESC = """
 D01 = T4 / trambus / transport en commun / Ker Lann / gare Bruz
 D02 = ZAC Multisites / logement / urbanisme / aménagement
 D03 = budget municipal / finances / conseil municipal
 D04 = fiscalité / taxe foncière / impôts locaux
-D05 = équipements publics / carte / quartiers
+D05 = carte des projets / équipements publics / quartiers
 D06 = piscine / La Conterie / équipement aquatique
-D07 = police municipale / sécurité / vidéoprotection
-D09 = vie associative / associations / culture
-D10 = écoles / enseignement / Vert-Buisson
+D07 = police municipale / sécurité / vidéoprotection / gendarmerie
+D10 = écoles / enseignement / Vert-Buisson / démographie scolaire
 D11 = Manoir de la Noë / Plan B / patrimoine / tiers-lieu citoyen
 D12 = city stade / Siméon Beliard / gymnase / équipements sportifs
 D13 = canicule / plan municipal / îlots de fraîcheur / climat
+D14 = chantiers / voirie / pont de la Gare / ZAC Multisites travaux
+D15 = offre de soins / médecins / désert médical / santé
 """.strip()
 
 PROMPT_TEMPLATE = """\

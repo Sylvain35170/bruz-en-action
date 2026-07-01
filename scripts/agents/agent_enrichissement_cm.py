@@ -18,6 +18,7 @@ Aucune dépendance LLM obligatoire — fonctionne en local si pas de clé.
 import json
 import os
 import re
+import shutil
 import subprocess
 import sys
 from pathlib import Path
@@ -100,7 +101,7 @@ TRANSCRIPTION :
 {transcript}
 """
 
-CLAUDE_CLI = "claude"  # claude CLI — déjà authentifié via Claude Code
+CLAUDE_CLI = shutil.which("claude") or "/opt/homebrew/bin/claude"  # chemin complet requis sous launchd (PATH minimal)
 
 
 # ---------------------------------------------------------------------------

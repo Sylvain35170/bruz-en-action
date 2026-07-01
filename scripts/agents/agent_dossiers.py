@@ -25,7 +25,12 @@ DOSSIER_KEYWORDS: dict[str, list[str]] = {
     "D05": ["carte", "equipement", "quartier", "openstreetmap"],
     "D06": ["piscine", "conterie", "natation", "bassin", "équipement aquatique"],
     "D07": ["police municipale", "sécurité", "vidéoprotection", "voisins vigilants", "gendarmerie", "clspd", "tranquillité"],
+    "D10": ["écoles", "vert-buisson", "vert buisson", "groupe scolaire", "effectifs scolaires", "carte scolaire"],
+    "D11": ["manoir de la noë", "plan b", "tiers-lieu", "guinguette"],
     "D12": ["city stade", "terrain synthétique", "équipements sportifs", "gymnase", "fabrice jan", "sport bruz", "siméon beliard"],
+    "D13": ["canicule", "îlot de chaleur", "plan canicule", "vigilance rouge", "ccas"],
+    "D14": ["chantier", "voirie", "pont de la gare", "travaux zac", "pasteur"],
+    "D15": ["médecin", "désert médical", "maison de santé", "msp", "offre de soins", "ars bretagne"],
 }
 
 # Seuil : nb de jours depuis last_activity pour retirer le featured
