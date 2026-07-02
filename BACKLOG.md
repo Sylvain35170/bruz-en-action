@@ -25,6 +25,8 @@
 - [ ] **D16** — Économie locale : commerce, artisanat, Ker Lann, aides aux entreprises — pilier 4 du programme, zéro dossier actuellement
 - [ ] **D17** — Coup de pouce : associations et jeunes entreprises (subventions, salles, couveuse, coworking)
 - [ ] **D18** — Démocratie locale : réunions de quartier, CMJ, transparence — pilier 7, mesurable sur le mandat
+- [ ] **D19 (à créer)** — Équipements sportifs à Bruz : vue d'ensemble gymnases/terrains/city stades, au-delà du seul D12 (city stade Siméon Beliard) et D06 (piscine) — vérifier chevauchement avant création
+- [ ] **D20 (à créer)** — Ker Lann : campus universitaire et projets de logement étudiant — angle distinct de D01 (T4) et D02 (ZAC Multisites), qui mentionnent Ker Lann sans le traiter comme sujet à part
 - [ ] **idees_ailleurs** — alimenter les dossiers D01–D12 avec des pratiques d'autres communes (champ JSON en place, vide sur tous sauf D13)
 
 ## 🟡 À faire — Design & Illustrations
@@ -50,3 +52,4 @@
 
 - Alertes email/RSS quand une promesse change de statut
 - Export PDF du tableau de bord par pilier
+- **Pages orphelines** — `/metro` (doublon quasi-exact de `/metropole`) et `/liens` ne sont liées depuis aucun nav ; décider suppression ou rattachement

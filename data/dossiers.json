@@ -615,25 +615,35 @@
     },
     {
       "id": "D05",
-      "titre": "Carte des projets à Bruz",
+      "titre": "Carte de Bruz : quartiers et petits projets urbains",
       "categorie": "Urbanisme",
       "statut": "en_cours",
       "featured": false,
-      "last_activity": "2026-06-18",
+      "last_activity": "2026-07-02",
       "date_ouverture": "2026-06-16",
-      "chapeau": "Carte interactive des projets en cours à Bruz : secteurs ZAC Multisites, corridor T4, équipements existants et futurs. Cliquez sur les zones pour explorer.",
+      "chapeau": "Carte interactive de Bruz et veille sur les projets d'urbanisme qui ne rentrent pas déjà dans un dossier dédié (hors ZAC Multisites, voir D02, hors Trambus T4, voir D01, et hors chantiers de voirie en cours, voir D14) : évolutions de quartier, permis groupés, équipements publics annoncés.",
       "ce_quon_sait": [
-        "La ZAC Multisites couvre plusieurs secteurs géographiques distincts dans Bruz",
-        "Le corridor T4 traverse Ker Lann avant d'atteindre Bruz",
-        "La carte est mise à jour au fil des délibérations"
+        "La carte interactive (page /carte) situe la ZAC Multisites (6 secteurs, ~1 700 logements à horizon 2040) et le corridor indicatif du Trambus T4",
+        "Les tracés et périmètres affichés sont indicatifs — à confirmer avec les documents officiels de la commune et de Rennes Métropole",
+        "Bruz est couverte par le Plan Local d'Urbanisme intercommunal (PLUi) de Rennes Métropole — c'est ce document qui fixe les règles de constructibilité par zone"
       ],
       "qui_decide": [],
       "decisions": [],
       "ce_quon_suit": [
-        "Les nouvelles zones constructibles ouvertes en révision de PLU",
-        "Les emplacements réservés pour les futurs équipements publics"
+        "Les nouvelles zones constructibles ouvertes en révision de PLUi",
+        "Les emplacements réservés pour les futurs équipements publics",
+        "Un projet de 67 logements évoqué par la presse dans le quartier du Vert-Buisson — repéré par la veille automatique le 29/06/2026, mais article source inaccessible (lien Google News sans URL propre) : à confirmer avant d'écrire quoi que ce soit dessus"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "label": "Ville de Bruz — Plan local d'urbanisme intercommunal",
+          "url": "https://www.ville-bruz.fr/mon-quotidien/urbanisme/plan-local-durbanisme-intercommunal/"
+        },
+        {
+          "label": "Carte interactive — Bruz en Action",
+          "url": "/bruz-en-action/carte"
+        }
+      ],
       "lien_externe": "/bruz-en-action/carte",
       "actus_recentes": [],
       "promesses_liees": []
@@ -803,13 +813,13 @@
     },
     {
       "id": "D07",
-      "titre": "Police municipale : un renforcement d'effectifs et d'équipement engagé",
+      "titre": "La sécurité à Bruz",
       "categorie": "Sécurité",
       "statut": "en_cours",
       "featured": false,
       "last_activity": "2026-06-01",
       "date_ouverture": "2026-06-18",
-      "chapeau": "Bruz reste sous régime de gendarmerie nationale, mais sa police municipale grandit : effectif porté à 8 agents, un poste supplémentaire en cours de recrutement, agents désormais armés (catégories B et D) et équipés de caméras-piétons. Ce dossier suit si le renforcement promis par la majorité Houssin se traduit dans les faits — et à quel rythme.",
+      "chapeau": "Bruz reste sous régime de gendarmerie nationale, mais sa police municipale grandit : effectif porté à 8 agents, un poste supplémentaire en cours de recrutement, agents désormais armés (catégories B et D) et équipés de caméras-piétons. Ce dossier suit l'ensemble de la chaîne sécurité locale — police municipale, gendarmerie, vidéoprotection, statistiques de délinquance — et si le renforcement promis par la majorité Houssin se traduit dans les faits.",
       "ce_quon_sait": [
         "L'équipe de police municipale de Bruz compte actuellement 8 agents : 1 responsable, 3 policiers municipaux, 2 ASVP (agents de surveillance de la voie publique), 1 secrétaire et 2 agents de surveillance du passage des écoles",
         "Un poste supplémentaire d'agent de police municipale est en cours de recrutement (création de poste, offre publiée en 2026, candidatures closes le 09/07/2026, entretiens le 20/07/2026) — l'effectif passerait à 9 agents s'il est pourvu",
@@ -906,13 +916,13 @@
     },
     {
       "id": "D10",
-      "titre": "Écoles : Bruz peut-elle absorber 1 700 logements de plus ?",
+      "titre": "Offre scolaire à Bruz",
       "categorie": "Éducation",
       "statut": "en_cours",
       "featured": false,
       "last_activity": "2026-07-01",
       "date_ouverture": "2026-06-18",
-      "chapeau": "La ZAC Multisites prévoit 1 700 nouveaux logements. Si chaque logement accueille en moyenne 0,5 enfant scolarisable, c'est 850 élèves supplémentaires à absorber. Les écoles actuelles ont-elles la capacité ? Ce dossier suit la planification scolaire du mandat.",
+      "chapeau": "La ZAC Multisites prévoit 1 700 nouveaux logements. Si chaque logement accueille en moyenne 0,5 enfant scolarisable, c'est 850 élèves supplémentaires à absorber. Les écoles actuelles ont-elles la capacité ? Ce dossier suit toute l'offre scolaire du mandat — primaire, collège, lycée, public et privé — et qui décide de quoi entre la commune, l'État, le Département et la Région.",
       "ce_quon_sait": [
         "Bruz compte 3 groupes scolaires publics : Champ l'Évêque, Jacques Prévert et Vert Buisson. Un 4e groupe est en construction à Ker Lann Sud (14 classes prévues, phase 1 = 8 classes). 2 écoles privées complètent l'offre (La Providence Centre et La Providence Vert Buisson)",
         "La ZAC Multisites (1 700 logements) va générer un besoin scolaire significatif sur 10 ans",
@@ -922,16 +932,25 @@
         "Contexte démographique national : natalité au plus bas historique (663 000 naissances en 2024, 1,62 enfant/femme). En Ille-et-Vilaine, la carte scolaire 2026-2027 (CDEN du 2 avril 2026) acte 74 fermetures de classes contre seulement 32 ouvertures dans le 1er degré, après -1 296 élèves en 2025 et -5 580 cumulés depuis 2020",
         "Rennes Métropole résiste mieux que la moyenne nationale (-2,1% d'enfants de 0-3 ans entre 2020 et 2023, contre -5,1% en France), mais l'académie de Rennes a tout de même supprimé 75 postes en 2025 et en prévoit 105 de moins en 2026",
         "Bruz comptait 464 enfants de moins de 3 ans au 31/12/2023 — 3e commune de la métropole derrière Rennes (6 625) et Saint-Jacques-de-la-Lande (522). Sur 10 ans, la commune enregistre en moyenne 172 naissances et 111 décès par an (solde naturel +62/an) — une natalité locale stable, pas en forte hausse",
-        "Le besoin scolaire projeté pour la ZAC Multisites (+850 élèves) tient donc surtout à l'arrivée de nouveaux ménages avec enfants dans les logements neufs, pas à un sursaut de la natalité bruzoise — un profil partagé avec d'autres communes de 2e couronne en croissance (Corps-Nuds, Saint-Armel, Parthenay-de-Bretagne)"
+        "Le besoin scolaire projeté pour la ZAC Multisites (+850 élèves) tient donc surtout à l'arrivée de nouveaux ménages avec enfants dans les logements neufs, pas à un sursaut de la natalité bruzoise — un profil partagé avec d'autres communes de 2e couronne en croissance (Corps-Nuds, Saint-Armel, Parthenay-de-Bretagne)",
+        "Bruz héberge aussi un collège public (Pierre Brossolette) et un lycée public (Anita Conti) sur son territoire, ainsi qu'un ensemble privé sous contrat (écoles primaires La Providence Centre et Vert Buisson + collège-lycée Saint-Joseph, rattachés à l'ensemble scolaire Sainte-Théodore-Guérin) — l'offre scolaire bruzoise ne se limite donc pas au primaire ni au seul public"
       ],
       "qui_decide": [
         {
           "nom": "Commune de Bruz",
-          "role": "Propriétaire des bâtiments scolaires — finance et décide les constructions"
+          "role": "Propriétaire et bâtisseur des écoles maternelles et primaires publiques (bâtiments, cantine, périscolaire) — pas de compétence sur le collège ni le lycée"
         },
         {
-          "nom": "Inspection Académique 35",
-          "role": "Détermine les ouvertures et fermetures de classes, les effectifs autorisés"
+          "nom": "Inspection Académique 35 / Éducation nationale",
+          "role": "Détermine les ouvertures et fermetures de classes, les effectifs enseignants, et la carte scolaire (primaire, collège, lycée, public et privé sous contrat)"
+        },
+        {
+          "nom": "Département d'Ille-et-Vilaine",
+          "role": "Compétent sur les collèges publics (bâtiment, restauration, sectorisation) — concerne le collège Pierre Brossolette à Bruz"
+        },
+        {
+          "nom": "Région Bretagne",
+          "role": "Compétente sur les lycées publics (bâtiment, équipement) — concerne le lycée Anita Conti à Bruz"
         }
       ],
       "decisions": [
