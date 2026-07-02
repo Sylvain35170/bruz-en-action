@@ -21,7 +21,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
-from utils import DATA_DIR, QUEUE_FILE, PROPOSALS_DIR, load_json, log, save_json, today
+from utils import DATA_DIR, QUEUE_FILE, PROPOSALS_DIR, is_already_published, load_json, log, save_json, today
 
 AGENT_NAME = "select"
 # Chemin complet nécessaire : sous launchd, PATH ne contient que /usr/bin:/bin:/usr/sbin:/sbin,
@@ -158,7 +158,17 @@ def run() -> bool:
     if failed_items:
         log(f"  {len(failed_items)} item(s) réinjectés en queue pour le prochain run.", "WARN")
 
-    proposals = all_proposals
+    # Écarter les items déjà publiés dans actus.json (même sujet reformulé par un autre
+    # scraper source, URL différente donc non filtré en amont dans la queue)
+    proposals = []
+    n_already_published = 0
+    for p in all_proposals:
+        if is_already_published(p.get("titre", ""), p.get("source_url", "")):
+            n_already_published += 1
+            continue
+        proposals.append(p)
+    if n_already_published:
+        log(f"  {n_already_published} item(s) déjà publié(s) — écarté(s) de la sélection.", "INFO")
 
     # Écrire proposals/YYYY-MM-DD.json
     PROPOSALS_DIR.mkdir(parents=True, exist_ok=True)

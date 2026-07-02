@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 """Helpers partagés pour les agents de veille Bruz en Action."""
 
+import difflib
 import json
 import subprocess
 from datetime import date, datetime
@@ -66,6 +67,27 @@ def known_urls() -> set[str]:
         {a.get("source_url", "") for a in actus.get("actus", [])} |
         {i.get("source_url", "") for i in queue.get("items", [])}
     )
+
+
+def published_actus() -> list[tuple[str, str]]:
+    """(titre, source_url) de chaque actu déjà publiée dans data/actus.json."""
+    actus = load_json(DATA_DIR / "actus.json")
+    return [(a.get("titre", ""), a.get("source_url", "")) for a in actus.get("actus", [])]
+
+
+def is_already_published(titre: str, source_url: str = "", threshold: float = 0.6) -> bool:
+    """True si un item très proche (URL identique ou titre similaire) est déjà dans actus.json.
+
+    Les scrapers (Mairie/OF/Presse) reformulent souvent le même sujet avec des titres
+    différents et des URLs différentes — la comparaison URL seule ne suffit pas.
+    """
+    for actu_titre, actu_url in published_actus():
+        if source_url and actu_url and source_url == actu_url:
+            return True
+        ratio = difflib.SequenceMatcher(None, titre.lower(), actu_titre.lower()).ratio()
+        if ratio >= threshold:
+            return True
+    return False
 
 
 def append_to_queue(new_items: list[dict]) -> int:
