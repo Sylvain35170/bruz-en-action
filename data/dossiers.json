@@ -189,7 +189,7 @@
       "categorie": "Finances",
       "statut": "en_cours",
       "featured": true,
-      "last_activity": "2026-06-27",
+      "last_activity": "2026-07-02",
       "date_ouverture": "2026-06-16",
       "image": "/bruz-en-action/illus-d03-finances.png",
       "chapeau": "Budget 2023 de Bruz : 27,3 M€ de recettes, dette quasi nulle (81 €/habitant), épargne brute à 27 %. Dès 2024, premier recours à l'emprunt : l'encours de dette bondit à 466 €/habitant (9,4 M€), signe que les grands chantiers du mandat — 4e groupe scolaire (9,5 M€), rénovation de l'Hôtel de Ville (1,4 M€), ZAC Multisites — commencent à peser. Ce dossier suit les arbitrages budgétaires du mandat 2026-2031.",
@@ -209,7 +209,8 @@
         "Dépenses d'investissement réelles 2023 : 5,6 M€ sur 10,2 M€ budgétés (taux de réalisation : 55 %). Faible taux lié aux grands chantiers pluriannuels : 4e groupe scolaire (AP total 9,5 M€), rénovation Hôtel de Ville (AP 1,4 M€).",
         "Dette fin 2024 : environ 9,4 M€ soit 466 €/habitant — forte hausse par rapport aux 81 €/hab de 2023 (1,6 M€). Premier recours à l'emprunt du mandat, en lien avec les chantiers pluriannuels. Source : données DGFiP 2024 via decomptes-publics.fr (chiffres définitifs à confirmer sur le CFU 2024 de Bruz).",
         "Fiscalité locale estimée 2024 : environ 13,9 M€ (+0,7 % vs 2023, quasi-stable). Charges de personnel estimées : environ 10,3 M€ (+3 % vs 2023). Rigidité structurelle 2024 : 44 % des recettes de fonctionnement.",
-        "Budget primitif 2026 voté au CM du 9 mars 2026 après débats — montant global à confirmer sur le Compte Financier Unique 2026 (disponible courant 2027)."
+        "Budget primitif 2026 voté au CM du 9 mars 2026 après débats — montant global à confirmer sur le Compte Financier Unique 2026 (disponible courant 2027).",
+        "CFU 2025 (voté au CM du 13/03/2026, retrouvé sur Mégalis le 2026-07-02) : recettes réelles de fonctionnement 26,6 M€ (+11,3% vs 2024, tiré par des cessions exceptionnelles VEFA Place Pagnol ; +1,4% hors exceptionnel). Encours de dette : 379,59 €/hab soit ~7,6 M€ (20 113 hab), ratio d'endettement 28,75% des RRF. Aucun nouvel emprunt tiré ni en 2024 ni en 2025 (ligne budgétaire 'emprunts en euros' réalisée à 0€ les deux exercices) — la dette baisse donc entre 2024 et 2025 par remboursement du capital, pas par nouveau tirage."
       ],
       "glossaire": [
         {
@@ -273,9 +274,9 @@
         }
       ],
       "ce_quon_suit": [
-        "Le Compte Financier Unique 2025 : doit être voté avant le 30 juin 2026 — pas encore publié sur Mégalis à la date de mise à jour de ce dossier (juin 2026). Dès publication, il permettra de mesurer l'impact réel des grands chantiers sur les finances 2025.",
+        "Le CFU 2025 est désormais publié (voté 13/03/2026) — la trajectoire de la dette s'inverse : 379,59 €/hab fin 2025 contre ~466 €/hab estimés fin 2024. Reste à confirmer : le CFU 2024 officiel n'a toujours pas été localisé sur Mégalis (juillet 2026), pour vérifier le pic exact de 2024.",
         "L'impact fiscal de l'arrivée de Safran (ZAC Ker Lann) : la commune a-t-elle chiffré un gain CFE attendu ? À quel horizon ?",
-        "La trajectoire de la dette : l'encours a déjà bondi de 81 €/hab (2023) à 466 €/hab (2024). Jusqu'où montera-t-il avec le 4e groupe scolaire, la rénovation de l'Hôtel de Ville et la ZAC Multisites ? Le ratio d'endettement reste sous le seuil de vigilance de 8 ans — mais la courbe est désormais à suivre de près.",
+        "La trajectoire de la dette : 81 €/hab (2023) → ~466 €/hab (2024, estimation DGFiP) → 379,59 €/hab (2025, officiel CFU) — un désendettement amorcé sans nouvel emprunt tiré. À suivre : le financement du 4e groupe scolaire et de la ZAC Multisites fera-t-il remonter la courbe en 2026-2027 ?",
         "Le taux d'épargne brute : descend-il sous 20 % avec l'augmentation des charges (inflation, personnel) ? Sous 15 % = signal d'alarme",
         "Le budget primitif 2027 : premier budget préparé entièrement par la nouvelle majorité — arbitrages entre équipements, fiscalité et dette"
       ],
@@ -415,8 +416,8 @@
       ],
       "sources": [
         {
-          "label": "Compte Financier Unique 2023 — Ville de Bruz (Mégalis)",
-          "url": "https://data.megalis.bretagne.bzh/organization/commune-de-bruz"
+          "label": "Mégalis — recherche documents financiers Bruz (SIREN 213500473)",
+          "url": "https://data.megalis.bretagne.bzh/?recherche=compte%20financier%20unique&siren=213500473"
         },
         {
           "label": "CM 9 mars 2026 — vote du budget 2026 (YouTube)",
@@ -433,6 +434,18 @@
         {
           "label": "Decomptes-publics.fr — données DGFiP 2024 (Bruz)",
           "url": "https://www.decomptes-publics.fr/villes/35047-35170-bruz"
+        },
+        {
+          "label": "CFU 2025 — Note synthétique officielle (Ville de Bruz, Mégalis)",
+          "url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1046139/11cee58060e372ef6ad9262e4e6495f56f7f2d5f06a98d5a85c4bfeaed7df03b.pdf"
+        },
+        {
+          "label": "CFU 2025 — Maquette budgétaire détaillée (24 pages)",
+          "url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1046139/df781a7f2c8b8c24e2094d1d2a19eea51e0e31162781ea37f29decb587153054.pdf"
+        },
+        {
+          "label": "CFU 2023 — Note synthétique officielle (Ville de Bruz, Mégalis)",
+          "url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2024/574583/7d855b32affb68554a469b0b5625292da3558e7d27cf13e849969d9db4f1ee7f.pdf"
         }
       ],
       "actus_recentes": [

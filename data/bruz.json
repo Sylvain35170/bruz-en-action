@@ -265,6 +265,39 @@
   "finances_communales": {
     "taxe_fonciere_batie_taux": "45,34 %",
     "annee_taux": 2026,
-    "note_budget": "Budget 2026 voté en mars 2026 après débats tendus — commune décrite comme 'pas riche' face à l'accumulation des projets (T4, ZAC, piscine). Chiffres détaillés à intégrer après publication du compte administratif."
+    "note_budget": "Budget 2026 voté en mars 2026 après débats tendus — commune décrite comme 'pas riche' face à l'accumulation des projets (T4, ZAC, piscine). Chiffres détaillés à intégrer après publication du compte administratif.",
+    "cfu_2023": {
+      "source": "COMPTE FINANCIER UNIQUE 2023 — Note synthétique (Mégalis, org 213500473), envoyé en préfecture le 21/02/2024",
+      "url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2024/574583/7d855b32affb68554a469b0b5625292da3558e7d27cf13e849969d9db4f1ee7f.pdf",
+      "recettes_reelles_fonctionnement": 27267774,
+      "depenses_reelles_fonctionnement": 17480552,
+      "resultat_fonctionnement": 7532506,
+      "recettes_reelles_investissement": 3412912,
+      "depenses_reelles_investissement": 5592293,
+      "resultat_investissement": -729573,
+      "encours_dette_par_habitant": 81.0,
+      "encours_dette_estime": 1629558,
+      "ratio_endettement_pct_rrf": 3.91,
+      "note": "2023 = premier exercice en CFU pour Bruz (candidate 3e vague). Aucun emprunt contracté en 2023 (financement des investissements sans recours à la dette)."
+    },
+    "dette_ecart_2023_2024": {
+      "constat": "Écart important entre l'encours de dette CFU 2023 (~1,6 M€, source officielle Mégalis) et l'estimation 2024 (~9,4 M€, source decomptes-publics.fr/DGFiP, 466 €/hab x 20 118 hab)",
+      "hypothese_non_confirmee": "Emprunt(s) contracté(s) en 2024 pour financer les grands projets en cours (4e groupe scolaire Ker Lann, AP 9,5 M€ ; rénovation Hôtel de Ville, AP 1,4 M€) — non vérifié faute d'accès au CFU 2024 officiel",
+      "a_faire": "CFU 2024 officiel toujours pas localisé (portail Mégalis parcouru en direct le 2026-07-02 via navigateur, recherche interne 'compte financier unique' sur le SIREN Bruz — seuls CFU 2023 et CFU 2025 remontent). Moins critique désormais : le CFU 2025 (officiel) donne un encours 2025 de 7,6 M€/379,59€ hab, cohérent avec une pointe à ~9,4 M€ fin 2024 (DGFiP) suivie d'un désendettement en 2025 sans nouvel emprunt tiré."
+    },
+    "cfu_2025": {
+      "source": "COMPTE FINANCIER UNIQUE 2025 — Note synthétique (Mégalis, org 213500473), délibération du 13/03/2026",
+      "url_note_synthetique": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1046139/11cee58060e372ef6ad9262e4e6495f56f7f2d5f06a98d5a85c4bfeaed7df03b.pdf",
+      "url_maquette_detaillee": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1046139/df781a7f2c8b8c24e2094d1d2a19eea51e0e31162781ea37f29decb587153054.pdf",
+      "population_recensement": 20113,
+      "recettes_reelles_fonctionnement": 26558511,
+      "total_recettes_fonctionnement_avec_ordre": 26601829,
+      "taux_realisation_recettes_pct": 112.66,
+      "note_hausse_recettes": "+11,3% vs réalisé 2024, tiré par des écritures exceptionnelles de cession (îlots nord/sud VEFA, Place Pagnol) ; hausse sous-jacente hors exceptionnel : +1,39%",
+      "encours_dette_par_habitant": 379.59,
+      "encours_dette_estime": 7626452,
+      "ratio_endettement_pct_rrf": 28.75,
+      "note": "Aucun nouvel emprunt tiré ni en 2024 ni en 2025 (ligne 1641 'Emprunts en euros' réalisée à 0€ les deux années) — la dette évolue donc par remboursement du capital, pas par tirage."
+    }
   }
 }
