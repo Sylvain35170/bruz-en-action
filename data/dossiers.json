@@ -474,7 +474,8 @@
         "Taux TFB 2024 : 45,34 % (+3,5 points) — décision votée par le CM Salmon",
         "Taux TFB 2025 : 45,34 % — pas de nouvelle hausse, pas de baisse non plus",
         "Houssin s'engage à ne pas augmenter les taux sur le mandat 2026–2031 — déclaration de campagne",
-        "Comparaison 2025 : le taux TFB de Bruz (45,34 %) est proche de celui de Rennes (45,66 %, 12e commune la plus taxée sur 332 dans le département) et nettement au-dessus de la moyenne départementale d'Ille-et-Vilaine (38,69 %, écart de +6,65 points). La fourchette départementale va de 30,95 % à 54,13 %"
+        "Comparaison 2025 : le taux TFB de Bruz (45,34 %) est proche de celui de Rennes (45,66 %, 12e commune la plus taxée sur 332 dans le département) et nettement au-dessus de la moyenne départementale d'Ille-et-Vilaine (38,69 %, écart de +6,65 points). La fourchette départementale va de 30,95 % à 54,13 %",
+        "Comparaison Rennes Métropole 2025 (taux TFB post-réforme) : Bruz 45,34 % — Rennes 45,66 % — Saint-Jacques-de-la-Lande 41,86 % — Chantepie 41,07 % — Cesson-Sévigné 35,04 % (moyenne départementale 38,69 %). Bruz est l'une des communes les plus taxées de la métropole, juste derrière Rennes."
       ],
       "qui_decide": [
         {
@@ -501,8 +502,7 @@
       "ce_quon_suit": [
         "Le taux TFB voté chaque année en mars — Houssin tient-il son engagement ?",
         "La publication des taux 2026 par la DGFIP — attendue courant 2026",
-        "Les taxes professionnelles (CFE) — votées chaque année, peu médiatisées",
-        "Où se situent les autres communes de Rennes Métropole (Chantepie, Saint-Jacques-de-la-Lande, Cesson-Sévigné...) sur leur taux 2025 post-réforme — données 2014 trouvées non comparables (avant transfert de la part départementale)"
+        "Les taxes professionnelles (CFE) — votées chaque année, peu médiatisées"
       ],
       "graphiques": [
         {
@@ -588,6 +588,10 @@
         {
           "label": "detaxe-fonciere.fr — comparaison taux TFB 2025 Ille-et-Vilaine",
           "url": "https://detaxe-fonciere.fr/taxe-fonciere/rennes-35"
+        },
+        {
+          "label": "detaxe-fonciere.fr — comparaison taux TFB 2025 communes Rennes Métropole",
+          "url": "https://detaxe-fonciere.fr/taxe-fonciere/chantepie-35"
         }
       ],
       "actus_recentes": [
