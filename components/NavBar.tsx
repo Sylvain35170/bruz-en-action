@@ -1,30 +1,56 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
 import metaData from "../data/meta.json";
 
 const LOGO = "/bruz-en-action/logo.png";
 
-const NAV_LINKS = [
-  { href: "/bruz-en-action/dossiers", label: "📁 Dossiers" },
-  { href: "/bruz-en-action/conseils", label: "🏛️ Conseils" },
-  { href: "/bruz-en-action/promesses", label: "✅ Promesses" },
-  { href: "/bruz-en-action/programme", label: "📋 Programme" },
-  { href: "/bruz-en-action/elus", label: "👥 Élus" },
-  { href: "/bruz-en-action/carte", label: "🗺️ Carte" },
-  { href: "/bruz-en-action/coup-de-pouce", label: "🤲 Coup de pouce" },
-  { href: "/bruz-en-action/interagir", label: "💬 Interagir" },
-  { href: "/bruz-en-action/chronologie", label: "🕐 Chronologie" },
-  { href: "/bruz-en-action/metropole", label: "🏙️ Métropole" },
+const NAV_GROUPS = [
+  {
+    label: "📁 Suivre",
+    links: [
+      { href: "/bruz-en-action/dossiers", label: "📁 Dossiers" },
+      { href: "/bruz-en-action/conseils", label: "🏛️ Conseils" },
+      { href: "/bruz-en-action/chronologie", label: "🕐 Chronologie" },
+      { href: "/bruz-en-action/metropole", label: "🏙️ Métropole" },
+    ],
+  },
+  {
+    label: "✅ Engagements",
+    links: [
+      { href: "/bruz-en-action/programme", label: "📋 Programme" },
+      { href: "/bruz-en-action/promesses", label: "✅ Promesses" },
+    ],
+  },
+  {
+    label: "👥 Qui décide",
+    links: [
+      { href: "/bruz-en-action/elus", label: "👥 Élus" },
+      { href: "/bruz-en-action/carte", label: "🗺️ Carte" },
+    ],
+  },
+  {
+    label: "💬 Participer",
+    links: [
+      { href: "/bruz-en-action/interagir", label: "💬 Interagir" },
+      { href: "/bruz-en-action/coup-de-pouce", label: "🤲 Coup de pouce" },
+    ],
+  },
 ];
 
 export default function NavBar() {
   const [open, setOpen] = useState(false);
+  const [openGroup, setOpenGroup] = useState<string | null>(null);
+  const [drawerGroup, setDrawerGroup] = useState<string | null>(null);
   const pathname = usePathname();
+  const navRef = useRef<HTMLElement>(null);
   const { association, contact, reseaux_sociaux } = metaData;
 
+  const isGroupActive = (group: typeof NAV_GROUPS[number]) =>
+    group.links.some(l => pathname === l.href || pathname?.startsWith(l.href + "/"));
+
   useEffect(() => {
-    const handler = (e: KeyboardEvent) => { if (e.key === "Escape") setOpen(false); };
+    const handler = (e: KeyboardEvent) => { if (e.key === "Escape") { setOpen(false); setOpenGroup(null); } };
     window.addEventListener("keydown", handler);
     return () => window.removeEventListener("keydown", handler);
   }, []);
@@ -33,6 +59,14 @@ export default function NavBar() {
     document.body.style.overflow = open ? "hidden" : "";
     return () => { document.body.style.overflow = ""; };
   }, [open]);
+
+  useEffect(() => {
+    const handler = (e: MouseEvent) => {
+      if (navRef.current && !navRef.current.contains(e.target as Node)) setOpenGroup(null);
+    };
+    document.addEventListener("click", handler);
+    return () => document.removeEventListener("click", handler);
+  }, []);
 
   return (
     <>
@@ -45,20 +79,56 @@ export default function NavBar() {
         </a>
 
         {/* Desktop nav */}
-        <nav className="bea-nav-desktop" style={{ display: "flex", gap: 16, alignItems: "center", flexWrap: "wrap" }}>
-          {NAV_LINKS.map(l => (
-            <a key={l.href} href={l.href}
-              style={{ fontSize: 13, color: "rgba(255,255,255,0.75)", fontWeight: 600, textDecoration: "none" }}>
-              {l.label}
-            </a>
-          ))}
+        <nav ref={navRef} className="bea-nav-desktop" style={{ display: "flex", gap: 4, alignItems: "center", flexWrap: "wrap" }}>
+          {NAV_GROUPS.map(group => {
+            const active = isGroupActive(group);
+            const isOpen = openGroup === group.label;
+            return (
+              <div key={group.label} style={{ position: "relative" }}>
+                <button
+                  onClick={() => setOpenGroup(isOpen ? null : group.label)}
+                  style={{
+                    display: "flex", alignItems: "center", gap: 4,
+                    background: isOpen ? "rgba(255,255,255,0.1)" : "transparent",
+                    border: "none", cursor: "pointer", borderRadius: 6,
+                    padding: "8px 10px",
+                    fontSize: 13, color: active ? "#fff" : "rgba(255,255,255,0.75)", fontWeight: 600,
+                  }}>
+                  {group.label}
+                  <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round"
+                    style={{ transform: isOpen ? "rotate(180deg)" : "none", transition: "transform 0.15s" }}>
+                    <polyline points="6 9 12 15 18 9" />
+                  </svg>
+                </button>
+                {isOpen && (
+                  <div style={{
+                    position: "absolute", top: "calc(100% + 6px)", left: 0, zIndex: 100,
+                    background: "#0E2F62", border: "1px solid rgba(255,255,255,0.15)",
+                    borderRadius: 10, padding: 6, minWidth: 180,
+                    boxShadow: "0 8px 24px rgba(0,0,0,0.35)",
+                  }}>
+                    {group.links.map(l => {
+                      const isActive = pathname === l.href || pathname?.startsWith(l.href + "/");
+                      return (
+                        <a key={l.href} href={l.href} onClick={() => setOpenGroup(null)}
+                          className={`bea-drawer-link${isActive ? " active" : ""}`}
+                          style={{ fontSize: 14, padding: "10px 12px" }}>
+                          {l.label}
+                        </a>
+                      );
+                    })}
+                  </div>
+                )}
+              </div>
+            );
+          })}
           {reseaux_sociaux.facebook && (
             <a href={reseaux_sociaux.facebook} target="_blank" rel="noopener noreferrer"
-              style={{ fontSize: 13, color: "rgba(255,255,255,0.6)", textDecoration: "none" }}>Facebook</a>
+              style={{ fontSize: 13, color: "rgba(255,255,255,0.6)", textDecoration: "none", marginLeft: 8 }}>Facebook</a>
           )}
           {contact.hello_asso_url && (
             <a href={contact.hello_asso_url} target="_blank" rel="noopener noreferrer"
-              style={{ padding: "8px 18px", borderRadius: 999, background: "#f97316", color: "#fff", fontSize: 13, fontWeight: 700, textDecoration: "none" }}>
+              style={{ padding: "8px 18px", borderRadius: 999, background: "#f97316", color: "#fff", fontSize: 13, fontWeight: 700, textDecoration: "none", marginLeft: 8 }}>
               ❤️ Adhérer
             </a>
           )}
@@ -95,6 +165,7 @@ export default function NavBar() {
             background: "#0E2F62",
             display: "flex", flexDirection: "column",
             padding: "20px 16px",
+            overflowY: "auto",
           }} onClick={e => e.stopPropagation()}>
 
             {/* Drawer header */}
@@ -110,15 +181,41 @@ export default function NavBar() {
               </button>
             </div>
 
-            {/* Links */}
-            <nav style={{ display: "flex", flexDirection: "column", flex: 1, gap: 2 }}>
-              {NAV_LINKS.map(l => {
-                const isActive = pathname === l.href || pathname?.startsWith(l.href + "/");
+            {/* Groups */}
+            <nav style={{ display: "flex", flexDirection: "column", flex: 1, gap: 4 }}>
+              {NAV_GROUPS.map(group => {
+                const active = isGroupActive(group);
+                const isExpanded = drawerGroup === group.label || active;
                 return (
-                  <a key={l.href} href={l.href} onClick={() => setOpen(false)}
-                    className={`bea-drawer-link${isActive ? " active" : ""}`}>
-                    {l.label}
-                  </a>
+                  <div key={group.label}>
+                    <button
+                      onClick={() => setDrawerGroup(isExpanded && drawerGroup === group.label ? null : group.label)}
+                      style={{
+                        display: "flex", justifyContent: "space-between", alignItems: "center",
+                        width: "100%", background: "transparent", border: "none", cursor: "pointer",
+                        padding: "13px 12px", borderRadius: 8,
+                        color: "#fff", fontSize: 16, fontWeight: 700,
+                      }}>
+                      {group.label}
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round"
+                        style={{ transform: isExpanded ? "rotate(180deg)" : "none", transition: "transform 0.15s" }}>
+                        <polyline points="6 9 12 15 18 9" />
+                      </svg>
+                    </button>
+                    {isExpanded && (
+                      <div style={{ display: "flex", flexDirection: "column", paddingLeft: 12, gap: 2, marginBottom: 4 }}>
+                        {group.links.map(l => {
+                          const isActive = pathname === l.href || pathname?.startsWith(l.href + "/");
+                          return (
+                            <a key={l.href} href={l.href} onClick={() => setOpen(false)}
+                              className={`bea-drawer-link${isActive ? " active" : ""}`}>
+                              {l.label}
+                            </a>
+                          );
+                        })}
+                      </div>
+                    )}
+                  </div>
                 );
               })}
               {/* Séparateur */}
