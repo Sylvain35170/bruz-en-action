@@ -1,15 +1,15 @@
 {
   "_meta": {
     "description": "Base de connaissance factuelle sur la commune de Bruz — source de vérité pour les agents et les pages du site",
-    "derniere_mise_a_jour": "2026-06-27",
+    "derniere_mise_a_jour": "2026-07-02",
     "sources_primaires": [
       "https://www.insee.fr/fr/statistiques/2011101?geo=COM-35047",
       "https://www.ville-bruz.fr",
       "https://annuaire-education.fr",
-      "http://bruzplainedevie.fr"
+      "http://bruzplainedevie.fr",
+      "https://fr.wikipedia.org/wiki/Campus_de_Ker_Lann"
     ]
   },
-
   "identite": {
     "nom": "Bruz",
     "code_insee": "35047",
@@ -20,7 +20,6 @@
     "situation": "12 km au sud-ouest de Rennes",
     "rang_departemental": "4e commune la plus peuplée du département"
   },
-
   "demographie": {
     "population_reference": 20461,
     "annee_reference_legale": 2023,
@@ -43,7 +42,6 @@
     "deces_2024": 136,
     "source_url": "https://www.insee.fr/fr/statistiques/2011101?geo=COM-35047"
   },
-
   "structure_population": {
     "annee_reference": 2023,
     "source": "INSEE RP2023",
@@ -56,7 +54,6 @@
     "sans_diplome_pct": 11.7,
     "note": "Population jeune et diplômée — profil péri-urbain cadres/techniciens"
   },
-
   "menages": {
     "annee_reference": 2023,
     "source": "INSEE RP2023",
@@ -66,7 +63,6 @@
     "couples_avec_enfants_pct": 23.0,
     "note": "44 % de ménages d'une personne — chiffre élevé, à surveiller avec la croissance démographique"
   },
-
   "logements": {
     "annee_reference": 2023,
     "source": "INSEE RP2023 — https://www.insee.fr/fr/statistiques/2011101?geo=COM-35047",
@@ -87,7 +83,6 @@
     },
     "note": "+2 004 résidences principales en 11 ans (2012→2023). La ZAC Multisites prévoit +1 700 logements supplémentaires d'ici 2035."
   },
-
   "emploi_revenus": {
     "annee_reference": 2023,
     "source": "INSEE RP2023 / Filosofi 2023 — https://www.insee.fr/fr/statistiques/2011101?geo=COM-35047",
@@ -106,7 +101,6 @@
       "agriculture_pct": 1.6
     }
   },
-
   "gouvernance": {
     "mandat_en_cours": "2026-2032",
     "liste_majoritaire": "Un nouvel élan pour Bruz",
@@ -114,7 +108,6 @@
     "nombre_elus": 33,
     "note": "33 élus dont maire, adjoints, délégués et opposition — voir data/elus.json"
   },
-
   "education": {
     "ecoles_primaires_publiques": [
       {
@@ -164,11 +157,36 @@
     },
     "enseignement_superieur": {
       "campus": "Ker Lann",
-      "etablissements": "~15",
-      "etudiants": "~6 000"
+      "superficie_ha": 165,
+      "gestion": "Rennes Métropole",
+      "etablissements_nb": 17,
+      "etudiants": "~6 000",
+      "etablissements_notables": [
+        "École Normale Supérieure de Rennes (ENS Rennes)",
+        "ENSAI — École nationale de la statistique et de l'analyse de l'information",
+        "ECAM Rennes — Louis de Broglie (école d'ingénieurs privée)",
+        "UniLaSalle Rennes (études environnementales)",
+        "Institut Catholique de Rennes (ICR)",
+        "Faculté des Métiers"
+      ],
+      "logement_etudiant": {
+        "residences_recensees": 7,
+        "note": "Offre portée essentiellement par des opérateurs privés (Univercity, ARPEJ...) plutôt que par le CROUS — pas de résidence CROUS confirmée sur le campus à ce jour"
+      },
+      "source": "https://fr.wikipedia.org/wiki/Campus_de_Ker_Lann"
+    },
+    "lycee": {
+      "nom": "Lycée Anita Conti",
+      "type": "public",
+      "note": "Lycée général public — ~930 élèves en filière générale publique sur la commune"
+    },
+    "college_lycee_prive": {
+      "nom": "Collège-lycée Saint-Joseph",
+      "type": "privé sous contrat",
+      "reseau": "Ensemble Scolaire Sainte Théodore Guérin",
+      "note": "En continuité avec les écoles primaires La Providence — le programme d'enrichissement linguistique du primaire se prolonge en 6e"
     }
   },
-
   "equipements": {
     "piscine": {
       "nom": "Piscine de la Conterie",
@@ -190,14 +208,19 @@
       "adresse": "10 avenue du Général de Gaulle, 35170 Bruz",
       "site": "https://legrandlogis-bruz.fr",
       "salles": [
-        { "nom": "Grande salle", "capacite": "400 places assises" },
-        { "nom": "Salle Molière", "capacite": "50 places assises" }
+        {
+          "nom": "Grande salle",
+          "capacite": "400 places assises"
+        },
+        {
+          "nom": "Salle Molière",
+          "capacite": "50 places assises"
+        }
       ],
       "note": "Le Musikhall (Parc Expo Rennes Aéroport, Bruz) accueille jusqu'à 7 000 personnes — salle d'envergure nationale, distincte des équipements municipaux.",
       "source": "agendaculturel.fr + legrandlogis-bruz.fr"
     }
   },
-
   "urbanisme": {
     "zac_multisites": {
       "logements_prevus": 1700,
@@ -206,9 +229,13 @@
       "description": "ZAC répartie sur plusieurs secteurs de la commune, dont Ker Lann Sud",
       "impact_scolaire_estime": "~850 enfants scolarisables supplémentaires (base 0,5 enfant/logement)"
     },
-    "secteurs_principaux": ["Ker Lann", "Vert Buisson", "Cicé-Blossac", "Centre-ville"]
+    "secteurs_principaux": [
+      "Ker Lann",
+      "Vert Buisson",
+      "Cicé-Blossac",
+      "Centre-ville"
+    ]
   },
-
   "transports": {
     "t4_tramway": {
       "description": "Prolongement de la ligne b du métro de Rennes vers Bruz",
@@ -217,7 +244,6 @@
       "note": "Condition structurante pour la mobilité des nouveaux habitants de la ZAC"
     }
   },
-
   "securite": {
     "note_methodologie": "Faits constatés = plaintes enregistrées par la gendarmerie de Bruz, pas les crimes commis. Source primaire : statistiques police/gendarmerie nationales publiées sur data.gouv.fr",
     "faits_constates_2024": {
@@ -236,7 +262,6 @@
     },
     "a_verifier": "Chiffres bruts à croiser avec data.gouv.fr (base communale délinquance) pour validation et évolution sur plusieurs années"
   },
-
   "finances_communales": {
     "taxe_fonciere_batie_taux": "45,34 %",
     "annee_taux": 2026,

@@ -31,6 +31,7 @@ DOSSIER_KEYWORDS: dict[str, list[str]] = {
     "D13": ["canicule", "îlot de chaleur", "plan canicule", "vigilance rouge", "ccas"],
     "D14": ["chantier", "voirie", "pont de la gare", "travaux zac", "pasteur"],
     "D15": ["médecin", "désert médical", "maison de santé", "msp", "offre de soins", "ars bretagne"],
+    "D20": ["campus ker lann", "étudiant", "ens rennes", "ensai", "logement étudiant", "crous", "résidence étudiante"],
 }
 
 # Seuil : nb de jours depuis last_activity pour retirer le featured

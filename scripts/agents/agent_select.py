@@ -46,6 +46,7 @@ D12 = city stade / Siméon Beliard / gymnase / équipements sportifs
 D13 = canicule / plan municipal / îlots de fraîcheur / climat
 D14 = chantiers / voirie / pont de la Gare / ZAC Multisites travaux
 D15 = offre de soins / médecins / désert médical / santé
+D20 = campus Ker Lann / enseignement supérieur / étudiants / logement étudiant
 """.strip()
 
 PROMPT_TEMPLATE = """\

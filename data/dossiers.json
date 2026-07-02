@@ -1535,6 +1535,56 @@
           "source_url": null
         }
       ]
+    },
+    {
+      "id": "D20",
+      "titre": "Ker Lann : campus et logement étudiant",
+      "categorie": "Urbanisme",
+      "statut": "en_cours",
+      "featured": false,
+      "last_activity": "2026-07-02",
+      "date_ouverture": "2026-07-02",
+      "chapeau": "Ker Lann, ce n'est pas que le terminus du T4 ou un secteur de la ZAC Multisites : c'est un campus de 165 hectares qui accueille 17 établissements et environ 6 000 étudiants sur le territoire de Bruz. Ce dossier suit l'évolution du campus et l'enjeu du logement étudiant, distinct des dossiers T4 (D01) et ZAC Multisites (D02) qui traitent Ker Lann sous l'angle transport et urbanisme général.",
+      "ce_quon_sait": [
+        "Le campus de Ker Lann s'étend sur 165 hectares et accueille environ 6 000 étudiants dans 17 établissements — ENS Rennes, ENSAI, ECAM Rennes-Louis de Broglie, UniLaSalle Rennes, Institut Catholique de Rennes, Faculté des Métiers, entre autres",
+        "Le campus est géré par Rennes Métropole, pas directement par la commune de Bruz",
+        "7 résidences étudiantes sont recensées sur le campus, portées par des opérateurs privés (Univercity, ARPEJ...) — pas de résidence CROUS confirmée à ce jour",
+        "La ZAC Multisites (D02) intègre le secteur Ker Lann Sud dans ses 1 700 logements programmés, dont un 4e groupe scolaire public en construction (14 classes à terme)",
+        "Le campus est desservi par la gare de Ker Lann (ligne Rennes-Redon) et sera à terme relié par le Trambus T4 (D01)"
+      ],
+      "qui_decide": [
+        {
+          "nom": "Rennes Métropole",
+          "role": "Gestionnaire du campus de Ker Lann et pilote des grands projets d'aménagement du secteur (ZAC, T4)"
+        },
+        {
+          "nom": "Commune de Bruz",
+          "role": "Compétente sur le foncier communal et les équipements de proximité (école Ker Lann Sud) — pas sur la gestion du campus ni le logement étudiant privé"
+        },
+        {
+          "nom": "Établissements d'enseignement supérieur",
+          "role": "Chacun autonome sur ses propres capacités d'accueil et son offre de logement conventionné éventuel"
+        }
+      ],
+      "decisions": [],
+      "ce_quon_suit": [
+        "L'évolution du nombre d'étudiants et d'établissements sur le campus au fil du mandat",
+        "Tout projet de résidence étudiante supplémentaire lié à la ZAC Multisites / Ker Lann Sud",
+        "La question du logement étudiant abordable — l'offre actuelle est à dominante privée, sans réponse CROUS identifiée",
+        "Le calendrier réel du Trambus T4 côté desserte du campus"
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Campus de Ker Lann",
+          "url": "https://fr.wikipedia.org/wiki/Campus_de_Ker_Lann"
+        },
+        {
+          "label": "ENS Rennes — Guide d'accueil du campus de Ker Lann",
+          "url": "https://www.ens-rennes.fr/vie-etudiante/guide-daccueil-du-campus-de-ker-lann"
+        }
+      ],
+      "actus_recentes": [],
+      "promesses_liees": []
     }
   ]
 }
