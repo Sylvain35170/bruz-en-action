@@ -31,20 +31,20 @@ MODEL = "claude-haiku-4-5-20251001"
 
 # Tenu à jour manuellement — doit rester synchronisé avec les id/titre/categorie
 # de data/dossiers.json. D08 et D09 ont été retirés (prémisses fausses/fabriquées) ;
+# D14 a été fusionné dans D05 (2026-07-04, carte + chantiers) ;
 # D16-D18 sont des sujets identifiés au backlog mais pas encore ouverts en dossier.
 DOSSIERS_DESC = """
 D01 = T4 / trambus / transport en commun / Ker Lann / gare Bruz
 D02 = ZAC Multisites / logement / urbanisme / aménagement
 D03 = budget municipal / finances / conseil municipal
 D04 = fiscalité / taxe foncière / impôts locaux
-D05 = carte des projets / équipements publics / quartiers
+D05 = carte des projets / équipements publics / quartiers / chantiers / voirie / pont de la Gare / ZAC Multisites travaux
 D06 = piscine / La Conterie / équipement aquatique
 D07 = police municipale / sécurité / vidéoprotection / gendarmerie
 D10 = écoles / enseignement / Vert-Buisson / démographie scolaire
 D11 = Manoir de la Noë / Plan B / patrimoine / tiers-lieu citoyen
 D12 = city stade / Siméon Beliard / gymnase / équipements sportifs
 D13 = canicule / plan municipal / îlots de fraîcheur / climat
-D14 = chantiers / voirie / pont de la Gare / ZAC Multisites travaux
 D15 = offre de soins / médecins / désert médical / santé
 D20 = campus Ker Lann / enseignement supérieur / étudiants / logement étudiant
 """.strip()
@@ -200,11 +200,8 @@ def run() -> bool:
         json.dumps(all_proposals, ensure_ascii=False, indent=2), encoding="utf-8"
     )
 
-    # Vider la queue (items traités, quelle que soit la pertinence)
-    QUEUE_FILE.write_text(
-        json.dumps({"items": [], "meta": {"last_updated": today()}},
-                   ensure_ascii=False, indent=2), encoding="utf-8"
-    )
+    # Queue déjà réécrite plus haut avec uniquement failed_items (items traités retirés,
+    # items en échec de batch conservés pour le prochain run) — ne pas la vider ici.
 
     n_pertinent = sum(1 for p in proposals if p.get("pertinence", 0) >= 1)
     log(f"Select : {len(proposals)} analysés, {n_pertinent} pertinents → {proposal_file.name}", "OK")

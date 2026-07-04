@@ -85,7 +85,7 @@
         3,
         4
       ],
-      "image": "/bruz-en-action/illus-d01-mobilite.png"
+      "image": "/bruz-en-action/illus-d01-mobilite.webp"
     },
     {
       "id": "D02",
@@ -181,7 +181,7 @@
         }
       ],
       "promesses_liees": [],
-      "image": "/bruz-en-action/illus-d02-urbanisme.png"
+      "image": "/bruz-en-action/illus-d02-urbanisme.webp"
     },
     {
       "id": "D03",
@@ -191,7 +191,7 @@
       "featured": true,
       "last_activity": "2026-07-02",
       "date_ouverture": "2026-06-16",
-      "image": "/bruz-en-action/illus-d03-finances.png",
+      "image": "/bruz-en-action/illus-d03-finances.webp",
       "chapeau": "Budget 2023 de Bruz : 27,3 M€ de recettes, dette quasi nulle (81 €/habitant), épargne brute à 27 %. Dès 2024, premier recours à l'emprunt : l'encours de dette bondit à 466 €/habitant (9,4 M€), signe que les grands chantiers du mandat — 4e groupe scolaire (9,5 M€), rénovation de l'Hôtel de Ville (1,4 M€), ZAC Multisites — commencent à peser. Ce dossier suit les arbitrages budgétaires du mandat 2026-2031.",
       "contexte_pedagogique": [
         "Un budget communal fonctionne en deux sections séparées et étanches. La section fonctionnement couvre les dépenses récurrentes : salaires (57 % des dépenses à Bruz en 2023), énergie, entretien, subventions aux associations. La section investissement finance les travaux et équipements durables. Règle d'or : il est interdit d'emprunter pour payer du fonctionnement.",
@@ -624,28 +624,78 @@
         }
       ],
       "promesses_liees": [],
-      "image": "/bruz-en-action/illus-d04-taxe.png"
+      "image": "/bruz-en-action/illus-d04-taxe.webp"
     },
     {
       "id": "D05",
-      "titre": "Carte de Bruz : quartiers et petits projets urbains",
+      "titre": "Bruz en carte : quartiers, chantiers et petits projets urbains",
       "categorie": "Urbanisme",
       "statut": "en_cours",
       "featured": false,
       "last_activity": "2026-07-02",
       "date_ouverture": "2026-06-16",
-      "chapeau": "Carte interactive de Bruz et veille sur les projets d'urbanisme qui ne rentrent pas déjà dans un dossier dédié (hors ZAC Multisites, voir D02, hors Trambus T4, voir D01, et hors chantiers de voirie en cours, voir D14) : évolutions de quartier, permis groupés, équipements publics annoncés.",
+      "chapeau": "Carte interactive de Bruz, recensement des chantiers en cours (qui creuse où, jusqu'à quand) et veille sur les projets d'urbanisme qui ne rentrent pas déjà dans un dossier dédié (hors ZAC Multisites, voir D02, hors Trambus T4, voir D01) : évolutions de quartier, permis groupés, équipements publics annoncés, travaux de voirie.",
       "ce_quon_sait": [
         "La carte interactive (page /carte) situe la ZAC Multisites (6 secteurs, ~1 700 logements à horizon 2040) et le corridor indicatif du Trambus T4",
         "Les tracés et périmètres affichés sont indicatifs — à confirmer avec les documents officiels de la commune et de Rennes Métropole",
-        "Bruz est couverte par le Plan Local d'Urbanisme intercommunal (PLUi) de Rennes Métropole — c'est ce document qui fixe les règles de constructibilité par zone"
+        "Bruz est couverte par le Plan Local d'Urbanisme intercommunal (PLUi) de Rennes Métropole — c'est ce document qui fixe les règles de constructibilité par zone",
+        "La plupart des grands chantiers à Bruz sont portés par Rennes Métropole (voirie, réseaux, T4) — pas par la commune",
+        "La mairie publie une page «Travaux en cours» mais sans dates précises ni carte — contact : Services Techniques 02 99 05 44 52",
+        "Boulevard Pasteur : chantier d'assainissement pluriannuel depuis fév. 2025, durée min. 3 ans — Rennes Métropole. Remplacement du réseau amianté. Phase en cours : entre rond-point de Laillé et rue Debussy.",
+        "Pont de la Gare (av. Jules Tricault / RD77) : travaux mai–juil. 2026 par Rennes Métropole. Fermeture totale du pont (véhicules + piétons + vélos) du 15 juin au 3 juillet 2026. Déviation : rue Émile Gernigon → av. de Wrzésnia → av. de l'Europe → av. Joseph Jan.",
+        "Rue Théodore Botrel : travaux voirie + éclairage public du 1er juin au 24 juillet 2026 — Rennes Métropole. Création stationnement enherbé + cheminements piétons/vélos.",
+        "Avenue du Général de Gaulle : travaux réseaux eau/électricité + voirie de juin 2026 à printemps 2027 — circulation maintenue en alternat.",
+        "Voie verte Bruz–Laillé (REV) : 4,9 km de piste cyclable, mars à juillet 2026 — alternat. Plantation d'une haie bocagère.",
+        "Chemin de halage : fermeture partielle pour curage du canal, mai–juin 2026.",
+        "Coupures Enedis programmées en juillet 2026 (7, 16 et 18 juillet) — plusieurs quartiers concernés.",
+        "Hôtel de Ville : rénovation thermique terminée, réouverture printemps 2026 (AP 1,4 M€ commune).",
+        "4e groupe scolaire Ker Lann : en construction — AP 9,5 M€, livraison visée 2027. Maître d'ouvrage : commune de Bruz."
       ],
-      "qui_decide": [],
-      "decisions": [],
+      "qui_decide": [
+        {
+          "nom": "Rennes Métropole",
+          "role": "Maître d'ouvrage de la plupart des chantiers structurants (voirie, réseaux, T4, REV). Contact : comtravaux@rennesmetropole.fr / 06 69 95 25 76"
+        },
+        {
+          "nom": "Thomas de la Rivière (Bruz)",
+          "role": "Délégué Patrimoine & Travaux depuis avril 2026 — interlocuteur pour les chantiers communaux"
+        },
+        {
+          "nom": "Enedis",
+          "role": "Coupures programmées pour maintenance du réseau électrique — juillet 2026"
+        }
+      ],
+      "decisions": [
+        {
+          "date": "2025-02",
+          "description": "Lancement chantier boulevard Pasteur — assainissement pluriannuel (min. 3 ans), remplacement réseau amianté",
+          "source_url": "https://www.ville-bruz.fr/wp-content/uploads/2025/03/Plaquette-Amenagement-du-boulevard-Louis-Pasteur.pdf"
+        },
+        {
+          "date": "2026-05-18",
+          "description": "Début travaux pont de la Gare (av. Jules Tricault) — fermeture totale 15 juin–3 juillet 2026",
+          "source_url": "https://www.ville-bruz.fr/mon-quotidien/travaux-et-demandes-dintervention/travaux-en-cours/"
+        },
+        {
+          "date": "2026-06-01",
+          "description": "Début travaux rue Théodore Botrel (voirie + éclairage) — fin prévue 24 juillet 2026",
+          "source_url": "https://www.ville-bruz.fr/mon-quotidien/travaux-et-demandes-dintervention/travaux-en-cours/"
+        },
+        {
+          "date": "2026-06",
+          "description": "Début travaux avenue du Général de Gaulle (réseaux + voirie) — fin prévue printemps 2027",
+          "source_url": "https://www.ville-bruz.fr/mon-quotidien/travaux-et-demandes-dintervention/travaux-en-cours/"
+        }
+      ],
       "ce_quon_suit": [
         "Les nouvelles zones constructibles ouvertes en révision de PLUi",
         "Les emplacements réservés pour les futurs équipements publics",
-        "Un projet de 67 logements évoqué par la presse dans le quartier du Vert-Buisson — repéré par la veille automatique le 29/06/2026, mais article source inaccessible (lien Google News sans URL propre) : à confirmer avant d'écrire quoi que ce soit dessus"
+        "Un projet de 67 logements évoqué par la presse dans le quartier du Vert-Buisson — repéré par la veille automatique le 29/06/2026, mais article source inaccessible (lien Google News sans URL propre) : à confirmer avant d'écrire quoi que ce soit dessus",
+        "La fin du chantier pont de la Gare — la réouverture le 3 juillet 2026 est-elle tenue ?",
+        "Le planning détaillé du boulevard Pasteur — quels secteurs en 2026, quand la fin ?",
+        "Les chantiers liés à la ZAC Multisites : quand commencent les premiers travaux de viabilisation ?",
+        "Les travaux préparatoires T4 : Rennes Métropole a-t-elle communiqué un planning ?",
+        "Les coupures Enedis de juillet 2026 : quels quartiers exactement ?"
       ],
       "sources": [
         {
@@ -655,11 +705,67 @@
         {
           "label": "Carte interactive — Bruz en Action",
           "url": "/bruz-en-action/carte"
+        },
+        {
+          "label": "Ville de Bruz — Travaux en cours",
+          "url": "https://www.ville-bruz.fr/mon-quotidien/travaux-et-demandes-dintervention/travaux-en-cours/"
+        },
+        {
+          "label": "Plaquette boulevard Pasteur (PDF)",
+          "url": "https://www.ville-bruz.fr/wp-content/uploads/2025/03/Plaquette-Amenagement-du-boulevard-Louis-Pasteur.pdf"
+        },
+        {
+          "label": "Plaquette REV Bruz–Laillé (PDF)",
+          "url": "https://www.ville-bruz.fr/wp-content/uploads/2025/07/Travaux-damenagement-du-Reseau-express-velo-%E2%80%93-Secteur-Bruz-Laille.pdf"
         }
       ],
       "lien_externe": "/bruz-en-action/carte",
-      "actus_recentes": [],
-      "promesses_liees": []
+      "actus_recentes": [
+        {
+          "date": "2026-06-15",
+          "titre": "Fermeture totale du pont de la Gare jusqu'au 3 juillet",
+          "detail": "Avenue Jules Tricault coupée jour et nuit — déviations par rue Émile Gernigon, av. de Wrzésnia, av. de l'Europe, av. Joseph Jan.",
+          "source_url": "https://www.ville-bruz.fr/mon-quotidien/travaux-et-demandes-dintervention/travaux-en-cours/",
+          "source_label": "Mairie de Bruz"
+        },
+        {
+          "date": "2026-06-01",
+          "titre": "Début des travaux rue Théodore Botrel",
+          "detail": "Voirie et éclairage public — fin prévue 24 juillet 2026. Création de stationnement enherbé et cheminements doux.",
+          "source_url": "https://www.ville-bruz.fr/mon-quotidien/travaux-et-demandes-dintervention/travaux-en-cours/",
+          "source_label": "Mairie de Bruz"
+        },
+        {
+          "date": "2026-06",
+          "titre": "Travaux avenue du Général de Gaulle — jusqu'au printemps 2027",
+          "detail": "Réseaux eau/électricité + voirie. Circulation maintenue en alternat.",
+          "source_url": "https://www.ville-bruz.fr/mon-quotidien/travaux-et-demandes-dintervention/travaux-en-cours/",
+          "source_label": "Mairie de Bruz"
+        },
+        {
+          "date": "2025-02",
+          "titre": "Boulevard Pasteur : chantier pluriannuel en cours (min. 3 ans)",
+          "detail": "Remplacement du réseau d'assainissement amianté par Rennes Métropole. Phase actuelle : entre rond-point de Laillé et rue Debussy.",
+          "source_url": "https://www.ville-bruz.fr/wp-content/uploads/2025/03/Plaquette-Amenagement-du-boulevard-Louis-Pasteur.pdf",
+          "source_label": "Mairie de Bruz"
+        }
+      ],
+      "promesses_liees": [],
+      "idees_ailleurs": [
+        {
+          "commune": "Rennes",
+          "idee": "Carte interactive des chantiers en temps réel — statut, durée, impact circulation, contact riverains",
+          "pourquoi_bruz": "La page «Travaux en cours» de Bruz est une liste texte sans carte ni dates précises. Une carte Leaflet (déjà dans la stack du site) suffirait.",
+          "source_url": null
+        },
+        {
+          "commune": "Nantes Métropole",
+          "idee": "Newsletter «Travaux dans mon quartier» — alerte email par zone quand un chantier débute",
+          "pourquoi_bruz": "Le contact comtravaux@rennesmetropole.fr existe mais n'est pas mis en avant par la mairie de Bruz.",
+          "source_url": null
+        }
+      ],
+      "referents_quartier": []
     },
     {
       "id": "D06",
@@ -822,7 +928,7 @@
         }
       ],
       "promesses_liees": [],
-      "image": "/bruz-en-action/illus-d06-piscine.png"
+      "image": "/bruz-en-action/illus-d06-piscine.webp"
     },
     {
       "id": "D07",
@@ -925,7 +1031,7 @@
         }
       ],
       "promesses_liees": [],
-      "image": "/bruz-en-action/illus-d07-securite.png"
+      "image": "/bruz-en-action/illus-d07-securite.webp"
     },
     {
       "id": "D10",
@@ -1008,7 +1114,7 @@
       ],
       "actus_recentes": [],
       "promesses_liees": [],
-      "image": "/bruz-en-action/illus-d10-education.png"
+      "image": "/bruz-en-action/illus-d10-education.webp"
     },
     {
       "id": "D11",
@@ -1141,7 +1247,7 @@
         }
       ],
       "promesses_liees": [],
-      "image": "/bruz-en-action/illus-d11-patrimoine.png"
+      "image": "/bruz-en-action/illus-d11-patrimoine.webp"
     },
     {
       "id": "D12",
@@ -1316,132 +1422,7 @@
           "source_url": "https://vert.eco/climat/canicule-six-solutions-low-tech-pour-adapter-50-000-ecoles-maintenant-et-a-bas-cout/"
         }
       ],
-      "image": "/bruz-en-action/illus-d13-canicule.png"
-    },
-    {
-      "id": "D14",
-      "titre": "Chantiers à Bruz : qui creuse où, jusqu'à quand ?",
-      "categorie": "Voirie",
-      "statut": "en_cours",
-      "featured": false,
-      "last_activity": "2026-06-27",
-      "date_ouverture": "2026-06-27",
-      "chapeau": "Boulevards coupés, déviations imposées, bruits de marteau à 7h du matin — les chantiers à Bruz sont nombreux et souvent mal expliqués. Ce dossier recense les chantiers en cours et à venir sur la commune : qui en est maître d'ouvrage, pour quoi faire, et jusqu'à quand.",
-      "ce_quon_sait": [
-        "La plupart des grands chantiers à Bruz sont portés par Rennes Métropole (voirie, réseaux, T4) — pas par la commune",
-        "La mairie publie une page «Travaux en cours» mais sans dates précises ni carte — contact : Services Techniques 02 99 05 44 52",
-        "Boulevard Pasteur : chantier d'assainissement pluriannuel depuis fév. 2025, durée min. 3 ans — Rennes Métropole. Remplacement du réseau amianté. Phase en cours : entre rond-point de Laillé et rue Debussy.",
-        "Pont de la Gare (av. Jules Tricault / RD77) : travaux mai–juil. 2026 par Rennes Métropole. Fermeture totale du pont (véhicules + piétons + vélos) du 15 juin au 3 juillet 2026. Déviation : rue Émile Gernigon → av. de Wrzésnia → av. de l'Europe → av. Joseph Jan.",
-        "Rue Théodore Botrel : travaux voirie + éclairage public du 1er juin au 24 juillet 2026 — Rennes Métropole. Création stationnement enherbé + cheminements piétons/vélos.",
-        "Avenue du Général de Gaulle : travaux réseaux eau/électricité + voirie de juin 2026 à printemps 2027 — circulation maintenue en alternat.",
-        "Voie verte Bruz–Laillé (REV) : 4,9 km de piste cyclable, mars à juillet 2026 — alternat. Plantation d'une haie bocagère.",
-        "Chemin de halage : fermeture partielle pour curage du canal, mai–juin 2026.",
-        "Coupures Enedis programmées en juillet 2026 (7, 16 et 18 juillet) — plusieurs quartiers concernés.",
-        "Hôtel de Ville : rénovation thermique terminée, réouverture printemps 2026 (AP 1,4 M€ commune).",
-        "4e groupe scolaire Ker Lann : en construction — AP 9,5 M€, livraison visée 2027. Maître d'ouvrage : commune de Bruz."
-      ],
-      "qui_decide": [
-        {
-          "nom": "Rennes Métropole",
-          "role": "Maître d'ouvrage de la plupart des chantiers structurants (voirie, réseaux, T4, REV). Contact : comtravaux@rennesmetropole.fr / 06 69 95 25 76"
-        },
-        {
-          "nom": "Thomas de la Rivière (Bruz)",
-          "role": "Délégué Patrimoine & Travaux depuis avril 2026 — interlocuteur pour les chantiers communaux"
-        },
-        {
-          "nom": "Enedis",
-          "role": "Coupures programmées pour maintenance du réseau électrique — juillet 2026"
-        }
-      ],
-      "decisions": [
-        {
-          "date": "2025-02",
-          "description": "Lancement chantier boulevard Pasteur — assainissement pluriannuel (min. 3 ans), remplacement réseau amianté",
-          "source_url": "https://www.ville-bruz.fr/wp-content/uploads/2025/03/Plaquette-Amenagement-du-boulevard-Louis-Pasteur.pdf"
-        },
-        {
-          "date": "2026-05-18",
-          "description": "Début travaux pont de la Gare (av. Jules Tricault) — fermeture totale 15 juin–3 juillet 2026",
-          "source_url": "https://www.ville-bruz.fr/mon-quotidien/travaux-et-demandes-dintervention/travaux-en-cours/"
-        },
-        {
-          "date": "2026-06-01",
-          "description": "Début travaux rue Théodore Botrel (voirie + éclairage) — fin prévue 24 juillet 2026",
-          "source_url": "https://www.ville-bruz.fr/mon-quotidien/travaux-et-demandes-dintervention/travaux-en-cours/"
-        },
-        {
-          "date": "2026-06",
-          "description": "Début travaux avenue du Général de Gaulle (réseaux + voirie) — fin prévue printemps 2027",
-          "source_url": "https://www.ville-bruz.fr/mon-quotidien/travaux-et-demandes-dintervention/travaux-en-cours/"
-        }
-      ],
-      "ce_quon_suit": [
-        "La fin du chantier pont de la Gare — la réouverture le 3 juillet 2026 est-elle tenue ?",
-        "Le planning détaillé du boulevard Pasteur — quels secteurs en 2026, quand la fin ?",
-        "Les chantiers liés à la ZAC Multisites : quand commencent les premiers travaux de viabilisation ?",
-        "Les travaux préparatoires T4 : Rennes Métropole a-t-elle communiqué un planning ?",
-        "Les coupures Enedis de juillet 2026 : quels quartiers exactement ?"
-      ],
-      "sources": [
-        {
-          "label": "Ville de Bruz — Travaux en cours",
-          "url": "https://www.ville-bruz.fr/mon-quotidien/travaux-et-demandes-dintervention/travaux-en-cours/"
-        },
-        {
-          "label": "Plaquette boulevard Pasteur (PDF)",
-          "url": "https://www.ville-bruz.fr/wp-content/uploads/2025/03/Plaquette-Amenagement-du-boulevard-Louis-Pasteur.pdf"
-        },
-        {
-          "label": "Plaquette REV Bruz–Laillé (PDF)",
-          "url": "https://www.ville-bruz.fr/wp-content/uploads/2025/07/Travaux-damenagement-du-Reseau-express-velo-%E2%80%93-Secteur-Bruz-Laille.pdf"
-        }
-      ],
-      "actus_recentes": [
-        {
-          "date": "2026-06-15",
-          "titre": "Fermeture totale du pont de la Gare jusqu'au 3 juillet",
-          "detail": "Avenue Jules Tricault coupée jour et nuit — déviations par rue Émile Gernigon, av. de Wrzésnia, av. de l'Europe, av. Joseph Jan.",
-          "source_url": "https://www.ville-bruz.fr/mon-quotidien/travaux-et-demandes-dintervention/travaux-en-cours/",
-          "source_label": "Mairie de Bruz"
-        },
-        {
-          "date": "2026-06-01",
-          "titre": "Début des travaux rue Théodore Botrel",
-          "detail": "Voirie et éclairage public — fin prévue 24 juillet 2026. Création de stationnement enherbé et cheminements doux.",
-          "source_url": "https://www.ville-bruz.fr/mon-quotidien/travaux-et-demandes-dintervention/travaux-en-cours/",
-          "source_label": "Mairie de Bruz"
-        },
-        {
-          "date": "2026-06",
-          "titre": "Travaux avenue du Général de Gaulle — jusqu'au printemps 2027",
-          "detail": "Réseaux eau/électricité + voirie. Circulation maintenue en alternat.",
-          "source_url": "https://www.ville-bruz.fr/mon-quotidien/travaux-et-demandes-dintervention/travaux-en-cours/",
-          "source_label": "Mairie de Bruz"
-        },
-        {
-          "date": "2025-02",
-          "titre": "Boulevard Pasteur : chantier pluriannuel en cours (min. 3 ans)",
-          "detail": "Remplacement du réseau d'assainissement amianté par Rennes Métropole. Phase actuelle : entre rond-point de Laillé et rue Debussy.",
-          "source_url": "https://www.ville-bruz.fr/wp-content/uploads/2025/03/Plaquette-Amenagement-du-boulevard-Louis-Pasteur.pdf",
-          "source_label": "Mairie de Bruz"
-        }
-      ],
-      "idees_ailleurs": [
-        {
-          "commune": "Rennes",
-          "idee": "Carte interactive des chantiers en temps réel — statut, durée, impact circulation, contact riverains",
-          "pourquoi_bruz": "La page «Travaux en cours» de Bruz est une liste texte sans carte ni dates précises. Une carte Leaflet (déjà dans la stack du site) suffirait.",
-          "source_url": null
-        },
-        {
-          "commune": "Nantes Métropole",
-          "idee": "Newsletter «Travaux dans mon quartier» — alerte email par zone quand un chantier débute",
-          "pourquoi_bruz": "Le contact comtravaux@rennesmetropole.fr existe mais n'est pas mis en avant par la mairie de Bruz.",
-          "source_url": null
-        }
-      ],
-      "promesses_liees": []
+      "image": "/bruz-en-action/illus-d13-canicule.webp"
     },
     {
       "id": "D15",

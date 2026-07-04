@@ -20,7 +20,8 @@
 - [ ] **D12** — City stade Siméon Belliard : suivre délibération reconstruction (250-300k€ annoncés, calendrier non précisé) + issue procédure judiciaire riverains
 - [ ] **D13** — Canicule : suivre si mairie publie carte îlots / chiffres CCAS / PCS mis à jour
 - [ ] **Nouveaux dossiers** — Bonnat-Sablat (préemption)
-- [ ] **D14** — Chantiers : suivre réouverture pont de la Gare (3 juil.), planning Pasteur 2026, premiers chantiers ZAC Multisites
+- [ ] **D05 (ex-D14 fusionné)** — Bruz en carte : suivre réouverture pont de la Gare (3 juil.), planning Pasteur 2026, premiers chantiers ZAC Multisites
+- [ ] **D05 — référents de quartier** — vérifier si Bruz a un dispositif de conseils/référents de quartier (aucune donnée source actuellement dans `elus.json` ni ailleurs) ; si oui, sourcer noms + périmètres et alimenter le nouveau champ `referents_quartier` (scaffold vide en place) ; sinon documenter l'absence
 - [ ] **D11** — Plan B / Manoir de la Noë : suivre renouvellement convention guinguette après été 2026 + statut pérenne Plan B + toute délibération CM
 - [ ] **D16** — Économie locale : commerce, artisanat, Ker Lann, aides aux entreprises — pilier 4 du programme, zéro dossier actuellement
 - [ ] **D17** — Coup de pouce : associations et jeunes entreprises (subventions, salles, couveuse, coworking)

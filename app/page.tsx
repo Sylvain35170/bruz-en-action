@@ -80,7 +80,7 @@ export default function Home() {
       {/* ── HEADER ── */}
       <header style={{ position: "relative", background: "var(--night-gradient)", color: "#fff", overflow: "hidden" }}>
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/bruz-en-action/bruz-place.jpg" alt="" aria-hidden="true" style={{
+        <img src="/bruz-en-action/bruz-place.webp" alt="" aria-hidden="true" style={{
           position: "absolute", inset: 0, width: "100%", height: "100%",
           objectFit: "cover", objectPosition: "center 60%",
           opacity: 0.22, pointerEvents: "none", userSelect: "none",
@@ -152,7 +152,7 @@ export default function Home() {
       {/* ── ILLUSTRATION HERO ── */}
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
-        src="/bruz-en-action/illus-hero.png"
+        src="/bruz-en-action/illus-hero.webp"
         alt="Illustration de Bruz — citoyens et ville"
         style={{ width: "100%", maxHeight: 280, objectFit: "cover", objectPosition: "center top", display: "block" }}
       />
@@ -162,7 +162,7 @@ export default function Home() {
         <div style={{ maxWidth: "var(--container-max)", margin: "0 auto", padding: "56px var(--container-pad)", display: "flex", gap: 48, alignItems: "center", flexWrap: "wrap" }}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/bruz-en-action/illus-asso.png"
+            src="/bruz-en-action/illus-asso.webp"
             alt="Bruz En Action — citoyens engagés"
             style={{ width: "min(380px, 100%)", borderRadius: 16, flexShrink: 0 }}
           />

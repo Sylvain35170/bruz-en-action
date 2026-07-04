@@ -26,7 +26,13 @@ const NAV_GROUPS = [
     label: "👥 Qui décide",
     links: [
       { href: "/bruz-en-action/elus", label: "👥 Élus" },
-      { href: "/bruz-en-action/carte", label: "🗺️ Carte" },
+    ],
+  },
+  {
+    label: "🗺️ Bruz en carte",
+    links: [
+      { href: "/bruz-en-action/carte", label: "🗺️ Carte interactive" },
+      { href: "/bruz-en-action/dossiers/D05", label: "📁 Quartiers & chantiers" },
     ],
   },
   {
