@@ -27,7 +27,7 @@
 - [ ] **D17** — Coup de pouce : associations et jeunes entreprises (subventions, salles, couveuse, coworking)
 - [ ] **D18** — Démocratie locale : réunions de quartier, CMJ, transparence — pilier 7, mesurable sur le mandat
 - [ ] **D19 (à créer)** — Équipements sportifs à Bruz : vue d'ensemble gymnases/terrains/city stades, au-delà du seul D12 (city stade Siméon Beliard) et D06 (piscine) — vérifier chevauchement avant création
-- [ ] **D20 en profondeur** — Ker Lann : suivre tout projet de résidence étudiante lié à la ZAC Ker Lann Sud, et vérifier s'il existe une réponse CROUS/logement conventionné (non identifiée à l'ouverture du dossier)
+- [ ] **D20 en profondeur** — Ker Lann : « My Campus Rennes Ker Lann » (78 logements privés LMNP, Bouygues) trouvé et documenté, livraison T4 2027 à vérifier ; toujours aucune résidence CROUS/conventionnée identifiée — creuser cette piste spécifiquement
 - [ ] **idees_ailleurs** — alimenter les dossiers D01–D12 avec des pratiques d'autres communes (champ JSON en place, vide sur tous sauf D13)
 
 ## 🟡 À faire — Design & Illustrations
@@ -44,7 +44,7 @@
 
 ## 🟡 À faire — Technique
 
-- [ ] **Link-checker mairie** — les URLs `ville-bruz.fr/actualites/...` pourrissent vite (page retirée après quelques semaines, ex. D13 le 04/07/2026 : 2 liens morts trouvés). Toujours pas de script QA (piège déjà noté le 2026-06-20) — prioriser un scan périodique des `source_url` du site
+- [ ] **Automatiser le link-checker** — `agent_qa.py --links` existe et tourne manuellement (fait le 2026-07-04) ; reste à le brancher en cron périodique pour détecter les futures pourritures d'URLs `ville-bruz.fr/actualites/...` sans attendre un run manuel
 - [ ] **CRs réunions** — réimporter les docx (encodage zip raté sur les accents) — fichiers source à relocaliser
 - [ ] **Actus** — enrichir au fil des décisions
 - [ ] **Seuil dédup `is_already_published`** — surveiller les prochains runs `agent_select` : seuil de similarité de titre à 0.6 (`scripts/utils.py`), un cas limite repéré ("Stage de natation piscine de la Conterie" vs "Ouverture des inscriptions natation", ratio 0.70) — ajuster si trop/pas assez agressif
