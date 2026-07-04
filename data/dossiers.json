@@ -1297,7 +1297,7 @@
       "categorie": "Équipements",
       "statut": "en_cours",
       "featured": false,
-      "last_activity": "2026-07-01",
+      "last_activity": "2026-07-04",
       "date_ouverture": "2026-06-21",
       "chapeau": "Un city stade — terrain multisports clôturé, gratuit, sans inscription, pensé pour les 12-25 ans — installé en 2023 au stade Siméon Beliard pour 380 000 €, a été démonté fin mai 2026 après deux ans de nuisances sonores subies par les riverains (jusqu'à 80 dB relevés sur les terrasses). La nouvelle municipalité a agi vite. Elle promet une reconstruction près du skate-park pour 250 à 300 000 € supplémentaires. Ce dossier suit la concrétisation de cet engagement — et le coût total d'une implantation mal pensée.",
       "ce_quon_sait": [
@@ -1354,7 +1354,15 @@
           "url": "https://www.ouest-france.fr/bretagne/bruz-35170/plus-aucun-repit-ces-aires-de-jeux-qui-exasperent-des-habitants-de-rennes-et-sa-metropole-17b38cda-58f1-11f0-a250-ccec68869d1d"
         }
       ],
-      "actus_recentes": [],
+      "actus_recentes": [
+        {
+          "date": "2026-07-04",
+          "titre": "Reconstruction du city stade : toujours pas de délibération budgétaire",
+          "detail": "Vérification sur les délibérations et procès-verbaux de conseil municipal publiés depuis mai 2026 (portail Mégalis) : aucun acte relatif au city stade Siméon Beliard n'a été publié. L'annonce du maire (250-300 000 €, emplacement près du skate-park) reste non budgétée à ce jour, sans calendrier officiel.",
+          "source_url": "https://data.megalis.bretagne.bzh/?siren=213500473",
+          "source_label": "Mégalis Bretagne — délibérations Bruz"
+        }
+      ],
       "promesses_liees": []
     },
     {
