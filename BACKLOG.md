@@ -14,7 +14,7 @@
 
 ## 🟡 À faire — Dossiers à instruire
 
-- [ ] **D15** — Offre de soins : surveiller arrêté zonage ARS Bretagne (été 2026), délibérations CM sur MSP, données CPAM sans-MT par commune
+- [ ] **D15** — Offre de soins : arrêté zonage ARS Bretagne attendu après session plénière CRSA du 8 juillet 2026 (à vérifier après cette date), délibérations CM sur MSP, données CPAM sans-MT par commune
 - [ ] **D02 en profondeur** — vérifier les chiffres La Courrouze / Baud-Chardonnet quand sources disponibles
 - [ ] **D10 en profondeur** — Écoles + Vert-Buisson
 - [ ] **D12** — City stade Siméon Belliard : suivre délibération reconstruction (250-300k€ annoncés, calendrier non précisé) + issue procédure judiciaire riverains
