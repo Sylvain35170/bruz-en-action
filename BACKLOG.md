@@ -44,6 +44,7 @@
 
 ## 🟡 À faire — Technique
 
+- [ ] **Link-checker mairie** — les URLs `ville-bruz.fr/actualites/...` pourrissent vite (page retirée après quelques semaines, ex. D13 le 04/07/2026 : 2 liens morts trouvés). Toujours pas de script QA (piège déjà noté le 2026-06-20) — prioriser un scan périodique des `source_url` du site
 - [ ] **CRs réunions** — réimporter les docx (encodage zip raté sur les accents) — fichiers source à relocaliser
 - [ ] **Actus** — enrichir au fil des décisions
 - [ ] **Seuil dédup `is_already_published`** — surveiller les prochains runs `agent_select` : seuil de similarité de titre à 0.6 (`scripts/utils.py`), un cas limite repéré ("Stage de natation piscine de la Conterie" vs "Ouverture des inscriptions natation", ratio 0.70) — ajuster si trop/pas assez agressif

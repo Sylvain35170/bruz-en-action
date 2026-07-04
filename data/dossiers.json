@@ -1385,7 +1385,8 @@
         "Collecte des déchets décalée (5h-13h et 20h-3h) pour protéger les agents",
         "Activités sportives suspendues dans les équipements municipaux (sauf bâtiments climatisés et sports aquatiques)",
         "Aucune liste publique d'îlots de fraîcheur identifiés et cartographiés sur le territoire",
-        "La végétalisation des espaces publics est un levier de long terme — aucun programme pluriannuel annoncé à Bruz"
+        "La végétalisation des espaces publics est un levier de long terme — aucun programme pluriannuel annoncé à Bruz",
+        "Bruz dispose bien d'un Plan Communal de Sauvegarde (PCS) formel (page officielle « Les risques majeurs à Bruz ») — mais les catégories de risques listées publiquement (météo, inondation, TMD, épidémie, nucléaire) ne nomment pas explicitement la canicule ; elle semble traitée en pratique (activation juin 2026) sans figurer noir sur blanc dans la communication publique du PCS"
       ],
       "qui_decide": [
         {
@@ -1405,12 +1406,12 @@
         {
           "date": "2026-06-22",
           "description": "Activation du plan communal canicule à la suite de la vigilance rouge préfectorale : ventilateurs/brumisateurs dans les écoles, repas froids, registre CCAS activé, collecte des déchets décalée (5h-13h et 20h-3h), activités sportives suspendues hors équipements climatisés",
-          "source_url": "https://www.ville-bruz.fr/actualites/canicule-mesures-mises-en-place-dans-les-ecoles-publiques/"
+          "source_url": null
         },
         {
           "date": "2026-06-22",
           "description": "Ajustement des horaires de la piscine de la Conterie : bassin nordique extérieur élargi (7h30-20h), salles intérieures fermées pour travaux jusqu'au 3 juillet",
-          "source_url": "https://www.ville-bruz.fr/actualites/fermeture-partielle-de-la-piscine-de-la-conterie/"
+          "source_url": null
         }
       ],
       "ce_quon_suit": [
@@ -1418,12 +1419,17 @@
         "La climatisation des bâtiments scolaires : solution structurelle ou mesures ponctuelles reconductibles ?",
         "Le CCAS : combien de personnes inscrites au registre vulnérables ? Le chiffre est-il communiqué ?",
         "La fermeture de la piscine intérieure pour travaux (22/06-3/07) coïncide avec la canicule — un hasard de calendrier à documenter",
-        "La végétalisation des rues et espaces publics — programme pluriannuel dans le budget 2027 ?"
+        "La végétalisation des rues et espaces publics — programme pluriannuel dans le budget 2027 ?",
+        "Climatisation des écoles publiques (Champ l'Évêque, Jacques Prévert, Vert Buisson, futur groupe Ker Lann) et privées (La Providence Centre, La Providence Vert Buisson) : aucune donnée publique trouvée sur l'équipement actuel (recherche web + site mairie, 04/07/2026) — statut à demander directement aux écoles ou à la mairie, rien à ce stade ne permet de dire si une seule salle de Bruz est climatisée"
       ],
       "sources": [
         {
           "label": "Plan national canicule — Santé publique France",
           "url": "https://www.santepubliquefrance.fr/determinants-de-sante/climat"
+        },
+        {
+          "label": "Ville de Bruz — Les risques majeurs à Bruz (PCS)",
+          "url": "https://www.ville-bruz.fr/mon-quotidien/tranquilite-publique-et-securite/les-risques-majeurs-a-bruz/"
         }
       ],
       "actus_recentes": [
@@ -1438,14 +1444,14 @@
           "date": "2026-06-25",
           "titre": "Canicule : mesures mises en place dans les écoles publiques",
           "detail": "La mairie publie les dispositions d'exception déployées dans les écoles publiques bruzaises pour faire face aux fortes chaleurs. Ces mesures visent à assurer la sécurité, le bien-être et la continuité pédagogique des élèves.",
-          "source_url": "https://www.ville-bruz.fr/actualites/canicule-mesures-mises-en-place-dans-les-ecoles-publiques/",
+          "source_url": null,
           "source_label": "Mairie de Bruz — Actualités"
         },
         {
           "date": "2026-06-25",
           "titre": "Fermeture partielle de la piscine de la Conterie",
           "detail": "En raison de la canicule, la piscine municipale de la Conterie ajuste son fonctionnement avec des horaires réduits.",
-          "source_url": "https://www.ville-bruz.fr/actualites/fermeture-partielle-de-la-piscine-de-la-conterie/",
+          "source_url": null,
           "source_label": "Mairie de Bruz — Actualités"
         },
         {
