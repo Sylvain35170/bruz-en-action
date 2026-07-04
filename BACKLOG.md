@@ -16,7 +16,8 @@
 
 - [ ] **D15** — Offre de soins : arrêté zonage ARS Bretagne attendu après session plénière CRSA du 8 juillet 2026 (à vérifier après cette date), délibérations CM sur MSP, données CPAM sans-MT par commune
 - [ ] **D02 en profondeur** — vérifier les chiffres La Courrouze / Baud-Chardonnet quand sources disponibles
-- [ ] **D10 en profondeur** — Écoles + Vert-Buisson
+- [ ] **CM-2026-07-03** — PV/délibérations pas encore publiés sur Mégalis au 04/07/2026 (41 points à l'ordre du jour documentés en attendant : construction 4e groupe scolaire Ker Lann Sud, mesures carte scolaire rentrée 2026-2027, participation piscine Conterie...) — repasser mettre à jour les votes/résultats dès publication
+- [ ] **D10 en profondeur** — Écoles + Vert-Buisson, + suivre l'issue du point 29 du CM du 3 juillet (mesures carte scolaire)
 - [ ] **D12** — City stade Siméon Belliard : suivre délibération reconstruction (250-300k€ annoncés, calendrier non précisé) + issue procédure judiciaire riverains
 - [ ] **D13** — Canicule : suivre si mairie publie carte îlots / chiffres CCAS / PCS mis à jour
 - [ ] **Nouveaux dossiers** — Bonnat-Sablat (préemption)
