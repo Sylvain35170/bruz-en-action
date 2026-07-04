@@ -11,20 +11,273 @@
     {
       "id": "CM-2026-07-03",
       "date": "2026-07-03",
-      "statut": "a_venir",
+      "statut": "passe",
       "lieu": "Halle Pagnol, Bruz — 19h",
       "titre": "Conseil municipal de juillet",
-      "resume_executif": "Première séance à fort enjeu budgétaire de la mandature Houssin. Le budget primitif 2026 et les premières orientations financières du mandat sont attendus.",
-      "contexte": "Trois mois après l'installation du conseil, la nouvelle équipe présente ses premières décisions budgétaires. C'est le moment de vérité entre les promesses de campagne et les contraintes financières réelles héritées de la mandature Salmon.",
-      "points_cles": [],
-      "deliberations": [],
+      "resume_executif": "Séance très dense — 41 délibérations à l'ordre du jour, la plus chargée depuis l'installation du conseil. Deux points structurants pour l'offre scolaire : le lancement des travaux de construction du 4e groupe scolaire (Ker Lann Sud) et les mesures de carte scolaire pour la rentrée 2026-2027. Gros bloc Éducation (14 délibérations : tarifs crèches/périscolaire/jeunesse, conventions EHPAD et résidence seniors, RASED Guichen). Une dizaine de sujets fonciers/aménagement (cessions parking Pagnol, domaine de Cicé Blossac, changement de nom de la place du Vert Buisson en place Robert Barré, schéma départemental gens du voyage 2026-2032). Création d'un comité mobilités. Résultats des votes non encore publiés (procès-verbal en attente sur Mégalis au 04/07/2026) — la liste ci-dessous reflète l'ordre du jour, pas encore les décisions actées.",
+      "contexte": "Troisième séance ordinaire de la mandature Houssin (après le CM d'installation de mars et celui de mai). Convocation transmise le 26/06/2026, 41 points à l'ordre du jour répartis entre 8 élus rapporteurs.",
+      "points_cles": [
+        "Construction du 4e groupe scolaire (Ker Lann Sud) : marché de travaux (école primaire, ALSH, restauration) à l'ordre du jour — point 9",
+        "Mesures de carte scolaire rentrée 2026-2027 — point 29, à recouper avec les annonces de l'Inspection Académique 35",
+        "Bloc Éducation très dense : 14 délibérations (tarifs crèches/périscolaire/jeunesse, conventions EHPAD et résidence seniors, RASED Guichen)",
+        "Participation 2026 au syndicat intercommunal piscine de la Conterie — point 7",
+        "Une dizaine de sujets fonciers/aménagement, dont le renommage de la place du Vert Buisson en place Robert Barré et l'avis sur le schéma départemental d'accueil des gens du voyage 2026-2032",
+        "Création d'un comité mobilités porté par Patrick Roullé"
+      ],
+      "deliberations": [
+        {
+          "numero": "26-07-01",
+          "titre": "Assemblée — Compte rendu des actes pris par le maire dans le cadre de ses délégations (16 mars au 16 juin 2026)",
+          "porteur": "Jean-René Houssin",
+          "vote": "Résultat non publié (PV en attente sur Mégalis)"
+        },
+        {
+          "numero": "26-07-02",
+          "titre": "Assemblée — Règlement intérieur du conseil municipal",
+          "porteur": "Jean-René Houssin",
+          "vote": "Résultat non publié (PV en attente sur Mégalis)"
+        },
+        {
+          "numero": "26-07-03",
+          "titre": "Assemblée — Plan de continuité et de reprise d'activité en cas d'incident informatique",
+          "porteur": "Jean-René Houssin",
+          "vote": "Résultat non publié (PV en attente sur Mégalis)"
+        },
+        {
+          "numero": "26-07-04",
+          "titre": "Assemblée — Délégations du conseil municipal données au maire",
+          "porteur": "Sylvie Briend",
+          "vote": "Résultat non publié (PV en attente sur Mégalis)"
+        },
+        {
+          "numero": "26-07-05",
+          "titre": "Finances — Commission locale d'évaluation des charges transférées : désignation des représentants",
+          "porteur": "André Le Tulzo",
+          "vote": "Résultat non publié (PV en attente sur Mégalis)"
+        },
+        {
+          "numero": "26-07-06",
+          "titre": "Finances — Convention de participation financière Guichen / communes BVAHBC / Bruz — Restos du Cœur",
+          "porteur": "André Le Tulzo",
+          "vote": "Résultat non publié (PV en attente sur Mégalis)"
+        },
+        {
+          "numero": "26-07-07",
+          "titre": "Finances — Participation 2026 au syndicat intercommunal de la piscine de la Conterie",
+          "porteur": "André Le Tulzo",
+          "vote": "Résultat non publié (PV en attente sur Mégalis)"
+        },
+        {
+          "numero": "26-07-08",
+          "titre": "Finances — Rénovation thermique de l'Hôtel de Ville : modification du marché",
+          "porteur": "Thomas de la Rivière",
+          "vote": "Résultat non publié (PV en attente sur Mégalis)"
+        },
+        {
+          "numero": "26-07-09",
+          "titre": "Finances — Travaux de construction d'une école primaire (maternelle et élémentaire), d'un ALSH et d'un espace de restauration",
+          "porteur": "Thomas de la Rivière",
+          "vote": "Résultat non publié (PV en attente sur Mégalis)"
+        },
+        {
+          "numero": "26-07-10",
+          "titre": "Finances — Marchés publics : accord-cadre balayage et désherbage mécanique de la voirie et des caniveaux",
+          "porteur": "Thomas de la Rivière",
+          "vote": "Résultat non publié (PV en attente sur Mégalis)"
+        },
+        {
+          "numero": "26-07-11",
+          "titre": "Finances — Marchés publics : accord-cadre maintenance des installations de chauffage, ventilation et climatisation (CVC)",
+          "porteur": "Thomas de la Rivière",
+          "vote": "Résultat non publié (PV en attente sur Mégalis)"
+        },
+        {
+          "numero": "26-07-12",
+          "titre": "Finances — Marchés publics assurances : modification du marché, lot n°2 « responsabilité et risques annexes »",
+          "porteur": "Thomas de la Rivière",
+          "vote": "Résultat non publié (PV en attente sur Mégalis)"
+        },
+        {
+          "numero": "26-07-13",
+          "titre": "Finances — Marchés publics : accord-cadre travaux d'entretien, réhabilitation et extension de la voirie communale — avenant révision des prix",
+          "porteur": "Thomas de la Rivière",
+          "vote": "Résultat non publié (PV en attente sur Mégalis)"
+        },
+        {
+          "numero": "26-07-14",
+          "titre": "Aménagement — Régularisations foncières, domaine de Cicé Blossac",
+          "porteur": "Jean-Patrick Desguérets",
+          "vote": "Résultat non publié (PV en attente sur Mégalis)"
+        },
+        {
+          "numero": "26-07-15",
+          "titre": "Aménagement — Désaffectation, déclassement parcelle CM71",
+          "porteur": "Jean-Patrick Desguérets",
+          "vote": "Résultat non publié (PV en attente sur Mégalis)"
+        },
+        {
+          "numero": "26-07-16",
+          "titre": "Aménagement — Cession 9 rue Fleming, parcelle CM71",
+          "porteur": "Jean-Patrick Desguérets",
+          "vote": "Résultat non publié (PV en attente sur Mégalis)"
+        },
+        {
+          "numero": "26-07-17",
+          "titre": "Aménagement — Changement de dénomination : place du Vert Buisson devient place Robert Barré",
+          "porteur": "Jean-Patrick Desguérets",
+          "vote": "Résultat non publié (PV en attente sur Mégalis)"
+        },
+        {
+          "numero": "26-07-18",
+          "titre": "Aménagement — Cession places de stationnement parking Pagnol : réduction du prix de cession",
+          "porteur": "Jean-Patrick Desguérets",
+          "vote": "Résultat non publié (PV en attente sur Mégalis)"
+        },
+        {
+          "numero": "26-07-19",
+          "titre": "Aménagement — Cession places de stationnement parking Pagnol : remboursement de la différence de prix",
+          "porteur": "Jean-Patrick Desguérets",
+          "vote": "Résultat non publié (PV en attente sur Mégalis)"
+        },
+        {
+          "numero": "26-07-20",
+          "titre": "Aménagement — Cession places de stationnement parking Pagnol : lot 108",
+          "porteur": "Jean-Patrick Desguérets",
+          "vote": "Résultat non publié (PV en attente sur Mégalis)"
+        },
+        {
+          "numero": "26-07-21",
+          "titre": "Aménagement — Cession places de stationnement parking Pagnol : lots 146, 147 et 148",
+          "porteur": "Jean-Patrick Desguérets",
+          "vote": "Résultat non publié (PV en attente sur Mégalis)"
+        },
+        {
+          "numero": "26-07-22",
+          "titre": "Aménagement — Avis de la ville sur le schéma départemental d'accueil et d'habitat des gens du voyage d'Ille-et-Vilaine 2026-2032",
+          "porteur": "Jean-Patrick Desguérets",
+          "vote": "Résultat non publié (PV en attente sur Mégalis)"
+        },
+        {
+          "numero": "26-07-23",
+          "titre": "Aménagement — Convention de partenariat vélo BreizhGo, gare de Ker Lann — Région Bretagne",
+          "porteur": "Jean-Patrick Desguérets",
+          "vote": "Résultat non publié (PV en attente sur Mégalis)"
+        },
+        {
+          "numero": "26-07-24",
+          "titre": "Aménagement — Convention de location du droit de chasse",
+          "porteur": "Jean-Patrick Desguérets",
+          "vote": "Résultat non publié (PV en attente sur Mégalis)"
+        },
+        {
+          "numero": "26-07-25",
+          "titre": "Éducation — Tarifs des repas et goûters pour la crèche « Le Jardin des Lutins » et la crèche municipale « Les Suricates » — année scolaire 2026-2027",
+          "porteur": "Françoise Lotton",
+          "vote": "Résultat non publié (PV en attente sur Mégalis)"
+        },
+        {
+          "numero": "26-07-26",
+          "titre": "Éducation — Enfants bruzois scolarisés dans les écoles de Guichen : prise en charge de la majoration tarifaire périscolaire et restauration",
+          "porteur": "Françoise Lotton",
+          "vote": "Résultat non publié (PV en attente sur Mégalis)"
+        },
+        {
+          "numero": "26-07-27",
+          "titre": "Éducation — Participation aux frais de scolarité d'un enfant scolarisé à Vezin-le-Coquet — année scolaire 2024-2025",
+          "porteur": "Françoise Lotton",
+          "vote": "Résultat non publié (PV en attente sur Mégalis)"
+        },
+        {
+          "numero": "26-07-28",
+          "titre": "Éducation — Convention pour la prise en charge du temps méridien de l'école Sainte-Rose-de-Lima",
+          "porteur": "Françoise Lotton",
+          "vote": "Résultat non publié (PV en attente sur Mégalis)"
+        },
+        {
+          "numero": "26-07-29",
+          "titre": "Éducation — Mesures de carte scolaire — rentrée 2026-2027",
+          "porteur": "Françoise Lotton",
+          "vote": "Résultat non publié (PV en attente sur Mégalis)"
+        },
+        {
+          "numero": "26-07-30",
+          "titre": "Éducation — Participation communale 2025-2026 au RASED de Guichen",
+          "porteur": "Françoise Lotton",
+          "vote": "Résultat non publié (PV en attente sur Mégalis)"
+        },
+        {
+          "numero": "26-07-31",
+          "titre": "Éducation — Convention de partenariat entre le service enfance et la résidence seniors « Les Girandières »",
+          "porteur": "Françoise Lotton",
+          "vote": "Résultat non publié (PV en attente sur Mégalis)"
+        },
+        {
+          "numero": "26-07-32",
+          "titre": "Éducation — Convention de partenariat entre le service enfance et l'EHPAD « Résidence Les Bruyères »",
+          "porteur": "Françoise Lotton",
+          "vote": "Résultat non publié (PV en attente sur Mégalis)"
+        },
+        {
+          "numero": "26-07-33",
+          "titre": "Éducation — Tarifs périscolaires et de restauration — année scolaire 2026-2027",
+          "porteur": "Françoise Lotton",
+          "vote": "Résultat non publié (PV en attente sur Mégalis)"
+        },
+        {
+          "numero": "26-07-34",
+          "titre": "Éducation — Tarifs de l'accueil de loisirs 3-10 ans — année scolaire 2026-2027",
+          "porteur": "Françoise Lotton",
+          "vote": "Résultat non publié (PV en attente sur Mégalis)"
+        },
+        {
+          "numero": "26-07-35",
+          "titre": "Éducation — Tarifs accueils jeunesse (11-25 ans) — année scolaire 2026-2027",
+          "porteur": "Françoise Lotton",
+          "vote": "Résultat non publié (PV en attente sur Mégalis)"
+        },
+        {
+          "numero": "26-07-36",
+          "titre": "Éducation — Séjours et mini-séjours enfance-jeunesse : tarifs année scolaire 2026-2027",
+          "porteur": "Françoise Lotton",
+          "vote": "Résultat non publié (PV en attente sur Mégalis)"
+        },
+        {
+          "numero": "26-07-37",
+          "titre": "Éducation — Mise à jour du règlement de fonctionnement du service enfance 2026-2027",
+          "porteur": "Françoise Lotton",
+          "vote": "Résultat non publié (PV en attente sur Mégalis)"
+        },
+        {
+          "numero": "26-07-38",
+          "titre": "Éducation — Mise à jour du règlement de fonctionnement du service jeunesse 2026-2027",
+          "porteur": "Françoise Lotton",
+          "vote": "Résultat non publié (PV en attente sur Mégalis)"
+        },
+        {
+          "numero": "26-07-39",
+          "titre": "Transition écologique et mobilités — Création d'un comité mobilités",
+          "porteur": "Patrick Roullé",
+          "vote": "Résultat non publié (PV en attente sur Mégalis)"
+        },
+        {
+          "numero": "26-07-40",
+          "titre": "Culture — Convention de partenariat entre la ville et la Maison de l'Enfance de Carcé (juin 2026)",
+          "porteur": "Émilie Vitter",
+          "vote": "Résultat non publié (PV en attente sur Mégalis)"
+        },
+        {
+          "numero": "26-07-41",
+          "titre": "Personnel — Création d'emplois non permanents pour accroissement saisonnier ou temporaire d'activité, année scolaire 2026-2027",
+          "porteur": "Sylvie Briend",
+          "vote": "Résultat non publié (PV en attente sur Mégalis)"
+        }
+      ],
       "points_chauds": [],
       "impact_bruzois": [],
       "a_surveiller": [
-        "Budget primitif 2026 : quelle marge d'investissement pour le mandat ?",
-        "Premières délibérations sur la sécurité (renfort police municipale, vidéoprotection) — priorité affichée en avril",
-        "Éventuelles décisions sur la ZAC Multisites : dossier de réalisation premier secteur ?",
-        "Niveau d'endettement hérité et capacité d'autofinancement présentés pour la première fois"
+        "Publication du procès-verbal et des délibérations votées (Mégalis) — les 41 points ci-dessus sont l'ordre du jour, pas encore les résultats de vote",
+        "Contenu exact des « mesures de carte scolaire rentrée 2026-2027 » (point 29) — ouvertures/fermetures de classes à Bruz ?",
+        "Calendrier du marché de construction du 4e groupe scolaire Ker Lann Sud (point 9)"
       ],
       "sources": [
         {
@@ -34,6 +287,10 @@
         {
           "label": "Semaine à Bruz n°856 (11-25 juin 2026) — confirmation date et lieu",
           "url": "https://www.ville-bruz.fr/wp-content/uploads/2026/06/Semaine-a-Bruz-n%C2%B0856-du-11-au-25-juin-2026.pdf"
+        },
+        {
+          "label": "Mégalis Bretagne — Convocation Conseil municipal du 03/07/2026 (ordre du jour complet, 41 points)",
+          "url": "https://data.megalis.bretagne.bzh/?siren=213500473"
         }
       ]
     },
