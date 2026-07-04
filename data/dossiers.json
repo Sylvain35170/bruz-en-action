@@ -929,7 +929,8 @@
         },
         {
           "label": "Piscine de la Conterie — inscriptions (mairie)",
-          "url": "https://www.ville-bruz.fr/actualites/ouverture-des-inscriptions-a-la-natation-piscine-de-la-conterie/"
+          "url": "https://www.ville-bruz.fr/actualites/ouverture-des-inscriptions-a-la-natation-piscine-de-la-conterie/",
+          "url_expiree": true
         }
       ],
       "actus_recentes": [
@@ -1015,7 +1016,8 @@
         {
           "date": "2026-02",
           "description": "Déploiement d'une brigade territoriale mobile de gendarmerie sur les 37 communes de la compagnie de Chartres-de-Bretagne, présentée au préfet de Bretagne lors d'une installation sur le marché de Bruz",
-          "source_url": "https://www.tvr.bzh/article/b53ae25-une-brigade-territoriale-mobile-de-la-gendarmerie"
+          "source_url": "https://www.tvr.bzh/article/b53ae25-une-brigade-territoriale-mobile-de-la-gendarmerie",
+          "source_url_expiree": true
         },
         {
           "date": "2026-06",
@@ -1049,7 +1051,8 @@
         },
         {
           "label": "TVR — Brigade territoriale mobile de gendarmerie au sud de Rennes",
-          "url": "https://www.tvr.bzh/article/b53ae25-une-brigade-territoriale-mobile-de-la-gendarmerie"
+          "url": "https://www.tvr.bzh/article/b53ae25-une-brigade-territoriale-mobile-de-la-gendarmerie",
+          "url_expiree": true
         },
         {
           "label": "Données délinquance communes — data.gouv.fr",
@@ -1062,7 +1065,8 @@
           "titre": "Une brigade territoriale mobile de gendarmerie déployée au sud de Rennes",
           "detail": "Un fourgon aménagé sillonne les 37 communes de la compagnie de Chartres-de-Bretagne pour accueillir le public et recueillir des renseignements — présenté au préfet sur le marché de Bruz.",
           "source_url": "https://www.tvr.bzh/article/b53ae25-une-brigade-territoriale-mobile-de-la-gendarmerie",
-          "source_label": "TVR"
+          "source_label": "TVR",
+          "source_url_expiree": true
         },
         {
           "date": "2026-06-01",
@@ -1151,7 +1155,8 @@
         },
         {
           "label": "Insee — Naissances et décès domiciliés 2014-2021, commune de Bruz (35047)",
-          "url": "https://www.insee.fr/fr/statistiques/6530998?geo=COM-35047"
+          "url": "https://www.insee.fr/fr/statistiques/6530998?geo=COM-35047",
+          "url_expiree": true
         }
       ],
       "actus_recentes": [],
@@ -1199,7 +1204,8 @@
         {
           "date": "2025",
           "description": "Rennes Métropole sélectionne Plan B parmi 15 lauréats de «Nos Lieux Communs» — Manoir de la Noë mis à disposition",
-          "source_url": "https://metropole.rennes.fr/nos-lieux-communs-16-lieux-dans-la-metropole-autour-des-transitions"
+          "source_url": "https://metropole.rennes.fr/nos-lieux-communs-16-lieux-dans-la-metropole-autour-des-transitions",
+          "source_url_expiree": true
         },
         {
           "date": "2025-12",
@@ -1244,7 +1250,8 @@
         },
         {
           "label": "Rennes Métropole — Nos Lieux Communs (16 lauréats)",
-          "url": "https://metropole.rennes.fr/nos-lieux-communs-16-lieux-dans-la-metropole-autour-des-transitions"
+          "url": "https://metropole.rennes.fr/nos-lieux-communs-16-lieux-dans-la-metropole-autour-des-transitions",
+          "url_expiree": true
         },
         {
           "label": "Open data Mégalis — délibérations Bruz",
@@ -1386,7 +1393,8 @@
         "Activités sportives suspendues dans les équipements municipaux (sauf bâtiments climatisés et sports aquatiques)",
         "Aucune liste publique d'îlots de fraîcheur identifiés et cartographiés sur le territoire",
         "La végétalisation des espaces publics est un levier de long terme — aucun programme pluriannuel annoncé à Bruz",
-        "Bruz dispose bien d'un Plan Communal de Sauvegarde (PCS) formel (page officielle « Les risques majeurs à Bruz ») — mais les catégories de risques listées publiquement (météo, inondation, TMD, épidémie, nucléaire) ne nomment pas explicitement la canicule ; elle semble traitée en pratique (activation juin 2026) sans figurer noir sur blanc dans la communication publique du PCS"
+        "Bruz dispose bien d'un Plan Communal de Sauvegarde (PCS) formel (page officielle « Les risques majeurs à Bruz ») — mais les catégories de risques listées publiquement (météo, inondation, TMD, épidémie, nucléaire) ne nomment pas explicitement la canicule ; elle semble traitée en pratique (activation juin 2026) sans figurer noir sur blanc dans la communication publique du PCS",
+        "Le Fonds vert 2026 (650 M€ au niveau national) a une sous-mesure « confort d'été » depuis 2024 : elle exclut explicitement la climatisation active (climatiseurs) et ne finance que des solutions passives (isolation, protections solaires, ventilation naturelle) — donc même si Bruz voulait climatiser ses écoles avec cette aide, ce ne serait pas éligible"
       ],
       "qui_decide": [
         {
@@ -1420,7 +1428,8 @@
         "Le CCAS : combien de personnes inscrites au registre vulnérables ? Le chiffre est-il communiqué ?",
         "La fermeture de la piscine intérieure pour travaux (22/06-3/07) coïncide avec la canicule — un hasard de calendrier à documenter",
         "La végétalisation des rues et espaces publics — programme pluriannuel dans le budget 2027 ?",
-        "Climatisation des écoles publiques (Champ l'Évêque, Jacques Prévert, Vert Buisson, futur groupe Ker Lann) et privées (La Providence Centre, La Providence Vert Buisson) : aucune donnée publique trouvée sur l'équipement actuel (recherche web + site mairie, 04/07/2026) — statut à demander directement aux écoles ou à la mairie, rien à ce stade ne permet de dire si une seule salle de Bruz est climatisée"
+        "Climatisation des écoles publiques (Champ l'Évêque, Jacques Prévert, Vert Buisson, futur groupe Ker Lann) et privées (La Providence Centre, La Providence Vert Buisson) : aucune donnée publique trouvée sur l'équipement actuel (recherche web + site mairie, 04/07/2026) — statut à demander directement aux écoles ou à la mairie, rien à ce stade ne permet de dire si une seule salle de Bruz est climatisée",
+        "Bruz a-t-elle sollicité l'ALEC du Pays de Rennes ou le FMTE de Rennes Métropole pour un projet de cour d'école oasis (végétalisation, désimperméabilisation) ? Aucune trace publique à ce jour (04/07/2026) — à comparer avec Chavagne et Laillé qui l'ont fait"
       ],
       "sources": [
         {
@@ -1487,6 +1496,12 @@
           "idee": "Adaptation thermique des écoles par solutions low-tech (géotextiles, brasseurs d'air, végétalisation des cours) pour moins de 100 000 €",
           "pourquoi_bruz": "Bruz n'est pas dans le programme. Le Fonds vert finance ce type de travaux depuis 2025 — une candidature est possible.",
           "source_url": "https://vert.eco/climat/canicule-six-solutions-low-tech-pour-adapter-50-000-ecoles-maintenant-et-a-bas-cout/"
+        },
+        {
+          "commune": "Chavagne (Rennes Métropole, commune comparable à Bruz)",
+          "idee": "Débitumage de 650 m² sur 1 521 m² de cour d'école (août 2024) : pergolas, aires de jeux, zones plantées + cuve de récupération d'eau de pluie de 30 000 L. Cofinancé à 20 000 € par le FMTE de Rennes Métropole, coordonné par l'ALEC du Pays de Rennes (appel à projet régional ADEME). Le projet s'est lui-même inspiré du retour d'expérience de Laillé — commune avec laquelle Bruz collabore déjà sur la voie verte Bruz-Laillé.",
+          "pourquoi_bruz": "Modèle directement transposable : commune de taille comparable, même intercommunalité, et l'ALEC du Pays de Rennes propose déjà cet accompagnement gratuitement. Point de vigilance : les demandes de Chavagne auprès du Fonds vert et de l'Agence de l'eau ont été rejetées malgré une désimperméabilisation réelle — le FMTE métropolitain semble une piste de financement plus fiable que l'échelon national.",
+          "source_url": "https://www.alec-rennes.org/actualites/chavagne-la-cour-decole-vegetalisee-un-modele-dadaptation-au-changement-climatique/"
         }
       ],
       "image": "/bruz-en-action/illus-d13-canicule.webp"
