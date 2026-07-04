@@ -1098,7 +1098,8 @@
         "Rennes Métropole résiste mieux que la moyenne nationale (-2,1% d'enfants de 0-3 ans entre 2020 et 2023, contre -5,1% en France), mais l'académie de Rennes a tout de même supprimé 75 postes en 2025 et en prévoit 105 de moins en 2026",
         "Bruz comptait 464 enfants de moins de 3 ans au 31/12/2023 — 3e commune de la métropole derrière Rennes (6 625) et Saint-Jacques-de-la-Lande (522). Sur 10 ans, la commune enregistre en moyenne 172 naissances et 111 décès par an (solde naturel +62/an) — une natalité locale stable, pas en forte hausse",
         "Le besoin scolaire projeté pour la ZAC Multisites (+850 élèves) tient donc surtout à l'arrivée de nouveaux ménages avec enfants dans les logements neufs, pas à un sursaut de la natalité bruzoise — un profil partagé avec d'autres communes de 2e couronne en croissance (Corps-Nuds, Saint-Armel, Parthenay-de-Bretagne)",
-        "Bruz héberge aussi un collège public (Pierre Brossolette) et un lycée public (Anita Conti) sur son territoire, ainsi qu'un ensemble privé sous contrat (écoles primaires La Providence Centre et Vert Buisson + collège-lycée Saint-Joseph, rattachés à l'ensemble scolaire Sainte-Théodore-Guérin) — l'offre scolaire bruzoise ne se limite donc pas au primaire ni au seul public"
+        "Bruz héberge aussi un collège public (Pierre Brossolette) et un lycée public (Anita Conti) sur son territoire, ainsi qu'un ensemble privé sous contrat (écoles primaires La Providence Centre et Vert Buisson + collège-lycée Saint-Joseph, rattachés à l'ensemble scolaire Sainte-Théodore-Guérin) — l'offre scolaire bruzoise ne se limite donc pas au primaire ni au seul public",
+        "Le programme municipal du mandat (portefeuille Éducation, Enfance et Jeunesse porté par Françoise Lotton) prévoit d'« étendre la sécurité aux entrées et sorties de toutes les écoles avec la présence d'un agent » — engagement de campagne distinct de la question des capacités d'accueil, à suivre séparément"
       ],
       "qui_decide": [
         {
@@ -1121,7 +1122,7 @@
       "decisions": [
         {
           "date": "2026-04",
-          "description": "CM installation : délégation scolaire / éducation attribuée (élu à confirmer)",
+          "description": "CM installation : délégation Éducation, Enfance et Jeunesse attribuée à Françoise Lotton (9e adjointe)",
           "source_url": "https://www.ville-bruz.fr/wp-content/uploads/2026/05/Bruz-Mag-n%C2%B0260-de-mai-juin-2026.pdf"
         }
       ],
@@ -1130,7 +1131,8 @@
         "Toute délibération sur la construction ou l'extension d'une école primaire",
         "Les ouvertures/fermetures de classes annoncées par l'Inspection Académique 35",
         "Paradoxe à surveiller : le département ferme des classes (baisse de natalité générale) pendant que Bruz doit en ouvrir (flux migratoire vers les logements neufs) — comment l'Inspection Académique arbitre-t-elle ce cas particulier dans la carte scolaire ?",
-        "Le rythme réel d'arrivée des familles dans la ZAC Multisites vs le calendrier de livraison des classes du groupe scolaire Ker Lann Sud (8 classes phase 1, 14 à terme)"
+        "Le rythme réel d'arrivée des familles dans la ZAC Multisites vs le calendrier de livraison des classes du groupe scolaire Ker Lann Sud (8 classes phase 1, 14 à terme)",
+        "L'engagement de campagne « agent de sécurité aux entrées/sorties de toutes les écoles » : mis en œuvre, budgété, à quelle échéance ?"
       ],
       "sources": [
         {
@@ -1159,7 +1161,15 @@
           "url_expiree": true
         }
       ],
-      "actus_recentes": [],
+      "actus_recentes": [
+        {
+          "date": "2026-05",
+          "titre": "Bruz Mag confirme la nouvelle équipe municipale et ses délégations",
+          "detail": "Le numéro de mai-juin 2026 du magazine municipal détaille l'organigramme des 9 adjoints. Françoise Lotton (9e adjointe) est confirmée en charge d'Éducation, Enfance et Jeunesse — élément qui manquait au dossier depuis l'installation du conseil en avril.",
+          "source_url": "https://www.ville-bruz.fr/wp-content/uploads/2026/05/Bruz-Mag-n%C2%B0260-de-mai-juin-2026.pdf",
+          "source_label": "Bruz Mag n°260"
+        }
+      ],
       "promesses_liees": [],
       "image": "/bruz-en-action/illus-d10-education.webp"
     },
