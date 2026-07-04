@@ -980,7 +980,7 @@
       "categorie": "Sécurité",
       "statut": "en_cours",
       "featured": false,
-      "last_activity": "2026-06-01",
+      "last_activity": "2026-07-04",
       "date_ouverture": "2026-06-18",
       "chapeau": "Bruz reste sous régime de gendarmerie nationale, mais sa police municipale grandit : effectif porté à 8 agents, un poste supplémentaire en cours de recrutement, agents désormais armés (catégories B et D) et équipés de caméras-piétons. Ce dossier suit l'ensemble de la chaîne sécurité locale — police municipale, gendarmerie, vidéoprotection, statistiques de délinquance — et si le renforcement promis par la majorité de Jean-René Houssin se traduit dans les faits.",
       "ce_quon_sait": [
@@ -992,7 +992,10 @@
         "Délégation municipale « Prévention et sécurité » attribuée à Philippe Pagès, 8ème adjoint, pour le mandat 2026-2032",
         "Le programme de la liste « Un nouvel élan pour Bruz » (Jean-René Houssin) s'engage à « renforcer les moyens de notre police municipale », sans chiffrage précis d'effectifs ou de budget",
         "Bruz dépend de la brigade de gendarmerie nationale pour la sécurité publique et la police judiciaire — une brigade territoriale mobile a été déployée mi-février 2026 sur les 37 communes de la compagnie de Chartres-de-Bretagne (fourgon aménagé), avec un effectif passant de 4 à 6 militaires au 1er août 2026",
-        "Les statistiques de délinquance par commune sont disponibles publiquement sur data.gouv.fr (Ministère de l'Intérieur) mais n'ont pas encore été exploitées pour ce dossier"
+        "Les statistiques de délinquance par commune sont disponibles publiquement sur data.gouv.fr (Ministère de l'Intérieur) mais n'ont pas encore été exploitées pour ce dossier",
+        "Statistiques SSMSI (Ministère de l'Intérieur, données 2016-2025, commune 35047) : les cambriolages de logement à Bruz atteignent leur plus haut niveau en 10 ans en 2025 (68 faits, contre 53 en 2024 et un point bas à 13 en 2021) — hausse de +28 % sur un an",
+        "Usage de stupéfiants enregistré : 254 faits en 2025, quasiment le double de 2024 (128) — mais la quasi-totalité de la hausse correspond à des amendes forfaitaires délictuelles (AFD, 244 sur 254) : cela reflète surtout une verbalisation plus systématique, pas nécessairement une hausse équivalente de la consommation réelle",
+        "Autres indicateurs 2025 en baisse par rapport à 2024 : violences physiques hors cadre familial (43 vs 65), destructions et dégradations volontaires (109 vs 144), escroqueries (117 vs 142) — mais tous restent nettement au-dessus de leur niveau de 2016"
       ],
       "qui_decide": [
         {
@@ -1031,7 +1034,7 @@
         "Le budget alloué à la police municipale dans les comptes 2026/2027 — en hausse mesurable ou stable ?",
         "Depuis quand et sous quelle délibération le dispositif de vidéoprotection existant a-t-il été installé — une extension est-elle prévue ?",
         "L'effectif réel de la brigade territoriale mobile de gendarmerie atteint-il les 6 militaires annoncés au 1er août 2026 ?",
-        "Les statistiques de délinquance 2026 (data.gouv.fr), comparées aux années précédentes, confirment-elles un besoin de renforcement ?"
+        "Le conseil municipal réagira-t-il à la hausse des cambriolages (68 en 2025, +28 % sur un an) — renforcement de la vidéoprotection, prévention ciblée ?"
       ],
       "sources": [
         {
@@ -1075,10 +1078,54 @@
           "detail": "Offre d'emploi publiée pour renforcer l'équipe (actuellement 8 agents) — candidatures closes le 9 juillet, entretiens le 20 juillet 2026.",
           "source_url": "https://www.ville-bruz.fr/offres-emploi/agent-de-police-municipale-f-h/",
           "source_label": "Ville de Bruz"
+        },
+        {
+          "date": "2026-07-04",
+          "titre": "Les cambriolages de logement à Bruz au plus haut depuis 10 ans",
+          "detail": "Exploitation des données SSMSI (Ministère de l'Intérieur) : 68 cambriolages de logement enregistrés à Bruz en 2025, le niveau le plus élevé depuis au moins 2016, en hausse de 28 % sur un an. L'usage de stupéfiants enregistré double presque (254 contre 128 en 2024), mais la quasi-totalité de la hausse correspond à des amendes forfaitaires délictuelles (verbalisation), pas à un doublement mesuré de la consommation.",
+          "source_url": "https://www.data.gouv.fr/datasets/bases-statistiques-communale-departementale-et-regionale-de-la-delinquance-enregistree-par-la-police-et-la-gendarmerie-nationales",
+          "source_label": "Bruz en Action — données SSMSI"
         }
       ],
       "promesses_liees": [],
-      "image": "/bruz-en-action/illus-d07-securite.webp"
+      "image": "/bruz-en-action/illus-d07-securite.webp",
+      "graphiques": [
+        {
+          "id": "g1",
+          "type": "bar",
+          "titre": "Cambriolages de logement à Bruz — évolution 2016-2025",
+          "sous_titre": "Nombre de faits enregistrés par la police et la gendarmerie (SSMSI, Ministère de l'Intérieur)",
+          "source": "data.gouv.fr — SSMSI, bases statistiques communales de la délinquance enregistrée",
+          "note": "2025 est le niveau le plus haut de la décennie, en hausse de 28 % sur un an (53 → 68).",
+          "donnees": [
+            {
+              "label": "2021",
+              "valeur": 13,
+              "confirme": true
+            },
+            {
+              "label": "2022",
+              "valeur": 46,
+              "confirme": true
+            },
+            {
+              "label": "2023",
+              "valeur": 64,
+              "confirme": true
+            },
+            {
+              "label": "2024",
+              "valeur": 53,
+              "confirme": true
+            },
+            {
+              "label": "2025",
+              "valeur": 68,
+              "confirme": true
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "D10",
