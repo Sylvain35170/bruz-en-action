@@ -47,6 +47,30 @@ const EQUIPEMENTS = [
   { nom: "Maison des Associations Bruz", coords: [48.0262, -1.7376] as [number, number], emoji: "🏠" },
 ];
 
+/* ── Chantiers en cours (2026) — géocodage OpenStreetMap Nominatim, coords indicatives ── */
+const CHANTIERS = [
+  {
+    nom: "Boulevard Pasteur",
+    detail: "Assainissement pluriannuel (min. 3 ans depuis fév. 2025) — remplacement réseau amianté, Rennes Métropole",
+    coords: [48.0210, -1.7517] as [number, number],
+  },
+  {
+    nom: "Pont de la Gare (av. Jules Tricault)",
+    detail: "Fermeture totale véhicules/piétons/vélos du 15 juin au 3 juillet 2026 — Rennes Métropole",
+    coords: [48.0314, -1.7511] as [number, number],
+  },
+  {
+    nom: "Rue Théodore Botrel",
+    detail: "Voirie + éclairage public, 1er juin – 24 juillet 2026 — Rennes Métropole",
+    coords: [48.0218, -1.7429] as [number, number],
+  },
+  {
+    nom: "Avenue du Général de Gaulle",
+    detail: "Réseaux eau/électricité + voirie, juin 2026 – printemps 2027 — circulation maintenue en alternat",
+    coords: [48.0237, -1.7458] as [number, number],
+  },
+];
+
 export default function MapBruz() {
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<import("leaflet").Map | null>(null);
@@ -112,6 +136,21 @@ export default function MapBruz() {
         L.marker(eq.coords, { icon })
           .addTo(map)
           .bindPopup(`<strong style="font-size:13px">${eq.nom}</strong>`);
+      });
+
+      /* Chantiers en cours */
+      CHANTIERS.forEach((c) => {
+        const icon = L.divIcon({
+          html: `<span style="font-size:20px;line-height:1">🚧</span>`,
+          iconSize: [26, 26],
+          iconAnchor: [13, 13],
+          className: "",
+        });
+        L.marker(c.coords, { icon })
+          .addTo(map)
+          .bindPopup(
+            `<strong style="font-size:13px">${c.nom}</strong><br><span style="font-size:11px;color:#64748b">${c.detail}</span>`
+          );
       });
     })();
 

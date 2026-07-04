@@ -7,11 +7,11 @@ import SiteFooter from "../../components/SiteFooter";
 const d05 = dossiersData.dossiers.find(d => d.id === "D05");
 
 export const metadata = {
-  title: "Carte de Bruz — Bruz en Action",
-  description: "Carte interactive de Bruz : zones ZAC Multisites, corridor trambus T4 et équipements.",
+  title: "Bruz en carte — Bruz en Action",
+  description: "Carte interactive de Bruz : zones ZAC Multisites, corridor trambus T4, chantiers en cours et équipements.",
   openGraph: {
-    title: "Carte de Bruz — Bruz en Action",
-    description: "Carte interactive de Bruz : zones ZAC Multisites, corridor trambus T4 et équipements.",
+    title: "Bruz en carte — Bruz en Action",
+    description: "Carte interactive de Bruz : zones ZAC Multisites, corridor trambus T4, chantiers en cours et équipements.",
     url: "https://sylvain35170.github.io/bruz-en-action/carte",
     siteName: "Bruz en Action",
     locale: "fr_FR",
@@ -40,10 +40,10 @@ export default function CartePage() {
             Urbanisme · Projets
           </span>
           <h1 style={{ fontSize: "clamp(1.6rem, 3vw, 2.4rem)", fontWeight: 800, lineHeight: 1.2, margin: "12px 0 16px", color: "#fff" }}>
-            Carte de Bruz — projets &amp; quartiers
+            Bruz en carte — projets, quartiers &amp; chantiers
           </h1>
           <p style={{ fontSize: 16, color: "rgba(255,255,255,0.72)", maxWidth: 640, margin: 0, lineHeight: 1.7 }}>
-            Visualisation des zones de projet actives sur la commune : ZAC Multisites (1 700 logements à horizon 2040) et corridor Trambus T4.
+            Visualisation des zones de projet actives sur la commune : ZAC Multisites (1 700 logements à horizon 2040), corridor Trambus T4 et chantiers de voirie en cours.
             Tous les tracés sont <strong style={{ color: "#fff" }}>indicatifs</strong> — sources mairie et Rennes Métropole.
           </p>
         </div>
@@ -63,6 +63,7 @@ export default function CartePage() {
             Corridor Trambus T4
           </span>
           <span style={{ display: "flex", alignItems: "center", gap: 8, fontSize: 13 }}>🏛️ ⚽ 📚 Équipements</span>
+          <span style={{ display: "flex", alignItems: "center", gap: 8, fontSize: 13 }}>🚧 Chantiers en cours</span>
           <span style={{ marginLeft: "auto", fontSize: 11, color: "#94a3b8", fontStyle: "italic" }}>
             Cliquer sur les zones pour plus d'infos
           </span>
@@ -105,6 +106,23 @@ export default function CartePage() {
             </ul>
             <a href="/bruz-en-action/dossiers/D01" style={{ display: "inline-block", marginTop: 14, fontSize: 12, fontWeight: 600, color: "#7c3aed" }}>
               Lire le dossier T4 →
+            </a>
+          </div>
+
+          {/* Chantiers */}
+          <div style={{ background: "var(--surface-card, #fff)", border: "1px solid #e2e8f0", borderRadius: 12, padding: 24, borderTop: "3px solid #ca8a04" }}>
+            <h2 style={{ margin: "0 0 8px", fontSize: 16, fontWeight: 700, color: "#0f172a" }}>Chantiers en cours</h2>
+            <p style={{ margin: "0 0 12px", fontSize: 13, color: "#64748b", lineHeight: 1.6 }}>
+              Boulevards coupés, déviations, travaux de voirie — la plupart sont portés par Rennes Métropole, pas par la commune.
+            </p>
+            <ul style={{ margin: 0, padding: "0 0 0 1.2em", fontSize: 13, color: "#475569", display: "flex", flexDirection: "column", gap: 4 }}>
+              <li>Boulevard Pasteur — assainissement pluriannuel (min. 3 ans)</li>
+              <li>Pont de la Gare — fermé du 15 juin au 3 juillet 2026</li>
+              <li>Rue Théodore Botrel — voirie + éclairage jusqu'au 24 juillet 2026</li>
+              <li>Avenue du Général de Gaulle — réseaux + voirie jusqu'au printemps 2027</li>
+            </ul>
+            <a href="/bruz-en-action/dossiers/D05" style={{ display: "inline-block", marginTop: 14, fontSize: 12, fontWeight: 600, color: "#ca8a04" }}>
+              Lire le dossier Bruz en carte →
             </a>
           </div>
 
