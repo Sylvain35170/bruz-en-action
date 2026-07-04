@@ -1370,7 +1370,7 @@
       "titre": "Canicule à Bruz : la commune est-elle prête ?",
       "categorie": "Environnement",
       "statut": "en_cours",
-      "featured": false,
+      "featured": true,
       "last_activity": "2026-06-25",
       "date_ouverture": "2026-06-21",
       "chapeau": "Avec des étés de plus en plus chauds, Bruz doit adapter ses équipements, ses espaces publics et son plan de crise. Îlots de fraîcheur, populations vulnérables, végétalisation, piscine Conterie, bâtiments communaux : ce que la commune fait — et ce qu'elle ne fait pas encore.",
@@ -1401,7 +1401,18 @@
           "role": "Suivi des personnes vulnérables — registre communal"
         }
       ],
-      "decisions": [],
+      "decisions": [
+        {
+          "date": "2026-06-22",
+          "description": "Activation du plan communal canicule à la suite de la vigilance rouge préfectorale : ventilateurs/brumisateurs dans les écoles, repas froids, registre CCAS activé, collecte des déchets décalée (5h-13h et 20h-3h), activités sportives suspendues hors équipements climatisés",
+          "source_url": "https://www.ville-bruz.fr/actualites/canicule-mesures-mises-en-place-dans-les-ecoles-publiques/"
+        },
+        {
+          "date": "2026-06-22",
+          "description": "Ajustement des horaires de la piscine de la Conterie : bassin nordique extérieur élargi (7h30-20h), salles intérieures fermées pour travaux jusqu'au 3 juillet",
+          "source_url": "https://www.ville-bruz.fr/actualites/fermeture-partielle-de-la-piscine-de-la-conterie/"
+        }
+      ],
       "ce_quon_suit": [
         "Une carte ou liste publique des îlots de fraîcheur sera-t-elle publiée par la mairie ?",
         "La climatisation des bâtiments scolaires : solution structurelle ou mesures ponctuelles reconductibles ?",
