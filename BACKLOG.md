@@ -15,6 +15,7 @@
 ## 🟡 À faire — Dossiers à instruire
 
 - [ ] **D15** — Offre de soins : arrêté zonage ARS Bretagne attendu après session plénière CRSA du 8 juillet 2026 (à vérifier après cette date), délibérations CM sur MSP, données CPAM sans-MT par commune
+- [ ] **D01** — Trambus T4 : choix final entre les 2 variantes centre-ville (courte Parc de la Herverie / longue-prolongée au-delà du Vau-Gaillard) non tranché à ce jour — suivre la concertation continue et une éventuelle nouvelle délibération Rennes Métropole
 - [ ] **D02 en profondeur** — vérifier les chiffres La Courrouze / Baud-Chardonnet quand sources disponibles
 - [ ] **CM-2026-07-03** — PV/délibérations pas encore publiés sur Mégalis au 04/07/2026 (41 points à l'ordre du jour documentés en attendant : construction 4e groupe scolaire Ker Lann Sud, mesures carte scolaire rentrée 2026-2027, participation piscine Conterie...) — repasser mettre à jour les votes/résultats dès publication
 - [ ] **D10 en profondeur** — Écoles + Vert-Buisson, + suivre l'issue du point 29 du CM du 3 juillet (mesures carte scolaire)
