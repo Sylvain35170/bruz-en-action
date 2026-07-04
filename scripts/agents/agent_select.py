@@ -46,6 +46,7 @@ D11 = Manoir de la Noë / Plan B / patrimoine / tiers-lieu citoyen
 D12 = city stade / Siméon Beliard / gymnase / équipements sportifs
 D13 = canicule / plan municipal / îlots de fraîcheur / climat
 D15 = offre de soins / médecins / désert médical / santé
+D16 = commerce / artisanat / vie économique / zones d'activité (Champ Niguel, Haie Gautrais) / entreprises
 D20 = campus Ker Lann / enseignement supérieur / étudiants / logement étudiant
 """.strip()
 

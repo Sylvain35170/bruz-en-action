@@ -1761,6 +1761,82 @@
         }
       ],
       "promesses_liees": []
+    },
+    {
+      "id": "D16",
+      "titre": "Économie locale à Bruz : commerce, artisanat et zones d'activité",
+      "categorie": "Économie",
+      "statut": "en_cours",
+      "featured": false,
+      "last_activity": "2026-07-04",
+      "date_ouverture": "2026-07-04",
+      "chapeau": "Bruz compte 3 zones d'activité économique, un marché centenaire et plus de 3 000 entreprises enregistrées. La nouvelle municipalité a nommé un adjoint dédié à la vie économique et promet de soutenir le commerce de proximité. Ce dossier suit ce pilier du programme — jusqu'ici sans aucune couverture sur le site.",
+      "ce_quon_sait": [
+        "Bruz compte 3 zones d'activité économique : le campus de Ker Lann (165 ha, ~338 entreprises, pôle technologique et enseignement supérieur — voir D20), la Z.I. du Champ Niguel (26,9 ha, 139 entreprises, petite industrie) et la zone artisanale de la Haie Gautrais (qui accueille notamment le Parc Expo Rennes)",
+        "Le marché du vendredi existe depuis 1960 — environ 130 commerçants permanents et saisonniers (alimentation, fleurs, vêtements, bijoux...), un des plus grands marchés d'Ille-et-Vilaine",
+        "Un marché de Noël est organisé chaque année, avec 40 à 50 exposants (artisans d'art, créateurs, producteurs) — appel à candidatures via le service Vie Associative et Événementielle",
+        "Environ 3 200 entreprises seraient enregistrées à Bruz au sens large (dont sièges sociaux et établissements secondaires, chiffre Manageo.fr) — un chiffre à interpréter avec prudence : il inclut des sièges sociaux sans forcément d'activité physique en ville, distinct du nombre de commerces de proximité réellement visibles",
+        "Gilles Daniel est le 6ème adjoint délégué à la Vie économique et à l'informatique depuis l'installation du conseil (avril 2026) — la promesse de campagne « nommer un adjoint dédié à la vie économique et à l'artisanat » (E1) est donc tenue, mais n'était pas encore trackée comme telle dans le suivi des promesses",
+        "Axes du programme municipal pour ce portefeuille (Bruz Mag n°260) : favoriser l'installation de nouveaux entrepreneurs et porteurs de projets, soutenir le commerce de proximité, encourager les animations commerciales dans les zones sensibles",
+        "5 promesses de campagne dans le pilier « Économie & Commerce » : adjoint dédié (E1, tenue), rencontres trimestrielles avec les commerçants (E2), animations commerciales (E3), présence de la Ville au campus de Ker Lann (E4), circuits courts dans les achats communaux (E5) — E2 à E5 non encore documentées comme engagées"
+      ],
+      "qui_decide": [
+        {
+          "nom": "Gilles Daniel",
+          "role": "6ème adjoint délégué à la Vie économique et à l'informatique — pilote ce portefeuille"
+        },
+        {
+          "nom": "Conseil municipal de Bruz",
+          "role": "Vote les aides économiques directes, les conventions d'occupation du domaine public pour le commerce, et la politique d'achats communaux"
+        },
+        {
+          "nom": "Rennes Métropole",
+          "role": "Compétence développement économique intercommunal — gestion des zones d'activité au-delà de la seule commune, notamment Ker Lann"
+        }
+      ],
+      "decisions": [],
+      "ce_quon_suit": [
+        "Les rencontres trimestrielles promises avec les commerçants (E2) auront-elles lieu et à quelle fréquence réelle ?",
+        "Concrétisation des animations commerciales encouragées (E3) — braderie, carnaval, marché à manger",
+        "Ce que signifie concrètement « affirmer la présence de la Ville au Campus de Ker Lann » (E4) — convention, événements, représentation ?",
+        "La politique d'achats communaux privilégie-t-elle réellement les circuits courts (E5) — critères dans les marchés publics ?",
+        "Taux de vacance commerciale en centre-ville de Bruz — aucune donnée trouvée à ce jour, à rechercher (CCI 35, observatoire du commerce)"
+      ],
+      "sources": [
+        {
+          "label": "Ville de Bruz — Vie économique",
+          "url": "https://www.ville-bruz.fr/mon-quotidien/vie-economique/"
+        },
+        {
+          "label": "Ville de Bruz — Les marchés à Bruz",
+          "url": "https://www.ville-bruz.fr/mon-quotidien/vie-economique/les-marches-a-bruz/"
+        },
+        {
+          "label": "Simplanter.fr — Campus Ker Lann, pôle technologique",
+          "url": "https://simplanter.fr/zone-activites/campus-ker-lann-bruz"
+        },
+        {
+          "label": "Simplanter.fr — Z.I. du Champ Niguel",
+          "url": "https://simplanter.fr/zone-activites/z-i-du-champ-niguel-bruz"
+        },
+        {
+          "label": "Manageo.fr — Dynamisme économique de Bruz",
+          "url": "https://www.manageo.fr/geo/bretagne-_reg53/ille-et-vilaine-_dep35/bruz-_vil1469.html"
+        },
+        {
+          "label": "Bruz Mag n°260 (mai-juin 2026) — organigramme des adjoints",
+          "url": "https://www.ville-bruz.fr/wp-content/uploads/2026/05/Bruz-Mag-n%C2%B0260-de-mai-juin-2026.pdf"
+        }
+      ],
+      "actus_recentes": [],
+      "promesses_liees": [
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "idees_ailleurs": []
     }
   ]
 }

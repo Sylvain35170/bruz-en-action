@@ -30,6 +30,7 @@ DOSSIER_KEYWORDS: dict[str, list[str]] = {
     "D12": ["city stade", "terrain synthétique", "équipements sportifs", "gymnase", "fabrice jan", "sport bruz", "siméon beliard"],
     "D13": ["canicule", "îlot de chaleur", "plan canicule", "vigilance rouge", "ccas"],
     "D15": ["médecin", "désert médical", "maison de santé", "msp", "offre de soins", "ars bretagne"],
+    "D16": ["commerce", "artisan", "vie économique", "champ niguel", "haie gautrais", "marché de bruz", "entreprise bruz", "commerçant"],
     "D20": ["campus ker lann", "étudiant", "ens rennes", "ensai", "logement étudiant", "crous", "résidence étudiante"],
 }
 
