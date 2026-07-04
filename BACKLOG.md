@@ -50,7 +50,6 @@
 
 ## 🟡 À faire — Technique
 
-- [ ] **Automatiser le link-checker** — `agent_qa.py --links` existe et tourne manuellement (fait le 2026-07-04) ; reste à le brancher en cron périodique pour détecter les futures pourritures d'URLs `ville-bruz.fr/actualites/...` sans attendre un run manuel
 - [ ] **CRs réunions** — réimporter les docx (encodage zip raté sur les accents) — fichiers source à relocaliser
 - [ ] **Actus** — enrichir au fil des décisions
 - [ ] **Seuil dédup `is_already_published`** — surveiller les prochains runs `agent_select` : seuil de similarité de titre à 0.6 (`scripts/utils.py`), un cas limite repéré ("Stage de natation piscine de la Conterie" vs "Ouverture des inscriptions natation", ratio 0.70) — ajuster si trop/pas assez agressif
