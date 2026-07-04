@@ -10,7 +10,7 @@
       "categorie": "Mobilités",
       "statut": "en_cours",
       "featured": true,
-      "last_activity": "2026-06-18",
+      "last_activity": "2026-07-04",
       "date_ouverture": "2026-06-16",
       "chapeau": "La future ligne T4 (trambus guidé) reliera Rennes à Bruz d'ici 2031. Le point de crispation : où sera le terminus ? Ker Lann ou la gare SNCF ? Une décision prise par Rennes Métropole — pas par Bruz — qui conditionne l'urbanisme de la commune pour trente ans.",
       "ce_quon_sait": [
@@ -18,7 +18,10 @@
         "T4 = trambus guidé sur voie propre, ~100–150 places/rame — moins coûteux qu'un tram sur rail",
         "5 fév. 2026 : Rennes Métropole valide le tracé via Ker Lann, imposant 60 logements/ha sur ce secteur",
         "Position Jean-René Houssin : terminus à la gare SNCF + navettes électriques vers les quartiers résidentiels",
-        "Avr. 2026 : Patrick Roullé nommé délégué municipal aux mobilités"
+        "Avr. 2026 : Patrick Roullé nommé délégué municipal aux mobilités",
+        "Concertation préalable Rennes Métropole (24 mars-24 juin 2025) : ~170 personnes aux ateliers, 453 contributions, 6 809 visiteurs sur La Fabrique Citoyenne. Bilan adopté par le Bureau Métropolitain le 16/10/2025 (avant les municipales) : abandon de la variante « Gavrinis », abandon du tracé via le secteur Mons, et surtout — le terminus est acté « au-delà de la gare » (pas à la gare elle-même), pour desservir plus loin sur la commune et répondre aux contraintes techniques de recharge du matériel",
+        "Deux variantes de terminus centre-ville étudiées depuis 2025 : « courte » (retournement avenue Joseph Jan, Parc de la Herverie) et « longue » (jusqu'à la place du Dr Joly, terminus rond-point du Vau-Gaillard). La variante longue est jugée par les contributeurs « insuffisamment étendue » — Rennes Métropole a acté de poursuivre l'étude d'un prolongement vers l'est, en cohérence avec la ZAC Multisites. Aucun choix final entre ces deux variantes n'est encore publié (vérifié 04/07/2026, page mairie « Trambus : retour sur la concertation »)",
+        "Tension à noter : la décision du Bureau Métropolitain d'octobre 2025 avait déjà écarté un terminus positionné à la gare elle-même (\"au-delà de la gare\"), plusieurs mois avant que Jean-René Houssin ne fasse campagne (fév. 2026) sur un terminus précisément à la gare SNCF — sa position semble donc en délicate position vis-à-vis d'un cadrage déjà posé par la métropole avant son élection"
       ],
       "qui_decide": [
         {
@@ -32,6 +35,11 @@
       ],
       "decisions": [
         {
+          "date": "2025-10-16",
+          "description": "Bureau Métropolitain : bilan de la concertation préalable T4 — abandon variante Gavrinis, abandon tracé secteur Mons, terminus acté au-delà de la gare de Bruz, poursuite des études sur le prolongement centre-ville vers l'est",
+          "source_url": "https://www.debatpublic.fr/sites/default/files/2025-10/D_cision%20du%20Bureau%20M_tropolitain%20n_B%202025-393%20du%202025-10-16.pdf"
+        },
+        {
           "date": "2026-02-05",
           "description": "Conseil Métropolitain : tracé T4 via Ker Lann validé — densité 60 lgts/ha imposée",
           "source_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1012938/b6b1dc7396fa9a9946d085d957775ce4477276f63f188b960bb4886c785ccce2.pdf"
@@ -43,7 +51,7 @@
         }
       ],
       "ce_quon_suit": [
-        "La délibération officielle de Rennes Métropole sur le terminus final — gare SNCF ou Ker Lann ?",
+        "Le choix final entre les deux variantes centre-ville (courte : Parc de la Herverie / longue-prolongée : au-delà du Vau-Gaillard vers l'est) — non tranché à ce jour (04/07/2026)",
         "Les votes de Bruz au Conseil Métropolitain : Jean-René Houssin tient-il sa position ?",
         "L'évolution du PLU autour de Ker Lann — densification acceptée ou bloquée ?"
       ],
@@ -55,6 +63,14 @@
         {
           "label": "Délibération Rennes Métropole — fév. 2026 (Mégalis)",
           "url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1012938/b6b1dc7396fa9a9946d085d957775ce4477276f63f188b960bb4886c785ccce2.pdf"
+        },
+        {
+          "label": "Décision Bureau Métropolitain n° B 2025-393 du 16/10/2025 — bilan concertation T4",
+          "url": "https://www.debatpublic.fr/sites/default/files/2025-10/D_cision%20du%20Bureau%20M_tropolitain%20n_B%202025-393%20du%202025-10-16.pdf"
+        },
+        {
+          "label": "Ville de Bruz — Trambus ligne T4 : retour sur la concertation",
+          "url": "https://www.ville-bruz.fr/actualites/trambus-ligne-t4-retour-sur-la-concertation/"
         }
       ],
       "actus_recentes": [
