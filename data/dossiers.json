@@ -515,7 +515,8 @@
       "ce_quon_suit": [
         "Le taux TFB voté chaque année en mars — Houssin tient-il son engagement ?",
         "La publication des taux 2026 par la DGFIP — attendue courant 2026",
-        "Les taxes professionnelles (CFE) — votées chaque année, peu médiatisées"
+        "Les taxes professionnelles (CFE) — votées chaque année, peu médiatisées",
+        "Élargir la comparaison aux ~40 autres communes de Rennes Métropole (échantillon actuel : 4 communes + moyenne départementale) — établir le rang exact de Bruz sur la métropole, pas seulement le département"
       ],
       "graphiques": [
         {
@@ -587,6 +588,47 @@
               "confirme": false
             }
           ]
+        },
+        {
+          "id": "g3",
+          "type": "horizontal_bar",
+          "titre": "Taux TFB 2025 — Bruz vs communes de Rennes Métropole",
+          "sous_titre": "Taxe Foncière sur Propriétés Bâties, taux communal post-réforme (%)",
+          "source": "detaxe-fonciere.fr (DGFiP) — comparaison taux TFB 2025 Ille-et-Vilaine",
+          "note": "Bruz est la 2e commune la plus taxée de cet échantillon de Rennes Métropole, juste derrière Rennes — nettement au-dessus de la moyenne départementale.",
+          "donnees": [
+            {
+              "label": "Rennes",
+              "valeur": 45.66,
+              "confirme": true
+            },
+            {
+              "label": "Bruz",
+              "valeur": 45.34,
+              "confirme": true
+            },
+            {
+              "label": "Saint-Jacques-de-la-Lande",
+              "valeur": 41.86,
+              "confirme": true
+            },
+            {
+              "label": "Chantepie",
+              "valeur": 41.07,
+              "confirme": true
+            },
+            {
+              "label": "Moyenne Ille-et-Vilaine",
+              "valeur": 38.69,
+              "confirme": true
+            },
+            {
+              "label": "Cesson-Sévigné",
+              "valeur": 35.04,
+              "confirme": true
+            }
+          ],
+          "unite": "%"
         }
       ],
       "sources": [

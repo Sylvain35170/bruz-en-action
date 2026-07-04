@@ -50,6 +50,7 @@ type Graphique = {
   sous_titre?: string;
   source?: string;
   note?: string;
+  unite?: string;
   donnees: GraphiqueDonnee[];
 };
 
@@ -104,7 +105,7 @@ function SvgBarChart({ g }: { g: Graphique }) {
 }
 
 function SvgHorizontalBarChart({ g }: { g: Graphique }) {
-  const ROW_H = 40, PAD_L = 130, PAD_R = 50, BAR_MAX_W = 240;
+  const ROW_H = 40, PAD_L = 190, PAD_R = 50, BAR_MAX_W = 240;
   const svgH = g.donnees.length * ROW_H + 20;
   const max = Math.max(...g.donnees.map(d => d.valeur));
   return (
@@ -120,7 +121,7 @@ function SvgHorizontalBarChart({ g }: { g: Graphique }) {
             <g key={i}>
               <text x={PAD_L - 8} y={y + 14} textAnchor="end" fontSize={11} fill="#334155">{d.label}</text>
               <rect x={PAD_L} y={y + 2} width={bW} height={22} rx={4} fill={fill} />
-              <text x={PAD_L + bW + 6} y={y + 17} fontSize={11} fontWeight="bold" fill="#0f172a">{d.valeur} M€</text>
+              <text x={PAD_L + bW + 6} y={y + 17} fontSize={11} fontWeight="bold" fill="#0f172a">{d.valeur} {g.unite ?? "M€"}</text>
             </g>
           );
         })}
