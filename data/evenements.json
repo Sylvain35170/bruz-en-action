@@ -16,7 +16,8 @@
       "lien": "https://www.ville-bruz.fr/agenda/championnat-de-france-de-boccia/",
       "lien_label": "Agenda Ville de Bruz",
       "lien_article": "https://jabruz.fr/handisport-saison-2025-2026-la-boccia-pour-tous-et-les-prochains-championnats-de-france-a-bruz/",
-      "score": 3
+      "score": 3,
+      "lien_expiree": true
     },
     {
       "id": "E02",
@@ -39,7 +40,7 @@
       "organisateur": "Ville de Bruz",
       "lieu": "Stade Siméon Belliard, Bruz",
       "note": "Occasion idéale pour faire connaître Bruz en Action",
-      "lien": "https://www.ville-bruz.fr/agenda/forum-des-associations/",
+      "lien": "http://web.archive.org/web/20250814231912/https://www.ville-bruz.fr/agenda/forum-des-associations/",
       "lien_label": "Site Ville de Bruz",
       "score": 3
     },

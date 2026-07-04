@@ -59,6 +59,21 @@ def fetch(url: str, timeout: int = 15) -> requests.Response | None:
         return None
 
 
+def check_url_status(url: str, timeout: int = 10) -> dict:
+    """Vérifie qu'une URL répond, sans télécharger le corps (HEAD, fallback GET en streaming
+    si HEAD est refusé/mal supporté). Ne juge que l'accessibilité HTTP, pas le contenu réel :
+    un site qui nécessite du JS (ex. Mégalis) répondra 200 même si la page rendue diffère.
+    """
+    try:
+        r = requests.head(url, headers=HEADERS, timeout=timeout, allow_redirects=True)
+        if r.status_code in (403, 405) or r.status_code >= 500:
+            r = requests.get(url, headers=HEADERS, timeout=timeout, allow_redirects=True, stream=True)
+            r.close()
+        return {"ok": r.status_code < 400, "status": r.status_code}
+    except requests.exceptions.RequestException as e:
+        return {"ok": False, "error": type(e).__name__}
+
+
 def known_urls() -> set[str]:
     """URLs déjà connues : actus.json publiées + queue en attente."""
     actus = load_json(DATA_DIR / "actus.json")

@@ -9,9 +9,16 @@ Contrôles par page :
   - Présence de texte clé (nav, titre, section)
   - Absence de balises vides suspectes
 
+Contrôle des liens externes (--links) :
+  - Parcourt toutes les URLs http(s) trouvées dans data/*.json (source_url, url, lien, site…)
+  - Vérifie l'accessibilité HTTP (HEAD, fallback GET) — ne juge pas le contenu réel
+    (un site en JS pur comme Mégalis répond 200 même si la page rendue diffère)
+
 Usage :
-  python3 scripts/agents/agent_qa.py            # run complet
-  python3 scripts/agents/agent_qa.py --wait 60  # attend 60s avant de tester (post-push)
+  python3 scripts/agents/agent_qa.py               # pages seulement
+  python3 scripts/agents/agent_qa.py --wait 60      # attend 60s avant de tester (post-push)
+  python3 scripts/agents/agent_qa.py --links        # pages + liens externes data/*.json
+  python3 scripts/agents/agent_qa.py --links-only   # liens externes uniquement
 
 Retourne exit code 0 si tout est OK, 1 si des erreurs sont détectées.
 """
@@ -23,7 +30,7 @@ import time
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
-from utils import fetch, load_json, log, DATA_DIR
+from utils import check_url_status, fetch, load_json, log, DATA_DIR
 
 BASE_URL = "https://sylvain35170.github.io/bruz-en-action"
 
@@ -147,7 +154,85 @@ def check_page(page: dict) -> dict:
     }
 
 
-def run(wait_seconds: int = 0) -> bool:
+def _collect_data_urls() -> dict[str, list[str]]:
+    """Parcourt tous les data/*.json et retourne {url: [fichiers où elle apparaît]}.
+
+    Ignore les URLs marquées `<clé>_expiree: true` dans le même objet — source déjà
+    confirmée morte sans alternative trouvée (archive.org…), pas la peine de la re-signaler
+    à chaque run. cf. décision du 2026-07-04.
+    """
+    by_url: dict[str, list[str]] = {}
+
+    def walk(node, filename: str) -> None:
+        if isinstance(node, dict):
+            for k, v in node.items():
+                if isinstance(v, str) and v.startswith("http") and node.get(f"{k}_expiree"):
+                    continue
+                walk(v, filename)
+        elif isinstance(node, list):
+            for v in node:
+                walk(v, filename)
+        elif isinstance(node, str) and node.startswith("http"):
+            by_url.setdefault(node, [])
+            if filename not in by_url[node]:
+                by_url[node].append(filename)
+
+    for path in sorted(DATA_DIR.glob("*.json")):
+        walk(load_json(path), path.name)
+    return by_url
+
+
+def check_links() -> bool:
+    """Vérifie les URLs de data/*.json. 403/429/TooManyRedirects = anti-bot probable
+    (ex: Ouest-France ne s'ouvre qu'avec Playwright + channel="chrome", cf. piège 2026-06-27)
+    → signalé en warning, pas en échec. Seuls 404/410/5xx/DNS/timeout comptent comme cassés.
+    """
+    urls = _collect_data_urls()
+    log(f"Link-check — {len(urls)} URL(s) unique(s) dans data/*.json")
+
+    AMBIGUOUS_STATUSES = {403, 429}
+    AMBIGUOUS_ERRORS = {"TooManyRedirects"}
+
+    broken = []
+    ambiguous = []
+    for i, (url, files) in enumerate(sorted(urls.items()), 1):
+        result = check_url_status(url)
+        status = result.get("status")
+        error = result.get("error")
+        if result["ok"]:
+            log(f"  ✅ [{i}/{len(urls)}] {url}")
+        elif status in AMBIGUOUS_STATUSES or error in AMBIGUOUS_ERRORS:
+            reason = error or f"HTTP {status}"
+            ambiguous.append({"url": url, "files": files, "reason": reason})
+            log(f"  ⚠️  [{i}/{len(urls)}] {url} — {reason}, anti-bot probable (dans {', '.join(files)})", "WARN")
+        else:
+            reason = error or f"HTTP {status}"
+            broken.append({"url": url, "files": files, "reason": reason})
+            log(f"  ❌ [{i}/{len(urls)}] {url} — {reason} (dans {', '.join(files)})", "ERR")
+        time.sleep(0.3)  # politesse envers les serveurs distants
+
+    ok_count = len(urls) - len(broken) - len(ambiguous)
+    log(f"\nBilan liens : {ok_count}/{len(urls)} OK, {len(ambiguous)} à vérifier manuellement, {len(broken)} cassé(s)")
+
+    if ambiguous:
+        log(f"{len(ambiguous)} lien(s) probablement bloqués par anti-bot (à vérifier au navigateur) :", "WARN")
+        for a in ambiguous:
+            log(f"  {a['url']} ({', '.join(a['files'])}) → {a['reason']}", "WARN")
+
+    if broken:
+        log(f"{len(broken)} lien(s) réellement cassé(s) :", "ERR")
+        for b in broken:
+            log(f"  {b['url']} ({', '.join(b['files'])}) → {b['reason']}", "ERR")
+        return False
+
+    log("Aucun lien cassé confirmé.", "OK")
+    return True
+
+
+def run(wait_seconds: int = 0, links: bool = False, links_only: bool = False) -> bool:
+    if links_only:
+        return check_links()
+
     if wait_seconds:
         log(f"Attente {wait_seconds}s (GitHub Pages rebuild)…")
         time.sleep(wait_seconds)
@@ -168,20 +253,28 @@ def run(wait_seconds: int = 0) -> bool:
     ok = total - len(failures)
 
     log(f"\nBilan QA : {ok}/{total} pages OK")
+    pages_ok = not failures
 
     if failures:
         log(f"{len(failures)} page(s) en erreur :", "ERR")
         for r in failures:
             log(f"  {r['page']} : {' | '.join(r['errors'])}", "ERR")
-        return False
+    else:
+        log("Site GitHub Pages validé.", "OK")
 
-    log("Site GitHub Pages validé.", "OK")
-    return True
+    if links:
+        log("")
+        links_ok = check_links()
+        return pages_ok and links_ok
+
+    return pages_ok
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--wait", type=int, default=0, help="Secondes à attendre avant de tester")
+    parser.add_argument("--links", action="store_true", help="Vérifie aussi les liens externes de data/*.json")
+    parser.add_argument("--links-only", action="store_true", help="Ne vérifie que les liens externes (skip pages)")
     args = parser.parse_args()
-    ok = run(wait_seconds=args.wait)
+    ok = run(wait_seconds=args.wait, links=args.links, links_only=args.links_only)
     sys.exit(0 if ok else 1)

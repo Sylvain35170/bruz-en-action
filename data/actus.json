@@ -42,7 +42,8 @@
           "CD Handisport 35",
           "Programme municipal « Un nouvel élan pour Bruz » 2026-2032, promesse n°27"
         ]
-      }
+      },
+      "source_url_expiree": true
     },
     {
       "id": "presse-84aab9",
@@ -96,7 +97,8 @@
       "source_label": "Mairie de Bruz — Actualités",
       "date": "2026-06-18",
       "detail": "",
-      "type": "mairie"
+      "type": "mairie",
+      "source_url_expiree": true
     },
     {
       "id": "mairie-daa02d",
@@ -141,7 +143,8 @@
       "source_label": "Mairie de Bruz — Actualités",
       "date": "2026-06-18",
       "detail": "",
-      "type": "mairie"
+      "type": "mairie",
+      "source_url_expiree": true
     },
     {
       "id": "mairie-a3bd62",
@@ -177,7 +180,8 @@
       "source_label": "Mairie de Bruz — Actualités",
       "date": "2026-06-18",
       "detail": "",
-      "type": "mairie"
+      "type": "mairie",
+      "source_url_expiree": true
     },
     {
       "id": "mairie-92785e",
@@ -912,7 +916,8 @@
       "date": "2026-06-25",
       "resume": "La mairie publie les dispositions d'exception déployées dans les écoles publiques bruzaises pour faire face aux fortes chaleurs. Ces mesures visent à assurer la sécurité, le bien-être et la continuité pédagogique des élèves.",
       "dossier": "D13",
-      "type": "mairie"
+      "type": "mairie",
+      "source_url_expiree": true
     },
     {
       "id": "mairie-b4de54",
@@ -922,7 +927,8 @@
       "date": "2026-06-25",
       "resume": "En raison de la canicule, la piscine municipale de la Conterie ajuste son fonctionnement avec des horaires réduits. Illustre l'impact des conditions climatiques extrêmes sur les équipements publics bruzois.",
       "dossier": "D13",
-      "type": "mairie"
+      "type": "mairie",
+      "source_url_expiree": true
     },
     {
       "id": "A006",

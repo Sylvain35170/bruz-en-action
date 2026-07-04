@@ -6,7 +6,7 @@
       "https://www.insee.fr/fr/statistiques/2011101?geo=COM-35047",
       "https://www.ville-bruz.fr",
       "https://annuaire-education.fr",
-      "http://bruzplainedevie.fr",
+      "http://web.archive.org/web/20220815121657/http://bruzplainedevie.fr/",
       "https://fr.wikipedia.org/wiki/Campus_de_Ker_Lann"
     ]
   },
@@ -147,7 +147,7 @@
         "statut": "en construction",
         "capacite_prevue": "14 classes (phase 1 : 8 classes)",
         "localisation": "ZAC Ker Lann Sud, Bruz",
-        "source": "http://bruzplainedevie.fr/un-quatrieme-groupe-scolaire-a-bruz.html"
+        "source": "http://web.archive.org/web/20211217145614/http://bruzplainedevie.fr/un-quatrieme-groupe-scolaire-a-bruz.html"
       }
     ],
     "college": {

@@ -88,6 +88,14 @@ Environnement d'exécution : venv dédié `~/.venvs/bruz-en-action/` (voir pièg
 ---
 
 ## Pièges connus
+### 2026-07-04 — bruz-en-action : link-checker ajouté, limites anti-bot, convention liens expirés
+→ dispatch: local:bruz-en-action
+
+- **Link-checker créé** (`agent_qa.py --links`/`--links-only` + `utils.check_url_status()`) — scanne `data/*.json`, distingue "cassé confirmé" (404/DNS/timeout) de "anti-bot probable" (403/429/redirections).
+- **Ouest-France, HelloAsso, ac-rennes.fr, ARS Bretagne bloquent en 403 même avec un User-Agent navigateur** — pas de bypass simple, cohérent avec le piège OF déjà connu (Playwright `channel="chrome"` requis).
+- **Convention `<clé>_expiree: true`** pour les sources mortes sans alternative — déjà en place avant cette session dans `dossiers.json` (commit `5e00862`), généralisée à `actus.json`/`elus.json`/`evenements.json`. Le link-checker les ignore désormais.
+- **Wayback Machine (`archive.org/wayback/available`) rate-limite (429)** si appelée sans délai — espacer les requêtes d'~3s.
+
 ### 2026-06-28 — bruz-en-action : sources financières communes + cohérence visuelle
 → dispatch: local:bruz-en-action
 
