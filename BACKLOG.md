@@ -25,7 +25,7 @@
 - [ ] **D05 (ex-D14 fusionné)** — Bruz en carte : suivre réouverture pont de la Gare (3 juil.), planning Pasteur 2026, premiers chantiers ZAC Multisites
 - [ ] **D05 — référents de quartier** — vérifier si Bruz a un dispositif de conseils/référents de quartier (aucune donnée source actuellement dans `elus.json` ni ailleurs) ; si oui, sourcer noms + périmètres et alimenter le nouveau champ `referents_quartier` (scaffold vide en place) ; sinon documenter l'absence
 - [ ] **D11** — Plan B / Manoir de la Noë : suivre renouvellement convention guinguette après été 2026 + statut pérenne Plan B + toute délibération CM
-- [ ] **D16** — Économie locale : commerce, artisanat, Ker Lann, aides aux entreprises — pilier 4 du programme, zéro dossier actuellement
+- [ ] **D16 en profondeur** — Économie locale : dossier ouvert (2026-07-04, zones Ker Lann/Champ Niguel/Haie Gautrais, marchés, 5 promesses liées) — reste à documenter : rencontres trimestrielles commerçants (E2), animations (E3), présence Ker Lann (E4), circuits courts achats communaux (E5), taux de vacance commerciale (aucune donnée trouvée)
 - [ ] **D17** — Coup de pouce : associations et jeunes entreprises (subventions, salles, couveuse, coworking)
 - [ ] **D18** — Démocratie locale : réunions de quartier, CMJ, transparence — pilier 7, mesurable sur le mandat
 - [ ] **D19 (à créer)** — Équipements sportifs à Bruz : vue d'ensemble gymnases/terrains/city stades, au-delà du seul D12 (city stade Siméon Beliard) et D06 (piscine) — vérifier chevauchement avant création
@@ -43,6 +43,10 @@
 - [ ] **D03 — CFU 2024 Bruz (officiel)** — toujours pas localisé au 2026-07-02, malgré navigation directe du portail Mégalis via `claude-in-chrome` (recherche "compte financier unique" filtrée sur le SIREN Bruz 213500473 : seuls CFU 2023 et CFU 2025 remontent, pas 2024). Devenu moins prioritaire : le CFU 2025 officiel (trouvé et documenté) donne un encours de dette 2025 de 7,6 M€/379,59€ par hab, cohérent avec un pic ~9,4 M€ fin 2024 (DGFiP) suivi d'un désendettement 2025 sans nouvel emprunt tiré. Méthode qui a marché pour trouver 2023/2025 : `data.megalis.bretagne.bzh/?recherche=compte+financier+unique&siren=213500473` dans le navigateur, chercher les résultats "FINANCES_APPROBATION DU CFU [année] DU BUDGET PRINCIPAL"
 - [ ] **D03 — CFU 2025 Bruz** — à récupérer sur Mégalis dès publication (délai légal : 30 juin 2026, non disponible à ce jour)
 - [ ] **STATS_CONTEXT** — ajouter mapping pour D04, D08, D11, D12, D13 quand stats pertinentes identifiées
+
+## 🟡 À faire — Promesses
+
+- [ ] **Audit statuts promesses.json** — les 50 promesses étaient toutes bloquées à `non_commence` depuis la création du tracker (jamais resynchronisées avec les décisions actées dans les dossiers). Une seule corrigée à ce jour (E1/#17 "adjoint vie économique" → `tenu`, 2026-07-04) — repasser sur les autres promesses liées à des décisions déjà actées ailleurs sur le site (ex. D04 maintien du taux TFB, D13 activation plan canicule)
 
 ## 🟡 À faire — Technique
 
