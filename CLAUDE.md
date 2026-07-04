@@ -75,12 +75,20 @@ Lancement : `python3 scripts/run_agents.py` (launchd 17h en semaine).
 Logs : `~/Library/Logs/bruz-en-action-veille.log`.
 Environnement d'exécution : venv dédié `~/.venvs/bruz-en-action/` (voir piège 2026-07-01 ci-dessous — ne pas repointer le plist sur un python homebrew direct ou un venv sous `~/Documents`).
 
+### QA — link-checker (`scripts/agents/agent_qa.py`)
+
+Vérifie les pages du site déployé (contenu attendu, absence de `undefined`/`[object Object]`) et, avec `--links`/`--links-only`, l'accessibilité de toutes les URLs `source_url`/`url`/`lien` trouvées dans `data/*.json`. Distingue "cassé confirmé" (404/DNS/timeout) d'"anti-bot probable" (403/429 — Ouest-France, HelloAsso, ac-rennes.fr, ARS Bretagne bloquent systématiquement même avec un User-Agent navigateur).
+
+Automatisé en launchd : `com.bruz-en-action.linkcheck`, tous les lundis 8h, même venv dédié que la veille. Logs : `~/Library/Logs/bruz-en-action-linkcheck.log`.
+
+Convention pour les liens confirmés morts sans alternative trouvée : ajouter `<clé>_expiree: true` à côté du champ URL plutôt que de supprimer la source (le link-checker les ignore ensuite).
+
 ---
 
 ## Règles métier
 
 - **IDs dossiers** : `D01`, `D02`, … format fixe — ne jamais renuméroter
-- **Promesses** : 50 au total — statuts : `tenue` · `en_cours` · `non_tenue` · `inconnue`
+- **Promesses** : 50 au total — statuts : `non_commence` · `en_cours` · `tenu` · `partiel` · `abandonne` · `inconnu`
 - **Élus opposition** : inclus dans `elus.json` — rôle neutre/factuel
 - **Ton éditorial** : factuel, sourcé, constructif — pas de militantisme partisan
 - **Segments ML** : sans objet ici (projet citoyen, pas ProPME)
