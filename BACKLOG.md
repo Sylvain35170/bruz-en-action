@@ -42,11 +42,10 @@
 - [ ] **D03 — données intermédiaires 2015-2021** — compléter g1 (fiscalité locale) avec les années manquantes via comptes administratifs Mégalis (portail JS, accès direct requis)
 - [ ] **D03 — CFU 2024 Bruz (officiel)** — toujours pas localisé au 2026-07-02, malgré navigation directe du portail Mégalis via `claude-in-chrome` (recherche "compte financier unique" filtrée sur le SIREN Bruz 213500473 : seuls CFU 2023 et CFU 2025 remontent, pas 2024). Devenu moins prioritaire : le CFU 2025 officiel (trouvé et documenté) donne un encours de dette 2025 de 7,6 M€/379,59€ par hab, cohérent avec un pic ~9,4 M€ fin 2024 (DGFiP) suivi d'un désendettement 2025 sans nouvel emprunt tiré. Méthode qui a marché pour trouver 2023/2025 : `data.megalis.bretagne.bzh/?recherche=compte+financier+unique&siren=213500473` dans le navigateur, chercher les résultats "FINANCES_APPROBATION DU CFU [année] DU BUDGET PRINCIPAL"
 - [ ] **D03 — CFU 2025 Bruz** — à récupérer sur Mégalis dès publication (délai légal : 30 juin 2026, non disponible à ce jour)
-- [ ] **STATS_CONTEXT** — ajouter mapping pour D04, D08, D11, D12, D13 quand stats pertinentes identifiées
 
 ## 🟡 À faire — Promesses
 
-- [ ] **Audit statuts promesses.json** — les 50 promesses étaient toutes bloquées à `non_commence` depuis la création du tracker (jamais resynchronisées avec les décisions actées dans les dossiers). Une seule corrigée à ce jour (E1/#17 "adjoint vie économique" → `tenu`, 2026-07-04) — repasser sur les autres promesses liées à des décisions déjà actées ailleurs sur le site (ex. D04 maintien du taux TFB, D13 activation plan canicule)
+- [ ] **Audit statuts promesses.json** — ⏸ EN ATTENTE : discuter d'abord avec le maire des modes d'interaction/remontées avant de statuer (décision 2026-07-05). Contexte : les 50 promesses étaient toutes bloquées à `non_commence` depuis la création du tracker (jamais resynchronisées avec les décisions actées dans les dossiers). Une seule corrigée à ce jour (E1/#17 "adjoint vie économique" → `tenu`, 2026-07-04) — repasser sur les autres promesses liées à des décisions déjà actées ailleurs sur le site (ex. D04 maintien du taux TFB, D13 activation plan canicule)
 
 ## 🟡 À faire — Technique
 

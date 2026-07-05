@@ -1,13 +1,16 @@
 {
   "_meta": {
     "description": "Base de connaissance factuelle sur la commune de Bruz — source de vérité pour les agents et les pages du site. Le bloc stats_dossiers pilote le panneau « Chiffres de contexte » des pages /dossiers/[id] : valeur_path = chemin pointé vers une valeur de ce fichier (prioritaire sur valeur littérale), format nombre|meur, suffixe libre.",
-    "derniere_mise_a_jour": "2026-07-02",
+    "derniere_mise_a_jour": "2026-07-05",
     "sources_primaires": [
       "https://www.insee.fr/fr/statistiques/2011101?geo=COM-35047",
       "https://www.ville-bruz.fr",
       "https://annuaire-education.fr",
       "http://web.archive.org/web/20220815121657/http://bruzplainedevie.fr/",
-      "https://fr.wikipedia.org/wiki/Campus_de_Ker_Lann"
+      "https://fr.wikipedia.org/wiki/Campus_de_Ker_Lann",
+      "https://www.ville-bruz.fr/culture-loisirs/vie-associative-2/equipements-sportifs/",
+      "https://www.ville-bruz.fr/mon-quotidien/se-deplacer/transport-en-commun/",
+      "https://www.ville-bruz.fr/mon-quotidien/vie-economique/"
     ]
   },
   "identite": {
@@ -242,6 +245,49 @@
       "horizon_mise_en_service": "2031 (estimé)",
       "pilote": "Rennes Métropole",
       "note": "Condition structurante pour la mobilité des nouveaux habitants de la ZAC"
+    },
+    "ferroviaire": {
+      "gares": [
+        "Gare de Bruz (centre-ville)",
+        "Halte ferroviaire de Ker Lann"
+      ],
+      "lignes": [
+        "Rennes / Messac-Guipry",
+        "Rennes / Redon"
+      ],
+      "frequence": "Une vingtaine de trains par jour sur l'axe Bruz-Rennes",
+      "temps_trajet_rennes": "12 à 15 minutes",
+      "source_url": "https://www.ville-bruz.fr/mon-quotidien/se-deplacer/transport-en-commun/"
+    },
+    "bus_star": {
+      "lignes": [
+        {
+          "ligne": "C7",
+          "desserte": "Saint-Jacques-Gaité / Campus de Ker Lann / Cicé-Blossac / Vert Buisson / Bruz Centre"
+        },
+        {
+          "ligne": "C7 express",
+          "desserte": "Saint-Jacques-Gaité / Campus de Ker Lann"
+        },
+        {
+          "ligne": "59 + 59 express",
+          "desserte": "Rennes Fréville / Bruz Centre"
+        },
+        {
+          "ligne": "63",
+          "desserte": "Rennes Gares / La Rabine / Pont Réan"
+        },
+        {
+          "ligne": "90",
+          "desserte": "DGA-MI / Gare Bruz / Bruz centre / Lavoisier"
+        },
+        {
+          "ligne": "91",
+          "desserte": "Bruz / Chartres de Bretagne / Noyal-Châtillon"
+        }
+      ],
+      "reseau": "STAR — Rennes Métropole",
+      "source_url": "https://www.ville-bruz.fr/mon-quotidien/se-deplacer/transport-en-commun/"
     }
   },
   "securite": {
@@ -484,6 +530,393 @@
         "source_url": "https://www.insee.fr/fr/statistiques/2011101?geo=COM-35047",
         "annee": 2023
       }
+    ],
+    "D04": [
+      {
+        "label": "Taux communal TFB",
+        "valeur_path": "finances_communales.taxe_fonciere_batie_taux",
+        "source": "DGFiP — fiscalité locale",
+        "source_url": "https://www.data.gouv.fr/fr/datasets/impots-locaux/",
+        "annee": 2026
+      },
+      {
+        "label": "Propriétaires (assujettis TFB)",
+        "valeur_path": "logements.proprietaires_pct",
+        "suffixe": " %",
+        "source": "INSEE RP2023",
+        "source_url": "https://www.insee.fr/fr/statistiques/2011101?geo=COM-35047",
+        "annee": 2023
+      },
+      {
+        "label": "Revenu médian par UC",
+        "valeur_path": "emploi_revenus.revenu_median_uc",
+        "format": "nombre",
+        "suffixe": " €",
+        "source": "INSEE Filosofi 2023",
+        "source_url": "https://www.insee.fr/fr/statistiques/2011101?geo=COM-35047",
+        "annee": 2023
+      }
+    ],
+    "D05": [
+      {
+        "label": "Habitants",
+        "valeur_path": "demographie.population_recensement",
+        "format": "nombre",
+        "source": "INSEE RP2023",
+        "source_url": "https://www.insee.fr/fr/statistiques/2011101?geo=COM-35047",
+        "annee": 2023
+      },
+      {
+        "label": "Superficie",
+        "valeur_path": "demographie.superficie_km2",
+        "suffixe": " km²",
+        "source": "INSEE",
+        "source_url": "https://www.insee.fr/fr/statistiques/2011101?geo=COM-35047",
+        "annee": 2023
+      },
+      {
+        "label": "Trains/jour vers Rennes",
+        "valeur": "~20",
+        "source": "Ville de Bruz — Se déplacer",
+        "source_url": "https://www.ville-bruz.fr/mon-quotidien/se-deplacer/transport-en-commun/",
+        "annee": 2026
+      },
+      {
+        "label": "Lignes de bus STAR",
+        "valeur": "6",
+        "source": "Ville de Bruz — Se déplacer",
+        "source_url": "https://www.ville-bruz.fr/mon-quotidien/se-deplacer/transport-en-commun/",
+        "annee": 2026
+      }
+    ],
+    "D12": [
+      {
+        "label": "Salles de sport couvertes",
+        "valeur_path": "sport.salles_couvertes_nb",
+        "source": "Ville de Bruz — Équipements sportifs",
+        "source_url": "https://www.ville-bruz.fr/culture-loisirs/vie-associative-2/equipements-sportifs/",
+        "annee": 2026
+      },
+      {
+        "label": "City stade 2023 : coût d'installation",
+        "valeur": "380 000 €",
+        "source": "Ouest-France",
+        "source_url": "https://www.ouest-france.fr/bretagne/bruz-35170/au-sud-de-rennes-les-terrains-de-foot-a-380-000-euros-demontes-trois-ans-apres-leur-installation-f9c9845c-5d0b-11f1-ade7-1fdeb3d4b4fb",
+        "annee": 2023
+      },
+      {
+        "label": "Démontage (mai 2026)",
+        "valeur": "8 000 €",
+        "source": "Ouest-France",
+        "source_url": "https://www.ouest-france.fr/bretagne/bruz-35170/au-sud-de-rennes-les-terrains-de-foot-a-380-000-euros-demontes-trois-ans-apres-leur-installation-f9c9845c-5d0b-11f1-ade7-1fdeb3d4b4fb",
+        "annee": 2026
+      },
+      {
+        "label": "Reconstruction annoncée",
+        "valeur": "250–300 k€",
+        "source": "Ouest-France",
+        "source_url": "https://www.ouest-france.fr/bretagne/bruz-35170/au-sud-de-rennes-les-terrains-de-foot-a-380-000-euros-demontes-trois-ans-apres-leur-installation-f9c9845c-5d0b-11f1-ade7-1fdeb3d4b4fb",
+        "annee": 2026
+      }
+    ],
+    "D13": [
+      {
+        "label": "65 ans et plus",
+        "valeur_path": "structure_population.65_ans_et_plus_pct",
+        "suffixe": " %",
+        "source": "INSEE RP2023",
+        "source_url": "https://www.insee.fr/fr/statistiques/2011101?geo=COM-35047",
+        "annee": 2023
+      },
+      {
+        "label": "Moins de 15 ans",
+        "valeur_path": "structure_population.moins_de_15_ans_pct",
+        "suffixe": " %",
+        "source": "INSEE RP2023",
+        "source_url": "https://www.insee.fr/fr/statistiques/2011101?geo=COM-35047",
+        "annee": 2023
+      },
+      {
+        "label": "Ménages d'une personne",
+        "valeur_path": "menages.menages_une_personne_pct",
+        "suffixe": " %",
+        "source": "INSEE RP2023",
+        "source_url": "https://www.insee.fr/fr/statistiques/2011101?geo=COM-35047",
+        "annee": 2023
+      }
+    ],
+    "D15": [
+      {
+        "label": "Médecins généralistes",
+        "valeur_path": "sante.medecins_generalistes_nb",
+        "suffixe": " (~)",
+        "source": "Doqi / Ameli",
+        "source_url": "https://www.doqi.fr/medecins-generalistes/bruz-35170",
+        "annee": 2026
+      },
+      {
+        "label": "Densité pour 100 000 hab",
+        "valeur": "~125 (vs ~148 national)",
+        "source": "Doqi / Drees 2023",
+        "source_url": "https://www.doqi.fr/medecins-generalistes/bruz-35170",
+        "annee": 2026
+      },
+      {
+        "label": "Pharmacies",
+        "valeur_path": "sante.pharmacies_nb",
+        "source": "Ville de Bruz",
+        "source_url": "https://www.ville-bruz.fr/mon-quotidien/sante/",
+        "annee": 2026
+      },
+      {
+        "label": "Spécialistes installés à Bruz",
+        "valeur_path": "sante.specialistes_sur_commune",
+        "source": "Annuaire santé Ameli",
+        "source_url": "https://www.doqi.fr/medecins-generalistes/bruz-35170",
+        "annee": 2026
+      }
+    ],
+    "D16": [
+      {
+        "label": "Établissements actifs",
+        "valeur_path": "emploi_revenus.etablissements_fin_2024",
+        "format": "nombre",
+        "source": "INSEE fin 2024",
+        "source_url": "https://www.insee.fr/fr/statistiques/2011101?geo=COM-35047",
+        "annee": 2024
+      },
+      {
+        "label": "Zones d'activité",
+        "valeur_path": "economie_locale.zones_activite_nb",
+        "source": "Ville de Bruz — Vie économique",
+        "source_url": "https://www.ville-bruz.fr/mon-quotidien/vie-economique/",
+        "annee": 2026
+      },
+      {
+        "label": "Commerçants du marché du vendredi",
+        "valeur": "~130",
+        "source": "Ville de Bruz — Les marchés",
+        "source_url": "https://www.ville-bruz.fr/mon-quotidien/vie-economique/les-marches-a-bruz/",
+        "annee": 2026
+      },
+      {
+        "label": "Entreprises au campus Ker Lann",
+        "valeur": "~338",
+        "source": "Simplanter.fr",
+        "source_url": "https://simplanter.fr/zone-activites/campus-ker-lann-bruz",
+        "annee": 2026
+      }
+    ],
+    "D20": [
+      {
+        "label": "Étudiants au campus Ker Lann",
+        "valeur_path": "education.enseignement_superieur.etudiants",
+        "source": "Wikipédia — Campus de Ker Lann",
+        "source_url": "https://fr.wikipedia.org/wiki/Campus_de_Ker_Lann",
+        "annee": 2025
+      },
+      {
+        "label": "Établissements d'enseignement",
+        "valeur_path": "education.enseignement_superieur.etablissements_nb",
+        "source": "Wikipédia — Campus de Ker Lann",
+        "source_url": "https://fr.wikipedia.org/wiki/Campus_de_Ker_Lann",
+        "annee": 2025
+      },
+      {
+        "label": "Superficie du campus",
+        "valeur_path": "education.enseignement_superieur.superficie_ha",
+        "suffixe": " ha",
+        "source": "Wikipédia — Campus de Ker Lann",
+        "source_url": "https://fr.wikipedia.org/wiki/Campus_de_Ker_Lann",
+        "annee": 2025
+      },
+      {
+        "label": "Résidences étudiantes (privées)",
+        "valeur_path": "education.enseignement_superieur.logement_etudiant.residences_recensees",
+        "source": "Recensement Bruz en Action",
+        "source_url": "https://fr.wikipedia.org/wiki/Campus_de_Ker_Lann",
+        "annee": 2026
+      }
     ]
+  },
+  "sante": {
+    "annee_reference": 2026,
+    "medecins_generalistes_nb": 25,
+    "densite_generalistes_pour_100k": 125,
+    "densite_nationale_pour_100k": 148,
+    "note_densite": "~25 généralistes pour ~20 000 hab, soit ~125/100 000 — sous la moyenne nationale (~148/100 000, Drees 2023). Quasi-totalité en secteur 1.",
+    "specialistes_sur_commune": 0,
+    "note_specialistes": "Aucun spécialiste (cardiologue, dermatologue, ophtalmologue, pédiatre) installé à Bruz — tous à Rennes (8-15 km)",
+    "pharmacies_nb": 6,
+    "cabinets_infirmiers_nb": 10,
+    "msp": {
+      "officielle": false,
+      "note": "Aucune maison de santé pluriprofessionnelle identifiée. Offre privée en construction : programme « Maison de santé » (promoteur Blot Entreprise), ~2 000 m² de bureaux médicaux à louer."
+    },
+    "zonage_ars": {
+      "statut": "en attente",
+      "note": "Consultation ARS Bretagne terminée (avril-mai 2026), arrêté attendu été 2026 — classement de Bruz (sous-dotée/intermédiaire/bien dotée) non officiel à ce jour",
+      "source_url": "https://www.bretagne.ars.sante.fr/zonage-medecin-2026-lars-bretagne-soumet-la-carte-actualisee-la-concertation-jusquau-15-mai-2026"
+    },
+    "sources": [
+      "https://www.doqi.fr/medecins-generalistes/bruz-35170",
+      "https://annuairesante.ameli.fr/trouver-un-professionnel-de-sante/medecin-generaliste/35-ille-et-vilaine-bruz/professionlabel-01-05"
+    ]
+  },
+  "sport": {
+    "source": "https://www.ville-bruz.fr/culture-loisirs/vie-associative-2/equipements-sportifs/ (relevé 2026-07-05)",
+    "salles_couvertes": [
+      {
+        "nom": "Équipements couverts Ker Lann",
+        "adresse": "Rue Maryse Bastié"
+      },
+      {
+        "nom": "Espace Simone Veil",
+        "adresse": "6bis rue des Planches"
+      },
+      {
+        "nom": "Salle Chantale Mauduit",
+        "adresse": "35e rue Pierre de Coubertin"
+      },
+      {
+        "nom": "Salle Colette Besson",
+        "adresse": "4 esplanade Colette Besson"
+      },
+      {
+        "nom": "Salle d'activités du Vert Buisson",
+        "adresse": "5 avenue de Cézembre"
+      },
+      {
+        "nom": "Salle de gymnastique Charles Joly",
+        "adresse": "35d rue Pierre de Coubertin"
+      },
+      {
+        "nom": "Salle Éric Tabarly",
+        "adresse": "35c rue Pierre de Coubertin"
+      },
+      {
+        "nom": "Maison des Associations — salle Magnolia",
+        "adresse": "59 avenue Alphonse Legault"
+      }
+    ],
+    "salles_couvertes_nb": 8,
+    "equipements_exterieurs": [
+      "Boulodrome (16 rue Gaudrine)",
+      "City stade — Plaine Yann-Fañch Kemener",
+      "Terrains basketball 3c3 (rue Pierre de Coubertin)",
+      "Halle tennis Yannick Noah + terrains tennis extérieurs (60a rue du Huit Mai 1944)",
+      "Piste d'athlétisme (48 rue du Huit Mai 1944)",
+      "Terrains football gazonnés (rue du Huit Mai 1944, Champ l'Évêque)",
+      "Terrains rugby gazonnés (rue Pierre de Coubertin)",
+      "Beach volley — Plaine Yann-Fañch Kemener",
+      "Site d'escalade du Boël (121 le Rocher)",
+      "Espaces fitness (Parc de l'An 2000, complexe Siméon Belliard)",
+      "Parcours course d'orientation (Parc de l'An 2000)",
+      "Équipements Bois de Carcé (15 rue du Clos Berhault)"
+    ],
+    "city_stades": {
+      "yann_fanch_kemener": "Conservé lors du réaménagement de la plaine (655 000 €, réouverture déc. 2025)",
+      "simeon_beliard": {
+        "installation": "2023 — 380 000 € (mandature Salmon), 2 terrains foot à 5",
+        "demontage": "27-28 mai 2026 — 8 000 € (conflit riverains, 70-80 dB, procédure judiciaire)",
+        "reconstruction_annoncee": "250 000 à 300 000 €, près du skate-park, calendrier non précisé",
+        "source_url": "https://www.ouest-france.fr/bretagne/bruz-35170/au-sud-de-rennes-les-terrains-de-foot-a-380-000-euros-demontes-trois-ans-apres-leur-installation-f9c9845c-5d0b-11f1-ade7-1fdeb3d4b4fb"
+      }
+    },
+    "note": "La piscine de la Conterie est décrite dans equipements.piscine (syndicat intercommunal). Vue d'ensemble prévue au dossier D19 (backlog)."
+  },
+  "economie_locale": {
+    "annee_reference": 2026,
+    "zones_activite": [
+      {
+        "nom": "Campus de Ker Lann",
+        "surface_ha": 165,
+        "entreprises_nb": 338,
+        "profil": "pôle technologique et enseignement supérieur — voir education.enseignement_superieur et D20"
+      },
+      {
+        "nom": "Z.I. du Champ Niguel",
+        "surface_ha": 26.9,
+        "entreprises_nb": 139,
+        "profil": "petite industrie"
+      },
+      {
+        "nom": "Z.A. de la Haie Gautrais",
+        "profil": "zone artisanale — accueille notamment le Parc Expo Rennes (et le Musikhall)"
+      }
+    ],
+    "zones_activite_nb": 3,
+    "marches": {
+      "marche_hebdomadaire": {
+        "jour": "vendredi",
+        "depuis": 1960,
+        "commercants_nb": 130,
+        "note": "Un des plus grands marchés d'Ille-et-Vilaine — alimentation, fleurs, vêtements, bijoux",
+        "source_url": "https://www.ville-bruz.fr/mon-quotidien/vie-economique/les-marches-a-bruz/"
+      },
+      "marche_de_noel": {
+        "exposants": "40 à 50",
+        "note": "Artisans d'art, créateurs, producteurs — candidatures via le service Vie Associative et Événementielle"
+      }
+    },
+    "adjoint_vie_economique": "Gilles Daniel (6e adjoint — Vie économique et informatique, depuis avril 2026)",
+    "note_etablissements": "621 établissements actifs fin 2024 (INSEE, voir emploi_revenus). Le chiffre de ~3 200 entreprises (Manageo) inclut sièges sociaux sans activité locale — à ne pas utiliser sans précaution.",
+    "vacance_commerciale": "Aucune donnée trouvée à ce jour (backlog D16)",
+    "sources": [
+      "https://www.ville-bruz.fr/mon-quotidien/vie-economique/",
+      "https://simplanter.fr/zone-activites/campus-ker-lann-bruz",
+      "https://simplanter.fr/zone-activites/z-i-du-champ-niguel-bruz"
+    ]
+  },
+  "environnement_climat": {
+    "plan_canicule": {
+      "derniere_activation": "2026-06-22",
+      "declencheur": "Vigilance rouge préfectorale Ille-et-Vilaine",
+      "mesures_2026": [
+        "Écoles : ventilateurs, brumisateurs, repas froids avec pains de glace",
+        "CCAS : registre des personnes âgées et isolées activé (02 99 57 12 47)",
+        "Piscine Conterie : bassin nordique extérieur en horaires élargis (7h30-20h)",
+        "Collecte des déchets décalée (5h-13h / 20h-3h)",
+        "Activités sportives suspendues hors bâtiments climatisés et sports aquatiques"
+      ]
+    },
+    "ilots_de_fraicheur": "Aucune liste publique d'îlots de fraîcheur cartographiés sur le territoire (constat 2026-06)",
+    "vegetalisation": "Levier annoncé par le maire après la rénovation de l'Hôtel de Ville (juillet 2026) — aucun programme pluriannuel chiffré à ce jour",
+    "pcs": "Plan Communal de Sauvegarde formel (page « Les risques majeurs à Bruz ») — risques listés : météo, inondation, TMD, épidémie, nucléaire ; la canicule n'y est pas nommée explicitement",
+    "espaces_verts_principaux": [
+      "Parc de l'An 2000",
+      "Bois de Carcé",
+      "Vallée et site du Boël",
+      "Plaine Yann-Fañch Kemener"
+    ],
+    "financement": "Fonds vert 2026 — sous-mesure « confort d'été » (solutions passives uniquement, climatisation exclue)"
+  },
+  "culture_patrimoine": {
+    "manoir_de_la_noe": {
+      "adresse": "26 rue de la Noë, 35170 Bruz",
+      "propriete": "communale",
+      "occupant": "Association Plan B — tiers-lieu citoyen",
+      "historique": [
+        {
+          "date": "2024-2025",
+          "evenement": "Plan B lauréate de l'appel à projets « Nos Lieux Communs » de Rennes Métropole (15 retenus sur 32 projets, vote citoyen)"
+        },
+        {
+          "date": "2025-12",
+          "evenement": "La Ville confie les clés du Manoir à Plan B"
+        },
+        {
+          "date": "2026-01",
+          "evenement": "Chantiers participatifs bénévoles de rénovation"
+        },
+        {
+          "date": "2026-04-10",
+          "evenement": "Ouverture publique du bar associatif — ven. 18h-23h / dim. 15h-19h, concerts, food trucks, Repair Café le 2e samedi du mois"
+        }
+      ],
+      "guinguette": "« Un été au manoir » — guinguette estivale municipale (convention 2 ans) qui cohabite avec Plan B",
+      "zone_grise": "Nature exacte de la convention Ville/Plan B (durée, conditions financières) non documentée publiquement"
+    },
+    "note": "Le Grand Logis (médiathèque + salle de spectacle 400 places) est décrit dans equipements."
   }
 }
