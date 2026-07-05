@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "description": "Base de connaissance factuelle sur la commune de Bruz — source de vérité pour les agents et les pages du site",
+    "description": "Base de connaissance factuelle sur la commune de Bruz — source de vérité pour les agents et les pages du site. Le bloc stats_dossiers pilote le panneau « Chiffres de contexte » des pages /dossiers/[id] : valeur_path = chemin pointé vers une valeur de ce fichier (prioritaire sur valeur littérale), format nombre|meur, suffixe libre.",
     "derniere_mise_a_jour": "2026-07-02",
     "sources_primaires": [
       "https://www.insee.fr/fr/statistiques/2011101?geo=COM-35047",
@@ -299,5 +299,191 @@
       "ratio_endettement_pct_rrf": 28.75,
       "note": "Aucun nouvel emprunt tiré ni en 2024 ni en 2025 (ligne 1641 'Emprunts en euros' réalisée à 0€ les deux années) — la dette évolue donc par remboursement du capital, pas par tirage."
     }
+  },
+  "stats_dossiers": {
+    "D01": [
+      {
+        "label": "Habitants",
+        "valeur_path": "demographie.population_recensement",
+        "format": "nombre",
+        "source": "INSEE RP2023",
+        "source_url": "https://www.insee.fr/fr/statistiques/2011101?geo=COM-35047",
+        "annee": 2023
+      },
+      {
+        "label": "Croissance annuelle",
+        "valeur_path": "demographie.taux_croissance_annuel_2017_2023",
+        "source": "INSEE RP2023",
+        "source_url": "https://www.insee.fr/fr/statistiques/2011101?geo=COM-35047",
+        "annee": 2023
+      },
+      {
+        "label": "Solde migratoire",
+        "valeur_path": "demographie.solde_migratoire",
+        "source": "INSEE RP2023",
+        "source_url": "https://www.insee.fr/fr/statistiques/2011101?geo=COM-35047",
+        "annee": 2023
+      },
+      {
+        "label": "Taux d'activité 15-64 ans",
+        "valeur_path": "structure_population.taux_activite_15_64_ans",
+        "suffixe": " %",
+        "source": "INSEE RP2023",
+        "source_url": "https://www.insee.fr/fr/statistiques/2011101?geo=COM-35047",
+        "annee": 2023
+      }
+    ],
+    "D02": [
+      {
+        "label": "Résidences principales",
+        "valeur_path": "logements.residences_principales",
+        "format": "nombre",
+        "source": "INSEE RP2023",
+        "source_url": "https://www.insee.fr/fr/statistiques/2011101?geo=COM-35047",
+        "annee": 2023
+      },
+      {
+        "label": "Croissance résidences (2012→2023)",
+        "valeur": "+2 004",
+        "source": "INSEE RP2023",
+        "source_url": "https://www.insee.fr/fr/statistiques/2011101?geo=COM-35047",
+        "annee": 2023
+      },
+      {
+        "label": "Propriétaires",
+        "valeur_path": "logements.proprietaires_pct",
+        "suffixe": " %",
+        "source": "INSEE RP2023",
+        "source_url": "https://www.insee.fr/fr/statistiques/2011101?geo=COM-35047",
+        "annee": 2023
+      },
+      {
+        "label": "Logements vacants",
+        "valeur_path": "logements.logements_vacants_pct",
+        "suffixe": " %",
+        "source": "INSEE RP2023",
+        "source_url": "https://www.insee.fr/fr/statistiques/2011101?geo=COM-35047",
+        "annee": 2023
+      }
+    ],
+    "D03": [
+      {
+        "label": "Dette par habitant",
+        "valeur_path": "finances_communales.cfu_2025.encours_dette_par_habitant",
+        "suffixe": " €",
+        "source": "CFU 2025 Bruz (Mégalis)",
+        "source_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1046139/11cee58060e372ef6ad9262e4e6495f56f7f2d5f06a98d5a85c4bfeaed7df03b.pdf",
+        "annee": 2025
+      },
+      {
+        "label": "Encours de dette",
+        "valeur_path": "finances_communales.cfu_2025.encours_dette_estime",
+        "format": "meur",
+        "source": "CFU 2025 Bruz (Mégalis)",
+        "source_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1046139/11cee58060e372ef6ad9262e4e6495f56f7f2d5f06a98d5a85c4bfeaed7df03b.pdf",
+        "annee": 2025
+      },
+      {
+        "label": "Recettes réelles de fonctionnement",
+        "valeur_path": "finances_communales.cfu_2025.recettes_reelles_fonctionnement",
+        "format": "meur",
+        "source": "CFU 2025 Bruz (Mégalis)",
+        "source_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1046139/11cee58060e372ef6ad9262e4e6495f56f7f2d5f06a98d5a85c4bfeaed7df03b.pdf",
+        "annee": 2025
+      },
+      {
+        "label": "Endettement / recettes de fonctionnement",
+        "valeur_path": "finances_communales.cfu_2025.ratio_endettement_pct_rrf",
+        "suffixe": " %",
+        "source": "CFU 2025 Bruz (Mégalis)",
+        "source_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1046139/11cee58060e372ef6ad9262e4e6495f56f7f2d5f06a98d5a85c4bfeaed7df03b.pdf",
+        "annee": 2025
+      }
+    ],
+    "D06": [
+      {
+        "label": "Habitants",
+        "valeur_path": "demographie.population_recensement",
+        "format": "nombre",
+        "source": "INSEE RP2023",
+        "source_url": "https://www.insee.fr/fr/statistiques/2011101?geo=COM-35047",
+        "annee": 2023
+      },
+      {
+        "label": "Ménages",
+        "valeur_path": "menages.total_menages",
+        "format": "nombre",
+        "source": "INSEE RP2023",
+        "source_url": "https://www.insee.fr/fr/statistiques/2011101?geo=COM-35047",
+        "annee": 2023
+      },
+      {
+        "label": "Taille moy. des ménages",
+        "valeur_path": "menages.taille_moyenne",
+        "suffixe": " pers.",
+        "source": "INSEE RP2023",
+        "source_url": "https://www.insee.fr/fr/statistiques/2011101?geo=COM-35047",
+        "annee": 2023
+      }
+    ],
+    "D07": [
+      {
+        "label": "Vols et dégradations (2024)",
+        "valeur_path": "securite.faits_constates_2024.vols_et_degradations",
+        "format": "nombre",
+        "source": "Police/Gendarmerie nationales",
+        "source_url": "https://www.bien-dans-ma-ville.fr/bruz-35047/",
+        "annee": 2024
+      },
+      {
+        "label": "Cambriolages (2024)",
+        "valeur_path": "securite.faits_constates_2024.cambriolages",
+        "format": "nombre",
+        "source": "Police/Gendarmerie nationales",
+        "source_url": "https://www.bien-dans-ma-ville.fr/bruz-35047/",
+        "annee": 2024
+      },
+      {
+        "label": "Violences physiques/sexuelles (2024)",
+        "valeur_path": "securite.faits_constates_2024.violences_physiques_et_sexuelles",
+        "format": "nombre",
+        "source": "Police/Gendarmerie nationales",
+        "source_url": "https://www.bien-dans-ma-ville.fr/bruz-35047/",
+        "annee": 2024
+      },
+      {
+        "label": "Faits liés aux stupéfiants (2024)",
+        "valeur_path": "securite.faits_constates_2024.stupefiants",
+        "format": "nombre",
+        "source": "Police/Gendarmerie nationales",
+        "source_url": "https://www.bien-dans-ma-ville.fr/bruz-35047/",
+        "annee": 2024
+      }
+    ],
+    "D10": [
+      {
+        "label": "Moins de 15 ans",
+        "valeur_path": "structure_population.moins_de_15_ans_pct",
+        "suffixe": " %",
+        "source": "INSEE RP2023",
+        "source_url": "https://www.insee.fr/fr/statistiques/2011101?geo=COM-35047",
+        "annee": 2023
+      },
+      {
+        "label": "Résidences principales",
+        "valeur_path": "logements.residences_principales",
+        "format": "nombre",
+        "source": "INSEE RP2023",
+        "source_url": "https://www.insee.fr/fr/statistiques/2011101?geo=COM-35047",
+        "annee": 2023
+      },
+      {
+        "label": "Croissance résidences (2012→2023)",
+        "valeur": "+2 004",
+        "source": "INSEE RP2023",
+        "source_url": "https://www.insee.fr/fr/statistiques/2011101?geo=COM-35047",
+        "annee": 2023
+      }
+    ]
   }
 }

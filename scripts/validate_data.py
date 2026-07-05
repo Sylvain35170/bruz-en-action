@@ -189,10 +189,44 @@ def validate_elus() -> None:
     check_no_suspect(data, "elus.json")
 
 
+def validate_bruz() -> None:
+    """bruz.json : le bloc stats_dossiers doit rester cohérent (il pilote le
+    panneau « Chiffres de contexte » des pages dossier)."""
+    data = load("bruz.json")
+    if not data:
+        return
+    dossiers_data = load("dossiers.json") or {}
+    dossier_ids = {d.get("id") for d in dossiers_data.get("dossiers", [])}
+
+    def resolve(path: str):
+        node = data
+        for key in path.split("."):
+            if not isinstance(node, dict) or key not in node:
+                return None
+            node = node[key]
+        return node
+
+    for did, stats in (data.get("stats_dossiers") or {}).items():
+        where = f"bruz.json.stats_dossiers[{did}]"
+        if did not in dossier_ids:
+            err(f"{where} : dossier inconnu dans dossiers.json")
+        for i, s in enumerate(stats):
+            w = f"{where}[{i}]"
+            for field in ("label", "source", "source_url", "annee"):
+                if not s.get(field):
+                    err(f"{w} : champ «{field}» manquant")
+            check_url(s.get("source_url"), w)
+            if not s.get("valeur") and not s.get("valeur_path"):
+                err(f"{w} : ni valeur ni valeur_path")
+            if s.get("valeur_path") and resolve(s["valeur_path"]) is None:
+                err(f"{w} : valeur_path «{s['valeur_path']}» ne résout pas dans bruz.json")
+    check_no_suspect(data, "bruz.json")
+
+
 def validate_parse_only() -> None:
     """Les autres fichiers data/ doivent au minimum parser."""
     done = {"actus.json", "dossiers.json", "promesses.json", "cms.json",
-            "evenements.json", "elus.json", "actus_queue.json"}
+            "evenements.json", "elus.json", "actus_queue.json", "bruz.json"}
     for path in sorted(DATA_DIR.glob("*.json")):
         if path.name in done:
             continue
@@ -210,6 +244,7 @@ def main() -> None:
     validate_cms()
     validate_evenements()
     validate_elus()
+    validate_bruz()
     validate_parse_only()
 
     if warnings and args.verbose:

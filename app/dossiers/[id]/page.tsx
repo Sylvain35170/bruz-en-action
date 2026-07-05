@@ -132,47 +132,38 @@ function SvgHorizontalBarChart({ g }: { g: Graphique }) {
   );
 }
 
-type StatContexte = { label: string; valeur: string; source: string; source_url: string; annee: number };
-
-const INSEE_URL = "https://www.insee.fr/fr/statistiques/2011101?geo=COM-35047";
-const d = bruzData;
-
-const STATS_CONTEXT: Record<string, StatContexte[]> = {
-  D01: [ // T4 / transports
-    { label: "Habitants", valeur: d.demographie.population_recensement.toLocaleString("fr-FR"), source: "INSEE RP2023", source_url: INSEE_URL, annee: 2023 },
-    { label: "Croissance annuelle", valeur: d.demographie.taux_croissance_annuel_2017_2023, source: "INSEE RP2023", source_url: INSEE_URL, annee: 2023 },
-    { label: "Solde migratoire", valeur: d.demographie.solde_migratoire, source: "INSEE RP2023", source_url: INSEE_URL, annee: 2023 },
-    { label: "Taux d'activité 15-64 ans", valeur: `${d.structure_population.taux_activite_15_64_ans} %`, source: "INSEE RP2023", source_url: INSEE_URL, annee: 2023 },
-  ],
-  D02: [ // ZAC Multisites / logements
-    { label: "Résidences principales", valeur: d.logements.residences_principales.toLocaleString("fr-FR"), source: "INSEE RP2023", source_url: INSEE_URL, annee: 2023 },
-    { label: "Croissance résidences (2012→2023)", valeur: `+${(d.logements.residences_principales - d.logements.evolution_residences_principales["2012"]).toLocaleString("fr-FR")}`, source: "INSEE RP2023", source_url: INSEE_URL, annee: 2023 },
-    { label: "Propriétaires", valeur: `${d.logements.proprietaires_pct} %`, source: "INSEE RP2023", source_url: INSEE_URL, annee: 2023 },
-    { label: "Logements vacants", valeur: `${d.logements.logements_vacants_pct} %`, source: "INSEE RP2023", source_url: INSEE_URL, annee: 2023 },
-  ],
-  D03: [ // Budget / Finances
-    { label: "Dette par habitant (2024)", valeur: "466 €", source: "DGFiP 2024 / decomptes-publics.fr", source_url: "https://www.decomptes-publics.fr/villes/35047-35170-bruz", annee: 2024 },
-    { label: "Épargne brute (2023)", valeur: "27,3 %", source: "CFU 2023 Bruz", source_url: "https://data.megalis.bretagne.bzh/organization/commune-de-bruz", annee: 2023 },
-    { label: "Fiscalité locale (2024)", valeur: "~13,9 M€", source: "DGFiP 2024 / decomptes-publics.fr", source_url: "https://www.decomptes-publics.fr/villes/35047-35170-bruz", annee: 2024 },
-    { label: "Rigidité structurelle (2024)", valeur: "44 %", source: "DGFiP 2024 / decomptes-publics.fr", source_url: "https://www.decomptes-publics.fr/villes/35047-35170-bruz", annee: 2024 },
-  ],
-  D06: [ // Piscine Conterie
-    { label: "Habitants", valeur: d.demographie.population_recensement.toLocaleString("fr-FR"), source: "INSEE RP2023", source_url: INSEE_URL, annee: 2023 },
-    { label: "Ménages", valeur: d.menages.total_menages.toLocaleString("fr-FR"), source: "INSEE RP2023", source_url: INSEE_URL, annee: 2023 },
-    { label: "Taille moy. des ménages", valeur: `${d.menages.taille_moyenne} pers.`, source: "INSEE RP2023", source_url: INSEE_URL, annee: 2023 },
-  ],
-  D07: [ // Police municipale
-    { label: "Vols et dégradations (2024)", valeur: d.securite.faits_constates_2024.vols_et_degradations.toString(), source: "Police/Gendarmerie nationales", source_url: "https://www.bien-dans-ma-ville.fr/bruz-35047/", annee: 2024 },
-    { label: "Cambriolages (2024)", valeur: d.securite.faits_constates_2024.cambriolages.toString(), source: "Police/Gendarmerie nationales", source_url: "https://www.bien-dans-ma-ville.fr/bruz-35047/", annee: 2024 },
-    { label: "Violences physiques/sexuelles (2024)", valeur: d.securite.faits_constates_2024.violences_physiques_et_sexuelles.toString(), source: "Police/Gendarmerie nationales", source_url: "https://www.bien-dans-ma-ville.fr/bruz-35047/", annee: 2024 },
-    { label: "Faits liés aux stupéfiants (2024)", valeur: d.securite.faits_constates_2024.stupefiants.toString(), source: "Police/Gendarmerie nationales", source_url: "https://www.bien-dans-ma-ville.fr/bruz-35047/", annee: 2024 },
-  ],
-  D10: [ // Écoles
-    { label: "Moins de 15 ans", valeur: `${d.structure_population.moins_de_15_ans_pct} %`, source: "INSEE RP2023", source_url: INSEE_URL, annee: 2023 },
-    { label: "Résidences principales", valeur: d.logements.residences_principales.toLocaleString("fr-FR"), source: "INSEE RP2023", source_url: INSEE_URL, annee: 2023 },
-    { label: "Croissance résidences (2012→2023)", valeur: `+${(d.logements.residences_principales - d.logements.evolution_residences_principales["2012"]).toLocaleString("fr-FR")}`, source: "INSEE RP2023", source_url: INSEE_URL, annee: 2023 },
-  ],
+// Panneau « Chiffres de contexte » — entièrement piloté par data/bruz.json
+// (bloc stats_dossiers). valeur_path pointe vers une valeur de bruz.json :
+// une seule source de vérité, aucune stat codée en dur ici.
+type StatContexte = {
+  label: string;
+  valeur?: string;
+  valeur_path?: string;
+  suffixe?: string;
+  format?: string;
+  source: string;
+  source_url: string;
+  annee: number;
 };
+
+function resolveStat(s: StatContexte): string {
+  let v: unknown = s.valeur;
+  if (s.valeur_path) {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    v = s.valeur_path.split(".").reduce((acc: any, key) => acc?.[key], bruzData as any);
+  }
+  if (typeof v === "number") {
+    if (s.format === "meur") {
+      v = `${(v / 1_000_000).toLocaleString("fr-FR", { maximumFractionDigits: 1 })} M€`;
+    } else {
+      v = v.toLocaleString("fr-FR");
+    }
+  }
+  return `${v ?? "—"}${s.suffixe ?? ""}`;
+}
+
+const STATS_CONTEXT: Record<string, StatContexte[]> =
+  (bruzData as { stats_dossiers?: Record<string, StatContexte[]> }).stats_dossiers ?? {};
 
 function SectionTitle({ children }: { children: React.ReactNode }) {
   return (
@@ -496,7 +487,7 @@ export default async function DossierPage({ params }: { params: Promise<{ id: st
                   {STATS_CONTEXT[dossier.id].map((s, i) => (
                     <div key={i} style={{ paddingBottom: 10, borderBottom: i < STATS_CONTEXT[dossier.id].length - 1 ? "1px solid #f1f5f9" : "none" }}>
                       <div style={{ fontSize: 11, color: "#94a3b8", marginBottom: 2 }}>{s.label}</div>
-                      <div style={{ fontSize: 18, fontWeight: 800, color: "#0f172a", lineHeight: 1.2 }}>{s.valeur}</div>
+                      <div style={{ fontSize: 18, fontWeight: 800, color: "#0f172a", lineHeight: 1.2 }}>{resolveStat(s)}</div>
                       <a href={s.source_url} target="_blank" rel="noopener noreferrer"
                         style={{ fontSize: 10, color: "#cbd5e1", textDecoration: "none" }}>
                         {s.source} {s.annee} ↗
