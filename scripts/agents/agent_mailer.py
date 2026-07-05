@@ -3,9 +3,17 @@
 """
 Agent Mailer — Envoie les propositions éditoriales par email.
 
-Lit scripts/proposals/YYYY-MM-DD.json (généré par agent_select),
-filtre les items pertinents (pertinence >= 1),
-et envoie un email de synthèse aux directeurs éditoriaux.
+Lit le registre incrémental scripts/proposals/pending.json (généré par
+agent_select) et envoie TOUT ce qui est en attente de revue (statut "pending"),
+pas seulement les items du jour — un item reste signalé jusqu'à décision.
+
+Cadence anti-spam :
+  - envoi si au moins un item n'a jamais été mailé (nouveau depuis le dernier envoi)
+  - sinon, rappel si le dernier email date de REMINDER_DAYS jours ou plus
+
+Usage :
+  python3 scripts/agents/agent_mailer.py            # envoi réel
+  python3 scripts/agents/agent_mailer.py --dry-run  # construit l'email sans l'envoyer
 
 Configuration : ~/.bruz-mailer.json (créer une fois, jamais commité)
 {
@@ -27,10 +35,11 @@ from email.mime.text import MIMEText
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
-from utils import PROPOSALS_DIR, log, today
+from utils import load_registry, log, save_registry, today
 
 AGENT_NAME = "mailer"
 CONFIG_FILE = Path.home() / ".bruz-mailer.json"
+REMINDER_DAYS = 3
 
 PERTINENCE_LABEL = {0: "⚪ hors sujet", 1: "🟡 marginal", 2: "🟠 pertinent", 3: "🔴 essentiel"}
 
@@ -47,10 +56,20 @@ def _load_config() -> dict | None:
         return None
 
 
+def _fmt_fr(iso: str) -> str:
+    """2026-07-05 → 05/07."""
+    try:
+        return f"{iso[8:10]}/{iso[5:7]}"
+    except Exception:
+        return iso or ""
+
+
 def _build_email(proposals: list[dict], date_str: str) -> tuple[str, str]:
-    """Retourne (sujet, corps HTML)."""
+    """Retourne (sujet, corps HTML). Les items jamais mailés sont badgés 🆕."""
     n = len(proposals)
-    sujet = f"[Bruz en Action] {n} proposition{'s' if n > 1 else ''} à examiner — {date_str}"
+    n_new = sum(1 for p in proposals if not p.get("mailed_at"))
+    suffix = f" dont {n_new} nouvelle{'s' if n_new > 1 else ''}" if 0 < n_new < n else ""
+    sujet = f"[Bruz en Action] {n} proposition{'s' if n > 1 else ''} en attente de revue{suffix} — {date_str}"
 
     lignes = []
     BORDER_COLOR = {0: "#cbd5e1", 1: "#fbbf24", 2: "#f97316", 3: "#ef4444"}
@@ -61,10 +80,14 @@ def _build_email(proposals: list[dict], date_str: str) -> tuple[str, str]:
         source_label = p.get("source_label", "")
         pourquoi = p.get("pourquoi", "")
         border = BORDER_COLOR.get(score, "#e2e8f0")
+        if p.get("mailed_at"):
+            attente = f"⏳ en attente depuis le {_fmt_fr(p.get('first_seen', ''))}"
+        else:
+            attente = "🆕 nouveau"
         lignes.append(f"""
 <div style="border-left:4px solid {border};padding:12px 16px;margin:14px 0;background:#f8fafc">
   <div style="font-size:11px;color:#94a3b8;margin-bottom:6px;line-height:1.8">
-    <strong>Collecté via :</strong> {source_label or '—'} &nbsp;·&nbsp; {p.get('date','')}<br>
+    <strong>Collecté via :</strong> {source_label or '—'} &nbsp;·&nbsp; {p.get('date') or 'date inconnue'} &nbsp;·&nbsp; {attente}<br>
     <strong>Dossier :</strong> {dossier} &nbsp;·&nbsp; {badge}
   </div>
   <div style="font-weight:600;color:#0f172a;font-size:15px;margin-bottom:6px">{p.get('titre','')}</div>
@@ -78,10 +101,10 @@ def _build_email(proposals: list[dict], date_str: str) -> tuple[str, str]:
     corps = f"""<!DOCTYPE html>
 <html><body style="font-family:Arial,sans-serif;max-width:680px;margin:0 auto;padding:20px;color:#1e293b">
   <h2 style="color:#0f172a;border-bottom:2px solid #f97316;padding-bottom:8px">
-    🏛️ Bruz en Action — Propositions éditoriales du {date_str}
+    🏛️ Bruz en Action — Propositions en attente de revue
   </h2>
   <p style="color:#64748b">
-    {n} article{'s' if n > 1 else ''} sélectionné{'s' if n > 1 else ''} par les agents de veille.
+    {n} article{'s' if n > 1 else ''} en attente de décision éditoriale.
     Ouvre Claude Code et tape <strong>"on examine les propositions"</strong> pour les passer en revue.
   </p>
   {''.join(lignes)}
@@ -94,36 +117,38 @@ def _build_email(proposals: list[dict], date_str: str) -> tuple[str, str]:
     return sujet, corps
 
 
-def run() -> bool:
+def run(dry_run: bool = False) -> bool:
     date_str = today()
-    proposal_file = PROPOSALS_DIR / f"{date_str}.json"
+    registry = load_registry()
+    pending = [p for p in registry["items"] if p.get("statut") == "pending"]
 
-    if not proposal_file.exists():
-        log("Mailer : aucun fichier proposals du jour.", "INFO")
+    if not pending:
+        log("Mailer : aucune proposition en attente — email non envoyé.", "INFO")
         return False
 
-    try:
-        all_proposals = json.loads(proposal_file.read_text(encoding="utf-8"))
-    except Exception as e:
-        log(f"Mailer : lecture proposals échouée ({e})", "ERR")
+    # Cadence : envoyer si nouveaux items jamais mailés, sinon rappel tous les REMINDER_DAYS
+    new_items = [p for p in pending if not p.get("mailed_at")]
+    last_mailed = registry["meta"].get("last_mailed_at", "")
+    reminder_due = not last_mailed or last_mailed <= (date.today() - timedelta(days=REMINDER_DAYS)).isoformat()
+    if not new_items and not reminder_due:
+        log(f"Mailer : {len(pending)} pending déjà signalés le {last_mailed} — rappel dans "
+            f"{REMINDER_DAYS} jours max.", "INFO")
         return False
 
-    # Ne garder que les pertinents (score >= 1) et récents (7 jours)
-    date_min = (date.today() - timedelta(days=7)).isoformat()
-    pertinents = [
-        p for p in all_proposals
-        if p.get("pertinence", 0) >= 1 and p.get("date", "") >= date_min
-    ]
+    # Tri : nouveaux d'abord, puis pertinence décroissante, puis plus anciens en attente
+    pending.sort(key=lambda p: (bool(p.get("mailed_at")), -p.get("pertinence", 0),
+                                p.get("first_seen", "")))
 
-    if not pertinents:
-        log("Mailer : aucun item pertinent — email non envoyé.", "INFO")
+    sujet, corps = _build_email(pending, date_str)
+
+    if dry_run:
+        log(f"Mailer [dry-run] : {sujet}", "OK")
+        log(f"Mailer [dry-run] : {len(pending)} items ({len(new_items)} nouveaux) — email non envoyé.", "OK")
         return False
 
     config = _load_config()
     if not config:
         return False
-
-    sujet, corps = _build_email(pertinents, date_str)
 
     try:
         msg = MIMEMultipart("alternative")
@@ -136,7 +161,13 @@ def run() -> bool:
             server.login(config["from_email"], config["app_password"])
             server.sendmail(config["from_email"], config["to"], msg.as_string())
 
-        log(f"Mailer : email envoyé à {config['to']} ({len(pertinents)} items)", "OK")
+        for p in pending:
+            p["mailed_at"] = date_str
+        registry["meta"]["last_mailed_at"] = date_str
+        save_registry(registry)
+
+        log(f"Mailer : email envoyé à {config['to']} ({len(pending)} items, "
+            f"{len(new_items)} nouveaux)", "OK")
         return True
 
     except smtplib.SMTPAuthenticationError:
@@ -148,4 +179,4 @@ def run() -> bool:
 
 
 if __name__ == "__main__":
-    run()
+    run(dry_run="--dry-run" in sys.argv)

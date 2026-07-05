@@ -22,7 +22,7 @@ from datetime import date, timedelta
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
-from utils import log, today, known_urls, append_to_queue
+from utils import log, stable_id, today, known_urls, append_to_queue
 
 AGENT_NAME = "ouestfrance"
 
@@ -84,9 +84,20 @@ def _filter(articles: list[dict]) -> list[dict]:
 
 
 def _get_chrome_cookies() -> list[dict]:
-    """Extrait les cookies OF depuis le profil Chrome via browser_cookie3."""
+    """Extrait les cookies OF depuis le profil Chrome via browser_cookie3.
+
+    Une dépendance absente LÈVE (environnement cassé → le run doit être marqué en
+    erreur) : en 2026-07-03, browser_cookie3 manquant faisait passer l'agent pour
+    "rien de nouveau" pendant des jours. Un échec de lecture transitoire, lui,
+    reste un warning.
+    """
     try:
         import browser_cookie3
+    except ImportError as e:
+        raise RuntimeError(
+            "browser_cookie3 manquant dans le venv — pip install browser_cookie3"
+        ) from e
+    try:
         cj = browser_cookie3.chrome(domain_name=".ouest-france.fr")
         return [
             {"name": c.name, "value": c.value, "domain": c.domain or ".ouest-france.fr",
@@ -106,10 +117,10 @@ def _scrape_with_playwright() -> list[dict]:
     """
     try:
         from playwright.sync_api import sync_playwright
-    except ImportError:
-        log("Ouest-France : Playwright non installé.", "WARN")
-        log("  → pip install playwright", "WARN")
-        return []
+    except ImportError as e:
+        raise RuntimeError(
+            "Playwright manquant dans le venv — pip install playwright"
+        ) from e
 
     cookies = _get_chrome_cookies()
     if not cookies:
@@ -163,7 +174,7 @@ def run(inject: list[dict] | None = None) -> bool:
     existing = known_urls()
     nouvelles = [
         {
-            "id": f"of-{hash(a['url']) & 0xFFFFFF:06x}",
+            "id": stable_id("of", a["url"]),
             "titre": a["titre"],
             "source_url": a["url"],
             "source_label": "Ouest-France",

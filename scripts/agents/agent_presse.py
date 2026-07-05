@@ -16,7 +16,7 @@ from pathlib import Path
 from xml.etree import ElementTree
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
-from utils import DATA_DIR, fetch, load_json, log, save_json, today, dedup, known_urls, append_to_queue
+from utils import DATA_DIR, fetch, load_json, log, save_json, stable_id, today, dedup, known_urls, append_to_queue
 
 AGENT_NAME = "presse"
 
@@ -125,7 +125,7 @@ def parse_rss(content: bytes, label: str) -> list[dict]:
                 continue
             final_url = _resolve_url(url)
             items.append({
-                "id": f"presse-{hash(url) & 0xFFFFFF:06x}",
+                "id": stable_id("presse", url),
                 "titre": titre,
                 "source_url": final_url,
                 "source_label": label,
@@ -179,7 +179,7 @@ def run() -> bool:
                         if not any(k in titre.lower() for k in MOTS_CLES):
                             continue
                         nouvelles.append({
-                            "id": f"presse-{hash(url) & 0xFFFFFF:06x}",
+                            "id": stable_id("presse", url),
                             "titre": titre,
                             "source_url": url,
                             "source_label": src["label"],

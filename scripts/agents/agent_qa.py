@@ -127,14 +127,19 @@ def check_page(page: dict) -> dict:
     import re as _re
     html_visible = _re.sub(r"<script[^>]*>.*?</script>", "", html, flags=_re.DOTALL)
 
+    # Comparaisons insensibles à la casse : la homepage écrit « promesses » en
+    # minuscule et /elus rend « HOUSSIN » via formatNomPrenom — un must_contain
+    # sensible à la casse produisait des faux échecs (constaté le 2026-07-05).
+    html_visible_low = html_visible.lower()
+
     # Vérifications "must_contain"
     for term in page.get("must_contain", []):
-        if term not in html_visible:
+        if term.lower() not in html_visible_low:
             errors.append(f"Texte absent : «{term}»")
 
     # Vérifications "must_not_contain" (sur HTML visible uniquement)
     for term in page.get("must_not_contain", []):
-        count = html_visible.count(term)
+        count = html_visible_low.count(term.lower())
         if count > 0:
             errors.append(f"Valeur suspecte ({count}×) : «{term}»")
 

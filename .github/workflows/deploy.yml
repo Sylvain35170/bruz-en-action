@@ -20,6 +20,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Valider data/*.json
+        run: python3 scripts/validate_data.py
+
       - uses: actions/setup-node@v4
         with:
           node-version: 24

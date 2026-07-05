@@ -64,16 +64,50 @@ Champs clés : `featured` (bool), `last_activity` (date ISO), `actus_recentes` (
 
 ## Pipeline veille (`scripts/agents/`)
 
-5 agents Python + orchestrateur :
-- `agent_mairie.py` — actus site ville-bruz.fr
-- `agent_presse.py` — Google News presse locale (mots-clés → dossiers)
-- `agent_bruz_mag.py` — Bruz Mag (PDF/RSS)
-- `agent_megalis.py` — délibérations Mégalis
-- `agent_dossiers.py` — enrichissement `dossiers.json` actus_recentes
+Collecte → sélection → revue humaine, **incrémentale jusqu'à revue** (refonte 2026-07-05) :
+
+```
+scrapers (mairie/OF/presse/mégalis/bruz_mag)
+   → data/actus_queue.json                (gitignoré)
+   → agent_select (Claude Haiku)
+   → scripts/proposals/pending.json       (REGISTRE incrémental, gitignoré)
+   → agent_mailer (email des pending)
+   → revue humaine → data/actus.json → build + push
+```
+
+**Le registre `scripts/proposals/pending.json`** est le pivot : chaque item y entre une
+seule fois avec un statut (`pending` / `accepted` / `rejected` + `first_seen`,
+`decided_at`, `mailed_at`). `utils.known_urls()` inclut le registre → un item en attente
+de revue ou rejeté n'est **jamais** re-scrapé, re-analysé ni re-mailé. Les items à
+pertinence 0 sont auto-rejetés (mémorisés). Ne pas recréer de fichiers
+`proposals/YYYY-MM-DD.json` (ancien format, archivé dans `proposals/archive/`).
+
+**Revue — `scripts/review_proposals.py`** (convention "on examine les propositions") :
+- `--list` : affiche les pending triés par pertinence
+- `--accept id1,id2 --reject id3 [--dossier D05]` : publie dans `actus.json` + fige les statuts
+- `--purge-accepted` : nettoie les accepted de +60 jours (les rejected restent — mémoire anti re-proposition)
+- Après acceptation : `agent_dossiers` → `npm run build` → commit + push `data/`
+
+**Mailer** : envoie TOUS les pending (pas seulement le jour) dès qu'un item est nouveau,
+sinon rappel tous les 3 jours max. Les items sans date ne sont plus perdus.
+`--dry-run` pour tester sans envoyer.
+
+**IDs** : `utils.stable_id(prefix, url)` (md5) — jamais `hash()` (randomisé par processus).
+
+Agents : `agent_mairie` · `agent_ouestfrance` (Playwright + cookies Chrome ; lève si
+dépendance manquante) · `agent_presse` (Google News RSS) · `agent_megalis` (YouTube RSS)
+· `agent_bruz_mag` (PDF) · `agent_enrichissement_cm` (transcription + Claude) ·
+`agent_dossiers` (hors cron, post-revue).
 
 Lancement : `python3 scripts/run_agents.py` (launchd 17h en semaine).
 Logs : `~/Library/Logs/bruz-en-action-veille.log`.
 Environnement d'exécution : venv dédié `~/.venvs/bruz-en-action/` (voir piège 2026-07-01 ci-dessous — ne pas repointer le plist sur un python homebrew direct ou un venv sous `~/Documents`).
+
+### Validation données — `scripts/validate_data.py`
+
+Garde-fou avant commit et en CI (step avant `npm run build` dans `deploy.yml`) :
+dates ISO ou null, IDs uniques, statuts promesses dans le référentiel, URLs http(s),
+pas de `undefined`/`[object Object]` sérialisés. **À lancer avant tout commit de `data/`.**
 
 ### QA — link-checker (`scripts/agents/agent_qa.py`)
 

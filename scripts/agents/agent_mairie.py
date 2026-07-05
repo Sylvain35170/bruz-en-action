@@ -11,7 +11,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
-from utils import DATA_DIR, fetch, load_json, log, save_json, today, dedup, known_urls, append_to_queue
+from utils import DATA_DIR, fetch, load_json, log, save_json, stable_id, today, dedup, known_urls, append_to_queue
 
 try:
     from bs4 import BeautifulSoup
@@ -64,7 +64,7 @@ def scrape_source(source: dict) -> list[dict]:
             date_pub = date_el.get("datetime", date_el.get_text(strip=True)) if date_el else today()
 
             items.append({
-                "id": f"mairie-{hash(url) & 0xFFFFFF:06x}",
+                "id": stable_id("mairie", url),
                 "titre": titre,
                 "source_url": url,
                 "source_label": source["label"],

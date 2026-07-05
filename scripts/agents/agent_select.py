@@ -9,9 +9,10 @@ récupère pour chaque item :
   - dossier     : un ID de DOSSIERS_DESC ou "à_classer"
   - pertinence  : 0-3 (0 = hors sujet, 3 = très pertinent)
 
-Écrit le résultat dans scripts/proposals/YYYY-MM-DD.json.
-Supprime de la queue les items traités (quel que soit leur score).
-Items avec pertinence 0 apparaissent dans les proposals avec flag "ignore".
+Alimente le registre incrémental scripts/proposals/pending.json :
+  - pertinence >= 1 → statut "pending" (en attente de revue humaine)
+  - pertinence 0    → statut "rejected" (auto, mémorisé pour ne jamais re-proposer)
+Supprime de la queue les items traités ; les batches en échec restent en queue.
 """
 
 import json
@@ -21,7 +22,8 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
-from utils import DATA_DIR, QUEUE_FILE, PROPOSALS_DIR, is_already_published, load_json, log, save_json, today
+from utils import (QUEUE_FILE, is_already_published, load_json, load_registry,
+                   log, save_registry, today)
 
 AGENT_NAME = "select"
 # Chemin complet nécessaire : sous launchd, PATH ne contient que /usr/bin:/bin:/usr/sbin:/sbin,
@@ -70,8 +72,9 @@ Articles à analyser :
 """
 
 
+# Batches observés à ~62s pour 5 items (run du 04/07) — timeout 75s trop juste
 BATCH_SIZE = 5
-TIMEOUT_S  = 75
+TIMEOUT_S  = 150
 
 
 def _call_claude(prompt: str) -> str | None:
@@ -149,8 +152,9 @@ def run() -> bool:
         all_proposals.extend(parsed)
 
     if not all_proposals and failed_items:
-        log("Select : tous les batches ont échoué — queue inchangée.", "ERR")
-        return False
+        # Lever plutôt que retourner False : l'orchestrateur doit marquer le run
+        # en erreur, pas afficher "rien de nouveau" (panne Claude CLI ≠ absence d'actu).
+        raise RuntimeError(f"Select : tous les batches ont échoué ({len(failed_items)} items conservés en queue)")
 
     # Remettre les items échoués en queue
     QUEUE_FILE.write_text(
@@ -172,41 +176,44 @@ def run() -> bool:
     if n_already_published:
         log(f"  {n_already_published} item(s) déjà publié(s) — écarté(s) de la sélection.", "INFO")
 
-    # Écrire proposals/YYYY-MM-DD.json
-    PROPOSALS_DIR.mkdir(parents=True, exist_ok=True)
-    proposal_file = PROPOSALS_DIR / f"{today()}.json"
+    # Réenrichir avec le type d'item (perdu par Claude, utile à la revue)
+    type_by_id = {i.get("id"): i.get("type", "") for i in items_light}
 
-    # Si un fichier du jour existe déjà, fusionner en dédupliquant par URL puis par titre
-    existing_proposals = []
-    if proposal_file.exists():
-        try:
-            existing_proposals = json.loads(proposal_file.read_text(encoding="utf-8"))
-        except Exception:
-            pass
+    # Alimenter le registre incrémental — chaque item y entre UNE fois
+    registry = load_registry()
+    reg_items = registry["items"]
+    known_reg_urls = {i.get("source_url", "") for i in reg_items}
+    known_reg_titles = {i.get("titre", "").lower()[:50] for i in reg_items}
 
-    merged = existing_proposals + proposals
-    seen_urls: set[str] = set()
-    seen_titles: set[str] = set()
-    all_proposals = []
-    for p in merged:
+    n_new_pending = 0
+    n_auto_rejected = 0
+    for p in proposals:
         url_key = p.get("source_url", "")
         title_key = p.get("titre", "").lower()[:50]
-        if url_key in seen_urls or title_key in seen_titles:
-            continue
+        if (url_key and url_key in known_reg_urls) or title_key in known_reg_titles:
+            continue  # déjà dans le registre (pending ou décidé) — ne pas re-proposer
+        pertinent = p.get("pertinence", 0) >= 1
+        p["type"] = type_by_id.get(p.get("id"), "")
+        p["statut"] = "pending" if pertinent else "rejected"
+        p["first_seen"] = today()
+        p["decided_at"] = None if pertinent else today()
+        p["mailed_at"] = None
+        reg_items.append(p)
         if url_key:
-            seen_urls.add(url_key)
-        seen_titles.add(title_key)
-        all_proposals.append(p)
-    proposal_file.write_text(
-        json.dumps(all_proposals, ensure_ascii=False, indent=2), encoding="utf-8"
-    )
+            known_reg_urls.add(url_key)
+        known_reg_titles.add(title_key)
+        if pertinent:
+            n_new_pending += 1
+        else:
+            n_auto_rejected += 1
 
-    # Queue déjà réécrite plus haut avec uniquement failed_items (items traités retirés,
-    # items en échec de batch conservés pour le prochain run) — ne pas la vider ici.
+    if n_new_pending or n_auto_rejected:
+        save_registry(registry)
 
-    n_pertinent = sum(1 for p in proposals if p.get("pertinence", 0) >= 1)
-    log(f"Select : {len(proposals)} analysés, {n_pertinent} pertinents → {proposal_file.name}", "OK")
-    return n_pertinent > 0
+    n_pending_total = sum(1 for i in reg_items if i.get("statut") == "pending")
+    log(f"Select : {len(proposals)} analysés → {n_new_pending} nouveau(x) pending, "
+        f"{n_auto_rejected} auto-rejeté(s) — {n_pending_total} en attente de revue", "OK")
+    return n_new_pending > 0
 
 
 if __name__ == "__main__":

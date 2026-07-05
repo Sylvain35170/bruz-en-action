@@ -794,14 +794,14 @@
           "source_label": "Mairie de Bruz"
         },
         {
-          "date": "2026-06",
+          "date": "2026-06-01",
           "titre": "Travaux avenue du Général de Gaulle — jusqu'au printemps 2027",
           "detail": "Réseaux eau/électricité + voirie. Circulation maintenue en alternat.",
           "source_url": "https://www.ville-bruz.fr/mon-quotidien/travaux-et-demandes-dintervention/travaux-en-cours/",
           "source_label": "Mairie de Bruz"
         },
         {
-          "date": "2025-02",
+          "date": "2025-02-01",
           "titre": "Boulevard Pasteur : chantier pluriannuel en cours (min. 3 ans)",
           "detail": "Remplacement du réseau d'assainissement amianté par Rennes Métropole. Phase actuelle : entre rond-point de Laillé et rue Debussy.",
           "source_url": "https://www.ville-bruz.fr/wp-content/uploads/2025/03/Plaquette-Amenagement-du-boulevard-Louis-Pasteur.pdf",
@@ -1228,7 +1228,7 @@
       ],
       "actus_recentes": [
         {
-          "date": "2026-05",
+          "date": "2026-05-01",
           "titre": "Bruz Mag confirme la nouvelle équipe municipale et ses délégations",
           "detail": "Le numéro de mai-juin 2026 du magazine municipal détaille l'organigramme des 9 adjoints. Françoise Lotton (9e adjointe) est confirmée en charge d'Éducation, Enfance et Jeunesse — élément qui manquait au dossier depuis l'installation du conseil en avril.",
           "source_url": "https://www.ville-bruz.fr/wp-content/uploads/2026/05/Bruz-Mag-n%C2%B0260-de-mai-juin-2026.pdf",
@@ -1356,14 +1356,14 @@
           "source_label": "Conseil municipal de Bruz"
         },
         {
-          "date": "2026-01",
+          "date": "2026-01-01",
           "titre": "Chantiers participatifs Plan B — début des travaux",
           "detail": "Les bénévoles de Plan B commencent à rénover le Manoir de la Noë : dépose des moquettes en janvier, chantier suivant le 8 février.",
           "source_url": "https://fabriquecitoyenne.fr/blog/plan-b-les-chantiers-participatifs-ont-debute",
           "source_label": "La Fabrique Citoyenne"
         },
         {
-          "date": "2025-12",
+          "date": "2025-12-01",
           "titre": "La Ville de Bruz confie les clés du Manoir à l'association Plan B",
           "detail": "Ouest-France annonce la désignation officielle de Plan B comme gestionnaire du Manoir de la Noë.",
           "source_url": null,

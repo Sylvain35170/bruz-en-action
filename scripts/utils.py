@@ -3,6 +3,7 @@
 """Helpers partagés pour les agents de veille Bruz en Action."""
 
 import difflib
+import hashlib
 import json
 import subprocess
 from datetime import date, datetime
@@ -14,6 +15,7 @@ ROOT = Path(__file__).parent.parent
 DATA_DIR = ROOT / "data"
 QUEUE_FILE = DATA_DIR / "actus_queue.json"
 PROPOSALS_DIR = ROOT / "scripts" / "proposals"
+REGISTRY_FILE = PROPOSALS_DIR / "pending.json"
 HEADERS = {"User-Agent": "BruzEnAction-CitoyenBot/1.0 (contact: sylv.bertrand@gmail.com)"}
 
 
@@ -25,6 +27,15 @@ def log(msg: str, level: str = "INFO") -> None:
 
 def today() -> str:
     return date.today().isoformat()
+
+
+def stable_id(prefix: str, url: str) -> str:
+    """ID stable et reproductible pour un item de veille.
+
+    hash() Python est randomisé par processus (PYTHONHASHSEED) : le même article
+    changeait d'id à chaque run. md5 garantit le même id partout, pour toujours.
+    """
+    return f"{prefix}-{hashlib.md5(url.encode('utf-8')).hexdigest()[:8]}"
 
 
 def load_json(path: Path) -> dict:
@@ -74,13 +85,39 @@ def check_url_status(url: str, timeout: int = 10) -> dict:
         return {"ok": False, "error": type(e).__name__}
 
 
+def load_registry() -> dict:
+    """Registre incrémental des propositions éditoriales (proposals/pending.json).
+
+    Un seul fichier vivant — chaque item y entre une fois (statut "pending") et
+    y reste jusqu'à décision de revue ("accepted"/"rejected"). Les items décidés
+    sont conservés : c'est la mémoire qui empêche de re-proposer un rejet.
+    """
+    reg = load_json(REGISTRY_FILE)
+    reg.setdefault("items", [])
+    reg.setdefault("meta", {})
+    return reg
+
+
+def save_registry(reg: dict) -> None:
+    reg.setdefault("meta", {})["last_updated"] = today()
+    PROPOSALS_DIR.mkdir(parents=True, exist_ok=True)
+    save_json(REGISTRY_FILE, reg)
+
+
 def known_urls() -> set[str]:
-    """URLs déjà connues : actus.json publiées + queue en attente."""
+    """URLs déjà connues : actus publiées + queue en attente + registre proposals.
+
+    Le registre (pending/accepted/rejected confondus) est indispensable : sans lui,
+    un item sorti de la queue par le select mais pas encore revu était re-scrapé,
+    re-analysé par Claude et re-mailé chaque jour (constaté du 01 au 04/07/2026).
+    """
     actus = load_json(DATA_DIR / "actus.json")
     queue = load_json(QUEUE_FILE)
+    registry = load_registry()
     return (
         {a.get("source_url", "") for a in actus.get("actus", [])} |
-        {i.get("source_url", "") for i in queue.get("items", [])}
+        {i.get("source_url", "") for i in queue.get("items", [])} |
+        {i.get("source_url", "") for i in registry.get("items", [])}
     )
 
 
