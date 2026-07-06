@@ -1,9 +1,5 @@
 # BACKLOG — Bruz en Action
 
-## 🔴 En cours
-
-- [ ] **Revue éditoriale** — 9 propositions en attente dans le registre (`python3 scripts/review_proposals.py --list`) — dont pont de la Gare (p3, D05) et végétalisation mairie (p3, D13)
-
 ## 🟠 Prioritaire — Fonctionnalités
 
 - [ ] **Parole des élus** — enrichir `data/elus.json` au fil du mandat
@@ -22,7 +18,7 @@
 - [ ] **D12** — City stade Siméon Belliard : suivre délibération reconstruction (250-300k€ annoncés, calendrier non précisé) + issue procédure judiciaire riverains
 - [ ] **D13** — Canicule : suivre si mairie publie carte îlots / chiffres CCAS / PCS mis à jour
 - [ ] **Nouveaux dossiers** — Bonnat-Sablat (préemption)
-- [ ] **D05 (ex-D14 fusionné)** — Bruz en carte : suivre réouverture pont de la Gare (3 juil.), planning Pasteur 2026, premiers chantiers ZAC Multisites
+- [ ] **D05 (ex-D14 fusionné)** — Bruz en carte : pont de la Gare rouvert (publié 2026-07-06) — reste à suivre planning Pasteur 2026, premiers chantiers ZAC Multisites
 - [ ] **D05 — référents de quartier** — vérifier si Bruz a un dispositif de conseils/référents de quartier (aucune donnée source actuellement dans `elus.json` ni ailleurs) ; si oui, sourcer noms + périmètres et alimenter le nouveau champ `referents_quartier` (scaffold vide en place) ; sinon documenter l'absence
 - [ ] **D11** — Plan B / Manoir de la Noë : suivre renouvellement convention guinguette après été 2026 + statut pérenne Plan B + toute délibération CM
 - [ ] **D16 en profondeur** — Économie locale : dossier ouvert (2026-07-04, zones Ker Lann/Champ Niguel/Haie Gautrais, marchés, 5 promesses liées) — reste à documenter : rencontres trimestrielles commerçants (E2), animations (E3), présence Ker Lann (E4), circuits courts achats communaux (E5), taux de vacance commerciale (aucune donnée trouvée)
