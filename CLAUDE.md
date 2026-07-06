@@ -130,6 +130,18 @@ Convention pour les liens confirmés morts sans alternative trouvée : ajouter `
 ---
 
 ## Pièges connus
+### 2026-07-03 — bruz-en-action : agent_select vidait la queue deux fois (perte silencieuse d'items en timeout)
+→ dispatch: local:bruz-en-action
+
+- **`agent_select.py` réinjectait les items en échec de batch (timeout Claude CLI) en fin de queue à la ligne ~155, puis une seconde écriture inconditionnelle juste après (ligne ~204, "vider la queue, items traités") écrasait cette réinjection avec un tableau vide.** Résultat : tout item dont le batch timeoutait (75s, fréquent avec BATCH_SIZE=5 sur des lots de 7+) disparaissait silencieusement au lieu d'être retraité au run suivant — aucune erreur, aucun log d'alerte visible dans le statut de run. Fix : supprimé la seconde écriture, la queue garde l'état
+… _(learning complet dans `~/.shared-context/learnings.md`)_
+
+### 2026-07-05 — bruz-en-action : refonte veille incrémentale + base de connaissance
+→ dispatch: local:bruz-en-action
+
+- **Pattern registre incrémental pour pipeline à revue humaine** — cause racine des doublons de veille (items re-scrapés/re-analysés/re-mailés 4 jours de suite) : `known_urls()` ne connaissait que publiés + queue, pas les items en attente de revue. Fix structurel : registre unique `scripts/proposals/pending.json` (statuts `pending`/`accepted`/`rejected` + `first_seen`/`decided_at`/`mailed_at`), inclus dans la dédup ; pertinence 0 auto-rejetée ; les rejets restent mémorisés à vie. Revue via `scripts/review_proposals.py --list/--accept/--reject`. Mailer : tout
+… _(learning complet dans `~/.shared-context/learnings.md`)_
+
 ### 2026-07-05 — bruz-en-action : registre incrémental, hash() interdit, QA casse
 → dispatch: local:bruz-en-action
 

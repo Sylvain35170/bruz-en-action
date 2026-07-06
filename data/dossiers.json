@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-06-28",
+    "last_updated": "2026-07-06",
     "version": "3.0"
   },
   "dossiers": [
@@ -75,11 +75,74 @@
       ],
       "actus_recentes": [
         {
+          "date": "2026-07-03",
+          "titre": "Conseil municipal de juillet",
+          "detail": "Construction du 4e groupe scolaire (Ker Lann Sud) : marché de travaux (école primaire, ALSH, restauration) à l'ordre du jour — point 9 | Mesures de carte scolaire rentrée 2026-2027 — point 29, à recouper avec les annonces de l'Inspection Académique 35 | Bloc Éducation très dense : 14 délibérations (",
+          "source_url": "https://data.megalis.bretagne.bzh/?siren=213500473",
+          "source_label": "Mégalis Bretagne — Convocation Conseil municipal du 03/07/2026 (ordre du jour complet, 41 points)"
+        },
+        {
+          "date": "2026-07-03",
+          "titre": "Conseil municipal de juillet",
+          "detail": "Construction du 4e groupe scolaire (Ker Lann Sud) : marché de travaux (école primaire, ALSH, restauration) à l'ordre du jour — point 9 | Mesures de carte scolaire rentrée 2026-2027 — point 29, à recouper avec les annonces de l'Inspection Académique 35 | Bloc Éducation très dense : 14 délibérations (",
+          "source_url": "https://www.ville-bruz.fr/wp-content/uploads/2026/06/Semaine-a-Bruz-n%C2%B0856-du-11-au-25-juin-2026.pdf",
+          "source_label": "Semaine à Bruz n°856 (11-25 juin 2026) — confirmation date et lieu"
+        },
+        {
+          "date": "2026-06-27",
+          "titre": "Bruz accueille le Championnat de France de Boccia — une première",
+          "detail": "Ce week-end, le complexe de Ker Lann accueille le Championnat de France de boccia — une première pour Bruz. Deux Bruzois qualifiés, un village handisport ouvert à tous, et un signal concret sur la promesse de développer le sport adapté.",
+          "source_url": "https://www.ville-bruz.fr/agenda/championnat-de-france-de-boccia/",
+          "source_label": "Mairie de Bruz"
+        },
+        {
+          "date": "2026-06-18",
+          "titre": "Inscription au transport scolaire BreizhGo",
+          "detail": "",
+          "source_url": "https://www.ville-bruz.fr/actualites/inscription-au-transport-scolaire-breizhgo/",
+          "source_label": "Mairie de Bruz — Actualités"
+        },
+        {
+          "date": "2026-04-08",
+          "titre": "Délégations, indemnités et premières décisions",
+          "detail": "12 conseillers délégués nommés : Patrick Roullé (mobilités), Carol Léost (animation), Jérôme de Gayardon (voirie/propreté), Philippe Dohollou (habitat/urbanisme), Thomas de la Rivière (patrimoine/travaux), Huguette Dallemagne (environnement), Marie Demaret (médiathèque/culture), Vincent Benjamin (ha",
+          "source_url": "https://www.youtube.com/playlist?list=PLnSe2hJFinqpupninWlKBHSmzmwLW-8i7",
+          "source_label": "Audio CM sur YouTube"
+        },
+        {
+          "date": "2026-04-08",
+          "titre": "Patrick Roullé nommé délégué mobilités",
+          "detail": "Le CM du 8 avril 2026 confie explicitement la délégation Transition écologique et mobilités à Patrick Roullé. C'est l'interlocuteur officiel de Bruz sur le dossier T4 et les navettes électriques pour le mandat 2026-2031.",
+          "source_url": "https://www.ville-bruz.fr/wp-content/uploads/2026/05/Bruz-Mag-n%C2%B0260-de-mai-juin-2026.pdf",
+          "source_label": "Bruz Mag n°260 — délégations avril 2026"
+        },
+        {
           "date": "2026-02-16",
           "titre": "Municipales 2026 à Bruz : le terminus T4, un des enjeux du scrutin",
           "detail": "Le T4 s'est invité dans la campagne — Jean-René Houssin défend le terminus gare face à la position métropolitaine.",
           "source_url": "https://www.francebleu.fr/emissions/l-info-d-ici-ici-armorique/municipales-2026-a-bruz-le-terminus-de-la-ligne-trambus-t4-un-des-enjeux-du-scrutin-5029860",
           "source_label": "ici.fr"
+        },
+        {
+          "date": "2026-02-05",
+          "titre": "Rennes Métropole valide le tracé T4 via Ker Lann (60 lgts/ha)",
+          "detail": "Le Conseil Métropolitain du 5 février approuve l'autorisation environnementale de la ZAC Ker Lann et fixe la densité à 60 logements/ha autour du corridor T4. Cette décision entre en tension avec la promesse de Houssin (terminus gare).",
+          "source_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1012938/b6b1dc7396fa9a9946d085d957775ce4477276f63f188b960bb4886c785ccce2.pdf",
+          "source_label": "Délibération Conseil Métropolitain 5 fév. 2026 (Mégalis)"
+        },
+        {
+          "date": "2026-01-26",
+          "titre": "Dernier CM du mandat Salmon — culture, personnel, ZAC Ker Lann",
+          "detail": "Culture participative — Dino Voodoo (11 900 €) et L'Escale (3 100 €) lauréats 2026, à l'unanimité | Personnel — création d'un emploi pour l'Atlas de la Biodiversité intercommunal (Bruz + 3 communes) | ZAC Ker Lann — avis favorable du CM, ouvrant la voie au vote métropolitain du 5 février",
+          "source_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1012970/405bf2d92065ddf297923a2e2c43588ef8e27a8c57de35f5082283ccd215b8e5.pdf",
+          "source_label": "Délibération 26-01-18 — Personnel (Mégalis)"
+        },
+        {
+          "date": "2026-01-26",
+          "titre": "Dernier CM du mandat Salmon — culture, personnel, ZAC Ker Lann",
+          "detail": "Culture participative — Dino Voodoo (11 900 €) et L'Escale (3 100 €) lauréats 2026, à l'unanimité | Personnel — création d'un emploi pour l'Atlas de la Biodiversité intercommunal (Bruz + 3 communes) | ZAC Ker Lann — avis favorable du CM, ouvrant la voie au vote métropolitain du 5 février",
+          "source_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1012942/abbe312c791636e515e060aaefcd073b9e71f7dd4d19931e8a06a60d8b4441be.pdf",
+          "source_label": "Délibération 26-01-12 — Culture (Mégalis)"
         },
         {
           "date": "2025-12-16",
@@ -94,6 +157,13 @@
           "detail": "Première prise de position publique de Jean-René Houssin en faveur du terminus gare SNCF.",
           "source_url": null,
           "source_label": "Ouest-France"
+        },
+        {
+          "date": "2025-06-30",
+          "titre": "Conseil communautaire, PCAET métropolitain et bilan du centre social l'Escale",
+          "detail": "Accord local : 111 sièges au conseil métropolitain 2026-2032, Bruz conserve son nombre de sièges (vote à l'unanimité) | Centre social l'Escale : 253 adhérents au 25/02/2024, proche de 300 fin juin 2025, 53 bénévoles (3500h de bénévolat, soit 2,5 ETP) | Subvention municipale à l'Escale : 144 000 €, s",
+          "source_url": "https://youtu.be/2VIBj3YqgJI",
+          "source_label": "Vidéo YouTube"
         }
       ],
       "promesses_liees": [
@@ -109,7 +179,7 @@
       "categorie": "Urbanisme",
       "statut": "en_cours",
       "featured": true,
-      "last_activity": "2026-06-18",
+      "last_activity": "2026-07-03",
       "date_ouverture": "2026-06-16",
       "chapeau": "La ZAC Multisites prévoit 1 700 nouveaux logements sur plusieurs secteurs de Bruz d'ici 2035. Un projet structurant voté en décembre 2025, mais qui soulève des questions concrètes : où exactement, à quelle densité, et avec quels équipements en face ?",
       "ce_quon_sait": [
@@ -169,11 +239,95 @@
       ],
       "actus_recentes": [
         {
+          "date": "2026-07-03",
+          "titre": "Conseil municipal de juillet",
+          "detail": "Construction du 4e groupe scolaire (Ker Lann Sud) : marché de travaux (école primaire, ALSH, restauration) à l'ordre du jour — point 9 | Mesures de carte scolaire rentrée 2026-2027 — point 29, à recouper avec les annonces de l'Inspection Académique 35 | Bloc Éducation très dense : 14 délibérations (",
+          "source_url": "https://data.megalis.bretagne.bzh/?siren=213500473",
+          "source_label": "Mégalis Bretagne — Convocation Conseil municipal du 03/07/2026 (ordre du jour complet, 41 points)"
+        },
+        {
+          "date": "2026-07-03",
+          "titre": "Conseil municipal de juillet",
+          "detail": "Construction du 4e groupe scolaire (Ker Lann Sud) : marché de travaux (école primaire, ALSH, restauration) à l'ordre du jour — point 9 | Mesures de carte scolaire rentrée 2026-2027 — point 29, à recouper avec les annonces de l'Inspection Académique 35 | Bloc Éducation très dense : 14 délibérations (",
+          "source_url": "https://www.ville-bruz.fr/wp-content/uploads/2026/06/Semaine-a-Bruz-n%C2%B0856-du-11-au-25-juin-2026.pdf",
+          "source_label": "Semaine à Bruz n°856 (11-25 juin 2026) — confirmation date et lieu"
+        },
+        {
+          "date": "2026-07-03",
+          "titre": "Conseil municipal de juillet",
+          "detail": "Construction du 4e groupe scolaire (Ker Lann Sud) : marché de travaux (école primaire, ALSH, restauration) à l'ordre du jour — point 9 | Mesures de carte scolaire rentrée 2026-2027 — point 29, à recouper avec les annonces de l'Inspection Académique 35 | Bloc Éducation très dense : 14 délibérations (",
+          "source_url": "https://www.ville-bruz.fr/wp-content/uploads/2026/05/Bruz-Mag-n%C2%B0260-de-mai-juin-2026.pdf",
+          "source_label": "Agenda Bruz Mag n°260"
+        },
+        {
+          "date": "2026-06-27",
+          "titre": "Bruz accueille le Championnat de France de Boccia — une première",
+          "detail": "Ce week-end, le complexe de Ker Lann accueille le Championnat de France de boccia — une première pour Bruz. Deux Bruzois qualifiés, un village handisport ouvert à tous, et un signal concret sur la promesse de développer le sport adapté.",
+          "source_url": "https://www.ville-bruz.fr/agenda/championnat-de-france-de-boccia/",
+          "source_label": "Mairie de Bruz"
+        },
+        {
+          "date": "2026-05-18",
+          "titre": "Séance de mai 2026 — cantine, foncier ZAC, vie sociale",
+          "detail": "Restauration scolaire — garantie ville de 900 000 € pour la nouvelle cantine OGEC Saint-Rose de Lima (projet à horizon 2027-2028) ; saturation actuelle : 500 convives pour 284 places au Verbisson | Foncier ZAC — acquisition 12 rue de la Noé (608 m², maison 115 m²) pour 345 000 €, réserve foncière re",
+          "source_url": "https://data.megalis.bretagne.bzh/organization/commune-de-bruz",
+          "source_label": "Délibérations Mégalis Bretagne — Commune de Bruz 2026"
+        },
+        {
+          "date": "2026-05-18",
+          "titre": "Séance de mai 2026 — cantine, foncier ZAC, vie sociale",
+          "detail": "Restauration scolaire — garantie ville de 900 000 € pour la nouvelle cantine OGEC Saint-Rose de Lima (projet à horizon 2027-2028) ; saturation actuelle : 500 convives pour 284 places au Verbisson | Foncier ZAC — acquisition 12 rue de la Noé (608 m², maison 115 m²) pour 345 000 €, réserve foncière re",
+          "source_url": "https://youtu.be/MAMOqsqz6zY",
+          "source_label": "Vidéo YouTube — Conseil Municipal du 18 mai 2026 (Ville de Bruz)"
+        },
+        {
+          "date": "2026-04-08",
+          "titre": "Délégations, indemnités et premières décisions",
+          "detail": "12 conseillers délégués nommés : Patrick Roullé (mobilités), Carol Léost (animation), Jérôme de Gayardon (voirie/propreté), Philippe Dohollou (habitat/urbanisme), Thomas de la Rivière (patrimoine/travaux), Huguette Dallemagne (environnement), Marie Demaret (médiathèque/culture), Vincent Benjamin (ha",
+          "source_url": "https://www.youtube.com/playlist?list=PLnSe2hJFinqpupninWlKBHSmzmwLW-8i7",
+          "source_label": "Audio CM sur YouTube"
+        },
+        {
           "date": "2026-02-05",
           "titre": "Rennes Métropole valide le tracé T4 via Ker Lann — 60 lgts/ha imposés",
           "detail": "Délibération qui contraint directement la densité du secteur Ker Lann dans la ZAC.",
           "source_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1012938/b6b1dc7396fa9a9946d085d957775ce4477276f63f188b960bb4886c785ccce2.pdf",
           "source_label": "Mégalis"
+        },
+        {
+          "date": "2026-01-26",
+          "titre": "Dernier CM du mandat Salmon — culture, personnel, ZAC Ker Lann",
+          "detail": "Culture participative — Dino Voodoo (11 900 €) et L'Escale (3 100 €) lauréats 2026, à l'unanimité | Personnel — création d'un emploi pour l'Atlas de la Biodiversité intercommunal (Bruz + 3 communes) | ZAC Ker Lann — avis favorable du CM, ouvrant la voie au vote métropolitain du 5 février",
+          "source_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1012970/405bf2d92065ddf297923a2e2c43588ef8e27a8c57de35f5082283ccd215b8e5.pdf",
+          "source_label": "Délibération 26-01-18 — Personnel (Mégalis)"
+        },
+        {
+          "date": "2026-01-26",
+          "titre": "Dernier CM du mandat Salmon — culture, personnel, ZAC Ker Lann",
+          "detail": "Culture participative — Dino Voodoo (11 900 €) et L'Escale (3 100 €) lauréats 2026, à l'unanimité | Personnel — création d'un emploi pour l'Atlas de la Biodiversité intercommunal (Bruz + 3 communes) | ZAC Ker Lann — avis favorable du CM, ouvrant la voie au vote métropolitain du 5 février",
+          "source_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1012942/abbe312c791636e515e060aaefcd073b9e71f7dd4d19931e8a06a60d8b4441be.pdf",
+          "source_label": "Délibération 26-01-12 — Culture (Mégalis)"
+        },
+        {
+          "date": "2025-12-15",
+          "titre": "Budget 2026, financement de la piscine de la Conterie et amorce du dossier ZAC Multisites",
+          "detail": "Intervention citoyenne d'un collectif d'habitants contre le projet ZAC Multisites (bétonisation d'1 hectare, 120 logements près de la Maison des associations) | Participation complémentaire 2025 au syndicat de la piscine de la Conterie : 88 452 €, portant la contribution annuelle de Bruz à environ 4",
+          "source_url": "https://youtu.be/V18APiHT924",
+          "source_label": "Vidéo YouTube"
+        },
+        {
+          "date": "2025-11-24",
+          "titre": "Tensions pré-électorales sur la communication municipale, avenants de travaux et avis sur la ZAC de Kerlan (670 logement",
+          "detail": "Passe d'armes entre le maire sortant et le groupe « Unir pour agir » (candidat Houssin) sur la neutralité de la communication municipale avant les municipales de mars 2026 | ACTEE+ : candidature validée pour un schéma directeur immobilier énergétique de 150 000 € TTC, subventionné à 60 % par la FNCC",
+          "source_url": "https://youtu.be/2g1KzIc9g-8",
+          "source_label": "Vidéo YouTube"
+        },
+        {
+          "date": "2025-09-22",
+          "titre": "Conseil municipal du 22 septembre 2025 : ZAC Multisites, foncier et logement social",
+          "detail": "Plan d'action égalité femmes-hommes 2025-2027 adopté à l'unanimité (4 axes, 15 actions) | Bilan de la concertation de la ZAC Multisites adopté avec 7 abstentions de l'opposition | Suppression du secteur des Rosiers (zone humide) : 280 à 300 logements à reloger, questions sur l'école et la densité | ",
+          "source_url": "https://youtu.be/sUa9mrL8DGM",
+          "source_label": "Vidéo YouTube"
         },
         {
           "date": "2025-09-21",
@@ -194,6 +348,13 @@
           "detail": "Premier permis d'envergure dans un des secteurs de la ZAC — 67 logements au Vert-Buisson.",
           "source_url": null,
           "source_label": "Ouest-France"
+        },
+        {
+          "date": "2025-06-30",
+          "titre": "Conseil communautaire, PCAET métropolitain et bilan du centre social l'Escale",
+          "detail": "Accord local : 111 sièges au conseil métropolitain 2026-2032, Bruz conserve son nombre de sièges (vote à l'unanimité) | Centre social l'Escale : 253 adhérents au 25/02/2024, proche de 300 fin juin 2025, 53 bénévoles (3500h de bénévolat, soit 2,5 ETP) | Subvention municipale à l'Escale : 144 000 €, s",
+          "source_url": "https://youtu.be/2VIBj3YqgJI",
+          "source_label": "Vidéo YouTube"
         }
       ],
       "promesses_liees": [],
@@ -205,7 +366,7 @@
       "categorie": "Finances",
       "statut": "en_cours",
       "featured": true,
-      "last_activity": "2026-07-02",
+      "last_activity": "2026-07-03",
       "date_ouverture": "2026-06-16",
       "image": "/bruz-en-action/illus-d03-finances.webp",
       "chapeau": "Budget 2023 de Bruz : 27,3 M€ de recettes, dette quasi nulle (81 €/habitant), épargne brute à 27 %. Dès 2024, premier recours à l'emprunt : l'encours de dette bondit à 466 €/habitant (9,4 M€), signe que les grands chantiers du mandat — 4e groupe scolaire (9,5 M€), rénovation de l'Hôtel de Ville (1,4 M€), ZAC Multisites — commencent à peser. Ce dossier suit les arbitrages budgétaires du mandat 2026-2031.",
@@ -466,16 +627,44 @@
       ],
       "actus_recentes": [
         {
+          "date": "2026-07-03",
+          "titre": "Conseil municipal de juillet",
+          "detail": "Construction du 4e groupe scolaire (Ker Lann Sud) : marché de travaux (école primaire, ALSH, restauration) à l'ordre du jour — point 9 | Mesures de carte scolaire rentrée 2026-2027 — point 29, à recouper avec les annonces de l'Inspection Académique 35 | Bloc Éducation très dense : 14 délibérations (",
+          "source_url": "https://data.megalis.bretagne.bzh/?siren=213500473",
+          "source_label": "Mégalis Bretagne — Convocation Conseil municipal du 03/07/2026 (ordre du jour complet, 41 points)"
+        },
+        {
+          "date": "2026-07-03",
+          "titre": "Conseil municipal de juillet",
+          "detail": "Construction du 4e groupe scolaire (Ker Lann Sud) : marché de travaux (école primaire, ALSH, restauration) à l'ordre du jour — point 9 | Mesures de carte scolaire rentrée 2026-2027 — point 29, à recouper avec les annonces de l'Inspection Académique 35 | Bloc Éducation très dense : 14 délibérations (",
+          "source_url": "https://www.ville-bruz.fr/wp-content/uploads/2026/06/Semaine-a-Bruz-n%C2%B0856-du-11-au-25-juin-2026.pdf",
+          "source_label": "Semaine à Bruz n°856 (11-25 juin 2026) — confirmation date et lieu"
+        },
+        {
+          "date": "2026-07-03",
+          "titre": "Conseil municipal de juillet",
+          "detail": "Construction du 4e groupe scolaire (Ker Lann Sud) : marché de travaux (école primaire, ALSH, restauration) à l'ordre du jour — point 9 | Mesures de carte scolaire rentrée 2026-2027 — point 29, à recouper avec les annonces de l'Inspection Académique 35 | Bloc Éducation très dense : 14 délibérations (",
+          "source_url": "https://www.ville-bruz.fr/wp-content/uploads/2026/05/Bruz-Mag-n%C2%B0260-de-mai-juin-2026.pdf",
+          "source_label": "Agenda Bruz Mag n°260"
+        },
+        {
+          "date": "2026-06-18",
+          "titre": "Comment fonctionne le Conseil municipal ?",
+          "detail": "",
+          "source_url": "https://www.youtube.com/playlist?list=PLnSe2hJFinqpupninWlKBHSmzmwLW-8i7",
+          "source_label": "Mairie de Bruz — Conseil municipal"
+        },
+        {
+          "date": "2026-03-20",
+          "titre": "Installation du nouveau conseil municipal",
+          "detail": "Houssin élu maire : 56,39 % au 1er tour, 26/33 sièges au CM | 9 adjoints élus — parité stricte respectée dans l'ordre du tableau | 7 conseillers d'opposition (Bruz avec vous, Marie-Pierre Durand) | 33 élus : 16 hommes / 17 femmes, âge moyen 57 ans",
+          "source_url": "https://www.ville-bruz.fr/wp-content/uploads/2026/03/Semaine-a-Bruz-n%C2%B0850-du-19-mars-au-2-avril-2026.pdf",
+          "source_label": "Semaine à Bruz n°850 (19 mars – 2 avril 2026)"
+        },
+        {
           "date": "2026-03-20",
           "titre": "L'arrivée de Safran suscite le débat au conseil municipal de Bruz",
           "detail": "Débat sur l'impact fiscal attendu de Safran — la majorité reste prudente sur les chiffres.",
-          "source_url": null,
-          "source_label": "Ouest-France"
-        },
-        {
-          "date": "2026-02-20",
-          "titre": "« Nous ne sommes pas une ville riche » : les cinq chiffres du budget de Bruz",
-          "detail": "Mise en perspective du budget communal avant le vote — Ouest-France.",
           "source_url": null,
           "source_label": "Ouest-France"
         },
@@ -485,6 +674,62 @@
           "detail": "Enregistrement complet du conseil municipal disponible sur YouTube.",
           "source_url": "https://youtu.be/52ALytkTry0",
           "source_label": "YouTube"
+        },
+        {
+          "date": "2026-02-20",
+          "titre": "« Nous ne sommes pas une ville riche » : les cinq chiffres du budget de Bruz",
+          "detail": "Mise en perspective du budget communal avant le vote — Ouest-France.",
+          "source_url": null,
+          "source_label": "Ouest-France"
+        },
+        {
+          "date": "2025-12-15",
+          "titre": "Budget 2026, financement de la piscine de la Conterie et amorce du dossier ZAC Multisites",
+          "detail": "Intervention citoyenne d'un collectif d'habitants contre le projet ZAC Multisites (bétonisation d'1 hectare, 120 logements près de la Maison des associations) | Participation complémentaire 2025 au syndicat de la piscine de la Conterie : 88 452 €, portant la contribution annuelle de Bruz à environ 4",
+          "source_url": "https://youtu.be/V18APiHT924",
+          "source_label": "Vidéo YouTube"
+        },
+        {
+          "date": "2025-11-24",
+          "titre": "Tensions pré-électorales sur la communication municipale, avenants de travaux et avis sur la ZAC de Kerlan (670 logement",
+          "detail": "Passe d'armes entre le maire sortant et le groupe « Unir pour agir » (candidat Houssin) sur la neutralité de la communication municipale avant les municipales de mars 2026 | ACTEE+ : candidature validée pour un schéma directeur immobilier énergétique de 150 000 € TTC, subventionné à 60 % par la FNCC",
+          "source_url": "https://youtu.be/2g1KzIc9g-8",
+          "source_label": "Vidéo YouTube"
+        },
+        {
+          "date": "2025-10-13",
+          "titre": "Conseil municipal du 13 octobre 2025 : CLECT Opéra/Musical, éducation et culture",
+          "detail": "Transfert de charges Opéra/Musical de Rennes à Rennes Métropole : 3 783 998 €/an jusqu'en 2039, puis 38 603 €/an ; recette nette Musical de 26 602 €/an | Loyer du Musical en forte hausse (150 000 → ~600-700 000 €) pour une jauge portée de 7 000 à 9 000-9 500 places, 17 M€ de travaux prévus | Ouvertu",
+          "source_url": "https://youtu.be/909eVdTl6LA",
+          "source_label": "Vidéo YouTube"
+        },
+        {
+          "date": "2025-09-22",
+          "titre": "Conseil municipal du 22 septembre 2025 : ZAC Multisites, foncier et logement social",
+          "detail": "Plan d'action égalité femmes-hommes 2025-2027 adopté à l'unanimité (4 axes, 15 actions) | Bilan de la concertation de la ZAC Multisites adopté avec 7 abstentions de l'opposition | Suppression du secteur des Rosiers (zone humide) : 280 à 300 logements à reloger, questions sur l'école et la densité | ",
+          "source_url": "https://youtu.be/sUa9mrL8DGM",
+          "source_label": "Vidéo YouTube"
+        },
+        {
+          "date": "2025-06-30",
+          "titre": "Conseil communautaire, PCAET métropolitain et bilan du centre social l'Escale",
+          "detail": "Accord local : 111 sièges au conseil métropolitain 2026-2032, Bruz conserve son nombre de sièges (vote à l'unanimité) | Centre social l'Escale : 253 adhérents au 25/02/2024, proche de 300 fin juin 2025, 53 bénévoles (3500h de bénévolat, soit 2,5 ETP) | Subvention municipale à l'Escale : 144 000 €, s",
+          "source_url": "https://youtu.be/2VIBj3YqgJI",
+          "source_label": "Vidéo YouTube"
+        },
+        {
+          "date": "2025-03-31",
+          "titre": "Conseil municipal du 31 mars 2025 : subventions, transferts fonciers et personnel",
+          "detail": "Subvention de 39 067 € au Point Accueil Emploi Rennes Sud (PAE), en baisse par rapport à l'an dernier suite à un nouveau mode de calcul (1,85 €/habitant) | Cession de 97 m² de terrain à la société Biomérieux au prix de 0,40 €/m² (environ 38,80 €) pour régulariser une clôture | Obligation réelle envi",
+          "source_url": "https://youtu.be/N2VUQhM4XG4",
+          "source_label": "Vidéo YouTube"
+        },
+        {
+          "date": "2025-03-03",
+          "titre": "Vote du budget 2025 et compte financier unique 2024",
+          "detail": "Budget principal 2025 : 38,2 M€ de dépenses (23,6 M€ fonctionnement / 14,6 M€ investissement), recours à un emprunt de 1,4 M€ | CFU 2024 : excédent de fonctionnement de 3 498 825,55 € et excédent global d'investissement de 4 236 778 € | 4e groupe scolaire : 1,32 M€ dépensés sur 11 M€ prévus, engagem",
+          "source_url": "https://youtu.be/YqD9sOGF90g",
+          "source_label": "Vidéo YouTube"
         }
       ],
       "promesses_liees": []
@@ -667,6 +912,27 @@
       ],
       "actus_recentes": [
         {
+          "date": "2026-06-18",
+          "titre": "Taux 2025 confirmé à 45,34 % — données officielles DGFiP disponibles",
+          "detail": "Les données DGFiP confirment que le taux 2025 est identique à 2024 — pas de hausse supplémentaire.",
+          "source_url": "https://www.data.gouv.fr/fr/datasets/impots-locaux/",
+          "source_label": "DGFiP"
+        },
+        {
+          "date": "2026-04-08",
+          "titre": "Délégations, indemnités et premières décisions",
+          "detail": "12 conseillers délégués nommés : Patrick Roullé (mobilités), Carol Léost (animation), Jérôme de Gayardon (voirie/propreté), Philippe Dohollou (habitat/urbanisme), Thomas de la Rivière (patrimoine/travaux), Huguette Dallemagne (environnement), Marie Demaret (médiathèque/culture), Vincent Benjamin (ha",
+          "source_url": "https://www.youtube.com/playlist?list=PLnSe2hJFinqpupninWlKBHSmzmwLW-8i7",
+          "source_label": "Audio CM sur YouTube"
+        },
+        {
+          "date": "2026-04-08",
+          "titre": "Délégations, indemnités et premières décisions",
+          "detail": "12 conseillers délégués nommés : Patrick Roullé (mobilités), Carol Léost (animation), Jérôme de Gayardon (voirie/propreté), Philippe Dohollou (habitat/urbanisme), Thomas de la Rivière (patrimoine/travaux), Huguette Dallemagne (environnement), Marie Demaret (médiathèque/culture), Vincent Benjamin (ha",
+          "source_url": "https://www.ville-bruz.fr/wp-content/uploads/2026/05/Bruz-Mag-n%C2%B0260-de-mai-juin-2026.pdf",
+          "source_label": "Bruz Mag n°260, p. 16-17 — expressions majorité et minorité"
+        },
+        {
           "date": "2026-01-30",
           "titre": "« Vous avez l'impôt facile » : la hausse de la taxe foncière à Bruz fait bondir",
           "detail": "Réactions des habitants à la hausse TFB 2024 — Ouest-France.",
@@ -674,11 +940,25 @@
           "source_label": "Ouest-France"
         },
         {
-          "date": "2026-06-18",
-          "titre": "Taux 2025 confirmé à 45,34 % — données officielles DGFiP disponibles",
-          "detail": "Les données DGFiP confirment que le taux 2025 est identique à 2024 — pas de hausse supplémentaire.",
-          "source_url": "https://www.data.gouv.fr/fr/datasets/impots-locaux/",
-          "source_label": "DGFiP"
+          "date": "2026-01-26",
+          "titre": "Dernier CM du mandat Salmon — culture, personnel, ZAC Ker Lann",
+          "detail": "Culture participative — Dino Voodoo (11 900 €) et L'Escale (3 100 €) lauréats 2026, à l'unanimité | Personnel — création d'un emploi pour l'Atlas de la Biodiversité intercommunal (Bruz + 3 communes) | ZAC Ker Lann — avis favorable du CM, ouvrant la voie au vote métropolitain du 5 février",
+          "source_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1012970/405bf2d92065ddf297923a2e2c43588ef8e27a8c57de35f5082283ccd215b8e5.pdf",
+          "source_label": "Délibération 26-01-18 — Personnel (Mégalis)"
+        },
+        {
+          "date": "2026-01-26",
+          "titre": "Dernier CM du mandat Salmon — culture, personnel, ZAC Ker Lann",
+          "detail": "Culture participative — Dino Voodoo (11 900 €) et L'Escale (3 100 €) lauréats 2026, à l'unanimité | Personnel — création d'un emploi pour l'Atlas de la Biodiversité intercommunal (Bruz + 3 communes) | ZAC Ker Lann — avis favorable du CM, ouvrant la voie au vote métropolitain du 5 février",
+          "source_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1012942/abbe312c791636e515e060aaefcd073b9e71f7dd4d19931e8a06a60d8b4441be.pdf",
+          "source_label": "Délibération 26-01-12 — Culture (Mégalis)"
+        },
+        {
+          "date": "2025-01-27",
+          "titre": "Inondations exceptionnelles, don à Mayotte et orientations budgétaires 2025",
+          "detail": "Inondations : niveau proche de la crue de 2001, centre d'hébergement ouvert (salle Magnolia, 50 places), aide proposée par Rennes Métropole et la ville de Chartres | Don à la Croix-Rouge pour Mayotte : 2 500 € adoptés à l'unanimité (l'opposition proposait 5 000 €) | Épargne brute 2024 : 3,6 M€ (meil",
+          "source_url": "https://youtu.be/PKsgJCAyu5A",
+          "source_label": "Vidéo YouTube"
         }
       ],
       "promesses_liees": [],
@@ -689,8 +969,8 @@
       "titre": "Bruz en carte : quartiers, chantiers et petits projets urbains",
       "categorie": "Urbanisme",
       "statut": "en_cours",
-      "featured": false,
-      "last_activity": "2026-07-02",
+      "featured": true,
+      "last_activity": "2026-07-03",
       "date_ouverture": "2026-06-16",
       "chapeau": "Carte interactive de Bruz, recensement des chantiers en cours (qui creuse où, jusqu'à quand) et veille sur les projets d'urbanisme qui ne rentrent pas déjà dans un dossier dédié (hors ZAC Multisites, voir D02, hors Trambus T4, voir D01) : évolutions de quartier, permis groupés, équipements publics annoncés, travaux de voirie.",
       "ce_quon_sait": [
@@ -780,6 +1060,41 @@
       "lien_externe": "/bruz-en-action/carte",
       "actus_recentes": [
         {
+          "date": "2026-07-03",
+          "titre": "Conseil municipal de juillet",
+          "detail": "Construction du 4e groupe scolaire (Ker Lann Sud) : marché de travaux (école primaire, ALSH, restauration) à l'ordre du jour — point 9 | Mesures de carte scolaire rentrée 2026-2027 — point 29, à recouper avec les annonces de l'Inspection Académique 35 | Bloc Éducation très dense : 14 délibérations (",
+          "source_url": "https://data.megalis.bretagne.bzh/?siren=213500473",
+          "source_label": "Mégalis Bretagne — Convocation Conseil municipal du 03/07/2026 (ordre du jour complet, 41 points)"
+        },
+        {
+          "date": "2026-07-03",
+          "titre": "Conseil municipal de juillet",
+          "detail": "Construction du 4e groupe scolaire (Ker Lann Sud) : marché de travaux (école primaire, ALSH, restauration) à l'ordre du jour — point 9 | Mesures de carte scolaire rentrée 2026-2027 — point 29, à recouper avec les annonces de l'Inspection Académique 35 | Bloc Éducation très dense : 14 délibérations (",
+          "source_url": "https://www.ville-bruz.fr/wp-content/uploads/2026/06/Semaine-a-Bruz-n%C2%B0856-du-11-au-25-juin-2026.pdf",
+          "source_label": "Semaine à Bruz n°856 (11-25 juin 2026) — confirmation date et lieu"
+        },
+        {
+          "date": "2026-07-03",
+          "titre": "Conseil municipal de juillet",
+          "detail": "Construction du 4e groupe scolaire (Ker Lann Sud) : marché de travaux (école primaire, ALSH, restauration) à l'ordre du jour — point 9 | Mesures de carte scolaire rentrée 2026-2027 — point 29, à recouper avec les annonces de l'Inspection Académique 35 | Bloc Éducation très dense : 14 délibérations (",
+          "source_url": "https://www.ville-bruz.fr/wp-content/uploads/2026/05/Bruz-Mag-n%C2%B0260-de-mai-juin-2026.pdf",
+          "source_label": "Agenda Bruz Mag n°260"
+        },
+        {
+          "date": "2026-07-01",
+          "titre": "Travaux du pont de la Gare du 18 mai au 10 juillet 2026",
+          "detail": "Les travaux du pont de la Gare se sont déroulés du 18 mai au 10 juillet 2026. Cette infrastructure bruzaise, point clé de la circulation locale, a été modernisée selon le calendrier prévu.",
+          "source_url": "https://www.ville-bruz.fr/actualites/travaux-du-pont-de-la-gare-du-18-mai-au-3-juillet-2026/",
+          "source_label": "Mairie de Bruz — Actualités"
+        },
+        {
+          "date": "2026-06-18",
+          "titre": "Travaux de réseaux et de voirie avenue du Général de Gaulle",
+          "detail": "",
+          "source_url": "https://www.ville-bruz.fr/actualites/travaux-de-reseaux-et-de-voirie-avenue-du-general-de-gaulle/",
+          "source_label": "Mairie de Bruz — Actualités"
+        },
+        {
           "date": "2026-06-15",
           "titre": "Fermeture totale du pont de la Gare jusqu'au 3 juillet",
           "detail": "Avenue Jules Tricault coupée jour et nuit — déviations par rue Émile Gernigon, av. de Wrzésnia, av. de l'Europe, av. Joseph Jan.",
@@ -799,6 +1114,13 @@
           "detail": "Réseaux eau/électricité + voirie. Circulation maintenue en alternat.",
           "source_url": "https://www.ville-bruz.fr/mon-quotidien/travaux-et-demandes-dintervention/travaux-en-cours/",
           "source_label": "Mairie de Bruz"
+        },
+        {
+          "date": "2026-04-08",
+          "titre": "Délégations, indemnités et premières décisions",
+          "detail": "12 conseillers délégués nommés : Patrick Roullé (mobilités), Carol Léost (animation), Jérôme de Gayardon (voirie/propreté), Philippe Dohollou (habitat/urbanisme), Thomas de la Rivière (patrimoine/travaux), Huguette Dallemagne (environnement), Marie Demaret (médiathèque/culture), Vincent Benjamin (ha",
+          "source_url": "https://www.youtube.com/playlist?list=PLnSe2hJFinqpupninWlKBHSmzmwLW-8i7",
+          "source_label": "Audio CM sur YouTube"
         },
         {
           "date": "2025-02-01",
@@ -830,8 +1152,8 @@
       "titre": "Piscine de la Conterie : la contribution de Bruz a triplé en cinq ans",
       "categorie": "Équipements",
       "statut": "en_cours",
-      "featured": false,
-      "last_activity": "2026-06-17",
+      "featured": true,
+      "last_activity": "2026-07-03",
       "date_ouverture": "2026-06-18",
       "chapeau": "La piscine intercommunale de la Conterie (12 communes, gérée à Chartres-de-Bretagne) traverse une double crise financière et sociale depuis la fin du Covid. La contribution de Bruz, principale contributrice, est passée de 162 800 € en 2019 à 477 886 € en 2025 — une hausse de +64 % rien qu'entre 2024 et 2025. Une nouvelle présidence a été élue en avril 2026 avec un plan de redressement à 420 000 € d'investissements. Ce dossier suit si la trajectoire s'inverse vraiment.",
       "ce_quon_sait": [
@@ -952,24 +1274,45 @@
       ],
       "actus_recentes": [
         {
-          "date": "2024-06-04",
-          "titre": "« Où va la piscine ? » La majorité et la minorité de Bruz s'inquiètent pour l'avenir de la Conterie",
-          "detail": "Au CM du 3 juin 2024, l'opposition (Jean-René Houssin) interpelle la majorité sur la hausse de la participation (227 272 € en 2024) et le climat social dégradé.",
-          "source_url": "https://www.ouest-france.fr/bretagne/bruz-35170/ou-va-la-piscine-la-majorite-et-la-minorite-de-bruz-sinquietent-pour-lavenir-de-la-conterie-a879ac0c-2271-11ef-9bcd-06e7ce6da751",
-          "source_label": "Ouest-France"
+          "date": "2026-07-03",
+          "titre": "Conseil municipal de juillet",
+          "detail": "Construction du 4e groupe scolaire (Ker Lann Sud) : marché de travaux (école primaire, ALSH, restauration) à l'ordre du jour — point 9 | Mesures de carte scolaire rentrée 2026-2027 — point 29, à recouper avec les annonces de l'Inspection Académique 35 | Bloc Éducation très dense : 14 délibérations (",
+          "source_url": "https://data.megalis.bretagne.bzh/?siren=213500473",
+          "source_label": "Mégalis Bretagne — Convocation Conseil municipal du 03/07/2026 (ordre du jour complet, 41 points)"
         },
         {
-          "date": "2025-05-18",
-          "titre": "Piscine de la Conterie : combien va payer chaque commune ?",
-          "detail": "Après un vote budgétaire retardé par la préfecture, le syndicat adopte une rallonge de 620 000 € pour 2025 — participation Bruz portée à 389 434,50 €.",
-          "source_url": "https://www.ouest-france.fr/bretagne/rennes-35000/piscine-de-la-conterie-pres-de-rennes-combien-va-payer-chaque-commune-pour-la-maintenir-a-flot-59a3421e-330f-11f0-82aa-3134ba899709",
-          "source_label": "Ouest-France"
+          "date": "2026-07-03",
+          "titre": "Conseil municipal de juillet",
+          "detail": "Construction du 4e groupe scolaire (Ker Lann Sud) : marché de travaux (école primaire, ALSH, restauration) à l'ordre du jour — point 9 | Mesures de carte scolaire rentrée 2026-2027 — point 29, à recouper avec les annonces de l'Inspection Académique 35 | Bloc Éducation très dense : 14 délibérations (",
+          "source_url": "https://www.ville-bruz.fr/wp-content/uploads/2026/06/Semaine-a-Bruz-n%C2%B0856-du-11-au-25-juin-2026.pdf",
+          "source_label": "Semaine à Bruz n°856 (11-25 juin 2026) — confirmation date et lieu"
         },
         {
-          "date": "2025-12-29",
-          "titre": "Nouvelle rallonge de 360 000 € pour les communes",
-          "detail": "Recettes en baisse, charges en hausse : le syndicat demande un dernier effort en 2025, portant la part de Bruz à 477 886 €.",
-          "source_url": "https://www.ouest-france.fr/bretagne/rennes-35000/piscine-de-la-conterie-au-sud-de-rennes-une-nouvelle-rallonge-de-360-000-euros-pour-les-communes-f192d5b4-e0a5-11f0-8231-0b73c898c870",
+          "date": "2026-07-03",
+          "titre": "Conseil municipal de juillet",
+          "detail": "Construction du 4e groupe scolaire (Ker Lann Sud) : marché de travaux (école primaire, ALSH, restauration) à l'ordre du jour — point 9 | Mesures de carte scolaire rentrée 2026-2027 — point 29, à recouper avec les annonces de l'Inspection Académique 35 | Bloc Éducation très dense : 14 délibérations (",
+          "source_url": "https://www.ville-bruz.fr/wp-content/uploads/2026/05/Bruz-Mag-n%C2%B0260-de-mai-juin-2026.pdf",
+          "source_label": "Agenda Bruz Mag n°260"
+        },
+        {
+          "date": "2026-06-25",
+          "titre": "Fermeture partielle de la piscine de la Conterie",
+          "detail": "",
+          "source_url": "https://www.ville-bruz.fr/actualites/fermeture-partielle-de-la-piscine-de-la-conterie/",
+          "source_label": "Mairie de Bruz — Actualités"
+        },
+        {
+          "date": "2026-06-18",
+          "titre": "Ouverture des inscriptions à la natation : piscine de la Conterie",
+          "detail": "",
+          "source_url": "https://www.ville-bruz.fr/actualites/ouverture-des-inscriptions-a-la-natation-piscine-de-la-conterie/",
+          "source_label": "Mairie de Bruz — Actualités"
+        },
+        {
+          "date": "2026-06-17",
+          "titre": "Fermeture partielle pour travaux du 22 juin au 3 juillet 2026",
+          "detail": "Bassins sportif et ludique fermés pour maintenance de la centrale de traitement de l'air — le bassin nordique extérieur reste accessible.",
+          "source_url": "https://www.ouest-france.fr/bretagne/rennes-35000/pourquoi-cette-piscine-au-sud-de-rennes-va-etre-partiellement-fermee-pendant-deux-semaines-dbcaa116-6a62-11f1-a3cf-41dac410473f",
           "source_label": "Ouest-France"
         },
         {
@@ -980,10 +1323,52 @@
           "source_label": "Ouest-France"
         },
         {
-          "date": "2026-06-17",
-          "titre": "Fermeture partielle pour travaux du 22 juin au 3 juillet 2026",
-          "detail": "Bassins sportif et ludique fermés pour maintenance de la centrale de traitement de l'air — le bassin nordique extérieur reste accessible.",
-          "source_url": "https://www.ouest-france.fr/bretagne/rennes-35000/pourquoi-cette-piscine-au-sud-de-rennes-va-etre-partiellement-fermee-pendant-deux-semaines-dbcaa116-6a62-11f1-a3cf-41dac410473f",
+          "date": "2025-12-29",
+          "titre": "Nouvelle rallonge de 360 000 € pour les communes",
+          "detail": "Recettes en baisse, charges en hausse : le syndicat demande un dernier effort en 2025, portant la part de Bruz à 477 886 €.",
+          "source_url": "https://www.ouest-france.fr/bretagne/rennes-35000/piscine-de-la-conterie-au-sud-de-rennes-une-nouvelle-rallonge-de-360-000-euros-pour-les-communes-f192d5b4-e0a5-11f0-8231-0b73c898c870",
+          "source_label": "Ouest-France"
+        },
+        {
+          "date": "2025-12-15",
+          "titre": "Budget 2026, financement de la piscine de la Conterie et amorce du dossier ZAC Multisites",
+          "detail": "Intervention citoyenne d'un collectif d'habitants contre le projet ZAC Multisites (bétonisation d'1 hectare, 120 logements près de la Maison des associations) | Participation complémentaire 2025 au syndicat de la piscine de la Conterie : 88 452 €, portant la contribution annuelle de Bruz à environ 4",
+          "source_url": "https://youtu.be/V18APiHT924",
+          "source_label": "Vidéo YouTube"
+        },
+        {
+          "date": "2025-11-24",
+          "titre": "Tensions pré-électorales sur la communication municipale, avenants de travaux et avis sur la ZAC de Kerlan (670 logement",
+          "detail": "Passe d'armes entre le maire sortant et le groupe « Unir pour agir » (candidat Houssin) sur la neutralité de la communication municipale avant les municipales de mars 2026 | ACTEE+ : candidature validée pour un schéma directeur immobilier énergétique de 150 000 € TTC, subventionné à 60 % par la FNCC",
+          "source_url": "https://youtu.be/2g1KzIc9g-8",
+          "source_label": "Vidéo YouTube"
+        },
+        {
+          "date": "2025-06-02",
+          "titre": "Charte participation citoyenne, SIM Rif Sud, piscine de la Contrie et aménagement plaine Yann Fanch Kemener",
+          "detail": "Charte 'participation citoyenne' (ex-voisins vigilants) actualisée à l'unanimité, pilotée par la gendarmerie | Participation au SIM Rif Sud portée à 395 875€ (+30% en 3 ans), suite au désengagement du Département | Participation à la piscine de la Contrie : 389 434,50€, hausse de 135% en 5 ans — ado",
+          "source_url": "https://youtu.be/lik0KmeQ16A",
+          "source_label": "Vidéo YouTube"
+        },
+        {
+          "date": "2025-05-18",
+          "titre": "Piscine de la Conterie : combien va payer chaque commune ?",
+          "detail": "Après un vote budgétaire retardé par la préfecture, le syndicat adopte une rallonge de 620 000 € pour 2025 — participation Bruz portée à 389 434,50 €.",
+          "source_url": "https://www.ouest-france.fr/bretagne/rennes-35000/piscine-de-la-conterie-pres-de-rennes-combien-va-payer-chaque-commune-pour-la-maintenir-a-flot-59a3421e-330f-11f0-82aa-3134ba899709",
+          "source_label": "Ouest-France"
+        },
+        {
+          "date": "2025-03-03",
+          "titre": "Vote du budget 2025 et compte financier unique 2024",
+          "detail": "Budget principal 2025 : 38,2 M€ de dépenses (23,6 M€ fonctionnement / 14,6 M€ investissement), recours à un emprunt de 1,4 M€ | CFU 2024 : excédent de fonctionnement de 3 498 825,55 € et excédent global d'investissement de 4 236 778 € | 4e groupe scolaire : 1,32 M€ dépensés sur 11 M€ prévus, engagem",
+          "source_url": "https://youtu.be/YqD9sOGF90g",
+          "source_label": "Vidéo YouTube"
+        },
+        {
+          "date": "2024-06-04",
+          "titre": "« Où va la piscine ? » La majorité et la minorité de Bruz s'inquiètent pour l'avenir de la Conterie",
+          "detail": "Au CM du 3 juin 2024, l'opposition (Jean-René Houssin) interpelle la majorité sur la hausse de la participation (227 272 € en 2024) et le climat social dégradé.",
+          "source_url": "https://www.ouest-france.fr/bretagne/bruz-35170/ou-va-la-piscine-la-majorite-et-la-minorite-de-bruz-sinquietent-pour-lavenir-de-la-conterie-a879ac0c-2271-11ef-9bcd-06e7ce6da751",
           "source_label": "Ouest-France"
         }
       ],
@@ -1081,12 +1466,18 @@
       ],
       "actus_recentes": [
         {
-          "date": "2026-02-15",
-          "titre": "Une brigade territoriale mobile de gendarmerie déployée au sud de Rennes",
-          "detail": "Un fourgon aménagé sillonne les 37 communes de la compagnie de Chartres-de-Bretagne pour accueillir le public et recueillir des renseignements — présenté au préfet sur le marché de Bruz.",
-          "source_url": "https://www.tvr.bzh/article/b53ae25-une-brigade-territoriale-mobile-de-la-gendarmerie",
-          "source_label": "TVR",
-          "source_url_expiree": true
+          "date": "2026-07-04",
+          "titre": "Les cambriolages de logement à Bruz au plus haut depuis 10 ans",
+          "detail": "Exploitation des données SSMSI (Ministère de l'Intérieur) : 68 cambriolages de logement enregistrés à Bruz en 2025, le niveau le plus élevé depuis au moins 2016, en hausse de 28 % sur un an. L'usage de stupéfiants enregistré double presque (254 contre 128 en 2024), mais la quasi-totalité de la hausse correspond à des amendes forfaitaires délictuelles (verbalisation), pas à un doublement mesuré de la consommation.",
+          "source_url": "https://www.data.gouv.fr/datasets/bases-statistiques-communale-departementale-et-regionale-de-la-delinquance-enregistree-par-la-police-et-la-gendarmerie-nationales",
+          "source_label": "Bruz en Action — données SSMSI"
+        },
+        {
+          "date": "2026-07-03",
+          "titre": "Droit de réponse : Stop aux malveillances envers les enfants de l'école maternelle du Vert Buisson à Bruz",
+          "detail": "Un droit de réponse est publié concernant des incidents signalés à l'école maternelle du Vert Buisson. Cet article aborde les enjeux de sécurité dans les établissements scolaires bruzois.",
+          "source_url": "https://consent.google.com/ml?continue=https://news.google.com/rss/articles/CBMiqAFBVV95cUxPZVV0WGtFNUdpTk5pQWJJQ3ZrTzEwcnNFR0hnbXhPbGM3RXozc3lYQTlCakd5QTg3MklfdXc5cXZicUcwRmMzX3ktOERUT1VXTGpCaURhbzRlLXV4TnNWNmljN2szUW40VlhBclk4akNMSnBCeHN1aGcweVJFVEVWX3BTSVQ2bklKQjN3RWNxaDhIN0dXS0ZNclZDWTVFSXhldjNuUlpxU28?oc%3D5&gl=FR&hl=en-US&cm=2&pc=n&src=1&escs=AZ8E49Be454n7sfw0VFUQ9hqhwCl6qJkUrIO3B3pizRCO63Sn-vpgHYRP7EC1cvC9-lLwHbcSCwXRiJQQZ21jJCZ2kOTkLaG59Ld",
+          "source_label": "Équipements Bruz"
         },
         {
           "date": "2026-06-01",
@@ -1096,11 +1487,33 @@
           "source_label": "Ville de Bruz"
         },
         {
-          "date": "2026-07-04",
-          "titre": "Les cambriolages de logement à Bruz au plus haut depuis 10 ans",
-          "detail": "Exploitation des données SSMSI (Ministère de l'Intérieur) : 68 cambriolages de logement enregistrés à Bruz en 2025, le niveau le plus élevé depuis au moins 2016, en hausse de 28 % sur un an. L'usage de stupéfiants enregistré double presque (254 contre 128 en 2024), mais la quasi-totalité de la hausse correspond à des amendes forfaitaires délictuelles (verbalisation), pas à un doublement mesuré de la consommation.",
-          "source_url": "https://www.data.gouv.fr/datasets/bases-statistiques-communale-departementale-et-regionale-de-la-delinquance-enregistree-par-la-police-et-la-gendarmerie-nationales",
-          "source_label": "Bruz en Action — données SSMSI"
+          "date": "2026-04-08",
+          "titre": "Délégations, indemnités et premières décisions",
+          "detail": "12 conseillers délégués nommés : Patrick Roullé (mobilités), Carol Léost (animation), Jérôme de Gayardon (voirie/propreté), Philippe Dohollou (habitat/urbanisme), Thomas de la Rivière (patrimoine/travaux), Huguette Dallemagne (environnement), Marie Demaret (médiathèque/culture), Vincent Benjamin (ha",
+          "source_url": "https://www.youtube.com/playlist?list=PLnSe2hJFinqpupninWlKBHSmzmwLW-8i7",
+          "source_label": "Audio CM sur YouTube"
+        },
+        {
+          "date": "2026-04-08",
+          "titre": "Délégations, indemnités et premières décisions",
+          "detail": "12 conseillers délégués nommés : Patrick Roullé (mobilités), Carol Léost (animation), Jérôme de Gayardon (voirie/propreté), Philippe Dohollou (habitat/urbanisme), Thomas de la Rivière (patrimoine/travaux), Huguette Dallemagne (environnement), Marie Demaret (médiathèque/culture), Vincent Benjamin (ha",
+          "source_url": "https://www.ville-bruz.fr/wp-content/uploads/2026/05/Bruz-Mag-n%C2%B0260-de-mai-juin-2026.pdf",
+          "source_label": "Bruz Mag n°260, p. 16-17 — expressions majorité et minorité"
+        },
+        {
+          "date": "2026-02-15",
+          "titre": "Une brigade territoriale mobile de gendarmerie déployée au sud de Rennes",
+          "detail": "Un fourgon aménagé sillonne les 37 communes de la compagnie de Chartres-de-Bretagne pour accueillir le public et recueillir des renseignements — présenté au préfet sur le marché de Bruz.",
+          "source_url": "https://www.tvr.bzh/article/b53ae25-une-brigade-territoriale-mobile-de-la-gendarmerie",
+          "source_label": "TVR",
+          "source_url_expiree": true
+        },
+        {
+          "date": "2025-06-02",
+          "titre": "Charte participation citoyenne, SIM Rif Sud, piscine de la Contrie et aménagement plaine Yann Fanch Kemener",
+          "detail": "Charte 'participation citoyenne' (ex-voisins vigilants) actualisée à l'unanimité, pilotée par la gendarmerie | Participation au SIM Rif Sud portée à 395 875€ (+30% en 3 ans), suite au désengagement du Département | Participation à la piscine de la Contrie : 389 434,50€, hausse de 135% en 5 ans — ado",
+          "source_url": "https://youtu.be/lik0KmeQ16A",
+          "source_label": "Vidéo YouTube"
         }
       ],
       "promesses_liees": [],
@@ -1148,8 +1561,8 @@
       "titre": "Offre scolaire à Bruz",
       "categorie": "Éducation",
       "statut": "en_cours",
-      "featured": false,
-      "last_activity": "2026-07-01",
+      "featured": true,
+      "last_activity": "2026-07-03",
       "date_ouverture": "2026-06-18",
       "chapeau": "La ZAC Multisites prévoit 1 700 nouveaux logements. Si chaque logement accueille en moyenne 0,5 enfant scolarisable, c'est 850 élèves supplémentaires à absorber. Les écoles actuelles ont-elles la capacité ? Ce dossier suit toute l'offre scolaire du mandat — primaire, collège, lycée, public et privé — et qui décide de quoi entre la commune, l'État, le Département et la Région.",
       "ce_quon_sait": [
@@ -1228,11 +1641,53 @@
       ],
       "actus_recentes": [
         {
+          "date": "2026-07-03",
+          "titre": "Conseil municipal de juillet",
+          "detail": "Construction du 4e groupe scolaire (Ker Lann Sud) : marché de travaux (école primaire, ALSH, restauration) à l'ordre du jour — point 9 | Mesures de carte scolaire rentrée 2026-2027 — point 29, à recouper avec les annonces de l'Inspection Académique 35 | Bloc Éducation très dense : 14 délibérations (",
+          "source_url": "https://data.megalis.bretagne.bzh/?siren=213500473",
+          "source_label": "Mégalis Bretagne — Convocation Conseil municipal du 03/07/2026 (ordre du jour complet, 41 points)"
+        },
+        {
+          "date": "2026-07-03",
+          "titre": "Conseil municipal de juillet",
+          "detail": "Construction du 4e groupe scolaire (Ker Lann Sud) : marché de travaux (école primaire, ALSH, restauration) à l'ordre du jour — point 9 | Mesures de carte scolaire rentrée 2026-2027 — point 29, à recouper avec les annonces de l'Inspection Académique 35 | Bloc Éducation très dense : 14 délibérations (",
+          "source_url": "https://www.ville-bruz.fr/wp-content/uploads/2026/06/Semaine-a-Bruz-n%C2%B0856-du-11-au-25-juin-2026.pdf",
+          "source_label": "Semaine à Bruz n°856 (11-25 juin 2026) — confirmation date et lieu"
+        },
+        {
+          "date": "2026-07-03",
+          "titre": "Droit de réponse : Stop aux malveillances envers les enfants de l'école maternelle du Vert Buisson à Bruz",
+          "detail": "Un droit de réponse est publié concernant des incidents signalés à l'école maternelle du Vert Buisson. Cet article aborde les enjeux de sécurité dans les établissements scolaires bruzois.",
+          "source_url": "https://consent.google.com/ml?continue=https://news.google.com/rss/articles/CBMiqAFBVV95cUxPZVV0WGtFNUdpTk5pQWJJQ3ZrTzEwcnNFR0hnbXhPbGM3RXozc3lYQTlCakd5QTg3MklfdXc5cXZicUcwRmMzX3ktOERUT1VXTGpCaURhbzRlLXV4TnNWNmljN2szUW40VlhBclk4akNMSnBCeHN1aGcweVJFVEVWX3BTSVQ2bklKQjN3RWNxaDhIN0dXS0ZNclZDWTVFSXhldjNuUlpxU28?oc%3D5&gl=FR&hl=en-US&cm=2&pc=n&src=1&escs=AZ8E49Be454n7sfw0VFUQ9hqhwCl6qJkUrIO3B3pizRCO63Sn-vpgHYRP7EC1cvC9-lLwHbcSCwXRiJQQZ21jJCZ2kOTkLaG59Ld",
+          "source_label": "Équipements Bruz"
+        },
+        {
+          "date": "2026-06-25",
+          "titre": "Canicule : mesures mises en place dans les écoles publiques",
+          "detail": "",
+          "source_url": "https://www.ville-bruz.fr/actualites/canicule-mesures-mises-en-place-dans-les-ecoles-publiques/",
+          "source_label": "Mairie de Bruz — Actualités"
+        },
+        {
           "date": "2026-05-01",
           "titre": "Bruz Mag confirme la nouvelle équipe municipale et ses délégations",
           "detail": "Le numéro de mai-juin 2026 du magazine municipal détaille l'organigramme des 9 adjoints. Françoise Lotton (9e adjointe) est confirmée en charge d'Éducation, Enfance et Jeunesse — élément qui manquait au dossier depuis l'installation du conseil en avril.",
           "source_url": "https://www.ville-bruz.fr/wp-content/uploads/2026/05/Bruz-Mag-n%C2%B0260-de-mai-juin-2026.pdf",
           "source_label": "Bruz Mag n°260"
+        },
+        {
+          "date": "2026-01-15",
+          "titre": "Bruz Mag #258 — Janvier-Février 2026",
+          "detail": "Transition(S) | Jeunes Maraîchers | Grand Angle Terres Durables | Grandir Ensemble — Les écoles au cœur de la vie locale | Traversée Outre-Manche | Sur grand écran",
+          "source_url": "https://www.ville-bruz.fr/wp-content/uploads/2026/03/Bruz-Mag-n°258-Janvier-fevrier-2026.pdf",
+          "source_label": "Bruz Mag #258 (PDF)"
+        },
+        {
+          "date": "2025-03-03",
+          "titre": "Vote du budget 2025 et compte financier unique 2024",
+          "detail": "Budget principal 2025 : 38,2 M€ de dépenses (23,6 M€ fonctionnement / 14,6 M€ investissement), recours à un emprunt de 1,4 M€ | CFU 2024 : excédent de fonctionnement de 3 498 825,55 € et excédent global d'investissement de 4 236 778 € | 4e groupe scolaire : 1,32 M€ dépensés sur 11 M€ prévus, engagem",
+          "source_url": "https://youtu.be/YqD9sOGF90g",
+          "source_label": "Vidéo YouTube"
         }
       ],
       "promesses_liees": [],
@@ -1443,6 +1898,20 @@
           "detail": "Vérification sur les délibérations et procès-verbaux de conseil municipal publiés depuis mai 2026 (portail Mégalis) : aucun acte relatif au city stade Siméon Beliard n'a été publié. L'annonce du maire (250-300 000 €, emplacement près du skate-park) reste non budgétée à ce jour, sans calendrier officiel.",
           "source_url": "https://data.megalis.bretagne.bzh/?siren=213500473",
           "source_label": "Mégalis Bretagne — délibérations Bruz"
+        },
+        {
+          "date": "2026-04-08",
+          "titre": "Délégations, indemnités et premières décisions",
+          "detail": "12 conseillers délégués nommés : Patrick Roullé (mobilités), Carol Léost (animation), Jérôme de Gayardon (voirie/propreté), Philippe Dohollou (habitat/urbanisme), Thomas de la Rivière (patrimoine/travaux), Huguette Dallemagne (environnement), Marie Demaret (médiathèque/culture), Vincent Benjamin (ha",
+          "source_url": "https://www.youtube.com/playlist?list=PLnSe2hJFinqpupninWlKBHSmzmwLW-8i7",
+          "source_label": "Audio CM sur YouTube"
+        },
+        {
+          "date": "2026-04-08",
+          "titre": "Délégations, indemnités et premières décisions",
+          "detail": "12 conseillers délégués nommés : Patrick Roullé (mobilités), Carol Léost (animation), Jérôme de Gayardon (voirie/propreté), Philippe Dohollou (habitat/urbanisme), Thomas de la Rivière (patrimoine/travaux), Huguette Dallemagne (environnement), Marie Demaret (médiathèque/culture), Vincent Benjamin (ha",
+          "source_url": "https://www.ville-bruz.fr/wp-content/uploads/2026/05/Bruz-Mag-n%C2%B0260-de-mai-juin-2026.pdf",
+          "source_label": "Bruz Mag n°260, p. 16-17 — expressions majorité et minorité"
         }
       ],
       "promesses_liees": []
@@ -1519,6 +1988,13 @@
       "actus_recentes": [
         {
           "date": "2026-06-25",
+          "titre": "Canicule : mesures mises en place dans les écoles publiques",
+          "detail": "",
+          "source_url": "https://www.ville-bruz.fr/actualites/canicule-mesures-mises-en-place-dans-les-ecoles-publiques/",
+          "source_label": "Mairie de Bruz — Actualités"
+        },
+        {
+          "date": "2026-06-25",
           "titre": "Canicule à Bruz : ce que la commune fait, ce que d'autres font",
           "detail": "Le 22 juin, l'Ille-et-Vilaine passait en vigilance rouge canicule. À Bruz (20 000 habitants), le plan communal s'est enclenché : ventilateurs et brumisateurs dans les écoles, repas froids avec pains de glace, collecte des déchets décalée aux heures fraîches (5h–13h et 20h–3h), activités sportives suspendues, registre CCAS activé. Des mesures classiques, dans les délais attendus.\n\nRennes a publié une carte interactive de ses espaces frais dès le passage en alerte rouge — parcs ouverts 24h/24, pataugeoires jusqu'à 22h45, deux bars à eau place de l'Hôtel de Ville et esplanade Charles-de-Gaulle, Les Champs Libres climatisés ouverts dès 10h. Le CCAS a déclenché des appels téléphoniques proactifs aux personnes inscrites au registre. Nantes Métropole référence près de 270 espaces frais sur une carte en ligne couvrant six communes — 18 pataugeoires, des fontaines, des centres communautaires climatisés.\n\nÀ Bruz, aucune carte ou liste publique d'espaces frais n'existe. La mairie recommande de \"trouver un endroit climatisé ou frais 2 à 3 heures par jour\" sans indiquer où. Les chiffres du registre CCAS ne sont pas publiés : combien de personnes suivies ? Des appels ont-ils été passés ?\n\nUn point de calendrier : la salle intérieure de la piscine Conterie était fermée pour travaux du 22 juin au 3 juillet — exactement pendant les jours les plus chauds. Le bassin nordique restait ouvert, mais la coïncidence illustre l'intérêt d'anticiper les travaux sur les équipements publics.\n\nEnfin, le Plan Communal de Sauvegarde (PCS) de Bruz — obligatoire au-delà de 10 000 habitants — intègre-t-il les scénarios canicule ? Et Bruz a-t-elle candidaté au Fonds vert, qui finance depuis 2025 l'adaptation thermique des bâtiments publics sous condition de prise en compte du confort d'été ? Ces points restent sans réponse publique à ce jour.",
           "source_url": null,
@@ -1544,6 +2020,48 @@
           "detail": "Reportage Ouest-France sur les adaptations des établissements scolaires bruzois face aux fortes chaleurs de l'été 2026.",
           "source_url": null,
           "source_label": "Ouest-France"
+        },
+        {
+          "date": "2026-06-18",
+          "titre": "Vigilance jaune canicule",
+          "detail": "",
+          "source_url": "https://www.ville-bruz.fr/actualites/vigilance-canicule/",
+          "source_label": "Mairie de Bruz — Actualités"
+        },
+        {
+          "date": "2026-05-18",
+          "titre": "Séance de mai 2026 — cantine, foncier ZAC, vie sociale",
+          "detail": "Restauration scolaire — garantie ville de 900 000 € pour la nouvelle cantine OGEC Saint-Rose de Lima (projet à horizon 2027-2028) ; saturation actuelle : 500 convives pour 284 places au Verbisson | Foncier ZAC — acquisition 12 rue de la Noé (608 m², maison 115 m²) pour 345 000 €, réserve foncière re",
+          "source_url": "https://data.megalis.bretagne.bzh/organization/commune-de-bruz",
+          "source_label": "Délibérations Mégalis Bretagne — Commune de Bruz 2026"
+        },
+        {
+          "date": "2026-05-18",
+          "titre": "Séance de mai 2026 — cantine, foncier ZAC, vie sociale",
+          "detail": "Restauration scolaire — garantie ville de 900 000 € pour la nouvelle cantine OGEC Saint-Rose de Lima (projet à horizon 2027-2028) ; saturation actuelle : 500 convives pour 284 places au Verbisson | Foncier ZAC — acquisition 12 rue de la Noé (608 m², maison 115 m²) pour 345 000 €, réserve foncière re",
+          "source_url": "https://youtu.be/MAMOqsqz6zY",
+          "source_label": "Vidéo YouTube — Conseil Municipal du 18 mai 2026 (Ville de Bruz)"
+        },
+        {
+          "date": "2026-04-08",
+          "titre": "Délégations, indemnités et premières décisions",
+          "detail": "12 conseillers délégués nommés : Patrick Roullé (mobilités), Carol Léost (animation), Jérôme de Gayardon (voirie/propreté), Philippe Dohollou (habitat/urbanisme), Thomas de la Rivière (patrimoine/travaux), Huguette Dallemagne (environnement), Marie Demaret (médiathèque/culture), Vincent Benjamin (ha",
+          "source_url": "https://www.youtube.com/playlist?list=PLnSe2hJFinqpupninWlKBHSmzmwLW-8i7",
+          "source_label": "Audio CM sur YouTube"
+        },
+        {
+          "date": "2026-04-08",
+          "titre": "Délégations, indemnités et premières décisions",
+          "detail": "12 conseillers délégués nommés : Patrick Roullé (mobilités), Carol Léost (animation), Jérôme de Gayardon (voirie/propreté), Philippe Dohollou (habitat/urbanisme), Thomas de la Rivière (patrimoine/travaux), Huguette Dallemagne (environnement), Marie Demaret (médiathèque/culture), Vincent Benjamin (ha",
+          "source_url": "https://www.ville-bruz.fr/wp-content/uploads/2026/05/Bruz-Mag-n%C2%B0260-de-mai-juin-2026.pdf",
+          "source_label": "Bruz Mag n°260, p. 16-17 — expressions majorité et minorité"
+        },
+        {
+          "date": "2025-09-22",
+          "titre": "Conseil municipal du 22 septembre 2025 : ZAC Multisites, foncier et logement social",
+          "detail": "Plan d'action égalité femmes-hommes 2025-2027 adopté à l'unanimité (4 axes, 15 actions) | Bilan de la concertation de la ZAC Multisites adopté avec 7 abstentions de l'opposition | Suppression du secteur des Rosiers (zone humide) : 280 à 300 logements à reloger, questions sur l'école et la densité | ",
+          "source_url": "https://youtu.be/sUa9mrL8DGM",
+          "source_label": "Vidéo YouTube"
         }
       ],
       "promesses_liees": [],

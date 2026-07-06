@@ -1,9 +1,49 @@
 {
   "meta": {
-    "last_updated": "2026-07-01",
+    "last_updated": "2026-07-06",
     "note": "Actus de suivi des promesses — une actu = un événement daté lié à une ou plusieurs promesses"
   },
   "actus": [
+    {
+      "id": "presse-6f730be7",
+      "titre": "Droit de réponse : Stop aux malveillances envers les enfants de l'école maternelle du Vert Buisson à Bruz",
+      "date": "2026-07-03",
+      "detail": "Un droit de réponse est publié concernant des incidents signalés à l'école maternelle du Vert Buisson. Cet article aborde les enjeux de sécurité dans les établissements scolaires bruzois.",
+      "source_url": "https://consent.google.com/ml?continue=https://news.google.com/rss/articles/CBMiqAFBVV95cUxPZVV0WGtFNUdpTk5pQWJJQ3ZrTzEwcnNFR0hnbXhPbGM3RXozc3lYQTlCakd5QTg3MklfdXc5cXZicUcwRmMzX3ktOERUT1VXTGpCaURhbzRlLXV4TnNWNmljN2szUW40VlhBclk4akNMSnBCeHN1aGcweVJFVEVWX3BTSVQ2bklKQjN3RWNxaDhIN0dXS0ZNclZDWTVFSXhldjNuUlpxU28?oc%3D5&gl=FR&hl=en-US&cm=2&pc=n&src=1&escs=AZ8E49Be454n7sfw0VFUQ9hqhwCl6qJkUrIO3B3pizRCO63Sn-vpgHYRP7EC1cvC9-lLwHbcSCwXRiJQQZ21jJCZ2kOTkLaG59Ld",
+      "source_label": "Équipements Bruz",
+      "type": "presse",
+      "dossier": "D10"
+    },
+    {
+      "id": "presse-374e4d",
+      "titre": "« Était-ce utile d'aller si près des habitations ? » : la chasse étendue sur 221 ha de terrains communaux à Bruz - Ouest-France",
+      "date": "2026-07-04",
+      "detail": "La chasse a été étendue sur 221 hectares de terrains communaux à Bruz, suscitant des interrogations sur la proximité avec les habitations. Cette gestion des espaces naturels bruzais illustre les arbitrages territoriaux du mandat.",
+      "source_url": "https://consent.google.com/ml?continue=https://news.google.com/rss/articles/CBMilwJBVV95cUxQNGpuS1QydG0zMHBNM1VHOE1oRHR6cG1nVzJyLTlKWmI1RGx1ODRqdWpkbVZtaWFheVd0cXg4YVA2X0hIM0dfcjA3VnphMVoyam5UWEpINXU0UkRqSnp3NFhpbFhfYi1OVXoyNHE2d0xmMy1hREduUUhmdWJaN21vZFMyYmluN1Q0WFRic0ZlVU1Qd2tqd3BleGpzeWFpeFh0MVp5MDQwN1ZFS2F4SVlzb3k1bTNYWlNpemJJbVBqZ0J3bVg3ODJDY3VuTndRSkNFdmktTVhzQWRwbU9NN3pCVjlsXzBrUnhZb2hkdjIzZXFKUjhNcmhBOVRrMUlEVmtLRG51V3dINmR3NndSNkxTLU5EX2NhMEE?oc%3D5&gl=FR&hl=en-US&cm=2&pc=n&src=1&escs=AZ8E49AyqnSlLH4hrjR7y13xF8Tjd9EsnLFVS1mNPtMQ5EROonJXd5sldm4eXmxEjZlPWxfbRV8Hogk_BJGqDrTDeaERaPanzC-7",
+      "source_label": "CM Bruz",
+      "type": "presse",
+      "dossier": "D05"
+    },
+    {
+      "id": "of-85600d",
+      "titre": "Après d'importants travaux pour mieux isoler la mairie, Bruz veut végétaliser la ville pour créer de la fraîcheur",
+      "date": "2026-07-02",
+      "detail": "L'Hôtel de ville a réintégré ses services le 1er juillet 2026 après un an de travaux de rénovation énergétique (bardage bois, menuiseries changées, isolation renforcée) pour un investissement de 2 M€. Le maire Jean-René Houssin souhaite accélérer la végétalisation de la ville et créer des îlots de fraîcheur pour adapter Bruz aux enjeux climatiques.",
+      "source_url": "https://www.ouest-france.fr/bretagne/bruz-35170/apres-dimportants-travaux-pour-mieux-isoler-la-mairie-bruz-veut-vegetaliser-la-ville-pour-creer-de-la-fraicheur-a8631000-75e4-11f1-bb07-bbe2ac4dba11",
+      "source_label": "Ouest-France",
+      "type": "presse",
+      "dossier": "D13"
+    },
+    {
+      "id": "mairie-32c5b7",
+      "titre": "Travaux du pont de la Gare du 18 mai au 10 juillet 2026",
+      "date": "2026-07-01",
+      "detail": "Les travaux du pont de la Gare se sont déroulés du 18 mai au 10 juillet 2026. Cette infrastructure bruzaise, point clé de la circulation locale, a été modernisée selon le calendrier prévu.",
+      "source_url": "https://www.ville-bruz.fr/actualites/travaux-du-pont-de-la-gare-du-18-mai-au-3-juillet-2026/",
+      "source_label": "Mairie de Bruz — Actualités",
+      "type": "presse",
+      "dossier": "D05"
+    },
     {
       "id": "mairie-boccia2026",
       "titre": "Bruz accueille le Championnat de France de Boccia — une première",
