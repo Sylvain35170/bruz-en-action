@@ -130,6 +130,14 @@ Convention pour les liens confirmés morts sans alternative trouvée : ajouter `
 ---
 
 ## Pièges connus
+### 2026-07-05 — bruz-en-action : registre incrémental, hash() interdit, QA casse
+→ dispatch: local:bruz-en-action
+
+- **Registre `proposals/pending.json` = pivot de la veille** — les items y entrent une fois (pending/accepted/rejected) et `known_urls()` l'inclut : plus de re-scrape/re-mail avant revue. Ne pas recréer de fichiers `proposals/YYYY-MM-DD.json` (ancien format, archivé). Revue : `scripts/review_proposals.py`.
+- **`hash()` interdit pour les IDs d'items** — randomisé par processus ; utiliser `utils.stable_id(prefix, url)` (md5).
+- **QA insensible à la casse** — la homepage écrit « promesses » en minuscule et `/elus` rend « HOUSSIN » (formatNomPrenom) : tout `must_contain` sensible à la casse produit des faux échecs.
+- **`stats_dossiers` (bruz.json) pilote le panneau « Chiffres de contexte »** — jamais de stat en dur dans le TSX ; `validate_data.py` vérifie la résolution des `valeur_path`. À lancer avant tout commit de `data/` (aussi en step CI).
+
 ### 2026-07-04 — bruz-en-action : link-checker ajouté, limites anti-bot, convention liens expirés
 → dispatch: local:bruz-en-action
 
