@@ -88,9 +88,9 @@ pertinence 0 sont auto-rejetés (mémorisés). Ne pas recréer de fichiers
 - `--purge-accepted` : nettoie les accepted de +60 jours (les rejected restent — mémoire anti re-proposition)
 - Après acceptation : `agent_dossiers` → `npm run build` → commit + push `data/`
 
-**Mailer** : envoie TOUS les pending (pas seulement le jour) dès qu'un item est nouveau,
-sinon rappel tous les 3 jours max. Les items sans date ne sont plus perdus.
-`--dry-run` pour tester sans envoyer.
+**Mailer** : envoi quotidien systématique à 17h (un email à chaque run), avec TOUS les
+pending du moment ou un message "rien de nouveau" si le registre est vide. Les items
+sans date ne sont plus perdus. `--dry-run` pour tester sans envoyer.
 
 **IDs** : `utils.stable_id(prefix, url)` (md5) — jamais `hash()` (randomisé par processus).
 
@@ -130,6 +130,13 @@ Convention pour les liens confirmés morts sans alternative trouvée : ajouter `
 ---
 
 ## Pièges connus
+### 2026-07-07 — bruz-en-action : revue éditoriale, plantage transitoire agent_select, validation dédup
+→ dispatch: local:bruz-en-action
+
+- **`agent_select` planté le 05/07 au soir** (~15 min puis erreur Claude CLI vide, stderr vide malgré returncode≠0) — retry le lendemain a fonctionné en 4s. Probablement transitoire (réseau/API) : en cas d'erreur vide, relancer avant de creuser le code.
+- **Seuil dédup `is_already_published` (0.6) validé sur cas réel** — 2 items du 06/07 correctement écartés comme doublons (ratio 0.72 et 0.93) de stories déjà publiées fin juin.
+- **Revue éditoriale : pas d'outil dédié nécessaire** — pour ~10 items pending tous les 3-4 jours, le triage en chat (proposition accept/reject + confirmation + `review_proposals.py`) suffit.
+
 ### 2026-07-03 — bruz-en-action : agent_select vidait la queue deux fois (perte silencieuse d'items en timeout)
 → dispatch: local:bruz-en-action
 

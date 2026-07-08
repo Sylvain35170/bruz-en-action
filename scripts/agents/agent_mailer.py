@@ -7,9 +7,8 @@ Lit le registre incrémental scripts/proposals/pending.json (généré par
 agent_select) et envoie TOUT ce qui est en attente de revue (statut "pending"),
 pas seulement les items du jour — un item reste signalé jusqu'à décision.
 
-Cadence anti-spam :
-  - envoi si au moins un item n'a jamais été mailé (nouveau depuis le dernier envoi)
-  - sinon, rappel si le dernier email date de REMINDER_DAYS jours ou plus
+Envoi quotidien systématique (17h) : un email part à chaque run, avec les
+pending du moment ou un message "rien de nouveau" si le registre est vide.
 
 Usage :
   python3 scripts/agents/agent_mailer.py            # envoi réel
@@ -29,7 +28,6 @@ App Password Gmail : https://myaccount.google.com/apppasswords
 import json
 import smtplib
 import sys
-from datetime import date, timedelta
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from pathlib import Path
@@ -39,7 +37,6 @@ from utils import load_registry, log, save_registry, today
 
 AGENT_NAME = "mailer"
 CONFIG_FILE = Path.home() / ".bruz-mailer.json"
-REMINDER_DAYS = 3
 
 PERTINENCE_LABEL = {0: "⚪ hors sujet", 1: "🟡 marginal", 2: "🟠 pertinent", 3: "🔴 essentiel"}
 
@@ -117,29 +114,40 @@ def _build_email(proposals: list[dict], date_str: str) -> tuple[str, str]:
     return sujet, corps
 
 
+def _build_empty_email(date_str: str) -> tuple[str, str]:
+    """Email quotidien quand aucune proposition n'est en attente."""
+    sujet = f"[Bruz en Action] Rien de nouveau — {date_str}"
+    corps = f"""<!DOCTYPE html>
+<html><body style="font-family:Arial,sans-serif;max-width:680px;margin:0 auto;padding:20px;color:#1e293b">
+  <h2 style="color:#0f172a;border-bottom:2px solid #f97316;padding-bottom:8px">
+    🏛️ Bruz en Action — Veille du jour
+  </h2>
+  <p style="color:#64748b">
+    Aucune proposition en attente de revue aujourd'hui.
+  </p>
+  <hr style="border:none;border-top:1px solid #e2e8f0;margin:24px 0">
+  <p style="font-size:11px;color:#94a3b8">
+    Généré automatiquement par les agents Bruz en Action · {date_str}
+  </p>
+</body></html>"""
+    return sujet, corps
+
+
 def run(dry_run: bool = False) -> bool:
     date_str = today()
     registry = load_registry()
     pending = [p for p in registry["items"] if p.get("statut") == "pending"]
 
+    # Envoi quotidien systématique à 17h, avec ou sans nouveauté.
     if not pending:
-        log("Mailer : aucune proposition en attente — email non envoyé.", "INFO")
-        return False
+        sujet, corps = _build_empty_email(date_str)
+    else:
+        # Tri : nouveaux d'abord, puis pertinence décroissante, puis plus anciens en attente
+        pending.sort(key=lambda p: (bool(p.get("mailed_at")), -p.get("pertinence", 0),
+                                    p.get("first_seen", "")))
+        sujet, corps = _build_email(pending, date_str)
 
-    # Cadence : envoyer si nouveaux items jamais mailés, sinon rappel tous les REMINDER_DAYS
     new_items = [p for p in pending if not p.get("mailed_at")]
-    last_mailed = registry["meta"].get("last_mailed_at", "")
-    reminder_due = not last_mailed or last_mailed <= (date.today() - timedelta(days=REMINDER_DAYS)).isoformat()
-    if not new_items and not reminder_due:
-        log(f"Mailer : {len(pending)} pending déjà signalés le {last_mailed} — rappel dans "
-            f"{REMINDER_DAYS} jours max.", "INFO")
-        return False
-
-    # Tri : nouveaux d'abord, puis pertinence décroissante, puis plus anciens en attente
-    pending.sort(key=lambda p: (bool(p.get("mailed_at")), -p.get("pertinence", 0),
-                                p.get("first_seen", "")))
-
-    sujet, corps = _build_email(pending, date_str)
 
     if dry_run:
         log(f"Mailer [dry-run] : {sujet}", "OK")
@@ -161,13 +169,15 @@ def run(dry_run: bool = False) -> bool:
             server.login(config["from_email"], config["app_password"])
             server.sendmail(config["from_email"], config["to"], msg.as_string())
 
-        for p in pending:
-            p["mailed_at"] = date_str
-        registry["meta"]["last_mailed_at"] = date_str
-        save_registry(registry)
-
-        log(f"Mailer : email envoyé à {config['to']} ({len(pending)} items, "
-            f"{len(new_items)} nouveaux)", "OK")
+        if pending:
+            for p in pending:
+                p["mailed_at"] = date_str
+            registry["meta"]["last_mailed_at"] = date_str
+            save_registry(registry)
+            log(f"Mailer : email envoyé à {config['to']} ({len(pending)} items, "
+                f"{len(new_items)} nouveaux)", "OK")
+        else:
+            log(f"Mailer : email envoyé à {config['to']} (rien de nouveau)", "OK")
         return True
 
     except smtplib.SMTPAuthenticationError:
