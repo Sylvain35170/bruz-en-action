@@ -1,9 +1,39 @@
 {
   "meta": {
-    "last_updated": "2026-07-06",
+    "last_updated": "2026-07-10",
     "note": "Actus de suivi des promesses — une actu = un événement daté lié à une ou plusieurs promesses"
   },
   "actus": [
+    {
+      "id": "presse-745dd690",
+      "titre": "Ventes de places de parking en centre-ville, l'opposition dénonce « une grande braderie » à Bruz - Ouest-France",
+      "date": "2026-07-08",
+      "detail": "La municipalité a lancé une vente de places de parking en centre-ville, une mesure critiquée par l'opposition qui la qualifie de « braderie » du patrimoine public. Cette initiative relève de la stratégie municipale d'aménagement urbain et de gestion des ressources du centre-ville bruzois.",
+      "source_url": "https://consent.google.com/ml?continue=https://news.google.com/rss/articles/CBMihgJBVV95cUxPRGE3blVRcVFlOHRiZDBBcFJYTVJHdExCck9wMVFIVzItcFpKdlZoWEJmYktmZDBIU1BDMkxKNEJJV2xBTGNSX0lzNkdtb09FUmR5SjVWZkpEOWhzeWR1VXJSTW52UXdWNDU2bVlXcGJScTkxVjlkRURRV1dhbVJ3XzcwcDBQRUZHNG13TlIwQzBsYnhmUXhyNVV6STBYWjRUSWN3MEg4ejhOUHh3MWZZVWJqQUFyUTRKa01Od2tROVN0RV9fRm5iUGNVN0VyT3VtUXQ0R250Wl90Si1tVFY5dWxYS0xfWktfMUo1ejdld0RRYjhMNEtFMUNWMlVBdUtQMHBlaE5R?oc%3D5&gl=FR&hl=en-US&cm=2&pc=n&src=1&escs=AZ8E49AhNHQjU9yrNeKujuLPrQ5IkkPT31wQN_9YrxoL_YxodX9rdnxniMtapdVGg9wDMTbyK_eyjiCi2dczB4HVdtsNH3f3cT0O",
+      "source_label": "Sécurité Bruz",
+      "type": "presse",
+      "dossier": "D05"
+    },
+    {
+      "id": "mairie-b577086c",
+      "titre": "Rejoignez le Comité mobilités",
+      "date": "2026-07-08",
+      "detail": "La mairie lance un Comité mobilités destiné à associer les habitants de Bruz à la conception des politiques de transport et déplacements. Cette démarche participative répond à un engagement clé du mandat.",
+      "source_url": "https://www.ville-bruz.fr/actualites/rejoignez-le-comite-mobilites/",
+      "source_label": "Mairie de Bruz — Actualités",
+      "type": "mairie",
+      "dossier": "D01"
+    },
+    {
+      "id": "presse-c4355d79",
+      "titre": "« Comment ouvrir sans enfants ? » À Bruz, le défi de la nouvelle école à 11 millions d'euros interroge - Ouest-France",
+      "date": "2026-07-06",
+      "detail": "Une nouvelle école bruzaise, financée à hauteur de 11 millions d'euros, pose la question de son ouverture dans un contexte de démographie scolaire incertaine. Cet enjeu illustre la complexité de la gestion des équipements scolaires bruzois.",
+      "source_url": "https://consent.google.com/ml?continue=https://news.google.com/rss/articles/CBMiiwJBVV95cUxPYV9EcUJHd3Y4SndlV3JUX2hxbGtqN2QxZW4tUUhpVXI0X2xMTmctQkZJbzJ3NFp0LUotUmNXeDFuSUVIaUVTUDJRUmtnbklfeGU3VFhBQVpPLVhxY0JNZkhaVDV4VTU2VmdrQmE4TjVNQ0NiQllKZmpzd1hJTEQtTmVXRHVNNW1IN3h3MTJreUtHN2pQUzYtR1hhZ3d1TVFjTlNPZzlncllueXJlVDRCczN0c2JTbTV0QVlYdFN1bUlRb25vbWNBS21qQWNPdkFrSWtlbzNnSHNMbTVJdVA5LUtzS2hwcjVyRUxPUDdDQ1QxUVVxeDQyaDB1RmhSbUJoelpDeGhrd1lPV2M?oc%3D5&gl=FR&hl=en-US&cm=2&pc=n&src=1&escs=AZ8E49CRXhxTqnLkcUSyxr2HPHatgzWXjw2E9WHO7M3dmihVv7CrKhZi8iMHsim50X1k7fRm5hYL5dRoqDie6ERsL09xiODkst_C",
+      "source_label": "Urbanisme Bruz",
+      "type": "presse",
+      "dossier": "D10"
+    },
     {
       "id": "presse-6f730be7",
       "titre": "Droit de réponse : Stop aux malveillances envers les enfants de l'école maternelle du Vert Buisson à Bruz",
