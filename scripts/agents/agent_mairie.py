@@ -11,7 +11,10 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
-from utils import DATA_DIR, fetch, load_json, log, save_json, stable_id, today, dedup, known_urls, append_to_queue
+from utils import (
+    DATA_DIR, fetch, load_json, log, save_json, stable_id, today, dedup,
+    known_urls, append_to_queue, check_content_changed,
+)
 
 try:
     from bs4 import BeautifulSoup
@@ -53,6 +56,10 @@ def scrape_source(source: dict) -> list[dict]:
             if not titre or len(titre) < 5:
                 continue
 
+            # Texte complet du bloc — utilisé pour la détection de mise à jour
+            # (une page réutilisée en place change de contenu sans changer d'URL)
+            teaser_text = el.get_text(strip=True)
+
             # URL
             lien_el = el.find("a", href=True)
             url = lien_el["href"] if lien_el else source["url"]
@@ -71,6 +78,7 @@ def scrape_source(source: dict) -> list[dict]:
                 "date": date_pub[:10] if date_pub else today(),
                 "detail": "",
                 "type": "mairie",
+                "_teaser_text": teaser_text,
             })
 
     return items
@@ -84,10 +92,20 @@ def run() -> bool:
         log(f"Scan {source['label']}…")
         items = scrape_source(source)
         for item in items:
+            teaser_text = item.pop("_teaser_text", "")
+            changed = check_content_changed(item["source_url"], teaser_text or item["titre"])
             if item["source_url"] not in existing:
                 nouvelles.append(item)
                 existing.add(item["source_url"])
                 log(f"  🆕 {item['titre'][:70]}", "NEW")
+            elif changed:
+                # URL déjà connue mais contenu modifié en place (ex. page de vigilance
+                # jaune → rouge) — requeue avec un id distinct pour ne pas entrer en
+                # collision avec la décision de revue déjà prise sur l'ancien contenu.
+                item["id"] = stable_id("mairie", item["source_url"] + "#" + today())
+                item["titre"] = f"{item['titre']} (mise à jour)"
+                nouvelles.append(item)
+                log(f"  🔁 mise à jour détectée : {item['titre'][:70]}", "NEW")
 
     if not nouvelles:
         log("Mairie : aucune nouvelle publication.", "INFO")

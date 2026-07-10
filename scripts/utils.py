@@ -16,6 +16,7 @@ DATA_DIR = ROOT / "data"
 QUEUE_FILE = DATA_DIR / "actus_queue.json"
 PROPOSALS_DIR = ROOT / "scripts" / "proposals"
 REGISTRY_FILE = PROPOSALS_DIR / "pending.json"
+CONTENT_HASHES_FILE = PROPOSALS_DIR / "content_hashes.json"
 HEADERS = {"User-Agent": "BruzEnAction-CitoyenBot/1.0 (contact: sylv.bertrand@gmail.com)"}
 
 
@@ -102,6 +103,29 @@ def save_registry(reg: dict) -> None:
     reg.setdefault("meta", {})["last_updated"] = today()
     PROPOSALS_DIR.mkdir(parents=True, exist_ok=True)
     save_json(REGISTRY_FILE, reg)
+
+
+def content_hash(text: str) -> str:
+    return hashlib.md5(text.strip().lower().encode("utf-8")).hexdigest()[:12]
+
+
+def check_content_changed(url: str, text: str) -> bool:
+    """True si le contenu à cette URL diffère de la dernière version connue.
+
+    Certaines pages mairie (alertes/vigilances) sont mises à jour en place à la
+    même URL au lieu d'être republiées ailleurs (ex. /actualites/vigilance-canicule/
+    passé de "jaune" à "rouge" le 10/07/2026 sans changer d'adresse) — la dédup par
+    URL seule (known_urls()) les ignore silencieusement. Ce hash de contenu permet
+    de détecter la mise à jour même quand l'URL est déjà connue. Met à jour le
+    registre à chaque appel (effet de bord assumé : un seul scan par run et par URL).
+    """
+    hashes = load_json(CONTENT_HASHES_FILE)
+    h = content_hash(text)
+    previous = hashes.get(url)
+    hashes[url] = h
+    PROPOSALS_DIR.mkdir(parents=True, exist_ok=True)
+    save_json(CONTENT_HASHES_FILE, hashes)
+    return previous is not None and previous != h
 
 
 def known_urls() -> set[str]:

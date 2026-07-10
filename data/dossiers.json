@@ -1960,7 +1960,7 @@
       "categorie": "Environnement",
       "statut": "en_cours",
       "featured": true,
-      "last_activity": "2026-06-25",
+      "last_activity": "2026-07-10",
       "date_ouverture": "2026-06-21",
       "chapeau": "Avec des étés de plus en plus chauds, Bruz doit adapter ses équipements, ses espaces publics et son plan de crise. Îlots de fraîcheur, populations vulnérables, végétalisation, piscine Conterie, bâtiments communaux : ce que la commune fait — et ce qu'elle ne fait pas encore.",
       "ce_quon_sait": [
@@ -1976,7 +1976,8 @@
         "Aucune liste publique d'îlots de fraîcheur identifiés et cartographiés sur le territoire",
         "La végétalisation des espaces publics est un levier de long terme — aucun programme pluriannuel annoncé à Bruz",
         "Bruz dispose bien d'un Plan Communal de Sauvegarde (PCS) formel (page officielle « Les risques majeurs à Bruz ») — mais les catégories de risques listées publiquement (météo, inondation, TMD, épidémie, nucléaire) ne nomment pas explicitement la canicule ; elle semble traitée en pratique (activation juin 2026) sans figurer noir sur blanc dans la communication publique du PCS",
-        "Le Fonds vert 2026 (650 M€ au niveau national) a une sous-mesure « confort d'été » depuis 2024 : elle exclut explicitement la climatisation active (climatiseurs) et ne finance que des solutions passives (isolation, protections solaires, ventilation naturelle) — donc même si Bruz voulait climatiser ses écoles avec cette aide, ce ne serait pas éligible"
+        "Le Fonds vert 2026 (650 M€ au niveau national) a une sous-mesure « confort d'été » depuis 2024 : elle exclut explicitement la climatisation active (climatiseurs) et ne finance que des solutions passives (isolation, protections solaires, ventilation naturelle) — donc même si Bruz voulait climatiser ses écoles avec cette aide, ce ne serait pas éligible",
+        "10/07/2026 : deuxième vigilance rouge canicule de l'été en Ille-et-Vilaine (après celle du 22/06) — la mairie a réutilisé la même page web que l'alerte de juin (mise à jour en place, pas de nouvelle URL). Mesures complémentaires par rapport à juin : interdiction des feux d'artifice par les particuliers dans tout le département, interdiction de consommer de l'alcool sur la voie publique, brûlage des végétaux interdit. Le département est également passé en vigilance sécheresse."
       ],
       "qui_decide": [
         {
@@ -2002,6 +2003,11 @@
           "date": "2026-06-22",
           "description": "Ajustement des horaires de la piscine de la Conterie : bassin nordique extérieur élargi (7h30-20h), salles intérieures fermées pour travaux jusqu'au 3 juillet",
           "source_url": null
+        },
+        {
+          "date": "2026-07-10",
+          "description": "Deuxième activation de vigilance rouge canicule de l'été (Météo France, Ille-et-Vilaine) — mesures complémentaires : interdiction feux d'artifice particuliers, interdiction alcool voie publique, brûlage végétaux interdit ; vigilance sécheresse déclenchée en parallèle",
+          "source_url": "https://www.ville-bruz.fr/actualites/vigilance-canicule/"
         }
       ],
       "ce_quon_suit": [
@@ -2024,6 +2030,13 @@
         }
       ],
       "actus_recentes": [
+        {
+          "date": "2026-07-10",
+          "titre": "Vigilance rouge canicule (2e épisode de l'été)",
+          "detail": "L'Ille-et-Vilaine repasse en vigilance rouge canicule à compter du 10 juillet. Mesures complémentaires à celles de juin : interdiction des feux d'artifice par les particuliers, interdiction de consommer de l'alcool sur la voie publique, brûlage des végétaux interdit. Vigilance sécheresse déclenchée en parallèle.",
+          "source_url": "https://www.ville-bruz.fr/actualites/vigilance-canicule/",
+          "source_label": "Mairie de Bruz — Actualités"
+        },
         {
           "date": "2026-06-25",
           "titre": "Canicule : mesures mises en place dans les écoles publiques",
@@ -2179,7 +2192,7 @@
       ],
       "decisions": [],
       "ce_quon_suit": [
-        "Publication du nouveau zonage médecin ARS Bretagne : consultation réglementaire en cours depuis le 29 mai 2026, examen final prévu en session plénière du CRSA le 8 juillet 2026 — Bruz sera-t-elle classée sous-dotée ? Ce classement ouvre les aides à l'installation",
+        "Publication du nouveau zonage médecin ARS Bretagne : consultation réglementaire close le 8 juillet 2026 (session plénière CRSA) — toujours pas publié au 10/07/2026 (vérifié sur la liste des actualités ARS Bretagne, aucun arrêté ni résultat communiqué). Bruz sera-t-elle classée sous-dotée ? Ce classement ouvre les aides à l'installation. À revérifier dans les prochaines semaines.",
         "Une délibération du conseil municipal sur un projet de MSP ou centre de santé municipal a-t-elle été ou sera-t-elle présentée ?",
         "La ZAC Multisites (+1 700 logements, ~3 500 à 4 000 habitants supplémentaires) intègre-t-elle un espace dédié à la santé dans les cahiers des charges des aménageurs ?",
         "La Maison France Services (promise dans le programme) intégrera-t-elle des permanences de professionnels de santé ou d'assistants médicaux ?",

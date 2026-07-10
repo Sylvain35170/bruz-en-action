@@ -130,6 +130,11 @@ Convention pour les liens confirmés morts sans alternative trouvée : ajouter `
 ---
 
 ## Pièges connus
+### 2026-07-10 — bruz-en-action : pages mairie réutilisées en place (dédup URL insuffisante)
+- **La mairie republie certaines pages d'alerte à la même URL** au lieu d'en créer une nouvelle — ex. `/actualites/vigilance-canicule/` est passée de "Vigilance jaune canicule" (18/06/2026) à "Vigilance rouge canicule" (10/07/2026) sans changer d'adresse. `known_urls()` dédupliquant uniquement par `source_url`, ce type de mise à jour était silencieusement ignoré par `agent_mairie.py`.
+- **Fix** : `utils.check_content_changed(url, texte)` hash le texte du bloc scrapé et le compare au dernier hash connu (registre local `scripts/proposals/content_hashes.json`, gitignoré). `agent_mairie.py` requeue désormais l'item avec un id distinct (`stable_id(url + "#" + today())`, suffixe "(mise à jour)") quand une URL déjà connue a changé de contenu — pas de collision avec la décision de revue déjà prise sur l'ancienne version.
+- **Portée du fix** : uniquement `agent_mairie.py` pour l'instant (source la plus concernée par ce pattern). À étendre à `agent_presse`/`agent_ouestfrance` si le même symptôme apparaît côté presse.
+
 ### 2026-07-07 — bruz-en-action : revue éditoriale, plantage transitoire agent_select, validation dédup
 → dispatch: local:bruz-en-action
 
