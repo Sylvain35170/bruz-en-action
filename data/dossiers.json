@@ -10,9 +10,9 @@
       "categorie": "Mobilités",
       "statut": "en_cours",
       "featured": true,
-      "last_activity": "2026-07-08",
+      "last_activity": "2026-07-09",
       "date_ouverture": "2026-06-16",
-      "chapeau": "La future ligne T4 (trambus guidé) reliera Rennes à Bruz d'ici 2031. Le point de crispation : où sera le terminus ? Ker Lann ou la gare SNCF ? Une décision prise par Rennes Métropole — pas par Bruz — qui conditionne l'urbanisme de la commune pour trente ans.",
+      "chapeau": "La future ligne T4 (trambus guidé) reliera Rennes à Bruz d'ici 2031-2032. Le terminus penche désormais vers la gare SNCF, mais Rennes Métropole étudie encore trois scénarios de desserte (arrêt simple, navettes, renfort bus). Une décision qui reste entre les mains de la Métropole, pas de la commune.",
       "ce_quon_sait": [
         "Livraison prévue 2030–2031 — maîtrise d'ouvrage Rennes Métropole",
         "T4 = trambus guidé sur voie propre, ~100–150 places/rame — moins coûteux qu'un tram sur rail",
@@ -21,7 +21,11 @@
         "Avr. 2026 : Patrick Roullé nommé délégué municipal aux mobilités",
         "Concertation préalable Rennes Métropole (24 mars-24 juin 2025) : ~170 personnes aux ateliers, 453 contributions, 6 809 visiteurs sur La Fabrique Citoyenne. Bilan adopté par le Bureau Métropolitain le 16/10/2025 (avant les municipales) : abandon de la variante « Gavrinis », abandon du tracé via le secteur Mons, et surtout — le terminus est acté « au-delà de la gare » (pas à la gare elle-même), pour desservir plus loin sur la commune et répondre aux contraintes techniques de recharge du matériel",
         "Deux variantes de terminus centre-ville étudiées depuis 2025 : « courte » (retournement avenue Joseph Jan, Parc de la Herverie) et « longue » (jusqu'à la place du Dr Joly, terminus rond-point du Vau-Gaillard). La variante longue est jugée par les contributeurs « insuffisamment étendue » — Rennes Métropole a acté de poursuivre l'étude d'un prolongement vers l'est, en cohérence avec la ZAC Multisites. Aucun choix final entre ces deux variantes n'est encore publié (vérifié 04/07/2026, page mairie « Trambus : retour sur la concertation »)",
-        "Tension à noter : la décision du Bureau Métropolitain d'octobre 2025 avait déjà écarté un terminus positionné à la gare elle-même (\"au-delà de la gare\"), plusieurs mois avant que Jean-René Houssin ne fasse campagne (fév. 2026) sur un terminus précisément à la gare SNCF — sa position semble donc en délicate position vis-à-vis d'un cadrage déjà posé par la métropole avant son élection"
+        "Tension à noter : la décision du Bureau Métropolitain d'octobre 2025 avait déjà écarté un terminus positionné à la gare elle-même (\"au-delà de la gare\"), plusieurs mois avant que Jean-René Houssin ne fasse campagne (fév. 2026) sur un terminus précisément à la gare SNCF — sa position semble donc en délicate position vis-à-vis d'un cadrage déjà posé par la métropole avant son élection",
+        "09/07/2026 (Ouest-France) : depuis le changement de majorité municipale à Bruz et de vice-président métropolitain aux mobilités, Rennes Métropole étudie 3 nouveaux scénarios de desserte : arrêt simple à la gare, navettes électriques depuis la gare vers les quartiers, ou renforcement des lignes de bus 91/59 gare↔centre-ville. Le maire Jean-René Houssin, qui a rencontré la présidente de Rennes Métropole Nathalie Appéré sur ce dossier, affirme que « les acteurs en responsabilité... ont pris acte du choix des Bruzois d'avoir un terminus à la gare »",
+        "Ces études supplémentaires rallongent le calendrier d'au moins un an — livraison désormais anticipée en 2031-2032 (contre 2030-2031 précédemment annoncé)",
+        "Débat sur le cadencement : Patrick Roullé (délégué mobilités) juge irréaliste l'objectif de 16 000 voyages/jour à terme face aux 4 600 voyages/jour actuels à Bruz, comptages municipaux à l'appui (faible trafic centre-ville après 18h) ; le financement d'éventuelles navettes reste non tranché, Rennes Métropole ayant mandaté un bureau d'études sur cette option",
+        "Le maire n'exclut pas un prolongement du tracé vers le centre-ville à plus long terme (« dans 10, 20 ou 30 ans ») mais le juge non adapté aujourd'hui, la gare étant à 500 m du centre-bourg"
       ],
       "qui_decide": [
         {
@@ -53,7 +57,9 @@
       "ce_quon_suit": [
         "Le choix final entre les deux variantes centre-ville (courte : Parc de la Herverie / longue-prolongée : au-delà du Vau-Gaillard vers l'est) — non tranché à ce jour (04/07/2026)",
         "Les votes de Bruz au Conseil Métropolitain : Jean-René Houssin tient-il sa position ?",
-        "L'évolution du PLU autour de Ker Lann — densification acceptée ou bloquée ?"
+        "L'évolution du PLU autour de Ker Lann — densification acceptée ou bloquée ?",
+        "Quel scénario sera retenu parmi les 3 nouveaux à l'étude (arrêt gare seul / navettes / renfort lignes 91-59) — Rennes Métropole reste discrète, discussions en cours",
+        "Qui financera d'éventuelles navettes électriques si ce scénario est retenu"
       ],
       "sources": [
         {
@@ -71,9 +77,20 @@
         {
           "label": "Ville de Bruz — Trambus ligne T4 : retour sur la concertation",
           "url": "https://www.ville-bruz.fr/actualites/trambus-ligne-t4-retour-sur-la-concertation/"
+        },
+        {
+          "label": "Ouest-France — Trambus à Bruz : terminus à la gare, navettes… quels sont les nouveaux scénarios à l'étude ? (09/07/2026)",
+          "url": "https://www.ouest-france.fr/bretagne/bruz-35170/trambus-a-bruz-terminus-a-la-gare-navettes-quels-sont-les-nouveaux-scenarios-a-letude-eb831686-7a22-11f1-a705-e1977a1c2ed8"
         }
       ],
       "actus_recentes": [
+        {
+          "date": "2026-07-09",
+          "titre": "Trambus à Bruz : terminus à la gare, navettes… quels sont les nouveaux scénarios à l'étude ?",
+          "detail": "Rennes Métropole étudie 3 nouveaux scénarios (arrêt gare, navettes, renfort lignes 91/59) suite au changement de majorité à Bruz. Calendrier rallongé d'au moins un an, livraison visée 2031-2032. Débat sur le cadencement projeté (16 000 voyages/jour jugés irréalistes face aux 4 600 actuels).",
+          "source_url": "https://www.ouest-france.fr/bretagne/bruz-35170/trambus-a-bruz-terminus-a-la-gare-navettes-quels-sont-les-nouveaux-scenarios-a-letude-eb831686-7a22-11f1-a705-e1977a1c2ed8",
+          "source_label": "Ouest-France"
+        },
         {
           "date": "2026-07-08",
           "titre": "Rejoignez le Comité mobilités",
