@@ -1607,7 +1607,9 @@
         "Bruz comptait 464 enfants de moins de 3 ans au 31/12/2023 — 3e commune de la métropole derrière Rennes (6 625) et Saint-Jacques-de-la-Lande (522). Sur 10 ans, la commune enregistre en moyenne 172 naissances et 111 décès par an (solde naturel +62/an) — une natalité locale stable, pas en forte hausse",
         "Le besoin scolaire projeté pour la ZAC Multisites (+850 élèves) tient donc surtout à l'arrivée de nouveaux ménages avec enfants dans les logements neufs, pas à un sursaut de la natalité bruzoise — un profil partagé avec d'autres communes de 2e couronne en croissance (Corps-Nuds, Saint-Armel, Parthenay-de-Bretagne)",
         "Bruz héberge aussi un collège public (Pierre Brossolette) et un lycée public (Anita Conti) sur son territoire, ainsi qu'un ensemble privé sous contrat (écoles primaires La Providence Centre et Vert Buisson + collège-lycée Saint-Joseph, rattachés à l'ensemble scolaire Sainte-Théodore-Guérin) — l'offre scolaire bruzoise ne se limite donc pas au primaire ni au seul public",
-        "Le programme municipal du mandat (portefeuille Éducation, Enfance et Jeunesse porté par Françoise Lotton) prévoit d'« étendre la sécurité aux entrées et sorties de toutes les écoles avec la présence d'un agent » — engagement de campagne distinct de la question des capacités d'accueil, à suivre séparément"
+        "Le programme municipal du mandat (portefeuille Éducation, Enfance et Jeunesse porté par Françoise Lotton) prévoit d'« étendre la sécurité aux entrées et sorties de toutes les écoles avec la présence d'un agent » — engagement de campagne distinct de la question des capacités d'accueil, à suivre séparément",
+        "03/07/2026 (délib. 26-07-9, adoptée à l'unanimité) : le marché de travaux du 4e groupe scolaire Ker Lann Sud est chiffré — 6,76 M€ HT / 8,11 M€ TTC pour les 22 lots de construction (attribués en septembre 2024), plus ~31 400 € HT d'avenants d'ajustement de chantier votés sur 5 lots (serrurerie, parois/menuiseries, chauffage-ventilation, électricité, équipements de cuisine). Le programme prévoit un bâtiment évolutif (8 classes en phase 1, jusqu'à 14 à terme), un ALSH de 115 places extensible, une restauration sur site, et une ambition environnementale forte (label PassivHaus visé sans certification, neutralité carbone RE2020, photovoltaïque en toiture)",
+        "03/07/2026 (délib. 26-07-29, adoptée à l'unanimité) : le contenu des « mesures de carte scolaire rentrée 2026-2027 » est connu — l'Inspection Académique 35 a notifié le retrait définitif d'un poste à l'école Vert Buisson et d'un poste à l'école Champ l'Évêque (courrier du 7 avril 2026). Selon l'Inspection, ces retraits n'ont pas d'impact sur la capacité d'accueil des deux établissements ; la commune ne peut que « prendre acte » de décisions relevant de l'autorité académique"
       ],
       "qui_decide": [
         {
@@ -1632,10 +1634,20 @@
           "date": "2026-04",
           "description": "CM installation : délégation Éducation, Enfance et Jeunesse attribuée à Françoise Lotton (9e adjointe)",
           "source_url": "https://www.ville-bruz.fr/wp-content/uploads/2026/05/Bruz-Mag-n%C2%B0260-de-mai-juin-2026.pdf"
+        },
+        {
+          "date": "2026-07-03",
+          "description": "Délib. 26-07-9 — Marché de travaux du 4e groupe scolaire Ker Lann Sud (école primaire 14 classes, ALSH 115 places, restauration) : avenants d'ajustement de chantier votés sur 5 lots (~31 400 € HT). Coût total travaux : 8,11 M€ TTC",
+          "source_url": "https://data.megalis.bretagne.bzh/organization/commune-de-bruz"
+        },
+        {
+          "date": "2026-07-03",
+          "description": "Délib. 26-07-29 — Mesures de carte scolaire rentrée 2026-2027 : retrait d'un poste à Vert Buisson et d'un poste à Champ l'Évêque (décision Inspection Académique 35, sans impact annoncé sur la capacité d'accueil)",
+          "source_url": "https://data.megalis.bretagne.bzh/organization/commune-de-bruz"
         }
       ],
       "ce_quon_suit": [
-        "CM du 3 juillet 2026 (41 délibérations à l'ordre du jour) : marché de travaux pour le 4e groupe scolaire Ker Lann Sud (école + ALSH + restauration) ET mesures de carte scolaire rentrée 2026-2027 étaient tous deux à l'ordre du jour — résultats des votes pas encore publiés (PV en attente sur Mégalis au 04/07/2026)",
+        "Les votes des deux délibérations du CM du 3 juillet (marché de travaux Ker Lann Sud, mesures de carte scolaire) sont désormais publiés sur Mégalis (07/07/2026) — les deux ont été adoptées à l'unanimité. Reste à surveiller : le calendrier de livraison de la phase 1 (8 classes) et le détail des autres points du CM du 3 juillet, encore en cours de publication sur Mégalis",
         "Le plan scolaire du mandat — combien d'élèves supplémentaires prévus, quelle réponse ?",
         "Toute délibération sur la construction ou l'extension d'une école primaire",
         "Les ouvertures/fermetures de classes annoncées par l'Inspection Académique 35",
@@ -1668,6 +1680,10 @@
           "label": "Insee — Naissances et décès domiciliés 2014-2021, commune de Bruz (35047)",
           "url": "https://www.insee.fr/fr/statistiques/6530998?geo=COM-35047",
           "url_expiree": true
+        },
+        {
+          "label": "Mégalis Bretagne — Délib. 26-07-9 (marché travaux Ker Lann Sud) et 26-07-29 (carte scolaire 2026-2027), CM du 03/07/2026",
+          "url": "https://data.megalis.bretagne.bzh/organization/commune-de-bruz"
         }
       ],
       "actus_recentes": [
