@@ -29,6 +29,10 @@ const DOSSIER_COLORS: Record<string, string> = {
   D09: "#db2777", // culture — rose
   D10: "#ea580c", // éducation — orange
   D11: "#65a30d", // patrimoine — vert clair
+  D12: "#a21caf", // équipements sportifs — fuchsia
+  D13: "#ca8a04", // environnement/canicule — jaune
+  D15: "#16a34a", // santé — vert
+  D16: "#78716c", // économie — gris chaud
   D20: "#0d9488", // campus/étudiant — teal
 };
 
