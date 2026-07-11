@@ -27,6 +27,9 @@
 - [ ] **D19 (à créer)** — Équipements sportifs à Bruz : vue d'ensemble gymnases/terrains/city stades, au-delà du seul D12 (city stade Siméon Beliard) et D06 (piscine) — vérifier chevauchement avant création
 - [ ] **D20 en profondeur** — Ker Lann : « My Campus Rennes Ker Lann » (78 logements privés LMNP, Bouygues) trouvé et documenté, livraison T4 2027 à vérifier ; toujours aucune résidence CROUS/conventionnée identifiée — creuser cette piste spécifiquement
 - [ ] **idees_ailleurs** — alimenter les dossiers D01–D12 avec des pratiques d'autres communes (champ JSON en place, vide sur tous sauf D13)
+- [ ] **D21 (nouveau, Culture)** — créé le 11/07 suite revue éditoriale (Grand Logis, programmation culturelle) : `decisions` vide, pas d'image, une seule actu — à enrichir dès que la mairie communique plus de détails
+- [ ] **Images manquantes** — D05, D12, D15, D16, D20, D21 n'ont pas d'illustration
+- [ ] **D15, D16 — `decisions` vide** — dossiers "en cours" sans aucune décision tracée à ce jour, à vérifier si des décisions existent (CM, arrêtés) qui n'ont pas encore été rattachées
 
 ## 🟡 À faire — Design & Illustrations
 
