@@ -11,6 +11,7 @@ const NAV_GROUPS = [
     links: [
       { href: "/bruz-en-action/dossiers", label: "📁 Dossiers" },
       { href: "/bruz-en-action/conseils", label: "🏛️ Conseils" },
+      { href: "/bruz-en-action/publications", label: "📰 Publications" },
       { href: "/bruz-en-action/chronologie", label: "🕐 Chronologie" },
       { href: "/bruz-en-action/metropole", label: "🏙️ Métropole" },
     ],

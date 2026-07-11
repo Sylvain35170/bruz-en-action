@@ -33,8 +33,9 @@ Objectif : suivre les engagements de la majorité municipale de Bruz (mandat 202
 | `promesses.json` | 50 promesses du programme municipal |
 | `elus.json` | 33 élus 2026-2032 (maire + adjoints + délégués + opposition) |
 | `actus.json` | Actualités (schema + seeds) |
-| `cms.json` | Comptes-rendus CMs |
+| `cms.json` | Comptes-rendus CMs — séances de conseil municipal **uniquement** |
 | `cms_megalis_2026.json` | Délibérations Mégalis enrichies |
+| `bulletins.json` | Bruz Mag + Semaine à Bruz — distinct de `cms.json` (voir piège 2026-07-11) |
 | `evenements.json` | Agenda |
 | `meta.json` | Description asso, bureau, contacts, sources surveillées |
 
@@ -54,6 +55,7 @@ Champs clés : `featured` (bool), `last_activity` (date ISO), `actus_recentes` (
 /dossiers/[id]      Détail dossier
 /conseils           Timeline CMs + section Rennes Métropole
 /conseils/[id]      Détail CM (délibérations, points clés, à surveiller)
+/publications       Bruz Mag + Semaine à Bruz (data/bulletins.json)
 /promesses          Tableau de bord promesses
 /promesses/[id]     Détail promesse
 /elus               Liste 33 élus
@@ -130,6 +132,11 @@ Convention pour les liens confirmés morts sans alternative trouvée : ajouter `
 ---
 
 ## Pièges connus
+### 2026-07-11 — bruz-en-action : Bruz Mag/Semaine à Bruz mélangés aux séances de CM
+- **`agent_bruz_mag.py` injectait les bulletins municipaux (Bruz Mag, Semaine à Bruz) dans le même "seances" que les séances de conseil municipal (`cms.json`)**, avec un champ `type` pour les distinguer — mais rien côté site ne filtrait dessus. Résultat : `/conseils` affichait des bulletins comme s'ils étaient des CM, avec leur propre page `/conseils/SAB-858`.
+- **Fix** : nouveau fichier `data/bulletins.json` (schéma propre, sans `statut`), nouvelle page `/publications` (ajoutée à la nav). `agent_bruz_mag.py` écrit désormais dans `bulletins.json`. `cms.json` ne contient plus que des séances CM — `/conseils` n'a plus besoin de filtrer.
+- **Repère pour la suite** : toute nouvelle source de veille doit avoir son propre fichier `data/*.json` si elle n'est pas structurellement une actu (`actus.json`) ou une séance de CM (`cms.json`) — ne pas réutiliser un tableau existant "parce que c'est proche".
+
 ### 2026-07-10 — bruz-en-action : pages mairie réutilisées en place (dédup URL insuffisante)
 - **La mairie republie certaines pages d'alerte à la même URL** au lieu d'en créer une nouvelle — ex. `/actualites/vigilance-canicule/` est passée de "Vigilance jaune canicule" (18/06/2026) à "Vigilance rouge canicule" (10/07/2026) sans changer d'adresse. `known_urls()` dédupliquant uniquement par `source_url`, ce type de mise à jour était silencieusement ignoré par `agent_mairie.py`.
 - **Fix** : `utils.check_content_changed(url, texte)` hash le texte du bloc scrapé et le compare au dernier hash connu (registre local `scripts/proposals/content_hashes.json`, gitignoré). `agent_mairie.py` requeue désormais l'item avec un id distinct (`stable_id(url + "#" + today())`, suffixe "(mise à jour)") quand une URL déjà connue a changé de contenu — pas de collision avec la décision de revue déjà prise sur l'ancienne version.

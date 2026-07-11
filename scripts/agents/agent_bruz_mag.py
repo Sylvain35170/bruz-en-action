@@ -6,7 +6,8 @@ Agent Bruz Mag — Détection des bulletins municipaux de Bruz.
 Scrape /ma-ville-de-bruz/bulletins-municipaux/ pour détecter :
 - Un nouveau Bruz Mag (bimestriel, n°260…)
 - Une nouvelle Semaine à Bruz (bimensuel, n°856…)
-Les deux sont injectés dans data/cms.json.
+Les deux sont injectés dans data/bulletins.json — distinct de data/cms.json (séances de
+conseil municipal uniquement, voir piège 2026-07-11 dans CLAUDE.md).
 """
 
 import re
@@ -90,20 +91,22 @@ def extract_mag_summary(pdf_bytes: bytes) -> list[str]:
 
 
 def run() -> bool:
-    cms = load_json(DATA_DIR / "cms.json")
+    bulletins_data = load_json(DATA_DIR / "bulletins.json")
+    bulletins_data.setdefault("bulletins", [])
+    bulletins_data.setdefault("meta", {})
     known_mag_nums: set[int] = set()
     known_semaine_nums: set[int] = set()
 
-    # Numéros déjà connus depuis les sources cms.json
-    for seance in cms.get("seances", []):
-        for src in seance.get("sources", []):
+    # Numéros déjà connus depuis les sources bulletins.json
+    for bulletin in bulletins_data["bulletins"]:
+        for src in bulletin.get("sources", []):
             combined = src.get("label", "") + src.get("url", "")
             if m := MAG_PATTERN.search(combined):
                 known_mag_nums.add(int(m.group(1)))
             if m := SEMAINE_PATTERN.search(combined):
                 known_semaine_nums.add(int(m.group(1)))
 
-    meta = cms.get("meta", {})
+    meta = bulletins_data["meta"]
     if meta.get("dernier_bruz_mag"):
         known_mag_nums.add(int(meta["dernier_bruz_mag"]))
     if meta.get("derniere_semaine_bruz"):
@@ -146,34 +149,32 @@ def run() -> bool:
         return False
 
     for mag in new_mags:
-        cms["seances"].insert(0, {
+        bulletins_data["bulletins"].insert(0, {
             "id": f"BM-{mag['numero']}",
             "date": today(),
-            "statut": "passe",
             "titre": mag["titre"],
             "points_cles": mag["points_cles"],
             "sources": [{"label": mag["titre"], "url": mag["url"]}],
             "type": "bruz_mag",
         })
     for sem in new_semaines:
-        cms["seances"].insert(0, {
+        bulletins_data["bulletins"].insert(0, {
             "id": f"SAB-{sem['numero']}",
             "date": today(),
-            "statut": "passe",
             "titre": sem["titre"],
             "points_cles": sem["points_cles"],
             "sources": [{"label": sem["titre"], "url": sem["url"]}],
             "type": "semaine_bruz",
         })
 
+    bulletins_data["bulletins"].sort(key=lambda b: b.get("date", ""), reverse=True)
     meta["last_updated"] = today()
     if new_mags:
         meta["dernier_bruz_mag"] = max(m["numero"] for m in new_mags)
     if new_semaines:
         meta["derniere_semaine_bruz"] = max(s["numero"] for s in new_semaines)
-    cms["meta"] = meta
-    save_json(DATA_DIR / "cms.json", cms)
-    log(f"Bulletins : {len(new_mags)} Bruz Mag, {len(new_semaines)} Semaine à Bruz → cms.json", "OK")
+    save_json(DATA_DIR / "bulletins.json", bulletins_data)
+    log(f"Bulletins : {len(new_mags)} Bruz Mag, {len(new_semaines)} Semaine à Bruz → bulletins.json", "OK")
     return True
 
 

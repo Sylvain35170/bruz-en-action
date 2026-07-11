@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "last_updated": "2026-07-11",
+    "note": "Bulletins municipaux (Bruz Mag, Semaine à Bruz) — distincts des séances de conseil municipal (cms.json)"
+  },
+  "bulletins": [
+    {
+      "id": "SAB-858",
+      "date": "2026-07-09",
+      "titre": "Semaine à Bruz n°858 — du 9 juillet au 27 août 2026 (spécial été)",
+      "points_cles": [
+        "Du 09/07 Au 27/08 Bimensuel D’Information De La Ville De Bruz",
+        "Exposition Photo Vivez La Fête",
+        "Plein Air 2026 Nationale À Bruz",
+        "À Voir, À Faire",
+        "Www.Ville-Bruz.Fr",
+        "Infos Pratiques",
+        "S A C G O N La",
+        "Cité Et Médiation",
+        "Horaires D'Été",
+        "02 99 05 44 52 Boulangeries"
+      ],
+      "sources": [
+        {
+          "label": "Télécharger(ouverture dans un nouvel onglet)",
+          "url": "https://www.ville-bruz.fr/wp-content/uploads/2026/07/Semaine-a-Bruz-n°858-special-ete-du-9-juillet-au-27-aout-2026.pdf"
+        }
+      ],
+      "type": "semaine_bruz"
+    },
+    {
+      "id": "SAB-857",
+      "date": "2026-06-27",
+      "titre": "Semaine à Bruz n°857 — du 25 juin au 9 juillet 2026",
+      "points_cles": [
+        "Du 25/06 Au 09/07 Bimensuel D’Information De La Ville De Bruz",
+        "Championnat De Week-End",
+        "Infos Pratiques",
+        "Associations",
+        "Du 25 Juin Au 9 Juillet",
+        "À Voir, À Faire",
+        "Accompagnements",
+        "Numéros D'Urgence",
+        "Contacts / Horaires",
+        "L'Escale En Fête !"
+      ],
+      "sources": [
+        {
+          "label": "Télécharger(ouverture dans un nouvel onglet)",
+          "url": "https://www.ville-bruz.fr/wp-content/uploads/2026/06/Semaine-a-Bruz-n°857-du-25-juin-au-9-juillet-2026.pdf"
+        }
+      ],
+      "type": "semaine_bruz"
+    },
+    {
+      "id": "BM-259",
+      "date": "2026-03-15",
+      "titre": "Bruz Mag #259 — Mars-Avril 2026",
+      "points_cles": [
+        "Vie municipale — Les élections municipales",
+        "Grand Angle — La ville et les autres collectivités",
+        "Mode d'emploi — Du choix au prêt, le parcours des documents"
+      ],
+      "sources": [
+        {
+          "label": "Bruz Mag #259 (PDF)",
+          "url": "https://www.ville-bruz.fr/wp-content/uploads/2026/02/Bruz-Mag-n°259-mars-avril-2026.pdf"
+        }
+      ],
+      "type": "bruz_mag"
+    },
+    {
+      "id": "BM-258",
+      "date": "2026-01-15",
+      "titre": "Bruz Mag #258 — Janvier-Février 2026",
+      "points_cles": [
+        "Transition(S)",
+        "Jeunes Maraîchers",
+        "Grand Angle Terres Durables",
+        "Grandir Ensemble — Les écoles au cœur de la vie locale",
+        "Traversée Outre-Manche",
+        "Sur grand écran"
+      ],
+      "sources": [
+        {
+          "label": "Bruz Mag #258 (PDF)",
+          "url": "https://www.ville-bruz.fr/wp-content/uploads/2026/03/Bruz-Mag-n°258-Janvier-fevrier-2026.pdf"
+        }
+      ],
+      "type": "bruz_mag"
+    }
+  ]
+}
