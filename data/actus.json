@@ -1,9 +1,19 @@
 {
   "meta": {
-    "last_updated": "2026-07-10",
+    "last_updated": "2026-07-11",
     "note": "Actus de suivi des promesses — une actu = un événement daté lié à une ou plusieurs promesses"
   },
   "actus": [
+    {
+      "id": "presse-f2c23dbc",
+      "titre": "Programmation, événement d'ampleur, jauge du Grand Logis… Quels projets pour la culture à Bruz ? - Ouest-France",
+      "date": "2026-07-10",
+      "detail": "La municipalité de Bruz élabore une nouvelle programmation culturelle avec des événements d'envergure pour enrichir l'offre aux habitants de Bruz. Ces projets incluent l'optimisation de la jauge et des usages du Grand Logis, équipement municipal clé.",
+      "source_url": "https://consent.google.com/ml?continue=https://news.google.com/rss/articles/CBMihgJBVV95cUxOOC1jQXp0ZTJlLXk5a3Q1aWN3T1JxWDZoeWxVTl95NHA5Tm5mNzBnUUU2U2ZSaGdJcklpV0JzRTJEaVZKZnZHVGZMbXJKZG1lY3F3X2MtbThpbDM5bVJjSHIwamMxRmhXNTZTVlhUSW50UnJZV002NkpzcEhGVVplVHZKdmgzcHM4TkFuY2t2NGlXVmMwTk54RzFfZU5XSFBWdFlqcTVQaU5CVjFVejA1NTR3S3pURmQzaU",
+      "source_label": "Équipements Bruz",
+      "type": "presse",
+      "dossier": "D21"
+    },
     {
       "id": "presse-745dd690",
       "titre": "Ventes de places de parking en centre-ville, l'opposition dénonce « une grande braderie » à Bruz - Ouest-France",

@@ -77,6 +77,13 @@ def run() -> bool:
         d["id"]: {a.get("source_url", "") for a in d.get("actus_recentes", []) if a.get("source_url")}
         for d in dossiers
     }
+    # Une même actu (même date + même titre) peut avoir plusieurs sources
+    # (Mégalis, Bruz Mag, Semaine à Bruz, YouTube pour un même CM) — ne garder
+    # qu'une entrée par (date, titre) et par dossier, quelle que soit l'URL.
+    known_events_by_dossier: dict[str, set[tuple[str, str]]] = {
+        d["id"]: {(a.get("date", ""), a.get("titre", "")) for a in d.get("actus_recentes", [])}
+        for d in dossiers
+    }
 
     injected = 0
 
@@ -92,8 +99,12 @@ def run() -> bool:
             if not url:
                 continue  # ignorer les actus sans URL (évite les doublons)
             news = build_news_item(actu, "Presse / Mairie")
+            event_key = (news["date"], news["titre"])
+            if event_key in known_events_by_dossier[dossier_id]:
+                continue
             dossier_map[dossier_id]["actus_recentes"].insert(0, news)
             known_urls_by_dossier[dossier_id].add(url)
+            known_events_by_dossier[dossier_id].add(event_key)
             # Mettre à jour last_activity si plus récent
             if news["date"] > dossier_map[dossier_id].get("last_activity", ""):
                 dossier_map[dossier_id]["last_activity"] = news["date"]
@@ -107,6 +118,11 @@ def run() -> bool:
         for dossier_id in match_dossier(texte):
             if dossier_id not in dossier_map:
                 continue
+            event_key = (seance.get("date", today()), seance.get("titre", "")[:120])
+            if event_key in known_events_by_dossier[dossier_id]:
+                continue
+            # Une seule entrée par séance : on prend la première source dont
+            # l'URL n'est pas déjà connue (sources listées par ordre de fiabilité).
             for src in seance.get("sources", []):
                 url = src.get("url", "")
                 if url in known_urls_by_dossier[dossier_id]:
@@ -120,11 +136,13 @@ def run() -> bool:
                 }
                 dossier_map[dossier_id]["actus_recentes"].insert(0, news)
                 known_urls_by_dossier[dossier_id].add(url)
+                known_events_by_dossier[dossier_id].add(event_key)
                 if news["date"] > dossier_map[dossier_id].get("last_activity", ""):
                     dossier_map[dossier_id]["last_activity"] = news["date"]
                     dossier_map[dossier_id]["featured"] = True
                 injected += 1
                 log(f"  🆕 [{dossier_id}] ← CM {seance['date']}", "NEW")
+                break
 
     # Garder max 20 actus par dossier (les plus récentes en tête)
     for d in dossiers:

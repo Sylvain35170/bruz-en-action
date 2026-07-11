@@ -1,9 +1,34 @@
 {
   "meta": {
     "last_updated": "2026-07-11",
-    "note": "Bulletins municipaux (Bruz Mag, Semaine à Bruz) — distincts des séances de conseil municipal (cms.json)"
+    "note": "Bulletins municipaux (Bruz Mag, Semaine à Bruz) — distincts des séances de conseil municipal (cms.json)",
+    "dernier_bruz_mag": 260
   },
   "bulletins": [
+    {
+      "id": "BM-260",
+      "date": "2026-07-11",
+      "titre": "Télécharger(ouverture dans un nouvel onglet)",
+      "points_cles": [
+        "Mai - Juin 2026 I #260",
+        "Vie Municipale",
+        "Grand Angle",
+        "En Mouvement",
+        "La Mise En Place",
+        "De La Nouvelle",
+        "Le Week-End",
+        "Buissonnier",
+        "Www.Ville-Bruz.Fr",
+        "Le Concours"
+      ],
+      "sources": [
+        {
+          "label": "Télécharger(ouverture dans un nouvel onglet)",
+          "url": "https://www.ville-bruz.fr/wp-content/uploads/2026/05/Bruz-Mag-n°260-de-mai-juin-2026.pdf"
+        }
+      ],
+      "type": "bruz_mag"
+    },
     {
       "id": "SAB-858",
       "date": "2026-07-09",

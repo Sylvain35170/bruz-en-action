@@ -132,6 +132,11 @@ Convention pour les liens confirmés morts sans alternative trouvée : ajouter `
 ---
 
 ## Pièges connus
+### 2026-07-11 — bruz-en-action : agent_dossiers recréait des doublons à chaque run
+- **`agent_dossiers.py` ne dédupliquait `actus_recentes` que par `source_url`** (`known_urls_by_dossier`) — pas par (date, titre). Or une même séance de CM a plusieurs sources (convocation Mégalis, Semaine à Bruz, Bruz Mag, vidéo/audio YouTube) et un même dossier peut matcher plusieurs mots-clés : résultat, chaque run d'`agent_dossiers` réinjectait un doublon de l'événement déjà présent avec une URL différente. Les dossiers dédupliqués à la main (D01-D07, D10, D12, D13) redevenaient sales dès le prochain `agent_dossiers` post-revue.
+- **Fix** : ajout de `known_events_by_dossier` (clé `(date, titre)`) en plus de `known_urls_by_dossier`. Branche `actus.json` : skip si l'event_key existe déjà. Branche `cms.json` : une seule source insérée par séance (la première non déjà connue), `break` après insertion — plus de boucle sur toutes les sources d'une même séance.
+- **Vérifié idempotent** : un second `agent_dossiers` juste après ne réinjecte rien ("aucune nouvelle info à injecter").
+
 ### 2026-07-11 — bruz-en-action : Bruz Mag/Semaine à Bruz mélangés aux séances de CM
 - **`agent_bruz_mag.py` injectait les bulletins municipaux (Bruz Mag, Semaine à Bruz) dans le même "seances" que les séances de conseil municipal (`cms.json`)**, avec un champ `type` pour les distinguer — mais rien côté site ne filtrait dessus. Résultat : `/conseils` affichait des bulletins comme s'ils étaient des CM, avec leur propre page `/conseils/SAB-858`.
 - **Fix** : nouveau fichier `data/bulletins.json` (schéma propre, sans `statut`), nouvelle page `/publications` (ajoutée à la nav). `agent_bruz_mag.py` écrit désormais dans `bulletins.json`. `cms.json` ne contient plus que des séances CM — `/conseils` n'a plus besoin de filtrer.
