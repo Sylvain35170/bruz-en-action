@@ -133,6 +133,10 @@ export default function NavBar() {
             <a href={reseaux_sociaux.facebook} target="_blank" rel="noopener noreferrer"
               style={{ fontSize: 13, color: "rgba(255,255,255,0.6)", textDecoration: "none", marginLeft: 8 }}>Facebook</a>
           )}
+          {reseaux_sociaux.instagram && (
+            <a href={reseaux_sociaux.instagram} target="_blank" rel="noopener noreferrer"
+              style={{ fontSize: 13, color: "rgba(255,255,255,0.6)", textDecoration: "none", marginLeft: 8 }}>Instagram</a>
+          )}
           {contact.hello_asso_url && (
             <a href={contact.hello_asso_url} target="_blank" rel="noopener noreferrer"
               style={{ padding: "8px 18px", borderRadius: 999, background: "#f97316", color: "#fff", fontSize: 13, fontWeight: 700, textDecoration: "none", marginLeft: 8 }}>
@@ -231,6 +235,12 @@ export default function NavBar() {
                 <a href={reseaux_sociaux.facebook} target="_blank" rel="noopener noreferrer" onClick={() => setOpen(false)}
                   className="bea-drawer-link" style={{ fontSize: 15, fontWeight: 500, color: "rgba(255,255,255,0.6)" }}>
                   📘 Facebook
+                </a>
+              )}
+              {reseaux_sociaux.instagram && (
+                <a href={reseaux_sociaux.instagram} target="_blank" rel="noopener noreferrer" onClick={() => setOpen(false)}
+                  className="bea-drawer-link" style={{ fontSize: 15, fontWeight: 500, color: "rgba(255,255,255,0.6)" }}>
+                  📷 Instagram
                 </a>
               )}
             </nav>

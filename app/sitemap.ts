@@ -3,6 +3,7 @@ import dossiers from "@/data/dossiers.json";
 import promessesData from "@/data/promesses.json";
 import cmsData from "@/data/cms.json";
 import metropoleData from "@/data/metropole.json";
+import actusData from "@/data/actus.json";
 
 export const dynamic = "force-static";
 
@@ -22,7 +23,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/liens`, priority: 0.5, changeFrequency: "monthly" },
     { url: `${BASE}/chronologie`, priority: 0.8, changeFrequency: "weekly" },
     { url: `${BASE}/programme`, priority: 0.8, changeFrequency: "yearly" },
+    { url: `${BASE}/publications`, priority: 0.7, changeFrequency: "weekly" },
+    { url: `${BASE}/coup-de-pouce`, priority: 0.5, changeFrequency: "monthly" },
   ];
+
+  const articleRoutes: MetadataRoute.Sitemap = actusData.actus
+    .filter((a) => a.type === "analyse" && "contenu" in a)
+    .map((a) => ({
+      url: `${BASE}/articles/${a.id}`,
+      priority: 0.6,
+      changeFrequency: "yearly" as const,
+      lastModified: a.date ?? undefined,
+    }));
 
   const dossierRoutes: MetadataRoute.Sitemap = dossiers.dossiers.map((d) => ({
     url: `${BASE}/dossiers/${d.id}`,
@@ -51,5 +63,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: d.last_activity,
   }));
 
-  return [...staticRoutes, ...dossierRoutes, ...promesseRoutes, ...cmRoutes, ...metropoleRoutes];
+  return [...staticRoutes, ...articleRoutes, ...dossierRoutes, ...promesseRoutes, ...cmRoutes, ...metropoleRoutes];
 }

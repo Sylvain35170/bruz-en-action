@@ -8,10 +8,10 @@ import type { Pilier, Statut, Promesse } from "../../types";
 
 export const metadata = {
   title: "Suivi des promesses — Bruz en Action",
-  description: "Les 50 engagements du programme municipal de Bruz 2026-2031, suivis depuis leur source publique.",
+  description: "Les 50 engagements du programme municipal de Bruz 2026-2032, suivis depuis leur source publique.",
   openGraph: {
     title: "Suivi des promesses — Bruz en Action",
-    description: "Les 50 engagements du programme municipal de Bruz 2026-2031, suivis depuis leur source publique.",
+    description: "Les 50 engagements du programme municipal de Bruz 2026-2032, suivis depuis leur source publique.",
     url: "https://sylvain35170.github.io/bruz-en-action/promesses",
     siteName: "Bruz en Action",
     locale: "fr_FR",
@@ -54,7 +54,7 @@ export default function Promesses() {
             Les {total} engagements du mandat
           </h1>
           <p style={{ fontSize: 15, color: "rgba(255,255,255,0.7)", margin: "0 0 16px", maxWidth: 560 }}>
-            Chaque promesse du programme 2026-2031, suivie depuis sa source publique.
+            Chaque promesse du programme 2026-2032, suivie depuis sa source publique.
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 28, flexWrap: "wrap" }}>
             <span style={{ fontSize: 12, fontWeight: 600, color: "rgba(255,255,255,0.5)", background: "rgba(255,255,255,0.08)", border: "1px solid rgba(255,255,255,0.15)", borderRadius: 999, padding: "4px 12px" }}>

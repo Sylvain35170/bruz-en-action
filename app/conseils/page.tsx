@@ -8,10 +8,10 @@ const LOGO = "/bruz-en-action/logo.png";
 
 export const metadata = {
   title: "Conseils municipaux — Bruz en Action",
-  description: "Suivi des séances du conseil municipal de Bruz 2026-2031 : résumés, délibérations, décisions de Rennes Métropole impactant Bruz.",
+  description: "Suivi des séances du conseil municipal de Bruz 2026-2032 : résumés, délibérations, décisions de Rennes Métropole impactant Bruz.",
   openGraph: {
     title: "Conseils municipaux — Bruz en Action",
-    description: "Suivi des séances du conseil municipal de Bruz 2026-2031 : résumés, délibérations, décisions de Rennes Métropole impactant Bruz.",
+    description: "Suivi des séances du conseil municipal de Bruz 2026-2032 : résumés, délibérations, décisions de Rennes Métropole impactant Bruz.",
     url: "https://sylvain35170.github.io/bruz-en-action/conseils",
     siteName: "Bruz en Action",
     locale: "fr_FR",
@@ -55,7 +55,7 @@ export default function Conseils() {
             Démocratie locale
           </span>
           <h1 style={{ fontSize: "clamp(1.5rem,3vw,2.2rem)", fontWeight: 800, lineHeight: 1.2, margin: "0 0 16px", color: "#fff" }}>
-            Conseils municipaux 2026–2031
+            Conseils municipaux 2026–2032
           </h1>
           <p style={{ fontSize: 16, color: "rgba(255,255,255,0.75)", maxWidth: 640, lineHeight: 1.7, margin: 0 }}>
             Résumés des séances, délibérations clés et décisions de Rennes Métropole impactant Bruz.
@@ -281,7 +281,7 @@ export default function Conseils() {
                   <span style={{ fontWeight: 700, color: "#0f172a" }}>{val}</span>
                 </div>
               ))}
-              <a href="/bruz-en-action#elus" style={{ display: "inline-block", marginTop: 12, fontSize: 12, color: "#2563eb" }}>
+              <a href="/bruz-en-action/elus" style={{ display: "inline-block", marginTop: 12, fontSize: 12, color: "#2563eb" }}>
                 Voir tous les élus →
               </a>
             </div>

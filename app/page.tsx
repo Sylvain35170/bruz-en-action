@@ -1,5 +1,5 @@
 import NavBar from "../components/NavBar";
-const LOGO = "/bruz-en-action/logo.png";
+import SiteFooter from "../components/SiteFooter";
 
 const CATEGORIE_COLOR: Record<string, string> = {
   Mobilités: "#0369a1",
@@ -176,6 +176,10 @@ export default function Home() {
             <p style={{ fontSize: 16, color: "#475569", lineHeight: 1.75, margin: "0 0 16px" }}>
               <strong>Bruz En Action</strong> {association.mission}
             </p>
+            <p style={{ fontSize: 15, color: "#64748b", lineHeight: 1.7, margin: "0 0 16px" }}>
+              L&apos;association est née de l&apos;engagement de citoyens ayant soutenu Jean-René Houssin et la liste <em>« Un nouvel élan pour Bruz »</em>.
+              Notre seule boussole : l&apos;amélioration concrète du quotidien des Bruzois.
+            </p>
             <p style={{ fontSize: 15, color: "#64748b", lineHeight: 1.7, margin: "0 0 28px" }}>
               Nous croyons qu&apos;une ville se construit <strong>avec ses habitants</strong> — en favorisant le dialogue,
               soutenant les initiatives locales et participant activement à la vie de Bruz dans un esprit
@@ -190,6 +194,15 @@ export default function Home() {
                   Suivre sur Facebook
                 </a>
               )}
+              {reseaux_sociaux.instagram && (
+                <a href={reseaux_sociaux.instagram} target="_blank" rel="noopener noreferrer" style={{
+                  padding: "10px 20px", borderRadius: 999,
+                  background: "linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888)",
+                  color: "#fff", fontSize: 14, fontWeight: 700, textDecoration: "none",
+                }}>
+                  Suivre sur Instagram
+                </a>
+              )}
               {contact.hello_asso_url && (
                 <a href={contact.hello_asso_url} target="_blank" rel="noopener noreferrer" style={{
                   padding: "10px 20px", borderRadius: 999, border: "2px solid #f97316", color: "#f97316",
@@ -199,6 +212,23 @@ export default function Home() {
                 </a>
               )}
             </div>
+          </div>
+        </div>
+        <div style={{ maxWidth: "var(--container-max)", margin: "0 auto", padding: "0 var(--container-pad) 56px" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px,1fr))", gap: 16 }}>
+            {[
+              { icon: "📋", titre: "On suit", texte: "50 promesses documentées, sourcées, mises à jour au fil du mandat." },
+              { icon: "👂", titre: "On écoute", texte: "Les préoccupations des habitants. L'asso est le canal entre les Bruzois et leurs élus." },
+              { icon: "🤝", titre: "On transmet", texte: "Dialogue constructif avec la majorité. Bienveillant, sans complaisance." },
+            ].map(({ icon, titre, texte }) => (
+              <div key={titre} style={{ display: "flex", gap: 14, alignItems: "flex-start", background: "var(--surface-page)", border: "1px solid #e2e8f0", borderRadius: 10, padding: "16px 18px" }}>
+                <span style={{ fontSize: 22, flexShrink: 0 }}>{icon}</span>
+                <div>
+                  <p style={{ margin: "0 0 4px", fontWeight: 700, color: "#0f172a", fontSize: 14 }}>{titre}</p>
+                  <p style={{ margin: 0, color: "#64748b", fontSize: 13, lineHeight: 1.6 }}>{texte}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -353,7 +383,7 @@ export default function Home() {
           </div>
           <div style={{ maxWidth: 640 }}>
             <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 8 }}>
-              <span style={{ fontSize: 13, color: "#64748b" }}>Mandat 2026-2031</span>
+              <span style={{ fontSize: 13, color: "#64748b" }}>Mandat 2026-2032</span>
               <span style={{ fontSize: 15, fontWeight: 800, color: "#16a34a" }}>{score}% tenus</span>
             </div>
             <div style={{ height: 12, borderRadius: 999, background: "#f1f5f9", overflow: "hidden", display: "flex" }}>
@@ -420,33 +450,6 @@ export default function Home() {
         </section>
       )}
 
-      {/* ── QUI SOMMES-NOUS (mini) ── */}
-      <section style={{ background: "var(--surface-page)", borderBottom: "1px solid var(--border-subtle)" }}>
-        <div style={{ maxWidth: "var(--container-max)", margin: "0 auto", padding: "48px var(--container-pad)" }}>
-          <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#64748b", display: "block", marginBottom: 8 }}>Qui sommes-nous ?</span>
-          <h2 style={{ fontSize: "clamp(1.2rem,2vw,1.6rem)", fontWeight: 800, margin: "0 0 8px", color: "#0f172a" }}>Accompagner et valoriser le projet municipal</h2>
-          <p style={{ fontSize: 15, color: "#475569", margin: "0 0 28px", maxWidth: 640, lineHeight: 1.7 }}>
-            <strong>Bruz en Action</strong> est née de l'engagement de citoyens ayant soutenu Jean-René Houssin et la liste <em>« Un nouvel élan pour Bruz »</em>.
-            Notre seule boussole : l'amélioration concrète du quotidien des Bruzois.
-          </p>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px,1fr))", gap: 16 }}>
-            {[
-              { icon: "📋", titre: "On suit", texte: "50 promesses documentées, sourcées, mises à jour au fil du mandat." },
-              { icon: "👂", titre: "On écoute", texte: "Les préoccupations des habitants. L'asso est le canal entre les Bruzois et leurs élus." },
-              { icon: "🤝", titre: "On transmet", texte: "Dialogue constructif avec la majorité. Bienveillant, sans complaisance." },
-            ].map(({ icon, titre, texte }) => (
-              <div key={titre} style={{ display: "flex", gap: 14, alignItems: "flex-start", background: "#fff", border: "1px solid #e2e8f0", borderRadius: 10, padding: "16px 18px" }}>
-                <span style={{ fontSize: 22, flexShrink: 0 }}>{icon}</span>
-                <div>
-                  <p style={{ margin: "0 0 4px", fontWeight: 700, color: "#0f172a", fontSize: 14 }}>{titre}</p>
-                  <p style={{ margin: 0, color: "#64748b", fontSize: 13, lineHeight: 1.6 }}>{texte}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* ── REJOINDRE ── */}
       <section style={{ background: "linear-gradient(135deg, #1A4177 0%, #0E2F62 100%)", color: "#fff" }}>
         <div style={{ maxWidth: "var(--container-max)", margin: "0 auto", padding: "64px var(--container-pad)", textAlign: "center" }}>
@@ -476,37 +479,7 @@ export default function Home() {
       </section>
 
       {/* ── FOOTER ── */}
-      <footer style={{ background: "#0E2F62", color: "rgba(255,255,255,0.5)" }}>
-        <div style={{ maxWidth: "var(--container-max)", margin: "0 auto", padding: "40px var(--container-pad)" }}>
-          <div style={{ display: "flex", gap: 32, flexWrap: "wrap", justifyContent: "space-between", marginBottom: 32 }}>
-            <div>
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={LOGO} alt={association.nom} width={140} height={44} style={{ objectFit: "contain", background: "rgba(255,255,255,0.92)", borderRadius: 8, padding: "4px 8px", display: "block", marginBottom: 12 }} />
-              <p style={{ fontSize: 13, color: "rgba(255,255,255,0.5)", margin: 0, maxWidth: 280, lineHeight: 1.6 }}>{association.description}</p>
-            </div>
-            <div>
-              <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "rgba(255,255,255,0.3)", margin: "0 0 12px" }}>Pages</p>
-              <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
-                {[
-                  { href: "/bruz-en-action/dossiers", label: "📁 Dossiers" },
-                  { href: "/bruz-en-action/conseils", label: "🏛️ Conseils municipaux" },
-                  { href: "/bruz-en-action/promesses", label: "✅ Suivi des promesses" },
-                  { href: "/bruz-en-action/elus", label: "👥 Élus 2026-2032" },
-                  { href: "/bruz-en-action/carte", label: "🗺️ Carte de Bruz" },
-                  { href: "/bruz-en-action/chronologie", label: "🕐 Chronologie" },
-                  { href: "/bruz-en-action/metropole", label: "🏙️ Rennes Métropole" },
-                ].map(({ href, label }) => (
-                  <a key={href} href={href} style={{ fontSize: 13, color: "rgba(255,255,255,0.55)", textDecoration: "none" }}>{label}</a>
-                ))}
-              </div>
-            </div>
-          </div>
-          <div style={{ paddingTop: 20, borderTop: "1px solid rgba(255,255,255,0.1)", fontSize: 12, color: "rgba(255,255,255,0.3)", display: "flex", justifyContent: "space-between", flexWrap: "wrap", gap: 8 }}>
-            <span>© {association.fondee_en} {association.nom} · Association loi 1901</span>
-            <span>{association.positionnement}</span>
-          </div>
-        </div>
-      </footer>
+      <SiteFooter />
     </div>
   );
 }

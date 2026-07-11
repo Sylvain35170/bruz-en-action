@@ -51,7 +51,11 @@ export default async function ArticlePage({ params }: { params: Promise<{ id: st
 
   return (
     <div style={{ minHeight: "100vh", display: "flex", flexDirection: "column", fontFamily: "var(--font-sans, system-ui)", background: "#f8fafc" }}>
-      <NavBar />
+      <header style={{ background: "linear-gradient(135deg, #0E2F62 0%, #1A4177 100%)", color: "#fff" }}>
+        <div style={{ maxWidth: 1120, margin: "0 auto", padding: "16px 24px" }}>
+          <NavBar />
+        </div>
+      </header>
 
       <main style={{ flex: 1, maxWidth: 780, margin: "0 auto", width: "100%", padding: "32px 16px 64px" }}>
 

@@ -6,10 +6,10 @@ const geist = Geist({ subsets: ["latin"], variable: "--font-geist-sans" });
 
 export const metadata: Metadata = {
   title: "Bruz en Action — Suivi des engagements municipaux",
-  description: "Veille citoyenne sur les promesses du mandat 2026-2031 — Bruz (35)",
+  description: "Veille citoyenne sur les promesses du mandat 2026-2032 — Bruz (35)",
   openGraph: {
     title: "Bruz en Action — Suivi des engagements municipaux",
-    description: "Association citoyenne de Bruz (35) — suivi des 50 engagements du mandat 2026-2031",
+    description: "Association citoyenne de Bruz (35) — suivi des 50 engagements du mandat 2026-2032",
     url: "https://sylvain35170.github.io/bruz-en-action",
     siteName: "Bruz en Action",
     images: [{ url: "https://sylvain35170.github.io/bruz-en-action/og-image.jpg", width: 1200, height: 1200, alt: "Bruz en Action — association citoyenne de Bruz" }],
