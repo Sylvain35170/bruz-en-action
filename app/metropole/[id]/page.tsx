@@ -4,14 +4,8 @@ import metropoleData from "../../../data/metropole.json";
 import metaData from "../../../data/meta.json";
 import NavBar from "../../../components/NavBar";
 import SiteFooter from "../../../components/SiteFooter";
+import { CATEGORIE_COLOR } from "../../../lib/categories";
 
-const CATEGORIE_COLORS: Record<string, string> = {
-  "Mobilités": "#2563eb",
-  "Urbanisme": "#7c3aed",
-  "Environnement": "#059669",
-  "Services publics": "#0891b2",
-  "Gouvernance": "#374151",
-};
 
 export function generateStaticParams() {
   return metropoleData.dossiers.map(d => ({ id: d.id }));
@@ -41,7 +35,7 @@ export default async function MetropoleDossierPage({ params }: { params: Promise
   if (!dossier) notFound();
 
   const { association, contact } = metaData;
-  const color = CATEGORIE_COLORS[dossier.categorie] ?? "#64748b";
+  const color = CATEGORIE_COLOR[dossier.categorie] ?? "#64748b";
   const decisions = dossier.decisions as { date: string; description: string; source_url?: string }[];
   const actus = dossier.actus_recentes as { date: string; titre: string; detail: string; source_url?: string; source_label?: string }[];
 
@@ -59,7 +53,7 @@ export default async function MetropoleDossierPage({ params }: { params: Promise
       <section style={{ background: "linear-gradient(135deg, #0E2F62 0%, #1A4177 100%)", color: "#fff", paddingBottom: 48 }}>
         <div style={{ maxWidth: 1120, margin: "0 auto", padding: "36px 24px 0" }}>
           <div style={{ display: "flex", gap: 10, alignItems: "center", marginBottom: 16, flexWrap: "wrap" }}>
-            <span style={{ padding: "3px 10px", borderRadius: 999, background: "rgba(232,77,14,0.2)", color: "#f97316", fontSize: 12, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.08em" }}>
+            <span style={{ padding: "3px 10px", borderRadius: 999, background: "rgba(232,77,14,0.2)", color: "#E8A040", fontSize: 12, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.08em" }}>
               Rennes Métropole
             </span>
             <span style={{ padding: "3px 10px", borderRadius: 999, fontSize: 12, fontWeight: 700, color, background: `${color}25` }}>
@@ -168,7 +162,7 @@ export default async function MetropoleDossierPage({ params }: { params: Promise
                       <span style={{ fontSize: 11, fontWeight: 700, color: "#94a3b8", textTransform: "uppercase" }}>
                         {new Date(a.date).toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" })}
                       </span>
-                      {a.source_label && <span style={{ fontSize: 11, color: "#cbd5e1" }}>{a.source_label}</span>}
+                      {a.source_label && <span style={{ fontSize: 11, color: "#64748b" }}>{a.source_label}</span>}
                     </div>
                     <div style={{ fontSize: 14, fontWeight: 700, color: "#0f172a", marginBottom: 4 }}>{a.titre}</div>
                     <p style={{ margin: 0, fontSize: 13, lineHeight: 1.6, color: "#64748b" }}>{a.detail}</p>

@@ -16,6 +16,7 @@ export default function SiteFooter() {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/bruz-en-action/og-image.jpg"
+            loading="lazy"
             alt="Bruz En Action"
             style={{ width: "min(200px, 100%)", borderRadius: 12, opacity: 0.9, flexShrink: 0 }}
           />
@@ -64,6 +65,8 @@ export default function SiteFooter() {
               { href: "/bruz-en-action/interagir", label: "Interagir" },
               { href: "/bruz-en-action/chronologie", label: "Chronologie" },
               { href: "/bruz-en-action/metropole", label: "Rennes Métropole" },
+              { href: "/bruz-en-action/publications", label: "Publications" },
+              { href: "/bruz-en-action/liens", label: "Liens utiles" },
             ].map(({ href, label }) => (
               <a key={href} href={href}
                 style={{ fontSize: 13, color: "rgba(255,255,255,0.5)", textDecoration: "none" }}>
@@ -84,7 +87,7 @@ export default function SiteFooter() {
         <span style={{ fontSize: 11 }}>© {association.fondee_en} {association.nom} · Association loi 1901 · Bruz (35170)</span>
         {contact.hello_asso_url && (
           <a href={contact.hello_asso_url} target="_blank" rel="noopener noreferrer"
-            style={{ fontSize: 11, color: "#f97316", textDecoration: "none", fontWeight: 600 }}>
+            style={{ fontSize: 11, color: "#E8A040", textDecoration: "none", fontWeight: 600 }}>
             ❤️ Adhérer sur HelloAsso
           </a>
         )}

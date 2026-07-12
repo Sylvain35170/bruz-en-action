@@ -176,7 +176,7 @@ export default async function PromessePage({ params }: { params: Promise<{ id: s
               {actusLiees.length === 0 ? (
                 <div style={{ background: "#f8fafc", border: "1px dashed #cbd5e1", borderRadius: 12, padding: "32px 24px", textAlign: "center" }}>
                   <p style={{ margin: 0, fontSize: 15, color: "#94a3b8" }}>Aucune actu enregistrée pour cette promesse.</p>
-                  <p style={{ margin: "8px 0 0", fontSize: 13, color: "#cbd5e1" }}>Le suivi démarrera dès les premières décisions.</p>
+                  <p style={{ margin: "8px 0 0", fontSize: 13, color: "#64748b" }}>Le suivi démarrera dès les premières décisions.</p>
                 </div>
               ) : (
                 <div style={{ position: "relative", paddingLeft: 24 }}>

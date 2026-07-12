@@ -2,6 +2,7 @@ import dossiersData from "../../data/dossiers.json";
 import metaData from "../../data/meta.json";
 import NavBar from "../../components/NavBar";
 import SiteFooter from "../../components/SiteFooter";
+import { CATEGORIE_COLOR } from "../../lib/categories";
 
 export const metadata = {
   title: "Dossiers — Bruz en Action",
@@ -28,19 +29,6 @@ const STATUT_LABEL: Record<string, string> = {
   en_cours: "En cours",
   publie: "Publié",
   a_venir: "À venir",
-};
-
-const CATEGORIE_COLOR: Record<string, string> = {
-  Mobilités: "#0369a1",
-  Urbanisme: "#6d28d9",
-  Finances: "#15803d",
-  Équipements: "#b45309",
-  "Services publics": "#dc2626",
-  Environnement: "#059669",
-  Éducation: "#ea580c",
-  Sécurité: "#374151",
-  Culture: "#be185d",
-  Patrimoine: "#65a30d",
 };
 
 export default function DossiersPage() {
@@ -119,7 +107,7 @@ export default function DossiersPage() {
                     {/* Illustration si disponible */}
                     {(d as any).image && (
                       // eslint-disable-next-line @next/next/no-img-element
-                      <img src={(d as any).image} alt={d.titre}
+                      <img loading="lazy" src={(d as any).image} alt={d.titre}
                         style={{ width: "100%", height: 140, objectFit: "cover", objectPosition: "center", display: "block" }} />
                     )}
 

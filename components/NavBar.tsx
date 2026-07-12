@@ -14,6 +14,7 @@ const NAV_GROUPS = [
       { href: "/bruz-en-action/publications", label: "📰 Publications" },
       { href: "/bruz-en-action/chronologie", label: "🕐 Chronologie" },
       { href: "/bruz-en-action/metropole", label: "🏙️ Métropole" },
+      { href: "/bruz-en-action/liens", label: "🔗 Liens utiles" },
     ],
   },
   {
@@ -27,6 +28,7 @@ const NAV_GROUPS = [
     label: "👥 Qui décide",
     links: [
       { href: "/bruz-en-action/elus", label: "👥 Élus" },
+      { href: "/bruz-en-action/qui-fait-quoi", label: "🏛️ Qui fait quoi ?" },
     ],
   },
   {
@@ -139,7 +141,7 @@ export default function NavBar() {
           )}
           {contact.hello_asso_url && (
             <a href={contact.hello_asso_url} target="_blank" rel="noopener noreferrer"
-              style={{ padding: "8px 18px", borderRadius: 999, background: "#f97316", color: "#fff", fontSize: 13, fontWeight: 700, textDecoration: "none", marginLeft: 8 }}>
+              style={{ padding: "8px 18px", borderRadius: 999, background: "#E8A040", color: "#0E2F62", fontSize: 13, fontWeight: 700, textDecoration: "none", marginLeft: 8 }}>
               ❤️ Adhérer
             </a>
           )}
@@ -247,7 +249,7 @@ export default function NavBar() {
 
             {contact.hello_asso_url && (
               <a href={contact.hello_asso_url} target="_blank" rel="noopener noreferrer"
-                style={{ display: "block", textAlign: "center", padding: "14px", borderRadius: 999, background: "#f97316", color: "#fff", fontSize: 15, fontWeight: 700, textDecoration: "none", marginTop: 12 }}>
+                style={{ display: "block", textAlign: "center", padding: "14px", borderRadius: 999, background: "#E8A040", color: "#0E2F62", fontSize: 15, fontWeight: 700, textDecoration: "none", marginTop: 12 }}>
                 ❤️ Adhérer à l'association
               </a>
             )}

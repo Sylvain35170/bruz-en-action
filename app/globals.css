@@ -1,5 +1,4 @@
-/* ── Google Fonts ── */
-@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@500;600;700&display=swap');
+/* Polices : auto-hébergées via next/font (layout.tsx) — pas d'import Google Fonts (RGPD) */
 @import "tailwindcss";
 /* ── Leaflet (carte interactive) — doit être global pour static export GitHub Pages ── */
 @import "leaflet/dist/leaflet.css";
@@ -53,8 +52,8 @@
   --status-na:         #94a3b8; --status-na-tint:         #f8fafc;
 
   /* Typography */
-  --font-sans: 'Public Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
-  --font-mono: 'JetBrains Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
+  --font-sans: var(--font-public-sans), 'Public Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: var(--font-jetbrains-mono), 'JetBrains Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
   --fw-regular:  400;
   --fw-medium:   500;
   --fw-semibold: 600;

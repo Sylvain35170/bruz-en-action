@@ -79,7 +79,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ id: st
               Analyse
             </span>
             <span style={{ fontSize: 13, color: "#94a3b8" }}>{dateStr}</span>
-            <span style={{ fontSize: 13, color: "#cbd5e1" }}>· {article.source_label}</span>
+            <span style={{ fontSize: 13, color: "#64748b" }}>· {article.source_label}</span>
           </div>
           <h1 style={{ fontSize: 26, fontWeight: 900, color: "#0f172a", lineHeight: 1.25, margin: "0 0 16px" }}>
             {article.titre}

@@ -6,6 +6,7 @@ import bruzData from "../../../data/bruz.json";
 import NavBar from "../../../components/NavBar";
 import SiteFooter from "../../../components/SiteFooter";
 import SignalementButton from "../../../components/SignalementButton";
+import { NIVEAU_CONFIG } from "../../utils";
 
 export function generateStaticParams() {
   return dossiersData.dossiers.map(d => ({ id: d.id }));
@@ -99,7 +100,7 @@ function SvgBarChart({ g }: { g: Graphique }) {
         </div>
       )}
       {g.note && <p style={{ margin: "10px 0 0", fontSize: 11, color: "#94a3b8", lineHeight: 1.5, fontStyle: "italic" }}>{g.note}</p>}
-      {g.source && <p style={{ margin: "4px 0 0", fontSize: 11, color: "#cbd5e1" }}>Source : {g.source}</p>}
+      {g.source && <p style={{ margin: "4px 0 0", fontSize: 11, color: "#64748b" }}>Source : {g.source}</p>}
     </div>
   );
 }
@@ -127,7 +128,7 @@ function SvgHorizontalBarChart({ g }: { g: Graphique }) {
         })}
       </svg>
       {g.note && <p style={{ margin: "10px 0 0", fontSize: 11, color: "#94a3b8", lineHeight: 1.5, fontStyle: "italic" }}>{g.note}</p>}
-      {g.source && <p style={{ margin: "4px 0 0", fontSize: 11, color: "#cbd5e1" }}>Source : {g.source}</p>}
+      {g.source && <p style={{ margin: "4px 0 0", fontSize: 11, color: "#64748b" }}>Source : {g.source}</p>}
     </div>
   );
 }
@@ -184,7 +185,7 @@ export default async function DossierPage({ params }: { params: Promise<{ id: st
   const autresDossiers = dossiersData.dossiers.filter(d => d.id !== id).slice(0, 5);
 
   const ceQuOnSait: string[] = dossier.ce_quon_sait ?? [];
-  const quiDecide: { nom: string; role: string }[] = dossier.qui_decide ?? [];
+  const quiDecide: { nom: string; role: string; niveau?: string }[] = dossier.qui_decide ?? [];
   const decisions: { date: string; description: string; source_url?: string }[] = dossier.decisions ?? [];
   const ceQuOnSuit: string[] = dossier.ce_quon_suit ?? [];
   const actus: { date: string; titre: string; detail: string; source_url?: string; source_label?: string; article_id?: string }[] = dossier.actus_recentes ?? [];
@@ -224,29 +225,21 @@ export default async function DossierPage({ params }: { params: Promise<{ id: st
         </div>
       </section>
 
-      {/* Lien "En profondeur" */}
-      {(["D01", "D02", "D03", "D07"] as string[]).includes(dossier.id) && (() => {
-        const subtitles: Record<string, string> = {
-          D01: "Pourquoi ça compte, les deux visions du terminus, notre lecture",
-          D02: "Les acteurs nommés, la densité expliquée en chiffres, notre lecture",
-          D03: "La dette, l'effet Safran, les projets qui s'accumulent — notre lecture",
-          D07: "Ce que la PM peut faire, la vidéosurveillance, notre lecture",
-        };
-        return (
-          <div style={{ background: "linear-gradient(90deg, #fff8f5, #fff)", borderBottom: "1px solid #fed7aa", padding: "16px 24px" }}>
-            <div style={{ maxWidth: 1120, margin: "0 auto", display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: 12 }}>
-              <div>
-                <span style={{ fontSize: 12, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.08em", color: "#E8A040", display: "block", marginBottom: 2 }}>Analyse éditoriale</span>
-                <span style={{ fontSize: 14, color: "#334155" }}>{subtitles[dossier.id]}</span>
-              </div>
-              <a href={`/bruz-en-action/dossiers/${dossier.id}/en-profondeur`}
-                style={{ flexShrink: 0, display: "inline-flex", alignItems: "center", gap: 8, padding: "10px 20px", background: "#E8A040", color: "#fff", borderRadius: 999, textDecoration: "none", fontSize: 14, fontWeight: 700 }}>
-                Lire en profondeur →
-              </a>
+      {/* Lien "En profondeur" — piloté par le champ en_profondeur de dossiers.json */}
+      {dossier.en_profondeur && (
+        <div style={{ background: "linear-gradient(90deg, #fff8f5, #fff)", borderBottom: "1px solid #fed7aa", padding: "16px 24px" }}>
+          <div style={{ maxWidth: 1120, margin: "0 auto", display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: 12 }}>
+            <div>
+              <span style={{ fontSize: 12, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.08em", color: "#E8A040", display: "block", marginBottom: 2 }}>Analyse éditoriale</span>
+              <span style={{ fontSize: 14, color: "#334155" }}>{dossier.en_profondeur.sous_titre}</span>
             </div>
+            <a href={`/bruz-en-action/dossiers/${dossier.id}/en-profondeur`}
+              style={{ flexShrink: 0, display: "inline-flex", alignItems: "center", gap: 8, padding: "10px 20px", background: "#E8A040", color: "#0E2F62", borderRadius: 999, textDecoration: "none", fontSize: 14, fontWeight: 700 }}>
+              Lire en profondeur →
+            </a>
           </div>
-        );
-      })()}
+        </div>
+      )}
 
       {/* Illustration dossier */}
       {dossier.image && (
@@ -353,19 +346,36 @@ export default async function DossierPage({ params }: { params: Promise<{ id: st
               <section style={{ marginBottom: 36 }}>
                 <SectionTitle>Qui décide ?</SectionTitle>
                 <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
-                  {quiDecide.map((q, i) => (
-                    <div key={i} style={{
-                      background: "#fff", border: "1px solid #e2e8f0", borderRadius: 10,
-                      padding: "14px 18px", display: "flex", gap: 16, alignItems: "flex-start",
-                    }}>
-                      <div style={{ flexShrink: 0, width: 8, height: 8, borderRadius: "50%", background: "#E8A040", marginTop: 7 }} />
-                      <div>
-                        <div style={{ fontSize: 14, fontWeight: 800, color: "#0f172a", marginBottom: 3 }}>{q.nom}</div>
-                        <div style={{ fontSize: 13, color: "#64748b", lineHeight: 1.5 }}>{q.role}</div>
+                  {quiDecide.map((q, i) => {
+                    const niveau = NIVEAU_CONFIG[q.niveau ?? ""] ?? null;
+                    return (
+                      <div key={i} style={{
+                        background: "#fff", border: "1px solid #e2e8f0", borderRadius: 10,
+                        padding: "14px 18px", display: "flex", gap: 16, alignItems: "flex-start",
+                      }}>
+                        <div style={{ flexShrink: 0, width: 8, height: 8, borderRadius: "50%", background: niveau?.couleur ?? "#E8A040", marginTop: 7 }} />
+                        <div>
+                          <div style={{ display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap", marginBottom: 3 }}>
+                            <span style={{ fontSize: 14, fontWeight: 800, color: "#0f172a" }}>{q.nom}</span>
+                            {niveau && (
+                              <span style={{
+                                fontSize: 10, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.06em",
+                                color: niveau.couleur, background: `${niveau.couleur}14`,
+                                padding: "2px 8px", borderRadius: 999,
+                              }}>
+                                {niveau.label}
+                              </span>
+                            )}
+                          </div>
+                          <div style={{ fontSize: 13, color: "#64748b", lineHeight: 1.5 }}>{q.role}</div>
+                        </div>
                       </div>
-                    </div>
-                  ))}
+                    );
+                  })}
                 </div>
+                <a href="/bruz-en-action/qui-fait-quoi" style={{ display: "inline-block", marginTop: 12, fontSize: 13, color: "#2563eb", textDecoration: "none", fontWeight: 600 }}>
+                  Commune, métropole, département, État : qui fait quoi ? →
+                </a>
               </section>
             )}
 
@@ -440,7 +450,7 @@ export default async function DossierPage({ params }: { params: Promise<{ id: st
                         <span style={{ fontSize: 11, fontWeight: 700, color: "#94a3b8", textTransform: "uppercase", letterSpacing: "0.05em" }}>
                           {new Date(a.date).toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" })}
                         </span>
-                        {a.source_label && <span style={{ fontSize: 11, color: "#cbd5e1" }}>{a.source_label}</span>}
+                        {a.source_label && <span style={{ fontSize: 11, color: "#64748b" }}>{a.source_label}</span>}
                       </div>
                       <div style={{ fontSize: 14, fontWeight: 700, color: "#0f172a", marginBottom: 4 }}>{a.titre}</div>
                       <p style={{ margin: 0, fontSize: 13, lineHeight: 1.6, color: "#64748b" }}>{a.detail}</p>
@@ -489,7 +499,7 @@ export default async function DossierPage({ params }: { params: Promise<{ id: st
                       <div style={{ fontSize: 11, color: "#94a3b8", marginBottom: 2 }}>{s.label}</div>
                       <div style={{ fontSize: 18, fontWeight: 800, color: "#0f172a", lineHeight: 1.2 }}>{resolveStat(s)}</div>
                       <a href={s.source_url} target="_blank" rel="noopener noreferrer"
-                        style={{ fontSize: 10, color: "#cbd5e1", textDecoration: "none" }}>
+                        style={{ fontSize: 10, color: "#64748b", textDecoration: "none" }}>
                         {s.source} {s.annee} ↗
                       </a>
                     </div>

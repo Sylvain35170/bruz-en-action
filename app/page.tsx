@@ -1,18 +1,6 @@
 import NavBar from "../components/NavBar";
 import SiteFooter from "../components/SiteFooter";
-
-const CATEGORIE_COLOR: Record<string, string> = {
-  Mobilités: "#0369a1",
-  Urbanisme: "#6d28d9",
-  Finances: "#15803d",
-  Équipements: "#b45309",
-  "Services publics": "#dc2626",
-  Environnement: "#059669",
-  Éducation: "#ea580c",
-  Sécurité: "#374151",
-  Culture: "#be185d",
-  Patrimoine: "#65a30d",
-};
+import { CATEGORIE_COLOR } from "../lib/categories";
 
 import promessesData from "../data/promesses.json";
 import actusData from "../data/actus.json";
@@ -35,10 +23,17 @@ export default function Home() {
   const { dossiers } = dossiersData;
 
   const total = promesses.length;
-  const tenues = promesses.filter(p => p.statut_id === "tenu").length;
-  const enCours = promesses.filter(p => p.statut_id === "en_cours").length;
-  const nonCommences = promesses.filter(p => p.statut_id === "non_commence").length;
+  const countStatut = (id: string) => promesses.filter(p => p.statut_id === id).length;
+  const tenues = countStatut("tenu");
   const score = total > 0 ? Math.round((tenues / total) * 100) : 0;
+  const segments = [
+    { id: "tenu", color: "#22c55e", label: "tenus" },
+    { id: "partiel", color: "#2563eb", label: "partiels" },
+    { id: "en_cours", color: "#E8A040", label: "en cours" },
+    { id: "abandonne", color: "#dc2626", label: "abandonnés" },
+    { id: "inconnu", color: "#94a3b8", label: "statut inconnu" },
+    { id: "non_commence", color: "#e2e8f0", label: "non commencés" },
+  ].map(s => ({ ...s, n: countStatut(s.id) }));
 
   const hasHelloAsso = Boolean(contact.hello_asso_url);
   const hasSocial = Boolean(reseaux_sociaux.facebook || reseaux_sociaux.instagram);
@@ -99,7 +94,7 @@ export default function Home() {
 
           {/* Hero */}
           <div style={{ paddingTop: 40, maxWidth: 680 }}>
-            <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#f97316", display: "block", marginBottom: 10 }}>
+            <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#E8A040", display: "block", marginBottom: 10 }}>
               Association citoyenne · Bruz (35)
             </span>
             <h1 style={{ color: "#fff", fontSize: "clamp(2rem, 4.5vw, 3rem)", fontWeight: 900, margin: "0 0 16px", lineHeight: 1.1 }}>
@@ -110,8 +105,8 @@ export default function Home() {
             </p>
             <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
               <a href={contact.hello_asso_url || "#"} target="_blank" rel="noopener noreferrer" style={{
-                padding: "12px 24px", borderRadius: 999, background: "#f97316", color: "#fff",
-                fontSize: 15, fontWeight: 700, textDecoration: "none", boxShadow: "0 4px 16px rgba(249,115,22,0.4)",
+                padding: "12px 24px", borderRadius: 999, background: "#E8A040", color: "#0E2F62",
+                fontSize: 15, fontWeight: 700, textDecoration: "none", boxShadow: "0 4px 16px rgba(232,160,64,0.4)",
               }}>
                 ❤️ Rejoindre l'association
               </a>
@@ -163,11 +158,12 @@ export default function Home() {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/bruz-en-action/illus-asso.webp"
+            loading="lazy"
             alt="Bruz En Action — citoyens engagés"
             style={{ width: "min(380px, 100%)", borderRadius: 16, flexShrink: 0 }}
           />
           <div style={{ flex: 1, minWidth: 260 }}>
-            <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#f97316", display: "block", marginBottom: 10 }}>
+            <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#E8A040", display: "block", marginBottom: 10 }}>
               Qui sommes-nous ?
             </span>
             <h2 style={{ fontSize: "clamp(1.4rem,2.8vw,2rem)", fontWeight: 900, color: "#0f172a", margin: "0 0 16px", lineHeight: 1.2 }}>
@@ -205,7 +201,7 @@ export default function Home() {
               )}
               {contact.hello_asso_url && (
                 <a href={contact.hello_asso_url} target="_blank" rel="noopener noreferrer" style={{
-                  padding: "10px 20px", borderRadius: 999, border: "2px solid #f97316", color: "#f97316",
+                  padding: "10px 20px", borderRadius: 999, border: "2px solid #E8A040", color: "#E8A040",
                   fontSize: 14, fontWeight: 700, textDecoration: "none",
                 }}>
                   ❤️ Adhérer
@@ -262,7 +258,7 @@ export default function Home() {
                   }}>
                     {d.image && (
                       // eslint-disable-next-line @next/next/no-img-element
-                      <img src={d.image} alt={d.titre}
+                      <img src={d.image} alt={d.titre} loading="lazy"
                         style={{ width: "100%", height: 130, objectFit: "cover", objectPosition: "center", display: "block" }} />
                     )}
                     <div style={{ background: catColor, padding: "18px 20px 16px", position: "relative" }}>
@@ -387,19 +383,15 @@ export default function Home() {
               <span style={{ fontSize: 15, fontWeight: 800, color: "#16a34a" }}>{score}% tenus</span>
             </div>
             <div style={{ height: 12, borderRadius: 999, background: "#f1f5f9", overflow: "hidden", display: "flex" }}>
-              <div style={{ height: "100%", background: "#22c55e", width: `${(tenues / total) * 100}%`, transition: "width 0.6s" }} />
-              <div style={{ height: "100%", background: "#f97316", width: `${(enCours / total) * 100}%`, transition: "width 0.6s" }} />
-              <div style={{ height: "100%", background: "#e2e8f0", width: `${(nonCommences / total) * 100}%` }} />
+              {segments.filter(s => s.n > 0).map(s => (
+                <div key={s.id} style={{ height: "100%", background: s.color, width: `${(s.n / total) * 100}%`, transition: "width 0.6s" }} />
+              ))}
             </div>
             <div style={{ display: "flex", gap: 20, marginTop: 10, flexWrap: "wrap" }}>
-              {[
-                { color: "#22c55e", label: `${tenues} tenus` },
-                { color: "#f97316", label: `${enCours} en cours` },
-                { color: "#e2e8f0", label: `${nonCommences} non commencés` },
-              ].map(({ color, label }) => (
-                <span key={label} style={{ display: "flex", alignItems: "center", gap: 6, fontSize: 12, color: "#64748b" }}>
-                  <span style={{ width: 10, height: 10, borderRadius: 3, background: color, flexShrink: 0 }} />
-                  {label}
+              {segments.filter(s => s.n > 0).map(s => (
+                <span key={s.id} style={{ display: "flex", alignItems: "center", gap: 6, fontSize: 12, color: "#64748b" }}>
+                  <span style={{ width: 10, height: 10, borderRadius: 3, background: s.color, flexShrink: 0 }} />
+                  {s.n} {s.label}
                 </span>
               ))}
             </div>
@@ -461,8 +453,8 @@ export default function Home() {
           </p>
           <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap" }}>
             <a href={contact.hello_asso_url || "#"} target="_blank" rel="noopener noreferrer" style={{
-              padding: "14px 32px", borderRadius: 999, background: "#f97316", color: "#fff",
-              fontSize: 16, fontWeight: 700, textDecoration: "none", boxShadow: "0 4px 24px rgba(249,115,22,0.5)",
+              padding: "14px 32px", borderRadius: 999, background: "#E8A040", color: "#0E2F62",
+              fontSize: 16, fontWeight: 700, textDecoration: "none", boxShadow: "0 4px 24px rgba(232,160,64,0.5)",
             }}>
               ❤️ Adhérer sur HelloAsso
             </a>

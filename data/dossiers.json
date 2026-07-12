@@ -30,11 +30,13 @@
       "qui_decide": [
         {
           "nom": "Rennes Métropole",
-          "role": "Maîtrise d'ouvrage — c'est elle qui décide du tracé et de la localisation du terminus"
+          "role": "Maîtrise d'ouvrage — c'est elle qui décide du tracé et de la localisation du terminus",
+          "niveau": "metropole"
         },
         {
           "nom": "Patrick Roullé (Bruz)",
-          "role": "Délégué « Transition écologique et mobilités » depuis avril 2026 — interlocuteur de la commune"
+          "role": "Délégué « Transition écologique et mobilités » depuis avril 2026 — interlocuteur de la commune",
+          "niveau": "commune"
         }
       ],
       "decisions": [
@@ -181,7 +183,10 @@
         3,
         4
       ],
-      "image": "/bruz-en-action/illus-d01-mobilite.webp"
+      "image": "/bruz-en-action/illus-d01-mobilite.webp",
+      "en_profondeur": {
+        "sous_titre": "Pourquoi ça compte, les deux visions du terminus, notre lecture"
+      }
     },
     {
       "id": "D02",
@@ -202,23 +207,28 @@
       "qui_decide": [
         {
           "nom": "Jean-Patrick Desguérets",
-          "role": "2ème adjoint, délégation Aménagement de la Ville & Urbanisme — pilote opérationnel de la ZAC, présente les délibérations d'urbanisme en CM"
+          "role": "2ème adjoint, délégation Aménagement de la Ville & Urbanisme — pilote opérationnel de la ZAC, présente les délibérations d'urbanisme en CM",
+          "niveau": "commune"
         },
         {
           "nom": "Jérôme De Gayardon",
-          "role": "Conseiller délégué Habitat & Aménagement urbain — suit la mixité sociale, les quotas HLM, la répartition par type de logements"
+          "role": "Conseiller délégué Habitat & Aménagement urbain — suit la mixité sociale, les quotas HLM, la répartition par type de logements",
+          "niveau": "commune"
         },
         {
           "nom": "Jean-René Houssin",
-          "role": "Maire de Bruz — porteur politique, négocie avec Rennes Métropole sur les densités et le tracé T4"
+          "role": "Maire de Bruz — porteur politique, négocie avec Rennes Métropole sur les densités et le tracé T4",
+          "niveau": "commune"
         },
         {
-          "nom": "Rennes Métropole (50 communes)",
-          "role": "Impose 60 lgts/ha sur Ker Lann via le T4 — contrainte juridiquement opposable. Pilote aussi le PLUi intercommunal."
+          "nom": "Rennes Métropole (43 communes)",
+          "role": "Impose 60 lgts/ha sur Ker Lann via le T4 — contrainte juridiquement opposable. Pilote aussi le PLUi intercommunal.",
+          "niveau": "metropole"
         },
         {
           "nom": "Inspection Académique 35",
-          "role": "Pilote les ouvertures de classes dans les groupes scolaires existants. Avec ~850 enfants supplémentaires attendus sur la ZAC, la planification des capacités est un défi clé pour l'équipe municipale."
+          "role": "Pilote les ouvertures de classes dans les groupes scolaires existants. Avec ~850 enfants supplémentaires attendus sur la ZAC, la planification des capacités est un défi clé pour l'équipe municipale.",
+          "niveau": "etat"
         }
       ],
       "decisions": [
@@ -340,7 +350,10 @@
         }
       ],
       "promesses_liees": [],
-      "image": "/bruz-en-action/illus-d02-urbanisme.webp"
+      "image": "/bruz-en-action/illus-d02-urbanisme.webp",
+      "en_profondeur": {
+        "sous_titre": "Les acteurs nommés, la densité expliquée en chiffres, notre lecture"
+      }
     },
     {
       "id": "D03",
@@ -408,11 +421,13 @@
       "qui_decide": [
         {
           "nom": "Conseil municipal",
-          "role": "Vote le budget chaque année en mars — section fonctionnement et investissement séparément. Peut modifier les taux d'imposition."
+          "role": "Vote le budget chaque année en mars — section fonctionnement et investissement séparément. Peut modifier les taux d'imposition.",
+          "niveau": "commune"
         },
         {
           "nom": "Préfecture / DGFiP",
-          "role": "Contrôle de légalité budgétaire. Publication des données fiscales officielles sur data.economie.gouv.fr."
+          "role": "Contrôle de légalité budgétaire. Publication des données fiscales officielles sur data.economie.gouv.fr.",
+          "niveau": "etat"
         }
       ],
       "decisions": [
@@ -700,7 +715,10 @@
           "source_label": "Vidéo YouTube"
         }
       ],
-      "promesses_liees": []
+      "promesses_liees": [],
+      "en_profondeur": {
+        "sous_titre": "La dette, l'effet Safran, les projets qui s'accumulent — notre lecture"
+      }
     },
     {
       "id": "D04",
@@ -722,11 +740,13 @@
       "qui_decide": [
         {
           "nom": "Conseil municipal",
-          "role": "Vote les taux chaque année au moment du budget (mars) — acte délibéré, modifiable"
+          "role": "Vote les taux chaque année au moment du budget (mars) — acte délibéré, modifiable",
+          "niveau": "commune"
         },
         {
           "nom": "DGFIP",
-          "role": "Publie les taux officiels annuellement — source de vérité (data.economie.gouv.fr)"
+          "role": "Publie les taux officiels annuellement — source de vérité (data.economie.gouv.fr)",
+          "niveau": "etat"
         }
       ],
       "decisions": [
@@ -947,15 +967,18 @@
       "qui_decide": [
         {
           "nom": "Rennes Métropole",
-          "role": "Maître d'ouvrage de la plupart des chantiers structurants (voirie, réseaux, T4, REV). Contact : comtravaux@rennesmetropole.fr / 06 69 95 25 76"
+          "role": "Maître d'ouvrage de la plupart des chantiers structurants (voirie, réseaux, T4, REV). Contact : comtravaux@rennesmetropole.fr / 06 69 95 25 76",
+          "niveau": "metropole"
         },
         {
           "nom": "Thomas de la Rivière (Bruz)",
-          "role": "Délégué Patrimoine & Travaux depuis avril 2026 — interlocuteur pour les chantiers communaux"
+          "role": "Délégué Patrimoine & Travaux depuis avril 2026 — interlocuteur pour les chantiers communaux",
+          "niveau": "commune"
         },
         {
           "nom": "Enedis",
-          "role": "Coupures programmées pour maintenance du réseau électrique — juillet 2026"
+          "role": "Coupures programmées pour maintenance du réseau électrique — juillet 2026",
+          "niveau": "autre"
         }
       ],
       "decisions": [
@@ -1125,15 +1148,18 @@
       "qui_decide": [
         {
           "nom": "Syndicat intercommunal de la piscine de la Conterie",
-          "role": "Vote chaque année le budget et la clé de répartition des participations communales — présidé depuis avril 2026 par Françoise Louapre (maire de Laillé)"
+          "role": "Vote chaque année le budget et la clé de répartition des participations communales — présidé depuis avril 2026 par Françoise Louapre (maire de Laillé)",
+          "niveau": "intercommunal"
         },
         {
           "nom": "Conseil municipal de Bruz",
-          "role": "Vote la participation annuelle de la commune au syndicat, dans le cadre du budget communal"
+          "role": "Vote la participation annuelle de la commune au syndicat, dans le cadre du budget communal",
+          "niveau": "commune"
         },
         {
           "nom": "André Le Tulzo",
-          "role": "Vice-président du syndicat représentant Bruz depuis avril 2026"
+          "role": "Vice-président du syndicat représentant Bruz depuis avril 2026",
+          "niveau": "commune"
         }
       ],
       "decisions": [
@@ -1339,15 +1365,18 @@
       "qui_decide": [
         {
           "nom": "Conseil municipal de Bruz",
-          "role": "Vote les effectifs, le budget de la police municipale et toute délibération sur la vidéoprotection"
+          "role": "Vote les effectifs, le budget de la police municipale et toute délibération sur la vidéoprotection",
+          "niveau": "commune"
         },
         {
           "nom": "Philippe Pagès",
-          "role": "8ème adjoint délégué à la Prévention et sécurité — pilote le renforcement annoncé"
+          "role": "8ème adjoint délégué à la Prévention et sécurité — pilote le renforcement annoncé",
+          "niveau": "commune"
         },
         {
           "nom": "Gendarmerie nationale — compagnie de Chartres-de-Bretagne",
-          "role": "Compétence principale pour la sécurité publique et la police judiciaire sur la commune"
+          "role": "Compétence principale pour la sécurité publique et la police judiciaire sur la commune",
+          "niveau": "etat"
         }
       ],
       "decisions": [
@@ -1485,7 +1514,10 @@
             }
           ]
         }
-      ]
+      ],
+      "en_profondeur": {
+        "sous_titre": "Ce que la PM peut faire, la vidéosurveillance, notre lecture"
+      }
     },
     {
       "id": "D10",
@@ -1514,19 +1546,23 @@
       "qui_decide": [
         {
           "nom": "Commune de Bruz",
-          "role": "Propriétaire et bâtisseur des écoles maternelles et primaires publiques (bâtiments, cantine, périscolaire) — pas de compétence sur le collège ni le lycée"
+          "role": "Propriétaire et bâtisseur des écoles maternelles et primaires publiques (bâtiments, cantine, périscolaire) — pas de compétence sur le collège ni le lycée",
+          "niveau": "commune"
         },
         {
           "nom": "Inspection Académique 35 / Éducation nationale",
-          "role": "Détermine les ouvertures et fermetures de classes, les effectifs enseignants, et la carte scolaire (primaire, collège, lycée, public et privé sous contrat)"
+          "role": "Détermine les ouvertures et fermetures de classes, les effectifs enseignants, et la carte scolaire (primaire, collège, lycée, public et privé sous contrat)",
+          "niveau": "etat"
         },
         {
           "nom": "Département d'Ille-et-Vilaine",
-          "role": "Compétent sur les collèges publics (bâtiment, restauration, sectorisation) — concerne le collège Pierre Brossolette à Bruz"
+          "role": "Compétent sur les collèges publics (bâtiment, restauration, sectorisation) — concerne le collège Pierre Brossolette à Bruz",
+          "niveau": "departement"
         },
         {
           "nom": "Région Bretagne",
-          "role": "Compétente sur les lycées publics (bâtiment, équipement) — concerne le lycée Anita Conti à Bruz"
+          "role": "Compétente sur les lycées publics (bâtiment, équipement) — concerne le lycée Anita Conti à Bruz",
+          "niveau": "region"
         }
       ],
       "decisions": [
@@ -1662,19 +1698,23 @@
       "qui_decide": [
         {
           "nom": "Association Plan B",
-          "role": "Porte le projet tiers-lieu — gère le lieu au quotidien (bar, Repair Café, événements). Projet citoyen construit sur 5 ans, lauréat Rennes Métropole."
+          "role": "Porte le projet tiers-lieu — gère le lieu au quotidien (bar, Repair Café, événements). Projet citoyen construit sur 5 ans, lauréat Rennes Métropole.",
+          "niveau": "autre"
         },
         {
           "nom": "Commune de Bruz",
-          "role": "Propriétaire du bâtiment — définit les conditions de mise à disposition. Patrick Roulet et Laure-Anne Daron désignés représentants de la ville auprès de Plan B (CM avril 2026)."
+          "role": "Propriétaire du bâtiment — définit les conditions de mise à disposition. Patrick Roulet et Laure-Anne Daron désignés représentants de la ville auprès de Plan B (CM avril 2026).",
+          "niveau": "commune"
         },
         {
           "nom": "Rennes Métropole",
-          "role": "A sélectionné Plan B dans le cadre de «Nos Lieux Communs» — légitimité institutionnelle externe au projet."
+          "role": "A sélectionné Plan B dans le cadre de «Nos Lieux Communs» — légitimité institutionnelle externe au projet.",
+          "niveau": "metropole"
         },
         {
           "nom": "DRAC Bretagne",
-          "role": "Compétente si le bâtiment est inscrit ou classé — subventions patrimoine possibles pour la rénovation."
+          "role": "Compétente si le bâtiment est inscrit ou classé — subventions patrimoine possibles pour la rénovation.",
+          "niveau": "etat"
         }
       ],
       "decisions": [
@@ -1798,11 +1838,13 @@
       "qui_decide": [
         {
           "nom": "Jean-René Houssin, maire de Bruz",
-          "role": "A décidé le démontage et s'est engagé sur la reconstruction — calendrier à préciser"
+          "role": "A décidé le démontage et s'est engagé sur la reconstruction — calendrier à préciser",
+          "niveau": "commune"
         },
         {
           "nom": "Tribunal administratif",
-          "role": "Procédure judiciaire riverains vs commune toujours en cours"
+          "role": "Procédure judiciaire riverains vs commune toujours en cours",
+          "niveau": "etat"
         }
       ],
       "decisions": [
@@ -1884,15 +1926,18 @@
       "qui_decide": [
         {
           "nom": "Mairie de Bruz",
-          "role": "Active le plan canicule communal, gère les équipements"
+          "role": "Active le plan canicule communal, gère les équipements",
+          "niveau": "commune"
         },
         {
           "nom": "Préfecture d'Ille-et-Vilaine",
-          "role": "Déclenche les niveaux de vigilance (Météo-France)"
+          "role": "Déclenche les niveaux de vigilance (Météo-France)",
+          "niveau": "etat"
         },
         {
           "nom": "CCAS de Bruz",
-          "role": "Suivi des personnes vulnérables — registre communal"
+          "role": "Suivi des personnes vulnérables — registre communal",
+          "niveau": "commune"
         }
       ],
       "decisions": [
@@ -2056,19 +2101,23 @@
       "qui_decide": [
         {
           "nom": "ARS Bretagne",
-          "role": "Classe les communes en zones de zonage médecin (sous-dotée, intermédiaire, bien dotée) — ouvre ou ferme les aides à l'installation des médecins"
+          "role": "Classe les communes en zones de zonage médecin (sous-dotée, intermédiaire, bien dotée) — ouvre ou ferme les aides à l'installation des médecins",
+          "niveau": "etat"
         },
         {
           "nom": "Mairie de Bruz",
-          "role": "Peut faciliter l'installation (locaux, subventions) et porter un projet de MSP ou centre de santé municipal — aucun engagement public à ce jour"
+          "role": "Peut faciliter l'installation (locaux, subventions) et porter un projet de MSP ou centre de santé municipal — aucun engagement public à ce jour",
+          "niveau": "commune"
         },
         {
           "nom": "Rennes Métropole",
-          "role": "Peut intervenir via les contrats locaux de santé (CLS) signés avec l'ARS"
+          "role": "Peut intervenir via les contrats locaux de santé (CLS) signés avec l'ARS",
+          "niveau": "metropole"
         },
         {
           "nom": "CPAM Ille-et-Vilaine",
-          "role": "Accompagne les démarches de médecin traitant et oriente les patients sans MG via le 116 117"
+          "role": "Accompagne les démarches de médecin traitant et oriente les patients sans MG via le 116 117",
+          "niveau": "autre"
         }
       ],
       "decisions": [],
@@ -2158,15 +2207,18 @@
       "qui_decide": [
         {
           "nom": "Rennes Métropole",
-          "role": "Gestionnaire du campus de Ker Lann et pilote des grands projets d'aménagement du secteur (ZAC, T4)"
+          "role": "Gestionnaire du campus de Ker Lann et pilote des grands projets d'aménagement du secteur (ZAC, T4)",
+          "niveau": "metropole"
         },
         {
           "nom": "Commune de Bruz",
-          "role": "Compétente sur le foncier communal et les équipements de proximité (école Ker Lann Sud) — pas sur la gestion du campus ni le logement étudiant privé"
+          "role": "Compétente sur le foncier communal et les équipements de proximité (école Ker Lann Sud) — pas sur la gestion du campus ni le logement étudiant privé",
+          "niveau": "commune"
         },
         {
           "nom": "Établissements d'enseignement supérieur",
-          "role": "Chacun autonome sur ses propres capacités d'accueil et son offre de logement conventionné éventuel"
+          "role": "Chacun autonome sur ses propres capacités d'accueil et son offre de logement conventionné éventuel",
+          "niveau": "autre"
         }
       ],
       "decisions": [
@@ -2233,15 +2285,18 @@
       "qui_decide": [
         {
           "nom": "Gilles Daniel",
-          "role": "6ème adjoint délégué à la Vie économique et à l'informatique — pilote ce portefeuille"
+          "role": "6ème adjoint délégué à la Vie économique et à l'informatique — pilote ce portefeuille",
+          "niveau": "commune"
         },
         {
           "nom": "Conseil municipal de Bruz",
-          "role": "Vote les aides économiques directes, les conventions d'occupation du domaine public pour le commerce, et la politique d'achats communaux"
+          "role": "Vote les aides économiques directes, les conventions d'occupation du domaine public pour le commerce, et la politique d'achats communaux",
+          "niveau": "commune"
         },
         {
           "nom": "Rennes Métropole",
-          "role": "Compétence développement économique intercommunal — gestion des zones d'activité au-delà de la seule commune, notamment Ker Lann"
+          "role": "Compétence développement économique intercommunal — gestion des zones d'activité au-delà de la seule commune, notamment Ker Lann",
+          "niveau": "metropole"
         }
       ],
       "decisions": [],
@@ -2304,7 +2359,8 @@
       "qui_decide": [
         {
           "nom": "Mairie de Bruz",
-          "role": "Programmation culturelle et gestion du Grand Logis"
+          "role": "Programmation culturelle et gestion du Grand Logis",
+          "niveau": "commune"
         }
       ],
       "decisions": [],

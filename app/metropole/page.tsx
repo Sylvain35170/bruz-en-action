@@ -3,6 +3,7 @@ import metropoleData from "../../data/metropole.json";
 import metaData from "../../data/meta.json";
 import NavBar from "../../components/NavBar";
 import SiteFooter from "../../components/SiteFooter";
+import { CATEGORIE_COLOR } from "../../lib/categories";
 
 export const metadata: Metadata = {
   title: "Rennes Métropole & Bruz — Bruz en Action",
@@ -17,13 +18,6 @@ export const metadata: Metadata = {
   },
 };
 
-const CATEGORIE_COLORS: Record<string, string> = {
-  "Mobilités": "#2563eb",
-  "Urbanisme": "#7c3aed",
-  "Environnement": "#059669",
-  "Services publics": "#0891b2",
-  "Gouvernance": "#374151",
-};
 
 export default function MetropolePage() {
   const { association } = metaData;
@@ -44,7 +38,7 @@ export default function MetropolePage() {
       {/* Hero */}
       <section style={{ background: "linear-gradient(135deg, #0E2F62 0%, #1A4177 100%)", color: "#fff", paddingBottom: 48 }}>
         <div style={{ maxWidth: 1120, margin: "0 auto", padding: "36px 24px 0" }}>
-          <div style={{ display: "inline-block", padding: "3px 10px", borderRadius: 999, background: "rgba(232,77,14,0.2)", color: "#f97316", fontSize: 12, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.08em", marginBottom: 16 }}>
+          <div style={{ display: "inline-block", padding: "3px 10px", borderRadius: 999, background: "rgba(232,77,14,0.2)", color: "#E8A040", fontSize: 12, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.08em", marginBottom: 16 }}>
             Au-delà de la mairie
           </div>
           <h1 style={{ fontSize: "clamp(1.6rem, 3.5vw, 2.4rem)", fontWeight: 800, lineHeight: 1.2, margin: "0 0 16px", color: "#fff" }}>
@@ -98,7 +92,7 @@ export default function MetropolePage() {
           </div>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(320px, 1fr))", gap: 20, marginBottom: 48 }}>
             {featured.map(d => {
-              const color = CATEGORIE_COLORS[d.categorie] ?? "#64748b";
+              const color = CATEGORIE_COLOR[d.categorie] ?? "#64748b";
               return (
                 <a key={d.id} href={`/bruz-en-action/metropole/${d.id}`} style={{ textDecoration: "none", display: "block" }}>
                   <div style={{ background: "#fff", border: "1px solid #e2e8f0", borderTop: `3px solid ${color}`, borderRadius: 12, padding: "24px", height: "100%", transition: "box-shadow 0.15s" }}>
@@ -125,7 +119,7 @@ export default function MetropolePage() {
           <h2 style={{ fontSize: 16, fontWeight: 700, color: "#0f172a", margin: "0 0 16px" }}>Autres sujets suivis</h2>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: 14 }}>
             {autres.map(d => {
-              const color = CATEGORIE_COLORS[d.categorie] ?? "#64748b";
+              const color = CATEGORIE_COLOR[d.categorie] ?? "#64748b";
               return (
                 <a key={d.id} href={`/bruz-en-action/metropole/${d.id}`} style={{ textDecoration: "none", display: "block" }}>
                   <div style={{ background: "#fff", border: "1px solid #e2e8f0", borderLeft: `3px solid ${color}`, borderRadius: 10, padding: "18px 20px" }}>

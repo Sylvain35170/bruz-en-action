@@ -1,5 +1,9 @@
 # BACKLOG — Bruz en Action
 
+## 🔴 En cours
+
+- [ ] **Audit site fond & forme** — passer en revue `AUDIT_SITE_2026-07.md` ensemble : lot 1 (corrections) fait, reste à arbitrer lot 2 (cohérence design), lot 3 (fond éditorial), lot 4 (nouvelles pages stats / base de connaissance / histoire)
+
 ## 🟠 Prioritaire — Fonctionnalités
 
 - [ ] **Parole des élus** — enrichir `data/elus.json` au fil du mandat

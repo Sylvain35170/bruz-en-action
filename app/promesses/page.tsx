@@ -27,10 +27,17 @@ export default function Promesses() {
   const hasHelloAsso = Boolean(contact.hello_asso_url);
 
   const total = promesses.length;
-  const tenues = promesses.filter(p => p.statut_id === "tenu").length;
-  const enCours = promesses.filter(p => p.statut_id === "en_cours").length;
-  const nonCommences = promesses.filter(p => p.statut_id === "non_commence").length;
+  const countStatut = (id: string) => promesses.filter(p => p.statut_id === id).length;
+  const tenues = countStatut("tenu");
   const score = total > 0 ? Math.round((tenues / total) * 100) : 0;
+  const segments = [
+    { id: "tenu", color: "#22c55e", label: "tenus" },
+    { id: "partiel", color: "#60a5fa", label: "partiels" },
+    { id: "en_cours", color: "#E8A040", label: "en cours" },
+    { id: "abandonne", color: "#f87171", label: "abandonnés" },
+    { id: "inconnu", color: "rgba(255,255,255,0.35)", label: "statut inconnu" },
+    { id: "non_commence", color: "rgba(255,255,255,0.15)", label: "non commencés" },
+  ].map(s => ({ ...s, n: countStatut(s.id) }));
   const countByPilier = (id: number) => promesses.filter(p => p.pilier_id === id).length;
   const tenusByPilier = (id: number) => promesses.filter(p => p.pilier_id === id && p.statut_id === "tenu").length;
 
@@ -47,7 +54,7 @@ export default function Promesses() {
       {/* Hero + barre */}
       <div style={{ background: "linear-gradient(135deg, #0E2F62 0%, #1A4177 100%)", color: "#fff", paddingBottom: 48 }}>
         <div style={{ maxWidth: 1120, margin: "0 auto", padding: "40px 24px 0" }}>
-          <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#f97316", display: "block", marginBottom: 8 }}>
+          <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#E8A040", display: "block", marginBottom: 8 }}>
             Transparence municipale
           </span>
           <h1 style={{ fontSize: "clamp(1.5rem,3vw,2.2rem)", fontWeight: 800, lineHeight: 1.2, margin: "0 0 12px", color: "#fff" }}>
@@ -69,19 +76,15 @@ export default function Promesses() {
               <span style={{ fontSize: 15, fontWeight: 800, color: "#4ade80" }}>{score}% tenus</span>
             </div>
             <div style={{ height: 12, borderRadius: 999, background: "rgba(255,255,255,0.1)", overflow: "hidden", display: "flex" }}>
-              <div style={{ height: "100%", background: "#22c55e", width: `${(tenues / total) * 100}%` }} />
-              <div style={{ height: "100%", background: "#f97316", width: `${(enCours / total) * 100}%` }} />
-              <div style={{ height: "100%", background: "rgba(255,255,255,0.15)", width: `${(nonCommences / total) * 100}%` }} />
+              {segments.filter(s => s.n > 0).map(s => (
+                <div key={s.id} style={{ height: "100%", background: s.color, width: `${(s.n / total) * 100}%` }} />
+              ))}
             </div>
             <div style={{ display: "flex", gap: 20, marginTop: 10, flexWrap: "wrap" }}>
-              {[
-                { color: "#22c55e", label: `${tenues} tenus` },
-                { color: "#f97316", label: `${enCours} en cours` },
-                { color: "rgba(255,255,255,0.3)", label: `${nonCommences} non commencés` },
-              ].map(({ color, label }) => (
-                <span key={label} style={{ display: "flex", alignItems: "center", gap: 6, fontSize: 12, color: "rgba(255,255,255,0.6)" }}>
-                  <span style={{ width: 10, height: 10, borderRadius: 3, background: color, flexShrink: 0 }} />
-                  {label}
+              {segments.filter(s => s.n > 0).map(s => (
+                <span key={s.id} style={{ display: "flex", alignItems: "center", gap: 6, fontSize: 12, color: "rgba(255,255,255,0.6)" }}>
+                  <span style={{ width: 10, height: 10, borderRadius: 3, background: s.color, flexShrink: 0 }} />
+                  {s.n} {s.label}
                 </span>
               ))}
             </div>
@@ -93,7 +96,7 @@ export default function Promesses() {
 
         {/* Posture éditoriale */}
         <div style={{ maxWidth: 1120, margin: "0 auto", padding: "32px 24px 0" }}>
-          <div className="bea-grid-2col" style={{ background: "#fff", border: "1px solid #e2e8f0", borderLeft: "3px solid #f97316", borderRadius: 10, padding: "16px 20px", display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20 }}>
+          <div className="bea-grid-2col" style={{ background: "#fff", border: "1px solid #e2e8f0", borderLeft: "3px solid #E8A040", borderRadius: 10, padding: "16px 20px", display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20 }}>
             <div>
               <div style={{ fontSize: 12, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.08em", color: "#64748b", marginBottom: 6 }}>Notre posture</div>
               <p style={{ margin: 0, fontSize: 13, color: "#475569", lineHeight: 1.7 }}>

@@ -37,6 +37,7 @@ Objectif : suivre les engagements de la majorité municipale de Bruz (mandat 202
 | `cms_megalis_2026.json` | Délibérations Mégalis enrichies |
 | `bulletins.json` | Bruz Mag + Semaine à Bruz — distinct de `cms.json` (voir piège 2026-07-11) |
 | `evenements.json` | Agenda |
+| `institutions.json` | Page /qui-fait-quoi : compétences par échelon (commune/métropole/département/région/État) + rôles municipaux |
 | `meta.json` | Description asso, bureau, contacts, sources surveillées |
 
 ### Structure dossier (schema citoyen)
@@ -59,8 +60,15 @@ Champs clés : `featured` (bool), `last_activity` (date ISO), `actus_recentes` (
 /promesses          Tableau de bord promesses
 /promesses/[id]     Détail promesse
 /elus               Liste 33 élus
+/qui-fait-quoi      Pédagogie institutions : compétences par échelon + rôles maire/adjoints/conseil
 /carte              Carte Leaflet interactive (ZAC Multisites, T4, équipements)
 ```
+
+### Champ `niveau` dans `qui_decide` (dossiers.json)
+Chaque acteur de `qui_decide` porte un `niveau` : `commune` · `metropole` · `intercommunal` ·
+`departement` · `region` · `etat` · `autre`. Config badges/couleurs : `NIVEAU_CONFIG` dans
+`app/utils.ts` (partagée entre `/dossiers/[id]` et `/qui-fait-quoi`). Tout nouvel acteur
+ajouté à un dossier doit avoir son `niveau`.
 
 ---
 

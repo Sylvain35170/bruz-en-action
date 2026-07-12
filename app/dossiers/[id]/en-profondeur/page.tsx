@@ -6,7 +6,11 @@ import SiteFooter from "../../../../components/SiteFooter";
 import { formatNomPrenom } from "../../../utils";
 
 // Seuls les dossiers avec une page "En profondeur" sont listés ici
-const EN_PROFONDEUR_IDS = ["D01", "D02", "D03", "D07"];
+// IDs pilotés par le champ en_profondeur de dossiers.json — le contenu
+// éditorial de chaque analyse reste dans ce fichier (blocs par id).
+const EN_PROFONDEUR_IDS = dossiersData.dossiers
+  .filter((d) => "en_profondeur" in d && d.en_profondeur)
+  .map((d) => d.id);
 
 export function generateStaticParams() {
   return EN_PROFONDEUR_IDS.map(id => ({ id }));
@@ -66,7 +70,7 @@ export default async function EnProfondeurPage({ params }: { params: Promise<{ i
       <section style={{ background: "linear-gradient(135deg, #0E2F62 0%, #1A4177 100%)", color: "#fff", paddingBottom: 48 }}>
         <div style={{ maxWidth: 1120, margin: "0 auto", padding: "40px 24px 0" }}>
           <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 16 }}>
-            <span style={{ padding: "3px 10px", borderRadius: 999, background: "rgba(232,77,14,0.2)", color: "#f97316", fontSize: 12, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.08em" }}>
+            <span style={{ padding: "3px 10px", borderRadius: 999, background: "rgba(232,77,14,0.2)", color: "#E8A040", fontSize: 12, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.08em" }}>
               En profondeur
             </span>
             <span style={{ fontSize: 12, color: "rgba(255,255,255,0.4)" }}>{dossier.id}</span>

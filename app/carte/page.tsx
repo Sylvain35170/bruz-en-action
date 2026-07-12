@@ -55,7 +55,7 @@ export default function CartePage() {
         {/* Légende */}
         <div style={{ display: "flex", gap: 20, flexWrap: "wrap", marginBottom: 16, padding: "12px 16px", background: "var(--surface-card, #fff)", borderRadius: 10, border: "1px solid #e2e8f0" }}>
           <span style={{ display: "flex", alignItems: "center", gap: 8, fontSize: 13 }}>
-            <span style={{ display: "inline-block", width: 20, height: 4, background: "#f97316", borderRadius: 2, opacity: 0.7 }} />
+            <span style={{ display: "inline-block", width: 20, height: 4, background: "#E8A040", borderRadius: 2, opacity: 0.7 }} />
             ZAC Multisites (6 secteurs)
           </span>
           <span style={{ display: "flex", alignItems: "center", gap: 8, fontSize: 13 }}>
@@ -78,7 +78,7 @@ export default function CartePage() {
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: 20, marginTop: 28 }}>
 
           {/* ZAC */}
-          <div style={{ background: "var(--surface-card, #fff)", border: "1px solid #e2e8f0", borderRadius: 12, padding: 24, borderTop: "3px solid #f97316" }}>
+          <div style={{ background: "var(--surface-card, #fff)", border: "1px solid #e2e8f0", borderRadius: 12, padding: 24, borderTop: "3px solid #E8A040" }}>
             <h2 style={{ margin: "0 0 8px", fontSize: 16, fontWeight: 700, color: "#0f172a" }}>ZAC Multisites</h2>
             <p style={{ margin: "0 0 12px", fontSize: 13, color: "#64748b", lineHeight: 1.6 }}>
               Projet d'aménagement phare du mandat : 6 secteurs distribués sur la commune pour accueillir ~1 700 logements neufs à l'horizon 2040. Un enjeu clé pour la croissance de Bruz.
@@ -88,7 +88,7 @@ export default function CartePage() {
               <li>~1 700 logements programmés</li>
               <li>Mixité imposée : logement social + accession</li>
             </ul>
-            <a href="/bruz-en-action/dossiers/D02" style={{ display: "inline-block", marginTop: 14, fontSize: 12, fontWeight: 600, color: "#f97316" }}>
+            <a href="/bruz-en-action/dossiers/D02" style={{ display: "inline-block", marginTop: 14, fontSize: 12, fontWeight: 600, color: "#E8A040" }}>
               Lire le dossier ZAC →
             </a>
           </div>

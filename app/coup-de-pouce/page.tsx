@@ -148,7 +148,7 @@ export default function CoupDePoucePage() {
             Une association qui cherche des bénévoles, un nouveau commerce, une cause locale — partagez-le nous.
           </p>
           <a href="/bruz-en-action/interagir"
-            style={{ display: "inline-block", padding: "12px 28px", borderRadius: 999, background: "#f97316", color: "#fff", fontWeight: 700, textDecoration: "none", fontSize: 14 }}>
+            style={{ display: "inline-block", padding: "12px 28px", borderRadius: 999, background: "#E8A040", color: "#0E2F62", fontWeight: 700, textDecoration: "none", fontSize: 14 }}>
             Nous contacter
           </a>
         </div>

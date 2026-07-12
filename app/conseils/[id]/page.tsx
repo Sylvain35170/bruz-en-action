@@ -98,7 +98,7 @@ export default async function SeancePage({ params }: { params: Promise<{ id: str
               <a href="/bruz-en-action/conseils" style={{ color: "rgba(255,255,255,0.85)", textDecoration: "none", fontSize: 13, fontWeight: 600, whiteSpace: "nowrap" }}>← Conseils</a>
               {hasHelloAsso && (
                 <a href={contact.hello_asso_url} target="_blank" rel="noopener noreferrer"
-                  style={{ padding: "7px 14px", borderRadius: 999, background: "#f97316", color: "#fff", fontSize: 13, fontWeight: 700, textDecoration: "none", whiteSpace: "nowrap" }}>
+                  style={{ padding: "7px 14px", borderRadius: 999, background: "#E8A040", color: "#0E2F62", fontSize: 13, fontWeight: 700, textDecoration: "none", whiteSpace: "nowrap" }}>
                   ❤️ Adhérer
                 </a>
               )}
@@ -111,7 +111,7 @@ export default async function SeancePage({ params }: { params: Promise<{ id: str
       <section style={{ background: "linear-gradient(135deg, #0E2F62 0%, #1A4177 100%)", color: "#fff", paddingBottom: 48 }}>
         <div style={{ maxWidth: 1120, margin: "0 auto", padding: "40px 24px 0" }}>
           <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 16, flexWrap: "wrap" }}>
-            <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#f97316" }}>
+            <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#E8A040" }}>
               Conseil municipal
             </span>
             <span style={{ padding: "3px 10px", borderRadius: 999, background: statut.bg, color: statut.color, fontSize: 12, fontWeight: 700 }}>

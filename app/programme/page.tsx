@@ -253,7 +253,7 @@ export default function ProgrammePage() {
                 style={{
                   display: "inline-flex", alignItems: "center", gap: 8,
                   padding: "12px 20px", borderRadius: 8,
-                  background: "#f97316", color: "#fff",
+                  background: "#E8A040", color: "#0E2F62",
                   fontWeight: 700, fontSize: 14, textDecoration: "none",
                   flexShrink: 0, whiteSpace: "nowrap",
                 }}

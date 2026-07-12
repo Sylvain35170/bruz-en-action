@@ -102,8 +102,8 @@ export default function MapBruz() {
       /* ZAC Multisites */
       ZAC_SECTEURS.forEach((sec) => {
         L.polygon(sec.coords, {
-          color: "#f97316",
-          fillColor: "#f97316",
+          color: "#E8A040",
+          fillColor: "#E8A040",
           fillOpacity: 0.18,
           weight: 2,
         })

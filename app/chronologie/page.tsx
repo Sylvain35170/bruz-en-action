@@ -3,6 +3,7 @@ import dossiers from "../../data/dossiers.json";
 import metaData from "../../data/meta.json";
 import NavBar from "../../components/NavBar";
 import SiteFooter from "../../components/SiteFooter";
+import { catColor } from "../../lib/categories";
 
 export const metadata: Metadata = {
   title: "Chronologie — Bruz en Action",
@@ -17,24 +18,10 @@ export const metadata: Metadata = {
   },
 };
 
-// Palette par dossier (cohérente avec les catégories)
-const DOSSIER_COLORS: Record<string, string> = {
-  D01: "#2563eb", // mobilité — bleu
-  D02: "#7c3aed", // urbanisme — violet
-  D03: "#059669", // finances — vert
-  D04: "#dc2626", // taxe — rouge
-  D05: "#0891b2", // carte — cyan
-  D06: "#d97706", // piscine — ambre
-  D07: "#374151", // sécurité — gris anthracite
-  D09: "#db2777", // culture — rose
-  D10: "#ea580c", // éducation — orange
-  D11: "#65a30d", // patrimoine — vert clair
-  D12: "#a21caf", // équipements sportifs — fuchsia
-  D13: "#ca8a04", // environnement/canicule — jaune
-  D15: "#16a34a", // santé — vert
-  D16: "#78716c", // économie — gris chaud
-  D20: "#0d9488", // campus/étudiant — teal
-};
+// Couleur par catégorie du dossier — palette unique du site (lib/categories)
+const DOSSIER_COLORS: Record<string, string> = Object.fromEntries(
+  dossiers.dossiers.map((d) => [d.id, catColor(d.categorie)])
+);
 
 type RawEvent = {
   date: string;

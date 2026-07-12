@@ -70,9 +70,9 @@ export default function SignalementButton({ reference, variant = "inline" }: Pro
             flexShrink: 0,
             fontSize: 13, fontWeight: 700,
             padding: "8px 18px", borderRadius: 999,
-            background: "rgba(249,115,22,0.15)",
-            border: "1px solid rgba(249,115,22,0.4)",
-            color: "#f97316", textDecoration: "none",
+            background: "rgba(232,160,64,0.15)",
+            border: "1px solid rgba(232,160,64,0.4)",
+            color: "#E8A040", textDecoration: "none",
           }}>
           ✉️ Signaler
         </a>
