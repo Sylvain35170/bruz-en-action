@@ -4,10 +4,22 @@
     "chapeau": "Trambus, écoles, collège, santé, impôts… chaque sujet du quotidien dépend d'un échelon différent : la commune, la métropole, le département, la région ou l'État. Cette page explique qui décide de quoi — pour savoir à qui s'adresser, et qui tenir responsable.",
     "derniere_maj": "2026-07-12",
     "sources": [
-      { "label": "CGCT — rôle du maire et du conseil municipal (vie-publique.fr)", "url": "https://www.vie-publique.fr/fiches/19620-quel-est-le-role-du-maire" },
-      { "label": "Compétences des collectivités territoriales (vie-publique.fr)", "url": "https://www.vie-publique.fr/fiches/19614-quelles-sont-les-competences-exercees-par-les-communes" },
-      { "label": "Rennes Métropole — compétences", "url": "https://metropole.rennes.fr/les-competences-de-rennes-metropole" },
-      { "label": "Charte de l'élu local (art. L1111-1-1 CGCT)", "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000030424099" }
+      {
+        "label": "CGCT — rôle du maire et du conseil municipal (vie-publique.fr)",
+        "url": "https://www.vie-publique.fr/fiches/19620-quel-est-le-role-du-maire"
+      },
+      {
+        "label": "Compétences des collectivités territoriales (vie-publique.fr)",
+        "url": "https://www.vie-publique.fr/fiches/19614-quelles-sont-les-competences-exercees-par-les-communes"
+      },
+      {
+        "label": "Rennes Métropole — compétences",
+        "url": "https://metropole.rennes.fr/les-competences-de-rennes-metropole"
+      },
+      {
+        "label": "Charte de l'élu local (art. L1111-1-1 CGCT)",
+        "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000030424099"
+      }
     ]
   },
   "echelons": [
@@ -18,13 +30,40 @@
       "portee": "≈ 20 500 habitants · 33 élus municipaux · mandat 2026-2032",
       "description": "L'échelon le plus proche des habitants. Mais attention : à Bruz, membre de Rennes Métropole, plusieurs compétences historiques de la mairie (voirie, eau, urbanisme réglementaire…) ont été transférées à la métropole. La commune garde la main sur le quotidien de proximité.",
       "competences": [
-        { "domaine": "Écoles maternelles et élémentaires", "detail": "Construction et entretien des bâtiments, cantine, périscolaire, personnel non enseignant (ATSEM). Les enseignants et la carte scolaire relèvent de l'État.", "dossier_id": "D10" },
-        { "domaine": "État civil et élections", "detail": "Naissances, mariages, décès, organisation des scrutins — le maire agit ici au nom de l'État." },
-        { "domaine": "Permis de construire", "detail": "Délivrés par le maire au nom de la commune — mais en conformité avec le PLUi, qui est décidé au niveau métropolitain.", "dossier_id": "D02" },
-        { "domaine": "Action sociale (CCAS)", "detail": "Aides d'urgence, registre canicule, accompagnement des personnes fragiles via le Centre communal d'action sociale.", "dossier_id": "D13" },
-        { "domaine": "Équipements sportifs et culturels de proximité", "detail": "Gymnases, terrains, city stades, médiathèque, Grand Logis — construction, entretien, subventions aux associations.", "dossier_id": "D12" },
-        { "domaine": "Prévention et tranquillité publique", "detail": "Police municipale et pouvoirs de police du maire (ordre, sécurité, salubrité). La gendarmerie, elle, relève de l'État.", "dossier_id": "D07" },
-        { "domaine": "Budget communal", "detail": "Le conseil municipal vote chaque année le budget et les taux de la part communale des impôts locaux.", "dossier_id": "D03" }
+        {
+          "domaine": "Écoles maternelles et élémentaires",
+          "detail": "Construction et entretien des bâtiments, cantine, périscolaire, personnel non enseignant (ATSEM). Les enseignants et la carte scolaire relèvent de l'État.",
+          "dossier_id": "D10"
+        },
+        {
+          "domaine": "État civil et élections",
+          "detail": "Naissances, mariages, décès, organisation des scrutins — le maire agit ici au nom de l'État."
+        },
+        {
+          "domaine": "Permis de construire",
+          "detail": "Délivrés par le maire au nom de la commune — mais en conformité avec le PLUi, qui est décidé au niveau métropolitain.",
+          "dossier_id": "D02"
+        },
+        {
+          "domaine": "Action sociale (CCAS)",
+          "detail": "Aides d'urgence, registre canicule, accompagnement des personnes fragiles via le Centre communal d'action sociale.",
+          "dossier_id": "D13"
+        },
+        {
+          "domaine": "Équipements sportifs et culturels de proximité",
+          "detail": "Gymnases, terrains, city stades, médiathèque, Grand Logis — construction, entretien, subventions aux associations.",
+          "dossier_id": "D12"
+        },
+        {
+          "domaine": "Prévention et tranquillité publique",
+          "detail": "Police municipale et pouvoirs de police du maire (ordre, sécurité, salubrité). La gendarmerie, elle, relève de l'État.",
+          "dossier_id": "D07"
+        },
+        {
+          "domaine": "Budget communal",
+          "detail": "Le conseil municipal vote chaque année le budget et les taux de la part communale des impôts locaux.",
+          "dossier_id": "D03"
+        }
       ],
       "a_retenir": "La commune décide de ce qui touche au quotidien de proximité : écoles primaires, associations, équipements, action sociale — et vote ses impôts."
     },
@@ -35,13 +74,38 @@
       "portee": "43 communes · ≈ 460 000 habitants · Bruz y est représentée par ses conseillers métropolitains, élus lors des municipales (candidats « fléchés » sur les bulletins)",
       "description": "Beaucoup de décisions qui changent la vie des Bruzois se prennent au conseil métropolitain de Rennes, où Bruz ne pèse que quelques voix sur 43 communes. Ces compétences ne sont pas une option : elles ont été transférées par la loi, la commune ne peut pas les reprendre seule.",
       "competences": [
-        { "domaine": "Transports", "detail": "Réseau STAR, métro, bus — et le trambus T4, dont le tracé et le terminus à Bruz sont décidés par la métropole.", "dossier_id": "D01" },
-        { "domaine": "Urbanisme réglementaire (PLUi)", "detail": "Le Plan local d'urbanisme intercommunal fixe les règles de construction, les densités (ex. 60 logements/ha sur Ker Lann) et les zones constructibles.", "dossier_id": "D02" },
-        { "domaine": "Voirie", "detail": "Routes, ponts, pistes cyclables : les chantiers de rue à Bruz (pont de la Gare, rue Pasteur…) sont métropolitains.", "dossier_id": "D05" },
-        { "domaine": "Eau et assainissement", "detail": "Tarifs, qualité, réseaux — compétence métropolitaine depuis 2020." },
-        { "domaine": "Déchets", "detail": "Collecte, déchèteries, incinérateur de Villejean." },
-        { "domaine": "Développement économique", "detail": "Zones d'activités (Ker Lann — 165 ha gérés par la métropole, Champ Niguel…), soutien aux implantations d'entreprises.", "dossier_id": "D16" },
-        { "domaine": "Habitat (PLH)", "detail": "Objectifs de production de logements et de mixité sociale imposés à chaque commune." }
+        {
+          "domaine": "Transports",
+          "detail": "Réseau STAR, métro, bus — et le trambus T4, dont le tracé et le terminus à Bruz sont décidés par la métropole.",
+          "dossier_id": "D01"
+        },
+        {
+          "domaine": "Urbanisme réglementaire (PLUi)",
+          "detail": "Le Plan local d'urbanisme intercommunal fixe les règles de construction, les densités (ex. 60 logements/ha sur Ker Lann) et les zones constructibles.",
+          "dossier_id": "D02"
+        },
+        {
+          "domaine": "Voirie",
+          "detail": "Routes, ponts, pistes cyclables : les chantiers de rue à Bruz (pont de la Gare, rue Pasteur…) sont métropolitains.",
+          "dossier_id": "D05"
+        },
+        {
+          "domaine": "Eau et assainissement",
+          "detail": "Tarifs, qualité, réseaux — compétence métropolitaine depuis 2020."
+        },
+        {
+          "domaine": "Déchets",
+          "detail": "Collecte, déchèteries, incinérateur de Villejean."
+        },
+        {
+          "domaine": "Développement économique",
+          "detail": "Zones d'activités (Ker Lann — 165 ha gérés par la métropole, Champ Niguel…), soutien aux implantations d'entreprises.",
+          "dossier_id": "D16"
+        },
+        {
+          "domaine": "Habitat (PLH)",
+          "detail": "Objectifs de production de logements et de mixité sociale imposés à chaque commune."
+        }
       ],
       "a_retenir": "Transports, urbanisme, voirie, eau, déchets : sur ces sujets, la mairie de Bruz peut peser dans les négociations, mais c'est la métropole qui tranche. Voir la page Métropole pour les dossiers suivis.",
       "note": "Bruz appartient aussi à d'autres intercommunalités ponctuelles, comme le syndicat intercommunal de la piscine de la Conterie (avec Chartres-de-Bretagne et Saint-Erblon), qui gère cet équipement partagé."
@@ -53,10 +117,23 @@
       "portee": "≈ 1,1 million d'habitants · conseillers départementaux élus par canton",
       "description": "Le département est le chef de file des solidarités. À Bruz, il est surtout visible à travers le collège et l'action sociale.",
       "competences": [
-        { "domaine": "Collèges", "detail": "Construction, entretien et fonctionnement du collège public Pierre Brossolette. Les enseignants relèvent de l'État.", "dossier_id": "D10" },
-        { "domaine": "Action sociale", "detail": "RSA, aide aux personnes âgées (APA), protection de l'enfance, PMI — le gros du budget départemental." },
-        { "domaine": "Routes départementales", "detail": "Hors agglomération et hors voirie métropolitaine." },
-        { "domaine": "Pompiers (SDIS)", "detail": "Le département est le principal financeur du service d'incendie et de secours." }
+        {
+          "domaine": "Collèges",
+          "detail": "Construction, entretien et fonctionnement du collège public Pierre Brossolette. Les enseignants relèvent de l'État.",
+          "dossier_id": "D10"
+        },
+        {
+          "domaine": "Action sociale",
+          "detail": "RSA, aide aux personnes âgées (APA), protection de l'enfance, PMI — le gros du budget départemental."
+        },
+        {
+          "domaine": "Routes départementales",
+          "detail": "Hors agglomération et hors voirie métropolitaine."
+        },
+        {
+          "domaine": "Pompiers (SDIS)",
+          "detail": "Le département est le principal financeur du service d'incendie et de secours."
+        }
       ],
       "a_retenir": "Collège et solidarités : pour ces sujets, l'interlocuteur est le conseil départemental, pas la mairie."
     },
@@ -67,10 +144,24 @@
       "portee": "≈ 3,4 millions d'habitants · conseil régional élu tous les 6 ans",
       "description": "La région pilote les lycées, les trains régionaux et le développement économique à grande échelle.",
       "competences": [
-        { "domaine": "Lycées", "detail": "Construction, entretien et fonctionnement du lycée public Anita Conti. Les enseignants relèvent de l'État.", "dossier_id": "D10" },
-        { "domaine": "Transports régionaux", "detail": "TER et cars BreizhGo — dont la desserte ferroviaire de la gare de Bruz." },
-        { "domaine": "Formation professionnelle", "detail": "Apprentissage, formation des demandeurs d'emploi." },
-        { "domaine": "Développement économique", "detail": "Aides directes aux entreprises, stratégie régionale — en articulation avec la métropole.", "dossier_id": "D16" }
+        {
+          "domaine": "Lycées",
+          "detail": "Construction, entretien et fonctionnement du lycée public Anita Conti. Les enseignants relèvent de l'État.",
+          "dossier_id": "D10"
+        },
+        {
+          "domaine": "Transports régionaux",
+          "detail": "TER et cars BreizhGo — dont la desserte ferroviaire de la gare de Bruz."
+        },
+        {
+          "domaine": "Formation professionnelle",
+          "detail": "Apprentissage, formation des demandeurs d'emploi."
+        },
+        {
+          "domaine": "Développement économique",
+          "detail": "Aides directes aux entreprises, stratégie régionale — en articulation avec la métropole.",
+          "dossier_id": "D16"
+        }
       ],
       "a_retenir": "Lycée et TER : c'est la région. Pour le reste, elle intervient surtout en soutien et en financements croisés."
     },
@@ -81,12 +172,36 @@
       "portee": "Préfecture d'Ille-et-Vilaine, services déconcentrés (Éducation nationale, ARS, DGFiP…), gendarmerie, justice",
       "description": "L'État est présent à Bruz à travers ses services déconcentrés. Il fixe le cadre légal dans lequel toutes les collectivités agissent, contrôle leurs actes et garde des compétences régaliennes.",
       "competences": [
-        { "domaine": "Éducation nationale", "detail": "Affectation des enseignants, ouvertures et fermetures de classes (carte scolaire) — décidées par l'Inspection académique, pas par la mairie.", "dossier_id": "D10" },
-        { "domaine": "Sécurité", "detail": "Bruz est en zone gendarmerie (compagnie de Chartres-de-Bretagne). La police municipale complète, mais ne remplace pas.", "dossier_id": "D07" },
-        { "domaine": "Santé", "detail": "L'Agence régionale de santé (ARS Bretagne) décide du zonage médical qui conditionne les aides à l'installation de médecins.", "dossier_id": "D15" },
-        { "domaine": "Contrôle de légalité et gestion de crise", "detail": "La préfecture contrôle les actes de la commune (budget, délibérations) et pilote les alertes (canicule, plans de secours).", "dossier_id": "D13" },
-        { "domaine": "Impôts", "detail": "La DGFiP calcule et collecte les impôts locaux ; elle établit les bases fiscales sur lesquelles la commune vote ses taux.", "dossier_id": "D04" },
-        { "domaine": "Justice", "detail": "Le tribunal administratif tranche les litiges impliquant la commune — par exemple le contentieux du city stade Siméon Belliard.", "dossier_id": "D12" }
+        {
+          "domaine": "Éducation nationale",
+          "detail": "Affectation des enseignants, ouvertures et fermetures de classes (carte scolaire) — décidées par l'Inspection académique, pas par la mairie.",
+          "dossier_id": "D10"
+        },
+        {
+          "domaine": "Sécurité",
+          "detail": "Bruz est en zone gendarmerie (compagnie de Chartres-de-Bretagne). La police municipale complète, mais ne remplace pas.",
+          "dossier_id": "D07"
+        },
+        {
+          "domaine": "Santé",
+          "detail": "L'Agence régionale de santé (ARS Bretagne) décide du zonage médical qui conditionne les aides à l'installation de médecins.",
+          "dossier_id": "D15"
+        },
+        {
+          "domaine": "Contrôle de légalité et gestion de crise",
+          "detail": "La préfecture contrôle les actes de la commune (budget, délibérations) et pilote les alertes (canicule, plans de secours).",
+          "dossier_id": "D13"
+        },
+        {
+          "domaine": "Impôts",
+          "detail": "La DGFiP calcule et collecte les impôts locaux ; elle établit les bases fiscales sur lesquelles la commune vote ses taux.",
+          "dossier_id": "D04"
+        },
+        {
+          "domaine": "Justice",
+          "detail": "Le tribunal administratif tranche les litiges impliquant la commune — par exemple le contentieux du city stade Siméon Belliard.",
+          "dossier_id": "D12"
+        }
       ],
       "a_retenir": "Enseignants, gendarmes, médecins, impôts, justice : autant de sujets où ni la mairie ni la métropole ne décident — c'est l'État."
     }
@@ -99,12 +214,32 @@
         "titre": "Le maire",
         "qui": "Jean-René Houssin, élu maire par le conseil municipal le 20 mars 2026",
         "points": [
-          "Exécutif de la commune : il prépare et exécute les décisions du conseil municipal, ordonne les dépenses et dirige les services municipaux.",
-          "Il délivre les permis de construire au nom de la commune, en conformité avec le PLUi métropolitain.",
-          "Il détient les pouvoirs de police administrative : ordre public, sécurité, salubrité sur le territoire communal.",
-          "Double casquette : il est aussi agent de l'État — état civil, organisation des élections, publication des lois. Sur ces missions, il agit sous l'autorité du préfet, pas du conseil municipal.",
-          "Il représente Bruz au conseil métropolitain et négocie avec Rennes Métropole sur les dossiers transférés (T4, ZAC, voirie…)."
-        ]
+          {
+            "titre": "Exécutif de la commune",
+            "detail": "Il prépare et exécute les décisions du conseil municipal, ordonne les dépenses, signe les marchés et les contrats, et dirige l'administration et les services municipaux."
+          },
+          {
+            "titre": "Pouvoirs de police",
+            "detail": "Ordre public, tranquillité, sécurité et salubrité sur le territoire communal : circulation, stationnement, sécurité des bâtiments et des manifestations. Il agit par arrêtés municipaux, sans vote du conseil."
+          },
+          {
+            "titre": "Urbanisme",
+            "detail": "Il délivre les permis de construire et les autorisations d'urbanisme au nom de la commune, en conformité avec le PLUi métropolitain."
+          },
+          {
+            "titre": "Agent de l'État",
+            "detail": "État civil (naissances, mariages, décès), organisation des élections, recensement, publication des lois : sur ces missions, il agit sous l'autorité du préfet — pas du conseil municipal. Il est aussi officier de police judiciaire."
+          },
+          {
+            "titre": "Délégations du conseil",
+            "detail": "Le conseil municipal peut lui déléguer une partie de ses attributions pour la durée du mandat (emprunts, droit de préemption, tarifs…) : il décide alors seul, à charge d'en rendre compte à chaque séance."
+          },
+          {
+            "titre": "Représentation",
+            "detail": "Il représente la commune en justice et dans les actes de la vie civile, et siège au conseil métropolitain de Rennes Métropole où il porte les dossiers transférés (T4, ZAC, voirie…)."
+          }
+        ],
+        "garde_fous": "Le maire ne décide pas seul de tout : le budget, les taux d'imposition et les grands projets sont votés par le conseil municipal, et la légalité de ses actes est contrôlée par le préfet et le juge administratif."
       },
       {
         "id": "adjoints",

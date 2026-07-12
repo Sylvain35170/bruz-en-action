@@ -128,9 +128,16 @@ export default function QuiFaitQuoiPage() {
                   <div style={{ fontSize: 13, color: "#94a3b8", marginBottom: 12 }}>{r.qui}</div>
                   <ul style={{ margin: 0, paddingLeft: 18, display: "flex", flexDirection: "column", gap: 7 }}>
                     {r.points.map((p, i) => (
-                      <li key={i} style={{ fontSize: 13.5, color: "#475569", lineHeight: 1.6 }}>{p}</li>
+                      <li key={i} style={{ fontSize: 13.5, color: "#475569", lineHeight: 1.6 }}>
+                        {typeof p === "string" ? p : <><strong style={{ color: "#0f172a" }}>{p.titre} — </strong>{p.detail}</>}
+                      </li>
                     ))}
                   </ul>
+                  {"garde_fous" in r && r.garde_fous && (
+                    <div style={{ marginTop: 14, background: "#fffbeb", borderLeft: "3px solid #E8A040", borderRadius: "0 8px 8px 0", padding: "10px 14px", fontSize: 13, color: "#334155", lineHeight: 1.6 }}>
+                      <strong>Garde-fous :</strong> {r.garde_fous}
+                    </div>
+                  )}
                 </div>
               ))}
             </div>
