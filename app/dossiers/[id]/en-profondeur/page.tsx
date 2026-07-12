@@ -514,7 +514,7 @@ export default async function EnProfondeurPage({ params }: { params: Promise<{ i
                 Rennes Métropole
               </div>
               <div style={{ background: "#faf5ff", border: "1px solid #e9d5ff", borderLeft: "3px solid #7c3aed", borderRadius: 10, padding: "16px 20px" }}>
-                <div style={{ fontSize: 15, fontWeight: 800, color: "#0f172a", marginBottom: 3 }}>Rennes Métropole — 50 communes, ~460 000 habitants</div>
+                <div style={{ fontSize: 15, fontWeight: 800, color: "#0f172a", marginBottom: 3 }}>Rennes Métropole — 43 communes, ~460 000 habitants</div>
                 <div style={{ fontSize: 12, color: "#7c3aed", marginBottom: 14 }}>EPCI — compétences : urbanisme, mobilités, habitat intercommunal</div>
                 <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
                   {[

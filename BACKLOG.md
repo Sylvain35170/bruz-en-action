@@ -2,7 +2,7 @@
 
 ## 🔴 En cours
 
-- [ ] **Audit site fond & forme** — passer en revue `AUDIT_SITE_2026-07.md` ensemble : lot 1 (corrections) fait, reste à arbitrer lot 2 (cohérence design), lot 3 (fond éditorial), lot 4 (nouvelles pages stats / base de connaissance / histoire)
+- [ ] **Audit site fond & forme** — `AUDIT_SITE_2026-07.md` : lots 1 et 2 faits, reste à arbitrer lot 3 (fond éditorial : promesses, /actualites, fiche minimum dossiers, mentions légales, agenda) et lot 4 (nouvelles pages stats / base de connaissance / histoire)
 
 ## 🟠 Prioritaire — Fonctionnalités
 

@@ -185,7 +185,7 @@ export default function Conseils() {
                   </span>
                 </div>
                 <p style={{ fontSize: 14, color: "#64748b", marginBottom: 20, lineHeight: 1.6 }}>
-                  La commune de Bruz appartient à Rennes Métropole (53 communes). Certaines décisions métropolitaines
+                  La commune de Bruz appartient à Rennes Métropole (43 communes). Certaines décisions métropolitaines
                   s&apos;imposent à la commune — tracé T4, ZAC Ker Lann, PLUiH, budget transports...
                 </p>
 
