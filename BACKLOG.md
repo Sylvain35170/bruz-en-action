@@ -64,4 +64,3 @@
 
 - Alertes email/RSS quand une promesse change de statut
 - Export PDF du tableau de bord par pilier
-- **Pages orphelines** — `/metro` (doublon quasi-exact de `/metropole`) et `/liens` ne sont liées depuis aucun nav ; décider suppression ou rattachement
