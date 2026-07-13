@@ -220,19 +220,79 @@
           },
           {
             "titre": "Pouvoirs de police",
-            "detail": "Ordre public, tranquillité, sécurité et salubrité sur le territoire communal : circulation, stationnement, sécurité des bâtiments et des manifestations. Il agit par arrêtés municipaux, sans vote du conseil."
+            "detail": "Ordre public, tranquillité, sécurité et salubrité sur le territoire communal : circulation, stationnement, sécurité des bâtiments et des manifestations. Il agit par arrêtés municipaux, sans vote du conseil.",
+            "zoom": [
+              {
+                "titre": "Police générale",
+                "texte": "Le socle (article L2212-2 du CGCT) : tranquillité publique (bruit, troubles de voisinage, rassemblements), sécurité (circulation, bâtiments menaçant ruine, prévention des accidents), salubrité publique. Le maire agit par arrêtés, applicables immédiatement."
+              },
+              {
+                "titre": "Polices spéciales",
+                "texte": "Des pouvoirs ciblés prévus par des textes particuliers : baignades et activités nautiques, établissements recevant du public, débits de boissons, animaux dangereux, cimetières, publicité extérieure…"
+              },
+              {
+                "titre": "Ce qui part à la métropole",
+                "texte": "La loi transfère au président de Rennes Métropole les polices spéciales liées aux compétences métropolitaines — assainissement, collecte des déchets, circulation et stationnement sur la voirie — sauf opposition du maire dans les six mois suivant l'élection. La police générale, elle, reste toujours au maire."
+              },
+              {
+                "titre": "Qui fait respecter tout ça",
+                "texte": "La police municipale de Bruz fait appliquer les arrêtés du maire (stationnement, bruit, marchés…). Les crimes et délits restent du ressort de la gendarmerie nationale — le maire n'a pas autorité sur elle."
+              },
+              {
+                "titre": "Les limites",
+                "texte": "Un arrêté de police doit être proportionné et justifié par les circonstances locales : le préfet peut le déférer au tribunal administratif, qui peut l'annuler. Un maire ne peut pas, par exemple, interdire de manière générale et absolue une activité légale."
+              }
+            ]
           },
           {
             "titre": "Urbanisme",
-            "detail": "Il délivre les permis de construire et les autorisations d'urbanisme au nom de la commune, en conformité avec le PLUi métropolitain."
+            "detail": "Il délivre les permis de construire et les autorisations d'urbanisme au nom de la commune, en conformité avec le PLUi métropolitain.",
+            "zoom": [
+              {
+                "titre": "Les règles ne sont pas fixées à Bruz",
+                "texte": "Le PLUi (plan local d'urbanisme intercommunal) est voté par Rennes Métropole : le maire délivre les autorisations, mais dans un cadre décidé à l'échelle métropolitaine, auquel la commune contribue via ses élus métropolitains."
+              },
+              {
+                "titre": "Ce qu'il signe",
+                "texte": "Permis de construire, d'aménager, de démolir, déclarations préalables de travaux, certificats d'urbanisme. Un refus doit être motivé par les règles d'urbanisme applicables et peut être contesté devant le tribunal administratif."
+              }
+            ]
           },
           {
             "titre": "Agent de l'État",
-            "detail": "État civil (naissances, mariages, décès), organisation des élections, recensement, publication des lois : sur ces missions, il agit sous l'autorité du préfet — pas du conseil municipal. Il est aussi officier de police judiciaire."
+            "detail": "État civil (naissances, mariages, décès), organisation des élections, recensement, publication des lois : sur ces missions, il agit sous l'autorité du préfet — pas du conseil municipal. Il est aussi officier de police judiciaire.",
+            "zoom": [
+              {
+                "titre": "État civil",
+                "texte": "Naissances, mariages, décès — sous le contrôle du procureur de la République. Les adjoints sont aussi officiers d'état civil : c'est pour cela qu'ils peuvent célébrer des mariages."
+              },
+              {
+                "titre": "Élections",
+                "texte": "Révision des listes électorales, organisation matérielle des scrutins, présidence de bureau de vote — sous l'autorité du préfet."
+              },
+              {
+                "titre": "Ce que ça change",
+                "texte": "Sur ces missions, le conseil municipal n'a aucun droit de regard : le maire agit comme représentant de l'État, pas comme exécutif de la commune. En cas de manquement, c'est le préfet qui peut se substituer à lui."
+              }
+            ]
           },
           {
             "titre": "Délégations du conseil",
-            "detail": "Le conseil municipal peut lui déléguer une partie de ses attributions pour la durée du mandat (emprunts, droit de préemption, tarifs…) : il décide alors seul, à charge d'en rendre compte à chaque séance."
+            "detail": "Le conseil municipal peut lui déléguer une partie de ses attributions pour la durée du mandat (emprunts, droit de préemption, tarifs…) : il décide alors seul, à charge d'en rendre compte à chaque séance.",
+            "zoom": [
+              {
+                "titre": "Comment ça marche",
+                "texte": "L'article L2122-22 du CGCT liste une trentaine de matières que le conseil peut déléguer au maire : emprunts, marchés publics, tarifs, droit de préemption, actions en justice, dons et legs… La délibération de délégation est en général votée en début de mandat."
+              },
+              {
+                "titre": "La contrepartie",
+                "texte": "Le maire doit rendre compte de ces décisions à chaque séance — elles figurent à l'ordre du jour sous l'intitulé « décisions du maire ». Le conseil peut modifier ou retirer la délégation à tout moment."
+              },
+              {
+                "titre": "Où le vérifier",
+                "texte": "Nous suivons chaque séance dans la rubrique Conseils : les décisions prises sur délégation y apparaissent au fil du mandat."
+              }
+            ]
           },
           {
             "titre": "Représentation",

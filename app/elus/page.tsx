@@ -97,6 +97,18 @@ export default function Elus() {
                     <div key={i} style={{ background: "#f8fafc", border: "1px solid #e2e8f0", borderRadius: 10, padding: "14px 16px" }}>
                       <div style={{ fontSize: 13, fontWeight: 800, color: "#0f172a", marginBottom: 4 }}>{p.titre}</div>
                       <div style={{ fontSize: 13, color: "#64748b", lineHeight: 1.55 }}>{p.detail}</div>
+                      {"zoom" in p && Array.isArray(p.zoom) && (
+                        <details style={{ marginTop: 10 }}>
+                          <summary style={{ fontSize: 12.5, fontWeight: 700, color: "#2563eb", cursor: "pointer" }}>En détail</summary>
+                          <div style={{ display: "flex", flexDirection: "column", gap: 8, marginTop: 10 }}>
+                            {p.zoom.map((z, j) => (
+                              <div key={j} style={{ fontSize: 12.5, color: "#475569", lineHeight: 1.6 }}>
+                                <strong style={{ color: "#0f172a" }}>{z.titre} — </strong>{z.texte}
+                              </div>
+                            ))}
+                          </div>
+                        </details>
+                      )}
                     </div>
                   )
                 ))}
