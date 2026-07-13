@@ -23,6 +23,7 @@ export interface Promesse {
 export interface Actu {
   id: string;
   date: string | null;
+  date_publication_estimee?: string;
   titre: string;
   detail?: string;
   resume?: string;

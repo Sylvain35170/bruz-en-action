@@ -1,7 +1,7 @@
 {
   "meta": {
     "source": "Programme Un nouvel élan pour Bruz — mandat 2026-2032",
-    "last_updated": "2026-07-01",
+    "last_updated": "2026-07-13",
     "updated_by": "import_excel.py",
     "total_promesses": 50
   },
@@ -201,9 +201,9 @@
       "ref": "S1",
       "titre": "Doubler les effectifs de la police municipale",
       "pilier_id": 2,
-      "statut_id": "non_commence",
+      "statut_id": "en_cours",
       "horizon": "2026-2028",
-      "detail": "Atteindre le double de l'effectif actuel.",
+      "detail": "Atteindre le double de l'effectif actuel. En cours : première offre de création de poste d'agent de police municipale supplémentaire publiée en juin 2026 (voir dossier D07).",
       "source": {
         "doc": "programme-2026.pdf",
         "url": "https://www.unnouvelelanpourbruz.com/_files/ugd/71facb_17a88aa6318c4051bb64c01574a6357a.pdf",
@@ -761,9 +761,9 @@
       "ref": "F1",
       "titre": "Maintenir la fiscalité locale (pas d'augmentation)",
       "pilier_id": 8,
-      "statut_id": "non_commence",
+      "statut_id": "en_cours",
       "horizon": "2026-2032",
-      "detail": "Engagement explicite de ne pas augmenter les taux communaux.",
+      "detail": "Engagement explicite de ne pas augmenter les taux communaux. En cours : taux TFB maintenu à 45,34 % au budget 2026 (voir dossier D04) — engagement tenu à ce stade, à confirmer sur la durée du mandat.",
       "source": {
         "doc": "programme-2026.pdf",
         "url": "https://www.unnouvelelanpourbruz.com/_files/ugd/71facb_17a88aa6318c4051bb64c01574a6357a.pdf",

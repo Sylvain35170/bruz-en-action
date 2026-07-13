@@ -61,6 +61,10 @@ def _to_actu(p: dict) -> dict:
         "source_label": p.get("source_label", ""),
         "type": p.get("type") or "presse",
     }
+    if not actu["date"]:
+        # Date d'article illisible (piège : ne jamais la deviner) — on trace la
+        # date d'acceptation dans un champ distinct pour rester affichable.
+        actu["date_publication_estimee"] = today()
     if p.get("dossier") and p["dossier"] != "à_classer":
         actu["dossier"] = p["dossier"]
     else:

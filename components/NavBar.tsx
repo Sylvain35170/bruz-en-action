@@ -10,6 +10,7 @@ const NAV_GROUPS = [
     label: "📁 Suivre",
     links: [
       { href: "/bruz-en-action/dossiers", label: "📁 Dossiers" },
+      { href: "/bruz-en-action/actualites", label: "🗞️ Actualités" },
       { href: "/bruz-en-action/conseils", label: "🏛️ Conseils" },
       { href: "/bruz-en-action/publications", label: "📰 Publications" },
       { href: "/bruz-en-action/chronologie", label: "🕐 Chronologie" },

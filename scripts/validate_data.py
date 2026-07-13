@@ -102,6 +102,9 @@ def validate_actus() -> None:
         if not a.get("titre"):
             err(f"{where} : titre manquant")
         check_date(a.get("date"), where)
+        check_date(a.get("date_publication_estimee"), where + ".date_publication_estimee")
+        if not a.get("date") and not a.get("date_publication_estimee"):
+            warn(f"{where} : ni date ni date_publication_estimee — invisible dans les listes triées")
         check_url(a.get("source_url"), where)
         if "contenu" in a and a.get("type") != "analyse":
             warn(f"{where} : champ «contenu» réservé au type analyse (type={a.get('type')})")

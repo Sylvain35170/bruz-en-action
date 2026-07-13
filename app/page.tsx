@@ -24,8 +24,8 @@ export default function Home() {
 
   const total = promesses.length;
   const countStatut = (id: string) => promesses.filter(p => p.statut_id === id).length;
-  const tenues = countStatut("tenu");
-  const score = total > 0 ? Math.round((tenues / total) * 100) : 0;
+  const engagees = countStatut("tenu") + countStatut("partiel") + countStatut("en_cours");
+  const score = total > 0 ? Math.round((engagees / total) * 100) : 0;
   const segments = [
     { id: "tenu", color: "#22c55e", label: "tenus" },
     { id: "partiel", color: "#2563eb", label: "partiels" },
@@ -60,9 +60,10 @@ export default function Home() {
     .slice(0, 4);
 
   const isoDate = /^\d{4}-\d{2}-\d{2}$/;
+  const effDate = (a: Actu) => a.date ?? a.date_publication_estimee ?? "";
   const lastActus = [...actus]
-    .filter(a => a.type !== "analyse" && a.date && isoDate.test(a.date))
-    .sort((a, b) => (b.date ?? "").localeCompare(a.date ?? ""))
+    .filter(a => a.type !== "analyse" && isoDate.test(effDate(a)))
+    .sort((a, b) => effDate(b).localeCompare(effDate(a)))
     .slice(0, 3);
   const { evenements } = evenementsData;
   const prochainEvts = evenements
@@ -370,7 +371,7 @@ export default function Home() {
               <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#64748b", display: "block", marginBottom: 6 }}>Transparence</span>
               <h2 style={{ fontSize: "clamp(1.2rem,2vw,1.6rem)", fontWeight: 800, margin: 0, color: "#0f172a" }}>Suivi des {total} engagements</h2>
               <span style={{ fontSize: 12, color: "#94a3b8", marginTop: 4, display: "block" }}>
-                Prochain bilan : automne 2026 · Mis à jour le {new Date(promessesData.meta.last_updated).toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" })}
+                Statuts en cours de consolidation — premier bilan complet à l&apos;automne 2026 · Mis à jour le {new Date(promessesData.meta.last_updated).toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" })}
               </span>
             </div>
             <a href="/bruz-en-action/promesses" style={{ fontSize: 14, fontWeight: 600, color: "#2563eb", textDecoration: "none" }}>
@@ -380,7 +381,7 @@ export default function Home() {
           <div style={{ maxWidth: 640 }}>
             <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 8 }}>
               <span style={{ fontSize: 13, color: "#64748b" }}>Mandat 2026-2032</span>
-              <span style={{ fontSize: 15, fontWeight: 800, color: "#16a34a" }}>{score}% tenus</span>
+              <span style={{ fontSize: 15, fontWeight: 800, color: "#16a34a" }}>{score}% engagés</span>
             </div>
             <div style={{ height: 12, borderRadius: 999, background: "#f1f5f9", overflow: "hidden", display: "flex" }}>
               {segments.filter(s => s.n > 0).map(s => (
@@ -403,9 +404,14 @@ export default function Home() {
       {lastActus.length > 0 && (
         <section style={{ background: "var(--surface-page)", borderBottom: "1px solid var(--border-subtle)" }}>
           <div style={{ maxWidth: "var(--container-max)", margin: "0 auto", padding: "48px var(--container-pad)" }}>
-            <div style={{ marginBottom: 24 }}>
-              <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#64748b", display: "block", marginBottom: 4 }}>Veille citoyenne</span>
-              <h2 style={{ fontSize: "clamp(1.2rem,2vw,1.5rem)", fontWeight: 800, margin: 0, color: "#0f172a" }}>Dernières actualités</h2>
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", marginBottom: 24, flexWrap: "wrap", gap: 12 }}>
+              <div>
+                <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#64748b", display: "block", marginBottom: 4 }}>Veille citoyenne</span>
+                <h2 style={{ fontSize: "clamp(1.2rem,2vw,1.5rem)", fontWeight: 800, margin: 0, color: "#0f172a" }}>Dernières actualités</h2>
+              </div>
+              <a href="/bruz-en-action/actualites" style={{ fontSize: 14, fontWeight: 600, color: "#2563eb", textDecoration: "none" }}>
+                Toutes les actualités →
+              </a>
             </div>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px,1fr))", gap: 16 }}>
               {lastActus.map(actu => {
@@ -420,7 +426,9 @@ export default function Home() {
                         <span style={{ fontSize: 10, fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", color, padding: "2px 8px", borderRadius: 999, border: `1px solid ${color}44`, background: `${color}10` }}>
                           {typeLabel}
                         </span>
-                        <span style={{ fontSize: 11, color: "#94a3b8" }}>{actu.date}</span>
+                        <span style={{ fontSize: 11, color: "#94a3b8" }} title={actu.date ? undefined : "Date estimée — publication sur ce site"}>
+                          {actu.date ?? `≈ ${actu.date_publication_estimee}`}
+                        </span>
                       </div>
                       <p style={{ fontSize: 13, fontWeight: 700, color: "#0f172a", margin: 0, lineHeight: 1.5, flex: 1 }}>{actu.titre}</p>
                       <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>

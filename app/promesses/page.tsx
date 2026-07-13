@@ -28,8 +28,8 @@ export default function Promesses() {
 
   const total = promesses.length;
   const countStatut = (id: string) => promesses.filter(p => p.statut_id === id).length;
-  const tenues = countStatut("tenu");
-  const score = total > 0 ? Math.round((tenues / total) * 100) : 0;
+  const engagees = countStatut("tenu") + countStatut("partiel") + countStatut("en_cours");
+  const score = total > 0 ? Math.round((engagees / total) * 100) : 0;
   const segments = [
     { id: "tenu", color: "#22c55e", label: "tenus" },
     { id: "partiel", color: "#60a5fa", label: "partiels" },
@@ -38,8 +38,9 @@ export default function Promesses() {
     { id: "inconnu", color: "rgba(255,255,255,0.35)", label: "statut inconnu" },
     { id: "non_commence", color: "rgba(255,255,255,0.15)", label: "non commencés" },
   ].map(s => ({ ...s, n: countStatut(s.id) }));
+  const ENGAGE_IDS = ["tenu", "partiel", "en_cours"];
   const countByPilier = (id: number) => promesses.filter(p => p.pilier_id === id).length;
-  const tenusByPilier = (id: number) => promesses.filter(p => p.pilier_id === id && p.statut_id === "tenu").length;
+  const engagesByPilier = (id: number) => promesses.filter(p => p.pilier_id === id && ENGAGE_IDS.includes(p.statut_id)).length;
 
   return (
     <div style={{ minHeight: "100vh", display: "flex", flexDirection: "column", background: "#f8fafc" }}>
@@ -65,7 +66,7 @@ export default function Promesses() {
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 28, flexWrap: "wrap" }}>
             <span style={{ fontSize: 12, fontWeight: 600, color: "rgba(255,255,255,0.5)", background: "rgba(255,255,255,0.08)", border: "1px solid rgba(255,255,255,0.15)", borderRadius: 999, padding: "4px 12px" }}>
-              🗓 Mise à jour trimestrielle — Prochaine : septembre 2026
+              🗓 Statuts en cours de consolidation — premier bilan complet à l&apos;automne 2026
             </span>
           </div>
 
@@ -73,7 +74,7 @@ export default function Promesses() {
           <div style={{ maxWidth: 640 }}>
             <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 8 }}>
               <span style={{ fontSize: 13, color: "rgba(255,255,255,0.7)" }}>{total} engagements</span>
-              <span style={{ fontSize: 15, fontWeight: 800, color: "#4ade80" }}>{score}% tenus</span>
+              <span style={{ fontSize: 15, fontWeight: 800, color: "#4ade80" }}>{score}% engagés</span>
             </div>
             <div style={{ height: 12, borderRadius: 999, background: "rgba(255,255,255,0.1)", overflow: "hidden", display: "flex" }}>
               {segments.filter(s => s.n > 0).map(s => (
@@ -119,8 +120,8 @@ export default function Promesses() {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: 16, marginBottom: 40 }}>
             {piliers.map(pilier => {
               const count = countByPilier(pilier.id);
-              const tenus = tenusByPilier(pilier.id);
-              const pct = count > 0 ? Math.round((tenus / count) * 100) : 0;
+              const engages = engagesByPilier(pilier.id);
+              const pct = count > 0 ? Math.round((engages / count) * 100) : 0;
               return (
                 <div key={pilier.id} style={{ background: "#fff", border: "1px solid #e2e8f0", borderRadius: 12, overflow: "hidden" }}>
                   <div style={{ height: 4, background: pilier.color }} />
@@ -132,7 +133,7 @@ export default function Promesses() {
                     <div style={{ height: 5, borderRadius: 999, background: "#f1f5f9", overflow: "hidden" }}>
                       <div style={{ height: "100%", borderRadius: 999, background: pilier.color, width: `${pct}%` }} />
                     </div>
-                    <div style={{ fontSize: 11, color: "#94a3b8", marginTop: 4 }}>{pct}% tenus</div>
+                    <div style={{ fontSize: 11, color: "#94a3b8", marginTop: 4 }}>{pct}% engagés</div>
                   </div>
                 </div>
               );
