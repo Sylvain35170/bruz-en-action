@@ -273,8 +273,8 @@ export default function Conseils() {
                 { label: "Élus au total", val: elusData.composition.total_sieges },
                 { label: "Majorité (Houssin)", val: `${elusData.composition.majorite.sieges} sièges` },
                 { label: "Opposition (Bruz avec vous)", val: `${elusData.composition.opposition.sieges} sièges` },
-                { label: "Femmes", val: "17 / 33" },
-                { label: "Âge moyen", val: "57 ans" },
+                { label: "Femmes", val: `${elusData.composition.femmes} / ${elusData.composition.total_sieges}` },
+                { label: "Âge moyen", val: `${elusData.composition.age_moyen} ans` },
               ].map(({ label, val }) => (
                 <div key={label} style={{ display: "flex", justifyContent: "space-between", padding: "7px 0", borderBottom: "1px solid #f1f5f9", fontSize: 13 }}>
                   <span style={{ color: "#64748b" }}>{label}</span>

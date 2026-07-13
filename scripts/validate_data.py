@@ -223,10 +223,34 @@ def validate_bruz() -> None:
     check_no_suspect(data, "bruz.json")
 
 
+def validate_programme() -> None:
+    """programme.json : les 10 priorités pilotent la page /programme, et
+    pilier_id doit renvoyer à un pilier existant de promesses.json."""
+    data = load("programme.json")
+    if not data:
+        return
+    pilier_ids = {p.get("id") for p in (load("promesses.json") or {}).get("piliers", [])}
+    priorites = data.get("priorites", [])
+    if len(priorites) != 10:
+        err(f"programme.json : {len(priorites)} priorités (attendu : 10)")
+    check_unique([p.get("num") for p in priorites], "programme.json (num)")
+    for p in priorites:
+        where = f"programme.json[{p.get('num', '?')}]"
+        for field in ("titre", "accroche", "color", "emoji"):
+            if not p.get(field):
+                err(f"{where} : champ «{field}» manquant")
+        if p.get("pilier_id") not in pilier_ids:
+            err(f"{where} : pilier_id «{p.get('pilier_id')}» hors référentiel promesses.json")
+        if not p.get("engagements") or not p.get("actions"):
+            err(f"{where} : engagements/actions vides")
+    check_no_suspect(data, "programme.json")
+
+
 def validate_parse_only() -> None:
     """Les autres fichiers data/ doivent au minimum parser."""
     done = {"actus.json", "dossiers.json", "promesses.json", "cms.json",
-            "evenements.json", "elus.json", "actus_queue.json", "bruz.json"}
+            "evenements.json", "elus.json", "actus_queue.json", "bruz.json",
+            "programme.json"}
     for path in sorted(DATA_DIR.glob("*.json")):
         if path.name in done:
             continue
@@ -245,6 +269,7 @@ def main() -> None:
     validate_evenements()
     validate_elus()
     validate_bruz()
+    validate_programme()
     validate_parse_only()
 
     if warnings and args.verbose:
