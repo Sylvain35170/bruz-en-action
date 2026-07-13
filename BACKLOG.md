@@ -2,7 +2,7 @@
 
 ## 🔴 En cours
 
-- [ ] **Audit site fond & forme** — `AUDIT_SITE_2026-07.md` : lots 1 et 2 faits, reste à arbitrer lot 3 (fond éditorial : promesses, /actualites, fiche minimum dossiers, mentions légales, agenda) et lot 4 (nouvelles pages stats / base de connaissance / histoire)
+- [ ] **Audit site fond & forme** — `AUDIT_SITE_2026-07.md` : lots 1 et 2 faits ; lot 3 entamé (A6 mentions légales, A10 /interagir, A4 champ `dossier` sur les actus : faits le 13/07). Reste au lot 3 : **A7** stats en dur → JSON (/conseils, /programme) · **A1** promesses (bandeau + `en_cours` factuel, + reframe « % engagé » discuté le 13/07) · **A3** page /actualites + dates (57/107 actus ont désormais leur `dossier` pour le filtre) · **A5** fiche minimum dossiers · **A8** agenda. Lot 4 (stats / connaissance / histoire) non arbitré. Nom de domaine propre : en attente de financement
 
 ## 🟠 Prioritaire — Fonctionnalités
 
