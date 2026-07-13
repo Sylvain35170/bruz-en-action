@@ -107,7 +107,9 @@ sans date ne sont plus perdus. `--dry-run` pour tester sans envoyer.
 Agents : `agent_mairie` · `agent_ouestfrance` (Playwright + cookies Chrome ; lève si
 dépendance manquante) · `agent_presse` (Google News RSS) · `agent_megalis` (YouTube RSS)
 · `agent_bruz_mag` (PDF) · `agent_enrichissement_cm` (transcription + Claude) ·
-`agent_dossiers` (hors cron, post-revue).
+`agent_agenda` (scraping agenda mairie → `evenements.json` **en direct, sans revue** —
+événements marqués `source: agenda_mairie`, les saisies manuelles ne sont jamais touchées,
+purge auto des événements passés de +30 j) · `agent_dossiers` (hors cron, post-revue).
 
 Lancement : `python3 scripts/run_agents.py` (launchd 17h en semaine).
 Logs : `~/Library/Logs/bruz-en-action-veille.log`.

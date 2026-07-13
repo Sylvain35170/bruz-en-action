@@ -45,6 +45,7 @@ AGENTS = [
     ("Mégalis",            "agents.agent_megalis"),            # XML open data → cms.json
     ("Bruz Mag",           "agents.agent_bruz_mag"),           # PDF/RSS → cms.json
     ("Mairie",             "agents.agent_mairie"),             # scraping → actus_queue.json
+    ("Agenda",             "agents.agent_agenda"),             # scraping → evenements.json (direct, sans revue)
     ("Ouest-France",       "agents.agent_ouestfrance"),        # scraping OF direct → actus_queue.json
     ("Presse",             "agents.agent_presse"),             # RSS Google News → actus_queue.json
     # ── Sélection éditoriale (Claude CLI) ────────────────────────────────

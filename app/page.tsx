@@ -66,8 +66,9 @@ export default function Home() {
     .sort((a, b) => effDate(b).localeCompare(effDate(a)))
     .slice(0, 3);
   const { evenements } = evenementsData;
-  const prochainEvts = evenements
-    .filter(e => new Date(e.date) >= new Date())
+  const prochainEvts = [...evenements]
+    .filter(e => new Date(e.date_fin ?? e.date) >= new Date())
+    .sort((a, b) => a.date.localeCompare(b.date))
     .slice(0, 4);
 
   return (
@@ -322,8 +323,17 @@ export default function Home() {
             </a>
           </div>
 
-          {/* Événements */}
-          {prochainEvts.length > 0 && (
+          {/* Événements — section repliée sous 2 événements futurs (audit A8) :
+              un agenda quasi vide donne l'impression d'un site à l'abandon */}
+          {prochainEvts.length < 2 && (
+            <div style={{ background: "#fff", border: "1px dashed #cbd5e1", borderRadius: 10, padding: "18px 20px", marginBottom: 24, fontSize: 14, color: "#64748b", lineHeight: 1.6 }}>
+              Peu d&apos;événements à afficher pour le moment — consultez{" "}
+              <a href="https://www.ville-bruz.fr/mes-loisirs/agenda/" target="_blank" rel="noopener noreferrer" style={{ color: "#2563eb", fontWeight: 600 }}>
+                l&apos;agenda complet de la mairie ↗
+              </a>.
+            </div>
+          )}
+          {prochainEvts.length >= 2 && (
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(240px,1fr))", gap: 14, marginBottom: 24 }}>
               {prochainEvts.map(ev => (
                 <div key={ev.id} style={{ background: "#fff", border: "1px solid #e2e8f0", borderRadius: 10, padding: "14px 18px" }}>

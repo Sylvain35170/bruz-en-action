@@ -2,7 +2,7 @@
 
 ## 🔴 En cours
 
-- [ ] **Audit site fond & forme** — `AUDIT_SITE_2026-07.md` : lots 1 et 2 faits ; lot 3 entamé (A6 mentions légales, A10 /interagir, A4 champ `dossier` sur les actus, A7 stats en dur → JSON, A1 promesses (bandeau + F1/S1 `en_cours` + % engagés), A3 page /actualites + dates estimées : faits le 13/07). Reste au lot 3 : **A5** fiche minimum dossiers · **A8** agenda. Lot 4 (stats / connaissance / histoire) non arbitré. Nom de domaine propre : en attente de financement
+- [ ] **Audit site fond & forme** — `AUDIT_SITE_2026-07.md` : lots 1, 2 et 3 faits (lot 3 terminé le 13/07 : A6, A10, A4, A7, A1, A3, A5 badge « en construction » + mention décisions vides, A8 agent_agenda + repli section homepage). Lot 4 (stats / connaissance / histoire) non arbitré. Nom de domaine propre : en attente de financement
 
 ## 🟠 Prioritaire — Fonctionnalités
 

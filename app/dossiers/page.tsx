@@ -3,6 +3,7 @@ import metaData from "../../data/meta.json";
 import NavBar from "../../components/NavBar";
 import SiteFooter from "../../components/SiteFooter";
 import { CATEGORIE_COLOR } from "../../lib/categories";
+import { isDossierEnConstruction } from "../utils";
 
 export const metadata = {
   title: "Dossiers — Bruz en Action",
@@ -117,14 +118,22 @@ export default function DossiersPage() {
                       padding: "20px 20px 18px",
                       position: "relative",
                     }}>
-                      {d.featured && (
-                        <span style={{
-                          position: "absolute", top: 12, right: 12,
-                          fontSize: 10, fontWeight: 700, color: "#fff",
-                          background: "rgba(255,255,255,0.25)", padding: "2px 8px", borderRadius: 999,
-                          letterSpacing: "0.06em", textTransform: "uppercase",
-                        }}>● Actif</span>
-                      )}
+                      <span style={{ position: "absolute", top: 12, right: 12, display: "flex", gap: 6 }}>
+                        {isDossierEnConstruction(d) && (
+                          <span style={{
+                            fontSize: 10, fontWeight: 700, color: "#0E2F62",
+                            background: "#E8A040", padding: "2px 8px", borderRadius: 999,
+                            letterSpacing: "0.06em", textTransform: "uppercase",
+                          }}>🚧 En construction</span>
+                        )}
+                        {d.featured && (
+                          <span style={{
+                            fontSize: 10, fontWeight: 700, color: "#fff",
+                            background: "rgba(255,255,255,0.25)", padding: "2px 8px", borderRadius: 999,
+                            letterSpacing: "0.06em", textTransform: "uppercase",
+                          }}>● Actif</span>
+                        )}
+                      </span>
                       <span style={{
                         fontSize: 10, fontWeight: 800, letterSpacing: "0.12em",
                         textTransform: "uppercase", color: "rgba(255,255,255,0.75)",

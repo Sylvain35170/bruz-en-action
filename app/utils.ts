@@ -9,6 +9,16 @@ export const NIVEAU_CONFIG: Record<string, { label: string; couleur: string }> =
   autre: { label: "Autre acteur", couleur: "#64748b" },
 };
 
+/**
+ * Fiche minimum d'un dossier publié (audit A5) : une illustration et au moins
+ * 4 faits sourcés. En dessous du seuil, le dossier porte un badge
+ * « Dossier en construction » sur /dossiers et /dossiers/[id].
+ */
+export function isDossierEnConstruction(d: { image?: unknown; ce_quon_sait?: unknown }): boolean {
+  const nbFaits = Array.isArray(d.ce_quon_sait) ? d.ce_quon_sait.length : 0;
+  return !d.image || nbFaits < 4;
+}
+
 /** "Jean-René Houssin" → "HOUSSIN - Jean-René" */
 export function formatNomPrenom(fullName: string): string {
   const parts = fullName.trim().split(" ");

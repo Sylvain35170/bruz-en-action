@@ -6,7 +6,7 @@ import bruzData from "../../../data/bruz.json";
 import NavBar from "../../../components/NavBar";
 import SiteFooter from "../../../components/SiteFooter";
 import SignalementButton from "../../../components/SignalementButton";
-import { NIVEAU_CONFIG } from "../../utils";
+import { NIVEAU_CONFIG, isDossierEnConstruction } from "../../utils";
 
 export function generateStaticParams() {
   return dossiersData.dossiers.map(d => ({ id: d.id }));
@@ -215,6 +215,11 @@ export default async function DossierPage({ params }: { params: Promise<{ id: st
             <span style={{ fontSize: 12, fontWeight: 600, color: STATUT_COLOR[dossier.statut] ?? "#94a3b8" }}>
               ● {STATUT_LABEL[dossier.statut] ?? dossier.statut}
             </span>
+            {isDossierEnConstruction(dossier) && (
+              <span style={{ padding: "3px 10px", borderRadius: 999, background: "rgba(232,160,64,0.15)", border: "1px solid rgba(232,160,64,0.45)", color: "#E8A040", fontSize: 12, fontWeight: 700 }}>
+                🚧 Dossier en construction
+              </span>
+            )}
           </div>
           <h1 style={{ fontSize: "clamp(1.4rem, 3vw, 2.2rem)", fontWeight: 800, lineHeight: 1.2, margin: "0 0 16px", maxWidth: 720, color: "#fff" }}>
             {dossier.titre}
@@ -379,10 +384,17 @@ export default async function DossierPage({ params }: { params: Promise<{ id: st
               </section>
             )}
 
-            {/* Décisions */}
-            {decisions.length > 0 && (
-              <section style={{ marginBottom: 36 }}>
-                <SectionTitle>Décisions clés</SectionTitle>
+            {/* Décisions — section toujours affichée : une timeline vide doit le
+                dire explicitement plutôt que disparaître (audit A5) */}
+            <section style={{ marginBottom: 36 }}>
+              <SectionTitle>Décisions clés</SectionTitle>
+              {decisions.length === 0 && (
+                <p style={{ margin: 0, padding: "14px 18px", background: "#f8fafc", border: "1px dashed #cbd5e1", borderRadius: 8, fontSize: 14, color: "#64748b", lineHeight: 1.6 }}>
+                  Aucune décision recensée à ce jour sur ce dossier. Les décisions officielles
+                  (délibérations du conseil municipal, arrêtés, votes métropolitains) seront tracées ici dès qu&apos;elles existeront.
+                </p>
+              )}
+              {decisions.length > 0 && (
                 <div style={{ position: "relative", paddingLeft: 20 }}>
                   <div style={{ position: "absolute", left: 5, top: 6, bottom: 6, width: 2, background: "#e2e8f0" }} />
                   <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
@@ -405,8 +417,8 @@ export default async function DossierPage({ params }: { params: Promise<{ id: st
                     ))}
                   </div>
                 </div>
-              </section>
-            )}
+              )}
+            </section>
 
             {/* Graphiques */}
             {graphiques.length > 0 && (

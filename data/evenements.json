@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-06-16",
+    "last_updated": "2026-07-13",
     "source": "Ville de Bruz, Grand Logis, Handisport, Les Trans"
   },
   "evenements": [
@@ -81,6 +81,325 @@
       "lien": "https://www.telethon.fr/",
       "lien_label": "AFM-Téléthon",
       "score": 3
+    },
+    {
+      "id": "agenda-0fd4a621",
+      "titre": "Expo photo en plein air : « La vie en couleurs »",
+      "date": "2026-07-01",
+      "categorie": "Exposition",
+      "lien": "https://www.ville-bruz.fr/agenda/expo-photo-en-plein-air-la-vie-en-couleurs/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie",
+      "date_fin": "2026-09-30"
+    },
+    {
+      "id": "agenda-2fef59c1",
+      "titre": "Bal des pompiers",
+      "date": "2026-07-13",
+      "categorie": "Concert",
+      "lien": "https://www.ville-bruz.fr/agenda/feu-dartifice-et-bal-des-pompiers/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie",
+      "date_fin": "2026-07-14"
+    },
+    {
+      "id": "agenda-376ef6f8",
+      "titre": "Crok’histoires",
+      "date": "2026-07-15",
+      "categorie": "Médiathèque",
+      "lien": "https://www.ville-bruz.fr/agenda/crokhistoires-2/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-1b8f18a0",
+      "titre": "Chronicles of Crime – 2400",
+      "date": "2026-07-15",
+      "categorie": "Jeux",
+      "lien": "https://www.ville-bruz.fr/agenda/chronicles-of-crime-2400-2/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-da6598bb",
+      "titre": "Un livre, un jeu",
+      "date": "2026-07-17",
+      "categorie": "Jeux",
+      "lien": "https://www.ville-bruz.fr/agenda/un-livre-un-jeu-2/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-e15d3ddf",
+      "titre": "On en parle !",
+      "date": "2026-07-17",
+      "categorie": "Médiathèque",
+      "lien": "https://www.ville-bruz.fr/agenda/on-en-parle-2/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-d6c27b64",
+      "titre": "Marché des créateurs",
+      "date": "2026-07-19",
+      "categorie": "Braderie",
+      "lien": "https://www.ville-bruz.fr/agenda/marche-des-createurs-2/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-3e88593a",
+      "titre": "Atelier créatif Origami : Totoro",
+      "date": "2026-07-21",
+      "categorie": "Atelier",
+      "lien": "https://www.ville-bruz.fr/agenda/atelier-creatif-origami-totoro/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-3ac4c340",
+      "titre": "Crok’histoires",
+      "date": "2026-07-22",
+      "categorie": "Médiathèque",
+      "lien": "https://www.ville-bruz.fr/agenda/crokhistoires-3/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-7888fd9e",
+      "titre": "Ciné-goûter « De bien curieux voisins »",
+      "date": "2026-07-22",
+      "categorie": "Médiathèque",
+      "lien": "https://www.ville-bruz.fr/agenda/cine-gouter-de-bien-curieux-voisins/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-1beeb3c0",
+      "titre": "Sortie nature nocturne – Complet",
+      "date": "2026-07-23",
+      "categorie": "Rencontre",
+      "lien": "https://www.ville-bruz.fr/agenda/sortie-nature-nocturne-2/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-5ce3eb27",
+      "titre": "Atelier créatif « flipbook »",
+      "date": "2026-07-24",
+      "categorie": "Atelier",
+      "lien": "https://www.ville-bruz.fr/agenda/atelier-creatif-flipbook/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-0211be85",
+      "titre": "Place aux jeux",
+      "date": "2026-07-28",
+      "categorie": "Jeux",
+      "lien": "https://www.ville-bruz.fr/agenda/place-aux-jeux-3/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-ce4ca46e",
+      "titre": "Crok’histoires",
+      "date": "2026-07-29",
+      "categorie": "Médiathèque",
+      "lien": "https://www.ville-bruz.fr/agenda/crokhistoires/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-3e97f657",
+      "titre": "Un livre, un jeu",
+      "date": "2026-07-29",
+      "categorie": "Jeux",
+      "lien": "https://www.ville-bruz.fr/agenda/un-livre-un-jeu-3/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-ed2b83aa",
+      "titre": "On en parle !",
+      "date": "2026-07-31",
+      "categorie": "Médiathèque",
+      "lien": "https://www.ville-bruz.fr/agenda/on-en-parle-3/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-c0ba2d32",
+      "titre": "Marché des créateurs",
+      "date": "2026-08-02",
+      "categorie": "Braderie",
+      "lien": "https://www.ville-bruz.fr/agenda/marche-des-createurs-3/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-f4a0e410",
+      "titre": "On en parle !",
+      "date": "2026-08-21",
+      "categorie": "Médiathèque",
+      "lien": "https://www.ville-bruz.fr/agenda/on-en-parle-4/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-64b24ada",
+      "titre": "Le Star vient à votre rencontre",
+      "date": "2026-08-22",
+      "categorie": "Rencontre",
+      "lien": "https://www.ville-bruz.fr/agenda/le-star-vient-a-votre-rencontre/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-db634ddc",
+      "titre": "Ciné-goûter « Pois et points »",
+      "date": "2026-08-26",
+      "categorie": "Médiathèque",
+      "lien": "https://www.ville-bruz.fr/agenda/cine-gouter-pois-et-points/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-d0d4f735",
+      "titre": "Stage de modelage enfants, adolescents",
+      "date": "2026-08-26",
+      "categorie": "Atelier",
+      "lien": "https://www.ville-bruz.fr/agenda/stage-de-modelage-enfants-adolescents-3/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie",
+      "date_fin": "2026-08-28"
+    },
+    {
+      "id": "agenda-6e931dc2",
+      "titre": "On en parle !",
+      "date": "2026-08-28",
+      "categorie": "Médiathèque",
+      "lien": "https://www.ville-bruz.fr/agenda/on-en-parle-5/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie",
+      "date_fin": "2026-08-29"
+    },
+    {
+      "id": "agenda-4fab6f38",
+      "titre": "P’tites oreilles, grandes questions",
+      "date": "2026-09-02",
+      "categorie": "Médiathèque",
+      "lien": "https://www.ville-bruz.fr/agenda/ptites-oreilles-grandes-questions/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-4dcfb352",
+      "titre": "Concert : A vent sons la musique (Ensemble de cuivres)",
+      "date": "2026-09-06",
+      "categorie": "Concert",
+      "lien": "https://www.ville-bruz.fr/agenda/concert-a-vent-sons-la-musique-ensemble-de-cuivres/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-583bca6e",
+      "titre": "La Maison du vélo mobile à Bruz",
+      "date": "2026-09-09",
+      "categorie": "Rencontre",
+      "lien": "https://www.ville-bruz.fr/agenda/la-maison-du-velo-mobile-a-bruz/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-7835b694",
+      "titre": "Histoires au creux des bras",
+      "date": "2026-09-12",
+      "categorie": "Médiathèque",
+      "lien": "https://www.ville-bruz.fr/agenda/histoires-au-creux-des-bras/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-caaa5ae8",
+      "titre": "Inter+café – Prix littéraires 2025/2026",
+      "date": "2026-09-18",
+      "categorie": "Rencontre",
+      "lien": "https://www.ville-bruz.fr/agenda/intercafe-prix-litteraires-2025-2026/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-8ed4a174",
+      "titre": "Coup de pouce informatique",
+      "date": "2026-09-19",
+      "categorie": "Atelier",
+      "lien": "https://www.ville-bruz.fr/agenda/coup-de-pouce-informatique-2/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-606ed540",
+      "titre": "Apéro BD : des bulles à partager",
+      "date": "2026-09-22",
+      "categorie": "Rencontre",
+      "lien": "https://www.ville-bruz.fr/agenda/apero-bd-des-bulles-a-partager/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-3e202dcb",
+      "titre": "Lecture musicale : Espace Snoezelen éphémère",
+      "date": "2026-09-30",
+      "categorie": "Médiathèque",
+      "lien": "https://www.ville-bruz.fr/agenda/lecture-musicale-espace-snoezelen-ephemere/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-dbce7b3b",
+      "titre": "Animation : Observation du soleil",
+      "date": "2026-10-03",
+      "categorie": "Atelier",
+      "lien": "https://www.ville-bruz.fr/agenda/animation-observation-du-soleil/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-82c433ce",
+      "titre": "Concert : O. Gaby (Chanson française-pop-variété)",
+      "date": "2026-10-04",
+      "categorie": "Concert",
+      "lien": "https://www.ville-bruz.fr/agenda/concert-o-gaby-chanson-francaise-pop-variete/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-3c280c4d",
+      "titre": "Repas des aînés",
+      "date": "2026-10-18",
+      "categorie": "Solidarité",
+      "lien": "https://www.ville-bruz.fr/agenda/repas-des-aines/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-2b945342",
+      "titre": "Histoires au creux des bras",
+      "date": "2026-10-24",
+      "categorie": "Médiathèque",
+      "lien": "https://www.ville-bruz.fr/agenda/histoires-au-creux-des-bras-2/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-32d840dc",
+      "titre": "La nuit des dragons",
+      "date": "2026-10-28",
+      "categorie": "Rencontre",
+      "lien": "https://www.ville-bruz.fr/agenda/la-nuit-des-dragons/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
     }
   ]
 }
