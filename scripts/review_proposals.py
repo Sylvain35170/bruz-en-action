@@ -28,6 +28,7 @@ from datetime import date, timedelta
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
+from agents.agent_dossiers import match_dossier
 from utils import DATA_DIR, load_json, load_registry, log, save_json, save_registry, today
 
 PURGE_ACCEPTED_DAYS = 60
@@ -62,6 +63,12 @@ def _to_actu(p: dict) -> dict:
     }
     if p.get("dossier") and p["dossier"] != "à_classer":
         actu["dossier"] = p["dossier"]
+    else:
+        # Fallback : même matching par mots-clés qu'agent_dossiers, pour que
+        # toute actu publiée porte son rattachement dossier quand il existe.
+        matches = match_dossier(f"{actu['titre']} {actu['detail']}")
+        if matches:
+            actu["dossier"] = matches[0]
     return actu
 
 

@@ -84,7 +84,10 @@ export default function SiteFooter() {
 
       {/* Bas de page */}
       <div style={{ maxWidth: "var(--container-max, 1120px)", margin: "0 auto", padding: "16px 24px", display: "flex", justifyContent: "space-between", flexWrap: "wrap", gap: 8 }}>
-        <span style={{ fontSize: 11 }}>© {association.fondee_en} {association.nom} · Association loi 1901 · Bruz (35170)</span>
+        <span style={{ fontSize: 11 }}>
+          © {association.fondee_en} {association.nom} · Association loi 1901 · Bruz (35170) ·{" "}
+          <a href="/bruz-en-action/mentions-legales" style={{ color: "rgba(255,255,255,0.6)", textDecoration: "underline" }}>Mentions légales</a>
+        </span>
         {contact.hello_asso_url && (
           <a href={contact.hello_asso_url} target="_blank" rel="noopener noreferrer"
             style={{ fontSize: 11, color: "#E8A040", textDecoration: "none", fontWeight: 600 }}>

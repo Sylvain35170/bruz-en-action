@@ -22,15 +22,19 @@ export interface Promesse {
 
 export interface Actu {
   id: string;
-  date: string;
+  date: string | null;
   titre: string;
-  detail: string;
+  detail?: string;
+  resume?: string;
+  contenu?: string;
   type: string;
-  promesses_liees: number[];
-  dossier_lie: string | null;
-  cm_lie: string | null;
+  dossier?: string;
+  promesses_liees?: number[];
+  cm_lie?: string | null;
   source_label?: string;
   source_url?: string;
+  source_url_expiree?: boolean;
+  lien_expire_risque?: boolean;
 }
 
 export interface SourceSurvellee {

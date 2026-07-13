@@ -182,7 +182,7 @@ export default function InteragirPage() {
                 { icon: "📎", titre: "Toujours une source", texte: "Rien n'est affirmé sans référence vérifiable. Les données viennent des délibérations Mégalis, du site ville-bruz.fr, de la presse locale ou de demandes CADA. Vous pouvez tout contrôler." },
                 { icon: "🔔", titre: "On suit les CMs de près", texte: "On essaie d'être présents — en salle quand c'est possible, sinon via les vidéos YouTube. C'est en suivant les conseils municipaux qu'on peut vraiment rendre compte de ce qui se décide." },
                 { icon: "🗣️", titre: "Porte ouverte", texte: "Si des élus ou leurs équipes souhaitent nous contacter, notre email est public et on répond. On préfère un échange direct à un malentendu qui traîne." },
-                { icon: "🔒", titre: "Notre indépendance", texte: "Si un élu nous transmet une information, on considère qu'elle a été validée par le maire avant de nous parvenir. Bruz en Action reste une association citoyenne indépendante — pas un canal de communication de la majorité." },
+                { icon: "🔒", titre: "Notre indépendance", texte: "Une information transmise par un élu est traitée comme une déclaration officielle de la majorité : elle est citée comme telle, et vérifiée comme le reste. Bruz en Action reste une association citoyenne indépendante — pas un canal de communication de la majorité." },
               ].map(({ icon, titre, texte }, i, arr) => (
                 <div key={titre} style={{ display: "flex", gap: 16, padding: "18px 22px", borderBottom: i < arr.length - 1 ? "1px solid #f1f5f9" : "none", alignItems: "flex-start" }}>
                   <span style={{ fontSize: 20, flexShrink: 0, marginTop: 2 }}>{icon}</span>

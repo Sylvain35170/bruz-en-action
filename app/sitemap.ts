@@ -25,6 +25,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/programme`, priority: 0.8, changeFrequency: "yearly" },
     { url: `${BASE}/publications`, priority: 0.7, changeFrequency: "weekly" },
     { url: `${BASE}/coup-de-pouce`, priority: 0.5, changeFrequency: "monthly" },
+    { url: `${BASE}/mentions-legales`, priority: 0.3, changeFrequency: "yearly" },
   ];
 
   const articleRoutes: MetadataRoute.Sitemap = actusData.actus

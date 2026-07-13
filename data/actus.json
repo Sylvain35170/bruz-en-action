@@ -123,7 +123,8 @@
           "Programme municipal « Un nouvel élan pour Bruz » 2026-2032, promesse n°27"
         ]
       },
-      "source_url_expiree": true
+      "source_url_expiree": true,
+      "dossier": "D01"
     },
     {
       "id": "presse-84aab9",
@@ -141,7 +142,8 @@
       "source_label": "Google News — Bruz actualités",
       "date": null,
       "detail": "<a href=\"https://news.google.com/rss/articles/CBMigwJBVV95cUxPbG01MWVqa1BzNFg3ZGVSc0JOOEIwcTd3UzBLVjFvYk5PYXJtRzBZQnhvMnNPb0NxbkJTMlFiMHVKRlExc1pHTVZpc0I4dC1hcUZlX2U3LTZCcGtjeWZ5S3hnTFBXZGljUlpWZTU3cHZQdzJmTVdYY2lERnRwS3lKMUQzUWZQNFlteUJrdGtHSVBmRFFqWHRGeVA4cUk2Tl94UWRKMWZaNndRVGlPdFRJZGFNUUh1OVF3ZD",
-      "type": "presse"
+      "type": "presse",
+      "dossier": "D02"
     },
     {
       "id": "presse-f640ab",
@@ -150,7 +152,8 @@
       "source_label": "Google News — Bruz actualités",
       "date": null,
       "detail": "<a href=\"https://news.google.com/rss/articles/CBMiqgFBVV95cUxQUVFYT21tVnVoUkJ3SXd1SUFmR3k4cGNZb2xFdG5Hem5PMmd0bWYwOTNCX0hIc2JlZ25qWk5JLVJoa2JYX0tTNWRfQVhJbUJkbl83Q3IxSFZXY3FONmdsWGFZaVRBYWdYUEdaTjFiVXJYaS1adG8zcVVPZHFhU2RseXk5WlNjUERtN2ZGakh2d2p6akxiRVkxTFRuNjh2czVmRkdKUHctUG5qZw?oc=5\" target=\"_blan",
-      "type": "presse"
+      "type": "presse",
+      "dossier": "D03"
     },
     {
       "id": "presse-3f9e47",
@@ -159,7 +162,8 @@
       "source_label": "Google News — Bruz actualités",
       "date": null,
       "detail": "<a href=\"https://news.google.com/rss/articles/CBMi0wFBVV95cUxPdlc0bFgxalNxRWh5QlhMcUVUV0hTMEs2YWp0bEt0YWtSR0dLUkZiZGg3cGpsenNSZXl6SUthbksxU0luclFMSjRSdjlRa1d5RjEyakdiTTJTWHhzUWVzMXNOc3VMZ0E2WmhxQ2VGNzNZazZFVjVCNHRFWmlqZEdGRUdad1lKVUVxaTB0MjM4cVIwLWVOQ3lkdWpWZUlYcUgxckZSR00xTzVjZGhGV0VrUS1qOUwtNGZJN2",
-      "type": "presse"
+      "type": "presse",
+      "dossier": "D02"
     },
     {
       "id": "presse-68e405",
@@ -178,7 +182,8 @@
       "date": "2026-06-18",
       "detail": "",
       "type": "mairie",
-      "source_url_expiree": true
+      "source_url_expiree": true,
+      "dossier": "D13"
     },
     {
       "id": "mairie-daa02d",
@@ -196,7 +201,8 @@
       "source_label": "Mairie de Bruz — Actualités",
       "date": "2026-06-18",
       "detail": "",
-      "type": "mairie"
+      "type": "mairie",
+      "dossier": "D11"
     },
     {
       "id": "mairie-a806a4",
@@ -233,7 +239,8 @@
       "source_label": "Mairie de Bruz — Actualités",
       "date": "2026-06-18",
       "detail": "",
-      "type": "mairie"
+      "type": "mairie",
+      "dossier": "D05"
     },
     {
       "id": "mairie-bdb184",
@@ -251,7 +258,8 @@
       "source_label": "Mairie de Bruz — Actualités",
       "date": "2026-06-18",
       "detail": "",
-      "type": "mairie"
+      "type": "mairie",
+      "dossier": "D01"
     },
     {
       "id": "mairie-f00f76",
@@ -261,7 +269,8 @@
       "date": "2026-06-18",
       "detail": "",
       "type": "mairie",
-      "source_url_expiree": true
+      "source_url_expiree": true,
+      "dossier": "D06"
     },
     {
       "id": "mairie-92785e",
@@ -279,7 +288,8 @@
       "source_label": "Mairie de Bruz — Conseil municipal",
       "date": "2026-06-18",
       "detail": "",
-      "type": "mairie"
+      "type": "mairie",
+      "dossier": "D01"
     },
     {
       "id": "presse-9e757c",
@@ -306,7 +316,8 @@
       "source_label": "Google News — Bruz actualités",
       "date": null,
       "detail": "<a href=\"https://news.google.com/rss/articles/CBMitAFBVV95cUxPVlVPSElZa01aUUstYkV0dExwc3ZEd0gyN0RTNi1YdGNWN2dDeUFBTWtUYnlXYmNOV1pEaEpnM0ozdE1iNEFITUtlVVN2SFN4TUxxendSOTdyUmgyVVI2emR5UENENm5NOUhzd0xvNm1jT0FOX25GRVpvNXU5M0cya2JPNTQ4N2c5SGVuNnVOcTVCbEhMTUJtNEFkQnNjblozNUE4Q2hlei1pWi1qYkc1VXBoSXA?oc=5\" ",
-      "type": "presse"
+      "type": "presse",
+      "dossier": "D03"
     },
     {
       "id": "presse-634341",
@@ -333,7 +344,8 @@
       "source_label": "Google News — Bruz actualités",
       "date": null,
       "detail": "<a href=\"https://news.google.com/rss/articles/CBMid0FVX3lxTFBxRGlVbFUzaThLVUtHUzJmZVM4MWNYdExiLXFrbFBhUnd0X0N1cVhqenVnMzZHeUllLXVzQnRBR1FLeTZKcDlSZURkY3daNmJYSXVMbkRsM2ZPeWJNcldKcXk0S3YtcTU1ZHBiTUs2ZDlzcTd1SUJR?oc=5\" target=\"_blank\">Bruz : le maire s'augmente à 5 076 €, ses prédécesseurs l'avaient p",
-      "type": "presse"
+      "type": "presse",
+      "dossier": "D04"
     },
     {
       "id": "presse-92c242",
@@ -351,7 +363,8 @@
       "source_label": "Google News — Bruz actualités",
       "date": null,
       "detail": "<a href=\"https://news.google.com/rss/articles/CBMicEFVX3lxTFB6LXNsbTRIRUtQYWhlLTNxR1BlYmxpQ0FEb0dPME5pVHdsaHVCbERqbVdqd1k3aWt5U1JVUEthMHdRNWo2WDZCVS0xSTZCdFQ1dVlpQ19JLTRtZkRkVUdGckNLS0VPMUViRURjbjNVVlQ?oc=5\" target=\"_blank\">Bruz (35) : Résultats municipales 2026 - 1er tour et 2nd tour</a>&nbsp;&nbsp",
-      "type": "presse"
+      "type": "presse",
+      "dossier": "D04"
     },
     {
       "id": "presse-40a431",
@@ -360,7 +373,8 @@
       "source_label": "Google News — Bruz actualités",
       "date": null,
       "detail": "<a href=\"https://news.google.com/rss/articles/CBMikgJBVV95cUxNTHNQYl9JaDNYNHRZaHMtSExzRWdHcVNYaWtWWlkzQmZuWTdQS25IaGhPT1hzamRRWlNORUxZa2oyVUpFcjFUVzRmNkxFalRnTEtqc3lYbTQ0VnV4YXFQbWE3aUhwR192eDBNZElMVmZncjd6X1dmcWNpV05hSlRsRlF6SmlncVBoR0VvajRIMVRpTENYVVFycDAzT1V3U0c3QnRsQVFtNS12amg4SjBZVUVHcmNiXzV1MD",
-      "type": "presse"
+      "type": "presse",
+      "dossier": "D03"
     },
     {
       "id": "presse-2d9e04",
@@ -369,7 +383,8 @@
       "source_label": "Google News — Bruz actualités",
       "date": null,
       "detail": "<a href=\"https://news.google.com/rss/articles/CBMiyAFBVV95cUxOTGJtdUh2bXVEVExaSU0yU3NoNmlVcDhaYmZoaXN0RUlic1I0WXoyTGJ1WmdhTVZuSUdHZTZJMkFzWkNKTFBfbTRVY3BXMnItdmRVbklyQUxOTW9hNHVKODJtM1RfVVFTZkhtNnIzQWc3UU9ScVEwTUgtNnRvSXNNb0ZNOWxwaUNGWU9CczR1dU9nZHN5R0dVeV9HS1hkWUZ4RERSc0lmSncxdmRwSXc3YUhiSFUtek5fNU",
-      "type": "presse"
+      "type": "presse",
+      "dossier": "D04"
     },
     {
       "id": "presse-e1106c",
@@ -387,7 +402,8 @@
       "source_label": "Google News — Bruz actualités",
       "date": null,
       "detail": "<a href=\"https://news.google.com/rss/articles/CBMivgFBVV95cUxQQmsydnB6YUNNMU5nbURSUnZzRkh4SWlCMGFYRDRPVzNRamNobk10WFJBM2QtU2k3LW9OUjBqSjFNTG9Kd2FxT3VtbjRnTDVOREdCOU1yUnh0dzZPSlR2MFRtb05mUGxxNXFFMTVmQ29wcWlyTGFWNFp5YXpUMlp0M1ZQSVBKMEZ5SXRlOHlFZGlCNjEwMFI2OGxSMjhXSVBmb3BoS3Y1cXBYU2NkUWFjZnV4TUszUHBNOX",
-      "type": "presse"
+      "type": "presse",
+      "dossier": "D03"
     },
     {
       "id": "presse-b537ac",
@@ -396,7 +412,8 @@
       "source_label": "Google News — Bruz actualités",
       "date": null,
       "detail": "<a href=\"https://news.google.com/rss/articles/CBMi3gFBVV95cUxOVWhQSWpaN1NsR0tOalJMTzRiR2pHcFdlVkIyYXFiV3ZVUTlpcG8zTGJodjNYSHVJT3dpLW9USWsxSm1RSXRsQnUzYXhvY2pDTVk5blBJdW9GSnVnTG9qWWJ5clNocGpyR0h6aXBBMThBR0tTcXNZQS1lZTJwVHlXbTBnaXR0Q05OaExITjQ1RnRkZ2drTVRFNkxHQzhueXdCNjluNl9kSnB2bG9DcUFkWXA3RnNGRDVNUk",
-      "type": "presse"
+      "type": "presse",
+      "dossier": "D03"
     },
     {
       "id": "presse-89180c",
@@ -414,7 +431,8 @@
       "source_label": "Google News — Bruz actualités",
       "date": null,
       "detail": "<a href=\"https://news.google.com/rss/articles/CBMi_gFBVV95cUxPN29hVjJpXy15NGgwUnkyNFhONWVNMm1TeE0tMElXbWNBS25Rd2tpWjZpZGpQRjFLSXZHdUQ3Y2gwak15elVzampJN2ZScTl6M3hjOHlXcUlfSC1ZWGdVbmQ2bTI1c2M3cHY1MjBYQWlXZ2d2TDFYNmJwdFBxVDNUYVNyWnNHUkk3VmFSejdCWXIxTWh4SHVwTmJQMkZxNDJMRVlYVGtwcHVOOGt4a2xIcEJYejdwT0RnVW",
-      "type": "presse"
+      "type": "presse",
+      "dossier": "D01"
     },
     {
       "id": "presse-5dfe4b",
@@ -423,7 +441,8 @@
       "source_label": "Google News — Bruz actualités",
       "date": "2025-12-21",
       "detail": "<a href=\"https://news.google.com/rss/articles/CBMi8AFBVV95cUxOVVZTb2ZXMWk0eV9KTlBhNW5WNDMtSVlmajZKWG9NenNCcjV4V0NFdkxhLWJWcnVMVEtlVnQxb1BsUklBVWZRUF9SUDJIWXRCMzdBS0ZyYjRfd2hfWFdlam9xVWlyRFZRME9qcWM5UzBmVW5rdlI5dnQ4Um1HbHNPLVNRcWRUd2RELXEtdG1xVVlxNzhiUEtPbm5XOU5qTzMzdHlQWFZ6QV9SMFloQVpRVFVubVVIdlNmdk",
-      "type": "presse"
+      "type": "presse",
+      "dossier": "D11"
     },
     {
       "id": "presse-b38c61",
@@ -450,7 +469,8 @@
       "source_label": "Google News — Bruz actualités",
       "date": "2026-04-02",
       "detail": "<a href=\"https://news.google.com/rss/articles/CBMi-AFBVV95cUxNVHF6eWoybEwwM1BmdGg3ZlRmcEE2WVFvZERPTWRuMzlmSWJsMWZyR0FhZ3YxekVhc1dFcU11dzNwbXhSakl5azNUa0lFNDlLQkY1OXBVVTAtVm1PbzM0Tk4tWkxldks2VWhLWmw1ZVZKT201bTgzRDhTTnAxWmpEWHEtenJoR1NQcXRjc1lRcFBIY0FDUjI2VlZQb1FoejRVWXoyRTVaLVNTUjE5blJXNkxGRzJfZFl5Y3",
-      "type": "presse"
+      "type": "presse",
+      "dossier": "D11"
     },
     {
       "id": "presse-e31958",
@@ -477,7 +497,8 @@
       "source_label": "Google News — Bruz actualités",
       "date": null,
       "detail": "<a href=\"https://news.google.com/rss/articles/CBMijwJBVV95cUxNTkN6NXdRaW14SHJGUWNETGZSX1lBNFF5VnRsanpBaDI4MGo2SERtNDlTdC1GSVZlNFUwLXNSS1c3NTN4bEhreVprOGZub2cwbHotOGZWWUZWczBsRGpxSi1JdlJqWVNvYVk5Wkx4RHZnT1dTWHgtV0xPbHpNdVpXM3FNU3pqWmZkekc3SmlEakZ5T3U5T0ptSVBpNXRjOXpuN2dmVFdhZHAtQklOVUhTaWpkWHlSVUFPdj",
-      "type": "presse"
+      "type": "presse",
+      "dossier": "D02"
     },
     {
       "id": "presse-fc31ff",
@@ -495,7 +516,8 @@
       "source_label": "Google News — Bruz actualités",
       "date": null,
       "detail": "<a href=\"https://news.google.com/rss/articles/CBMihAJBVV95cUxNSDN1aWM3SzVtRlVLenN1VDBLTmtFcjM3aGwtU1RKM0FDUm4waUplNUZ3Q3FpNUNDaFNpY2hsYWt4MUtQMTVPZE5wZllmSktlSEdQNUtYTG82U3dmRU9IWWIzSklLYjl0MDF0a1FhbzBRUnlseGl1azJKVldvam9oaUUzUFdyR0JTb09NREdUY1dwUS16a0pjNnB6cm52YzlLOUdVMmZRajhZUmZPTlA0UFpnV2lCU2pqMn",
-      "type": "presse"
+      "type": "presse",
+      "dossier": "D01"
     },
     {
       "id": "presse-7a55fe",
@@ -522,7 +544,8 @@
       "source_label": "Google News — Bruz actualités",
       "date": null,
       "detail": "<a href=\"https://news.google.com/rss/articles/CBMi8wFBVV95cUxNM1R4Z1lBNms2UDNEeUlFbjdMSU90MmZVWlNlZHFJMGt3LUJUTUFOamQ1NjRGZDhXVDVjV1JNamc5T2JVWDVBNEdNNGRSMC1hQVlrRlhCc3VvYVpURDIwZEI0eHBhbW5NLUJJVXljMGFETy1wb25wRm5sbXFqdjJ2d2FVN00zbXBPT3B1X3FZaXNFeXJoREhTbEMxUHhzcS04VTRuV3U3VTA1RnZoQUNGRXdDN0p4ZndIcX",
-      "type": "presse"
+      "type": "presse",
+      "dossier": "D03"
     },
     {
       "id": "presse-61d49a",
@@ -540,7 +563,8 @@
       "source_label": "Google News — Bruz actualités",
       "date": null,
       "detail": "<a href=\"https://news.google.com/rss/articles/CBMi2gFBVV95cUxPenhjYUE4M1RVeHpfeDVfMVB3UjRmQmhLZnBTN1Z3aDRuMkw2NDNBRzFHc3R4U1Z2ZGJGSnJBcVI0RzQ0WU0tb21MRXRZSVZqalQyTGk2UEhzN1RMYThvMVhLcTdqVlgtRFVxZDVhODZCbDh6ckFRQXBhdEE5Sk5BRENBYzYxSE8zR0pQc095S1lEdGtTOTNhNGhEWWtjc2ZjMDBMOFhoYS1iSEZLU3pnVkxIdnh6TGVacE",
-      "type": "presse"
+      "type": "presse",
+      "dossier": "D03"
     },
     {
       "id": "presse-4ac210",
@@ -549,7 +573,8 @@
       "source_label": "Google News — Bruz actualités",
       "date": null,
       "detail": "<a href=\"https://news.google.com/rss/articles/CBMizwFBVV95cUxNc2JPODJwbUFGS2xDcUFKRkN5bGlhMFphRHIwRGlESEg5dGxVaVd3M0lOM2g5MWs1S0ZRcHBoOTdCU2tjUHgzOWR2RVgwWERoUGoxQkR4NkZ5Q0IzdlNNZVo4ckozcjFBcTdIbmhWRXEtemlIZ3VWeHdkUzViUXdqRjJTM2lTY01DZ3hxX3BWOHktYmlOZWNZdmdyejRaVUNpTENhRWdpc3VNUzIyMTE4T3oxbGhuczl2Wk",
-      "type": "presse"
+      "type": "presse",
+      "dossier": "D03"
     },
     {
       "id": "presse-c77a6a",
@@ -558,7 +583,8 @@
       "source_label": "Google News — Bruz actualités",
       "date": null,
       "detail": "<a href=\"https://news.google.com/rss/articles/CBMi4wFBVV95cUxOZXFOSU1KRnpqcjJDaHBZUTU1bXVCTzJ2cWszQVNCeEswdlU3MXduQjJ3V21tVmZTTW1WTnpMWFZqeDJjQ3ZvMDVCOFNDdWFhVEZtY0I1ckF2OS1FOU1ieGhpUGczUkEzb1l2WFFJNDk3eXdlNW9KZzhNdTE0NDJ4blVISENUTUlQTE45cjZxTDRxbFZyU3RBZmk2b3dpbG5PYzkyQUdXR0hGMTI1anNSSnlMXzJ0RHYxbU",
-      "type": "presse"
+      "type": "presse",
+      "dossier": "D01"
     },
     {
       "id": "presse-cdd7d1",
@@ -576,7 +602,8 @@
       "source_label": "Google News — Bruz actualités",
       "date": null,
       "detail": "<a href=\"https://news.google.com/rss/articles/CBMi4AFBVV95cUxNaWI3RURGOFUzMmZFNTB1R2xWWVhGZ2RsM0JKREVmTjlpUWhFZW1IWHY5T09pNDA3T05aN1lzUkhzaXVnc25CNFVzWXJvZTFUN3IxdDExT1R2cHNKcFpDbjRob044VE5HLXc2LWNNbDJYNVVkTVRIWjZSOEU1T0Z2X1hzekp4ei1hVmcwSDE4dl9NME5BUDdGNVQtcmIxMUs3Zjg2Mlc2aEdDWG1xMmpGNzRfT1UwbjBqd3",
-      "type": "presse"
+      "type": "presse",
+      "dossier": "D10"
     },
     {
       "id": "presse-9c4720",
@@ -585,7 +612,8 @@
       "source_label": "Google News — Bruz actualités",
       "date": null,
       "detail": "<a href=\"https://news.google.com/rss/articles/CBMi_gFBVV95cUxOSzJmZVNGR2NCTFdSYUVOTUpETHNpck1DMlJFVzZNaUdUU2Q2T2FXcVRzY0JXcU9ua2pXYWlnNHJqNEV4UXB3bzNyTEFoX3lxSE82UjlDVjV2ZW1hdFNSc3hSYUhYTHFaYzV5VENRc2lXWXU4Qlplcmk1THg1QldZOUZmLWNwbld5d1ZlYXk3RE9NZThNdHZyV2JodnRqRXN1WUFRSnVLb3g4TkNQazJBTXd0OVVteDQyOW",
-      "type": "presse"
+      "type": "presse",
+      "dossier": "D04"
     },
     {
       "id": "presse-8661ac",
@@ -603,7 +631,8 @@
       "source_label": "Google News — Bruz actualités",
       "date": null,
       "detail": "<a href=\"https://news.google.com/rss/articles/CBMihgJBVV95cUxNYVB4bmZHTHNOZVoxQ0JGNUhwQXlzaXNwQmFCM1F4MF9OVUJOWllIZy0zZEJDbTZmNjFNaGFTcjhsV0NvRXhnOUxqeFlzXzBBX1BwLU15MC1adnZ1eFFyYl82Skw1OFhCUEZLdnQ1OF9jM0V3aWhROGNTSmpWR2tkNEEzUzVYRXlrcmRhS19HckliS3ZiNHpCd0NvRVlVcHFudUdfQ3hMSklDdkZqMnBiWFhKcXdsbnc0Zl",
-      "type": "presse"
+      "type": "presse",
+      "dossier": "D03"
     },
     {
       "id": "presse-f8e3cd",
@@ -612,7 +641,8 @@
       "source_label": "Google News — Bruz actualités",
       "date": null,
       "detail": "<a href=\"https://news.google.com/rss/articles/CBMihwJBVV95cUxNekI2SjM2UFAwLThpeUpTbjBJaXNTQmRkVmtWZFpoNXpMLXVBTmV3YzlSalhlaHVVNFNGVHNYWDdiOGxrNEx3TEs0Z2U0LWhwd0xidlFGeUc0bFhBSFhnanF4Umo5NFFrdF9fQVc4VGJka0xyam94UWNPMEtFTE16SThETER4b2Y2RXdKbllQUUhCcFBxdHBWQncwYmxiM2pLLXM2WU0wX3o5MTIxLTVHa1Ezd3NmWWdGMm",
-      "type": "presse"
+      "type": "presse",
+      "dossier": "D06"
     },
     {
       "id": "presse-577006",
@@ -648,7 +678,8 @@
       "source_label": "Google News — Bruz actualités",
       "date": null,
       "detail": "<a href=\"https://news.google.com/rss/articles/CBMi_gFBVV95cUxOc1BlQXVUZ1c5SUxvUjVZVlBFOTIzQWNrV0MwY0xmaUlnZ0JXenRjZngtVmJYdkpsMzdoUU5BZ2tHbGlQNVVhWGJKVzFhY2RBRWpBYnNSRmE0bzY5dG9keUZWNWpYeDUzandFX3pqS2pxMHN5VE5sR1Q4RjN5ZkJFWG5XV2VsVkxLQlNRZEV1Q0E0ZDBkRFFmRTlFY2pxSFIxTzZDdWt4SzNIS3lhcTZXS2luN1dNLWFtdT",
-      "type": "presse"
+      "type": "presse",
+      "dossier": "D01"
     },
     {
       "id": "presse-f0296a",
@@ -693,7 +724,8 @@
       "source_label": "Google News — Bruz actualités",
       "date": null,
       "detail": "<a href=\"https://news.google.com/rss/articles/CBMi8gFBVV95cUxOamNBNUZSQXgyRk8wbEtoUjNXcnBkUU5YbWg4VU9SSWhYYlEzbFlHdFdmdEpuV0FrQlpmVk5OMDY3UDFaNGsycUthMGZSby1OdDFsMXZCVDNqcmVGTnE1NEp3cEN5R2lpQVFib3JJaVFLdEt4WlpKY2VUSlN6bzBmOVBZSnY2X1VsNVl0NFl4bTJqdm9LUjF6TlhjUjFaYUV2UmNoamJRYTlzNDVURnV5bDhvc3dPRjNyS3",
-      "type": "presse"
+      "type": "presse",
+      "dossier": "D01"
     },
     {
       "id": "presse-8fb285",
@@ -702,7 +734,8 @@
       "source_label": "Google News — Bruz actualités",
       "date": null,
       "detail": "<a href=\"https://news.google.com/rss/articles/CBMi4gFBVV95cUxOd3dQMHRSX1NrelFEcDhybXJZV0MwNWRmWUdZcVRUVE1kcWR5ZnBaTVo2dWFGTUlWTG53OEU4eWlUbFZiWUc1RHpEVFZpUXcyVEZYdVpvUDRLU0tsaGNhYU5qVVNkajk1b01tNUtjU2d0NjNHNU0tME1FU09ZTG15NDJCNGdDWFRsWkI2X0VBM013eFktUy1aRVhMMVNxLTc0NjkwSHR4ZFNCV1dYanAzNjU2OUQ5aGtDV1",
-      "type": "presse"
+      "type": "presse",
+      "dossier": "D03"
     },
     {
       "id": "presse-814136",
@@ -729,7 +762,8 @@
       "source_label": "Google News — Bruz actualités",
       "date": null,
       "detail": "<a href=\"https://news.google.com/rss/articles/CBMivwFBVV95cUxOMlRVbGFsbm1MQWw4SVpBc3lxOU5ydVdzV1JaMThuLWczc1VSdXJ1V25HNTFfVi1RSlo3czZYcGFTZzgyYVAxTnNZNXNuUDYtZjJITjRxUlhLZzFocTVMaHJkWjRNbFJpWC15LWY0UWktTW1adFpCV0IyYnpualpjRjZWR2Z4ektxOFZsYXlTWmtDcENqTUNDMXVvYnRoUlVOU01sdDJtRTE3MGhidnNXMmdab0pJc25nMV",
-      "type": "presse"
+      "type": "presse",
+      "dossier": "D03"
     },
     {
       "id": "presse-6dc759",
@@ -747,7 +781,8 @@
       "source_label": "Google News — Bruz actualités",
       "date": null,
       "detail": "<a href=\"https://news.google.com/rss/articles/CBMipwFBVV95cUxQN0hMbThNaVQ4MXVuT0NfczhLTEl1TVNDVTE5VGVkdjRtM2NHcHNlajd0V3Fva2ZPZFhBcjFTVG54WVRfOEFjQVRxNDRIT0tWVHNHdFBSSGQtVmp1QjFnanoxQjhOd0g2aDBwdmJkVEtCM3IwMFhTRE1QekNmUUJTa0pCdU5PTTVUYndJVnVrcnZMT3hVd0hXcVduNnhYc2VrUzNPR1ItVQ?oc=5\" target=\"_blank\">P",
-      "type": "presse"
+      "type": "presse",
+      "dossier": "D03"
     },
     {
       "id": "presse-c5f397",
@@ -756,7 +791,8 @@
       "source_label": "Google News — Bruz actualités",
       "date": null,
       "detail": "<a href=\"https://news.google.com/rss/articles/CBMitAFBVV95cUxPbjVqWnFncmVieXdrWjZnSFE1Rk5vcG9ENE53OUxwVlR5dmNlZHdyUW4zNmV0RkNoQjE0OVJWZ2FZY0JSSHowaDRyWVJtNG1Ub2NvOTR4RFhncVczc0MtRGtlNGkzVnRiMzJKMmVZTktIeGxSLVlkV2I0UlRwenQtUHQzOHQ0TUVCc1hMR0hvX19VNnBWWTktRTlFT0UtQmN2TkVxZ2dRQW00ZnN0Qi1yazE0MlQ?oc=5\" ",
-      "type": "presse"
+      "type": "presse",
+      "dossier": "D03"
     },
     {
       "id": "presse-dbd949",
@@ -774,7 +810,8 @@
       "source_label": "Google News — Bruz actualités",
       "date": null,
       "detail": "<a href=\"https://news.google.com/rss/articles/CBMiswFBVV95cUxNbFBSb0tZMFJNcFJnZUpERUJrdTFTWVJ2a3V2NHpCVDRVRjBxQWxqREtFQnQxNEJqdHd3M2JJWGhLU0IyQVZ2QUpDVDNtN2lKUWhKSFpXUTJvZG5OS1ljNkRWdnh2NGxCV3paTGpZbERmdU9vQXFEV2xydmVjcks3ZVBnMDdUTUJjV0R1M0RBekZ3MFBhdDZ5MXdOVGZKNVZLNTBBVzZUaC1JU1paSlAySkJ2NA?oc=5\" t",
-      "type": "presse"
+      "type": "presse",
+      "dossier": "D10"
     },
     {
       "id": "presse-9a9b38",
@@ -810,7 +847,8 @@
       "source_label": "Google News — Bruz Houssin",
       "date": null,
       "detail": "<a href=\"https://news.google.com/rss/articles/CBMi4AFBVV95cUxNbEx3cG9CZURsZTgyNHhnLVlabFJCZkdyTnZVbTZuelRGMHIzaEJRc05JT0RMa2NvWXRMeXUySDZtREtMNU5kWnZIa0JpV3llLUhUZ0JxVWpjWGlNaVRZLTZqZUNSTDd0RkxLWVRGMUlrUWhoa19pVjhHNFNJMFpaVzNCR3J5V2hyN3pOWmNMcVRpSHRkU3VOaV9oT3pOc2tZY1duMzBRMWtJdWNQMU5Ycjh0Q3lmRDcwNm",
-      "type": "presse"
+      "type": "presse",
+      "dossier": "D01"
     },
     {
       "id": "presse-5177d3",
@@ -923,10 +961,10 @@
         5,
         6
       ],
-      "dossier_lie": "D01",
       "cm_lie": "CM-2026-04-08",
       "source_label": "Bruz Mag n°260 — délégations avril 2026",
-      "source_url": "https://www.ville-bruz.fr/wp-content/uploads/2026/05/Bruz-Mag-n%C2%B0260-de-mai-juin-2026.pdf"
+      "source_url": "https://www.ville-bruz.fr/wp-content/uploads/2026/05/Bruz-Mag-n%C2%B0260-de-mai-juin-2026.pdf",
+      "dossier": "D01"
     },
     {
       "id": "A005",
@@ -937,10 +975,10 @@
       "promesses_liees": [
         1
       ],
-      "dossier_lie": "D01",
       "cm_lie": null,
       "source_label": "Délibération Conseil Métropolitain 5 fév. 2026 (Mégalis)",
-      "source_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1012938/b6b1dc7396fa9a9946d085d957775ce4477276f63f188b960bb4886c785ccce2.pdf"
+      "source_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1012938/b6b1dc7396fa9a9946d085d957775ce4477276f63f188b960bb4886c785ccce2.pdf",
+      "dossier": "D01"
     },
     {
       "id": "bea-D13-canicule-2026",
@@ -1017,10 +1055,10 @@
       "detail": "Élection de Jean-René Houssin au premier tour avec 56,39 % des voix. Toutes les promesses du programme « Un nouvel élan pour Bruz » sont désormais formellement engagées pour le mandat 2026-2032.",
       "type": "election",
       "promesses_liees": [],
-      "dossier_lie": null,
       "cm_lie": "CM-2026-03-20",
       "source_label": "Semaine à Bruz n°850",
-      "source_url": "https://www.ville-bruz.fr/wp-content/uploads/2026/03/Semaine-a-Bruz-n%C2%B0850-du-19-mars-au-2-avril-2026.pdf"
+      "source_url": "https://www.ville-bruz.fr/wp-content/uploads/2026/03/Semaine-a-Bruz-n%C2%B0850-du-19-mars-au-2-avril-2026.pdf",
+      "dossier": "D03"
     },
     {
       "id": "bea-d13-chaleur-action",
