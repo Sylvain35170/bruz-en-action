@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-11",
+    "last_updated": "2026-07-14",
     "source_principale": "Transcriptions YouTube (Ville de Bruz) + Bruz Mag n°260 + délibérations Mégalis",
     "youtube": "https://www.youtube.com/playlist?list=PLnSe2hJFinqpupninWlKBHSmzmwLW-8i7",
     "deliberations_megalis": "https://data.megalis.bretagne.bzh/organization/commune-de-bruz",
@@ -8,6 +8,25 @@
     "dernier_bruz_mag": 259
   },
   "seances": [
+    {
+      "id": "CM-2026-09-21",
+      "date": "2026-09-21",
+      "statut": "a_venir",
+      "lieu": "Halle Pagnol, Bruz",
+      "titre": "Conseil municipal de rentrée",
+      "resume_executif": "Première séance après la coupure estivale. Date annoncée par la mairie (séance ouverte au public).",
+      "points_cles": [],
+      "a_surveiller": [
+        "Suites du marché de travaux du 4e groupe scolaire Ker Lann Sud (attributions, calendrier phase 1)",
+        "Application des mesures de carte scolaire à la rentrée 2026-2027 (retraits de postes Vert Buisson et Champ l'Évêque)"
+      ],
+      "sources": [
+        {
+          "label": "Ville de Bruz — Le Conseil municipal (annonce de la date)",
+          "url": "https://www.ville-bruz.fr/ma-ville-de-bruz/conseil-municipal/conseil-municipal/"
+        }
+      ]
+    },
     {
       "id": "CM-2026-07-03",
       "date": "2026-07-03",
@@ -740,10 +759,14 @@
     },
     {
       "date": "2026-03-09",
-      "titre": "Conseil Municipal du lundi 9 mars 2026 – Vote du budget",
+      "titre": "Vote du budget 2026 — dernière séance du mandat Salmon",
       "youtube_id": "52ALytkTry0",
       "youtube_url": "https://youtu.be/52ALytkTry0",
-      "points_cles": [],
+      "points_cles": [
+        "Budget primitif 2026 voté par le conseil sortant, 6 jours avant le 1er tour des municipales (15 mars)",
+        "Taux de fiscalité 2026 reconduits — TFB maintenu à 45,34 % (niveau atteint après la hausse de 2024)",
+        "Dernière séance délibérante du mandat de Philippe Salmon — le nouveau conseil est installé le 20 mars"
+      ],
       "sources": [
         {
           "label": "Vidéo YouTube",
@@ -753,7 +776,9 @@
       "deliberations_url": "https://data.megalis.bretagne.bzh/organization/commune-de-bruz",
       "source_label": "Ville de Bruz — YouTube",
       "date_publication": "2026-03-12",
-      "id": "CM-2026-03-09"
+      "id": "CM-2026-03-09",
+      "statut": "passe",
+      "lieu": "Halle Pagnol, Bruz"
     },
     {
       "id": "CM-2026-01-26",

@@ -11,6 +11,7 @@
 ## 🟡 À faire — Agents de veille
 
 - [ ] **Agent Gmail signalements** — lire emails labelisés [SIGNALEMENT], parser template structuré, ouvrir tickets JSON
+- [ ] **Veille Rennes Métropole** — maillon faible relevé par la re-analyse du 14/07 : une seule décision métropolitaine tracée (05/02) alors que le conseil métropolitain se réunit ~mensuellement et que /metropole insiste sur « c'est la Métropole qui décide ». Aucun agent ne surveille ses délibérations (Mégalis SIREN 243500139) — chantier agent/routine à arbitrer
 
 ## 🟡 À faire — Dossiers à instruire
 
@@ -48,6 +49,11 @@
 ## 🟡 À faire — Promesses
 
 - [ ] **Audit statuts promesses.json** — ⏸ EN ATTENTE : discuter d'abord avec le maire des modes d'interaction/remontées avant de statuer (décision 2026-07-05). Contexte : les 50 promesses étaient toutes bloquées à `non_commence` depuis la création du tracker (jamais resynchronisées avec les décisions actées dans les dossiers). Une seule corrigée à ce jour (E1/#17 "adjoint vie économique" → `tenu`, 2026-07-04) — repasser sur les autres promesses liées à des décisions déjà actées ailleurs sur le site (ex. D04 maintien du taux TFB, D13 activation plan canicule)
+
+## 🟡 À faire — Éditorial (re-analyse fond 14/07)
+
+- [ ] **M03 ton** — reformuler le titre « Incinérateur de Villejean : un scandale qui concerne aussi Bruz » (metropole.json) → « controverses sanitaires », conforme à la ligne « factuel, sourcé, constructif »
+- [ ] **Coquille « Contrie »** — séance CM du 02/06/2025 dans cms.json : « piscine de la Contrie » (titre + point clé) → Conterie
 
 ## 🟡 À faire — Technique
 
