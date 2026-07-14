@@ -11,7 +11,7 @@
 ## 🟡 À faire — Agents de veille
 
 - [ ] **Agent Gmail signalements** — lire emails labelisés [SIGNALEMENT], parser template structuré, ouvrir tickets JSON
-- [ ] **Veille Rennes Métropole** — maillon faible relevé par la re-analyse du 14/07 : une seule décision métropolitaine tracée (05/02) alors que le conseil métropolitain se réunit ~mensuellement et que /metropole insiste sur « c'est la Métropole qui décide ». Aucun agent ne surveille ses délibérations (Mégalis SIREN 243500139) — chantier agent/routine à arbitrer
+- [ ] **Veille Rennes Métropole — agent_metropole_delibs** — source identifiée le 14/07 : dataset Opendatasoft `deliberations-rennes-metropole-2021-copie` sur data.rennesmetropole.fr (API `/api/explore/v2.1/`, à jour : bureau 02/07, conseil 18/06), champs `delib_date/delib_id/delib_objet/vote_pour/vote_contre/delib_url`. ⚠️ Mégalis SIREN 243500139 ne reçoit que les actes réglementaires de la Métropole, pas les délibérations de conseil. Filtre full-text ODSQL `where="Bruz"` (+ T4, Ker Lann, PLUiH, trambus) ; vérifié : aucune délibération Bruz-spécifique depuis le 20/03 (nouveau conseil installé le 09/04, séances 06/05 · 21/05 · 04/06 · 18/06 · 02/07). Agent simple → alimente `cms.json > conseil_metropolitain`
 
 ## 🟡 À faire — Dossiers à instruire
 

@@ -142,6 +142,12 @@ Convention pour les liens confirmés morts sans alternative trouvée : ajouter `
 ---
 
 ## Pièges connus
+### 2026-07-13 — bruz-en-action : agent_agenda, dates estimées, fin du lot 3 audit
+→ dispatch: local:bruz-en-action
+
+- **Agenda ville-bruz.fr scrapable mais `datetime` décalé** — cartes `article.event` bien structurées (`time.date-from/.date-to`, `.card-tags .term`, `h3.card-title a`), mais l'attribut `datetime` peut être décalé d'un jour vs le jour affiché (Bal des pompiers : affiché « 13 juillet », datetime 2026-07-14). `agent_agenda.py` parse donc les spans jour/mois affichés et ne prend que l'année du `datetime`. Corollaire homepage : toujours **trier par date avant `slice()`** — le filter+slice sans tri prenait les 4 premiers événements dans l'ordre du fichier
+… _(learning complet dans `~/.shared-context/learnings.md`)_
+
 ### 2026-07-13 — agent_agenda : datetime décalé, tri homepage, dates estimées, TS JSON
 - **Agenda ville-bruz.fr** : cartes `article.event` propres, mais l'attribut `datetime` de `time.date-from` peut être décalé d'un jour vs le jour affiché → `agent_agenda.py` parse les spans jour/mois affichés, seule l'année vient du `datetime`.
 - **Homepage : trier par date avant `slice()`** — filter+slice sans tri prenait les 4 premiers événements dans l'ordre du fichier (septembre avant juillet).
