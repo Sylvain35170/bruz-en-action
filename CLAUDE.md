@@ -142,6 +142,13 @@ Convention pour les liens confirmés morts sans alternative trouvée : ajouter `
 ---
 
 ## Pièges connus
+### 2026-07-13 — agent_agenda : datetime décalé, tri homepage, dates estimées, TS JSON
+- **Agenda ville-bruz.fr** : cartes `article.event` propres, mais l'attribut `datetime` de `time.date-from` peut être décalé d'un jour vs le jour affiché → `agent_agenda.py` parse les spans jour/mois affichés, seule l'année vient du `datetime`.
+- **Homepage : trier par date avant `slice()`** — filter+slice sans tri prenait les 4 premiers événements dans l'ordre du fichier (septembre avant juillet).
+- **ARS Bretagne** : 403 sur WebFetch/curl mais navigable via `claude-in-chrome` ; une page indexée par Google qui retourne « Accès refusé » = brouillon Drupal → publication imminente.
+- **TS + imports JSON** : typer les helpers `{champ?: unknown}` + `Array.isArray` — une signature étroite (`ce_quon_sait?: unknown[]`) est rejetée par l'union inférée de `dossiers.json`.
+- **`date_publication_estimee`** : champ distinct pour les actus sans date d'article (affiché ≈), posé par `review_proposals.py` à l'acceptation ; backfill historique fait via `git log --reverse` sur `actus.json` (première apparition de l'id = date d'entrée).
+
 ### 2026-07-11 — bruz-en-action : agent_dossiers recréait des doublons à chaque run
 - **`agent_dossiers.py` ne dédupliquait `actus_recentes` que par `source_url`** (`known_urls_by_dossier`) — pas par (date, titre). Or une même séance de CM a plusieurs sources (convocation Mégalis, Semaine à Bruz, Bruz Mag, vidéo/audio YouTube) et un même dossier peut matcher plusieurs mots-clés : résultat, chaque run d'`agent_dossiers` réinjectait un doublon de l'événement déjà présent avec une URL différente. Les dossiers dédupliqués à la main (D01-D07, D10, D12, D13) redevenaient sales dès le prochain `agent_dossiers` post-revue.
 - **Fix** : ajout de `known_events_by_dossier` (clé `(date, titre)`) en plus de `known_urls_by_dossier`. Branche `actus.json` : skip si l'event_key existe déjà. Branche `cms.json` : une seule source insérée par séance (la première non déjà connue), `break` après insertion — plus de boucle sur toutes les sources d'une même séance.
