@@ -78,7 +78,8 @@
         },
         {
           "label": "Ville de Bruz — Trambus ligne T4 : retour sur la concertation",
-          "url": "https://www.ville-bruz.fr/actualites/trambus-ligne-t4-retour-sur-la-concertation/"
+          "url": "https://www.ville-bruz.fr/actualites/trambus-ligne-t4-retour-sur-la-concertation/",
+          "url_expiree": true
         },
         {
           "label": "Ouest-France — Trambus à Bruz : terminus à la gare, navettes… quels sont les nouveaux scénarios à l'étude ? (09/07/2026)",
@@ -112,7 +113,8 @@
           "titre": "Bruz accueille le Championnat de France de Boccia — une première",
           "detail": "Ce week-end, le complexe de Ker Lann accueille le Championnat de France de boccia — une première pour Bruz. Deux Bruzois qualifiés, un village handisport ouvert à tous, et un signal concret sur la promesse de développer le sport adapté.",
           "source_url": "https://www.ville-bruz.fr/agenda/championnat-de-france-de-boccia/",
-          "source_label": "Mairie de Bruz"
+          "source_label": "Mairie de Bruz",
+          "source_url_expiree": true
         },
         {
           "date": "2026-06-18",
@@ -270,7 +272,8 @@
           "titre": "Bruz accueille le Championnat de France de Boccia — une première",
           "detail": "Ce week-end, le complexe de Ker Lann accueille le Championnat de France de boccia — une première pour Bruz. Deux Bruzois qualifiés, un village handisport ouvert à tous, et un signal concret sur la promesse de développer le sport adapté.",
           "source_url": "https://www.ville-bruz.fr/agenda/championnat-de-france-de-boccia/",
-          "source_label": "Mairie de Bruz"
+          "source_label": "Mairie de Bruz",
+          "source_url_expiree": true
         },
         {
           "date": "2026-05-18",
@@ -1046,7 +1049,8 @@
           "titre": "Ventes de places de parking en centre-ville, l'opposition dénonce « une grande braderie » à Bruz - Ouest-France",
           "detail": "La municipalité a lancé une vente de places de parking en centre-ville, une mesure critiquée par l'opposition qui la qualifie de « braderie » du patrimoine public.",
           "source_url": "https://consent.google.com/ml?continue=https://news.google.com/rss/articles/CBMihgJBVV95cUxPRGE3blVRcVFlOHRiZDBBcFJYTVJHdExCck9wMVFIVzItcFpKdlZoWEJmYktmZDBIU1BDMkxKNEJJV2xBTGNSX0lzNkdtb09FUmR5SjVWZkpEOWhzeWR1VXJSTW52UXdWNDU2bVlXcGJScTkxVjlkRURRV1dhbVJ3XzcwcDBQRUZHNG13TlIwQzBsYnhmUXhyNVV6STBYWjRUSWN3MEg4ejhOUHh3MWZZVWJqQUFyUTRKa01Od2tROVN0RV9fRm5iUGNVN0VyT3VtUXQ0R250Wl90Si1tVFY5dWxYS0xfWktfMUo1ejdld0RRYjhMNEtFMUNWMlVBdUtQMHBlaE5R?oc%3D5&gl=FR&hl=en-US&cm=2&pc=n&src=1&escs=AZ8E49AhNHQjU9yrNeKujuLPrQ5IkkPT31wQN_9YrxoL_YxodX9rdnxniMtapdVGg9wDMTbyK_eyjiCi2dczB4HVdtsNH3f3cT0O",
-          "source_label": "Sécurité Bruz"
+          "source_label": "Sécurité Bruz",
+          "source_url_expiree": true
         },
         {
           "date": "2026-07-03",
@@ -1060,7 +1064,8 @@
           "titre": "Travaux du pont de la Gare du 18 mai au 10 juillet 2026",
           "detail": "Les travaux du pont de la Gare se sont déroulés du 18 mai au 10 juillet 2026. Cette infrastructure bruzaise, point clé de la circulation locale, a été modernisée selon le calendrier prévu.",
           "source_url": "https://www.ville-bruz.fr/actualites/travaux-du-pont-de-la-gare-du-18-mai-au-3-juillet-2026/",
-          "source_label": "Mairie de Bruz — Actualités"
+          "source_label": "Mairie de Bruz — Actualités",
+          "source_url_expiree": true
         },
         {
           "date": "2026-06-18",
@@ -1263,14 +1268,16 @@
           "titre": "Fermeture partielle de la piscine de la Conterie",
           "detail": "",
           "source_url": "https://www.ville-bruz.fr/actualites/fermeture-partielle-de-la-piscine-de-la-conterie/",
-          "source_label": "Mairie de Bruz — Actualités"
+          "source_label": "Mairie de Bruz — Actualités",
+          "source_url_expiree": true
         },
         {
           "date": "2026-06-18",
           "titre": "Ouverture des inscriptions à la natation : piscine de la Conterie",
           "detail": "",
           "source_url": "https://www.ville-bruz.fr/actualites/ouverture-des-inscriptions-a-la-natation-piscine-de-la-conterie/",
-          "source_label": "Mairie de Bruz — Actualités"
+          "source_label": "Mairie de Bruz — Actualités",
+          "source_url_expiree": true
         },
         {
           "date": "2026-06-17",
@@ -1444,7 +1451,8 @@
           "titre": "Droit de réponse : Stop aux malveillances envers les enfants de l'école maternelle du Vert Buisson à Bruz",
           "detail": "Un droit de réponse est publié concernant des incidents signalés à l'école maternelle du Vert Buisson. Cet article aborde les enjeux de sécurité dans les établissements scolaires bruzois.",
           "source_url": "https://consent.google.com/ml?continue=https://news.google.com/rss/articles/CBMiqAFBVV95cUxPZVV0WGtFNUdpTk5pQWJJQ3ZrTzEwcnNFR0hnbXhPbGM3RXozc3lYQTlCakd5QTg3MklfdXc5cXZicUcwRmMzX3ktOERUT1VXTGpCaURhbzRlLXV4TnNWNmljN2szUW40VlhBclk4akNMSnBCeHN1aGcweVJFVEVWX3BTSVQ2bklKQjN3RWNxaDhIN0dXS0ZNclZDWTVFSXhldjNuUlpxU28?oc%3D5&gl=FR&hl=en-US&cm=2&pc=n&src=1&escs=AZ8E49Be454n7sfw0VFUQ9hqhwCl6qJkUrIO3B3pizRCO63Sn-vpgHYRP7EC1cvC9-lLwHbcSCwXRiJQQZ21jJCZ2kOTkLaG59Ld",
-          "source_label": "Équipements Bruz"
+          "source_label": "Équipements Bruz",
+          "source_url_expiree": true
         },
         {
           "date": "2026-06-01",
@@ -1628,7 +1636,8 @@
           "titre": "« Comment ouvrir sans enfants ? » À Bruz, le défi de la nouvelle école à 11 millions d'euros interroge - Ouest-France",
           "detail": "Une nouvelle école bruzaise, financée à hauteur de 11 millions d'euros, pose la question de son ouverture dans un contexte de démographie scolaire incertaine.",
           "source_url": "https://consent.google.com/ml?continue=https://news.google.com/rss/articles/CBMiiwJBVV95cUxPYV9EcUJHd3Y4SndlV3JUX2hxbGtqN2QxZW4tUUhpVXI0X2xMTmctQkZJbzJ3NFp0LUotUmNXeDFuSUVIaUVTUDJRUmtnbklfeGU3VFhBQVpPLVhxY0JNZkhaVDV4VTU2VmdrQmE4TjVNQ0NiQllKZmpzd1hJTEQtTmVXRHVNNW1IN3h3MTJreUtHN2pQUzYtR1hhZ3d1TVFjTlNPZzlncllueXJlVDRCczN0c2JTbTV0QVlYdFN1bUlRb25vbWNBS21qQWNPdkFrSWtlbzNnSHNMbTVJdVA5LUtzS2hwcjVyRUxPUDdDQ1QxUVVxeDQyaDB1RmhSbUJoelpDeGhrd1lPV2M?oc%3D5&gl=FR&hl=en-US&cm=2&pc=n&src=1&escs=AZ8E49CRXhxTqnLkcUSyxr2HPHatgzWXjw2E9WHO7M3dmihVv7CrKhZi8iMHsim50X1k7fRm5hYL5dRoqDie6ERsL09xiODkst_C",
-          "source_label": "Urbanisme Bruz"
+          "source_label": "Urbanisme Bruz",
+          "source_url_expiree": true
         },
         {
           "date": "2026-07-03",
@@ -1642,14 +1651,16 @@
           "titre": "Droit de réponse : Stop aux malveillances envers les enfants de l'école maternelle du Vert Buisson à Bruz",
           "detail": "Un droit de réponse est publié concernant des incidents signalés à l'école maternelle du Vert Buisson. Cet article aborde les enjeux de sécurité dans les établissements scolaires bruzois.",
           "source_url": "https://consent.google.com/ml?continue=https://news.google.com/rss/articles/CBMiqAFBVV95cUxPZVV0WGtFNUdpTk5pQWJJQ3ZrTzEwcnNFR0hnbXhPbGM3RXozc3lYQTlCakd5QTg3MklfdXc5cXZicUcwRmMzX3ktOERUT1VXTGpCaURhbzRlLXV4TnNWNmljN2szUW40VlhBclk4akNMSnBCeHN1aGcweVJFVEVWX3BTSVQ2bklKQjN3RWNxaDhIN0dXS0ZNclZDWTVFSXhldjNuUlpxU28?oc%3D5&gl=FR&hl=en-US&cm=2&pc=n&src=1&escs=AZ8E49Be454n7sfw0VFUQ9hqhwCl6qJkUrIO3B3pizRCO63Sn-vpgHYRP7EC1cvC9-lLwHbcSCwXRiJQQZ21jJCZ2kOTkLaG59Ld",
-          "source_label": "Équipements Bruz"
+          "source_label": "Équipements Bruz",
+          "source_url_expiree": true
         },
         {
           "date": "2026-06-25",
           "titre": "Canicule : mesures mises en place dans les écoles publiques",
           "detail": "",
           "source_url": "https://www.ville-bruz.fr/actualites/canicule-mesures-mises-en-place-dans-les-ecoles-publiques/",
-          "source_label": "Mairie de Bruz — Actualités"
+          "source_label": "Mairie de Bruz — Actualités",
+          "source_url_expiree": true
         },
         {
           "date": "2026-05-01",
@@ -1989,7 +2000,8 @@
           "titre": "Canicule : mesures mises en place dans les écoles publiques",
           "detail": "La mairie publie les dispositions d'exception déployées dans les écoles publiques bruzaises pour faire face aux fortes chaleurs. Ces mesures visent à assurer la sécurité, le bien-être et la continuité pédagogique des élèves.",
           "source_url": "https://www.ville-bruz.fr/actualites/canicule-mesures-mises-en-place-dans-les-ecoles-publiques/",
-          "source_label": "Mairie de Bruz — Actualités"
+          "source_label": "Mairie de Bruz — Actualités",
+          "source_url_expiree": true
         },
         {
           "date": "2026-06-25",

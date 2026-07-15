@@ -12,7 +12,8 @@
       "source_url": "https://consent.google.com/ml?continue=https://news.google.com/rss/articles/CBMihgJBVV95cUxOOC1jQXp0ZTJlLXk5a3Q1aWN3T1JxWDZoeWxVTl95NHA5Tm5mNzBnUUU2U2ZSaGdJcklpV0JzRTJEaVZKZnZHVGZMbXJKZG1lY3F3X2MtbThpbDM5bVJjSHIwamMxRmhXNTZTVlhUSW50UnJZV002NkpzcEhGVVplVHZKdmgzcHM4TkFuY2t2NGlXVmMwTk54RzFfZU5XSFBWdFlqcTVQaU5CVjFVejA1NTR3S3pURmQzaU",
       "source_label": "Équipements Bruz",
       "type": "presse",
-      "dossier": "D21"
+      "dossier": "D21",
+      "source_url_expiree": true
     },
     {
       "id": "presse-745dd690",
@@ -22,7 +23,8 @@
       "source_url": "https://consent.google.com/ml?continue=https://news.google.com/rss/articles/CBMihgJBVV95cUxPRGE3blVRcVFlOHRiZDBBcFJYTVJHdExCck9wMVFIVzItcFpKdlZoWEJmYktmZDBIU1BDMkxKNEJJV2xBTGNSX0lzNkdtb09FUmR5SjVWZkpEOWhzeWR1VXJSTW52UXdWNDU2bVlXcGJScTkxVjlkRURRV1dhbVJ3XzcwcDBQRUZHNG13TlIwQzBsYnhmUXhyNVV6STBYWjRUSWN3MEg4ejhOUHh3MWZZVWJqQUFyUTRKa01Od2tROVN0RV9fRm5iUGNVN0VyT3VtUXQ0R250Wl90Si1tVFY5dWxYS0xfWktfMUo1ejdld0RRYjhMNEtFMUNWMlVBdUtQMHBlaE5R?oc%3D5&gl=FR&hl=en-US&cm=2&pc=n&src=1&escs=AZ8E49AhNHQjU9yrNeKujuLPrQ5IkkPT31wQN_9YrxoL_YxodX9rdnxniMtapdVGg9wDMTbyK_eyjiCi2dczB4HVdtsNH3f3cT0O",
       "source_label": "Sécurité Bruz",
       "type": "presse",
-      "dossier": "D05"
+      "dossier": "D05",
+      "source_url_expiree": true
     },
     {
       "id": "mairie-b577086c",
@@ -42,7 +44,8 @@
       "source_url": "https://consent.google.com/ml?continue=https://news.google.com/rss/articles/CBMiiwJBVV95cUxPYV9EcUJHd3Y4SndlV3JUX2hxbGtqN2QxZW4tUUhpVXI0X2xMTmctQkZJbzJ3NFp0LUotUmNXeDFuSUVIaUVTUDJRUmtnbklfeGU3VFhBQVpPLVhxY0JNZkhaVDV4VTU2VmdrQmE4TjVNQ0NiQllKZmpzd1hJTEQtTmVXRHVNNW1IN3h3MTJreUtHN2pQUzYtR1hhZ3d1TVFjTlNPZzlncllueXJlVDRCczN0c2JTbTV0QVlYdFN1bUlRb25vbWNBS21qQWNPdkFrSWtlbzNnSHNMbTVJdVA5LUtzS2hwcjVyRUxPUDdDQ1QxUVVxeDQyaDB1RmhSbUJoelpDeGhrd1lPV2M?oc%3D5&gl=FR&hl=en-US&cm=2&pc=n&src=1&escs=AZ8E49CRXhxTqnLkcUSyxr2HPHatgzWXjw2E9WHO7M3dmihVv7CrKhZi8iMHsim50X1k7fRm5hYL5dRoqDie6ERsL09xiODkst_C",
       "source_label": "Urbanisme Bruz",
       "type": "presse",
-      "dossier": "D10"
+      "dossier": "D10",
+      "source_url_expiree": true
     },
     {
       "id": "presse-6f730be7",
@@ -52,7 +55,8 @@
       "source_url": "https://consent.google.com/ml?continue=https://news.google.com/rss/articles/CBMiqAFBVV95cUxPZVV0WGtFNUdpTk5pQWJJQ3ZrTzEwcnNFR0hnbXhPbGM3RXozc3lYQTlCakd5QTg3MklfdXc5cXZicUcwRmMzX3ktOERUT1VXTGpCaURhbzRlLXV4TnNWNmljN2szUW40VlhBclk4akNMSnBCeHN1aGcweVJFVEVWX3BTSVQ2bklKQjN3RWNxaDhIN0dXS0ZNclZDWTVFSXhldjNuUlpxU28?oc%3D5&gl=FR&hl=en-US&cm=2&pc=n&src=1&escs=AZ8E49Be454n7sfw0VFUQ9hqhwCl6qJkUrIO3B3pizRCO63Sn-vpgHYRP7EC1cvC9-lLwHbcSCwXRiJQQZ21jJCZ2kOTkLaG59Ld",
       "source_label": "Équipements Bruz",
       "type": "presse",
-      "dossier": "D10"
+      "dossier": "D10",
+      "source_url_expiree": true
     },
     {
       "id": "presse-374e4d",
@@ -62,7 +66,8 @@
       "source_url": "https://consent.google.com/ml?continue=https://news.google.com/rss/articles/CBMilwJBVV95cUxQNGpuS1QydG0zMHBNM1VHOE1oRHR6cG1nVzJyLTlKWmI1RGx1ODRqdWpkbVZtaWFheVd0cXg4YVA2X0hIM0dfcjA3VnphMVoyam5UWEpINXU0UkRqSnp3NFhpbFhfYi1OVXoyNHE2d0xmMy1hREduUUhmdWJaN21vZFMyYmluN1Q0WFRic0ZlVU1Qd2tqd3BleGpzeWFpeFh0MVp5MDQwN1ZFS2F4SVlzb3k1bTNYWlNpemJJbVBqZ0J3bVg3ODJDY3VuTndRSkNFdmktTVhzQWRwbU9NN3pCVjlsXzBrUnhZb2hkdjIzZXFKUjhNcmhBOVRrMUlEVmtLRG51V3dINmR3NndSNkxTLU5EX2NhMEE?oc%3D5&gl=FR&hl=en-US&cm=2&pc=n&src=1&escs=AZ8E49AyqnSlLH4hrjR7y13xF8Tjd9EsnLFVS1mNPtMQ5EROonJXd5sldm4eXmxEjZlPWxfbRV8Hogk_BJGqDrTDeaERaPanzC-7",
       "source_label": "CM Bruz",
       "type": "presse",
-      "dossier": "D05"
+      "dossier": "D05",
+      "source_url_expiree": true
     },
     {
       "id": "of-85600d",
@@ -82,7 +87,8 @@
       "source_url": "https://www.ville-bruz.fr/actualites/travaux-du-pont-de-la-gare-du-18-mai-au-3-juillet-2026/",
       "source_label": "Mairie de Bruz — Actualités",
       "type": "presse",
-      "dossier": "D05"
+      "dossier": "D05",
+      "source_url_expiree": true
     },
     {
       "id": "mairie-boccia2026",

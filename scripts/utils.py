@@ -75,15 +75,20 @@ def check_url_status(url: str, timeout: int = 10) -> dict:
     """Vérifie qu'une URL répond, sans télécharger le corps (HEAD, fallback GET en streaming
     si HEAD est refusé/mal supporté). Ne juge que l'accessibilité HTTP, pas le contenu réel :
     un site qui nécessite du JS (ex. Mégalis) répondra 200 même si la page rendue diffère.
+    Timeout/erreur réseau : un retry avec délai doublé — 3 des 13 « cassés » du run
+    2026-07-13 étaient transitoires (PDF ville-bruz lent, YouTube, simplanter.fr).
     """
-    try:
-        r = requests.head(url, headers=HEADERS, timeout=timeout, allow_redirects=True)
-        if r.status_code in (403, 405) or r.status_code >= 500:
-            r = requests.get(url, headers=HEADERS, timeout=timeout, allow_redirects=True, stream=True)
-            r.close()
-        return {"ok": r.status_code < 400, "status": r.status_code}
-    except requests.exceptions.RequestException as e:
-        return {"ok": False, "error": type(e).__name__}
+    last_error = "RequestException"
+    for attempt_timeout in (timeout, timeout * 2):
+        try:
+            r = requests.head(url, headers=HEADERS, timeout=attempt_timeout, allow_redirects=True)
+            if r.status_code in (403, 405) or r.status_code >= 500:
+                r = requests.get(url, headers=HEADERS, timeout=attempt_timeout, allow_redirects=True, stream=True)
+                r.close()
+            return {"ok": r.status_code < 400, "status": r.status_code}
+        except requests.exceptions.RequestException as e:
+            last_error = type(e).__name__
+    return {"ok": False, "error": last_error}
 
 
 def load_registry() -> dict:

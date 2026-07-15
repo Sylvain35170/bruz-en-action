@@ -46,7 +46,7 @@ function buildEvents(): RawEvent[] {
         dossier_id: dos.id,
         dossier_titre: dos.titre,
         texte: d.description,
-        source_url: d.source_url ?? null,
+        source_url: (d as { source_url_expiree?: boolean }).source_url_expiree ? null : d.source_url ?? null,
       });
     });
 
@@ -57,7 +57,7 @@ function buildEvents(): RawEvent[] {
         dossier_id: dos.id,
         dossier_titre: dos.titre,
         texte: a.titre,
-        source_url: a.source_url ?? null,
+        source_url: (a as { source_url_expiree?: boolean }).source_url_expiree ? null : a.source_url ?? null,
       });
     });
   });

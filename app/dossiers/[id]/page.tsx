@@ -334,7 +334,7 @@ export default async function DossierPage({ params }: { params: Promise<{ id: st
                       <p style={{ margin: 0, fontSize: 13, color: "#64748b", lineHeight: 1.6, fontStyle: "italic" }}>
                         → Pour Bruz : {item.pourquoi_bruz}
                       </p>
-                      {item.source_url && (
+                      {item.source_url && !(item as { source_url_expiree?: boolean }).source_url_expiree && (
                         <a href={item.source_url} target="_blank" rel="noopener noreferrer"
                           style={{ display: "inline-block", marginTop: 8, fontSize: 12, color: "#7c3aed", textDecoration: "none" }}>
                           Source ↗
@@ -406,7 +406,7 @@ export default async function DossierPage({ params }: { params: Promise<{ id: st
                             {new Date(d.date + (d.date.length <= 7 ? "-01" : "")).toLocaleDateString("fr-FR", { month: "long", year: "numeric" })}
                           </div>
                           <div style={{ fontSize: 14, color: "#334155", lineHeight: 1.6 }}>{d.description}</div>
-                          {d.source_url && (
+                          {d.source_url && !(d as { source_url_expiree?: boolean }).source_url_expiree && (
                             <a href={d.source_url} target="_blank" rel="noopener noreferrer"
                               style={{ display: "inline-block", marginTop: 8, fontSize: 12, color: "#2563eb" }}>
                               Source ↗
@@ -472,7 +472,7 @@ export default async function DossierPage({ params }: { params: Promise<{ id: st
                           Lire l'analyse →
                         </Link>
                       )}
-                      {!a.article_id && a.source_url && (
+                      {!a.article_id && a.source_url && !(a as { source_url_expiree?: boolean }).source_url_expiree && (
                         <a href={a.source_url} target="_blank" rel="noopener noreferrer"
                           style={{ display: "inline-block", marginTop: 8, fontSize: 12, color: "#2563eb" }}>
                           Lire l'article ↗
@@ -544,7 +544,7 @@ export default async function DossierPage({ params }: { params: Promise<{ id: st
                   Sources
                 </h3>
                 <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
-                  {sources.map((s, i) => (
+                  {sources.filter(s => !(s as { url_expiree?: boolean }).url_expiree).map((s, i) => (
                     <a key={i} href={s.url} target="_blank" rel="noopener noreferrer"
                       style={{ fontSize: 13, color: "#2563eb", lineHeight: 1.5, textDecoration: "none", paddingBottom: 8, borderBottom: i < sources.length - 1 ? "1px solid #f1f5f9" : "none" }}>
                       {s.label} ↗
