@@ -107,6 +107,10 @@ sans date ne sont plus perdus. `--dry-run` pour tester sans envoyer.
 Agents : `agent_mairie` · `agent_ouestfrance` (Playwright + cookies Chrome ; lève si
 dépendance manquante) · `agent_presse` (Google News RSS) · `agent_megalis` (YouTube RSS)
 · `agent_bruz_mag` (PDF) · `agent_enrichissement_cm` (transcription + Claude) ·
+`agent_metropole_delibs` (API open data `data.rennesmetropole.fr`, dataset
+`deliberations-rennes-metropole-2021-copie` → queue de veille ; ⚠️ ODSQL : full-text nu
+parenthésé + filtre de champ = 0 résultat silencieux, utiliser `delib_objet like "…"` +
+date littérale ; les CR du conseil métropolitain ne sont PAS cherchables sur Mégalis) ·
 `agent_agenda` (scraping agenda mairie → `evenements.json` **en direct, sans revue** —
 événements marqués `source: agenda_mairie`, les saisies manuelles ne sont jamais touchées,
 purge auto des événements passés de +30 j) · `agent_dossiers` (hors cron, post-revue).

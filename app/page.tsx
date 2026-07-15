@@ -426,8 +426,8 @@ export default function Home() {
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px,1fr))", gap: 16 }}>
               {lastActus.map(actu => {
                 const isMailrie = actu.type === "mairie";
-                const color = isMailrie ? "#16a34a" : actu.type === "presse" ? "#0284c7" : "#7c3aed";
-                const typeLabel = isMailrie ? "Mairie" : actu.type === "presse" ? "Presse" : "CM";
+                const color = isMailrie ? "#16a34a" : actu.type === "presse" ? "#0284c7" : actu.type === "metropole" ? "#8b5cf6" : "#7c3aed";
+                const typeLabel = isMailrie ? "Mairie" : actu.type === "presse" ? "Presse" : actu.type === "metropole" ? "Métropole" : "CM";
                 const inner = (
                   <div style={{ height: "100%", display: "flex", flexDirection: "column", background: "#fff", border: "1px solid #e2e8f0", borderRadius: 12, overflow: "hidden" }}>
                     <div style={{ height: 3, background: color }} />

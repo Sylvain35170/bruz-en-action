@@ -9,12 +9,13 @@ interface Props {
 }
 
 const TYPE_CONFIG: Record<string, { label: string; color: string }> = {
-  presse:   { label: "Presse",   color: "#0284c7" },
-  mairie:   { label: "Mairie",   color: "#16a34a" },
-  analyse:  { label: "Analyse",  color: "#7c3aed" },
-  decision: { label: "Décision", color: "#d97706" },
-  alerte:   { label: "Alerte",   color: "#dc2626" },
-  election: { label: "Élection", color: "#6366f1" },
+  presse:    { label: "Presse",    color: "#0284c7" },
+  mairie:    { label: "Mairie",    color: "#16a34a" },
+  metropole: { label: "Métropole", color: "#8b5cf6" },
+  analyse:   { label: "Analyse",   color: "#7c3aed" },
+  decision:  { label: "Décision",  color: "#d97706" },
+  alerte:    { label: "Alerte",    color: "#dc2626" },
+  election:  { label: "Élection",  color: "#6366f1" },
 };
 
 function effectiveDate(a: Actu): string {
