@@ -100,7 +100,8 @@
       "lien": "https://www.ville-bruz.fr/agenda/feu-dartifice-et-bal-des-pompiers/",
       "lien_label": "Agenda Ville de Bruz",
       "source": "agenda_mairie",
-      "date_fin": "2026-07-14"
+      "date_fin": "2026-07-14",
+      "lien_expiree": true
     },
     {
       "id": "agenda-376ef6f8",
