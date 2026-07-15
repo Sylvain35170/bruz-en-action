@@ -144,7 +144,9 @@
           "numero": "26-07-17",
           "titre": "Aménagement — Changement de dénomination : place du Vert Buisson devient place Robert Barré",
           "porteur": "Jean-Patrick Desguérets",
-          "vote": "Adopté — 26 voix pour, 7 contre"
+          "vote": "Adopté — 26 voix pour, 7 contre",
+          "detail": "Hommage à Robert Barré (décédé le 3 juin 2020) : maire de Bruz de 1989 à 2008, adjoint aux finances de 1983 à 1989, conseiller général puis vice-président du conseil général d'Ille-et-Vilaine (1985-1999), président du Centre de gestion de la FPT 35 (2001-2008). La délibération le crédite de la création de la ZAC du Vert Buisson et du positionnement du campus de Ker Lann sur la commune. Renommage effectif au 7 septembre 2026 (pose des plaques), arrêté de numérotation à suivre. L'opposition a voté contre (7 voix).",
+          "source_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1160896/09e301d2c56825d98c3d14b3fd02325accc0f2fe658d2e2bb321d65635766c6e.pdf"
         },
         {
           "numero": "26-07-18",
@@ -296,8 +298,8 @@
       ],
       "impact_bruzois": [],
       "a_surveiller": [
-        "Qui est Robert Barré et pourquoi ce choix de dénomination — contenu de la délibération pas encore lu en détail",
-        "Calendrier du marché de construction du 4e groupe scolaire Ker Lann Sud (point 9) — phase 1 (8 classes) livrée à quelle date ?"
+        "Calendrier du marché de construction du 4e groupe scolaire Ker Lann Sud (point 9) — phase 1 (8 classes) livrée à quelle date ?",
+        "Place Robert Barré : pose des plaques le 7 septembre 2026 + arrêté de numérotation à suivre (impact adresses riverains/commerces du Vert Buisson)"
       ],
       "sources": [
         {
@@ -1390,13 +1392,13 @@
     },
     {
       "date": "2025-06-02",
-      "titre": "Charte participation citoyenne, SIM Rif Sud, piscine de la Contrie et aménagement plaine Yann Fanch Kemener",
+      "titre": "Charte participation citoyenne, SIM Rif Sud, piscine de la Conterie et aménagement plaine Yann Fanch Kemener",
       "youtube_id": "lik0KmeQ16A",
       "youtube_url": "https://youtu.be/lik0KmeQ16A",
       "points_cles": [
         "Charte 'participation citoyenne' (ex-voisins vigilants) actualisée à l'unanimité, pilotée par la gendarmerie",
         "Participation au SIM Rif Sud portée à 395 875€ (+30% en 3 ans), suite au désengagement du Département",
-        "Participation à la piscine de la Contrie : 389 434,50€, hausse de 135% en 5 ans — adoptée avec 7 voix contre",
+        "Participation à la piscine de la Conterie : 389 434,50€, hausse de 135% en 5 ans — adoptée avec 7 voix contre",
         "Marché d'aménagement de la plaine Yann Fanch Kemener attribué pour 654 000€ TTC (jeux, sport, paysager)",
         "Subvention de 1000€ votée pour 'Territoire en résistance pour le grand âge' face à la crise des EHPAD",
         "Don de barnums par Emmaüs (4330,80€) suite au vol de matériel prêté par la ville"
@@ -1411,7 +1413,7 @@
       "source_label": "Ville de Bruz — YouTube",
       "date_publication": "2025-06-03",
       "id": "CM-2025-06-02",
-      "resume_executif": "Le conseil municipal du 2 juin 2025 a validé l'actualisation de la charte 'voisins vigilants' rebaptisée 'participation citoyenne', piloté par la gendarmerie. Les finances ont occupé l'essentiel de la séance : hausse de 30% en 3 ans de la participation au syndicat de musique Rif Sud (395 875€) et surtout une augmentation de 135% en 5 ans de la contribution à la piscine intercommunale de la Contrie (389 434,50€), votée contre l'avis de l'opposition (7 voix contre). Un marché de 654 000€ TTC a été attribué pour l'aménagement de la plaine Yann Fanch Kemener, incluant jeux, espace sportif et aménagements paysagers, financé en partie par l'excédent de la ZAC du Verbuisson. La ville a également voté une subvention de 1000€ à l'association 'Territoire en résistance pour le grand âge', face à la crise financière des EHPAD.",
+      "resume_executif": "Le conseil municipal du 2 juin 2025 a validé l'actualisation de la charte 'voisins vigilants' rebaptisée 'participation citoyenne', piloté par la gendarmerie. Les finances ont occupé l'essentiel de la séance : hausse de 30% en 3 ans de la participation au syndicat de musique Rif Sud (395 875€) et surtout une augmentation de 135% en 5 ans de la contribution à la piscine intercommunale de la Conterie (389 434,50€), votée contre l'avis de l'opposition (7 voix contre). Un marché de 654 000€ TTC a été attribué pour l'aménagement de la plaine Yann Fanch Kemener, incluant jeux, espace sportif et aménagements paysagers, financé en partie par l'excédent de la ZAC du Verbuisson. La ville a également voté une subvention de 1000€ à l'association 'Territoire en résistance pour le grand âge', face à la crise financière des EHPAD.",
       "deliberations": [
         {
           "numero": "non communiqué",
@@ -1427,7 +1429,7 @@
         },
         {
           "numero": "non communiqué",
-          "titre": "Participation 2025 au syndicat intercommunal de la piscine de la Contrie",
+          "titre": "Participation 2025 au syndicat intercommunal de la piscine de la Conterie",
           "vote": "7 voix contre (opposition), le reste pour",
           "detail": "Participation de 389 434,50€ (24,7% du budget total de 1 585 000€), en hausse de 135% en 5 ans. L'opposition dénonce le manque de transparence et de plan d'action pluriannuel malgré son soutien de principe à l'équipement."
         },
@@ -1435,7 +1437,7 @@
           "numero": "non communiqué",
           "titre": "Décision modificative n°2 du budget principal 2025",
           "vote": "Unanimité",
-          "detail": "Intègre les dépassements de subventions (SIM +23 875€, piscine Contrie +91 435€), le remboursement de cautions à la SPL Néotoa dissoute (11 575€) et une régularisation comptable de 595€, équilibrés par emprunt et baisse d'autofinancement."
+          "detail": "Intègre les dépassements de subventions (SIM +23 875€, piscine Conterie +91 435€), le remboursement de cautions à la SPL Néotoa dissoute (11 575€) et une régularisation comptable de 595€, équilibrés par emprunt et baisse d'autofinancement."
         },
         {
           "numero": "non communiqué",
