@@ -2,7 +2,7 @@
 
 ## 🔴 En cours
 
-- [ ] **Audit site fond & forme** — `AUDIT_SITE_2026-07.md` : lots 1, 2 et 3 faits. Lot 4 arbitré et entamé le 16/07 : fondation (C4-1 : `components/charts/`, `scripts/fetch_insee.py`, `series_longues` dans bruz.json) + C1 page `/statistiques` livrées ; restent C3 `/histoire` (nécessite des sessions de recherche documentaire sourcée avant d'écrire) puis C2 `/connaitre-bruz` + glossaire. Nom de domaine propre : en attente de financement
+- [ ] **Audit site fond & forme** — `AUDIT_SITE_2026-07.md` : lots 1, 2 et 3 faits. Lot 4 : fondation (C4-1) + C1 `/statistiques` livrées. C3 `/histoire` : session 1 de recherche documentaire faite le 16/07 → `RECHERCHE_HISTOIRE.md` (bombardement 1944, reconstruction, Ker Lann, maires 1945-2026, série pop 1793-2023 sourcés) ; session 2 = combler les trous listés en §12 (date ZAC Vert Buisson via Mégalis, François Joly/Sycomore, WikiRennes via claude-in-chrome, maires avant 1945) + intégrer les points Cassini 1793-1872 dans `fetch_insee.py`, puis rédiger la page. Reste ensuite C2 `/connaitre-bruz` + glossaire. Nom de domaine propre : en attente de financement
 
 ## 🟠 Prioritaire — Fonctionnalités
 
