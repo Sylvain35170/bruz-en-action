@@ -18,6 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/elus`, priority: 0.7, changeFrequency: "monthly" },
     { url: `${BASE}/qui-fait-quoi`, priority: 0.7, changeFrequency: "monthly" },
     { url: `${BASE}/carte`, priority: 0.6, changeFrequency: "monthly" },
+    { url: `${BASE}/statistiques`, priority: 0.8, changeFrequency: "monthly" },
     { url: `${BASE}/interagir`, priority: 0.6, changeFrequency: "monthly" },
     { url: `${BASE}/metropole`, priority: 0.9, changeFrequency: "weekly" },
     { url: `${BASE}/liens`, priority: 0.5, changeFrequency: "monthly" },

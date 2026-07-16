@@ -2,7 +2,7 @@
 
 ## 🔴 En cours
 
-- [ ] **Audit site fond & forme** — `AUDIT_SITE_2026-07.md` : lots 1, 2 et 3 faits (lot 3 terminé le 13/07 : A6, A10, A4, A7, A1, A3, A5 badge « en construction » + mention décisions vides, A8 agent_agenda + repli section homepage). Lot 4 (stats / connaissance / histoire) non arbitré. Nom de domaine propre : en attente de financement
+- [ ] **Audit site fond & forme** — `AUDIT_SITE_2026-07.md` : lots 1, 2 et 3 faits. Lot 4 arbitré et entamé le 16/07 : fondation (C4-1 : `components/charts/`, `scripts/fetch_insee.py`, `series_longues` dans bruz.json) + C1 page `/statistiques` livrées ; restent C3 `/histoire` (nécessite des sessions de recherche documentaire sourcée avant d'écrire) puis C2 `/connaitre-bruz` + glossaire. Nom de domaine propre : en attente de financement
 
 ## 🟠 Prioritaire — Fonctionnalités
 

@@ -344,6 +344,30 @@
       "encours_dette_estime": 7626452,
       "ratio_endettement_pct_rrf": 28.75,
       "note": "Aucun nouvel emprunt tiré ni en 2024 ni en 2025 (ligne 1641 'Emprunts en euros' réalisée à 0€ les deux années) — la dette évolue donc par remboursement du capital, pas par tirage."
+    },
+    "dette_par_habitant_serie": {
+      "unite": "€ par habitant",
+      "note": "Encours de dette au 31/12. Le point 2024 provient de la DGFiP (decomptes-publics.fr) et n'est pas confirmé par un compte financier officiel : le CFU 2024 de Bruz reste introuvable sur Mégalis au 02/07/2026.",
+      "valeurs": [
+        {
+          "annee": 2023,
+          "valeur": 81.0,
+          "source": "CFU 2023 officiel (Mégalis)",
+          "confirme": true
+        },
+        {
+          "annee": 2024,
+          "valeur": 466.0,
+          "source": "DGFiP via decomptes-publics.fr — hypothèse non confirmée",
+          "confirme": false
+        },
+        {
+          "annee": 2025,
+          "valeur": 379.59,
+          "source": "CFU 2025 officiel (Mégalis)",
+          "confirme": true
+        }
+      ]
     }
   },
   "stats_dossiers": {
@@ -919,5 +943,53 @@
       "zone_grise": "Nature exacte de la convention Ville/Plan B (durée, conditions financières) non documentée publiquement"
     },
     "note": "Le Grand Logis (médiathèque + salle de spectacle 400 places) est décrit dans equipements."
+  },
+  "series_longues": {
+    "population": {
+      "source": "INSEE, Historique des populations communales (recensements 1876-2023)",
+      "source_url": "https://www.insee.fr/fr/statistiques/3698339",
+      "derniere_maj": "2026-07-16",
+      "unite": "habitants",
+      "note": "Concepts selon les époques : population totale (1876-1954), sans doubles comptes (1962-1999), municipale (2006-2023) — colonnes PTOT/PSDC/PMUN du fichier INSEE. Import : scripts/fetch_insee.py",
+      "valeurs": {
+        "1876": 2828,
+        "1881": 3003,
+        "1886": 3126,
+        "1891": 3432,
+        "1896": 3503,
+        "1901": 3455,
+        "1906": 2864,
+        "1911": 2809,
+        "1921": 2751,
+        "1926": 2664,
+        "1931": 2900,
+        "1936": 2523,
+        "1954": 3447,
+        "1962": 4213,
+        "1968": 5472,
+        "1975": 7281,
+        "1982": 7856,
+        "1990": 8114,
+        "1999": 13207,
+        "2006": 14231,
+        "2007": 15031,
+        "2008": 15587,
+        "2009": 16235,
+        "2010": 16465,
+        "2011": 16612,
+        "2012": 16670,
+        "2013": 16855,
+        "2014": 17372,
+        "2015": 17978,
+        "2016": 18094,
+        "2017": 18266,
+        "2018": 18516,
+        "2019": 18905,
+        "2020": 19090,
+        "2021": 19651,
+        "2022": 19667,
+        "2023": 19683
+      }
+    }
   }
 }
