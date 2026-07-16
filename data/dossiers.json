@@ -2361,13 +2361,20 @@
           "niveau": "metropole"
         }
       ],
-      "decisions": [],
+      "decisions": [
+        {
+          "date": "2025-11-24",
+          "description": "CM sous Philippe Salmon (ancien mandat) : ouvertures dominicales et jours fériés des commerces pour 2026 — 3 dimanches d'ouverture autorisés parmi 6 proposés (2 et 9 août, 21 novembre, 6, 13 et 20 décembre) pour les commerces de détail, et 5 dimanches pour les concessions automobiles, dans le cadre de l'accord du Pays de Rennes. Adoptée à l'unanimité.",
+          "source_url": "https://youtu.be/2g1KzIc9g-8"
+        }
+      ],
       "ce_quon_suit": [
         "Les rencontres trimestrielles promises avec les commerçants (E2) auront-elles lieu et à quelle fréquence réelle ?",
         "Concrétisation des animations commerciales encouragées (E3) — braderie, carnaval, marché à manger",
         "Ce que signifie concrètement « affirmer la présence de la Ville au Campus de Ker Lann » (E4) — convention, événements, représentation ?",
         "La politique d'achats communaux privilégie-t-elle réellement les circuits courts (E5) — critères dans les marchés publics ?",
-        "Taux de vacance commerciale en centre-ville de Bruz — aucune donnée trouvée à ce jour, à rechercher (CCI 35, observatoire du commerce)"
+        "Taux de vacance commerciale en centre-ville de Bruz — aucune donnée trouvée à ce jour, à rechercher (CCI 35, observatoire du commerce)",
+        "Renouvellement de la délibération sur les ouvertures dominicales pour 2027 — attendue à l'automne 2026 : ce sera la première décision commerce du nouveau mandat sur ce sujet."
       ],
       "sources": [
         {
