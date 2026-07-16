@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-15",
+    "last_updated": "2026-07-16",
     "source": "Ville de Bruz, Grand Logis, Handisport, Les Trans"
   },
   "evenements": [
@@ -368,11 +368,38 @@
       "source": "agenda_mairie"
     },
     {
+      "id": "agenda-7d31f0ca",
+      "titre": "Danse avec le Cercle Celtique de Bruz",
+      "date": "2026-09-19",
+      "categorie": "Des Places et Vous",
+      "lien": "https://www.ville-bruz.fr/agenda/danse-avec-le-cercle-celtique-de-bruz/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-38cb6440",
+      "titre": "Clean walk : quartiers gare et Vert Buisson",
+      "date": "2026-09-19",
+      "categorie": "Rencontre",
+      "lien": "https://www.ville-bruz.fr/agenda/clean-walk-quartiers-gare-et-vert-buisson/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
       "id": "agenda-606ed540",
       "titre": "Apéro BD : des bulles à partager",
       "date": "2026-09-22",
       "categorie": "Rencontre",
       "lien": "https://www.ville-bruz.fr/agenda/apero-bd-des-bulles-a-partager/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-40d76cbc",
+      "titre": "Une vie sur mesure",
+      "date": "2026-09-29",
+      "categorie": "Théâtre",
+      "lien": "https://www.ville-bruz.fr/agenda/une-vie-sur-mesure/",
       "lien_label": "Agenda Ville de Bruz",
       "source": "agenda_mairie"
     },
@@ -404,6 +431,33 @@
       "source": "agenda_mairie"
     },
     {
+      "id": "agenda-df0a34e1",
+      "titre": "La Selva Canta Quartet",
+      "date": "2026-10-06",
+      "categorie": "Concert",
+      "lien": "https://www.ville-bruz.fr/agenda/la-selva-canta-quartet/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-ede95989",
+      "titre": "Fidji",
+      "date": "2026-10-14",
+      "categorie": "Théâtre",
+      "lien": "https://www.ville-bruz.fr/agenda/fidji/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-a17ba7fc",
+      "titre": "Alela Diane – Who’s keeping time?",
+      "date": "2026-10-16",
+      "categorie": "Concert",
+      "lien": "https://www.ville-bruz.fr/agenda/alela-diane-whos-keeping-time/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
       "id": "agenda-3c280c4d",
       "titre": "Repas des aînés",
       "date": "2026-10-18",
@@ -427,6 +481,87 @@
       "date": "2026-10-28",
       "categorie": "Rencontre",
       "lien": "https://www.ville-bruz.fr/agenda/la-nuit-des-dragons/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-8e5147d2",
+      "titre": "Le procès d’une vie",
+      "date": "2026-11-05",
+      "categorie": "Théâtre",
+      "lien": "https://www.ville-bruz.fr/agenda/le-proces-dune-vie/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-6d8135c7",
+      "titre": "Louise Thomas",
+      "date": "2026-11-17",
+      "categorie": "Concert",
+      "lien": "https://www.ville-bruz.fr/agenda/louise-thomas/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-3aa4052d",
+      "titre": "Le super pouvoir des histoires",
+      "date": "2026-11-20",
+      "categorie": "Théâtre",
+      "lien": "https://www.ville-bruz.fr/agenda/le-super-pouvoir-des-histoires/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-4b226fd0",
+      "titre": "Lisa",
+      "date": "2026-11-26",
+      "categorie": "Théâtre",
+      "lien": "https://www.ville-bruz.fr/agenda/lisa/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-9b42ef89",
+      "titre": "Vue",
+      "date": "2026-12-04",
+      "categorie": "Théâtre",
+      "lien": "https://www.ville-bruz.fr/agenda/vue/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-9b2bcebc",
+      "titre": "Vu",
+      "date": "2026-12-04",
+      "categorie": "Théâtre",
+      "lien": "https://www.ville-bruz.fr/agenda/vu/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-38e19f25",
+      "titre": "Le lac des cygnes",
+      "date": "2026-12-09",
+      "categorie": "Spectacle",
+      "lien": "https://www.ville-bruz.fr/agenda/le-lac-des-cygnes/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-01017f61",
+      "titre": "Ledeunff",
+      "date": "2026-12-15",
+      "categorie": "Concert",
+      "lien": "https://www.ville-bruz.fr/agenda/ledeunff/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-16a83022",
+      "titre": "Mamita",
+      "date": "2026-12-16",
+      "categorie": "Théâtre",
+      "lien": "https://www.ville-bruz.fr/agenda/mamita/",
       "lien_label": "Agenda Ville de Bruz",
       "source": "agenda_mairie"
     }
