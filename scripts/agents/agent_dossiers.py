@@ -89,8 +89,16 @@ def run() -> bool:
 
     # --- Depuis actus.json ---
     for actu in actus_data.get("actus", []):
-        texte = actu.get("titre", "") + " " + (actu.get("detail") or actu.get("contenu") or "")
-        for dossier_id in match_dossier(texte):
+        # Le champ `dossier` posé à la revue humaine fait foi : il évite le
+        # sur-matching par mots-clés (ex. une bio qui cite Ker Lann/finances
+        # injectée dans 4 dossiers hors sujet). Repli mots-clés sinon.
+        assigned = actu.get("dossier")
+        if assigned in dossier_map:
+            targets = [assigned]
+        else:
+            texte = actu.get("titre", "") + " " + (actu.get("detail") or actu.get("contenu") or "")
+            targets = match_dossier(texte)
+        for dossier_id in targets:
             if dossier_id not in dossier_map:
                 continue
             url = actu.get("source_url") or actu.get("url") or ""
@@ -105,9 +113,12 @@ def run() -> bool:
             dossier_map[dossier_id]["actus_recentes"].insert(0, news)
             known_urls_by_dossier[dossier_id].add(url)
             known_events_by_dossier[dossier_id].add(event_key)
-            # Mettre à jour last_activity si plus récent
-            if news["date"] > dossier_map[dossier_id].get("last_activity", ""):
-                dossier_map[dossier_id]["last_activity"] = news["date"]
+            # Mettre à jour last_activity si plus récent — plafonné à aujourd'hui :
+            # une actu datée dans le futur (ex. annonce d'un prochain CM) ne doit
+            # pas épingler le dossier en tête de tri jusqu'à cette date
+            activity_date = min(news["date"], today())
+            if activity_date > dossier_map[dossier_id].get("last_activity", ""):
+                dossier_map[dossier_id]["last_activity"] = activity_date
                 dossier_map[dossier_id]["featured"] = True
             injected += 1
             log(f"  🆕 [{dossier_id}] ← {news['titre'][:60]}", "NEW")
@@ -130,15 +141,17 @@ def run() -> bool:
                 news = {
                     "date": seance.get("date", today()),
                     "titre": seance.get("titre", "")[:120],
-                    "detail": " | ".join(seance.get("points_cles", []))[:300],
+                    "detail": (" | ".join(seance.get("points_cles", []))
+                               or seance.get("resume_executif", ""))[:300],
                     "source_url": url,
                     "source_label": src.get("label", "Délibération"),
                 }
                 dossier_map[dossier_id]["actus_recentes"].insert(0, news)
                 known_urls_by_dossier[dossier_id].add(url)
                 known_events_by_dossier[dossier_id].add(event_key)
-                if news["date"] > dossier_map[dossier_id].get("last_activity", ""):
-                    dossier_map[dossier_id]["last_activity"] = news["date"]
+                activity_date = min(news["date"], today())
+                if activity_date > dossier_map[dossier_id].get("last_activity", ""):
+                    dossier_map[dossier_id]["last_activity"] = activity_date
                     dossier_map[dossier_id]["featured"] = True
                 injected += 1
                 log(f"  🆕 [{dossier_id}] ← CM {seance['date']}", "NEW")

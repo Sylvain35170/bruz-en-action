@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-13",
+    "last_updated": "2026-07-15",
     "source": "Ville de Bruz, Grand Logis, Handisport, Les Trans"
   },
   "evenements": [
@@ -239,6 +239,16 @@
       "source": "agenda_mairie"
     },
     {
+      "id": "agenda-4a610efa",
+      "titre": "Don du sang",
+      "date": "2026-08-18",
+      "categorie": "Solidarité",
+      "lien": "https://www.ville-bruz.fr/agenda/don-du-sang-3/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie",
+      "date_fin": "2026-08-19"
+    },
+    {
       "id": "agenda-f4a0e410",
       "titre": "On en parle !",
       "date": "2026-08-21",
@@ -291,6 +301,24 @@
       "date": "2026-09-02",
       "categorie": "Médiathèque",
       "lien": "https://www.ville-bruz.fr/agenda/ptites-oreilles-grandes-questions/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-ace033e6",
+      "titre": "Cinéma plein air : « le sens de la fête »",
+      "date": "2026-09-05",
+      "categorie": "Spectacle",
+      "lien": "https://www.ville-bruz.fr/agenda/cinema-plein-air-le-sens-de-la-fete/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-2f8ba20f",
+      "titre": "Forum des associations",
+      "date": "2026-09-05",
+      "categorie": "Association",
+      "lien": "https://www.ville-bruz.fr/agenda/forum-des-associations/",
       "lien_label": "Agenda Ville de Bruz",
       "source": "agenda_mairie"
     },

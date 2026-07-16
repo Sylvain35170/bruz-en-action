@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-11",
+    "last_updated": "2026-07-16",
     "version": "3.0"
   },
   "dossiers": [
@@ -268,6 +268,13 @@
           "source_label": "Mégalis Bretagne — Convocation Conseil municipal du 03/07/2026 (ordre du jour complet, 41 points)"
         },
         {
+          "date": "2026-06-29",
+          "titre": "Bruz. De nouveaux terrains à bâtir au sud de la commune",
+          "detail": "",
+          "source_url": "https://www.ouest-france.fr/bretagne/bruz-35170/bruz-de-nouveaux-terrains-a-batir-au-sud-de-la-commune-34e64674-5a50-4ce5-831b-91f70efec037",
+          "source_label": "Ouest-France"
+        },
+        {
           "date": "2026-06-27",
           "titre": "Bruz accueille le Championnat de France de Boccia — une première",
           "detail": "Ce week-end, le complexe de Ker Lann accueille le Championnat de France de boccia — une première pour Bruz. Deux Bruzois qualifiés, un village handisport ouvert à tous, et un signal concret sur la promesse de développer le sport adapté.",
@@ -364,7 +371,7 @@
       "categorie": "Finances",
       "statut": "en_cours",
       "featured": true,
-      "last_activity": "2026-07-03",
+      "last_activity": "2026-07-15",
       "date_ouverture": "2026-06-16",
       "image": "/bruz-en-action/illus-d03-finances.webp",
       "chapeau": "Budget 2023 de Bruz : 27,3 M€ de recettes, dette quasi nulle (81 €/habitant), épargne brute à 27 %. Dès 2024, premier recours à l'emprunt : l'encours de dette bondit à 466 €/habitant (9,4 M€), signe que les grands chantiers du mandat — 4e groupe scolaire (9,5 M€), rénovation de l'Hôtel de Ville (1,4 M€), ZAC Multisites — commencent à peser. Ce dossier suit les arbitrages budgétaires du mandat 2026-2032.",
@@ -626,6 +633,13 @@
         }
       ],
       "actus_recentes": [
+        {
+          "date": "2026-09-21",
+          "titre": "Conseil municipal de rentrée",
+          "detail": "Première séance après la coupure estivale. Date annoncée par la mairie (séance ouverte au public).",
+          "source_url": "https://www.ville-bruz.fr/ma-ville-de-bruz/conseil-municipal/conseil-municipal/",
+          "source_label": "Ville de Bruz — Le Conseil municipal (annonce de la date)"
+        },
         {
           "date": "2026-07-03",
           "titre": "Conseil municipal de juillet",
@@ -917,6 +931,13 @@
           "source_label": "Audio CM sur YouTube"
         },
         {
+          "date": "2026-03-09",
+          "titre": "Vote du budget 2026 — dernière séance du mandat Salmon",
+          "detail": "Budget primitif 2026 voté par le conseil sortant, 6 jours avant le 1er tour des municipales (15 mars) | Taux de fiscalité 2026 reconduits — TFB maintenu à 45,34 % (niveau atteint après la hausse de 2024) | Dernière séance délibérante du mandat de Philippe Salmon — le nouveau conseil est installé le ",
+          "source_url": "https://youtu.be/52ALytkTry0",
+          "source_label": "Vidéo YouTube"
+        },
+        {
           "date": "2026-01-30",
           "titre": "« Vous avez l'impôt facile » : la hausse de la taxe foncière à Bruz fait bondir",
           "detail": "Réactions des habitants à la hausse TFB 2024 — Ouest-France.",
@@ -947,7 +968,7 @@
       "categorie": "Urbanisme",
       "statut": "en_cours",
       "featured": true,
-      "last_activity": "2026-07-08",
+      "last_activity": "2026-07-15",
       "date_ouverture": "2026-06-16",
       "chapeau": "Carte interactive de Bruz, recensement des chantiers en cours (qui creuse où, jusqu'à quand) et veille sur les projets d'urbanisme qui ne rentrent pas déjà dans un dossier dédié (hors ZAC Multisites, voir D02, hors Trambus T4, voir D01) : évolutions de quartier, permis groupés, équipements publics annoncés, travaux de voirie.",
       "ce_quon_sait": [
@@ -965,7 +986,8 @@
         "Coupures Enedis programmées en juillet 2026 (7, 16 et 18 juillet) — plusieurs quartiers concernés.",
         "Hôtel de Ville : rénovation thermique terminée, réouverture printemps 2026 (AP 1,4 M€ commune).",
         "4e groupe scolaire Ker Lann : en construction — AP 9,5 M€, livraison visée 2027. Maître d'ouvrage : commune de Bruz.",
-        "03/07/2026 (CM, votes publiés le 07/07 sur Mégalis) : les 5 délibérations liées aux places de stationnement du parking Pagnol (réduction de prix de cession, remboursement de différence, cession lot 108, cession lots 146-147-148) ont toutes été adoptées avec le même résultat — 26 voix pour et 7 contre. Le même bloc de 7 votes contre s'est répété sur la régularisation foncière du domaine de Cicé Blossac et sur le renommage de la place du Vert Buisson en place Robert Barré (tous deux portés par Jean-Patrick Desguérets, adjoint aménagement) — l'opposition a voté contre l'ensemble de ce paquet aménagement/patrimoine porté ce jour-là par le même rapporteur, pas seulement le parking. Sur les 41 délibérations du CM, ce sont les 6 seules à ne pas avoir été adoptées à l'unanimité (avec la convention de chasse, 25 pour/7 contre/1 abstention)"
+        "03/07/2026 (CM, votes publiés le 07/07 sur Mégalis) : les 5 délibérations liées aux places de stationnement du parking Pagnol (réduction de prix de cession, remboursement de différence, cession lot 108, cession lots 146-147-148) ont toutes été adoptées avec le même résultat — 26 voix pour et 7 contre. Le même bloc de 7 votes contre s'est répété sur la régularisation foncière du domaine de Cicé Blossac et sur le renommage de la place du Vert Buisson en place Robert Barré (tous deux portés par Jean-Patrick Desguérets, adjoint aménagement) — l'opposition a voté contre l'ensemble de ce paquet aménagement/patrimoine porté ce jour-là par le même rapporteur, pas seulement le parking. Sur les 41 délibérations du CM, ce sont les 6 seules à ne pas avoir été adoptées à l'unanimité (avec la convention de chasse, 25 pour/7 contre/1 abstention)",
+        "Qui était Robert Barré : adjoint aux finances (1983-1989) puis maire de Bruz pendant dix-neuf ans (1989-2008), conseiller général du canton de Bruz (1985-1999) et vice-président du conseil général d'Ille-et-Vilaine (1992-1999), décédé le 3 juin 2020 à 83 ans. Élu maire en 1989 d'une ville d'environ 8 000 habitants, il a porté deux projets structurants : le campus de Ker Lann et la ZAC du Vert Buisson — la place rebaptisée porte donc le nom de l'élu qui a créé le quartier. Renommage effectif le 7 septembre 2026 (annonce mairie du 15/07/2026)."
       ],
       "qui_decide": [
         {
@@ -1045,12 +1067,26 @@
       "lien_externe": "/bruz-en-action/carte",
       "actus_recentes": [
         {
+          "date": "2026-07-15",
+          "titre": "La place du Vert Buisson devient la place Robert Barré",
+          "detail": "La place du Vert Buisson prendra officiellement le nom de place Robert Barré le 7 septembre 2026, en application de la délibération du conseil municipal du 3 juillet. Robert Barré, décédé le 3 juin 2020 à 83 ans, fut adjoint aux finances (1983-1989) puis maire de Bruz pendant dix-neuf ans (1989-2008",
+          "source_url": "https://www.ville-bruz.fr/actualites/la-place-du-vert-buisson-devient-la-place-robert-barre/",
+          "source_label": "Mairie de Bruz — Actualités"
+        },
+        {
           "date": "2026-07-08",
           "titre": "Ventes de places de parking en centre-ville, l'opposition dénonce « une grande braderie » à Bruz - Ouest-France",
           "detail": "La municipalité a lancé une vente de places de parking en centre-ville, une mesure critiquée par l'opposition qui la qualifie de « braderie » du patrimoine public.",
           "source_url": "https://consent.google.com/ml?continue=https://news.google.com/rss/articles/CBMihgJBVV95cUxPRGE3blVRcVFlOHRiZDBBcFJYTVJHdExCck9wMVFIVzItcFpKdlZoWEJmYktmZDBIU1BDMkxKNEJJV2xBTGNSX0lzNkdtb09FUmR5SjVWZkpEOWhzeWR1VXJSTW52UXdWNDU2bVlXcGJScTkxVjlkRURRV1dhbVJ3XzcwcDBQRUZHNG13TlIwQzBsYnhmUXhyNVV6STBYWjRUSWN3MEg4ejhOUHh3MWZZVWJqQUFyUTRKa01Od2tROVN0RV9fRm5iUGNVN0VyT3VtUXQ0R250Wl90Si1tVFY5dWxYS0xfWktfMUo1ejdld0RRYjhMNEtFMUNWMlVBdUtQMHBlaE5R?oc%3D5&gl=FR&hl=en-US&cm=2&pc=n&src=1&escs=AZ8E49AhNHQjU9yrNeKujuLPrQ5IkkPT31wQN_9YrxoL_YxodX9rdnxniMtapdVGg9wDMTbyK_eyjiCi2dczB4HVdtsNH3f3cT0O",
           "source_label": "Sécurité Bruz",
           "source_url_expiree": true
+        },
+        {
+          "date": "2026-07-04",
+          "titre": "« Était-ce utile d'aller si près des habitations ? » : la chasse étendue sur 221 ha de terrains communaux à Bruz - Ouest",
+          "detail": "La chasse a été étendue sur 221 hectares de terrains communaux à Bruz, suscitant des interrogations sur la proximité avec les habitations. Cette gestion des espaces naturels bruzais illustre les arbitrages territoriaux du mandat.",
+          "source_url": "https://consent.google.com/ml?continue=https://news.google.com/rss/articles/CBMilwJBVV95cUxQNGpuS1QydG0zMHBNM1VHOE1oRHR6cG1nVzJyLTlKWmI1RGx1ODRqdWpkbVZtaWFheVd0cXg4YVA2X0hIM0dfcjA3VnphMVoyam5UWEpINXU0UkRqSnp3NFhpbFhfYi1OVXoyNHE2d0xmMy1hREduUUhmdWJaN21vZFMyYmluN1Q0WFRic0ZlVU1Qd2tqd3BleGpzeWFpeFh0MVp5MDQwN1ZFS2F4SVlzb3k1bTNYWlNpemJJbVBqZ0J3bVg3ODJDY3VuTndRSkNFdmktTVhzQWRwbU9NN3pCVjlsXzBrUnhZb2hkdjIzZXFKUjhNcmhBOVRrMUlEVmtLRG51V3dINmR3NndSNkxTLU5EX2NhMEE?oc%3D5&gl=FR&hl=en-US&cm=2&pc=n&src=1&escs=AZ8E49AyqnSlLH4hrjR7y13xF8Tjd9EsnLFVS1mNPtMQ5EROonJXd5sldm4eXmxEjZlPWxfbRV8Hogk_BJGqDrTDeaERaPanzC-7",
+          "source_label": "CM Bruz"
         },
         {
           "date": "2026-07-03",
@@ -1996,6 +2032,20 @@
           "source_label": "Mairie de Bruz — Actualités"
         },
         {
+          "date": "2026-07-02",
+          "titre": "Après d'importants travaux pour mieux isoler la mairie, Bruz veut végétaliser la ville pour créer de la fraîcheur",
+          "detail": "L'Hôtel de ville a réintégré ses services le 1er juillet 2026 après un an de travaux de rénovation énergétique (bardage bois, menuiseries changées, isolation renforcée) pour un investissement de 2 M€. Le maire Jean-René Houssin souhaite accélérer la végétalisation de la ville et créer des îlots de f",
+          "source_url": "https://www.ouest-france.fr/bretagne/bruz-35170/apres-dimportants-travaux-pour-mieux-isoler-la-mairie-bruz-veut-vegetaliser-la-ville-pour-creer-de-la-fraicheur-a8631000-75e4-11f1-bb07-bbe2ac4dba11",
+          "source_label": "Ouest-France"
+        },
+        {
+          "date": "2026-07-01",
+          "titre": "L'Ille-et-Vilaine passe en vigilance sécheresse",
+          "detail": "",
+          "source_url": "https://www.ville-bruz.fr/actualites/alerte-secheresse/",
+          "source_label": "Mairie de Bruz — Actualités"
+        },
+        {
           "date": "2026-06-25",
           "titre": "Canicule : mesures mises en place dans les écoles publiques",
           "detail": "La mairie publie les dispositions d'exception déployées dans les écoles publiques bruzaises pour faire face aux fortes chaleurs. Ces mesures visent à assurer la sécurité, le bien-être et la continuité pédagogique des élèves.",
@@ -2388,6 +2438,13 @@
         }
       ],
       "actus_recentes": [
+        {
+          "date": "2026-07-10",
+          "titre": "Programmation, événement d'ampleur, jauge du Grand Logis… Quels projets pour la culture à Bruz ? - Ouest-France",
+          "detail": "La municipalité de Bruz élabore une nouvelle programmation culturelle avec des événements d'envergure pour enrichir l'offre aux habitants de Bruz. Ces projets incluent l'optimisation de la jauge et des usages du Grand Logis, équipement municipal clé.",
+          "source_url": "https://consent.google.com/ml?continue=https://news.google.com/rss/articles/CBMihgJBVV95cUxOOC1jQXp0ZTJlLXk5a3Q1aWN3T1JxWDZoeWxVTl95NHA5Tm5mNzBnUUU2U2ZSaGdJcklpV0JzRTJEaVZKZnZHVGZMbXJKZG1lY3F3X2MtbThpbDM5bVJjSHIwamMxRmhXNTZTVlhUSW50UnJZV002NkpzcEhGVVplVHZKdmgzcHM4TkFuY2t2NGlXVmMwTk54RzFfZU5XSFBWdFlqcTVQaU5CVjFVejA1NTR3S3pURmQzaU",
+          "source_label": "Équipements Bruz"
+        },
         {
           "date": "2026-07-10",
           "titre": "Programmation, événement d'ampleur, jauge du Grand Logis… Quels projets pour la culture à Bruz ?",

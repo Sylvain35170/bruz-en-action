@@ -1,9 +1,19 @@
 {
   "meta": {
-    "last_updated": "2026-07-11",
+    "last_updated": "2026-07-16",
     "note": "Actus de suivi des promesses — une actu = un événement daté lié à une ou plusieurs promesses"
   },
   "actus": [
+    {
+      "id": "mairie-c7762b9f",
+      "titre": "La place du Vert Buisson devient la place Robert Barré",
+      "date": "2026-07-15",
+      "detail": "La place du Vert Buisson prendra officiellement le nom de place Robert Barré le 7 septembre 2026, en application de la délibération du conseil municipal du 3 juillet. Robert Barré, décédé le 3 juin 2020 à 83 ans, fut adjoint aux finances (1983-1989) puis maire de Bruz pendant dix-neuf ans (1989-2008), ainsi que conseiller général du canton de Bruz (1985-1999) et vice-président du conseil général d'Ille-et-Vilaine (1992-1999). Ses mandats ont marqué le développement de la ville — notamment le campus de Ker Lann et la ZAC du Vert Buisson, le quartier même de la place rebaptisée.",
+      "source_url": "https://www.ville-bruz.fr/actualites/la-place-du-vert-buisson-devient-la-place-robert-barre/",
+      "source_label": "Mairie de Bruz — Actualités",
+      "type": "mairie",
+      "dossier": "D05"
+    },
     {
       "id": "presse-f2c23dbc",
       "titre": "Programmation, événement d'ampleur, jauge du Grand Logis… Quels projets pour la culture à Bruz ? - Ouest-France",
