@@ -37,6 +37,9 @@ const NAV_GROUPS = [
     links: [
       { href: "/bruz-en-action/carte", label: "🗺️ Carte interactive" },
       { href: "/bruz-en-action/statistiques", label: "📊 Bruz en chiffres" },
+      { href: "/bruz-en-action/histoire", label: "🕰️ Histoire" },
+      { href: "/bruz-en-action/connaitre-bruz", label: "🧭 Connaître Bruz" },
+      { href: "/bruz-en-action/glossaire", label: "📖 Glossaire" },
       { href: "/bruz-en-action/dossiers/D05", label: "📁 Quartiers & chantiers" },
     ],
   },

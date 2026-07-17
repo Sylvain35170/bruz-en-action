@@ -50,6 +50,9 @@ D13 = canicule / plan municipal / îlots de fraîcheur / climat
 D15 = offre de soins / médecins / désert médical / santé
 D16 = commerce / artisanat / vie économique / zones d'activité (Champ Niguel, Haie Gautrais) / entreprises
 D20 = campus Ker Lann / enseignement supérieur / étudiants / logement étudiant
+D22 = friche Bonna Sabla / zone Bihardais / reconversion industrielle / préemption / foncier économique
+D23 = démocratie locale / référents de quartier / conseil municipal des jeunes / conseil des sages / transparence des décisions
+D24 = gymnase / salle de sport / équipements sportifs / terrains extérieurs / Cosec Siméon Beliard
 """.strip()
 
 PROMPT_TEMPLATE = """\

@@ -1,0 +1,111 @@
+{
+  "meta": {
+    "derniere_maj": "2026-07-17",
+    "note": "Contenu collecté et sourcé dans RECHERCHE_HISTOIRE.md (sessions des 16 et 17/07/2026) avant rédaction de la page /histoire."
+  },
+  "frise": [
+    {
+      "id": "origines",
+      "periode": "1066–1778",
+      "titre": "Des origines à l'Ancien Régime",
+      "texte": "Le nom de Bruz apparaît sous plusieurs formes dès 1066 (Brud, Breuth, Bruxa, Breuz). Seigneurie ecclésiastique des évêques de Rennes dès 1084 et jusqu'à la Révolution, la paroisse vit de l'agriculture et de la vigne — Ogée décrit en 1778 une paroisse de 1 800 communiants produisant le « vin de Brutz ».",
+      "niveau_confiance": "mixte"
+    },
+    {
+      "id": "revolution-xixe",
+      "periode": "1789–1899",
+      "titre": "Révolution et XIXᵉ siècle",
+      "texte": "27 biens nationaux vendus en 1791 (dont le manoir de Saint-Armel, le plus cher du sud-rennais). Rattachement de l'enclave de Cicé en 1822. La population reste stable tout le siècle, entre 2 000 et 3 500 habitants.",
+      "niveau_confiance": "mixte"
+    },
+    {
+      "id": "avant-guerre",
+      "periode": "1900–1944",
+      "titre": "Un bourg rural avant la guerre",
+      "texte": "110 soldats bruzois meurent lors de la Première Guerre mondiale. En 1936, Bruz compte 2 799 habitants — toujours un bourg rural, à la veille de son moment le plus tragique.",
+      "niveau_confiance": "haute"
+    },
+    {
+      "id": "bombardement",
+      "periode": "7–8 mai 1944",
+      "titre": "La nuit du bombardement",
+      "texte": "Dans la nuit du 7 au 8 mai 1944, des bombardiers de la RAF visant l'aérodrome de Rennes-Saint-Jacques et un dépôt de munitions se trompent de cible de 1 400 mètres, à cause de la brume. Le bourg de Bruz — 800 habitants — est rasé en deux vagues de bombardement. Bilan : 183 tués (dont 51 enfants), 300 blessés, 600 sinistrés — parmi eux le député-maire François Joly, son premier adjoint et dix conseillers municipaux. La commune reçoit la Croix de guerre en 1948.",
+      "niveau_confiance": "haute"
+    },
+    {
+      "id": "liberation",
+      "periode": "1945–1947",
+      "titre": "Trois maires en cinq ans",
+      "texte": "Le conseil municipal décapité, Bruz connaît trois maires en cinq ans : Joseph Jan, puis Germaine Marquer — élue en avril 1945, dans le tout premier scrutin où les femmes votent, elle-même sinistrée du bombardement et issue d'une dynastie de maires bruzois (son père et son grand-père l'avaient précédée entre 1881 et 1919). Elle ne se représente pas en 1947.",
+      "niveau_confiance": "haute"
+    },
+    {
+      "id": "reconstruction",
+      "periode": "1946–1954",
+      "titre": "La reconstruction",
+      "texte": "Dès septembre 1946, l'Association syndicale de remembrement engage la reconstruction : 64 immeubles neufs (97 logements, 41 magasins). L'église Saint-Martin, œuvre de l'architecte Louis Chouinard, est consacrée le 30 mars 1954 — remarquable pour son autel face à l'assemblée, une idée novatrice pour l'époque.",
+      "niveau_confiance": "haute",
+      "cycle_urbanisation": 1
+    },
+    {
+      "id": "pavillonnaire",
+      "periode": "1954–1990",
+      "titre": "La croissance périurbaine",
+      "texte": "La population décolle : 3 447 habitants en 1954, 5 472 en 1968, 8 114 en 1990 — la couronne rennaise se pavillonne, portée par la proximité de Rennes et l'essor de l'automobile.",
+      "niveau_confiance": "haute",
+      "cycle_urbanisation": 2
+    },
+    {
+      "id": "ker-lann",
+      "periode": "1990–2010",
+      "titre": "Ker Lann et le Vert Buisson",
+      "texte": "En 1990, Pierre Méhaignerie porte l'idée d'un campus à Bruz : Ker Lann ouvre en 1992, l'ENSAI arrive en 1996. La décennie 1990 est la plus forte croissance démographique de l'histoire de la commune (+63 %). En parallèle, la ZAC du Vert Buisson est créée le 20 février 1997 pour prolonger la ville vers Cicé-Blossac — 2 364 logements y seront finalement livrés (contre 1 200-1 500 prévus), avant sa clôture officielle en 2023.",
+      "niveau_confiance": "haute",
+      "cycle_urbanisation": 3
+    },
+    {
+      "id": "aujourdhui",
+      "periode": "2010–2026",
+      "titre": "Bruz aujourd'hui",
+      "texte": "19 683 habitants en 2023 — Bruz est la 4ᵉ ville d'Ille-et-Vilaine, aux portes des 20 000 habitants. La ZAC Multisites, lancée dans les années 2020, ouvre le 4ᵉ grand cycle d'urbanisation de la commune.",
+      "niveau_confiance": "haute",
+      "cycle_urbanisation": 4,
+      "dossier_lien": "D02"
+    }
+  ],
+  "cycles_urbanisation": [
+    { "numero": 1, "label": "Reconstruction", "periode": "1946–1954" },
+    { "numero": 2, "label": "Pavillonnaire", "periode": "1954–1990" },
+    { "numero": 3, "label": "Ker Lann / Vert Buisson", "periode": "1990–2010" },
+    { "numero": 4, "label": "ZAC Multisites", "periode": "2020s", "dossier_lien": "D02" }
+  ],
+  "maires": [
+    { "debut": "1881", "fin": "1886", "nom": "Hyppolite Bousquet", "etiquette": null, "note": "grand-père de Germaine Marquer" },
+    { "debut": "1886", "fin": "1919", "nom": "Léonce Bousquet", "etiquette": null, "note": "père de Germaine Marquer — 33 ans de mandat" },
+    { "debut": "1919", "fin": "1944", "nom": "François Joly", "etiquette": "Rép. indép. et d'action sociale", "note": "député 1936-1942 ; mort avec sa famille dans le bombardement du 8 mai 1944" },
+    { "debut": "1945-05", "fin": "1945-07", "nom": "Joseph Jan", "etiquette": null, "note": "ancien gendarme" },
+    { "debut": "1945-07", "fin": "1947-10", "nom": "Germaine Marquer", "etiquette": null, "note": "une des premières femmes maires de France ; sinistrée du bombardement" },
+    { "debut": "1947-10", "fin": "1950-03", "nom": "André Marquer", "etiquette": "MRP", "note": "lieutenant-colonel" },
+    { "debut": "1950-03", "fin": "1960-09", "nom": "Joseph Jan", "etiquette": null, "note": "second mandat" },
+    { "debut": "1960-10", "fin": "1989-03", "nom": "Alphonse Legault", "etiquette": "DVD", "note": "29 ans de mandat" },
+    { "debut": "1989-03", "fin": "2008-03", "nom": "Robert Barré", "etiquette": "app. UDF", "note": "conseiller général 1985-1999" },
+    { "debut": "2008-03", "fin": "2014-03", "nom": "Philippe Caffin", "etiquette": "DVG", "note": null },
+    { "debut": "2014-03", "fin": "2020-05", "nom": "Auguste Louapre", "etiquette": "LR→LREM", "note": null },
+    { "debut": "2020-05", "fin": "2026-03", "nom": "Philippe Salmon", "etiquette": null, "note": null },
+    { "debut": "2026-03", "fin": null, "nom": "Jean-René Houssin", "etiquette": "DVD", "note": "mandat en cours" }
+  ],
+  "sources": [
+    { "label": "Erwan Le Gall, « Bruz, effroyable 8 mai », En Envor", "url": "http://enenvor.fr/eeo_actu/8mai/bruz_effroyable_8_mai.html" },
+    { "label": "Erwan Le Gall, « La parenthèse Germaine Marquer », En Envor", "url": "http://enenvor.fr/eeo_actu/apresW/la_parenthese_germaine_marquer.html" },
+    { "label": "WikiRennes — Bombardement de l'aérodrome et de Bruz le 8 mai 1944", "url": "https://www.wiki-rennes.fr/Bombardement_de_l%27a%C3%A9rodrome_et_de_Bruz_le_8_mai_1944" },
+    { "label": "WikiRennes — Louis Chouinard", "url": "https://www.wiki-rennes.fr/Louis_Chouinard" },
+    { "label": "Assemblée nationale — base Sycomore, fiche François Joly", "url": "https://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/4043" },
+    { "label": "« Bruz, la renaissance d'un village breton », Architecture 50", "url": "https://architecture-50.fr/bruz-la-renaissance-dun-village-breton/" },
+    { "label": "RAF Bomber Command Campaign Diary, mai 1944", "url": null },
+    { "label": "Wikipédia — Campus de Ker Lann", "url": "https://fr.wikipedia.org/wiki/Campus_de_Ker_Lann" },
+    { "label": "Cassini/EHESS — fiche Bruz n°6178 (population 1793-1936)", "url": "https://cassini.ehess.fr/fr/html/fiche.php?select_resultat=6178" },
+    { "label": "INSEE — Historique des populations communales (1876-2023)", "url": "https://www.insee.fr/fr/statistiques/3698339" },
+    { "label": "Mégalis Bretagne — délibération de suppression de la ZAC du Vert Buisson (25/09/2023)", "url": "https://data.megalis.bretagne.bzh/organization/commune-de-bruz" },
+    { "label": "Marguerite Coutel, « Bruz sous les bombes, un village breton dans la guerre », La Part Commune, 2005", "url": null }
+  ]
+}

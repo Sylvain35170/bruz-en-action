@@ -37,6 +37,16 @@ INSEE_XLSX = (
 SHEET = "pop_1876_2023"
 HEADER_ROW_IDX = 5  # ligne des codes colonnes (CODGEO, REG, DEP, LIBGEO, PMUN…)
 
+# Points antérieurs à 1876 (hors couverture du fichier INSEE), fiche Bruz n°6178 —
+# https://cassini.ehess.fr/fr/html/fiche.php?select_resultat=6178
+# Complète aussi 1946, absent de la série INSEE qui saute de 1936 à 1954.
+CASSINI_EHESS_URL = "https://cassini.ehess.fr/fr/html/fiche.php?select_resultat=6178"
+CASSINI_1793_1946 = {
+    "1793": 2307, "1800": 2173, "1806": 2048, "1821": 2198, "1831": 2280,
+    "1836": 2233, "1841": 2409, "1846": 2460, "1851": 2458, "1856": 2530,
+    "1861": 2677, "1866": 3006, "1872": 2836, "1946": 2820,
+}
+
 
 def telecharger_xlsx(force: bool = False) -> Path:
     """Télécharge le fichier INSEE dans le cache local (sauf s'il existe déjà).
@@ -102,27 +112,38 @@ def extraire_serie_population(xlsx: Path) -> dict[str, int]:
 
 
 def ecrire_bruz_json(serie: dict[str, int]) -> None:
-    """Écrit la série sous series_longues.population dans bruz.json."""
+    """Écrit la série sous series_longues.population dans bruz.json.
+
+    Fusionne les points Cassini/EHESS (1793-1872 + 1946) avant l'INSEE
+    (1876-2023) — sans ça, cette étape écraserait `series_longues.population`
+    à chaque run et perdrait les points antérieurs à 1876.
+    """
+    valeurs_completes = {**CASSINI_1793_1946, **serie}
+    valeurs_triees = dict(sorted(valeurs_completes.items(), key=lambda kv: int(kv[0])))
+
     data = json.loads(BRUZ_JSON.read_text(encoding="utf-8"))
     data.setdefault("series_longues", {})["population"] = {
-        "source": "INSEE, Historique des populations communales (recensements 1876-2023)",
+        "source": "Cassini/EHESS (1793-1872, 1946) + INSEE, Historique des populations communales (1876-2023, hors 1946)",
         "source_url": INSEE_PAGE,
+        "source_url_cassini": CASSINI_EHESS_URL,
         "derniere_maj": date.today().isoformat(),
         "unite": "habitants",
         "note": (
             "Concepts selon les époques : population totale (1876-1954), "
             "sans doubles comptes (1962-1999), municipale (2006-2023) — "
-            "colonnes PTOT/PSDC/PMUN du fichier INSEE. Import : scripts/fetch_insee.py"
+            "colonnes PTOT/PSDC/PMUN du fichier INSEE ; population totale au "
+            "recensement pour les points Cassini/EHESS (1793-1872, 1946). "
+            "Import : scripts/fetch_insee.py"
         ),
-        "valeurs": serie,
+        "valeurs": valeurs_triees,
     }
     BRUZ_JSON.write_text(
         json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
-    annees = list(serie)
+    annees = list(valeurs_triees)
     print(
-        f"✓ bruz.json : series_longues.population — {len(serie)} points "
-        f"({annees[0]} → {annees[-1]}, dernier : {serie[annees[-1]]} hab.)"
+        f"✓ bruz.json : series_longues.population — {len(valeurs_triees)} points "
+        f"({annees[0]} → {annees[-1]}, dernier : {valeurs_triees[annees[-1]]} hab.)"
     )
 
 

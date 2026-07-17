@@ -196,7 +196,7 @@
       "categorie": "Urbanisme",
       "statut": "en_cours",
       "featured": true,
-      "last_activity": "2026-07-03",
+      "last_activity": "2026-07-17",
       "date_ouverture": "2026-06-16",
       "chapeau": "La ZAC Multisites prévoit 1 700 nouveaux logements sur plusieurs secteurs de Bruz d'ici 2035. Un projet structurant voté en décembre 2025, mais qui soulève des questions concrètes : où exactement, à quelle densité, et avec quels équipements en face ?",
       "ce_quon_sait": [
@@ -204,7 +204,8 @@
         "Tracé T4 via Ker Lann : Rennes Métropole impose 60 logements/ha sur ce secteur (fév. 2026)",
         "Quartier du Vert-Buisson : 67 logements en projet — premier secteur identifié publiquement",
         "Réunion publique 2025 : 170 habitants mobilisés — tension principale sur la densité et la mixité",
-        "Une charte de bonnes pratiques a été présentée pour l'intégration dans les quartiers existants"
+        "Une charte de bonnes pratiques a été présentée pour l'intégration dans les quartiers existants",
+        "Les 60 logements/ha imposés sur le secteur Ker Lann se situent dans la fourchette des grandes ZAC rennaises récentes : Baud-Chardonnet (~74 lgts/ha, 2 580 logements sur 35 ha) est plus dense, La Courrouze (~42-43 lgts/ha, ~4 800-5 000 logements sur 115 ha dont 40 ha d'espaces verts) l'est moins — la densité de Bruz n'est pas hors norme métropolitaine"
       ],
       "qui_decide": [
         {
@@ -257,6 +258,14 @@
         {
           "label": "Open data Mégalis — délibérations Bruz",
           "url": "https://data.megalis.bretagne.bzh/organization/commune-de-bruz"
+        },
+        {
+          "label": "Baud-Chardonnet — chiffres clés du projet urbain (35 ha, 2 580 logements)",
+          "url": "https://www.baud-chardonnet.com/decouvrir-le-projet-urbain/introduction"
+        },
+        {
+          "label": "La Courrouze — Territoires Rennes (115 ha, ~5 000 logements visés)",
+          "url": "https://www.territoires-rennes.fr/les-projets/la-courrouze"
         }
       ],
       "actus_recentes": [
@@ -968,7 +977,7 @@
       "categorie": "Urbanisme",
       "statut": "en_cours",
       "featured": true,
-      "last_activity": "2026-07-15",
+      "last_activity": "2026-07-17",
       "date_ouverture": "2026-06-16",
       "chapeau": "Carte interactive de Bruz, recensement des chantiers en cours (qui creuse où, jusqu'à quand) et veille sur les projets d'urbanisme qui ne rentrent pas déjà dans un dossier dédié (hors ZAC Multisites, voir D02, hors Trambus T4, voir D01) : évolutions de quartier, permis groupés, équipements publics annoncés, travaux de voirie.",
       "ce_quon_sait": [
@@ -977,7 +986,7 @@
         "Bruz est couverte par le Plan Local d'Urbanisme intercommunal (PLUi) de Rennes Métropole — c'est ce document qui fixe les règles de constructibilité par zone",
         "La plupart des grands chantiers à Bruz sont portés par Rennes Métropole (voirie, réseaux, T4) — pas par la commune",
         "La mairie publie une page «Travaux en cours» mais sans dates précises ni carte — contact : Services Techniques 02 99 05 44 52",
-        "Boulevard Pasteur : chantier d'assainissement pluriannuel depuis fév. 2025, durée min. 3 ans — Rennes Métropole. Remplacement du réseau amianté. Phase en cours : entre rond-point de Laillé et rue Debussy.",
+        "Boulevard Pasteur (entre rue de la Noé et av. du Général de Gaulle) : chantier de remplacement des réseaux (eau, électricité, gaz, assainissement — env. 50 ans d'âge) puis réaménagement de voirie (piste cyclable bidirectionnelle au nord, espaces verts, stationnement conservé) — Rennes Métropole, coût prévisionnel 3 M€ (assainissement + voirie). Phasage par secteurs (2 à 4) de févr. 2025 à l'été 2028 : mi-juillet 2026, les travaux portent sur le secteur 3 (section Gaudrine-Mermoz) ; le secteur 2 (rue de la Noé-route de Laillé) doit être traité en totalité courant 2026, le secteur 4 (rue Duguesclin-av. Général de Gaulle) s'étale jusqu'en 2027",
         "Pont de la Gare (av. Jules Tricault / RD77) : travaux mai–juil. 2026 par Rennes Métropole. Fermeture totale du pont (véhicules + piétons + vélos) du 15 juin au 3 juillet 2026. Déviation : rue Émile Gernigon → av. de Wrzésnia → av. de l'Europe → av. Joseph Jan.",
         "Rue Théodore Botrel : travaux voirie + éclairage public du 1er juin au 24 juillet 2026 — Rennes Métropole. Création stationnement enherbé + cheminements piétons/vélos.",
         "Avenue du Général de Gaulle : travaux réseaux eau/électricité + voirie de juin 2026 à printemps 2027 — circulation maintenue en alternat.",
@@ -987,7 +996,9 @@
         "Hôtel de Ville : rénovation thermique terminée, réouverture printemps 2026 (AP 1,4 M€ commune).",
         "4e groupe scolaire Ker Lann : en construction — AP 9,5 M€, livraison visée 2027. Maître d'ouvrage : commune de Bruz.",
         "03/07/2026 (CM, votes publiés le 07/07 sur Mégalis) : les 5 délibérations liées aux places de stationnement du parking Pagnol (réduction de prix de cession, remboursement de différence, cession lot 108, cession lots 146-147-148) ont toutes été adoptées avec le même résultat — 26 voix pour et 7 contre. Le même bloc de 7 votes contre s'est répété sur la régularisation foncière du domaine de Cicé Blossac et sur le renommage de la place du Vert Buisson en place Robert Barré (tous deux portés par Jean-Patrick Desguérets, adjoint aménagement) — l'opposition a voté contre l'ensemble de ce paquet aménagement/patrimoine porté ce jour-là par le même rapporteur, pas seulement le parking. Sur les 41 délibérations du CM, ce sont les 6 seules à ne pas avoir été adoptées à l'unanimité (avec la convention de chasse, 25 pour/7 contre/1 abstention)",
-        "Qui était Robert Barré : adjoint aux finances (1983-1989) puis maire de Bruz pendant dix-neuf ans (1989-2008), conseiller général du canton de Bruz (1985-1999) et vice-président du conseil général d'Ille-et-Vilaine (1992-1999), décédé le 3 juin 2020 à 83 ans. Élu maire en 1989 d'une ville d'environ 8 000 habitants, il a porté deux projets structurants : le campus de Ker Lann et la ZAC du Vert Buisson — la place rebaptisée porte donc le nom de l'élu qui a créé le quartier. Renommage effectif le 7 septembre 2026 (annonce mairie du 15/07/2026)."
+        "Qui était Robert Barré : adjoint aux finances (1983-1989) puis maire de Bruz pendant dix-neuf ans (1989-2008), conseiller général du canton de Bruz (1985-1999) et vice-président du conseil général d'Ille-et-Vilaine (1992-1999), décédé le 3 juin 2020 à 83 ans. Élu maire en 1989 d'une ville d'environ 8 000 habitants, il a porté deux projets structurants : le campus de Ker Lann et la ZAC du Vert Buisson — la place rebaptisée porte donc le nom de l'élu qui a créé le quartier. Renommage effectif le 7 septembre 2026 (annonce mairie du 15/07/2026).",
+        "Travaux d'élagage/débroussaillage SNCF le long des voies ferrées à Bruz : août 2026 à mars 2027 (source : page mairie « Travaux en cours »)",
+        "Pas de dispositif formel de « conseil de quartier » ou de « référent de quartier » nommé et permanent à Bruz (vérifié 17/07/2026 : plateforme participative jeparticipe.ville-bruz.fr, page « Je participe Bruz »). Ce qui existe : des « rencontres de quartier » ponctuelles où des élus vont à la rencontre des habitants d'un secteur donné (ex. quartier Cicé Blossac), et des instances participatives thématiques (comité mobilités, comité piétons-vélos, Conseil Citoyen de la Vie Culturelle) — mais aucune structure durable de référents par quartier couvrant l'ensemble de la commune"
       ],
       "qui_decide": [
         {
@@ -1024,7 +1035,7 @@
         },
         {
           "date": "2026-06",
-          "description": "Début travaux avenue du Général de Gaulle (réseaux + voirie) — fin prévue printemps 2027",
+          "description": "Début travaux avenue du Général de Gaulle (réseaux + voirie) — fin prévue printemps 2027. Mi-juillet 2026 : phase en cours entre le boulevard Pasteur et la rue Jean Moulin",
           "source_url": "https://www.ville-bruz.fr/mon-quotidien/travaux-et-demandes-dintervention/travaux-en-cours/"
         }
       ],
@@ -1032,11 +1043,12 @@
         "Les nouvelles zones constructibles ouvertes en révision de PLUi",
         "Les emplacements réservés pour les futurs équipements publics",
         "Un projet de 67 logements évoqué par la presse dans le quartier du Vert-Buisson — repéré par la veille automatique le 29/06/2026, mais article source inaccessible (lien Google News sans URL propre) : à confirmer avant d'écrire quoi que ce soit dessus",
-        "La fin du chantier pont de la Gare — la réouverture le 3 juillet 2026 est-elle tenue ?",
+        "Le planning détaillé du boulevard Pasteur par secteur (2, 3, 4) est désormais public (plaquette Rennes Métropole) — fin des travaux prévue été 2028, coût 3 M€",
         "Le planning détaillé du boulevard Pasteur — quels secteurs en 2026, quand la fin ?",
         "Les chantiers liés à la ZAC Multisites : quand commencent les premiers travaux de viabilisation ?",
         "Les travaux préparatoires T4 : Rennes Métropole a-t-elle communiqué un planning ?",
-        "Les coupures Enedis de juillet 2026 : quels quartiers exactement ?"
+        "Les coupures Enedis de juillet 2026 : quels quartiers exactement ?",
+        "Le dispositif de « rencontres de quartier » ponctuelles se structurera-t-il en conseils de quartier permanents avec référents nommés ? Rien ne l'indique à ce jour"
       ],
       "sources": [
         {
@@ -1062,6 +1074,10 @@
         {
           "label": "Mégalis Bretagne — Liste des délibérations adoptées, CM du 03/07/2026 (détail des votes)",
           "url": "https://data.megalis.bretagne.bzh/organization/commune-de-bruz"
+        },
+        {
+          "label": "Je participe Bruz — plateforme de participation citoyenne (projets, comité mobilités, comité piétons-vélos)",
+          "url": "https://jeparticipe.ville-bruz.fr/"
         }
       ],
       "lien_externe": "/bruz-en-action/carte",
@@ -1729,7 +1745,7 @@
       "categorie": "Patrimoine",
       "statut": "en_cours",
       "featured": false,
-      "last_activity": "2026-06-27",
+      "last_activity": "2026-07-17",
       "date_ouverture": "2026-06-18",
       "chapeau": "Le Manoir de la Noë abrite depuis avril 2026 l'association Plan B, lauréate de l'appel à projets «Nos Lieux Communs» de Rennes Métropole. Tiers-lieu citoyen construit sur cinq ans de mobilisation bénévole, Plan B propose un bar associatif ouvert à tous et des activités de transition. La question du mandat : la ville accompagnera-t-elle ce projet dans la durée, ou la guinguette estivale reprendra-t-elle la main ?",
       "ce_quon_sait": [
@@ -1740,7 +1756,9 @@
         "Plan B héberge le Repair Café de Bruz chaque 2e samedi du mois",
         "La ville organise en parallèle une guinguette estivale «Un été au manoir» (convention 2 ans) qui cohabite avec le projet Plan B",
         "Rennes Métropole a été récompensée par le think tank Décider Ensemble pour ce dispositif de participation citoyenne",
-        "La nature exacte de la convention entre la ville et Plan B (durée, conditions financières) n'est pas documentée publiquement"
+        "La nature exacte de la convention entre la ville et Plan B (durée, conditions financières) n'est pas documentée publiquement",
+        "09/07/2026 : réunion de concertation citoyenne au Manoir de la Noë (18h-20h), dans le cadre du dispositif métropolitain « Nos Lieux Communs » — objectif : décider de l'usage d'une partie du bâtiment et de son terrain non occupée par Plan B, autour d'un projet de transition écologique (agriculture, alimentation, biodiversité, eau, économie circulaire, énergies renouvelables ou déchets). Aucun résultat de cette concertation n'est encore public au 17/07/2026",
+        "Été 2026 : le bar associatif Plan B est fermé pour la saison estivale — le lieu reste ouvert avec la guinguette de la Brasserie Choque (25 juin-15 août 2026, bières artisanales, restauration, concerts), confirmant la cohabitation saisonnière entre les deux usages plutôt qu'un remplacement de l'un par l'autre"
       ],
       "qui_decide": [
         {
@@ -1790,14 +1808,20 @@
           "date": "2026-04-10",
           "description": "Ouverture publique du bar associatif Plan B — entrée libre, ven./dim. Repair Café + concerts + food trucks.",
           "source_url": "https://fabriquecitoyenne.fr/blog/le-repair-cafe-de-bruz-sinstalle-au-manoir-de-la-noe"
+        },
+        {
+          "date": "2026-07-09",
+          "description": "Réunion de concertation citoyenne « Nos Lieux Communs » sur l'avenir d'une partie non occupée du Manoir de la Noë et de son terrain — projet de transition écologique à définir avec les habitants",
+          "source_url": "https://unidivers.fr/bruz-manoir-de-la-noe/"
         }
       ],
       "ce_quon_suit": [
         "La nature et la durée de la convention entre la ville et Plan B — bail ? mise à disposition gratuite ? quelle durée ?",
-        "Le renouvellement (ou non) de la convention guinguette «Un été au manoir» après l'été 2026",
+        "Le renouvellement (ou non) de la convention guinguette «Un été au manoir» après l'été 2026 — la saison 2026 (25 juin-15 août) est assurée par la Brasserie Choque, en cohabitation avec Plan B (fermé l'été mais lieu toujours actif)",
         "Toute délibération du CM sur le Manoir de la Noë : travaux, renouvellement de bail, statut pérenne",
         "Si Plan B obtient une délibération actant un statut juridique stable — ou reste dans un flou contractuel renouvelable au bon vouloir de la majorité",
-        "Un éventuel dossier de subvention patrimoine (DRAC, Région Bretagne) pour financer la rénovation du bâtiment"
+        "Un éventuel dossier de subvention patrimoine (DRAC, Région Bretagne) pour financer la rénovation du bâtiment",
+        "Le résultat de la concertation citoyenne du 9 juillet 2026 sur l'usage de la partie non occupée du Manoir/terrain — quel projet sera retenu, sur quel calendrier ?"
       ],
       "sources": [
         {
@@ -1820,9 +1844,24 @@
         {
           "label": "Open data Mégalis — délibérations Bruz",
           "url": "https://data.megalis.bretagne.bzh/organization/commune-de-bruz"
+        },
+        {
+          "label": "Unidivers — Rennes Métropole, programme et avenir du Manoir de la Noë (concertation 9 juillet 2026)",
+          "url": "https://unidivers.fr/bruz-manoir-de-la-noe/"
+        },
+        {
+          "label": "Unidivers — guinguette Camille et Léon / Brasserie Choque au Manoir de la Noë",
+          "url": "https://unidivers.fr/guinguette-camille-leon/"
         }
       ],
       "actus_recentes": [
+        {
+          "date": "2026-07-09",
+          "titre": "Concertation citoyenne sur l'avenir du Manoir de la Noë",
+          "detail": "Dans le cadre de « Nos Lieux Communs », une réunion publique a proposé aux habitants de décider de l'usage d'une partie non occupée du Manoir et de son terrain, autour d'un projet de transition écologique (agriculture, alimentation, biodiversité, eau, économie circulaire, énergies renouvelables ou déchets). Aucun résultat encore public.",
+          "source_url": "https://unidivers.fr/bruz-manoir-de-la-noe/",
+          "source_label": "Unidivers"
+        },
         {
           "date": "2026-06-18",
           "titre": "Un été au manoir saison #3",
@@ -2144,7 +2183,7 @@
       "categorie": "Santé",
       "statut": "en_cours",
       "featured": false,
-      "last_activity": "2026-07-13",
+      "last_activity": "2026-07-17",
       "date_ouverture": "2026-06-28",
       "chapeau": "Bruz grandit vite — 20 000 habitants aujourd'hui, 1 700 logements de plus à venir. Mais l'offre médicale suit-elle ? Aucun spécialiste en ville, une maison de santé absente, et un programme municipal qui ne mentionne pas l'accès aux soins. Ce dossier suit ce que les Bruzois peuvent ou ne peuvent pas trouver chez eux.",
       "ce_quon_sait": [
@@ -2156,7 +2195,7 @@
         "6 pharmacies en ville, 10 cabinets infirmiers répertoriés par la mairie",
         "La page santé de la mairie invite les praticiens à s'inscrire par mail (infocom@ville-bruz.fr) — indicateur d'un annuaire géré de façon passive, potentiellement incomplet",
         "Le Dr Pierre Teglia (Cabinet du Vert Buisson, installé depuis 2009) accepte de nouveaux patients en priorité pour les Bruzois sans médecin traitant",
-        "L'ARS Bretagne a soumis un nouveau zonage médecin à consultation (avril-mai 2026) — l'arrêté est attendu pour l'été 2026 ; le classement de Bruz (sous-dotée / intermédiaire / bien dotée) n'est pas encore officiel",
+        "Le projet de zonage médecin 2026 soumis à consultation réglementaire (version du 29 mai 2026, non arrêtée) classe Bruz en zone de vigilance (4-ZV) — la catégorie la moins prioritaire (54,8% de la population régionale), qui n'ouvre aucune aide à l'installation des médecins (source : tableau officiel ARS Bretagne, données à la commune, code INSEE 35047)",
         "Le programme de Jean-René Houssin 2026 ne comporte aucun engagement explicite sur l'offre de soins ou l'accès aux médecins",
         "Aucun projet public de MSP n'est porté par la mairie à ce jour, mais une offre privée arrive : un programme immobilier neuf (« Maison de santé », promoteur Blot Entreprise) de 2 000 m² de bureaux médicaux à louer (surfaces de 20 à 300 m², espaces mutualisables dont salles d'attente partagées), livraison prévue en 2027. Ce n'est pas une MSP agréée ARS — juste un immeuble commercial ciblant des professionnels de santé libéraux"
       ],
@@ -2184,7 +2223,7 @@
       ],
       "decisions": [],
       "ce_quon_suit": [
-        "Publication du nouveau zonage médecin ARS Bretagne : consultation réglementaire close le 8 juillet 2026 (session plénière CRSA) — toujours pas publié au 13/07/2026, mais une page « Publication du nouveau zonage médecin » a été créée sur le site de l'ARS (encore en accès restreint) : la publication semble imminente. Bruz sera-t-elle classée sous-dotée ? Ce classement ouvre les aides à l'installation. À revérifier dans les prochains jours.",
+        "Publication de l'arrêté définitif du zonage médecin ARS Bretagne : consultation réglementaire close le 8 juillet 2026 (session plénière CRSA) — toujours pas publié au 17/07/2026, la page dédiée sur le site de l'ARS reste en accès refusé. Le projet soumis à consultation classe Bruz en zone de vigilance (4-ZV, aucune aide à l'installation) : l'arrêté définitif confirmera-t-il ce classement, ou une dérogation communale (mécanisme ouvert à 19 communes bretonnes dans ce projet) changera-t-elle la donne pour Bruz ? À revérifier dans les prochains jours.",
         "Une délibération du conseil municipal sur un projet de MSP ou centre de santé municipal a-t-elle été ou sera-t-elle présentée ?",
         "La ZAC Multisites (+1 700 logements, ~3 500 à 4 000 habitants supplémentaires) intègre-t-elle un espace dédié à la santé dans les cahiers des charges des aménageurs ?",
         "La Maison France Services (promise dans le programme) intégrera-t-elle des permanences de professionnels de santé ou d'assistants médicaux ?",
@@ -2215,6 +2254,10 @@
         {
           "label": "Caducée.net — annonce programme neuf « Maison de santé » Bruz, Blot Entreprise, livraison 2027",
           "url": "https://www.caducee.net/annonces-medicales/contact.php?idann=338057"
+        },
+        {
+          "label": "ARS Bretagne — zonage médecin 2026, tableau des communes (projet soumis à consultation, 29/05/2026, non arrêté)",
+          "url": "https://www.bretagne.ars.sante.fr/media/161304/download?inline"
         }
       ],
       "actus_recentes": [
@@ -2254,13 +2297,13 @@
       "categorie": "Urbanisme",
       "statut": "en_cours",
       "featured": false,
-      "last_activity": "2026-05-19",
+      "last_activity": "2026-07-17",
       "date_ouverture": "2026-07-02",
       "chapeau": "Ker Lann, ce n'est pas que le terminus du T4 ou un secteur de la ZAC Multisites : c'est un campus de 165 hectares qui accueille 17 établissements et environ 6 000 étudiants sur le territoire de Bruz. Ce dossier suit l'évolution du campus et l'enjeu du logement étudiant, distinct des dossiers T4 (D01) et ZAC Multisites (D02) qui traitent Ker Lann sous l'angle transport et urbanisme général.",
       "ce_quon_sait": [
         "Le campus de Ker Lann s'étend sur 165 hectares et accueille environ 6 000 étudiants dans 17 établissements — ENS Rennes, ENSAI, ECAM Rennes-Louis de Broglie, UniLaSalle Rennes, Institut Catholique de Rennes, Faculté des Métiers, entre autres",
         "Le campus est géré par Rennes Métropole, pas directement par la commune de Bruz",
-        "7 résidences étudiantes sont recensées sur le campus, portées par des opérateurs privés (Univercity, ARPEJ...) — pas de résidence CROUS confirmée à ce jour",
+        "Confirmation définitive (17/07/2026, liste officielle CROUS Rennes Bretagne) : aucune résidence CROUS n'existe à Bruz ni à Ker Lann — les 30 résidences du CROUS Rennes Bretagne sont toutes situées à Rennes, Brest, Lannion, Vannes, Lorient, Saint-Brieuc ou Quimper. Sur le campus de Ker Lann, les 7 résidences recensées (Univercity, ARPEJ, Espacil, ALFI, Campus Frassati...) sont exclusivement privées",
         "La ZAC Multisites (D02) intègre le secteur Ker Lann Sud dans ses 1 700 logements programmés, dont un 4e groupe scolaire public en construction (14 classes à terme)",
         "Le campus est desservi par la gare de Ker Lann (ligne Rennes-Redon) et sera à terme relié par le Trambus T4 (D01)",
         "« My Campus Rennes Ker Lann » (Bouygues Immobilier) : nouveau programme de 78 logements en résidence étudiante et jeunes actifs à La Croix Madame (Bruz), livraison prévue T4 2027. Montage privé en LMNP (investissement locatif défiscalisé, 109 900 à 156 900 € par lot) — pas une résidence conventionnée/CROUS",
@@ -2313,6 +2356,10 @@
         {
           "label": "Rennes Business Mag — Nouvelle Maison des Compagnons du Devoir",
           "url": "https://rennesbusinessmag.fr/une-nouvelle-maison-des-compagnons-du-devoir/"
+        },
+        {
+          "label": "Crous Rennes Bretagne — liste officielle des résidences",
+          "url": "https://www.crous-rennes.fr/se-loger/liste-de-nos-logements/"
         }
       ],
       "actus_recentes": [
@@ -2332,7 +2379,7 @@
       "categorie": "Économie",
       "statut": "en_cours",
       "featured": false,
-      "last_activity": "2026-07-04",
+      "last_activity": "2026-07-17",
       "date_ouverture": "2026-07-04",
       "chapeau": "Bruz compte 3 zones d'activité économique, un marché centenaire et plus de 3 000 entreprises enregistrées. La nouvelle municipalité a nommé un adjoint dédié à la vie économique et promet de soutenir le commerce de proximité. Ce dossier suit ce pilier du programme — jusqu'ici sans aucune couverture sur le site.",
       "ce_quon_sait": [
@@ -2374,7 +2421,8 @@
         "Ce que signifie concrètement « affirmer la présence de la Ville au Campus de Ker Lann » (E4) — convention, événements, représentation ?",
         "La politique d'achats communaux privilégie-t-elle réellement les circuits courts (E5) — critères dans les marchés publics ?",
         "Taux de vacance commerciale en centre-ville de Bruz — aucune donnée trouvée à ce jour, à rechercher (CCI 35, observatoire du commerce)",
-        "Renouvellement de la délibération sur les ouvertures dominicales pour 2027 — attendue à l'automne 2026 : ce sera la première décision commerce du nouveau mandat sur ce sujet."
+        "Renouvellement de la délibération sur les ouvertures dominicales pour 2027 — attendue à l'automne 2026 : ce sera la première décision commerce du nouveau mandat sur ce sujet.",
+        "Existe-t-il (ou est-il prévu) un dispositif municipal dédié de soutien aux jeunes entreprises et associations (couveuse, coworking, pépinière) ? Recherche du 17/07/2026 : aucun programme nommé identifié à ce jour — seul le « Portail des associations » (réservation salles, subventions en ligne) existe, de façon générique, pas ciblé jeunes entreprises"
       ],
       "sources": [
         {
@@ -2463,6 +2511,185 @@
       "promesses_liees": [],
       "idees_ailleurs": [],
       "image": null
+    },
+    {
+      "id": "D22",
+      "titre": "Friche Bonna Sabla : une usine ferme, un foncier de 9 hectares se libère à Bruz",
+      "categorie": "Urbanisme",
+      "statut": "en_cours",
+      "featured": false,
+      "last_activity": "2026-07-17",
+      "date_ouverture": "2026-07-17",
+      "chapeau": "L'usine Bonna Sabla (béton préfabriqué), implantée depuis 1966 dans la zone d'activités de la Bihardais, a fermé au printemps 2026. Une trentaine de salariés licenciés, un foncier industriel important libéré au nord de la commune. Ce dossier suit ce que ce site va devenir — et qui en décidera.",
+      "ce_quon_sait": [
+        "Bonna Sabla (groupe Vicat/Consolis) fabriquait des structures en béton préfabriqué (canalisations, ouvrages d'assainissement) depuis son implantation en 1966-1967 dans la ZA de la Bihardais, au nord de Bruz",
+        "Fermeture décidée par Vicat dès 2023 dans le cadre d'une restructuration de groupe (3 usines fermées, 90 postes supprimés au global) — fermeture effective au printemps 2026",
+        "Quasi-totalité de la trentaine de salariés du site de Bruz licenciée, certains avec plus de 30 ans d'ancienneté (source : Ouest-France Entreprises, Lutte Ouvrière)",
+        "Le foncier de l'usine est mis en vente et suscite de l'intérêt (formulation Ouest-France : le foncier \"aiguise les appétits\")",
+        "La ZA de la Bihardais (39,45 ha) est l'une des 4 zones d'activités économiques du nord de Bruz (avec Massue, Éperon, Champ Niguel), regroupant une quarantaine d'entreprises (logistique, matériaux de construction, recyclage)",
+        "Un dossier de workshop prospectif IAUR (\"BRUZ'IN — ZAE 2050\", février 2026) étudie l'avenir de ces 4 zones à horizon 2050 : le document confirme que le secteur est inscrit comme \"secteur préemptable\" dans le PLU et le SCoT, et envisage — en dernier recours après l'acquisition amiable et le droit de préemption urbain (DPU) — une procédure d'expropriation ciblant \"principalement la parcelle de l'usine Bonna Sabla\", pour préparer sa reconversion en \"parc écologique\" (coworking, restauration, espaces bien-être)",
+        "Important : ce document IAUR est un exercice prospectif d'étudiants/professionnels de l'urbanisme (workshop, horizon 2050) — ce n'est ni une délibération, ni une décision engagée par Rennes Métropole ou la commune. Aucune préemption n'a été confirmée à ce jour sur le site Bonna Sabla : la recherche sur les délibérations Mégalis (commune de Bruz) ne fait remonter aucun acte mentionnant Bonna Sabla ou une procédure de préemption/expropriation sur ce site"
+      ],
+      "qui_decide": [
+        {
+          "nom": "Rennes Métropole",
+          "role": "Titulaire du droit de préemption urbain (DPU) sur les secteurs inscrits au PLUi/SCoT — peut le déléguer à la commune ou à un aménageur",
+          "niveau": "metropole"
+        },
+        {
+          "nom": "Mairie de Bruz",
+          "role": "Peut être délégataire du DPU sur son territoire — aucune décision publique à ce jour sur le site Bonna Sabla",
+          "niveau": "commune"
+        },
+        {
+          "nom": "Territoires Rennes",
+          "role": "Aménageur public accompagnant Rennes Métropole et les communes sur les opérations de restructuration des zones d'activités (dont la Bihardais)",
+          "niveau": "metropole"
+        }
+      ],
+      "decisions": [],
+      "ce_quon_suit": [
+        "Une délibération de Rennes Métropole ou de la commune de Bruz sur l'exercice effectif du droit de préemption urbain (DPU) ou une procédure d'expropriation visant la parcelle Bonna Sabla",
+        "La suite donnée au scénario \"parc écologique\" esquissé par le workshop IAUR — reste-t-il une hypothèse d'étude ou est-il repris dans une démarche officielle (ZAC, étude opérationnelle) ?",
+        "Le prix et l'acquéreur effectif du foncier une fois la vente réalisée",
+        "L'intégration éventuelle du site dans la réflexion multisites plus large de Rennes Métropole/Territoires Rennes sur les ZAE Massue-Éperon-Bihardais-Champ Niguel"
+      ],
+      "sources": [
+        {
+          "label": "Ouest-France Entreprises — annonce de la fermeture, foncier en vente",
+          "url": "https://www.facebook.com/OuestFranceEntreprises/posts/lentreprise-bonna-sabla-va-fermer-%C3%A0-bruz-au-sud-de-rennes-elle-avait-notamment-p/1717256519837189/"
+        },
+        {
+          "label": "Lutte Ouvrière — \"Bruz(35) : Bonna Sabla, c'est fini\"",
+          "url": "https://www.lutte-ouvriere.org/portail/breves/bruz35-bonna-sabla-cest-fini-194422.html"
+        },
+        {
+          "label": "IAUR — Workshop \"BRUZ'IN, ZAE 2050\" : zones Massue-Éperon-Bihardais-Champ Niguel (Bruz), février 2026",
+          "url": "https://www.iaur.fr/wp-content/uploads/2026/02/G13_BRUZIN_dossier_workshop26_IAUR.pdf"
+        },
+        {
+          "label": "Territoires Rennes — À Bruz, une stratégie urbaine d'ensemble",
+          "url": "https://www.territoires-rennes.fr/actualites/bruz-une-strategie-urbaine-densemble"
+        }
+      ],
+      "actus_recentes": [
+        {
+          "date": "2026-07-17",
+          "titre": "Fermeture de l'usine Bonna Sabla : le foncier de la Bihardais convoité",
+          "detail": "L'usine de béton préfabriqué Bonna Sabla, implantée depuis 1966 à Bruz, a fermé au printemps 2026 (restructuration du groupe Vicat, décidée dès 2023). Une trentaine de salariés licenciés. Le foncier est en vente et suscite de l'intérêt. Un document prospectif IAUR (workshop \"ZAE 2050\") envisage, à titre d'hypothèse d'étude, une reconversion du site en parc écologique — via acquisition amiable puis, en dernier recours, droit de préemption urbain ou expropriation. Aucune décision officielle de préemption n'est confirmée à ce jour.",
+          "source_url": "https://www.iaur.fr/wp-content/uploads/2026/02/G13_BRUZIN_dossier_workshop26_IAUR.pdf",
+          "source_label": "Bruz en Action"
+        }
+      ],
+      "promesses_liees": []
+    },
+    {
+      "id": "D23",
+      "titre": "Démocratie locale : le pilier 7 du programme, encore à l'état de promesse",
+      "categorie": "Institutions",
+      "statut": "en_cours",
+      "featured": false,
+      "last_activity": "2026-07-17",
+      "date_ouverture": "2026-07-17",
+      "chapeau": "« Renforcer une véritable démocratie locale » est un pilier à part entière du programme municipal 2026-2032 : élus référents par quartier, réunions régulières, Conseil municipal des jeunes, Conseil des sages, comptes-rendus clairs des décisions. Cinq engagements, mesurables sur tout le mandat. Ce dossier suit leur mise en œuvre concrète.",
+      "ce_quon_sait": [
+        "Le programme municipal 2026-2032 (« Un nouvel élan pour Bruz ») consacre une section entière, « Renforcer une véritable démocratie locale », à 5 engagements précis (réf. D1 à D5 du tracker promesses) : désigner des élus référents par quartier, organiser des réunions régulières dans chaque quartier, créer un Conseil municipal des jeunes, mettre en place un Conseil des sages, publier un compte-rendu clair des décisions municipales",
+        "Vérification du 17/07/2026 : aucun de ces 5 engagements n'est encore mis en œuvre sous la forme promise. Ce qui existe déjà par ailleurs : des « rencontres de quartier » ponctuelles où des élus vont à la rencontre des habitants d'un secteur (ex. quartier Cicé Blossac) — mais sans élu référent nommé ni régularité annoncée",
+        "Aucun Conseil municipal des jeunes (CMJ) trouvé à Bruz — la commune dispose d'une Maison des jeunes (10-25 ans, structure d'accueil et d'activités pour environ 300 jeunes/an), qui n'est pas un organe consultatif élu comparable à un CMJ",
+        "Aucun Conseil des sages trouvé à Bruz, malgré ce dispositif déjà en place dans de nombreuses communes comparables",
+        "Les décisions du conseil municipal sont publiques : enregistrements audio des séances sur YouTube, actes et délibérations sur l'open data Mégalis Bretagne — mais ce sont des documents bruts (PV, actes juridiques), pas le « compte-rendu clair » à destination du grand public promis par l'engagement D5",
+        "Rennes Métropole a par ailleurs été récompensée par le think tank Décider Ensemble pour son dispositif de participation citoyenne « Nos Lieux Communs » (voir D11) — un dispositif métropolitain, pas municipal, auquel Bruz participe sans levier propre supplémentaire identifié à ce jour"
+      ],
+      "qui_decide": [
+        {
+          "nom": "Jean-René Houssin, maire de Bruz",
+          "role": "Porteur politique du pilier « démocratie locale » du programme — aucune délibération de mise en œuvre publiée à ce jour",
+          "niveau": "commune"
+        },
+        {
+          "nom": "Conseil municipal de Bruz",
+          "role": "Voterait la création formelle d'un CMJ ou d'un Conseil des sages (règlement intérieur, budget de fonctionnement)",
+          "niveau": "commune"
+        }
+      ],
+      "decisions": [],
+      "ce_quon_suit": [
+        "Une délibération créant formellement le Conseil municipal des jeunes ou le Conseil des sages",
+        "La désignation effective d'élus référents par quartier, avec un périmètre et des coordonnées communiquées aux habitants",
+        "La mise en place d'un rythme régulier (et non plus ponctuel) de réunions dans chaque quartier",
+        "Une évolution du format de publication des décisions municipales vers un support plus lisible pour le grand public (au-delà des PV Mégalis)"
+      ],
+      "sources": [
+        {
+          "label": "Programme municipal 2026 — « Un nouvel élan pour Bruz », section « Renforcer une véritable démocratie locale » (p.6)",
+          "url": "https://www.unnouvelelanpourbruz.com/_files/ugd/71facb_17a88aa6318c4051bb64c01574a6357a.pdf"
+        },
+        {
+          "label": "Ville de Bruz — Jeunesse (10-25 ans) / Maison des jeunes",
+          "url": "https://www.ville-bruz.fr/mon-quotidien/education-enfance-jeunesse/jeunesse-10-25-ans/"
+        },
+        {
+          "label": "Mégalis Bretagne — actes et délibérations, commune de Bruz",
+          "url": "https://data.megalis.bretagne.bzh/organization/commune-de-bruz"
+        }
+      ],
+      "actus_recentes": [],
+      "promesses_liees": [
+        37,
+        38,
+        39,
+        40,
+        41
+      ]
+    },
+    {
+      "id": "D24",
+      "titre": "Les équipements sportifs de Bruz : vue d'ensemble",
+      "categorie": "Équipements",
+      "statut": "en_cours",
+      "featured": false,
+      "last_activity": "2026-07-17",
+      "date_ouverture": "2026-07-17",
+      "chapeau": "Au-delà du city stade de Siméon Beliard (D12) et de la piscine intercommunale de la Conterie (D06), Bruz compte une vingtaine d'équipements sportifs municipaux — gymnases, salles spécialisées, terrains extérieurs. Ce dossier recense l'existant et suit les projets d'évolution.",
+      "ce_quon_sait": [
+        "Bruz compte une vingtaine d'équipements sportifs communaux, en accès libre pour certains, réservés aux associations et écoles pour d'autres (source : page mairie « Les équipements sportifs », vérifiée 17/07/2026)",
+        "Salles couvertes : Salle Chantale Mauduit, Salle Colette Besson, Salle Éric Tabarly, salle de gymnastique spécialisée Charles Joly, salle d'activités du Vert Buisson, Espace Simone Veil, Maison des Associations (Salle Magnolia), complexe couvert de Ker Lann",
+        "Complexe Cosec-Siméon Beliard : salle omnisports (950 m² parquet), salle multisports (340 m² parquet), salle des sports (1034 m² parquet) et halle des sports du lycée public (1056 m² synthétique) — le city stade du même site a été démonté en 2026 (voir D12)",
+        "Gymnase du complexe sportif du collège Pierre Brossolette (400 m² parquet)",
+        "Équipements extérieurs en accès libre : boulodrome, city stade de la Plaine Yann-Fañch Kemener, terrain de beach-volley, deux terrains de basket 3x3, parcours d'orientation au Parc de l'An 2000, site d'escalade au Boël, plusieurs terrains engazonnés de football et rugby, espaces fitness extérieurs (Siméon Beliard et Parc de l'An 2000), courts de tennis extérieurs et couverts (halle Yannick Noah)",
+        "Aucun projet de nouveau gymnase ou d'extension d'équipement sportif communal identifié à ce jour (recherche web + page mairie, 17/07/2026) — le seul équipement sportif en projet connu est lié au 4e groupe scolaire Ker Lann Sud (D10), pas un équipement autonome"
+      ],
+      "qui_decide": [
+        {
+          "nom": "Commune de Bruz",
+          "role": "Propriétaire et gestionnaire de la quasi-totalité des équipements sportifs communaux",
+          "niveau": "commune"
+        },
+        {
+          "nom": "Département d'Ille-et-Vilaine",
+          "role": "Compétent sur le gymnase du collège Pierre Brossolette (bâtiment collège)",
+          "niveau": "departement"
+        },
+        {
+          "nom": "Région Bretagne",
+          "role": "Compétente sur la halle des sports du lycée public Anita Conti",
+          "niveau": "region"
+        }
+      ],
+      "decisions": [],
+      "ce_quon_suit": [
+        "Tout projet de nouvel équipement sportif communal ou d'extension d'un équipement existant",
+        "L'état d'entretien et de vétusté du parc d'équipements — un audit ou plan pluriannuel a-t-il été présenté au conseil municipal ?",
+        "La reconstruction du city stade de Siméon Beliard (voir D12) reste le seul chantier sportif engagé identifié à ce jour"
+      ],
+      "sources": [
+        {
+          "label": "Ville de Bruz — Les équipements sportifs",
+          "url": "https://www.ville-bruz.fr/culture-loisirs/vie-associative-2/equipements-sportifs/"
+        }
+      ],
+      "actus_recentes": [],
+      "promesses_liees": []
     }
   ]
 }

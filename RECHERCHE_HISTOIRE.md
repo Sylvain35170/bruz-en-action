@@ -74,8 +74,19 @@ sourcée) · Romain Roux, « Bombardée il y a 80 ans, cette commune bretonne co
   *Le Télégramme* 08/05/2024 ; Coutel 2006, p. 22 ; En Envor)
   ⚠️ *Toujours écrire « 183 » (mémorial), pas « ~180 » — et « dont 51 enfants ».*
 - ✅ **Parmi les morts** : le député-maire de Bruz **François Joly**, son premier adjoint et
-  dix conseillers municipaux. (En Envor) ❓ *Vérifier le mandat exact de Joly
-  (base Sycomore de l'Assemblée nationale) avant publication.*
+  dix conseillers municipaux — ainsi que l'épouse, la fille et quatre petits-enfants de
+  Joly. (En Envor ; Assemblée nationale)
+- ✅ **François Joly (1872-1944)** : né le 5 octobre 1872 à Plélan-le-Grand (35), docteur en
+  médecine, maire de Bruz. Député d'Ille-et-Vilaine (2ᵉ circonscription de Rennes) du
+  **3 mai 1936 au 31 mai 1942** (XVIᵉ législature, IIIᵉ République), élu au 2ᵈ tour avec
+  10 871 voix, apparenté au groupe des Républicains indépendants et d'action sociale.
+  Membre des commissions de l'hygiène et de la santé publique, des finances et des postes.
+  Le **10 juillet 1940**, il vote les pleins pouvoirs constituants au maréchal Pétain — fait
+  à mentionner sobrement, sans le développer ni l'occulter (c'est un vote de la quasi-totalité
+  des parlementaires présents ce jour-là, pas une singularité de Joly). Mort à 72 ans le
+  8 mai 1944 sous les décombres du bombardement, avec 4 membres de sa famille.
+  — Base Sycomore, Assemblée nationale (fiche n°4043) ; page « Députés morts pour la
+  patrie 1939-1945 », assemblee-nationale.fr.
 - ✅ **Destructions** : 860 points de chute de bombes dans un rayon d'un kilomètre ; église,
   mairie, poste, écoles et ~80 immeubles en ruine ; moins d'une demi-douzaine de maisons
   réparables dans le bourg. (patrimoine.bzh, « Village de Bruz. Historique », 2008 ;
@@ -98,6 +109,22 @@ sourcée) · Romain Roux, « Bombardée il y a 80 ans, cette commune bretonne co
   population ». (Décret du 11/11/1948, via Wikipédia)
 - ✅ **1994** : pour le cinquantenaire, un **parc du souvenir** et un monument sont érigés en
   cœur de commune — lieu de recueillement toujours vivant. (En Envor)
+- ✅ **1964** : un monument portant les noms des 183 victimes (dont 7 de la seule famille de
+  la Herverie) est implanté dans le **parc de la Herverie**. En **2007**, une « Allée du
+  Souvenir » complète cet hommage. En 2024, un habitant du centre-ville retrouve dans son
+  jardin une statue provenant de l'église, endommagée lors du bombardement.
+  (WikiRennes ; *Ouest-France*, 2024)
+- ✅ **Association des sinistrés de Bruz** créée à la fin de la guerre en complément du plan
+  d'urbanisme — dissoute en 1951. (*Les années 50 en Ille-et-Vilaine*, hors-série
+  Ouest-France, 2005, p.5 — via WikiRennes)
+- 🟡 **L'hypothèse d'un ciblage délibéré** de Bruz (avancée par Marguerite Coutel, témoin du
+  bombardement) est **infirmée** par l'analyse détaillée du plan d'attaque britannique : les
+  bombardiers visaient successivement l'aérodrome puis le dépôt de munitions à 3 km au sud ;
+  un marquage erroné (brume, retard de largage) a décalé les bombes d'environ 1 400 m plus
+  au sud, jusqu'au bourg de Bruz. (WikiRennes, analyse du rapport RAF Bomber Command)
+- ✅ **Référence bibliographique confirmée** : Marguerite Coutel, *Bruz sous les bombes, un
+  village breton dans la guerre*, La Part Commune, 2005 (p.228-231 citées par WikiRennes) —
+  identifie le « Coutel 2006 » cité par Wikipédia (année probablement arrondie/confondue).
 
 **Angle éditorial** : moment fondateur de la mémoire communale — à traiter avec soin,
 factuel, sans pathos ajouté. L'architecture actuelle du centre-bourg en est la trace directe.
@@ -117,9 +144,18 @@ factuel, sans pathos ajouté. L'architecture actuelle du centre-bourg en est la 
 - ✅ **Plan de reconstruction** : 64 immeubles neufs — 97 logements et 41 magasins — plus les
   édifices publics. Architectes en chef de groupe : Derrouch, Chouinard, Rallé, avec une
   équipe d'architectes DPLG. Début 1951 : la moitié des immeubles sinistrés reconstruits.
-- ✅ **Église Saint-Martin** : reconstruite sur les plans de **Louis Chouinard** (1907-1995),
-  consacrée le **30 mars 1954**. Architecture de béton caractéristique de la
-  Reconstruction. (Architecture 50 ; WikiRennes « Louis Chouinard »)
+- ✅ **Église Saint-Martin** : reconstruite sur les plans de **Louis Chouinard**
+  (né à Rennes le 28 mars 1907, DPLG 1936, décédé à 88 ans — soit vers 1995), consacrée le
+  **30 mars 1954**. Chouinard avait déjà reconstruit la chapelle de la Sainte-Famille à
+  Rennes (détruite en 1944, inaugurée 1949) avant de se voir confier Bruz. Édifice
+  remarquable : structure de nef en béton brut alliée au schiste local, et une idée
+  novatrice pour l'époque — le prêtre positionné face à l'assemblée plutôt que dos à elle,
+  grâce à une nef en pente et un autel surélevé sur podium. Chouinard dessina lui-même tout
+  le mobilier liturgique (tabernacle réalisé par l'atelier Brand de Rennes) et les vitraux
+  sont du maître-verrier chartrain **Gabriel Loire**. Professeur à l'École d'Architecture de
+  Rennes, vice-président de l'Ordre des architectes (1969-1976), retraité en 1983 ; son
+  fonds professionnel est conservé aux archives municipales de Rennes (exposition en 2004).
+  (WikiRennes « Louis Chouinard »)
 - 🟡 **1988** : mairie actuelle. Via Wikipédia.
 
 ## 6. La croissance périurbaine (1954–1990)
@@ -151,9 +187,32 @@ factuel, sans pathos ajouté. L'architecture actuelle du centre-bourg en est la 
   sobrement dans la frise.*
 - ✅ **1990 → 1999 : +63 % de population** (8 114 → 13 207) — la décennie de plus forte
   croissance de l'histoire de la commune. — INSEE.
-- 🟡 **ZAC du Vert Buisson** : ~80 ha, ~2 000 logements, ~4 500 habitants, lancée dans les
-  années 2000. ❓ **Date de la délibération de création à confirmer** (dossier de création
-  retiré du site mairie ; passer par Mégalis/archives des délibérations).
+- ✅ **ZAC du Vert Buisson — création** : délibération du Conseil municipal du **20 février
+  1997** (n°97-02-6) — objectif : un nouveau quartier assurant la continuité urbaine entre
+  le centre-ville et le pôle de Cicé-Blossac, sur ~82 ha (dont 71 ha de logements). Dossier
+  de réalisation approuvé le 25/09/1998 ; concession à la SEMBA (Société d'Économie Mixte
+  Bruz Aménagement) le 09/07/1999 ; Programme d'Aménagement d'Ensemble établi le 01/03/2001,
+  approuvé le 06/07/2001. Prévu à l'origine (1997) : 1 200 à 1 500 logements neufs (soit
+  19-23 lgts/ha), commerces/bureaux, équipements publics (groupe scolaire, pôle sportif,
+  salle polyvalente, unité de restauration scolaire). — Délibération n°23-09-25 du
+  25/09/2023 (Mégalis, portant sur la suppression de la ZAC), qui reconstitue tout
+  l'historique en visas.
+- ✅ **SEMBA → SPL NOA** : le 29/06/2016, l'AG extraordinaire de la SEMBA transforme la
+  société en Société Publique Locale, renommée **SPL NOA** (Nouvel Objectif
+  d'Aménagement) — même déliberation n°23-09-25.
+- ✅ **Extension avortée vers le secteur de la Gare** : le 04/07/2016, le CM lance des
+  études préalables pour étendre le périmètre de la ZAC au secteur de la Gare
+  (modification n°1 approuvée le 01/07/2019). Mais le bilan de pollution des sols de
+  décembre 2020 révèle des coûts de gestion trop importants ; la nouvelle municipalité élue
+  en mars 2020 relance une étude urbaine multi-secteurs en 2021 (préfigurant la ZAC
+  Multisites, D02) — le dossier de réalisation de cette extension n'a **jamais été achevé**.
+- ✅ **Bilan final de la ZAC du Vert Buisson** : ~2 364 logements finalement livrés (bien
+  au-delà des 1 200-1 500 prévus en 1997 — densification en cours de projet) ; ~21 500 m²
+  de commerces/tertiaire ; équipements publics achevés au 1ᵉʳ janvier 2015. Rétrocession des
+  espaces communs : tranche 1 le 01/03/2012, tranches 2-3 les 09-30/11/2022. La SPL NOA est
+  liquidée le 27/06/2023, et la ZAC est **officiellement supprimée** par délibération du
+  Conseil municipal du **25 septembre 2023** (à l'unanimité, sous la présidence du maire
+  Philippe Salmon) — la zone bascule alors dans le droit commun du PLUi.
 - ✅ **2010** : Bruz devient la 5e ville du département (*Ouest-France*, 05/01/2011) ;
   **2015** : 4e ville, devant Vitré (*Le Télégramme*, 29/12/2021).
 
@@ -199,16 +258,19 @@ morts, mais le bourg était détruit).
 `scripts/fetch_insee.py` plutôt qu'éditer `bruz.json` à la main — le script écrase la série
 à chaque run. Mettre à jour la note de source (« Cassini/EHESS 1793-1872, INSEE 1876-2023 »).
 
-## 10. Les maires de Bruz (1945–2026)
+## 10. Les maires de Bruz (1881–2026)
 
-Source : Wikipédia (art. Bruz, tableau sourcé) — les maires d'avant 1945 restent à
-documenter (session 2).
+Source 1945+ : Wikipédia (art. Bruz, tableau sourcé). Avant 1945 : En Envor, « La
+parenthèse Germaine Marquer » (Erwan Le Gall) — ✅ **trou comblé en session 2**.
 
 | Mandat | Maire | Étiquette | Note |
 |--------|-------|-----------|------|
+| 1881 – 1886 | **Hyppolite Bousquet** | — | grand-père de Germaine Marquer |
+| 1886 – 1919 | **Léonce Bousquet** | — | père de Germaine Marquer — 33 ans de mandat |
+| 1919 – 1944 | François Joly | Rép. indép. et d'action sociale | député 1936-1942, mort dans le bombardement du 8 mai 1944 avec son épouse, sa fille et 4 petits-enfants (voir § 4) |
 | mai 1945 – juil. 1945 | Joseph Jan | s.é. | ancien gendarme |
-| juil. 1945 – oct. 1947 | **Germaine Marquer** | Ind.D | **une des premières femmes maires de France** (France Culture, 02/03/2020) |
-| oct. 1947 – mars 1950 | André Marquer | MRP | lieutenant-colonel |
+| juil. 1945 – oct. 1947 | **Germaine Marquer** | Ind.D | voir encadré ci-dessous |
+| oct. 1947 – mars 1950 | André Marquer | MRP | lieutenant-colonel (son mari ?) |
 | mars 1950 – sept. 1960 | Joseph Jan | s.é. | second mandat |
 | oct. 1960 – mars 1989 | Alphonse Legault | DVD | 29 ans de mandat |
 | mars 1989 – mars 2008 | Robert Barré | app. UDF | conseiller général 1985-1999 |
@@ -217,8 +279,35 @@ documenter (session 2).
 | mai 2020 – mars 2026 | Philippe Salmon | | |
 | mars 2026 – | Jean-René Houssin | DVD | mandat en cours |
 
+⚠️ *À vérifier avant publication : André Marquer (maire oct.1947-mars 1950) porte le même
+nom de famille que Germaine Marquer — probablement son mari (cité comme malade dans
+l'encadré ci-dessous), à confirmer si possible, sans l'affirmer sans preuve supplémentaire.*
+
+### Encadré — Germaine Marquer, une élection exceptionnelle (avril 1945)
+
+✅ **Germaine Marquer** est la fille de **Léonce Bousquet** (maire 1886-1919) et la
+petite-fille d'**Hyppolite Bousquet** (premier magistrat 1881-1886) — une famille avec une
+« prédisposition à la gouvernance communale ». Elle est elle-même une **sinistrée du
+bombardement** du 8 mai 1944 : avec sa fille et son mari, elle occupait le château des
+Petites Planches, juste derrière l'église, quasiment à l'épicentre du bombardement — ils en
+réchappent « quasi miraculeusement ».
+
+Élue en **avril 1945**, dans le tout premier scrutin où les femmes votent et sont éligibles
+(ordonnance du 21 avril 1944) — alors que seules **3 % des personnes élues maires** en
+France lors de ce scrutin sont des femmes. Son mandat est accaparé par l'accueil des
+prisonniers de guerre et requis du travail forcé revenant d'Allemagne, et par les débuts de
+la reconstruction, dans un contexte de pénurie durable (baraquements d'urgence en planches,
+dont certains servent aujourd'hui encore d'abris de jardin à Bruz).
+
+Elle **ne se représente pas en 1947**, pour se consacrer à la santé chancelante de son mari.
+Aucune femme n'a été réélue maire de Bruz depuis. L'historien Erwan Le Gall (En Envor) est
+explicite sur la portée de cet épisode : « il s'agit bien-là d'une **parenthèse**, plus que
+d'une rupture » — un symbole fort pour la cause des femmes, à ne pas surestimer pour autant.
+(Source : Erwan Le Gall, « La parenthèse Germaine Marquer », En Envor)
+
 Récit possible : le bombardement décapite le conseil municipal (maire + 1er adjoint +
-10 conseillers tués) → 3 maires en 5 ans à la Libération, dont une femme pionnière →
+10 conseillers tués) → 3 maires en 5 ans à la Libération, dont une femme pionnière issue
+d'une dynastie municipale locale (les Bousquet, 38 ans de mandat cumulés avant 1919) →
 stabilité ensuite (Legault 29 ans, Barré 19 ans).
 
 ## 11. Bibliographie / sources
@@ -239,21 +328,37 @@ stabilité ensuite (Legault 29 ans, Barré 19 ans).
 
 ## 12. Trous à combler (session 2)
 
-1. **ZAC du Vert Buisson — date de création** : délibération à retrouver via Mégalis
-   (`data.megalis.bretagne.bzh/?recherche=ZAC+vert+buisson&siren=213500473`) ou archives.
-2. **François Joly, député-maire** : vérifier le mandat parlementaire (base Sycomore).
-3. **WikiRennes** : « Bombardement de Bruz du 8 mai 1944 » et « Louis Chouinard » —
-   passer par claude-in-chrome (anti-bot bloque curl/WebFetch).
-4. **Maires avant 1945** — et biographie de Germaine Marquer (belle figure à raconter).
+1. ✅ **RÉSOLU (session 2)** — **ZAC du Vert Buisson — date de création** : 20 février 1997
+   (délib. n°97-02-6), trouvée via la délibération de suppression du 25/09/2023 sur Mégalis.
+   Voir détail intégré en § 7.
+2. ✅ **RÉSOLU (session 2)** — **François Joly, député-maire** : mandat vérifié via Sycomore
+   (député 1936-1942) — voir détail intégré en § 4.
+3. ✅ **RÉSOLU (session 2)** — **WikiRennes** consulté via claude-in-chrome (confirme :
+   l'anti-bot bloque bien WebFetch/curl, la navigation directe fonctionne). Article réel :
+   « Bombardement de l'aérodrome et de Bruz le 8 mai 1944 » (21 notes, très bien sourcé) et
+   « Louis Chouinard ». Détail intégré en § 4 et § 5. Bonus : la page WikiRennes référence
+   aussi la page histoire de la mairie (ville-bruz.fr/culture-loisirs/patrimoine-histoire/
+   histoire/), mais ce lien est aujourd'hui mort (404) — voir trou 5.
+4. ✅ **RÉSOLU (session 2)** — **Maires avant 1945** : Hyppolite Bousquet (1881-1886) et
+   Léonce Bousquet (1886-1919) trouvés via En Envor. Biographie de Germaine Marquer étoffée
+   (sinistrée du bombardement elle-même, fille et petite-fille de maires, n'a pas été
+   réélue). Détail intégré en § 10.
 5. **Page histoire de la mairie** (ville-bruz.fr) : URL à retrouver ; pages histoire du
    Bruz Mag (la veille peut les capter).
-6. **Références livres** : Coutel (2006) et Bertonneau cités par Wikipédia — identifier
-   titres exacts (probable monographie locale sur le bombardement).
+6. ✅ **PARTIELLEMENT RÉSOLU (session 2)** — **Référence Coutel** confirmée via WikiRennes :
+   Marguerite Coutel, *Bruz sous les bombes, un village breton dans la guerre*, La Part
+   Commune, 2005 (pas 2006 — Wikipédia arrondit/confond probablement l'année). Référence
+   **Bertonneau** toujours non identifiée précisément — reste à chercher.
 7. **Période pavillonnaire 1960-1990** : quartiers et dates (peu sourcé pour l'instant).
 8. **Pont-Réan** : histoire du village partagé avec Guichen (pont XVIIIe, halte fluviale).
 9. **Archives départementales 35 en ligne** : photos anciennes, cartes postales
    (illustrations potentielles de la page — droits à vérifier).
 
 ---
-*Session 1 du 2026-07-16 — prochaine étape : combler les trous 1-4 puis rédiger la frise
-et le récit de la page /histoire (réutiliser timeline de /chronologie + charts de C1).*
+*Session 1 du 2026-07-16 — trous 1-4 comblés en session 2 (2026-07-17), avec bonus sur les
+trous 5-6 (référence Coutel confirmée, lien page histoire mairie identifié mais mort).
+Restent ouverts avant rédaction si besoin : 5 (page histoire mairie à retrouver), 7
+(pavillonnaire 1960-1990), 8 (Pont-Réan), 9 (archives départementales/illustrations).
+Prochaine étape : rédiger la frise et le récit de la page /histoire (réutiliser timeline de
+/chronologie + charts de C1) — la matière collectée (§ 1-11) est désormais suffisante pour
+une v1 solide de la page, même sans les trous 5/7/8/9.*

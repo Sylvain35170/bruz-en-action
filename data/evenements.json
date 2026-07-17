@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-16",
+    "last_updated": "2026-07-17",
     "source": "Ville de Bruz, Grand Logis, Handisport, Les Trans"
   },
   "evenements": [
@@ -382,6 +382,15 @@
       "date": "2026-09-19",
       "categorie": "Rencontre",
       "lien": "https://www.ville-bruz.fr/agenda/clean-walk-quartiers-gare-et-vert-buisson/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-9da70fd8",
+      "titre": "Journées européennes du patrimoine à Bruz",
+      "date": "2026-09-19",
+      "categorie": "Rencontre",
+      "lien": "https://www.ville-bruz.fr/agenda/journees-europeennes-du-patrimoine-a-bruz/",
       "lien_label": "Agenda Ville de Bruz",
       "source": "agenda_mairie"
     },
