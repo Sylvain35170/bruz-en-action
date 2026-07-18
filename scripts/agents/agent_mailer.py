@@ -28,6 +28,7 @@ App Password Gmail : https://myaccount.google.com/apppasswords
 import json
 import smtplib
 import sys
+import time
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from pathlib import Path
@@ -158,16 +159,30 @@ def run(dry_run: bool = False) -> bool:
     if not config:
         return False
 
-    try:
-        msg = MIMEMultipart("alternative")
-        msg["Subject"] = sujet
-        msg["From"] = config["from_email"]
-        msg["To"] = ", ".join(config["to"])
-        msg.attach(MIMEText(corps, "html", "utf-8"))
+    msg = MIMEMultipart("alternative")
+    msg["Subject"] = sujet
+    msg["From"] = config["from_email"]
+    msg["To"] = ", ".join(config["to"])
+    msg.attach(MIMEText(corps, "html", "utf-8"))
 
-        with smtplib.SMTP_SSL("smtp.gmail.com", 465) as server:
-            server.login(config["from_email"], config["app_password"])
-            server.sendmail(config["from_email"], config["to"], msg.as_string())
+    RETRY_DELAYS = (10, 30)  # secondes — laisse le temps à launchd/réseau de se stabiliser au réveil
+
+    try:
+        for attempt, delay in enumerate((0, *RETRY_DELAYS)):
+            if delay:
+                log(f"Mailer : tentative {attempt + 1} dans {delay}s (dernière erreur : {last_error})", "WARN")
+                time.sleep(delay)
+            try:
+                with smtplib.SMTP_SSL("smtp.gmail.com", 465) as server:
+                    server.login(config["from_email"], config["app_password"])
+                    server.sendmail(config["from_email"], config["to"], msg.as_string())
+                break
+            except smtplib.SMTPAuthenticationError:
+                raise
+            except Exception as e:
+                last_error = e
+                if attempt == len(RETRY_DELAYS):
+                    raise
 
         if pending:
             for p in pending:
