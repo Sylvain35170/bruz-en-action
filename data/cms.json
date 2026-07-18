@@ -33,15 +33,15 @@
       "statut": "passe",
       "lieu": "Halle Pagnol, Bruz — 19h",
       "titre": "Conseil municipal de juillet",
-      "resume_executif": "Séance très dense — 41 délibérations à l'ordre du jour, la plus chargée depuis l'installation du conseil. Deux points structurants pour l'offre scolaire : le lancement des travaux de construction du 4e groupe scolaire (Ker Lann Sud, 8,11 M€ TTC) et les mesures de carte scolaire pour la rentrée 2026-2027 (retraits de poste à Vert Buisson et Champ l'Évêque). Gros bloc Éducation (14 délibérations : tarifs crèches/périscolaire/jeunesse, conventions EHPAD et résidence seniors, RASED Guichen). Une dizaine de sujets fonciers/aménagement, dont le renommage de la place du Vert Buisson en place Robert Barré et l'avis sur le schéma départemental d'accueil des gens du voyage 2026-2032. Création d'un comité mobilités. Résultats des votes publiés (Mégalis, 07-08/07/2026) : 35 des 41 délibérations adoptées à l'unanimité. 6 ne l'ont pas été — toutes portées par Jean-Patrick Desguérets (adjoint aménagement) sauf une : régularisations foncières Cicé Blossac, renommage Vert Buisson/Robert Barré et les 4 cessions de places du parking Pagnol (26 voix pour, 7 contre à chaque fois), plus la convention de location du droit de chasse (25 pour, 7 contre, 1 abstention). Le même bloc de 7 votes contre se répète sur l'ensemble du paquet aménagement/patrimoine de ce CM.",
+      "resume_executif": "Séance très dense — 41 délibérations, la plus chargée depuis l'installation du conseil. Deux dossiers structurants pour l'école ont donné lieu à un vrai débat politique, sans vote contre (unanimité sur les deux) : un avenant technique de 31 430 € HT sur le marché du 4e groupe scolaire Ker Lann (Louis Lemonnier, désormais 8,12 M€ TTC de travaux, ~11 M€ tout compris) et les mesures de carte scolaire 2026-2027 (retrait d'un poste à Vert Buisson et d'un poste à Champ l'Évêque, décidé par l'Académie — 6 fermetures de classe en 3 ans à Bruz selon Ouest-France). Le maire Jean-René Houssin a publiquement mis en doute la pertinence du projet Ker Lann tant que les 600 logements prévus par Rennes Métropole n'ont pas été construits (« comment ouvrir sans enfants ? ») ; l'opposition (Marion Chevalier, Philippe Salmon) a défendu le calendrier. Gros bloc Éducation par ailleurs (14 délibérations : tarifs crèches/périscolaire/jeunesse, conventions EHPAD et résidence seniors, RASED Guichen). Sur l'aménagement, l'extension du droit de chasse à 221,8 ha de terrains communaux (9 ans, secteur Cicé Blossac) a suscité une opposition frontale de la minorité, inquiète de la proximité de zones de promenade avec des habitations — adoptée 25 voix pour, 7 contre, 1 abstention dans la majorité. Création d'un comité mobilités ouvert aux citoyens (candidatures jusqu'au 1er septembre, 1re réunion le 1er octobre). Sur 41 délibérations, 34 ont été adoptées à l'unanimité ; 7 ne l'ont pas été — toutes portées par Jean-Patrick Desguérets (adjoint aménagement) : régularisations foncières Cicé Blossac, renommage place Vert Buisson en place Robert Barré, les 4 cessions de places du parking Pagnol (26 voix pour, 7 contre à chaque fois) et la convention de location du droit de chasse (25 pour, 7 contre, 1 abstention). Le même bloc de 7 voix contre se répète sur l'ensemble du paquet aménagement/patrimoine de ce CM.",
       "contexte": "Troisième séance ordinaire de la mandature Houssin (après le CM d'installation de mars et celui de mai). Convocation transmise le 26/06/2026, 41 points à l'ordre du jour répartis entre 8 élus rapporteurs.",
       "points_cles": [
-        "Construction du 4e groupe scolaire (Ker Lann Sud) : marché de travaux (école primaire, ALSH, restauration) à l'ordre du jour — point 9",
-        "Mesures de carte scolaire rentrée 2026-2027 — point 29, à recouper avec les annonces de l'Inspection Académique 35",
+        "École Ker Lann (4e groupe scolaire, Louis Lemonnier) : avenant technique de 31 430 € HT sur le marché de travaux (désormais 8,12 M€ TTC) — mais surtout un débat politique inédit, le maire questionnant publiquement la pertinence du calendrier du projet face à la baisse de la démographie scolaire",
+        "Mesures de carte scolaire rentrée 2026-2027 : retrait d'un poste à l'école du Vert Buisson et d'un poste à Champ l'Évêque, décidé par l'Académie (DASEN) — la commune n'a fait que 'prendre acte' ; 6 fermetures de classe en 3 ans à Bruz selon Ouest-France, signe d'un creux démographique",
+        "Extension du droit de chasse à 221,8 ha de terrains communaux (secteur Cicé Blossac, 9 ans) — vote contesté (25 pour, 7 contre, 1 abstention), inquiétude sur la proximité d'habitations et de chemins de promenade",
         "Bloc Éducation très dense : 14 délibérations (tarifs crèches/périscolaire/jeunesse, conventions EHPAD et résidence seniors, RASED Guichen)",
-        "Participation 2026 au syndicat intercommunal piscine de la Conterie — point 7",
-        "Une dizaine de sujets fonciers/aménagement, dont le renommage de la place du Vert Buisson en place Robert Barré et l'avis sur le schéma départemental d'accueil des gens du voyage 2026-2032",
-        "Création d'un comité mobilités porté par Patrick Roullé"
+        "Création d'un comité mobilités ouvert aux citoyens (candidatures jusqu'au 1er septembre 2026, 1re réunion le 1er octobre)",
+        "Une dizaine de sujets fonciers/aménagement, dont le renommage de la place du Vert Buisson en place Robert Barré et l'avis sur le schéma départemental d'accueil des gens du voyage 2026-2032"
       ],
       "deliberations": [
         {
@@ -54,7 +54,8 @@
           "numero": "26-07-02",
           "titre": "Assemblée — Règlement intérieur du conseil municipal",
           "porteur": "Jean-René Houssin",
-          "vote": "Adopté à l'unanimité"
+          "vote": "Adopté à l'unanimité",
+          "detail": "Adoption obligatoire (article L2121-8 CGCT, dans les 6 mois suivant l'installation du conseil) du règlement fixant les règles de fonctionnement interne : organisation du débat d'orientations budgétaires, présentation des questions orales, conditions de consultation des projets de contrats et marchés."
         },
         {
           "numero": "26-07-03",
@@ -90,13 +91,15 @@
           "numero": "26-07-08",
           "titre": "Finances — Rénovation thermique de l'Hôtel de Ville : modification du marché",
           "porteur": "Thomas de la Rivière",
-          "vote": "Adopté à l'unanimité"
+          "vote": "Adopté à l'unanimité",
+          "detail": "Avenant technique sur le marché de rénovation thermique de l'Hôtel de Ville (programme E=MCB, engagé depuis 2020) : ajustements sur les lots carrelage (-2 757 €) et électricité/chauffage/ventilation (+1 569 €). Montant total du marché porté à 1 941 954 € TTC (+4,52% vs marché initial de 1 858 040 € TTC attribué en décembre 2024)."
         },
         {
           "numero": "26-07-09",
           "titre": "Finances — Travaux de construction d'une école primaire (maternelle et élémentaire), d'un ALSH et d'un espace de restauration",
           "porteur": "Thomas de la Rivière",
-          "vote": "Adopté à l'unanimité (avenants d'ajustement sur 5 lots, ~31 400 € HT ; coût total travaux 8,11 M€ TTC)"
+          "vote": "Adopté à l'unanimité (avenants d'ajustement sur 5 lots, ~31 400 € HT ; coût total travaux 8,11 M€ TTC)",
+          "detail": "Avenant technique — pas un lancement de travaux : le marché du 4e groupe scolaire (Ker Lann, école Louis Lemonnier, 14 classes en 2 phases + ALSH 115 enfants + restauration, label PassivHaus visé) avait été attribué en septembre 2024 pour 8,11 M€ TTC. Ce point valide des ajustements techniques (aléas de chantier) sur 5 lots — serrurerie, parois/menuiseries, chauffage-ventilation, électricité, équipements cuisine — pour 31 430 € HT (37 715 € TTC), portant le marché à 8,12 M€ TTC (+0,16%). Ce point a donné lieu à un vif débat politique sur la pertinence du calendrier du projet (voir points chauds) — le vote sur l'avenant lui-même a été adopté à l'unanimité."
         },
         {
           "numero": "26-07-10",
@@ -153,7 +156,7 @@
           "titre": "Aménagement — Cession places de stationnement parking Pagnol : réduction du prix de cession",
           "porteur": "Jean-Patrick Desguérets",
           "vote": "Adopté — 26 voix pour, 7 contre",
-          "detail": "Prix de cession des places du sous-sol (niveau -1) du parking Pagnol ramené à 10 000 € (frais notariés inclus) — confirmé par la mairie le 16/07 (renseignements : direction aménagement, 02 99 05 44 37).",
+          "detail": "Prix de cession des places du sous-sol (niveau -1) du parking Pagnol divisé quasiment par deux : 14 000 € (tarif de l'ancienne majorité) → 8 300 € annoncés par l'adjoint à l'aménagement en CM (source : Ouest-France 08/07). L'annonce publiée sur le site de la mairie le 16/07 indique pour sa part 10 000 € frais notariés inclus — écart entre les deux sources non expliqué. Vote : 26 pour, 7 contre.",
           "sources": [
             {
               "label": "Mairie de Bruz — Actualités",
@@ -166,7 +169,7 @@
           "titre": "Aménagement — Cession places de stationnement parking Pagnol : remboursement de la différence de prix",
           "porteur": "Jean-Patrick Desguérets",
           "vote": "Adopté — 26 voix pour, 7 contre",
-          "detail": "Remboursement de la différence aux acquéreurs ayant déjà acheté au prix précédent (14 000 € pour le lot 112 vendu le 18/05), suite à la réduction du prix de cession (26-07-18) à 10 000 €.",
+          "detail": "Remboursement de la différence aux acquéreurs ayant déjà acheté au prix précédent (14 000 € pour le lot 112 vendu le 18/05), suite à la réduction du prix de cession (26-07-18). Vote : 26 pour, 7 contre.",
           "sources": [
             {
               "label": "Mairie de Bruz — Actualités",
@@ -204,7 +207,8 @@
           "numero": "26-07-22",
           "titre": "Aménagement — Avis de la ville sur le schéma départemental d'accueil et d'habitat des gens du voyage d'Ille-et-Vilaine 2026-2032",
           "porteur": "Jean-Patrick Desguérets",
-          "vote": "Adopté à l'unanimité"
+          "vote": "Adopté à l'unanimité",
+          "detail": "Avis favorable (unanimité) à la révision du schéma départemental d'accueil et d'habitat des gens du voyage (SDAHGV) 2026-2032. Le projet initial prévoyait pour Bruz la réhabilitation du terrain du Reynel, la création d'une aire de grand passage de 6 000 m² (« terrain soupape ») et 2 terrains familiaux locatifs (via le PLH). Rennes Métropole, copilote du schéma, a proposé une répartition alternative des 10 terrains soupapes à l'échelle de ses 43 communes — c'est cette proposition de redistribution que le conseil municipal soutient par son avis, qui reste consultatif (le Préfet et le Département ne sont pas juridiquement liés)."
         },
         {
           "numero": "26-07-23",
@@ -216,7 +220,8 @@
           "numero": "26-07-24",
           "titre": "Aménagement — Convention de location du droit de chasse",
           "porteur": "Jean-Patrick Desguérets",
-          "vote": "Adopté — 25 voix pour, 7 contre, 1 abstention"
+          "vote": "Adopté — 25 voix pour, 7 contre, 1 abstention",
+          "detail": "Extension du plan de chasse de l'association Bruz-Blossac de 221,8 hectares de terrains communaux (majoritairement secteur Cicé Blossac), pour 9 ans — motivée par la prolifération des sangliers (7 000 abattus en Ille-et-Vilaine en 2024 contre moins de 600 en 2000). 3 à 4 battues par an prévues, interdiction de tir à moins de 200 m des habitations. Vote contesté : 25 pour, 7 contre, 1 abstention dans la majorité (voir points chauds pour le débat)."
         },
         {
           "numero": "26-07-25",
@@ -246,7 +251,8 @@
           "numero": "26-07-29",
           "titre": "Éducation — Mesures de carte scolaire — rentrée 2026-2027",
           "porteur": "Françoise Lotton",
-          "vote": "Adopté à l'unanimité (prend acte du retrait d'un poste à Vert Buisson et d'un poste à Champ l'Évêque)"
+          "vote": "Adopté à l'unanimité (prend acte du retrait d'un poste à Vert Buisson et d'un poste à Champ l'Évêque)",
+          "detail": "Le Directeur Académique des Services Départementaux de l'Éducation Nationale (DASEN) a notifié à la commune, par courrier du 7 avril 2026, le retrait définitif d'un poste à l'école du Vert Buisson et d'un poste à l'école Champ l'Évêque pour la rentrée 2026-2027 — décision académique après avis du CDEN, sans impact annoncé sur la capacité d'accueil selon les directeurs d'école. La commune n'a pas de pouvoir de décision sur ces retraits de poste : elle en 'prend acte' (vote unanime), conformément à ses seules prérogatives de gestion du bâti scolaire."
         },
         {
           "numero": "26-07-30",
@@ -270,7 +276,8 @@
           "numero": "26-07-33",
           "titre": "Éducation — Tarifs périscolaires et de restauration — année scolaire 2026-2027",
           "porteur": "Françoise Lotton",
-          "vote": "Adopté à l'unanimité"
+          "vote": "Adopté à l'unanimité",
+          "detail": "Tarifs de restauration scolaire et périscolaire 2026-2027 : +1,5% sur la grille à 14 tranches de quotient familial (de moins de 160 € à plus de 2 080 €), avec un abattement de 4% pour anticiper les absences courtes (sans régularisation en cours d'année). Exemple cantine midi : de 1,23 € (tranche la plus basse) à 5,73 € (tranche la plus haute), abattement inclus. Majoration de 25% pour les non-Bruzois (hors commerçants/artisans/professions libérales exerçant à Bruz)."
         },
         {
           "numero": "26-07-34",
@@ -306,7 +313,8 @@
           "numero": "26-07-39",
           "titre": "Transition écologique et mobilités — Création d'un comité mobilités",
           "porteur": "Patrick Roullé",
-          "vote": "Adopté à l'unanimité"
+          "vote": "Adopté à l'unanimité",
+          "detail": "Nouvel espace de concertation citoyenne sur les mobilités : état des lieux partagé, propositions d'aménagements prioritaires, actions de sensibilisation. Composition : citoyens, associations, membres du comité Ville Handicap, conseillers municipaux. Mandat de 3 ans renouvelable une fois, 4 réunions par an en soirée. Candidatures ouvertes jusqu'au 1er septembre 2026, première réunion le 1er octobre 2026."
         },
         {
           "numero": "26-07-40",
@@ -322,12 +330,34 @@
         }
       ],
       "points_chauds": [
-        "6 délibérations sur 41 non adoptées à l'unanimité, toutes liées à l'aménagement/patrimoine porté par J.-P. Desguérets (régularisations foncières Cicé Blossac, renommage place Vert Buisson → Robert Barré, 4 cessions parking Pagnol) — même bloc de 7 voix contre à chaque fois, cohérent avec la polémique « braderie » du parking relayée par Ouest-France le 08/07"
+        {
+          "sujet": "École Ker Lann — le maire questionne publiquement la pertinence du calendrier",
+          "tension": "haute",
+          "detail": "Face à 6 fermetures de classe en 3 ans à Bruz (creux démographique, retraits de poste décidés par l'Académie et non par la commune — voir délibération 26-07-29), Jean-René Houssin a reproché à l'opposition de ne pas avoir mis en pause la construction du 4e groupe scolaire (Ker Lann, ~11 M€) : « Pourquoi avez-vous décidé de maintenir ce projet alors que les constructions de logements n'ont pas débuté à Ker Lann [...] ? Si les immeubles ne voient pas le jour avant 2032, je ne vois pas comment nous pourrons ouvrir sans enfants ? ». Marion Chevalier (minorité) a répondu que l'école pourrait servir de « tampon » pendant un plan de rénovation des écoles vétustes ; Philippe Salmon (ex-maire, minorité) a défendu les 600 logements prévus par Rennes Métropole à Ker Lann comme justification du projet. Houssin : « le coût sera très élevé pour la collectivité » si l'ouverture prend du retard. Le vote sur l'avenant technique du marché (31 430 € HT) a néanmoins été adopté à l'unanimité — le débat porte sur la pertinence du calendrier, pas sur ce point budgétaire précis. (Source : Ouest-France, 06/07/2026)"
+        },
+        {
+          "sujet": "Extension du droit de chasse — riverains et promeneurs inquiets",
+          "tension": "haute",
+          "detail": "L'association de chasse Bruz-Blossac a obtenu l'extension de son plan de chasse à 221,8 ha de terrains communaux pour 9 ans (majoritairement secteur Cicé Blossac), motivée par la prolifération des sangliers (7 000 abattus en Ille-et-Vilaine en 2024, contre moins de 600 en 2000). Marion Chevalier (minorité) a dénoncé l'ouverture de parcelles proches d'habitations, de chemins de promenade et du golf, rappelant l'accident mortel de chasse de Laillé (2021) : « lorsqu'une commune ouvre ses propres terrains à la chasse, elle doit apporter des garanties très solides ». Jean-Patrick Desguérets (adjoint aménagement) a répondu que 3 à 4 battues par an seulement sont prévues ; Philippe Pagès (adjoint sécurité) a rappelé l'interdiction de tir à moins de 200 mètres des habitations. Vote : 25 pour, 7 contre (minorité), 1 abstention (majorité). (Source : Ouest-France, 04/07/2026)"
+        },
+        {
+          "sujet": "Parking Pagnol — l'opposition dénonce une « braderie », la majorité défend l'attractivité",
+          "tension": "modérée",
+          "detail": "Fermé depuis décembre 2024 (défaillances sécurité incendie), le parking Pagnol reste largement invendu : seulement 4 places cédées en 2 ans au prix fixé par l'ancienne majorité (14 000 €). La nouvelle équipe a divisé le tarif quasiment par deux (8 300 € selon Jean-Patrick Desguérets, adjoint aménagement, lors du CM — à noter : l'annonce publiée sur le site de la mairie le 16/07 indique 10 000 € frais notariés inclus, un écart non expliqué entre les deux sources). Les acheteurs ayant payé 14 000 € seront remboursés de la différence. Philippe Salmon (minorité, ex-maire) dénonce l'absence d'étude de marché actualisée et un manque à gagner de 5 700 € par place ; Jean-René Houssin rétorque que 50 places dorment en sous-sol et que le nouveau tarif « colle davantage à celui du marché » — 4 à 6 ventes seraient en négociation. Vote : 26 voix pour, 7 contre (répété sur les 4 délibérations Pagnol + le renommage Vert Buisson/Robert Barré + Cicé Blossac). (Source : Ouest-France, 08/07/2026)"
+        }
       ],
-      "impact_bruzois": [],
+      "impact_bruzois": [
+        "École Ker Lann : le calendrier d'ouverture dépend désormais de la construction effective des 600 logements prévus par Rennes Métropole — un retard est possible si les immeubles ne sortent pas de terre",
+        "Retrait d'un poste à l'école du Vert Buisson et d'un poste à Champ l'Évêque à la rentrée 2026-2027 (décision de l'Académie, la commune n'a fait que 'prendre acte') — 6 fermetures de classe en 3 ans à Bruz, à surveiller pour les familles concernées",
+        "Chasse autorisée sur 221,8 ha de terrains communaux pendant 9 ans, secteur Cicé Blossac notamment — 3 à 4 battues par an, interdiction de tir à moins de 200 m des habitations",
+        "Tarifs périscolaires, restauration, accueils de loisirs et séjours jeunesse revus pour l'année scolaire 2026-2027 — impact direct sur le budget des familles",
+        "Comité mobilités ouvert aux citoyens : candidature possible jusqu'au 1er septembre 2026 pour participer aux choix d'aménagements de déplacement à Bruz"
+      ],
       "a_surveiller": [
-        "Calendrier du marché de construction du 4e groupe scolaire Ker Lann Sud (point 9) — phase 1 (8 classes) livrée à quelle date ?",
-        "Place Robert Barré : pose des plaques le 7 septembre 2026 + arrêté de numérotation à suivre (impact adresses riverains/commerces du Vert Buisson)"
+        "École Ker Lann : avancement effectif de la construction des 600 logements Rennes Métropole — condition de viabilité du calendrier scolaire selon le maire lui-même",
+        "Place Robert Barré : pose des plaques le 7 septembre 2026 + arrêté de numérotation à suivre (impact adresses riverains/commerces du Vert Buisson)",
+        "Comité mobilités : composition retenue après l'appel à candidatures (clôture 1er septembre) et premiers travaux à partir du 1er octobre 2026",
+        "Application concrète de l'extension du droit de chasse à la première saison (respect des distances de sécurité, retours des riverains)"
       ],
       "sources": [
         {
@@ -341,6 +371,22 @@
         {
           "label": "Mégalis Bretagne — Convocation Conseil municipal du 03/07/2026 (ordre du jour complet, 41 points)",
           "url": "https://data.megalis.bretagne.bzh/?siren=213500473"
+        },
+        {
+          "label": "Ouest-France — « Comment ouvrir sans enfants ? » À Bruz, le défi de la nouvelle école à 11 millions d'euros interroge (06/07/2026)",
+          "url": "https://www.ouest-france.fr/bretagne/bruz-35170/comment-ouvrir-sans-enfants-a-bruz-le-defi-de-la-nouvelle-ecole-a-11-millions-deuros-interroge-b667d8f6-7734-11f1-acd0-0e20d5055cca"
+        },
+        {
+          "label": "Ouest-France — « Était-ce utile d'aller si près des habitations ? » : la chasse étendue sur 221 ha de terrains communaux à Bruz (04/07/2026)",
+          "url": "https://www.ouest-france.fr/bretagne/bruz-35170/etait-ce-utile-daller-si-pres-des-habitations-la-chasse-etendue-sur-221-ha-de-terrains-communaux-a-bruz-cf2e4908-771e-11f1-acd0-0e20d5055cca"
+        },
+        {
+          "label": "Ouest-France — Ventes de places de parking en centre-ville, l'opposition dénonce « une grande braderie » à Bruz (08/07/2026)",
+          "url": "https://www.ouest-france.fr/bretagne/bruz-35170/ventes-de-places-de-parking-en-centre-ville-lopposition-denonce-une-grande-braderie-a-bruz-9dcdf34a-79e4-11f1-a705-e1977a1c2ed8"
+        },
+        {
+          "label": "Mairie de Bruz — Rejoignez le Comité mobilités (07/07/2026)",
+          "url": "https://www.ville-bruz.fr/actualites/rejoignez-le-comite-mobilites/"
         }
       ]
     },

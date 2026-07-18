@@ -9,6 +9,7 @@ node_modules/
 .DS_Store
 input/BEA/Statut /IMG_4281.HEIC
 input/BEA/Statut /IMG_4282.HEIC
+input/CM-*/
 design-system/
 __pycache__/
 *.pyc
