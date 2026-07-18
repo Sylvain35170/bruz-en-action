@@ -14,19 +14,26 @@ Usage :
   python3 scripts/agents/agent_mailer.py            # envoi réel
   python3 scripts/agents/agent_mailer.py --dry-run  # construit l'email sans l'envoyer
 
-Configuration : ~/.bruz-mailer.json (créer une fois, jamais commité)
-{
-  "from_email": "sylv.bertrand@gmail.com",
-  "app_password": "xxxx xxxx xxxx xxxx",
-  "to": ["sylv.bertrand@gmail.com", "hajjarnaoufal1@gmail.com"]
-}
+Envoi via l'API Gmail (HTTPS, OAuth2) — pas de SMTP. Choix fait le 18/07/2026 :
+le VPN pro (Cisco Secure Client) bloque les ports SMTP (465/587) sortants, ce
+qui faisait échouer le mailer quand le VPN était connecté au moment du run
+17h. L'API Gmail passe en HTTPS/443, jamais bloqué par ce VPN.
 
-App Password Gmail : https://myaccount.google.com/apppasswords
-(Nécessite la 2FA activée sur le compte Google)
+Configuration :
+  ~/.bruz-mailer.json (destinataires, jamais commité)
+  {
+    "from_email": "sylv.bertrand@gmail.com",
+    "to": ["sylv.bertrand@gmail.com", "hajjarnaoufal1@gmail.com"]
+  }
+
+  ~/.bruz-mailer-gmail/client_secret.json — credentials OAuth "Desktop app"
+  (projet Google Cloud "bruz-en-action-mailer", API Gmail, scope gmail.send).
+  ~/.bruz-mailer-gmail/token.json — généré au premier run (ouvre un navigateur
+  pour le consentement), puis réutilisé/rafraîchi automatiquement (silencieux,
+  y compris depuis launchd) tant que le refresh token n'est pas révoqué.
 """
 
 import json
-import smtplib
 import sys
 import time
 from email.mime.multipart import MIMEMultipart
@@ -38,6 +45,10 @@ from utils import load_registry, log, save_registry, today
 
 AGENT_NAME = "mailer"
 CONFIG_FILE = Path.home() / ".bruz-mailer.json"
+GMAIL_DIR = Path.home() / ".bruz-mailer-gmail"
+GMAIL_CLIENT_SECRET = GMAIL_DIR / "client_secret.json"
+GMAIL_TOKEN = GMAIL_DIR / "token.json"
+GMAIL_SCOPES = ["https://www.googleapis.com/auth/gmail.send"]
 
 PERTINENCE_LABEL = {0: "⚪ hors sujet", 1: "🟡 marginal", 2: "🟠 pertinent", 3: "🔴 essentiel"}
 
@@ -45,13 +56,42 @@ PERTINENCE_LABEL = {0: "⚪ hors sujet", 1: "🟡 marginal", 2: "🟠 pertinent"
 def _load_config() -> dict | None:
     if not CONFIG_FILE.exists():
         log(f"Config manquante : {CONFIG_FILE}", "ERR")
-        log("Créer ~/.bruz-mailer.json avec from_email, app_password, to[]", "ERR")
+        log("Créer ~/.bruz-mailer.json avec from_email, to[]", "ERR")
         return None
     try:
         return json.loads(CONFIG_FILE.read_text(encoding="utf-8"))
     except Exception as e:
         log(f"Config invalide : {e}", "ERR")
         return None
+
+
+def _get_gmail_service():
+    """Charge/rafraîchit les credentials OAuth et retourne le client Gmail API.
+
+    Premier run : ouvre un navigateur pour le consentement (interactif,
+    impossible depuis launchd). Runs suivants : rafraîchissement silencieux
+    via le refresh token stocké dans token.json — compatible cron/launchd.
+    """
+    from google.auth.transport.requests import Request
+    from google.oauth2.credentials import Credentials
+    from google_auth_oauthlib.flow import InstalledAppFlow
+    from googleapiclient.discovery import build
+
+    creds = None
+    if GMAIL_TOKEN.exists():
+        creds = Credentials.from_authorized_user_file(str(GMAIL_TOKEN), GMAIL_SCOPES)
+
+    if not creds or not creds.valid:
+        if creds and creds.expired and creds.refresh_token:
+            creds.refresh(Request())
+        else:
+            if not GMAIL_CLIENT_SECRET.exists():
+                raise RuntimeError(f"Credentials OAuth manquantes : {GMAIL_CLIENT_SECRET}")
+            flow = InstalledAppFlow.from_client_secrets_file(str(GMAIL_CLIENT_SECRET), GMAIL_SCOPES)
+            creds = flow.run_local_server(port=0)
+        GMAIL_TOKEN.write_text(creds.to_json(), encoding="utf-8")
+
+    return build("gmail", "v1", credentials=creds)
 
 
 def _fmt_fr(iso: str) -> str:
@@ -165,20 +205,22 @@ def run(dry_run: bool = False) -> bool:
     msg["To"] = ", ".join(config["to"])
     msg.attach(MIMEText(corps, "html", "utf-8"))
 
-    RETRY_DELAYS = (10, 30)  # secondes — laisse le temps à launchd/réseau de se stabiliser au réveil
+    import base64
+    raw = base64.urlsafe_b64encode(msg.as_bytes()).decode("utf-8")
+
+    RETRY_DELAYS = (10, 30)  # secondes — filet pour les vrais aléas réseau transitoires
 
     try:
+        service = _get_gmail_service()
+
+        last_error = None
         for attempt, delay in enumerate((0, *RETRY_DELAYS)):
             if delay:
                 log(f"Mailer : tentative {attempt + 1} dans {delay}s (dernière erreur : {last_error})", "WARN")
                 time.sleep(delay)
             try:
-                with smtplib.SMTP_SSL("smtp.gmail.com", 465) as server:
-                    server.login(config["from_email"], config["app_password"])
-                    server.sendmail(config["from_email"], config["to"], msg.as_string())
+                service.users().messages().send(userId="me", body={"raw": raw}).execute()
                 break
-            except smtplib.SMTPAuthenticationError:
-                raise
             except Exception as e:
                 last_error = e
                 if attempt == len(RETRY_DELAYS):
@@ -195,11 +237,8 @@ def run(dry_run: bool = False) -> bool:
             log(f"Mailer : email envoyé à {config['to']} (rien de nouveau)", "OK")
         return True
 
-    except smtplib.SMTPAuthenticationError:
-        log("Mailer : authentification Gmail échouée — vérifier app_password", "ERR")
-        return False
     except Exception as e:
-        log(f"Mailer : erreur SMTP ({e})", "ERR")
+        log(f"Mailer : erreur Gmail API ({e})", "ERR")
         return False
 
 
