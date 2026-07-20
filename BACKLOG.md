@@ -34,7 +34,6 @@
 - [ ] **`RECHERCHE_HISTOIRE.md` — trous mineurs restants** (non bloquants, page `/histoire` déjà publiée) : page histoire de la mairie (lien mort 404), période pavillonnaire 1960-90 non détaillée par quartier, histoire de Pont-Réan, illustrations via archives départementales 35
 - [ ] **bruz.json** — entretenir la base au fil de l'eau (dernière revue 2026-07-02 : ajout lycée Anita Conti, collège-lycée privé Saint-Joseph, détail campus Ker Lann + logement étudiant, CFU 2023 **et** CFU 2025 chiffrés en détail dans `finances_communales`). Reste à faire : chiffres budget 2026 détaillés (fonctionnement/investissement)
 - [ ] **D03 — données intermédiaires 2015-2021** — compléter g1 (fiscalité locale) avec les années manquantes via comptes administratifs Mégalis (portail JS, accès direct requis)
-- [ ] **D03 — CFU 2024 Bruz (officiel)** — toujours pas localisé au 2026-07-02, malgré navigation directe du portail Mégalis via `claude-in-chrome` (recherche "compte financier unique" filtrée sur le SIREN Bruz 213500473 : seuls CFU 2023 et CFU 2025 remontent, pas 2024). Devenu moins prioritaire : le CFU 2025 officiel (trouvé et documenté) donne un encours de dette 2025 de 7,6 M€/379,59€ par hab, cohérent avec un pic ~9,4 M€ fin 2024 (DGFiP) suivi d'un désendettement 2025 sans nouvel emprunt tiré. Méthode qui a marché pour trouver 2023/2025 : `data.megalis.bretagne.bzh/?recherche=compte+financier+unique&siren=213500473` dans le navigateur, chercher les résultats "FINANCES_APPROBATION DU CFU [année] DU BUDGET PRINCIPAL"
 
 ## 🟡 À faire — Promesses
 
