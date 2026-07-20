@@ -33,7 +33,7 @@
 - [ ] **Glossaire** — `/glossaire` livré le 17/07 mais ne consolide que le champ `glossaire` de D03 (8 termes) ; l'ajouter à d'autres dossiers au fil de l'instruction (finances D04, urbanisme D02/D05, etc.)
 - [ ] **`RECHERCHE_HISTOIRE.md` — trous mineurs restants** (non bloquants, page `/histoire` déjà publiée) : page histoire de la mairie (lien mort 404), période pavillonnaire 1960-90 non détaillée par quartier, histoire de Pont-Réan, illustrations via archives départementales 35
 - [ ] **bruz.json** — entretenir la base au fil de l'eau (dernière revue 2026-07-20 : CFU 2023/2024/2025 et BP 2026 chiffrés en détail dans `finances_communales`)
-- [ ] **D03 — données intermédiaires 2015-2021** — compléter g1 (fiscalité locale) avec les années manquantes via comptes administratifs Mégalis (portail JS, accès direct requis)
+- [ ] **D03 — données intermédiaires 2015-2021** — g1 (fiscalité locale, chapitre 731) reste vide sur cette période. Recherche 2026-07-20 : Mégalis n'a rien avant "Compte administratif 2022" pour Bruz (confirmé, pas juste un problème d'accès JS) ; decomptes-publics.fr a les données mais payantes (rapport dès 49,90€, pas acheté sans accord explicite) ; OFGL (gratuit) a une série "Impôts locaux" 2018-2024 mais périmètre différent de 731 (13,3 M€ OFGL 2022 vs 12,7 M€ publié, écart ~5%) — décision 2026-07-20 : ne pas mélanger les périmètres dans g1, laisser le trou tel quel. Piste non explorée : demander directement les comptes administratifs à la mairie/archives départementales.
 
 ## 🟡 À faire — Promesses
 
