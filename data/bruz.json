@@ -311,7 +311,7 @@
   "finances_communales": {
     "taxe_fonciere_batie_taux": "45,34 %",
     "annee_taux": 2026,
-    "note_budget": "Budget 2026 voté en mars 2026 après débats tendus — commune décrite comme 'pas riche' face à l'accumulation des projets (T4, ZAC, piscine). Chiffres détaillés à intégrer après publication du compte administratif.",
+    "note_budget": "Budget primitif 2026 voté au CM du 9 mars 2026 (délibération n°26-03-08 du 17/03/2026) après débats tendus — commune décrite comme 'pas riche' face à l'accumulation des projets (T4, ZAC, piscine). Détail confirmé le 2026-07-20 via Mégalis, voir bp_2026 ci-dessous.",
     "cfu_2023": {
       "source": "COMPTE FINANCIER UNIQUE 2023 — Note synthétique (Mégalis, org 213500473), envoyé en préfecture le 21/02/2024",
       "url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2024/574583/7d855b32affb68554a469b0b5625292da3558e7d27cf13e849969d9db4f1ee7f.pdf",
@@ -325,11 +325,6 @@
       "encours_dette_estime": 1629558,
       "ratio_endettement_pct_rrf": 3.91,
       "note": "2023 = premier exercice en CFU pour Bruz (candidate 3e vague). Aucun emprunt contracté en 2023 (financement des investissements sans recours à la dette)."
-    },
-    "dette_ecart_2023_2024": {
-      "constat": "Écart important entre l'encours de dette CFU 2023 (~1,6 M€, source officielle Mégalis) et l'estimation 2024 (~9,4 M€, source decomptes-publics.fr/DGFiP, 466 €/hab x 20 118 hab)",
-      "hypothese_non_confirmee": "Emprunt(s) contracté(s) en 2024 pour financer les grands projets en cours (4e groupe scolaire Ker Lann, AP 9,5 M€ ; rénovation Hôtel de Ville, AP 1,4 M€) — non vérifié faute d'accès au CFU 2024 officiel",
-      "a_faire": "CFU 2024 officiel toujours pas localisé (portail Mégalis parcouru en direct le 2026-07-02 via navigateur, recherche interne 'compte financier unique' sur le SIREN Bruz — seuls CFU 2023 et CFU 2025 remontent). Moins critique désormais : le CFU 2025 (officiel) donne un encours 2025 de 7,6 M€/379,59€ hab, cohérent avec une pointe à ~9,4 M€ fin 2024 (DGFiP) suivie d'un désendettement en 2025 sans nouvel emprunt tiré."
     },
     "cfu_2025": {
       "source": "COMPTE FINANCIER UNIQUE 2025 — Note synthétique (Mégalis, org 213500473), délibération du 13/03/2026",
@@ -347,7 +342,7 @@
     },
     "dette_par_habitant_serie": {
       "unite": "€ par habitant",
-      "note": "Encours de dette au 31/12. Le point 2024 provient de la DGFiP (decomptes-publics.fr) et n'est pas confirmé par un compte financier officiel : le CFU 2024 de Bruz reste introuvable sur Mégalis au 02/07/2026.",
+      "note": "Encours de dette au 31/12, ratio réglementaire (encours / population). Les trois exercices sont désormais confirmés par un CFU officiel (Mégalis).",
       "valeurs": [
         {
           "annee": 2023,
@@ -357,9 +352,9 @@
         },
         {
           "annee": 2024,
-          "valeur": 466.0,
-          "source": "DGFiP via decomptes-publics.fr — hypothèse non confirmée",
-          "confirme": false
+          "valeur": 457.92,
+          "source": "CFU 2024 officiel (Mégalis)",
+          "confirme": true
         },
         {
           "annee": 2025,
@@ -368,6 +363,37 @@
           "confirme": true
         }
       ]
+    },
+    "cfu_2024": {
+      "source": "COMPTE FINANCIER UNIQUE 2024 — Budget principal (Mégalis, org 213500473), délibération n°25-03-03, envoyé en préfecture le 11/03/2025",
+      "url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2025/814568/050b0c1b15f1bc01b25a7d2c38628cd169fef798e6c1592d77e3c212eb9c01c6.pdf",
+      "recettes_reelles_fonctionnement": 23862780.5,
+      "depenses_reelles_fonctionnement": 18487018.88,
+      "resultat_fonctionnement": 3498825.55,
+      "recettes_reelles_investissement": 11128865.13,
+      "depenses_reelles_investissement": 6162513.95,
+      "resultat_investissement": 4236778.0,
+      "charges_personnel": 10546407.35,
+      "taux_epargne_brute_pct": 22.53,
+      "encours_dette_par_habitant": 457.92,
+      "encours_dette_estime": 9488954.61,
+      "ratio_endettement_ans": 3.86,
+      "note": "Trouvé le 2026-07-20 via la recherche Mégalis \"CFU 2024 budget principal\" (le terme \"compte financier unique\" seul ne le remontait pas). Remplace l'estimation DGFiP (466 €/hab, 9,4 M€) utilisée jusqu'ici — écart mineur, confirmé par une source officielle."
+    },
+    "bp_2026": {
+      "source": "Budget Primitif 2026 — Budget principal (Mégalis, org 213500473), délibération n°26-03-08, envoyé en préfecture le 17/03/2026",
+      "url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1049145/691237f75b8e54109ed54ed939ebdb6765ce005e637ae6aaed8ee7bf89bf2cde.pdf",
+      "population_reference": 20113,
+      "total_section_fonctionnement": 23616893.0,
+      "total_section_investissement": 18009927.0,
+      "total_budget": 41626820.0,
+      "depenses_equipement_nouvelles": 14356275.73,
+      "dont_immobilisations_en_cours": 12124122.73,
+      "nouvel_emprunt_prevu": 4100000.0,
+      "remboursement_capital_dette_prevu": 1720000.0,
+      "excedent_fonctionnement_2024_capitalise": 3097132.45,
+      "encours_dette_par_habitant_1er_janvier": 371.01,
+      "note": "Premier retour à un nouvel emprunt significatif (4,1 M€) depuis le début du mandat, lié au financement du 4e groupe scolaire et de la ZAC Multisites. Chiffres prévisionnels (votés) — le réalisé sera confirmé par le CFU 2026, disponible courant 2027."
     }
   },
   "stats_dossiers": {

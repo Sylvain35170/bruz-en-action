@@ -32,7 +32,7 @@
 
 - [ ] **Glossaire** — `/glossaire` livré le 17/07 mais ne consolide que le champ `glossaire` de D03 (8 termes) ; l'ajouter à d'autres dossiers au fil de l'instruction (finances D04, urbanisme D02/D05, etc.)
 - [ ] **`RECHERCHE_HISTOIRE.md` — trous mineurs restants** (non bloquants, page `/histoire` déjà publiée) : page histoire de la mairie (lien mort 404), période pavillonnaire 1960-90 non détaillée par quartier, histoire de Pont-Réan, illustrations via archives départementales 35
-- [ ] **bruz.json** — entretenir la base au fil de l'eau (dernière revue 2026-07-02 : ajout lycée Anita Conti, collège-lycée privé Saint-Joseph, détail campus Ker Lann + logement étudiant, CFU 2023 **et** CFU 2025 chiffrés en détail dans `finances_communales`). Reste à faire : chiffres budget 2026 détaillés (fonctionnement/investissement)
+- [ ] **bruz.json** — entretenir la base au fil de l'eau (dernière revue 2026-07-20 : CFU 2023/2024/2025 et BP 2026 chiffrés en détail dans `finances_communales`)
 - [ ] **D03 — données intermédiaires 2015-2021** — compléter g1 (fiscalité locale) avec les années manquantes via comptes administratifs Mégalis (portail JS, accès direct requis)
 
 ## 🟡 À faire — Promesses
