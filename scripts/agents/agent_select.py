@@ -22,8 +22,8 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
-from utils import (QUEUE_FILE, is_already_published, load_json, load_registry,
-                   log, save_registry, today)
+from utils import (DATA_DIR, QUEUE_FILE, is_already_published, load_json,
+                   load_registry, log, save_registry, today)
 
 AGENT_NAME = "select"
 # Chemin complet nécessaire : sous launchd, PATH ne contient que /usr/bin:/bin:/usr/sbin:/sbin,
@@ -31,29 +31,29 @@ AGENT_NAME = "select"
 CLAUDE_CLI = shutil.which("claude") or "/opt/homebrew/bin/claude"
 MODEL = "claude-haiku-4-5-20251001"
 
-# Tenu à jour manuellement — doit rester synchronisé avec les id/titre/categorie
-# de data/dossiers.json. D08 et D09 ont été retirés (prémisses fausses/fabriquées) ;
-# D14 a été fusionné dans D05 (2026-07-04, carte + chantiers) ;
-# D16-D18 sont des sujets identifiés au backlog mais pas encore ouverts en dossier.
-DOSSIERS_DESC = """
-D01 = T4 / trambus / transport en commun / Ker Lann / gare Bruz
-D02 = ZAC Multisites / logement / urbanisme / aménagement
-D03 = budget municipal / finances / conseil municipal
-D04 = fiscalité / taxe foncière / impôts locaux
-D05 = carte des projets / équipements publics / quartiers / chantiers / voirie / pont de la Gare / ZAC Multisites travaux
-D06 = piscine / La Conterie / équipement aquatique
-D07 = police municipale / sécurité / vidéoprotection / gendarmerie
-D10 = écoles / enseignement / Vert-Buisson / démographie scolaire
-D11 = Manoir de la Noë / Plan B / patrimoine / tiers-lieu citoyen
-D12 = city stade / Siméon Beliard / gymnase / équipements sportifs
-D13 = canicule / plan municipal / îlots de fraîcheur / climat
-D15 = offre de soins / médecins / désert médical / santé
-D16 = commerce / artisanat / vie économique / zones d'activité (Champ Niguel, Haie Gautrais) / entreprises
-D20 = campus Ker Lann / enseignement supérieur / étudiants / logement étudiant
-D22 = friche Bonna Sabla / zone Bihardais / reconversion industrielle / préemption / foncier économique
-D23 = démocratie locale / référents de quartier / conseil municipal des jeunes / conseil des sages / transparence des décisions
-D24 = gymnase / salle de sport / équipements sportifs / terrains extérieurs / Cosec Siméon Beliard
-""".strip()
+
+def build_dossiers_desc() -> str:
+    """Construit la table id → mots-clés pour le prompt, DEPUIS data/dossiers.json.
+
+    Source unique : chaque dossier porte un champ `mots_cles_ia` (liste). Ouvrir un
+    nouveau dossier avec ses mots-clés le rend automatiquement routable par l'agent —
+    fini la liste codée en dur qui dérivait de dossiers.json (D21 Culture y manquait,
+    D08/D09/D14 y traînaient après suppression/fusion). Repli sur le titre si un
+    dossier n'a pas encore de `mots_cles_ia`.
+    """
+    dossiers = load_json(DATA_DIR / "dossiers.json").get("dossiers", [])
+    lignes = []
+    for dos in dossiers:
+        did = dos.get("id")
+        mots = dos.get("mots_cles_ia") or []
+        if not did:
+            continue
+        desc = " / ".join(mots) if mots else (dos.get("titre") or "").strip()
+        lignes.append(f"{did} = {desc}")
+    return "\n".join(lignes)
+
+
+DOSSIERS_DESC = build_dossiers_desc()
 
 PROMPT_TEMPLATE = """\
 Tu es l'assistant éditorial de "Bruz en Action", association citoyenne qui suit les engagements de la majorité municipale de Bruz (35), mandat 2026-2032.

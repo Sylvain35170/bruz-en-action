@@ -188,7 +188,14 @@
       "image": "/bruz-en-action/illus-d01-mobilite.webp",
       "en_profondeur": {
         "sous_titre": "Pourquoi ça compte, les deux visions du terminus, notre lecture"
-      }
+      },
+      "mots_cles_ia": [
+        "T4",
+        "trambus",
+        "transport en commun",
+        "Ker Lann",
+        "gare Bruz"
+      ]
     },
     {
       "id": "D02",
@@ -372,7 +379,13 @@
       "image": "/bruz-en-action/illus-d02-urbanisme.webp",
       "en_profondeur": {
         "sous_titre": "Les acteurs nommés, la densité expliquée en chiffres, notre lecture"
-      }
+      },
+      "mots_cles_ia": [
+        "ZAC Multisites",
+        "logement",
+        "urbanisme",
+        "aménagement"
+      ]
     },
     {
       "id": "D03",
@@ -748,7 +761,12 @@
       "promesses_liees": [],
       "en_profondeur": {
         "sous_titre": "La dette, l'effet Safran, les projets qui s'accumulent — notre lecture"
-      }
+      },
+      "mots_cles_ia": [
+        "budget municipal",
+        "finances",
+        "conseil municipal"
+      ]
     },
     {
       "id": "D04",
@@ -973,7 +991,12 @@
         }
       ],
       "promesses_liees": [],
-      "image": "/bruz-en-action/illus-d04-taxe.webp"
+      "image": "/bruz-en-action/illus-d04-taxe.webp",
+      "mots_cles_ia": [
+        "fiscalité",
+        "taxe foncière",
+        "impôts locaux"
+      ]
     },
     {
       "id": "D05",
@@ -1181,7 +1204,16 @@
           "source_url": null
         }
       ],
-      "referents_quartier": []
+      "referents_quartier": [],
+      "mots_cles_ia": [
+        "carte des projets",
+        "équipements publics",
+        "quartiers",
+        "chantiers",
+        "voirie",
+        "pont de la Gare",
+        "ZAC Multisites travaux"
+      ]
     },
     {
       "id": "D06",
@@ -1400,7 +1432,12 @@
         }
       ],
       "promesses_liees": [],
-      "image": "/bruz-en-action/illus-d06-piscine.webp"
+      "image": "/bruz-en-action/illus-d06-piscine.webp",
+      "mots_cles_ia": [
+        "piscine",
+        "La Conterie",
+        "équipement aquatique"
+      ]
     },
     {
       "id": "D07",
@@ -1581,7 +1618,13 @@
       ],
       "en_profondeur": {
         "sous_titre": "Ce que la PM peut faire, la vidéosurveillance, notre lecture"
-      }
+      },
+      "mots_cles_ia": [
+        "police municipale",
+        "sécurité",
+        "vidéoprotection",
+        "gendarmerie"
+      ]
     },
     {
       "id": "D10",
@@ -1741,7 +1784,13 @@
         }
       ],
       "promesses_liees": [],
-      "image": "/bruz-en-action/illus-d10-education.webp"
+      "image": "/bruz-en-action/illus-d10-education.webp",
+      "mots_cles_ia": [
+        "écoles",
+        "enseignement",
+        "Vert-Buisson",
+        "démographie scolaire"
+      ]
     },
     {
       "id": "D11",
@@ -1903,7 +1952,13 @@
         }
       ],
       "promesses_liees": [],
-      "image": "/bruz-en-action/illus-d11-patrimoine.webp"
+      "image": "/bruz-en-action/illus-d11-patrimoine.webp",
+      "mots_cles_ia": [
+        "Manoir de la Noë",
+        "Plan B",
+        "patrimoine",
+        "tiers-lieu citoyen"
+      ]
     },
     {
       "id": "D12",
@@ -1986,7 +2041,13 @@
           "source_label": "Audio CM sur YouTube"
         }
       ],
-      "promesses_liees": []
+      "promesses_liees": [],
+      "mots_cles_ia": [
+        "city stade",
+        "Siméon Beliard",
+        "gymnase",
+        "équipements sportifs"
+      ]
     },
     {
       "id": "D13",
@@ -2179,7 +2240,13 @@
           "source_url": "https://www.alec-rennes.org/actualites/chavagne-la-cour-decole-vegetalisee-un-modele-dadaptation-au-changement-climatique/"
         }
       ],
-      "image": "/bruz-en-action/illus-d13-canicule.webp"
+      "image": "/bruz-en-action/illus-d13-canicule.webp",
+      "mots_cles_ia": [
+        "canicule",
+        "plan municipal",
+        "îlots de fraîcheur",
+        "climat"
+      ]
     },
     {
       "id": "D15",
@@ -2293,6 +2360,12 @@
           "pourquoi_bruz": "Démontre qu'une commune de l'agglo rennaise peut créer une MSP — un modèle concret à étudier pour Bruz",
           "source_url": null
         }
+      ],
+      "mots_cles_ia": [
+        "offre de soins",
+        "médecins",
+        "désert médical",
+        "santé"
       ]
     },
     {
@@ -2375,7 +2448,13 @@
           "source_label": "Rennes Business Mag"
         }
       ],
-      "promesses_liees": []
+      "promesses_liees": [],
+      "mots_cles_ia": [
+        "campus Ker Lann",
+        "enseignement supérieur",
+        "étudiants",
+        "logement étudiant"
+      ]
     },
     {
       "id": "D16",
@@ -2462,7 +2541,14 @@
         20,
         21
       ],
-      "idees_ailleurs": []
+      "idees_ailleurs": [],
+      "mots_cles_ia": [
+        "commerce",
+        "artisanat",
+        "vie économique",
+        "zones d'activité (Champ Niguel, Haie Gautrais)",
+        "entreprises"
+      ]
     },
     {
       "id": "D21",
@@ -2514,7 +2600,15 @@
       ],
       "promesses_liees": [],
       "idees_ailleurs": [],
-      "image": null
+      "image": null,
+      "mots_cles_ia": [
+        "culture",
+        "Grand Logis",
+        "programmation culturelle",
+        "spectacle",
+        "événement culturel",
+        "médiathèque"
+      ]
     },
     {
       "id": "D22",
@@ -2585,7 +2679,14 @@
           "source_label": "Bruz en Action"
         }
       ],
-      "promesses_liees": []
+      "promesses_liees": [],
+      "mots_cles_ia": [
+        "friche Bonna Sabla",
+        "zone Bihardais",
+        "reconversion industrielle",
+        "préemption",
+        "foncier économique"
+      ]
     },
     {
       "id": "D23",
@@ -2644,6 +2745,13 @@
         39,
         40,
         41
+      ],
+      "mots_cles_ia": [
+        "démocratie locale",
+        "référents de quartier",
+        "conseil municipal des jeunes",
+        "conseil des sages",
+        "transparence des décisions"
       ]
     },
     {
@@ -2693,7 +2801,14 @@
         }
       ],
       "actus_recentes": [],
-      "promesses_liees": []
+      "promesses_liees": [],
+      "mots_cles_ia": [
+        "gymnase",
+        "salle de sport",
+        "équipements sportifs",
+        "terrains extérieurs",
+        "Cosec Siméon Beliard"
+      ]
     }
   ]
 }
