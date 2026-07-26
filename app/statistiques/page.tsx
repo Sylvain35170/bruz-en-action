@@ -225,10 +225,7 @@ export default function StatistiquesPage() {
             source="CFU officiels (Mégalis) et DGFiP"
             sourceUrl="https://data.megalis.bretagne.bzh/organization/commune-de-bruz"
           />
-          <CommentLire>
-            {dette.note} L&apos;hypothèse de travail :{" "}
-            {fin.dette_ecart_2023_2024.hypothese_non_confirmee.charAt(0).toLowerCase() + fin.dette_ecart_2023_2024.hypothese_non_confirmee.slice(1)}.
-          </CommentLire>
+          <CommentLire>{dette.note}</CommentLire>
           <LienDossier href="/bruz-en-action/dossiers/D03" label="Dossier Finances : les arbitrages du mandat" />
         </section>
 
