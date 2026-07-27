@@ -1205,6 +1205,7 @@
         }
       ],
       "referents_quartier": [],
+      "image": "/bruz-en-action/illus-d05-carte.webp",
       "mots_cles_ia": [
         "carte des projets",
         "équipements publics",
@@ -2042,6 +2043,7 @@
         }
       ],
       "promesses_liees": [],
+      "image": "/bruz-en-action/illus-d12-citystade.webp",
       "mots_cles_ia": [
         "city stade",
         "Siméon Beliard",
@@ -2361,6 +2363,7 @@
           "source_url": null
         }
       ],
+      "image": "/bruz-en-action/illus-d15-sante.webp",
       "mots_cles_ia": [
         "offre de soins",
         "médecins",
@@ -2449,6 +2452,7 @@
         }
       ],
       "promesses_liees": [],
+      "image": "/bruz-en-action/illus-d20-kerlann.webp",
       "mots_cles_ia": [
         "campus Ker Lann",
         "enseignement supérieur",
@@ -2542,6 +2546,7 @@
         21
       ],
       "idees_ailleurs": [],
+      "image": "/bruz-en-action/illus-d16-economie.webp",
       "mots_cles_ia": [
         "commerce",
         "artisanat",
@@ -2600,7 +2605,7 @@
       ],
       "promesses_liees": [],
       "idees_ailleurs": [],
-      "image": null,
+      "image": "/bruz-en-action/illus-d21-culture.webp",
       "mots_cles_ia": [
         "culture",
         "Grand Logis",
@@ -2680,6 +2685,7 @@
         }
       ],
       "promesses_liees": [],
+      "image": "/bruz-en-action/illus-d22-friche.webp",
       "mots_cles_ia": [
         "friche Bonna Sabla",
         "zone Bihardais",
@@ -2746,6 +2752,7 @@
         40,
         41
       ],
+      "image": "/bruz-en-action/illus-d23-democratie.webp",
       "mots_cles_ia": [
         "démocratie locale",
         "référents de quartier",
@@ -2802,6 +2809,7 @@
       ],
       "actus_recentes": [],
       "promesses_liees": [],
+      "image": "/bruz-en-action/illus-d24-sports.webp",
       "mots_cles_ia": [
         "gymnase",
         "salle de sport",
