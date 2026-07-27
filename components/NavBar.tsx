@@ -5,9 +5,12 @@ import metaData from "../data/meta.json";
 
 const LOGO = "/bruz-en-action/logo.png";
 
+// Les emojis restent sur les liens (repère visuel utile dans un déroulant),
+// pas sur les libellés de groupe : la barre est visible en permanence, cinq
+// emojis alignés y bruitent plus qu'ils ne guident.
 const NAV_GROUPS = [
   {
-    label: "📁 Suivre",
+    label: "Suivre",
     links: [
       { href: "/bruz-en-action/dossiers", label: "📁 Dossiers" },
       { href: "/bruz-en-action/actualites", label: "🗞️ Actualités" },
@@ -19,32 +22,32 @@ const NAV_GROUPS = [
     ],
   },
   {
-    label: "✅ Engagements",
+    label: "Engagements",
     links: [
       { href: "/bruz-en-action/programme", label: "📋 Programme" },
       { href: "/bruz-en-action/promesses", label: "✅ Promesses" },
     ],
   },
   {
-    label: "👥 Qui décide",
+    label: "Qui décide",
     links: [
       { href: "/bruz-en-action/elus", label: "👥 Élus" },
       { href: "/bruz-en-action/qui-fait-quoi", label: "🏛️ Qui fait quoi ?" },
     ],
   },
   {
-    label: "🧭 Connaître Bruz",
+    label: "Connaître Bruz",
     links: [
       { href: "/bruz-en-action/carte", label: "🗺️ Carte interactive" },
       { href: "/bruz-en-action/statistiques", label: "📊 Bruz en chiffres" },
       { href: "/bruz-en-action/histoire", label: "🕰️ Histoire" },
-      { href: "/bruz-en-action/connaitre-bruz", label: "🧭 Connaître Bruz" },
+      { href: "/bruz-en-action/connaitre-bruz", label: "📚 Base de connaissance" },
       { href: "/bruz-en-action/glossaire", label: "📖 Glossaire" },
       { href: "/bruz-en-action/dossiers/D05", label: "📁 Quartiers & chantiers" },
     ],
   },
   {
-    label: "💬 Participer",
+    label: "Participer",
     links: [
       { href: "/bruz-en-action/interagir", label: "💬 Interagir" },
       { href: "/bruz-en-action/coup-de-pouce", label: "🤲 Coup de pouce" },

@@ -260,6 +260,30 @@ def validate_parse_only() -> None:
         load(path.name)
 
 
+def validate_liens_nav() -> None:
+    """La NavBar pointe vers des dossiers en dur — vérifier qu'ils existent.
+
+    `components/NavBar.tsx` ne peut pas importer `dossiers.json` (204 Ko dans un
+    composant client), les liens `/dossiers/DXX` y sont donc écrits en dur. Sans
+    ce garde-fou, renuméroter ou retirer un dossier laisserait un lien de
+    navigation en 404 sans que rien ne le signale.
+    """
+    navbar = Path(__file__).parent.parent / "components" / "NavBar.tsx"
+    if not navbar.exists():
+        warn("components/NavBar.tsx introuvable — liens de nav non vérifiés")
+        return
+
+    dossiers = load("dossiers.json")
+    if not dossiers:
+        return
+    ids_connus = {d["id"] for d in dossiers.get("dossiers", [])}
+
+    cibles = re.findall(r"/bruz-en-action/dossiers/(D\d{2})", navbar.read_text(encoding="utf-8"))
+    for cible in sorted(set(cibles)):
+        if cible not in ids_connus:
+            err(f"NavBar.tsx pointe vers /dossiers/{cible} qui n'existe pas dans dossiers.json")
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--verbose", action="store_true")
@@ -274,6 +298,7 @@ def main() -> None:
     validate_bruz()
     validate_programme()
     validate_parse_only()
+    validate_liens_nav()
 
     if warnings and args.verbose:
         print(f"⚠️  {len(warnings)} warning(s) :")
