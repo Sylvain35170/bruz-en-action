@@ -18,7 +18,6 @@
 - [ ] **D12** — City stade Siméon Belliard : toujours aucune délibération budgétaire trouvée pour la reconstruction (250-300k€ annoncés) ni avancée sur la procédure judiciaire riverains — re-vérifier périodiquement
 - [ ] **D21 (Culture)** — Grand Logis : programmation, événement d'ampleur et évolution de jauge évoqués par la mairie (OF 10/07) mais aucun détail concret trouvé — re-creuser dès que la mairie communique
 - [ ] **idees_ailleurs** — alimenter les dossiers D01–D12 avec des pratiques d'autres communes (champ JSON en place, vide sur tous sauf D13)
-- [ ] **Images manquantes** — D05, D12, D15, D16, D20, D21, D22, D23, D24 n'ont pas d'illustration
 - [ ] **D22 (Bonna Sabla)** — friche créée le 17/07, faits confirmés (fermeture usine, foncier en vente) mais reconversion/préemption non actée : suivre toute délibération Rennes Métropole/Bruz sur le DPU ou le devenir du site. Re-vérifié le 2026-07-20 : rien de nouveau sur Mégalis ni sur l'open data délibérations Rennes Métropole (recherches "Bonna Sabla"/"Bihardais") — ⚠️ un résultat WebSearch Archyde refait surface avec des chiffres très précis (12 ha, pollution HAP, remédiation 2,5-4 M€, subvention régionale 12 M€) : ne pas l'utiliser, c'est le même agrégateur déjà pris en flagrant délit de conflation avec d'autres sites Bonna Sabla en France (piège 2026-07-17)
 - [ ] **D23 (Démocratie locale)** — créé le 17/07 (pilier 7, 5 promesses D1-D5 toutes non_commence) : suivre toute délibération créant CMJ/Conseil des sages ou désignant des référents de quartier
 - [ ] **D11 (Manoir de la Noë)** — résultat de la concertation citoyenne « Nos Lieux Communs » du 9 juillet 2026 (usage de la partie non occupée du bâtiment/terrain) pas encore public — à suivre
@@ -26,6 +25,7 @@
 ## 🟡 À faire — Design & Illustrations
 
 - [ ] **Illustration `/histoire`** — page livrée sans image dédiée, à ajouter si besoin
+- [ ] **Tout nouveau dossier doit repartir de `PROMPTS_ILLUSTRATIONS.md`** (bloc de style + `scripts/integre_illustration.py`) — les 18 dossiers sont illustrés au 2026-07-27, ne pas laisser un nouveau dossier sans image
 - [ ] **Nom de domaine propre** — en attente de financement (pas d'action possible pour l'instant)
 
 ## 🟡 À faire — Données & Connaissance
