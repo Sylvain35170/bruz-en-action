@@ -4,6 +4,8 @@
 
 *(rien — l'audit site fond & forme, `AUDIT_SITE_2026-07.md`, est terminé : lots 1 à 4 tous livrés, dernier en date le 17/07 avec `/histoire`, `/connaitre-bruz` et `/glossaire`. Détail dans le git log.)*
 
+> ⚠️ Le 2026-07-27, deux reliquats de cet audit ont été retrouvés **en production** alors que les lots étaient marqués clos : `/metro` (B9) jamais supprimée et toujours servie en 200, et le câblage en dur des liens dossiers (B10). Avant de cocher un lot d'audit, vérifier chaque point sur le site déployé, pas seulement dans le diff.
+
 ## 🟠 Prioritaire — Fonctionnalités
 
 - [ ] **Parole des élus** — enrichir `data/elus.json` au fil du mandat
