@@ -123,6 +123,7 @@ export default function NavBar() {
                     background: "#0E2F62", border: "1px solid rgba(255,255,255,0.15)",
                     borderRadius: 10, padding: 6, minWidth: 180,
                     boxShadow: "0 8px 24px rgba(0,0,0,0.35)",
+                    whiteSpace: "nowrap",
                   }}>
                     {group.links.map(l => {
                       const isActive = pathname === l.href || pathname?.startsWith(l.href + "/");
