@@ -170,14 +170,14 @@ def run() -> bool:
     # Écarter les items déjà publiés dans actus.json (même sujet reformulé par un autre
     # scraper source, URL différente donc non filtré en amont dans la queue)
     proposals = []
-    n_already_published = 0
+    deja_publies = []
     for p in all_proposals:
         if is_already_published(p.get("titre", ""), p.get("source_url", "")):
-            n_already_published += 1
+            deja_publies.append(p)
             continue
         proposals.append(p)
-    if n_already_published:
-        log(f"  {n_already_published} item(s) déjà publié(s) — écarté(s) de la sélection.", "INFO")
+    if deja_publies:
+        log(f"  {len(deja_publies)} item(s) déjà publié(s) — écarté(s) de la sélection.", "INFO")
 
     # Réenrichir avec le type d'item (perdu par Claude, utile à la revue)
     type_by_id = {i.get("id"): i.get("type", "") for i in items_light}
@@ -187,6 +187,32 @@ def run() -> bool:
     reg_items = registry["items"]
     known_reg_urls = {i.get("source_url", "") for i in reg_items}
     known_reg_titles = {i.get("titre", "").lower()[:50] for i in reg_items}
+
+    # Les doublons de stories déjà publiées entrent AUSSI dans le registre, en
+    # rejected. Sans ça ils n'y étaient jamais inscrits : `known_urls()` ne les
+    # connaissait pas, les scrapers les remettaient en queue à chaque run et
+    # `is_already_published` ne les écartait qu'APRÈS l'analyse Claude — un appel
+    # modèle repayé tous les jours pour le même item, indéfiniment (constaté sur
+    # « Stage de natation piscine de la Conterie », re-analysé à chaque run).
+    n_doublons_memorises = 0
+    for p in deja_publies:
+        url_key = p.get("source_url", "")
+        title_key = p.get("titre", "").lower()[:50]
+        if (url_key and url_key in known_reg_urls) or title_key in known_reg_titles:
+            continue
+        p["type"] = type_by_id.get(p.get("id"), "")
+        p["statut"] = "rejected"
+        p["motif_rejet"] = "doublon d'une story déjà publiée"
+        p["first_seen"] = today()
+        p["decided_at"] = today()
+        p["mailed_at"] = None
+        reg_items.append(p)
+        if url_key:
+            known_reg_urls.add(url_key)
+        known_reg_titles.add(title_key)
+        n_doublons_memorises += 1
+    if n_doublons_memorises:
+        log(f"  {n_doublons_memorises} doublon(s) mémorisé(s) — plus de re-scrape ni de ré-analyse.", "INFO")
 
     n_new_pending = 0
     n_auto_rejected = 0
@@ -210,7 +236,7 @@ def run() -> bool:
         else:
             n_auto_rejected += 1
 
-    if n_new_pending or n_auto_rejected:
+    if n_new_pending or n_auto_rejected or n_doublons_memorises:
         save_registry(registry)
 
     n_pending_total = sum(1 for i in reg_items if i.get("statut") == "pending")
