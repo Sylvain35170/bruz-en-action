@@ -9,6 +9,7 @@
 ## 🟠 Prioritaire — Fonctionnalités
 
 - [ ] **Parole des élus** — enrichir `data/elus.json` au fil du mandat
+- [ ] **Coup de pouce — pas de boucle de mise à jour** (constat 2026-07-28) : 3 items seulement, tous ajoutés les 30/06-01/07 et jamais retouchés depuis. Aucun agent ne l'alimente, aucune revue périodique, et le champ `active` n'est jamais repassé à `false` — une recherche de bénévoles de juin s'affiche encore comme si elle était d'actualité. Décider : soit on l'alimente vraiment (appel à contribution via `/interagir`, relance des assos), soit on assume une page courte et on ajoute une date d'expiration par item. Deux détails à traiter au passage : le lien Restos du Cœur pointe vers le site **national** (aucune info Bruz), et aucun des 3 items n'a de `contact`, donc le bouton « Contacter » ne s'affiche jamais.
 
 ## 🟡 À faire — Agents de veille
 
