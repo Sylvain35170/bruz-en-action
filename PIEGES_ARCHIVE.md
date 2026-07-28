@@ -32,3 +32,33 @@
 - **Extraction couleurs PIL** — pour matcher une palette existante depuis une image, `colorsys.rgb_to_hsv` + filtre par plage de teinte (hue_min/hue_max) + saturation min est bien plus fiable que la moyenne brute (qui se noie dans les blancs/fonds clairs).
 - **`h1/h2/h3/h4 { color: inherit }`** — à privilégier sur `color: var(--text-strong)` dans globals.css dès qu'on a des sections sombres. Sinon les headings passent en noir sur fond navy (la règle CSS spécifique écrase l'héritage du parent).
 - **Prompt Gemini illustrations flat** — pattern efficace : palette hex explicite + "no text, no wate
+
+### 2026-06-27 — bruz-en-action : dates RFC actus.json + Edit vs Python sur gros JSON
+→ dispatch: local:bruz-en-action
+
+- **Dates RFC tronquées dans `actus.json`** — les actus issues du flux Google News RSS arrivent avec des dates tronquées ("Sun, 21 De", "Thu, 02 Ap"). À corriger systématiquement en ISO (YYYY-MM-DD) avant tout commit. Ne pas laisser passer le format RSS brut.
+- **Edit vs Python pour les modifications complexes de `dossiers.json`** — tenter un `Edit` après modification par le linter de l'IDE provoque une erreur de conflit ("file modified since read"). Pour ajouter un dossier entier, passer par un script Python (`json.load` / `append` / `json.dump`) est plus fia
+
+### 2026-06-27 — bruz-en-action : dates RFC actus.json + Edit vs Python gros JSON
+- **Dates RFC tronquées** — actus issues de Google News RSS arrivent tronquées ("Sun, 21 De"). Corriger en ISO avant commit.
+- **Edit sur gros JSON** — si le linter IDE modifie le fichier entre un Read et un Edit, l'outil Edit échoue. Passer par `json.load / append / json.dump` en Python pour les ajouts complexes.
+
+### 2026-06-27 — bruz-en-action : formatNomPrenom helper
+- **`formatNomPrenom` dans `app/utils.ts`** — affiche les élus au format `NOM - Prénom`. Split sur le dernier espace, dernière partie en majuscules. Appliqué sur `/elus` et panel "Qui décide ?" de `/en-profondeur`.
+- **Ne pas appliquer à `qui_decide` (dossiers/[id])** — mélange de personnes et institutions. Laisser `{q.nom}` brut.
+
+### 2026-06-27 — bruz-en-action : diagnostic agent launchd + youtube_transcript_api
+- **Launchd exit 19968 persistant après fix** — même avec batching en place, `LastExitStatus` reste 19968 tant que le job n'est pas rechargé. Fix : `launchctl unload` + `launchctl load` du plist.
+- **`youtube_transcript_api` absent** — warnings non-fatals dans agent_enrichissement_cm. Installer : `pip3 install youtube-transcript-api`.
+- **Pattern debug "agent n'a pas tourné"** — 1) `launchctl list com.bruz-en-action.veille` → LastExitStatus, 2) `tail scripts/veille.log` → dernière date, 3) run manuel direct.
+
+### 2026-06-27 — bruz-en-action : nuance éditoriale ancienne vs nouvelle équipe
+- **Événements programmés avant le 20 mars 2026** — tout événement national accueilli tôt dans le mandat 2026-2032 a été engagé par l'ancienne équipe (Salmon). Distinguer dans le ton : "ancienne équipe a programmé / nouvelle assure la continuité". Exemple : Championnat de France boccia (juin 2026) → décision prise ~6-12 mois avant le changement de conseil.
+
+### 2026-06-27 — bruz-en-action : pipeline veille OF + proposals
+- **OF 403 headless Chromium** — `p.chromium.launch()` sans `channel` → 403 même avec cookies. Fix : `channel="chrome"` (Chrome système). Appliqué dans `agent_ouestfrance._scrape_with_playwright()`.
+- **Doublons proposals si copie manuelle** — copier un ancien `proposals/YYYY-MM-DD.json` vers la date du jour avant `agent_select` produit des doublons (merge cumulatif). Fix dédup URL+titre dans `agent_select.py`. Ne pas copier manuellement un fichier proposals si on va relancer select.
+- **Test mailer rapide** — pattern : copier proposals existant vers date du jour → `python3 -c "from agents.agent_mailer import run; run()"`. Valide le SMTP sans relancer les scrapers.
+
+### 2026-06-27 — bruz-en-action : dossier fabriqué depuis titre paywall
+- **Ne pas créer un dossier depuis un titre d'article inaccessible (paywall)** — D09 Grand Logis construit à partir du titre OF sans accès au corps → faits inventés ("seule salle de cinéma", "Bruz n'a pas d'autre cinéma"). Règle : sans source lisible, pas de `ce_quon_sait` — ou dossier marqué "à documenter".
