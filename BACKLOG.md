@@ -9,12 +9,16 @@
 ## 🟠 Prioritaire — Fonctionnalités
 
 - [ ] **Parole des élus** — enrichir `data/elus.json` au fil du mandat
-- [ ] **Coup de pouce — pas de boucle de mise à jour** (constat 2026-07-28) : 3 items seulement, tous ajoutés les 30/06-01/07 et jamais retouchés depuis. Aucun agent ne l'alimente, aucune revue périodique, et le champ `active` n'est jamais repassé à `false` — une recherche de bénévoles de juin s'affiche encore comme si elle était d'actualité. Décider : soit on l'alimente vraiment (appel à contribution via `/interagir`, relance des assos), soit on assume une page courte et on ajoute une date d'expiration par item. Deux détails à traiter au passage : le lien Restos du Cœur pointe vers le site **national** (aucune info Bruz), et aucun des 3 items n'a de `contact`, donc le bouton « Contacter » ne s'affiche jamais.
+- [ ] **Coup de pouce — valider les candidats de l'agent** : `agent_coup_de_pouce` (créé 2026-07-28, dans le cron 17h) dépose ses trouvailles dans `scripts/proposals/coup_de_pouce_pending.json` (gitignoré). Les relire avec `python3 scripts/agents/agent_coup_de_pouce.py --list`, puis recopier à la main les retenus dans `data/coup_de_pouce.json` — l'agent ne publie jamais seul, mettre une initiative en avant est un choix éditorial. **2 candidats en attente** au 28/07 : Marche nordique (JAB) et Atelier philo de l'ALB, tous deux sur « inscriptions ouvertes ».
+- [ ] **Coup de pouce — 3 items historiques à reprendre** : Restos du Cœur, La Cabane à Vélos et Les Gamins du Marais (ajoutés les 30/06-01/07) n'ont **aucune source** — `validate_data.py` les signale désormais en warning. À sourcer ou à retirer. Le lien Restos du Cœur pointe en outre vers le site **national**, sans aucune information sur l'antenne bruzoise, et aucun des trois n'a de contact (le bouton « Contacter » ne s'affiche donc jamais).
+- [ ] **Coup de pouce — décider d'une politique d'expiration** : le champ `date_fin` existe depuis le 28/07 et retire l'item automatiquement (posé sur la guinguette CHOQUE, qui s'arrête le 15/08). Reste à trancher pour les items sans échéance naturelle — un appel à dons doit-il expirer au bout de 6 mois faute de confirmation ? Sans règle, le problème d'items périmés affichés comme actuels reviendra.
+- [ ] **Alcooliques Anonymes — à publier ou non** (trouvé dans la Semaine à Bruz n°858, réunions tous les vendredis 20h30 à la Maison des associations, 06 52 42 75 86 / aabruz35@gmail.com) : information publique et utile, mais la mettre en avant sur un site de veille citoyenne est un choix éditorial qui touche à la santé et à l'addiction — **décision de l'association, pas de l'agent**. Non publié à ce stade.
 
 ## 🟡 À faire — Agents de veille
 
 - [ ] **Agent Gmail signalements** — lire emails labelisés [SIGNALEMENT], parser template structuré, ouvrir tickets JSON
 - [ ] **agent_metropole_delibs — surveiller les premiers runs** (créé 14/07, cron 17h) : vérifier qu'une future délibération Bruz/Ker Lann/trambus/PLUiH arrive bien en queue puis en revue ; à l'acceptation, promouvoir manuellement les décisions majeures dans `cms.json > conseil_metropolitain`
+- [ ] **agent_coup_de_pouce — surveiller les premiers runs** (créé 28/07, cron 17h) : il lit les PDF des bulletins et son extraction est le point fragile. Trois défauts d'attribution ont été trouvés et corrigés au test (débordement entre colonnes, domaine d'email pris pour un site, en-tête de rubrique collé au titre) — **relire les contacts de chaque candidat contre le PDF avant publication**, une mauvaise attribution produit une information fausse. Les motifs de détection (`SIGNAUX`) sont volontairement stricts : élargir si des appels évidents passent à travers.
 
 ## 🟡 À faire — Dossiers à instruire
 
@@ -44,6 +48,7 @@
 
 ## 🟡 À faire — Technique
 
+- [ ] **`agent_bruz_mag` — titres captés depuis le texte du lien** : les trois derniers bulletins avaient `label: "Télécharger(ouverture dans un nouvel onglet)"` et BM-260 avait ce texte **en guise de titre**, affiché tel quel sur `/publications`. Corrigé à la main le 28/07 pour les 5 bulletins existants, mais la cause est dans le scraper — le prochain bulletin repartira avec le même défaut tant que l'extraction de titre n'est pas fiabilisée.
 - [ ] **CRs réunions** — réimporter les docx (encodage zip raté sur les accents) — fichiers source à relocaliser
 - [ ] **Actus** — enrichir au fil des décisions
 - [ ] **Seuil dédup `is_already_published`** — seuil de similarité de titre à 0.6 (`scripts/utils.py`) : le cas limite "Stage de natation piscine de la Conterie" vs "Ouverture des inscriptions natation" (ratio 0.70) reste à arbitrer sur le fond — est-ce vraiment un doublon ? Depuis le 2026-07-27 il est au moins mémorisé comme tel et ne coûte plus un appel Claude par run. Si le seuil s'avère trop agressif, il faudra **purger les items `motif_rejet: "doublon d'une story déjà publiée"`** du registre pour qu'ils soient reproposés
