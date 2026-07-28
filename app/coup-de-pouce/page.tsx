@@ -12,8 +12,12 @@ interface CoupDePouce {
   besoin: BesoinItem;
   lien: string | null;
   contact: string | null;
+  telephone?: string | null;
   date_ajout: string;
+  /** Dernier jour de validité — au-delà, l'item disparaît de lui-même. */
+  date_fin?: string | null;
   active: boolean;
+  source?: { label: string; url: string } | null;
 }
 
 const TYPE_CONFIG: Record<TypeItem, { label: string; color: string; bg: string; emoji: string }> = {
@@ -35,7 +39,13 @@ function fmtDate(iso: string) {
 }
 
 export default function CoupDePoucePage() {
-  const items = (coupData.items as CoupDePouce[]).filter(i => i.active);
+  // `date_fin` retire l'item de lui-même une fois l'échéance passée : une
+  // guinguette d'été ou un appel à bénévoles daté ne restent pas affichés
+  // comme s'ils étaient d'actualité faute d'être repassés à `active: false`.
+  const aujourdhui = new Date().toISOString().slice(0, 10);
+  const items = (coupData.items as CoupDePouce[])
+    .filter(i => i.active)
+    .filter(i => !i.date_fin || i.date_fin >= aujourdhui);
 
   const byType = (type: TypeItem) => items.filter(i => i.type === type);
   const associations = byType("association");
@@ -124,10 +134,27 @@ export default function CoupDePoucePage() {
                             Contacter →
                           </a>
                         )}
-                        <span style={{ fontSize: 12, color: "#94a3b8", marginLeft: "auto" }}>
+                        {item.telephone && (
+                          <a href={`tel:${item.telephone.replace(/\s/g, "")}`}
+                            style={{ fontSize: 13, fontWeight: 600, color: "#1d4ed8", textDecoration: "none" }}>
+                            {item.telephone}
+                          </a>
+                        )}
+                        <span style={{ fontSize: 12, color: "#64748b", marginLeft: "auto" }}>
                           Ajouté le {fmtDate(item.date_ajout)}
                         </span>
                       </div>
+                      {(item.source || item.date_fin) && (
+                        <div style={{ marginTop: 10, paddingTop: 10, borderTop: "1px solid #f1f5f9", fontSize: 12, color: "#64748b", display: "flex", gap: 12, flexWrap: "wrap" }}>
+                          {item.date_fin && <span>Jusqu&apos;au {fmtDate(item.date_fin)}</span>}
+                          {item.source && (
+                            <a href={item.source.url} target="_blank" rel="noopener noreferrer"
+                              style={{ color: "#64748b", textDecoration: "underline" }}>
+                              Source : {item.source.label}
+                            </a>
+                          )}
+                        </div>
+                      )}
                     </article>
                   ))}
                 </div>

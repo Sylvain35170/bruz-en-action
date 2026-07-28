@@ -290,8 +290,16 @@ def validate_coup_de_pouce() -> None:
         if not item.get("titre"):
             err(f"{where} : titre manquant")
         check_date(item.get("date_ajout"), where, allow_null=False)
+        check_date(item.get("date_fin"), where)
         if item.get("lien"):
             check_url(item["lien"], where)
+        source = item.get("source")
+        if source is None:
+            warn(f"{where} : pas de source — la ligne éditoriale du site impose de sourcer")
+        elif not source.get("url") or not source.get("label"):
+            err(f"{where} : source incomplète (label et url attendus)")
+        else:
+            check_url(source["url"], f"{where}.source")
         if not isinstance(item.get("active"), bool):
             err(f"{where} : champ `active` absent ou non booléen — l'item serait filtré à l'affichage")
 

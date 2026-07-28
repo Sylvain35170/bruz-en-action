@@ -49,6 +49,7 @@ AGENTS = [
     ("Métropole",          "agents.agent_metropole_delibs"),   # API open data RM → actus_queue.json
     ("Ouest-France",       "agents.agent_ouestfrance"),        # scraping OF direct → actus_queue.json
     ("Presse",             "agents.agent_presse"),             # RSS Google News → actus_queue.json
+    ("Coup de pouce",      "agents.agent_coup_de_pouce"),      # bulletins PDF → proposals/coup_de_pouce_pending.json
     # ── Sélection éditoriale (Claude CLI) ────────────────────────────────
     ("Sélection",          "agents.agent_select"),             # → proposals/YYYY-MM-DD.json
     ("Mailer",             "agents.agent_mailer"),             # → email directeurs éditoriaux

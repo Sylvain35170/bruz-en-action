@@ -1,7 +1,7 @@
 {
   "meta": {
     "description": "Initiatives locales que Bruz en Action met en lumière — causes, commerces, associations",
-    "last_update": "2026-07-01"
+    "last_update": "2026-07-28"
   },
   "items": [
     {
@@ -13,7 +13,10 @@
       "lien": "https://www.restosducoeur.org",
       "contact": null,
       "date_ajout": "2026-06-30",
-      "active": true
+      "active": true,
+      "telephone": null,
+      "date_fin": null,
+      "source": null
     },
     {
       "id": "CP02",
@@ -24,7 +27,10 @@
       "lien": null,
       "contact": null,
       "date_ajout": "2026-06-30",
-      "active": true
+      "active": true,
+      "telephone": null,
+      "date_fin": null,
+      "source": null
     },
     {
       "id": "CP03",
@@ -35,7 +41,78 @@
       "lien": "https://lesgaminsdumarais.fr/",
       "contact": null,
       "date_ajout": "2026-07-01",
-      "active": true
+      "active": true,
+      "telephone": null,
+      "date_fin": null,
+      "source": null
+    },
+    {
+      "id": "CP04",
+      "type": "association",
+      "titre": "Secours Catholique — Rives de la Seiche",
+      "chapeau": "L'association recherche du mobilier et de l'électroménager en bon état pour des familles et des personnes en situation de précarité : sommiers et matelas, réfrigérateurs, lave-linge, fours micro-ondes ou électriques, petites armoires, meubles et chaises de cuisine, tables, aspirateurs, commodes, meubles de rangement.",
+      "besoin": "dons",
+      "lien": null,
+      "contact": "secath.seiche@orange.fr",
+      "telephone": "02 99 41 31 70",
+      "date_ajout": "2026-07-28",
+      "date_fin": null,
+      "active": true,
+      "source": {
+        "label": "Semaine à Bruz n°858 — du 9 juillet au 27 août 2026",
+        "url": "https://www.ville-bruz.fr/wp-content/uploads/2026/07/Semaine-a-Bruz-n°858-special-ete-du-9-juillet-au-27-aout-2026.pdf"
+      }
+    },
+    {
+      "id": "CP05",
+      "type": "association",
+      "titre": "Emmaüs Bruz",
+      "chapeau": "L'équipe solidaire tient sa salle de ventes 17 rue Gay-Lussac : mercredis et samedis de 10h à 12h30 et de 14h à 17h30, vendredis de 14h à 17h30. Les dons se déposent du mardi au samedi, entre 10h et 12h30 et entre 14h et 17h30.",
+      "besoin": "dons",
+      "lien": "https://emmaus-rennes.fr",
+      "contact": "contact@emmaus-rennes.bzh",
+      "telephone": null,
+      "date_ajout": "2026-07-28",
+      "date_fin": null,
+      "active": true,
+      "source": {
+        "label": "Semaine à Bruz n°858 — du 9 juillet au 27 août 2026",
+        "url": "https://www.ville-bruz.fr/wp-content/uploads/2026/07/Semaine-a-Bruz-n°858-special-ete-du-9-juillet-au-27-aout-2026.pdf"
+      }
+    },
+    {
+      "id": "CP06",
+      "type": "association",
+      "titre": "Bulle d'air 35 — répit à domicile pour les aidants",
+      "chapeau": "Service de répit à domicile destiné aux aidants, qui maintient la personne aidée dans le cadre sécurisant de son domicile. Porté par l'association AMPER.",
+      "besoin": "visibilité",
+      "lien": "https://www.repit-bulledair.fr",
+      "contact": "bulledair35@amper-asso.fr",
+      "telephone": null,
+      "date_ajout": "2026-07-28",
+      "date_fin": null,
+      "active": true,
+      "source": {
+        "label": "Semaine à Bruz n°858 — du 9 juillet au 27 août 2026",
+        "url": "https://www.ville-bruz.fr/wp-content/uploads/2026/07/Semaine-a-Bruz-n°858-special-ete-du-9-juillet-au-27-aout-2026.pdf"
+      }
+    },
+    {
+      "id": "CP07",
+      "type": "commerce",
+      "titre": "La guinguette du Manoir de la Noë, par la microbrasserie CHOQUE",
+      "chapeau": "Jusqu'au 15 août, la microbrasserie CHOQUE tient la guinguette au Manoir de la Noë, 26 rue de la Noë : jeudi 17h-22h, vendredi et samedi 16h-23h, dimanche 17h-22h. Restauration et bar sur place, un à deux concerts par mois.",
+      "besoin": "clients",
+      "lien": "https://choquemicrobrasserie.fr",
+      "contact": "info@choquemicrobrasserie.fr",
+      "telephone": null,
+      "date_ajout": "2026-07-28",
+      "date_fin": "2026-08-15",
+      "active": true,
+      "source": {
+        "label": "Semaine à Bruz n°858 — du 9 juillet au 27 août 2026",
+        "url": "https://www.ville-bruz.fr/wp-content/uploads/2026/07/Semaine-a-Bruz-n°858-special-ete-du-9-juillet-au-27-aout-2026.pdf"
+      }
     }
   ]
 }
