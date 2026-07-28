@@ -253,11 +253,49 @@ def validate_parse_only() -> None:
     """Les autres fichiers data/ doivent au minimum parser."""
     done = {"actus.json", "dossiers.json", "promesses.json", "cms.json",
             "evenements.json", "elus.json", "actus_queue.json", "bruz.json",
-            "programme.json"}
+            "programme.json", "coup_de_pouce.json"}
     for path in sorted(DATA_DIR.glob("*.json")):
         if path.name in done:
             continue
         load(path.name)
+
+
+TYPES_COUP_DE_POUCE = {"association", "commerce", "cause"}
+BESOINS_COUP_DE_POUCE = {"bénévoles", "dons", "clients", "visibilité", "signatures"}
+
+
+def validate_coup_de_pouce() -> None:
+    """Contrôle data/coup_de_pouce.json — le `type` conditionne l'affichage.
+
+    `/coup-de-pouce` construit ses sections par `byType("association" |
+    "commerce" | "cause")`. Un item dont le `type` sort de ce référentiel
+    n'apparaît dans aucune section, sans erreur, tout en empêchant le message
+    « aucune initiative référencée » de s'afficher : il disparaît en silence.
+    """
+    data = load("coup_de_pouce.json")
+    if not data:
+        return
+
+    items = data.get("items", [])
+    check_unique([i.get("id") for i in items], "coup_de_pouce.json")
+
+    for i, item in enumerate(items):
+        where = f"coup_de_pouce.json[{i}]"
+        if item.get("type") not in TYPES_COUP_DE_POUCE:
+            err(f"{where} : type « {item.get('type')} » hors référentiel "
+                f"{sorted(TYPES_COUP_DE_POUCE)} — l'item ne s'affichera nulle part")
+        besoin = item.get("besoin")
+        if besoin is not None and besoin not in BESOINS_COUP_DE_POUCE:
+            warn(f"{where} : besoin « {besoin} » hors référentiel — affiché tel quel, sans pictogramme")
+        if not item.get("titre"):
+            err(f"{where} : titre manquant")
+        check_date(item.get("date_ajout"), where, allow_null=False)
+        if item.get("lien"):
+            check_url(item["lien"], where)
+        if not isinstance(item.get("active"), bool):
+            err(f"{where} : champ `active` absent ou non booléen — l'item serait filtré à l'affichage")
+
+    check_no_suspect(data, "coup_de_pouce.json")
 
 
 def validate_liens_nav() -> None:
@@ -297,6 +335,7 @@ def main() -> None:
     validate_elus()
     validate_bruz()
     validate_programme()
+    validate_coup_de_pouce()
     validate_parse_only()
     validate_liens_nav()
 
