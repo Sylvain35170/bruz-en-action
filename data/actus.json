@@ -1,9 +1,20 @@
 {
   "meta": {
-    "last_updated": "2026-07-16",
+    "last_updated": "2026-08-01",
     "note": "Actus de suivi des promesses — une actu = un événement daté lié à une ou plusieurs promesses"
   },
   "actus": [
+    {
+      "id": "mairie-8c60ae4f",
+      "titre": "Risque d'incendie : l'accès aux massifs forestiers interdit la nuit",
+      "date": "2026-07-31",
+      "detail": "La Préfecture d'Ille-et-Vilaine a pris un arrêté réglementant l'accès aux massifs forestiers, le département étant classé en risque sévère d'incendie de forêt après la sécheresse. À compter du 29 juillet 2026 et jusqu'à nouvel ordre, l'accès aux bois, forêts et landes est interdit de 21 h à 5 h aux piétons, cyclistes et cavaliers, ainsi que le bivouac. 69 communes sont concernées ; la Ville de Bruz relaie la mesure en citant plusieurs communes voisines (Guichen, Laillé, Goven). La liste préfectorale ne permet pas, en l'état de cette publication, de confirmer que Bruz y figure.",
+      "source_url": "https://www.ville-bruz.fr/actualites/risque-dincendie-lacces-aux-massifs-forestiers-interdit-la-nuit/",
+      "source_label": "Mairie de Bruz — Actualités",
+      "type": "mairie",
+      "dossier": "D13",
+      "niveau": "etat"
+    },
     {
       "id": "mairie-c7762b9f",
       "titre": "La place du Vert Buisson devient la place Robert Barré",

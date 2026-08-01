@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-16",
+    "last_updated": "2026-08-01",
     "version": "3.0"
   },
   "dossiers": [
@@ -2057,7 +2057,7 @@
       "categorie": "Environnement",
       "statut": "en_cours",
       "featured": true,
-      "last_activity": "2026-07-10",
+      "last_activity": "2026-07-31",
       "date_ouverture": "2026-06-21",
       "chapeau": "Avec des étés de plus en plus chauds, Bruz doit adapter ses équipements, ses espaces publics et son plan de crise. Îlots de fraîcheur, populations vulnérables, végétalisation, piscine Conterie, bâtiments communaux : ce que la commune fait — et ce qu'elle ne fait pas encore.",
       "ce_quon_sait": [
@@ -2130,6 +2130,13 @@
         }
       ],
       "actus_recentes": [
+        {
+          "date": "2026-07-31",
+          "titre": "Risque d'incendie : l'accès aux massifs forestiers interdit la nuit",
+          "detail": "La Préfecture d'Ille-et-Vilaine a pris un arrêté réglementant l'accès aux massifs forestiers, le département étant classé en risque sévère d'incendie de forêt après la sécheresse. À compter du 29 juillet 2026 et jusqu'à nouvel ordre, l'accès aux bois, forêts et landes est interdit de 21 h à 5 h aux ",
+          "source_url": "https://www.ville-bruz.fr/actualites/risque-dincendie-lacces-aux-massifs-forestiers-interdit-la-nuit/",
+          "source_label": "Mairie de Bruz — Actualités"
+        },
         {
           "date": "2026-07-10",
           "titre": "Vigilance rouge canicule (2e épisode de l'été)",
