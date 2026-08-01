@@ -28,6 +28,15 @@ ISO_DATE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 DOSSIER_ID = re.compile(r"^D\d{2}$")
 SUSPECT_VALUES = ("undefined", "[object Object]", "NaN")
 
+# URLs qui répondent HTTP 200 mais n'amènent pas au contenu attendu : le
+# link-checker ne peut pas les voir, seul un motif interdit les attrape.
+URL_INTERDITES = {
+    "consent.google.com":
+        "mur de consentement Google (jeton escs= volatil) — stocker l'URL de l'éditeur",
+    "organization/commune-de-bruz":
+        "page Mégalis inexistante, repli silencieux sur l'accueil — utiliser ?siren=213500473",
+}
+
 errors: list[str] = []
 warnings: list[str] = []
 
@@ -68,6 +77,28 @@ def check_no_suspect(node, where: str) -> None:
         for s in SUSPECT_VALUES:
             if s in node:
                 err(f"{where} : valeur suspecte «{s}» dans «{node[:60]}»")
+
+
+def check_urls_interdites(node, where: str) -> None:
+    """Traque les URLs « vivantes en apparence » dans tout l'arbre de données.
+
+    Une URL qui répond 200 mais retombe sur un mur de consentement ou une page
+    d'accueil est indétectable par `agent_qa --links` : elle est restée des
+    semaines en production (consent.google.com, lien Mégalis des séances).
+    Un champ voisin `<clé>_expiree: true` vaut renoncement assumé et exempte.
+    """
+    if isinstance(node, dict):
+        for k, v in node.items():
+            if isinstance(v, str) and node.get(f"{k}_expiree"):
+                continue  # source morte assumée, convention projet
+            check_urls_interdites(v, f"{where}.{k}")
+    elif isinstance(node, list):
+        for i, v in enumerate(node):
+            check_urls_interdites(v, f"{where}[{i}]")
+    elif isinstance(node, str) and node.startswith(("http://", "https://")):
+        for motif, raison in URL_INTERDITES.items():
+            if motif in node:
+                err(f"{where} : URL interdite «{motif}» — {raison}")
 
 
 def check_unique(ids: list, where: str) -> None:
@@ -330,6 +361,16 @@ def validate_liens_nav() -> None:
             err(f"NavBar.tsx pointe vers /dossiers/{cible} qui n'existe pas dans dossiers.json")
 
 
+def validate_urls_interdites() -> None:
+    """Balaye tous les data/*.json, pas seulement les fichiers au schéma connu."""
+    for path in sorted(DATA_DIR.glob("*.json")):
+        try:
+            data = json.loads(path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            continue  # déjà signalé par validate_parse_only()
+        check_urls_interdites(data, path.name)
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--verbose", action="store_true")
@@ -346,6 +387,7 @@ def main() -> None:
     validate_coup_de_pouce()
     validate_parse_only()
     validate_liens_nav()
+    validate_urls_interdites()
 
     if warnings and args.verbose:
         print(f"⚠️  {len(warnings)} warning(s) :")

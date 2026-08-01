@@ -1,22 +1,30 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Agent Mégalis — Détection des nouveaux Conseils Municipaux de Bruz.
+Agent Mégalis — actes officiels de Bruz + détection des nouveaux Conseils Municipaux.
 
-Source : RSS YouTube de la chaîne officielle Ville de Bruz.
-Signal : nouvelle vidéo "Conseil Municipal" → signale un CM, inject dans cms.json.
+Deux sources, deux sorties :
+  1. API Mégalis (actes officiels)   → data/actus_queue.json → select → revue
+  2. RSS YouTube (chaîne Ville)      → data/cms.json (nouvelle séance détectée)
 
-Les délibérations complètes sont sur data.megalis.bretagne.bzh (plateforme authentifiée).
-Cet agent détecte les nouveaux CMs et ajoute une entrée dans cms.json avec le lien YouTube.
+L'API Mégalis est **publique et sans authentification** — contrairement à ce que
+cet agent a longtemps affirmé, ce qui l'avait cantonné au seul flux YouTube et
+laissait les délibérations officielles hors de la veille (saisies à la main
+jusqu'au 2026-08-01). Endpoint repéré en écoutant le trafic du portail, qui est
+un SPA Angular : `data-publication.megalis.bretagne.bzh/mq_apis/actes/v1/search`.
 """
 
 import re
 import sys
+from datetime import date, datetime, timedelta
 from pathlib import Path
 from xml.etree import ElementTree
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
-from utils import DATA_DIR, fetch, load_json, log, save_json, today
+from utils import (
+    DATA_DIR, append_to_queue, fetch, known_ids, known_urls, load_json, log,
+    save_json, stable_id, today,
+)
 
 AGENT_NAME = "megalis"
 
@@ -24,8 +32,23 @@ AGENT_NAME = "megalis"
 YOUTUBE_RSS = "https://www.youtube.com/feeds/videos.xml?channel_id=UCfaKRNhoJ4chuaEtWV-bWjg"
 CM_TITLE_PATTERN = re.compile(r"conseil\s+municipal", re.I)
 
-# Mégalis — portail open data commune de Bruz (URL OpenData/Deliberation timeout)
-MEGALIS_ORG_URL = "https://data.megalis.bretagne.bzh/organization/commune-de-bruz"
+# Mégalis — SIREN de la commune de Bruz (21 + INSEE ; ne pas confondre avec les
+# communes voisines, plusieurs SIREN 2135004xx se ressemblent)
+SIREN_BRUZ = "213500473"
+MEGALIS_API = "https://data-publication.megalis.bretagne.bzh/mq_apis/actes/v1/search"
+MEGALIS_ORG_URL = f"https://data.megalis.bretagne.bzh/?siren={SIREN_BRUZ}"
+
+# Typologies retenues. 99_AT (arrêtés temporaires de voirie) est volontairement
+# exclu : volume élevé, intérêt citoyen quasi nul.
+TYPOLOGIES = {
+    "99_DE": "Délibération",
+    "99_HP": "Acte hors préfecture",
+}
+
+# Fenêtre sur la date de PUBLICATION, pas la date d'acte : Mégalis publie 4 à
+# 5 jours après la séance. 15 jours laissent une marge confortable tout en
+# évitant qu'un premier run n'aspire les 2 400 actes de l'historique.
+FENETRE_JOURS = 15
 
 
 def parse_youtube_rss(content: bytes) -> list[dict]:
@@ -71,16 +94,131 @@ def _extract_date_from_title(titre: str) -> str | None:
     return None
 
 
+# Mots à ne pas décapitaliser quand on remet un objet tout-majuscules en casse
+# lisible. Liste volontairement courte : mieux vaut un mot mal capitalisé qu'un
+# titre faux, et la revue humaine repasse derrière.
+ACRONYMES = {
+    "CM", "CCAS", "ZAC", "PLU", "PLUIH", "PLUI", "DSP", "SDIS", "EHPAD", "ULIS",
+    "RASED", "TFB", "BP", "CFU", "DPU", "SEM", "SPL", "EPCI", "AMO", "CIS", "TVA",
+    "HT", "TTC", "PV", "ALSH", "CME", "CMJ", "SIVU", "STEP", "OAP", "ADS",
+}
+PROPRES = {
+    "bruz", "ker", "lann", "rennes", "métropole", "vilaine", "carcé", "conterie",
+    "cicé", "cice", "blossac", "pont-réan", "buisson", "vert", "pagnol", "fleming",
+    "bretagne", "guichen", "vezin-le-coquet", "laillé", "sainte", "rose", "lima",
+    "noë", "belliard", "siméon", "barré", "barre", "robert", "france", "breizhgo",
+    "houssin", "salmon", "helena", "logis", "mérol", "bihardais", "bonna", "sabla",
+}
+
+# Un jeton contenant un chiffre est une référence (CM71, T4, D05) : le
+# décapitaliser produirait « Cm71 ».
+REF_CHIFFREE = re.compile(r"\d")
+
+
+def _lisible(objet: str) -> str:
+    """Remet un objet Mégalis tout-majuscules dans une casse lisible.
+
+    Les objets arrivent sous la forme `RUBRIQUE_INTITULÉ EN CAPITALES`. On garde
+    la rubrique en tête, séparée par un tiret cadratin. L'original reste stocké
+    dans `objet_source` : cette normalisation est cosmétique et ne doit jamais
+    faire perdre le libellé officiel.
+    """
+    segments = [s.strip(" _-") for s in objet.split("_") if s.strip(" _-")]
+    sortie = []
+    for seg in segments:
+        if not seg.isupper():
+            sortie.append(seg)
+            continue
+        mots = []
+        for mot in seg.split():
+            noyau = mot.strip(".,;:()«»\"'")
+            if noyau in ACRONYMES or REF_CHIFFREE.search(noyau):
+                mots.append(mot)
+            elif noyau.lower() in PROPRES:
+                mots.append(mot.capitalize())
+            else:
+                mots.append(mot.lower())
+        phrase = " ".join(mots)
+        sortie.append(phrase[:1].upper() + phrase[1:] if phrase else phrase)
+    return " — ".join(sortie)
+
+
+def scan_actes_megalis() -> int:
+    """Interroge l'API Mégalis et pousse les actes récents vers la queue de veille."""
+    log(f"Scan Mégalis — actes officiels (SIREN {SIREN_BRUZ}, {FENETRE_JOURS} j)…")
+    r = fetch(f"{MEGALIS_API}?query=&siren={SIREN_BRUZ}&lignes=100")
+    if not r:
+        log("Mégalis : API injoignable.", "ERR")
+        return 0
+
+    try:
+        resultats = r.json().get("resultats", [])
+    except ValueError as e:
+        log(f"Mégalis : réponse illisible ({e})", "ERR")
+        return 0
+
+    date_min = date.today() - timedelta(days=FENETRE_JOURS)
+    connus_urls, connus_ids = known_urls(), known_ids()
+    nouveaux = []
+
+    for acte in resultats:
+        if acte.get("typologie") not in TYPOLOGIES:
+            continue
+        url = acte.get("url") or ""
+        acte_id = acte.get("id") or ""
+        if not url or not acte_id:
+            continue
+        try:
+            publie = date.fromisoformat(acte["date_publication"][:10])
+        except (KeyError, ValueError):
+            continue
+        if publie < date_min:
+            continue
+
+        item_id = stable_id("megalis", acte_id)
+        if item_id in connus_ids or url in connus_urls:
+            continue
+
+        objet = acte.get("objet") or ""
+        nouveaux.append({
+            "id": item_id,
+            "titre": _lisible(objet),
+            "objet_source": objet,          # libellé officiel, jamais perdu
+            "source_url": url,
+            "source_label": f"Mégalis — {TYPOLOGIES[acte['typologie']]}",
+            "date": acte.get("date_acte", "")[:10] or publie.isoformat(),
+            "detail": acte.get("classification_libelle", ""),
+            "type": "megalis",
+        })
+        connus_ids.add(item_id)
+        connus_urls.add(url)
+        log(f"  🆕 {_lisible(objet)[:70]}", "NEW")
+
+    if not nouveaux:
+        log("Mégalis : aucun acte nouveau sur la fenêtre.", "INFO")
+        return 0
+
+    n = append_to_queue(nouveaux)
+    log(f"Mégalis : {n} acte(s) officiel(s) → queue", "OK")
+    return n
+
+
 def run() -> bool:
+    actes = scan_actes_megalis()
+
     log("Scan YouTube Ville de Bruz — Conseils Municipaux…")
     r = fetch(YOUTUBE_RSS)
     if not r:
-        return False
+        # Le RSS YouTube renvoie parfois un 404 transitoire (rate-limit). Sans
+        # ce log, l'échec passait pour « aucun nouveau conseil municipal » et un
+        # CM publié ce jour-là aurait été manqué en silence.
+        log("Mégalis/CMs : RSS YouTube injoignable — détection des CM sautée.", "ERR")
+        return actes > 0
 
     cms_data = load_json(DATA_DIR / "cms.json")
     seances = cms_data.setdefault("seances", [])
 
-    known_ids = {s.get("youtube_id", "") for s in seances}
+    youtube_ids = {s.get("youtube_id", "") for s in seances}
     known_dates = {s.get("date", "") for s in seances}
 
     items = parse_youtube_rss(r.content)
@@ -88,7 +226,7 @@ def run() -> bool:
 
     for item in items:
         vid_id = item["youtube_url"].split("/")[-1]
-        if vid_id in known_ids or item["date_cm"] in known_dates:
+        if vid_id in youtube_ids or item["date_cm"] in known_dates:
             continue
         seance = {
             "id": f"CM-{item['date_cm']}",
@@ -113,7 +251,7 @@ def run() -> bool:
 
     if not nouvelles:
         log("Mégalis/CMs : aucun nouveau conseil municipal.", "INFO")
-        return False
+        return actes > 0
 
     cms_data["seances"] = sorted(seances, key=lambda s: s.get("date", ""), reverse=True)
     cms_data.setdefault("meta", {})["last_updated"] = today()
@@ -123,4 +261,17 @@ def run() -> bool:
 
 
 if __name__ == "__main__":
-    run()
+    if "--dry-run" in sys.argv:
+        # Montre ce que l'API renverrait sans rien écrire dans la queue.
+        import json as _json
+        _r = fetch(f"{MEGALIS_API}?query=&siren={SIREN_BRUZ}&lignes=100")
+        _actes = _r.json().get("resultats", []) if _r else []
+        _min = date.today() - timedelta(days=FENETRE_JOURS)
+        for _a in _actes:
+            if _a.get("typologie") not in TYPOLOGIES:
+                continue
+            _p = _a.get("date_publication", "")[:10]
+            _dans = _p and date.fromisoformat(_p) >= _min
+            print(f"{'RETENU ' if _dans else '  hors '} {_p}  {_lisible(_a.get('objet', ''))[:78]}")
+    else:
+        run()

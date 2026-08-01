@@ -3,7 +3,7 @@
     "last_updated": "2026-07-14",
     "source_principale": "Transcriptions YouTube (Ville de Bruz) + Bruz Mag n°260 + délibérations Mégalis",
     "youtube": "https://www.youtube.com/playlist?list=PLnSe2hJFinqpupninWlKBHSmzmwLW-8i7",
-    "deliberations_megalis": "https://data.megalis.bretagne.bzh/organization/commune-de-bruz",
+    "deliberations_megalis": "https://data.megalis.bretagne.bzh/?siren=213500473",
     "derniere_semaine_bruz": 858,
     "dernier_bruz_mag": 259
   },
@@ -623,7 +623,7 @@
         },
         {
           "label": "Délibérations Mégalis Bretagne — Commune de Bruz 2026",
-          "url": "https://data.megalis.bretagne.bzh/organization/commune-de-bruz"
+          "url": "https://data.megalis.bretagne.bzh/?siren=213500473"
         }
       ]
     },
@@ -849,7 +849,7 @@
           "url": "https://youtu.be/52ALytkTry0"
         }
       ],
-      "deliberations_url": "https://data.megalis.bretagne.bzh/organization/commune-de-bruz",
+      "deliberations_url": "https://data.megalis.bretagne.bzh/?siren=213500473",
       "source_label": "Ville de Bruz — YouTube",
       "date_publication": "2026-03-12",
       "id": "CM-2026-03-09",
@@ -945,7 +945,7 @@
           "url": "https://youtu.be/V18APiHT924"
         }
       ],
-      "deliberations_url": "https://data.megalis.bretagne.bzh/organization/commune-de-bruz",
+      "deliberations_url": "https://data.megalis.bretagne.bzh/?siren=213500473",
       "source_label": "Ville de Bruz — YouTube",
       "date_publication": "2025-12-19",
       "id": "CM-2025-12-15",
@@ -1069,7 +1069,7 @@
           "url": "https://youtu.be/2g1KzIc9g-8"
         }
       ],
-      "deliberations_url": "https://data.megalis.bretagne.bzh/organization/commune-de-bruz",
+      "deliberations_url": "https://data.megalis.bretagne.bzh/?siren=213500473",
       "source_label": "Ville de Bruz — YouTube",
       "date_publication": "2025-11-29",
       "id": "CM-2025-11-24",
@@ -1188,7 +1188,7 @@
           "url": "https://youtu.be/909eVdTl6LA"
         }
       ],
-      "deliberations_url": "https://data.megalis.bretagne.bzh/organization/commune-de-bruz",
+      "deliberations_url": "https://data.megalis.bretagne.bzh/?siren=213500473",
       "source_label": "Ville de Bruz — YouTube",
       "date_publication": "2025-10-14",
       "id": "CM-2025-10-13",
@@ -1325,7 +1325,7 @@
           "url": "https://youtu.be/sUa9mrL8DGM"
         }
       ],
-      "deliberations_url": "https://data.megalis.bretagne.bzh/organization/commune-de-bruz",
+      "deliberations_url": "https://data.megalis.bretagne.bzh/?siren=213500473",
       "source_label": "Ville de Bruz — YouTube",
       "date_publication": "2025-09-25",
       "id": "CM-2025-09-22",
@@ -1431,7 +1431,7 @@
           "url": "https://youtu.be/2VIBj3YqgJI"
         }
       ],
-      "deliberations_url": "https://data.megalis.bretagne.bzh/organization/commune-de-bruz",
+      "deliberations_url": "https://data.megalis.bretagne.bzh/?siren=213500473",
       "source_label": "Ville de Bruz — YouTube",
       "date_publication": "2025-07-08",
       "id": "CM-2025-06-30",
@@ -1483,7 +1483,7 @@
           "url": "https://youtu.be/lik0KmeQ16A"
         }
       ],
-      "deliberations_url": "https://data.megalis.bretagne.bzh/organization/commune-de-bruz",
+      "deliberations_url": "https://data.megalis.bretagne.bzh/?siren=213500473",
       "source_label": "Ville de Bruz — YouTube",
       "date_publication": "2025-06-03",
       "id": "CM-2025-06-02",
@@ -1565,7 +1565,7 @@
           "url": "https://youtu.be/N2VUQhM4XG4"
         }
       ],
-      "deliberations_url": "https://data.megalis.bretagne.bzh/organization/commune-de-bruz",
+      "deliberations_url": "https://data.megalis.bretagne.bzh/?siren=213500473",
       "source_label": "Ville de Bruz — YouTube",
       "date_publication": "2025-04-02",
       "id": "CM-2025-03-31",
@@ -1775,7 +1775,7 @@
           "url": "https://youtu.be/YqD9sOGF90g"
         }
       ],
-      "deliberations_url": "https://data.megalis.bretagne.bzh/organization/commune-de-bruz",
+      "deliberations_url": "https://data.megalis.bretagne.bzh/?siren=213500473",
       "source_label": "Ville de Bruz — YouTube",
       "date_publication": "2025-03-05",
       "id": "CM-2025-03-03",
@@ -1874,7 +1874,7 @@
           "url": "https://youtu.be/PKsgJCAyu5A"
         }
       ],
-      "deliberations_url": "https://data.megalis.bretagne.bzh/organization/commune-de-bruz",
+      "deliberations_url": "https://data.megalis.bretagne.bzh/?siren=213500473",
       "source_label": "Ville de Bruz — YouTube",
       "date_publication": "2025-02-06",
       "id": "CM-2025-01-27",

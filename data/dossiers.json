@@ -245,7 +245,7 @@
         {
           "date": "2025-12-15",
           "description": "CM Bruz : vote de la création officielle de la ZAC Multisites",
-          "source_url": "https://data.megalis.bretagne.bzh/organization/commune-de-bruz"
+          "source_url": "https://data.megalis.bretagne.bzh/?siren=213500473"
         },
         {
           "date": "2026-02-05",
@@ -264,7 +264,7 @@
         },
         {
           "label": "Open data Mégalis — délibérations Bruz",
-          "url": "https://data.megalis.bretagne.bzh/organization/commune-de-bruz"
+          "url": "https://data.megalis.bretagne.bzh/?siren=213500473"
         },
         {
           "label": "Baud-Chardonnet — chiffres clés du projet urbain (35 ha, 2 580 logements)",
@@ -302,7 +302,7 @@
           "date": "2026-05-18",
           "titre": "Séance de mai 2026 — cantine, foncier ZAC, vie sociale",
           "detail": "Restauration scolaire — garantie ville de 900 000 € pour la nouvelle cantine OGEC Saint-Rose de Lima (projet à horizon 2027-2028) ; saturation actuelle : 500 convives pour 284 places au Verbisson | Foncier ZAC — acquisition 12 rue de la Noé (608 m², maison 115 m²) pour 345 000 €, réserve foncière re",
-          "source_url": "https://data.megalis.bretagne.bzh/organization/commune-de-bruz",
+          "source_url": "https://data.megalis.bretagne.bzh/?siren=213500473",
           "source_label": "Délibérations Mégalis Bretagne — Commune de Bruz 2026"
         },
         {
@@ -471,12 +471,12 @@
         {
           "date": "2024-02-21",
           "description": "Adoption du Compte Financier Unique 2023 — premier CFU de Bruz (expérimentation nationale). Excédent de fonctionnement : 7,5 M€. Aucun nouvel emprunt contracté.",
-          "source_url": "https://data.megalis.bretagne.bzh/organization/commune-de-bruz"
+          "source_url": "https://data.megalis.bretagne.bzh/?siren=213500473"
         },
         {
           "date": "2025-12-15",
           "description": "Vote du budget 2025 (CM décembre) — séance incluant également le vote ZAC Multisites",
-          "source_url": "https://data.megalis.bretagne.bzh/organization/commune-de-bruz"
+          "source_url": "https://data.megalis.bretagne.bzh/?siren=213500473"
         }
       ],
       "ce_quon_suit": [
@@ -801,7 +801,7 @@
         {
           "date": "2024",
           "description": "CM sous Philippe Salmon : vote de la hausse TFB de 41,84 % à 45,34 % (+3,5 points)",
-          "source_url": "https://data.megalis.bretagne.bzh/organization/commune-de-bruz"
+          "source_url": "https://data.megalis.bretagne.bzh/?siren=213500473"
         },
         {
           "date": "2026-03-09",
@@ -935,7 +935,7 @@
         },
         {
           "label": "Open data Mégalis — délibérations Bruz",
-          "url": "https://data.megalis.bretagne.bzh/organization/commune-de-bruz"
+          "url": "https://data.megalis.bretagne.bzh/?siren=213500473"
         },
         {
           "label": "detaxe-fonciere.fr — comparaison taux TFB 2025 Ille-et-Vilaine",
@@ -1100,7 +1100,7 @@
         },
         {
           "label": "Mégalis Bretagne — Liste des délibérations adoptées, CM du 03/07/2026 (détail des votes)",
-          "url": "https://data.megalis.bretagne.bzh/organization/commune-de-bruz"
+          "url": "https://data.megalis.bretagne.bzh/?siren=213500473"
         },
         {
           "label": "Je participe Bruz — plateforme de participation citoyenne (projets, comité mobilités, comité piétons-vélos)",
@@ -1682,12 +1682,12 @@
         {
           "date": "2026-07-03",
           "description": "Délib. 26-07-9 — Marché de travaux du 4e groupe scolaire Ker Lann Sud (école primaire 14 classes, ALSH 115 places, restauration) : avenants d'ajustement de chantier votés sur 5 lots (~31 400 € HT). Coût total travaux : 8,11 M€ TTC",
-          "source_url": "https://data.megalis.bretagne.bzh/organization/commune-de-bruz"
+          "source_url": "https://data.megalis.bretagne.bzh/?siren=213500473"
         },
         {
           "date": "2026-07-03",
           "description": "Délib. 26-07-29 — Mesures de carte scolaire rentrée 2026-2027 : retrait d'un poste à Vert Buisson et d'un poste à Champ l'Évêque (décision Inspection Académique 35, sans impact annoncé sur la capacité d'accueil)",
-          "source_url": "https://data.megalis.bretagne.bzh/organization/commune-de-bruz"
+          "source_url": "https://data.megalis.bretagne.bzh/?siren=213500473"
         }
       ],
       "ce_quon_suit": [
@@ -1727,7 +1727,7 @@
         },
         {
           "label": "Mégalis Bretagne — Délib. 26-07-9 (marché travaux Ker Lann Sud) et 26-07-29 (carte scolaire 2026-2027), CM du 03/07/2026",
-          "url": "https://data.megalis.bretagne.bzh/organization/commune-de-bruz"
+          "url": "https://data.megalis.bretagne.bzh/?siren=213500473"
         }
       ],
       "actus_recentes": [
@@ -1897,7 +1897,7 @@
         },
         {
           "label": "Open data Mégalis — délibérations Bruz",
-          "url": "https://data.megalis.bretagne.bzh/organization/commune-de-bruz"
+          "url": "https://data.megalis.bretagne.bzh/?siren=213500473"
         },
         {
           "label": "Unidivers — Rennes Métropole, programme et avenir du Manoir de la Noë (concertation 9 juillet 2026)",
@@ -2191,7 +2191,7 @@
           "date": "2026-05-18",
           "titre": "Séance de mai 2026 — cantine, foncier ZAC, vie sociale",
           "detail": "Restauration scolaire — garantie ville de 900 000 € pour la nouvelle cantine OGEC Saint-Rose de Lima (projet à horizon 2027-2028) ; saturation actuelle : 500 convives pour 284 places au Verbisson | Foncier ZAC — acquisition 12 rue de la Noé (608 m², maison 115 m²) pour 345 000 €, réserve foncière re",
-          "source_url": "https://data.megalis.bretagne.bzh/organization/commune-de-bruz",
+          "source_url": "https://data.megalis.bretagne.bzh/?siren=213500473",
           "source_label": "Délibérations Mégalis Bretagne — Commune de Bruz 2026"
         },
         {
@@ -2742,7 +2742,7 @@
         },
         {
           "label": "Mégalis Bretagne — actes et délibérations, commune de Bruz",
-          "url": "https://data.megalis.bretagne.bzh/organization/commune-de-bruz"
+          "url": "https://data.megalis.bretagne.bzh/?siren=213500473"
         }
       ],
       "actus_recentes": [],
