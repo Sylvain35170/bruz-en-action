@@ -20,10 +20,31 @@ CONTENT_HASHES_FILE = PROPOSALS_DIR / "content_hashes.json"
 HEADERS = {"User-Agent": "BruzEnAction-CitoyenBot/1.0 (contact: sylv.bertrand@gmail.com)"}
 
 
+_ERRORS: list[str] = []
+
+
 def log(msg: str, level: str = "INFO") -> None:
     ts = datetime.now().strftime("%H:%M:%S")
     icons = {"INFO": "·", "OK": "✅", "WARN": "⚠️", "ERR": "❌", "NEW": "🆕"}
+    if level == "ERR":
+        _ERRORS.append(msg)
     print(f"[{ts}] {icons.get(level, '·')}  {msg}", flush=True)
+
+
+def errors_logged() -> list[str]:
+    """Erreurs journalisées depuis le dernier reset_errors().
+
+    Un agent qui échoue proprement (log ERR + return False) est indiscernable
+    d'un agent qui n'a rien trouvé : les deux renvoient False. L'orchestrateur
+    s'appuie donc sur ce compteur pour distinguer « rien de nouveau » de
+    « en panne » — c'est ce qui a laissé le mailer muet 7 jours en juillet 2026.
+    """
+    return list(_ERRORS)
+
+
+def reset_errors() -> None:
+    """Vide le journal d'erreurs — appelé avant chaque agent."""
+    _ERRORS.clear()
 
 
 def today() -> str:
@@ -150,6 +171,25 @@ def known_urls() -> set[str]:
     )
 
 
+def known_ids() -> set[str]:
+    """IDs déjà connus : actus publiées + queue + registre proposals.
+
+    Complément indispensable à known_urls() : une URL n'est pas toujours stable.
+    Google News redirige vers consent.google.com avec un jeton `escs=` régénéré à
+    chaque requête — l'URL ne matche donc jamais, et l'item repart en queue à
+    chaque run (constaté le 2026-08-01). Le `stable_id`, lui, est calculé sur le
+    lien RSS et ne bouge pas : c'est le seul critère de dédup fiable.
+    """
+    actus = load_json(DATA_DIR / "actus.json")
+    queue = load_json(QUEUE_FILE)
+    registry = load_registry()
+    return (
+        {a.get("id", "") for a in actus.get("actus", [])} |
+        {i.get("id", "") for i in queue.get("items", [])} |
+        {i.get("id", "") for i in registry.get("items", [])}
+    ) - {""}
+
+
 def published_actus() -> list[tuple[str, str]]:
     """(titre, source_url) de chaque actu déjà publiée dans data/actus.json."""
     actus = load_json(DATA_DIR / "actus.json")
@@ -176,12 +216,19 @@ def append_to_queue(new_items: list[dict]) -> int:
     queue = load_json(QUEUE_FILE)
     items = queue.get("items", [])
     existing = {i.get("source_url", "") for i in items}
+    existing_ids = {i.get("id", "") for i in items} - {""}
     added = 0
     for item in new_items:
         url = item.get("source_url", "")
+        item_id = item.get("id", "")
+        # Dédup sur l'id d'abord : une URL peut varier d'un run à l'autre, pas l'id.
+        if item_id and item_id in existing_ids:
+            continue
         if url and url not in existing:
             items.append(item)
             existing.add(url)
+            if item_id:
+                existing_ids.add(item_id)
             added += 1
     if added:
         QUEUE_FILE.write_text(

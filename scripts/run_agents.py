@@ -15,7 +15,7 @@ from datetime import datetime
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
-from utils import ROOT, log, git_commit_push
+from utils import ROOT, errors_logged, git_commit_push, log, reset_errors
 
 RUN_DIR  = Path.home() / ".shared-context" / "agent_runs"
 LOG_FILE = Path(__file__).parent / "veille.log"
@@ -66,11 +66,17 @@ def main() -> None:
 
     for name, module_path in AGENTS:
         log(f"\n── Agent {name} ──────────────────────────")
+        reset_errors()
         try:
             import importlib
             mod = importlib.import_module(module_path)
             updated = mod.run()
-            if updated:
+            errs = errors_logged()
+            if errs:
+                # L'agent a échoué sans lever : ne surtout pas le compter en succès.
+                agent_steps[name] = f"❌ {errs[0]}"
+                log(f"Agent {name} : EN ERREUR — {errs[0]}", "ERR")
+            elif updated:
                 any_updated = True
                 agent_steps[name] = "✅ mis à jour"
                 log(f"Agent {name} : données mises à jour.", "OK")
@@ -85,12 +91,22 @@ def main() -> None:
         time.sleep(1)  # politesse entre agents
 
     log("\n── Bilan ──────────────────────────────────")
+    en_erreur = [n for n, s in agent_steps.items() if s.startswith("❌")]
+    if en_erreur:
+        log(f"{len(en_erreur)} agent(s) en erreur : {', '.join(en_erreur)}", "ERR")
+
     if any_updated:
-        log("Données collectées et propositions envoyées.", "OK")
+        log("Données collectées.", "OK")
         log("En attente de revue humaine → push après validation dans Claude Code.")
         agent_steps["push"] = "⏳ en attente revue"
     else:
         log("Aucune donnée nouvelle — rien à faire.")
+
+    # Le bilan ne doit jamais affirmer un envoi qui n'a pas eu lieu.
+    if "Mailer" in en_erreur:
+        log("Notification NON envoyée — les propositions restent dans le registre.", "ERR")
+    elif agent_steps.get("Mailer") == "✅ mis à jour":
+        log("Notification envoyée.", "OK")
 
     elapsed = (datetime.now() - start).seconds
     log(f"Terminé en {elapsed}s.")

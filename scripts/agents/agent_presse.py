@@ -16,7 +16,7 @@ from pathlib import Path
 from xml.etree import ElementTree
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
-from utils import DATA_DIR, fetch, load_json, log, save_json, stable_id, today, dedup, known_urls, append_to_queue
+from utils import DATA_DIR, fetch, load_json, log, save_json, stable_id, today, dedup, known_ids, known_urls, append_to_queue
 
 AGENT_NAME = "presse"
 
@@ -56,6 +56,25 @@ FENETRE_JOURS = 7
 HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; BruzEnAction/1.0)"}
 
 
+CONSENT_HOSTS = ("consent.google.com", "consent.youtube.com")
+
+
+def _sans_mur_consentement(final: str, origine: str) -> str:
+    """Renvoie une URL exploitable, jamais un mur de consentement Google.
+
+    Depuis la France, résoudre un lien Google News aboutit à
+    `consent.google.com/ml?continue=<lien d'origine>&…&escs=<jeton>`. Ce jeton est
+    régénéré à chaque requête : stocker cette URL rend l'item indédupliquable (il
+    repart en queue à chaque run) et publie un lien qui envoie le lecteur sur un
+    écran de consentement au lieu de l'article. Le paramètre `continue` ne rend
+    que le lien d'origine — il n'y a donc rien à gagner à suivre le redirect.
+    """
+    if not any(h in final for h in CONSENT_HOSTS):
+        return final
+    suite = _urlparse.parse_qs(_urlparse.urlparse(final).query).get("continue", [""])[0]
+    return suite or origine
+
+
 def _resolve_url(url: str) -> str:
     """Suit le redirect Google News pour stocker l'URL finale de l'article."""
     if "news.google.com" not in url:
@@ -63,7 +82,7 @@ def _resolve_url(url: str) -> str:
     try:
         import requests
         r = requests.head(url, allow_redirects=True, timeout=6, headers=HEADERS)
-        final = r.url
+        final = _sans_mur_consentement(r.url, url)
         # Garder le redirect Google News si la résolution échoue (URL inchangée)
         return final if final != url else url
     except Exception:
@@ -140,6 +159,7 @@ def parse_rss(content: bytes, label: str) -> list[dict]:
 
 def run() -> bool:
     existing = known_urls()
+    existing_ids = known_ids()
     nouvelles = []
 
     # RSS
@@ -150,9 +170,12 @@ def run() -> bool:
             continue
         items = parse_rss(r.content, src["label"])
         for item in items:
+            if item["id"] in existing_ids:
+                continue
             if item["source_url"] not in existing:
                 nouvelles.append(item)
                 existing.add(item["source_url"])
+                existing_ids.add(item["id"])
                 log(f"  🆕 {item['titre'][:70]}", "NEW")
 
     # Web scraping (fallback)
