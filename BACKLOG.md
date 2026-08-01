@@ -32,6 +32,8 @@
 - [ ] **D23 (Démocratie locale)** — créé le 17/07 (pilier 7, 5 promesses D1-D5 toutes non_commence) : suivre toute délibération créant CMJ/Conseil des sages ou désignant des référents de quartier
 - [ ] **D11 (Manoir de la Noë)** — résultat de la concertation citoyenne « Nos Lieux Communs » du 9 juillet 2026 (usage de la partie non occupée du bâtiment/terrain) pas encore public — à suivre
 
+- [ ] **Pas de page agenda : 40 événements sur 44 sont invisibles** — `evenements.json` compte 44 événements à venir, mais la homepage n'en affiche que les 4 prochains (`slice(0, 4)`, `app/page.tsx`) et **aucune route `/agenda` n'existe**. Conséquence constatée le 01/08 : le Marché de Noël (5-6 décembre, ajouté en saisie manuelle) est au rang 41/44 et ne sera visible que fin novembre. Basculer une information en agenda revient donc aujourd'hui à l'archiver. À trancher : créer une page `/agenda` listant tout, ou assumer que l'agenda n'est qu'un aperçu et le dire.
+
 ## 🟡 À faire — Design & Illustrations
 
 - [ ] **Illustration `/histoire`** — page livrée sans image dédiée, à ajouter si besoin
