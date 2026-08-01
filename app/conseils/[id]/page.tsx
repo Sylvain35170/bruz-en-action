@@ -236,7 +236,7 @@ export default async function SeancePage({ params }: { params: Promise<{ id: str
               </h3>
               <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
                 <a href="https://www.ville-bruz.fr/ma-ville-de-bruz/conseil-municipal/conseil-municipal/" target="_blank" rel="noopener noreferrer" style={{ fontSize: 13, color: "#2563eb" }}>🏛️ Délibérations officielles ↗</a>
-                <a href="https://data.megalis.bretagne.bzh/organization/commune-de-bruz" target="_blank" rel="noopener noreferrer" style={{ fontSize: 13, color: "#2563eb" }}>📂 Open data Mégalis ↗</a>
+                <a href="https://data.megalis.bretagne.bzh/?siren=213500473" target="_blank" rel="noopener noreferrer" style={{ fontSize: 13, color: "#2563eb" }}>📂 Open data Mégalis ↗</a>
                 <a href="https://www.youtube.com/playlist?list=PLnSe2hJFinqpupninWlKBHSmzmwLW-8i7" target="_blank" rel="noopener noreferrer" style={{ fontSize: 13, color: "#2563eb" }}>▶ Séances audio YouTube ↗</a>
                 <a href="https://www.ville-bruz.fr/bruz-mag/" target="_blank" rel="noopener noreferrer" style={{ fontSize: 13, color: "#2563eb" }}>📰 Bruz Mag (bimestriel) ↗</a>
                 <a href="https://www.lasemainedanslebocage.fr/communes/bruz" target="_blank" rel="noopener noreferrer" style={{ fontSize: 13, color: "#2563eb" }}>🗞️ La Semaine dans le Bocage ↗</a>

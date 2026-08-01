@@ -34,7 +34,7 @@ const SECTIONS = [
     icon: "🌐",
     liens: [
       { label: "Site Rennes Métropole", url: "https://metropole.rennes.fr/", desc: "Compétences : T4, PLUiH, eau, déchets…" },
-      { label: "Open data Mégalis — délibérations Bruz", url: "https://data.megalis.bretagne.bzh/organization/commune-de-bruz", desc: "Toutes les délibérations officielles de Bruz en open data" },
+      { label: "Open data Mégalis — délibérations Bruz", url: "https://data.megalis.bretagne.bzh/?siren=213500473", desc: "Toutes les délibérations officielles de Bruz en open data" },
       { label: "Facebook Rennes Métropole", url: "https://www.facebook.com/metropole.rennes", desc: "Rennes Ville et Métropole" },
     ],
   },

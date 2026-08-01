@@ -561,7 +561,7 @@ export default async function DossierPage({ params }: { params: Promise<{ id: st
               </h3>
               <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
                 <a href="https://www.ville-bruz.fr/" target="_blank" rel="noopener noreferrer" style={{ fontSize: 13, color: "#2563eb" }}>Ville de Bruz ↗</a>
-                <a href="https://data.megalis.bretagne.bzh/organization/commune-de-bruz" target="_blank" rel="noopener noreferrer" style={{ fontSize: 13, color: "#2563eb" }}>Open data Mégalis ↗</a>
+                <a href="https://data.megalis.bretagne.bzh/?siren=213500473" target="_blank" rel="noopener noreferrer" style={{ fontSize: 13, color: "#2563eb" }}>Open data Mégalis ↗</a>
                 <a href="https://www.youtube.com/playlist?list=PLnSe2hJFinqpupninWlKBHSmzmwLW-8i7" target="_blank" rel="noopener noreferrer" style={{ fontSize: 13, color: "#2563eb" }}>CMs audio YouTube ↗</a>
               </div>
             </div>

@@ -371,6 +371,25 @@ def validate_urls_interdites() -> None:
         check_urls_interdites(data, path.name)
 
 
+def validate_urls_interdites_source() -> None:
+    """Les mêmes URLs interdites, mais câblées en dur dans les pages.
+
+    Contrôler `data/` ne suffit pas : les 4 dernières occurrences du lien
+    Mégalis mort étaient écrites directement dans le TSX, invisibles pour un
+    contrôle des seules données — et elles ont survécu à la correction des
+    28 occurrences côté data (constaté en production le 2026-08-01).
+    """
+    app_dir = DATA_DIR.parent / "app"
+    if not app_dir.exists():
+        return
+    for path in sorted(app_dir.rglob("*.tsx")):
+        texte = path.read_text(encoding="utf-8")
+        for motif, raison in URL_INTERDITES.items():
+            if motif in texte:
+                rel = path.relative_to(DATA_DIR.parent)
+                err(f"{rel} : URL interdite «{motif}» câblée en dur — {raison}")
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--verbose", action="store_true")
@@ -388,6 +407,7 @@ def main() -> None:
     validate_parse_only()
     validate_liens_nav()
     validate_urls_interdites()
+    validate_urls_interdites_source()
 
     if warnings and args.verbose:
         print(f"⚠️  {len(warnings)} warning(s) :")
