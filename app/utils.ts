@@ -10,6 +10,50 @@ export const NIVEAU_CONFIG: Record<string, { label: string; couleur: string }> =
 };
 
 /**
+ * Thèmes de l'agenda (/agenda).
+ *
+ * Le champ `categorie` d'evenements.json est le tag brut scrapé sur le site de
+ * la mairie : 15 valeurs pour 44 événements, avec des doublons sémantiques
+ * (Association / Vie associative) et un nom de série pris pour une catégorie
+ * (Des Places et Vous). Le regroupement vit donc **dans le code** et pas dans
+ * les données : `agent_agenda` réécrit les événements à chaque scraping, un
+ * champ ajouté à la main y serait perdu au run suivant.
+ */
+export const THEMES_AGENDA: { id: string; label: string; couleur: string; tags: string[] }[] = [
+  { id: "culture",     label: "Culture & spectacles",    couleur: "#7c3aed",
+    tags: ["Théâtre", "Concert", "Spectacle", "Exposition", "Culture"] },
+  { id: "rencontres",  label: "Rencontres & citoyenneté", couleur: "#2563eb",
+    tags: ["Rencontre", "Des Places et Vous"] },
+  { id: "mediatheque", label: "Médiathèque",             couleur: "#0891b2",
+    tags: ["Médiathèque"] },
+  { id: "solidarite",  label: "Solidarité & entraide",   couleur: "#059669",
+    tags: ["Solidarité"] },
+  { id: "ateliers",    label: "Ateliers",                couleur: "#d97706",
+    tags: ["Atelier"] },
+  { id: "associatif",  label: "Vie associative",         couleur: "#db2777",
+    tags: ["Association", "Vie associative"] },
+  { id: "vie_locale",  label: "Vie locale & commerce",   couleur: "#ea580c",
+    tags: ["Braderie", "Vie locale", "Marché"] },
+  { id: "sport",       label: "Sport",                   couleur: "#16a34a",
+    tags: ["Sport", "Sport & Handisport"] },
+  // Bac de secours obligatoire : sans lui, un tag inconnu ferait disparaître
+  // l'événement de toutes les sections sans la moindre erreur — c'est le défaut
+  // constaté sur /coup-de-pouce le 2026-07-28.
+  { id: "autres",      label: "Autres rendez-vous",      couleur: "#64748b", tags: [] },
+];
+
+/** Thème d'un événement d'après son tag mairie. Jamais null : repli sur « autres ». */
+export function themeEvenement(categorie?: string | null): string {
+  if (categorie) {
+    const t = THEMES_AGENDA.find(th => th.tags.some(
+      tag => tag.toLowerCase() === categorie.trim().toLowerCase()
+    ));
+    if (t) return t.id;
+  }
+  return "autres";
+}
+
+/**
  * Fiche minimum d'un dossier publié (audit A5) : une illustration et au moins
  * 4 faits sourcés. En dessous du seuil, le dossier porte un badge
  * « Dossier en construction » sur /dossiers et /dossiers/[id].

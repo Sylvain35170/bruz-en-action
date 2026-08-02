@@ -66,6 +66,7 @@ export default function SiteFooter() {
               { href: "/bruz-en-action/chronologie", label: "Chronologie" },
               { href: "/bruz-en-action/metropole", label: "Rennes Métropole" },
               { href: "/bruz-en-action/publications", label: "Publications" },
+              { href: "/bruz-en-action/agenda", label: "Agenda" },
               { href: "/bruz-en-action/liens", label: "Liens utiles" },
             ].map(({ href, label }) => (
               <a key={href} href={href}
