@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-01",
+    "last_updated": "2026-08-14",
     "version": "3.0"
   },
   "dossiers": [
@@ -1004,7 +1004,7 @@
       "categorie": "Urbanisme",
       "statut": "en_cours",
       "featured": true,
-      "last_activity": "2026-07-17",
+      "last_activity": "2026-08-12",
       "date_ouverture": "2026-06-16",
       "chapeau": "Carte interactive de Bruz, recensement des chantiers en cours (qui creuse où, jusqu'à quand) et veille sur les projets d'urbanisme qui ne rentrent pas déjà dans un dossier dédié (hors ZAC Multisites, voir D02, hors Trambus T4, voir D01) : évolutions de quartier, permis groupés, équipements publics annoncés, travaux de voirie.",
       "ce_quon_sait": [
@@ -1109,6 +1109,20 @@
       ],
       "lien_externe": "/bruz-en-action/carte",
       "actus_recentes": [
+        {
+          "date": "2026-08-12",
+          "titre": "Trois parcours vélo pour découvrir Bruz et son patrimoine",
+          "detail": "La mairie de Bruz met en place trois parcours à vélo permettant aux Bruzois et aux Bruzoises de découvrir le patrimoine local et les atouts de la commune. Cette initiative s'inscrit dans une politique municipale de mobilité douce et de valorisation du territoire bruzois.",
+          "source_url": "https://www.ville-bruz.fr/actualites/trois-parcours-velo-pour-decouvrir-bruz-et-son-patrimoine/",
+          "source_label": "Mairie de Bruz — Actualités"
+        },
+        {
+          "date": "2026-08-12",
+          "titre": "Bruz. La circulation est interdite sur le halage pour tous les usagers",
+          "detail": "La mairie de Bruz a décidé d'interdire la circulation sur le halage, l'accès pour l'ensemble des usagers. Cette mesure s'applique à cette voie stratégique de la commune bruzoise longeant le cours d'eau.",
+          "source_url": "https://www.ouest-france.fr/bretagne/bruz-35170/bruz-la-circulation-est-interdite-sur-le-halage-pour-tous-les-usagers-bde963e8-5ea5-4b38-8e45-4cb3b2c38e26",
+          "source_label": "Ouest-France"
+        },
         {
           "date": "2026-07-15",
           "titre": "La place du Vert Buisson devient la place Robert Barré",
@@ -1763,6 +1777,13 @@
           "source_url_expiree": true
         },
         {
+          "date": "2026-05-18",
+          "titre": "Garantie d'emprunt accordée à l'OGEC Saint-Théodore-Guérin",
+          "detail": "La commune de Bruz a délibéré le 18 mai 2026 sur une garantie d'emprunt en faveur de l'Ogec Saint-Théodore-Guérin. Cette délibération relève du soutien municipal aux établissements d'enseignement privé.",
+          "source_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1179508/a105629d9bede484c6f302f3a50d4cb51a12da5fcb453bd62472b6cb08efaf0a.pdf",
+          "source_label": "Mégalis — Délibération"
+        },
+        {
           "date": "2026-05-01",
           "titre": "Bruz Mag confirme la nouvelle équipe municipale et ses délégations",
           "detail": "Le numéro de mai-juin 2026 du magazine municipal détaille l'organigramme des 9 adjoints. Françoise Lotton (9e adjointe) est confirmée en charge d'Éducation, Enfance et Jeunesse — élément qui manquait au dossier depuis l'installation du conseil en avril.",
@@ -2057,7 +2078,7 @@
       "categorie": "Environnement",
       "statut": "en_cours",
       "featured": true,
-      "last_activity": "2026-07-31",
+      "last_activity": "2026-08-12",
       "date_ouverture": "2026-06-21",
       "chapeau": "Avec des étés de plus en plus chauds, Bruz doit adapter ses équipements, ses espaces publics et son plan de crise. Îlots de fraîcheur, populations vulnérables, végétalisation, piscine Conterie, bâtiments communaux : ce que la commune fait — et ce qu'elle ne fait pas encore.",
       "ce_quon_sait": [
@@ -2130,6 +2151,13 @@
         }
       ],
       "actus_recentes": [
+        {
+          "date": "2026-08-12",
+          "titre": "Risque d'incendie : les règles à respecter en Ille-et-Vilaine",
+          "detail": "La commune de Bruz relaye les recommandations de prévention des incendies applicables en Ille-et-Vilaine pendant la période estivale. Cet article sensibilise les habitants aux risques saisonniers et aux mesures de sécurité essentielles.",
+          "source_url": "https://www.ville-bruz.fr/actualites/risque-dincendie-les-regles-a-respecter-en-ille-et-vilaine/",
+          "source_label": "Mairie de Bruz — Actualités"
+        },
         {
           "date": "2026-07-31",
           "titre": "Risque d'incendie : l'accès aux massifs forestiers interdit la nuit",
@@ -2472,8 +2500,8 @@
       "titre": "Économie locale à Bruz : commerce, artisanat et zones d'activité",
       "categorie": "Économie",
       "statut": "en_cours",
-      "featured": false,
-      "last_activity": "2026-07-17",
+      "featured": true,
+      "last_activity": "2026-08-12",
       "date_ouverture": "2026-07-04",
       "chapeau": "Bruz compte 3 zones d'activité économique, un marché centenaire et plus de 3 000 entreprises enregistrées. La nouvelle municipalité a nommé un adjoint dédié à la vie économique et promet de soutenir le commerce de proximité. Ce dossier suit ce pilier du programme — jusqu'ici sans aucune couverture sur le site.",
       "ce_quon_sait": [
@@ -2544,7 +2572,15 @@
           "url": "https://www.ville-bruz.fr/wp-content/uploads/2026/05/Bruz-Mag-n%C2%B0260-de-mai-juin-2026.pdf"
         }
       ],
-      "actus_recentes": [],
+      "actus_recentes": [
+        {
+          "date": "2026-08-12",
+          "titre": "Bruz. Elle organise vos prochains voyages sur-mesure",
+          "detail": "Lucie Sannier, Bruzoise, crée son agence de voyages « Ulice voyages » sous le statut d'autoentrepreneuse. Après une expérience en grande distribution, elle propose à présent des voyages organisés sur-mesure.",
+          "source_url": "https://www.ouest-france.fr/bretagne/bruz-35170/bruz-elle-organise-vos-prochains-voyages-sur-mesure-db13e733-9e31-45b9-96ed-529baa390332",
+          "source_label": "Ouest-France"
+        }
+      ],
       "promesses_liees": [
         17,
         18,

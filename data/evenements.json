@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-17",
+    "last_updated": "2026-08-13",
     "source": "Ville de Bruz, Grand Logis, Handisport, Les Trans"
   },
   "evenements": [
@@ -31,6 +31,68 @@
       "lien": "https://legrandlogis-bruz.fr/spectacle/week-end-buissonnier-5/",
       "lien_label": "Programme Grand Logis",
       "score": 3
+    },
+    {
+      "id": "E03",
+      "titre": "Forum des associations",
+      "date": "2026-09-06",
+      "categorie": "Vie associative",
+      "organisateur": "Ville de Bruz",
+      "lieu": "Stade Siméon Belliard, Bruz",
+      "note": "Occasion idéale pour faire connaître Bruz en Action",
+      "lien": "http://web.archive.org/web/20250814231912/https://www.ville-bruz.fr/agenda/forum-des-associations/",
+      "lien_label": "Site Ville de Bruz",
+      "score": 3
+    },
+    {
+      "id": "E04",
+      "titre": "Les Foulées Nature Bruzoises",
+      "date": "2026-10-11",
+      "categorie": "Sport",
+      "organisateur": "Foulées Nature Bruzoises",
+      "lieu": "Campus de Ker Lann, Bruz",
+      "note": "",
+      "lien": "https://www.klikego.com/inscription/foulees-bruzoises-2026/course-a-pied-running/1493697833382-10",
+      "lien_label": "Inscriptions Klikego",
+      "score": 3
+    },
+    {
+      "id": "E05",
+      "titre": "Trans Musicales — 48e édition",
+      "date": "2026-12-02",
+      "date_fin": "2026-12-06",
+      "categorie": "Culture",
+      "organisateur": "Association Trans Musicales",
+      "lieu": "Parc Expo + salles, Rennes",
+      "note": "",
+      "lien": "https://www.lestrans.com/actu-festival/rendez-vous-du-2-au-6-decembre-2026/",
+      "lien_label": "Les Trans Musicales",
+      "score": 3
+    },
+    {
+      "id": "E06",
+      "titre": "Téléthon",
+      "date": "2026-12-04",
+      "date_fin": "2026-12-05",
+      "categorie": "Solidarité",
+      "organisateur": "AFM-Téléthon + associations",
+      "lieu": "Bruz",
+      "note": "",
+      "lien": "https://www.telethon.fr/",
+      "lien_label": "AFM-Téléthon",
+      "score": 3
+    },
+    {
+      "id": "E-NOEL-2026",
+      "titre": "Marché de Noël de Bruz 2026",
+      "date": "2026-12-05",
+      "date_fin": "2026-12-06",
+      "categorie": "Vie locale",
+      "organisateur": "Ville de Bruz",
+      "lieu": "Halle couverte, Bruz",
+      "note": "Samedi 5 décembre 10h-19h, dimanche 6 décembre 10h-18h. 40 à 50 exposants sous halle couverte non chauffée, plus quelques emplacements extérieurs pour les stands alimentaires. Appel à candidatures ouvert aux artisans, créateurs et producteurs.",
+      "lien": "https://www.ville-bruz.fr/actualites/marche-de-noel-de-bruz-2026-les-inscriptions-sont-ouvertes/",
+      "lien_label": "Appel à candidatures — Ville de Bruz"
     },
     {
       "id": "agenda-0fd4a621",
@@ -217,6 +279,15 @@
       "source": "agenda_mairie"
     },
     {
+      "id": "agenda-4e225aeb",
+      "titre": "Distribution gratuite de composteurs",
+      "date": "2026-08-24",
+      "categorie": "Mairie",
+      "lien": "https://www.ville-bruz.fr/agenda/distribution-gratuite-de-composteurs/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
       "id": "agenda-db634ddc",
       "titre": "Ciné-goûter « Pois et points »",
       "date": "2026-08-26",
@@ -242,8 +313,7 @@
       "categorie": "Médiathèque",
       "lien": "https://www.ville-bruz.fr/agenda/on-en-parle-5/",
       "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie",
-      "date_fin": "2026-08-29"
+      "source": "agenda_mairie"
     },
     {
       "id": "agenda-4fab6f38",
@@ -273,18 +343,6 @@
       "source": "agenda_mairie"
     },
     {
-      "id": "E03",
-      "titre": "Forum des associations",
-      "date": "2026-09-06",
-      "categorie": "Vie associative",
-      "organisateur": "Ville de Bruz",
-      "lieu": "Stade Siméon Belliard, Bruz",
-      "note": "Occasion idéale pour faire connaître Bruz en Action",
-      "lien": "http://web.archive.org/web/20250814231912/https://www.ville-bruz.fr/agenda/forum-des-associations/",
-      "lien_label": "Site Ville de Bruz",
-      "score": 3
-    },
-    {
       "id": "agenda-4dcfb352",
       "titre": "Concert : A vent sons la musique (Ensemble de cuivres)",
       "date": "2026-09-06",
@@ -303,11 +361,29 @@
       "source": "agenda_mairie"
     },
     {
+      "id": "agenda-b24551cd",
+      "titre": "Sing and Groove : un nouvel ensemble vocal féminin à Bruz",
+      "date": "2026-09-09",
+      "categorie": "Association",
+      "lien": "https://www.ville-bruz.fr/agenda/sing-and-groove-un-nouvel-ensemble-vocal-feminin-a-bruz/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
       "id": "agenda-7835b694",
       "titre": "Histoires au creux des bras",
       "date": "2026-09-12",
       "categorie": "Médiathèque",
       "lien": "https://www.ville-bruz.fr/agenda/histoires-au-creux-des-bras/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-211de9e2",
+      "titre": "Distribution gratuite de composteurs",
+      "date": "2026-09-16",
+      "categorie": "Mairie",
+      "lien": "https://www.ville-bruz.fr/agenda/distribution-gratuite-de-composteurs-3/",
       "lien_label": "Agenda Ville de Bruz",
       "source": "agenda_mairie"
     },
@@ -357,6 +433,15 @@
       "source": "agenda_mairie"
     },
     {
+      "id": "agenda-625d5aad",
+      "titre": "Conseil Municipal",
+      "date": "2026-09-21",
+      "categorie": "Mairie",
+      "lien": "https://www.ville-bruz.fr/agenda/conseil-municipal-dinstallation/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
       "id": "agenda-606ed540",
       "titre": "Apéro BD : des bulles à partager",
       "date": "2026-09-22",
@@ -380,6 +465,15 @@
       "date": "2026-09-30",
       "categorie": "Médiathèque",
       "lien": "https://www.ville-bruz.fr/agenda/lecture-musicale-espace-snoezelen-ephemere/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-ef466c61",
+      "titre": "Sortie nature : construction d’abris à hérisson",
+      "date": "2026-09-30",
+      "categorie": "Atelier",
+      "lien": "https://www.ville-bruz.fr/agenda/sortie-nature-construction-dabris-a-herisson/",
       "lien_label": "Agenda Ville de Bruz",
       "source": "agenda_mairie"
     },
@@ -411,16 +505,22 @@
       "source": "agenda_mairie"
     },
     {
-      "id": "E04",
-      "titre": "Les Foulées Nature Bruzoises",
-      "date": "2026-10-11",
-      "categorie": "Sport",
-      "organisateur": "Foulées Nature Bruzoises",
-      "lieu": "Campus de Ker Lann, Bruz",
-      "note": "",
-      "lien": "https://www.klikego.com/inscription/foulees-bruzoises-2026/course-a-pied-running/1493697833382-10",
-      "lien_label": "Inscriptions Klikego",
-      "score": 3
+      "id": "agenda-ded4907b",
+      "titre": "Distribution gratuite de composteurs",
+      "date": "2026-10-07",
+      "categorie": "Mairie",
+      "lien": "https://www.ville-bruz.fr/agenda/distribution-gratuite-de-composteurs-2/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-6a1edf59",
+      "titre": "Rencontres pour l’emploi",
+      "date": "2026-10-13",
+      "categorie": "Rencontre",
+      "lien": "https://www.ville-bruz.fr/agenda/rencontres-pour-lemploi/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
     },
     {
       "id": "agenda-ede95989",
@@ -504,32 +604,6 @@
       "source": "agenda_mairie"
     },
     {
-      "id": "E05",
-      "titre": "Trans Musicales — 48e édition",
-      "date": "2026-12-02",
-      "date_fin": "2026-12-06",
-      "categorie": "Culture",
-      "organisateur": "Association Trans Musicales",
-      "lieu": "Parc Expo + salles, Rennes",
-      "note": "",
-      "lien": "https://www.lestrans.com/actu-festival/rendez-vous-du-2-au-6-decembre-2026/",
-      "lien_label": "Les Trans Musicales",
-      "score": 3
-    },
-    {
-      "id": "E06",
-      "titre": "Téléthon",
-      "date": "2026-12-04",
-      "date_fin": "2026-12-05",
-      "categorie": "Solidarité",
-      "organisateur": "AFM-Téléthon + associations",
-      "lieu": "Bruz",
-      "note": "",
-      "lien": "https://www.telethon.fr/",
-      "lien_label": "AFM-Téléthon",
-      "score": 3
-    },
-    {
       "id": "agenda-9b42ef89",
       "titre": "Vue",
       "date": "2026-12-04",
@@ -546,18 +620,6 @@
       "lien": "https://www.ville-bruz.fr/agenda/vu/",
       "lien_label": "Agenda Ville de Bruz",
       "source": "agenda_mairie"
-    },
-    {
-      "id": "E-NOEL-2026",
-      "titre": "Marché de Noël de Bruz 2026",
-      "date": "2026-12-05",
-      "date_fin": "2026-12-06",
-      "categorie": "Vie locale",
-      "organisateur": "Ville de Bruz",
-      "lieu": "Halle couverte, Bruz",
-      "note": "Samedi 5 décembre 10h-19h, dimanche 6 décembre 10h-18h. 40 à 50 exposants sous halle couverte non chauffée, plus quelques emplacements extérieurs pour les stands alimentaires. Appel à candidatures ouvert aux artisans, créateurs et producteurs.",
-      "lien": "https://www.ville-bruz.fr/actualites/marche-de-noel-de-bruz-2026-les-inscriptions-sont-ouvertes/",
-      "lien_label": "Appel à candidatures — Ville de Bruz"
     },
     {
       "id": "agenda-38e19f25",
