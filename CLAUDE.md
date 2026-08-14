@@ -146,6 +146,24 @@ Convention pour les liens confirmés morts sans alternative trouvée : ajouter `
 ---
 
 ## Pièges connus
+### 2026-08-14 — expiration figée au build, règle de source coup de pouce
+
+- **En export statique, un filtre sur « aujourd'hui » est évalué au BUILD, pas à la visite.**
+  `/coup-de-pouce` (`date_fin`), la homepage et `/agenda` (événements à venir) sont des
+  composants serveur sans `"use client"` : leur `new Date()` date du dernier build, et
+  `deploy.yml` ne partait que sur `push`. La guinguette CP07 (`date_fin: 2026-08-15`)
+  serait restée affichée comme en cours indéfiniment. Fix : `schedule: cron "17 4 * * *"`
+  dans `deploy.yml`. Le commentaire du code affirmait l'inverse (« l'item disparaît de
+  lui-même ») — un commentaire n'est pas une preuve, le confronter au mode de rendu.
+- **Coup de pouce : pas de source, pas de publication.** Un lien vers un site national ne
+  source pas une antenne locale (CP01 Restos du Cœur retiré, CP02 sans lien retiré).
+  `validate_data` signale ces items en warning — 0 warning = tout est sourcé.
+- **Relire le PDF ne sert pas qu'aux erreurs de colonnes** : `chapeau: corps[:400]` tronque
+  et fait perdre de l'info utile (la cotisation JAB 30 € + 20 € avait sauté).
+- **`review_proposals --dossier` s'applique à tout le lot** — un appel par dossier cible.
+  Et les titres bruts `agent_megalis` sont illisibles (« … — Err — Plume »), à réécrire
+  à la revue.
+
 ### 2026-08-01 — mailer muet 7 jours, boucle de veille Presse, API Mégalis
 
 - **Une app OAuth Google en statut « Testing » révoque son refresh token tous les 7 jours.** `invalid_grant` du 25/07 au 01/08 sur `agent_mailer`, sans rien changer côté code. Reconsentir ne rachète que 7 jours : publier l'app (*Auth Platform → Audience → Publish app* → `In production`). L'écran « app non validée » et le bandeau « requires verification » sont sans conséquence en usage perso. Sur un compte gmail.com, « Make internal » est grisé.
