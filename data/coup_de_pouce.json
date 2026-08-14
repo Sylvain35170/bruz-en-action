@@ -1,37 +1,10 @@
 {
   "meta": {
     "description": "Initiatives locales que Bruz en Action met en lumière — causes, commerces, associations",
-    "last_update": "2026-07-28"
+    "last_update": "2026-07-28",
+    "last_updated": "2026-08-14"
   },
   "items": [
-    {
-      "id": "CP01",
-      "type": "association",
-      "titre": "Les Restos du Cœur de Bruz",
-      "chapeau": "L'antenne bruzoise cherche des bénévoles pour la distribution hebdomadaire du mercredi matin.",
-      "besoin": "bénévoles",
-      "lien": "https://www.restosducoeur.org",
-      "contact": null,
-      "date_ajout": "2026-06-30",
-      "active": true,
-      "telephone": null,
-      "date_fin": null,
-      "source": null
-    },
-    {
-      "id": "CP02",
-      "type": "commerce",
-      "titre": "La Cabane à Vélos",
-      "chapeau": "Nouvel atelier de réparation participatif ouvert en avril 2026 — venez réparer votre vélo avec l'aide de bénévoles mécaniciens.",
-      "besoin": "clients",
-      "lien": null,
-      "contact": null,
-      "date_ajout": "2026-06-30",
-      "active": true,
-      "telephone": null,
-      "date_fin": null,
-      "source": null
-    },
     {
       "id": "CP03",
       "type": "commerce",
@@ -44,7 +17,10 @@
       "active": true,
       "telephone": null,
       "date_fin": null,
-      "source": null
+      "source": {
+        "label": "Site officiel — Les Gamins du Marais",
+        "url": "https://lesgaminsdumarais.fr/"
+      }
     },
     {
       "id": "CP04",
@@ -111,6 +87,40 @@
       "active": true,
       "source": {
         "label": "Semaine à Bruz n°858 — du 9 juillet au 27 août 2026",
+        "url": "https://www.ville-bruz.fr/wp-content/uploads/2026/07/Semaine-a-Bruz-n°858-special-ete-du-9-juillet-au-27-aout-2026.pdf"
+      }
+    },
+    {
+      "id": "CP08",
+      "type": "association",
+      "titre": "Marche nordique — La Jeanne d'Arc de Bruz (JAB)",
+      "chapeau": "Les inscriptions sont ouvertes pour la saison 2026-2027. La marche nordique combine marche, renforcement musculaire et travail cardiovasculaire à faible impact grâce aux bâtons — une activité accessible à presque tout le monde, proposée toute l'année, y compris pendant les vacances scolaires. Cotisation annuelle : 30 € + 20 € d'adhésion à la Jeanne d'Arc.",
+      "besoin": "visibilité",
+      "lien": "https://jabruz.fr/les-activites",
+      "contact": null,
+      "telephone": "06 14 69 29 73",
+      "date_ajout": "2026-08-14",
+      "date_fin": null,
+      "active": true,
+      "source": {
+        "label": "Semaine à Bruz n°858 — du 9 juillet au 27 août 2026 (spécial été)",
+        "url": "https://www.ville-bruz.fr/wp-content/uploads/2026/07/Semaine-a-Bruz-n°858-special-ete-du-9-juillet-au-27-aout-2026.pdf"
+      }
+    },
+    {
+      "id": "CP09",
+      "type": "association",
+      "titre": "Atelier philo — Association Laïque de Bruz (ALB)",
+      "chapeau": "Nouvelle section de l'ALB qui ouvre en septembre : un lieu d'échange et de réflexion ouvert à toutes et à tous, où chacun s'exprime dans le respect des différences de pensée. Aucune connaissance préalable n'est nécessaire. Les thèmes abordés iront du bonheur à la justice ou à l'amitié — rien à réviser, il suffit de venir avec sa curiosité.",
+      "besoin": "visibilité",
+      "lien": null,
+      "contact": "atelierphilo.responsable@albruz.fr",
+      "telephone": null,
+      "date_ajout": "2026-08-14",
+      "date_fin": null,
+      "active": true,
+      "source": {
+        "label": "Semaine à Bruz n°858 — du 9 juillet au 27 août 2026 (spécial été)",
         "url": "https://www.ville-bruz.fr/wp-content/uploads/2026/07/Semaine-a-Bruz-n°858-special-ete-du-9-juillet-au-27-aout-2026.pdf"
       }
     }

@@ -3,6 +3,11 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
+  # Les pages /coup-de-pouce, / et /agenda filtrent sur la date du jour, évaluée
+  # au build puisque l'export est statique. Sans rebuild périodique, un item
+  # échu (`date_fin`) ou un événement passé resterait affiché comme actuel.
+  schedule:
+    - cron: "17 4 * * *"
   workflow_dispatch:
 
 permissions:

@@ -39,9 +39,12 @@ function fmtDate(iso: string) {
 }
 
 export default function CoupDePoucePage() {
-  // `date_fin` retire l'item de lui-même une fois l'échéance passée : une
-  // guinguette d'été ou un appel à bénévoles daté ne restent pas affichés
-  // comme s'ils étaient d'actualité faute d'être repassés à `active: false`.
+  // `date_fin` retire l'item une fois l'échéance passée : une guinguette d'été
+  // ou un appel à bénévoles daté ne restent pas affichés comme s'ils étaient
+  // d'actualité faute d'être repassés à `active: false`.
+  // ⚠️ L'export étant statique, cette date est celle du BUILD, pas de la visite.
+  // C'est le cron quotidien de `deploy.yml` qui fait effectivement expirer
+  // l'item — le retirer supprimerait l'expiration sans rien casser de visible.
   const aujourdhui = new Date().toISOString().slice(0, 10);
   const items = (coupData.items as CoupDePouce[])
     .filter(i => i.active)
