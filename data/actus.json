@@ -1,9 +1,19 @@
 {
   "meta": {
-    "last_updated": "2026-08-14",
+    "last_updated": "2026-08-18",
     "note": "Actus de suivi des promesses — une actu = un événement daté lié à une ou plusieurs promesses"
   },
   "actus": [
+    {
+      "id": "mairie-bd819f99",
+      "titre": "Travaux d'aménagement du boulevard Louis Pasteur",
+      "date": "2026-08-17",
+      "detail": "Des travaux d'aménagement sont engagés sur le boulevard Louis Pasteur à Bruz. Cet aménagement s'inscrit dans les projets de requalification urbaine de la commune bruzaise.",
+      "source_url": "https://www.ville-bruz.fr/actualites/travaux-damenagement-du-boulevard-louis-pasteur/",
+      "source_label": "Mairie de Bruz — Actualités",
+      "type": "mairie",
+      "dossier": "D05"
+    },
     {
       "id": "of-cf6824c3",
       "titre": "Bruz. Elle organise vos prochains voyages sur-mesure",

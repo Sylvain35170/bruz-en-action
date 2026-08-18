@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-14",
+    "last_updated": "2026-08-14",
     "source_principale": "Transcriptions YouTube (Ville de Bruz) + Bruz Mag n°260 + délibérations Mégalis",
     "youtube": "https://www.youtube.com/playlist?list=PLnSe2hJFinqpupninWlKBHSmzmwLW-8i7",
     "deliberations_megalis": "https://data.megalis.bretagne.bzh/?siren=213500473",
@@ -835,13 +835,16 @@
     },
     {
       "date": "2026-03-09",
-      "titre": "Vote du budget 2026 — dernière séance du mandat Salmon",
+      "titre": "Vote du budget 2026 – dernier conseil du mandat",
       "youtube_id": "52ALytkTry0",
       "youtube_url": "https://youtu.be/52ALytkTry0",
       "points_cles": [
-        "Budget primitif 2026 voté par le conseil sortant, 6 jours avant le 1er tour des municipales (15 mars)",
-        "Taux de fiscalité 2026 reconduits — TFB maintenu à 45,34 % (niveau atteint après la hausse de 2024)",
-        "Dernière séance délibérante du mandat de Philippe Salmon — le nouveau conseil est installé le 20 mars"
+        "Budget 2026 : 43,9 M€ tous budgets ; fonctionnement à 23,6 M€ et investissement à 17,8 M€ sur le budget principal",
+        "Emprunt de 4,1 M€ (4 M€ Crédit Mutuel de Bretagne à Livret A + 0,45 %, 100 000 € CAF à taux zéro), mobilisable à partir de juin/septembre 2026",
+        "Taux d'imposition inchangés en 2026 : foncier bâti 45,34 %, foncier non bâti 48,19 %, taxe d'habitation (résidences secondaires) 18,26 %",
+        "4e groupe scolaire : 11 M€ au total, dont 6,2 M€ inscrits en 2026 ; rénovation de l'hôtel de ville : 960 194 € pour solder l'enveloppe",
+        "Résultats 2025 : excédent de fonctionnement de 3 097 132 € et résultat global d'investissement de 3 428 918 €, aucun emprunt contracté en 2025",
+        "Charges de personnel 2026 : 11,4 M€ (57 % des dépenses réelles), +5,5 % par rapport au réalisé 2025, avec création de 3 ETP (police municipale, marchés publics, Atlas de la biodiversité)"
       ],
       "sources": [
         {
@@ -854,7 +857,152 @@
       "date_publication": "2026-03-12",
       "id": "CM-2026-03-09",
       "statut": "passe",
-      "lieu": "Halle Pagnol, Bruz"
+      "lieu": "Halle Pagnol, Bruz",
+      "resume_executif": "Dernier conseil municipal du mandat, consacré à l'approbation des comptes 2025 et au vote du budget primitif 2026. Le compte financier unique 2025 dégage un excédent de fonctionnement de 3,097 M€ et un excédent d'investissement global de 3,43 M€. Le budget 2026 s'élève à 43,9 M€ tous budgets confondus, avec 16,1 M€ de dépenses d'équipement (dont 6,2 M€ pour le 4e groupe scolaire) et un emprunt de 4,1 M€ contracté auprès du Crédit Mutuel de Bretagne. Les taux d'imposition restent inchangés (foncier bâti 45,34 %). L'opposition a voté contre le budget principal (7 oppositions), dénonçant la dérive des dépenses de fonctionnement, deux hausses d'impôts sur le mandat et le manque de transparence sur l'emprunt ; la majorité revendique une gestion rigoureuse et la préservation de la qualité de service.",
+      "deliberations": [
+        {
+          "numero": "1",
+          "titre": "Décisions prises par délégation du maire (janvier–février 2026)",
+          "vote": "Prise d'acte",
+          "detail": "Tableau des décisions, notamment les renonciations à préemption (DIA). L'opposition demande une présentation plus synthétique ne mentionnant pas les prix de vente précis par bien."
+        },
+        {
+          "numero": "2",
+          "titre": "Désignation d'un président de séance pour l'approbation des comptes",
+          "vote": "Unanimité",
+          "detail": "Élection de Bertrand Leroy, adjoint aux finances, comme président de séance conformément à l'article L2121-14 du CGCT."
+        },
+        {
+          "numero": "3",
+          "titre": "Approbation des comptes financiers uniques 2025 (budget principal, restauration, ZA de l'Épron)",
+          "vote": "Adoptés (le maire sorti de séance)",
+          "detail": "Budget principal : 26 601 829 € de recettes et 23 504 697 € de dépenses de fonctionnement, résultat de clôture 3 097 132 €. Budget restauration : 1 067 934 € de recettes contre 1 102 728 € de dépenses. Budget Épron : aucune vente en 2025, seulement des frais de contentieux et travaux de zone humide."
+        },
+        {
+          "numero": "6",
+          "titre": "Affectation des résultats 2025",
+          "vote": "Unanimité",
+          "detail": "Affectation de la totalité de l'excédent de fonctionnement (3 097 132,45 €) au compte 1068 en recette d'investissement et report de 3 428 917,70 € au compte 001."
+        },
+        {
+          "numero": "7",
+          "titre": "Révision des autorisations de programme et crédits de paiement (4e groupe scolaire, hôtel de ville)",
+          "vote": "Unanimité",
+          "detail": "6 226 000 € de crédits de paiement 2026 pour le 4e groupe scolaire et 1 698 213 € reportés sur 2027 ; enveloppe résiduelle de 960 194 € pour l'hôtel de ville, consommée dans l'année."
+        },
+        {
+          "numero": "8",
+          "titre": "Budget primitif 2026 – budget principal",
+          "vote": "Adopté – 7 oppositions, 0 abstention",
+          "detail": "Fonctionnement équilibré à 23,6 M€, investissement à 17,8 M€, 16,1 M€ de dépenses d'équipement, emprunt de 4,1 M€. Dépenses réelles de fonctionnement en baisse de 1,45 % par rapport au BP 2025."
+        },
+        {
+          "numero": "8 bis",
+          "titre": "Budget primitif 2026 – budget annexe restauration",
+          "vote": "Unanimité",
+          "detail": "Équilibré à 1 218 192 € en fonctionnement, dont 360 000 € de prise en charge du déficit par le budget principal ; 49 580 € en investissement pour le renouvellement du matériel de cuisine."
+        },
+        {
+          "numero": "8 ter",
+          "titre": "Budget primitif 2026 – budget annexe ZA de l'Épron",
+          "vote": "Unanimité",
+          "detail": "Aucune recette inscrite, les lots 11 et 15 restant à vendre. Dépenses : fin des travaux de la zone humide et frais d'avocat suite au pourvoi en cassation de l'entreprise contestant l'annulation de la vente. Viabilisation de la future caserne non engagée avant 2028."
+        },
+        {
+          "numero": "8 quater",
+          "titre": "Vote des dépenses imprévues",
+          "vote": "Unanimité",
+          "detail": "Vote distinct des crédits de dépenses imprévues, sans opposition ni abstention."
+        },
+        {
+          "numero": "9",
+          "titre": "Vote des taux d'imposition 2026",
+          "vote": "Unanimité",
+          "detail": "Aucune augmentation des taux : foncier bâti 45,34 %, foncier non bâti 48,19 %, taxe d'habitation 18,26 %. Seules les bases sont revalorisées de 0,8 % par l'État."
+        },
+        {
+          "numero": "10",
+          "titre": "Créances éteintes",
+          "vote": "Unanimité",
+          "detail": "Extinction de créances pour 5 463,47 € suite à des surendettements, effacements de dettes et liquidations judiciaires, mandatées au compte 6542."
+        },
+        {
+          "numero": "11",
+          "titre": "Créances admises en non-valeur",
+          "vote": "Unanimité",
+          "detail": "Admission en non-valeur de créances concernant 69 familles sur des recettes de 2019 à 2022, pour lesquelles les poursuites n'ont pas abouti, mandatées au compte 6541."
+        },
+        {
+          "numero": "12",
+          "titre": "Participation 2026 au syndicat de musique Rive Sud",
+          "vote": "Unanimité",
+          "detail": "Participation de la ville fixée à 415 134 € en trois versements (218 763 € en janvier, 166 054 € en mars, 130 317 € en mai). Contre environ 306 000 € en 2021."
+        },
+        {
+          "numero": "13",
+          "titre": "Subvention 2026 au Point Accueil Emploi Sud Rennes",
+          "vote": "Non explicité dans la transcription",
+          "detail": "Subvention de 38 101 € à l'association Accueil Accompagnement pour l'Emploi Sud de Rennes, dont 36 892 € de fonctionnement et 1 609 € de provision retraite, dans le cadre d'une convention triennale renouvelée en 2025."
+        }
+      ],
+      "points_chauds": [
+        {
+          "sujet": "Bilan financier du mandat et effet ciseau",
+          "tension": "haute",
+          "detail": "L'opposition dresse un réquisitoire : +40 % de charges à caractère général et +20 % de charges de personnel depuis 2020 (soit +3,5 M€), deux hausses d'impôts (6,5 % puis 8,36 %, près de 15 % cumulés) rapportant environ 4 M€, un équilibre reposant sur des recettes exceptionnelles (4,8 M€ liés à la dissolution de la SPL) plutôt que sur la maîtrise du fonctionnement. Le maire répond que la dette a été ramenée de 20 M€ à 8 M€ et revendique la qualité de service. L'adjoint aux finances précise que les 3 ETP créés représentent moins de 30 % de la hausse 2026, le reste étant exogène (CNRACL, GVT)."
+        },
+        {
+          "sujet": "Transparence sur l'emprunt de 4 M€",
+          "tension": "haute",
+          "detail": "L'opposition reproche un emprunt structurant souscrit fin 2025, sans passage ni information en commission finances, qui ne sera mobilisé qu'en juin ou septembre 2026, donc par la prochaine équipe. Elle relève aussi l'ironie de l'adhésion à l'Agence France Locale (110 000 € d'apport en capital en 2022) non utilisée pour cet emprunt. L'adjoint aux finances répond que l'apport sera restitué à la sortie, que le taux Livret A + 0,45 % est sécurisé et s'est révélé avantageux avec la baisse du Livret A."
+        },
+        {
+          "sujet": "Digression électorale sur le Trambus et le métro",
+          "tension": "haute",
+          "detail": "Un élu de la majorité élargit le débat aux propositions de campagne de l'opposition (terminus Trambus à la gare, navettes) et au projet de prolongement du métro vers l'aéroport chiffré à plus de 500 M€. La séance dégénère en interruptions et applaudissements ; le maire doit demander plusieurs fois le silence et recentrer sur le budget."
+        },
+        {
+          "sujet": "Masse salariale et nombre d'agents",
+          "tension": "modérée",
+          "detail": "L'adjointe aux RH défend les 2 M€ d'évolution : revalorisations nationales obligatoires, hausse des cotisations URSSAF et CNRACL, RIFSEEP, création de services (centre social, enfance, action sociale) — soit 3 à 4 % par an face à une inflation cumulée supérieure à 18 %. Elle retourne la question : quels services l'opposition réduirait-elle ? L'opposition rétorque que la population n'a que peu progressé, ce que conteste la majorité (environ 18 800 habitants en 2020, près de 20 100 aujourd'hui)."
+        },
+        {
+          "sujet": "Publication des prix de vente dans les décisions de préemption",
+          "tension": "faible",
+          "detail": "L'opposition alerte sur la confidentialité : les prix par bien avec adresse permettent d'identifier les transactions privées, sans obligation légale de les publier. La directrice des finances reconnaît qu'une présentation plus synthétique est possible mais rappelle que ces données sont publiques sur internet. Le sujet est renvoyé aux services et à la prochaine mandature."
+        },
+        {
+          "sujet": "Coût croissant des syndicats piscine et musique",
+          "tension": "modérée",
+          "detail": "La participation à la piscine de la Contrie est passée de 160 000 à 400 000 € sur le mandat (475 000 € prévus en 2026) et celle au syndicat de musique Rive Sud de 306 000 € en 2021 à 415 134 € en 2026, avec une commune (Bourgbarré) demandant à sortir du syndicat. La majorité indique que la situation de la piscine s'est assainie, que le déficit reporté a été comblé, qu'une étude d'opportunité de DSP est financée, et qu'une étude de Rennes Métropole et du Département est en cours sur les syndicats de musique."
+        },
+        {
+          "sujet": "Incertitudes financières de la ZAC Multisites",
+          "tension": "modérée",
+          "detail": "L'opposition évoque les incertitudes financières de la ZAC. L'adjoint à l'urbanisme répond que le déficit est chiffré à 10 M€, dont 9 M€ imputables au secteur gare hérité de l'équipe précédente, que la ZAC vient d'être approuvée par arrêté préfectoral et qu'aucune décision n'obère à ce jour les finances : ce sera à la prochaine équipe de trancher secteur par secteur."
+        },
+        {
+          "sujet": "Situation de l'emploi à Bruz",
+          "tension": "faible",
+          "detail": "Un élu relève un décalage : 7,2 demandeurs d'emploi par offre à Bruz contre 4,5 à Rennes et 5,6 en Bretagne, et interroge sur les orientations portées par la ville au sein du PAE. Les représentants de la ville et le président du PLIE et de We Ker répondent en détaillant la médiation active à l'emploi et la prospection en entreprise."
+        }
+      ],
+      "impact_bruzois": [
+        "Pas de hausse des taux communaux en 2026 : la fiscalité n'augmente que de la revalorisation des bases décidée par l'État (+0,8 %)",
+        "Poursuite du chantier du 4e groupe scolaire (6,2 M€ en 2026) et rénovation de la toiture de l'école Jacques Prévert (452 000 €)",
+        "Travaux d'équipements de proximité : aménagement de la plaine Yann-Fanch Kemener, rénovation des équipements sportifs de Kerlann, enherbement du terrain de rugby, remplacement du jeu du parc Surcouf (116 000 €), bornes RFID à la médiathèque, réfection du mail Geneviève Prigent",
+        "Restauration scolaire : tarifs familles stables (736 700 € de facturation prévue), mais déficit structurel comblé à hauteur de 360 000 € par le budget principal",
+        "Soutien maintenu au tissu associatif (295 000 € de subventions, 115 000 € pour le jardin des lutins) et renforcement de la police municipale via un ETP supplémentaire",
+        "Baisse des effectifs scolaires qui pèse déjà sur les recettes du périscolaire (-35 000 €)"
+      ],
+      "a_surveiller": [
+        "Mobilisation effective de l'emprunt de 4 M€ (juin ou septembre 2026) et évolution de l'encours de dette, annoncé passant de 7,5 à plus de 10 M€ au 1er janvier 2027",
+        "Décisions de la prochaine équipe municipale sur la ZAC Multisites et son déficit prévisionnel de 10 M€, dont 9 M€ sur le secteur gare",
+        "Issue du pourvoi en cassation de l'entreprise sur la ZA de l'Épron et calendrier de viabilisation de la future caserne (pas avant 2028)",
+        "Conclusions de l'étude Rennes Métropole/Département sur les syndicats de musique et suites de la demande de sortie de Bourgbarré",
+        "Étude d'opportunité de DSP pour la piscine de la Contrie et trajectoire de la contribution communale (475 000 € en 2026)",
+        "Consommation de l'enveloppe non affectée de 2,8 M€ en investissement et respect du calendrier de l'AP/CP du 4e groupe scolaire (1,7 M€ reportés sur 2027)"
+      ]
     },
     {
       "id": "CM-2026-01-26",

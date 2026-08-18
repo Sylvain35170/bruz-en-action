@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-14",
+    "last_updated": "2026-08-18",
     "version": "3.0"
   },
   "dossiers": [
@@ -1004,7 +1004,7 @@
       "categorie": "Urbanisme",
       "statut": "en_cours",
       "featured": true,
-      "last_activity": "2026-08-12",
+      "last_activity": "2026-08-17",
       "date_ouverture": "2026-06-16",
       "chapeau": "Carte interactive de Bruz, recensement des chantiers en cours (qui creuse où, jusqu'à quand) et veille sur les projets d'urbanisme qui ne rentrent pas déjà dans un dossier dédié (hors ZAC Multisites, voir D02, hors Trambus T4, voir D01) : évolutions de quartier, permis groupés, équipements publics annoncés, travaux de voirie.",
       "ce_quon_sait": [
@@ -1109,6 +1109,13 @@
       ],
       "lien_externe": "/bruz-en-action/carte",
       "actus_recentes": [
+        {
+          "date": "2026-08-17",
+          "titre": "Travaux d'aménagement du boulevard Louis Pasteur",
+          "detail": "Des travaux d'aménagement sont engagés sur le boulevard Louis Pasteur à Bruz. Cet aménagement s'inscrit dans les projets de requalification urbaine de la commune bruzaise.",
+          "source_url": "https://www.ville-bruz.fr/actualites/travaux-damenagement-du-boulevard-louis-pasteur/",
+          "source_label": "Mairie de Bruz — Actualités"
+        },
         {
           "date": "2026-08-12",
           "titre": "Trois parcours vélo pour découvrir Bruz et son patrimoine",
@@ -1577,6 +1584,13 @@
           "source_label": "Audio CM sur YouTube"
         },
         {
+          "date": "2026-03-09",
+          "titre": "Vote du budget 2026 – dernier conseil du mandat",
+          "detail": "Budget 2026 : 43,9 M€ tous budgets ; fonctionnement à 23,6 M€ et investissement à 17,8 M€ sur le budget principal | Emprunt de 4,1 M€ (4 M€ Crédit Mutuel de Bretagne à Livret A + 0,45 %, 100 000 € CAF à taux zéro), mobilisable à partir de juin/septembre 2026 | Taux d'imposition inchangés en 2026 : f",
+          "source_url": "https://youtu.be/52ALytkTry0",
+          "source_label": "Vidéo YouTube"
+        },
+        {
           "date": "2026-02-15",
           "titre": "Une brigade territoriale mobile de gendarmerie déployée au sud de Rennes",
           "detail": "Un fourgon aménagé sillonne les 37 communes de la compagnie de Chartres-de-Bretagne pour accueillir le public et recueillir des renseignements — présenté au préfet sur le marché de Bruz.",
@@ -1789,6 +1803,13 @@
           "detail": "Le numéro de mai-juin 2026 du magazine municipal détaille l'organigramme des 9 adjoints. Françoise Lotton (9e adjointe) est confirmée en charge d'Éducation, Enfance et Jeunesse — élément qui manquait au dossier depuis l'installation du conseil en avril.",
           "source_url": "https://www.ville-bruz.fr/wp-content/uploads/2026/05/Bruz-Mag-n%C2%B0260-de-mai-juin-2026.pdf",
           "source_label": "Bruz Mag n°260"
+        },
+        {
+          "date": "2026-03-09",
+          "titre": "Vote du budget 2026 – dernier conseil du mandat",
+          "detail": "Budget 2026 : 43,9 M€ tous budgets ; fonctionnement à 23,6 M€ et investissement à 17,8 M€ sur le budget principal | Emprunt de 4,1 M€ (4 M€ Crédit Mutuel de Bretagne à Livret A + 0,45 %, 100 000 € CAF à taux zéro), mobilisable à partir de juin/septembre 2026 | Taux d'imposition inchangés en 2026 : f",
+          "source_url": "https://youtu.be/52ALytkTry0",
+          "source_label": "Vidéo YouTube"
         },
         {
           "date": "2026-01-15",

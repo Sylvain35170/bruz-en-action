@@ -146,6 +146,58 @@ Convention pour les liens confirmés morts sans alternative trouvée : ajouter `
 ---
 
 ## Pièges connus
+### 2026-08-14 — Deux détails d'outillage de revue
+→ dispatch: local:bruz-en-action
+
+- `review_proposals.py --dossier` s'applique à **tout le lot accepté** : classer des
+  items dans des dossiers différents demande autant d'appels que de dossiers.
+- Les titres remontés par `agent_megalis` sont les libellés bruts des actes et arrivent
+  illisibles (« Finances — Ogec saint theodore guerin — Garantie d'emprunt — Err —
+  Plume »). Réécrits à la main à la revue ; à nettoyer dans l'agent si ça se répète —
+  ce sera visible au CM du 21/09, qui doit remonter ~46 actes d'un coup.
+
+---
+
+### 2026-08-14 — Relire le PDF ne sert pas qu'à détecter les erreurs de colonnes
+→ dispatch: local:bruz-en-action
+
+Vérification des deux candidats contre la Semaine à Bruz n°858 : les attributions
+étaient **correctes** (le `06 14 69 29 73` bien dans le bloc JAB, l'email atelier philo
+bien distinct du `taichi.responsable@albruz.fr` voisin). Mais `chapeau: corps[:400]`
+tronque le texte et fait perdre de l'information utile — la cotisation JAB (30 € + 20 €)
+avait sauté, alors que c'est précisément ce que cherche quelqu'un qui veut s'inscrire.
+La relecture PDF rattrape aussi ça, pas seulement les fausses attributions.
+
+### 2026-08-14 — Pas de source, pas de publication (coup de pouce)
+→ dispatch: local:bruz-en-action
+
+Règle éditoriale posée le 14/08. Un lien vers le site **national** des Restos du Cœur ne
+source pas l'antenne bruzoise ni son appel à bénévoles : CP01 et CP02 (aucun lien du
+tout) retirés. CP03 conservé, son site officiel promu en `source` après vérification
+qu'il répond 200 et documente bien la ferme bruzoise. `validate_data` passe de 3
+warnings à 0 — les warnings pointaient exactement ces items.
+
+### 2026-08-14 — Un filtre sur la date du jour est figé au build en export statique
+→ dispatch: local:bruz-en-action + global
+
+`app/coup-de-pouce/page.tsx` filtrait ses items sur `date_fin >= new Date()`, et son
+commentaire affirmait que « l'item disparaît de lui-même une fois l'échéance passée ».
+Faux : la page est un composant serveur (pas de `"use client"`) dans un export statique,
+donc `new Date()` est évalué **au build**, pas à la visite — et `deploy.yml` ne se
+déclenchait que sur `push`. La guinguette CHOQUE (`date_fin: 2026-08-15`) serait restée
+affichée comme en cours tant que personne n'aurait poussé. Les mêmes lignes existent sur
+la homepage (`app/page.tsx`, événements à venir) et `/agenda` : trois pages concernées.
+
+Fix : `schedule: cron "17 4 * * *"` dans `deploy.yml` — un rebuild quotidien rend la
+date de nouveau vraie sur les trois pages d'un coup. L'alternative (passer les filtres
+côté client) demandait trois modifications et autant de tests.
+
+➡️ Règle : dans un site statique, toute logique qui compare à « aujourd'hui » a besoin
+d'un rebuild périodique, sinon elle ment silencieusement. Et un commentaire de code qui
+affirme un comportement automatique ne prouve rien — le confronter au mode de rendu.
+Même famille que « build vert ≠ UI correcte » : rien ici n'échoue, l'information est
+juste périmée.
+
 ### 2026-08-14 — expiration figée au build, règle de source coup de pouce
 
 - **En export statique, un filtre sur « aujourd'hui » est évalué au BUILD, pas à la visite.**
@@ -186,26 +238,3 @@ Convention pour les liens confirmés morts sans alternative trouvée : ajouter `
 - **`agent_select` route depuis `dossiers.json`, plus depuis une liste en dur** — `DOSSIERS_DESC` maintenue à la main avait raté D21 Culture (jamais proposé au classement depuis sa création) et gardait D08/D09/D14 supprimés/fusionnés. `build_dossiers_desc()` lit désormais le champ `mots_cles_ia` de chaque dossier : **tout nouveau dossier doit porter ses `mots_cles_ia`** pour être routable (repli sur le titre sinon).
 - **Export statique : pas de slash final** — `/statistiques/` renvoie 404, la bonne URL est `/statistiques` (le build génère `statistiques.html`, pas un dossier). À savoir avant de conclure qu'une page est cassée en la testant au curl.
 - **`PIEGES_ARCHIVE.md` accumulait des copies de la même entrée** — bug de l'outillage de clôture (`_append_piege()` ne dédupliquait que sur `CLAUDE.md`, pas sur l'archive où `_rotate_pieges()` venait de déplacer l'entrée). Corrigé en amont dans dm2p-copilot-setup ; l'archive a été dédupliquée (14 entrées → 5).
-
-### 2026-07-18 — bruz-en-action : mailer SMTP bloqué par VPN pro, migration API Gmail
-- **Le VPN pro Orange (Cisco Secure Client, profil "DEV ACCESS") bloque les ports SMTP sortants (465 et 587)** — testé en direct : `nc -zv smtp.gmail.com 465/587` timeout/no route to host alors que ping/DNS/HTTPS (443) passent normalement. Le mailer de la veille (17h, `agent_mailer.py`) échouait silencieusement quand ce VPN était connecté au moment du run — pas de perte de données (le registre `pending.json` garde les items non mailés), juste pas de notification ce jour-là.
-- **Diagnostic à ne pas précipiter** : un premier réflexe a incriminé à tort CyberGhost (VPN perso, en réalité désactivé) avant de vérifier via `ps aux`/`scutil --nc`/DNS (`francetelecom.fr`) que le vrai coupable était Cisco Secure Client. Toujours vérifier quel process tient réellement le tunnel (`lsof -i`, `ps aux | grep vpn`) avant d'accuser un VPN par déduction.
-- **Fix définitif** : migration SMTP → API Gmail (HTTPS/443, jamais bloqué par ce VPN). Projet GCP dédié `bruz-en-action-mailer-502808`, scope `gmail.send`, credentials OAuth "Desktop app" stockées hors repo (`~/.bruz-mailer-gmail/client_secret.json` + `token.json`, jamais commitées, chmod 600). Premier consentement interactif fait une fois (via navigateur) ; ensuite le refresh token permet un fonctionnement 100% autonome depuis `launchd`.
-- **Piège annexe OAuth** : le premier essai de consentement a échoué en `403 access_denied` bien que l'email de test venait d'être ajouté dans "Audience > Test users" — en fait le clic sur "Save" n'avait pas pris (page rechargée avant que le chip email soit confirmé). Toujours re-vérifier via `get_page_text` que la liste des test users n'est pas vide avant de retenter le consentement (pas la peine d'attendre une propagation Google qui n'était pas le vrai problème).
-
-### 2026-07-17 — bruz-en-action : balayage dossiers + lot 4 audit (/histoire, /connaitre-bruz, /glossaire)
-→ dispatch: local:bruz-en-action + global
-
-- **Contenu halluciné détecté** : l'agrégateur Archyde donnait des chiffres très précis (12 ha, projet nommé "Quai Vilaine Sud", 800 logements, financements chiffrés à l'euro) sur la friche Bonna Sabla à Bruz — en réalité mélangés avec deux **autres** sites Bonna Sabla réels en reconversion ailleurs en France (Vendargues-34, Plaisance-du-Touch-31). Réflexe général : quand un seul agrégateur de faible fiabilité sort des chiffres très précis non recoupés par une source primaire/officielle, présumer l'hallucination et vérifier ailleurs (ici : Mégalis,
-… _(learning complet dans `~/.shared-context/learnings.md`)_
-
-### 2026-07-16 — agent_dossiers : last_activity futur + sur-matching mots-clés
-- **Une actu datée dans le futur épinglait son dossier en tête de tri** — l'annonce du CM de rentrée (date 2026-09-21) avait mis `last_activity: 2026-09-21` sur D03, le plaçant premier sur la homepage et `/dossiers` jusqu'à fin septembre. Fix : `agent_dossiers` plafonne `last_activity` à `today()` (`min(news["date"], today())`) dans les deux branches (actus + cms).
-- **Le champ `dossier` posé à la revue fait foi** — `agent_dossiers` re-matchait toutes les actus par mots-clés en ignorant le classement de la revue humaine : la bio de Robert Barré (Ker Lann, ZAC du Vert Buisson, finances) partait dans D01/D02/D03/D10 hors sujet. Fix : si `actu["dossier"]` correspond à un ID de dossier existant, injection uniquement là ; repli mots-clés sinon (`à_classer`, champ absent). Effet de bord à connaître : au premier run post-fix, les actus anciennes classées mais jamais matchées entrent dans leur dossier assigné.
-- **Séances à venir : `points_cles` vides → `detail` vide** — repli sur `resume_executif` ajouté dans la branche cms.
-
-### 2026-07-17 — bruz-en-action : balayage dossiers, contenu halluciné, lot 4 audit livré
-- **Contenu halluciné détecté sur un agrégateur tiers (Archyde)** — chiffres très précis (12 ha, "Quai Vilaine Sud", 800 logements) sur la friche Bonna Sabla à Bruz, en réalité mélangés avec deux autres sites Bonna Sabla réels ailleurs en France. Réflexe : un seul agrégateur de faible fiabilité + chiffres non recoupés = présumer l'hallucination, vérifier via Mégalis/sources officielles avant d'écrire (dossier créé D22 avec uniquement les faits confirmés).
-- **`fetch_insee.py` écrase `series_longues.population` à chaque run** — les points Cassini/EHESS (1793-1872, hors couverture INSEE) doivent être fusionnés *dans le script* (constante `CASSINI_1793_1946` + merge dans `ecrire_bruz_json`), jamais ajoutés à la main dans `bruz.json`.
-- **Test d'une page avec filtre client-side (`use client`) via `serve` local** — `serve out/` seul casse le `basePath` (`_next/static/*` en 503, tout semble non-hydraté). Fix : symlink `out` → `bruz-en-action/` dans un dossier parent, puis servir ce parent. Et pour taper dans un input contrôlé React via claude-in-chrome, `computer.type` ne déclenche pas toujours l'`onChange` — dispatcher l'event `input` via le setter natif JS si le test semble ne rien faire.
-- **Lot 4 de l'audit livré** (`/histoire`, `/connaitre-bruz`, `/glossaire`) — nouveau fichier `data/histoire.json` (frise, cycles d'urbanisation, maires) suit le même pattern que les autres data files (source unique, pages ne font que le rendre).

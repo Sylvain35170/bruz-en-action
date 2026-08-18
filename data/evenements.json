@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-13",
+    "last_updated": "2026-08-18",
     "source": "Ville de Bruz, Grand Logis, Handisport, Les Trans"
   },
   "evenements": [
@@ -103,53 +103,6 @@
       "lien_label": "Agenda Ville de Bruz",
       "source": "agenda_mairie",
       "date_fin": "2026-09-30"
-    },
-    {
-      "id": "agenda-2fef59c1",
-      "titre": "Bal des pompiers",
-      "date": "2026-07-13",
-      "categorie": "Concert",
-      "lien": "https://www.ville-bruz.fr/agenda/feu-dartifice-et-bal-des-pompiers/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie",
-      "date_fin": "2026-07-14",
-      "lien_expiree": true
-    },
-    {
-      "id": "agenda-376ef6f8",
-      "titre": "Crok’histoires",
-      "date": "2026-07-15",
-      "categorie": "Médiathèque",
-      "lien": "https://www.ville-bruz.fr/agenda/crokhistoires-2/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
-    },
-    {
-      "id": "agenda-1b8f18a0",
-      "titre": "Chronicles of Crime – 2400",
-      "date": "2026-07-15",
-      "categorie": "Jeux",
-      "lien": "https://www.ville-bruz.fr/agenda/chronicles-of-crime-2400-2/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
-    },
-    {
-      "id": "agenda-da6598bb",
-      "titre": "Un livre, un jeu",
-      "date": "2026-07-17",
-      "categorie": "Jeux",
-      "lien": "https://www.ville-bruz.fr/agenda/un-livre-un-jeu-2/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
-    },
-    {
-      "id": "agenda-e15d3ddf",
-      "titre": "On en parle !",
-      "date": "2026-07-17",
-      "categorie": "Médiathèque",
-      "lien": "https://www.ville-bruz.fr/agenda/on-en-parle-2/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
     },
     {
       "id": "agenda-d6c27b64",
@@ -433,6 +386,24 @@
       "source": "agenda_mairie"
     },
     {
+      "id": "agenda-ae3d0881",
+      "titre": "Vide-dressing",
+      "date": "2026-09-19",
+      "categorie": "Association",
+      "lien": "https://www.ville-bruz.fr/agenda/vide-dressing-2/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-acfba668",
+      "titre": "Vide-dressing",
+      "date": "2026-09-20",
+      "categorie": "Association",
+      "lien": "https://www.ville-bruz.fr/agenda/vide-dressing/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
       "id": "agenda-625d5aad",
       "titre": "Conseil Municipal",
       "date": "2026-09-21",
@@ -542,7 +513,7 @@
     },
     {
       "id": "agenda-3c280c4d",
-      "titre": "Repas des aînés",
+      "titre": "Repas des aînés – Complet",
       "date": "2026-10-18",
       "categorie": "Solidarité",
       "lien": "https://www.ville-bruz.fr/agenda/repas-des-aines/",
