@@ -580,6 +580,12 @@
           "titre": "Personnel — CDG35 (médiation préalable obligatoire + missions facultatives)",
           "vote": "Unanimité",
           "detail": "Adhésion à la procédure de médiation préalable obligatoire CDG35 pour les litiges RH individuels. Convention pour les missions facultatives du centre de gestion."
+        },
+        {
+          "numero": "26-05-37 à 38",
+          "titre": "Personnel — Suppressions/créations de postes et tableau des effectifs",
+          "vote": "Unanimité",
+          "detail": "Police municipale : +1 poste permanent (recrutement lié à l'étendue du territoire). Direction de l'éducation : -1 poste d'attaché principal (départ par mutation de la directrice, 19 ans d'ancienneté, redéploiement en interne). Achats publics : +1 poste (adjoint administratif ou rédacteur). Logistique : échange d'un poste d'adjoint technique principal contre un poste d'adjoint technique (32/35e). Adoption du tableau des effectifs actualisé."
         }
       ],
       "points_chauds": [
@@ -597,6 +603,11 @@
           "sujet": "Comité ville handicap — maintien incertain",
           "tension": "faible",
           "detail": "L'opposition (Devenprieur?) rappelle le travail du comité ville handicap initié sous Salmon (dupliqué par d'autres communes) et demande s'il sera maintenu. Le maire répond prudemment : 'on réfléchit', sans engagement. L'accessibilité PMR reste un chantier ouvert."
+        },
+        {
+          "sujet": "Suppression du poste de direction culture/vie associative/sport — redéploiement RH contesté",
+          "tension": "forte",
+          "detail": "Le poste de directrice de l'éducation (118 agents, le plus gros service de la ville) est pourvu en interne par la directrice de la culture, de la vie associative et du sport arrivée en mars 2026 — poste qui n'est pas remplacé. L'opposition (Marie-Pierre Durand, puis Jean-Baptiste Chevé et Marion Chevalier) conteste ce choix : compétence éducative de la remplaçante, diminution de fait du pôle culture/vie associative/sport, incohérence avec la création de ce même poste par la majorité actuelle lors du mandat précédent. Le maire assume un choix économique et organisationnel — Laurent Fossé (Grand Logis) et Damien Colas (médiathèque) absorbant les missions sans hiérarchie supplémentaire — et promet d'associer l'opposition si une surcharge apparaît. Sylvie Briend relève que le périmètre du poste supprimé avait déjà été réduit de moitié (vie associative détachée) au moment du recrutement de sa titulaire."
         }
       ],
       "impact_bruzois": [
@@ -608,6 +619,7 @@
         "Accessibilité lecture : la médiathèque ouvre l'accès Elliter aux personnes empêchées de lire"
       ],
       "a_surveiller": [
+        "Réorganisation culture/vie associative/sport/éducation : absence de remplacement au poste de direction, impact sur le fonctionnement à surveiller",
         "Ouverture de l'hôtel de ville rénové : calendrier exact à confirmer",
         "Construction de la nouvelle cantine OGEC : appel d'offres, planning 2027-2028",
         "Politique tarifaire restauration scolaire privée : concertation opposition annoncée",
