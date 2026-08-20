@@ -1,9 +1,19 @@
 {
   "meta": {
-    "last_updated": "2026-08-18",
+    "last_updated": "2026-08-20",
     "note": "Actus de suivi des promesses — une actu = un événement daté lié à une ou plusieurs promesses"
   },
   "actus": [
+    {
+      "id": "mairie-440391c7",
+      "titre": "Du nouveau sur le réseau STAR !",
+      "date": "2026-08-20",
+      "detail": "Évolutions du réseau STAR à partir de fin août 2026 (le site de la mairie indique par erreur « lundi 31 septembre », date inexistante — le 31 août 2026 tombe un lundi et correspond au calendrier habituel de rentrée). Ligne 91 (desserte Bruz) : nouvel arrêt « Haye de Pan », suppression de l'arrêt « Doublé », arrêt de la circulation le samedi. Lignes C7/C7ex : bus supplémentaires aux heures de pointe en semaine et les dimanches/jours fériés.",
+      "source_url": "https://www.ville-bruz.fr/actualites/du-nouveau-sur-le-reseau-star/",
+      "source_label": "Mairie de Bruz — Actualités",
+      "type": "mairie",
+      "dossier": "D01"
+    },
     {
       "id": "mairie-bd819f99",
       "titre": "Travaux d'aménagement du boulevard Louis Pasteur",

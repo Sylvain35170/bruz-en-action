@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-18",
+    "last_updated": "2026-08-20",
     "version": "3.0"
   },
   "dossiers": [
@@ -10,7 +10,7 @@
       "categorie": "Mobilités",
       "statut": "en_cours",
       "featured": true,
-      "last_activity": "2026-07-09",
+      "last_activity": "2026-08-20",
       "date_ouverture": "2026-06-16",
       "chapeau": "La future ligne T4 (trambus guidé) reliera Rennes à Bruz d'ici 2031-2032. Le terminus penche désormais vers la gare SNCF, mais Rennes Métropole étudie encore trois scénarios de desserte (arrêt simple, navettes, renfort bus). Une décision qui reste entre les mains de la Métropole, pas de la commune.",
       "ce_quon_sait": [
@@ -87,6 +87,13 @@
         }
       ],
       "actus_recentes": [
+        {
+          "date": "2026-08-20",
+          "titre": "Du nouveau sur le réseau STAR !",
+          "detail": "Évolutions du réseau STAR à partir de fin août 2026 (le site de la mairie indique par erreur « lundi 31 septembre », date inexistante — le 31 août 2026 tombe un lundi et correspond au calendrier habituel de rentrée). Ligne 91 (desserte Bruz) : nouvel arrêt « Haye de Pan », suppression de l'arrêt « D",
+          "source_url": "https://www.ville-bruz.fr/actualites/du-nouveau-sur-le-reseau-star/",
+          "source_label": "Mairie de Bruz — Actualités"
+        },
         {
           "date": "2026-07-09",
           "titre": "Trambus à Bruz : terminus à la gare, navettes… quels sont les nouveaux scénarios à l'étude ?",
