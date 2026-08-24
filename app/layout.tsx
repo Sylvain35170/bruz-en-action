@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Public_Sans, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -19,7 +19,24 @@ export const metadata: Metadata = {
     locale: "fr_FR",
     type: "website",
   },
-  icons: { icon: "/bruz-en-action/logo.png" },
+  icons: {
+    icon: [
+      { url: "/bruz-en-action/icons/icon-32.png", sizes: "32x32", type: "image/png" },
+      { url: "/bruz-en-action/icons/icon-192.png", sizes: "192x192", type: "image/png" },
+      { url: "/bruz-en-action/icons/icon-512.png", sizes: "512x512", type: "image/png" },
+    ],
+    apple: "/bruz-en-action/icons/apple-touch-icon.png",
+  },
+  manifest: "/bruz-en-action/manifest.webmanifest",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: "Bruz en Action",
+  },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#1a397a",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
