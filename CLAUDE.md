@@ -104,6 +104,15 @@ sans date ne sont plus perdus. `--dry-run` pour tester sans envoyer.
 
 **IDs** : `utils.stable_id(prefix, url)` (md5) — jamais `hash()` (randomisé par processus).
 
+**Coup de pouce — expiration (`data/coup_de_pouce.json`)** : un item expose 3 mois par
+défaut à compter de `dernier_signal` (`app/coup-de-pouce/page.tsx`, `EXPOSITION_JOURS`),
+ou jusqu'à `date_fin` si l'échéance est explicite (événement daté — `date_fin` prime
+toujours). Passé le délai, l'item ne disparaît pas : il bascule dans la section archive
+repliable en bas de page, toujours consultable. Quand un item déjà publié est reconfirmé
+par un nouveau signal (bulletin, presse), mettre à jour `dernier_signal` (pas
+`date_ajout`, qui reste la date de première découverte affichée sur la fiche) pour
+repousser l'échéance de 3 mois.
+
 Agents : `agent_mairie` · `agent_ouestfrance` (Playwright + cookies Chrome ; lève si
 dépendance manquante) · `agent_presse` (Google News RSS) · `agent_megalis` (YouTube RSS)
 · `agent_bruz_mag` (PDF) · `agent_enrichissement_cm` (transcription + Claude) ·
@@ -146,6 +155,33 @@ Convention pour les liens confirmés morts sans alternative trouvée : ajouter `
 ---
 
 ## Pièges connus
+### 2026-08-20 — bruz-en-action : une fiche cms.json "complète" peut quand même avoir un trou politique
+→ dispatch: local:bruz-en-action
+
+Le PV Mégalis du CM du 18 mai avait déjà une fiche détaillée dans `cms.json` (36
+délibérations, points chauds CCAS/restauration/handicap). Mais le point le plus tendu de
+la séance — délibération 26-05-37 (suppressions/créations de postes), débat opposition
+vs majorité sur la suppression du poste direction culture/vie associative/sport — n'y
+figurait pas.
+
+➡️ Une proposition Mégalis pointant vers un PV déjà "couvert" mérite quand même une
+lecture intégrale avant rejet — la fiche existante peut avoir raté le passage le plus
+substantiel politiquement, en général le débat contradictoire plutôt que l'énoncé des
+délibérations techniques.
+
+### 2026-08-20 — bruz-en-action : une date "impossible" dans une actu mairie n'est pas une erreur d'extraction
+→ dispatch: local:bruz-en-action
+
+L'actu STAR de la mairie (publiée 20/08) annonçait "lundi 31 septembre" — date qui
+n'existe pas. Vérifié directement dans le HTML brut (`curl` + grep) : c'est bien une
+coquille sur le site source, pas une hallucination du fetch. Recoupement calendrier :
+le 31 août 2026 tombe un lundi et correspond au calendrier habituel de rentrée STAR —
+publié avec la date corrigée et la coquille source mentionnée explicitement.
+
+➡️ Une date impossible dans un texte source doit être vérifiée au niveau HTML brut avant
+de conclure à une erreur d'outillage, puis recoupée par calendrier plutôt que publiée
+telle quelle ou silencieusement corrigée sans mention.
+
 ### 2026-08-20 — Date impossible dans une actu source, et fiche CM déjà "complète" mais trouée
 → dispatch: local:bruz-en-action
 

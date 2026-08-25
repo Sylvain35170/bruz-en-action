@@ -10,7 +10,6 @@
 
 - [ ] **Parole des élus** — enrichir `data/elus.json` au fil du mandat
 - [ ] **Coup de pouce — règle de publication** : pas de source, pas de publication (posée le 14/08). Les candidats de `agent_coup_de_pouce` se relisent avec `--list` puis se recopient à la main dans `data/coup_de_pouce.json` — l'agent ne publie jamais seul. **Relire chaque contact contre le PDF du bulletin avant publication** (piège du 28/07 : débordement entre colonnes).
-- [ ] **Coup de pouce — décider d'une politique d'expiration** : `date_fin` est désormais réellement effectif (cron quotidien dans `deploy.yml` depuis le 14/08 — sans lui, la date était figée au build). Reste à trancher pour les items sans échéance naturelle : un appel à dons doit-il expirer au bout de 6 mois faute de confirmation ? Sans règle, des items périmés continueront d'être affichés comme actuels. CP03, CP04, CP05, CP06, CP08 et CP09 sont aujourd'hui sans `date_fin`.
 - [ ] **Alcooliques Anonymes — à publier ou non** (trouvé dans la Semaine à Bruz n°858, réunions tous les vendredis 20h30 à la Maison des associations, 06 52 42 75 86 / aabruz35@gmail.com) : information publique et utile, mais la mettre en avant sur un site de veille citoyenne est un choix éditorial qui touche à la santé et à l'addiction — **décision de l'association, pas de l'agent**. Non publié à ce stade.
 
 ## 🟡 À faire — Agents de veille

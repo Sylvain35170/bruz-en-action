@@ -14,10 +14,23 @@ interface CoupDePouce {
   contact: string | null;
   telephone?: string | null;
   date_ajout: string;
-  /** Dernier jour de validité — au-delà, l'item disparaît de lui-même. */
+  /** Date du dernier signal confirmant que l'initiative est toujours d'actualité (bulletin, presse, revue). */
+  dernier_signal?: string | null;
+  /** Dernier jour de validité explicite (ex. événement daté) — prime sur l'exposition par défaut. */
   date_fin?: string | null;
   active: boolean;
   source?: { label: string; url: string } | null;
+}
+
+/** Durée d'exposition par défaut faute de `date_fin` explicite : 3 mois depuis le dernier signal. */
+const EXPOSITION_JOURS = 90;
+
+/** Date au-delà de laquelle l'item bascule en archive (mais reste consultable). */
+function dateExpiration(item: CoupDePouce): string {
+  if (item.date_fin) return item.date_fin;
+  const base = new Date(item.dernier_signal || item.date_ajout);
+  base.setDate(base.getDate() + EXPOSITION_JOURS);
+  return base.toISOString().slice(0, 10);
 }
 
 const TYPE_CONFIG: Record<TypeItem, { label: string; color: string; bg: string; emoji: string }> = {
@@ -39,16 +52,19 @@ function fmtDate(iso: string) {
 }
 
 export default function CoupDePoucePage() {
-  // `date_fin` retire l'item une fois l'échéance passée : une guinguette d'été
-  // ou un appel à bénévoles daté ne restent pas affichés comme s'ils étaient
-  // d'actualité faute d'être repassés à `active: false`.
-  // ⚠️ L'export étant statique, cette date est celle du BUILD, pas de la visite.
-  // C'est le cron quotidien de `deploy.yml` qui fait effectivement expirer
-  // l'item — le retirer supprimerait l'expiration sans rien casser de visible.
+  // Un item expose 3 mois par défaut depuis son dernier signal confirmé
+  // (`dernier_signal`), ou jusqu'à `date_fin` si l'échéance est explicite
+  // (événement daté type guinguette). Passé ce délai, l'item ne disparaît
+  // pas : il bascule en archive consultable plutôt que d'être supprimé.
+  // ⚠️ L'export étant statique, cette date est celle du BUILD, pas de la
+  // visite. C'est le cron quotidien de `deploy.yml` qui fait effectivement
+  // basculer l'item — le retirer figerait le calcul au dernier build.
   const aujourdhui = new Date().toISOString().slice(0, 10);
-  const items = (coupData.items as CoupDePouce[])
-    .filter(i => i.active)
-    .filter(i => !i.date_fin || i.date_fin >= aujourdhui);
+  const tousActifs = (coupData.items as CoupDePouce[]).filter(i => i.active);
+  const items = tousActifs.filter(i => dateExpiration(i) >= aujourdhui);
+  const archives = tousActifs
+    .filter(i => dateExpiration(i) < aujourdhui)
+    .sort((a, b) => dateExpiration(b).localeCompare(dateExpiration(a)));
 
   const byType = (type: TypeItem) => items.filter(i => i.type === type);
   const associations = byType("association");
@@ -84,7 +100,7 @@ export default function CoupDePoucePage() {
 
       {/* Contenu */}
       <div style={{ maxWidth: 860, margin: "0 auto", padding: "48px 24px 80px" }}>
-        {items.length === 0 ? (
+        {items.length === 0 && archives.length === 0 ? (
           <p style={{ textAlign: "center", color: "#64748b", fontSize: "1.05rem" }}>
             Aucune initiative référencée pour l&apos;instant.
           </p>
@@ -164,6 +180,55 @@ export default function CoupDePoucePage() {
               </section>
             );
           })
+        )}
+
+        {/* Archive — items dont l'exposition (3 mois par défaut) est passée */}
+        {archives.length > 0 && (
+          <details style={{ marginTop: 8, marginBottom: 40 }}>
+            <summary style={{
+              cursor: "pointer", fontSize: "0.95rem", fontWeight: 700, color: "#64748b",
+              padding: "10px 0", borderTop: "1px solid #e2e8f0",
+            }}>
+              📁 Archive ({archives.length} initiative{archives.length > 1 ? "s" : ""} plus mise{archives.length > 1 ? "s" : ""} en avant)
+            </summary>
+            <div style={{ display: "flex", flexDirection: "column", gap: 12, marginTop: 16 }}>
+              {archives.map(item => {
+                const cfg = TYPE_CONFIG[item.type];
+                return (
+                  <article key={item.id} style={{
+                    background: "#f8fafc", borderRadius: 12,
+                    border: "1px solid #e2e8f0", padding: "16px 20px", opacity: 0.85,
+                  }}>
+                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", gap: 12, flexWrap: "wrap" }}>
+                      <h3 style={{ fontSize: "0.98rem", fontWeight: 700, color: "#334155", margin: 0 }}>
+                        {cfg.emoji} {item.titre}
+                      </h3>
+                      <span style={{ fontSize: 12, color: "#94a3b8", whiteSpace: "nowrap" }}>
+                        Exposé jusqu&apos;au {fmtDate(dateExpiration(item))}
+                      </span>
+                    </div>
+                    <p style={{ margin: "8px 0 0", color: "#64748b", fontSize: "0.9rem", lineHeight: 1.6 }}>
+                      {item.chapeau}
+                    </p>
+                    <div style={{ display: "flex", alignItems: "center", gap: 16, marginTop: 10, flexWrap: "wrap" }}>
+                      {item.lien && (
+                        <a href={item.lien} target="_blank" rel="noopener noreferrer"
+                          style={{ fontSize: 12, fontWeight: 600, color: "#1d4ed8", textDecoration: "none" }}>
+                          Voir le site →
+                        </a>
+                      )}
+                      {item.contact && (
+                        <a href={`mailto:${item.contact}`}
+                          style={{ fontSize: 12, fontWeight: 600, color: "#1d4ed8", textDecoration: "none" }}>
+                          Contacter →
+                        </a>
+                      )}
+                    </div>
+                  </article>
+                );
+              })}
+            </div>
+          </details>
         )}
 
         {/* Appel à contribution */}

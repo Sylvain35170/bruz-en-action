@@ -14,6 +14,7 @@
       "lien": "https://lesgaminsdumarais.fr/",
       "contact": null,
       "date_ajout": "2026-07-01",
+      "dernier_signal": "2026-07-01",
       "active": true,
       "telephone": null,
       "date_fin": null,
@@ -32,6 +33,7 @@
       "contact": "secath.seiche@orange.fr",
       "telephone": "02 99 41 31 70",
       "date_ajout": "2026-07-28",
+      "dernier_signal": "2026-07-28",
       "date_fin": null,
       "active": true,
       "source": {
@@ -49,6 +51,7 @@
       "contact": "contact@emmaus-rennes.bzh",
       "telephone": null,
       "date_ajout": "2026-07-28",
+      "dernier_signal": "2026-07-28",
       "date_fin": null,
       "active": true,
       "source": {
@@ -66,6 +69,7 @@
       "contact": "bulledair35@amper-asso.fr",
       "telephone": null,
       "date_ajout": "2026-07-28",
+      "dernier_signal": "2026-07-28",
       "date_fin": null,
       "active": true,
       "source": {
@@ -83,6 +87,7 @@
       "contact": "info@choquemicrobrasserie.fr",
       "telephone": null,
       "date_ajout": "2026-07-28",
+      "dernier_signal": "2026-07-28",
       "date_fin": "2026-08-15",
       "active": true,
       "source": {
@@ -100,6 +105,7 @@
       "contact": null,
       "telephone": "06 14 69 29 73",
       "date_ajout": "2026-08-14",
+      "dernier_signal": "2026-08-14",
       "date_fin": null,
       "active": true,
       "source": {
@@ -117,6 +123,7 @@
       "contact": "atelierphilo.responsable@albruz.fr",
       "telephone": null,
       "date_ajout": "2026-08-14",
+      "dernier_signal": "2026-08-14",
       "date_fin": null,
       "active": true,
       "source": {
