@@ -114,7 +114,9 @@ par un nouveau signal (bulletin, presse), mettre à jour `dernier_signal` (pas
 repousser l'échéance de 3 mois.
 
 Agents : `agent_mairie` · `agent_ouestfrance` (Playwright + cookies Chrome ; lève si
-dépendance manquante) · `agent_presse` (Google News RSS) · `agent_megalis` (YouTube RSS)
+dépendance manquante ; alimente aussi `coup_de_pouce_pending.json` via
+`agent_coup_de_pouce.depuis_presse()` sur ses articles déjà filtrés — pas de second
+scraper OF) · `agent_presse` (Google News RSS) · `agent_megalis` (YouTube RSS)
 · `agent_bruz_mag` (PDF) · `agent_enrichissement_cm` (transcription + Claude) ·
 `agent_metropole_delibs` (API open data `data.rennesmetropole.fr`, dataset
 `deliberations-rennes-metropole-2021-copie` → queue de veille ; ⚠️ ODSQL : full-text nu

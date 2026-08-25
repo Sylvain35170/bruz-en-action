@@ -377,6 +377,21 @@ def run() -> bool:
         log("Coup de pouce : aucun nouveau candidat.", "INFO")
         return False
 
+    return deposer_candidats(candidats)
+
+
+def deposer_candidats(candidats: list[dict]) -> bool:
+    """Ajoute des candidats au registre de validation, quelle que soit leur source.
+
+    Args:
+        candidats: Items au format `coup_de_pouce_pending.json`.
+
+    Returns:
+        True si au moins un candidat a été déposé.
+    """
+    if not candidats:
+        return False
+
     registre = load_json(PROPOSALS)
     registre.setdefault("items", []).extend(candidats)
     PROPOSALS.parent.mkdir(parents=True, exist_ok=True)
@@ -386,6 +401,51 @@ def run() -> bool:
     for c in candidats:
         log(f"  • [{c['besoin']}] {c['titre']} — {c['contact'] or c['telephone'] or 'pas de contact'}")
     return True
+
+
+def depuis_presse(articles: list[dict]) -> list[dict]:
+    """Détecte des signaux coup de pouce dans des articles déjà collectés.
+
+    Ne re-scrape rien : réutilise les articles que `agent_ouestfrance` a déjà
+    récupérés et filtrés sur la pertinence Bruz. La presse locale couvre des
+    initiatives (nouveaux commerces, appels à dons) que la mairie ne relaie
+    jamais dans ses bulletins — cas d'école : Les Gamins du Marais (CP03),
+    repéré par OF mais jamais passé par la veille faute de ce pont.
+
+    Args:
+        articles: Items au format `agent_ouestfrance` (`titre`, `url`, `date`,
+            `resume`).
+
+    Returns:
+        Candidats au format `coup_de_pouce_pending.json`, non encore déposés.
+    """
+    connus = deja_connus()
+    candidats = []
+    for a in articles:
+        titre, resume, url = a.get("titre", ""), a.get("resume", ""), a.get("url", "")
+        if not titre or not url:
+            continue
+        besoin = qualifier(f"{titre} {resume}")
+        if not besoin:
+            continue
+        cle = cle_titre(titre)
+        if cle in connus:
+            continue
+        connus.add(cle)
+        candidats.append({
+            "id": stable_id("cdp-presse", url),
+            "titre": titre,
+            "chapeau": resume[:400] or titre,
+            "besoin": besoin,
+            "type": "commerce" if besoin == "clients" else "association",
+            **extraire_contacts(f"{titre} {resume}"),
+            "date_ajout": today(),
+            "date_fin": None,
+            "active": True,
+            "source": {"label": "Ouest-France", "url": url},
+            "statut": "à_valider",
+        })
+    return candidats
 
 
 def lister() -> None:

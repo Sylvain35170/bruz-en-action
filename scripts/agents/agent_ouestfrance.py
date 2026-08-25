@@ -22,7 +22,9 @@ from datetime import date, timedelta
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
+sys.path.insert(0, str(Path(__file__).parent))
 from utils import log, stable_id, today, known_urls, append_to_queue
+from agent_coup_de_pouce import depuis_presse, deposer_candidats
 
 AGENT_NAME = "ouestfrance"
 
@@ -170,6 +172,12 @@ def run(inject: list[dict] | None = None) -> bool:
     if not articles:
         log("Ouest-France : aucun article pertinent après filtrage.")
         return False
+
+    # Dérive les signaux coup de pouce (dons/bénévoles/nouveau commerce) des
+    # mêmes articles, sans re-scraper OF — voir agent_coup_de_pouce.depuis_presse.
+    candidats_cdp = depuis_presse(articles)
+    if candidats_cdp:
+        deposer_candidats(candidats_cdp)
 
     existing = known_urls()
     nouvelles = [
