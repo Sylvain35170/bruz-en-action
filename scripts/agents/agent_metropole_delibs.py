@@ -37,7 +37,21 @@ SOURCE_LABEL = "Rennes Métropole — délibérations (open data)"
 
 # Mots-clés full-text ODSQL — un OR sur l'ensemble. « trambus » couvre les
 # délibérations T4 (toujours intitulées « ligne de Trambus T4 »).
-KEYWORDS = ["Bruz", "Ker Lann", "trambus", "PLUiH"]
+# ⚠️ « PLUiH » ne matche jamais dans delib_objet (constat 2026-08-25, 0/2993) —
+# le terme est toujours écrit en toutes lettres « Plan Local d'Urbanisme
+# intercommunal ». « ZAC Multisites » est volontairement absent : terme
+# générique métropolitain réutilisé pour des secteurs d'autres communes
+# (Pacé, Saint-Gilles…), il ferait remonter du bruit sans lien avec Bruz.
+KEYWORDS = [
+    "Bruz",
+    "Ker Lann",
+    "trambus",
+    "Plan Local d'Urbanisme intercommunal",
+    "MusikHALL",
+    "Mérol",
+    "Bonna Sabla",
+    "Manoir de la Noë",
+]
 
 DEFAULT_DAYS = 120  # fenêtre glissante ; la dédup (known_urls) absorbe le recouvrement
 
