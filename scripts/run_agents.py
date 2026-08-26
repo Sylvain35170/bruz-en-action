@@ -50,6 +50,7 @@ AGENTS = [
     ("Ouest-France",       "agents.agent_ouestfrance"),        # scraping OF direct → actus_queue.json
     ("Presse",             "agents.agent_presse"),             # RSS Google News → actus_queue.json
     ("Coup de pouce",      "agents.agent_coup_de_pouce"),      # bulletins PDF → proposals/coup_de_pouce_pending.json
+    ("Signalements",       "agents.agent_signalements"),       # Gmail bruzenaction@ → proposals/signalements.json
     # ── Sélection éditoriale (Claude CLI) ────────────────────────────────
     ("Sélection",          "agents.agent_select"),             # → proposals/YYYY-MM-DD.json
     ("Mailer",             "agents.agent_mailer"),             # → email directeurs éditoriaux

@@ -117,7 +117,9 @@ Agents : `agent_mairie` · `agent_ouestfrance` (Playwright + cookies Chrome ; l�
 dépendance manquante ; alimente aussi `coup_de_pouce_pending.json` via
 `agent_coup_de_pouce.depuis_presse()` sur ses articles déjà filtrés — pas de second
 scraper OF) · `agent_presse` (Google News RSS) · `agent_megalis` (YouTube RSS)
-· `agent_bruz_mag` (PDF) · `agent_enrichissement_cm` (transcription + Claude) ·
+· `agent_bruz_mag` (PDF) · `agent_signalements` (Gmail `bruzenaction@gmail.com` →
+`proposals/signalements.json` — voir sous-section dédiée) ·
+`agent_enrichissement_cm` (transcription + Claude) ·
 `agent_metropole_delibs` (API open data `data.rennesmetropole.fr`, dataset
 `deliberations-rennes-metropole-2021-copie` → queue de veille ; ⚠️ ODSQL : full-text nu
 parenthésé + filtre de champ = 0 résultat silencieux, utiliser `delib_objet like "…"` +
@@ -143,6 +145,32 @@ Vérifie les pages du site déployé (contenu attendu, absence de `undefined`/`[
 Automatisé en launchd : `com.bruz-en-action.linkcheck`, tous les lundis 8h, même venv dédié que la veille. Logs : `~/Library/Logs/bruz-en-action-linkcheck.log`.
 
 Convention pour les liens confirmés morts sans alternative trouvée : ajouter `<clé>_expiree: true` à côté du champ URL plutôt que de supprimer la source (le link-checker les ignore ensuite).
+
+### Signalements citoyens — `scripts/agents/agent_signalements.py`
+
+Transforme les emails `[SIGNALEMENT]` reçus sur `bruzenaction@gmail.com` (générés
+par le bouton "Signaler" du site, `components/SignalementButton.tsx`) en tickets
+dans `scripts/proposals/signalements.json` (gitignoré). Recherche par sujet
+(`subject:"[SIGNALEMENT]"`) — aucun filtre/label Gmail à configurer. Dédoublonnage
+par `message_id` directement dans le registre de tickets ; la boîte Gmail n'est
+jamais modifiée (scope `gmail.readonly` seul).
+
+Extraction du template best-effort (TYPE/RÉFÉRENCE/MESSAGE/SOURCE/EMAIL DE CONTACT) :
+si aucun en-tête n'est reconnu (réponse en texte libre, client mail qui reformate),
+le ticket garde `parsed: false` et le corps brut intégral plutôt que de perdre le
+signalement.
+
+- `--list` : tickets au statut `nouveau`
+- `--close id1,id2` : marque des tickets `traité` après action (correction du site
+  faite à la main, ou signalement classé sans suite)
+
+**⚠️ Setup requis avant premier run (une fois)** : compte `bruzenaction@gmail.com`
+DISTINCT de celui d'`agent_mailer` (`sylv.bertrand@gmail.com`) — credentials OAuth
+séparées dans `~/.bruz-signalements-gmail/` (nouveau projet Google Cloud, API
+Gmail, scope `gmail.readonly`, se connecter avec `bruzenaction@gmail.com` au
+consentement). Tant que `client_secret.json` est absent, l'agent se signale en
+`INFO` (pas `ERR`) pour ne pas faire passer le run quotidien en échec pour une
+étape de configuration non faite.
 
 ---
 
@@ -285,9 +313,3 @@ juste périmée.
 - **Un lot d'audit coché n'est pas un lot livré : ouvrir le site et cliquer.** Trois défauts vivants en prod alors que les 4 lots de `AUDIT_SITE_2026-07.md` étaient clos — `/metro` retirée de la nav et du sitemap mais jamais supprimée du repo (servie en 200 avec des données en dur divergentes), liens dossiers en dur sans garde-fou (désormais contrôlés par `validate_data.validate_liens_nav()`), et libellés coupés en deux lignes dans les déroulants, visibles seulement en ouvrant un menu.
 - **Un champ énuméré qui pilote un filtre d'affichage doit être validé en erreur.** `/coup-de-pouce` construit ses sections par `byType()` : un `type` hors référentiel fait disparaître l'item de toutes les sections sans erreur, tout en gonflant `items.length` — ce qui empêche même le message « aucune initiative » de s'afficher.
 - **Prompts d'illustration : lister la palette ne suffit pas, il faut interdire.** Sur 9 illustrations, la 4e a dérivé (arbres verts, aucun or) jusqu'à ce que le prompt impose « NO GREEN AT ALL » et « gold must be clearly present ». Voir `PROMPTS_ILLUSTRATIONS.md` et `scripts/integre_illustration.py`.
-
-### 2026-07-26 — bruz-en-action : build cassé 6 jours, archive de pièges en boucle, routage des dossiers
-- **Supprimer un champ de `data/*.json` sans greper ses consommateurs casse le build en silence** — `dette_ecart_2023_2024` retiré de `bruz.json` le 20/07 (à raison : le CFU 2024 officiel venait d'être trouvé), mais `/statistiques` le lisait toujours → échec au type-check, 3 déploiements GitHub Pages en échec, prod figée 6 jours sans que ça se voie. Greper le nom du champ dans `app/` avant toute suppression, et passer un `gh run list` en fin de session : un commit réussi ne prouve pas que le site est déployé.
-- **`agent_select` route depuis `dossiers.json`, plus depuis une liste en dur** — `DOSSIERS_DESC` maintenue à la main avait raté D21 Culture (jamais proposé au classement depuis sa création) et gardait D08/D09/D14 supprimés/fusionnés. `build_dossiers_desc()` lit désormais le champ `mots_cles_ia` de chaque dossier : **tout nouveau dossier doit porter ses `mots_cles_ia`** pour être routable (repli sur le titre sinon).
-- **Export statique : pas de slash final** — `/statistiques/` renvoie 404, la bonne URL est `/statistiques` (le build génère `statistiques.html`, pas un dossier). À savoir avant de conclure qu'une page est cassée en la testant au curl.
-- **`PIEGES_ARCHIVE.md` accumulait des copies de la même entrée** — bug de l'outillage de clôture (`_append_piege()` ne dédupliquait que sur `CLAUDE.md`, pas sur l'archive où `_rotate_pieges()` venait de déplacer l'entrée). Corrigé en amont dans dm2p-copilot-setup ; l'archive a été dédupliquée (14 entrées → 5).
