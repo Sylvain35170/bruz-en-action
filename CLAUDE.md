@@ -117,8 +117,7 @@ Agents : `agent_mairie` · `agent_ouestfrance` (Playwright + cookies Chrome ; l�
 dépendance manquante ; alimente aussi `coup_de_pouce_pending.json` via
 `agent_coup_de_pouce.depuis_presse()` sur ses articles déjà filtrés — pas de second
 scraper OF) · `agent_presse` (Google News RSS) · `agent_megalis` (YouTube RSS)
-· `agent_bruz_mag` (PDF) · `agent_signalements` (Gmail `bruzenaction@gmail.com` →
-`proposals/signalements.json` — voir sous-section dédiée) ·
+· `agent_bruz_mag` (PDF) · `agent_signalements` (Gmail — voir sous-section dédiée) ·
 `agent_enrichissement_cm` (transcription + Claude) ·
 `agent_metropole_delibs` (API open data `data.rennesmetropole.fr`, dataset
 `deliberations-rennes-metropole-2021-copie` → queue de veille ; ⚠️ ODSQL : full-text nu
@@ -148,8 +147,9 @@ Convention pour les liens confirmés morts sans alternative trouvée : ajouter `
 
 ### Signalements citoyens — `scripts/agents/agent_signalements.py`
 
-Transforme les emails `[SIGNALEMENT]` reçus sur `bruzenaction@gmail.com` (générés
-par le bouton "Signaler" du site, `components/SignalementButton.tsx`) en tickets
+Transforme les emails `[SIGNALEMENT]` reçus sur l'adresse de contact de
+l'association (`meta.json > contact.email` — `sylv.bertrand@gmail.com`, **le
+même compte que `agent_mailer`**, cf. piège 2026-08-26 ci-dessous) en tickets
 dans `scripts/proposals/signalements.json` (gitignoré). Recherche par sujet
 (`subject:"[SIGNALEMENT]"`) — aucun filtre/label Gmail à configurer. Dédoublonnage
 par `message_id` directement dans le registre de tickets ; la boîte Gmail n'est
@@ -164,13 +164,15 @@ signalement.
 - `--close id1,id2` : marque des tickets `traité` après action (correction du site
   faite à la main, ou signalement classé sans suite)
 
-**⚠️ Setup requis avant premier run (une fois)** : compte `bruzenaction@gmail.com`
-DISTINCT de celui d'`agent_mailer` (`sylv.bertrand@gmail.com`) — credentials OAuth
-séparées dans `~/.bruz-signalements-gmail/` (nouveau projet Google Cloud, API
-Gmail, scope `gmail.readonly`, se connecter avec `bruzenaction@gmail.com` au
-consentement). Tant que `client_secret.json` est absent, l'agent se signale en
-`INFO` (pas `ERR`) pour ne pas faire passer le run quotidien en échec pour une
-étape de configuration non faite.
+**Setup requis avant premier run (une fois)** : même compte que le mailer →
+réutilise son client OAuth (`~/.bruz-mailer-gmail/client_secret.json`, repli sur
+`~/.bruz-signalements-gmail/client_secret.json` si absent) — pas de nouveau
+projet Google Cloud à créer. Seul le token diffère (`~/.bruz-signalements-gmail/token.json`,
+scope `gmail.readonly` propre à cet agent). Lancer
+`python3 scripts/agents/agent_signalements.py` une fois à la main pour le
+consentement navigateur. Tant qu'aucun client_secret n'est trouvé, l'agent se
+signale en `INFO` (pas `ERR`) pour ne pas faire passer le run quotidien en
+échec pour une étape de configuration non faite.
 
 ---
 
@@ -185,6 +187,23 @@ consentement). Tant que `client_secret.json` est absent, l'agent se signale en
 ---
 
 ## Pièges connus
+### 2026-08-26 — bruz-en-action : l'adresse de contact du site pointait vers une boîte qui n'existe pas
+→ dispatch: local:bruz-en-action
+
+`meta.json > contact.email` valait `bruzenaction@gmail.com` depuis le lancement du
+site — repris tel quel par `SignalementButton.tsx` (bouton "Signaler" sur
+dossiers/promesses/footer) et prévu comme cible de l'agent Signalements. Cette
+adresse n'existe pas. Corrigée vers `sylv.bertrand@gmail.com` (même compte que
+`agent_mailer`) le 26/08 — ce qui a aussi permis de simplifier le setup OAuth de
+l'agent Signalements : réutilisation du client OAuth du mailer au lieu d'un
+nouveau projet Google Cloud (seul le token diffère, scope `gmail.readonly`).
+
+➡️ Tout signalement citoyen envoyé depuis le lancement du site est parti dans le
+vide, sans erreur visible côté visiteur (un mailto: vers une adresse inexistante
+ne prévient personne). Une adresse de contact affichée sur un site doit être
+vérifiée en conditions réelles (s'envoyer un email de test), pas seulement
+relue — rien dans le code ni le build ne peut détecter qu'une boîte n'existe pas.
+
 ### 2026-08-20 — bruz-en-action : une fiche cms.json "complète" peut quand même avoir un trou politique
 → dispatch: local:bruz-en-action
 

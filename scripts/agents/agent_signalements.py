@@ -2,21 +2,24 @@
 # -*- coding: utf-8 -*-
 """
 Agent Signalements — transforme les emails [SIGNALEMENT] reçus sur
-bruzenaction@gmail.com en tickets structurés pour triage.
+sylv.bertrand@gmail.com (adresse de contact de l'association, cf. data/meta.json)
+en tickets structurés pour triage.
 
-Source : le bouton "Signaler" du site (components/SignalementButton.tsx) ouvre
-un mailto: vers bruzenaction@gmail.com avec un sujet "[SIGNALEMENT] Réf : ..."
-et un corps structuré (TYPE / RÉFÉRENCE / MESSAGE / SOURCE / EMAIL DE CONTACT).
-L'agent recherche ces emails par sujet — aucun filtre/label Gmail à configurer,
-le bouton produit déjà ce préfixe dans tous les cas — extrait les champs, et
-dépose un ticket dans scripts/proposals/signalements.json.
+Source : le bouton "Signaler" du site (components/SignalementButton.tsx) lit
+`meta.json > contact.email` pour construire un mailto: avec un sujet
+"[SIGNALEMENT] Réf : ..." et un corps structuré (TYPE / RÉFÉRENCE / MESSAGE /
+SOURCE / EMAIL DE CONTACT). L'agent recherche ces emails par sujet — aucun
+filtre/label Gmail à configurer, le bouton produit déjà ce préfixe dans tous
+les cas — extrait les champs, et dépose un ticket dans
+scripts/proposals/signalements.json.
 
-⚠️ Le compte bruzenaction@gmail.com est DISTINCT de celui utilisé par
-agent_mailer (sylv.bertrand@gmail.com) : credentials OAuth séparées, scope
-`gmail.readonly` uniquement — l'agent ne modifie jamais la boîte (pas de
-label posé, pas de message marqué lu). Le dédoublonnage vit entièrement dans
-le registre local : un `message_id` déjà présent dans signalements.json n'est
-jamais re-transformé en ticket.
+Même compte Gmail que agent_mailer : réutilise son client OAuth existant
+(~/.bruz-mailer-gmail/client_secret.json) plutôt que de faire créer un second
+projet Google Cloud pour la même boîte — seul le token diffère (scope
+`gmail.readonly` propre à cet agent, jamais `gmail.send`). L'agent ne modifie
+jamais la boîte (pas de label posé, pas de message marqué lu) ; le
+dédoublonnage vit entièrement dans le registre local : un `message_id` déjà
+présent dans signalements.json n'est jamais re-transformé en ticket.
 
 L'extraction du template est du best-effort : un citoyen peut répondre en
 texte libre, supprimer des lignes, ou son client mail peut reformater le
@@ -25,12 +28,13 @@ retrouvé, le ticket garde quand même le corps brut intégral (`parsed: false`)
 plutôt que de perdre le signalement.
 
 Configuration (première utilisation, une fois) :
-  ~/.bruz-signalements-gmail/client_secret.json — credentials OAuth
-  "Desktop app" (nouveau projet Google Cloud, API Gmail, scope gmail.readonly),
-  autorisées sur le compte bruzenaction@gmail.com.
-  ~/.bruz-signalements-gmail/token.json — généré au premier run (ouvre un
-  navigateur pour le consentement — se connecter avec bruzenaction@gmail.com),
-  puis rafraîchi automatiquement (silencieux, y compris depuis launchd).
+  ~/.bruz-mailer-gmail/client_secret.json — DÉJÀ EN PLACE si agent_mailer
+  tourne (même compte, même client OAuth). Sinon, credentials OAuth
+  "Desktop app" (projet Google Cloud, API Gmail activée).
+  ~/.bruz-signalements-gmail/token.json — propre à cet agent (scope différent
+  du mailer) : généré au premier run (ouvre un navigateur pour le
+  consentement — se connecter avec sylv.bertrand@gmail.com), puis rafraîchi
+  automatiquement (silencieux, y compris depuis launchd).
 
 Usage :
   python3 scripts/agents/agent_signalements.py                 # scan + dépose les tickets
@@ -51,10 +55,18 @@ from utils import load_json, log, save_json, stable_id, today  # noqa: E402
 
 AGENT_NAME = "signalements"
 
+# Même compte que agent_mailer (sylv.bertrand@gmail.com) : on réutilise son
+# client OAuth, seul le token (scope readonly, propre à cet agent) est séparé.
+MAILER_CLIENT_SECRET = Path.home() / ".bruz-mailer-gmail" / "client_secret.json"
 GMAIL_DIR = Path.home() / ".bruz-signalements-gmail"
-GMAIL_CLIENT_SECRET = GMAIL_DIR / "client_secret.json"
+GMAIL_CLIENT_SECRET = GMAIL_DIR / "client_secret.json"  # repli si le mailer n'est pas configuré
 GMAIL_TOKEN = GMAIL_DIR / "token.json"
 GMAIL_SCOPES = ["https://www.googleapis.com/auth/gmail.readonly"]
+
+
+def _client_secret_path() -> Path:
+    """Préfère le client OAuth déjà déployé pour le mailer (même compte)."""
+    return MAILER_CLIENT_SECRET if MAILER_CLIENT_SECRET.exists() else GMAIL_CLIENT_SECRET
 
 TICKETS_FILE = Path(__file__).parent.parent / "proposals" / "signalements.json"
 
@@ -94,9 +106,10 @@ def _get_gmail_service():
         if creds and creds.expired and creds.refresh_token:
             creds.refresh(Request())
         else:
-            if not GMAIL_CLIENT_SECRET.exists():
-                raise RuntimeError(f"Credentials OAuth manquantes : {GMAIL_CLIENT_SECRET}")
-            flow = InstalledAppFlow.from_client_secrets_file(str(GMAIL_CLIENT_SECRET), GMAIL_SCOPES)
+            client_secret = _client_secret_path()
+            if not client_secret.exists():
+                raise RuntimeError(f"Credentials OAuth manquantes : {client_secret}")
+            flow = InstalledAppFlow.from_client_secrets_file(str(client_secret), GMAIL_SCOPES)
             creds = flow.run_local_server(port=0)
         GMAIL_DIR.mkdir(parents=True, exist_ok=True)
         GMAIL_TOKEN.write_text(creds.to_json(), encoding="utf-8")
@@ -202,7 +215,7 @@ def _tickets_connus() -> set[str]:
 
 def scan() -> bool:
     """Interroge Gmail et dépose un ticket par email [SIGNALEMENT] non déjà connu."""
-    if not GMAIL_CLIENT_SECRET.exists():
+    if not _client_secret_path().exists():
         # Pas encore configuré : état normal tant que l'OAuth n'a pas été mis en
         # place (voir docstring du module). Ne pas logger en ERR — un run_agents
         # quotidien ne doit pas afficher "en erreur" pour une étape de setup non
