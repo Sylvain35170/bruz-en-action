@@ -48,12 +48,25 @@ def match_dossier(text: str) -> list[str]:
     return matched
 
 
+def _extrait(texte: str, n: int = 300) -> str:
+    """Tronque à n caractères sur une frontière de mot, avec une ellipse.
+
+    Un `[:300]` nu coupe en plein milieu d'un mot (« …police municipale qu »)
+    et le rendu du dossier affiche `detail` tel quel : moche en prod.
+    """
+    texte = (texte or "").strip()
+    if len(texte) <= n:
+        return texte
+    coupe = texte[:n].rsplit(" ", 1)[0].rstrip(" ,;:—-")
+    return f"{coupe}…"
+
+
 def build_news_item(source: dict, source_type: str) -> dict:
     # Schéma actus.json : source_url, detail, source_label (pas url/contenu/source)
     return {
         "date": source.get("date", today())[:10],
         "titre": source.get("titre", "")[:120],
-        "detail": (source.get("detail") or source.get("contenu") or "")[:300],
+        "detail": _extrait(source.get("detail") or source.get("contenu") or ""),
         "source_url": source.get("source_url") or source.get("url") or "",
         "source_label": source.get("source_label") or source.get("source") or source_type,
     }
@@ -141,8 +154,8 @@ def run() -> bool:
                 news = {
                     "date": seance.get("date", today()),
                     "titre": seance.get("titre", "")[:120],
-                    "detail": (" | ".join(seance.get("points_cles", []))
-                               or seance.get("resume_executif", ""))[:300],
+                    "detail": _extrait(" | ".join(seance.get("points_cles", []))
+                                       or seance.get("resume_executif", "")),
                     "source_url": url,
                     "source_label": src.get("label", "Délibération"),
                 }
