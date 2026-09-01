@@ -1011,7 +1011,7 @@
       "categorie": "Urbanisme",
       "statut": "en_cours",
       "featured": true,
-      "last_activity": "2026-08-24",
+      "last_activity": "2026-08-27",
       "date_ouverture": "2026-06-16",
       "chapeau": "Carte interactive de Bruz, recensement des chantiers en cours (qui creuse où, jusqu'à quand) et veille sur les projets d'urbanisme qui ne rentrent pas déjà dans un dossier dédié (hors ZAC Multisites, voir D02, hors Trambus T4, voir D01) : évolutions de quartier, permis groupés, équipements publics annoncés, travaux de voirie.",
       "ce_quon_sait": [
@@ -1118,6 +1118,13 @@
       ],
       "lien_externe": "/bruz-en-action/carte",
       "actus_recentes": [
+        {
+          "date": "2026-08-27",
+          "titre": "Bruz. C'est reparti pour huit mois de travaux boulevard Pasteur",
+          "detail": "Après dix-huit mois de travaux de réfection des réseaux souterrains, le boulevard Pasteur poursuit sa transformation avec une phase d'aménagement prévue jusqu'en avril 2027. Ces travaux couvrent l'assainissement, l'eau, le gaz, l'électricité et la réfection de la surface du boulevard.",
+          "source_url": "https://www.ouest-france.fr/bretagne/bruz-35170/bruz-cest-reparti-pour-huit-mois-de-travaux-boulevard-pasteur-03c8d35f-9970-410c-85bc-d773290efa21",
+          "source_label": "Ouest-France"
+        },
         {
           "date": "2026-08-17",
           "titre": "Travaux d'aménagement du boulevard Louis Pasteur",
@@ -2780,8 +2787,8 @@
       "titre": "Démocratie locale : le pilier 7 du programme, encore à l'état de promesse",
       "categorie": "Institutions",
       "statut": "en_cours",
-      "featured": false,
-      "last_activity": "2026-07-17",
+      "featured": true,
+      "last_activity": "2026-08-27",
       "date_ouverture": "2026-07-17",
       "chapeau": "« Renforcer une véritable démocratie locale » est un pilier à part entière du programme municipal 2026-2032 : élus référents par quartier, réunions régulières, Conseil municipal des jeunes, Conseil des sages, comptes-rendus clairs des décisions. Cinq engagements, mesurables sur tout le mandat. Ce dossier suit leur mise en œuvre concrète.",
       "ce_quon_sait": [
@@ -2825,7 +2832,15 @@
           "url": "https://data.megalis.bretagne.bzh/?siren=213500473"
         }
       ],
-      "actus_recentes": [],
+      "actus_recentes": [
+        {
+          "date": "2026-08-27",
+          "titre": "« On cherche simplement la sécurité des soins » : le changement de nom du Vert-Buisson inquiète les médecins",
+          "detail": "Le conseil municipal du 3 juillet 2026 a validé le renommage de la place du Vert-Buisson en place Robert-Barré (ancien maire 1989-2008, † 2020, mentor politique de Jean-René Houssin), effectif le 7 septembre — inauguration des plaques le 11 septembre. La minorité (Philippe Salmon) avait déjà pointé…",
+          "source_url": "https://www.ouest-france.fr/bretagne/bruz-35170/on-cherche-simplement-la-securite-des-soins-a-bruz-le-changement-de-nom-du-vert-buisson-inquiete-les-medecins-9db03314-a15d-11f1-bba4-fb5ac80a227f",
+          "source_label": "Ouest-France"
+        }
+      ],
       "promesses_liees": [
         37,
         38,
