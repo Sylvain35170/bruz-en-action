@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-20",
+    "last_updated": "2026-09-01",
     "version": "3.0"
   },
   "dossiers": [
@@ -1475,8 +1475,8 @@
       "titre": "La sécurité à Bruz",
       "categorie": "Sécurité",
       "statut": "en_cours",
-      "featured": false,
-      "last_activity": "2026-07-04",
+      "featured": true,
+      "last_activity": "2026-08-27",
       "date_ouverture": "2026-06-18",
       "chapeau": "Bruz reste sous régime de gendarmerie nationale, mais sa police municipale grandit : effectif porté à 8 agents, un poste supplémentaire en cours de recrutement, agents désormais armés (catégories B et D) et équipés de caméras-piétons. Ce dossier suit l'ensemble de la chaîne sécurité locale — police municipale, gendarmerie, vidéoprotection, statistiques de délinquance — et si le renforcement promis par la majorité de Jean-René Houssin se traduit dans les faits.",
       "ce_quon_sait": [
@@ -1563,6 +1563,13 @@
         }
       ],
       "actus_recentes": [
+        {
+          "date": "2026-08-27",
+          "titre": "Vigilance cambriolages à Bruz",
+          "detail": "Le 27 août 2026, la mairie de Bruz alerte ses habitants sur une recrudescence des cambriolages « ces dernières semaines » (sans chiffres communiqués) et rappelle les conseils de sécurisation du domicile. Elle met en avant l'Opération Tranquillité Vacances — service gratuit de la police municipale qu",
+          "source_url": "https://www.ville-bruz.fr/actualites/cambriolages-a-bruz-proteger-son-domicile/",
+          "source_label": "Mairie de Bruz — Actualités"
+        },
         {
           "date": "2026-07-04",
           "titre": "Les cambriolages de logement à Bruz au plus haut depuis 10 ans",

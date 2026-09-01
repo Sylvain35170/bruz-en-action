@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-19",
+    "last_updated": "2026-09-01",
     "source": "Ville de Bruz, Grand Logis, Handisport, Les Trans"
   },
   "evenements": [
@@ -103,87 +103,6 @@
       "lien_label": "Agenda Ville de Bruz",
       "source": "agenda_mairie",
       "date_fin": "2026-09-30"
-    },
-    {
-      "id": "agenda-3e88593a",
-      "titre": "Atelier créatif Origami : Totoro",
-      "date": "2026-07-21",
-      "categorie": "Atelier",
-      "lien": "https://www.ville-bruz.fr/agenda/atelier-creatif-origami-totoro/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
-    },
-    {
-      "id": "agenda-3ac4c340",
-      "titre": "Crok’histoires",
-      "date": "2026-07-22",
-      "categorie": "Médiathèque",
-      "lien": "https://www.ville-bruz.fr/agenda/crokhistoires-3/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
-    },
-    {
-      "id": "agenda-7888fd9e",
-      "titre": "Ciné-goûter « De bien curieux voisins »",
-      "date": "2026-07-22",
-      "categorie": "Médiathèque",
-      "lien": "https://www.ville-bruz.fr/agenda/cine-gouter-de-bien-curieux-voisins/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
-    },
-    {
-      "id": "agenda-1beeb3c0",
-      "titre": "Sortie nature nocturne – Complet",
-      "date": "2026-07-23",
-      "categorie": "Rencontre",
-      "lien": "https://www.ville-bruz.fr/agenda/sortie-nature-nocturne-2/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
-    },
-    {
-      "id": "agenda-5ce3eb27",
-      "titre": "Atelier créatif « flipbook »",
-      "date": "2026-07-24",
-      "categorie": "Atelier",
-      "lien": "https://www.ville-bruz.fr/agenda/atelier-creatif-flipbook/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
-    },
-    {
-      "id": "agenda-0211be85",
-      "titre": "Place aux jeux",
-      "date": "2026-07-28",
-      "categorie": "Jeux",
-      "lien": "https://www.ville-bruz.fr/agenda/place-aux-jeux-3/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
-    },
-    {
-      "id": "agenda-ce4ca46e",
-      "titre": "Crok’histoires",
-      "date": "2026-07-29",
-      "categorie": "Médiathèque",
-      "lien": "https://www.ville-bruz.fr/agenda/crokhistoires/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
-    },
-    {
-      "id": "agenda-3e97f657",
-      "titre": "Un livre, un jeu",
-      "date": "2026-07-29",
-      "categorie": "Jeux",
-      "lien": "https://www.ville-bruz.fr/agenda/un-livre-un-jeu-3/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
-    },
-    {
-      "id": "agenda-ed2b83aa",
-      "titre": "On en parle !",
-      "date": "2026-07-31",
-      "categorie": "Médiathèque",
-      "lien": "https://www.ville-bruz.fr/agenda/on-en-parle-3/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
     },
     {
       "id": "agenda-c0ba2d32",
@@ -620,6 +539,24 @@
       "source": "agenda_mairie"
     },
     {
+      "id": "agenda-466795ab",
+      "titre": "Café philo : Serions-nous plus heureux si nous étions immortels ?",
+      "date": "2026-10-01",
+      "categorie": "Mortel !",
+      "lien": "https://www.ville-bruz.fr/agenda/cafe-philo-serions-nous-plus-heureux-si-nous-etions-immortels/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-cf1bed4a",
+      "titre": "Conférence : Pourquoi fouiller les tombes ?",
+      "date": "2026-10-02",
+      "categorie": "Médiathèque",
+      "lien": "https://www.ville-bruz.fr/agenda/conference-pourquoi-fouiller-les-tombes/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
       "id": "agenda-dbce7b3b",
       "titre": "Animation : Observation du soleil",
       "date": "2026-10-03",
@@ -665,11 +602,29 @@
       "source": "agenda_mairie"
     },
     {
+      "id": "agenda-abf2b69b",
+      "titre": "Soirée littéraire : Mortel !",
+      "date": "2026-10-13",
+      "categorie": "Atelier",
+      "lien": "https://www.ville-bruz.fr/agenda/soiree-litteraire-mortel/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
       "id": "agenda-ede95989",
       "titre": "Fidji",
       "date": "2026-10-14",
       "categorie": "Théâtre",
       "lien": "https://www.ville-bruz.fr/agenda/fidji/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-9539be78",
+      "titre": "Crée ton badge Calavera !",
+      "date": "2026-10-14",
+      "categorie": "Médiathèque",
+      "lien": "https://www.ville-bruz.fr/agenda/cree-ton-badge-calavera/",
       "lien_label": "Agenda Ville de Bruz",
       "source": "agenda_mairie"
     },
@@ -683,11 +638,38 @@
       "source": "agenda_mairie"
     },
     {
+      "id": "agenda-a4e945a5",
+      "titre": "Crée ton badge Calavera !",
+      "date": "2026-10-16",
+      "categorie": "Médiathèque",
+      "lien": "https://www.ville-bruz.fr/agenda/cree-ton-badge-calavera-2/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-1d9ac4bf",
+      "titre": "Soirée jeux de société",
+      "date": "2026-10-16",
+      "categorie": "Mortel !",
+      "lien": "https://www.ville-bruz.fr/agenda/soiree-jeux-de-societe/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
       "id": "agenda-3c280c4d",
       "titre": "Repas des aînés – Complet",
       "date": "2026-10-18",
       "categorie": "Solidarité",
       "lien": "https://www.ville-bruz.fr/agenda/repas-des-aines/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-416ad986",
+      "titre": "Atelier : « Du bruit dans l’histoire »",
+      "date": "2026-10-20",
+      "categorie": "Mortel !",
+      "lien": "https://www.ville-bruz.fr/agenda/atelier-du-bruit-dans-lhistoire/",
       "lien_label": "Agenda Ville de Bruz",
       "source": "agenda_mairie"
     },
@@ -701,11 +683,47 @@
       "source": "agenda_mairie"
     },
     {
+      "id": "agenda-6098e7d9",
+      "titre": "Projection du dessin animé « Coco »",
+      "date": "2026-10-26",
+      "categorie": "Famille",
+      "lien": "https://www.ville-bruz.fr/agenda/projection-du-dessin-anime-coco/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
       "id": "agenda-32d840dc",
       "titre": "La nuit des dragons",
       "date": "2026-10-28",
       "categorie": "Rencontre",
       "lien": "https://www.ville-bruz.fr/agenda/la-nuit-des-dragons/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-5bfb8a00",
+      "titre": "Atelier pop-up « dia de los muertos »",
+      "date": "2026-10-28",
+      "categorie": "Médiathèque",
+      "lien": "https://www.ville-bruz.fr/agenda/atelier-pop-up-dia-de-los-muertos/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-33113fe5",
+      "titre": "Lecture musicale et ciné goûter",
+      "date": "2026-11-04",
+      "categorie": "Médiathèque",
+      "lien": "https://www.ville-bruz.fr/agenda/lecture-musicale-et-cine-gouter/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-481d83f8",
+      "titre": "Ciné-goûter « au paradis »",
+      "date": "2026-11-04",
+      "categorie": "Mortel !",
+      "lien": "https://www.ville-bruz.fr/agenda/cine-gouter-au-paradis/",
       "lien_label": "Agenda Ville de Bruz",
       "source": "agenda_mairie"
     },
@@ -719,11 +737,38 @@
       "source": "agenda_mairie"
     },
     {
+      "id": "agenda-b89f87fd",
+      "titre": "Lecture théâtrale à deux voix « Vivantes »",
+      "date": "2026-11-06",
+      "categorie": "L'Escale",
+      "lien": "https://www.ville-bruz.fr/agenda/lecture-theatrale-a-deux-voix-vivantes/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-ae1998b7",
+      "titre": "Projection du film « c’est la vie Ginette »",
+      "date": "2026-11-13",
+      "categorie": "Médiathèque",
+      "lien": "https://www.ville-bruz.fr/agenda/projection-du-film-cest-la-vie-ginette/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
       "id": "agenda-6d8135c7",
       "titre": "Louise Thomas",
       "date": "2026-11-17",
       "categorie": "Concert",
       "lien": "https://www.ville-bruz.fr/agenda/louise-thomas/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-8296b8d1",
+      "titre": "Rencontre « Comment accompagner la fin de vie ? »",
+      "date": "2026-11-18",
+      "categorie": "Rencontre",
+      "lien": "https://www.ville-bruz.fr/agenda/rencontre-comment-accompagner-la-fin-de-vie/",
       "lien_label": "Agenda Ville de Bruz",
       "source": "agenda_mairie"
     },
@@ -737,11 +782,48 @@
       "source": "agenda_mairie"
     },
     {
+      "id": "agenda-9e87a849",
+      "titre": "Exposition « D’une vie à l’autre »",
+      "date": "2026-11-23",
+      "categorie": "Exposition",
+      "lien": "https://www.ville-bruz.fr/agenda/exposition-dune-vie-a-lautre-2/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie",
+      "date_fin": "2026-12-11"
+    },
+    {
+      "id": "agenda-3589911b",
+      "titre": "Échanges « Parlottes à volontés »",
+      "date": "2026-11-24",
+      "categorie": "Rencontre",
+      "lien": "https://www.ville-bruz.fr/agenda/echanges-parlottes-a-volontes/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
       "id": "agenda-4b226fd0",
       "titre": "Lisa",
       "date": "2026-11-26",
       "categorie": "Théâtre",
       "lien": "https://www.ville-bruz.fr/agenda/lisa/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-d3327ee4",
+      "titre": "Échange avec Inter+café « Quand la mort fait fête »",
+      "date": "2026-11-27",
+      "categorie": "Mortel !",
+      "lien": "https://www.ville-bruz.fr/agenda/echange-avec-intercafe-quand-la-mort-fait-fete/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-97f23724",
+      "titre": "Échange « Face à la mort, la force du collectif »",
+      "date": "2026-12-02",
+      "categorie": "Rencontre",
+      "lien": "https://www.ville-bruz.fr/agenda/echange-face-a-la-mort-la-force-du-collectif/",
       "lien_label": "Agenda Ville de Bruz",
       "source": "agenda_mairie"
     },
@@ -769,6 +851,24 @@
       "date": "2026-12-09",
       "categorie": "Spectacle",
       "lien": "https://www.ville-bruz.fr/agenda/le-lac-des-cygnes/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-140f4817",
+      "titre": "Lecture « Mercredi du grand logis »",
+      "date": "2026-12-09",
+      "categorie": "Médiathèque",
+      "lien": "https://www.ville-bruz.fr/agenda/lecture-mercredi-du-grand-logis/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-dde0e7a4",
+      "titre": "Projection « les contes du pommier »",
+      "date": "2026-12-11",
+      "categorie": "Médiathèque",
+      "lien": "https://www.ville-bruz.fr/agenda/projection-les-contes-du-pommier/",
       "lien_label": "Agenda Ville de Bruz",
       "source": "agenda_mairie"
     },

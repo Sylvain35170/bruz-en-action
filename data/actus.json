@@ -1,9 +1,19 @@
 {
   "meta": {
-    "last_updated": "2026-08-20",
+    "last_updated": "2026-09-01",
     "note": "Actus de suivi des promesses — une actu = un événement daté lié à une ou plusieurs promesses"
   },
   "actus": [
+    {
+      "id": "mairie-bdc739a6",
+      "titre": "Vigilance cambriolages à Bruz",
+      "date": "2026-08-27",
+      "detail": "Le 27 août 2026, la mairie de Bruz alerte ses habitants sur une recrudescence des cambriolages « ces dernières semaines » (sans chiffres communiqués) et rappelle les conseils de sécurisation du domicile. Elle met en avant l'Opération Tranquillité Vacances — service gratuit de la police municipale qui assure des passages réguliers devant les domiciles signalés absents — et les numéros de la gendarmerie (02 99 52 61 06) et de la police municipale (02 99 05 44 04).",
+      "source_url": "https://www.ville-bruz.fr/actualites/cambriolages-a-bruz-proteger-son-domicile/",
+      "source_label": "Mairie de Bruz — Actualités",
+      "type": "mairie",
+      "dossier": "D07"
+    },
     {
       "id": "mairie-440391c7",
       "titre": "Du nouveau sur le réseau STAR !",

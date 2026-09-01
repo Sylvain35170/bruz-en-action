@@ -1,10 +1,29 @@
 {
   "meta": {
-    "last_updated": "2026-07-11",
+    "last_updated": "2026-09-01",
     "note": "Bulletins municipaux (Bruz Mag, Semaine à Bruz) — distincts des séances de conseil municipal (cms.json)",
-    "dernier_bruz_mag": 260
+    "dernier_bruz_mag": 260,
+    "derniere_semaine_bruz": 859
   },
   "bulletins": [
+    {
+      "id": "SAB-859",
+      "date": "2026-08-27",
+      "titre": "Semaine à Bruz n°859 — du 27 août au 2 septembre 2026",
+      "points_cles": [
+        "Bimensuel d'information de la Ville de Bruz",
+        "Forum des associations et du bénévolat — samedi 5 septembre",
+        "Cinéma plein air",
+        "Infos pratiques et vie associative"
+      ],
+      "sources": [
+        {
+          "label": "Télécharger le PDF",
+          "url": "https://www.ville-bruz.fr/wp-content/uploads/2026/08/Semaine-a-Bruz-n°859-du-27-aout-au-2-septembre-2026.pdf"
+        }
+      ],
+      "type": "semaine_bruz"
+    },
     {
       "id": "BM-260",
       "date": "2026-07-11",
