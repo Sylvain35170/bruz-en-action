@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.bruz-en-action.veille</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>-c</string>
+        <!-- Backstop dur : si le run entier dépasse 30 min (watchdog par agent HS,
+             deadlock imprévu…), perl SIGALRM tue le process pour que launchd
+             puisse relancer au prochain créneau. Cf. blocage 6 j du 26/08
+             (agent_signalements figé sur flow.run_local_server). -->
+        <string>exec /usr/bin/perl -e 'alarm shift; exec @ARGV' 1800 __VENV_PYTHON__ __REPO__/scripts/run_agents.py</string>
+    </array>
+
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key>
+        <integer>17</integer>
+        <key>Minute</key>
+        <integer>0</integer>
+    </dict>
+
+    <key>StandardOutPath</key>
+    <string>__HOME__/Library/Logs/bruz-en-action-veille.log</string>
+
+    <key>StandardErrorPath</key>
+    <string>__HOME__/Library/Logs/bruz-en-action-veille.log</string>
+
+    <key>RunAtLoad</key>
+    <false/>
+</dict>
+</plist>

@@ -132,9 +132,15 @@ date littérale ; les CR du conseil métropolitain ne sont PAS cherchables sur M
 événements marqués `source: agenda_mairie`, les saisies manuelles ne sont jamais touchées,
 purge auto des événements passés de +30 j) · `agent_dossiers` (hors cron, post-revue).
 
-Lancement : `python3 scripts/run_agents.py` (launchd 17h en semaine).
+Lancement : `python3 scripts/run_agents.py` (launchd tous les jours 17h).
 Logs : `~/Library/Logs/bruz-en-action-veille.log`.
 Environnement d'exécution : venv dédié `~/.venvs/bruz-en-action/` (voir piège 2026-07-01 ci-dessous — ne pas repointer le plist sur un python homebrew direct ou un venv sous `~/Documents`).
+
+**Jobs launchd versionnés dans `scripts/launchd/`** (templates + `install.sh`) — c'est la
+source de vérité, plus `~/Library/LaunchAgents/` seul. `bash scripts/launchd/install.sh`
+régénère et recharge les 2 jobs (veille 17h, linkcheck lundi 8h). Le run est wrappé
+`perl alarm 1800` (backstop 30 min) + watchdog SIGALRM par agent (300 s) dans
+`run_agents.py` — cf. piège du blocage 6 jours (26/08 → 01/09).
 
 ### Validation données — `scripts/validate_data.py`
 
@@ -192,6 +198,26 @@ signale en `INFO` (pas `ERR`) pour ne pas faire passer le run quotidien en
 ---
 
 ## Pièges connus
+### 2026-09-01 — la veille a été bloquée 6 jours par un agent figé sur un prompt navigateur
+→ dispatch: local:bruz-en-action
+
+`agent_signalements` (livré le 26/08) testait `client_secret` pour son garde-fou de
+setup. Or ce fichier existe déjà (client OAuth réutilisé du mailer), donc au premier run
+launchd du 26/08 l'agent est passé le garde-fou et est tombé sur
+`flow.run_local_server()` — qui attend un navigateur et **bloque indéfiniment sous
+launchd**. Le process est resté vivant 6 jours ; `launchd`, voyant le job encore
+`running`, a **sauté tous les créneaux 17h suivants** (27/08 → 01/09). Aucune alerte :
+le job n'était pas « en échec », il était « en cours ».
+
+Fixes : (1) garde-fou sur `GMAIL_TOKEN.exists()` (le consentement navigateur), pas sur
+`client_secret` ; (2) watchdog `SIGALRM` par agent (300 s) dans `run_agents.py` ;
+(3) backstop `perl alarm 1800` dans le plist (`scripts/launchd/`).
+
+➡️ Un job launchd sans borne de durée peut mourir en silence : bloqué ≠ en échec, et un
+`StartCalendarInterval` ne redéclenche jamais tant que l'instance précédente vit. Tout
+run planifié doit avoir un timeout dur. Et jamais de `run_local_server()` / prompt
+interactif dans du code appelé depuis launchd.
+
 ### 2026-08-27 — coup_de_pouce_pending.json ne se vidait jamais après publication
 → dispatch: local:bruz-en-action
 
