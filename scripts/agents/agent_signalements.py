@@ -37,6 +37,7 @@ Configuration (première utilisation, une fois) :
   automatiquement (silencieux, y compris depuis launchd).
 
 Usage :
+  python3 scripts/agents/agent_signalements.py --setup         # consentement OAuth (1 fois, à la main)
   python3 scripts/agents/agent_signalements.py                 # scan + dépose les tickets
   python3 scripts/agents/agent_signalements.py --list          # liste les tickets "nouveau"
   python3 scripts/agents/agent_signalements.py --close id1,id2 # marque des tickets "traité"
@@ -213,6 +214,24 @@ def _tickets_connus() -> set[str]:
     return {t.get("message_id") for t in load_json(TICKETS_FILE).get("items", [])}
 
 
+def setup() -> None:
+    """Déclenche le consentement OAuth navigateur (à faire une fois, à la main).
+
+    C'est la seule voie pour créer `GMAIL_TOKEN` : `scan()` se saute tant qu'il
+    n'existe pas (sinon `flow.run_local_server()` bloquerait launchd, cf.
+    incident du 26/08). Ici on est forcément en interactif, donc on l'appelle.
+    """
+    if GMAIL_TOKEN.exists():
+        log(f"Token déjà présent ({GMAIL_TOKEN}) — rien à faire. Test d'accès…", "INFO")
+    try:
+        service = _get_gmail_service()
+        profil = service.users().getProfile(userId="me").execute()
+        log(f"✅ Consentement OK — boîte : {profil.get('emailAddress')}", "OK")
+    except Exception as e:
+        log(f"Échec du consentement : {e}", "ERR")
+        sys.exit(1)
+
+
 def scan() -> bool:
     """Interroge Gmail et dépose un ticket par email [SIGNALEMENT] non déjà connu."""
     if not GMAIL_TOKEN.exists():
@@ -337,11 +356,15 @@ def run() -> bool:
 
 if __name__ == "__main__":
     parseur = argparse.ArgumentParser(description=__doc__)
+    parseur.add_argument("--setup", action="store_true",
+                         help="consentement OAuth navigateur (à faire une fois, à la main)")
     parseur.add_argument("--list", action="store_true", help="lister les tickets en attente")
     parseur.add_argument("--close", default="", help="IDs à marquer traités, séparés par des virgules")
     args = parseur.parse_args()
 
-    if args.list:
+    if args.setup:
+        setup()
+    elif args.list:
         lister()
     elif args.close:
         fermer([i.strip() for i in args.close.split(",") if i.strip()])

@@ -179,11 +179,10 @@ signalement.
 réutilise son client OAuth (`~/.bruz-mailer-gmail/client_secret.json`, repli sur
 `~/.bruz-signalements-gmail/client_secret.json` si absent) — pas de nouveau
 projet Google Cloud à créer. Seul le token diffère (`~/.bruz-signalements-gmail/token.json`,
-scope `gmail.readonly` propre à cet agent). Lancer
-`python3 scripts/agents/agent_signalements.py` une fois à la main pour le
-consentement navigateur. Tant qu'aucun client_secret n'est trouvé, l'agent se
-signale en `INFO` (pas `ERR`) pour ne pas faire passer le run quotidien en
-échec pour une étape de configuration non faite.
+scope `gmail.readonly` propre à cet agent). Lancer **`python3 scripts/agents/agent_signalements.py --setup`**
+une fois à la main pour le consentement navigateur (`--setup` est la seule voie
+qui crée le token — un `run` nu se saute tant que le token n'existe pas, pour ne
+jamais déclencher `flow.run_local_server()` sous launchd, cf. incident 6 j du 26/08).
 
 ---
 
