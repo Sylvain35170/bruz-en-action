@@ -9,6 +9,7 @@ Cron  : launchd @ 17h — voir ~/Library/LaunchAgents/com.bruz-en-action.veille.
 """
 
 import json
+import signal
 import sys
 import time
 from datetime import datetime
@@ -16,6 +17,22 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
 from utils import ROOT, errors_logged, git_commit_push, log, reset_errors
+
+# Garde-fou anti-blocage : aucun agent ne doit pouvoir figer tout le run.
+# Le 26/08, agent_signalements est tombé sur flow.run_local_server() (attente
+# navigateur) et a bloqué le process 6 jours — launchd voyant le job « running »
+# a sauté tous les runs suivants. SIGALRM interrompt l'agent fautif (serveur
+# wsgiref, socket, subprocess Claude CLI…) et le run continue avec les autres.
+# 300s laisse largement la marge aux agents lents (Claude CLI, Playwright).
+AGENT_TIMEOUT_S = 300
+
+
+class AgentTimeout(Exception):
+    """Levée quand un agent dépasse AGENT_TIMEOUT_S."""
+
+
+def _raise_timeout(signum, frame):
+    raise AgentTimeout(f"pas de retour après {AGENT_TIMEOUT_S}s — agent interrompu")
 
 RUN_DIR  = Path.home() / ".shared-context" / "agent_runs"
 LOG_FILE = Path(__file__).parent / "veille.log"
@@ -68,6 +85,8 @@ def main() -> None:
     for name, module_path in AGENTS:
         log(f"\n── Agent {name} ──────────────────────────")
         reset_errors()
+        signal.signal(signal.SIGALRM, _raise_timeout)
+        signal.alarm(AGENT_TIMEOUT_S)
         try:
             import importlib
             mod = importlib.import_module(module_path)
@@ -84,11 +103,16 @@ def main() -> None:
             else:
                 agent_steps[name] = "✅ rien de nouveau"
                 log(f"Agent {name} : rien de nouveau.")
+        except AgentTimeout as e:
+            agent_steps[name] = f"❌ {e}"
+            log(f"Agent {name} : TIMEOUT — {e}", "ERR")
         except Exception as e:
             agent_steps[name] = f"❌ {e}"
             log(f"Agent {name} a planté : {e}", "ERR")
             import traceback
             traceback.print_exc()
+        finally:
+            signal.alarm(0)  # désarme le watchdog quoi qu'il arrive
         time.sleep(1)  # politesse entre agents
 
     log("\n── Bilan ──────────────────────────────────")

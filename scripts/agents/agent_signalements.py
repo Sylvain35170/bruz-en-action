@@ -215,12 +215,18 @@ def _tickets_connus() -> set[str]:
 
 def scan() -> bool:
     """Interroge Gmail et dépose un ticket par email [SIGNALEMENT] non déjà connu."""
-    if not _client_secret_path().exists():
-        # Pas encore configuré : état normal tant que l'OAuth n'a pas été mis en
-        # place (voir docstring du module). Ne pas logger en ERR — un run_agents
+    if not GMAIL_TOKEN.exists():
+        # Pas encore configuré : état normal tant que le consentement navigateur
+        # (token propre à cet agent) n'a pas été fait une fois à la main (voir
+        # docstring du module). Tester client_secret ne suffit pas : il existe déjà
+        # par réutilisation du client OAuth du mailer, donc ce garde-fou ne
+        # détectait jamais l'absence de consentement — `_get_gmail_service()`
+        # tombait alors sur `flow.run_local_server()`, qui attend un navigateur et
+        # bloque indéfiniment sous launchd (tout run_agents.py suivant : Sélection,
+        # Mailer, Dossiers... jamais exécuté). Ne pas logger en ERR — un run_agents
         # quotidien ne doit pas afficher "en erreur" pour une étape de setup non
         # faite, seulement pour une vraie panne une fois l'agent opérationnel.
-        log("Signalements : credentials OAuth absentes — agent non configuré (setup à faire une fois).", "INFO")
+        log("Signalements : consentement OAuth non fait — agent non configuré (setup à faire une fois, hors launchd).", "INFO")
         return False
     try:
         service = _get_gmail_service()
