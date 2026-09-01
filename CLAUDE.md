@@ -100,7 +100,12 @@ pertinence 0 sont auto-rejetés (mémorisés). Ne pas recréer de fichiers
 
 **Mailer** : envoi quotidien systématique à 17h (un email à chaque run), avec TOUS les
 pending du moment ou un message "rien de nouveau" si le registre est vide. Les items
-sans date ne sont plus perdus. `--dry-run` pour tester sans envoyer.
+sans date ne sont plus perdus. `--dry-run` pour tester sans envoyer. Depuis le 27/08,
+le mail inclut aussi les candidats coup de pouce en attente
+(`agent_coup_de_pouce.candidats_en_attente()` — section dédiée, sans `mailed_at` : un
+candidat reste listé tant qu'il n'a pas de `statut` "publié"/"rejeté" posé à la main
+après recopie dans `data/coup_de_pouce.json`) : avant, il fallait penser à taper
+`--list` manuellement, ce qui les faisait passer inaperçus.
 
 **IDs** : `utils.stable_id(prefix, url)` (md5) — jamais `hash()` (randomisé par processus).
 
@@ -187,6 +192,22 @@ signale en `INFO` (pas `ERR`) pour ne pas faire passer le run quotidien en
 ---
 
 ## Pièges connus
+### 2026-08-27 — coup_de_pouce_pending.json ne se vidait jamais après publication
+→ dispatch: local:bruz-en-action
+
+CP08 (Marche Nordique JAB) et CP09 (Atelier Philo ALB) avaient été validés et recopiés
+dans `data/coup_de_pouce.json` le 14/08 (`statut: "publié"`, `cp_id` posés à la main),
+mais jamais retirés de `coup_de_pouce_pending.json` — contrairement à `pending.json`
+(actus), ce registre n'a aucun mécanisme de sortie. Résultat : `--list` les
+re-proposait à chaque fois, et le nouveau branchement du mailer (voir ci-dessous)
+les aurait envoyés indéfiniment. Fix : `agent_coup_de_pouce.candidats_en_attente()`
+filtre les items dont `statut` vaut `"publié"`/`"rejeté"` — utilisé par `--list` et
+par le mailer, sans supprimer les items du fichier (`deja_connus()` a besoin de
+la mémoire complète pour éviter une re-proposition du même titre).
+
+➡️ Un registre "pending" sans mécanisme de sortie explicite finit toujours par
+re-proposer indéfiniment ce qui a déjà été traité manuellement ailleurs.
+
 ### 2026-08-26 — bruz-en-action : l'adresse de contact du site pointait vers une boîte qui n'existe pas
 → dispatch: local:bruz-en-action
 
@@ -315,20 +336,3 @@ juste périmée.
 - **`review_proposals --dossier` s'applique à tout le lot** — un appel par dossier cible.
   Et les titres bruts `agent_megalis` sont illisibles (« … — Err — Plume »), à réécrire
   à la revue.
-
-### 2026-08-01 — mailer muet 7 jours, boucle de veille Presse, API Mégalis
-
-- **Une app OAuth Google en statut « Testing » révoque son refresh token tous les 7 jours.** `invalid_grant` du 25/07 au 01/08 sur `agent_mailer`, sans rien changer côté code. Reconsentir ne rachète que 7 jours : publier l'app (*Auth Platform → Audience → Publish app* → `In production`). L'écran « app non validée » et le bandeau « requires verification » sont sans conséquence en usage perso. Sur un compte gmail.com, « Make internal » est grisé.
-- **Un agent qui échoue proprement (`log ERR` + `return False`) était compté en succès** — le bilan affirmait « propositions envoyées » alors qu'aucun mail ne partait. `utils.log` journalise désormais les `ERR` (`errors_logged()`/`reset_errors()`) et `run_agents` tranche entre *rien de nouveau* et *en panne* (`status: error` visible dans `/status`). Instrumenter le logger couvre les 11 agents d'un coup.
-- **Google News redirige vers `consent.google.com` avec un jeton `escs=` régénéré à chaque requête** : la dédup par `source_url` ne matchait jamais, l'article repartait en queue à chaque run. Dédup sur `stable_id` (`known_ids()`, dédup id-first dans `append_to_queue`). Ne jamais *stocker* une URL de consentement — elle envoie le lecteur sur un écran Google. `requests` ne franchit pas ce mur (ni HEAD nu, ni cookie `CONSENT`) : résoudre dans le navigateur.
-- **Soft-404 : `organization/commune-de-bruz` répond 200 mais retombe sur l'accueil Mégalis.** Invisible pour `agent_qa --links`. `validate_data.check_urls_interdites()` échoue désormais sur ces motifs — **et scanne aussi `app/**/*.tsx`** : après avoir corrigé 28 occurrences dans `data/`, 4 liens câblés en dur dans le TSX étaient toujours servis en prod. Corriger les données ne suffit pas ; vérifier sur le site déployé.
-- **L'API Mégalis est publique et sans authentification** — contrairement à ce que ce fichier affirmait depuis juin. `data-publication.megalis.bretagne.bzh/mq_apis/actes/v1/search?siren=213500473`, trouvée en lisant le trafic réseau du portail (SPA Angular). `agent_megalis` s'appuie dessus (typologies `99_DE`/`99_HP`, fenêtre 15 j sur la date de publication). **SIREN de Bruz = 213500473.**
-- **Un « probablement » dans un résumé de veille ne se publie jamais.** Une proposition disait Bruz « probablement concernée » par un arrêté barbecue ; l'article citait Rennes, Bourgbarré, La Chapelle-Thouarault et Chartres-de-Bretagne, pas Bruz. Corollaire outillage : `find` (recherche sémantique navigateur) l'avait rapportée comme mentionnée — le texte disait l'inverse. Lire le contenu avant de conclure.
-- **`agent_agenda` réécrit `evenements.json` à chaque scraping** : un champ ajouté à la main y serait perdu. Le regroupement thématique de `/agenda` vit donc dans `THEMES_AGENDA` (`app/utils.ts`), dérivé du tag brut. `themeEvenement()` ne renvoie jamais null — bac « Autres rendez-vous » obligatoire, et la page affiche le nombre de non-classés pour qu'un nouveau tag mairie se voie.
-
-### 2026-07-28 — extraction PDF en colonnes, boucle de veille, audit UI incomplet
-- **Les bulletins municipaux sont sur 5-6 colonnes : les extraire en bandes fixes produit de fausses informations.** `extract_text()` linéaire entrelace les colonnes ; découper en N bandes est pire. Sans recouvrement les emails sont tronqués en bord de bande ; avec recouvrement un fragment de la colonne voisine déborde sur la même ligne — « EMMAÜS BRUZ » lu « EMMAÜS BRUZ Grat » n'est plus reconnu comme intertitre, son bloc est absorbé et **le mail d'Emmaüs est attribué à l'association précédente**. Méthode retenue dans `agent_coup_de_pouce.detecter_colonnes()` : repérer les gouttières (bandes verticales sans aucun mot) via `page.extract_words()`. Corollaires : tester `all(c.isupper() ...)` plutôt qu'une classe de caractères (le `Ü` manquait), et retirer les emails avant de chercher une URL (sinon `orange.fr` sort de `secath.seiche@orange.fr`). **Relire les contacts de chaque candidat contre le PDF avant publication.**
-- **Tout `continue` placé avant l'écriture au registre condamne l'item à revenir chaque jour.** `agent_select` écartait les doublons déjà publiés avant la boucle alimentant `pending.json` : jamais mémorisés, donc re-scrapés, et le filtre s'appliquant après l'analyse Claude, chaque run repayait un appel modèle pour le même item. Même famille que le bug ayant motivé le registre le 05/07. Un item ne sort jamais du flux sans être mémorisé, quel que soit le motif du rejet.
-- **Un lot d'audit coché n'est pas un lot livré : ouvrir le site et cliquer.** Trois défauts vivants en prod alors que les 4 lots de `AUDIT_SITE_2026-07.md` étaient clos — `/metro` retirée de la nav et du sitemap mais jamais supprimée du repo (servie en 200 avec des données en dur divergentes), liens dossiers en dur sans garde-fou (désormais contrôlés par `validate_data.validate_liens_nav()`), et libellés coupés en deux lignes dans les déroulants, visibles seulement en ouvrant un menu.
-- **Un champ énuméré qui pilote un filtre d'affichage doit être validé en erreur.** `/coup-de-pouce` construit ses sections par `byType()` : un `type` hors référentiel fait disparaître l'item de toutes les sections sans erreur, tout en gonflant `items.length` — ce qui empêche même le message « aucune initiative » de s'afficher.
-- **Prompts d'illustration : lister la palette ne suffit pas, il faut interdire.** Sur 9 illustrations, la 4e a dérivé (arbres verts, aucun or) jusqu'à ce que le prompt impose « NO GREEN AT ALL » et « gold must be clearly present ». Voir `PROMPTS_ILLUSTRATIONS.md` et `scripts/integre_illustration.py`.

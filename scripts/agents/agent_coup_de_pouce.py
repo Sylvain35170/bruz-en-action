@@ -448,9 +448,19 @@ def depuis_presse(articles: list[dict]) -> list[dict]:
     return candidats
 
 
+def candidats_en_attente() -> list[dict]:
+    """Candidats non encore décidés — exclut ceux déjà recopiés à la main dans
+    data/coup_de_pouce.json (`statut` posé manuellement à la revue : "publié" ou
+    "rejeté"). Le registre garde ces items décidés pour la mémoire anti-doublon
+    de `deja_connus()` ; seul l'affichage (--list, mailer) doit les taire.
+    """
+    items = load_json(PROPOSALS).get("items", [])
+    return [c for c in items if c.get("statut") not in ("publié", "rejeté")]
+
+
 def lister() -> None:
     """Affiche les candidats en attente de validation."""
-    items = load_json(PROPOSALS).get("items", [])
+    items = candidats_en_attente()
     if not items:
         log("Aucun candidat coup de pouce en attente.", "INFO")
         return

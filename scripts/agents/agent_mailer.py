@@ -41,6 +41,7 @@ from email.mime.text import MIMEText
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
+from agent_coup_de_pouce import candidats_en_attente
 from utils import load_registry, log, save_registry, today
 
 AGENT_NAME = "mailer"
@@ -102,11 +103,47 @@ def _fmt_fr(iso: str) -> str:
         return iso or ""
 
 
-def _build_email(proposals: list[dict], date_str: str) -> tuple[str, str]:
+def _build_coup_de_pouce_section(candidats: list[dict]) -> str:
+    """Bloc HTML listant les candidats coup de pouce en attente de validation manuelle.
+
+    Ce registre n'a pas de statut mailed_at (contrairement à pending.json) : les
+    candidats restent listés à chaque envoi tant qu'ils n'ont pas été recopiés à la
+    main dans data/coup_de_pouce.json — même logique que "rien ne disparaît sans
+    décision humaine" que pour les actus.
+    """
+    if not candidats:
+        return ""
+    lignes = []
+    for c in candidats:
+        contact = c.get("contact") or c.get("telephone") or c.get("lien") or "aucun contact"
+        lignes.append(f"""
+<div style="border-left:4px solid #14b8a6;padding:12px 16px;margin:14px 0;background:#f0fdfa">
+  <div style="font-size:11px;color:#94a3b8;margin-bottom:6px">
+    <strong>{c.get('besoin', '')}</strong> · {c.get('type', '')}
+  </div>
+  <div style="font-weight:600;color:#0f172a;font-size:15px;margin-bottom:6px">{c.get('titre', '')}</div>
+  <div style="color:#475569;font-size:14px;line-height:1.6;margin-bottom:6px">{c.get('chapeau', '')[:400]}</div>
+  <div style="font-size:12px;color:#0f766e">📞 {contact}</div>
+</div>""")
+    return f"""
+  <h3 style="color:#0f172a;border-bottom:2px solid #14b8a6;padding-bottom:6px;margin-top:32px">
+    🤝 Coup de pouce — candidats en attente de validation
+  </h3>
+  <p style="color:#64748b;font-size:13px">
+    À relire contre le bulletin source avant recopie dans <code>data/coup_de_pouce.json</code>
+    (jamais de publication automatique). Tape <strong>"python3 scripts/agents/agent_coup_de_pouce.py --list"</strong>.
+  </p>
+  {''.join(lignes)}"""
+
+
+def _build_email(proposals: list[dict], date_str: str, coup_de_pouce: list[dict] | None = None) -> tuple[str, str]:
     """Retourne (sujet, corps HTML). Les items jamais mailés sont badgés 🆕."""
+    coup_de_pouce = coup_de_pouce or []
     n = len(proposals)
     n_new = sum(1 for p in proposals if not p.get("mailed_at"))
     suffix = f" dont {n_new} nouvelle{'s' if n_new > 1 else ''}" if 0 < n_new < n else ""
+    if coup_de_pouce:
+        suffix += f" + {len(coup_de_pouce)} coup de pouce"
     sujet = f"[Bruz en Action] {n} proposition{'s' if n > 1 else ''} en attente de revue{suffix} — {date_str}"
 
     lignes = []
@@ -146,6 +183,7 @@ def _build_email(proposals: list[dict], date_str: str) -> tuple[str, str]:
     Ouvre Claude Code et tape <strong>"on examine les propositions"</strong> pour les passer en revue.
   </p>
   {''.join(lignes)}
+  {_build_coup_de_pouce_section(coup_de_pouce)}
   <hr style="border:none;border-top:1px solid #e2e8f0;margin:24px 0">
   <p style="font-size:11px;color:#94a3b8">
     Généré automatiquement par les agents Bruz en Action · {date_str}
@@ -155,17 +193,22 @@ def _build_email(proposals: list[dict], date_str: str) -> tuple[str, str]:
     return sujet, corps
 
 
-def _build_empty_email(date_str: str) -> tuple[str, str]:
-    """Email quotidien quand aucune proposition n'est en attente."""
-    sujet = f"[Bruz en Action] Rien de nouveau — {date_str}"
+def _build_empty_email(date_str: str, coup_de_pouce: list[dict] | None = None) -> tuple[str, str]:
+    """Email quotidien quand aucune proposition actu n'est en attente."""
+    coup_de_pouce = coup_de_pouce or []
+    if coup_de_pouce:
+        sujet = f"[Bruz en Action] {len(coup_de_pouce)} coup de pouce en attente — {date_str}"
+    else:
+        sujet = f"[Bruz en Action] Rien de nouveau — {date_str}"
     corps = f"""<!DOCTYPE html>
 <html><body style="font-family:Arial,sans-serif;max-width:680px;margin:0 auto;padding:20px;color:#1e293b">
   <h2 style="color:#0f172a;border-bottom:2px solid #f97316;padding-bottom:8px">
     🏛️ Bruz en Action — Veille du jour
   </h2>
   <p style="color:#64748b">
-    Aucune proposition en attente de revue aujourd'hui.
+    Aucune proposition d'actu en attente de revue aujourd'hui.
   </p>
+  {_build_coup_de_pouce_section(coup_de_pouce)}
   <hr style="border:none;border-top:1px solid #e2e8f0;margin:24px 0">
   <p style="font-size:11px;color:#94a3b8">
     Généré automatiquement par les agents Bruz en Action · {date_str}
@@ -178,15 +221,16 @@ def run(dry_run: bool = False) -> bool:
     date_str = today()
     registry = load_registry()
     pending = [p for p in registry["items"] if p.get("statut") == "pending"]
+    coup_de_pouce = candidats_en_attente()
 
     # Envoi quotidien systématique à 17h, avec ou sans nouveauté.
     if not pending:
-        sujet, corps = _build_empty_email(date_str)
+        sujet, corps = _build_empty_email(date_str, coup_de_pouce)
     else:
         # Tri : nouveaux d'abord, puis pertinence décroissante, puis plus anciens en attente
         pending.sort(key=lambda p: (bool(p.get("mailed_at")), -p.get("pertinence", 0),
                                     p.get("first_seen", "")))
-        sujet, corps = _build_email(pending, date_str)
+        sujet, corps = _build_email(pending, date_str, coup_de_pouce)
 
     new_items = [p for p in pending if not p.get("mailed_at")]
 
