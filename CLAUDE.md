@@ -197,6 +197,29 @@ jamais déclencher `flow.run_local_server()` sous launchd, cf. incident 6 j du 2
 ---
 
 ## Pièges connus
+### 2026-09-01 — agent_bruz_mag : titre capté depuis le texte du lien
+→ dispatch: local:bruz-en-action
+
+Le lien de téléchargement sur ville-bruz.fr a pour texte « Télécharger(ouverture dans un
+nouvel onglet) » : capté tel quel comme `titre` de bulletin (affiché sur `/publications`)
+**et** comme `sources[].label`, à chaque numéro depuis le lancement, corrigé à la main
+à chaque fois. Fix : `titre_et_date()` reconstruit titre + date ISO depuis le **nom de
+fichier du PDF** (`Semaine-a-Bruz-n°859-du-27-aout-au-2-septembre-2026.pdf`). Repli sur
+« Semaine à Bruz n°XXX » si le schéma de nommage change. ➡️ Quand le texte visible d'un
+lien est générique, l'info utile est dans l'URL / le nom de fichier.
+
+### 2026-09-01 — agent_select sous-cote la pertinence (juge sur le RSS, pas l'article)
+→ dispatch: local:bruz-en-action
+
+`agent_select` (Claude Haiku) note la pertinence sur le **titre + résumé RSS**, pas
+l'article complet. Le renommage de la place du Vert-Buisson (décision CM + opposition +
+collectif médical sur la sécurité des soins) a été noté **p1 « marginal »** alors que
+c'était le sujet du jour (p3, publié en D23). Décision : pas de fix agent (sur-ajustement
+sur un cas), la revue humaine reste le filet. ➡️ Toujours **lire l'article complet** (via
+l'extension Chrome pour Ouest-France qui bloque les bots) avant de trancher — le résumé
+de l'agent ne suffit pas. Liens Google News RSS : résolus vers l'URL réelle via
+`batchexecute` (cf. `learnings.md`), le mur `consent.google.com` bloque `requests`.
+
 ### 2026-09-01 — la veille a été bloquée 6 jours par un agent figé sur un prompt navigateur
 → dispatch: local:bruz-en-action
 
