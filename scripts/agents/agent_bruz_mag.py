@@ -14,6 +14,7 @@ import re
 import sys
 import tempfile
 from pathlib import Path
+from urllib.parse import unquote
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 from utils import DATA_DIR, fetch, load_json, log, save_json, today
@@ -37,6 +38,66 @@ MAG_PATTERN = re.compile(r"[Bb]ruz.?[Mm]ag.?n[°o]?(\d+)", re.I)
 
 # Pattern : Semaine-a-Bruz-n°856-du-11-au-25-juin-2026.pdf
 SEMAINE_PATTERN = re.compile(r"[Ss]emaine.?[àa].?[Bb]ruz.?n[°o]?(\d+)", re.I)
+
+MOIS = {
+    "janvier": 1, "fevrier": 2, "février": 2, "mars": 3, "avril": 4, "mai": 5,
+    "juin": 6, "juillet": 7, "aout": 8, "août": 8, "septembre": 9,
+    "octobre": 10, "novembre": 11, "decembre": 12, "décembre": 12,
+}
+
+
+def titre_et_date(url: str, prefixe: str, num: int) -> tuple[str, str | None]:
+    """Reconstruit un titre lisible et une date ISO depuis le nom du PDF.
+
+    Le texte du lien sur ville-bruz.fr vaut « Télécharger(ouverture dans un
+    nouvel onglet) » : inutilisable comme titre (piège récurrent, cf. BACKLOG).
+    Le nom de fichier, lui, porte le numéro et la période.
+
+    'Semaine-a-Bruz-n°859-du-27-aout-au-2-septembre-2026.pdf'
+      → ('Semaine à Bruz n°859 — du 27 août au 2 septembre 2026', '2026-08-27')
+    'Bruz-Mag-n°260-de-mai-juin-2026.pdf'
+      → ('Bruz Mag n°260 — mai-juin 2026', '2026-05-01')
+
+    Args:
+        url: URL du PDF.
+        prefixe: « Bruz Mag » ou « Semaine à Bruz ».
+        num: numéro déjà extrait.
+
+    Returns:
+        (titre, date_iso) — date_iso vaut None si la période est illisible.
+    """
+    slug = re.sub(r"\.pdf$", "", unquote(url.rsplit("/", 1)[-1]), flags=re.I)
+    m = re.search(rf"n[°o]?{num}[-_ ]?(.*)$", slug, re.I)
+    tokens = [t for t in re.split(r"[-_ ]+", m.group(1) if m else "") if t]
+    while tokens and tokens[0].lower() in ("de", "des"):  # « de mai-juin » → « mai-juin » ; on garde « du 27… »
+        tokens.pop(0)
+    tokens = [avec if (avec := {"aout": "août", "fevrier": "février",
+                                "decembre": "décembre"}.get(t.lower())) else t
+              for t in tokens]
+
+    # Reconstruit la période : espace partout, mais trait d'union entre deux
+    # mois consécutifs (« mai-juin » et non « mai juin »).
+    periode = ""
+    for i, t in enumerate(tokens):
+        if i == 0:
+            periode = t
+        elif t.lower() in MOIS and tokens[i - 1].lower() in MOIS:
+            periode += f"-{t}"
+        else:
+            periode += f" {t}"
+
+    titre = f"{prefixe} n°{num}"
+    if periode:
+        titre += f" — {periode}"
+
+    date_iso = None
+    if an := re.search(r"(20\d{2})", periode):
+        if mo := re.search(r"\b(" + "|".join(MOIS) + r")\b", periode, re.I):
+            jour = 1
+            if dj := re.search(r"\b(\d{1,2})(?:er)?\b", periode):  # 1er jour de la période
+                jour = min(int(dj.group(1)), 31)
+            date_iso = f"{an.group(1)}-{MOIS[mo.group(1).lower()]:02d}-{jour:02d}"
+    return titre, date_iso
 
 
 def find_mag_links(soup: BeautifulSoup, base_url: str) -> list[dict]:
@@ -149,21 +210,23 @@ def run() -> bool:
         return False
 
     for mag in new_mags:
+        titre, date_iso = titre_et_date(mag["url"], "Bruz Mag", mag["numero"])
         bulletins_data["bulletins"].insert(0, {
             "id": f"BM-{mag['numero']}",
-            "date": today(),
-            "titre": mag["titre"],
+            "date": date_iso or today(),
+            "titre": titre,
             "points_cles": mag["points_cles"],
-            "sources": [{"label": mag["titre"], "url": mag["url"]}],
+            "sources": [{"label": "Télécharger le PDF", "url": mag["url"]}],
             "type": "bruz_mag",
         })
     for sem in new_semaines:
+        titre, date_iso = titre_et_date(sem["url"], "Semaine à Bruz", sem["numero"])
         bulletins_data["bulletins"].insert(0, {
             "id": f"SAB-{sem['numero']}",
-            "date": today(),
-            "titre": sem["titre"],
+            "date": date_iso or today(),
+            "titre": titre,
             "points_cles": sem["points_cles"],
-            "sources": [{"label": sem["titre"], "url": sem["url"]}],
+            "sources": [{"label": "Télécharger le PDF", "url": sem["url"]}],
             "type": "semaine_bruz",
         })
 
