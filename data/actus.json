@@ -1,9 +1,39 @@
 {
   "meta": {
-    "last_updated": "2026-09-01",
+    "last_updated": "2026-09-05",
     "note": "Actus de suivi des promesses — une actu = un événement daté lié à une ou plusieurs promesses"
   },
   "actus": [
+    {
+      "id": "of-9353c4eb",
+      "titre": "Bruz. Du cinéma en plein air au Vert Buisson",
+      "date": "2026-09-04",
+      "detail": "La ville organise une séance de cinéma en plein air le samedi soir à la plaine Yann-Fañch Kemener, au Vert Buisson. Le film projeté est « Le sens de la fête », réalisé par Éric Toledano et Olivier Nakache.",
+      "source_url": "https://www.ouest-france.fr/bretagne/bruz-35170/bruz-du-cinema-en-plein-air-au-vert-buisson-a6ccb6d6-609e-4faa-8dca-44e40cb7401b",
+      "source_label": "Ouest-France",
+      "type": "presse",
+      "dossier": "D21"
+    },
+    {
+      "id": "megalis-920b901f",
+      "titre": "Registre des Autorisations du Droit des Sols",
+      "date": "2026-09-04",
+      "detail": "Bruz publie son registre des autorisations d'urbanisme, conformément à l'obligation légale de transparence. Ce document permet aux habitants de consulter les décisions relatives aux droits des sols sur le territoire.",
+      "source_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Hors_prefecture/2026/1185821/b6ba8ab50df494404db7d6cb490c1e723c3d4fbba5ac8a0eb09ac9bd1fb428c2.pdf",
+      "source_label": "Mégalis — Acte hors préfecture",
+      "type": "megalis",
+      "dossier": "D02"
+    },
+    {
+      "id": "of-8a9d807d",
+      "titre": "Bruz. Reprises des travaux et des déviations dans le centre-ville",
+      "date": "2026-09-02",
+      "detail": "Les travaux d'aménagement du centre-ville bruzois reprennent à la rentrée avec des modifications de la circulation. Avenue du Général-de-Gaulle, les chantiers se poursuivent jusqu'au 16 octobre 2026.",
+      "source_url": "https://www.ouest-france.fr/bretagne/bruz-35170/bruz-reprises-des-travaux-et-des-deviations-dans-le-centre-ville-eaa3be2d-65d7-4dfd-89e3-1161c37be88f",
+      "source_label": "Ouest-France",
+      "type": "presse",
+      "dossier": "D05"
+    },
     {
       "id": "of-fcf990b3",
       "titre": "Bruz. C'est reparti pour huit mois de travaux boulevard Pasteur",

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-09-01",
+    "last_updated": "2026-09-02",
     "source": "Ville de Bruz, Grand Logis, Handisport, Les Trans"
   },
   "evenements": [
@@ -103,15 +103,6 @@
       "lien_label": "Agenda Ville de Bruz",
       "source": "agenda_mairie",
       "date_fin": "2026-09-30"
-    },
-    {
-      "id": "agenda-c0ba2d32",
-      "titre": "Marché des créateurs",
-      "date": "2026-08-02",
-      "categorie": "Braderie",
-      "lien": "https://www.ville-bruz.fr/agenda/marche-des-createurs-3/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
     },
     {
       "id": "agenda-4a610efa",
