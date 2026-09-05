@@ -2842,8 +2842,8 @@
       "decisions": [
         {
           "date": "2026-07-03",
-          "titre": "Renommage de la place du Vert-Buisson en place Robert-Barré",
-          "detail": "Délibération du conseil municipal actant le changement de nom, effectif le 7 septembre 2026 (inauguration des plaques le 11 septembre). Minorité opposée sur l'impact pratique (70 commerçants, 800 foyers concernés par le changement d'adresse)."
+          "description": "Délibération du conseil municipal actant le renommage de la place du Vert-Buisson en place Robert-Barré, effectif le 7 septembre 2026 (inauguration des plaques le 11 septembre). Minorité opposée sur l'impact pratique (70 commerçants, 800 foyers concernés par le changement d'adresse).",
+          "source_url": "https://www.ville-bruz.fr/actualites/la-place-du-vert-buisson-devient-la-place-robert-barre/"
         }
       ],
       "ce_quon_suit": [
