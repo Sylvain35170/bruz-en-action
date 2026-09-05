@@ -196,7 +196,7 @@ def published_actus() -> list[tuple[str, str]]:
     return [(a.get("titre", ""), a.get("source_url", "")) for a in actus.get("actus", [])]
 
 
-def is_already_published(titre: str, source_url: str = "", threshold: float = 0.6) -> bool:
+def is_already_published(titre: str, source_url: str = "", threshold: float = 0.75) -> bool:
     """True si un item très proche (URL identique ou titre similaire) est déjà dans actus.json.
 
     Les scrapers (Mairie/OF/Presse) reformulent souvent le même sujet avec des titres

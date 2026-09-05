@@ -2818,7 +2818,9 @@
         "Aucun Conseil municipal des jeunes (CMJ) trouvé à Bruz — la commune dispose d'une Maison des jeunes (10-25 ans, structure d'accueil et d'activités pour environ 300 jeunes/an), qui n'est pas un organe consultatif élu comparable à un CMJ",
         "Aucun Conseil des sages trouvé à Bruz, malgré ce dispositif déjà en place dans de nombreuses communes comparables",
         "Les décisions du conseil municipal sont publiques : enregistrements audio des séances sur YouTube, actes et délibérations sur l'open data Mégalis Bretagne — mais ce sont des documents bruts (PV, actes juridiques), pas le « compte-rendu clair » à destination du grand public promis par l'engagement D5",
-        "Rennes Métropole a par ailleurs été récompensée par le think tank Décider Ensemble pour son dispositif de participation citoyenne « Nos Lieux Communs » (voir D11) — un dispositif métropolitain, pas municipal, auquel Bruz participe sans levier propre supplémentaire identifié à ce jour"
+        "Rennes Métropole a par ailleurs été récompensée par le think tank Décider Ensemble pour son dispositif de participation citoyenne « Nos Lieux Communs » (voir D11) — un dispositif métropolitain, pas municipal, auquel Bruz participe sans levier propre supplémentaire identifié à ce jour",
+        "Le conseil municipal du 3 juillet 2026 a voté le renommage de la place du Vert-Buisson en place Robert-Barré (ancien maire 1989-2008, mentor politique de Jean-René Houssin), effectif le 7 septembre 2026 — inauguration des plaques le 11 septembre. La minorité (Philippe Salmon) avait déjà signalé l'impact pratique : 70 commerçants et 800 foyers concernés par le changement d'adresse.",
+        "Le 27 août 2026, le Collectif médical de la place Haute du Vert-Buisson (porte-parole Karine Texier, sage-femme échographiste) alerte à son tour : les cabinets de la partie haute (imagerie, vasculaire, gynécologie, sans secrétariat) redoutent une perte de repères pour les patients venant de loin et un retard de mise à jour de la géolocalisation, avec un risque concret sur la prise en charge des urgences. Le collectif proposait de garder « Vert-Buisson » pour la partie haute ; Jean-René Houssin maintient sa décision (« les patients et praticiens s'adapteront »)."
       ],
       "qui_decide": [
         {
@@ -2830,10 +2832,22 @@
           "nom": "Conseil municipal de Bruz",
           "role": "Voterait la création formelle d'un CMJ ou d'un Conseil des sages (règlement intérieur, budget de fonctionnement)",
           "niveau": "commune"
+        },
+        {
+          "nom": "Collectif médical de la place Haute du Vert-Buisson (porte-parole Karine Texier)",
+          "role": "Demande la réouverture du dossier en conseil municipal — pas de pouvoir de décision, mais à l'origine de la mobilisation",
+          "niveau": "autre"
         }
       ],
-      "decisions": [],
+      "decisions": [
+        {
+          "date": "2026-07-03",
+          "titre": "Renommage de la place du Vert-Buisson en place Robert-Barré",
+          "detail": "Délibération du conseil municipal actant le changement de nom, effectif le 7 septembre 2026 (inauguration des plaques le 11 septembre). Minorité opposée sur l'impact pratique (70 commerçants, 800 foyers concernés par le changement d'adresse)."
+        }
+      ],
       "ce_quon_suit": [
+        "La réouverture — ou non — du dossier en conseil municipal, demandée le 27/08 par le Collectif médical de la place Haute face au maintien de la décision par Jean-René Houssin",
         "Une délibération créant formellement le Conseil municipal des jeunes ou le Conseil des sages",
         "La désignation effective d'élus référents par quartier, avec un périmètre et des coordonnées communiquées aux habitants",
         "La mise en place d'un rythme régulier (et non plus ponctuel) de réunions dans chaque quartier",
@@ -2851,6 +2865,14 @@
         {
           "label": "Mégalis Bretagne — actes et délibérations, commune de Bruz",
           "url": "https://data.megalis.bretagne.bzh/?siren=213500473"
+        },
+        {
+          "label": "Ouest-France — « On cherche simplement la sécurité des soins » (27/08/2026)",
+          "url": "https://www.ouest-france.fr/bretagne/bruz-35170/on-cherche-simplement-la-securite-des-soins-a-bruz-le-changement-de-nom-du-vert-buisson-inquiete-les-medecins-9db03314-a15d-11f1-bba4-fb5ac80a227f"
+        },
+        {
+          "label": "Ville de Bruz — La place du Vert Buisson devient la place Robert Barré",
+          "url": "https://www.ville-bruz.fr/actualites/la-place-du-vert-buisson-devient-la-place-robert-barre/"
         }
       ],
       "actus_recentes": [
@@ -2875,7 +2897,8 @@
         "référents de quartier",
         "conseil municipal des jeunes",
         "conseil des sages",
-        "transparence des décisions"
+        "transparence des décisions",
+        "renommage place Robert-Barré"
       ]
     },
     {

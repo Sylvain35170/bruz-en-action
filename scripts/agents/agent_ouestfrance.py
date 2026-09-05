@@ -23,7 +23,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 sys.path.insert(0, str(Path(__file__).parent))
-from utils import log, stable_id, today, known_urls, append_to_queue
+from utils import log, stable_id, today, known_urls, append_to_queue, check_content_changed
 from agent_coup_de_pouce import depuis_presse, deposer_candidats
 
 AGENT_NAME = "ouestfrance"
@@ -180,8 +180,14 @@ def run(inject: list[dict] | None = None) -> bool:
         deposer_candidats(candidats_cdp)
 
     existing = known_urls()
-    nouvelles = [
-        {
+    nouvelles = []
+    for a in articles:
+        teaser_text = a.get("resume") or a["titre"]
+        # Un article OF peut être réécrit en place sous la même URL (piège
+        # 2026-07-10, presse-6a717d8b : titre devenu contraire à la source) —
+        # même détection que agent_mairie via le hash de contenu.
+        changed = check_content_changed(a["url"], teaser_text)
+        item = {
             "id": stable_id("of", a["url"]),
             "titre": a["titre"],
             "source_url": a["url"],
@@ -190,15 +196,18 @@ def run(inject: list[dict] | None = None) -> bool:
             "detail": a.get("resume", ""),
             "type": "presse",
         }
-        for a in articles if a["url"] not in existing
-    ]
+        if a["url"] not in existing:
+            nouvelles.append(item)
+            log(f"  🆕 {item['titre'][:70]}", "NEW")
+        elif changed:
+            item["id"] = stable_id("of", a["url"] + "#" + today())
+            item["titre"] = f"{item['titre']} (mise à jour)"
+            nouvelles.append(item)
+            log(f"  🔁 mise à jour détectée : {item['titre'][:70]}", "NEW")
 
     if not nouvelles:
         log("Ouest-France : aucun nouvel article.")
         return False
-
-    for a in nouvelles:
-        log(f"  🆕 {a['titre'][:70]}", "NEW")
 
     n = append_to_queue(nouvelles)
     log(f"Ouest-France : {n} nouvelle(s) actu(s) → queue", "OK")
