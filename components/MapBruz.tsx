@@ -55,16 +55,6 @@ const CHANTIERS = [
     coords: [48.0210, -1.7517] as [number, number],
   },
   {
-    nom: "Pont de la Gare (av. Jules Tricault)",
-    detail: "Fermeture totale véhicules/piétons/vélos du 15 juin au 3 juillet 2026 — Rennes Métropole",
-    coords: [48.0314, -1.7511] as [number, number],
-  },
-  {
-    nom: "Rue Théodore Botrel",
-    detail: "Voirie + éclairage public, 1er juin – 24 juillet 2026 — Rennes Métropole",
-    coords: [48.0218, -1.7429] as [number, number],
-  },
-  {
     nom: "Avenue du Général de Gaulle",
     detail: "Réseaux eau/électricité + voirie, juin 2026 – printemps 2027 — circulation maintenue en alternat",
     coords: [48.0237, -1.7458] as [number, number],
