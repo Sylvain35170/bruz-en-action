@@ -75,18 +75,87 @@ def _sans_mur_consentement(final: str, origine: str) -> str:
     return suite or origine
 
 
+# Cookie de consentement Google. Vérifié le 2026-09-08 : `CONSENT=YES+…` ne
+# franchit PLUS le mur (on retombe sur consent.google.com), `SOCS` oui. Sans lui,
+# la page RSS ne renvoie pas les jetons data-n-a-sg / data-n-a-ts et la
+# résolution batchexecute échoue silencieusement.
+SOCS_COOKIE = "CAISHAgBEhJnd3NfMjAyNDAxMDEtMF9SQzIaAmZyIAEaBgiA_LyuBg"
+UA_NAVIGATEUR = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+                 "AppleWebKit/537.36 (KHTML, like Gecko) "
+                 "Chrome/120.0.0.0 Safari/537.36")
+BATCH_URL = "https://news.google.com/_/DotsSplashUi/data/batchexecute"
+
+
+def _resolve_gnews(url: str) -> str | None:
+    """Résout un lien Google News RSS via batchexecute, ou None si l'API refuse.
+
+    Le format `rss/articles/CBMi…` est un protobuf opaque, pas du base64 : seule
+    Google peut le déplier. On lit la signature et le timestamp dans le HTML de la
+    page, puis on les rejoue sur l'endpoint batchexecute.
+    """
+    import json as _json
+    import re as _re
+
+    import requests
+
+    session = requests.Session()
+    session.headers["User-Agent"] = UA_NAVIGATEUR
+    session.cookies.set("SOCS", SOCS_COOKIE, domain=".google.com")
+
+    page = session.get(url, timeout=25)
+    page.raise_for_status()
+    sig = _re.search(r'data-n-a-sg="([^"]+)"', page.text)
+    horodatage = _re.search(r'data-n-a-ts="([^"]+)"', page.text)
+    if not (sig and horodatage):
+        return None
+
+    jeton = url.rstrip("/").split("/")[-1].split("?")[0]
+    requete = _json.dumps([
+        "garturlreq",
+        [["X", "X", ["X", "X"], None, None, 1, 1, "FR:fr", None, 1,
+          None, None, None, None, None, 0, 1],
+         "X", "X", 1, [1, 1, 1], 1, 1, None, 0, 0, None, 0],
+        jeton, int(horodatage.group(1)), sig.group(1),
+    ])
+    reponse = session.post(
+        BATCH_URL,
+        data={"f.req": _json.dumps([[["Fbv4je", requete, None, "generic"]]])},
+        timeout=25,
+        headers={"Content-Type":
+                 "application/x-www-form-urlencoded;charset=UTF-8"},
+    )
+    reponse.raise_for_status()
+    bloc = reponse.text.split("garturlres", 1)
+    if len(bloc) < 2:
+        return None
+    lien = _re.search(r'"(https?://[^"\\]+)"', bloc[1])
+    return lien.group(1) if lien else None
+
+
 def _resolve_url(url: str) -> str:
-    """Suit le redirect Google News pour stocker l'URL finale de l'article."""
+    """Suit le redirect Google News pour stocker l'URL finale de l'article.
+
+    Deux passes : le redirect simple d'abord (peu coûteux), puis la résolution
+    batchexecute si le lien reste un lien Google News. Un lien non résolu qui part
+    en base coûte la source de l'article : cf. `presse-f2c23dbc`, jamais retrouvé.
+    """
     if "news.google.com" not in url:
         return url
     try:
         import requests
         r = requests.head(url, allow_redirects=True, timeout=6, headers=HEADERS)
         final = _sans_mur_consentement(r.url, url)
-        # Garder le redirect Google News si la résolution échoue (URL inchangée)
-        return final if final != url else url
+        if final != url and "news.google.com" not in final:
+            return final
     except Exception:
-        return url
+        pass
+    try:
+        reel = _resolve_gnews(url)
+        if reel:
+            return reel
+    except Exception as exc:
+        log(f"résolution Google News échouée ({exc}) — lien brut conservé", "warn")
+    return url
 
 # Articles à exclure systématiquement
 MOTS_EXCLUS = [
