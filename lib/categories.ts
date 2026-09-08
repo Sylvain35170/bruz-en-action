@@ -14,6 +14,10 @@ export const CATEGORIE_COLOR: Record<string, string> = {
   Santé: "#0d9488",
   Économie: "#a16207",
   Gouvernance: "#475569",
+  // Ajoutées le 2026-09-07 : « Institutions » était utilisée par D23 depuis sa création
+  // sans figurer ici — le dossier tombait sur le gris de repli.
+  Institutions: "#f59e0b",
+  Solidarité: "#9333ea",
 };
 
 export function catColor(categorie: string): string {

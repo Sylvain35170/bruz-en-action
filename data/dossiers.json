@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-09-05",
+    "last_updated": "2026-09-07",
     "version": "3.0"
   },
   "dossiers": [
@@ -157,6 +157,13 @@
           "detail": "Le Conseil Métropolitain du 5 février approuve l'autorisation environnementale de la ZAC Ker Lann et fixe la densité à 60 logements/ha autour du corridor T4. Cette décision entre en tension avec la promesse de Houssin (terminus gare).",
           "source_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1012938/b6b1dc7396fa9a9946d085d957775ce4477276f63f188b960bb4886c785ccce2.pdf",
           "source_label": "Délibération Conseil Métropolitain 5 fév. 2026 (Mégalis)"
+        },
+        {
+          "date": "2026-01-26",
+          "titre": "Dernier CM du mandat Philippe Salmon — culture, personnel, ZAC Ker Lann",
+          "detail": "Culture participative — Dino Voodoo (11 900 €) et L'Escale (3 100 €) lauréats 2026, à l'unanimité | Personnel — création d'un emploi pour l'Atlas de la Biodiversité intercommunal (Bruz + 3 communes) | ZAC Ker Lann — avis favorable du CM, ouvrant la voie au vote métropolitain du 5 février",
+          "source_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1012970/405bf2d92065ddf297923a2e2c43588ef8e27a8c57de35f5082283ccd215b8e5.pdf",
+          "source_label": "Délibération 26-01-18 — Personnel (Mégalis)"
         },
         {
           "date": "2026-01-26",
@@ -332,6 +339,13 @@
           "detail": "Délibération qui contraint directement la densité du secteur Ker Lann dans la ZAC.",
           "source_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1012938/b6b1dc7396fa9a9946d085d957775ce4477276f63f188b960bb4886c785ccce2.pdf",
           "source_label": "Mégalis"
+        },
+        {
+          "date": "2026-01-26",
+          "titre": "Dernier CM du mandat Philippe Salmon — culture, personnel, ZAC Ker Lann",
+          "detail": "Culture participative — Dino Voodoo (11 900 €) et L'Escale (3 100 €) lauréats 2026, à l'unanimité | Personnel — création d'un emploi pour l'Atlas de la Biodiversité intercommunal (Bruz + 3 communes) | ZAC Ker Lann — avis favorable du CM, ouvrant la voie au vote métropolitain du 5 février",
+          "source_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1012970/405bf2d92065ddf297923a2e2c43588ef8e27a8c57de35f5082283ccd215b8e5.pdf",
+          "source_label": "Délibération 26-01-18 — Personnel (Mégalis)"
         },
         {
           "date": "2026-01-26",
@@ -988,6 +1002,13 @@
           "detail": "Réactions des habitants à la hausse TFB 2024 — Ouest-France.",
           "source_url": null,
           "source_label": "Ouest-France"
+        },
+        {
+          "date": "2026-01-26",
+          "titre": "Dernier CM du mandat Philippe Salmon — culture, personnel, ZAC Ker Lann",
+          "detail": "Culture participative — Dino Voodoo (11 900 €) et L'Escale (3 100 €) lauréats 2026, à l'unanimité | Personnel — création d'un emploi pour l'Atlas de la Biodiversité intercommunal (Bruz + 3 communes) | ZAC Ker Lann — avis favorable du CM, ouvrant la voie au vote métropolitain du 5 février",
+          "source_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1012970/405bf2d92065ddf297923a2e2c43588ef8e27a8c57de35f5082283ccd215b8e5.pdf",
+          "source_label": "Délibération 26-01-18 — Personnel (Mégalis)"
         },
         {
           "date": "2026-01-26",
@@ -2956,6 +2977,133 @@
         "équipements sportifs",
         "terrains extérieurs",
         "Cosec Siméon Beliard"
+      ]
+    },
+    {
+      "id": "D25",
+      "titre": "Bien vivre à Bruz à tous les âges : le pilier 6 face à une commune qui grandit et vieillit en même temps",
+      "categorie": "Solidarité",
+      "statut": "en_cours",
+      "featured": true,
+      "last_activity": "2026-09-07",
+      "date_ouverture": "2026-09-07",
+      "chapeau": "Bruz a franchi les 20 000 habitants et grandit de 1,3 % par an. La commune est jeune — 17,7 % de moins de 15 ans — et vieillit en même temps : 15,6 % de 65 ans et plus, et 44 % des ménages vivent seuls. Le programme municipal 2026-2032 y consacre un pilier entier, « Accompagner tous les âges de la vie et garantir l'accès aux services » : cinq engagements, du guichet unique France Services à l'accessibilité des bâtiments publics. Ce dossier suit ce qui se met en place pour toutes les générations — et ce qui reste au stade de l'intention.",
+      "ce_quon_sait": [
+        "Bruz compte 20 461 habitants (population de référence 2023, en vigueur au 1er janvier 2026) et croît de 1,3 % par an depuis 2017, portée surtout par le solde migratoire (+0,9 %/an) davantage que par le solde naturel (+0,3 %/an). La commune a franchi le seuil des 20 000 habitants avec ce recensement.",
+        "La structure par âge est celle d'une commune à deux extrémités qui grandissent ensemble (INSEE RP2023) : 17,7 % de moins de 15 ans, 17,7 % de 25-39 ans, et 15,6 % de 65 ans et plus. Ce n'est ni une commune de jeunes ménages ni une commune âgée — c'est les deux à la fois, ce qui pèse simultanément sur les écoles et sur l'accompagnement du grand âge.",
+        "44,1 % des 9 320 ménages bruzois sont composés d'une seule personne, pour une taille moyenne de 2,08 personnes (INSEE RP2023). C'est un chiffre élevé, et c'est le point commun aux deux extrémités de la pyramide des âges : le risque d'isolement ne concerne pas que les aînés.",
+        "Le programme municipal 2026-2032 consacre une section entière — « Accompagner tous les âges de la vie et garantir l'accès aux services » — à 5 engagements (réf. P1 à P5 du tracker promesses) : déployer une Maison France Services, instaurer une commission locale d'attribution de logement avec l'ensemble des bailleurs sociaux, organiser un repas annuel des aînés, étendre la sécurité aux entrées/sorties de toutes les écoles, et améliorer l'accessibilité PMR des bâtiments et espaces publics. Trois d'entre eux (P1, P2, P4) sont affichés à l'horizon 2026-2027, soit la première moitié du mandat.",
+        "Vérification du 07/09/2026 sur la liste officielle des structures labellisées France Services (3 068 structures, mise à jour du 06/09/2026, data.gouv.fr) : il n'y a aucune France Services à Bruz. Sur les 33 structures d'Ille-et-Vilaine, les plus proches sont Guichen (7,7 km, Vallons de Haute Bretagne Communauté), Bréal-sous-Montfort (9,1 km, Brocéliande Communauté) et le Pimms Médiation de Rennes (9,5 km) — ce dernier étant la seule structure labellisée de toute Rennes Métropole. L'engagement P1 reste donc entier. ⚠️ Attention à un homonyme trompeur : la structure de Bréal-sous-Montfort est domiciliée « 2 rue de Bruz » — c'est une adresse de rue, pas une implantation bruzoise.",
+        "Un repas des aînés est programmé le dimanche 18 octobre 2026 à 12h à l'espace Vau Gaillard, ouvert aux Bruzois de 75 ans et plus avec un accompagnant, organisé par le CCAS. Il est affiché complet sur le site de la ville. Ce que nous n'avons pas pu établir à ce jour : s'il s'agit d'une première édition répondant à l'engagement P3, ou de la reconduction d'une tradition du CCAS antérieure au mandat — la réponse change le statut de la promesse.",
+        "La Semaine Bleue se tient à Bruz du 5 au 11 octobre 2026, et la ville annonce explicitement une « première édition à Bruz », sur le thème national « Relions tous les âges dans des territoires engagés ». La programmation mobilise l'essentiel du maillage social de la commune — Maison Helena, EHPAD Les Bruyères, Centre social l'Escale, Petites Cantines, Médiathèque, Maison des jeunes, service jeunesse. Temps fort : un livre intergénérationnel écrit par des jeunes à partir des récits d'aînés, remis le 11 octobre avec le Crédit Agricole 35.",
+        "Sur l'engagement P4 (sécurité aux abords des écoles), la ville a ouvert une offre d'emploi d'« Agent de sécurité des abords des écoles » (catégorie C, temporaire, candidatures jusqu'au 30 septembre 2026). C'est un premier signal concret, mais un recrutement ponctuel ne vaut pas l'extension « à toutes les écoles » promise : le périmètre couvert n'est pas public.",
+        "Le maillage existant sur lequel s'appuie ce pilier est déjà dense : CCAS (6bis rue des Planches), Centre social l'Escale, EHPAD Les Bruyères, résidence seniors Maison Helena (ouverte début 2026), Petites Cantines, Médiathèque, Maison des jeunes (10-25 ans). L'enjeu du mandat porte moins sur la création d'équipements que sur la coordination et l'accès aux droits."
+      ],
+      "qui_decide": [
+        {
+          "nom": "Jean-René Houssin, maire de Bruz",
+          "role": "Porteur politique du pilier « Accompagner tous les âges de la vie » — aucune délibération de mise en œuvre publiée à ce jour sur les engagements P1, P2 et P5",
+          "niveau": "commune"
+        },
+        {
+          "nom": "CCAS de Bruz",
+          "role": "Opérateur de l'action sociale communale : repas des aînés, registre des personnes vulnérables, animations collectives avec le Centre social l'Escale",
+          "niveau": "commune"
+        },
+        {
+          "nom": "Conseil municipal de Bruz",
+          "role": "Voterait la création d'une commission locale d'attribution de logement (P2) et les crédits d'un programme d'accessibilité PMR (P5)",
+          "niveau": "commune"
+        },
+        {
+          "nom": "Préfecture d'Ille-et-Vilaine / ANCT",
+          "role": "Délivre le label France Services — une commune ne peut pas s'auto-déclarer France Services (P1)",
+          "niveau": "etat"
+        },
+        {
+          "nom": "Rennes Métropole et les bailleurs sociaux",
+          "role": "Compétents sur la politique de l'habitat et l'attribution des logements sociaux — une commission communale d'attribution (P2) s'articule avec eux, elle ne s'y substitue pas",
+          "niveau": "metropole"
+        }
+      ],
+      "decisions": [
+        {
+          "date": "2026-10-05",
+          "description": "Première édition de la Semaine Bleue à Bruz, du 5 au 11 octobre 2026, sur le thème national « Relions tous les âges dans des territoires engagés » : ateliers, café, concert, balade et un livre intergénérationnel remis le 11 octobre avec le Crédit Agricole 35.",
+          "source_url": "https://www.ville-bruz.fr/actualites/semaine-bleue/"
+        },
+        {
+          "date": "2026-10-18",
+          "description": "Repas des aînés organisé par le CCAS à l'espace Vau Gaillard, ouvert aux Bruzois de 75 ans et plus accompagnés d'une personne — affiché complet. Correspond à l'engagement P3 du programme, sans qu'il soit établi à ce jour s'il s'agit d'une création ou de la reconduction d'une pratique antérieure.",
+          "source_url": "https://www.ville-bruz.fr/agenda/repas-des-aines/"
+        }
+      ],
+      "ce_quon_suit": [
+        "Le dépôt d'une candidature au label France Services (P1) : une commune ne peut pas ouvrir une Maison France Services seule, le label est délivré par l'État — sans candidature, l'engagement reste hors d'atteinte à l'horizon 2027 annoncé",
+        "Une délibération créant la commission locale d'attribution de logement avec les bailleurs sociaux (P2), et son articulation avec les compétences habitat de Rennes Métropole",
+        "L'antériorité du repas des aînés : première édition ou tradition reconduite ? C'est ce qui détermine si l'engagement P3 est tenu par le mandat ou hérité",
+        "Le périmètre réellement couvert par la sécurisation des abords d'écoles (P4) — combien d'établissements sur les écoles bruzoises, et à quels horaires",
+        "Un programme chiffré et daté d'accessibilité PMR des bâtiments et espaces publics (P5), au-delà des services de transport adapté déjà recensés par la ville",
+        "La reconduction — ou non — de la Semaine Bleue en 2027 : une première édition ne dit rien d'une politique installée",
+        "La création du Conseil des sages, engagement D4 du pilier démocratie locale, instruite dans le dossier D23 — c'est le pendant institutionnel de ce dossier pour les aînés"
+      ],
+      "sources": [
+        {
+          "label": "Programme municipal 2026 — « Un nouvel élan pour Bruz », section « Accompagner tous les âges de la vie et garantir l'accès aux services »",
+          "url": "https://www.unnouvelelanpourbruz.com/_files/ugd/71facb_17a88aa6318c4051bb64c01574a6357a.pdf"
+        },
+        {
+          "label": "INSEE — Dossier complet, commune de Bruz (35047), RP2023",
+          "url": "https://www.insee.fr/fr/statistiques/2011101?geo=COM-35047"
+        },
+        {
+          "label": "data.gouv.fr — Liste des structures labellisées France services (mise à jour du 06/09/2026)",
+          "url": "https://www.data.gouv.fr/fr/datasets/liste-des-structures-labellisees-france-services/"
+        },
+        {
+          "label": "Ville de Bruz — Semaine Bleue (première édition, 5-11 octobre 2026)",
+          "url": "https://www.ville-bruz.fr/actualites/semaine-bleue/"
+        },
+        {
+          "label": "Ville de Bruz — Repas des aînés du 18 octobre 2026 (CCAS)",
+          "url": "https://www.ville-bruz.fr/agenda/repas-des-aines/"
+        },
+        {
+          "label": "Ville de Bruz — Centre communal d'action sociale (CCAS)",
+          "url": "https://www.ville-bruz.fr/annuaire/centre-communal-daction-social-ccas/"
+        }
+      ],
+      "actus_recentes": [
+        {
+          "date": "2026-09-05",
+          "titre": "Semaine Bleue",
+          "detail": "La Semaine Bleue est une action annuelle dédiée à la solidarité intergénérationnelle et au bien-être des seniors. La mairie de Bruz y participe pour accompagner les habitants âgés de la commune.",
+          "source_url": "https://www.ville-bruz.fr/actualites/semaine-bleue/",
+          "source_label": "Mairie de Bruz — Actualités"
+        }
+      ],
+      "promesses_liees": [
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "image": null,
+      "mots_cles_ia": [
+        "bien vivre",
+        "tous les âges",
+        "intergénérationnel",
+        "seniors",
+        "aînés",
+        "France Services",
+        "accès aux services",
+        "CCAS",
+        "Semaine Bleue",
+        "accessibilité PMR",
+        "attribution de logement",
+        "abords des écoles",
+        "isolement"
       ]
     }
   ]

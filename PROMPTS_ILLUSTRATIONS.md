@@ -202,3 +202,26 @@ Charles Joly, complexe Cosec-Siméon Beliard, gymnase Brossolette...).*
 4. `python3 scripts/validate_data.py` puis `npm run build`
 5. Commit `data/` + `public/`, push, puis `gh run list` pour vérifier le déploiement
    (un commit réussi ne prouve pas que le site est déployé — piège du 26/07)
+
+---
+
+### D25 — Bien vivre à Bruz à tous les âges
+`public/illus-d25-bien-vivre.webp` *(ajouté le 2026-09-07 — dossier ouvert sans illustration)*
+
+```
+A wide horizontal scene showing three generations sharing the same public space
+in a small French town square: an elderly couple seated on a bench, a young
+adult handing them an open book, and two children playing nearby with a parent
+watching. Behind them, a low civic building with a service counter visible
+through a large window, and a linden tree spreading over the square. A gentle
+accessible ramp leads up to the building entrance. Warm, calm, everyday
+atmosphere — no event, no crowd, no celebration.
+```
+*Intention : le pilier 6 « Accompagner tous les âges de la vie » — l'accès aux
+services (guichet, rampe PMR) et le lien intergénérationnel (livre de la Semaine
+Bleue), sans tomber dans l'imagerie « fête des seniors ».*
+
+> Coller le **bloc de style** ci-dessus (section « Style de référence ») à la fin
+> du prompt. Format 1456 × 720. Après génération :
+> `python3 scripts/integre_illustration.py` puis repasser `image` de `null` à
+> `/bruz-en-action/illus-d25-bien-vivre.webp` dans `data/dossiers.json`.

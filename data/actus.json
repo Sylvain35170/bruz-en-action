@@ -1,9 +1,19 @@
 {
   "meta": {
-    "last_updated": "2026-09-05",
+    "last_updated": "2026-09-07",
     "note": "Actus de suivi des promesses — une actu = un événement daté lié à une ou plusieurs promesses"
   },
   "actus": [
+    {
+      "id": "mairie-cacbfc6c",
+      "titre": "Semaine Bleue",
+      "date": "2026-09-05",
+      "detail": "La Semaine Bleue est une action annuelle dédiée à la solidarité intergénérationnelle et au bien-être des seniors. La mairie de Bruz y participe pour accompagner les habitants âgés de la commune.",
+      "source_url": "https://www.ville-bruz.fr/actualites/semaine-bleue/",
+      "source_label": "Mairie de Bruz — Actualités",
+      "type": "mairie",
+      "dossier": "D25"
+    },
     {
       "id": "of-9353c4eb",
       "titre": "Bruz. Du cinéma en plein air au Vert Buisson",

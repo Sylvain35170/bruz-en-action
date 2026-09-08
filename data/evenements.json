@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-09-02",
+    "last_updated": "2026-09-05",
     "source": "Ville de Bruz, Grand Logis, Handisport, Les Trans"
   },
   "evenements": [
@@ -566,6 +566,15 @@
       "source": "agenda_mairie"
     },
     {
+      "id": "agenda-bacc8e46",
+      "titre": "Semaine Bleue",
+      "date": "2026-10-05",
+      "categorie": "Famille",
+      "lien": "https://www.ville-bruz.fr/agenda/semaine-bleue/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
       "id": "agenda-df0a34e1",
       "titre": "La Selva Canta Quartet",
       "date": "2026-10-06",
@@ -580,6 +589,42 @@
       "date": "2026-10-07",
       "categorie": "Mairie",
       "lien": "https://www.ville-bruz.fr/agenda/distribution-gratuite-de-composteurs-2/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-04c41942",
+      "titre": "Semaine Bleue",
+      "date": "2026-10-07",
+      "categorie": "Famille",
+      "lien": "https://www.ville-bruz.fr/agenda/semaine-bleue-3/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-9aa6e80c",
+      "titre": "Semaine Bleue",
+      "date": "2026-10-08",
+      "categorie": "Semaine Bleue",
+      "lien": "https://www.ville-bruz.fr/agenda/semaine-bleue-4/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-c47ae865",
+      "titre": "Semaine Bleue",
+      "date": "2026-10-09",
+      "categorie": "Médiathèque",
+      "lien": "https://www.ville-bruz.fr/agenda/semaine-bleue-5/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-fe1cbc08",
+      "titre": "Semaine Bleue",
+      "date": "2026-10-11",
+      "categorie": "Famille",
+      "lien": "https://www.ville-bruz.fr/agenda/semaine-bleue-7/",
       "lien_label": "Agenda Ville de Bruz",
       "source": "agenda_mairie"
     },
