@@ -197,6 +197,29 @@ jamais déclencher `flow.run_local_server()` sous launchd, cf. incident 6 j du 2
 ---
 
 ## Pièges connus
+### 2026-09-08 — une recette de contournement se périme sans prévenir (Google News, tags agenda, palette)
+→ dispatch: local:bruz-en-action
+
+**Résolution des liens Google News RSS.** Le format `rss/articles/CBMi…` est un protobuf
+opaque : seule Google peut le déplier, via `batchexecute` (jetons `data-n-a-sg` /
+`data-n-a-ts` lus dans le HTML de la page, rejoués en POST). La recette notée le 01/09
+utilisait le cookie `CONSENT=YES+…` — **il ne franchit plus le mur de consentement**
+(on retombe sur `consent.google.com`, la page ne porte alors aucun jeton et la résolution
+échoue en silence). Le cookie qui marche au 08/09 est **`SOCS`**. Intégré dans
+`agent_presse._resolve_url()`, qui conserve le lien brut en cas d'échec plutôt que de
+perdre la source (cf. `presse-f2c23dbc`, jamais retrouvé). ⚠️ Google throttle vite : après
+quelques requêtes, GET comme POST tombent en `ReadTimeout` — ce n'est pas un bug de code,
+c'est le débit. Ne pas « corriger » un timeout en refaisant la logique.
+
+**Le bac de secours absorbe, il ne prévient pas.** `THEMES_AGENDA` (`app/utils.ts`) range
+les tags mairie inconnus dans « Autres rendez-vous » : le 08/09, **7 tags n'étaient mappés
+nulle part et 25 événements y étaient tombés** sans que rien ne le signale — le BACKLOG
+affirmait encore « les 15 tags actuels sont tous mappés ». Même famille dans
+`lib/categories.ts` : la catégorie `Institutions` n'y figurait pas, donc **D23 tombait sur
+le gris de repli depuis sa création**. ➡️ Un repli silencieux exige un **inventaire
+périodique** (tags présents dans les données vs tags mappés dans le code), jamais l'attente
+d'un signal — par construction, il n'en émettra aucun.
+
 ### 2026-09-05 — dossiers.json : schéma de decisions[], et 2e conflation Bonna Sabla
 → dispatch: local:bruz-en-action
 
