@@ -197,6 +197,21 @@ jamais déclencher `flow.run_local_server()` sous launchd, cf. incident 6 j du 2
 ---
 
 ## Pièges connus
+### 2026-09-05 — dossiers.json : schéma de decisions[], et 2e conflation Bonna Sabla
+→ dispatch: local:bruz-en-action
+
+**`decisions[]` = `{date, description, source_url}`**, pas `{date, titre, detail}` (analogie
+trompeuse avec `actus_recentes`). `validate_data.py` n'a rien signalé — la carte "Décisions
+clés" est restée vide sur le site déployé (seule la date affichée) jusqu'à vérification
+visuelle. Toujours confronter un nouveau champ structuré à un exemple existant du même champ
+dans un autre dossier, et confirmer le rendu déployé après ajout.
+
+**Bonna Sabla (D22) — 2e occurrence de conflation** (après le piège Archyde du 2026-07-17) :
+un avis MRAe `avis_mrae_pabonnasabla-realestate_apo63.pdf` (suffixe `apo63` = Puy-de-Dôme, site
+homonyme sans rapport) et un avis « ZAC Bruz » qui concerne en fait D02, pas Bonna Sabla, sont
+remontés dans une recherche. ➡️ Ne jamais exploiter un résultat sur Bonna Sabla sans qu'il
+nomme explicitement Bruz/35170 dans le document lui-même.
+
 ### 2026-09-01 — agent_bruz_mag : titre capté depuis le texte du lien
 → dispatch: local:bruz-en-action
 
