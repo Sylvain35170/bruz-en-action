@@ -197,6 +197,49 @@ jamais déclencher `flow.run_local_server()` sous launchd, cf. incident 6 j du 2
 ---
 
 ## Pièges connus
+### 2026-09-13 — Une actu acceptée est publiée telle quelle, défauts compris
+→ dispatch: local:bruz-en-action
+
+`review_proposals.py --accept` recopie la proposition sans retouche (`actus.json`), puis
+`agent_dossiers` la duplique (`dossiers.json`). Vu sur `presse-c7455728` : titre suffixé
+« - ouest-france.fr », `source_label` = requête de veille (« CM Bruz ») au lieu de l'éditeur,
+résumé extrapolé (« révèle les tensions… »).
+➡️ Relire titre/source/`detail` avant le build ; corriger dans **les deux** fichiers.
+
+### 2026-09-13 — Vérifier le déployé avec les URL en `.html`
+→ dispatch: local:bruz-en-action
+
+`curl …/dossiers/D23/` ne contient pas le contenu attendu, `…/dossiers/D23.html` oui — un grep
+sur la mauvaise forme conclut à tort à une absence. Bulletins : `/publications.html`.
+### 2026-09-05 — Piège Bonna Sabla — 2e occurrence de conflation, cette fois via un avis MRAe
+→ dispatch: local:bruz-en-action
+
+Recherche du 05/09 sur l'avenir du site Bonna Sabla (D22) : un résultat MRAe fait remonter
+`avis_mrae_pabonnasabla-realestate_apo63.pdf` — le suffixe `apo63` correspond au département
+63 (Puy-de-Dôme), un site Bonna Sabla homonyme sans rapport avec Bruz (35). Un second résultat
+« ZAC Bruz » concernait en réalité D02 (Multisites), pas Bonna Sabla. S'ajoute au piège Archyde
+déjà identifié le 2026-07-17 (chiffres 12 ha / 2,5-4 M€ / 12 M€ agrégés à tort avec d'autres
+sites Bonna Sabla en France).
+
+➡️ « Bonna Sabla » est un nom d'entreprise avec plusieurs sites en France : ne jamais exploiter
+un résultat de recherche sur ce sujet sans qu'il nomme explicitement Bruz/35170 (ou le bon code
+département/INSEE) dans le document lui-même, pas seulement dans le titre du résultat.
+
+### 2026-09-05 — `dossiers.json` — le schéma de `decisions[]` est `{date, description, source_url}`, pas `{date, titre, detail}`
+→ dispatch: local:bruz-en-action
+
+En enrichissant D23 (renommage place Robert-Barré), j'ai ajouté une entrée `decisions` avec
+les champs `titre`/`detail` par analogie avec `actus_recentes` — `validate_data.py` n'a rien
+signalé (pas de contrôle de schéma strict par section), mais la carte "Décisions clés" du
+site déployé est restée vide (seule la date s'affichait). Seule la vérification visuelle sur
+le site déployé (règle "build vert ≠ UI correcte") l'a révélée. Corrigé en confrontant au
+schéma réel d'un autre dossier (`description` + `source_url`, pas `titre`/`detail`).
+
+➡️ Avant d'ajouter un champ structuré à un fichier `data/*.json` de ce projet, vérifier le
+schéma exact sur un exemple existant du même champ dans un autre dossier plutôt que de
+déduire par analogie avec un champ voisin — et toujours confirmer le rendu sur le site
+déployé après un ajout de ce type, pas seulement `validate_data.py`.
+
 ### 2026-09-08 — une recette de contournement se périme sans prévenir (Google News, tags agenda, palette)
 → dispatch: local:bruz-en-action
 
