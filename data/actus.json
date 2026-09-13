@@ -1,9 +1,39 @@
 {
   "meta": {
-    "last_updated": "2026-09-07",
+    "last_updated": "2026-09-13",
     "note": "Actus de suivi des promesses — une actu = un événement daté lié à une ou plusieurs promesses"
   },
   "actus": [
+    {
+      "id": "mairie-e9a7d06a",
+      "titre": "Fermeture du GR 39 au niveau de la DGA",
+      "date": "2026-09-09",
+      "detail": "La mairie de Bruz annonce la fermeture du sentier de randonnée GR 39 au niveau de la DGA. Les raisons de cette fermeture (travaux, maintenance ou sécurité) ne sont pas détaillées dans le communiqué.",
+      "source_url": "https://www.ville-bruz.fr/actualites/fermeture-gr39-halage-dga/",
+      "source_label": "Mairie de Bruz — Actualités",
+      "type": "mairie",
+      "dossier": "D05"
+    },
+    {
+      "id": "of-6c3d65f7",
+      "titre": "Bruz. Conversations sous les arbres continue à ouvrir la discussion sur le vivant",
+      "date": "2026-09-07",
+      "detail": "Conversations sous les arbres s'est établi comme un rendez-vous régulier pour les habitants de Bruz, offrant un espace de débat sur les enjeux environnementaux et du vivant. L'expérience s'avérant positive, elle sera maintenue.",
+      "source_url": "https://www.ouest-france.fr/bretagne/bruz-35170/bruz-conversations-sous-les-arbres-continue-a-ouvrir-la-discussion-sur-le-vivant-f1c111d6-b58a-483e-9e77-6509b242e4de",
+      "source_label": "Ouest-France",
+      "type": "presse",
+      "dossier": "D21"
+    },
+    {
+      "id": "presse-c7455728",
+      "titre": "L'opposition demande un nouveau vote sur le changement de nom de la place, le maire refuse",
+      "date": "2026-09-06",
+      "detail": "L'opposition municipale demande un nouveau vote en conseil municipal sur le renommage de la place du Vert-Buisson en place Robert-Barré (délibération du 3 juillet). Le maire refuse.",
+      "source_url": "https://www.ouest-france.fr/bretagne/bruz-35170/lopposition-demande-un-nouveau-vote-sur-le-changement-de-nom-de-cette-place-a-bruz-le-maire-dit-non-87c774ba-a9d0-11f1-a3f7-c4f38a0eaa1c",
+      "source_label": "Ouest-France",
+      "type": "presse",
+      "dossier": "D23"
+    },
     {
       "id": "mairie-cacbfc6c",
       "titre": "Semaine Bleue",
