@@ -1,11 +1,33 @@
 {
   "meta": {
-    "last_updated": "2026-09-01",
+    "last_updated": "2026-09-11",
     "note": "Bulletins municipaux (Bruz Mag, Semaine à Bruz) — distincts des séances de conseil municipal (cms.json)",
     "dernier_bruz_mag": 260,
-    "derniere_semaine_bruz": 859
+    "derniere_semaine_bruz": 860
   },
   "bulletins": [
+    {
+      "id": "SAB-860",
+      "date": "2026-09-11",
+      "titre": "Semaine à Bruz n°860 — du 11 au 24 septembre 2026",
+      "points_cles": [
+        "Conseil municipal — lundi 21 septembre, 19h, Hôtel de Ville",
+        "Place du Vert-Buisson renommée place Robert-Barré (maire de 1989 à 2008)",
+        "Journées du patrimoine : découverte de Bruz à vélo, 19 et 20 septembre",
+        "Travaux av. du Général de Gaulle (assainissement, jusqu'au 9 octobre) et bd Louis Pasteur (piste cyclable, jusqu'à fin octobre)",
+        "Registre des autorisations d'urbanisme 100 % en ligne à partir de fin septembre",
+        "Vélos BreizhGo en libre-service à la gare de Ker Lann à partir du 18 septembre",
+        "Places du parking Pagnol mises en vente (8 300 €)",
+        "Repas des aînés du 18 octobre complet"
+      ],
+      "sources": [
+        {
+          "label": "Télécharger le PDF",
+          "url": "https://www.ville-bruz.fr/wp-content/uploads/2026/09/La-Semaine-a-Bruz-n°860-du-11-au-24-septembre-2026.pdf"
+        }
+      ],
+      "type": "semaine_bruz"
+    },
     {
       "id": "SAB-859",
       "date": "2026-08-27",
