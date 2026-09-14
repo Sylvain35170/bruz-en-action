@@ -92,6 +92,13 @@ def _resolve_gnews(url: str) -> str | None:
     Le format `rss/articles/CBMi…` est un protobuf opaque, pas du base64 : seule
     Google peut le déplier. On lit la signature et le timestamp dans le HTML de la
     page, puis on les rejoue sur l'endpoint batchexecute.
+
+    Un échec ici (jetons absents de la page, ou pas de `garturlres` en retour) est
+    un cas **normal** de l'API (mur de consentement, throttle), pas une exception —
+    il est donc loggé ici même en WARN plutôt que remonté en silence à l'appelant
+    (cf. piège 2026-09-08/13 : le `except` de `_resolve_url` ne couvrait jamais ce
+    cas, donc aucun run n'a jamais tracé le moindre échec de résolution malgré des
+    liens bruts publiés).
     """
     import json as _json
     import re as _re
@@ -107,6 +114,8 @@ def _resolve_gnews(url: str) -> str | None:
     sig = _re.search(r'data-n-a-sg="([^"]+)"', page.text)
     horodatage = _re.search(r'data-n-a-ts="([^"]+)"', page.text)
     if not (sig and horodatage):
+        motif = "mur de consentement" if "consent.google.com" in page.url else "jetons absents de la page"
+        log(f"  résolution Google News : {motif} — lien brut conservé", "WARN")
         return None
 
     jeton = url.rstrip("/").split("/")[-1].split("?")[0]
@@ -127,9 +136,13 @@ def _resolve_gnews(url: str) -> str | None:
     reponse.raise_for_status()
     bloc = reponse.text.split("garturlres", 1)
     if len(bloc) < 2:
+        log("  résolution Google News : pas de garturlres dans la réponse batchexecute — lien brut conservé", "WARN")
         return None
     lien = _re.search(r'"(https?://[^"\\]+)"', bloc[1])
-    return lien.group(1) if lien else None
+    if not lien:
+        log("  résolution Google News : garturlres présent mais URL illisible — lien brut conservé", "WARN")
+        return None
+    return lien.group(1)
 
 
 def _resolve_url(url: str) -> str:

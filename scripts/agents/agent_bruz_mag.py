@@ -10,7 +10,10 @@ Les deux sont injectés dans data/bulletins.json — distinct de data/cms.json (
 conseil municipal uniquement, voir piège 2026-07-11 dans CLAUDE.md).
 """
 
+import json
 import re
+import shutil
+import subprocess
 import sys
 import tempfile
 from pathlib import Path
@@ -27,6 +30,29 @@ except ImportError:
     sys.exit(1)
 
 AGENT_NAME = "bruz_mag"
+
+# Chemin complet nécessaire sous launchd (PATH minimal, cf. agent_select.py)
+CLAUDE_CLI = shutil.which("claude") or "/opt/homebrew/bin/claude"
+CLAUDE_MODEL = "claude-haiku-4-5-20251001"
+CLAUDE_TIMEOUT_S = 150
+
+PROMPT_POINTS_CLES = """\
+Voici le texte brut extrait d'un bulletin municipal de Bruz (35), \
+« {titre} ». L'extraction PDF casse la mise en page en colonnes : le texte \
+peut contenir des fragments mélangés (numéros de téléphone, en-têtes de \
+rubrique, bribes de phrases).
+
+Identifie les 5 à 8 sujets/articles distincts traités dans ce numéro et \
+résume chacun en une ligne courte et factuelle, en français, du point de \
+vue d'un citoyen qui veut savoir ce qui se passe à Bruz (pas les mentions \
+légales, sommaire, pagination, ours).
+
+Retourne UNIQUEMENT un tableau JSON de chaînes — aucun texte avant ou après.
+Exemple : ["Le marché de Noël se tiendra place de la Mairie du 12 au 14 décembre", "..."]
+
+Texte du bulletin :
+{texte}
+"""
 
 SOURCES_PRESSE = [
     "https://www.ville-bruz.fr/ma-ville-de-bruz/bulletins-municipaux/",
@@ -130,25 +156,66 @@ def find_semaine_links(soup: BeautifulSoup, base_url: str) -> list[dict]:
     return results
 
 
-def extract_mag_summary(pdf_bytes: bytes) -> list[str]:
-    """Extrait les titres d'articles du Bruz Mag (lignes en gras / majuscules)."""
+def _extract_pdf_text(pdf_bytes: bytes, max_pages: int = 8) -> str:
+    """Extrait le texte brut des premières pages d'un PDF."""
     with tempfile.NamedTemporaryFile(suffix=".pdf", delete=False) as f:
         f.write(pdf_bytes)
         tmp = Path(f.name)
-    titres = []
+    texte = ""
     try:
         with pdfplumber.open(tmp) as pdf:
-            for page in pdf.pages[:8]:  # Les 8 premières pages suffisent
-                text = page.extract_text() or ""
-                for line in text.split("\n"):
-                    line = line.strip()
-                    if 10 < len(line) < 100 and line.isupper():
-                        titres.append(line.title())
+            texte = "\n".join((page.extract_text() or "") for page in pdf.pages[:max_pages])
     except Exception as e:
         log(f"pdfplumber bruz mag: {e}", "WARN")
     finally:
         tmp.unlink(missing_ok=True)
-    return list(dict.fromkeys(titres))[:10]  # dédup, max 10
+    return texte
+
+
+def _points_cles_via_claude(texte: str, titre: str) -> list[str] | None:
+    """Résume le bulletin via le CLI `claude` — la mise en page en colonnes rend
+    l'ancienne heuristique (lignes en majuscules) inutilisable (cf. BACKLOG)."""
+    if not texte.strip():
+        return None
+    prompt = PROMPT_POINTS_CLES.format(titre=titre, texte=texte[:12_000])
+    try:
+        result = subprocess.run(
+            [CLAUDE_CLI, "--print", "--model", CLAUDE_MODEL, prompt],
+            capture_output=True, text=True, timeout=CLAUDE_TIMEOUT_S,
+        )
+        if result.returncode != 0:
+            log(f"  claude CLI erreur (bruz mag) : {result.stderr[:200]}", "ERR")
+            return None
+        raw = result.stdout.strip()
+        start, end = raw.find("["), raw.rfind("]") + 1
+        points = json.loads(raw[start:end])
+        return [p.strip() for p in points if isinstance(p, str) and p.strip()][:8]
+    except subprocess.TimeoutExpired:
+        log("  claude CLI timeout (bruz mag)", "ERR")
+        return None
+    except (json.JSONDecodeError, ValueError) as e:
+        log(f"  JSON invalide (bruz mag) : {e}", "ERR")
+        return None
+    except FileNotFoundError:
+        log("  claude CLI introuvable dans PATH", "WARN")
+        return None
+
+
+def extract_mag_summary(pdf_bytes: bytes, titre: str = "") -> list[str]:
+    """Extrait les points clés d'un bulletin (Bruz Mag / Semaine à Bruz) via Claude.
+
+    Repli explicite si le CLI échoue : liste vide plutôt que des fragments de
+    colonnes inutilisables (« Découverte De Bruz 07 50 84 53 14 ») — l'ancienne
+    heuristique par lignes en majuscules produisait un faux sentiment de
+    complétude. Un `points_cles` vide signale clairement qu'une relecture
+    manuelle du PDF est nécessaire avant publication.
+    """
+    texte = _extract_pdf_text(pdf_bytes)
+    points = _points_cles_via_claude(texte, titre)
+    if points is None:
+        log("  points_cles : échec extraction Claude — relire le PDF à la main", "WARN")
+        return []
+    return points
 
 
 def run() -> bool:
@@ -190,7 +257,7 @@ def run() -> bool:
             r_pdf = fetch(mag["url"], timeout=30)
             if not r_pdf or len(r_pdf.content) < 10_000:
                 continue
-            mag["points_cles"] = extract_mag_summary(r_pdf.content)
+            mag["points_cles"] = extract_mag_summary(r_pdf.content, f"Bruz Mag n°{mag['numero']}")
             new_mags.append(mag)
             known_mag_nums.add(mag["numero"])
 
@@ -201,7 +268,7 @@ def run() -> bool:
             r_pdf = fetch(sem["url"], timeout=30)
             if not r_pdf or len(r_pdf.content) < 10_000:
                 continue
-            sem["points_cles"] = extract_mag_summary(r_pdf.content)
+            sem["points_cles"] = extract_mag_summary(r_pdf.content, f"Semaine à Bruz n°{sem['numero']}")
             new_semaines.append(sem)
             known_semaine_nums.add(sem["numero"])
 
