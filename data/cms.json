@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-14",
+    "last_updated": "2026-10-04",
     "source_principale": "Transcriptions YouTube (Ville de Bruz) + Bruz Mag n°260 + délibérations Mégalis",
     "youtube": "https://www.youtube.com/playlist?list=PLnSe2hJFinqpupninWlKBHSmzmwLW-8i7",
     "deliberations_megalis": "https://data.megalis.bretagne.bzh/?siren=213500473",
@@ -9,23 +9,337 @@
   },
   "seances": [
     {
+      "id": "CM-2026-09-23",
+      "date": "2026-09-23",
+      "statut": "passe",
+      "lieu": "Halle Pagnol, Bruz — 19h",
+      "titre": "Retour à l'hôtel de ville : parking Pagnol, quartier gare, subventions Kerlann et fin de mission du DGS",
+      "points_cles": [
+        "Parking Pagnol : 3 places vendues à 8 300 € l'unité (votes 7 contre / 25 pour, puis 7 contre / 26 pour). Selon la majorité, 14 places ont été vendues depuis juillet, contre 3 en un an et demi sous l'équipe précédente",
+        "Taxe sur les enseignes (TLPE) : environ 100 000 €/an de recettes (jusqu'à 160 000 € par le passé). Le nouveau prestataire coûte 8 980 € la première année puis 4 860 €/an sur 4 ans",
+        "Subventions demandées pour le complexe de Kerlann et le football : 40 000 € (badminton, déjà acquis) et 60 000 € à la Fédération française de football (sol 20 k€, éclairage LED 10 k€, foyer du club 30 k€), sans garantie pour ces trois dernières",
+        "Ascenseur Pagnol : réparation de 11 280,28 € avancée par la ville, dont environ 6 000 € seront remboursés par le promoteur, encore propriétaire de l'équipement",
+        "Protection sociale des agents : 131 agents touchent 25 €/mois en prévoyance, 59 touchent 15 €/mois en santé. La loi imposera à la ville de payer 50 % de la cotisation prévoyance au 1er janvier 2029",
+        "Fin du détachement du DGS Hervé-Pierre Maltrude (en poste depuis juin 2023), effective au 1er décembre 2026"
+      ],
+      "deliberations": [
+        {
+          "numero": "1",
+          "titre": "Agence France Locale – désignation des représentants",
+          "vote": "Unanimité",
+          "detail": "André Letulzo est désigné titulaire et un suppléant nommé (nom mal retranscrit). La ville adhère à cet organisme de prêt aux collectivités depuis 2022 sans l'avoir encore utilisé. Letulzo justifie son revirement par la hausse des taux d'intérêt : le prêt du 4e groupe scolaire avait été accordé par le Crédit Mutuel de Bretagne."
+        },
+        {
+          "numero": "2",
+          "titre": "Décision modificative du budget principal",
+          "vote": "Unanimité",
+          "detail": "Écriture comptable purement technique qui clôt le dossier des bâtiments des services techniques de la zone de l'Éperon."
+        },
+        {
+          "numero": "3",
+          "titre": "Convention d'assistance pour la taxe locale sur la publicité extérieure (TLPE)",
+          "vote": "Unanimité",
+          "detail": "Le prestataire RFPAC est retenu pour 4 ans (8 980 € la 1re année, puis 4 860 €/an) avec un logiciel et un recensement des enseignes en continu. La recette tourne autour de 100 000 €/an, en baisse depuis les restrictions de publicité décidées par Rennes Métropole."
+        },
+        {
+          "numero": "4",
+          "titre": "Rénovation thermique de l'hôtel de ville – modification du marché",
+          "vote": "Unanimité",
+          "detail": "Clôture du marché sans dépassement de l'enveloppe globale. Le lot des panneaux photovoltaïques a été résilié, ce qui réduit la dépense, mais pas pour une bonne raison selon un élu."
+        },
+        {
+          "numero": "5",
+          "titre": "Acquisition de la parcelle C126",
+          "vote": "Unanimité",
+          "detail": "Achat d'une parcelle de 12 m² dans le périmètre de la future ZAC. Elle avait été oubliée lors de l'achat de la maison voisine. Les frais sont à la charge de la ville."
+        },
+        {
+          "numero": "6",
+          "titre": "Cession de chemins ruraux – lancement de la procédure",
+          "vote": "Unanimité",
+          "detail": "Quatre emprises sont concernées : deux chemins sur le site de la future station d'épuration (STEP), revendus ensuite à Rennes Métropole, un chemin fermé au Petit Cicé et une mise en conformité avec le cadastre à la Droulinais. Une enquête publique sera organisée."
+        },
+        {
+          "numero": "7",
+          "titre": "Acquisition des 53 et 62 rue Champion de Cicé",
+          "vote": "Unanimité",
+          "detail": "La ville rachète à Rennes Métropole deux maisons du quartier gare, au prix d'achat plus les frais. Elles seront démolies grâce à une subvention du Fonds vert obtenue le 24 septembre 2025, et racheter avant de démolir évite à la ville de payer la TVA."
+        },
+        {
+          "numero": "8",
+          "titre": "Cession de parcelles rue des Frênes (société ISB)",
+          "vote": "Unanimité",
+          "detail": "150 m² cédés à 30 €/m² (tarif de zone d'activité), soit 4 500 €, pour aligner le cadastre sur les clôtures réelles."
+        },
+        {
+          "numero": "9",
+          "titre": "Convention de mise à disposition et promesse de bail – parcelle ZH59 (société IEL)",
+          "vote": "Unanimité",
+          "detail": "Terrain municipal de 1,1 ha près de Pont-Péan, en friche depuis 10 ans, que l'État classe prioritaire pour le photovoltaïque. IEL dispose de 3 ans pour les études et les autorisations, puis un bail emphytéotique (de longue durée) sera signé si le projet est autorisé. L'accès au puits historique est maintenu pour les visites."
+        },
+        {
+          "numero": "10",
+          "titre": "Cession de places de stationnement – parking Pagnol (lots 144 et 145)",
+          "vote": "7 contre / 25 pour",
+          "detail": "Deux places vendues à la SCI BGE à 8 300 € net vendeur chacune, soit 16 600 €. Mme Viter a quitté la salle pour raisons professionnelles. L'opposition vote contre, car elle conteste la baisse de prix décidée le 3 juillet sans analyse fine du marché."
+        },
+        {
+          "numero": "11",
+          "titre": "Cession d'une place de stationnement – parking Pagnol (lot 157)",
+          "vote": "7 contre / 26 pour",
+          "detail": "Place n° 218 vendue à un couple de particuliers pour 8 300 €. Le maire souligne que des commerçants achètent ces places pour leurs salariés, ce qui libère du stationnement pour les clients."
+        },
+        {
+          "numero": "12",
+          "titre": "Prise en charge de la réparation de l'ascenseur Pagnol",
+          "vote": "Unanimité",
+          "detail": "Remplacement des câbles chiffré par Otis à 11 280,28 €, après un contrôle de Socotec. L'ascenseur (accès PMR et livraisons) n'a pas encore été rétrocédé à la ville par le promoteur, qui remboursera environ 6 000 €."
+        },
+        {
+          "numero": "13",
+          "titre": "Convention avec l'école de musique intercommunale Rive Sud",
+          "vote": "Unanimité",
+          "detail": "18 séances d'éveil musical de 30 minutes et un spectacle pour la crèche Les Suricates en 2026-2027. C'est financé par le syndicat intercommunal et le Département d'Ille-et-Vilaine, sans coût pour la ville."
+        },
+        {
+          "numero": "14",
+          "titre": "Participation aux frais de scolarité d'un enfant bruzois en ULIS à Bréal-sous-Montfort",
+          "vote": "Unanimité",
+          "detail": "La ville paie 340,64 €, soit son propre coût moyen par élève, retenu parce qu'il est inférieur à celui de Bréal (375,70 €), pour 2025-2026."
+        },
+        {
+          "numero": "15",
+          "titre": "Programme « Lait et fruits à l'école » (FranceAgriMer)",
+          "vote": "Unanimité",
+          "detail": "Renouvellement de la demande de subvention européenne pour 2026-2027. La ville précise qu'elle respecte déjà la loi EGalim au-delà des exigences."
+        },
+        {
+          "numero": "16",
+          "titre": "Tarifs du marché de Noël 2026",
+          "vote": "Unanimité",
+          "detail": "Marché des 5 et 6 décembre 2026, place Pagnol. Les tarifs augmentent de 1,5 % (niveau de l'inflation), avec gratuité pour 3 associations à vocation sociale au maximum."
+        },
+        {
+          "numero": "17",
+          "titre": "Demande de subvention FFF – sol sportif du gymnase B de Kerlann",
+          "vote": "Unanimité",
+          "detail": "20 000 € demandés au Fonds d'aide au football amateur pour un revêtement homologué pour le futsal en compétition."
+        },
+        {
+          "numero": "18",
+          "titre": "Demande de subvention FFF – éclairage LED des gymnases A et B de Kerlann",
+          "vote": "Unanimité",
+          "detail": "10 000 € demandés pour passer en LED les 3 surfaces de jeu : meilleure qualité d'éclairage et économies d'énergie."
+        },
+        {
+          "numero": "19",
+          "titre": "Demande de subvention Fédération française de badminton – rénovation des équipements couverts de Kerlann",
+          "vote": "Unanimité",
+          "detail": "40 000 € demandés au titre du dispositif PACT, présentés comme déjà acquis. Les travaux portent sur l'accessibilité, l'électricité, l'éclairage LED, l'isolation des vestiaires, les occultants, un nouveau sol avec 10 terrains en gymnase B et une salle annexe mutualisée."
+        },
+        {
+          "numero": "20",
+          "titre": "Demande de subvention FFF – construction d'un foyer près des terrains synthétiques",
+          "vote": "Unanimité",
+          "detail": "30 000 € demandés pour remplacer le foyer vétuste du FC Bruz, conçu avec le club et ouvert ponctuellement à d'autres associations. Lauren Daron ne garantit pas l'obtention des trois aides du football."
+        },
+        {
+          "numero": "21",
+          "titre": "Débat obligatoire sur la protection sociale complémentaire des agents",
+          "vote": "Sans vote (prise d'acte)",
+          "detail": "Prévoyance : contrat collectif du centre de gestion (CDG 35), 131 agents bénéficiaires à 25 €/mois. Santé : 59 agents à 15 €/mois. La participation de l'employeur à 50 % de la prévoyance sera obligatoire au 1er janvier 2029. Un groupe de travail sera créé avec le nouveau comité social territorial (CST), élu en décembre 2026."
+        },
+        {
+          "numero": "22",
+          "titre": "Suppressions et créations de postes – tableau des effectifs",
+          "vote": "Unanimité",
+          "detail": "Remplacements après départs en retraite et réussites aux concours, dans l'éducation, les infrastructures, les espaces verts et la salle de spectacle du Grand Logis. Les créations de postes prennent effet au 1er octobre 2026."
+        }
+      ],
+      "points_chauds": [],
+      "impact_bruzois": [],
+      "a_surveiller": [],
+      "sources": [
+        {
+          "label": "Vidéo YouTube — Conseil municipal du lundi 21 septembre",
+          "url": "https://youtu.be/qiNngaM1WUk"
+        }
+      ],
+      "resume_executif": "Pour son retour dans la salle rénovée de l'hôtel de ville, le conseil municipal du 21 septembre 2026 a adopté 21 délibérations, presque toutes à l'unanimité. Seule la vente de places du parking Pagnol à 8 300 € a été votée contre l'opposition. La séance s'est ouverte sur un échange vif entre Jean-Patrick Désguérets et l'ancien maire Philippe Salmon : la majorité lui reproche d'avoir dénoncé un prix de 0,40 €/m² sur les terrains du golf qu'il avait lui-même signé en 2025. Côté projets, la ville rachète deux maisons du quartier gare en vue de leur démolition, ouvre un terrain à un projet photovoltaïque et demande 100 000 € de subventions sportives pour Kerlann. À la fin de la séance, le maire a annoncé qu'il mettait fin aux fonctions du directeur général des services (DGS) au 1er décembre 2026, sans en donner la raison.",
+      "youtube_id": "qiNngaM1WUk",
+      "youtube_url": "https://youtu.be/qiNngaM1WUk"
+    },
+    {
       "id": "CM-2026-09-21",
       "date": "2026-09-21",
-      "statut": "a_venir",
-      "lieu": "Halle Pagnol, Bruz",
-      "titre": "Conseil municipal de rentrée",
-      "resume_executif": "Première séance après la coupure estivale. Date annoncée par la mairie (séance ouverte au public).",
-      "points_cles": [],
+      "statut": "passe",
+      "lieu": "Hôtel de ville, Bruz — salle du conseil, 19h",
+      "titre": "Fin de mission du DGS, parking Pagnol et rénovation du complexe sportif de Kerlann",
+      "points_cles": [
+        "Le maire met fin au détachement d'Hervé-Pierre Maltrude, directeur général des services (DGS) depuis juin 2023, à compter du 1er décembre 2026",
+        "Parking Pagnol : 3 places vendues à 8 300 € (16 600 € pour les places 144 et 145, puis la place 218). Selon la majorité, 14 places ont été vendues depuis juillet, contre 3 en un an et demi sous l'équipe précédente",
+        "Demandes de subventions pour Kerlann et le foot : 40 000 € auprès de la Fédération française de badminton (montant assuré), puis 20 000 € pour un sol de gymnase, 10 000 € pour un éclairage LED et 30 000 € pour le nouveau foyer du FC Bruz auprès de la Fédération française de football (non garantis)",
+        "Taxe sur les enseignes (TLPE) : nouveau prestataire RFPAC pour 8 980 € la première année puis 4 860 €/an, afin de mieux recouvrer une recette d'environ 100 000 €/an",
+        "Ascenseur PMR du Pagnol : 11 280 € de réparations, dont 6 000 € remboursés par le promoteur",
+        "Protection sociale des agents : la ville verse 25 €/mois à 131 agents pour la prévoyance et 15 €/mois à 59 agents pour la mutuelle. L'employeur devra prendre en charge 50 % de la cotisation de prévoyance au plus tard le 1er janvier 2029"
+      ],
+      "deliberations": [
+        {
+          "numero": "1",
+          "titre": "Désignation des représentants de la ville à l'Agence France Locale",
+          "vote": "Unanimité",
+          "detail": "André Letulzo est désigné titulaire, avec un suppléant (nom mal retranscrit). La ville adhère depuis 2022 à cet organisme de prêt aux collectivités, sans l'avoir encore utilisé. L'opposition a relevé que la majorité s'était abstenue en 2025. André Letulzo a expliqué ce changement par la remontée des taux d'intérêt."
+        },
+        {
+          "numero": "2",
+          "titre": "Décision modificative du budget principal",
+          "vote": "Unanimité",
+          "detail": "Écriture d'ordre sans dépense nouvelle : 1 740 000 € de travaux du bâtiment des services techniques (rue de l'Éperon Doré, délégués à la SPL NOA), immobilisés depuis plus de 3 ans au compte 238, sont reclassés au compte 21318 (constructions, autres bâtiments publics)."
+        },
+        {
+          "numero": "3",
+          "titre": "Convention d'assistance pour la taxe locale sur la publicité extérieure (TLPE)",
+          "vote": "Unanimité",
+          "detail": "La taxe rapporte environ 100 000 €/an, contre jusqu'à 160 000 € avant les restrictions du règlement métropolitain de publicité. RFPAC a été retenu : logiciel et suivi actif pendant 4 ans, pour 8 980 € la première année puis 4 860 €/an. Gaëlle Pierre (opposition) a salué la suite donnée à un dispositif lancé par l'équipe précédente."
+        },
+        {
+          "numero": "4",
+          "titre": "Rénovation thermique de l'hôtel de ville : modification du marché",
+          "vote": "Unanimité",
+          "detail": "Avenants aux lots 1 à 9 : la date contractuelle d'achèvement passe du 26/06 au 07/07/2026 (réception retardée par des formalités du maître d'ouvrage), sans pénalité ni incidence financière. Le lot 10 (photovoltaïque) a été résilié le 20/05/2026."
+        },
+        {
+          "numero": "5",
+          "titre": "Acquisition de la parcelle C126",
+          "vote": "Unanimité",
+          "detail": "Parcelle de 12 m² située dans le périmètre de la future ZAC, qui n'avait pas été achetée avec la maison voisine. Prix aligné sur la référence de 5 €/m² des zones 1AU, inférieur à l'estimation des Domaines ; les frais sont à la charge de la ville."
+        },
+        {
+          "numero": "6",
+          "titre": "Désaffectation et cession de chemins ruraux",
+          "vote": "Unanimité",
+          "detail": "Plusieurs chemins qui ne desservent plus que les propriétés riveraines : à Chêne-Daix (sur l'emprise de la future station d'épuration, revendus ensuite à Rennes Métropole), au Petit-Cicé et à la Droulinais (mise en cohérence avec le cadastre). Une enquête publique sera organisée."
+        },
+        {
+          "numero": "7",
+          "titre": "Acquisition des 53 et 62 rue Champion de Cicé",
+          "vote": "Unanimité",
+          "detail": "Rachat à Rennes Métropole, qui portait ces biens, au prix d'acquisition plus les frais, avant leur démolition dans le cadre du projet du quartier de la gare. L'opération est subventionnée par le Fonds vert (obtenu le 24/09/2025). Philippe Salmon a interrogé la majorité sur l'avenir de la ZAC multisites."
+        },
+        {
+          "numero": "8",
+          "titre": "Cession de parcelles rue des Fresnais",
+          "vote": "Unanimité",
+          "detail": "Mise en cohérence des clôtures et du cadastre à l'occasion de la vente du terrain de la société ISB : trois parcelles de la ville (BO 156, 157 et 159), soit 150 m² à 30 €/m² = 4 500 €."
+        },
+        {
+          "numero": "9",
+          "titre": "Convention de mise à disposition et promesse de bail sur la parcelle ZH59 (IEL)",
+          "vote": "Unanimité",
+          "detail": "Parcelle communale de 1,1 ha rue de la Mine (Pont-Péan), en friche depuis plus de 10 ans et classée prioritaire par l'État pour le photovoltaïque (loi APER). Convention de mise à disposition gratuite pour les études (5 ans selon le texte de la délibération ; 3 ans évoqués en séance), puis promesse de bail emphytéotique de 40 ans, avec une redevance de 3 000 €/ha/an (soit environ 3 300 €/an). Le droit d'accès du public au Puits des Députés (ancienne mine) est maintenu."
+        },
+        {
+          "numero": "10",
+          "titre": "Cession de deux places du parking Pagnol (lots 144 et 145)",
+          "vote": "25 pour / 7 contre",
+          "detail": "Vente à une SCI à 8 300 € la place, soit 16 600 €. L'élue Viter a quitté la salle pour raison professionnelle. L'opposition vote contre : elle refuse la baisse de prix décidée en juillet sans analyse fine du marché."
+        },
+        {
+          "numero": "11",
+          "titre": "Cession d'une place du parking Pagnol (lot 157, place 218)",
+          "vote": "26 pour / 7 contre",
+          "detail": "Vente à un couple à 8 300 €. Selon la majorité, des commerçants achètent ces places pour leurs salariés, ce qui laisse les places de surface libres pour les clients."
+        },
+        {
+          "numero": "12",
+          "titre": "Prise en charge de la réparation de l'ascenseur du Pagnol",
+          "vote": "Unanimité",
+          "detail": "Remplacement des câbles pour 11 280,28 € (devis Otis). L'ascenseur appartient encore au promoteur, qui ne l'a pas rétrocédé et qui remboursera 6 000 € à la ville. Marie-Pierre Duran a signalé que l'intérieur de la cabine est sale."
+        },
+        {
+          "numero": "13",
+          "titre": "Convention avec l'école de musique intercommunale Rive Sud",
+          "vote": "Unanimité",
+          "detail": "18 séances d'éveil musical et un spectacle pour la crèche Les Suricates en 2026-2027. Le financement est assuré par le syndicat et le département, sans coût pour la ville."
+        },
+        {
+          "numero": "14",
+          "titre": "Participation aux frais de scolarité d'un élève bruzois en ULIS à Bréal-sous-Montfort",
+          "vote": "Unanimité",
+          "detail": "La ville retient le plus bas des deux coûts moyens par élève : 340,64 € (Bruz), contre 375,70 € à Bréal."
+        },
+        {
+          "numero": "15",
+          "titre": "Programme « Lait et fruits à l'école » (FranceAgriMer)",
+          "vote": "Unanimité",
+          "detail": "Demande de subvention pour 2026-2027. La ville dépasse déjà les exigences de la loi EGalim."
+        },
+        {
+          "numero": "16",
+          "titre": "Tarifs du marché de Noël 2026",
+          "vote": "Unanimité",
+          "detail": "Marché les 5 et 6 décembre 2026. Hausse des tarifs de 1,5 % (inflation), gratuité pour 3 associations à vocation sociale au maximum."
+        },
+        {
+          "numero": "17",
+          "titre": "Subvention FFF : sol sportif du gymnase B de Kerlann",
+          "vote": "Unanimité",
+          "detail": "20 000 € demandés au Fonds d'aide au football amateur pour un revêtement homologué pour le futsal en compétition."
+        },
+        {
+          "numero": "18",
+          "titre": "Subvention FFF : éclairage LED des gymnases A et B de Kerlann",
+          "vote": "Unanimité",
+          "detail": "10 000 € demandés pour remplacer l'éclairage des trois surfaces de jeu par des LED."
+        },
+        {
+          "numero": "19",
+          "titre": "Subvention de la Fédération française de badminton : rénovation des équipements couverts de Kerlann",
+          "vote": "Unanimité",
+          "detail": "40 000 € (montant assuré) pour la mise aux normes accessibilité et électricité, les LED, l'isolation des vestiaires, 10 terrains de badminton dans le gymnase B et la rénovation de la salle annexe."
+        },
+        {
+          "numero": "20",
+          "titre": "Subvention FFF : construction d'un foyer pour le FC Bruz",
+          "vote": "Unanimité",
+          "detail": "Nouveau foyer près du terrain synthétique, qui remplace l'actuel, vétuste : coût 280 000 € HT, dont 30 000 € d'aide FAFA demandée à la FFF et 250 000 € d'autofinancement de la ville. Philippe Salmon a demandé quelles étaient les chances d'obtenir ces aides. L'adjointe Daron a répondu qu'aucune n'était garantie mais que les dossiers remplissent tous les critères."
+        },
+        {
+          "numero": "21",
+          "titre": "Débat obligatoire sur la protection sociale complémentaire des agents",
+          "vote": "Pas de vote (le conseil prend acte du débat)",
+          "detail": "Prévoyance : contrat collectif du centre de gestion (CDG 35), 25 €/mois versés à 131 agents. Mutuelle santé : contrats labellisés au choix de l'agent, 15 €/mois versés à 59 agents. Un groupe de travail sera créé avec la nouvelle instance du personnel élue en décembre 2026, pour préparer la prise en charge de 50 % de la prévoyance d'ici 2029."
+        },
+        {
+          "numero": "22",
+          "titre": "Suppressions et créations de postes, tableau des effectifs",
+          "vote": "Unanimité",
+          "detail": "Remplacements après départs en retraite et réussites aux concours (éducation, logistique, salle de spectacle du Grand Logis, espaces verts). Les postes sont créés au 1er octobre 2026."
+        }
+      ],
+      "points_chauds": [],
+      "impact_bruzois": [],
       "a_surveiller": [
         "Suites du marché de travaux du 4e groupe scolaire Ker Lann Sud (attributions, calendrier phase 1)",
         "Application des mesures de carte scolaire à la rentrée 2026-2027 (retraits de postes Vert Buisson et Champ l'Évêque)"
       ],
       "sources": [
         {
-          "label": "Ville de Bruz — Le Conseil municipal (annonce de la date)",
+          "label": "Ville de Bruz — Le Conseil municipal",
           "url": "https://www.ville-bruz.fr/ma-ville-de-bruz/conseil-municipal/conseil-municipal/"
+        },
+        {
+          "label": "Vidéo YouTube — Conseil municipal du lundi 21 septembre",
+          "url": "https://youtu.be/qiNngaM1WUk"
+        },
+        {
+          "label": "Mégalis — Liste des délibérations du CM du 21/09/2026 (votes)",
+          "url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Hors_prefecture/2026/1200809/ec20c26961c2e10aa41373faa4d3092460d5ad16b9a17e79e09742f65138c0c0.pdf"
         }
-      ]
+      ],
+      "resume_executif": "Pour son retour dans la salle du conseil de l'hôtel de ville rénové, le conseil municipal a adopté 21 délibérations (et pris acte d'un débat sur la protection sociale complémentaire), presque toutes à l'unanimité. Les seuls votes divisés concernent la vente de places du parking Pagnol à 8 300 €, contre laquelle l'opposition maintient son refus. Les échanges les plus vifs ont eu lieu à l'approbation du procès-verbal : Jean-Patrick Désguérets a accusé Philippe Salmon d'avoir dénoncé une « braderie » des terrains du golf alors qu'il avait lui-même signé, quand il était maire, le courrier fixant ce prix à 0,40 €/m². La ville demande 100 000 € de subventions aux fédérations de football et de badminton pour rénover le complexe de Kerlann et construire un foyer pour le FC Bruz. En fin de séance, le maire a annoncé qu'il mettait fin aux fonctions du directeur général des services à compter du 1er décembre 2026.",
+      "youtube_id": "qiNngaM1WUk",
+      "youtube_url": "https://youtu.be/qiNngaM1WUk"
     },
     {
       "id": "CM-2026-07-03",

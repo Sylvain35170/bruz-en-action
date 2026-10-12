@@ -1,9 +1,49 @@
 {
   "meta": {
-    "last_updated": "2026-09-13",
+    "last_updated": "2026-10-04",
     "note": "Actus de suivi des promesses — une actu = un événement daté lié à une ou plusieurs promesses"
   },
   "actus": [
+    {
+      "id": "presse-fcf630cf",
+      "titre": "Complexe sportif de Kerlann : 352 711 € HT de travaux de mise aux normes, dont 68 % à la charge de la ville",
+      "date": "2026-09-21",
+      "detail": "Ouest-France (22 septembre) rend compte du « coup de jeune » des équipements sportifs de Ker Lann ; nous n'avons lu que le titre de l'article. Le plan de financement publié par la ville chiffre l'opération : 352 711 € HT (travaux 338 161 €, marchés conclus), financés par la DSIL (73 764 €, 20,9 %), la Fédération française de badminton (40 000 €, 11,3 %) et la commune (238 947 €, 67,75 %). Bâtiment A : éclairage LED, salle de musculation transformée en salle annexe, accessibilité. Bâtiments B et C : nouveau sol sportif, LED, vestiaires. La ville a acquis le complexe auprès du département à l'été 2024 ; les travaux s'étalent sur un plan pluriannuel. Le conseil municipal du 21 septembre a en outre autorisé des demandes de 20 000 € (sol, futsal) et 10 000 € (éclairage) à la Fédération française de football, non garanties.",
+      "source_url": "https://www.ville-bruz.fr/wp-content/uploads/2026/06/Plan-de-financement-travaux-de-mises-aux-normes-des-salles-de-sport-du-Complexe-sportif-de-Kerlann.pdf",
+      "source_label": "Ville de Bruz — Plan de financement (PDF)",
+      "type": "mairie",
+      "dossier": "D24"
+    },
+    {
+      "id": "presse-b585eb6a",
+      "titre": "Grand Logis : le directeur et programmateur de la salle de spectacle quitte Bruz après huit ans",
+      "date": "2026-09-29",
+      "detail": "Ouest-France (22 et 29 septembre) annonce le départ du directeur et programmateur de la salle de spectacle du Grand Logis, après huit ans à la tête du lieu. Nous n'avons lu que les titres des articles : les raisons du départ et la date effective ne sont pas connues. La ville avait de son côté publié, du 11 août au 11 septembre 2026, une offre d'emploi pour le poste de directeur de la salle de spectacle du centre culturel, avec une prise de poste au 1er octobre 2026. Le conseil municipal du 21 septembre a par ailleurs créé des postes pour la salle de spectacle du Grand Logis. À suivre : le nom du successeur et les orientations de la programmation 2026-2027.",
+      "source_url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxQdGRmLUlfa2RwUVpISDVydDlkN0F1c1FscFB2U0ZCR2ZrclhJNUU5UXFrNGJNMmh2RV9YSm5rUjVCSXdiUjl3dzRadVZrUElLSDFvc1FBUkZqSjFjamhVYWV4WUhyb25yWEd4TlUyYlQ5Y2NOTV9MNFFoUnVta3QyZTBXbDNmZ19JTXhPYzNCNFJzeUhzWEU3N1lfbUdmN29vVzJWNV9zV1I5aTB5OFhBMFRqWGRJaFA2UEtuQ3JRVDdkNVczRFkzN3l6d2ZSYzRUT1o4di01LThKdnJiZEVZTDhfcHFkMUZGLTVWejdIYkJzbUVWbE50QXozWkVLb00?oc=5",
+      "source_label": "Ouest-France (via Google Actualités)",
+      "type": "presse",
+      "dossier": "D21"
+    },
+    {
+      "id": "presse-83089b2b",
+      "titre": "10 vélos électriques en libre-service à la gare de Bruz–Ker Lann",
+      "date": "2026-09-27",
+      "detail": "La Région Bretagne déploie un service de location de vélos électriques en libre-service, « BreizhGo Vélo », dans 15 gares, dont Bruz–Ker Lann : 10 vélos par gare, disponibles 7j/7 et réservables à l'avance, pour poursuivre son trajet à la descente du train. Des animations de découverte ont eu lieu sur le parvis de la gare de Bruz–Ker Lann à l'automne (18 et 22 septembre selon le calendrier régional). Tarifs non vérifiés.",
+      "source_url": "https://news.google.com/rss/articles/CBMipgJBVV95cUxPX056d1pCRnRwUWlPb0lqaW5mZ1FlMms1aHJHa1FLYVFvdkdxeVJnMUE5aGdvSFhucHNReUFWZy1ueUxsRnU4a0NuMlAzb3FnLXNDVE9hS2pUWktVTHlybEVOb3Y1dXVpTF9NTHd1MWhmazNaUTlfYU42cnMwOWl5al8teHU0T3JWbnIxWVIwZFU5cGdVNk1TMDU4Y1dyaWt6dm1NUUU5Ym5TUDNmZ3V6LWJfVkUxQ0ExLUNUZmdqYnVZOS1tQWVscWx2OUtxalBaR2pNYlJZMENKMFVncDJBQ2FOZVFIM1IxLVBUbTBNc0RrZm9jbEpJU0FCYXhVbWkzUHU2SVczejZ2bkItdEpNSGdBLUZwbjFXaUhlVm1BTVNVNExYR1E?oc=5",
+      "source_label": "Ouest-France (via Google Actualités)",
+      "type": "presse",
+      "dossier": "D01"
+    },
+    {
+      "id": "presse-cd68faa0",
+      "titre": "Le Réseau express vélo Rennes–Bruz (8,6 km) inauguré le 3 octobre",
+      "date": "2026-10-03",
+      "detail": "Rennes Métropole inaugure le 3 octobre 2026 la liaison du Réseau express vélo entre Rennes et Bruz : 8,6 km via Saint-Jacques-de-la-Lande, le campus de Ker Lann, le Parc des expositions et l'aéroport, pour un investissement d'environ 4 millions d'euros. C'est l'un des 14 itinéraires du réseau express vélo métropolitain (104 km prévus). La vice-présidente à la mobilité, Valérie Faucheux, est présente à l'inauguration. Un article d'Unidivers s'interroge sur le caractère réellement « express » de l'itinéraire ; nous ne l'avons pas lu en entier.",
+      "source_url": "https://presse.metropole.rennes.fr/agenda/2026/inauguration-du-reseau-express-velo-rev-bruz-saint-jacques-de-la-lande/",
+      "source_label": "Rennes Métropole — Agenda presse",
+      "type": "presse",
+      "dossier": "D05"
+    },
     {
       "id": "mairie-e9a7d06a",
       "titre": "Fermeture du GR 39 au niveau de la DGA",

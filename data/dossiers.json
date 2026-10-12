@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-09-13",
+    "last_updated": "2026-10-04",
     "version": "3.0"
   },
   "dossiers": [
@@ -10,7 +10,7 @@
       "categorie": "Mobilités",
       "statut": "en_cours",
       "featured": true,
-      "last_activity": "2026-08-20",
+      "last_activity": "2026-09-27",
       "date_ouverture": "2026-06-16",
       "chapeau": "La future ligne T4 (trambus guidé) reliera Rennes à Bruz d'ici 2031-2032. Le terminus penche désormais vers la gare SNCF, mais Rennes Métropole étudie encore trois scénarios de desserte (arrêt simple, navettes, renfort bus). Une décision qui reste entre les mains de la Métropole, pas de la commune.",
       "ce_quon_sait": [
@@ -87,6 +87,13 @@
         }
       ],
       "actus_recentes": [
+        {
+          "date": "2026-09-27",
+          "titre": "10 vélos électriques en libre-service à la gare de Bruz–Ker Lann",
+          "detail": "La Région Bretagne déploie un service de location de vélos électriques en libre-service, « BreizhGo Vélo », dans 15 gares, dont Bruz–Ker Lann : 10 vélos par gare, disponibles 7j/7 et réservables à l'avance, pour poursuivre son trajet à la descente du train. Des animations de découverte ont eu lieu…",
+          "source_url": "https://news.google.com/rss/articles/CBMipgJBVV95cUxPX056d1pCRnRwUWlPb0lqaW5mZ1FlMms1aHJHa1FLYVFvdkdxeVJnMUE5aGdvSFhucHNReUFWZy1ueUxsRnU4a0NuMlAzb3FnLXNDVE9hS2pUWktVTHlybEVOb3Y1dXVpTF9NTHd1MWhmazNaUTlfYU42cnMwOWl5al8teHU0T3JWbnIxWVIwZFU5cGdVNk1TMDU4Y1dyaWt6dm1NUUU5Ym5TUDNmZ3V6LWJfVkUxQ0ExLUNUZmdqYnVZOS1tQWVscWx2OUtxalBaR2pNYlJZMENKMFVncDJBQ2FOZVFIM1IxLVBUbTBNc0RrZm9jbEpJU0FCYXhVbWkzUHU2SVczejZ2bkItdEpNSGdBLUZwbjFXaUhlVm1BTVNVNExYR1E?oc=5",
+          "source_label": "Ouest-France (via Google Actualités)"
+        },
         {
           "date": "2026-08-20",
           "titre": "Du nouveau sur le réseau STAR !",
@@ -1039,7 +1046,7 @@
       "categorie": "Urbanisme",
       "statut": "en_cours",
       "featured": true,
-      "last_activity": "2026-09-09",
+      "last_activity": "2026-10-03",
       "date_ouverture": "2026-06-16",
       "chapeau": "Carte interactive de Bruz, recensement des chantiers en cours (qui creuse où, jusqu'à quand) et veille sur les projets d'urbanisme qui ne rentrent pas déjà dans un dossier dédié (hors ZAC Multisites, voir D02, hors Trambus T4, voir D01) : évolutions de quartier, permis groupés, équipements publics annoncés, travaux de voirie.",
       "ce_quon_sait": [
@@ -1146,6 +1153,13 @@
       ],
       "lien_externe": "/bruz-en-action/carte",
       "actus_recentes": [
+        {
+          "date": "2026-10-03",
+          "titre": "Le Réseau express vélo Rennes–Bruz (8,6 km) inauguré le 3 octobre",
+          "detail": "Rennes Métropole inaugure le 3 octobre 2026 la liaison du Réseau express vélo entre Rennes et Bruz : 8,6 km via Saint-Jacques-de-la-Lande, le campus de Ker Lann, le Parc des expositions et l'aéroport, pour un investissement d'environ 4 millions d'euros. C'est l'un des 14 itinéraires du réseau…",
+          "source_url": "https://presse.metropole.rennes.fr/agenda/2026/inauguration-du-reseau-express-velo-rev-bruz-saint-jacques-de-la-lande/",
+          "source_label": "Rennes Métropole — Agenda presse"
+        },
         {
           "date": "2026-09-09",
           "titre": "Fermeture du GR 39 au niveau de la DGA",

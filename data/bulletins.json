@@ -1,11 +1,33 @@
 {
   "meta": {
-    "last_updated": "2026-09-11",
+    "last_updated": "2026-09-24",
     "note": "Bulletins municipaux (Bruz Mag, Semaine à Bruz) — distincts des séances de conseil municipal (cms.json)",
     "dernier_bruz_mag": 260,
-    "derniere_semaine_bruz": 860
+    "derniere_semaine_bruz": 861
   },
   "bulletins": [
+    {
+      "id": "SAB-861",
+      "date": "2026-09-24",
+      "titre": "Semaine à Bruz n°861 — du 24 septembre au 8 octobre 2026",
+      "points_cles": [
+        "Le conseil municipal se réunit le lundi 12 octobre à 19h à l'Hôtel de Ville, ouvert au public",
+        "La Semaine Bleue (5-11 octobre) propose des activités variées pour les retraités et personnes âgées : marche, tricot, concert, ateliers mémoire, escape game et animations",
+        "Les Rencontres pour l'Emploi du 13 octobre de 13h30 à 17h30 à la Halle Pagnol mettent en relation entreprises locales et demandeurs d'emploi",
+        "L'Ille-et-Vilaine est en crise sécheresse, restrictions d'eau en vigueur pour l'arrosage, lavage de véhicules et espaces extérieurs",
+        "Le registre des droits des sols devient entièrement numérique à partir de fin septembre, accessible sur ville-bruz.fr",
+        "Travaux de rénovation avenue du Général de Gaulle et boulevard Louis Pasteur jusqu'à fin octobre : piste cyclable, trottoirs élargis, circulation interdite par portions",
+        "Atelier gratuit lundi 5 octobre pour les commerçants de Bruz sur les économies d'énergie proposé par la Ville et l'ALEC",
+        "Procédure de signalement des nids de frelons asiatiques aux services techniques : destruction prise en charge gratuitement par la Mairie"
+      ],
+      "sources": [
+        {
+          "label": "Télécharger le PDF",
+          "url": "https://www.ville-bruz.fr/wp-content/uploads/2026/09/Semaine-a-Bruz-n°861-du-24-septembre-au-8-octobre-2026.pdf"
+        }
+      ],
+      "type": "semaine_bruz"
+    },
     {
       "id": "SAB-860",
       "date": "2026-09-11",
