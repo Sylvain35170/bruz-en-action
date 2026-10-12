@@ -138,7 +138,10 @@ def _resolve_gnews(url: str) -> str | None:
     if len(bloc) < 2:
         log("  résolution Google News : pas de garturlres dans la réponse batchexecute — lien brut conservé", "WARN")
         return None
-    lien = _re.search(r'"(https?://[^"\\]+)"', bloc[1])
+    # La charge utile est du JSON encodé dans du JSON : l'URL y arrive entourée de
+    # `\"`, pas de guillemets nus — exiger `"…"` ne matchait donc jamais (constaté
+    # le 12/10, chaque résolution tombait sur « URL illisible »).
+    lien = _re.search(r'(https?://[^"\\]+)', bloc[1])
     if not lien:
         log("  résolution Google News : garturlres présent mais URL illisible — lien brut conservé", "WARN")
         return None
