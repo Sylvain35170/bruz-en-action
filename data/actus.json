@@ -5,6 +5,46 @@
   },
   "actus": [
     {
+      "id": "presse-78f7342d",
+      "titre": "L'ancien maire Philippe Salmon démissionne du conseil municipal",
+      "date": "2026-10-08",
+      "detail": "Maire de 2020 à 2026, Philippe Salmon siégeait dans la minorité depuis les municipales. Il a adressé sa démission au maire le 1er octobre, sans annonce officielle : « J'ai toujours su que je ne souhaitais pas poursuivre dans la minorité. » Il est remplacé par Sylvain Collonge, 8e de la liste Bruz avec Vous.",
+      "source_url": "https://www.ouest-france.fr/bretagne/bruz-35170/je-ne-souhaitais-pas-poursuivre-dans-la-minorite-lancien-maire-de-bruz-demissionne-dans-la-discretion-14841412-c30d-11f1-97ef-829bf84bf59f",
+      "source_label": "Ouest-France",
+      "type": "presse",
+      "dossier": "D23"
+    },
+    {
+      "id": "presse-126ec58a",
+      "titre": "Trambus T4 : Rennes Métropole étudie trois scénarios de terminus à Bruz, mais pas forcément les navettes",
+      "date": "2026-10-09",
+      "detail": "La nouvelle majorité ne veut pas du terminus du T4 en centre-ville, prévu par l'ancienne équipe et la Métropole. Rennes Métropole a accepté de réévaluer le projet et étudie trois scénarios : simple arrêt à la gare, navettes au départ de la gare, ou renforcement des lignes de bus 91 et 59 vers le centre. La vice-présidente aux mobilités, Valérie Faucheux, évoque un compromis en bonne voie sur le terminus, sans date limite, mais la Métropole, qui finance les quatre lignes de trambus (280 M€), n'est « pas forcément » prête à payer les navettes promises par le maire, qui ne profiteraient qu'à Bruz.",
+      "source_url": "https://www.ouest-france.fr/bretagne/rennes-35000/terminus-a-bruz-trace-a-saint-jacques-ou-en-sont-les-discussions-sur-le-trambus-entre-les-communes-et-la-metropole-28b44c76-c3f4-11f1-bba2-d026901fbfe4",
+      "source_label": "Ouest-France",
+      "type": "presse",
+      "dossier": "D01"
+    },
+    {
+      "id": "megalis-d775ac33",
+      "titre": "Secteur gare : la Ville rachète à Rennes Métropole deux maisons rue Champion-de-Cicé",
+      "date": "2026-09-21",
+      "detail": "Le conseil municipal du 21 septembre approuve le rachat à Rennes Métropole de deux maisons, 53 et 62 rue Champion-de-Cicé, que la Métropole portait pour la commune depuis 2006 et 2013 (Programme d'action foncière). Les biens sont destinés à être démolis dans le cadre du secteur gare de la ZAC Multisites. Le n°53 est racheté 234 634 € (prix d'acquisition plus frais), sous l'estimation des Domaines.",
+      "source_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1199291/eca9d2186714bc109a7747b2669bd13cbbb63453de71d7ba68907cb105fa1098.pdf",
+      "source_label": "Mégalis — Délibération",
+      "type": "megalis",
+      "dossier": "D02"
+    },
+    {
+      "id": "megalis-d5a2ddfc",
+      "titre": "Projet de centrale photovoltaïque au sol sur une parcelle communale, rue de la Mine",
+      "date": "2026-09-21",
+      "detail": "Le conseil municipal du 21 septembre a approuvé à l'unanimité la mise à disposition gratuite, pour cinq ans, de la parcelle communale ZH59 (1,1 ha, rue de la Mine, inexploitée depuis plus de dix ans) à la société Initiatives et Énergies Locales (IEL), afin d'étudier l'implantation d'une centrale photovoltaïque au sol. Une promesse de bail emphytéotique de 40 ans est signée en parallèle : si le projet se réalise, la redevance sera de 3 000 € par hectare et par an. La parcelle est identifiée par l'État comme foncier prioritaire au titre de la loi d'accélération des énergies renouvelables (APER, 2023).",
+      "source_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1199330/52878a2d2270bb9ccfeade8837e89a7f778efda99de169430871e974eaaef445.pdf",
+      "source_label": "Mégalis — Délibération",
+      "type": "megalis",
+      "dossier": "D13"
+    },
+    {
       "id": "of-97a8ec45",
       "titre": "Une filière maths, physique, chimie et informatique ouvre au campus de Ker Lann",
       "date": "2026-09-23",
@@ -79,7 +119,7 @@
       "titre": "Grand Logis : le directeur et programmateur de la salle de spectacle quitte Bruz après huit ans",
       "date": "2026-09-29",
       "detail": "Ouest-France (22 et 29 septembre) annonce le départ du directeur et programmateur de la salle de spectacle du Grand Logis, après huit ans à la tête du lieu. Nous n'avons lu que les titres des articles : les raisons du départ et la date effective ne sont pas connues. La ville avait de son côté publié, du 11 août au 11 septembre 2026, une offre d'emploi pour le poste de directeur de la salle de spectacle du centre culturel, avec une prise de poste au 1er octobre 2026. Le conseil municipal du 21 septembre a par ailleurs créé des postes pour la salle de spectacle du Grand Logis. À suivre : le nom du successeur et les orientations de la programmation 2026-2027.",
-      "source_url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxQdGRmLUlfa2RwUVpISDVydDlkN0F1c1FscFB2U0ZCR2ZrclhJNUU5UXFrNGJNMmh2RV9YSm5rUjVCSXdiUjl3dzRadVZrUElLSDFvc1FBUkZqSjFjamhVYWV4WUhyb25yWEd4TlUyYlQ5Y2NOTV9MNFFoUnVta3QyZTBXbDNmZ19JTXhPYzNCNFJzeUhzWEU3N1lfbUdmN29vVzJWNV9zV1I5aTB5OFhBMFRqWGRJaFA2UEtuQ3JRVDdkNVczRFkzN3l6d2ZSYzRUT1o4di01LThKdnJiZEVZTDhfcHFkMUZGLTVWejdIYkJzbUVWbE50QXozWkVLb00?oc=5",
+      "source_url": "https://www.ouest-france.fr/bretagne/rennes-35000/le-directeur-et-programmateur-de-la-salle-de-spectacle-du-grand-logis-a-bruz-sen-va-f25da07c-b67f-11f1-b8f7-5b3ca074ea4b",
       "source_label": "Ouest-France (via Google Actualités)",
       "type": "presse",
       "dossier": "D21"
@@ -459,7 +499,7 @@
       "source_url": null,
       "source_label": "Google News — Bruz actualités",
       "date": null,
-      "detail": "<a href=\"https://news.google.com/rss/articles/CBMiqgFBVV95cUxQUVFYT21tVnVoUkJ3SXd1SUFmR3k4cGNZb2xFdG5Hem5PMmd0bWYwOTNCX0hIc2JlZ25qWk5JLVJoa2JYX0tTNWRfQVhJbUJkbl83Q3IxSFZXY3FONmdsWGFZaVRBYWdYUEdaTjFiVXJYaS1adG8zcVVPZHFhU2RseXk5WlNjUERtN2ZGakh2d2p6akxiRVkxTFRuNjh2czVmRkdKUHctUG5qZw?oc=5\" target=\"_blan",
+      "detail": "<a href=\"https://www.ouest-france.fr/bretagne/bruz-35170/conseil-municipal-jean-francois-durand-demissionne-5316610\" target=\"_blan",
       "type": "presse",
       "dossier": "D03",
       "date_publication_estimee": "2026-06-18"
@@ -481,7 +521,7 @@
       "source_url": null,
       "source_label": "Google News — Bruz actualités",
       "date": null,
-      "detail": "<a href=\"https://news.google.com/rss/articles/CBMitgFBVV95cUxNLUM1UmZKa0ZNbmtsN1QwempIRFVmdF95d3Y5M1hFYzhfOEdaZzdGb1pxdTdaajhwM0w1WS13M2J0NnVRZzZJa0JJZzJQQjZsZlFKYzh2UHJ1dnBUdENIMUJ4SjZ4ckZHb2NLYzlpMW9Jc0lwcF9TcWdhYmdPZUdqZ2paXzdTakRNdUJuX2NOd2h6ZGtuZDM0b3R2clhySHBaVzc5TWdxcVI0VVRtNE1SeUNnMmZJUQ?oc=",
+      "detail": "<a href=\"https://www.ouest-france.fr/bretagne/bruz-35170/pres-de-rennes-la-ville-de-bruz-veut-faire-valser-les-idees-5255389",
       "type": "presse",
       "date_publication_estimee": "2026-06-18"
     },
@@ -618,7 +658,7 @@
       "source_url": null,
       "source_label": "Google News — Bruz actualités",
       "date": null,
-      "detail": "<a href=\"https://news.google.com/rss/articles/CBMibkFVX3lxTE5Bb3ZWdHdReURqaV83ckJqdlFvUnBFZURTU0xWSjh5ZnhVdjJ6a2hPVWoxVWxOU0VlNUoyTWVtREIySDFMa2JIZFdBU0dpc05FVE5HMmstUjdSWG5QUkxTOWVfUVNtbzBWSnRUay13?oc=5\" target=\"_blank\">Résultats des élections municipales 2026 : Bruz (35170)</a>&nbsp;&nbsp;<font co",
+      "detail": "<a href=\"https://www.ici.fr/bretagne/ille-et-vilaine-35/bruz/elections\" target=\"_blank\">Résultats des élections municipales 2026 : Bruz (35170)</a>&nbsp;&nbsp;<font co",
       "type": "presse",
       "date_publication_estimee": "2026-06-18"
     },
@@ -628,7 +668,7 @@
       "source_url": null,
       "source_label": "Google News — Bruz actualités",
       "date": null,
-      "detail": "<a href=\"https://news.google.com/rss/articles/CBMitAFBVV95cUxPVlVPSElZa01aUUstYkV0dExwc3ZEd0gyN0RTNi1YdGNWN2dDeUFBTWtUYnlXYmNOV1pEaEpnM0ozdE1iNEFITUtlVVN2SFN4TUxxendSOTdyUmgyVVI2emR5UENENm5NOUhzd0xvNm1jT0FOX25GRVpvNXU5M0cya2JPNTQ4N2c5SGVuNnVOcTVCbEhMTUJtNEFkQnNjblozNUE4Q2hlei1pWi1qYkc1VXBoSXA?oc=5\" ",
+      "detail": "<a href=\"https://www.lamontagne.fr/bruz-35170/actualites/municipales-2026-la-liste-integrale-des-candidats-a-bruz_14854556/\" ",
       "type": "presse",
       "dossier": "D03",
       "date_publication_estimee": "2026-06-18"
@@ -659,7 +699,7 @@
       "source_url": null,
       "source_label": "Google News — Bruz actualités",
       "date": null,
-      "detail": "<a href=\"https://news.google.com/rss/articles/CBMid0FVX3lxTFBxRGlVbFUzaThLVUtHUzJmZVM4MWNYdExiLXFrbFBhUnd0X0N1cVhqenVnMzZHeUllLXVzQnRBR1FLeTZKcDlSZURkY3daNmJYSXVMbkRsM2ZPeWJNcldKcXk0S3YtcTU1ZHBiTUs2ZDlzcTd1SUJR?oc=5\" target=\"_blank\">Bruz : le maire s'augmente à 5 076 €, ses prédécesseurs l'avaient p",
+      "detail": "<a href=\"https://info.fr/bruz-indemnites-maire-houssin-opposition-avril-2026/\" target=\"_blank\">Bruz : le maire s'augmente à 5 076 €, ses prédécesseurs l'avaient p",
       "type": "presse",
       "dossier": "D04",
       "date_publication_estimee": "2026-06-18"
@@ -680,7 +720,7 @@
       "source_url": null,
       "source_label": "Google News — Bruz actualités",
       "date": null,
-      "detail": "<a href=\"https://news.google.com/rss/articles/CBMicEFVX3lxTFB6LXNsbTRIRUtQYWhlLTNxR1BlYmxpQ0FEb0dPME5pVHdsaHVCbERqbVdqd1k3aWt5U1JVUEthMHdRNWo2WDZCVS0xSTZCdFQ1dVlpQ19JLTRtZkRkVUdGckNLS0VPMUViRURjbjNVVlQ?oc=5\" target=\"_blank\">Bruz (35) : Résultats municipales 2026 - 1er tour et 2nd tour</a>&nbsp;&nbsp",
+      "detail": "<a href=\"https://mesinfos.fr/elections/municipales-2026/35170-bruz-35047\" target=\"_blank\">Bruz (35) : Résultats municipales 2026 - 1er tour et 2nd tour</a>&nbsp;&nbsp",
       "type": "presse",
       "dossier": "D04",
       "date_publication_estimee": "2026-06-18"
@@ -1099,7 +1139,7 @@
       "source_url": null,
       "source_label": "Google News — Bruz actualités",
       "date": null,
-      "detail": "<a href=\"https://news.google.com/rss/articles/CBMiswFBVV95cUxNZFZyYVlMdkZjdFFONFFuSzhUNW84cGtvVTBkeXZVN1RfYkdnRnpYeTlQeFpLdzIwQlowUGkwQTZYRzN5X3o2MmpTVjRvWVRDN2NCTDk5T1V0TXlNMzNUQ2hCOFZtdWFPWUhoZk53WWtOeUx2SUdrUG8zQ0ZMMTluR0Q4MTQzSzdiOTdLN0drNU93UXk1SFdVV2pWZVhYYUltdF9SLUhPaUdBNXptZnlJZ05RTQ?oc=5\" t",
+      "detail": "<a href=\"https://www.ouest-france.fr/bretagne/bruz-35170/bruz-l-adjoint-jean-pierre-le-gall-demissionne-du-conseil-5028177\" t",
       "type": "presse",
       "date_publication_estimee": "2026-06-18"
     },
@@ -1140,7 +1180,7 @@
       "source_url": null,
       "source_label": "Google News — Bruz actualités",
       "date": null,
-      "detail": "<a href=\"https://news.google.com/rss/articles/CBMipwFBVV95cUxQN0hMbThNaVQ4MXVuT0NfczhLTEl1TVNDVTE5VGVkdjRtM2NHcHNlajd0V3Fva2ZPZFhBcjFTVG54WVRfOEFjQVRxNDRIT0tWVHNHdFBSSGQtVmp1QjFnanoxQjhOd0g2aDBwdmJkVEtCM3IwMFhTRE1QekNmUUJTa0pCdU5PTTVUYndJVnVrcnZMT3hVd0hXcVduNnhYc2VrUzNPR1ItVQ?oc=5\" target=\"_blank\">P",
+      "detail": "<a href=\"https://www.ouest-france.fr/bretagne/bruz-35170/philippe-caffin-demissionne-du-conseil-municipal-4892773\" target=\"_blank\">P",
       "type": "presse",
       "dossier": "D03",
       "date_publication_estimee": "2026-06-18"
@@ -1151,7 +1191,7 @@
       "source_url": null,
       "source_label": "Google News — Bruz actualités",
       "date": null,
-      "detail": "<a href=\"https://news.google.com/rss/articles/CBMitAFBVV95cUxPbjVqWnFncmVieXdrWjZnSFE1Rk5vcG9ENE53OUxwVlR5dmNlZHdyUW4zNmV0RkNoQjE0OVJWZ2FZY0JSSHowaDRyWVJtNG1Ub2NvOTR4RFhncVczc0MtRGtlNGkzVnRiMzJKMmVZTktIeGxSLVlkV2I0UlRwenQtUHQzOHQ0TUVCc1hMR0hvX19VNnBWWTktRTlFT0UtQmN2TkVxZ2dRQW00ZnN0Qi1yazE0MlQ?oc=5\" ",
+      "detail": "<a href=\"https://www.ouest-france.fr/bretagne/ille-et-vilaine/bruz-philippe-caffin-demissionne-du-conseil-municipal-4893886\" ",
       "type": "presse",
       "dossier": "D03",
       "date_publication_estimee": "2026-06-18"
@@ -1172,7 +1212,7 @@
       "source_url": null,
       "source_label": "Google News — Bruz actualités",
       "date": null,
-      "detail": "<a href=\"https://news.google.com/rss/articles/CBMiswFBVV95cUxNbFBSb0tZMFJNcFJnZUpERUJrdTFTWVJ2a3V2NHpCVDRVRjBxQWxqREtFQnQxNEJqdHd3M2JJWGhLU0IyQVZ2QUpDVDNtN2lKUWhKSFpXUTJvZG5OS1ljNkRWdnh2NGxCV3paTGpZbERmdU9vQXFEV2xydmVjcks3ZVBnMDdUTUJjV0R1M0RBekZ3MFBhdDZ5MXdOVGZKNVZLNTBBVzZUaC1JU1paSlAySkJ2NA?oc=5\" t",
+      "detail": "<a href=\"https://rennes.maville.com/actu/actudet_-a-bruz-le-projet-de-futur-groupe-scolaire-se-precise-_7-5834746_actu.Htm\" t",
       "type": "presse",
       "dossier": "D10",
       "date_publication_estimee": "2026-06-18"
@@ -1183,7 +1223,7 @@
       "source_url": null,
       "source_label": "Google News — Bruz actualités",
       "date": null,
-      "detail": "<a href=\"https://news.google.com/rss/articles/CBMigAFBVV95cUxOZncwc2cxTTZsczNsa1YyeGVGVG5idy1Cd3A0WjZsbG5WVExYMTJnZnFIbGsxRmJpdjRCNzdaN3NOejN6UlF1cDRLaHhDeDhTcE1iUXJOZWNvcFhaVXltWE9wMl9kTFNBM1o2dDF5LXJhUHNzTFNaVzdSbG5PNHYxZA?oc=5\" target=\"_blank\">Résultats élections municipales 2026 Bruz [35170] : e",
+      "detail": "<a href=\"https://www.ouest-france.fr/elections/resultats/ille-et-vilaine/bruz-35170/\" target=\"_blank\">Résultats élections municipales 2026 Bruz [35170] : e",
       "type": "presse",
       "date_publication_estimee": "2026-06-18"
     },

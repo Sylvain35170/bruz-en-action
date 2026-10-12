@@ -10,7 +10,7 @@
       "categorie": "Mobilités",
       "statut": "en_cours",
       "featured": true,
-      "last_activity": "2026-10-06",
+      "last_activity": "2026-10-09",
       "date_ouverture": "2026-06-16",
       "chapeau": "La future ligne T4 (trambus guidé) reliera Rennes à Bruz d'ici 2031-2032. Le terminus penche désormais vers la gare SNCF, mais Rennes Métropole étudie encore trois scénarios de desserte (arrêt simple, navettes, renfort bus). Une décision qui reste entre les mains de la Métropole, pas de la commune.",
       "ce_quon_sait": [
@@ -87,6 +87,13 @@
         }
       ],
       "actus_recentes": [
+        {
+          "date": "2026-10-09",
+          "titre": "Trambus T4 : Rennes Métropole étudie trois scénarios de terminus à Bruz, mais pas forcément les navettes",
+          "detail": "La nouvelle majorité ne veut pas du terminus du T4 en centre-ville, prévu par l'ancienne équipe et la Métropole. Rennes Métropole a accepté de réévaluer le projet et étudie trois scénarios : simple arrêt à la gare, navettes au départ de la gare, ou renforcement des lignes de bus 91 et 59 vers le…",
+          "source_url": "https://www.ouest-france.fr/bretagne/rennes-35000/terminus-a-bruz-trace-a-saint-jacques-ou-en-sont-les-discussions-sur-le-trambus-entre-les-communes-et-la-metropole-28b44c76-c3f4-11f1-bba2-d026901fbfe4",
+          "source_label": "Ouest-France"
+        },
         {
           "date": "2026-10-06",
           "titre": "Fresque participative de la gare avec l'artiste Dino Voodoo",
@@ -231,7 +238,7 @@
       "categorie": "Urbanisme",
       "statut": "en_cours",
       "featured": true,
-      "last_activity": "2026-09-04",
+      "last_activity": "2026-09-21",
       "date_ouverture": "2026-06-16",
       "chapeau": "La ZAC Multisites prévoit 1 700 nouveaux logements sur plusieurs secteurs de Bruz d'ici 2035. Un projet structurant voté en décembre 2025, mais qui soulève des questions concrètes : où exactement, à quelle densité, et avec quels équipements en face ?",
       "ce_quon_sait": [
@@ -304,6 +311,13 @@
         }
       ],
       "actus_recentes": [
+        {
+          "date": "2026-09-21",
+          "titre": "Secteur gare : la Ville rachète à Rennes Métropole deux maisons rue Champion-de-Cicé",
+          "detail": "Le conseil municipal du 21 septembre approuve le rachat à Rennes Métropole de deux maisons, 53 et 62 rue Champion-de-Cicé, que la Métropole portait pour la commune depuis 2006 et 2013 (Programme d'action foncière). Les biens sont destinés à être démolis dans le cadre du secteur gare de la ZAC…",
+          "source_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1199291/eca9d2186714bc109a7747b2669bd13cbbb63453de71d7ba68907cb105fa1098.pdf",
+          "source_label": "Mégalis — Délibération"
+        },
         {
           "date": "2026-09-04",
           "titre": "Registre des Autorisations du Droit des Sols",
@@ -2280,6 +2294,13 @@
           "source_label": "Mairie de Bruz — Actualités"
         },
         {
+          "date": "2026-09-21",
+          "titre": "Projet de centrale photovoltaïque au sol sur une parcelle communale, rue de la Mine",
+          "detail": "Le conseil municipal du 21 septembre a approuvé à l'unanimité la mise à disposition gratuite, pour cinq ans, de la parcelle communale ZH59 (1,1 ha, rue de la Mine, inexploitée depuis plus de dix ans) à la société Initiatives et Énergies Locales (IEL), afin d'étudier l'implantation d'une centrale…",
+          "source_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1199330/52878a2d2270bb9ccfeade8837e89a7f778efda99de169430871e974eaaef445.pdf",
+          "source_label": "Mégalis — Délibération"
+        },
+        {
           "date": "2026-08-12",
           "titre": "Risque d'incendie : les règles à respecter en Ille-et-Vilaine",
           "detail": "La commune de Bruz relaye les recommandations de prévention des incendies applicables en Ille-et-Vilaine pendant la période estivale. Cet article sensibilise les habitants aux risques saisonniers et aux mesures de sécurité essentielles.",
@@ -2770,7 +2791,7 @@
           "date": "2026-09-29",
           "titre": "Grand Logis : le directeur et programmateur de la salle de spectacle quitte Bruz après huit ans",
           "detail": "Ouest-France (22 et 29 septembre) annonce le départ du directeur et programmateur de la salle de spectacle du Grand Logis, après huit ans à la tête du lieu. Nous n'avons lu que les titres des articles : les raisons du départ et la date effective ne sont pas connues. La ville avait de son côté…",
-          "source_url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxQdGRmLUlfa2RwUVpISDVydDlkN0F1c1FscFB2U0ZCR2ZrclhJNUU5UXFrNGJNMmh2RV9YSm5rUjVCSXdiUjl3dzRadVZrUElLSDFvc1FBUkZqSjFjamhVYWV4WUhyb25yWEd4TlUyYlQ5Y2NOTV9MNFFoUnVta3QyZTBXbDNmZ19JTXhPYzNCNFJzeUhzWEU3N1lfbUdmN29vVzJWNV9zV1I5aTB5OFhBMFRqWGRJaFA2UEtuQ3JRVDdkNVczRFkzN3l6d2ZSYzRUT1o4di01LThKdnJiZEVZTDhfcHFkMUZGLTVWejdIYkJzbUVWbE50QXozWkVLb00?oc=5",
+          "source_url": "https://www.ouest-france.fr/bretagne/rennes-35000/le-directeur-et-programmateur-de-la-salle-de-spectacle-du-grand-logis-a-bruz-sen-va-f25da07c-b67f-11f1-b8f7-5b3ca074ea4b",
           "source_label": "Ouest-France (via Google Actualités)"
         },
         {
@@ -2907,7 +2928,7 @@
       "categorie": "Institutions",
       "statut": "en_cours",
       "featured": true,
-      "last_activity": "2026-10-06",
+      "last_activity": "2026-10-08",
       "date_ouverture": "2026-07-17",
       "chapeau": "« Renforcer une véritable démocratie locale » est un pilier à part entière du programme municipal 2026-2032 : élus référents par quartier, réunions régulières, Conseil municipal des jeunes, Conseil des sages, comptes-rendus clairs des décisions. Cinq engagements, mesurables sur tout le mandat. Ce dossier suit leur mise en œuvre concrète.",
       "ce_quon_sait": [
@@ -2974,6 +2995,13 @@
         }
       ],
       "actus_recentes": [
+        {
+          "date": "2026-10-08",
+          "titre": "L'ancien maire Philippe Salmon démissionne du conseil municipal",
+          "detail": "Maire de 2020 à 2026, Philippe Salmon siégeait dans la minorité depuis les municipales. Il a adressé sa démission au maire le 1er octobre, sans annonce officielle : « J'ai toujours su que je ne souhaitais pas poursuivre dans la minorité. » Il est remplacé par Sylvain Collonge, 8e de la liste Bruz…",
+          "source_url": "https://www.ouest-france.fr/bretagne/bruz-35170/je-ne-souhaitais-pas-poursuivre-dans-la-minorite-lancien-maire-de-bruz-demissionne-dans-la-discretion-14841412-c30d-11f1-97ef-829bf84bf59f",
+          "source_label": "Ouest-France"
+        },
         {
           "date": "2026-10-06",
           "titre": "Conseil municipal du 12 octobre 2026 : l'ordre du jour",
