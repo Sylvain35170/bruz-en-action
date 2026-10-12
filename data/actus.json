@@ -1,9 +1,69 @@
 {
   "meta": {
-    "last_updated": "2026-10-04",
+    "last_updated": "2026-10-12",
     "note": "Actus de suivi des promesses — une actu = un événement daté lié à une ou plusieurs promesses"
   },
   "actus": [
+    {
+      "id": "of-97a8ec45",
+      "titre": "Une filière maths, physique, chimie et informatique ouvre au campus de Ker Lann",
+      "date": "2026-09-23",
+      "detail": "Ouest-France annonce l'ouverture d'une filière d'enseignement supérieur en mathématiques, physique, chimie et informatique sur le campus de Ker Lann.",
+      "source_url": "https://www.ouest-france.fr/bretagne/bruz-35170/bruz-une-filiere-maths-physique-chimie-et-informatique-a-ker-lann-2296291c-b04f-11f1-b13e-a9236019fd8c",
+      "source_label": "Ouest-France",
+      "type": "presse",
+      "dossier": "D20"
+    },
+    {
+      "id": "megalis-b2926465",
+      "titre": "Conseil municipal du 12 octobre 2026 : l'ordre du jour",
+      "date": "2026-10-06",
+      "detail": "Séance le lundi 12 octobre à 19h, salle du Conseil. Sept points : décisions prises par le maire par délégation (17 juin – 30 septembre) ; fonds de concours à Rennes Métropole pour l'aménagement du mail Geneviève-Prigent et de l'avenue du Général-de-Gaulle ; modification du marché de rénovation thermique de l'hôtel de ville ; deux cessions de places de stationnement au parking Pagnol ; convention 2026-2027 avec la Fondation étudiante pour la ville ; suppressions et créations de postes. Le procès-verbal du conseil du 21 septembre sera soumis à approbation.",
+      "source_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Hors_prefecture/2026/1207593/fd8827c5aee1e3cebb4d9d4a31fe32f4ad4c20c160bb453018279f66b3c2fe42.pdf",
+      "source_label": "Mégalis — Acte hors préfecture",
+      "type": "megalis",
+      "dossier": "D23"
+    },
+    {
+      "id": "of-fd2e67e3",
+      "titre": "Première Semaine bleue à Bruz",
+      "date": "2026-10-07",
+      "detail": "Ouest-France annonce que Bruz organise pour la première fois la Semaine bleue, la semaine nationale consacrée aux retraités et personnes âgées.",
+      "source_url": "https://www.ouest-france.fr/bretagne/bruz-35170/bruz-premiere-semaine-bleue-dans-la-commune-363d1084-726d-4b3b-ae8d-123217428eb6",
+      "source_label": "Ouest-France",
+      "type": "presse",
+      "dossier": "D25"
+    },
+    {
+      "id": "megalis-dc27ffe8",
+      "titre": "Éveil musical à la crèche : convention 2026-2027 renouvelée avec le SIM Rive Sud",
+      "date": "2026-09-21",
+      "detail": "Le conseil municipal du 21 septembre autorise le maire à signer une nouvelle convention avec le Syndicat intercommunal de musique Rive Sud : 18 séances d'éveil musical et une heure de spectacle à la Maison des Enfants (crèche municipale). Le partenariat existe depuis plusieurs années. Les interventions sont financées par les communes du SIM et le Département (plan « Musiques en Ille-et-Vilaine ») : aucune dépense pour la Ville.",
+      "source_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1198603/a3ef31a873a8faafb2fad0c0cc5a75452b5ac1b6b86782dea554633f808074f7.pdf",
+      "source_label": "Mégalis — Délibération",
+      "type": "megalis",
+      "dossier": "D21"
+    },
+    {
+      "id": "mairie-2fdb97d3",
+      "titre": "Fresque participative de la gare avec l'artiste Dino Voodoo",
+      "date": "2026-10-06",
+      "detail": "Deuxième session du 26 au 30 octobre : ateliers aux arts plastiques de Bruz, traçage puis mise en couleur des murs de la gare avec l'artiste bruzois Dino Voodoo. Ouvert dès 14 ans, places limitées, inscription auprès de la mairie.",
+      "source_url": "https://www.ville-bruz.fr/actualites/participez-a-la-fresque-de-la-gare-de-dino-voodoo/",
+      "source_label": "Mairie de Bruz — Actualités",
+      "type": "mairie",
+      "dossier": "D01"
+    },
+    {
+      "id": "mairie-cef0c532",
+      "titre": "Végétalisation de la place du Docteur-Joly et de l'allée Geneviève-Prigent",
+      "date": "2026-10-07",
+      "detail": "Travaux en cours depuis octobre pour créer un îlot de fraîcheur en centre-ville : massifs et plantation d'arbres place du Docteur-Joly. Première phase (tranchée, préparation des sols) en octobre, plantations à partir de décembre 2026, calendrier sous réserve de la météo. Les marchés du mardi et du vendredi sont maintenus pendant le chantier.",
+      "source_url": "https://www.ville-bruz.fr/actualites/travaux-de-vegetalisation-au-centre-ville-de-bruz/",
+      "source_label": "Mairie de Bruz — Actualités",
+      "type": "mairie",
+      "dossier": "D13"
+    },
     {
       "id": "presse-fcf630cf",
       "titre": "Complexe sportif de Kerlann : 352 711 € HT de travaux de mise aux normes, dont 68 % à la charge de la ville",

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-10-04",
+    "last_updated": "2026-10-12",
     "version": "3.0"
   },
   "dossiers": [
@@ -10,7 +10,7 @@
       "categorie": "Mobilités",
       "statut": "en_cours",
       "featured": true,
-      "last_activity": "2026-09-27",
+      "last_activity": "2026-10-06",
       "date_ouverture": "2026-06-16",
       "chapeau": "La future ligne T4 (trambus guidé) reliera Rennes à Bruz d'ici 2031-2032. Le terminus penche désormais vers la gare SNCF, mais Rennes Métropole étudie encore trois scénarios de desserte (arrêt simple, navettes, renfort bus). Une décision qui reste entre les mains de la Métropole, pas de la commune.",
       "ce_quon_sait": [
@@ -87,6 +87,13 @@
         }
       ],
       "actus_recentes": [
+        {
+          "date": "2026-10-06",
+          "titre": "Fresque participative de la gare avec l'artiste Dino Voodoo",
+          "detail": "Deuxième session du 26 au 30 octobre : ateliers aux arts plastiques de Bruz, traçage puis mise en couleur des murs de la gare avec l'artiste bruzois Dino Voodoo. Ouvert dès 14 ans, places limitées, inscription auprès de la mairie.",
+          "source_url": "https://www.ville-bruz.fr/actualites/participez-a-la-fresque-de-la-gare-de-dino-voodoo/",
+          "source_label": "Mairie de Bruz — Actualités"
+        },
         {
           "date": "2026-09-27",
           "titre": "10 vélos électriques en libre-service à la gare de Bruz–Ker Lann",
@@ -1161,6 +1168,13 @@
           "source_label": "Rennes Métropole — Agenda presse"
         },
         {
+          "date": "2026-09-23",
+          "titre": "Retour à l'hôtel de ville : parking Pagnol, quartier gare, subventions Kerlann et fin de mission du DGS",
+          "detail": "Parking Pagnol : 3 places vendues à 8 300 € l'unité (votes 7 contre / 25 pour, puis 7 contre / 26 pour). Selon la majorité, 14 places ont été vendues depuis juillet, contre 3 en un an et demi sous l'équipe précédente | Taxe sur les enseignes (TLPE) : environ 100 000 €/an de recettes (jusqu'à 160…",
+          "source_url": "https://youtu.be/qiNngaM1WUk",
+          "source_label": "Vidéo YouTube — Conseil municipal du lundi 21 septembre"
+        },
+        {
           "date": "2026-09-09",
           "titre": "Fermeture du GR 39 au niveau de la DGA",
           "detail": "La mairie de Bruz annonce la fermeture du sentier de randonnée GR 39 au niveau de la DGA. Les raisons de cette fermeture (travaux, maintenance ou sécurité) ne sont pas détaillées dans le communiqué.",
@@ -2087,8 +2101,8 @@
       "titre": "City stade de Siméon Beliard : 380 000 € mal implantés, la reconstruction est-elle au rendez-vous ?",
       "categorie": "Équipements",
       "statut": "en_cours",
-      "featured": false,
-      "last_activity": "2026-07-04",
+      "featured": true,
+      "last_activity": "2026-09-21",
       "date_ouverture": "2026-06-21",
       "chapeau": "Un city stade — terrain multisports clôturé, gratuit, sans inscription, pensé pour les 12-25 ans — installé en 2023 au stade Siméon Beliard pour 380 000 €, a été démonté fin mai 2026 après deux ans de nuisances sonores subies par les riverains (jusqu'à 80 dB relevés sur les terrasses). La nouvelle municipalité a agi vite. Elle promet une reconstruction près du skate-park pour 250 à 300 000 € supplémentaires. Ce dossier suit la concrétisation de cet engagement — et le coût total d'une implantation mal pensée.",
       "ce_quon_sait": [
@@ -2149,6 +2163,13 @@
       ],
       "actus_recentes": [
         {
+          "date": "2026-09-21",
+          "titre": "Fin de mission du DGS, parking Pagnol et rénovation du complexe sportif de Kerlann",
+          "detail": "Le maire met fin au détachement d'Hervé-Pierre Maltrude, directeur général des services (DGS) depuis juin 2023, à compter du 1er décembre 2026 | Parking Pagnol : 3 places vendues à 8 300 € (16 600 € pour les places 144 et 145, puis la place 218). Selon la majorité, 14 places ont été vendues depuis…",
+          "source_url": "https://www.ville-bruz.fr/ma-ville-de-bruz/conseil-municipal/conseil-municipal/",
+          "source_label": "Ville de Bruz — Le Conseil municipal"
+        },
+        {
           "date": "2026-07-04",
           "titre": "Reconstruction du city stade : toujours pas de délibération budgétaire",
           "detail": "Vérification sur les délibérations et procès-verbaux de conseil municipal publiés depuis mai 2026 (portail Mégalis) : aucun acte relatif au city stade Siméon Beliard n'a été publié. L'annonce du maire (250-300 000 €, emplacement près du skate-park) reste non budgétée à ce jour, sans calendrier officiel.",
@@ -2178,7 +2199,7 @@
       "categorie": "Environnement",
       "statut": "en_cours",
       "featured": true,
-      "last_activity": "2026-08-12",
+      "last_activity": "2026-10-07",
       "date_ouverture": "2026-06-21",
       "chapeau": "Avec des étés de plus en plus chauds, Bruz doit adapter ses équipements, ses espaces publics et son plan de crise. Îlots de fraîcheur, populations vulnérables, végétalisation, piscine Conterie, bâtiments communaux : ce que la commune fait — et ce qu'elle ne fait pas encore.",
       "ce_quon_sait": [
@@ -2251,6 +2272,13 @@
         }
       ],
       "actus_recentes": [
+        {
+          "date": "2026-10-07",
+          "titre": "Végétalisation de la place du Docteur-Joly et de l'allée Geneviève-Prigent",
+          "detail": "Travaux en cours depuis octobre pour créer un îlot de fraîcheur en centre-ville : massifs et plantation d'arbres place du Docteur-Joly. Première phase (tranchée, préparation des sols) en octobre, plantations à partir de décembre 2026, calendrier sous réserve de la météo. Les marchés du mardi et du…",
+          "source_url": "https://www.ville-bruz.fr/actualites/travaux-de-vegetalisation-au-centre-ville-de-bruz/",
+          "source_label": "Mairie de Bruz — Actualités"
+        },
         {
           "date": "2026-08-12",
           "titre": "Risque d'incendie : les règles à respecter en Ille-et-Vilaine",
@@ -2511,8 +2539,8 @@
       "titre": "Ker Lann : campus et logement étudiant",
       "categorie": "Urbanisme",
       "statut": "en_cours",
-      "featured": false,
-      "last_activity": "2026-07-17",
+      "featured": true,
+      "last_activity": "2026-09-23",
       "date_ouverture": "2026-07-02",
       "chapeau": "Ker Lann, ce n'est pas que le terminus du T4 ou un secteur de la ZAC Multisites : c'est un campus de 165 hectares qui accueille 17 établissements et environ 6 000 étudiants sur le territoire de Bruz. Ce dossier suit l'évolution du campus et l'enjeu du logement étudiant, distinct des dossiers T4 (D01) et ZAC Multisites (D02) qui traitent Ker Lann sous l'angle transport et urbanisme général.",
       "ce_quon_sait": [
@@ -2578,6 +2606,13 @@
         }
       ],
       "actus_recentes": [
+        {
+          "date": "2026-09-23",
+          "titre": "Une filière maths, physique, chimie et informatique ouvre au campus de Ker Lann",
+          "detail": "Ouest-France annonce l'ouverture d'une filière d'enseignement supérieur en mathématiques, physique, chimie et informatique sur le campus de Ker Lann.",
+          "source_url": "https://www.ouest-france.fr/bretagne/bruz-35170/bruz-une-filiere-maths-physique-chimie-et-informatique-a-ker-lann-2296291c-b04f-11f1-b13e-a9236019fd8c",
+          "source_label": "Ouest-France"
+        },
         {
           "date": "2026-05-19",
           "titre": "Inauguration de la nouvelle Maison des Compagnons du Devoir à Ker Lann",
@@ -2704,7 +2739,7 @@
       "categorie": "Culture",
       "statut": "en_cours",
       "featured": true,
-      "last_activity": "2026-09-07",
+      "last_activity": "2026-09-29",
       "date_ouverture": "2026-07-10",
       "chapeau": "La municipalité travaille sur une nouvelle programmation culturelle et sur les usages du Grand Logis (salle de spectacle, 400 places) : événements d'ampleur, jauge, projets à venir.",
       "ce_quon_sait": [
@@ -2731,6 +2766,20 @@
         }
       ],
       "actus_recentes": [
+        {
+          "date": "2026-09-29",
+          "titre": "Grand Logis : le directeur et programmateur de la salle de spectacle quitte Bruz après huit ans",
+          "detail": "Ouest-France (22 et 29 septembre) annonce le départ du directeur et programmateur de la salle de spectacle du Grand Logis, après huit ans à la tête du lieu. Nous n'avons lu que les titres des articles : les raisons du départ et la date effective ne sont pas connues. La ville avait de son côté…",
+          "source_url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxQdGRmLUlfa2RwUVpISDVydDlkN0F1c1FscFB2U0ZCR2ZrclhJNUU5UXFrNGJNMmh2RV9YSm5rUjVCSXdiUjl3dzRadVZrUElLSDFvc1FBUkZqSjFjamhVYWV4WUhyb25yWEd4TlUyYlQ5Y2NOTV9MNFFoUnVta3QyZTBXbDNmZ19JTXhPYzNCNFJzeUhzWEU3N1lfbUdmN29vVzJWNV9zV1I5aTB5OFhBMFRqWGRJaFA2UEtuQ3JRVDdkNVczRFkzN3l6d2ZSYzRUT1o4di01LThKdnJiZEVZTDhfcHFkMUZGLTVWejdIYkJzbUVWbE50QXozWkVLb00?oc=5",
+          "source_label": "Ouest-France (via Google Actualités)"
+        },
+        {
+          "date": "2026-09-21",
+          "titre": "Éveil musical à la crèche : convention 2026-2027 renouvelée avec le SIM Rive Sud",
+          "detail": "Le conseil municipal du 21 septembre autorise le maire à signer une nouvelle convention avec le Syndicat intercommunal de musique Rive Sud : 18 séances d'éveil musical et une heure de spectacle à la Maison des Enfants (crèche municipale). Le partenariat existe depuis plusieurs années. Les…",
+          "source_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1198603/a3ef31a873a8faafb2fad0c0cc5a75452b5ac1b6b86782dea554633f808074f7.pdf",
+          "source_label": "Mégalis — Délibération"
+        },
         {
           "date": "2026-09-07",
           "titre": "Bruz. Conversations sous les arbres continue à ouvrir la discussion sur le vivant",
@@ -2858,7 +2907,7 @@
       "categorie": "Institutions",
       "statut": "en_cours",
       "featured": true,
-      "last_activity": "2026-09-06",
+      "last_activity": "2026-10-06",
       "date_ouverture": "2026-07-17",
       "chapeau": "« Renforcer une véritable démocratie locale » est un pilier à part entière du programme municipal 2026-2032 : élus référents par quartier, réunions régulières, Conseil municipal des jeunes, Conseil des sages, comptes-rendus clairs des décisions. Cinq engagements, mesurables sur tout le mandat. Ce dossier suit leur mise en œuvre concrète.",
       "ce_quon_sait": [
@@ -2926,6 +2975,13 @@
       ],
       "actus_recentes": [
         {
+          "date": "2026-10-06",
+          "titre": "Conseil municipal du 12 octobre 2026 : l'ordre du jour",
+          "detail": "Séance le lundi 12 octobre à 19h, salle du Conseil. Sept points : décisions prises par le maire par délégation (17 juin – 30 septembre) ; fonds de concours à Rennes Métropole pour l'aménagement du mail Geneviève-Prigent et de l'avenue du Général-de-Gaulle ; modification du marché de rénovation…",
+          "source_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Hors_prefecture/2026/1207593/fd8827c5aee1e3cebb4d9d4a31fe32f4ad4c20c160bb453018279f66b3c2fe42.pdf",
+          "source_label": "Mégalis — Acte hors préfecture"
+        },
+        {
           "date": "2026-09-06",
           "titre": "L'opposition demande un nouveau vote sur le changement de nom de la place, le maire refuse",
           "detail": "L'opposition municipale demande un nouveau vote en conseil municipal sur le renommage de la place du Vert-Buisson en place Robert-Barré (délibération du 3 juillet). Le maire refuse.",
@@ -2962,8 +3018,8 @@
       "titre": "Les équipements sportifs de Bruz : vue d'ensemble",
       "categorie": "Équipements",
       "statut": "en_cours",
-      "featured": false,
-      "last_activity": "2026-07-17",
+      "featured": true,
+      "last_activity": "2026-09-21",
       "date_ouverture": "2026-07-17",
       "chapeau": "Au-delà du city stade de Siméon Beliard (D12) et de la piscine intercommunale de la Conterie (D06), Bruz compte une vingtaine d'équipements sportifs municipaux — gymnases, salles spécialisées, terrains extérieurs. Ce dossier recense l'existant et suit les projets d'évolution.",
       "ce_quon_sait": [
@@ -3003,7 +3059,15 @@
           "url": "https://www.ville-bruz.fr/culture-loisirs/vie-associative-2/equipements-sportifs/"
         }
       ],
-      "actus_recentes": [],
+      "actus_recentes": [
+        {
+          "date": "2026-09-21",
+          "titre": "Complexe sportif de Kerlann : 352 711 € HT de travaux de mise aux normes, dont 68 % à la charge de la ville",
+          "detail": "Ouest-France (22 septembre) rend compte du « coup de jeune » des équipements sportifs de Ker Lann ; nous n'avons lu que le titre de l'article. Le plan de financement publié par la ville chiffre l'opération : 352 711 € HT (travaux 338 161 €, marchés conclus), financés par la DSIL (73 764 €, 20,9 %)…",
+          "source_url": "https://www.ville-bruz.fr/wp-content/uploads/2026/06/Plan-de-financement-travaux-de-mises-aux-normes-des-salles-de-sport-du-Complexe-sportif-de-Kerlann.pdf",
+          "source_label": "Ville de Bruz — Plan de financement (PDF)"
+        }
+      ],
       "promesses_liees": [],
       "image": "/bruz-en-action/illus-d24-sports.webp",
       "mots_cles_ia": [
@@ -3020,7 +3084,7 @@
       "categorie": "Solidarité",
       "statut": "en_cours",
       "featured": true,
-      "last_activity": "2026-09-07",
+      "last_activity": "2026-10-07",
       "date_ouverture": "2026-09-07",
       "chapeau": "Bruz a franchi les 20 000 habitants et grandit de 1,3 % par an. La commune est jeune — 17,7 % de moins de 15 ans — et vieillit en même temps : 15,6 % de 65 ans et plus, et 44 % des ménages vivent seuls. Le programme municipal 2026-2032 y consacre un pilier entier, « Accompagner tous les âges de la vie et garantir l'accès aux services » : cinq engagements, du guichet unique France Services à l'accessibilité des bâtiments publics. Ce dossier suit ce qui se met en place pour toutes les générations — et ce qui reste au stade de l'intention.",
       "ce_quon_sait": [
@@ -3109,6 +3173,13 @@
         }
       ],
       "actus_recentes": [
+        {
+          "date": "2026-10-07",
+          "titre": "Première Semaine bleue à Bruz",
+          "detail": "Ouest-France annonce que Bruz organise pour la première fois la Semaine bleue, la semaine nationale consacrée aux retraités et personnes âgées.",
+          "source_url": "https://www.ouest-france.fr/bretagne/bruz-35170/bruz-premiere-semaine-bleue-dans-la-commune-363d1084-726d-4b3b-ae8d-123217428eb6",
+          "source_label": "Ouest-France"
+        },
         {
           "date": "2026-09-05",
           "titre": "Semaine Bleue",
