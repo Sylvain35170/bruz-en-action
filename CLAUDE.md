@@ -197,6 +197,54 @@ jamais déclencher `flow.run_local_server()` sous launchd, cf. incident 6 j du 2
 ---
 
 ## Pièges connus
+### 2026-09-13 — Un échec par valeur de retour (`None`) peut ne jamais être loggé
+*(2026-09-14)* `agent_presse._resolve_gnews()` (bruz-en-action) retournait `None` sur échec
+sans lever d'exception ; l'appelant ne loggait que dans son `except`. Résultat : zéro trace
+d'échec dans tout l'historique du log malgré des échecs réels documentés. Le code
+fonctionnait en test isolé — ce qui masquait le vrai bug, l'absence de trace.
+
+➡️ Une fonction dont le chemin d'échec passe par une valeur de retour (`None`, `False`,
+liste vide) doit logger **à la source**, pas compter sur un `except` qui ne couvre que les
+exceptions. Ce trou d'observabilité ne se voit qu'en cherchant activement les traces
+attendues et en constatant leur absence — jamais en relisant le code.
+### 2026-09-14 — 1. `agent_bruz_mag` — l'heuristique par lignes en majuscules ne survit pas à une mise en page en colonnes
+→ dispatch: local:bruz-en-action
+
+`points_cles` était extrait des PDF (Bruz Mag / Semaine à Bruz) en repérant les lignes
+tout en majuscules — cassé structurellement par la mise en page en colonnes (fragments
+type « Découverte De Bruz 07 50 84 53 14 »), corrigé à la main à chaque numéro depuis le
+lancement. Remplacé par un résumé via le CLI `claude` (même pattern que `agent_select` /
+`agent_enrichissement_cm`, cf. piège 6c déjà connu de ce projet). Testé en direct sur le
+n°860 : 8 points clés propres et pertinents. Repli en liste vide + WARN si le CLI échoue,
+plutôt que publier des fragments qui donnent un faux sentiment de complétude.
+
+### 2026-09-14 — agent_bruz_mag : l'heuristique par majuscules ne survit pas aux colonnes du PDF
+→ dispatch: local:bruz-en-action
+
+`points_cles` était extrait en repérant les lignes tout en majuscules — cassé par la mise
+en page en colonnes (fragments type « Découverte De Bruz 07 50 84 53 14 »), corrigé à la
+main à chaque numéro. Remplacé par un résumé via le CLI `claude` (même pattern que
+`agent_select`/`agent_enrichissement_cm`). Testé sur le n°860 : 8 points propres. Repli en
+liste vide + WARN si le CLI échoue, plutôt que des fragments illisibles.
+
+### 2026-09-14 — agent_presse : un échec par `None` ne loggait jamais rien
+→ dispatch: local:bruz-en-action
+
+`_resolve_gnews()` retournait `None` sur échec (mur de consentement, jetons absents, pas de
+`garturlres`) sans lever d'exception. L'appelant (`_resolve_url`) ne loggait que dans son
+`except` — zéro trace d'échec dans tout l'historique du log malgré des échecs réels
+(`presse-d9faf61e`, `presse-d09063fd`). La résolution elle-même fonctionne (revalidée en
+direct le 14/09) : le vrai bug était l'absence de logging, pas la logique batchexecute.
+Fix : WARN à chaque point de sortie en échec de `_resolve_gnews`.
+
+### 2026-09-13 — Vérifier le site déployé avec les URL en `.html`
+→ dispatch: local:bruz-en-action
+
+`curl …/dossiers/D23/` (barre oblique finale) renvoie une page sans le contenu attendu ;
+`…/dossiers/D23.html` le contient. Une vérification par grep sur la mauvaise forme conclut à
+tort qu'une actu est absente. Les bulletins s'affichent sur `/publications.html`, pas sur
+`/actualites.html`.
+
 ### 2026-09-13 — Une actu acceptée est publiée telle quelle, défauts compris
 → dispatch: local:bruz-en-action
 
@@ -211,35 +259,6 @@ résumé extrapolé (« révèle les tensions… »).
 
 `curl …/dossiers/D23/` ne contient pas le contenu attendu, `…/dossiers/D23.html` oui — un grep
 sur la mauvaise forme conclut à tort à une absence. Bulletins : `/publications.html`.
-### 2026-09-05 — Piège Bonna Sabla — 2e occurrence de conflation, cette fois via un avis MRAe
-→ dispatch: local:bruz-en-action
-
-Recherche du 05/09 sur l'avenir du site Bonna Sabla (D22) : un résultat MRAe fait remonter
-`avis_mrae_pabonnasabla-realestate_apo63.pdf` — le suffixe `apo63` correspond au département
-63 (Puy-de-Dôme), un site Bonna Sabla homonyme sans rapport avec Bruz (35). Un second résultat
-« ZAC Bruz » concernait en réalité D02 (Multisites), pas Bonna Sabla. S'ajoute au piège Archyde
-déjà identifié le 2026-07-17 (chiffres 12 ha / 2,5-4 M€ / 12 M€ agrégés à tort avec d'autres
-sites Bonna Sabla en France).
-
-➡️ « Bonna Sabla » est un nom d'entreprise avec plusieurs sites en France : ne jamais exploiter
-un résultat de recherche sur ce sujet sans qu'il nomme explicitement Bruz/35170 (ou le bon code
-département/INSEE) dans le document lui-même, pas seulement dans le titre du résultat.
-
-### 2026-09-05 — `dossiers.json` — le schéma de `decisions[]` est `{date, description, source_url}`, pas `{date, titre, detail}`
-→ dispatch: local:bruz-en-action
-
-En enrichissant D23 (renommage place Robert-Barré), j'ai ajouté une entrée `decisions` avec
-les champs `titre`/`detail` par analogie avec `actus_recentes` — `validate_data.py` n'a rien
-signalé (pas de contrôle de schéma strict par section), mais la carte "Décisions clés" du
-site déployé est restée vide (seule la date s'affichait). Seule la vérification visuelle sur
-le site déployé (règle "build vert ≠ UI correcte") l'a révélée. Corrigé en confrontant au
-schéma réel d'un autre dossier (`description` + `source_url`, pas `titre`/`detail`).
-
-➡️ Avant d'ajouter un champ structuré à un fichier `data/*.json` de ce projet, vérifier le
-schéma exact sur un exemple existant du même champ dans un autre dossier plutôt que de
-déduire par analogie avec un champ voisin — et toujours confirmer le rendu sur le site
-déployé après un ajout de ce type, pas seulement `validate_data.py`.
-
 ### 2026-09-08 — une recette de contournement se périme sans prévenir (Google News, tags agenda, palette)
 → dispatch: local:bruz-en-action
 
@@ -262,206 +281,3 @@ affirmait encore « les 15 tags actuels sont tous mappés ». Même famille dans
 le gris de repli depuis sa création**. ➡️ Un repli silencieux exige un **inventaire
 périodique** (tags présents dans les données vs tags mappés dans le code), jamais l'attente
 d'un signal — par construction, il n'en émettra aucun.
-
-### 2026-09-05 — dossiers.json : schéma de decisions[], et 2e conflation Bonna Sabla
-→ dispatch: local:bruz-en-action
-
-**`decisions[]` = `{date, description, source_url}`**, pas `{date, titre, detail}` (analogie
-trompeuse avec `actus_recentes`). `validate_data.py` n'a rien signalé — la carte "Décisions
-clés" est restée vide sur le site déployé (seule la date affichée) jusqu'à vérification
-visuelle. Toujours confronter un nouveau champ structuré à un exemple existant du même champ
-dans un autre dossier, et confirmer le rendu déployé après ajout.
-
-**Bonna Sabla (D22) — 2e occurrence de conflation** (après le piège Archyde du 2026-07-17) :
-un avis MRAe `avis_mrae_pabonnasabla-realestate_apo63.pdf` (suffixe `apo63` = Puy-de-Dôme, site
-homonyme sans rapport) et un avis « ZAC Bruz » qui concerne en fait D02, pas Bonna Sabla, sont
-remontés dans une recherche. ➡️ Ne jamais exploiter un résultat sur Bonna Sabla sans qu'il
-nomme explicitement Bruz/35170 dans le document lui-même.
-
-### 2026-09-01 — agent_bruz_mag : titre capté depuis le texte du lien
-→ dispatch: local:bruz-en-action
-
-Le lien de téléchargement sur ville-bruz.fr a pour texte « Télécharger(ouverture dans un
-nouvel onglet) » : capté tel quel comme `titre` de bulletin (affiché sur `/publications`)
-**et** comme `sources[].label`, à chaque numéro depuis le lancement, corrigé à la main
-à chaque fois. Fix : `titre_et_date()` reconstruit titre + date ISO depuis le **nom de
-fichier du PDF** (`Semaine-a-Bruz-n°859-du-27-aout-au-2-septembre-2026.pdf`). Repli sur
-« Semaine à Bruz n°XXX » si le schéma de nommage change. ➡️ Quand le texte visible d'un
-lien est générique, l'info utile est dans l'URL / le nom de fichier.
-
-### 2026-09-01 — agent_select sous-cote la pertinence (juge sur le RSS, pas l'article)
-→ dispatch: local:bruz-en-action
-
-`agent_select` (Claude Haiku) note la pertinence sur le **titre + résumé RSS**, pas
-l'article complet. Le renommage de la place du Vert-Buisson (décision CM + opposition +
-collectif médical sur la sécurité des soins) a été noté **p1 « marginal »** alors que
-c'était le sujet du jour (p3, publié en D23). Décision : pas de fix agent (sur-ajustement
-sur un cas), la revue humaine reste le filet. ➡️ Toujours **lire l'article complet** (via
-l'extension Chrome pour Ouest-France qui bloque les bots) avant de trancher — le résumé
-de l'agent ne suffit pas. Liens Google News RSS : résolus vers l'URL réelle via
-`batchexecute` (cf. `learnings.md`), le mur `consent.google.com` bloque `requests`.
-
-### 2026-09-01 — la veille a été bloquée 6 jours par un agent figé sur un prompt navigateur
-→ dispatch: local:bruz-en-action
-
-`agent_signalements` (livré le 26/08) testait `client_secret` pour son garde-fou de
-setup. Or ce fichier existe déjà (client OAuth réutilisé du mailer), donc au premier run
-launchd du 26/08 l'agent est passé le garde-fou et est tombé sur
-`flow.run_local_server()` — qui attend un navigateur et **bloque indéfiniment sous
-launchd**. Le process est resté vivant 6 jours ; `launchd`, voyant le job encore
-`running`, a **sauté tous les créneaux 17h suivants** (27/08 → 01/09). Aucune alerte :
-le job n'était pas « en échec », il était « en cours ».
-
-Fixes : (1) garde-fou sur `GMAIL_TOKEN.exists()` (le consentement navigateur), pas sur
-`client_secret` ; (2) watchdog `SIGALRM` par agent (300 s) dans `run_agents.py` ;
-(3) backstop `perl alarm 1800` dans le plist (`scripts/launchd/`).
-
-➡️ Un job launchd sans borne de durée peut mourir en silence : bloqué ≠ en échec, et un
-`StartCalendarInterval` ne redéclenche jamais tant que l'instance précédente vit. Tout
-run planifié doit avoir un timeout dur. Et jamais de `run_local_server()` / prompt
-interactif dans du code appelé depuis launchd.
-
-### 2026-08-27 — coup_de_pouce_pending.json ne se vidait jamais après publication
-→ dispatch: local:bruz-en-action
-
-CP08 (Marche Nordique JAB) et CP09 (Atelier Philo ALB) avaient été validés et recopiés
-dans `data/coup_de_pouce.json` le 14/08 (`statut: "publié"`, `cp_id` posés à la main),
-mais jamais retirés de `coup_de_pouce_pending.json` — contrairement à `pending.json`
-(actus), ce registre n'a aucun mécanisme de sortie. Résultat : `--list` les
-re-proposait à chaque fois, et le nouveau branchement du mailer (voir ci-dessous)
-les aurait envoyés indéfiniment. Fix : `agent_coup_de_pouce.candidats_en_attente()`
-filtre les items dont `statut` vaut `"publié"`/`"rejeté"` — utilisé par `--list` et
-par le mailer, sans supprimer les items du fichier (`deja_connus()` a besoin de
-la mémoire complète pour éviter une re-proposition du même titre).
-
-➡️ Un registre "pending" sans mécanisme de sortie explicite finit toujours par
-re-proposer indéfiniment ce qui a déjà été traité manuellement ailleurs.
-
-### 2026-08-26 — bruz-en-action : l'adresse de contact du site pointait vers une boîte qui n'existe pas
-→ dispatch: local:bruz-en-action
-
-`meta.json > contact.email` valait `bruzenaction@gmail.com` depuis le lancement du
-site — repris tel quel par `SignalementButton.tsx` (bouton "Signaler" sur
-dossiers/promesses/footer) et prévu comme cible de l'agent Signalements. Cette
-adresse n'existe pas. Corrigée vers `sylv.bertrand@gmail.com` (même compte que
-`agent_mailer`) le 26/08 — ce qui a aussi permis de simplifier le setup OAuth de
-l'agent Signalements : réutilisation du client OAuth du mailer au lieu d'un
-nouveau projet Google Cloud (seul le token diffère, scope `gmail.readonly`).
-
-➡️ Tout signalement citoyen envoyé depuis le lancement du site est parti dans le
-vide, sans erreur visible côté visiteur (un mailto: vers une adresse inexistante
-ne prévient personne). Une adresse de contact affichée sur un site doit être
-vérifiée en conditions réelles (s'envoyer un email de test), pas seulement
-relue — rien dans le code ni le build ne peut détecter qu'une boîte n'existe pas.
-
-### 2026-08-20 — bruz-en-action : une fiche cms.json "complète" peut quand même avoir un trou politique
-→ dispatch: local:bruz-en-action
-
-Le PV Mégalis du CM du 18 mai avait déjà une fiche détaillée dans `cms.json` (36
-délibérations, points chauds CCAS/restauration/handicap). Mais le point le plus tendu de
-la séance — délibération 26-05-37 (suppressions/créations de postes), débat opposition
-vs majorité sur la suppression du poste direction culture/vie associative/sport — n'y
-figurait pas.
-
-➡️ Une proposition Mégalis pointant vers un PV déjà "couvert" mérite quand même une
-lecture intégrale avant rejet — la fiche existante peut avoir raté le passage le plus
-substantiel politiquement, en général le débat contradictoire plutôt que l'énoncé des
-délibérations techniques.
-
-### 2026-08-20 — bruz-en-action : une date "impossible" dans une actu mairie n'est pas une erreur d'extraction
-→ dispatch: local:bruz-en-action
-
-L'actu STAR de la mairie (publiée 20/08) annonçait "lundi 31 septembre" — date qui
-n'existe pas. Vérifié directement dans le HTML brut (`curl` + grep) : c'est bien une
-coquille sur le site source, pas une hallucination du fetch. Recoupement calendrier :
-le 31 août 2026 tombe un lundi et correspond au calendrier habituel de rentrée STAR —
-publié avec la date corrigée et la coquille source mentionnée explicitement.
-
-➡️ Une date impossible dans un texte source doit être vérifiée au niveau HTML brut avant
-de conclure à une erreur d'outillage, puis recoupée par calendrier plutôt que publiée
-telle quelle ou silencieusement corrigée sans mention.
-
-### 2026-08-20 — Date impossible dans une actu source, et fiche CM déjà "complète" mais trouée
-→ dispatch: local:bruz-en-action
-
-- **Une date impossible dans un texte source (« lundi 31 septembre ») n'est pas une
-  erreur d'extraction** : vérifiée dans le HTML brut (`curl` + grep), c'était une vraie
-  coquille du site mairie. Recoupée par calendrier (31 août 2026 = lundi, cohérent avec
-  la rentrée STAR) et publiée avec la date corrigée + la coquille source mentionnée
-  explicitement — jamais corriger en silence, jamais publier tel quel.
-- **Une fiche `cms.json` déjà détaillée peut quand même rater le passage le plus
-  politique du PV** : la fiche `CM-2026-05-18` couvrait 36 délibérations mais pas le
-  débat opposition/majorité sur la suppression du poste direction culture/vie
-  associative/sport (délib. 26-05-37) — le point le plus tendu de la séance. Une
-  proposition Mégalis vers un PV « déjà couvert » mérite quand même une lecture
-  intégrale avant rejet.
-
-### 2026-08-14 — Deux détails d'outillage de revue
-→ dispatch: local:bruz-en-action
-
-- `review_proposals.py --dossier` s'applique à **tout le lot accepté** : classer des
-  items dans des dossiers différents demande autant d'appels que de dossiers.
-- Les titres remontés par `agent_megalis` sont les libellés bruts des actes et arrivent
-  illisibles (« Finances — Ogec saint theodore guerin — Garantie d'emprunt — Err —
-  Plume »). Réécrits à la main à la revue ; à nettoyer dans l'agent si ça se répète —
-  ce sera visible au CM du 21/09, qui doit remonter ~46 actes d'un coup.
-
----
-
-### 2026-08-14 — Relire le PDF ne sert pas qu'à détecter les erreurs de colonnes
-→ dispatch: local:bruz-en-action
-
-Vérification des deux candidats contre la Semaine à Bruz n°858 : les attributions
-étaient **correctes** (le `06 14 69 29 73` bien dans le bloc JAB, l'email atelier philo
-bien distinct du `taichi.responsable@albruz.fr` voisin). Mais `chapeau: corps[:400]`
-tronque le texte et fait perdre de l'information utile — la cotisation JAB (30 € + 20 €)
-avait sauté, alors que c'est précisément ce que cherche quelqu'un qui veut s'inscrire.
-La relecture PDF rattrape aussi ça, pas seulement les fausses attributions.
-
-### 2026-08-14 — Pas de source, pas de publication (coup de pouce)
-→ dispatch: local:bruz-en-action
-
-Règle éditoriale posée le 14/08. Un lien vers le site **national** des Restos du Cœur ne
-source pas l'antenne bruzoise ni son appel à bénévoles : CP01 et CP02 (aucun lien du
-tout) retirés. CP03 conservé, son site officiel promu en `source` après vérification
-qu'il répond 200 et documente bien la ferme bruzoise. `validate_data` passe de 3
-warnings à 0 — les warnings pointaient exactement ces items.
-
-### 2026-08-14 — Un filtre sur la date du jour est figé au build en export statique
-→ dispatch: local:bruz-en-action + global
-
-`app/coup-de-pouce/page.tsx` filtrait ses items sur `date_fin >= new Date()`, et son
-commentaire affirmait que « l'item disparaît de lui-même une fois l'échéance passée ».
-Faux : la page est un composant serveur (pas de `"use client"`) dans un export statique,
-donc `new Date()` est évalué **au build**, pas à la visite — et `deploy.yml` ne se
-déclenchait que sur `push`. La guinguette CHOQUE (`date_fin: 2026-08-15`) serait restée
-affichée comme en cours tant que personne n'aurait poussé. Les mêmes lignes existent sur
-la homepage (`app/page.tsx`, événements à venir) et `/agenda` : trois pages concernées.
-
-Fix : `schedule: cron "17 4 * * *"` dans `deploy.yml` — un rebuild quotidien rend la
-date de nouveau vraie sur les trois pages d'un coup. L'alternative (passer les filtres
-côté client) demandait trois modifications et autant de tests.
-
-➡️ Règle : dans un site statique, toute logique qui compare à « aujourd'hui » a besoin
-d'un rebuild périodique, sinon elle ment silencieusement. Et un commentaire de code qui
-affirme un comportement automatique ne prouve rien — le confronter au mode de rendu.
-Même famille que « build vert ≠ UI correcte » : rien ici n'échoue, l'information est
-juste périmée.
-
-### 2026-08-14 — expiration figée au build, règle de source coup de pouce
-
-- **En export statique, un filtre sur « aujourd'hui » est évalué au BUILD, pas à la visite.**
-  `/coup-de-pouce` (`date_fin`), la homepage et `/agenda` (événements à venir) sont des
-  composants serveur sans `"use client"` : leur `new Date()` date du dernier build, et
-  `deploy.yml` ne partait que sur `push`. La guinguette CP07 (`date_fin: 2026-08-15`)
-  serait restée affichée comme en cours indéfiniment. Fix : `schedule: cron "17 4 * * *"`
-  dans `deploy.yml`. Le commentaire du code affirmait l'inverse (« l'item disparaît de
-  lui-même ») — un commentaire n'est pas une preuve, le confronter au mode de rendu.
-- **Coup de pouce : pas de source, pas de publication.** Un lien vers un site national ne
-  source pas une antenne locale (CP01 Restos du Cœur retiré, CP02 sans lien retiré).
-  `validate_data` signale ces items en warning — 0 warning = tout est sourcé.
-- **Relire le PDF ne sert pas qu'aux erreurs de colonnes** : `chapeau: corps[:400]` tronque
-  et fait perdre de l'info utile (la cotisation JAB 30 € + 20 € avait sauté).
-- **`review_proposals --dossier` s'applique à tout le lot** — un appel par dossier cible.
-  Et les titres bruts `agent_megalis` sont illisibles (« … — Err — Plume »), à réécrire
-  à la revue.
