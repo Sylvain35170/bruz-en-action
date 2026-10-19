@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-10-04",
+    "last_updated": "2026-10-15",
     "source_principale": "Transcriptions YouTube (Ville de Bruz) + Bruz Mag n°260 + délibérations Mégalis",
     "youtube": "https://www.youtube.com/playlist?list=PLnSe2hJFinqpupninWlKBHSmzmwLW-8i7",
     "deliberations_megalis": "https://data.megalis.bretagne.bzh/?siren=213500473",
@@ -8,6 +8,83 @@
     "dernier_bruz_mag": 259
   },
   "seances": [
+    {
+      "id": "CM-2026-10-12",
+      "date": "2026-10-12",
+      "statut": "passe",
+      "lieu": "Halle Pagnol, Bruz — 19h",
+      "titre": "Conseil municipal du 12 octobre 2026 : parkings Pagnol, hôtel de ville et lycéens",
+      "points_cles": [
+        "Fonds de concours de 120 000 € à Rennes Métropole pour l'avenue du Général de Gaulle, versé en 2027 sur factures. La commune finance seule la promenade Geneviève Prigent (120 000 € HT), voie non transférée à la métropole.",
+        "Rénovation thermique de l'hôtel de ville : avenants aux lots 1, 5 et 9 (+4,62 % du marché, un peu plus de 2 000 €). Les pénalités de 1 800 € pour absences en réunions de chantier sont maintenues. La commune renonce à 2 912,31 € de pénalités de retard (15 jours de retard, théoriquement 4 500 €, plafonnées à 15 % du marché).",
+        "Parking Pagnol : 5 places cédées à 8 300 € net vendeur (lots 111 et 114 à M. Sébastien Duval ; lots 116, 143 et 156 à M. et Mme Lando). Vote 26 pour, 7 contre.",
+        "Partenariat avec La Fève (mentorat étudiant) reconduit pour 2026-2027 : 10 enfants accompagnés (8 en 2025-2026), 5 000 € versés, soit environ 500 € par enfant.",
+        "Le maire a mis fin au détachement du DGS à compter du 1er décembre 2026 : le poste d'attaché principal est supprimé. Un poste d'auxiliaire de puériculture est recréé à la crèche Les Suricates (départ en retraite), avec possibilité de recourir à un contractuel.",
+        "Philippe Salmont a démissionné le 1er octobre, et Sylvain Colonge a été appelé à le remplacer (article L270 du code électoral)."
+      ],
+      "deliberations": [
+        {
+          "numero": "1",
+          "titre": "Décisions du maire prises par délégation (marchés publics, DIA, conventions d'occupation, concessions de cimetière, contrats culturels)",
+          "vote": "Pas de vote (information)",
+          "detail": "Présentation des marchés notifiés du 17 juin au 30 septembre, des déclarations d'intention d'aliéner, de 4 conventions d'occupation précaire, des locations de salles, des concessions du cimetière et des contrats de spectacles."
+        },
+        {
+          "numero": "2",
+          "titre": "Fonds de concours à Rennes Métropole : aménagement de la promenade Geneviève Prigent et de l'avenue du Général de Gaulle",
+          "vote": "Unanimité",
+          "detail": "Fonds de concours de 120 000 € versé en 2027 sur production des factures, dans la limite de 30 % du coût. Les travaux de l'avenue sont chiffrés à environ 300 000 €. Crédits inscrits au budget 2027. La promenade doit rouvrir à la traversée prochainement, avec des toilettes publiques extérieures."
+        },
+        {
+          "numero": "3",
+          "titre": "Rénovation thermique de l'hôtel de ville : modification du marché (lots 1, 5, 9) et pénalités",
+          "vote": "Unanimité",
+          "detail": "Avenants de l'ordre de +4,62 % du marché. Six pénalités de 300 € pour absence en réunion de chantier (1 800 €) maintenues. Pénalité de retard d'exécution (2 912,31 € après plafonnement à 15 %) abandonnée, car l'entreprise a renforcé ses effectifs avant la fin du chantier. Présentée par Thomas de la Rivière."
+        },
+        {
+          "numero": "4",
+          "titre": "Cession de places de stationnement du parking Pagnol, lots 111 et 114",
+          "vote": "26 pour / 7 contre / 0 abstention",
+          "detail": "Cession à M. Sébastien Duval au prix de 8 300 € net vendeur, prix fixé par la délibération du 3 juillet 2026. Rapporteur : Désguérets. L'opposition vote contre, comme sur les tarifs en juillet."
+        },
+        {
+          "numero": "5",
+          "titre": "Cession de places de stationnement du parking Pagnol, lots 116, 143 et 156",
+          "vote": "26 pour / 7 contre (vote constaté après coup, le maire ayant oublié de le faire voter)",
+          "detail": "Cession à M. et Mme Lando de trois places à 8 300 € net vendeur. Le maire souligne que ces ventes libèrent des places aériennes pour les Bruzois, d'autres ayant choisi les places souterraines."
+        },
+        {
+          "numero": "6",
+          "titre": "Convention de partenariat 2026-2027 avec La Fève (Fondation étudiante pour la ville)",
+          "vote": "Unanimité",
+          "detail": "Mentorat étudiant de 2 h par semaine pour 10 élèves d'élémentaire des écoles publiques. L'équipe enseignante identifie les enfants. Subvention de 5 000 €. Rapporteure : Loton. L'opposition rappelle que le dispositif date du mandat précédent."
+        },
+        {
+          "numero": "7",
+          "titre": "Suppression et création de postes, modification du tableau des effectifs",
+          "vote": "Unanimité",
+          "detail": "Suppression du poste d'attaché principal (DGS) au 1er décembre 2026. Suppression d'un poste d'auxiliaire de puériculture de classe supérieure et création d'un poste permanent à temps complet au 1er novembre 2026 pour la crèche Les Suricates. Nouveau tableau des emplois applicable au 1er octobre 2026. Rapporteure : Briend."
+        },
+        {
+          "numero": "PV",
+          "titre": "Approbation du procès-verbal du conseil du 21 septembre 2026",
+          "vote": "32 pour / 0 contre / 1 abstention",
+          "detail": "Sylvain Colonge s'abstient, car il n'était pas encore membre du conseil à cette date."
+        }
+      ],
+      "points_chauds": [],
+      "impact_bruzois": [],
+      "a_surveiller": [],
+      "sources": [
+        {
+          "label": "Vidéo YouTube — Conseil municipal du lundi 12 octobre 2026",
+          "url": "https://youtu.be/P79Jsjz5xoQ"
+        }
+      ],
+      "resume_executif": "Le conseil le plus court de la mandature, selon le maire, a accueilli Sylvain Colonge, qui remplace Philippe Salmont (démissionnaire le 1er octobre). Les élus ont voté un fonds de concours de 120 000 € à Rennes Métropole pour les travaux de l'avenue du Général de Gaulle, clos les derniers ajustements de la rénovation thermique de l'hôtel de ville et reconduit le partenariat de mentorat étudiant avec La Fève. La vente de cinq places du parking Pagnol à 8 300 € l'unité a divisé : 26 pour, 7 contre. Le conseil a aussi supprimé le poste de directeur général des services (DGS) à compter du 1er décembre. L'opposition a proposé d'organiser un temps d'échange avec les lycéens de Bruz.",
+      "youtube_id": "P79Jsjz5xoQ",
+      "youtube_url": "https://youtu.be/P79Jsjz5xoQ"
+    },
     {
       "id": "CM-2026-09-23",
       "date": "2026-09-23",

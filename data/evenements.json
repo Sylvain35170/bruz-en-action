@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-10-10",
+    "last_updated": "2026-10-18",
     "source": "Ville de Bruz, Grand Logis, Handisport, Les Trans"
   },
   "evenements": [
@@ -103,42 +103,6 @@
       "lien_label": "Agenda Ville de Bruz",
       "source": "agenda_mairie",
       "date_fin": "2026-09-30"
-    },
-    {
-      "id": "agenda-7835b694",
-      "titre": "Histoires au creux des bras",
-      "date": "2026-09-12",
-      "categorie": "Médiathèque",
-      "lien": "https://www.ville-bruz.fr/agenda/histoires-au-creux-des-bras/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
-    },
-    {
-      "id": "agenda-e24c710a",
-      "titre": "Repair Café",
-      "date": "2026-09-12",
-      "categorie": "Association",
-      "lien": "https://www.ville-bruz.fr/agenda/repair-cafe/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
-    },
-    {
-      "id": "agenda-45919088",
-      "titre": "Espace de Gratuité",
-      "date": "2026-09-12",
-      "categorie": "Association",
-      "lien": "https://www.ville-bruz.fr/agenda/espace-de-gratuite/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
-    },
-    {
-      "id": "agenda-211de9e2",
-      "titre": "Distribution gratuite de composteurs",
-      "date": "2026-09-16",
-      "categorie": "Mairie",
-      "lien": "https://www.ville-bruz.fr/agenda/distribution-gratuite-de-composteurs-3/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
     },
     {
       "id": "agenda-caaa5ae8",
@@ -356,15 +320,6 @@
       "date": "2026-10-01",
       "categorie": "Mortel !",
       "lien": "https://www.ville-bruz.fr/agenda/cafe-philo-serions-nous-plus-heureux-si-nous-etions-immortels/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
-    },
-    {
-      "id": "agenda-aada8510",
-      "titre": "Permanences Pimms Médiation Rennes",
-      "date": "2026-10-02",
-      "categorie": "Permanence",
-      "lien": "https://www.ville-bruz.fr/agenda/permanences-pimms-mediation-rennes/",
       "lien_label": "Agenda Ville de Bruz",
       "source": "agenda_mairie"
     },
@@ -623,15 +578,6 @@
       "source": "agenda_mairie"
     },
     {
-      "id": "agenda-eb25c445",
-      "titre": "Repas d’ici et d’ailleurs sur l’Espagne",
-      "date": "2026-10-09",
-      "categorie": "Association",
-      "lien": "https://www.ville-bruz.fr/agenda/repas-dici-et-dailleurs-sur-lespagne/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
-    },
-    {
       "id": "agenda-7997a1c3",
       "titre": "Semaine Bleue : balade en calèche",
       "date": "2026-10-10",
@@ -776,6 +722,33 @@
       "source": "agenda_mairie"
     },
     {
+      "id": "agenda-1f4c861f",
+      "titre": "Marche en douceur et découverte",
+      "date": "2026-10-15",
+      "categorie": "Sport",
+      "lien": "https://www.ville-bruz.fr/agenda/marche-en-douceur-et-decouverte/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-aada8510",
+      "titre": "Permanences Pimms Médiation Rennes",
+      "date": "2026-10-16",
+      "categorie": "Permanence",
+      "lien": "https://www.ville-bruz.fr/agenda/permanences-pimms-mediation-rennes/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-eb25c445",
+      "titre": "Repas d’ici et d’ailleurs sur le Liban",
+      "date": "2026-10-16",
+      "categorie": "Association",
+      "lien": "https://www.ville-bruz.fr/agenda/repas-dici-et-dailleurs-sur-lespagne/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
       "id": "agenda-a17ba7fc",
       "titre": "Alela Diane – Who’s keeping time? – Complet",
       "date": "2026-10-16",
@@ -894,6 +867,24 @@
       "source": "agenda_mairie"
     },
     {
+      "id": "agenda-88db91c2",
+      "titre": "Visites de la ferme de la Pampa",
+      "date": "2026-10-20",
+      "categorie": "Rencontre",
+      "lien": "https://www.ville-bruz.fr/agenda/visites-de-la-ferme-de-la-pampa/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-df294b98",
+      "titre": "Atelier mémoire en jeux",
+      "date": "2026-10-20",
+      "categorie": "Atelier",
+      "lien": "https://www.ville-bruz.fr/agenda/atelier-memoire-en-jeux/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
       "id": "agenda-09e32bc3",
       "titre": "Permanence numérique avec une conseillère de Rennes Métropole",
       "date": "2026-10-21",
@@ -975,6 +966,15 @@
       "source": "agenda_mairie"
     },
     {
+      "id": "agenda-6c424a14",
+      "titre": "Repas d’ici et d’ailleurs sur le Canada",
+      "date": "2026-10-23",
+      "categorie": "Atelier",
+      "lien": "https://www.ville-bruz.fr/agenda/repas-dici-et-dailleurs-sur-le-canada/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
       "id": "agenda-2b945342",
       "titre": "Histoires au creux des bras",
       "date": "2026-10-24",
@@ -991,6 +991,25 @@
       "lien": "https://www.ville-bruz.fr/agenda/jury-prix-ados/",
       "lien_label": "Agenda Ville de Bruz",
       "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-1d24d4e8",
+      "titre": "Circul’Livres",
+      "date": "2026-10-24",
+      "categorie": "Rencontre",
+      "lien": "https://www.ville-bruz.fr/agenda/circullivres/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-76708c8c",
+      "titre": "Course de modélisme : les 6 heures Bato35",
+      "date": "2026-10-24",
+      "categorie": "Association",
+      "lien": "https://www.ville-bruz.fr/agenda/course-de-modelisme-les-6-heures-bato35/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie",
+      "date_fin": "2026-10-25"
     },
     {
       "id": "agenda-6098e7d9",
@@ -1035,6 +1054,15 @@
       "date": "2026-10-27",
       "categorie": "Atelier",
       "lien": "https://www.ville-bruz.fr/agenda/atelier-memoire-en-jeux-2/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-f0644180",
+      "titre": "Visites de la ferme de la Pampa",
+      "date": "2026-10-27",
+      "categorie": "Rencontre",
+      "lien": "https://www.ville-bruz.fr/agenda/visites-de-la-ferme-de-la-pampa-2/",
       "lien_label": "Agenda Ville de Bruz",
       "source": "agenda_mairie"
     },
@@ -1111,6 +1139,16 @@
       "source": "agenda_mairie"
     },
     {
+      "id": "agenda-f10f88d4",
+      "titre": "Exposition photo « F164 »",
+      "date": "2026-10-30",
+      "categorie": "L'Escale",
+      "lien": "https://www.ville-bruz.fr/agenda/exposition-photo-f164/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie",
+      "date_fin": "2026-11-27"
+    },
+    {
       "id": "agenda-f7163a30",
       "titre": "Game over ? Pas encore !",
       "date": "2026-10-31",
@@ -1127,6 +1165,16 @@
       "lien": "https://www.ville-bruz.fr/agenda/fest-noz-3/",
       "lien_label": "Agenda Ville de Bruz",
       "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-b1060e21",
+      "titre": "Semaine Haïtienne : vente du Gâteau Patate",
+      "date": "2026-10-31",
+      "categorie": "Association",
+      "lien": "https://www.ville-bruz.fr/agenda/semaine-haitienne-vente-du-gateau-patate/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie",
+      "date_fin": "2026-11-07"
     },
     {
       "id": "agenda-10d138b6",
@@ -1192,6 +1240,33 @@
       "source": "agenda_mairie"
     },
     {
+      "id": "agenda-fe7bac30",
+      "titre": "Inscription au réveillon de la Saint Sylvestre",
+      "date": "2026-11-07",
+      "categorie": "Spectacle",
+      "lien": "https://www.ville-bruz.fr/agenda/inscription-au-reveillon-de-la-saint-sylvestre/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-dba46eba",
+      "titre": "Semaine Haïtienne : concert du groupe Strawberry Fields",
+      "date": "2026-11-07",
+      "categorie": "Concert",
+      "lien": "https://www.ville-bruz.fr/agenda/semaine-haitienne-concert-du-groupe-strawberry-fields/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-228e31ac",
+      "titre": "Commémoration du 11 novembre 1918",
+      "date": "2026-11-11",
+      "categorie": "Cérémonie",
+      "lien": "https://www.ville-bruz.fr/agenda/commemoration-du-11-novembre-1918/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
       "id": "agenda-ae1998b7",
       "titre": "Projection du film « c’est la vie Ginette »",
       "date": "2026-11-13",
@@ -1206,6 +1281,24 @@
       "date": "2026-11-14",
       "categorie": "Atelier",
       "lien": "https://www.ville-bruz.fr/agenda/coup-de-pouce-informatique-2/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-e24c710a",
+      "titre": "Repair Café",
+      "date": "2026-11-14",
+      "categorie": "Association",
+      "lien": "https://www.ville-bruz.fr/agenda/repair-cafe/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-45919088",
+      "titre": "Espace de Gratuité",
+      "date": "2026-11-14",
+      "categorie": "Association",
+      "lien": "https://www.ville-bruz.fr/agenda/espace-de-gratuite/",
       "lien_label": "Agenda Ville de Bruz",
       "source": "agenda_mairie"
     },
@@ -1274,6 +1367,15 @@
       "source": "agenda_mairie"
     },
     {
+      "id": "agenda-48edff3d",
+      "titre": "Cyclistes, trottinettistes, brillez !",
+      "date": "2026-11-24",
+      "categorie": "Rencontre",
+      "lien": "https://www.ville-bruz.fr/agenda/cyclistes-trottinettistes-brillez/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
       "id": "agenda-ce4ca46e",
       "titre": "Crok’histoires",
       "date": "2026-11-25",
@@ -1288,6 +1390,15 @@
       "date": "2026-11-25",
       "categorie": "Atelier",
       "lien": "https://www.ville-bruz.fr/agenda/fabrique-ton-sticker/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-71993f97",
+      "titre": "Conférence « violences sexistes et sexuelles : mieux comprendre et prendre en charge »",
+      "date": "2026-11-25",
+      "categorie": "Conférence",
+      "lien": "https://www.ville-bruz.fr/agenda/conference-violences-sexistes-et-sexuelles-mieux-comprendre-et-prendre-en-charge/",
       "lien_label": "Agenda Ville de Bruz",
       "source": "agenda_mairie"
     },
@@ -1326,6 +1437,16 @@
       "lien": "https://www.ville-bruz.fr/agenda/escape-game-charlotte-7/",
       "lien_label": "Agenda Ville de Bruz",
       "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-6b355d56",
+      "titre": "Stage « autodéfense riposte »",
+      "date": "2026-11-28",
+      "categorie": "L'Escale",
+      "lien": "https://www.ville-bruz.fr/agenda/stage-autodefense-riposte/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie",
+      "date_fin": "2026-11-29"
     },
     {
       "id": "agenda-97f23724",
@@ -1392,7 +1513,7 @@
     },
     {
       "id": "agenda-38e19f25",
-      "titre": "Le lac des cygnes",
+      "titre": "Le lac des cygnes – Complet",
       "date": "2026-12-09",
       "categorie": "Spectacle",
       "lien": "https://www.ville-bruz.fr/agenda/le-lac-des-cygnes/",
@@ -1459,6 +1580,151 @@
       "date": "2026-12-19",
       "categorie": "Médiathèque",
       "lien": "https://www.ville-bruz.fr/agenda/histoires-au-creux-des-bras-3/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-44f32dc7",
+      "titre": "Ala.ni – Sunshine music – Complet",
+      "date": "2027-01-08",
+      "categorie": "Concert",
+      "lien": "https://www.ville-bruz.fr/agenda/ala-ni-sunshine-music-complet/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-f2903366",
+      "titre": "Ciné concert : Jemima & Johnny",
+      "date": "2027-01-13",
+      "categorie": "Concert",
+      "lien": "https://www.ville-bruz.fr/agenda/cine-concert-jemima-johnny/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-0ab4a396",
+      "titre": "Semaine du cinéma britannique et irlandais",
+      "date": "2027-01-23",
+      "categorie": "Spectacle",
+      "lien": "https://www.ville-bruz.fr/agenda/semaine-du-cinema-britannique-et-irlandais/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie",
+      "date_fin": "2027-01-30"
+    },
+    {
+      "id": "agenda-c95c46b4",
+      "titre": "Pretty Old Soul",
+      "date": "2027-02-09",
+      "categorie": "Concert",
+      "lien": "https://www.ville-bruz.fr/agenda/pretty-old-soul/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-dcb77555",
+      "titre": "Affranchies – Complet",
+      "date": "2027-02-12",
+      "categorie": "Danse",
+      "lien": "https://www.ville-bruz.fr/agenda/affranchies/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-a74e1e03",
+      "titre": "Mathieu Madénian – à pleurer de rire – Complet",
+      "date": "2027-03-11",
+      "categorie": "Spectacle",
+      "lien": "https://www.ville-bruz.fr/agenda/mathieu-madenian-a-pleurer-de-rire-complet/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-b6c95cd5",
+      "titre": "La maison Tellier – Timidité des arbres – Complet",
+      "date": "2027-03-18",
+      "categorie": "Concert",
+      "lien": "https://www.ville-bruz.fr/agenda/la-maison-tellier-timidite-des-arbres-complet/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-dc6e3572",
+      "titre": "Les sales gosses",
+      "date": "2027-03-23",
+      "categorie": "Concert",
+      "lien": "https://www.ville-bruz.fr/agenda/les-sales-gosses/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-0c9bfa85",
+      "titre": "Dark",
+      "date": "2027-03-31",
+      "categorie": "Théâtre",
+      "lien": "https://www.ville-bruz.fr/agenda/dark/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-03085d0a",
+      "titre": "Unisson – Musique des transmissions",
+      "date": "2027-04-02",
+      "categorie": "Concert",
+      "lien": "https://www.ville-bruz.fr/agenda/unisson-musique-des-transmissions/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-19cb9cfc",
+      "titre": "Kontact – Complet",
+      "date": "2027-04-08",
+      "categorie": "Spectacle",
+      "lien": "https://www.ville-bruz.fr/agenda/kontact/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-258434f3",
+      "titre": "Bel Ami – complet",
+      "date": "2027-04-15",
+      "categorie": "Théâtre",
+      "lien": "https://www.ville-bruz.fr/agenda/bel-ami-complet/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-4e2cf0b8",
+      "titre": "Chimère",
+      "date": "2027-05-04",
+      "categorie": "Théâtre",
+      "lien": "https://www.ville-bruz.fr/agenda/chimere/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-dcfdad7f",
+      "titre": "The Buttshakers – Lessons in love",
+      "date": "2027-05-13",
+      "categorie": "Concert",
+      "lien": "https://www.ville-bruz.fr/agenda/the-buttshakers-lessons-in-love/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-0e6ad842",
+      "titre": "Brieg Guerveno et Maïlys Princé",
+      "date": "2027-05-18",
+      "categorie": "Concert",
+      "lien": "https://www.ville-bruz.fr/agenda/brieg-guerveno-et-mailys-prince/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-c356ead2",
+      "titre": "Rouge Courroux",
+      "date": "2027-05-19",
+      "categorie": "Théâtre",
+      "lien": "https://www.ville-bruz.fr/agenda/rouge-courroux/",
       "lien_label": "Agenda Ville de Bruz",
       "source": "agenda_mairie"
     }

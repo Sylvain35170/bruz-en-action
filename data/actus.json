@@ -1,9 +1,69 @@
 {
   "meta": {
-    "last_updated": "2026-10-12",
+    "last_updated": "2026-10-18",
     "note": "Actus de suivi des promesses — une actu = un événement daté lié à une ou plusieurs promesses"
   },
   "actus": [
+    {
+      "id": "of-6bcba754",
+      "titre": "Bruz. Conciliateur de justice bénévole, Loïc Boisroux traite 140 dossiers par an",
+      "date": "2026-10-17",
+      "detail": "Depuis douze ans, Loïc Boisroux exerce comme conciliateur de justice bénévole à Bruz, assermenté par le premier président de la cour d'appel de Rennes. Il traite environ 140 dossiers annuels lors de permanences à l'Hôtel de Ville, deux fois par mois.",
+      "source_url": "https://www.ouest-france.fr/bretagne/bruz-35170/bruz-conciliateur-de-justice-benevole-loic-boisroux-traite-140-dossiers-par-an-84f5d940-f690-4360-b742-1e1b7fb57213",
+      "source_label": "Ouest-France",
+      "type": "presse",
+      "dossier": "D23"
+    },
+    {
+      "id": "megalis-31993deb",
+      "titre": "Educ — Convention de partenariat avec lassociation de la fondation étudiante pour la ville 2026-2027",
+      "date": "2026-10-12",
+      "detail": "La commune de Bruz signe une convention de partenariat avec la Fondation Étudiante pour la Ville pour l'année 2026-2027. Cette collaboration soutient les projets éducatifs et citoyens en faveur des jeunes bruzois et bruzoises.",
+      "source_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1212646/5d2f067d40a8e636117347682920b9960b49ed4dcfd2b76eb68e1ce3b0de2122.pdf",
+      "source_label": "Mégalis — Délibération",
+      "type": "megalis",
+      "dossier": "D10"
+    },
+    {
+      "id": "megalis-1badf3a1",
+      "titre": "Finances — RENOVATION THERMIQUE DE LHOTEL DE VILLE  Modification du marché",
+      "date": "2026-10-12",
+      "detail": "La modification du marché public concernant la rénovation thermique de l'hôtel de ville a été approuvée par le conseil municipal. Ce chantier participe à l'amélioration du patrimoine communal et aux objectifs de transition énergétique.",
+      "source_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1212657/e61f870294da683b0d15f849a5538c1ec0e309ee14791d3d0d33be610b2e265b.pdf",
+      "source_label": "Mégalis — Délibération",
+      "type": "megalis",
+      "dossier": "D05"
+    },
+    {
+      "id": "megalis-782d9f9b",
+      "titre": "Finances — Fonds de concours Rennes metropole — Amenagements promenade g prigent et av gal de gaulle",
+      "date": "2026-10-12",
+      "detail": "Bruz reçoit des fonds de concours de Rennes Métropole pour financer l'aménagement de la promenade G. Prigent et de l'avenue Général de Gaulle. Ces travaux de voirie s'inscrivent dans les projets d'aménagement urbain du mandat.",
+      "source_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1212659/686aaf84d57924b72fc4e4c36b525dba2f5d506c9aa41f51d0eb2eceac27c203.pdf",
+      "source_label": "Mégalis — Délibération",
+      "type": "megalis",
+      "dossier": "D05"
+    },
+    {
+      "id": "megalis-5c116d6f",
+      "titre": "Proces verbal du conseil municipal du 21 septembre 2026",
+      "date": "2026-10-12",
+      "detail": "Le conseil municipal de Bruz s'est réuni le 21 septembre 2026. Le procès-verbal retrace les débats et les délibérations adoptées lors de cette séance.",
+      "source_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Hors_prefecture/2026/1214339/18dcedf940269235fae1f78f6d2342a943caaaf1aa1e6fdce7df7a3fddc55ac5.pdf",
+      "source_label": "Mégalis — Acte hors préfecture",
+      "type": "megalis",
+      "dossier": "D23"
+    },
+    {
+      "id": "megalis-ded4d521",
+      "titre": "Liste des deliberations Conseil municipal du 12/10/2026",
+      "date": "2026-10-16",
+      "detail": "Le conseil municipal de Bruz a tenu une séance le 12 octobre 2026. Cette liste compile l'ensemble des délibérations adoptées lors de cette session publique.",
+      "source_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Hors_prefecture/2026/1214340/82f973c86139d0fba58afc16efa1635e832c345e31a1d4c44fa1421c93c078ff.pdf",
+      "source_label": "Mégalis — Acte hors préfecture",
+      "type": "megalis",
+      "dossier": "D23"
+    },
     {
       "id": "presse-78f7342d",
       "titre": "L'ancien maire Philippe Salmon démissionne du conseil municipal",

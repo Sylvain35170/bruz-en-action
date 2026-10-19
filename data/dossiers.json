@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-10-12",
+    "last_updated": "2026-10-18",
     "version": "3.0"
   },
   "dossiers": [
@@ -449,7 +449,7 @@
       "categorie": "Finances",
       "statut": "en_cours",
       "featured": true,
-      "last_activity": "2026-07-20",
+      "last_activity": "2026-10-12",
       "date_ouverture": "2026-06-16",
       "image": "/bruz-en-action/illus-d03-finances.webp",
       "chapeau": "Budget 2023 de Bruz : 27,3 M€ de recettes, dette quasi nulle (81 €/habitant), épargne brute à 27 %. En 2024, premier recours à l'emprunt : l'encours de dette bondit à 458 €/habitant (9,2 M€, confirmé par le CFU 2024 officiel), signe que les grands chantiers du mandat — 4e groupe scolaire (9,5 M€), rénovation de l'Hôtel de Ville (1,4 M€), ZAC Multisites — commencent à peser. Ce dossier suit les arbitrages budgétaires du mandat 2026-2032.",
@@ -716,6 +716,13 @@
       ],
       "actus_recentes": [
         {
+          "date": "2026-10-12",
+          "titre": "Conseil municipal du 12 octobre 2026 : parkings Pagnol, hôtel de ville et lycéens",
+          "detail": "Fonds de concours de 120 000 € à Rennes Métropole pour l'avenue du Général de Gaulle, versé en 2027 sur factures. La commune finance seule la promenade Geneviève Prigent (120 000 € HT), voie non transférée à la métropole. | Rénovation thermique de l'hôtel de ville : avenants aux lots 1, 5 et 9…",
+          "source_url": "https://youtu.be/P79Jsjz5xoQ",
+          "source_label": "Vidéo YouTube — Conseil municipal du lundi 12 octobre 2026"
+        },
+        {
           "date": "2026-09-21",
           "titre": "Conseil municipal de rentrée",
           "detail": "Première séance après la coupure estivale. Date annoncée par la mairie (séance ouverte au public).",
@@ -830,7 +837,7 @@
       "categorie": "Finances",
       "statut": "en_cours",
       "featured": true,
-      "last_activity": "2026-07-14",
+      "last_activity": "2026-10-12",
       "date_ouverture": "2026-06-16",
       "chapeau": "En 2024, la taxe foncière bâtie à Bruz a bondi de 3,5 points sous la mandature de Philippe Salmon. Jean-René Houssin s'est engagé à ne pas augmenter les taux. Ce dossier suit le respect de cet engagement — année après année.",
       "ce_quon_sait": [
@@ -1004,6 +1011,13 @@
       ],
       "actus_recentes": [
         {
+          "date": "2026-10-12",
+          "titre": "Conseil municipal du 12 octobre 2026 : parkings Pagnol, hôtel de ville et lycéens",
+          "detail": "Fonds de concours de 120 000 € à Rennes Métropole pour l'avenue du Général de Gaulle, versé en 2027 sur factures. La commune finance seule la promenade Geneviève Prigent (120 000 € HT), voie non transférée à la métropole. | Rénovation thermique de l'hôtel de ville : avenants aux lots 1, 5 et 9…",
+          "source_url": "https://youtu.be/P79Jsjz5xoQ",
+          "source_label": "Vidéo YouTube — Conseil municipal du lundi 12 octobre 2026"
+        },
+        {
           "date": "2026-06-18",
           "titre": "Taux 2025 confirmé à 45,34 % — données officielles DGFiP disponibles",
           "detail": "Les données DGFiP confirment que le taux 2025 est identique à 2024 — pas de hausse supplémentaire.",
@@ -1067,7 +1081,7 @@
       "categorie": "Urbanisme",
       "statut": "en_cours",
       "featured": true,
-      "last_activity": "2026-10-03",
+      "last_activity": "2026-10-12",
       "date_ouverture": "2026-06-16",
       "chapeau": "Carte interactive de Bruz, recensement des chantiers en cours (qui creuse où, jusqu'à quand) et veille sur les projets d'urbanisme qui ne rentrent pas déjà dans un dossier dédié (hors ZAC Multisites, voir D02, hors Trambus T4, voir D01) : évolutions de quartier, permis groupés, équipements publics annoncés, travaux de voirie.",
       "ce_quon_sait": [
@@ -1174,6 +1188,27 @@
       ],
       "lien_externe": "/bruz-en-action/carte",
       "actus_recentes": [
+        {
+          "date": "2026-10-12",
+          "titre": "Conseil municipal du 12 octobre 2026 : parkings Pagnol, hôtel de ville et lycéens",
+          "detail": "Fonds de concours de 120 000 € à Rennes Métropole pour l'avenue du Général de Gaulle, versé en 2027 sur factures. La commune finance seule la promenade Geneviève Prigent (120 000 € HT), voie non transférée à la métropole. | Rénovation thermique de l'hôtel de ville : avenants aux lots 1, 5 et 9…",
+          "source_url": "https://youtu.be/P79Jsjz5xoQ",
+          "source_label": "Vidéo YouTube — Conseil municipal du lundi 12 octobre 2026"
+        },
+        {
+          "date": "2026-10-12",
+          "titre": "Finances — Fonds de concours Rennes metropole — Amenagements promenade g prigent et av gal de gaulle",
+          "detail": "Bruz reçoit des fonds de concours de Rennes Métropole pour financer l'aménagement de la promenade G. Prigent et de l'avenue Général de Gaulle. Ces travaux de voirie s'inscrivent dans les projets d'aménagement urbain du mandat.",
+          "source_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1212659/686aaf84d57924b72fc4e4c36b525dba2f5d506c9aa41f51d0eb2eceac27c203.pdf",
+          "source_label": "Mégalis — Délibération"
+        },
+        {
+          "date": "2026-10-12",
+          "titre": "Finances — RENOVATION THERMIQUE DE LHOTEL DE VILLE  Modification du marché",
+          "detail": "La modification du marché public concernant la rénovation thermique de l'hôtel de ville a été approuvée par le conseil municipal. Ce chantier participe à l'amélioration du patrimoine communal et aux objectifs de transition énergétique.",
+          "source_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1212657/e61f870294da683b0d15f849a5538c1ec0e309ee14791d3d0d33be610b2e265b.pdf",
+          "source_label": "Mégalis — Délibération"
+        },
         {
           "date": "2026-10-03",
           "titre": "Le Réseau express vélo Rennes–Bruz (8,6 km) inauguré le 3 octobre",
@@ -1293,20 +1328,6 @@
           "titre": "Travaux avenue du Général de Gaulle — jusqu'au printemps 2027",
           "detail": "Réseaux eau/électricité + voirie. Circulation maintenue en alternat.",
           "source_url": "https://www.ville-bruz.fr/mon-quotidien/travaux-et-demandes-dintervention/travaux-en-cours/",
-          "source_label": "Mairie de Bruz"
-        },
-        {
-          "date": "2026-04-08",
-          "titre": "Délégations, indemnités et premières décisions",
-          "detail": "12 conseillers délégués nommés : Patrick Roullé (mobilités), Carol Léost (animation), Jérôme de Gayardon (voirie/propreté), Philippe Dohollou (habitat/urbanisme), Thomas de la Rivière (patrimoine/travaux), Huguette Dallemagne (environnement), Marie Demaret (médiathèque/culture), Vincent Benjamin (ha",
-          "source_url": "https://www.youtube.com/playlist?list=PLnSe2hJFinqpupninWlKBHSmzmwLW-8i7",
-          "source_label": "Audio CM sur YouTube"
-        },
-        {
-          "date": "2025-02-01",
-          "titre": "Boulevard Pasteur : chantier pluriannuel en cours (min. 3 ans)",
-          "detail": "Remplacement du réseau d'assainissement amianté par Rennes Métropole. Phase actuelle : entre rond-point de Laillé et rue Debussy.",
-          "source_url": "https://www.ville-bruz.fr/wp-content/uploads/2025/03/Plaquette-Amenagement-du-boulevard-Louis-Pasteur.pdf",
           "source_label": "Mairie de Bruz"
         }
       ],
@@ -1768,7 +1789,7 @@
       "categorie": "Éducation",
       "statut": "en_cours",
       "featured": true,
-      "last_activity": "2026-07-06",
+      "last_activity": "2026-10-12",
       "date_ouverture": "2026-06-18",
       "chapeau": "La ZAC Multisites prévoit 1 700 nouveaux logements. Si chaque logement accueille en moyenne 0,5 enfant scolarisable, c'est 850 élèves supplémentaires à absorber. Les écoles actuelles ont-elles la capacité ? Ce dossier suit toute l'offre scolaire du mandat — primaire, collège, lycée, public et privé — et qui décide de quoi entre la commune, l'État, le Département et la Région.",
       "ce_quon_sait": [
@@ -1866,6 +1887,13 @@
         }
       ],
       "actus_recentes": [
+        {
+          "date": "2026-10-12",
+          "titre": "Educ — Convention de partenariat avec lassociation de la fondation étudiante pour la ville 2026-2027",
+          "detail": "La commune de Bruz signe une convention de partenariat avec la Fondation Étudiante pour la Ville pour l'année 2026-2027. Cette collaboration soutient les projets éducatifs et citoyens en faveur des jeunes bruzois et bruzoises.",
+          "source_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1212646/5d2f067d40a8e636117347682920b9960b49ed4dcfd2b76eb68e1ce3b0de2122.pdf",
+          "source_label": "Mégalis — Délibération"
+        },
         {
           "date": "2026-07-06",
           "titre": "« Comment ouvrir sans enfants ? » À Bruz, le défi de la nouvelle école à 11 millions d'euros interroge - Ouest-France",
@@ -2561,7 +2589,7 @@
       "categorie": "Urbanisme",
       "statut": "en_cours",
       "featured": true,
-      "last_activity": "2026-09-23",
+      "last_activity": "2026-10-12",
       "date_ouverture": "2026-07-02",
       "chapeau": "Ker Lann, ce n'est pas que le terminus du T4 ou un secteur de la ZAC Multisites : c'est un campus de 165 hectares qui accueille 17 établissements et environ 6 000 étudiants sur le territoire de Bruz. Ce dossier suit l'évolution du campus et l'enjeu du logement étudiant, distinct des dossiers T4 (D01) et ZAC Multisites (D02) qui traitent Ker Lann sous l'angle transport et urbanisme général.",
       "ce_quon_sait": [
@@ -2627,6 +2655,13 @@
         }
       ],
       "actus_recentes": [
+        {
+          "date": "2026-10-12",
+          "titre": "Conseil municipal du 12 octobre 2026 : parkings Pagnol, hôtel de ville et lycéens",
+          "detail": "Fonds de concours de 120 000 € à Rennes Métropole pour l'avenue du Général de Gaulle, versé en 2027 sur factures. La commune finance seule la promenade Geneviève Prigent (120 000 € HT), voie non transférée à la métropole. | Rénovation thermique de l'hôtel de ville : avenants aux lots 1, 5 et 9…",
+          "source_url": "https://youtu.be/P79Jsjz5xoQ",
+          "source_label": "Vidéo YouTube — Conseil municipal du lundi 12 octobre 2026"
+        },
         {
           "date": "2026-09-23",
           "titre": "L'ENS Rennes ouvre un parcours doctoral en technologies quantiques à Ker Lann",
@@ -2928,7 +2963,7 @@
       "categorie": "Institutions",
       "statut": "en_cours",
       "featured": true,
-      "last_activity": "2026-10-08",
+      "last_activity": "2026-10-17",
       "date_ouverture": "2026-07-17",
       "chapeau": "« Renforcer une véritable démocratie locale » est un pilier à part entière du programme municipal 2026-2032 : élus référents par quartier, réunions régulières, Conseil municipal des jeunes, Conseil des sages, comptes-rendus clairs des décisions. Cinq engagements, mesurables sur tout le mandat. Ce dossier suit leur mise en œuvre concrète.",
       "ce_quon_sait": [
@@ -2995,6 +3030,27 @@
         }
       ],
       "actus_recentes": [
+        {
+          "date": "2026-10-17",
+          "titre": "Bruz. Conciliateur de justice bénévole, Loïc Boisroux traite 140 dossiers par an",
+          "detail": "Depuis douze ans, Loïc Boisroux exerce comme conciliateur de justice bénévole à Bruz, assermenté par le premier président de la cour d'appel de Rennes. Il traite environ 140 dossiers annuels lors de permanences à l'Hôtel de Ville, deux fois par mois.",
+          "source_url": "https://www.ouest-france.fr/bretagne/bruz-35170/bruz-conciliateur-de-justice-benevole-loic-boisroux-traite-140-dossiers-par-an-84f5d940-f690-4360-b742-1e1b7fb57213",
+          "source_label": "Ouest-France"
+        },
+        {
+          "date": "2026-10-16",
+          "titre": "Liste des deliberations Conseil municipal du 12/10/2026",
+          "detail": "Le conseil municipal de Bruz a tenu une séance le 12 octobre 2026. Cette liste compile l'ensemble des délibérations adoptées lors de cette session publique.",
+          "source_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Hors_prefecture/2026/1214340/82f973c86139d0fba58afc16efa1635e832c345e31a1d4c44fa1421c93c078ff.pdf",
+          "source_label": "Mégalis — Acte hors préfecture"
+        },
+        {
+          "date": "2026-10-12",
+          "titre": "Proces verbal du conseil municipal du 21 septembre 2026",
+          "detail": "Le conseil municipal de Bruz s'est réuni le 21 septembre 2026. Le procès-verbal retrace les débats et les délibérations adoptées lors de cette séance.",
+          "source_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Hors_prefecture/2026/1214339/18dcedf940269235fae1f78f6d2342a943caaaf1aa1e6fdce7df7a3fddc55ac5.pdf",
+          "source_label": "Mégalis — Acte hors préfecture"
+        },
         {
           "date": "2026-10-08",
           "titre": "L'ancien maire Philippe Salmon démissionne du conseil municipal",
