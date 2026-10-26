@@ -1198,8 +1198,8 @@
         },
         {
           "date": "2026-10-12",
-          "titre": "Finances — Fonds de concours Rennes metropole — Amenagements promenade g prigent et av gal de gaulle",
-          "detail": "Bruz reçoit des fonds de concours de Rennes Métropole pour financer l'aménagement de la promenade G. Prigent et de l'avenue Général de Gaulle. Ces travaux de voirie s'inscrivent dans les projets d'aménagement urbain du mandat.",
+          "titre": "Fonds de concours de Bruz à Rennes Métropole pour la promenade Geneviève-Prigent et l'avenue du Général-de-Gaulle",
+          "detail": "Le conseil municipal autorise à l'unanimité le versement d'un fonds de concours de 120 000 € à Rennes Métropole, qui réalise les travaux de la promenade Geneviève-Prigent (120 000 €) et de l'avenue du Général-de-Gaulle (300 000 €). Versement en 2027 sur état des dépenses réelles, crédits inscrits au budget 2027.",
           "source_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1212659/686aaf84d57924b72fc4e4c36b525dba2f5d506c9aa41f51d0eb2eceac27c203.pdf",
           "source_label": "Mégalis — Délibération"
         },
@@ -2293,6 +2293,11 @@
           "date": "2026-07-10",
           "description": "Deuxième activation de vigilance rouge canicule de l'été (Météo France, Ille-et-Vilaine) — mesures complémentaires : interdiction feux d'artifice particuliers, interdiction alcool voie publique, brûlage végétaux interdit ; vigilance sécheresse déclenchée en parallèle",
           "source_url": "https://www.ville-bruz.fr/actualites/vigilance-canicule/"
+        },
+        {
+          "date": "2026-10-12",
+          "description": "Fonds de concours de 120 000 € voté à l'unanimité pour Rennes Métropole, qui aménage la promenade Geneviève-Prigent (120 000 €, où se fait aussi la végétalisation de l'allée) et l'avenue du Général-de-Gaulle (300 000 €) ; versement en 2027",
+          "source_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1212659/686aaf84d57924b72fc4e4c36b525dba2f5d506c9aa41f51d0eb2eceac27c203.pdf"
         }
       ],
       "ce_quon_suit": [
