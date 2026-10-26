@@ -5,6 +5,16 @@
   },
   "actus": [
     {
+      "id": "of-b3937733",
+      "titre": "Bruz. La doyenne de 104 ans au repas des aînés",
+      "date": "2026-10-20",
+      "detail": "Une habitante de Bruz, âgée de 104 ans, a participé au repas des aînés organisé par la commune. Cet événement illustre l'engagement de la ville envers ses résidents les plus âgés et la solidarité intergénérationnelle.",
+      "source_url": "https://www.ouest-france.fr/bretagne/bruz-35170/bruz-la-doyenne-de-104-ans-au-repas-des-aines-7c4e3ed8-4eff-4468-8d4e-60944838b65d",
+      "source_label": "Ouest-France",
+      "type": "presse",
+      "dossier": "D25"
+    },
+    {
       "id": "mairie-a09179f7",
       "titre": "Restriction d'eau : dérogation temporaire pour la Toussaint",
       "date": "2026-10-22",
