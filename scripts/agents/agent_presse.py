@@ -206,6 +206,12 @@ def parse_rss(content: bytes, label: str) -> list[dict]:
             except Exception:
                 date_pub = today()
             desc = item.findtext("description", "").strip()
+            # Google News donne l'éditeur dans <source> et le colle en suffixe du
+            # titre (« … - Ouest-France ») : sans ça, source_label valait la
+            # requête de veille (« CM Bruz ») et le suffixe restait publié (08/09).
+            editeur = (item.findtext("source") or "").strip()
+            if editeur and titre.endswith(f" - {editeur}"):
+                titre = titre[: -len(f" - {editeur}")].strip()
             if not titre or not url:
                 continue
             # Filtre 1 : fenêtre glissante 7 jours
@@ -232,7 +238,8 @@ def parse_rss(content: bytes, label: str) -> list[dict]:
                 "id": stable_id("presse", url),
                 "titre": titre,
                 "source_url": final_url,
-                "source_label": label,
+                "source_label": editeur or label,
+                "requete_veille": label,
                 "date": date_pub[:10],
                 "detail": desc[:300],
                 "type": "presse",

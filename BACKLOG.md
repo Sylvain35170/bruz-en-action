@@ -60,7 +60,6 @@
 
 ## 🟡 À faire — Technique
 
-- [ ] **`agent_presse` — `source_label`/titre mal posés sur les items Google News** : l'agent pose `source_label` d'après la requête de veille (« CM Bruz », « Équipements Bruz ») au lieu de l'éditeur, et garde le suffixe « - ouest-france.fr » dans le titre. Constaté en passant le 08/09, pas encore corrigé (distinct du bug de résolution d'URL, corrigé le 14/09 — voir git log).
 - [ ] **CRs réunions** — réimporter les docx (encodage zip raté sur les accents) — fichiers source à relocaliser
 - [ ] **Actus** — enrichir au fil des décisions
 
