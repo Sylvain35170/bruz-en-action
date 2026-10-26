@@ -460,3 +460,88 @@ fonctionnait en test isolé — ce qui masquait le vrai bug, l'absence de trace.
 liste vide) doit logger **à la source**, pas compter sur un `except` qui ne couvre que les
 exceptions. Ce trou d'observabilité ne se voit qu'en cherchant activement les traces
 attendues et en constatant leur absence — jamais en relisant le code.
+### 2026-09-08 — une recette de contournement se périme sans prévenir (Google News, tags agenda, palette)
+→ dispatch: local:bruz-en-action
+
+**Résolution des liens Google News RSS.** Le format `rss/articles/CBMi…` est un protobuf
+opaque : seule Google peut le déplier, via `batchexecute` (jetons `data-n-a-sg` /
+`data-n-a-ts` lus dans le HTML de la page, rejoués en POST). La recette notée le 01/09
+utilisait le cookie `CONSENT=YES+…` — **il ne franchit plus le mur de consentement**
+(on retombe sur `consent.google.com`, la page ne porte alors aucun jeton et la résolution
+échoue en silence). Le cookie qui marche au 08/09 est **`SOCS`**. Intégré dans
+`agent_presse._resolve_url()`, qui conserve le lien brut en cas d'échec plutôt que de
+perdre la source (cf. `presse-f2c23dbc`, jamais retrouvé). ⚠️ Google throttle vite : après
+quelques requêtes, GET comme POST tombent en `ReadTimeout` — ce n'est pas un bug de code,
+c'est le débit. Ne pas « corriger » un timeout en refaisant la logique.
+
+**Le bac de secours absorbe, il ne prévient pas.** `THEMES_AGENDA` (`app/utils.ts`) range
+les tags mairie inconnus dans « Autres rendez-vous » : le 08/09, **7 tags n'étaient mappés
+nulle part et 25 événements y étaient tombés** sans que rien ne le signale — le BACKLOG
+affirmait encore « les 15 tags actuels sont tous mappés ». Même famille dans
+`lib/categories.ts` : la catégorie `Institutions` n'y figurait pas, donc **D23 tombait sur
+le gris de repli depuis sa création**. ➡️ Un repli silencieux exige un **inventaire
+périodique** (tags présents dans les données vs tags mappés dans le code), jamais l'attente
+d'un signal — par construction, il n'en émettra aucun.
+
+### 2026-09-13 — Un échec par valeur de retour (`None`) peut ne jamais être loggé
+*(2026-09-14)* `agent_presse._resolve_gnews()` (bruz-en-action) retournait `None` sur échec
+sans lever d'exception ; l'appelant ne loggait que dans son `except`. Résultat : zéro trace
+d'échec dans tout l'historique du log malgré des échecs réels documentés. Le code
+fonctionnait en test isolé — ce qui masquait le vrai bug, l'absence de trace.
+
+➡️ Une fonction dont le chemin d'échec passe par une valeur de retour (`None`, `False`,
+liste vide) doit logger **à la source**, pas compter sur un `except` qui ne couvre que les
+exceptions. Ce trou d'observabilité ne se voit qu'en cherchant activement les traces
+attendues et en constatant leur absence — jamais en relisant le code.
+### 2026-09-14 — 1. `agent_bruz_mag` — l'heuristique par lignes en majuscules ne survit pas à une mise en page en colonnes
+→ dispatch: local:bruz-en-action
+
+`points_cles` était extrait des PDF (Bruz Mag / Semaine à Bruz) en repérant les lignes
+tout en majuscules — cassé structurellement par la mise en page en colonnes (fragments
+type « Découverte De Bruz 07 50 84 53 14 »), corrigé à la main à chaque numéro depuis le
+lancement. Remplacé par un résumé via le CLI `claude` (même pattern que `agent_select` /
+`agent_enrichissement_cm`, cf. piège 6c déjà connu de ce projet). Testé en direct sur le
+n°860 : 8 points clés propres et pertinents. Repli en liste vide + WARN si le CLI échoue,
+plutôt que publier des fragments qui donnent un faux sentiment de complétude.
+
+### 2026-09-14 — agent_bruz_mag : l'heuristique par majuscules ne survit pas aux colonnes du PDF
+→ dispatch: local:bruz-en-action
+
+`points_cles` était extrait en repérant les lignes tout en majuscules — cassé par la mise
+en page en colonnes (fragments type « Découverte De Bruz 07 50 84 53 14 »), corrigé à la
+main à chaque numéro. Remplacé par un résumé via le CLI `claude` (même pattern que
+`agent_select`/`agent_enrichissement_cm`). Testé sur le n°860 : 8 points propres. Repli en
+liste vide + WARN si le CLI échoue, plutôt que des fragments illisibles.
+
+### 2026-09-14 — agent_presse : un échec par `None` ne loggait jamais rien
+→ dispatch: local:bruz-en-action
+
+`_resolve_gnews()` retournait `None` sur échec (mur de consentement, jetons absents, pas de
+`garturlres`) sans lever d'exception. L'appelant (`_resolve_url`) ne loggait que dans son
+`except` — zéro trace d'échec dans tout l'historique du log malgré des échecs réels
+(`presse-d9faf61e`, `presse-d09063fd`). La résolution elle-même fonctionne (revalidée en
+direct le 14/09) : le vrai bug était l'absence de logging, pas la logique batchexecute.
+Fix : WARN à chaque point de sortie en échec de `_resolve_gnews`.
+
+### 2026-09-13 — Vérifier le site déployé avec les URL en `.html`
+→ dispatch: local:bruz-en-action
+
+`curl …/dossiers/D23/` (barre oblique finale) renvoie une page sans le contenu attendu ;
+`…/dossiers/D23.html` le contient. Une vérification par grep sur la mauvaise forme conclut à
+tort qu'une actu est absente. Les bulletins s'affichent sur `/publications.html`, pas sur
+`/actualites.html`.
+
+### 2026-09-13 — Une actu acceptée est publiée telle quelle, défauts compris
+→ dispatch: local:bruz-en-action
+
+`review_proposals.py --accept` recopie la proposition sans retouche (`actus.json`), puis
+`agent_dossiers` la duplique (`dossiers.json`). Vu sur `presse-c7455728` : titre suffixé
+« - ouest-france.fr », `source_label` = requête de veille (« CM Bruz ») au lieu de l'éditeur,
+résumé extrapolé (« révèle les tensions… »).
+➡️ Relire titre/source/`detail` avant le build ; corriger dans **les deux** fichiers.
+
+### 2026-09-13 — Vérifier le déployé avec les URL en `.html`
+→ dispatch: local:bruz-en-action
+
+`curl …/dossiers/D23/` ne contient pas le contenu attendu, `…/dossiers/D23.html` oui — un grep
+sur la mauvaise forme conclut à tort à une absence. Bulletins : `/publications.html`.

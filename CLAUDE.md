@@ -197,7 +197,7 @@ jamais déclencher `flow.run_local_server()` sous launchd, cf. incident 6 j du 2
 ---
 
 ## Pièges connus
-### 2026-09-13 — Un échec par valeur de retour (`None`) peut ne jamais être loggé
+### 2026-09-27 — Un échec par valeur de retour (`None`) peut ne jamais être loggé
 *(2026-09-14)* `agent_presse._resolve_gnews()` (bruz-en-action) retournait `None` sur échec
 sans lever d'exception ; l'appelant ne loggait que dans son `except`. Résultat : zéro trace
 d'échec dans tout l'historique du log malgré des échecs réels documentés. Le code
@@ -207,77 +207,28 @@ fonctionnait en test isolé — ce qui masquait le vrai bug, l'absence de trace.
 liste vide) doit logger **à la source**, pas compter sur un `except` qui ne couvre que les
 exceptions. Ce trou d'observabilité ne se voit qu'en cherchant activement les traces
 attendues et en constatant leur absence — jamais en relisant le code.
-### 2026-09-14 — 1. `agent_bruz_mag` — l'heuristique par lignes en majuscules ne survit pas à une mise en page en colonnes
+### 2026-10-12 — Google News : URL entourée de `\"`, jetons anciens morts
 → dispatch: local:bruz-en-action
 
-`points_cles` était extrait des PDF (Bruz Mag / Semaine à Bruz) en repérant les lignes
-tout en majuscules — cassé structurellement par la mise en page en colonnes (fragments
-type « Découverte De Bruz 07 50 84 53 14 »), corrigé à la main à chaque numéro depuis le
-lancement. Remplacé par un résumé via le CLI `claude` (même pattern que `agent_select` /
-`agent_enrichissement_cm`, cf. piège 6c déjà connu de ce projet). Testé en direct sur le
-n°860 : 8 points clés propres et pertinents. Repli en liste vide + WARN si le CLI échoue,
-plutôt que publier des fragments qui donnent un faux sentiment de complétude.
+`batchexecute` renvoie l'URL dans du JSON-dans-JSON (`\"https://…\"`) : exiger des guillemets
+nus ne matchait jamais, chaque résolution échouait (« URL illisible »). Corrigé dans
+`_resolve_gnews`. Les jetons de plus de 2-3 mois renvoient 400 : irrécupérables par résolution.
 
-### 2026-09-14 — agent_bruz_mag : l'heuristique par majuscules ne survit pas aux colonnes du PDF
+### 2026-10-12 — Ouest-France lisible en entier via Playwright + cookies Chrome
 → dispatch: local:bruz-en-action
 
-`points_cles` était extrait en repérant les lignes tout en majuscules — cassé par la mise
-en page en colonnes (fragments type « Découverte De Bruz 07 50 84 53 14 »), corrigé à la
-main à chaque numéro. Remplacé par un résumé via le CLI `claude` (même pattern que
-`agent_select`/`agent_enrichissement_cm`). Testé sur le n°860 : 8 points propres. Repli en
-liste vide + WARN si le CLI échoue, plutôt que des fragments illisibles.
+`channel="chrome"` + `agent_ouestfrance._get_chrome_cookies()` : article complet en 200. Utiliser
+`wait_until="commit"` + `wait_for_selector('article p')` (`domcontentloaded` > 25 s parfois).
+Relire ainsi toute actu OF avant publication plutôt que de publier sur titre + extrait.
 
-### 2026-09-14 — agent_presse : un échec par `None` ne loggait jamais rien
+### 2026-10-12 — Copies d'actus dans dossiers.json : pas d'`id`
 → dispatch: local:bruz-en-action
 
-`_resolve_gnews()` retournait `None` sur échec (mur de consentement, jetons absents, pas de
-`garturlres`) sans lever d'exception. L'appelant (`_resolve_url`) ne loggait que dans son
-`except` — zéro trace d'échec dans tout l'historique du log malgré des échecs réels
-(`presse-d9faf61e`, `presse-d09063fd`). La résolution elle-même fonctionne (revalidée en
-direct le 14/09) : le vrai bug était l'absence de logging, pas la logique batchexecute.
-Fix : WARN à chaque point de sortie en échec de `_resolve_gnews`.
+Une actu corrigée après `agent_dossiers` se propage dans `dossiers.json` par `source_url`.
+### 2026-10-19 — Veille : venv et réseau
+- Lancer les scripts avec `~/.venvs/bruz-en-action/bin/python`, pas `python3` : le système n'a pas `google_auth_oauthlib` (Signalements/Mailer en erreur, faux symptôme de panne Gmail).
+- Erreur DNS sur `oauth2.googleapis.com` pendant un run = Mac en veille/éteint. Rattrapage : relancer `run_agents.py` (il ne pousse rien avant la revue).
 
-### 2026-09-13 — Vérifier le site déployé avec les URL en `.html`
-→ dispatch: local:bruz-en-action
-
-`curl …/dossiers/D23/` (barre oblique finale) renvoie une page sans le contenu attendu ;
-`…/dossiers/D23.html` le contient. Une vérification par grep sur la mauvaise forme conclut à
-tort qu'une actu est absente. Les bulletins s'affichent sur `/publications.html`, pas sur
-`/actualites.html`.
-
-### 2026-09-13 — Une actu acceptée est publiée telle quelle, défauts compris
-→ dispatch: local:bruz-en-action
-
-`review_proposals.py --accept` recopie la proposition sans retouche (`actus.json`), puis
-`agent_dossiers` la duplique (`dossiers.json`). Vu sur `presse-c7455728` : titre suffixé
-« - ouest-france.fr », `source_label` = requête de veille (« CM Bruz ») au lieu de l'éditeur,
-résumé extrapolé (« révèle les tensions… »).
-➡️ Relire titre/source/`detail` avant le build ; corriger dans **les deux** fichiers.
-
-### 2026-09-13 — Vérifier le déployé avec les URL en `.html`
-→ dispatch: local:bruz-en-action
-
-`curl …/dossiers/D23/` ne contient pas le contenu attendu, `…/dossiers/D23.html` oui — un grep
-sur la mauvaise forme conclut à tort à une absence. Bulletins : `/publications.html`.
-### 2026-09-08 — une recette de contournement se périme sans prévenir (Google News, tags agenda, palette)
-→ dispatch: local:bruz-en-action
-
-**Résolution des liens Google News RSS.** Le format `rss/articles/CBMi…` est un protobuf
-opaque : seule Google peut le déplier, via `batchexecute` (jetons `data-n-a-sg` /
-`data-n-a-ts` lus dans le HTML de la page, rejoués en POST). La recette notée le 01/09
-utilisait le cookie `CONSENT=YES+…` — **il ne franchit plus le mur de consentement**
-(on retombe sur `consent.google.com`, la page ne porte alors aucun jeton et la résolution
-échoue en silence). Le cookie qui marche au 08/09 est **`SOCS`**. Intégré dans
-`agent_presse._resolve_url()`, qui conserve le lien brut en cas d'échec plutôt que de
-perdre la source (cf. `presse-f2c23dbc`, jamais retrouvé). ⚠️ Google throttle vite : après
-quelques requêtes, GET comme POST tombent en `ReadTimeout` — ce n'est pas un bug de code,
-c'est le débit. Ne pas « corriger » un timeout en refaisant la logique.
-
-**Le bac de secours absorbe, il ne prévient pas.** `THEMES_AGENDA` (`app/utils.ts`) range
-les tags mairie inconnus dans « Autres rendez-vous » : le 08/09, **7 tags n'étaient mappés
-nulle part et 25 événements y étaient tombés** sans que rien ne le signale — le BACKLOG
-affirmait encore « les 15 tags actuels sont tous mappés ». Même famille dans
-`lib/categories.ts` : la catégorie `Institutions` n'y figurait pas, donc **D23 tombait sur
-le gris de repli depuis sa création**. ➡️ Un repli silencieux exige un **inventaire
-périodique** (tags présents dans les données vs tags mappés dans le code), jamais l'attente
-d'un signal — par construction, il n'en émettra aucun.
+### 2026-10-26 — CLI `claude` : l'erreur sort sur stdout ; bulletins hors des pages du site
+- Déconnecté, le CLI écrit « Not logged in · Please run /login » sur **stdout**, rien sur stderr. Les agents ne loggaient que stderr → 4 jours d'erreurs vides (20-23/10, points clés du n°863 perdus). Corrigé dans `agent_bruz_mag`, `agent_select`, `agent_enrichissement_cm` ; remède = `/login` dans un terminal.
+- Le `°` encodé (`%C2%B0`) n'empêche pas le téléchargement (n°863 OK) : le PDF du n°861 a été **retiré** par la mairie (`url_expiree`). Le n°862 n'était lié que par sa une en PNG et nommé `n°-862` (tiret) : un 404 ou un numéro manquant se vérifie dans la médiathèque WordPress (`/wp-json/wp/v2/media?search=…`) et par variantes de nom, avant de conclure à un bug d'encodage.
