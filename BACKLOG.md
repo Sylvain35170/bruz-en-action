@@ -15,7 +15,6 @@
 
 ## 🟡 À faire — Agents de veille
 
-- [ ] **Semaine à Bruz n°861 et n°862** (constat 26/10) : le PDF du n°861 a été **retiré** par la mairie (absent de la médiathèque WordPress ; l'encodage `%C2%B0` n'y est pour rien, le n°863 passe encodé) — nos 8 points clés restent, mais le lien « Télécharger le PDF » est mort. Le n°862 n'a été publié qu'en **PNG** (`Semaine-a-Bruz-n°-862-….png`), donc absent de `bulletins.json`. À trancher : marquer 861 `_expiree`, et faire accepter les PNG à l'agent ou ajouter le 862 à la main. Rappel : `launchd` doit utiliser le venv `~/.venvs/bruz-en-action/`.
 - [ ] **CM du 12/10 — suivre les décisions** : publiés le 18/10 (liste des délibérations, PV du 21/09, fonds de concours Prigent/de Gaulle, marché rénovation thermique, convention Fondation étudiante). Rejetés : cession parking Pagnol, décisions du maire, CST, **postes (tableau des effectifs — signal politique possible, relire le PDF si besoin)**. Reste : lier le fonds de concours à la végétalisation D13.
 
 - [ ] **Vérifier en conditions réelles que `sylv.bertrand@gmail.com` reçoit bien les signalements** (consentement OAuth fait le 05/09, `token.json` créé — reste ce test) : s'envoyer un email de test via le bouton "Signaler" du site déployé, pas seulement relire le code. Commande : `~/.venvs/bruz-en-action/bin/python3 scripts/agents/agent_signalements.py --setup` — utiliser le python du venv dédié, pas le `python3` système (sinon `ModuleNotFoundError: google_auth_oauthlib`).

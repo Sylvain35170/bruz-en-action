@@ -29,6 +29,28 @@
       "type": "semaine_bruz"
     },
     {
+      "id": "SAB-862",
+      "date": "2026-10-08",
+      "titre": "Semaine à Bruz n°862 — du 8 au 22 octobre 2026",
+      "points_cles": [
+        "Conseil municipal lundi 12 octobre à 19h à l'Hôtel de Ville, ouvert au public",
+        "Collecte des déchets : recyclables mercredi 21 octobre, ordures ménagères vendredis 9 et 23 octobre",
+        "Crise sécheresse en Ille-et-Vilaine : restrictions d'eau en vigueur, économies obligatoires",
+        "Semaine Bleue : géocaching le 10 octobre et balade en calèche le 13 octobre pour les aînés et enfants",
+        "Marché bio du 13 octobre déplacé à la halle Pagnol en raison de travaux place du Docteur Joly",
+        "Festival Mortel : programmation culturelle autour de la mort d'octobre à décembre (spectacles, ateliers, cinéma, rencontres)",
+        "Rencontres pour l'emploi mardi 13 octobre : entreprises locales et organismes d'accompagnement recrutent",
+        "Travaux en cours : avenue Général de Gaulle jusqu'au 13 novembre, boulevard Louis Pasteur jusqu'à fin octobre"
+      ],
+      "sources": [
+        {
+          "label": "Télécharger le PDF",
+          "url": "https://www.ville-bruz.fr/wp-content/uploads/2026/10/Semaine-a-Bruz-n°-862-du-8-au-22-octobre-2026.pdf"
+        }
+      ],
+      "type": "semaine_bruz"
+    },
+    {
       "id": "SAB-861",
       "date": "2026-09-24",
       "titre": "Semaine à Bruz n°861 — du 24 septembre au 8 octobre 2026",
@@ -45,7 +67,8 @@
       "sources": [
         {
           "label": "Télécharger le PDF",
-          "url": "https://www.ville-bruz.fr/wp-content/uploads/2026/09/Semaine-a-Bruz-n°861-du-24-septembre-au-8-octobre-2026.pdf"
+          "url": "https://www.ville-bruz.fr/wp-content/uploads/2026/09/Semaine-a-Bruz-n°861-du-24-septembre-au-8-octobre-2026.pdf",
+          "url_expiree": true
         }
       ],
       "type": "semaine_bruz"

@@ -75,6 +75,7 @@ export default function Publications() {
             {bulletins.map(b => {
               const style = TYPE_STYLE[b.type] ?? TYPE_STYLE.bruz_mag;
               const pdfUrl = b.sources?.[0]?.url;
+              const pdfExpire = (b.sources?.[0] as { url_expiree?: boolean } | undefined)?.url_expiree;
               return (
                 <div key={b.id} style={{
                   background: "#fff", border: "1px solid #e2e8f0", borderRadius: 12,
@@ -97,7 +98,10 @@ export default function Publications() {
                       ))}
                     </ul>
                   )}
-                  {pdfUrl && (
+                  {pdfUrl && pdfExpire && (
+                    <span style={{ fontSize: 12, color: "#94a3b8" }}>PDF retiré par la mairie</span>
+                  )}
+                  {pdfUrl && !pdfExpire && (
                     <a href={pdfUrl} target="_blank" rel="noopener noreferrer"
                       style={{ fontSize: 12, fontWeight: 600, color: "#2563eb", textDecoration: "none" }}>
                       Télécharger le PDF ↗

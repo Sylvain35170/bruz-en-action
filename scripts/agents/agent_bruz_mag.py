@@ -60,10 +60,10 @@ SOURCES_PRESSE = [
 ]
 
 # Pattern : Bruz-Mag-n°260-de-mai-juin-2026.pdf
-MAG_PATTERN = re.compile(r"[Bb]ruz.?[Mm]ag.?n[°o]?(\d+)", re.I)
+MAG_PATTERN = re.compile(r"[Bb]ruz.?[Mm]ag.?n[°o]?[-_ ]?(\d+)", re.I)
 
-# Pattern : Semaine-a-Bruz-n°856-du-11-au-25-juin-2026.pdf
-SEMAINE_PATTERN = re.compile(r"[Ss]emaine.?[àa].?[Bb]ruz.?n[°o]?(\d+)", re.I)
+# Pattern : Semaine-a-Bruz-n°856-du-11-au-25-juin-2026.pdf (et « n°-862 », tiret en plus vu le 26/10)
+SEMAINE_PATTERN = re.compile(r"[Ss]emaine.?[àa].?[Bb]ruz.?n[°o]?[-_ ]?(\d+)", re.I)
 
 MOIS = {
     "janvier": 1, "fevrier": 2, "février": 2, "mars": 3, "avril": 4, "mai": 5,
@@ -93,7 +93,7 @@ def titre_et_date(url: str, prefixe: str, num: int) -> tuple[str, str | None]:
         (titre, date_iso) — date_iso vaut None si la période est illisible.
     """
     slug = re.sub(r"\.pdf$", "", unquote(url.rsplit("/", 1)[-1]), flags=re.I)
-    m = re.search(rf"n[°o]?{num}[-_ ]?(.*)$", slug, re.I)
+    m = re.search(rf"n[°o]?[-_ ]?{num}[-_ ]?(.*)$", slug, re.I)
     tokens = [t for t in re.split(r"[-_ ]+", m.group(1) if m else "") if t]
     while tokens and tokens[0].lower() in ("de", "des"):  # « de mai-juin » → « mai-juin » ; on garde « du 27… »
         tokens.pop(0)
@@ -126,18 +126,46 @@ def titre_et_date(url: str, prefixe: str, num: int) -> tuple[str, str | None]:
     return titre, date_iso
 
 
+def _pdf_href(href: str) -> str | None:
+    """URL du PDF visé par un lien : le lien lui-même, ou le PDF de même nom
+    quand la page ne pointe que vers l'image de la une.
+
+    Le n°862 (oct. 2026) n'était lié sur ville-bruz.fr que par sa une en PNG,
+    alors que le PDF complet existait au même chemin. On n'exploite jamais le
+    PNG lui-même : une seule page (ou une vignette 299×424) donnerait des
+    points clés présentés comme ceux du bulletin entier. Si le PDF dérivé
+    n'existe pas, le téléchargement échoue et le numéro est simplement ignoré.
+    """
+    if href.lower().endswith(".pdf"):
+        return href
+    if href.lower().endswith(".png"):
+        return re.sub(r"(-\d+x\d+)?\.png$", ".pdf", href, flags=re.I)  # retire le suffixe de vignette WordPress
+    return None
+
+
+def _pdf_d_abord(liens: list[dict]) -> list[dict]:
+    """Un seul lien par numéro, le vrai lien PDF prioritaire sur celui dérivé d'une image."""
+    par_num: dict[int, dict] = {}
+    for lien in liens:
+        deja = par_num.get(lien["numero"])
+        if deja is None or (deja["_depuis_png"] and not lien["_depuis_png"]):
+            par_num[lien["numero"]] = lien
+    return list(par_num.values())
+
+
 def find_mag_links(soup: BeautifulSoup, base_url: str) -> list[dict]:
     """Détecte les Bruz Mag dans la page."""
     results = []
     for a in soup.find_all("a", href=True):
         href = a["href"]
         text = a.get_text(strip=True)
-        m = MAG_PATTERN.search(href) or MAG_PATTERN.search(text)
-        if m and href.endswith(".pdf"):
+        m = MAG_PATTERN.search(unquote(href)) or MAG_PATTERN.search(text)
+        if m and (pdf := _pdf_href(href)):
             num = int(m.group(1))
-            url = href if href.startswith("http") else "https://www.ville-bruz.fr" + href
-            results.append({"numero": num, "url": url, "titre": text or f"Bruz Mag n°{num}"})
-    return results
+            url = pdf if pdf.startswith("http") else "https://www.ville-bruz.fr" + pdf
+            results.append({"numero": num, "url": url, "titre": text or f"Bruz Mag n°{num}",
+                            "_depuis_png": pdf != href})
+    return _pdf_d_abord(results)
 
 
 def find_semaine_links(soup: BeautifulSoup, base_url: str) -> list[dict]:
@@ -147,13 +175,15 @@ def find_semaine_links(soup: BeautifulSoup, base_url: str) -> list[dict]:
     for a in soup.find_all("a", href=True):
         href = a["href"]
         text = a.get_text(strip=True)
-        m = SEMAINE_PATTERN.search(href) or SEMAINE_PATTERN.search(text)
-        if m and href.endswith(".pdf") and href not in seen_urls:
-            seen_urls.add(href)
+        m = SEMAINE_PATTERN.search(unquote(href)) or SEMAINE_PATTERN.search(text)
+        pdf = _pdf_href(href)
+        if m and pdf and pdf not in seen_urls:
+            seen_urls.add(pdf)
             num = int(m.group(1))
-            url = href if href.startswith("http") else "https://www.ville-bruz.fr" + href
-            results.append({"numero": num, "url": url, "titre": text or f"Semaine à Bruz n°{num}"})
-    return results
+            url = pdf if pdf.startswith("http") else "https://www.ville-bruz.fr" + pdf
+            results.append({"numero": num, "url": url, "titre": text or f"Semaine à Bruz n°{num}",
+                            "_depuis_png": pdf != href})
+    return _pdf_d_abord(results)
 
 
 def _extract_pdf_text(pdf_bytes: bytes, max_pages: int = 8) -> str:
