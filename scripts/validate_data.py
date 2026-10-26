@@ -208,6 +208,35 @@ def validate_evenements() -> None:
         if not e.get("titre"):
             err(f"{where} : titre manquant")
     check_no_suspect(data, "evenements.json")
+    check_categories_agenda(data.get("evenements", []))
+
+
+def check_categories_agenda(evenements: list[dict]) -> None:
+    """Chaque catégorie mairie doit être rattachée à un thème de THEMES_AGENDA.
+
+    Le bac « Autres rendez-vous » (app/utils.ts) absorbe les catégories inconnues
+    sans rien signaler : 7 tags orphelins le 08/09, 6 encore le 26/10, chaque fois
+    découverts à la main. Warning et non erreur : l'agenda est alimenté sans revue,
+    une nouvelle catégorie mairie ne doit pas bloquer le déploiement.
+    """
+    utils_ts = DATA_DIR.parent / "app" / "utils.ts"
+    try:
+        source = utils_ts.read_text(encoding="utf-8")
+        debut = source.index("THEMES_AGENDA")
+        bloc = source[debut:source.index("];", debut)]
+    except (OSError, ValueError) as e:
+        warn(f"THEMES_AGENDA illisible dans app/utils.ts ({e}) — catégories agenda non vérifiées")
+        return
+    rattachees = {t.lower() for liste in re.findall(r"tags:\s*\[([^\]]*)\]", bloc)
+                  for t in re.findall(r'"([^"]+)"', liste)}
+    orphelines: dict[str, int] = {}
+    for e in evenements:
+        cat = (e.get("categorie") or "").strip()
+        if cat and cat.lower() not in rattachees:
+            orphelines[cat] = orphelines.get(cat, 0) + 1
+    for cat, n in sorted(orphelines.items()):
+        warn(f"evenements.json : catégorie «{cat}» ({n} événement(s)) absente de THEMES_AGENDA "
+             f"— rangée dans « Autres rendez-vous »")
 
 
 def validate_elus() -> None:

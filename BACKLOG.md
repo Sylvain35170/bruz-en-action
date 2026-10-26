@@ -40,7 +40,6 @@
 - [ ] **D23 (Démocratie locale)** — créé le 17/07 (pilier 7, 5 promesses D1-D5 toutes non_commence) : suivre toute délibération créant CMJ/Conseil des sages ou désignant des référents de quartier. **Renommage place du Vert-Buisson → place Robert-Barré** : dossier enrichi le 05/09 (délibération du 03/07, alerte Collectif médical du 27/08) — à suivre : la réponse du conseil municipal, et si ça prend encore de l'ampleur, reposer la question d'un dossier à part entière.
 - [ ] **D11 (Manoir de la Noë)** — résultat de la concertation citoyenne « Nos Lieux Communs » du 9 juillet 2026 (usage de la partie non occupée du bâtiment/terrain) pas encore public — re-vérifié le 05/09 (WebSearch), rien de neuf sur l'issue de cette réunion spécifique — à suivre
 
-- [ ] **Agenda — surveiller l'apparition de nouveaux tags mairie** : `/agenda` (créée le 02/08) regroupe les tags bruts d'`evenements.json` en 10 thèmes via `THEMES_AGENDA` (`app/utils.ts`). ⚠️ Le 08/09, **7 tags n'étaient mappés nulle part et 25 événements tombaient en « Autres rendez-vous »** — la note « les 15 tags actuels sont tous mappés » était périmée depuis des semaines sans que rien ne le signale. Corrigé (thèmes « Famille & jeunesse » et « Services & permanences » ajoutés) : 22 tags, 0 orphelin. Le bac de secours a bien joué son rôle (rien n'a disparu), mais **il ne prévient pas** : il absorbe. Repasser périodiquement l'inventaire tags vs `THEMES_AGENDA` plutôt que d'attendre un signal qui ne vient pas.
 
 ## 🟡 À faire — Design & Illustrations
 
