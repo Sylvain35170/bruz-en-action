@@ -127,9 +127,12 @@ scraper OF) · `agent_presse` (Google News RSS) · `agent_megalis` (YouTube RSS)
 · `agent_bruz_mag` (PDF) · `agent_signalements` (Gmail — voir sous-section dédiée) ·
 `agent_enrichissement_cm` (transcription + Claude) ·
 `agent_metropole_delibs` (API open data `data.rennesmetropole.fr`, dataset
-`deliberations-rennes-metropole-2021-copie` → queue de veille ; ⚠️ ODSQL : full-text nu
-parenthésé + filtre de champ = 0 résultat silencieux, utiliser `delib_objet like "…"` +
-date littérale ; les CR du conseil métropolitain ne sont PAS cherchables sur Mégalis) ·
+`deliberations-rennes-metropole-2021-copie` → queue de veille ; ⚠️ ODSQL : aucun filtre
+texte côté API n'est fiable — full-text parenthésé + filtre de champ = 0 silencieux, et
+`like` ne matche rien sur les objets à underscores (`B_2026-336-Amenagement_…`, format de
+toutes les publications depuis juin 2026 : agent aveugle jusqu'au 26/10). L'agent ne filtre
+plus que la date côté API et cherche les mots-clés en Python sur l'objet normalisé ; les CR
+du conseil métropolitain ne sont PAS cherchables sur Mégalis) ·
 `agent_agenda` (scraping agenda mairie → `evenements.json` **en direct, sans revue** —
 événements marqués `source: agenda_mairie`, les saisies manuelles ne sont jamais touchées,
 purge auto des événements passés de +30 j) · `agent_dossiers` (hors cron, post-revue).

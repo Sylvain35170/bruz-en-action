@@ -22,6 +22,8 @@ Usage :
 
 import argparse
 import sys
+import re
+import unicodedata
 from datetime import date, timedelta
 from urllib.parse import urlencode
 from pathlib import Path
@@ -35,7 +37,7 @@ API_URL = ("https://data.rennesmetropole.fr/api/explore/v2.1/catalog/datasets/"
            "deliberations-rennes-metropole-2021-copie/records")
 SOURCE_LABEL = "Rennes Métropole — délibérations (open data)"
 
-# Mots-clés full-text ODSQL — un OR sur l'ensemble. « trambus » couvre les
+# Mots-clés filtrés en Python sur l'objet normalisé (cf. fetch_deliberations). « trambus » couvre les
 # délibérations T4 (toujours intitulées « ligne de Trambus T4 »).
 # ⚠️ « PLUiH » ne matche jamais dans delib_objet (constat 2026-08-25, 0/2993) —
 # le terme est toujours écrit en toutes lettres « Plan Local d'Urbanisme
@@ -45,6 +47,7 @@ SOURCE_LABEL = "Rennes Métropole — délibérations (open data)"
 KEYWORDS = [
     "Bruz",
     "Ker Lann",
+    "KerLann",  # graphie en un mot vue dans « ZAC KerLann » (B2025-396)
     "trambus",
     "Plan Local d'Urbanisme intercommunal",
     "MusikHALL",
@@ -63,7 +66,8 @@ def _clean_objet(objet: str, delib_id: str) -> str:
     objet = (objet or "").strip()
     if delib_id and objet.startswith(delib_id):
         objet = objet[len(delib_id):]
-    return objet.lstrip("_- ").strip()
+    objet = re.sub(r"^[BC]_?\d{4}[-_]\d+[-_]?", "", objet)  # « B2026-028-… », « B_2026-336-… »
+    return " ".join(objet.lstrip("_- ").replace("_", " ").split())
 
 
 def _vote_str(r: dict) -> str:
@@ -81,17 +85,32 @@ def _vote_str(r: dict) -> str:
     return "Vote : " + ", ".join(parts) + "."
 
 
-def fetch_deliberations(days: int) -> list[dict]:
-    """Interroge l'API Opendatosoft : mots-clés en OR sur delib_objet + fenêtre glissante.
+def _normalise(texte: str) -> str:
+    """Minuscules, sans accents ni apostrophes, underscores/tirets → espaces.
 
-    ⚠️ Syntaxe ODSQL piégeuse (constat 2026-07-14) : un groupe full-text nu
-    parenthésé combiné à un filtre de champ — `("Bruz" OR …) AND delib_date >= …`
-    — retourne 0 résultat SANS erreur, tout comme `now(days=-N)`. Seule forme
-    fiable : `delib_objet like "…"` par mot-clé + date littérale calculée.
+    Depuis juin 2026 au moins, tous les objets sont publiés en
+    « B_2026-336-Amenagement_operationnel_ZAC_Les_Touches_… » (apostrophes
+    supprimées : « dEpargne ») : on ramène objet et mots-clés à la même forme.
+    """
+    sans_accents = unicodedata.normalize("NFKD", texte).encode("ascii", "ignore").decode()
+    sans_apos = re.sub(r"['’]", "", sans_accents.lower())
+    return " ".join(re.sub(r"[_\-]+", " ", sans_apos).split())
+
+
+KEYWORDS_NORM = [_normalise(k) for k in KEYWORDS]
+
+
+def fetch_deliberations(days: int) -> list[dict]:
+    """Toutes les délibérations de la fenêtre, filtrées par mots-clés en Python.
+
+    ⚠️ Le filtre `delib_objet like "…"` côté API (seule forme ODSQL fiable,
+    constat 2026-07-14) ne matche RIEN sur les objets à underscores : testé le
+    26/10 avec « Touches » sur « …ZAC_Les_Touches_… », 0 résultat. L'agent était
+    aveugle depuis au moins juin. Le volume est faible (35 délibérations du
+    01/06 au 15/10) : on récupère tout sur la fenêtre et on filtre ici.
     """
     cutoff = (date.today() - timedelta(days=days)).isoformat()
-    likes = " OR ".join(f'delib_objet like "{k}"' for k in KEYWORDS)
-    where = f'({likes}) AND delib_date >= "{cutoff}"'
+    where = f'delib_date >= "{cutoff}"'
     results, offset = [], 0
     while True:
         params = urlencode({
@@ -104,13 +123,18 @@ def fetch_deliberations(days: int) -> list[dict]:
         })
         r = fetch(f"{API_URL}?{params}")
         if not r:
-            return results
+            log("Métropole : API injoignable — fenêtre non analysée", "WARN")
+            break
         data = r.json()
         batch = data.get("results", [])
         results.extend(batch)
         offset += len(batch)
         if not batch or offset >= data.get("total_count", 0):
-            return results
+            break
+    retenues = [d for d in results
+                if any(k in _normalise(d.get("delib_objet") or "") for k in KEYWORDS_NORM)]
+    log(f"Métropole : {len(results)} délibération(s) depuis le {cutoff}, {len(retenues)} retenue(s)")
+    return retenues
 
 
 def to_queue_item(r: dict) -> dict | None:
