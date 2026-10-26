@@ -9,7 +9,7 @@
 ## 🟠 Prioritaire — Fonctionnalités
 
 - [ ] **Illustration D25** — le dossier « Bien vivre à Bruz à tous les âges » est publié avec `image: null`, donc badge « Dossier en construction ». Prompt prêt dans `PROMPTS_ILLUSTRATIONS.md` : générer, passer `scripts/integre_illustration.py`, puis repasser `image` sur `/bruz-en-action/illus-d25-bien-vivre.webp`.
-- [ ] **Statuts de promesses à réexaminer avec le maire** (alimente l'audit ⏸ plus bas) : **P3 #33 « repas annuel des aînés »** est `non_commence` alors qu'un repas CCAS a lieu le 18/10/2026 (complet) — reste à établir si c'est une création du mandat ou une tradition antérieure, ce qui décide si la promesse est tenue ou héritée. **P4 #34 « sécurité aux abords de toutes les écoles »** : une offre d'emploi d'agent de sécurité est ouverte (limite 30/09), mais le périmètre couvert n'est pas public.
+- [ ] **Statuts de promesses à réexaminer avec le maire** (alimente l'audit ⏸ plus bas) : **P3 #33 « repas annuel des aînés »** passée `en_cours` le 26/10 (repas CCAS du 18/10, complet) — reste à établir si c'est une création du mandat ou une tradition antérieure, et à constater le rythme annuel avant `tenu`. **P4 #34 « sécurité aux abords de toutes les écoles »** : une offre d'emploi d'agent de sécurité est ouverte (limite 30/09), mais le périmètre couvert n'est pas public.
 - [ ] **Parole des élus** — enrichir `data/elus.json` au fil du mandat
 - [ ] **D23 (Démocratie locale) — renommage place Robert-Barré** : enrichi le 05/09 (délibération du 03/07, alerte du Collectif médical de la place Haute du 27/08, demande de réouverture en conseil municipal). À suivre : la réponse du conseil municipal — si ça prend encore de l'ampleur (pétition, nouvelle délib), reposer la question d'un dossier à part entière.
 
