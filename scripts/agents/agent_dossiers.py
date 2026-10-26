@@ -98,7 +98,7 @@ def run() -> bool:
         for d in dossiers
     }
 
-    injected = 0
+    candidates: list[tuple[str, dict, str]] = []  # (dossier, item, libellé de log)
 
     # --- Depuis actus.json ---
     for actu in actus_data.get("actus", []):
@@ -133,8 +133,7 @@ def run() -> bool:
             if activity_date > dossier_map[dossier_id].get("last_activity", ""):
                 dossier_map[dossier_id]["last_activity"] = activity_date
                 dossier_map[dossier_id]["featured"] = True
-            injected += 1
-            log(f"  🆕 [{dossier_id}] ← {news['titre'][:60]}", "NEW")
+            candidates.append((dossier_id, news, news["titre"][:60]))
 
     # --- Depuis cms.json (délibérations + Bruz Mag) ---
     for seance in cms_data.get("seances", []):
@@ -166,8 +165,7 @@ def run() -> bool:
                 if activity_date > dossier_map[dossier_id].get("last_activity", ""):
                     dossier_map[dossier_id]["last_activity"] = activity_date
                     dossier_map[dossier_id]["featured"] = True
-                injected += 1
-                log(f"  🆕 [{dossier_id}] ← CM {seance['date']}", "NEW")
+                candidates.append((dossier_id, news, f"CM {seance['date']}"))
                 break
 
     # Garder max 20 actus par dossier (les plus récentes en tête)
@@ -175,6 +173,15 @@ def run() -> bool:
         d["actus_recentes"] = sorted(
             d["actus_recentes"], key=lambda x: x.get("date", ""), reverse=True
         )[:20]
+
+    # Ne compter qu'après le plafond : une actu plus ancienne que les 20 déjà
+    # présentes est insérée puis aussitôt écartée. Comptée avant, elle donnait
+    # un « 🆕 [D05] ← CM 2026-04-08 » à chaque run sans rien écrire (26/10).
+    injected = 0
+    for dossier_id, news, libelle in candidates:
+        if any(a is news for a in dossier_map[dossier_id]["actus_recentes"]):
+            injected += 1
+            log(f"  🆕 [{dossier_id}] ← {libelle}", "NEW")
 
     if injected == 0:
         log("Dossiers : aucune nouvelle info à injecter.", "INFO")
