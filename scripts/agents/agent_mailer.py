@@ -33,6 +33,7 @@ Configuration :
   y compris depuis launchd) tant que le refresh token n'est pas révoqué.
 """
 
+import html
 import json
 import sys
 import time
@@ -136,7 +137,36 @@ def _build_coup_de_pouce_section(candidats: list[dict]) -> str:
   {''.join(lignes)}"""
 
 
-def _build_email(proposals: list[dict], date_str: str, coup_de_pouce: list[dict] | None = None) -> tuple[str, str]:
+def _build_erreurs_section(erreurs: dict[str, str]) -> str:
+    """Bandeau des agents en erreur sur ce run, en tête du mail.
+
+    Sans lui, une Sélection en panne (CLI `claude` déconnecté, 20-23/10/2026)
+    produisait un mail « Rien de nouveau » : faux, rien n'avait été analysé.
+    """
+    if not erreurs:
+        return ""
+    lignes = "".join(
+        f"<li><strong>{html.escape(nom)}</strong> : {html.escape(statut.removeprefix('❌').strip())[:200]}</li>"
+        for nom, statut in erreurs.items()
+    )
+    return f"""
+  <div style="border:1px solid #fecaca;background:#fef2f2;border-radius:8px;padding:12px 16px;margin:16px 0">
+    <div style="font-weight:700;color:#b91c1c;margin-bottom:6px">⚠️ {len(erreurs)} agent{'s' if len(erreurs) > 1 else ''} en erreur sur ce run — la veille du jour est incomplète</div>
+    <ul style="margin:0;padding-left:18px;color:#7f1d1d;font-size:13px;line-height:1.6">{lignes}</ul>
+    <div style="font-size:12px;color:#7f1d1d;margin-top:6px">Détail : <code>~/Library/Logs/bruz-en-action-veille.log</code></div>
+  </div>"""
+
+
+def _prefixe_erreurs(sujet: str, erreurs: dict[str, str]) -> str:
+    """Préfixe le sujet du mail quand des agents sont en erreur."""
+    if not erreurs:
+        return sujet
+    n = len(erreurs)
+    return f"⚠️ {n} agent{'s' if n > 1 else ''} en erreur · {sujet}"
+
+
+def _build_email(proposals: list[dict], date_str: str, coup_de_pouce: list[dict] | None = None,
+                 erreurs: dict[str, str] | None = None) -> tuple[str, str]:
     """Retourne (sujet, corps HTML). Les items jamais mailés sont badgés 🆕."""
     coup_de_pouce = coup_de_pouce or []
     n = len(proposals)
@@ -182,6 +212,7 @@ def _build_email(proposals: list[dict], date_str: str, coup_de_pouce: list[dict]
     {n} article{'s' if n > 1 else ''} en attente de décision éditoriale.
     Ouvre Claude Code et tape <strong>"on examine les propositions"</strong> pour les passer en revue.
   </p>
+  {_build_erreurs_section(erreurs or {})}
   {''.join(lignes)}
   {_build_coup_de_pouce_section(coup_de_pouce)}
   <hr style="border:none;border-top:1px solid #e2e8f0;margin:24px 0">
@@ -190,10 +221,11 @@ def _build_email(proposals: list[dict], date_str: str, coup_de_pouce: list[dict]
   </p>
 </body></html>"""
 
-    return sujet, corps
+    return _prefixe_erreurs(sujet, erreurs or {}), corps
 
 
-def _build_empty_email(date_str: str, coup_de_pouce: list[dict] | None = None) -> tuple[str, str]:
+def _build_empty_email(date_str: str, coup_de_pouce: list[dict] | None = None,
+                       erreurs: dict[str, str] | None = None) -> tuple[str, str]:
     """Email quotidien quand aucune proposition actu n'est en attente."""
     coup_de_pouce = coup_de_pouce or []
     if coup_de_pouce:
@@ -205,6 +237,7 @@ def _build_empty_email(date_str: str, coup_de_pouce: list[dict] | None = None) -
   <h2 style="color:#0f172a;border-bottom:2px solid #f97316;padding-bottom:8px">
     🏛️ Bruz en Action — Veille du jour
   </h2>
+  {_build_erreurs_section(erreurs or {})}
   <p style="color:#64748b">
     Aucune proposition d'actu en attente de revue aujourd'hui.
   </p>
@@ -214,10 +247,17 @@ def _build_empty_email(date_str: str, coup_de_pouce: list[dict] | None = None) -
     Généré automatiquement par les agents Bruz en Action · {date_str}
   </p>
 </body></html>"""
-    return sujet, corps
+    return _prefixe_erreurs(sujet, erreurs or {}), corps
 
 
-def run(dry_run: bool = False) -> bool:
+def run(dry_run: bool = False, erreurs: dict[str, str] | None = None) -> bool:
+    """Envoie le mail quotidien.
+
+    Args:
+        dry_run: construit le mail sans l'envoyer.
+        erreurs: agents en erreur sur ce run ({nom: statut}), fournis par
+            run_agents.py — affichés en bandeau et dans le sujet.
+    """
     date_str = today()
     registry = load_registry()
     pending = [p for p in registry["items"] if p.get("statut") == "pending"]
@@ -225,12 +265,12 @@ def run(dry_run: bool = False) -> bool:
 
     # Envoi quotidien systématique à 17h, avec ou sans nouveauté.
     if not pending:
-        sujet, corps = _build_empty_email(date_str, coup_de_pouce)
+        sujet, corps = _build_empty_email(date_str, coup_de_pouce, erreurs)
     else:
         # Tri : nouveaux d'abord, puis pertinence décroissante, puis plus anciens en attente
         pending.sort(key=lambda p: (bool(p.get("mailed_at")), -p.get("pertinence", 0),
                                     p.get("first_seen", "")))
-        sujet, corps = _build_email(pending, date_str, coup_de_pouce)
+        sujet, corps = _build_email(pending, date_str, coup_de_pouce, erreurs)
 
     new_items = [p for p in pending if not p.get("mailed_at")]
 

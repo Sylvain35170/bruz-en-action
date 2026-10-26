@@ -100,7 +100,9 @@ pertinence 0 sont auto-rejetés (mémorisés). Ne pas recréer de fichiers
 
 **Mailer** : envoi quotidien systématique à 17h (un email à chaque run), avec TOUS les
 pending du moment ou un message "rien de nouveau" si le registre est vide. Les items
-sans date ne sont plus perdus. `--dry-run` pour tester sans envoyer. Depuis le 27/08,
+sans date ne sont plus perdus. Depuis le 26/10, les agents en erreur sur le run (`run_agents.py` les passe
+à `agent_mailer.run(erreurs=…)`) s'affichent en bandeau rouge et en préfixe du sujet
+(« ⚠️ N agents en erreur · … ») : une veille incomplète ne se déguise plus en « Rien de nouveau ». `--dry-run` pour tester sans envoyer. Depuis le 27/08,
 le mail inclut aussi les candidats coup de pouce en attente
 (`agent_coup_de_pouce.candidats_en_attente()` — section dédiée, sans `mailed_at` : un
 candidat reste listé tant qu'il n'a pas de `statut` "publié"/"rejeté" posé à la main

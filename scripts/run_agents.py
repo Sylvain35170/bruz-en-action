@@ -90,7 +90,11 @@ def main() -> None:
         try:
             import importlib
             mod = importlib.import_module(module_path)
-            updated = mod.run()
+            if name == "Mailer":
+                # Le mail doit dire quand la veille du jour est incomplète.
+                updated = mod.run(erreurs={n: st for n, st in agent_steps.items() if st.startswith("❌")})
+            else:
+                updated = mod.run()
             errs = errors_logged()
             if errs:
                 # L'agent a échoué sans lever : ne surtout pas le compter en succès.
