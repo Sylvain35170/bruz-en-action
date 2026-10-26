@@ -1,8 +1,8 @@
 {
   "meta": {
     "source": "Programme Un nouvel élan pour Bruz — mandat 2026-2032",
-    "last_updated": "2026-07-14",
-    "updated_by": "import_excel.py",
+    "last_updated": "2026-10-26",
+    "updated_by": "revue manuelle",
     "total_promesses": 50
   },
   "piliers": [
@@ -617,9 +617,9 @@
       "ref": "P3",
       "titre": "Organiser un repas annuel des aînés",
       "pilier_id": 6,
-      "statut_id": "non_commence",
+      "statut_id": "en_cours",
       "horizon": "2026-2032",
-      "detail": "Événement convivial annuel.",
+      "detail": "Événement convivial annuel. En cours : un repas des aînés organisé par la commune a eu lieu le 18/10/2026, complet (Semaine à Bruz, Ouest-France), dans la foulée de la première Semaine bleue bruzoise. Reste à vérifier le rythme annuel sur le mandat, et si ce repas existait déjà avant 2026.",
       "source": {
         "doc": "programme-2026.pdf",
         "url": "https://www.unnouvelelanpourbruz.com/_files/ugd/71facb_17a88aa6318c4051bb64c01574a6357a.pdf",

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-10-18",
+    "last_updated": "2026-10-24",
     "source": "Ville de Bruz, Grand Logis, Handisport, Les Trans"
   },
   "evenements": [
@@ -105,51 +105,6 @@
       "date_fin": "2026-09-30"
     },
     {
-      "id": "agenda-caaa5ae8",
-      "titre": "Inter+café – Prix littéraires 2025/2026",
-      "date": "2026-09-18",
-      "categorie": "Rencontre",
-      "lien": "https://www.ville-bruz.fr/agenda/intercafe-prix-litteraires-2025-2026/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
-    },
-    {
-      "id": "agenda-7d31f0ca",
-      "titre": "Danse avec le Cercle Celtique de Bruz",
-      "date": "2026-09-19",
-      "categorie": "Des Places et Vous",
-      "lien": "https://www.ville-bruz.fr/agenda/danse-avec-le-cercle-celtique-de-bruz/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
-    },
-    {
-      "id": "agenda-38cb6440",
-      "titre": "Clean walk : quartiers gare et Vert Buisson",
-      "date": "2026-09-19",
-      "categorie": "Rencontre",
-      "lien": "https://www.ville-bruz.fr/agenda/clean-walk-quartiers-gare-et-vert-buisson/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
-    },
-    {
-      "id": "agenda-9da70fd8",
-      "titre": "Journées européennes du patrimoine à Bruz",
-      "date": "2026-09-19",
-      "categorie": "Rencontre",
-      "lien": "https://www.ville-bruz.fr/agenda/journees-europeennes-du-patrimoine-a-bruz/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
-    },
-    {
-      "id": "agenda-ae3d0881",
-      "titre": "Vide-dressing",
-      "date": "2026-09-19",
-      "categorie": "Association",
-      "lien": "https://www.ville-bruz.fr/agenda/vide-dressing-2/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
-    },
-    {
       "id": "agenda-3a22e3a8",
       "titre": "Jury Prix Ados",
       "date": "2026-09-19",
@@ -158,42 +113,6 @@
       "lien_label": "Agenda Ville de Bruz",
       "source": "agenda_mairie",
       "date_fin": "2026-12-19"
-    },
-    {
-      "id": "agenda-acfba668",
-      "titre": "Vide-dressing",
-      "date": "2026-09-20",
-      "categorie": "Association",
-      "lien": "https://www.ville-bruz.fr/agenda/vide-dressing/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
-    },
-    {
-      "id": "agenda-9ecf0900",
-      "titre": "Journées européennes du patrimoine à Bruz",
-      "date": "2026-09-20",
-      "categorie": "Rencontre",
-      "lien": "https://www.ville-bruz.fr/agenda/journees-europeennes-du-patrimoine-a-bruz-2/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
-    },
-    {
-      "id": "agenda-625d5aad",
-      "titre": "Conseil Municipal",
-      "date": "2026-09-21",
-      "categorie": "Mairie",
-      "lien": "https://www.ville-bruz.fr/agenda/conseil-municipal-dinstallation/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
-    },
-    {
-      "id": "agenda-718fc983",
-      "titre": "Permanence d’accompagnement administratif et numérique",
-      "date": "2026-09-23",
-      "categorie": "Permanence",
-      "lien": "https://www.ville-bruz.fr/agenda/permanence-daccompagnement-administratif-et-numerique-3/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
     },
     {
       "id": "agenda-3607c0c6",
@@ -211,15 +130,6 @@
       "date": "2026-09-24",
       "categorie": "Rencontre",
       "lien": "https://www.ville-bruz.fr/agenda/atelier-discuthe-4/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
-    },
-    {
-      "id": "agenda-cd0cb849",
-      "titre": "Activité physique adaptée pour sénior",
-      "date": "2026-09-24",
-      "categorie": "Sport",
-      "lien": "https://www.ville-bruz.fr/agenda/activite-physique-adaptee-pour-senior-2/",
       "lien_label": "Agenda Ville de Bruz",
       "source": "agenda_mairie"
     },
@@ -369,15 +279,6 @@
       "source": "agenda_mairie"
     },
     {
-      "id": "agenda-fbecfb67",
-      "titre": "Randonnée pédestre",
-      "date": "2026-10-04",
-      "categorie": "Sport",
-      "lien": "https://www.ville-bruz.fr/agenda/randonnee-pedestre/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
-    },
-    {
       "id": "agenda-9a43c515",
       "titre": "Après-midi jeux de société",
       "date": "2026-10-04",
@@ -474,15 +375,6 @@
       "date": "2026-10-07",
       "categorie": "Permanence",
       "lien": "https://www.ville-bruz.fr/agenda/permanence-numerique-avec-une-conseillere-de-rennes-metropole-2/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
-    },
-    {
-      "id": "agenda-ded4907b",
-      "titre": "Distribution gratuite de composteurs",
-      "date": "2026-10-07",
-      "categorie": "Mairie",
-      "lien": "https://www.ville-bruz.fr/agenda/distribution-gratuite-de-composteurs-2/",
       "lien_label": "Agenda Ville de Bruz",
       "source": "agenda_mairie"
     },
@@ -930,6 +822,15 @@
       "source": "agenda_mairie"
     },
     {
+      "id": "agenda-18a11a46",
+      "titre": "Atelier numérique : cybermois",
+      "date": "2026-10-21",
+      "categorie": "Atelier",
+      "lien": "https://www.ville-bruz.fr/agenda/atelier-numerique-cybermois/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
       "id": "agenda-d862496d",
       "titre": "Activité physique adaptée pour sénior",
       "date": "2026-10-22",
@@ -1012,20 +913,29 @@
       "date_fin": "2026-10-25"
     },
     {
+      "id": "agenda-11286962",
+      "titre": "Atelier « contakids » parents-enfants",
+      "date": "2026-10-24",
+      "categorie": "Atelier",
+      "lien": "https://www.ville-bruz.fr/agenda/atelier-contakids-parents-enfants/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-fbecfb67",
+      "titre": "Randonnée pédestre",
+      "date": "2026-10-25",
+      "categorie": "Sport",
+      "lien": "https://www.ville-bruz.fr/agenda/randonnee-pedestre/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
       "id": "agenda-6098e7d9",
       "titre": "Projection du dessin animé « Coco »",
       "date": "2026-10-26",
       "categorie": "Famille",
       "lien": "https://www.ville-bruz.fr/agenda/projection-du-dessin-anime-coco/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
-    },
-    {
-      "id": "agenda-d00583fe",
-      "titre": "Atelier d’expression écrite et orale",
-      "date": "2026-10-26",
-      "categorie": "Atelier",
-      "lien": "https://www.ville-bruz.fr/agenda/atelier-dexpression-ecrite-et-orale-4/",
       "lien_label": "Agenda Ville de Bruz",
       "source": "agenda_mairie"
     },
@@ -1067,6 +977,15 @@
       "source": "agenda_mairie"
     },
     {
+      "id": "agenda-8ba1840a",
+      "titre": "Atelier vélo-smoothie",
+      "date": "2026-10-27",
+      "categorie": "Atelier",
+      "lien": "https://www.ville-bruz.fr/agenda/atelier-velo-smoothie-2/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
       "id": "agenda-32d840dc",
       "titre": "La nuit des dragons",
       "date": "2026-10-28",
@@ -1103,6 +1022,33 @@
       "source": "agenda_mairie"
     },
     {
+      "id": "agenda-e4d8fc21",
+      "titre": "Atelier « contakids » parents-enfants",
+      "date": "2026-10-28",
+      "categorie": "Atelier",
+      "lien": "https://www.ville-bruz.fr/agenda/atelier-contakids-parents-enfants-2/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-259c66bf",
+      "titre": "Atelier vélo-smoothie",
+      "date": "2026-10-28",
+      "categorie": "Atelier",
+      "lien": "https://www.ville-bruz.fr/agenda/atelier-velo-smoothie/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-0be716e6",
+      "titre": "Sortie famille à la Ferme du Monde",
+      "date": "2026-10-28",
+      "categorie": "L'Escale",
+      "lien": "https://www.ville-bruz.fr/agenda/journee-a-la-ferme/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
       "id": "agenda-2f4f90fe",
       "titre": "Activité physique adaptée pour sénior",
       "date": "2026-10-29",
@@ -1130,6 +1076,15 @@
       "source": "agenda_mairie"
     },
     {
+      "id": "agenda-ded4907b",
+      "titre": "Distribution gratuite de composteurs",
+      "date": "2026-10-30",
+      "categorie": "Mairie",
+      "lien": "https://www.ville-bruz.fr/agenda/distribution-gratuite-de-composteurs-2/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
       "id": "agenda-0df6e016",
       "titre": "Escape game « Amélia’s secret»",
       "date": "2026-10-30",
@@ -1147,6 +1102,15 @@
       "lien_label": "Agenda Ville de Bruz",
       "source": "agenda_mairie",
       "date_fin": "2026-11-27"
+    },
+    {
+      "id": "agenda-f9e8a0e4",
+      "titre": "Atelier d’arts plastiques : apprendre à utiliser la tempera",
+      "date": "2026-10-30",
+      "categorie": "Association",
+      "lien": "https://www.ville-bruz.fr/agenda/atelier-darts-plastiques-apprendre-a-utiliser-la-tempera/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
     },
     {
       "id": "agenda-f7163a30",
@@ -1175,6 +1139,34 @@
       "lien_label": "Agenda Ville de Bruz",
       "source": "agenda_mairie",
       "date_fin": "2026-11-07"
+    },
+    {
+      "id": "agenda-14e5fcc1",
+      "titre": "Tricote et papote",
+      "date": "2026-11-01",
+      "categorie": "Atelier",
+      "lien": "https://www.ville-bruz.fr/agenda/tricote-et-papote/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-d00583fe",
+      "titre": "Atelier d’expression écrite et orale",
+      "date": "2026-11-02",
+      "categorie": "Atelier",
+      "lien": "https://www.ville-bruz.fr/agenda/atelier-dexpression-ecrite-et-orale-4/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-4e181d47",
+      "titre": "Salons Entreprendre dans l’Ouest et Franchise Event",
+      "date": "2026-11-02",
+      "categorie": "Rencontre",
+      "lien": "https://www.ville-bruz.fr/agenda/salons-entreprendre-dans-louest-et-franchise-event/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie",
+      "date_fin": "2026-11-03"
     },
     {
       "id": "agenda-10d138b6",
@@ -1222,6 +1214,15 @@
       "source": "agenda_mairie"
     },
     {
+      "id": "agenda-cd0cb849",
+      "titre": "Activité physique adaptée pour sénior",
+      "date": "2026-11-05",
+      "categorie": "Sport",
+      "lien": "https://www.ville-bruz.fr/agenda/activite-physique-adaptee-pour-senior-2/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
       "id": "agenda-8e5147d2",
       "titre": "Le procès d’une vie – Complet",
       "date": "2026-11-05",
@@ -1236,6 +1237,24 @@
       "date": "2026-11-06",
       "categorie": "L'Escale",
       "lien": "https://www.ville-bruz.fr/agenda/lecture-theatrale-a-deux-voix-vivantes/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-bbb31ca7",
+      "titre": "Atelier d’arts plastiques : apprendre à utiliser la tempera",
+      "date": "2026-11-06",
+      "categorie": "Atelier",
+      "lien": "https://www.ville-bruz.fr/agenda/atelier-darts-plastiques-apprendre-a-utiliser-la-tempera-2/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-8bbca392",
+      "titre": "Exposition sur la Marqueterie",
+      "date": "2026-11-06",
+      "categorie": "Exposition",
+      "lien": "https://www.ville-bruz.fr/agenda/exposition-sur-la-marqueterie/",
       "lien_label": "Agenda Ville de Bruz",
       "source": "agenda_mairie"
     },
@@ -1258,6 +1277,42 @@
       "source": "agenda_mairie"
     },
     {
+      "id": "agenda-8b76b8c3",
+      "titre": "Exposition sur la Marqueterie",
+      "date": "2026-11-07",
+      "categorie": "Exposition",
+      "lien": "https://www.ville-bruz.fr/agenda/exposition-sur-la-marqueterie-2/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-cd70508c",
+      "titre": "Ateliers de marqueterie",
+      "date": "2026-11-07",
+      "categorie": "Atelier",
+      "lien": "https://www.ville-bruz.fr/agenda/ateliers-de-marqueterie/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-20eda562",
+      "titre": "Exposition sur la Marqueterie",
+      "date": "2026-11-08",
+      "categorie": "Exposition",
+      "lien": "https://www.ville-bruz.fr/agenda/exposition-sur-la-marqueterie-3/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-48be9ad7",
+      "titre": "Ateliers de marqueterie",
+      "date": "2026-11-08",
+      "categorie": "Atelier",
+      "lien": "https://www.ville-bruz.fr/agenda/ateliers-de-marqueterie-2/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
       "id": "agenda-228e31ac",
       "titre": "Commémoration du 11 novembre 1918",
       "date": "2026-11-11",
@@ -1272,6 +1327,33 @@
       "date": "2026-11-13",
       "categorie": "Médiathèque",
       "lien": "https://www.ville-bruz.fr/agenda/projection-du-film-cest-la-vie-ginette/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-663053ee",
+      "titre": "Atelier d’arts plastiques : apprendre à utiliser la tempera",
+      "date": "2026-11-13",
+      "categorie": "Atelier",
+      "lien": "https://www.ville-bruz.fr/agenda/atelier-darts-plastiques-apprendre-a-utiliser-la-tempera-3/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-7b70a4fb",
+      "titre": "Concours de belote sans annonce",
+      "date": "2026-11-13",
+      "categorie": "Jeux",
+      "lien": "https://www.ville-bruz.fr/agenda/concours-de-belote-sans-annonce/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-86431521",
+      "titre": "Exposition sur la Marqueterie",
+      "date": "2026-11-13",
+      "categorie": "Exposition",
+      "lien": "https://www.ville-bruz.fr/agenda/exposition-sur-la-marqueterie-4/",
       "lien_label": "Agenda Ville de Bruz",
       "source": "agenda_mairie"
     },
@@ -1299,6 +1381,33 @@
       "date": "2026-11-14",
       "categorie": "Association",
       "lien": "https://www.ville-bruz.fr/agenda/espace-de-gratuite/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-33af0a6b",
+      "titre": "Ateliers de marqueterie",
+      "date": "2026-11-14",
+      "categorie": "Atelier",
+      "lien": "https://www.ville-bruz.fr/agenda/ateliers-de-marqueterie-3/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-a554ca05",
+      "titre": "Exposition sur la Marqueterie",
+      "date": "2026-11-15",
+      "categorie": "Exposition",
+      "lien": "https://www.ville-bruz.fr/agenda/exposition-sur-la-marqueterie-6/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-211de9e2",
+      "titre": "Distribution gratuite de composteurs",
+      "date": "2026-11-16",
+      "categorie": "Mairie",
+      "lien": "https://www.ville-bruz.fr/agenda/distribution-gratuite-de-composteurs-3/",
       "lien_label": "Agenda Ville de Bruz",
       "source": "agenda_mairie"
     },
@@ -1346,6 +1455,16 @@
       "lien": "https://www.ville-bruz.fr/agenda/le-super-pouvoir-des-histoires/",
       "lien_label": "Agenda Ville de Bruz",
       "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-9ca405d9",
+      "titre": "Exposition derrière les paupières",
+      "date": "2026-11-20",
+      "categorie": "Exposition",
+      "lien": "https://www.ville-bruz.fr/agenda/exposition-derriere-les-paupieres/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie",
+      "date_fin": "2026-12-04"
     },
     {
       "id": "agenda-9e87a849",
@@ -1526,6 +1645,15 @@
       "date": "2026-12-09",
       "categorie": "Médiathèque",
       "lien": "https://www.ville-bruz.fr/agenda/lecture-mercredi-du-grand-logis/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-4e225aeb",
+      "titre": "Distribution gratuite de composteurs",
+      "date": "2026-12-09",
+      "categorie": "Mairie",
+      "lien": "https://www.ville-bruz.fr/agenda/distribution-gratuite-de-composteurs/",
       "lien_label": "Agenda Ville de Bruz",
       "source": "agenda_mairie"
     },

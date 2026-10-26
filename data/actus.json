@@ -1,9 +1,29 @@
 {
   "meta": {
-    "last_updated": "2026-10-18",
+    "last_updated": "2026-10-26",
     "note": "Actus de suivi des promesses — une actu = un événement daté lié à une ou plusieurs promesses"
   },
   "actus": [
+    {
+      "id": "mairie-a09179f7",
+      "titre": "Restriction d'eau : dérogation temporaire pour la Toussaint",
+      "date": "2026-10-22",
+      "detail": "La mairie de Bruz accorde une dérogation temporaire aux restrictions d'eau pour la période de la Toussaint. Cette mesure permet aux habitants de Bruz de maintenir certains usages saisonniers tout en préservant les ressources.",
+      "source_url": "https://www.ville-bruz.fr/actualites/restriction-deau-derogation-temporaire-pour-la-toussaint/",
+      "source_label": "Mairie de Bruz — Actualités",
+      "type": "mairie",
+      "dossier": "D13"
+    },
+    {
+      "id": "of-d6c52c57",
+      "titre": "Bruz. Le dispositif Jeunes regards met à l'honneur le spectacle vivant",
+      "date": "2026-10-20",
+      "detail": "Le dispositif Jeunes regards est reconduit pour la sixième année, permettant aux jeunes Bruzois et jeunes Bruzoises de découvrir le spectacle vivant au travers de groupes, rencontres d'artistes et ateliers. Cette initiative municipale investit dans l'accès à la culture pour la jeunesse locale.",
+      "source_url": "https://www.ouest-france.fr/bretagne/bruz-35170/bruz-le-dispositif-jeunes-regards-met-a-lhonneur-le-spectacle-vivant-7b17898f-c0bd-464a-8eeb-dddb7dcb0d41",
+      "source_label": "Ouest-France",
+      "type": "presse",
+      "dossier": "D21"
+    },
     {
       "id": "of-6bcba754",
       "titre": "Bruz. Conciliateur de justice bénévole, Loïc Boisroux traite 140 dossiers par an",

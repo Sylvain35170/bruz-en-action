@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-10-18",
+    "last_updated": "2026-10-26",
     "version": "3.0"
   },
   "dossiers": [
@@ -2241,7 +2241,7 @@
       "categorie": "Environnement",
       "statut": "en_cours",
       "featured": true,
-      "last_activity": "2026-10-07",
+      "last_activity": "2026-10-22",
       "date_ouverture": "2026-06-21",
       "chapeau": "Avec des étés de plus en plus chauds, Bruz doit adapter ses équipements, ses espaces publics et son plan de crise. Îlots de fraîcheur, populations vulnérables, végétalisation, piscine Conterie, bâtiments communaux : ce que la commune fait — et ce qu'elle ne fait pas encore.",
       "ce_quon_sait": [
@@ -2314,6 +2314,13 @@
         }
       ],
       "actus_recentes": [
+        {
+          "date": "2026-10-22",
+          "titre": "Restriction d'eau : dérogation temporaire pour la Toussaint",
+          "detail": "La mairie de Bruz accorde une dérogation temporaire aux restrictions d'eau pour la période de la Toussaint. Cette mesure permet aux habitants de Bruz de maintenir certains usages saisonniers tout en préservant les ressources.",
+          "source_url": "https://www.ville-bruz.fr/actualites/restriction-deau-derogation-temporaire-pour-la-toussaint/",
+          "source_label": "Mairie de Bruz — Actualités"
+        },
         {
           "date": "2026-10-07",
           "titre": "Végétalisation de la place du Docteur-Joly et de l'allée Geneviève-Prigent",
@@ -2795,7 +2802,7 @@
       "categorie": "Culture",
       "statut": "en_cours",
       "featured": true,
-      "last_activity": "2026-09-29",
+      "last_activity": "2026-10-20",
       "date_ouverture": "2026-07-10",
       "chapeau": "La municipalité travaille sur une nouvelle programmation culturelle et sur les usages du Grand Logis (salle de spectacle, 400 places) : événements d'ampleur, jauge, projets à venir.",
       "ce_quon_sait": [
@@ -2822,6 +2829,13 @@
         }
       ],
       "actus_recentes": [
+        {
+          "date": "2026-10-20",
+          "titre": "Bruz. Le dispositif Jeunes regards met à l'honneur le spectacle vivant",
+          "detail": "Le dispositif Jeunes regards est reconduit pour la sixième année, permettant aux jeunes Bruzois et jeunes Bruzoises de découvrir le spectacle vivant au travers de groupes, rencontres d'artistes et ateliers. Cette initiative municipale investit dans l'accès à la culture pour la jeunesse locale.",
+          "source_url": "https://www.ouest-france.fr/bretagne/bruz-35170/bruz-le-dispositif-jeunes-regards-met-a-lhonneur-le-spectacle-vivant-7b17898f-c0bd-464a-8eeb-dddb7dcb0d41",
+          "source_label": "Ouest-France"
+        },
         {
           "date": "2026-09-29",
           "titre": "Grand Logis : le directeur et programmateur de la salle de spectacle quitte Bruz après huit ans",
@@ -3227,7 +3241,7 @@
         "L'antériorité du repas des aînés : première édition ou tradition reconduite ? C'est ce qui détermine si l'engagement P3 est tenu par le mandat ou hérité",
         "Le périmètre réellement couvert par la sécurisation des abords d'écoles (P4) — combien d'établissements sur les écoles bruzoises, et à quels horaires",
         "Un programme chiffré et daté d'accessibilité PMR des bâtiments et espaces publics (P5), au-delà des services de transport adapté déjà recensés par la ville",
-        "La reconduction — ou non — de la Semaine Bleue en 2027 : une première édition ne dit rien d'une politique installée",
+        "La prochaine édition de la Semaine bleue, en octobre 2027",
         "La création du Conseil des sages, engagement D4 du pilier démocratie locale, instruite dans le dossier D23 — c'est le pendant institutionnel de ce dossier pour les aînés"
       ],
       "sources": [

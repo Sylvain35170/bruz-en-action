@@ -1,11 +1,24 @@
 {
   "meta": {
-    "last_updated": "2026-09-24",
+    "last_updated": "2026-10-22",
     "note": "Bulletins municipaux (Bruz Mag, Semaine à Bruz) — distincts des séances de conseil municipal (cms.json)",
     "dernier_bruz_mag": 260,
-    "derniere_semaine_bruz": 861
+    "derniere_semaine_bruz": 863
   },
   "bulletins": [
+    {
+      "id": "SAB-863",
+      "date": "2026-10-22",
+      "titre": "Semaine à Bruz n°863 — du 22 octobre au 5 novembre 2026",
+      "points_cles": [],
+      "sources": [
+        {
+          "label": "Télécharger le PDF",
+          "url": "https://www.ville-bruz.fr/wp-content/uploads/2026/10/Semaine-a-Bruz-n°863-du-22-octobre-au-5-novembre-2026.pdf"
+        }
+      ],
+      "type": "semaine_bruz"
+    },
     {
       "id": "SAB-861",
       "date": "2026-09-24",
