@@ -173,7 +173,7 @@ def _enrich_with_claude_cli(transcript: str, titre_youtube: str) -> dict | None:
             capture_output=True, text=True, timeout=300,
         )
         if result.returncode != 0:
-            log(f"  claude CLI erreur : {result.stderr[:200]}", "ERR")
+            log(f"  claude CLI erreur : {(result.stderr.strip() or result.stdout.strip())[:200]}", "ERR")
             return None
 
         outer = json.loads(result.stdout)

@@ -184,7 +184,7 @@ def _points_cles_via_claude(texte: str, titre: str) -> list[str] | None:
             capture_output=True, text=True, timeout=CLAUDE_TIMEOUT_S,
         )
         if result.returncode != 0:
-            log(f"  claude CLI erreur (bruz mag) : {result.stderr[:200]}", "ERR")
+            log(f"  claude CLI erreur (bruz mag) : {(result.stderr.strip() or result.stdout.strip())[:200]}", "ERR")
             return None
         raw = result.stdout.strip()
         start, end = raw.find("["), raw.rfind("]") + 1

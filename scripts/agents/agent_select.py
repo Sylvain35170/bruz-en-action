@@ -89,7 +89,7 @@ def _call_claude(prompt: str) -> str | None:
             capture_output=True, text=True, timeout=TIMEOUT_S, env=env,
         )
         if result.returncode != 0:
-            log(f"Claude CLI erreur : {result.stderr[:300]}", "ERR")
+            log(f"Claude CLI erreur : {(result.stderr.strip() or result.stdout.strip())[:300]}", "ERR")
             return None
         return result.stdout.strip()
     except subprocess.TimeoutExpired:
