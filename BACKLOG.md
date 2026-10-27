@@ -15,7 +15,7 @@
 
 ## 🟡 À faire — Agents de veille
 
-- [ ] **CM du 12/10 — suivre les décisions** : publiés le 18/10 (liste des délibérations, PV du 21/09, fonds de concours Prigent/de Gaulle, marché rénovation thermique, convention Fondation étudiante). Rejetés : cession parking Pagnol, décisions du maire, CST, **postes (tableau des effectifs — signal politique possible, relire le PDF si besoin)**. Fonds de concours lié à D13 le 26/10.
+- [ ] **CM du 12/10 — suivre les décisions** : publiés le 18/10 (liste des délibérations, PV du 21/09, fonds de concours Prigent/de Gaulle, marché rénovation thermique, convention Fondation étudiante). Rejetés : cession parking Pagnol, décisions du maire, CST, postes (DGS déjà couvert dans la fiche CM). Fonds de concours lié à D13 le 26/10.
 
 - [ ] **Vérifier en conditions réelles que `sylv.bertrand@gmail.com` reçoit bien les signalements** (consentement OAuth fait le 05/09, `token.json` créé — reste ce test) : s'envoyer un email de test via le bouton "Signaler" du site déployé, pas seulement relire le code. Commande : `~/.venvs/bruz-en-action/bin/python3 scripts/agents/agent_signalements.py --setup` — utiliser le python du venv dédié, pas le `python3` système (sinon `ModuleNotFoundError: google_auth_oauthlib`).
 - [ ] **Étendre les motifs interdits de `validate_data.check_urls_interdites()`** — le garde-fou créé le 01/08 n'attrape que `consent.google.com` et `organization/commune-de-bruz`, les deux cas déjà constatés. Toute nouvelle URL « vivante en apparence » (200 + page de repli) devra y être ajoutée. À terme, mieux vaudrait apprendre à `agent_qa --links` à comparer le contenu servi au contenu attendu, plutôt que d'entretenir une liste noire.
