@@ -1,9 +1,19 @@
 {
   "meta": {
-    "last_updated": "2026-10-26",
+    "last_updated": "2026-11-02",
     "note": "Actus de suivi des promesses — une actu = un événement daté lié à une ou plusieurs promesses"
   },
   "actus": [
+    {
+      "id": "presse-202e8acd",
+      "titre": "[Attribution de marché] Attribution · Rennes Métropole — Travaux de diagnostics et de sécurisation pyrotechnique de la parcelle BK152 à Bruz",
+      "date": "2026-10-30",
+      "detail": "Rennes Métropole attribue un marché public pour réaliser des diagnostics et sécuriser la parcelle BK152 à Bruz, probablement en amont de travaux de transformation. Étape préalable aux éventuels projets de reconversion ou aménagement de ce secteur.",
+      "source_url": "https://www.economiematin.fr/attribution-de-marche-attribution-%C2%B7-rennes-metropole-travaux-de-diagnostics-et-de-securisation-pyrotechnique-de-la-parcelle-bk152-a-bruz",
+      "source_label": "Economie Matin",
+      "type": "presse",
+      "dossier": "D22"
+    },
     {
       "id": "of-b3937733",
       "titre": "Bruz. La doyenne de 104 ans au repas des aînés",

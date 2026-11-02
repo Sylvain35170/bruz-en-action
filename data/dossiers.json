@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-10-26",
+    "last_updated": "2026-11-02",
     "version": "3.0"
   },
   "dossiers": [
@@ -2903,8 +2903,8 @@
       "titre": "Friche Bonna Sabla : une usine ferme, un foncier de 9 hectares se libère à Bruz",
       "categorie": "Urbanisme",
       "statut": "en_cours",
-      "featured": false,
-      "last_activity": "2026-07-17",
+      "featured": true,
+      "last_activity": "2026-10-30",
       "date_ouverture": "2026-07-17",
       "chapeau": "L'usine Bonna Sabla (béton préfabriqué), implantée depuis 1966 dans la zone d'activités de la Bihardais, a fermé au printemps 2026. Une trentaine de salariés licenciés, un foncier industriel important libéré au nord de la commune. Ce dossier suit ce que ce site va devenir — et qui en décidera.",
       "ce_quon_sait": [
@@ -2959,6 +2959,13 @@
         }
       ],
       "actus_recentes": [
+        {
+          "date": "2026-10-30",
+          "titre": "[Attribution de marché] Attribution · Rennes Métropole — Travaux de diagnostics et de sécurisation pyrotechnique de la p",
+          "detail": "Rennes Métropole attribue un marché public pour réaliser des diagnostics et sécuriser la parcelle BK152 à Bruz, probablement en amont de travaux de transformation. Étape préalable aux éventuels projets de reconversion ou aménagement de ce secteur.",
+          "source_url": "https://www.economiematin.fr/attribution-de-marche-attribution-%C2%B7-rennes-metropole-travaux-de-diagnostics-et-de-securisation-pyrotechnique-de-la-parcelle-bk152-a-bruz",
+          "source_label": "Economie Matin"
+        },
         {
           "date": "2026-07-17",
           "titre": "Fermeture de l'usine Bonna Sabla : le foncier de la Bihardais convoité",
