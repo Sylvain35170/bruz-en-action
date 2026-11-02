@@ -5,6 +5,16 @@
   },
   "actus": [
     {
+      "id": "of-d2843d8b",
+      "titre": "Bruz. La collecte alimentaire est aussi ouverte aux clients du drive",
+      "date": "2026-10-31",
+      "detail": "Une collecte alimentaire se déroule du 13 au 15 novembre dans les magasins d'alimentation de Bruz, accessible également aux clients du drive. L'épicerie sociale mobilise 150 bénévoles pour une action de solidarité envers les familles en difficulté.",
+      "source_url": "https://www.ouest-france.fr/bretagne/bruz-35170/bruz-la-collecte-alimentaire-est-aussi-ouverte-aux-clients-du-drive-60b1a41a-d3cc-11f1-807c-c0c44a88b55f",
+      "source_label": "Ouest-France",
+      "type": "presse",
+      "dossier": "D25"
+    },
+    {
       "id": "presse-202e8acd",
       "titre": "[Attribution de marché] Attribution · Rennes Métropole — Travaux de diagnostics et de sécurisation pyrotechnique de la parcelle BK152 à Bruz",
       "date": "2026-10-30",
