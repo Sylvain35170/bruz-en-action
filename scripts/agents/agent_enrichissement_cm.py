@@ -108,10 +108,15 @@ CLAUDE_CLI = shutil.which("claude") or "/opt/homebrew/bin/claude"  # chemin comp
 # YouTube RSS
 # ---------------------------------------------------------------------------
 
-def _extract_date_from_title(titre: str) -> str | None:
-    m = re.search(r"(\d{1,2})\s+(" + "|".join(MOIS) + r")\s+(\d{4})", titre.lower())
+def _extract_date_from_title(titre: str, annee_defaut: str | None = None) -> str | None:
+    """Date de séance lue dans le titre. L'année est facultative (« lundi 21 septembre »)
+    : à défaut on prend celle de publication — sinon on retombait sur la date de
+    publication entière, qui diffère de la séance (doublon CM-2026-09-23, 02/11)."""
+    m = re.search(r"(\d{1,2})\s+(" + "|".join(MOIS) + r")(?:\s+(\d{4}))?", titre.lower())
     if m:
-        return f"{m.group(3)}-{MOIS[m.group(2)]}-{int(m.group(1)):02d}"
+        annee = m.group(3) or annee_defaut
+        if annee:
+            return f"{annee}-{MOIS[m.group(2)]}-{int(m.group(1)):02d}"
     return None
 
 
@@ -132,7 +137,7 @@ def _get_youtube_cms() -> list[dict]:
                 continue
             vid_id = entry.findtext("yt:videoId", "", ns).strip()
             published = entry.findtext("atom:published", today(), ns)[:10]
-            date_cm = _extract_date_from_title(titre) or published
+            date_cm = _extract_date_from_title(titre, published[:4]) or published
             items.append({
                 "id": f"CM-{date_cm}",
                 "date": date_cm,
@@ -387,6 +392,12 @@ def run() -> bool:
     for yt in yt_cms:
         cm_id = yt["id"]
         seance = seances_by_id.get(cm_id)
+        if not seance:
+            # Même vidéo déjà connue sous un autre id/date : ne jamais recréer la séance.
+            seance = next((s for s in seances_by_id.values()
+                           if s.get("youtube_id") == yt["video_id"]), None)
+            if seance:
+                cm_id = seance["id"]
 
         if not seance:
             seance = {
