@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-10-24",
+    "last_updated": "2026-11-02",
     "source": "Ville de Bruz, Grand Logis, Handisport, Les Trans"
   },
   "evenements": [
@@ -95,16 +95,6 @@
       "lien_label": "Appel à candidatures — Ville de Bruz"
     },
     {
-      "id": "agenda-0fd4a621",
-      "titre": "Expo photo en plein air : « La vie en couleurs »",
-      "date": "2026-07-01",
-      "categorie": "Exposition",
-      "lien": "https://www.ville-bruz.fr/agenda/expo-photo-en-plein-air-la-vie-en-couleurs/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie",
-      "date_fin": "2026-09-30"
-    },
-    {
       "id": "agenda-3a22e3a8",
       "titre": "Jury Prix Ados",
       "date": "2026-09-19",
@@ -113,143 +103,6 @@
       "lien_label": "Agenda Ville de Bruz",
       "source": "agenda_mairie",
       "date_fin": "2026-12-19"
-    },
-    {
-      "id": "agenda-3607c0c6",
-      "titre": "Braderie des commerçants de Bruz",
-      "date": "2026-09-23",
-      "categorie": "Association",
-      "lien": "https://www.ville-bruz.fr/agenda/braderie-des-commercants-de-bruz/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie",
-      "date_fin": "2026-09-26"
-    },
-    {
-      "id": "agenda-14fd5c0e",
-      "titre": "Atelier Discu’thé",
-      "date": "2026-09-24",
-      "categorie": "Rencontre",
-      "lien": "https://www.ville-bruz.fr/agenda/atelier-discuthe-4/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
-    },
-    {
-      "id": "agenda-b5e2f6f1",
-      "titre": "Permanence accompagnement administratif",
-      "date": "2026-09-25",
-      "categorie": "Permanence",
-      "lien": "https://www.ville-bruz.fr/agenda/permanence-accompagnement-administratif/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
-    },
-    {
-      "id": "agenda-b32698c1",
-      "titre": "Les Samedis qui sauvent",
-      "date": "2026-09-25",
-      "categorie": "Atelier",
-      "lien": "https://www.ville-bruz.fr/agenda/les-samedis-qui-sauvent/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
-    },
-    {
-      "id": "agenda-f7b106b5",
-      "titre": "Sortie botanique",
-      "date": "2026-09-26",
-      "categorie": "Association",
-      "lien": "https://www.ville-bruz.fr/agenda/sortie-botanique-2/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
-    },
-    {
-      "id": "agenda-0ad73d0d",
-      "titre": "Les Virades de l’Espoir 2026",
-      "date": "2026-09-26",
-      "categorie": "Solidarité",
-      "lien": "https://www.ville-bruz.fr/agenda/les-virades-de-lespoir-2026/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie",
-      "date_fin": "2026-09-27"
-    },
-    {
-      "id": "agenda-40d76cbc",
-      "titre": "Une vie sur mesure",
-      "date": "2026-09-29",
-      "categorie": "Théâtre",
-      "lien": "https://www.ville-bruz.fr/agenda/une-vie-sur-mesure/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
-    },
-    {
-      "id": "agenda-96179627",
-      "titre": "Le Café du numérique",
-      "date": "2026-09-29",
-      "categorie": "Rencontre",
-      "lien": "https://www.ville-bruz.fr/agenda/le-cafe-du-numerique-3/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
-    },
-    {
-      "id": "agenda-18c846df",
-      "titre": "Permanence d’accompagnement administratif et numérique",
-      "date": "2026-09-30",
-      "categorie": "Permanence",
-      "lien": "https://www.ville-bruz.fr/agenda/permanence-daccompagnement-administratif-et-numerique-2/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
-    },
-    {
-      "id": "agenda-3e202dcb",
-      "titre": "Lecture musicale : Espace Snoezelen éphémère",
-      "date": "2026-09-30",
-      "categorie": "Médiathèque",
-      "lien": "https://www.ville-bruz.fr/agenda/lecture-musicale-espace-snoezelen-ephemere/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
-    },
-    {
-      "id": "agenda-ef466c61",
-      "titre": "Sortie nature : construction d’abris à hérisson – Complet",
-      "date": "2026-09-30",
-      "categorie": "Atelier",
-      "lien": "https://www.ville-bruz.fr/agenda/sortie-nature-construction-dabris-a-herisson/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
-    },
-    {
-      "id": "agenda-36e96753",
-      "titre": "Atelier Discu’thé",
-      "date": "2026-10-01",
-      "categorie": "Rencontre",
-      "lien": "https://www.ville-bruz.fr/agenda/atelier-discuthe-2/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
-    },
-    {
-      "id": "agenda-466795ab",
-      "titre": "Café philo : Serions-nous plus heureux si nous étions immortels ?",
-      "date": "2026-10-01",
-      "categorie": "Mortel !",
-      "lien": "https://www.ville-bruz.fr/agenda/cafe-philo-serions-nous-plus-heureux-si-nous-etions-immortels/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
-    },
-    {
-      "id": "agenda-cf1bed4a",
-      "titre": "Conférence : Pourquoi fouiller les tombes ?",
-      "date": "2026-10-02",
-      "categorie": "Médiathèque",
-      "lien": "https://www.ville-bruz.fr/agenda/conference-pourquoi-fouiller-les-tombes/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
-    },
-    {
-      "id": "agenda-0a87d8c3",
-      "titre": "Permanence accompagnement administratif",
-      "date": "2026-10-02",
-      "categorie": "Permanence",
-      "lien": "https://www.ville-bruz.fr/agenda/permanence-accompagnement-administratif-2/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
     },
     {
       "id": "agenda-dbce7b3b",
@@ -723,6 +576,16 @@
       "date_fin": "2026-10-21"
     },
     {
+      "id": "agenda-a7c73dcd",
+      "titre": "Halloween à la Conterie : concours de dessins jusqu’au 30 octobre",
+      "date": "2026-10-19",
+      "categorie": "Enfance - jeunesse",
+      "lien": "https://www.ville-bruz.fr/agenda/halloween-a-la-conterie-concours-de-dessins-du-26-au-31-octobre/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie",
+      "date_fin": "2026-10-30"
+    },
+    {
       "id": "agenda-7527de3a",
       "titre": "Atelier « mémoire en jeux »",
       "date": "2026-10-20",
@@ -940,16 +803,6 @@
       "source": "agenda_mairie"
     },
     {
-      "id": "agenda-a7c73dcd",
-      "titre": "Halloween à la Conterie : concours de dessins du 26 au 31 octobre",
-      "date": "2026-10-26",
-      "categorie": "Enfance - jeunesse",
-      "lien": "https://www.ville-bruz.fr/agenda/halloween-a-la-conterie-concours-de-dessins-du-26-au-31-octobre/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie",
-      "date_fin": "2026-10-31"
-    },
-    {
       "id": "agenda-52047714",
       "titre": "Atelier « mémoire en jeux »",
       "date": "2026-10-27",
@@ -987,7 +840,7 @@
     },
     {
       "id": "agenda-32d840dc",
-      "titre": "La nuit des dragons",
+      "titre": "La nuit des dragons – Complet",
       "date": "2026-10-28",
       "categorie": "Rencontre",
       "lien": "https://www.ville-bruz.fr/agenda/la-nuit-des-dragons/",
@@ -1076,6 +929,15 @@
       "source": "agenda_mairie"
     },
     {
+      "id": "agenda-59440d90",
+      "titre": "Apéro et portrait cubiste",
+      "date": "2026-10-29",
+      "categorie": "Association",
+      "lien": "https://www.ville-bruz.fr/agenda/apero-et-portrait-cubiste/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
       "id": "agenda-ded4907b",
       "titre": "Distribution gratuite de composteurs",
       "date": "2026-10-30",
@@ -1113,6 +975,15 @@
       "source": "agenda_mairie"
     },
     {
+      "id": "agenda-bd205637",
+      "titre": "Repas d’ici et d’ailleurs sur l’Inde",
+      "date": "2026-10-30",
+      "categorie": "Atelier",
+      "lien": "https://www.ville-bruz.fr/agenda/repas-dici-et-dailleurs/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
       "id": "agenda-f7163a30",
       "titre": "Game over ? Pas encore !",
       "date": "2026-10-31",
@@ -1139,6 +1010,15 @@
       "lien_label": "Agenda Ville de Bruz",
       "source": "agenda_mairie",
       "date_fin": "2026-11-07"
+    },
+    {
+      "id": "agenda-d953dffe",
+      "titre": "Soirée karaoké déguisée pour Halloween",
+      "date": "2026-10-31",
+      "categorie": "Atelier",
+      "lien": "https://www.ville-bruz.fr/agenda/soiree-karaoke-deguise-pour-halloween/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
     },
     {
       "id": "agenda-14e5fcc1",
@@ -1232,6 +1112,15 @@
       "source": "agenda_mairie"
     },
     {
+      "id": "agenda-9c19271b",
+      "titre": "Les Petites Cantines fêtent ses 10 ans",
+      "date": "2026-11-05",
+      "categorie": "Association",
+      "lien": "https://www.ville-bruz.fr/agenda/les-petites-cantines-fetent-ses-10-ans/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
       "id": "agenda-b89f87fd",
       "titre": "Lecture théâtrale à deux voix « Vivantes »",
       "date": "2026-11-06",
@@ -1255,6 +1144,15 @@
       "date": "2026-11-06",
       "categorie": "Exposition",
       "lien": "https://www.ville-bruz.fr/agenda/exposition-sur-la-marqueterie/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-a55de018",
+      "titre": "Repas d’ici et d’ailleurs sur la Thaïlande",
+      "date": "2026-11-06",
+      "categorie": "Association",
+      "lien": "https://www.ville-bruz.fr/agenda/repas-dici-et-dailleurs-sur-la-thailande/",
       "lien_label": "Agenda Ville de Bruz",
       "source": "agenda_mairie"
     },
@@ -1309,6 +1207,15 @@
       "date": "2026-11-08",
       "categorie": "Atelier",
       "lien": "https://www.ville-bruz.fr/agenda/ateliers-de-marqueterie-2/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-adf23f8d",
+      "titre": "Brunch des Petites Cantines",
+      "date": "2026-11-08",
+      "categorie": "Association",
+      "lien": "https://www.ville-bruz.fr/agenda/brunch-des-petites-cantines/",
       "lien_label": "Agenda Ville de Bruz",
       "source": "agenda_mairie"
     },
@@ -1394,11 +1301,39 @@
       "source": "agenda_mairie"
     },
     {
+      "id": "agenda-fdb1ac24",
+      "titre": "Le Salon de l’Etudiant",
+      "date": "2026-11-14",
+      "categorie": "Enfance - jeunesse",
+      "lien": "https://www.ville-bruz.fr/agenda/le-salon-de-letudiant/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-596b2552",
+      "titre": "Shooting photo au profit du Téléthon",
+      "date": "2026-11-14",
+      "categorie": "Association",
+      "lien": "https://www.ville-bruz.fr/agenda/shooting-photo-au-profit-du-telethon/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie",
+      "date_fin": "2026-11-15"
+    },
+    {
       "id": "agenda-a554ca05",
       "titre": "Exposition sur la Marqueterie",
       "date": "2026-11-15",
       "categorie": "Exposition",
       "lien": "https://www.ville-bruz.fr/agenda/exposition-sur-la-marqueterie-6/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-274faa9e",
+      "titre": "Jeux de société",
+      "date": "2026-11-15",
+      "categorie": "Jeux",
+      "lien": "https://www.ville-bruz.fr/agenda/jeux-de-societe/",
       "lien_label": "Agenda Ville de Bruz",
       "source": "agenda_mairie"
     },
@@ -1465,6 +1400,24 @@
       "lien_label": "Agenda Ville de Bruz",
       "source": "agenda_mairie",
       "date_fin": "2026-12-04"
+    },
+    {
+      "id": "agenda-3b7ca693",
+      "titre": "Théâtre d’improvisation",
+      "date": "2026-11-20",
+      "categorie": "Théâtre",
+      "lien": "https://www.ville-bruz.fr/agenda/theatre-dimprovisation/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-5e0f477f",
+      "titre": "Concert : Fille de Roche",
+      "date": "2026-11-21",
+      "categorie": "Concert",
+      "lien": "https://www.ville-bruz.fr/agenda/concert-fille-de-roche/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
     },
     {
       "id": "agenda-9e87a849",
@@ -1568,6 +1521,15 @@
       "date_fin": "2026-11-29"
     },
     {
+      "id": "agenda-57c2c1df",
+      "titre": "Marché de Noël à l’Ehpad",
+      "date": "2026-11-28",
+      "categorie": "Solidarité",
+      "lien": "https://www.ville-bruz.fr/agenda/marche-de-noel-a-lehpad/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
       "id": "agenda-97f23724",
       "titre": "Échange « Face à la mort, la force du collectif »",
       "date": "2026-12-02",
@@ -1613,11 +1575,48 @@
       "source": "agenda_mairie"
     },
     {
+      "id": "agenda-2bbfaede",
+      "titre": "40e édition du Téléthon",
+      "date": "2026-12-04",
+      "categorie": "Solidarité",
+      "lien": "https://www.ville-bruz.fr/agenda/40e-edition-du-telethon/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie",
+      "date_fin": "2026-12-06"
+    },
+    {
+      "id": "agenda-dc2bc43e",
+      "titre": "Téléthon : défilé de tracteurs lumineux",
+      "date": "2026-12-04",
+      "categorie": "Association",
+      "lien": "https://www.ville-bruz.fr/agenda/telethon-defile-de-tracteurs-lumineux/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
       "id": "agenda-344b9a14",
       "titre": "Lutins-Lutins",
       "date": "2026-12-05",
       "categorie": "Médiathèque",
       "lien": "https://www.ville-bruz.fr/agenda/lutins-lutins/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-a74daa0b",
+      "titre": "Marché de Noël de Bruz",
+      "date": "2026-12-05",
+      "categorie": "Mairie",
+      "lien": "https://www.ville-bruz.fr/agenda/marche-de-noel-de-bruz/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-3413db7a",
+      "titre": "Marché de Noël de Bruz",
+      "date": "2026-12-06",
+      "categorie": "Mairie",
+      "lien": "https://www.ville-bruz.fr/agenda/marche-de-noel-de-bruz-2/",
       "lien_label": "Agenda Ville de Bruz",
       "source": "agenda_mairie"
     },
@@ -1721,6 +1720,16 @@
       "source": "agenda_mairie"
     },
     {
+      "id": "agenda-c19d1a87",
+      "titre": "Le Salon du lycéen et de l’étudiant",
+      "date": "2027-01-08",
+      "categorie": "Enfance - jeunesse",
+      "lien": "https://www.ville-bruz.fr/agenda/le-salon-du-lyceen-et-de-letudiant/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie",
+      "date_fin": "2027-01-09"
+    },
+    {
       "id": "agenda-f2903366",
       "titre": "Ciné concert : Jemima & Johnny",
       "date": "2027-01-13",
@@ -1738,6 +1747,15 @@
       "lien_label": "Agenda Ville de Bruz",
       "source": "agenda_mairie",
       "date_fin": "2027-01-30"
+    },
+    {
+      "id": "agenda-a942373a",
+      "titre": "Le Salon de l’Etudiant formations et recrutement en alternance",
+      "date": "2027-02-06",
+      "categorie": "Enfance - jeunesse",
+      "lien": "https://www.ville-bruz.fr/agenda/le-salon-de-letudiant-formations-et-recrutement-en-alternance/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
     },
     {
       "id": "agenda-c95c46b4",
@@ -1855,6 +1873,16 @@
       "lien": "https://www.ville-bruz.fr/agenda/rouge-courroux/",
       "lien_label": "Agenda Ville de Bruz",
       "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-1dd1fbc4",
+      "titre": "Participez au concours de dessins « Vœux 2027 »",
+      "date": "2027-12-03",
+      "categorie": "Jeux",
+      "lien": "https://www.ville-bruz.fr/agenda/participez-au-concours-de-dessins-voeux-2027/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie",
+      "date_fin": "2027-01-04"
     }
   ]
 }

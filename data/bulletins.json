@@ -1,11 +1,33 @@
 {
   "meta": {
-    "last_updated": "2026-10-22",
+    "last_updated": "2026-10-28",
     "note": "Bulletins municipaux (Bruz Mag, Semaine à Bruz) — distincts des séances de conseil municipal (cms.json)",
-    "dernier_bruz_mag": 260,
+    "dernier_bruz_mag": 262,
     "derniere_semaine_bruz": 863
   },
   "bulletins": [
+    {
+      "id": "BM-262",
+      "date": "2026-11-01",
+      "titre": "Bruz Mag n°262 — novembre-décembre 2026",
+      "points_cles": [
+        "Le maire a rendu hommage à son prédécesseur lors de l'inauguration de la place Robert Barré le 11 septembre",
+        "La première Semaine Bleue de Bruz s'est déroulée du 5 au 11 octobre avec ateliers, jeux et rencontres entre générations",
+        "Une opération de nettoyage le 19 septembre aux quartiers de la Gare et du Vert Buisson a collecté plus de 100 kilos de déchets",
+        "Un rendez-vous annuel sur l'emploi le 13 octobre a permis aux demandeurs d'emploi de rencontrer des entreprises locales",
+        "Un repas des aînés a réuni les Bruzois et Bruzoises de 75 ans et plus le 18 octobre à l'espace Vau Gaillard",
+        "La Ville s'engage contre les violences faites aux femmes avec des actions de sensibilisation et d'échange",
+        "Trois salons de l'étudiant sont organisés au Rennes Parc Expo (novembre 2026 et janvier-février 2027) pour l'orientation et les formations",
+        "L'association Bruz Solidarité collecte des fonds du 31 octobre au 7 novembre pour financer la construction d'un bloc sanitaire en Haïti"
+      ],
+      "sources": [
+        {
+          "label": "Télécharger le PDF",
+          "url": "https://www.ville-bruz.fr/wp-content/uploads/2026/10/Bruz-Mag-n°262-novembre-decembre-2026.pdf"
+        }
+      ],
+      "type": "bruz_mag"
+    },
     {
       "id": "SAB-863",
       "date": "2026-10-22",
