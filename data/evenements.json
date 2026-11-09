@@ -71,15 +71,15 @@
     },
     {
       "id": "E06",
-      "titre": "Téléthon",
+      "titre": "Téléthon (40e édition)",
       "date": "2026-12-04",
-      "date_fin": "2026-12-05",
+      "date_fin": "2026-12-06",
       "categorie": "Solidarité",
-      "organisateur": "AFM-Téléthon + associations",
+      "organisateur": "Génédon Bruzois et partenaires",
       "lieu": "Bruz",
-      "note": "",
-      "lien": "https://www.telethon.fr/",
-      "lien_label": "AFM-Téléthon",
+      "note": "Vendredi 4 décembre, 19h-20h : parade de tracteurs illuminés (Jeunes Agriculteurs de Guichen, sapeurs-pompiers de Bruz), départ place Robert Barré, arrivée place du Docteur Joly. Tout le week-end : tyrolienne, balades à moto, chasse au trésor, animations de Noël.",
+      "lien": "https://www.ville-bruz.fr/actualites/marche-de-noel-et-telethon-a-bruz/",
+      "lien_label": "Marché de Noël et Téléthon — Ville de Bruz",
       "score": 3
     },
     {
@@ -89,10 +89,10 @@
       "date_fin": "2026-12-06",
       "categorie": "Vie locale",
       "organisateur": "Ville de Bruz",
-      "lieu": "Halle couverte, Bruz",
+      "lieu": "Halle Pagnol et place Pagnol, Bruz",
       "note": "Samedi 5 décembre 10h-19h, dimanche 6 décembre 10h-18h. 40 à 50 exposants sous halle couverte non chauffée, plus quelques emplacements extérieurs pour les stands alimentaires. Appel à candidatures ouvert aux artisans, créateurs et producteurs.",
-      "lien": "https://www.ville-bruz.fr/actualites/marche-de-noel-de-bruz-2026-les-inscriptions-sont-ouvertes/",
-      "lien_label": "Appel à candidatures — Ville de Bruz"
+      "lien": "https://www.ville-bruz.fr/actualites/marche-de-noel-et-telethon-a-bruz/",
+      "lien_label": "Marché de Noël et Téléthon — Ville de Bruz"
     },
     {
       "id": "agenda-3a22e3a8",
