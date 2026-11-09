@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-11-02",
+    "last_updated": "2026-11-09",
     "version": "3.0"
   },
   "dossiers": [
@@ -10,7 +10,7 @@
       "categorie": "Mobilités",
       "statut": "en_cours",
       "featured": true,
-      "last_activity": "2026-10-09",
+      "last_activity": "2026-11-05",
       "date_ouverture": "2026-06-16",
       "chapeau": "La future ligne T4 (trambus guidé) reliera Rennes à Bruz d'ici 2031-2032. Le terminus penche désormais vers la gare SNCF, mais Rennes Métropole étudie encore trois scénarios de desserte (arrêt simple, navettes, renfort bus). Une décision qui reste entre les mains de la Métropole, pas de la commune.",
       "ce_quon_sait": [
@@ -87,6 +87,13 @@
         }
       ],
       "actus_recentes": [
+        {
+          "date": "2026-11-05",
+          "titre": "Bruz. Dino Voodoo et les habitants peignent un autre visage de la gare",
+          "detail": "Les Bruzois et les Bruzoises collaborent avec l'artiste Dino Voodoo pour réaliser une fresque murale à la gare, redynamisant ce lieu stratégique. Cette initiative mêle création artistique et participation citoyenne, valorisant l'accès clé de la ville.",
+          "source_url": "https://unidivers.fr/bruz-dino-voodoo-habitants-fresque-gare/",
+          "source_label": "Unidivers"
+        },
         {
           "date": "2026-10-09",
           "titre": "Trambus T4 : Rennes Métropole étudie trois scénarios de terminus à Bruz, mais pas forcément les navettes",

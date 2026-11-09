@@ -1,9 +1,19 @@
 {
   "meta": {
-    "last_updated": "2026-11-02",
+    "last_updated": "2026-11-09",
     "note": "Actus de suivi des promesses — une actu = un événement daté lié à une ou plusieurs promesses"
   },
   "actus": [
+    {
+      "id": "presse-7a960138",
+      "titre": "Bruz. Dino Voodoo et les habitants peignent un autre visage de la gare",
+      "date": "2026-11-05",
+      "detail": "Les Bruzois et les Bruzoises collaborent avec l'artiste Dino Voodoo pour réaliser une fresque murale à la gare, redynamisant ce lieu stratégique. Cette initiative mêle création artistique et participation citoyenne, valorisant l'accès clé de la ville.",
+      "source_url": "https://unidivers.fr/bruz-dino-voodoo-habitants-fresque-gare/",
+      "source_label": "Unidivers",
+      "type": "presse",
+      "dossier": "D01"
+    },
     {
       "id": "of-d2843d8b",
       "titre": "Bruz. La collecte alimentaire est aussi ouverte aux clients du drive",

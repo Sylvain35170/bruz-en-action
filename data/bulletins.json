@@ -1,11 +1,33 @@
 {
   "meta": {
-    "last_updated": "2026-10-28",
+    "last_updated": "2026-11-05",
     "note": "Bulletins municipaux (Bruz Mag, Semaine à Bruz) — distincts des séances de conseil municipal (cms.json)",
     "dernier_bruz_mag": 262,
-    "derniere_semaine_bruz": 863
+    "derniere_semaine_bruz": 864
   },
   "bulletins": [
+    {
+      "id": "SAB-864",
+      "date": "2026-11-05",
+      "titre": "Semaine à Bruz n°864 — du 5 au 19 novembre 2026",
+      "points_cles": [
+        "Conseil municipal ouvert au public lundi 16 novembre à 19h à l'Hôtel de Ville",
+        "Ramassage des déchets recyclables mercredi 18 novembre, ordures ménagères vendredis 6 et 20 novembre",
+        "Crise sécheresse en vigueur : le département 35 appelle à adopter des comportements économes en eau",
+        "Cérémonie de l'armistice le 11 novembre avec prière à 9h30, cérémonie civile et militaire à 10h30 au Monument du Souvenir",
+        "Festival culturel Mortel ! de novembre à décembre autour de la thématique de la mort : conférences, spectacles, cinéma, ateliers",
+        "La Ville recrute des agents recenseurs pour janvier-février 2027 (retraités, étudiants ou demandeurs d'emploi)",
+        "Sécurité routière pour cyclistes et trottinettes : contrôle gratuit et distribution d'équipements de visibilité mardi 24 novembre",
+        "Travaux en cours avenue Général de Gaulle, boulevard Louis Pasteur et place du Docteur Joly avec déviation du trafic"
+      ],
+      "sources": [
+        {
+          "label": "Télécharger le PDF",
+          "url": "https://www.ville-bruz.fr/wp-content/uploads/2026/11/Semaine-a-Bruz-n°864-du-5-au-19-novembre-2026.pdf"
+        }
+      ],
+      "type": "semaine_bruz"
+    },
     {
       "id": "BM-262",
       "date": "2026-11-01",
