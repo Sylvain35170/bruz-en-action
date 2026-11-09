@@ -24,7 +24,9 @@ _ERRORS: list[str] = []
 
 
 def log(msg: str, level: str = "INFO") -> None:
-    ts = datetime.now().strftime("%H:%M:%S")
+    # Date complète : les logs launchd s'accumulent sur des semaines et les runs
+    # décalés (Mac éteint/en veille) ne se repèrent pas avec l'heure seule.
+    ts = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     icons = {"INFO": "·", "OK": "✅", "WARN": "⚠️", "ERR": "❌", "NEW": "🆕"}
     if level == "ERR":
         _ERRORS.append(msg)
