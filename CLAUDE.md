@@ -202,16 +202,6 @@ jamais déclencher `flow.run_local_server()` sous launchd, cf. incident 6 j du 2
 ---
 
 ## Pièges connus
-### 2026-09-27 — Un échec par valeur de retour (`None`) peut ne jamais être loggé
-*(2026-09-14)* `agent_presse._resolve_gnews()` (bruz-en-action) retournait `None` sur échec
-sans lever d'exception ; l'appelant ne loggait que dans son `except`. Résultat : zéro trace
-d'échec dans tout l'historique du log malgré des échecs réels documentés. Le code
-fonctionnait en test isolé — ce qui masquait le vrai bug, l'absence de trace.
-
-➡️ Une fonction dont le chemin d'échec passe par une valeur de retour (`None`, `False`,
-liste vide) doit logger **à la source**, pas compter sur un `except` qui ne couvre que les
-exceptions. Ce trou d'observabilité ne se voit qu'en cherchant activement les traces
-attendues et en constatant leur absence — jamais en relisant le code.
 ### 2026-10-12 — Google News : URL entourée de `\"`, jetons anciens morts
 → dispatch: local:bruz-en-action
 
@@ -237,3 +227,10 @@ Une actu corrigée après `agent_dossiers` se propage dans `dossiers.json` par `
 ### 2026-10-26 — CLI `claude` : l'erreur sort sur stdout ; bulletins hors des pages du site
 - Déconnecté, le CLI écrit « Not logged in · Please run /login » sur **stdout**, rien sur stderr. Les agents ne loggaient que stderr → 4 jours d'erreurs vides (20-23/10, points clés du n°863 perdus). Corrigé dans `agent_bruz_mag`, `agent_select`, `agent_enrichissement_cm` ; remède = `/login` dans un terminal.
 - Le `°` encodé (`%C2%B0`) n'empêche pas le téléchargement (n°863 OK) : le PDF du n°861 a été **retiré** par la mairie (`url_expiree`). Le n°862 n'était lié que par sa une en PNG et nommé `n°-862` (tiret) : un 404 ou un numéro manquant se vérifie dans la médiathèque WordPress (`/wp-json/wp/v2/media?search=…`) et par variantes de nom, avant de conclure à un bug d'encodage.
+
+### 2026-11-02 — Doublon de séance recréé par agent_enrichissement_cm
+Titre YouTube sans année (« lundi 21 septembre ») → la date de publication de la vidéo servait de
+date de séance → ID inexistant (`CM-2026-09-23`) → séance recréée et ré-enrichie à chaque run, puis
+injectée dans les dossiers par `agent_dossiers`. Corrigé (9949ab1) : année par défaut = année de
+publication, rapprochement par `youtube_id` avant création. Après une veille manuelle, relire
+`git diff data/cms.json` avant de committer.

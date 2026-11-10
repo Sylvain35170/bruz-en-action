@@ -545,3 +545,13 @@ résumé extrapolé (« révèle les tensions… »).
 
 `curl …/dossiers/D23/` ne contient pas le contenu attendu, `…/dossiers/D23.html` oui — un grep
 sur la mauvaise forme conclut à tort à une absence. Bulletins : `/publications.html`.
+### 2026-09-27 — Un échec par valeur de retour (`None`) peut ne jamais être loggé
+*(2026-09-14)* `agent_presse._resolve_gnews()` (bruz-en-action) retournait `None` sur échec
+sans lever d'exception ; l'appelant ne loggait que dans son `except`. Résultat : zéro trace
+d'échec dans tout l'historique du log malgré des échecs réels documentés. Le code
+fonctionnait en test isolé — ce qui masquait le vrai bug, l'absence de trace.
+
+➡️ Une fonction dont le chemin d'échec passe par une valeur de retour (`None`, `False`,
+liste vide) doit logger **à la source**, pas compter sur un `except` qui ne couvre que les
+exceptions. Ce trou d'observabilité ne se voit qu'en cherchant activement les traces
+attendues et en constatant leur absence — jamais en relisant le code.
