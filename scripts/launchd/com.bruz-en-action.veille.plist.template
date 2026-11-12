@@ -9,11 +9,14 @@
     <array>
         <string>/bin/bash</string>
         <string>-c</string>
-        <!-- Backstop dur : si le run entier dépasse 30 min (watchdog par agent HS,
+        <!-- caffeinate -i : empêche la veille inactive PENDANT le run. Les timers (SIGALRM,
+             perl alarm) s'arrêtent quand le Mac dort : le 11/11 le run a duré 4h35
+             pour 90 s de travail. Ne protège pas d'une veille forcée (capot fermé).
+             Backstop dur : si le run entier dépasse 30 min (watchdog par agent HS,
              deadlock imprévu…), perl SIGALRM tue le process pour que launchd
              puisse relancer au prochain créneau. Cf. blocage 6 j du 26/08
              (agent_signalements figé sur flow.run_local_server). -->
-        <string>exec /usr/bin/perl -e 'alarm shift; exec @ARGV' 1800 __VENV_PYTHON__ __REPO__/scripts/run_agents.py</string>
+        <string>exec /usr/bin/caffeinate -i /usr/bin/perl -e 'alarm shift; exec @ARGV' 1800 __VENV_PYTHON__ __REPO__/scripts/run_agents.py</string>
     </array>
 
     <key>StartCalendarInterval</key>

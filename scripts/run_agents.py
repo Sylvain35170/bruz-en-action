@@ -10,6 +10,7 @@ Cron  : launchd @ 17h — voir ~/Library/LaunchAgents/com.bruz-en-action.veille.
 
 import json
 import signal
+import socket
 import sys
 import time
 from datetime import datetime
@@ -33,6 +34,41 @@ class AgentTimeout(Exception):
 
 def _raise_timeout(signum, frame):
     raise AgentTimeout(f"pas de retour après {AGENT_TIMEOUT_S}s — agent interrompu")
+
+# Pré-vol réseau. launchd rattrape un créneau manqué (Mac endormi à 17h) dès le
+# réveil, souvent avant le retour du DNS : le 11/11 tous les agents ont échoué en
+# NameResolutionError. On attend le réseau au lieu de dégrader tous les agents.
+NETWORK_HOSTS    = ("www.ville-bruz.fr", "news.google.com", "oauth2.googleapis.com")
+NETWORK_WAIT_S   = 600
+NETWORK_POLL_S   = 15
+SLEEP_GAP_S      = 120  # écart horloge murale / monotone => le Mac a dormi
+
+
+def _network_ok() -> bool:
+    try:
+        for h in NETWORK_HOSTS:
+            socket.getaddrinfo(h, 443)
+        return True
+    except OSError:
+        return False
+
+
+def wait_for_network(max_wait: int = NETWORK_WAIT_S) -> bool:
+    """Attend la résolution DNS des hôtes clés. False si toujours absente."""
+    deadline = time.monotonic() + max_wait
+    first = True
+    while True:
+        if _network_ok():
+            if not first:
+                log("Réseau revenu.", "OK")
+            return True
+        if first:
+            log(f"Réseau indisponible — attente jusqu'à {max_wait}s…", "WARN")
+            first = False
+        if time.monotonic() >= deadline:
+            return False
+        time.sleep(NETWORK_POLL_S)
+
 
 RUN_DIR  = Path.home() / ".shared-context" / "agent_runs"
 LOG_FILE = Path(__file__).parent / "veille.log"
@@ -82,9 +118,15 @@ def main() -> None:
     any_updated  = False
     agent_steps: dict = {}
 
+    if not wait_for_network():
+        log(f"Réseau absent après {NETWORK_WAIT_S}s — run abandonné, rien collecté.", "ERR")
+        _write_run_status(start, {"réseau": "❌ DNS indisponible — run non exécuté"}, False)
+        sys.exit(75)
+
     for name, module_path in AGENTS:
         log(f"\n── Agent {name} ──────────────────────────")
         reset_errors()
+        wall0, mono0 = time.time(), time.monotonic()
         signal.signal(signal.SIGALRM, _raise_timeout)
         signal.alarm(AGENT_TIMEOUT_S)
         try:
@@ -117,6 +159,16 @@ def main() -> None:
             traceback.print_exc()
         finally:
             signal.alarm(0)  # désarme le watchdog quoi qu'il arrive
+        # Les timers ne tournent pas pendant la veille système : si l'horloge
+        # murale a avancé bien plus que la monotone, le Mac a dormi — le résultat
+        # de cet agent est suspect, et on revérifie le réseau avant le suivant.
+        gap = (time.time() - wall0) - (time.monotonic() - mono0)
+        if gap > SLEEP_GAP_S:
+            log(f"Agent {name} : veille système détectée (~{int(gap)}s) — résultat à vérifier.", "WARN")
+            if not wait_for_network():
+                log("Réseau absent après réveil — run interrompu.", "ERR")
+                agent_steps["réseau"] = "❌ DNS indisponible après veille — run interrompu"
+                break
         time.sleep(1)  # politesse entre agents
 
     log("\n── Bilan ──────────────────────────────────")
