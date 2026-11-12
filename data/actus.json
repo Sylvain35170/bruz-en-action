@@ -1,9 +1,38 @@
 {
   "meta": {
-    "last_updated": "2026-11-09",
+    "last_updated": "2026-11-12",
     "note": "Actus de suivi des promesses — une actu = un événement daté lié à une ou plusieurs promesses"
   },
   "actus": [
+    {
+      "id": "mairie-a7213ffa",
+      "titre": "Novembre Bleu",
+      "date": "2026-11-12",
+      "detail": "Novembre Bleu est une campagne de sensibilisation au cancer de la prostate portée par la commune de Bruz. L'initiative s'inscrit dans les actions municipales de prévention santé et de bien-être.",
+      "source_url": "https://www.ville-bruz.fr/actualites/novembre-bleu/",
+      "source_label": "Mairie de Bruz — Actualités",
+      "type": "mairie",
+      "dossier": "D25"
+    },
+    {
+      "id": "presse-e0dca9ff",
+      "titre": "À Bruz, petit village près de Rennes longé par la Vilaine, la forêt de Cicé déploie 23 hectares de chênes et de châtaigniers",
+      "date": "2026-11-10",
+      "detail": "La forêt de Cicé, qui longe la Vilaine, couvre 23 hectares de chênes et châtaigniers à Bruz. Cet espace naturel constitue un patrimoine forestier important pour les habitants de Bruz.",
+      "source_url": "https://www.parisselectbook.com/2026/11/10/a-bruz-petit-village-pres-de-rennes-longe-par-la-vilaine-la-foret-de-cice-deploie-23-hectares-de-chenes-et-de-chataigniers/",
+      "source_label": "Paris Select Book",
+      "type": "presse"
+    },
+    {
+      "id": "megalis-09268da2",
+      "titre": "convocation conseil municipal 16/11/2026",
+      "date": "2026-11-09",
+      "detail": "Le conseil municipal de Bruz est convoqué pour le 16 novembre 2026, documentant l'agenda institutionnel de la gouvernance locale. Cet acte reflète la transparence des décisions de la majorité municipale.",
+      "source_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Hors_prefecture/2026/1227669/294317b4d456376faf3f09456e5382cdc2fb7bf6cca4ab8275186bae8fb9e288.pdf",
+      "source_label": "Mégalis — Acte hors préfecture",
+      "type": "megalis",
+      "dossier": "D23"
+    },
     {
       "id": "presse-7a960138",
       "titre": "Bruz. Dino Voodoo et les habitants peignent un autre visage de la gare",

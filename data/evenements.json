@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-11-08",
+    "last_updated": "2026-11-12",
     "source": "Ville de Bruz, Grand Logis, Handisport, Les Trans"
   },
   "evenements": [
@@ -103,97 +103,6 @@
       "lien_label": "Agenda Ville de Bruz",
       "source": "agenda_mairie",
       "date_fin": "2026-12-19"
-    },
-    {
-      "id": "agenda-c47ae865",
-      "titre": "Semaine Bleue",
-      "date": "2026-10-09",
-      "categorie": "Médiathèque",
-      "lien": "https://www.ville-bruz.fr/agenda/semaine-bleue-5/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
-    },
-    {
-      "id": "agenda-f137f237",
-      "titre": "Conférence sur la Dissonance",
-      "date": "2026-10-09",
-      "categorie": "Conférence",
-      "lien": "https://www.ville-bruz.fr/agenda/conference-sur-la-dissonance/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
-    },
-    {
-      "id": "agenda-674f69c0",
-      "titre": "Exposition : « Quand l’argile s’anime »",
-      "date": "2026-10-09",
-      "categorie": "Exposition",
-      "lien": "https://www.ville-bruz.fr/agenda/exposition-quand-largile-sanime/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie",
-      "date_fin": "2026-10-11"
-    },
-    {
-      "id": "agenda-fbd1d750",
-      "titre": "Coup de pouce informatique",
-      "date": "2026-10-09",
-      "categorie": "Atelier",
-      "lien": "https://www.ville-bruz.fr/agenda/coup-de-pouce-informatique/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
-    },
-    {
-      "id": "agenda-7997a1c3",
-      "titre": "Semaine Bleue : balade en calèche",
-      "date": "2026-10-10",
-      "categorie": "Semaine Bleue",
-      "lien": "https://www.ville-bruz.fr/agenda/semaine-bleue-6/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
-    },
-    {
-      "id": "agenda-4a435592",
-      "titre": "Stage poterie débutant adultes",
-      "date": "2026-10-10",
-      "categorie": "Association",
-      "lien": "https://www.ville-bruz.fr/agenda/stage-poterie-debutant/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
-    },
-    {
-      "id": "agenda-fe1cbc08",
-      "titre": "Semaine Bleue",
-      "date": "2026-10-11",
-      "categorie": "Famille",
-      "lien": "https://www.ville-bruz.fr/agenda/semaine-bleue-7/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
-    },
-    {
-      "id": "agenda-45543081",
-      "titre": "Rendez-vous de la gratuité",
-      "date": "2026-10-11",
-      "categorie": "Braderie",
-      "lien": "https://www.ville-bruz.fr/agenda/rendez-vous-de-la-gratuite/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
-    },
-    {
-      "id": "agenda-8bd5f0d4",
-      "titre": "Foulées natures bruzoises",
-      "date": "2026-10-11",
-      "categorie": "Sport",
-      "lien": "https://www.ville-bruz.fr/agenda/foulees-natures-bruzoises/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
-    },
-    {
-      "id": "agenda-f0efc940",
-      "titre": "Initiation à la danse traditionnelle albanaise",
-      "date": "2026-10-11",
-      "categorie": "Association",
-      "lien": "https://www.ville-bruz.fr/agenda/initiation-a-la-danse-traditionnelle-albanaise/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
     },
     {
       "id": "agenda-6a1edf59",
@@ -1117,6 +1026,15 @@
       "date": "2026-11-14",
       "categorie": "Association",
       "lien": "https://www.ville-bruz.fr/agenda/troc-aux-plants/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-c1b323d6",
+      "titre": "Exposition sur la Marqueterie",
+      "date": "2026-11-14",
+      "categorie": "Exposition",
+      "lien": "https://www.ville-bruz.fr/agenda/exposition-sur-la-marqueterie-5/",
       "lien_label": "Agenda Ville de Bruz",
       "source": "agenda_mairie"
     },

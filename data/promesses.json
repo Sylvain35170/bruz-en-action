@@ -1,7 +1,7 @@
 {
   "meta": {
     "source": "Programme Un nouvel élan pour Bruz — mandat 2026-2032",
-    "last_updated": "2026-10-26",
+    "last_updated": "2026-11-12",
     "updated_by": "revue manuelle",
     "total_promesses": 50
   },
@@ -105,9 +105,9 @@
       "ref": "M1",
       "titre": "Obtenir le terminus du trambus T4 à la gare de Bruz",
       "pilier_id": 1,
-      "statut_id": "non_commence",
+      "statut_id": "en_cours",
       "horizon": "2026-2027",
-      "detail": "Négocier avec Rennes Métropole un tracé s'arrêtant à la gare (et non en centre-ville). Démarrage T4 prévu 2031.",
+      "detail": "Négocier avec Rennes Métropole un tracé s'arrêtant à la gare (et non en centre-ville). Démarrage T4 prévu 2031. Selon la majorité (Bruz Mag n°262 (nov.-déc. 2026)), le terminus du trambus est positionné à la gare et des études complémentaires sont en cours ; la minorité s'inquiète du tracé. À confirmer par une décision de Rennes Métropole.",
       "source": {
         "doc": "programme-2026.pdf",
         "url": "https://www.unnouvelelanpourbruz.com/_files/ugd/71facb_17a88aa6318c4051bb64c01574a6357a.pdf",
@@ -203,7 +203,7 @@
       "pilier_id": 2,
       "statut_id": "en_cours",
       "horizon": "2026-2028",
-      "detail": "Atteindre le double de l'effectif actuel. En cours : première offre de création de poste d'agent de police municipale supplémentaire publiée en juin 2026 (voir dossier D07).",
+      "detail": "Atteindre le double de l'effectif actuel. En cours : première offre de création de poste d'agent de police municipale supplémentaire publiée en juin 2026 (voir dossier D07). Recrutement d'un policier municipal annoncé par la majorité (Bruz Mag n°262 (nov.-déc. 2026)).",
       "source": {
         "doc": "programme-2026.pdf",
         "url": "https://www.unnouvelelanpourbruz.com/_files/ugd/71facb_17a88aa6318c4051bb64c01574a6357a.pdf",
@@ -233,9 +233,9 @@
       "ref": "S3",
       "titre": "Améliorer et renforcer la vidéoprotection",
       "pilier_id": 2,
-      "statut_id": "non_commence",
+      "statut_id": "en_cours",
       "horizon": "2026-2027",
-      "detail": "Zones sensibles prioritaires.",
+      "detail": "Zones sensibles prioritaires. En cours : la majorité indique un audit avec la gendarmerie pour redéployer les caméras (Bruz Mag n°262 (nov.-déc. 2026)). Pas encore de nouvelles caméras annoncées.",
       "source": {
         "doc": "programme-2026.pdf",
         "url": "https://www.unnouvelelanpourbruz.com/_files/ugd/71facb_17a88aa6318c4051bb64c01574a6357a.pdf",
@@ -347,7 +347,7 @@
       "pilier_id": 3,
       "statut_id": "non_commence",
       "horizon": "2026-2032",
-      "detail": "Réduire la consommation énergétique du patrimoine communal.",
+      "detail": "Réduire la consommation énergétique du patrimoine communal. Annoncé, pas encore engagé : l'éditorial du maire (Bruz Mag n°262 (nov.-déc. 2026)) fait des écoles la priorité (isolation, protection solaire, végétalisation, cours), « à mener progressivement » ; demande de subvention pour l'éclairage LED des gymnases de Ker Lann.",
       "source": {
         "doc": "programme-2026.pdf",
         "url": "https://www.unnouvelelanpourbruz.com/_files/ugd/71facb_17a88aa6318c4051bb64c01574a6357a.pdf",
@@ -441,9 +441,9 @@
       "ref": "SC1",
       "titre": "Construire un nouveau boulodrome couvert",
       "pilier_id": 5,
-      "statut_id": "non_commence",
+      "statut_id": "en_cours",
       "horizon": "2027-2029",
-      "detail": "Équipement couvert permettant la pratique toute l'année.",
+      "detail": "Équipement couvert permettant la pratique toute l'année. En cours : selon la tribune de la majorité (Bruz Mag n°262 (nov.-déc. 2026)), le projet est lancé, avec une livraison annoncée en 2028. Déclaration de la majorité ; aucune délibération ni marché identifié à ce stade.",
       "source": {
         "doc": "programme-2026.pdf",
         "url": "https://www.unnouvelelanpourbruz.com/_files/ugd/71facb_17a88aa6318c4051bb64c01574a6357a.pdf",
@@ -633,9 +633,9 @@
       "ref": "P4",
       "titre": "Étendre la sécurité aux entrées/sorties de toutes les écoles",
       "pilier_id": 6,
-      "statut_id": "non_commence",
+      "statut_id": "en_cours",
       "horizon": "2026-2027",
-      "detail": "Dispositifs de sécurisation aux abords scolaires.",
+      "detail": "Dispositifs de sécurisation aux abords scolaires. En cours : la majorité annonce la sécurisation des entrées-sorties des écoles (Bruz Mag n°262 (nov.-déc. 2026)). Périmètre (toutes les écoles ?) non précisé.",
       "source": {
         "doc": "programme-2026.pdf",
         "url": "https://www.unnouvelelanpourbruz.com/_files/ugd/71facb_17a88aa6318c4051bb64c01574a6357a.pdf",
@@ -841,9 +841,9 @@
       "ref": "EC1",
       "titre": "Végétaliser les espaces publics et créer des îlots de fraîcheur",
       "pilier_id": 10,
-      "statut_id": "non_commence",
+      "statut_id": "en_cours",
       "horizon": "2026-2029",
-      "detail": "Programme de plantation et d'aménagement.",
+      "detail": "Programme de plantation et d'aménagement. En cours : la végétalisation de la place du Docteur Joly est citée comme engagement dans l'éditorial du maire (Bruz Mag n°262 (nov.-déc. 2026)) ; des travaux ont lieu place du Docteur Joly (Semaine à Bruz n°864), lien non confirmé.",
       "source": {
         "doc": "programme-2026.pdf",
         "url": "https://www.unnouvelelanpourbruz.com/_files/ugd/71facb_17a88aa6318c4051bb64c01574a6357a.pdf",
