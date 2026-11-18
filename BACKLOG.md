@@ -16,7 +16,6 @@
 
 ## 🟡 À faire — Agents de veille
 
-- [ ] **Vérifier le premier run 17h avec le pré-vol réseau** (ajouté le 12/11 : `wait_for_network()` 10 min + détection de veille système + `caffeinate -i` dans le plist). Cause des runs de 4 à 8 h (7, 10, 11/11) : les timers SIGALRM/perl s'arrêtent quand le Mac dort, et launchd rattrape le créneau dès le réveil, avant le retour du DNS. Si le réseau manque encore après 10 min, le run s'abandonne (code 75) sans rattrapage — option : second créneau 19h conditionnel. Commit `run_agents.py` + template plist à faire (non commités le 12/11).
 - [ ] **Extraction des bulletins trop pauvre sur les travaux/équipements** : `points_cles` = ~8 lignes génériques. Le Bruz Mag n°262 contenait boulodrome (2028), centrale solaire, foyer du FC, gymnases de Ker Lann, parking Pagnol, priorité écoles ; rien n'avait été capté (rattrapé à la main le 12/11 dans `promesses.json`). Piste : passe dédiée « travaux, équipements, subventions » sur les bulletins et résumés de CM.
 - [ ] **CM du 12/10 — suivre les décisions** : publiés le 18/10 (liste des délibérations, PV du 21/09, fonds de concours Prigent/de Gaulle, marché rénovation thermique, convention Fondation étudiante). Rejetés : cession parking Pagnol, décisions du maire, CST, postes (DGS déjà couvert dans la fiche CM). Fonds de concours lié à D13 le 26/10.
 

@@ -26,14 +26,21 @@ from utils import ROOT, errors_logged, git_commit_push, log, reset_errors
 # wsgiref, socket, subprocess Claude CLI…) et le run continue avec les autres.
 # 300s laisse largement la marge aux agents lents (Claude CLI, Playwright).
 AGENT_TIMEOUT_S = 300
+# Exceptions ciblées. Sélection : ~45 s par batch de 5 via le CLI, donc 35 items
+# dépassent 300 s (incident du 18/11). Elle sauvegarde batch par batch, le plafond
+# ne sert plus qu'à borner un vrai blocage. Le backstop global reste le perl alarm 1800.
+AGENT_TIMEOUT_OVERRIDES = {"Sélection": 600}
 
 
 class AgentTimeout(Exception):
     """Levée quand un agent dépasse AGENT_TIMEOUT_S."""
 
 
+_timeout_courant = AGENT_TIMEOUT_S
+
+
 def _raise_timeout(signum, frame):
-    raise AgentTimeout(f"pas de retour après {AGENT_TIMEOUT_S}s — agent interrompu")
+    raise AgentTimeout(f"pas de retour après {_timeout_courant}s — agent interrompu")
 
 # Pré-vol réseau. launchd rattrape un créneau manqué (Mac endormi à 17h) dès le
 # réveil, souvent avant le retour du DNS : le 11/11 tous les agents ont échoué en
@@ -112,6 +119,7 @@ AGENTS = [
 
 
 def main() -> None:
+    global _timeout_courant
     start = datetime.now()
     log(f"=== Veille Bruz en Action — {start.strftime('%Y-%m-%d %H:%M')} ===")
 
@@ -128,7 +136,8 @@ def main() -> None:
         reset_errors()
         wall0, mono0 = time.time(), time.monotonic()
         signal.signal(signal.SIGALRM, _raise_timeout)
-        signal.alarm(AGENT_TIMEOUT_S)
+        _timeout_courant = AGENT_TIMEOUT_OVERRIDES.get(name, AGENT_TIMEOUT_S)
+        signal.alarm(_timeout_courant)
         try:
             import importlib
             mod = importlib.import_module(module_path)

@@ -110,77 +110,28 @@ def _parse_proposals(raw: str) -> list[dict] | None:
         return None
 
 
-def run() -> bool:
-    queue = load_json(QUEUE_FILE)
-    items = queue.get("items", [])
+def _integrer(parsed: list[dict], batch_light: list[dict]) -> tuple[int, int]:
+    """Intègre les propositions d'UN batch au registre et le sauvegarde.
 
-    if not items:
-        log("Select : queue vide — rien à traiter.", "INFO")
-        return False
-
-    log(f"Select : {len(items)} item(s) à analyser via Claude (batches de {BATCH_SIZE})…")
-
-    items_light = [
-        {"id": i.get("id"), "titre": i.get("titre"),
-         "detail": (i.get("detail") or "")[:300],
-         "source_url": i.get("source_url"), "source_label": i.get("source_label", ""),
-         "date": i.get("date"), "type": i.get("type")}
-        for i in items
-    ]
-
-    all_proposals: list[dict] = []
-    failed_items: list[dict] = []
-
-    for batch_start in range(0, len(items_light), BATCH_SIZE):
-        batch = items_light[batch_start:batch_start + BATCH_SIZE]
-        log(f"  Batch {batch_start + 1}–{batch_start + len(batch)} / {len(items_light)}…")
-        prompt = PROMPT_TEMPLATE.format(
-            dossiers_desc=DOSSIERS_DESC,
-            items_json=json.dumps(batch, ensure_ascii=False, indent=2),
-        )
-        raw = _call_claude(prompt)
-        if not raw:
-            log(f"  Batch {batch_start + 1} échoué — items conservés en queue.", "WARN")
-            failed_items.extend(items[batch_start:batch_start + BATCH_SIZE])
-            continue
-        parsed = _parse_proposals(raw)
-        if parsed is None:
-            log(f"  Batch {batch_start + 1} JSON invalide — items conservés.", "WARN")
-            failed_items.extend(items[batch_start:batch_start + BATCH_SIZE])
-            continue
-        # Enrichir avec source_label (non retourné par Claude, copié depuis l'item original)
-        source_by_id = {i.get("id"): i.get("source_label", "") for i in items_light[batch_start:batch_start + BATCH_SIZE]}
-        for p in parsed:
-            p["source_label"] = source_by_id.get(p.get("id"), "")
-        all_proposals.extend(parsed)
-
-    if not all_proposals and failed_items:
-        # Lever plutôt que retourner False : l'orchestrateur doit marquer le run
-        # en erreur, pas afficher "rien de nouveau" (panne Claude CLI ≠ absence d'actu).
-        raise RuntimeError(f"Select : tous les batches ont échoué ({len(failed_items)} items conservés en queue)")
-
-    # Remettre les items échoués en queue
-    QUEUE_FILE.write_text(
-        json.dumps({"items": failed_items, "meta": {"last_updated": today()}},
-                   ensure_ascii=False, indent=2), encoding="utf-8"
-    )
-    if failed_items:
-        log(f"  {len(failed_items)} item(s) réinjectés en queue pour le prochain run.", "WARN")
+    Appelée après chaque batch : un timeout du watchdog ne perd qu'un batch,
+    pas les analyses déjà payées. Retourne (n_new_pending, n_auto_rejected).
+    """
+    source_by_id = {i.get("id"): i.get("source_label", "") for i in batch_light}
+    type_by_id = {i.get("id"): i.get("type", "") for i in batch_light}  # perdu par Claude, utile à la revue
+    for p in parsed:
+        p["source_label"] = source_by_id.get(p.get("id"), "")
 
     # Écarter les items déjà publiés dans actus.json (même sujet reformulé par un autre
     # scraper source, URL différente donc non filtré en amont dans la queue)
     proposals = []
     deja_publies = []
-    for p in all_proposals:
+    for p in parsed:
         if is_already_published(p.get("titre", ""), p.get("source_url", "")):
             deja_publies.append(p)
             continue
         proposals.append(p)
     if deja_publies:
         log(f"  {len(deja_publies)} item(s) déjà publié(s) — écarté(s) de la sélection.", "INFO")
-
-    # Réenrichir avec le type d'item (perdu par Claude, utile à la revue)
-    type_by_id = {i.get("id"): i.get("type", "") for i in items_light}
 
     # Alimenter le registre incrémental — chaque item y entre UNE fois
     registry = load_registry()
@@ -238,9 +189,72 @@ def run() -> bool:
 
     if n_new_pending or n_auto_rejected or n_doublons_memorises:
         save_registry(registry)
+    return n_new_pending, n_auto_rejected
 
+
+def _ecrire_queue(restants: list[dict]) -> None:
+    QUEUE_FILE.write_text(
+        json.dumps({"items": restants, "meta": {"last_updated": today()}},
+                   ensure_ascii=False, indent=2), encoding="utf-8"
+    )
+
+
+def run() -> bool:
+    queue = load_json(QUEUE_FILE)
+    items = queue.get("items", [])
+
+    if not items:
+        log("Select : queue vide — rien à traiter.", "INFO")
+        return False
+
+    log(f"Select : {len(items)} item(s) à analyser via Claude (batches de {BATCH_SIZE})…")
+
+    items_light = [
+        {"id": i.get("id"), "titre": i.get("titre"),
+         "detail": (i.get("detail") or "")[:300],
+         "source_url": i.get("source_url"), "source_label": i.get("source_label", ""),
+         "date": i.get("date"), "type": i.get("type")}
+        for i in items
+    ]
+
+    failed_items: list[dict] = []
+    n_analyses = n_new_pending = n_auto_rejected = 0
+
+    # Incrémental : chaque batch réussi est intégré au registre ET retiré de la
+    # queue immédiatement. Le watchdog de run_agents.py (SIGALRM) peut couper cet
+    # agent à tout moment sans perdre le travail déjà fait (incident du 18/11 :
+    # 35 items, timeout à 300 s, rien sauvegardé, tout à refaire le lendemain).
+    for batch_start in range(0, len(items_light), BATCH_SIZE):
+        batch_end = batch_start + BATCH_SIZE
+        batch = items_light[batch_start:batch_end]
+        log(f"  Batch {batch_start + 1}–{batch_start + len(batch)} / {len(items_light)}…")
+        prompt = PROMPT_TEMPLATE.format(
+            dossiers_desc=DOSSIERS_DESC,
+            items_json=json.dumps(batch, ensure_ascii=False, indent=2),
+        )
+        raw = _call_claude(prompt)
+        parsed = _parse_proposals(raw) if raw else None
+        if parsed is None:
+            log(f"  Batch {batch_start + 1} échoué — items conservés en queue.", "WARN")
+            failed_items.extend(items[batch_start:batch_end])
+        else:
+            n_p, n_r = _integrer(parsed, batch)
+            n_new_pending += n_p
+            n_auto_rejected += n_r
+            n_analyses += len(parsed)
+        # Queue = échecs + items pas encore tentés
+        _ecrire_queue(failed_items + items[batch_end:])
+
+    if not n_analyses and failed_items:
+        # Lever plutôt que retourner False : l'orchestrateur doit marquer le run
+        # en erreur, pas afficher "rien de nouveau" (panne Claude CLI ≠ absence d'actu).
+        raise RuntimeError(f"Select : tous les batches ont échoué ({len(failed_items)} items conservés en queue)")
+    if failed_items:
+        log(f"  {len(failed_items)} item(s) réinjectés en queue pour le prochain run.", "WARN")
+
+    reg_items = load_registry()["items"]
     n_pending_total = sum(1 for i in reg_items if i.get("statut") == "pending")
-    log(f"Select : {len(proposals)} analysés → {n_new_pending} nouveau(x) pending, "
+    log(f"Select : {n_analyses} analysés → {n_new_pending} nouveau(x) pending, "
         f"{n_auto_rejected} auto-rejeté(s) — {n_pending_total} en attente de revue", "OK")
     return n_new_pending > 0
 
