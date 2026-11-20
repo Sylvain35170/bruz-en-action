@@ -28,6 +28,7 @@
 
 ## 🟡 À faire — Dossiers à instruire
 
+- [ ] **Dossier environnement / biodiversité à créer ?** — aucun des 19 dossiers ne porte ce thème. Le 18/11, la convention pluriannuelle avec la LPO Bretagne (délib. du CM du 16/11, `megalis-50e9effe`) a été publiée en actu sans dossier de rattachement. À créer seulement si d'autres actes s'accumulent (refuge LPO du bois de Carcé et label TEN, délibérations Rennes Métropole rejetées le 18/11) ; sinon la laisser en actu seule. Nouveau dossier : repartir de `PROMPTS_ILLUSTRATIONS.md`.
 - [ ] **D12** — City stade Siméon Belliard : toujours aucune délibération budgétaire trouvée pour la reconstruction (250-300k€ annoncés) ni avancée sur la procédure judiciaire riverains — re-vérifié le 05/09 (WebSearch), rien de neuf — re-vérifier périodiquement
 - [ ] **D21 (Culture)** — Grand Logis : programmation, événement d'ampleur et évolution de jauge évoqués par la mairie (OF 10/07) mais aucun détail concret trouvé — re-vérifié le 05/09, la saison 2026-2027 est en ligne (legrandlogis-bruz.fr) mais toujours aucune trace de l'événement d'ampleur/jauge annoncé — re-creuser dès que la mairie communique
 - [ ] **idees_ailleurs** — alimenter les dossiers avec des pratiques d'autres communes. État au 2026-07-27 : renseigné sur D13 (5 idées), D15 (3) et D05 (2) ; **vide sur les 15 autres** (D01, D02, D03, D04, D06, D07, D10, D11, D12, D16, D20, D21, D22, D23, D24)
