@@ -1,9 +1,78 @@
 {
   "meta": {
-    "last_updated": "2026-11-12",
+    "last_updated": "2026-11-18",
     "note": "Actus de suivi des promesses — une actu = un événement daté lié à une ou plusieurs promesses"
   },
   "actus": [
+    {
+      "id": "of-8313bd8f",
+      "titre": "Bruz. Stop aux violences contre les femmes en novembre",
+      "date": "2026-11-17",
+      "detail": "La Ville organise sa troisième programmation d'événements bruzais contre les violences faites aux femmes, associant la médiathèque, le Grand Logis et l'Escale. Cette initiative publique sensibilise à un enjeu social majeur.",
+      "source_url": "https://www.ouest-france.fr/bretagne/bruz-35170/bruz-stop-aux-violences-contre-les-femmes-en-novembre-f1b3f784-63b6-47b0-bf07-ba40fb9f4a83",
+      "source_label": "Ouest-France",
+      "type": "presse",
+      "dossier": "D21"
+    },
+    {
+      "id": "megalis-50e9effe",
+      "titre": "Transition ecologique — Convention pluriannuelle de partenariat avec la lpo Bretagne",
+      "date": "2026-11-16",
+      "detail": "Bruz s'engage aux côtés de la Ligue de Protection des Oiseaux pour une convention pluriannuelle de transition écologique et de préservation de la biodiversité. Ce partenariat structure l'action environnementale municipale sur plusieurs années.",
+      "source_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1231968/9f252d2206df4ad1e1187d487400ad3e72489f95b38fe0f126e630a8cf257a1b.pdf",
+      "source_label": "Mégalis — Délibération",
+      "type": "megalis"
+    },
+    {
+      "id": "megalis-01291eb5",
+      "titre": "Amenagement — REVISION DU PLAN DE PREVENTION DU RISQUE INONDATION  APPA  Ville de BRUZ",
+      "date": "2026-11-16",
+      "detail": "La Ville de Bruz révise le Plan de Prévention des Risques d'Inondation (PPRI) sur la zone de l'APPA pour renforcer la prévention des inondations. Cette démarche s'inscrit dans la gestion des risques naturels et la résilience du territoire bruzois.",
+      "source_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1231972/c33b0ad2b14a9262cd010484ce17027b5d88a4d057429875e687e01663ef93a2.pdf",
+      "source_label": "Mégalis — Délibération",
+      "type": "megalis",
+      "dossier": "D05"
+    },
+    {
+      "id": "megalis-58ba575b",
+      "titre": "Finances — Adoption du reglement budgetaire et financier suite renouvellement assemblee",
+      "date": "2026-11-16",
+      "detail": "Le conseil municipal a adopté le nouveau règlement budgétaire et financier suite au renouvellement de l'assemblée en septembre 2026. Ce document fixe les principes et les procédures de gestion des finances communales bruzaises.",
+      "source_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1231975/2759f4b52bf4e713428edea17f7d9a46f2c80cd9b5e006665c058c54ae6c113c.pdf",
+      "source_label": "Mégalis — Délibération",
+      "type": "megalis",
+      "dossier": "D03"
+    },
+    {
+      "id": "megalis-e7ad4250",
+      "titre": "Pers — Modification du tableau des indemnites apres majoration des elus a compter du 01102026",
+      "date": "2026-11-16",
+      "detail": "Le conseil a adopté la modification du tableau des indemnités des élus bruzais, suite à la majoration appliquée à compter du 1er octobre 2026. Cette délibération formalise l'ajustement rétroactif de ces indemnités.",
+      "source_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1231977/cc31a6de141bf3ccea240811d0ce96a6e94f61c20552cb77654fc2e61199bc78.pdf",
+      "source_label": "Mégalis — Délibération",
+      "type": "megalis",
+      "dossier": "D23"
+    },
+    {
+      "id": "presse-d3fa68dc",
+      "titre": "« Éminemment louche » : pourquoi la compensation de 900 000 € à verser à Rennes métropole crispe dans cette commune",
+      "date": "2026-11-17",
+      "detail": "Une compensation financière de 900 000 € que Bruz doit verser à Rennes Métropole suscite des critiques au sein de la commune. Cet enjeu budgétaire majeur affecte les finances de la commune et les relations intercommunales.",
+      "source_url": "https://www.ouest-france.fr/bretagne/bruz-35170/eminemment-louche-pourquoi-la-compensation-de-900-000-euros-a-verser-a-rennes-metropole-crispe-dans-cette-commune-f7d86448-e270-11f1-a3b1-0c6de532ce7d",
+      "source_label": "Ouest-France",
+      "type": "presse",
+      "dossier": "D03"
+    },
+    {
+      "id": "presse-e8b55b9a",
+      "titre": "Faut-il associer les habitants à la construction du budget ? À Bruz, la majorité dit non",
+      "date": "2026-11-18",
+      "detail": "Un débat oppose la majorité bruzaise aux habitants sur l'association de ces derniers à la construction du budget municipal. La majorité a annoncé son refus de mettre en place un budget participatif.",
+      "source_url": "https://www.ouest-france.fr/bretagne/bruz-35170/faut-il-associer-les-habitants-a-la-construction-du-budget-a-bruz-la-majorite-dit-non-c0299ee2-e32c-11f1-9a72-32f9104dab1b",
+      "source_label": "Ouest-France",
+      "type": "presse",
+      "dossier": "D23"
+    },
     {
       "id": "mairie-a7213ffa",
       "titre": "Novembre Bleu",

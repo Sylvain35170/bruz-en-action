@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-10-15",
+    "last_updated": "2026-11-19",
     "source_principale": "Transcriptions YouTube (Ville de Bruz) + Bruz Mag n°260 + délibérations Mégalis",
     "youtube": "https://www.youtube.com/playlist?list=PLnSe2hJFinqpupninWlKBHSmzmwLW-8i7",
     "deliberations_megalis": "https://data.megalis.bretagne.bzh/?siren=213500473",
@@ -8,6 +8,131 @@
     "dernier_bruz_mag": 259
   },
   "seances": [
+    {
+      "id": "CM-2026-11-16",
+      "date": "2026-11-16",
+      "statut": "passe",
+      "lieu": "Halle Pagnol, Bruz — 19h",
+      "titre": "Fibre de Rennes, assurance, eau potable et parkings",
+      "points_cles": [
+        "Fibre optique de Rennes : indemnité annuelle de 902 000 € contestée par la majorité (calcul sur 5 ans d'exploitation au lieu de 10, dont 2025 qui ajoute environ 200 000 €). Rapport non approuvé par 26 voix contre 7.",
+        "Assurance dommages aux biens (Groupama) : hausse de prime limitée à 25 % après une demande initiale de 50 % ; l'opposition chiffre le coût total à 197 193,52 €, soit +66 167,92 € (+50,5 %).",
+        "Règlement budgétaire et financier reconduit à l'identique (26 pour, 7 abstentions). La proposition de budget participatif de l'opposition est rejetée.",
+        "Ouvertures dominicales 2027 : 6 dimanches autorisés pour les commerces de détail (1er et 8 août, 28 novembre, 5, 12 et 19 décembre) et 5 pour les concessions automobiles.",
+        "Parkings : places vendues 8 300 € (contre 14 000 € à l'origine) ; l'opposition vote contre (26 pour, 7 contre).",
+        "Biodiversité : convention LPO 2027-2029 (8 625 €), refuge LPO au bois de Carcé (9 750 € sur 5 ans) et renouvellement du label « Territoire engagé pour la nature » 2027-2030, tous votés à l'unanimité."
+      ],
+      "deliberations": [
+        {
+          "numero": "1",
+          "titre": "Mise à jour de la composition des commissions communales",
+          "vote": "Unanimité",
+          "detail": "Sylvain Colombrage remplace Philippe Salmon, démissionnaire, et rejoint la commission aménagement/urbanisme et la commission éducation-enfance-jeunesse. Vote à main levée, sans scrutin secret."
+        },
+        {
+          "numero": "2",
+          "titre": "Rapport de la CLECT : transfert à Rennes Métropole du réseau de fibre optique et des infrastructures télécom de la ville de Rennes",
+          "vote": "26 pour la non-approbation / 7 contre",
+          "detail": "Letulzo conteste la méthode : 10 ans d'investissement mais seulement 5 ans d'exploitation, dont 2025 qui fait passer l'indemnité d'environ 700 000 € à 902 000 € par an. Il juge suspect le refus de communiquer les documents à la maire de Saint-Grégoire. Les 85 % d'activités relevant d'un service public industriel et commercial devraient aussi être exclus du calcul. L'opposition soutenait le rapport, approuvé en CLECT par 273 membres."
+        },
+        {
+          "numero": "3",
+          "titre": "Ouvertures exceptionnelles du dimanche et jours fériés pour les commerces de détail en 2027",
+          "vote": "Unanimité",
+          "detail": "Six dimanches autorisés pour le commerce de détail (1er et 8 août, 28 novembre, 5, 12 et 19 décembre 2027). Les enseignes sont incitées à n'ouvrir que 4 jours fériés sur 8, et les concessions automobiles ont 5 dimanches (17 janvier, 14 mars, 13 juin, 12 septembre, 17 octobre). Le volontariat des salariés est garanti, avec un salaire au moins doublé et un repos compensateur."
+        },
+        {
+          "numero": "4",
+          "titre": "Franchise en base de TVA pour la revente du surplus d'énergie photovoltaïque",
+          "vote": "Unanimité",
+          "detail": "La production des ombrières de la place de Bretagne et du groupe scolaire Louis de Monier est estimée à environ 30 000 €, sous le plafond de 85 000 € de l'article 293 B du CGI. Les factures de la commune ne porteront donc pas de TVA."
+        },
+        {
+          "numero": "5",
+          "titre": "Régularisation de dotations aux amortissements (compte 1068)",
+          "vote": "Unanimité",
+          "detail": "Opération d'ordre de 323 234,40 € sur des exercices antérieurs, sans effet sur la trésorerie, à la demande de la trésorerie."
+        },
+        {
+          "numero": "6",
+          "titre": "Adoption du règlement budgétaire et financier (M57) suite au renouvellement du conseil",
+          "vote": "26 pour / 7 abstentions",
+          "detail": "Texte identique à celui du mandat précédent. L'opposition (Diaz) demandait d'y inscrire une démarche participative annuelle de construction du budget, en citant Grenoble. La majorité refuse : elle invoque la légitimité des élus, le risque de frustrations et l'incertitude de la loi de finances."
+        },
+        {
+          "numero": "7",
+          "titre": "Avenant n°3 au marché d'assurance, lot 1 « dommages aux biens et risques annexes » (Groupama)",
+          "vote": "Unanimité",
+          "detail": "Groupama réclamait +50 % de prime, ramené à +25 % par la négociation, après +70 % en 2024. L'opposition demande les montants de sinistres remboursés, rappelle les inondations et appelle à une stratégie de gestion des risques (auto-assurance, mutualisation) avant 2027. La majorité répond que les dossiers sont consultables et qu'une réflexion sur l'auto-assurance est en cours."
+        },
+        {
+          "numero": "8",
+          "titre": "Révision du plan de prévention du risque inondation (PPRI Vilaine amont et aval)",
+          "vote": "Unanimité",
+          "detail": "Avis favorable de la commune, sous réserve des observations et demandes de modification de l'annexe 6. La cartographie a été modifiée en octobre 2024 puis en novembre 2025 après les crues de janvier 2025."
+        },
+        {
+          "numero": "9",
+          "titre": "Résiliation du bail d'habitation du logement C, rue Émile Desprès (groupe scolaire Jacques Prévert)",
+          "vote": "Adopté (aucune opposition mentionnée)",
+          "detail": "Le bail est occupé depuis 1997 par les mêmes locataires. Le logement est réaffecté à l'hébergement d'urgence et le congé doit être notifié au plus tard le 13 décembre 2026."
+        },
+        {
+          "numero": "10",
+          "titre": "Cession d'une place de stationnement (lot 110, place 171)",
+          "vote": "26 pour / 7 contre",
+          "detail": "Prix de 8 300 € net vendeur, fixé par la délibération du 3 juillet 2026, frais à la charge de l'acquéreur. L'opposition (Durand) juge le prix trop bas, craint la plus-value spéculative et proposait un prix intermédiaire entre 14 000 € et 8 300 €. La majorité répond que 70 places restaient inoccupées et que le prix précédent ne trouvait pas preneur."
+        },
+        {
+          "numero": "11",
+          "titre": "Cession d'une place de stationnement (lot 105, place 166)",
+          "vote": "26 pour (le décompte des contre est peu clair dans la transcription)",
+          "detail": "Vente à M. et Mme Robert au même prix de 8 300 €."
+        },
+        {
+          "numero": "12",
+          "titre": "Complément de dénomination du hameau de Cissé",
+          "vote": "Unanimité",
+          "detail": "Les noms des lieux-dits du tronçon situé entre l'entrée d'agglomération et Cissé (le Boutland, la rue Haute, les Corbiers, Cissé) sont complétés. Cela fait suite aux arrêtés de 2022 et 2023 fixant la limite de l'agglomération."
+        },
+        {
+          "numero": "13",
+          "titre": "Convention pluriannuelle de partenariat avec la LPO Bretagne (2027-2029)",
+          "vote": "Unanimité",
+          "detail": "Budget de 8 625 € sur 3 ans pour des nichoirs, des conférences, des formations et des études bâtimentaires. L'opposition salue la poursuite d'un partenariat qu'elle avait lancé, et la majorité le confirme."
+        },
+        {
+          "numero": "14",
+          "titre": "Création d'un refuge LPO au bois de Carcé",
+          "vote": "Unanimité",
+          "detail": "Engagement de 5 ans, 15 mesures, 9 750 € sur 5 ans dont 3 900 € en 2027. Le site rejoint les refuges du Verbuisson, du parc de l'An 2000 et du bois du Guard."
+        },
+        {
+          "numero": "15",
+          "titre": "Renouvellement du label « Territoire engagé pour la nature » (2027-2030)",
+          "vote": "Unanimité",
+          "detail": "Quatre actions : inventaire des espèces sur les bâtiments communaux, création de mares, concours « jardin nature » et gestion durable des haies et boisements."
+        },
+        {
+          "numero": "16",
+          "titre": "Relais petite enfance (RPE) : projet de fonctionnement et convention d'objectifs et de financement CAF 2027-2029",
+          "vote": "Non précisé (transcription interrompue avant le débat et le vote)",
+          "detail": "Renouvellement pour l'entente de trois communes (Bruz, Péant, Laillé), avec un axe familles et un axe professionnels. Présenté par Loton ; la convention actuelle expire en décembre 2026."
+        }
+      ],
+      "points_chauds": [],
+      "impact_bruzois": [],
+      "a_surveiller": [],
+      "sources": [
+        {
+          "label": "Vidéo YouTube — Conseil municipal du lundi 16 novembre 2026",
+          "url": "https://youtu.be/7SFsG82hGis"
+        }
+      ],
+      "resume_executif": "Le conseil municipal du 16 novembre 2026 a examiné 16 délibérations. Le débat le plus vif a porté sur le transfert à Rennes Métropole du réseau de fibre optique de la ville de Rennes. La majorité a refusé d'approuver le rapport de la CLECT, qu'elle juge opaque, et l'opposition a voté pour l'approuver. L'opposition a aussi réclamé, sans succès, un budget construit avec les habitants. Le conseil a validé une hausse de la prime d'assurance « dommages aux biens » et poursuivi la vente de places de parking à 8 300 €. La sécheresse et la qualité de l'eau potable ont été abordées.",
+      "youtube_id": "7SFsG82hGis",
+      "youtube_url": "https://youtu.be/7SFsG82hGis"
+    },
     {
       "id": "CM-2026-10-12",
       "date": "2026-10-12",

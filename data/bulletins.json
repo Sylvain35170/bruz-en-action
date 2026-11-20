@@ -1,11 +1,32 @@
 {
   "meta": {
-    "last_updated": "2026-11-05",
+    "last_updated": "2026-11-19",
     "note": "Bulletins municipaux (Bruz Mag, Semaine à Bruz) — distincts des séances de conseil municipal (cms.json)",
     "dernier_bruz_mag": 262,
-    "derniere_semaine_bruz": 864
+    "derniere_semaine_bruz": 865
   },
   "bulletins": [
+    {
+      "id": "SAB-865",
+      "date": "2026-11-19",
+      "titre": "Semaine à Bruz n°865 — du 19 novembre au 3 décembre 2026",
+      "points_cles": [
+        "Le Marché de Noël traditionnel se tiendra les 5 et 6 décembre place Pagnol avec ateliers créatifs, spectacles et concert de gospel",
+        "Campagne contre les violences faites aux femmes du 25 au 29 novembre : conférence, escape game, théâtre et stage autodéfense gratuit",
+        "Festival Mortel : programmation culturelle autour de la thématique de la mort jusqu'au 16 décembre à la Médiathèque, Grand Logis et l'Escale",
+        "Travaux boulevard Louis Pasteur en décembre : circulation interdite avec déviation par les rues Récipon et Duguesclin",
+        "Les marchés des 25 décembre et 1er janvier sont avancés aux jeudis 24 et 31 décembre",
+        "Arrêt de bus Épalet reporté jusqu'au 18 décembre pour travaux avenue Général de Gaulle",
+        "Le département 35 reste en crise sécheresse : appel à économiser l'eau et respecter les restrictions officielles"
+      ],
+      "sources": [
+        {
+          "label": "Télécharger le PDF",
+          "url": "https://www.ville-bruz.fr/wp-content/uploads/2026/11/Semaine-a-Bruz-n°865-du-19-novembre-au-3-decembre-2026.pdf"
+        }
+      ],
+      "type": "semaine_bruz"
+    },
     {
       "id": "SAB-864",
       "date": "2026-11-05",
