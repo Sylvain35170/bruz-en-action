@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-11-21",
+    "last_updated": "2026-11-22",
     "source": "Ville de Bruz, Grand Logis, Handisport, Les Trans"
   },
   "evenements": [
@@ -113,33 +113,6 @@
       "lien_label": "Agenda Ville de Bruz",
       "source": "agenda_mairie",
       "date_fin": "2026-10-30"
-    },
-    {
-      "id": "agenda-755e6b5e",
-      "titre": "Réunion organisation du Téléthon 2026",
-      "date": "2026-10-22",
-      "categorie": "Rencontre",
-      "lien": "https://www.ville-bruz.fr/agenda/reunion-organisation-du-telethon-2026/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
-    },
-    {
-      "id": "agenda-4a610efa",
-      "titre": "Don du sang",
-      "date": "2026-10-22",
-      "categorie": "Solidarité",
-      "lien": "https://www.ville-bruz.fr/agenda/don-du-sang-3/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
-    },
-    {
-      "id": "agenda-c26f5e6a",
-      "titre": "Piscine de la Conterie : une journée pour Octobre Rose",
-      "date": "2026-10-22",
-      "categorie": "Solidarité",
-      "lien": "https://www.ville-bruz.fr/agenda/piscine-de-la-conterie-une-journee-pour-octobre-rose/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
     },
     {
       "id": "agenda-6c424a14",
