@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-11-19",
+    "last_updated": "2026-11-21",
     "source": "Ville de Bruz, Grand Logis, Handisport, Les Trans"
   },
   "evenements": [
@@ -105,16 +105,6 @@
       "date_fin": "2026-12-19"
     },
     {
-      "id": "agenda-d0d4f735",
-      "titre": "Stage de modelage enfants, adolescents",
-      "date": "2026-10-19",
-      "categorie": "Atelier",
-      "lien": "https://www.ville-bruz.fr/agenda/stage-de-modelage-enfants-adolescents-3/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie",
-      "date_fin": "2026-10-21"
-    },
-    {
       "id": "agenda-a7c73dcd",
       "titre": "Halloween à la Conterie : concours de dessins jusqu’au 30 octobre",
       "date": "2026-10-19",
@@ -123,96 +113,6 @@
       "lien_label": "Agenda Ville de Bruz",
       "source": "agenda_mairie",
       "date_fin": "2026-10-30"
-    },
-    {
-      "id": "agenda-416ad986",
-      "titre": "Atelier : « Du bruit dans l’histoire »",
-      "date": "2026-10-20",
-      "categorie": "Mortel !",
-      "lien": "https://www.ville-bruz.fr/agenda/atelier-du-bruit-dans-lhistoire/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
-    },
-    {
-      "id": "agenda-dcf9e7d7",
-      "titre": "Atelier cuisine et repas partagé",
-      "date": "2026-10-20",
-      "categorie": "Atelier",
-      "lien": "https://www.ville-bruz.fr/agenda/atelier-cuisine-et-repas-partage/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
-    },
-    {
-      "id": "agenda-fa7cd74e",
-      "titre": "Réunion publique sur les litiges de la vie quotidienne",
-      "date": "2026-10-20",
-      "categorie": "Réunion publique",
-      "lien": "https://www.ville-bruz.fr/agenda/reunion-publique-sur-les-litiges-de-la-vie-quotidienne/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
-    },
-    {
-      "id": "agenda-88db91c2",
-      "titre": "Visites de la ferme de la Pampa",
-      "date": "2026-10-20",
-      "categorie": "Rencontre",
-      "lien": "https://www.ville-bruz.fr/agenda/visites-de-la-ferme-de-la-pampa/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
-    },
-    {
-      "id": "agenda-09e32bc3",
-      "titre": "Permanence numérique avec une conseillère de Rennes Métropole",
-      "date": "2026-10-21",
-      "categorie": "Permanence",
-      "lien": "https://www.ville-bruz.fr/agenda/permanence-numerique-avec-une-conseillere-de-rennes-metropole/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
-    },
-    {
-      "id": "agenda-d3c5fb36",
-      "titre": "Café philo « Et si nous étions immortels ? »",
-      "date": "2026-10-21",
-      "categorie": "L'Escale",
-      "lien": "https://www.ville-bruz.fr/agenda/cafe-philo-et-si-nous-etions-immortels/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
-    },
-    {
-      "id": "agenda-c0efebdc",
-      "titre": "Crok’histoires",
-      "date": "2026-10-21",
-      "categorie": "Médiathèque",
-      "lien": "https://www.ville-bruz.fr/agenda/crokhistoires-4/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
-    },
-    {
-      "id": "agenda-bc9813e8",
-      "titre": "Mini-tournoi Arms",
-      "date": "2026-10-21",
-      "categorie": "Jeux",
-      "lien": "https://www.ville-bruz.fr/agenda/mini-tournoi-arms/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
-    },
-    {
-      "id": "agenda-66f2613d",
-      "titre": "Jury Prix Ados",
-      "date": "2026-10-21",
-      "categorie": "Médiathèque",
-      "lien": "https://www.ville-bruz.fr/agenda/jury-prix-ados-2/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
-    },
-    {
-      "id": "agenda-18a11a46",
-      "titre": "Atelier numérique : cybermois",
-      "date": "2026-10-21",
-      "categorie": "Atelier",
-      "lien": "https://www.ville-bruz.fr/agenda/atelier-numerique-cybermois/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
     },
     {
       "id": "agenda-755e6b5e",
@@ -886,15 +786,6 @@
       "source": "agenda_mairie"
     },
     {
-      "id": "agenda-625d5aad",
-      "titre": "Conseil Municipal",
-      "date": "2026-11-16",
-      "categorie": "Mairie",
-      "lien": "https://www.ville-bruz.fr/agenda/conseil-municipal-dinstallation/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
-    },
-    {
       "id": "agenda-6d8135c7",
       "titre": "Louise Thomas",
       "date": "2026-11-17",
@@ -1426,6 +1317,15 @@
       "date": "2026-12-12",
       "categorie": "Théâtre",
       "lien": "https://www.ville-bruz.fr/agenda/spectacle-de-theatre-hotel-des-batignoles/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-625d5aad",
+      "titre": "Conseil Municipal",
+      "date": "2026-12-14",
+      "categorie": "Mairie",
+      "lien": "https://www.ville-bruz.fr/agenda/conseil-municipal-dinstallation/",
       "lien_label": "Agenda Ville de Bruz",
       "source": "agenda_mairie"
     },
