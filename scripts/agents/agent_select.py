@@ -68,6 +68,12 @@ Analyse les articles ci-dessous et, pour chacun, retourne un objet JSON avec ces
 - "source_url" : reprendre source_url tel quel
 - "date"       : reprendre date tel quel
 
+Règles de fidélité (un résumé faux est pire qu'un résumé absent) :
+- Si un champ "extrait" est fourni, c'est le texte officiel de l'acte, issu d'un scan OCR bruité (colonnes mélangées, mots coupés). Base le résumé UNIQUEMENT sur lui et sur le titre : qui décide, l'objet, les montants et le décompte des votes s'ils y figurent (champ "[VOTE repéré dans l'acte : …]" en tête de l'extrait : cite le résultat du vote dans le résumé quand il est net — unanimité, ou « N voix pour, M contre / abstentions » — et ignore une mention incohérente). Pas de montant ni de fait absent de l'extrait.
+- Distingue qui DÉCIDE de qui est CONSULTÉ : une commune qui « émet un avis » sur un projet porté par un autre n'est pas celle qui le réalise.
+- Ne recopie un pourcentage, un taux ou un montant que si l'extrait dit clairement à quoi il se rapporte ; l'OCR mélange les colonnes (ex. le taux d'indemnité d'un seul élu n'est pas « la majoration »). En cas de doute, ne cite pas le chiffre.
+- Ne désigne l'auteur d'une décision (la Ville de Bruz, Rennes Métropole, l'État…) que si l'extrait le dit. Sans extrait, n'attribue pas la décision à une collectivité d'après le seul titre : écris « un acte publié sur Mégalis » et mets "pertinence" prudente.
+
 Retourne UNIQUEMENT un tableau JSON valide — aucun texte avant ou après.
 
 Articles à analyser :
@@ -213,7 +219,8 @@ def run() -> bool:
         {"id": i.get("id"), "titre": i.get("titre"),
          "detail": (i.get("detail") or "")[:300],
          "source_url": i.get("source_url"), "source_label": i.get("source_label", ""),
-         "date": i.get("date"), "type": i.get("type")}
+         "date": i.get("date"), "type": i.get("type"),
+         **({"extrait": i["texte_extrait"][:2000]} if i.get("texte_extrait") else {})}
         for i in items
     ]
 

@@ -15,7 +15,11 @@ un SPA Angular : `data-publication.megalis.bretagne.bzh/mq_apis/actes/v1/search`
 """
 
 import re
+import shutil
+import subprocess
 import sys
+import tempfile
+import time
 from datetime import date, datetime, timedelta
 from pathlib import Path
 from xml.etree import ElementTree
@@ -49,6 +53,27 @@ TYPOLOGIES = {
 # 5 jours après la séance. 15 jours laissent une marge confortable tout en
 # évitant qu'un premier run n'aspire les 2 400 actes de l'historique.
 FENETRE_JOURS = 15
+
+# Texte de l'acte transmis à agent_select. Sans lui, Haiku ne voit que le titre et
+# la rubrique et invente le résumé : le 18/11, un PPRI (avis de la Ville) était
+# présenté comme « révisé par la Ville », deux délibérations de la Ville étaient
+# attribuées à Rennes Métropole, et les décomptes de votes manquaient.
+# Chemin complet : sous launchd, PATH ne contient que /usr/bin:/bin (cf. CLAUDE_CLI).
+PDFTOTEXT = shutil.which("pdftotext") or "/opt/homebrew/bin/pdftotext"
+EXTRAIT_AVANT = 1000        # caractères gardés avant « après en avoir délibéré » (l'exposé)
+EXTRAIT_APRES = 800         # … et après (le dispositif, le vote)
+PDF_TIMEOUT_S = 25          # téléchargement d'un PDF
+PDF_BUDGET_S = 120          # budget total par run : l'agent est coupé à 300 s par le watchdog
+# Votes : l'OCR sépare parfois « 26 voix » de « POUR » (« à 26 voix Fixe … POUR et 7 voix
+# CONTRE »). Nombres limités à 2 chiffres et non précédés d'un chiffre : un conseil compte
+# 33 élus, et « 3 900 € en 2027 pour ces actions » ne doit pas devenir « 2027 pour ».
+VOTE_RE = re.compile(
+    r"à l['’]unanimité"
+    r"|\b\d{1,2}\s+voix(?:\s+(?:pour|contre|abstentions?))?"
+    r"|\b\d{1,2}\s+(?:pour|contre|abstentions?)\b", re.I)
+# « délibéré » seul suffit : « après en avoir » est parfois séparé de lui par du texte
+# d'une autre colonne. « délibération(s) » ne correspond pas (terminaison différente).
+MARQUEUR_RE = re.compile(r"d[ée]lib[ée]r[ée]\b", re.I)
 
 
 def parse_youtube_rss(content: bytes) -> list[dict]:
@@ -143,6 +168,44 @@ def _lisible(objet: str) -> str:
     return " — ".join(sortie)
 
 
+def extrait_depuis_texte(texte: str) -> str:
+    """Isole de quoi résumer un acte dans le texte brut de son PDF.
+
+    Les PDF Mégalis sont des scans OCRisés : colonnes mélangées, en-tête de
+    préfecture, liste des présents. La partie utile entoure « après en avoir
+    délibéré » (exposé avant, dispositif et vote après). Les décomptes de votes
+    sont repérés par regex et placés en tête : l'OCR les noie dans le texte.
+    """
+    t = re.sub(r"\s+", " ", texte).strip()
+    if not t:
+        return ""
+    m = MARQUEUR_RE.search(t)
+    if m:
+        corps = t[max(0, m.start() - EXTRAIT_AVANT): m.end() + EXTRAIT_APRES]
+    else:
+        corps = t[600: 600 + EXTRAIT_AVANT + EXTRAIT_APRES]   # repli : on saute l'en-tête
+    votes = list(dict.fromkeys(v.group(0).lower() for v in VOTE_RE.finditer(t)))
+    prefixe = f"[VOTE repéré dans l'acte : {' ; '.join(votes)}] " if votes else ""
+    return prefixe + corps
+
+
+def extrait_acte(url: str) -> str:
+    """Télécharge le PDF d'un acte et retourne son extrait ('' si échec : jamais bloquant)."""
+    r = fetch(url, timeout=PDF_TIMEOUT_S)
+    if r is None or not r.content.startswith(b"%PDF"):
+        return ""
+    try:
+        with tempfile.NamedTemporaryFile(suffix=".pdf") as f:
+            f.write(r.content)
+            f.flush()
+            res = subprocess.run([PDFTOTEXT, f.name, "-"], capture_output=True,
+                                 text=True, timeout=30)
+    except (OSError, subprocess.TimeoutExpired) as e:
+        log(f"Mégalis : pdftotext indisponible ou trop lent ({e})", "WARN")
+        return ""
+    return extrait_depuis_texte(res.stdout) if res.returncode == 0 else ""
+
+
 def scan_actes_megalis() -> int:
     """Interroge l'API Mégalis et pousse les actes récents vers la queue de veille."""
     log(f"Scan Mégalis — actes officiels (SIREN {SIREN_BRUZ}, {FENETRE_JOURS} j)…")
@@ -197,6 +260,19 @@ def scan_actes_megalis() -> int:
     if not nouveaux:
         log("Mégalis : aucun acte nouveau sur la fenêtre.", "INFO")
         return 0
+
+    # Texte des actes pour la sélection, dans un budget de temps borné (un acte
+    # sans extrait reste valide : la sélection est alors prévenue qu'elle n'a que le titre).
+    debut, n_extraits = time.monotonic(), 0
+    for item in nouveaux:
+        if time.monotonic() - debut > PDF_BUDGET_S:
+            log("Mégalis : budget PDF épuisé — actes restants sans extrait.", "WARN")
+            break
+        extrait = extrait_acte(item["source_url"])
+        if extrait:
+            item["texte_extrait"] = extrait
+            n_extraits += 1
+    log(f"Mégalis : texte extrait pour {n_extraits}/{len(nouveaux)} acte(s).", "INFO")
 
     n = append_to_queue(nouveaux)
     log(f"Mégalis : {n} acte(s) officiel(s) → queue", "OK")
