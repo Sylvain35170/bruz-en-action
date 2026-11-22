@@ -58,6 +58,7 @@
 
 ## 🟡 À faire — Technique
 
+- [ ] **Build CI fragile : polices Google Fonts téléchargées au build** — le 22/11 (run 45029908026, push de `evenements.json`) `npm run build` a échoué sur `jetbrains_mono` (« Module not found » sur `fonts.gstatic.com`) ; relancé par un nouveau push, succès. Incident réseau du runner, pas de régression de code. Si ça se répète : héberger les polices (`next/font/local`) ou ajouter un retry dans `deploy.yml`. Le site en ligne n'a pas été touché (le déploiement ne se fait qu'après un build réussi).
 - [ ] **CRs réunions** — réimporter les docx (encodage zip raté sur les accents) — fichiers source à relocaliser
 - [ ] **Actus** — enrichir au fil des décisions
 
