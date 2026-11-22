@@ -202,28 +202,14 @@ jamais déclencher `flow.run_local_server()` sous launchd, cf. incident 6 j du 2
 ---
 
 ## Pièges connus
-### 2026-10-12 — Google News : URL entourée de `\"`, jetons anciens morts
-→ dispatch: local:bruz-en-action
+### 2026-11-18 — Sélection coupée par le watchdog ; résumés Mégalis inventés
+- `agent_select` n'écrivait la queue et le registre qu'après TOUS les batches (~45 s par lot de 5) : 35 items dépassaient le watchdog de 300 s, tout était perdu et à refaire le lendemain. Corrigé (67b5429) : intégration + queue réécrite après chaque batch, plafond 600 s pour Sélection seule (`AGENT_TIMEOUT_OVERRIDES` dans `run_agents.py`).
+- Pour un acte Mégalis, Haiku ne recevait que le titre et la rubrique : il a présenté un avis de la Ville sur un PPRI comme « révisé par la Ville » et attribué à Rennes Métropole deux délibérations de la Ville, deux rejets décidés sur cette base. Corrigé (0d7a8da) : `agent_megalis.extrait_acte` passe ~1 800 caractères du PDF (`pdftotext`, autour de « délibéré », votes repérés par regex). L'OCR mélange les colonnes : un chiffre peut être mal rattaché (un 3 % d'élu pris pour « la majoration »). **Relire le PDF avant d'accepter une délibération portant un montant ou un vote.**
+- `review_proposals.match_dossier` rattache par mots-clés : refuge LPO et TEN classés en D03 (Finances) à cause des montants en €. À surveiller à chaque revue.
+- Une correction de texte se fait dans `actus.json` ET dans les copies de `dossiers.json` (par `source_url`).
 
-`batchexecute` renvoie l'URL dans du JSON-dans-JSON (`\"https://…\"`) : exiger des guillemets
-nus ne matchait jamais, chaque résolution échouait (« URL illisible »). Corrigé dans
-`_resolve_gnews`. Les jetons de plus de 2-3 mois renvoient 400 : irrécupérables par résolution.
-
-### 2026-10-12 — Ouest-France lisible en entier via Playwright + cookies Chrome
-→ dispatch: local:bruz-en-action
-
-`channel="chrome"` + `agent_ouestfrance._get_chrome_cookies()` : article complet en 200. Utiliser
-`wait_until="commit"` + `wait_for_selector('article p')` (`domcontentloaded` > 25 s parfois).
-Relire ainsi toute actu OF avant publication plutôt que de publier sur titre + extrait.
-
-### 2026-10-12 — Copies d'actus dans dossiers.json : pas d'`id`
-→ dispatch: local:bruz-en-action
-
-Une actu corrigée après `agent_dossiers` se propage dans `dossiers.json` par `source_url`.
-### 2026-10-19 — Veille : venv et réseau
-- Lancer les scripts avec `~/.venvs/bruz-en-action/bin/python`, pas `python3` : le système n'a pas `google_auth_oauthlib` (Signalements/Mailer en erreur, faux symptôme de panne Gmail).
-- Erreur DNS sur `oauth2.googleapis.com` pendant un run = Mac en veille/éteint. Rattrapage : relancer `run_agents.py` (il ne pousse rien avant la revue).
-
+### 2026-11-02 — `agent_enrichissement_cm` recréait la séance `CM-2026-09-23` (doublon du 21/09)
+- `agent_enrichissement_cm` recréait la séance `CM-2026-09-23` (doublon du 21/09) : titre YouTube sans année (« lundi 21 septembre ») → regex en échec → date de publication de la vidéo prise comme date de séance → ID inexistant. Fix 9949ab1 : année facultative (défaut = année de publication) + rapprochement par `youtube_id` avant création. Après une veille manuelle, relire `git diff data/cms.json` avant de committer.
 ### 2026-10-26 — CLI `claude` : l'erreur sort sur stdout ; bulletins hors des pages du site
 - Déconnecté, le CLI écrit « Not logged in · Please run /login » sur **stdout**, rien sur stderr. Les agents ne loggaient que stderr → 4 jours d'erreurs vides (20-23/10, points clés du n°863 perdus). Corrigé dans `agent_bruz_mag`, `agent_select`, `agent_enrichissement_cm` ; remède = `/login` dans un terminal.
 - Le `°` encodé (`%C2%B0`) n'empêche pas le téléchargement (n°863 OK) : le PDF du n°861 a été **retiré** par la mairie (`url_expiree`). Le n°862 n'était lié que par sa une en PNG et nommé `n°-862` (tiret) : un 404 ou un numéro manquant se vérifie dans la médiathèque WordPress (`/wp-json/wp/v2/media?search=…`) et par variantes de nom, avant de conclure à un bug d'encodage.

@@ -555,3 +555,24 @@ fonctionnait en test isolé — ce qui masquait le vrai bug, l'absence de trace.
 liste vide) doit logger **à la source**, pas compter sur un `except` qui ne couvre que les
 exceptions. Ce trou d'observabilité ne se voit qu'en cherchant activement les traces
 attendues et en constatant leur absence — jamais en relisant le code.
+### 2026-10-12 — Google News : URL entourée de `\"`, jetons anciens morts
+→ dispatch: local:bruz-en-action
+
+`batchexecute` renvoie l'URL dans du JSON-dans-JSON (`\"https://…\"`) : exiger des guillemets
+nus ne matchait jamais, chaque résolution échouait (« URL illisible »). Corrigé dans
+`_resolve_gnews`. Les jetons de plus de 2-3 mois renvoient 400 : irrécupérables par résolution.
+
+### 2026-10-12 — Ouest-France lisible en entier via Playwright + cookies Chrome
+→ dispatch: local:bruz-en-action
+
+`channel="chrome"` + `agent_ouestfrance._get_chrome_cookies()` : article complet en 200. Utiliser
+`wait_until="commit"` + `wait_for_selector('article p')` (`domcontentloaded` > 25 s parfois).
+Relire ainsi toute actu OF avant publication plutôt que de publier sur titre + extrait.
+
+### 2026-10-12 — Copies d'actus dans dossiers.json : pas d'`id`
+→ dispatch: local:bruz-en-action
+
+Une actu corrigée après `agent_dossiers` se propage dans `dossiers.json` par `source_url`.
+### 2026-10-19 — Veille : venv et réseau
+- Lancer les scripts avec `~/.venvs/bruz-en-action/bin/python`, pas `python3` : le système n'a pas `google_auth_oauthlib` (Signalements/Mailer en erreur, faux symptôme de panne Gmail).
+- Erreur DNS sur `oauth2.googleapis.com` pendant un run = Mac en veille/éteint. Rattrapage : relancer `run_agents.py` (il ne pousse rien avant la revue).
