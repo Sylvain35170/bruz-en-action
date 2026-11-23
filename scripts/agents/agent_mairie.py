@@ -104,6 +104,7 @@ def run() -> bool:
                 # collision avec la décision de revue déjà prise sur l'ancien contenu.
                 item["id"] = stable_id("mairie", item["source_url"] + "#" + today())
                 item["titre"] = f"{item['titre']} (mise à jour)"
+                item["maj"] = True  # même titre que l'original : ne pas l'écarter comme doublon
                 nouvelles.append(item)
                 log(f"  🔁 mise à jour détectée : {item['titre'][:70]}", "NEW")
 

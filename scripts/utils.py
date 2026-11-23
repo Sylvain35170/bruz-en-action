@@ -213,12 +213,39 @@ def is_already_published(titre: str, source_url: str = "", threshold: float = 0.
     return False
 
 
+def _titre_normalise(titre: str) -> str:
+    return " ".join(titre.lower().split())
+
+
+def _doublon_par_titre(item: dict, titres_vus: set[str]) -> str:
+    """Motif si l'item est le même article qu'un item connu sous une autre URL, sinon ''.
+
+    Le même article arrive sous plusieurs URL : Ouest-France le publie sous deux
+    UUID (« galette des Rois chez Corlay », 21/11/2026), maville.com reprend les
+    articles OF à l'identique (« associer les habitants au budget », 22/11). Ces
+    doublons passaient la dédup URL/id et n'étaient écartés qu'après un appel
+    Haiku, chaque jour. Limité à la presse : les actes Mégalis et délibérations
+    ont des titres gabarits (l'URL est la seule clé fiable), et une page mairie
+    peut revenir sous le même titre (« Vigilance canicule », d'un été à l'autre).
+    Exclues aussi : les mises à jour en place, marquées `maj`.
+    """
+    if item.get("type") != "presse" or item.get("maj"):
+        return ""
+    titre = item.get("titre", "")
+    if _titre_normalise(titre) in titres_vus:
+        return "titre identique à un item connu"
+    if is_already_published(titre):
+        return "titre proche d'une actu publiée"
+    return ""
+
+
 def append_to_queue(new_items: list[dict]) -> int:
     """Ajoute des items à la queue si non-dupliqués. Retourne le nb ajouté."""
     queue = load_json(QUEUE_FILE)
     items = queue.get("items", [])
     existing = {i.get("source_url", "") for i in items}
     existing_ids = {i.get("id", "") for i in items} - {""}
+    titres_vus = {_titre_normalise(i.get("titre", "")) for i in items + load_registry()["items"]} - {""}
     added = 0
     for item in new_items:
         url = item.get("source_url", "")
@@ -227,10 +254,15 @@ def append_to_queue(new_items: list[dict]) -> int:
         if item_id and item_id in existing_ids:
             continue
         if url and url not in existing:
+            motif = _doublon_par_titre(item, titres_vus)
+            if motif:
+                log(f"  Doublon écarté avant sélection ({motif}) : {item.get('titre', '')[:70]}", "INFO")
+                continue
             items.append(item)
             existing.add(url)
             if item_id:
                 existing_ids.add(item_id)
+            titres_vus.add(_titre_normalise(item.get("titre", "")))
             added += 1
     if added:
         QUEUE_FILE.write_text(

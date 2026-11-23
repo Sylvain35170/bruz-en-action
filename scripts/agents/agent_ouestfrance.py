@@ -202,6 +202,7 @@ def run(inject: list[dict] | None = None) -> bool:
         elif changed:
             item["id"] = stable_id("of", a["url"] + "#" + today())
             item["titre"] = f"{item['titre']} (mise à jour)"
+            item["maj"] = True  # même titre que l'original : ne pas l'écarter comme doublon
             nouvelles.append(item)
             log(f"  🔁 mise à jour détectée : {item['titre'][:70]}", "NEW")
 
