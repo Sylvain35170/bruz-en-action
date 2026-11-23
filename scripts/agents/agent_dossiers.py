@@ -20,7 +20,10 @@ AGENT_NAME = "dossiers"
 DOSSIER_KEYWORDS: dict[str, list[str]] = {
     "D01": ["t4", "trambus", "terminus", "tram", "mobilité", "ker lann", "gare bruz", "transport"],
     "D02": ["zac", "multisites", "logement", "urbanisme", "mrae", "ker lann", "mons rouaudière", "grand-pâtis"],
-    "D03": ["budget", "finances", "budget primitif", "conseil municipal", "bp 2026", "dotation"],
+    # Pas « conseil municipal » : presque toute délibération Mégalis le contient
+    # (« le conseil municipal a… »), ce qui envoyait en Finances le refuge LPO et
+    # le dispositif TEN (2026-11-23).
+    "D03": ["budget", "finances", "budget primitif", "bp 2026", "dotation"],
     "D04": ["fiscalité", "taxe foncière", "tfb", "salmon", "impôts locaux", "taux communal"],
     "D05": ["carte", "equipement", "quartier", "openstreetmap", "chantier", "voirie", "pont de la gare", "travaux zac", "pasteur"],
     "D06": ["piscine", "conterie", "natation", "bassin", "équipement aquatique"],
