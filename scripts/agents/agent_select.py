@@ -23,7 +23,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 from utils import (DATA_DIR, QUEUE_FILE, is_already_published, load_json,
-                   load_registry, log, save_registry, today)
+                   load_registry, log, published_actus, save_registry, today)
 
 AGENT_NAME = "select"
 # Chemin complet nécessaire : sous launchd, PATH ne contient que /usr/bin:/bin:/usr/sbin:/sbin,
@@ -129,15 +129,28 @@ def _integrer(parsed: list[dict], batch_light: list[dict]) -> tuple[int, int]:
 
     # Écarter les items déjà publiés dans actus.json (même sujet reformulé par un autre
     # scraper source, URL différente donc non filtré en amont dans la queue)
+    # Actes Mégalis : l'URL du PDF est unique par acte, et les titres sont des
+    # gabarits (« Cession place de stationnement parking Pagnol — Lot 105 », lot
+    # 110…). Comparer les titres y prend un acte nouveau pour un acte déjà vu :
+    # le 2026-11-22, le lot 105 a disparu sans trace (50 premiers caractères
+    # identiques au lot 110). Pour eux, la seule clé de doublon est l'URL.
+    def _megalis(p: dict) -> bool:
+        return type_by_id.get(p.get("id"), "") == "megalis"
+
+    urls_publiees = {u for _, u in published_actus() if u}
     proposals = []
     deja_publies = []
     for p in parsed:
-        if is_already_published(p.get("titre", ""), p.get("source_url", "")):
+        if _megalis(p):
+            doublon = p.get("source_url", "") in urls_publiees
+        else:
+            doublon = is_already_published(p.get("titre", ""), p.get("source_url", ""))
+        if doublon:
             deja_publies.append(p)
             continue
         proposals.append(p)
-    if deja_publies:
-        log(f"  {len(deja_publies)} item(s) déjà publié(s) — écarté(s) de la sélection.", "INFO")
+    for p in deja_publies:
+        log(f"  Déjà publié — écarté : {p.get('titre', '')[:80]}", "INFO")
 
     # Alimenter le registre incrémental — chaque item y entre UNE fois
     registry = load_registry()
@@ -151,11 +164,19 @@ def _integrer(parsed: list[dict], batch_light: list[dict]) -> tuple[int, int]:
     # `is_already_published` ne les écartait qu'APRÈS l'analyse Claude — un appel
     # modèle repayé tous les jours pour le même item, indéfiniment (constaté sur
     # « Stage de natation piscine de la Conterie », re-analysé à chaque run).
+    def _deja_au_registre(p: dict) -> bool:
+        url_key = p.get("source_url", "")
+        if url_key and url_key in known_reg_urls:
+            return True
+        if _megalis(p):
+            return False
+        return p.get("titre", "").lower()[:50] in known_reg_titles
+
     n_doublons_memorises = 0
     for p in deja_publies:
         url_key = p.get("source_url", "")
         title_key = p.get("titre", "").lower()[:50]
-        if (url_key and url_key in known_reg_urls) or title_key in known_reg_titles:
+        if _deja_au_registre(p):
             continue
         p["type"] = type_by_id.get(p.get("id"), "")
         p["statut"] = "rejected"
@@ -176,8 +197,11 @@ def _integrer(parsed: list[dict], batch_light: list[dict]) -> tuple[int, int]:
     for p in proposals:
         url_key = p.get("source_url", "")
         title_key = p.get("titre", "").lower()[:50]
-        if (url_key and url_key in known_reg_urls) or title_key in known_reg_titles:
-            continue  # déjà dans le registre (pending ou décidé) — ne pas re-proposer
+        if _deja_au_registre(p):
+            # Déjà dans le registre (pending ou décidé) : ne pas re-proposer, mais
+            # le dire — un écart silencieux est indiscernable d'un item perdu.
+            log(f"  Déjà au registre — écarté : {p.get('titre', '')[:80]}", "INFO")
+            continue
         pertinent = p.get("pertinence", 0) >= 1
         p["type"] = type_by_id.get(p.get("id"), "")
         p["statut"] = "pending" if pertinent else "rejected"
