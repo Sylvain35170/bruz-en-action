@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-11-20",
+    "last_updated": "2026-11-25",
     "version": "3.0"
   },
   "dossiers": [
@@ -1110,7 +1110,7 @@
       "categorie": "Urbanisme",
       "statut": "en_cours",
       "featured": true,
-      "last_activity": "2026-11-16",
+      "last_activity": "2026-11-23",
       "date_ouverture": "2026-06-16",
       "chapeau": "Carte interactive de Bruz, recensement des chantiers en cours (qui creuse où, jusqu'à quand) et veille sur les projets d'urbanisme qui ne rentrent pas déjà dans un dossier dédié (hors ZAC Multisites, voir D02, hors Trambus T4, voir D01) : évolutions de quartier, permis groupés, équipements publics annoncés, travaux de voirie.",
       "ce_quon_sait": [
@@ -1217,6 +1217,20 @@
       ],
       "lien_externe": "/bruz-en-action/carte",
       "actus_recentes": [
+        {
+          "date": "2026-11-23",
+          "titre": "Bruz. Ouverture d'un tronçon du boulevard Pasteur",
+          "detail": "Un tronçon du boulevard Pasteur a été ouvert à la circulation à Bruz. Cette ouverture complète les travaux d'aménagement de la voirie locale.",
+          "source_url": "https://www.ouest-france.fr/bretagne/bruz-35170/bruz-ouverture-dun-troncon-du-boulevard-pasteur-7291bbc0-4463-4742-a643-fd528304abae",
+          "source_label": "Ouest-France"
+        },
+        {
+          "date": "2026-11-16",
+          "titre": "Amenagement — Cession place de stationnement parking Pagnol — Lot 105",
+          "detail": "Le Conseil municipal approuve à 26 voix pour et 7 voix contre la cession d'une place de stationnement (lot 105) du parking Pagnol à 8 300 € net vendeur. Le transfert de propriété sera acté par un acte notarié une fois le prix payé.",
+          "source_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1231970/855d2e3834472204b918d7c015fc7d8e442ce3794561b4f52a91114e753bfb84.pdf",
+          "source_label": "Mégalis — Délibération"
+        },
         {
           "date": "2026-11-16",
           "titre": "Amenagement — REVISION DU PLAN DE PREVENTION DU RISQUE INONDATION  APPA  Ville de BRUZ",
@@ -1344,20 +1358,6 @@
           "detail": "",
           "source_url": "https://www.ville-bruz.fr/actualites/travaux-de-reseaux-et-de-voirie-avenue-du-general-de-gaulle/",
           "source_label": "Mairie de Bruz — Actualités"
-        },
-        {
-          "date": "2026-06-15",
-          "titre": "Fermeture totale du pont de la Gare jusqu'au 3 juillet",
-          "detail": "Avenue Jules Tricault coupée jour et nuit — déviations par rue Émile Gernigon, av. de Wrzésnia, av. de l'Europe, av. Joseph Jan.",
-          "source_url": "https://www.ville-bruz.fr/mon-quotidien/travaux-et-demandes-dintervention/travaux-en-cours/",
-          "source_label": "Mairie de Bruz"
-        },
-        {
-          "date": "2026-06-01",
-          "titre": "Début des travaux rue Théodore Botrel",
-          "detail": "Voirie et éclairage public — fin prévue 24 juillet 2026. Création de stationnement enherbé et cheminements doux.",
-          "source_url": "https://www.ville-bruz.fr/mon-quotidien/travaux-et-demandes-dintervention/travaux-en-cours/",
-          "source_label": "Mairie de Bruz"
         }
       ],
       "promesses_liees": [],
@@ -3032,7 +3032,7 @@
       "categorie": "Institutions",
       "statut": "en_cours",
       "featured": true,
-      "last_activity": "2026-11-18",
+      "last_activity": "2026-11-23",
       "date_ouverture": "2026-07-17",
       "chapeau": "« Renforcer une véritable démocratie locale » est un pilier à part entière du programme municipal 2026-2032 : élus référents par quartier, réunions régulières, Conseil municipal des jeunes, Conseil des sages, comptes-rendus clairs des décisions. Cinq engagements, mesurables sur tout le mandat. Ce dossier suit leur mise en œuvre concrète.",
       "ce_quon_sait": [
@@ -3099,6 +3099,13 @@
         }
       ],
       "actus_recentes": [
+        {
+          "date": "2026-11-23",
+          "titre": "Bruz. Sylvain Collonge, un nouvel élu de la minorité au conseil",
+          "detail": "Sylvain Collonge, 8e de la liste de la minorité, entre au conseil municipal en remplacement de Philippe Salmon, ancien maire, démissionnaire début octobre 2026.",
+          "source_url": "https://www.ouest-france.fr/bretagne/bruz-35170/bruz-sylvain-collonge-un-nouvel-elu-de-la-minorite-au-conseil-c09669bd-1875-4ec6-88be-c09a912d2328",
+          "source_label": "Ouest-France"
+        },
         {
           "date": "2026-11-18",
           "titre": "Faut-il associer les habitants à la construction du budget ? À Bruz, la majorité dit non",

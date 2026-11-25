@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-11-22",
+    "last_updated": "2026-11-24",
     "source": "Ville de Bruz, Grand Logis, Handisport, Les Trans"
   },
   "evenements": [
@@ -115,33 +115,6 @@
       "date_fin": "2026-10-30"
     },
     {
-      "id": "agenda-6c424a14",
-      "titre": "Repas d’ici et d’ailleurs sur le Canada",
-      "date": "2026-10-23",
-      "categorie": "Atelier",
-      "lien": "https://www.ville-bruz.fr/agenda/repas-dici-et-dailleurs-sur-le-canada/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
-    },
-    {
-      "id": "agenda-2b945342",
-      "titre": "Histoires au creux des bras",
-      "date": "2026-10-24",
-      "categorie": "Médiathèque",
-      "lien": "https://www.ville-bruz.fr/agenda/histoires-au-creux-des-bras-2/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
-    },
-    {
-      "id": "agenda-4fd9e022",
-      "titre": "Jury Prix Ados",
-      "date": "2026-10-24",
-      "categorie": "Médiathèque",
-      "lien": "https://www.ville-bruz.fr/agenda/jury-prix-ados/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
-    },
-    {
       "id": "agenda-76708c8c",
       "titre": "Course de modélisme : les 6 heures Bato35",
       "date": "2026-10-24",
@@ -150,15 +123,6 @@
       "lien_label": "Agenda Ville de Bruz",
       "source": "agenda_mairie",
       "date_fin": "2026-10-25"
-    },
-    {
-      "id": "agenda-11286962",
-      "titre": "Atelier « contakids » parents-enfants",
-      "date": "2026-10-24",
-      "categorie": "Atelier",
-      "lien": "https://www.ville-bruz.fr/agenda/atelier-contakids-parents-enfants/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
     },
     {
       "id": "agenda-6098e7d9",
@@ -538,15 +502,6 @@
       "date": "2026-11-08",
       "categorie": "Atelier",
       "lien": "https://www.ville-bruz.fr/agenda/ateliers-de-marqueterie-2/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
-    },
-    {
-      "id": "agenda-adf23f8d",
-      "titre": "Brunch des Petites Cantines",
-      "date": "2026-11-08",
-      "categorie": "Association",
-      "lien": "https://www.ville-bruz.fr/agenda/brunch-des-petites-cantines/",
       "lien_label": "Agenda Ville de Bruz",
       "source": "agenda_mairie"
     },
@@ -1104,6 +1059,24 @@
       "source": "agenda_mairie"
     },
     {
+      "id": "agenda-9b1fea62",
+      "titre": "Soirée Buffet Concert",
+      "date": "2026-11-28",
+      "categorie": "Concert",
+      "lien": "https://www.ville-bruz.fr/agenda/soiree-buffet-concert/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-ca937452",
+      "titre": "Marché de Noël d’Emmaüs",
+      "date": "2026-11-29",
+      "categorie": "Solidarité",
+      "lien": "https://www.ville-bruz.fr/agenda/marche-de-noel-demmaus/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
       "id": "agenda-10d138b6",
       "titre": "Atelier « mémoire en jeux »",
       "date": "2026-12-01",
@@ -1195,6 +1168,15 @@
       "source": "agenda_mairie"
     },
     {
+      "id": "agenda-09bbaec7",
+      "titre": "Soirée pull de Noël et soupes !",
+      "date": "2026-12-04",
+      "categorie": "Atelier",
+      "lien": "https://www.ville-bruz.fr/agenda/soiree-pull-de-noel-et-soupes/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
       "id": "agenda-344b9a14",
       "titre": "Lutins-Lutins",
       "date": "2026-12-05",
@@ -1213,6 +1195,24 @@
       "source": "agenda_mairie"
     },
     {
+      "id": "agenda-125e193f",
+      "titre": "Haziel fête Noël",
+      "date": "2026-12-05",
+      "categorie": "Spectacle",
+      "lien": "https://www.ville-bruz.fr/agenda/haziel-fete-noel/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-adf23f8d",
+      "titre": "Brunch des Petites Cantines",
+      "date": "2026-12-06",
+      "categorie": "Association",
+      "lien": "https://www.ville-bruz.fr/agenda/brunch-des-petites-cantines/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
       "id": "agenda-3413db7a",
       "titre": "Marché de Noël de Bruz",
       "date": "2026-12-06",
@@ -1227,6 +1227,15 @@
       "date": "2026-12-08",
       "categorie": "Rencontre",
       "lien": "https://www.ville-bruz.fr/agenda/apero-bd-des-bulles-a-partager/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-aa0bbfca",
+      "titre": "Formation à la sobriété en eau chez soi",
+      "date": "2026-12-08",
+      "categorie": "Rencontre",
+      "lien": "https://www.ville-bruz.fr/agenda/formation-a-la-sobriete-en-eau-chez-soi/",
       "lien_label": "Agenda Ville de Bruz",
       "source": "agenda_mairie"
     },
@@ -1258,6 +1267,15 @@
       "source": "agenda_mairie"
     },
     {
+      "id": "agenda-e9e3320e",
+      "titre": "Marché de Noël à l’Ehpad René Cassin",
+      "date": "2026-12-09",
+      "categorie": "Association",
+      "lien": "https://www.ville-bruz.fr/agenda/marche-de-noel-a-lehpad-rene-cassin/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
       "id": "agenda-dde0e7a4",
       "titre": "Projection « les contes du pommier »",
       "date": "2026-12-11",
@@ -1272,6 +1290,15 @@
       "date": "2026-12-11",
       "categorie": "Atelier",
       "lien": "https://www.ville-bruz.fr/agenda/aimante-ton-noel-3/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-4bba18f7",
+      "titre": "Réunion publique : révision du Plan de prévention du risque d’inondation",
+      "date": "2026-12-11",
+      "categorie": "Réunion publique",
+      "lien": "https://www.ville-bruz.fr/agenda/reunion-publique-revision-du-plan-de-prevention-du-risque-dinondation/",
       "lien_label": "Agenda Ville de Bruz",
       "source": "agenda_mairie"
     },

@@ -1,9 +1,39 @@
 {
   "meta": {
-    "last_updated": "2026-11-21",
+    "last_updated": "2026-11-25",
     "note": "Actus de suivi des promesses — une actu = un événement daté lié à une ou plusieurs promesses"
   },
   "actus": [
+    {
+      "id": "of-b7605811",
+      "titre": "Bruz. Sylvain Collonge, un nouvel élu de la minorité au conseil",
+      "date": "2026-11-23",
+      "detail": "Sylvain Collonge, 8e de la liste de la minorité, entre au conseil municipal en remplacement de Philippe Salmon, ancien maire, démissionnaire début octobre 2026.",
+      "source_url": "https://www.ouest-france.fr/bretagne/bruz-35170/bruz-sylvain-collonge-un-nouvel-elu-de-la-minorite-au-conseil-c09669bd-1875-4ec6-88be-c09a912d2328",
+      "source_label": "Ouest-France",
+      "type": "presse",
+      "dossier": "D23"
+    },
+    {
+      "id": "megalis-d582d417",
+      "titre": "Amenagement — Cession place de stationnement parking Pagnol — Lot 105",
+      "date": "2026-11-16",
+      "detail": "Le Conseil municipal approuve à 26 voix pour et 7 voix contre la cession d'une place de stationnement (lot 105) du parking Pagnol à 8 300 € net vendeur. Le transfert de propriété sera acté par un acte notarié une fois le prix payé.",
+      "source_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1231970/855d2e3834472204b918d7c015fc7d8e442ce3794561b4f52a91114e753bfb84.pdf",
+      "source_label": "Mégalis — Délibération",
+      "type": "megalis",
+      "dossier": "D05"
+    },
+    {
+      "id": "of-ad9ec8ff",
+      "titre": "Bruz. Ouverture d'un tronçon du boulevard Pasteur",
+      "date": "2026-11-23",
+      "detail": "Un tronçon du boulevard Pasteur a été ouvert à la circulation à Bruz. Cette ouverture complète les travaux d'aménagement de la voirie locale.",
+      "source_url": "https://www.ouest-france.fr/bretagne/bruz-35170/bruz-ouverture-dun-troncon-du-boulevard-pasteur-7291bbc0-4463-4742-a643-fd528304abae",
+      "source_label": "Ouest-France",
+      "type": "presse",
+      "dossier": "D05"
+    },
     {
       "id": "megalis-2130a379",
       "titre": "Transition ecologique — Renouvellement du dispositif « territoire engagé pour la nature (ten) »",
