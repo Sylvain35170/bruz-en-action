@@ -210,10 +210,6 @@ jamais déclencher `flow.run_local_server()` sous launchd, cf. incident 6 j du 2
 
 ### 2026-11-02 — `agent_enrichissement_cm` recréait la séance `CM-2026-09-23` (doublon du 21/09)
 - `agent_enrichissement_cm` recréait la séance `CM-2026-09-23` (doublon du 21/09) : titre YouTube sans année (« lundi 21 septembre ») → regex en échec → date de publication de la vidéo prise comme date de séance → ID inexistant. Fix 9949ab1 : année facultative (défaut = année de publication) + rapprochement par `youtube_id` avant création. Après une veille manuelle, relire `git diff data/cms.json` avant de committer.
-### 2026-10-26 — CLI `claude` : l'erreur sort sur stdout ; bulletins hors des pages du site
-- Déconnecté, le CLI écrit « Not logged in · Please run /login » sur **stdout**, rien sur stderr. Les agents ne loggaient que stderr → 4 jours d'erreurs vides (20-23/10, points clés du n°863 perdus). Corrigé dans `agent_bruz_mag`, `agent_select`, `agent_enrichissement_cm` ; remède = `/login` dans un terminal.
-- Le `°` encodé (`%C2%B0`) n'empêche pas le téléchargement (n°863 OK) : le PDF du n°861 a été **retiré** par la mairie (`url_expiree`). Le n°862 n'était lié que par sa une en PNG et nommé `n°-862` (tiret) : un 404 ou un numéro manquant se vérifie dans la médiathèque WordPress (`/wp-json/wp/v2/media?search=…`) et par variantes de nom, avant de conclure à un bug d'encodage.
-
 ### 2026-11-02 — Doublon de séance recréé par agent_enrichissement_cm
 Titre YouTube sans année (« lundi 21 septembre ») → la date de publication de la vidéo servait de
 date de séance → ID inexistant (`CM-2026-09-23`) → séance recréée et ré-enrichie à chaque run, puis

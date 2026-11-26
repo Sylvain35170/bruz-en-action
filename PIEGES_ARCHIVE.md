@@ -576,3 +576,7 @@ Une actu corrigée après `agent_dossiers` se propage dans `dossiers.json` par `
 ### 2026-10-19 — Veille : venv et réseau
 - Lancer les scripts avec `~/.venvs/bruz-en-action/bin/python`, pas `python3` : le système n'a pas `google_auth_oauthlib` (Signalements/Mailer en erreur, faux symptôme de panne Gmail).
 - Erreur DNS sur `oauth2.googleapis.com` pendant un run = Mac en veille/éteint. Rattrapage : relancer `run_agents.py` (il ne pousse rien avant la revue).
+
+### 2026-10-26 — CLI `claude` : l'erreur sort sur stdout ; bulletins hors des pages du site
+- Déconnecté, le CLI écrit « Not logged in · Please run /login » sur **stdout**, rien sur stderr. Les agents ne loggaient que stderr → 4 jours d'erreurs vides (20-23/10, points clés du n°863 perdus). Corrigé dans `agent_bruz_mag`, `agent_select`, `agent_enrichissement_cm` ; remède = `/login` dans un terminal.
+- Le `°` encodé (`%C2%B0`) n'empêche pas le téléchargement (n°863 OK) : le PDF du n°861 a été **retiré** par la mairie (`url_expiree`). Le n°862 n'était lié que par sa une en PNG et nommé `n°-862` (tiret) : un 404 ou un numéro manquant se vérifie dans la médiathèque WordPress (`/wp-json/wp/v2/media?search=…`) et par variantes de nom, avant de conclure à un bug d'encodage.
