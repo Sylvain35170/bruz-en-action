@@ -137,11 +137,24 @@ def _integrer(parsed: list[dict], batch_light: list[dict]) -> tuple[int, int]:
     def _megalis(p: dict) -> bool:
         return type_by_id.get(p.get("id"), "") == "megalis"
 
+    # Mise à jour en place (`maj`, posé par agent_mairie / agent_ouestfrance) :
+    # même URL que l'original et titre « X (mise à jour) », donc toujours prise
+    # pour un doublon — aucune n'avait jamais atteint la revue (« Stop aux
+    # violences contre les femmes (mise à jour) », écartée le 2026-11-23). Son
+    # id est propre au jour du changement : c'est sa seule clé de doublon.
+    maj_ids = {i.get("id") for i in batch_light if i.get("maj")}
+
+    def _maj(p: dict) -> bool:
+        return p.get("id") in maj_ids
+
     urls_publiees = {u for _, u in published_actus() if u}
     proposals = []
     deja_publies = []
     for p in parsed:
-        if _megalis(p):
+        if _maj(p):
+            p["maj"] = True
+            doublon = False
+        elif _megalis(p):
             doublon = p.get("source_url", "") in urls_publiees
         else:
             doublon = is_already_published(p.get("titre", ""), p.get("source_url", ""))
@@ -157,6 +170,7 @@ def _integrer(parsed: list[dict], batch_light: list[dict]) -> tuple[int, int]:
     reg_items = registry["items"]
     known_reg_urls = {i.get("source_url", "") for i in reg_items}
     known_reg_titles = {i.get("titre", "").lower()[:50] for i in reg_items}
+    known_reg_ids = {i.get("id") for i in reg_items} - {None, ""}
 
     # Les doublons de stories déjà publiées entrent AUSSI dans le registre, en
     # rejected. Sans ça ils n'y étaient jamais inscrits : `known_urls()` ne les
@@ -165,6 +179,8 @@ def _integrer(parsed: list[dict], batch_light: list[dict]) -> tuple[int, int]:
     # modèle repayé tous les jours pour le même item, indéfiniment (constaté sur
     # « Stage de natation piscine de la Conterie », re-analysé à chaque run).
     def _deja_au_registre(p: dict) -> bool:
+        if _maj(p):
+            return p.get("id") in known_reg_ids
         url_key = p.get("source_url", "")
         if url_key and url_key in known_reg_urls:
             return True
@@ -244,7 +260,8 @@ def run() -> bool:
          "detail": (i.get("detail") or "")[:300],
          "source_url": i.get("source_url"), "source_label": i.get("source_label", ""),
          "date": i.get("date"), "type": i.get("type"),
-         **({"extrait": i["texte_extrait"][:2000]} if i.get("texte_extrait") else {})}
+         **({"extrait": i["texte_extrait"][:2000]} if i.get("texte_extrait") else {}),
+         **({"maj": True} if i.get("maj") else {})}
         for i in items
     ]
 

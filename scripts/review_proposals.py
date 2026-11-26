@@ -101,7 +101,9 @@ def apply_decisions(accept_ids: list[str], reject_ids: list[str],
         if dossier_override:
             p["dossier"] = dossier_override
         url = p.get("source_url", "")
-        if url and url in published_urls:
+        # Une mise à jour en place garde l'URL de l'original déjà publié : elle
+        # se publie quand même, comme une actu distincte (son propre id).
+        if url and url in published_urls and not p.get("maj"):
             log(f"  {item_id} déjà présent dans actus.json — statut accepté sans doublon.", "WARN")
         else:
             actus.insert(0, _to_actu(p))

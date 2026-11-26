@@ -16,7 +16,6 @@
 
 ## 🟡 À faire — Agents de veille
 
-- [ ] **Les « (mise à jour) » sont écartés par la sélection** — le 23/11, « Stop aux violences contre les femmes (mise à jour) » a été écarté comme « Déjà publié » : `is_already_published` compare les titres à 0,75, et « X (mise à jour) » ressemble toujours à X. La détection de mise à jour en place (`check_content_changed`, mairie + OF) n'aboutit donc jamais en revue. Piste : ne pas appliquer ce contrôle aux items marqués `maj` dans `agent_select._integrer`
 - [ ] **Extraction des bulletins trop pauvre sur les travaux/équipements** : `points_cles` = ~8 lignes génériques. Le Bruz Mag n°262 contenait boulodrome (2028), centrale solaire, foyer du FC, gymnases de Ker Lann, parking Pagnol, priorité écoles ; rien n'avait été capté (rattrapé à la main le 12/11 dans `promesses.json`). Piste : passe dédiée « travaux, équipements, subventions » sur les bulletins et résumés de CM.
 - [ ] **CM du 12/10 — suivre les décisions** : publiés le 18/10 (liste des délibérations, PV du 21/09, fonds de concours Prigent/de Gaulle, marché rénovation thermique, convention Fondation étudiante). Rejetés : cession parking Pagnol, décisions du maire, CST, postes (DGS déjà couvert dans la fiche CM). Fonds de concours lié à D13 le 26/10.
 
