@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-11-24",
+    "last_updated": "2026-11-26",
     "source": "Ville de Bruz, Grand Logis, Handisport, Les Trans"
   },
   "evenements": [
@@ -113,25 +113,6 @@
       "lien_label": "Agenda Ville de Bruz",
       "source": "agenda_mairie",
       "date_fin": "2026-10-30"
-    },
-    {
-      "id": "agenda-76708c8c",
-      "titre": "Course de modélisme : les 6 heures Bato35",
-      "date": "2026-10-24",
-      "categorie": "Association",
-      "lien": "https://www.ville-bruz.fr/agenda/course-de-modelisme-les-6-heures-bato35/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie",
-      "date_fin": "2026-10-25"
-    },
-    {
-      "id": "agenda-6098e7d9",
-      "titre": "Projection du dessin animé « Coco »",
-      "date": "2026-10-26",
-      "categorie": "Famille",
-      "lien": "https://www.ville-bruz.fr/agenda/projection-du-dessin-anime-coco/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
     },
     {
       "id": "agenda-52047714",
@@ -312,15 +293,6 @@
       "date": "2026-10-31",
       "categorie": "Atelier",
       "lien": "https://www.ville-bruz.fr/agenda/soiree-karaoke-deguise-pour-halloween/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
-    },
-    {
-      "id": "agenda-14e5fcc1",
-      "titre": "Tricote et papote",
-      "date": "2026-11-01",
-      "categorie": "Atelier",
-      "lien": "https://www.ville-bruz.fr/agenda/tricote-et-papote/",
       "lien_label": "Agenda Ville de Bruz",
       "source": "agenda_mairie"
     },
@@ -605,15 +577,6 @@
       "source": "agenda_mairie"
     },
     {
-      "id": "agenda-e24c710a",
-      "titre": "Repair Café",
-      "date": "2026-11-14",
-      "categorie": "Association",
-      "lien": "https://www.ville-bruz.fr/agenda/repair-cafe/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
-    },
-    {
       "id": "agenda-45919088",
       "titre": "Espace de Gratuité",
       "date": "2026-11-14",
@@ -674,15 +637,6 @@
       "date": "2026-11-15",
       "categorie": "Exposition",
       "lien": "https://www.ville-bruz.fr/agenda/exposition-sur-la-marqueterie-6/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
-    },
-    {
-      "id": "agenda-274faa9e",
-      "titre": "Jeux de société",
-      "date": "2026-11-15",
-      "categorie": "Jeux",
-      "lien": "https://www.ville-bruz.fr/agenda/jeux-de-societe/",
       "lien_label": "Agenda Ville de Bruz",
       "source": "agenda_mairie"
     },
@@ -1068,6 +1022,15 @@
       "source": "agenda_mairie"
     },
     {
+      "id": "agenda-14e5fcc1",
+      "titre": "Tricote et papote",
+      "date": "2026-11-29",
+      "categorie": "Atelier",
+      "lien": "https://www.ville-bruz.fr/agenda/tricote-et-papote/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
       "id": "agenda-ca937452",
       "titre": "Marché de Noël d’Emmaüs",
       "date": "2026-11-29",
@@ -1222,6 +1185,15 @@
       "source": "agenda_mairie"
     },
     {
+      "id": "agenda-4c8ed765",
+      "titre": "Brico déco d’hiver",
+      "date": "2026-12-06",
+      "categorie": "Atelier",
+      "lien": "https://www.ville-bruz.fr/agenda/brico-deco-dhiver/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
       "id": "agenda-606ed540",
       "titre": "Apéro BD : des bulles à partager",
       "date": "2026-12-08",
@@ -1303,6 +1275,24 @@
       "source": "agenda_mairie"
     },
     {
+      "id": "agenda-ff912fcc",
+      "titre": "Concert : Neebiic",
+      "date": "2026-12-11",
+      "categorie": "Concert",
+      "lien": "https://www.ville-bruz.fr/agenda/concert-neebiic/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-e24c710a",
+      "titre": "Repair Café",
+      "date": "2026-12-12",
+      "categorie": "Association",
+      "lien": "https://www.ville-bruz.fr/agenda/repair-cafe/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
       "id": "agenda-e0dbaf8e",
       "titre": "Broyage des végétaux à Bruz",
       "date": "2026-12-12",
@@ -1317,6 +1307,15 @@
       "date": "2026-12-12",
       "categorie": "Théâtre",
       "lien": "https://www.ville-bruz.fr/agenda/spectacle-de-theatre-hotel-des-batignoles/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-274faa9e",
+      "titre": "Jeux de société",
+      "date": "2026-12-13",
+      "categorie": "Jeux",
+      "lien": "https://www.ville-bruz.fr/agenda/jeux-de-societe/",
       "lien_label": "Agenda Ville de Bruz",
       "source": "agenda_mairie"
     },
@@ -1366,6 +1365,15 @@
       "source": "agenda_mairie"
     },
     {
+      "id": "agenda-0f4cdcd2",
+      "titre": "Contes d’hiver",
+      "date": "2026-12-20",
+      "categorie": "Spectacle",
+      "lien": "https://www.ville-bruz.fr/agenda/contes-dhiver/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
       "id": "agenda-44f32dc7",
       "titre": "Ala.ni – Sunshine music – Complet",
       "date": "2027-01-08",
@@ -1390,6 +1398,15 @@
       "date": "2027-01-13",
       "categorie": "Concert",
       "lien": "https://www.ville-bruz.fr/agenda/cine-concert-jemima-johnny/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-2b096bef",
+      "titre": "Accueil des nouveaux habitants",
+      "date": "2027-01-16",
+      "categorie": "Rencontre",
+      "lien": "https://www.ville-bruz.fr/agenda/accueil-des-nouveaux-habitants/",
       "lien_label": "Agenda Ville de Bruz",
       "source": "agenda_mairie"
     },

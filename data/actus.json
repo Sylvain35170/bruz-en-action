@@ -1,9 +1,19 @@
 {
   "meta": {
-    "last_updated": "2026-11-25",
+    "last_updated": "2026-11-26",
     "note": "Actus de suivi des promesses — une actu = un événement daté lié à une ou plusieurs promesses"
   },
   "actus": [
+    {
+      "id": "mairie-0e318fcc",
+      "titre": "Réseau STAR : 4 samedis gratuits pour préparer Noël",
+      "date": "2026-11-25",
+      "detail": "Le réseau STAR propose des trajets gratuits le samedi durant quatre dates avant Noël. Mesure facilitant l'accès aux transports en commun pour les habitants de Bruz.",
+      "source_url": "https://www.ville-bruz.fr/actualites/reseau-star-4-samedis-gratuits-pour-preparer-noel/",
+      "source_label": "Mairie de Bruz — Actualités",
+      "type": "mairie",
+      "dossier": "D01"
+    },
     {
       "id": "of-b7605811",
       "titre": "Bruz. Sylvain Collonge, un nouvel élu de la minorité au conseil",
