@@ -98,7 +98,7 @@ export default async function EnProfondeurPage({ params }: { params: Promise<{ i
               Sécurité à Bruz : gendarmerie, police municipale et caméras — qui fait quoi, et qu'est-ce qui va changer ?
             </h1>
             <p style={{ fontSize: 16, lineHeight: 1.75, color: "rgba(255,255,255,0.75)", maxWidth: 680, margin: 0 }}>
-              Le programme Houssin promet un renforcement de la police municipale. Mais que peut vraiment faire une PM dans une commune sous régime de gendarmerie ? Et la vidéosurveillance, c'est pour quand ?
+              Le programme Houssin promet de doubler les effectifs de la police municipale et de renforcer la vidéoprotection. Mais que peut vraiment faire une PM dans une commune sous régime de gendarmerie ? Et où en est-on, huit mois après l'élection ?
             </p>
           </>)}
           {id === "D03" && (<>
@@ -163,20 +163,34 @@ export default async function EnProfondeurPage({ params }: { params: Promise<{ i
           <section style={{ marginBottom: 48 }}>
             <SectionTitle>La promesse de renforcement — où en est-on ?</SectionTitle>
             <InfoBox icon="📋" titre="Ce qui était promis">
-              Le programme « Un nouvel élan pour Bruz » mentionne un renforcement de la police municipale. La délégation sécurité a été attribuée à un élu au CM d'avril 2026. C'est le premier acte — le reste n'est pas encore annoncé.
+              Le programme « Un nouvel élan pour Bruz » s&apos;engage à « doubler les effectifs de la police municipale » (page 5) et à
+              renforcer la vidéoprotection dans les zones sensibles. La délégation « Prévention et sécurité » a été confiée à Philippe Pagès,
+              8e adjoint, en avril 2026.
+            </InfoBox>
+            <InfoBox icon="📍" titre="Où en est-on ?">
+              La police municipale compte 8 agents : 1 responsable, 3 policiers municipaux, 2 agents de surveillance de la voie publique,
+              1 secrétaire et 2 agents de surveillance des sorties d&apos;école. Les policiers sont armés (catégories B et D) et équipés de
+              caméras-piétons. Un poste supplémentaire a été créé en 2026 (candidatures closes le 9 juillet). Le doublement promis reste
+              à préciser : sur quelle base (8 agents, ou 4 policiers municipaux) et à quel horizon ?{" "}
+              <em>Sources : fiche de poste et offre d&apos;emploi 2026 de la Ville ; Bruz Mag n°262.</em>
             </InfoBox>
             <InfoBox icon="❓" titre="Ce qu'on ne sait pas">
-              Les effectifs actuels de la PM de Bruz ne sont <strong>pas publiés</strong>. On ne sait pas combien d'agents sont en poste, quels sont leurs horaires de patrouille, ni quel est le budget PM dans les comptes 2026. Sans base de référence, impossible de mesurer un « renforcement ».
+              Le budget de la police municipale n&apos;apparaît pas en ligne propre dans les documents budgétaires publiés. On ne connaît
+              pas non plus les plages horaires de patrouille, ni la date et la délibération d&apos;origine du dispositif de vidéoprotection
+              existant.
             </InfoBox>
             <InfoBox icon="🔍" titre="Ce qu'on attend">
-              Une délibération précise : X agents supplémentaires, budget alloué, calendrier de recrutement, périmètre d'intervention élargi. Sans ça, le « renforcement » reste une intention sans contenu mesurable.
+              Un calendrier du doublement : combien d&apos;agents supplémentaires, avec quel budget, et pour quelles missions. Sans ça,
+              le « renforcement » reste difficile à mesurer.
             </InfoBox>
           </section>
 
           <section style={{ marginBottom: 48 }}>
             <SectionTitle>La vidéosurveillance : un débat qui arrive</SectionTitle>
             <p style={{ fontSize: 14, color: "#475569", lineHeight: 1.7, marginBottom: 20 }}>
-              Plusieurs communes voisines ont investi dans des systèmes de vidéoprotection. À Bruz, aucune délibération n'a encore été votée. C'est un sujet qui divise — voici les arguments des deux côtés.
+              Un dispositif de vidéoprotection existe déjà à Bruz : les policiers municipaux en assurent le suivi. La majorité annonce un
+              audit avec la gendarmerie pour redéployer les caméras (Bruz Mag n°262), sans nouvelles caméras annoncées à ce stade. Étendre
+              le dispositif est un sujet qui divise — voici les arguments des deux côtés.
             </p>
             <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
               {[
@@ -190,7 +204,7 @@ export default async function EnProfondeurPage({ params }: { params: Promise<{ i
               ))}
             </div>
             <p style={{ fontSize: 13, color: "#94a3b8", marginTop: 16 }}>
-              Si la mairie souhaite installer des caméras, cela nécessitera une délibération du conseil municipal, une autorisation préfectorale et un avis de la CNIL. Ce sera un moment de débat public.
+              Si la mairie souhaite installer de nouvelles caméras, cela nécessitera une délibération du conseil municipal, une autorisation préfectorale et un avis de la CNIL. Ce sera un moment de débat public.
             </p>
           </section>
 
@@ -198,10 +212,10 @@ export default async function EnProfondeurPage({ params }: { params: Promise<{ i
             <SectionTitle>Les questions citoyennes</SectionTitle>
             <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
               {[
-                { q: "Combien d'agents de PM à Bruz aujourd'hui ?", d: "Non publié. C'est pourtant la base pour évaluer toute promesse de renforcement." },
-                { q: "Quel est le budget PM 2026 ?", d: "Non communiqué dans le budget voté en mars. Une ligne dédiée existe — son montant n'est pas public." },
+                { q: "Combien d'agents de PM faut-il pour « doubler » ?", d: "La PM compte 8 agents, dont 4 policiers municipaux (responsable compris). Le programme ne dit pas quelle base il double : 8 → 16, ou 4 → 8 policiers ? La réponse change le coût du tout au tout." },
+                { q: "Quel est le budget PM 2026 ?", d: "Le budget 2026 crée un poste de police municipale (+3 ETP au total, avec les marchés publics et l'Atlas de la biodiversité), mais le coût total de la PM n'apparaît pas en ligne propre dans les documents publiés." },
                 { q: "Quelles sont les plages horaires de patrouille ?", d: "La PM patrouille-t-elle la nuit ? Les week-ends ? Aucune information publique disponible." },
-                { q: "Quels sont les chiffres de délinquance à Bruz ?", d: "Les données du Ministère de l'Intérieur (data.gouv.fr) sont publiques par commune — mais elles n'ont jamais été présentées en CM ni commentées par la mairie." },
+                { q: "Que disent les chiffres de délinquance ?", d: "Ils sont publics (ministère de l'Intérieur) et contrastés : en 2025, les cambriolages atteignent leur plus haut niveau en dix ans (68, +28 % sur un an), tandis que violences physiques, dégradations et escroqueries baissent sur un an. Détail dans le dossier D07." },
                 { q: "Une convention PM-gendarmerie existe-t-elle ?", d: "Les communes peuvent signer des conventions de coordination avec la gendarmerie. Bruz en a-t-elle une ? Avec quel contenu ?" },
               ].map(({ q, d }, i) => (
                 <div key={i} style={{ background: "#fff", border: "1px solid #e2e8f0", borderLeft: "3px solid #E8A040", borderRadius: 8, padding: "16px 20px" }}>
@@ -219,10 +233,10 @@ export default async function EnProfondeurPage({ params }: { params: Promise<{ i
                 Le sentiment de sécurité, ça se construit avec des données — pas des slogans.
               </p>
               <p style={{ margin: "0 0 12px", fontSize: 14, color: "#334155", lineHeight: 1.75 }}>
-                Bruz en Action n'a pas de position sur le niveau de sécurité à Bruz — la délinquance est faible comparée aux villes de taille similaire. Mais on a une attente : que les décisions sur la PM et la vidéosurveillance s'appuient sur des données publiques, pas sur un sentiment ou une posture politique.
+                Bruz en Action n&apos;a pas de position sur le niveau de sécurité à Bruz, et les chiffres sont contrastés : cambriolages au plus haut depuis dix ans en 2025, violences et dégradations en baisse sur un an. Mais on a une attente : que les décisions sur la PM et la vidéosurveillance s'appuient sur des données publiques, pas sur un sentiment ou une posture politique.
               </p>
               <p style={{ margin: 0, fontSize: 14, color: "#334155", lineHeight: 1.75 }}>
-                Publier les effectifs PM, les chiffres de délinquance en CM, et budgéter clairement le « renforcement » promis — c'est le minimum pour que les Bruzois puissent juger sur pièces.
+                Présenter les chiffres de délinquance en conseil municipal, et chiffrer le calendrier du doublement promis — c'est le minimum pour que les Bruzois puissent juger sur pièces.
               </p>
             </div>
           </section>
@@ -231,9 +245,9 @@ export default async function EnProfondeurPage({ params }: { params: Promise<{ i
             <SectionTitle>Ce qu'on va surveiller</SectionTitle>
             <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
               {[
-                { periode: "CM juillet 2026", description: "Budget PM dans les comptes 2026 — en hausse par rapport à 2025 ?", importance: "haute" },
-                { periode: "2026", description: "Délibération sur les effectifs PM ou le recrutement d'agents supplémentaires.", importance: "haute" },
-                { periode: "2026", description: "Toute délibération sur la vidéoprotection — localisation, coût, autorisation préfectorale.", importance: "haute" },
+                { periode: "Fin 2026", description: "Le poste créé en 2026 est-il pourvu ? L'effectif passerait de 8 à 9 agents.", importance: "haute" },
+                { periode: "2027", description: "Calendrier du doublement des effectifs promis — budget et nombre de postes.", importance: "haute" },
+                { periode: "2026–2027", description: "Conclusions de l'audit vidéoprotection mené avec la gendarmerie : redéploiement, extension, coût.", importance: "haute" },
                 { periode: "2026–2027", description: "Publication des chiffres de délinquance Bruz par le Ministère — en CM ou en communication.", importance: "moyenne" },
                 { periode: "2026–2032", description: "Bilan à mi-mandat : le renforcement promis s'est-il traduit en agents et en présence terrain ?", importance: "neutre" },
               ].map((item, i) => (
@@ -435,16 +449,20 @@ export default async function EnProfondeurPage({ params }: { params: Promise<{ i
             <SectionTitle>C'est quoi la ZAC Multisites ?</SectionTitle>
             <InfoBox icon="🏗️" titre="Une Zone d'Aménagement Concerté sur plusieurs quartiers">
               La ZAC Multisites est un outil d'urbanisme qui permet à la commune de <strong>maîtriser la création de logements</strong> sur plusieurs secteurs en même temps.
-              Création officielle votée au conseil municipal de décembre 2025 — 1 700 nouveaux logements prévus d'ici 2035.
+              Création votée au conseil municipal du 15 décembre 2025 (24 voix pour, 7 contre) : environ 31 hectares, 92 000 m²
+              de surface de plancher, soit environ 1 700 logements. Objectif de mixité : 30 % de locatif social, 15 % d&apos;accession
+              sociale, 20 % à prix encadrés, 35 % libres. <em>Source : délibération de création de la ZAC (Mégalis).</em>
             </InfoBox>
-            <InfoBox icon="🗺️" titre="Plusieurs secteurs, dont Ker Lann en tête">
-              Les 1 700 logements sont répartis sur plusieurs quartiers de Bruz.
-              Le secteur <strong>Ker Lann</strong> est le plus contraint : Rennes Métropole y impose une densité de <strong>60 logements à l'hectare</strong> dans le cadre du tracé T4.
-              Le Vert-Buisson est le premier secteur identifié publiquement — 67 logements déjà en projet.
+            <InfoBox icon="🗺️" titre="Six secteurs — et Ker Lann à part">
+              La ZAC couvre six secteurs : <strong>la Gare, le Grand Pâtis, la Haye de Pan, la Maison des Associations, la Noë et Mons</strong>.
+              Cinq sont en renouvellement urbain, un seul en extension (environ 9 ha). Densités minimales du programme local de l&apos;habitat :
+              67 logements/ha en renouvellement, 41 en extension.
+              <strong> Ker Lann n&apos;en fait pas partie</strong> : c&apos;est une ZAC distincte, sur le tracé du T4, où Rennes Métropole
+              impose 60 logements à l&apos;hectare et prévoit environ 600 logements.
             </InfoBox>
             <InfoBox icon="⚖️" titre="Bruz décide — mais pas seule">
-              La ZAC est sous maîtrise d'ouvrage communale. Mais Rennes Métropole impose les densités liées au T4 sur Ker Lann,
-              et l'Inspection Académique 35 pilote les ouvertures de classes.
+              La ZAC Multisites est une initiative communale. Mais ses densités découlent du programme local de l&apos;habitat
+              métropolitain, Rennes Métropole fixe celles de Ker Lann, et l&apos;Inspection Académique 35 pilote les ouvertures de classes.
               <strong> La commune construit, mais l'État et la Métropole fixent des contraintes.</strong>
             </InfoBox>
           </section>
@@ -536,9 +554,9 @@ export default async function EnProfondeurPage({ params }: { params: Promise<{ i
               </div>
               <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px,1fr))", gap: 10 }}>
                 {[
-                  { nom: "Préfecture d'Ille-et-Vilaine", role: "Contrôle de légalité des délibérations communales. Les actes ZAC et modifications de PLU lui sont transmis — elle peut les déférer au tribunal administratif." },
+                  { nom: "Préfecture d'Ille-et-Vilaine", role: "Contrôle de légalité des délibérations communales. Les actes ZAC lui sont transmis, comme les modifications du PLUi métropolitain — elle peut les déférer au tribunal administratif." },
                   { nom: "Inspection Académique 35", role: "Pilote les ouvertures et fermetures de classes dans les groupes scolaires existants. Avec ~850 enfants supplémentaires attendus, c'est un défi de planification que la municipalité devra anticiper avec elle." },
-                  { nom: "Enquête publique (commissaire-enquêteur)", role: "Toute modification du PLU passe par une enquête publique obligatoire. C'est le moment légal pour les habitants de déposer leurs observations au dossier." },
+                  { nom: "Enquête publique (commissaire-enquêteur)", role: "Toute évolution du PLUi (piloté par Rennes Métropole) et l'étude d'impact de la ZAC passent par une participation du public. C'est le moment légal pour les habitants de déposer leurs observations au dossier." },
                 ].map(({ nom, role }) => (
                   <div key={nom} style={{ background: "#f8fafc", border: "1px solid #e2e8f0", borderRadius: 10, padding: "14px 16px" }}>
                     <div style={{ fontSize: 13, fontWeight: 700, color: "#334155", marginBottom: 6 }}>{nom}</div>
@@ -553,7 +571,9 @@ export default async function EnProfondeurPage({ params }: { params: Promise<{ i
           <section style={{ marginBottom: 48 }}>
             <SectionTitle>La densité : ce que 60 lgts/ha signifie vraiment</SectionTitle>
             <p style={{ fontSize: 14, color: "#64748b", lineHeight: 1.7, marginBottom: 24 }}>
-              Le chiffre de 60 logements par hectare est mentionné dans les délibérations — mais rarement expliqué. Que signifie-t-il concrètement pour les habitants du secteur Ker Lann ?
+              Le chiffre de 60 logements par hectare, imposé à Ker Lann, est mentionné dans les délibérations — mais rarement expliqué.
+              C&apos;est aussi le bon ordre de grandeur pour les secteurs de la ZAC Multisites (41 à 67 logements/ha). Que signifie-t-il
+              concrètement pour les habitants ?
             </p>
 
             {/* Repère : 1 ha */}
@@ -676,7 +696,7 @@ export default async function EnProfondeurPage({ params }: { params: Promise<{ i
               </div>
               <div style={{ background: "#0369a1", borderRadius: 8, padding: "12px 16px" }}>
                 <div style={{ fontSize: 13, color: "#fff", lineHeight: 1.65 }}>
-                  <strong>Pour Ker Lann, concrètement :</strong> sans le ZAN, Bruz aurait pu construire ces 510 logements sur ~30 ha à 17 lgts/ha (pavillonnaire). Avec le ZAN, elle doit tenir sur ~8,5 ha. D'où les 60 lgts/ha imposés. Et d'ici 2035-2050, les révisions du PLU pousseront probablement encore plus haut.
+                  <strong>Ordre de grandeur, à Ker Lann :</strong> à 17 lgts/ha (pavillonnaire), les quelque 500 à 600 logements prévus occuperaient ~30 ha ; à 60 lgts/ha, une dizaine d&apos;hectares suffisent. D&apos;où la densité imposée par la Métropole. Et d&apos;ici 2035-2050, les révisions du PLUi pousseront probablement encore plus haut.
                 </div>
               </div>
             </div>
@@ -756,10 +776,10 @@ export default async function EnProfondeurPage({ params }: { params: Promise<{ i
             <SectionTitle>Ce que 1 700 logements impliquent concrètement</SectionTitle>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px,1fr))", gap: 16 }}>
               {[
-                { icon: "👶", titre: "~850 enfants scolarisables", texte: "À raison de 0,5 enfant par logement en moyenne, la ZAC va générer un besoin scolaire substantiel. Bruz dispose déjà de 3 groupes publics (Champ l'Évêque, Jacques Prévert, Vert Buisson) et d'un 4e en construction à Ker Lann Sud — planifier son calendrier sera l'un des défis du mandat." },
+                { icon: "👶", titre: "~850 enfants scolarisables", texte: "À raison de 0,5 enfant par logement en moyenne, la ZAC va générer un besoin scolaire substantiel. Bruz dispose déjà de 3 groupes publics (Champ l'Évêque, Jacques Prévert, Vert Buisson) et d'un 4e en construction à Ker Lann (11 M€, fin des travaux prévue fin 2026), dimensionné d'abord pour les logements de Ker Lann. Les besoins propres aux six secteurs de la ZAC restent à chiffrer." },
                 { icon: "🚗", titre: "Pression sur la mobilité", texte: "Plus d'habitants = plus de flux. Sans T4 en service avant 2031, les nouveaux arrivants dépendront de la voiture pour rejoindre Rennes." },
                 { icon: "🌳", titre: "Espaces verts sous tension", texte: "La densification réduit mécaniquement les espaces ouverts. La charte de bonnes pratiques présentée en réunion publique reste à concrétiser." },
-                { icon: "💶", titre: "Recettes fiscales à terme", texte: "1 700 logements = base taxable en hausse. Mais les équipements à financer (écoles, voirie, réseaux) précèdent les recettes de plusieurs années." },
+                { icon: "💶", titre: "Recettes fiscales à terme", texte: "1 700 logements = base taxable en hausse. Mais la part communale de la taxe d'aménagement ne sera pas perçue dans la ZAC : l'aménageur financera les voies, réseaux et espaces verts internes — les écoles et équipements de quartier restent à la charge de la commune, et précèdent les recettes." },
               ].map(({ icon, titre, texte }) => (
                 <div key={titre} style={{ background: "#fff", border: "1px solid #e2e8f0", borderRadius: 12, padding: "18px 20px" }}>
                   <div style={{ fontSize: 24, marginBottom: 10 }}>{icon}</div>
@@ -778,12 +798,12 @@ export default async function EnProfondeurPage({ params }: { params: Promise<{ i
             </p>
             <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
               {[
-                { q: "Combien d'écoles supplémentaires ?", d: "Aucune délibération sur la construction ou l'extension d'une école primaire n'a été publiée à ce jour. Le plan scolaire du mandat n'est pas connu." },
-                { q: "Quel aménageur pour la ZAC ?", d: "Une ZAC implique généralement une SEM ou une SPL comme aménageur (ex. Territoires 35, Foncier en Bretagne...). Le nom de l'opérateur mandaté par Bruz n'a pas été communiqué publiquement." },
+                { q: "Combien de classes supplémentaires pour la ZAC ?", d: "Le 4e groupe scolaire en construction à Ker Lann (autorisation de programme de 11 M€) répond d'abord aux logements de Ker Lann. Les besoins scolaires des six secteurs de la ZAC Multisites (~1 700 logements) ne sont pas chiffrés publiquement." },
+                { q: "Quel aménageur pour la ZAC ?", d: "La délibération de création parle d'un « aménageur futur » : il sera désigné à l'étape suivante, avec le dossier de réalisation (concession à une SEM, une SPL ou un opérateur privé, ou réalisation en régie). Qui, quand, et à quelles conditions ?" },
                 { q: "Quel calendrier secteur par secteur ?", d: "La ZAC couvre plusieurs quartiers mais aucun planning de mise en chantier n'a été rendu public. Qui commence quand, dans quel ordre ?" },
                 { q: "Quelle mixité sociale ?", d: "Quelle part de logements sociaux dans les 1 700 ? La loi SRU impose des quotas — Bruz est-elle en conformité et à quel niveau vise-t-elle ?" },
-                { q: "Quels équipements prévus et à quel coût ?", d: "Crèches, gymnases, espaces verts — aucun chiffrage public des équipements à créer en parallèle des logements. C'est pourtant un engagement de la commune envers les futurs habitants." },
-                { q: "Quelle concertation réelle ?", d: "La réunion publique de 2025 a été jugée trop unilatérale par la presse locale. Les habitants auront-ils voix au chapitre sur la densité lors de l'enquête publique PLU ?" },
+                { q: "Quels équipements prévus et à quel coût ?", d: "L'aménageur prendra en charge les voies, réseaux et espaces verts internes. Pour les écoles, crèches et gymnases, aucun chiffrage public n'existe : il viendra avec le programme des équipements publics du dossier de réalisation." },
+                { q: "Quelle concertation réelle ?", d: "La réunion publique de 2025 a été jugée trop unilatérale par la presse locale. Les habitants auront-ils voix au chapitre sur la densité lors des prochaines étapes (dossier de réalisation, modification du PLUi métropolitain) ?" },
               ].map(({ q, d }, i) => (
                 <div key={i} style={{ background: "#fff", border: "1px solid #e2e8f0", borderLeft: "3px solid #E8A040", borderRadius: 8, padding: "16px 20px" }}>
                   <div style={{ fontSize: 14, fontWeight: 700, color: "#0f172a", marginBottom: 6 }}>{q}</div>
@@ -805,13 +825,13 @@ export default async function EnProfondeurPage({ params }: { params: Promise<{ i
                 et une ville dynamique doit accueillir de nouveaux habitants. La ZAC Multisites est une réponse légitime à ce besoin.
               </p>
               <p style={{ margin: "0 0 12px", fontSize: 14, color: "#334155", lineHeight: 1.75 }}>
-                La densité de 60 lgts/ha imposée sur Ker Lann est une condition du T4 — on ne peut pas avoir la ligne sans la densité.
+                La densité de 60 lgts/ha imposée sur Ker Lann, à côté de la ZAC Multisites, est une condition du T4 — on ne peut pas avoir la ligne sans la densité.
                 C'est un choix politique clair : <strong>accepter la densification en échange d'une desserte en transport en commun</strong>.
                 Ce choix mérite d'être assumé publiquement, pas présenté comme une contrainte subie de la Métropole.
               </p>
               <p style={{ margin: "0 0 12px", fontSize: 14, color: "#334155", lineHeight: 1.75 }}>
-                Mais 1 700 logements sans aménageur identifié publiquement, sans calendrier d'école et sans chiffrage des équipements,
-                c'est une promesse à moitié tenue. Les équipements doivent <em>précéder</em> les habitants — pas les rattraper dix ans après.
+                Mais 1 700 logements sans aménageur encore désigné, sans besoins scolaires chiffrés pour les six secteurs et sans
+                programme d&apos;équipements publics, c&apos;est une promesse à moitié tenue. Les équipements doivent <em>précéder</em> les habitants — pas les rattraper dix ans après.
               </p>
               <p style={{ margin: 0, fontSize: 14, color: "#64748b", lineHeight: 1.75, fontStyle: "italic" }}>
                 Vous avez des informations sur le plan scolaire, l'aménageur ou le calendrier de la ZAC ?{" "}
@@ -825,9 +845,9 @@ export default async function EnProfondeurPage({ params }: { params: Promise<{ i
             <SectionTitle>Ce qu'on va surveiller</SectionTitle>
             <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
               {[
-                { periode: "2026", description: "Révision du PLU : vote en conseil municipal intégrant les nouvelles densités Ker Lann.", importance: "haute" },
-                { periode: "2026", description: "Nom de l'aménageur mandaté pour la ZAC — délibération attendue en CM.", importance: "haute" },
-                { periode: "2026–2027", description: "Plan scolaire du mandat : construction ou extension d'école primaire annoncée ?", importance: "haute" },
+                { periode: "2026–2027", description: "Dossier de réalisation de la ZAC : programme des équipements publics, bilan financier, mode de réalisation.", importance: "haute" },
+                { periode: "2026–2027", description: "Désignation de l'aménageur — délibération attendue en conseil municipal.", importance: "haute" },
+                { periode: "2026–2027", description: "Besoins scolaires de la ZAC au-delà du 4e groupe scolaire de Ker Lann : extension ou nouvelle école ?", importance: "haute" },
                 { periode: "2026–2028", description: "Dépôts de permis de construire secteur par secteur — le calendrier réel va se révéler.", importance: "moyenne" },
                 { periode: "2027–2030", description: "Premiers chantiers — impact sur la circulation et la qualité de vie des riverains.", importance: "neutre" },
                 { periode: "2031+", description: "Arrivée du T4 : les logements Ker Lann auront-ils la densité promise à Rennes Métropole ?", importance: "neutre" },
