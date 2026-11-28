@@ -241,8 +241,8 @@
   },
   "transports": {
     "t4_tramway": {
-      "description": "Prolongement de la ligne b du métro de Rennes vers Bruz",
-      "horizon_mise_en_service": "2031 (estimé)",
+      "description": "Ligne de trambus du terminus de la ligne b du métro (Saint-Jacques–Gaîté) jusqu'à Bruz, via l'aéroport, le Parc Expo et Ker Lann",
+      "horizon_mise_en_service": "2031-2032 (annoncé en juillet 2026)",
       "pilote": "Rennes Métropole",
       "note": "Condition structurante pour la mobilité des nouveaux habitants de la ZAC"
     },

@@ -351,7 +351,7 @@ export default async function EnProfondeurPage({ params }: { params: Promise<{ i
                 { icon: "🏫", label: "4e groupe scolaire", detail: "Autorisation de programme de 11 M€, dont 3,1 M€ réalisés fin 2025. Fin des travaux prévue en décembre 2026. Financé en partie par un prêt de 4 M€.", lien: "/bruz-en-action/dossiers/D10" },
                 { icon: "🏛️", label: "Hôtel de Ville", detail: "Rénovation énergétique : enveloppe portée à 2,25 M€ en mai 2026 (+150 000 €). Subvention Fonds vert de 500 000 €.", lien: null },
                 { icon: "🏗️", label: "ZAC Multisites", detail: "1 700 logements = équipements publics à anticiper : voirie, réseaux, écoles. Subvention Fonds vert de 600 000 € pour le secteur Gare.", lien: "/bruz-en-action/dossiers/D02" },
-                { icon: "🚌", label: "T4 Trambus", detail: "Projet porté par Rennes Métropole : la part éventuelle de Bruz (aménagements) reste à chiffrer. Mise en service 2031.", lien: "/bruz-en-action/dossiers/D01" },
+                { icon: "🚌", label: "T4 Trambus", detail: "Projet porté par Rennes Métropole : la part éventuelle de Bruz (aménagements, navettes) reste à chiffrer. Mise en service annoncée en 2031-2032.", lien: "/bruz-en-action/dossiers/D01" },
                 { icon: "🏊", label: "Piscine Conterie", detail: "La contribution de Bruz au syndicat a fortement augmenté depuis 2019. Voir le dossier.", lien: "/bruz-en-action/dossiers/D06" },
                 { icon: "🔒", label: "Police municipale", detail: "Renforcement promis — coût en personnel et équipements non chiffré publiquement.", lien: "/bruz-en-action/dossiers/D07" },
               ].map(({ icon, label, detail, lien }) => (
@@ -889,14 +889,16 @@ export default async function EnProfondeurPage({ params }: { params: Promise<{ i
           <section style={{ marginBottom: 48 }}>
             <SectionTitle>C'est quoi le Trambus T4 ?</SectionTitle>
             <InfoBox icon="🚌" titre="Un Bus à Haut Niveau de Service guidé">
-              Le T4 est une ligne de <strong>trambus guidé</strong> (BHNS sur voie propre), à mi-chemin entre le tramway et le bus express.
-              Moins coûteux que le tram sur rail, il circule sur une voie réservée, s'arrête à des stations fixes,
+              Le T4 est une ligne de <strong>trambus guidé</strong> (bus à haut niveau de service), à mi-chemin entre le tramway et le bus express.
+              Moins coûteux qu'un tram sur rail, il circule en grande partie sur voie réservée, s'arrête à des stations fixes,
               et atteint des capacités de <strong>100 à 150 passagers par rame</strong>.
             </InfoBox>
-            <InfoBox icon="🗺️" titre="De Rennes jusqu'à Bruz — ~21 stations">
-              La ligne reliera le centre de Rennes aux portes de Bruz en passant par Cesson-Sévigné, Chantepie et Ker Lann.
-              Maîtrise d'ouvrage : <strong>Rennes Métropole</strong> (réseau Star).
-              Livraison prévue : <strong>2030–2031</strong>.
+            <InfoBox icon="🗺️" titre="Du métro b jusqu'à Bruz, par Saint-Jacques et Ker Lann">
+              La ligne partira du terminus de la ligne b du métro (<strong>Saint-Jacques–Gaîté</strong>) et rejoindra Bruz en desservant
+              La Morinais, l&apos;aéroport, le Parc Expo, le campus de Ker Lann et le Vert-Buisson. Les études de 2022-2023 parlaient
+              d&apos;environ 12 km et 21 stations ; le nombre définitif dépendra du terminus retenu.
+              Maîtrise d&apos;ouvrage : <strong>Rennes Métropole</strong> (réseau Star).
+              Mise en service désormais annoncée en <strong>2031–2032</strong> : les études de scénarios lancées en 2026 ont décalé le calendrier d&apos;au moins un an.
             </InfoBox>
             <InfoBox icon="⚠️" titre="Bruz ne décide pas — mais ses votes au Conseil Métropolitain comptent">
               Le tracé et le terminus sont validés par Rennes Métropole, pas par la mairie de Bruz.
@@ -910,10 +912,10 @@ export default async function EnProfondeurPage({ params }: { params: Promise<{ i
             <SectionTitle>Pourquoi c'est crucial pour Bruz ?</SectionTitle>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px,1fr))", gap: 16, marginBottom: 24 }}>
               {[
-                { icon: "👥", titre: "2ème ville de la métropole", texte: "~20 000 habitants, croissance soutenue. Bruz est la commune la mieux placée pour bénéficier d'une desserte forte vers Rennes." },
-                { icon: "🚆", titre: "Gare TER déjà là", texte: "Bruz possède une gare SNCF active (ligne Rennes–Redon). Un terminus T4 à la gare crée un hub multimodal naturel sans infrastructure nouvelle." },
-                { icon: "🏗️", titre: "ZAC Multisites en développement", texte: "Le secteur Ker Lann concentre emplois, commerces et logements futurs. Le T4 conditionne sa densification — Rennes Métropole impose 60 lgts/ha sur ce secteur." },
-                { icon: "🚗", titre: "Navetteurs nombreux", texte: "Une large part des actifs bruzois travaille à Rennes. Le T4 est une alternative crédible à la voiture si le terminus est bien positionné." },
+                { icon: "👥", titre: "2ème ville de la métropole", texte: "20 461 habitants (population légale en vigueur au 1er janvier 2026) et 1,3 % de croissance par an depuis 2017. La ville grandit plus vite que sa desserte vers Rennes." },
+                { icon: "🚆", titre: "Gare TER déjà là", texte: "Bruz a une gare SNCF en service (lignes vers Redon et Messac-Guipry, une vingtaine de trains par jour, 12 à 15 minutes jusqu'à Rennes), à environ 500 m du centre-bourg. Un terminus T4 à la gare en ferait un pôle d'échanges train + trambus." },
+                { icon: "🏗️", titre: "Ker Lann en développement", texte: "Le secteur de Ker Lann concentre emplois, campus et logements futurs. Le T4 conditionne sa densification : 60 logements à l'hectare le long du corridor, selon la délibération de février 2026." },
+                { icon: "🚗", titre: "Un trafic à construire", texte: "Le projet table à terme sur 16 000 voyages par jour. Bruz en compte aujourd'hui environ 4 600, et le délégué municipal aux mobilités juge l'objectif irréaliste. Le terminus pèsera sur ce chiffre." },
               ].map(({ icon, titre, texte }) => (
                 <div key={titre} style={{ background: "#fff", border: "1px solid #e2e8f0", borderRadius: 12, padding: "18px 20px" }}>
                   <div style={{ fontSize: 24, marginBottom: 10 }}>{icon}</div>
@@ -942,11 +944,11 @@ export default async function EnProfondeurPage({ params }: { params: Promise<{ i
                 <div style={{ padding: "20px" }}>
                   <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
                     {[
-                      "Faire venir le T4 jusqu'au cœur de Bruz (place de l'Église ou proche)",
-                      "Objectif : revitaliser le centre-bourg, attirer flux piétons",
-                      "Implique des travaux lourds : voirie, réseaux enterrés, stationnement",
-                      "Délais plus longs, coûts d'infrastructure élevés côté commune",
-                      "Centre-ville transformé — partisans : dynamisme ; opposants : chantier long et impactant",
+                      "Prolonger le T4 au-delà de la gare jusqu'au centre-ville : variante « courte » (retournement avenue Joseph-Jan, parc de la Herverie) ou « longue » (place du Dr-Joly, terminus au rond-point du Vau-Gaillard)",
+                      "Cadre acté par le Bureau métropolitain le 16/10/2025, après la concertation : terminus « au-delà de la gare », prolongement vers l'est étudié en lien avec la ZAC Multisites",
+                      "Objectif affiché : desservir le centre-bourg et les quartiers à l'est, et répondre aux contraintes de recharge du matériel",
+                      "Implique des travaux de voirie en centre-ville ; la répartition des coûts entre Métropole et commune n'est pas publiée",
+                      "Partisans : un centre-ville relié directement ; opposants : un chantier long au cœur de la ville",
                     ].map((pt, i) => (
                       <div key={i} style={{ display: "flex", gap: 10, fontSize: 13, color: "#334155", lineHeight: 1.6 }}>
                         <span style={{ color: "#94a3b8", flexShrink: 0 }}>·</span>
@@ -966,11 +968,11 @@ export default async function EnProfondeurPage({ params }: { params: Promise<{ i
                 <div style={{ padding: "20px" }}>
                   <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
                     {[
-                      "Terminus à la gare SNCF de Bruz — connexion TER + T4 au même point",
-                      "Navettes électriques (bus ou véhicules légers) vers les quartiers et le centre-ville",
-                      "Moins de travaux lourds sur le centre-bourg : moins d'impact sur la qualité de vie",
-                      "Hub multimodal : une logique de rupture de charge fluide (train → T4 → navette)",
-                      "Déploiement plus rapide, coûts de génie civil réduits côté Bruz",
+                      "Terminus à la gare SNCF de Bruz : train et T4 au même point",
+                      "Navettes électriques vers les quartiers et le centre-ville, ou lignes de bus 91 et 59 renforcées",
+                      "Pas de chantier de trambus dans le centre-bourg",
+                      "Pôle d'échanges : correspondance train → T4 → navette",
+                      "Depuis juillet 2026, Rennes Métropole étudie trois scénarios (arrêt simple à la gare, navettes, renfort des bus). Ces études décalent la mise en service d'au moins un an, et le financement des navettes n'est pas tranché",
                     ].map((pt, i) => (
                       <div key={i} style={{ display: "flex", gap: 10, fontSize: 13, color: "#334155", lineHeight: 1.6 }}>
                         <span style={{ color: "#E8A040", flexShrink: 0 }}>→</span>
@@ -1000,6 +1002,11 @@ export default async function EnProfondeurPage({ params }: { params: Promise<{ i
                 efficace, et des navettes électriques peuvent desservir le centre de façon souple et évolutive —
                 sans bétonner trente ans de voirie.
               </p>
+              <p style={{ margin: "0 0 12px", fontSize: 14, color: "#334155", lineHeight: 1.75 }}>
+                Pour être complets : en octobre 2025, avant les municipales, la Métropole avait déjà acté un terminus « au-delà de la gare ».
+                Le terminus à la gare demande donc de revenir sur ce cadre. La Métropole a accepté de réétudier la question en 2026,
+                ce qui décale la mise en service d&apos;au moins un an. Le financement des navettes reste à trouver.
+              </p>
               <p style={{ margin: 0, fontSize: 14, color: "#64748b", lineHeight: 1.75, fontStyle: "italic" }}>
                 Nous soutenons la majorité Houssin et nous assumons cette posture.
                 Si vous avez des arguments contraires documentés, <a href={`mailto:${metaData.contact.email}?subject=${encodeURIComponent("[D01] Argumentation terminus T4")}`} style={{ color: "#E8A040" }}>faites-les nous parvenir</a>.
@@ -1012,10 +1019,10 @@ export default async function EnProfondeurPage({ params }: { params: Promise<{ i
             <SectionTitle>Ce qui va se décider</SectionTitle>
             <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
               {[
-                { periode: "2026–2027", description: "Délibération officielle de Rennes Métropole sur le terminus final. C'est le vote à surveiller au Conseil Métropolitain.", importance: "haute" },
-                { periode: "2026–2028", description: "Concertation publique et études d'impact. L'occasion pour les Bruzois de se faire entendre.", importance: "moyenne" },
-                { periode: "2028–2030", description: "Travaux de voirie et d'infrastructure sur le tracé Ker Lann–terminus.", importance: "neutre" },
-                { periode: "2030–2031", description: "Mise en service prévue de la ligne T4.", importance: "neutre" },
+                { periode: "Oct. 2025", description: "Bilan de la concertation adopté par le Bureau métropolitain : variante Gavrinis et tracé par le secteur Mons abandonnés, terminus « au-delà de la gare ».", importance: "neutre" },
+                { periode: "Depuis juil. 2026", description: "Rennes Métropole étudie trois scénarios de desserte à Bruz : arrêt simple à la gare, navettes électriques depuis la gare, ou renfort des lignes 91 et 59. Un bureau d'études travaille sur les navettes. Aucune date de décision n'est publiée.", importance: "haute" },
+                { periode: "À venir", description: "Le choix du scénario par Rennes Métropole, et le vote des élus bruzois au Conseil métropolitain. Puis la question du financement des navettes, si cette option est retenue.", importance: "haute" },
+                { periode: "2031–2032", description: "Mise en service désormais annoncée, contre 2030–2031 auparavant (Ouest-France, 09/07/2026).", importance: "neutre" },
               ].map((item, i) => (
                 <div key={i} style={{ display: "flex", gap: 16, background: "#fff", border: "1px solid #e2e8f0", borderRadius: 10, padding: "14px 18px", alignItems: "flex-start" }}>
                   <div style={{ flexShrink: 0, minWidth: 80 }}>

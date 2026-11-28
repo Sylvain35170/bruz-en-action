@@ -6,6 +6,17 @@
 
 > ⚠️ Le 2026-07-27, deux reliquats de cet audit ont été retrouvés **en production** alors que les lots étaient marqués clos : `/metro` (B9) jamais supprimée et toujours servie en 200, et le câblage en dur des liens dossiers (B10). Un troisième défaut (libellés coupés en deux lignes dans les déroulants de la nav) n'est apparu qu'en ouvrant réellement un menu dans le navigateur. Avant de cocher un lot d'audit, ouvrir le site déployé et manipuler l'UI — le diff et le build vert ne montrent ni les pages orphelines ni les défauts de rendu derrière une interaction.
 
+## 🟠 Prioritaire — Contenus annoncés à Patrick Roullé (mail du 28/11, Cc Gilbert)
+
+> Principe convenu : le dialogue BEA / Municipalité alimente le site ; les réseaux sociaux s'animent avec des flash cards extraites du site.
+
+- [ ] **Grand article « prise de mandat »** — l'état dans lequel la nouvelle équipe a trouvé la commune, avec un zoom sur l'acte manqué du groupe scolaire du Vert-Buisson. Matière à recueillir auprès de Patrick.
+- [ ] **Trois zooms : urbanisme, finances, RH** — dans l'esprit d'un planning *high level* : ce qui est déjà engagé et qui engage la commune (décidé par d'autres), puis les marges de manœuvre et les blocages pour réaliser le programme. Finances : s'appuyer sur D03 (revu le 28/11) et `/statistiques#finances`. RH : 234 ETP, chapitre 012 à 10,8 M€ (CFU 2025).
+- [ ] **Dossier « écologie, résilience »** — végétalisation accélérée du centre-ville (lien avec EC1 et la place Joly). Peut absorber le dossier environnement / biodiversité prévu plus bas (LPO, label TEN).
+- [ ] **Dossier « eau »** — nouveau dossier, illustration à reprendre de `PROMPTS_ILLUSTRATIONS.md`.
+- [ ] **Interviews *insider* sur les dossiers** — trambus (D01) et ZAC (D02). Prérequis : relire D01 « En profondeur ».
+- [ ] **Flash cards pour les réseaux sociaux** — format et outil à définir (extraction depuis les dossiers et `/statistiques`).
+
 ## 🟠 Prioritaire — Fonctionnalités
 
 - [ ] **Illustration D25** — le dossier « Bien vivre à Bruz à tous les âges » est publié avec `image: null`, donc badge « Dossier en construction ». Prompt prêt dans `PROMPTS_ILLUSTRATIONS.md` : générer, passer `scripts/integre_illustration.py`, puis repasser `image` sur `/bruz-en-action/illus-d25-bien-vivre.webp`.
