@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-11-26",
+    "last_updated": "2026-11-27",
     "source": "Ville de Bruz, Grand Logis, Handisport, Les Trans"
   },
   "evenements": [
@@ -113,42 +113,6 @@
       "lien_label": "Agenda Ville de Bruz",
       "source": "agenda_mairie",
       "date_fin": "2026-10-30"
-    },
-    {
-      "id": "agenda-52047714",
-      "titre": "Atelier « mémoire en jeux »",
-      "date": "2026-10-27",
-      "categorie": "Jeux",
-      "lien": "https://www.ville-bruz.fr/agenda/atelier-jouons-avec-les-mots-2/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
-    },
-    {
-      "id": "agenda-2767db3a",
-      "titre": "Atelier mémoire en jeux",
-      "date": "2026-10-27",
-      "categorie": "Atelier",
-      "lien": "https://www.ville-bruz.fr/agenda/atelier-memoire-en-jeux-2/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
-    },
-    {
-      "id": "agenda-f0644180",
-      "titre": "Visites de la ferme de la Pampa",
-      "date": "2026-10-27",
-      "categorie": "Rencontre",
-      "lien": "https://www.ville-bruz.fr/agenda/visites-de-la-ferme-de-la-pampa-2/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
-    },
-    {
-      "id": "agenda-8ba1840a",
-      "titre": "Atelier vélo-smoothie",
-      "date": "2026-10-27",
-      "categorie": "Atelier",
-      "lien": "https://www.ville-bruz.fr/agenda/atelier-velo-smoothie-2/",
-      "lien_label": "Agenda Ville de Bruz",
-      "source": "agenda_mairie"
     },
     {
       "id": "agenda-32d840dc",
@@ -1165,6 +1129,16 @@
       "lien": "https://www.ville-bruz.fr/agenda/haziel-fete-noel/",
       "lien_label": "Agenda Ville de Bruz",
       "source": "agenda_mairie"
+    },
+    {
+      "id": "agenda-358f937d",
+      "titre": "Le marché de Noël de Bruz",
+      "date": "2026-12-05",
+      "categorie": "Agenda",
+      "lien": "https://www.ville-bruz.fr/agenda/le-marche-de-noel-de-bruz/",
+      "lien_label": "Agenda Ville de Bruz",
+      "source": "agenda_mairie",
+      "date_fin": "2026-12-06"
     },
     {
       "id": "agenda-adf23f8d",
