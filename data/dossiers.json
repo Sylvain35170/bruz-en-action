@@ -464,41 +464,44 @@
       "categorie": "Finances",
       "statut": "en_cours",
       "featured": true,
-      "last_activity": "2026-11-17",
+      "last_activity": "2026-11-28",
       "date_ouverture": "2026-06-16",
       "image": "/bruz-en-action/illus-d03-finances.webp",
-      "chapeau": "Budget 2023 de Bruz : 27,3 M€ de recettes, dette quasi nulle (81 €/habitant), épargne brute à 27 %. En 2024, premier recours à l'emprunt : l'encours de dette bondit à 458 €/habitant (9,2 M€, confirmé par le CFU 2024 officiel), signe que les grands chantiers du mandat — 4e groupe scolaire (9,5 M€), rénovation de l'Hôtel de Ville (1,4 M€), ZAC Multisites — commencent à peser. Ce dossier suit les arbitrages budgétaires du mandat 2026-2032.",
+      "chapeau": "En 2025, Bruz a encaissé 26,6 M€ de recettes de fonctionnement, en a dépensé 18,9 M€ et a investi 9,5 M€. Sa dette — 7,6 M€, soit 380 €/habitant fin 2025 — est deux fois et demie plus faible que la moyenne des communes de sa taille, au terme de dix ans de désendettement après la sortie coûteuse d'un emprunt toxique en 2015. Le mandat 2026-2032 s'ouvre sur un nouvel emprunt de 4 M€ pour financer le 4e groupe scolaire (11 M€) et la rénovation de l'Hôtel de Ville (2,25 M€). Ce dossier suit les arbitrages budgétaires du mandat.",
       "contexte_pedagogique": [
-        "Un budget communal fonctionne en deux sections séparées et étanches. La section fonctionnement couvre les dépenses récurrentes : salaires (57 % des dépenses à Bruz en 2023), énergie, entretien, subventions aux associations. La section investissement finance les travaux et équipements durables. Règle d'or : il est interdit d'emprunter pour payer du fonctionnement.",
+        "Un budget communal fonctionne en deux sections séparées et étanches. La section fonctionnement couvre les dépenses récurrentes : salaires (57 % des dépenses réelles de fonctionnement à Bruz en 2025), énergie, entretien, subventions aux associations. La section investissement finance les travaux et équipements durables. Règle d'or : il est interdit d'emprunter pour payer du fonctionnement.",
         "Les recettes de fonctionnement viennent de trois grandes sources : la fiscalité locale (taxes votées chaque année par le Conseil Municipal), les dotations de l'État (dont la DGF), et les produits des services municipaux (cantines, médiathèque, périscolaire…). L'État ne finance pas directement les investissements locaux — la commune doit trouver des subventions ou emprunter.",
-        "La marge de manœuvre d'une commune se mesure par son taux d'épargne brute : la part des recettes de fonctionnement qui reste après toutes les dépenses courantes. Ce solde peut aller en investissement ou rembourser de la dette. À Bruz en 2023 : 27 %, un niveau confortable. Le seuil d'alerte est généralement fixé à 15 % — en dessous, la commune est en difficulté.",
-        "En 2023, Bruz a financé ses investissements sans contracter de nouvel emprunt — son encours de dette s'élevait alors à 81 €/habitant, exceptionnel pour une commune de cette taille. En 2024, premier recours à l'emprunt : l'encours est passé à 458 €/habitant (9,2 M€), confirmé par le CFU 2024 officiel, soit une multiplication par 5,7 en un an. Le ratio d'endettement (3,86 années) reste cependant largement en dessous du seuil de vigilance de 8 ans — la dette est maîtrisée, mais la courbe est désormais à surveiller."
+        "La marge de manœuvre d'une commune se mesure par son taux d'épargne brute : la part des recettes de fonctionnement qui reste après toutes les dépenses courantes. Ce solde finance les investissements et le remboursement de la dette. À Bruz : 21,5 % en 2025 (OFGL), un niveau confortable. Le seuil d'alerte est généralement fixé autour de 10 à 15 %.",
+        "La dette de Bruz s'explique par son histoire : un emprunt indexé sur le franc suisse, contracté en 2007, est devenu ruineux en 2015. Pour en sortir, la Ville a payé une indemnité de 9,7 M€ et sa dette a culminé à 28,2 M€ fin 2015. Elle n'a quasiment plus emprunté ensuite et a remboursé chaque année : 7,6 M€ fin 2025. Un nouvel emprunt de 4 M€ marque la fin de ce cycle de désendettement."
       ],
       "ce_quon_sait": [
-        "Recettes réelles de fonctionnement 2023 : 27,3 M€ (dont 4,8 M€ exceptionnels liés à la dissolution de la SPL NOA / ZAC Vert Buisson, non reconductibles). La base récurrente est d'environ 22,5 M€.",
-        "Fiscalité locale (chapitre 731 : taxes foncières, droits de mutation, TLPE…) : 12,7 M€ en 2022 → 13,8 M€ en 2023 (+8,4 %). En 2014, avant la réforme de la taxe d'habitation, ce chapitre était à 7,6 M€.",
-        "Dépenses réelles de fonctionnement 2023 : 17,5 M€ — dont personnel 10 M€ (57 %), charges générales 4,5 M€ (26 %), gestion courante 2,7 M€ (15 %), intérêts de la dette 240 k€ (moins de 1 %).",
-        "Masse salariale 2023 : 10 M€, 224 équivalents temps plein (ETP) ville, en hausse de 3,35 % par rapport à 2022 sous l'effet des mesures nationales de revalorisation du point d'indice.",
-        "Encours de dette 2023 : 1,63 M€ soit 81 €/habitant. Aucun nouvel emprunt contracté en 2023. Ratio d'endettement (encours / recettes réelles) : 3,9 ans.",
-        "Résultat de fonctionnement 2023 : excédent de 7,5 M€ (gonflé par l'exceptionnel ZAC). Affecté en recettes d'investissement pour le budget 2024.",
-        "Dépenses d'investissement réelles 2023 : 5,6 M€ sur 10,2 M€ budgétés (taux de réalisation : 55 %). Faible taux lié aux grands chantiers pluriannuels : 4e groupe scolaire (AP total 9,5 M€), rénovation Hôtel de Ville (AP 1,4 M€).",
-        "Dette fin 2024 (confirmée) : 9,2 M€ soit 458 €/habitant (ratio réglementaire officiel) — forte hausse par rapport aux 81 €/hab de 2023 (1,6 M€). Premier recours à l'emprunt du mandat, en lien avec les chantiers pluriannuels. Ratio d'endettement : 3,86 années. Source : Compte Financier Unique 2024, délibération n°25-03-03 du 11/03/2025 (Mégalis Bretagne) — remplace l'estimation DGFiP utilisée jusqu'ici.",
-        "CFU 2024 confirmé (délibération n°25-03-03 du 11/03/2025) : recettes réelles de fonctionnement 23,9 M€, dépenses réelles de fonctionnement 18,5 M€ (dont personnel 10,55 M€, 57,05 % — réalisation à 95,1 % du budgété). Taux d'épargne brute : 22,53 % (vs 27 % en 2023). Fiscalité locale (chapitre 731) : 15,18 M€, en hausse de 9,9 % vs 2023 (13,8 M€) — nettement au-dessus de l'estimation DGFiP retenue jusqu'ici (13,9 M€).",
-        "Budget primitif 2026 (voté au CM du 9 mars 2026, délibération n°26-03-08 du 17/03/2026) : 23,6 M€ en fonctionnement (stable vs 2025), 18,0 M€ en investissement (vs 14,6 M€ en 2025), soit 41,6 M€ au total. Nouvel emprunt prévu : 4,1 M€ (chapitre 1641) — premier recours significatif à l'emprunt depuis le début du mandat, lié au 4e groupe scolaire et à la ZAC Multisites. Remboursement du capital de la dette prévu : 1,72 M€. Dépenses d'équipement proposées : 14,36 M€, dont 12,12 M€ d'immobilisations en cours.",
-        "CFU 2025 (voté au CM du 13/03/2026, retrouvé sur Mégalis le 2026-07-02) : recettes réelles de fonctionnement 26,6 M€ (+11,3% vs 2024, tiré par des cessions exceptionnelles VEFA Place Pagnol ; +1,4% hors exceptionnel). Encours de dette : 379,59 €/hab soit ~7,6 M€ (20 113 hab), ratio d'endettement 28,75% des RRF. Aucun nouvel emprunt tiré ni en 2024 ni en 2025 (ligne budgétaire 'emprunts en euros' réalisée à 0€ les deux exercices) — la dette baisse donc entre 2024 et 2025 par remboursement du capital, pas par nouveau tirage."
+        "Correction du 28/11/2026 — ce dossier a affiché à tort une dette de 81 €/habitant (1,6 M€) fin 2023 et un « premier recours à l'emprunt » en 2024. Le chiffre venait d'un tableau de ratios erroné de la note du CFU 2023. La dette réelle était de 11,1 M€ fin 2023 (568 €/hab) et la Ville n'a pas emprunté en 2024. Sources : rapport d'orientations budgétaires 2025 (p. 15), DGFiP et OFGL, qui concordent à l'euro près.",
+        "L'emprunt toxique : 4,8 M€ empruntés à Dexia le 13/03/2007 sur 21 ans, indexés sur la parité euro/franc suisse. En mars 2015, le taux atteint 24,47 % (1 M€ d'intérêts par an pour 4 M€ restant dus). Le 30/11/2015, le conseil municipal vote à l'unanimité un protocole de sortie : indemnité de 9,7 M€, dont 57,5 % pris en charge par le fonds de soutien de l'État, versés sur quinze ans. Source : Chambre régionale des comptes de Bretagne, rapport de 2018 ; Ouest-France, décembre 2015.",
+        "Le désendettement : 28,2 M€ fin 2015 → 23,9 M€ (2017) → 17,4 M€ (2020) → 11,1 M€ (2023) → 9,4 M€ (2024) → 7,6 M€ (2025). Hors un prêt de 1 M€ en 2016 et un prêt de la CAF à taux zéro de 75 000 € en 2020, aucun emprunt de 2017 à 2025. Capacité de désendettement fin 2025 : 1,5 an. Sources : DGFiP (comptes individuels des communes), OFGL, rapport d'orientations budgétaires 2025.",
+        "L'aide de l'État pour la sortie de l'emprunt toxique est toujours perçue : 347 697 € en 2025 (chapitre 76 du CFU 2025).",
+        "Réalisé 2025 (budget principal) : 26,6 M€ de recettes de fonctionnement, dont 15,3 M€ de fiscalité locale (58 %), 3,8 M€ de dotations et participations, 2,2 M€ de reversements de Rennes Métropole et de péréquation, 1,9 M€ payés par les usagers et 2,5 M€ de cessions exceptionnelles (dont 2,3 M€ d'écritures neutres place Pagnol). Dépenses de fonctionnement : 18,9 M€, dont personnel 10,8 M€ (57 %), charges courantes 4,7 M€, subventions et contributions 3,2 M€, intérêts 148 k€. Investissement : 9,5 M€, dont 7,7 M€ d'équipement et 1,7 M€ de remboursement de dette. Source : CFU 2025, note synthétique (Mégalis), recoupé avec la DGFiP et l'OFGL.",
+        "Fiscalité locale (chapitre 731 : taxes foncières, THRS, droits de mutation, TLPE…) : 7,6 M€ en 2014 → 12,7 M€ (2022) → 13,8 M€ (2023) → 15,2 M€ (2024) → 15,3 M€ (2025). Le saut de 2021 vient de la réforme nationale de la taxe d'habitation (transfert de la part départementale de foncier bâti) ; le taux communal de foncier bâti est passé de 41,84 % à 45,34 % en 2024. Sources : CFU 2023, 2024 et 2025 (Mégalis) ; OFGL, base fiscale.",
+        "2023 est une année exceptionnelle : 4,8 M€ de reversement de l'excédent de la ZAC du Vert Buisson après dissolution de la SPL NOA, non reconductibles. Source : CFU 2023 (Mégalis), confirmé par l'OFGL (« autres recettes » à 5,4 M€ contre 0,6 à 0,8 M€ les autres années).",
+        "Comparaison 2025 avec les communes de même taille (moyennes DGFiP par habitant) : dette 380 € contre 1 002 € ; personnel 527 € contre 856 € ; équipement 385 € contre 464 €. De 2015 à 2024, Bruz a investi chaque année nettement moins que ces communes (souvent deux fois moins). Source : DGFiP, comptes individuels des communes.",
+        "Une commune aux ressources modestes qui sollicite davantage ses contribuables : potentiel financier 1 186 €/hab contre 1 401 € pour la strate (-15 %), effort fiscal 1,30 contre 1,18 (critères DGF 2026). La DGF ne représente que 127 €/hab en 2025, contre 208 € en moyenne. Source : OFGL, dotations des communes et comptes des communes.",
+        "Budget primitif 2026 (voté le 09/03/2026) : 41,6 M€ au total, dont 23,6 M€ en fonctionnement et 18,0 M€ en investissement, avec un nouvel emprunt prévu de 4,1 M€. Le 01/12/2025, le maire a signé un prêt de 4 M€ auprès du Crédit Mutuel de Bretagne (15 ans, Livret A + 0,45 %, versement au plus tard le 30/06/2026) pour le 4e groupe scolaire. Sources : maquette du BP 2026 (Mégalis) ; arrêté DG-2025-207.",
+        "Plan pluriannuel d'investissement présenté au débat d'orientation budgétaire du 26/01/2026 : 5,4 M€ (2025), 13,8 M€ (2026), 7,0 M€ (2027), 3,9 M€ (2028), 2,6 M€ (2029), 1,6 M€ (2030). Hypothèses : recettes +0,68 % par an et dépenses +3 % par an de 2025 à 2031. Source : rapport d'orientations budgétaires 2026 (Mégalis).",
+        "Grands chantiers : 4e groupe scolaire, autorisation de programme de 11 M€, 3,08 M€ réalisés fin 2025, fin des travaux prévue en décembre 2026 ; rénovation de l'Hôtel de Ville, enveloppe portée de 2,1 M€ à 2,25 M€ le 18/05/2026 (lots peu concurrentiels, assurance dommages-ouvrage non prévue). Subventions Fonds vert : 500 000 € pour l'Hôtel de Ville (2024), 600 000 € pour la ZAC multisites (2025). Sources : délibérations AP/CP des 09/03/2026 et 18/05/2026 (Mégalis) ; data.gouv.fr, Fonds vert.",
+        "Les entreprises installées à Bruz (Ker Lann, zones d'activité) paient leurs impôts économiques à Rennes Métropole, pas à la commune : 1,9 M€ de CFE en 2025 et 1,6 M€ de CVAE en 2023. La commune perçoit la taxe foncière de leurs locaux et une dotation de solidarité communautaire. Source : OFGL, base fiscale et dotations des communes.",
+        "Effectifs : 234 équivalents temps plein en 2024 (238 en 2021). Source : rapport d'orientations budgétaires 2025."
       ],
       "glossaire": [
         {
           "terme": "DGF",
-          "definition": "Dotation Globale de Fonctionnement — transfert de l'État aux communes, calculé selon la population et des critères de péréquation. À Bruz en 2023 : environ 272 €/habitant. Contrainte depuis 2014, elle ne peut pas financer des investissements."
+          "definition": "Dotation Globale de Fonctionnement — transfert de l'État aux communes, calculé selon la population et des critères de péréquation. À Bruz en 2025 : 2,56 M€, soit 127 €/habitant, contre 208 € en moyenne pour les communes de même taille (OFGL)."
         },
         {
           "terme": "TFB / TFNB",
-          "definition": "Taxe Foncière sur les Propriétés Bâties / Non Bâties — impôts payés par les propriétaires. Le taux est voté chaque année par le Conseil Municipal. À Bruz : 45,34 % en 2025 (voir dossier D04)."
+          "definition": "Taxe Foncière sur les Propriétés Bâties / Non Bâties — impôts payés par les propriétaires. Le taux est voté chaque année par le Conseil Municipal. À Bruz : 45,34 % pour le foncier bâti depuis 2024 (inchangé en 2025 et 2026), 48,19 % pour le non bâti (voir dossier D04)."
         },
         {
           "terme": "CFE",
-          "definition": "Cotisation Foncière des Entreprises — impôt local payé par les entreprises, basé sur la valeur locative de leurs locaux. L'arrivée de Safran à Bruz (ZAC Ker Lann) devrait générer une recette CFE significative — montant non encore chiffré officiellement."
+          "definition": "Cotisation Foncière des Entreprises — impôt local payé par les entreprises, basé sur la valeur locative de leurs locaux. Bruz étant membre de Rennes Métropole (fiscalité professionnelle unique), la CFE des entreprises bruzoises — Safran compris — est perçue par la Métropole, pas par la commune : 1,9 M€ en 2025 (OFGL)."
         },
         {
           "terme": "BP / CFU",
@@ -506,19 +509,19 @@
         },
         {
           "terme": "CAF / Épargne brute",
-          "definition": "Capacité d'Autofinancement — excédent des recettes de fonctionnement sur les dépenses courantes. C'est la marge disponible pour financer les investissements sans emprunter. Taux à Bruz en 2023 : 27 % (seuil d'alerte : 15 %)."
+          "definition": "Capacité d'Autofinancement — excédent des recettes de fonctionnement sur les dépenses courantes. C'est la marge disponible pour investir et rembourser la dette sans emprunter. À Bruz : 5,1 M€ en 2025, soit 21,5 % des recettes de fonctionnement (OFGL)."
         },
         {
           "terme": "FCTVA",
-          "definition": "Fonds de Compensation de la TVA — l'État rembourse aux communes environ 20 % de la TVA payée sur leurs investissements. À Bruz en 2023 : 343 k€ perçus."
+          "definition": "Fonds de Compensation de la TVA — l'État rembourse aux communes une partie de la TVA payée sur leurs investissements. À Bruz : 0,56 M€ perçus en 2025 (OFGL)."
         },
         {
           "terme": "FPIC / FNGIR",
-          "definition": "Mécanismes nationaux de redistribution entre communes. Le FPIC transfère des ressources des communes favorisées vers les moins favorisées. Le FNGIR compense les pertes liées aux réformes fiscales. Bruz est généralement contributrice nette."
+          "definition": "Mécanismes nationaux de redistribution entre collectivités. Le FPIC transfère des ressources des territoires favorisés vers les moins favorisés ; le FNGIR compense les pertes liées à la réforme de la taxe professionnelle. Bruz en est bénéficiaire : ils figurent en recettes, avec la dotation de solidarité communautaire, dans les 2,2 M€ du chapitre 73 (CFU 2025)."
         },
         {
           "terme": "ETP",
-          "definition": "Équivalent Temps Plein — unité de mesure des effectifs tenant compte du temps de travail. Bruz emploie 224 ETP ville en 2023, en progression de 1,9 % depuis 2022."
+          "definition": "Équivalent Temps Plein — unité de mesure des effectifs tenant compte du temps de travail. Bruz emploie 234 ETP en 2024 (rapport d'orientations budgétaires 2025)."
         }
       ],
       "qui_decide": [
@@ -535,27 +538,47 @@
       ],
       "decisions": [
         {
-          "date": "2026-03-09",
-          "description": "Vote du budget primitif 2026 — adopté après débats tendus sur les priorités d'investissement",
-          "source_url": "https://youtu.be/52ALytkTry0"
+          "date": "2015-11-30",
+          "description": "Conseil municipal extraordinaire : sortie de l'emprunt toxique Dexia par un protocole transactionnel (indemnité de 9,7 M€, prise en charge à 57,5 % par l'État). Vote à l'unanimité.",
+          "source_url": "https://www.ouest-france.fr/bretagne/bruz-35170/la-ville-accepte-loffre-definitive-pour-solder-lemprunt-toxique-3907081"
         },
         {
           "date": "2024-02-21",
-          "description": "Adoption du Compte Financier Unique 2023 — premier CFU de Bruz (expérimentation nationale). Excédent de fonctionnement : 7,5 M€. Aucun nouvel emprunt contracté.",
-          "source_url": "https://data.megalis.bretagne.bzh/?siren=213500473"
+          "description": "Adoption du Compte Financier Unique 2023 — premier CFU de Bruz. Excédent de fonctionnement de 7,5 M€, gonflé par 4,8 M€ exceptionnels (dissolution de la SPL NOA).",
+          "source_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2024/574583/7d855b32affb68554a469b0b5625292da3558e7d27cf13e849969d9db4f1ee7f.pdf"
         },
         {
-          "date": "2025-12-15",
-          "description": "Vote du budget 2025 (CM décembre) — séance incluant également le vote ZAC Multisites",
+          "date": "2025-03-03",
+          "description": "Vote du budget 2025 et du compte financier unique 2024. L'emprunt d'équilibre inscrit au budget n'a finalement pas été contracté (CFU 2025).",
+          "source_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2025/814568/050b0c1b15f1bc01b25a7d2c38628cd169fef798e6c1592d77e3c212eb9c01c6.pdf"
+        },
+        {
+          "date": "2025-12-01",
+          "description": "Arrêté du maire : prêt de 4 M€ sur 15 ans auprès du Crédit Mutuel de Bretagne pour le 4e groupe scolaire.",
+          "source_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Actes_reglementaires/2025/980210/0dc9cc1fb1625750dfcbeb7074589cf71c8c9851c8271f4a50b3c67c5c8f3906.pdf"
+        },
+        {
+          "date": "2026-01-26",
+          "description": "Débat d'orientation budgétaire 2026 : plan pluriannuel d'investissement 2025-2030 et hypothèses financières.",
+          "source_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1012929/717edc66e620dd9e574cc925699e466f78c14cdf174c8af62e2df462c5b3ad17.pdf"
+        },
+        {
+          "date": "2026-03-09",
+          "description": "Vote du budget primitif 2026 (41,6 M€) et révision des autorisations de programme : 4e groupe scolaire porté à 11 M€, fin des travaux prévue en décembre 2026.",
+          "source_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1046211/e84fa6eb4061b85c6ab68faee1dac1bbfdc4c0d9b108d4ddbcc7625695485793.pdf"
+        },
+        {
+          "date": "2026-05-18",
+          "description": "Enveloppe de la rénovation de l'Hôtel de Ville relevée de 150 000 € (2,25 M€). Vote à l'unanimité.",
           "source_url": "https://data.megalis.bretagne.bzh/?siren=213500473"
         }
       ],
       "ce_quon_suit": [
-        "Le CFU 2024 officiel a été localisé et confirmé sur Mégalis (délibération du 11/03/2025) : encours de dette fin 2024 à 458 €/hab (9,2 M€), cohérent avec la trajectoire déjà suivie. Le CFU 2025 confirme ensuite un désendettement : 379,59 €/hab fin 2025.",
-        "L'impact fiscal de l'arrivée de Safran (ZAC Ker Lann) : la commune a-t-elle chiffré un gain CFE attendu ? À quel horizon ?",
-        "La trajectoire de la dette : 81 €/hab (2023) → 458 €/hab (2024, confirmé CFU) → 379,59 €/hab (2025, confirmé CFU) — un désendettement amorcé sans nouvel emprunt tiré. À suivre : le financement du 4e groupe scolaire et de la ZAC Multisites fera-t-il remonter la courbe en 2026-2027 ?",
-        "Le budget primitif 2026 prévoit un nouvel emprunt de 4,1 M€ — la dette va-t-elle repartir à la hausse en 2026-2027 après le désendettement de 2025 ? Le taux d'épargne brute confirmé par le CFU 2026 (disponible courant 2027) permettra de vérifier si la marge de manœuvre reste au-dessus de 20 %.",
-        "Le budget primitif 2027 : premier budget préparé entièrement par la nouvelle majorité — arbitrages entre équipements, fiscalité et dette"
+        "Le versement effectif du prêt de 4 M€ (date limite : 30/06/2026) et le niveau de la dette fin 2026, attendu autour de 9,9 M€ si le prêt a été tiré en totalité. Confirmation au CFU 2026, courant 2027.",
+        "L'effet ciseau annoncé par la Ville : des dépenses de fonctionnement qui progresseraient de 3 % par an contre 0,7 % pour les recettes jusqu'en 2031, avec le fonctionnement du 4e groupe scolaire à partir de 2027. L'épargne brute (21,5 % en 2025) restera-t-elle au-dessus du seuil d'alerte (10 à 15 %) ?",
+        "Le coût final des deux chantiers : 4e groupe scolaire (11 M€) et Hôtel de Ville (2,25 M€, déjà relevé de 150 000 € en 2026). La date d'ouverture de l'école, débattue en conseil face à la baisse des effectifs scolaires.",
+        "Le débat d'orientation budgétaire 2027 (janvier 2027) : le premier préparé par la nouvelle majorité. Le plan pluriannuel d'investissement sera-t-il révisé ?",
+        "La fin de l'aide de l'État pour l'emprunt toxique (348 000 € par an, versés sur quinze ans) : à quelle date s'arrête-t-elle, et comment sera compensée cette recette ?"
       ],
       "graphiques": [
         {
@@ -563,8 +586,8 @@
           "type": "bar",
           "titre": "Fiscalité locale (chapitre 731) — recettes réelles",
           "sous_titre": "Taxes foncières, droits de mutation, TLPE, taxes sur l'électricité — en M€",
-          "source": "2014 : compte administratif Bruz. 2022-2023 : CFU 2023, Mégalis Bretagne. 2024 : CFU 2024 officiel, Mégalis Bretagne (délib. 11/03/2025).",
-          "note": "Le saut entre 2014 et 2022 s'explique largement par la réforme nationale de la taxe d'habitation (2021) : la part départementale de la TFB a été transférée aux communes. Cette hausse est une décision nationale, pas une décision locale de Bruz. La donnée 2024 est désormais confirmée par le CFU 2024 officiel (15,18 M€, +9,9 % vs 2023) — nettement au-dessus de l'estimation DGFiP retenue jusqu'ici (13,9 M€). Les données 2015-2021 ne sont pas disponibles sans accès direct aux comptes administratifs Mégalis (portail JS, WebFetch non fonctionnel).",
+          "source": "2014 : compte administratif Bruz. 2022-2025 : comptes financiers uniques 2023, 2024 et 2025 (Mégalis).",
+          "note": "Le saut entre 2014 et 2022 vient largement de la réforme nationale de la taxe d'habitation (2021) : la part départementale de la taxe foncière a été transférée aux communes. C'est une décision nationale, pas une décision locale. La hausse de 2024 inclut la hausse du taux communal (41,84 % → 45,34 %). Les années 2015-2021 du chapitre 731 ne sont pas publiées en open data ; la série « impôts locaux » de la DGFiP (périmètre un peu différent) est présentée sur la page Bruz en chiffres.",
           "donnees": [
             {
               "label": "2014\n(avant réforme TH)",
@@ -585,35 +608,50 @@
               "label": "2024",
               "valeur": 15.18,
               "confirme": true
+            },
+            {
+              "label": "2025",
+              "valeur": 15.3,
+              "confirme": true
             }
           ]
         },
         {
           "id": "g2",
           "type": "horizontal_bar",
-          "titre": "Structure des recettes de fonctionnement 2023",
-          "sous_titre": "Recettes réelles confirmées (hors 4,8 M€ exceptionnels ZAC Vert Buisson) — en M€",
-          "source": "Compte Financier Unique 2023 — Ville de Bruz / Mégalis Bretagne",
-          "note": "4,8 M€ de recettes exceptionnelles en 2023 (dissolution SPL NOA) portent le total à 27,3 M€. Ce produit est non reconductible — la base récurrente est d'environ 22,5 M€.",
+          "titre": "Structure des recettes de fonctionnement 2025",
+          "sous_titre": "Recettes réelles, hors 2,5 M€ de cessions exceptionnelles — en M€",
+          "source": "Compte financier unique 2025 — note synthétique, tableaux par chapitre (Mégalis)",
+          "note": "Total des recettes réelles : 26,6 M€, dont 2,5 M€ de cessions exceptionnelles (2,3 M€ d'écritures neutres place Pagnol). La fiscalité locale représente 58 % du total.",
           "donnees": [
             {
               "label": "Fiscalité locale",
-              "valeur": 13.8,
+              "valeur": 15.3,
               "confirme": true
             },
             {
-              "label": "Dotations État",
-              "valeur": 3.4,
+              "label": "Dotations et participations",
+              "valeur": 3.79,
               "confirme": true
             },
             {
-              "label": "Péréquation (FPIC…)",
-              "valeur": 2.2,
+              "label": "Reversements Métropole et péréquation",
+              "valeur": 2.18,
               "confirme": true
             },
             {
-              "label": "Services municipaux",
-              "valeur": 1.8,
+              "label": "Services payés par les usagers",
+              "valeur": 1.87,
+              "confirme": true
+            },
+            {
+              "label": "Loyers et divers",
+              "valeur": 0.53,
+              "confirme": true
+            },
+            {
+              "label": "Aide État emprunt toxique",
+              "valeur": 0.35,
               "confirme": true
             }
           ]
@@ -621,29 +659,29 @@
         {
           "id": "g3",
           "type": "horizontal_bar",
-          "titre": "Structure des dépenses réelles de fonctionnement 2023",
-          "sous_titre": "17,5 M€ de dépenses réelles (hors opérations d'ordre) — en M€",
-          "source": "Compte Financier Unique 2023 — Ville de Bruz / Mégalis Bretagne",
-          "note": "Le personnel représente 57 % des dépenses réelles (10 M€, 224 ETP). Les intérêts de la dette (240 k€) sont quasi-inexistants : aucun nouvel emprunt contracté en 2023, encours total de 81 €/habitant.",
+          "titre": "Structure des dépenses réelles de fonctionnement 2025",
+          "sous_titre": "18,9 M€ de dépenses réelles (hors opérations d'ordre) — en M€",
+          "source": "Compte financier unique 2025 — note synthétique, tableaux par chapitre (Mégalis)",
+          "note": "Le personnel représente 57 % des dépenses réelles (10,8 M€). Les intérêts de la dette (148 k€) sont faibles : la dette baisse depuis 2015 et elle est à 97,8 % à taux fixe (ROB 2025).",
           "donnees": [
             {
               "label": "Personnel",
-              "valeur": 10.0,
+              "valeur": 10.81,
               "confirme": true
             },
             {
-              "label": "Charges générales",
-              "valeur": 4.5,
+              "label": "Charges courantes",
+              "valeur": 4.71,
               "confirme": true
             },
             {
-              "label": "Gestion courante",
-              "valeur": 2.7,
+              "label": "Subventions et contributions",
+              "valeur": 3.23,
               "confirme": true
             },
             {
               "label": "Intérêts de la dette",
-              "valeur": 0.2,
+              "valeur": 0.15,
               "confirme": true
             }
           ]
@@ -652,43 +690,41 @@
           "id": "g4",
           "type": "bar",
           "titre": "Dette par habitant : Bruz vs communes de même taille",
-          "sous_titre": "Encours de dette bancaire fin 2023 — médiane par strate de population (hors Paris)",
-          "source": "OFGL — Dossier dette 2024 (données DGFiP 2023 provisoires). Bruz : CFU 2023 et CFU 2024, Mégalis Bretagne.",
-          "note": "Bruz 2023 (81 €/hab) se situe très largement sous le 1er quartile de sa strate (communes 20 000-49 999 hab, médiane OFGL : 888 €/hab). En 2024, après la ZAC Multisites, la dette confirmée à 458 €/hab (CFU 2024 officiel) reste très largement sous la médiane de la strate. Bruz est donc une commune structurellement peu endettée par rapport à ses pairs — ce qui lui donne des marges d'emprunt pour financer le T4 et les équipements liés à la croissance démographique.",
+          "sous_titre": "Encours de dette au 31 décembre, budget principal — en € par habitant",
+          "source": "DGFiP — comptes individuels des communes (Bruz et moyenne de la strate). Concordant avec l'OFGL et les rapports d'orientations budgétaires de la Ville.",
+          "note": "Pic de 2015 : refinancement de l'emprunt toxique. Depuis, la dette a été divisée par près de quatre. Fin 2025, Bruz est à 380 €/hab, contre 1 002 € en moyenne pour les communes de même taille. La série complète 2009-2025 est sur la page Bruz en chiffres.",
           "donnees": [
             {
-              "label": "Bruz 2023",
-              "valeur": 81,
+              "label": "Bruz 2015\n(pic)",
+              "valeur": 1643,
               "confirme": true,
               "couleur": "#0E2F62"
             },
             {
-              "label": "Médiane strate\n20k–50k hab (2023)",
-              "valeur": 888,
+              "label": "Bruz 2019",
+              "valeur": 1046,
               "confirme": true,
-              "couleur": "#94a3b8"
+              "couleur": "#0E2F62"
             },
             {
-              "label": "3e quartile strate\n20k–50k hab (2023)",
-              "valeur": 1318,
+              "label": "Bruz 2023",
+              "valeur": 569,
               "confirme": true,
-              "couleur": "#cbd5e1"
+              "couleur": "#0E2F62"
             },
             {
-              "label": "Bruz 2024",
-              "valeur": 458,
+              "label": "Bruz 2025",
+              "valeur": 380,
               "confirme": true,
               "couleur": "#1A4177"
+            },
+            {
+              "label": "Moyenne strate\n2025",
+              "valeur": 1002,
+              "confirme": true,
+              "couleur": "#94a3b8"
             }
-          ],
-          "ofgl_strate_20k_50k": {
-            "annee": 2023,
-            "source": "OFGL Dossier dette 2024 — données DGFiP provisoires, budgets principaux et annexes consolidés",
-            "mediane_dette_hab": 888,
-            "premier_quartile": 743,
-            "troisieme_quartile": 1318,
-            "delai_desendettement_median_ans": 4.8
-          }
+          ]
         }
       ],
       "sources": [
@@ -727,6 +763,42 @@
         {
           "label": "CFU 2024 — Maquette budgétaire détaillée (Ville de Bruz, Mégalis)",
           "url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2025/814568/050b0c1b15f1bc01b25a7d2c38628cd169fef798e6c1592d77e3c212eb9c01c6.pdf"
+        },
+        {
+          "label": "DGFiP — Comptes individuels des communes 2009-2025",
+          "url": "https://data.economie.gouv.fr/explore/?q=comptes+individuels+des+communes"
+        },
+        {
+          "label": "OFGL — Comptes des communes (budget principal)",
+          "url": "https://data.ofgl.fr/explore/dataset/ofgl-base-communes/"
+        },
+        {
+          "label": "Chambre régionale des comptes de Bretagne — rapport sur Bruz (2018)",
+          "url": "https://www.ccomptes.fr/sites/default/files/2018-04/BRR2018-05.pdf"
+        },
+        {
+          "label": "Rapport d'orientations budgétaires 2025 (Mégalis)",
+          "url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2025/790859/91862b833ac01c7e627a58cccd89b5ba6c6ff1cc0cce000580c8562e786437ef.pdf"
+        },
+        {
+          "label": "Rapport d'orientations budgétaires 2026 (Mégalis)",
+          "url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1012929/717edc66e620dd9e574cc925699e466f78c14cdf174c8af62e2df462c5b3ad17.pdf"
+        },
+        {
+          "label": "Arrêté DG-2025-207 — prêt de 4 M€ Crédit Mutuel de Bretagne (Mégalis)",
+          "url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Actes_reglementaires/2025/980210/0dc9cc1fb1625750dfcbeb7074589cf71c8c9851c8271f4a50b3c67c5c8f3906.pdf"
+        },
+        {
+          "label": "Délibération AP/CP du 09/03/2026 (Mégalis)",
+          "url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1046211/e84fa6eb4061b85c6ab68faee1dac1bbfdc4c0d9b108d4ddbcc7625695485793.pdf"
+        },
+        {
+          "label": "Fonds vert — projets subventionnés (data.gouv.fr)",
+          "url": "https://www.data.gouv.fr/datasets/fonds-vert-liste-des-projets-subventionnes"
+        },
+        {
+          "label": "Ouest-France — sortie de l'emprunt toxique (décembre 2015)",
+          "url": "https://www.ouest-france.fr/bretagne/bruz-35170/la-ville-accepte-loffre-definitive-pour-solder-lemprunt-toxique-3907081"
         }
       ],
       "actus_recentes": [
@@ -852,14 +924,14 @@
         {
           "date": "2025-03-03",
           "titre": "Vote du budget 2025 et compte financier unique 2024",
-          "detail": "Budget principal 2025 : 38,2 M€ de dépenses (23,6 M€ fonctionnement / 14,6 M€ investissement), recours à un emprunt de 1,4 M€ | CFU 2024 : excédent de fonctionnement de 3 498 825,55 € et excédent global d'investissement de 4 236 778 € | 4e groupe scolaire : 1,32 M€ dépensés sur 11 M€ prévus, engagem",
+          "detail": "Budget principal 2025 : 38,2 M€ de dépenses (23,6 M€ fonctionnement / 14,6 M€ investissement), emprunt d'équilibre de 1,4 M€ inscrit, finalement non contracté (CFU 2025) | CFU 2024 : excédent de fonctionnement de 3 498 825,55 € et excédent global d'investissement de 4 236 778 € | 4e groupe scolaire : 1,32 M€ dépensés sur 11 M€ prévus, engagem",
           "source_url": "https://youtu.be/YqD9sOGF90g",
           "source_label": "Vidéo YouTube"
         }
       ],
       "promesses_liees": [],
       "en_profondeur": {
-        "sous_titre": "La dette, l'effet Safran, les projets qui s'accumulent — notre lecture"
+        "sous_titre": "La dette et l'emprunt toxique, ce que rapportent les entreprises, les projets qui s'accumulent — notre lecture"
       },
       "mots_cles_ia": [
         "budget municipal",
@@ -1133,8 +1205,8 @@
         "Voie verte Bruz–Laillé (REV) : 4,9 km de piste cyclable, mars à juillet 2026 — alternat. Plantation d'une haie bocagère.",
         "Chemin de halage : fermeture partielle pour curage du canal, mai–juin 2026.",
         "Coupures Enedis programmées : 8 septembre 2026 (secteurs Petite Ville et 114d Carce, 8h30-12h) et 2 octobre 2026 (secteurs Ker Lann, 8h30-12h30) — dates mises à jour au 24/08 (les dates de juillet 2026 précédemment annoncées ne sont plus d'actualité).",
-        "Hôtel de Ville : rénovation thermique terminée, réouverture printemps 2026 (AP 1,4 M€ commune).",
-        "4e groupe scolaire Ker Lann : en construction — AP 9,5 M€, livraison visée 2027. Maître d'ouvrage : commune de Bruz.",
+        "Hôtel de Ville : rénovation énergétique en phase de finition, enveloppe portée à 2,25 M€ le 18/05/2026 (Fonds vert : 500 000 €).",
+        "4e groupe scolaire Ker Lann : en construction — autorisation de programme de 11 M€, fin des travaux prévue en décembre 2026 (délibération du 09/03/2026). Maître d'ouvrage : commune de Bruz.",
         "03/07/2026 (CM, votes publiés le 07/07 sur Mégalis) : les 5 délibérations liées aux places de stationnement du parking Pagnol (réduction de prix de cession, remboursement de différence, cession lot 108, cession lots 146-147-148) ont toutes été adoptées avec le même résultat — 26 voix pour et 7 contre. Le même bloc de 7 votes contre s'est répété sur la régularisation foncière du domaine de Cicé Blossac et sur le renommage de la place du Vert Buisson en place Robert Barré (tous deux portés par Jean-Patrick Desguérets, adjoint aménagement) — l'opposition a voté contre l'ensemble de ce paquet aménagement/patrimoine porté ce jour-là par le même rapporteur, pas seulement le parking. Sur les 41 délibérations du CM, ce sont les 6 seules à ne pas avoir été adoptées à l'unanimité (avec la convention de chasse, 25 pour/7 contre/1 abstention)",
         "Qui était Robert Barré : adjoint aux finances (1983-1989) puis maire de Bruz pendant dix-neuf ans (1989-2008), conseiller général du canton de Bruz (1985-1999) et vice-président du conseil général d'Ille-et-Vilaine (1992-1999), décédé le 3 juin 2020 à 83 ans. Élu maire en 1989 d'une ville d'environ 8 000 habitants, il a porté deux projets structurants : le campus de Ker Lann et la ZAC du Vert Buisson — la place rebaptisée porte donc le nom de l'élu qui a créé le quartier. Renommage effectif le 7 septembre 2026 (annonce mairie du 15/07/2026).",
         "Travaux d'élagage/débroussaillage SNCF le long des voies ferrées à Bruz : août 2026 à mars 2027 (source : page mairie « Travaux en cours »)",
@@ -1598,7 +1670,7 @@
         {
           "date": "2025-03-03",
           "titre": "Vote du budget 2025 et compte financier unique 2024",
-          "detail": "Budget principal 2025 : 38,2 M€ de dépenses (23,6 M€ fonctionnement / 14,6 M€ investissement), recours à un emprunt de 1,4 M€ | CFU 2024 : excédent de fonctionnement de 3 498 825,55 € et excédent global d'investissement de 4 236 778 € | 4e groupe scolaire : 1,32 M€ dépensés sur 11 M€ prévus, engagem",
+          "detail": "Budget principal 2025 : 38,2 M€ de dépenses (23,6 M€ fonctionnement / 14,6 M€ investissement), emprunt d'équilibre de 1,4 M€ inscrit, finalement non contracté (CFU 2025) | CFU 2024 : excédent de fonctionnement de 3 498 825,55 € et excédent global d'investissement de 4 236 778 € | 4e groupe scolaire : 1,32 M€ dépensés sur 11 M€ prévus, engagem",
           "source_url": "https://youtu.be/YqD9sOGF90g",
           "source_label": "Vidéo YouTube"
         },
@@ -1992,7 +2064,7 @@
         {
           "date": "2025-03-03",
           "titre": "Vote du budget 2025 et compte financier unique 2024",
-          "detail": "Budget principal 2025 : 38,2 M€ de dépenses (23,6 M€ fonctionnement / 14,6 M€ investissement), recours à un emprunt de 1,4 M€ | CFU 2024 : excédent de fonctionnement de 3 498 825,55 € et excédent global d'investissement de 4 236 778 € | 4e groupe scolaire : 1,32 M€ dépensés sur 11 M€ prévus, engagem",
+          "detail": "Budget principal 2025 : 38,2 M€ de dépenses (23,6 M€ fonctionnement / 14,6 M€ investissement), emprunt d'équilibre de 1,4 M€ inscrit, finalement non contracté (CFU 2025) | CFU 2024 : excédent de fonctionnement de 3 498 825,55 € et excédent global d'investissement de 4 236 778 € | 4e groupe scolaire : 1,32 M€ dépensés sur 11 M€ prévus, engagem",
           "source_url": "https://youtu.be/YqD9sOGF90g",
           "source_label": "Vidéo YouTube"
         }

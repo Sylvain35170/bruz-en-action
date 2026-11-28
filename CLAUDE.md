@@ -202,6 +202,12 @@ jamais déclencher `flow.run_local_server()` sous launchd, cf. incident 6 j du 2
 ---
 
 ## Pièges connus
+### 2026-11-28 — Dette 2023 affichée à 81 €/hab au lieu de 568 (ratio de note synthétique repris tel quel)
+- Le tableau « ratios » de la note du CFU 2023 (Ville) est incohérent (encours/pop = 81 €, RRF/pop = 2 071 € ⇒ population implicite de 13 200 hab). Repris tel quel, il a produit pendant des mois « dette quasi nulle » et « premier recours à l'emprunt en 2024 » dans D03 et /statistiques. Vrai encours : 11,1 M€ (ROB 2025, DGFiP, OFGL, à l'euro près).
+- **Un chiffre financier ne se publie que recoupé par une 2e source indépendante** (DGFiP `series_dgfip`, OFGL `series_ofgl`, CFU, ROB). `validate_data.validate_finances()` bloque désormais tout écart > 1 % entre DGFiP et OFGL sur la dette, et entre CFU et DGFiP/OFGL sur les grandes masses.
+- Les « charges de fonctionnement » DGFiP incluent les amortissements (ordre) et les « produits » les cessions : pour « recettes − dépenses = épargne », utiliser la série OFGL. L'équipement DGFiP inclut les subventions d'équipement versées (≠ OFGL en 2019/2021/2023).
+- CFE/CVAE des entreprises bruzoises (Safran compris) = Rennes Métropole (FPU), jamais la commune.
+
 ### 2026-11-18 — Sélection coupée par le watchdog ; résumés Mégalis inventés
 - `agent_select` n'écrivait la queue et le registre qu'après TOUS les batches (~45 s par lot de 5) : 35 items dépassaient le watchdog de 300 s, tout était perdu et à refaire le lendemain. Corrigé (67b5429) : intégration + queue réécrite après chaque batch, plafond 600 s pour Sélection seule (`AGENT_TIMEOUT_OVERRIDES` dans `run_agents.py`).
 - Pour un acte Mégalis, Haiku ne recevait que le titre et la rubrique : il a présenté un avis de la Ville sur un PPRI comme « révisé par la Ville » et attribué à Rennes Métropole deux délibérations de la Ville, deux rejets décidés sur cette base. Corrigé (0d7a8da) : `agent_megalis.extrait_acte` passe ~1 800 caractères du PDF (`pdftotext`, autour de « délibéré », votes repérés par regex). L'OCR mélange les colonnes : un chiffre peut être mal rattaché (un 3 % d'élu pris pour « la majoration »). **Relire le PDF avant d'accepter une délibération portant un montant ou un vote.**

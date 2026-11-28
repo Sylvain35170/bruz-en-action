@@ -321,10 +321,13 @@
       "recettes_reelles_investissement": 3412912,
       "depenses_reelles_investissement": 5592293,
       "resultat_investissement": -729573,
-      "encours_dette_par_habitant": 81.0,
-      "encours_dette_estime": 1629558,
-      "ratio_endettement_pct_rrf": 3.91,
-      "note": "2023 = premier exercice en CFU pour Bruz (candidate 3e vague). Aucun emprunt contracté en 2023 (financement des investissements sans recours à la dette)."
+      "note": "2023 = premier exercice en CFU pour Bruz (candidate 3e vague). Aucun emprunt contracté en 2023 (financement des investissements sans recours à la dette).",
+      "encours_dette_reel": 11118971,
+      "encours_dette_par_habitant_reel": 568.53,
+      "note_erreur_ratios": "⚠️ Le tableau des ratios de cette note (encours/population = 81 €, ratio d'endettement = 3,91) est incohérent avec les montants : l'encours réel au 31/12/2023 est de 11 118 971 € (ROB 2025, DGFiP), soit 568,53 €/hab. Les champs encours_dette_par_habitant / encours_dette_estime / ratio_endettement_pct_rrf ci-dessus reprennent ce tableau tel quel et ne doivent pas être affichés.",
+      "encours_dette_par_habitant_ne_pas_afficher": 81.0,
+      "encours_dette_estime_ne_pas_afficher": 1629558,
+      "ratio_endettement_pct_rrf_ne_pas_afficher": 3.91
     },
     "cfu_2025": {
       "source": "COMPTE FINANCIER UNIQUE 2025 — Note synthétique (Mégalis, org 213500473), délibération du 13/03/2026",
@@ -338,31 +341,98 @@
       "encours_dette_par_habitant": 379.59,
       "encours_dette_estime": 7626452,
       "ratio_endettement_pct_rrf": 28.75,
-      "note": "Aucun nouvel emprunt tiré ni en 2024 ni en 2025 (ligne 1641 'Emprunts en euros' réalisée à 0€ les deux années) — la dette évolue donc par remboursement du capital, pas par tirage."
-    },
-    "dette_par_habitant_serie": {
-      "unite": "€ par habitant",
-      "note": "Encours de dette au 31/12, ratio réglementaire (encours / population). Les trois exercices sont désormais confirmés par un CFU officiel (Mégalis).",
-      "valeurs": [
-        {
-          "annee": 2023,
-          "valeur": 81.0,
-          "source": "CFU 2023 officiel (Mégalis)",
-          "confirme": true
-        },
-        {
-          "annee": 2024,
-          "valeur": 457.92,
-          "source": "CFU 2024 officiel (Mégalis)",
-          "confirme": true
-        },
-        {
-          "annee": 2025,
-          "valeur": 379.59,
-          "source": "CFU 2025 officiel (Mégalis)",
-          "confirme": true
-        }
-      ]
+      "note": "Aucun nouvel emprunt tiré ni en 2024 ni en 2025 (ligne 1641 'Emprunts en euros' réalisée à 0€ les deux années) — la dette évolue donc par remboursement du capital, pas par tirage.",
+      "grandes_masses": {
+        "source": "Compte financier unique 2025 — note synthétique (Ville de Bruz, Mégalis), tableaux par chapitre",
+        "source_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1046139/11cee58060e372ef6ad9262e4e6495f56f7f2d5f06a98d5a85c4bfeaed7df03b.pdf",
+        "unite": "euros, réalisé 2025, opérations réelles du budget principal",
+        "recettes_fonctionnement": [
+          {
+            "label": "Fiscalité locale (taxes foncières, THRS, droits de mutation…)",
+            "chapitre": "731",
+            "valeur": 15299851.92
+          },
+          {
+            "label": "Dotations et participations (DGF, CAF, compensations…)",
+            "chapitre": "74",
+            "valeur": 3791666.67
+          },
+          {
+            "label": "Reversements de Rennes Métropole et péréquation (DSC, FNGIR, FPIC)",
+            "chapitre": "73",
+            "valeur": 2177148.0
+          },
+          {
+            "label": "Services payés par les usagers (cantine, périscolaire, Grand Logis…)",
+            "chapitre": "70",
+            "valeur": 1866129.88
+          },
+          {
+            "label": "Cessions (dont 2,3 M€ d'écritures neutres place Pagnol)",
+            "chapitre": "77",
+            "valeur": 2545075.0,
+            "exceptionnel": true
+          },
+          {
+            "label": "Aide de l'État pour la sortie de l'emprunt toxique",
+            "chapitre": "76",
+            "valeur": 347697.5
+          },
+          {
+            "label": "Loyers, locations et remboursements divers",
+            "chapitre": "75 + 013",
+            "valeur": 530942.02
+          }
+        ],
+        "depenses_fonctionnement": [
+          {
+            "label": "Personnel",
+            "chapitre": "012",
+            "valeur": 10810572.89
+          },
+          {
+            "label": "Charges courantes (énergie, entretien, fournitures, prestations)",
+            "chapitre": "011",
+            "valeur": 4705279.04
+          },
+          {
+            "label": "Subventions et contributions (associations, CCAS, syndicats…)",
+            "chapitre": "65",
+            "valeur": 3225404.73
+          },
+          {
+            "label": "Intérêts de la dette",
+            "chapitre": "66",
+            "valeur": 148423.45
+          },
+          {
+            "label": "Autres (provisions, exceptionnel, attribution de compensation)",
+            "chapitre": "014 + 67 + 68",
+            "valeur": 47306.92
+          }
+        ],
+        "depenses_investissement": [
+          {
+            "label": "Équipement : travaux, constructions, acquisitions, études",
+            "chapitre": "20 + 21 + 23 + opérations AP",
+            "valeur": 7746648.51
+          },
+          {
+            "label": "Remboursement du capital de la dette",
+            "chapitre": "16",
+            "valeur": 1745427.08
+          },
+          {
+            "label": "Autres",
+            "chapitre": "26 + 27",
+            "valeur": 1500.0
+          }
+        ],
+        "total_recettes_reelles_fonctionnement": 26558510.99,
+        "total_depenses_reelles_fonctionnement": 18936987.03,
+        "total_depenses_reelles_investissement": 9493575.59,
+        "note": "Le chapitre 731 représente 58 % des recettes réelles de fonctionnement. Les 2,55 M€ de cessions sont exceptionnels : 2,3 M€ correspondent à des écritures qui s'équilibrent (intégration des îlots de la place Pagnol à l'inventaire), sans argent nouveau. Hors cessions, les recettes progressent de 1,39 % sur un an."
+      }
     },
     "cfu_2024": {
       "source": "COMPTE FINANCIER UNIQUE 2024 — Budget principal (Mégalis, org 213500473), délibération n°25-03-03, envoyé en préfecture le 11/03/2025",
@@ -394,6 +464,730 @@
       "excedent_fonctionnement_2024_capitalise": 3097132.45,
       "encours_dette_par_habitant_1er_janvier": 371.01,
       "note": "Premier retour à un nouvel emprunt significatif (4,1 M€) depuis le début du mandat, lié au financement du 4e groupe scolaire et de la ZAC Multisites. Chiffres prévisionnels (votés) — le réalisé sera confirmé par le CFU 2026, disponible courant 2027."
+    },
+    "series_dgfip": {
+      "source": "DGFiP — Comptes individuels des communes (budget principal)",
+      "source_url": "https://data.economie.gouv.fr/explore/?q=comptes+individuels+des+communes",
+      "derniere_maj": "2026-11-28",
+      "unite": "euros (montants) ; euros par habitant (bruz_hab, strate_hab)",
+      "note": "Comptes exécutés du budget principal, tels que la DGFiP les publie. « strate_hab » = moyenne par habitant des communes de même taille (Bruz change de strate en 2024 en passant 20 000 habitants). Les recettes et dépenses de fonctionnement incluent l'exceptionnel : indemnité de sortie de l'emprunt toxique en 2015 (9,7 M€), dissolution de la SPL NOA en 2023 (4,8 M€). Import : scripts/fetch_finances.py",
+      "annees": {
+        "2009": {
+          "population": 14530,
+          "recettes_fonctionnement": 15397190,
+          "depenses_fonctionnement": 13682290,
+          "personnel": 6560580,
+          "impots_locaux": 5999050,
+          "dgf": 3408600,
+          "depenses_equipement": 6771880,
+          "emprunts_nouveaux": 500000,
+          "remboursement_capital": 1631280,
+          "epargne_brute": 2359150,
+          "epargne_nette": 727870,
+          "encours_dette": 16032770,
+          "annuite_dette": 2194290,
+          "bruz_hab": {
+            "recettes_fonctionnement_hab": 1059.68,
+            "depenses_fonctionnement_hab": 941.66,
+            "depenses_equipement_hab": 466.06,
+            "encours_dette_hab": 1103.43,
+            "personnel_hab": 451.52,
+            "impots_locaux_hab": 412.87
+          },
+          "strate_hab": {
+            "recettes_fonctionnement_hab": 1220.05,
+            "depenses_fonctionnement_hab": 1099.82,
+            "depenses_equipement_hab": 308.69,
+            "encours_dette_hab": 957.93,
+            "personnel_hab": 587.81,
+            "impots_locaux_hab": 439.04
+          },
+          "strate": "appartenant à un groupement fiscalisé (FPU)",
+          "taux_tfb": 18.31,
+          "taux_th": 17.11
+        },
+        "2010": {
+          "population": 15330,
+          "recettes_fonctionnement": 15806330,
+          "depenses_fonctionnement": 14071100,
+          "personnel": 6867730,
+          "impots_locaux": 6275630,
+          "dgf": 3401690,
+          "depenses_equipement": 3795690,
+          "emprunts_nouveaux": 2975000,
+          "remboursement_capital": 1193110,
+          "epargne_brute": 2422050,
+          "epargne_nette": 1228940,
+          "encours_dette": 17814660,
+          "annuite_dette": 1692430,
+          "bruz_hab": {
+            "recettes_fonctionnement_hab": 1031.07,
+            "depenses_fonctionnement_hab": 917.88,
+            "depenses_equipement_hab": 247.6,
+            "encours_dette_hab": 1162.08,
+            "personnel_hab": 447.99,
+            "impots_locaux_hab": 409.37
+          },
+          "strate_hab": {
+            "recettes_fonctionnement_hab": 1262.69,
+            "depenses_fonctionnement_hab": 1121.88,
+            "depenses_equipement_hab": 298.78,
+            "encours_dette_hab": 950.15,
+            "personnel_hab": 599.65,
+            "impots_locaux_hab": 458.41
+          },
+          "strate": "appartenant à un groupement fiscalisé (FPU)",
+          "taux_tfb": 18.31,
+          "taux_th": 17.11
+        },
+        "2011": {
+          "population": 15945,
+          "recettes_fonctionnement": 16119860,
+          "depenses_fonctionnement": 14150140,
+          "personnel": 7016160,
+          "impots_locaux": 6612050,
+          "dgf": 3379590,
+          "depenses_equipement": 4337120,
+          "emprunts_nouveaux": 1500000,
+          "remboursement_capital": 1406970,
+          "epargne_brute": 2701200,
+          "epargne_nette": 1294230,
+          "encours_dette": 17907690,
+          "annuite_dette": 2014500,
+          "bruz_hab": {
+            "recettes_fonctionnement_hab": 1010.97,
+            "depenses_fonctionnement_hab": 887.43,
+            "depenses_equipement_hab": 272.0,
+            "encours_dette_hab": 1123.09,
+            "personnel_hab": 440.02,
+            "impots_locaux_hab": 414.68
+          },
+          "strate_hab": {
+            "recettes_fonctionnement_hab": 1313.49,
+            "depenses_fonctionnement_hab": 1160.45,
+            "depenses_equipement_hab": 323.46,
+            "encours_dette_hab": 934.95,
+            "personnel_hab": 606.67,
+            "impots_locaux_hab": 478.59
+          },
+          "strate": "appartenant à un groupement fiscalisé (FPU)",
+          "taux_tfb": 18.31,
+          "taux_th": 17.11
+        },
+        "2012": {
+          "population": 16636,
+          "recettes_fonctionnement": 16700800,
+          "depenses_fonctionnement": 14898440,
+          "personnel": 7122620,
+          "impots_locaux": 7059140,
+          "dgf": 3271970,
+          "depenses_equipement": 6543630,
+          "emprunts_nouveaux": 1850000,
+          "remboursement_capital": 1467900,
+          "epargne_brute": 2556570,
+          "epargne_nette": 1088660,
+          "encours_dette": 18777490,
+          "annuite_dette": 2072380,
+          "bruz_hab": {
+            "recettes_fonctionnement_hab": 1003.9,
+            "depenses_fonctionnement_hab": 895.55,
+            "depenses_equipement_hab": 393.34,
+            "encours_dette_hab": 1128.73,
+            "personnel_hab": 428.15,
+            "impots_locaux_hab": 424.33
+          },
+          "strate_hab": {
+            "recettes_fonctionnement_hab": 1323.29,
+            "depenses_fonctionnement_hab": 1178.83,
+            "depenses_equipement_hab": 351.19,
+            "encours_dette_hab": 955.07,
+            "personnel_hab": 624.81,
+            "impots_locaux_hab": 495.83
+          },
+          "strate": "appartenant à un groupement fiscalisé (FPU)",
+          "taux_tfb": 18.31,
+          "taux_th": 17.11
+        },
+        "2013": {
+          "population": 16875,
+          "recettes_fonctionnement": 18588610,
+          "depenses_fonctionnement": 16688810,
+          "personnel": 7198550,
+          "impots_locaux": 7490450,
+          "dgf": 3226480,
+          "depenses_equipement": 5777210,
+          "emprunts_nouveaux": 1000000,
+          "remboursement_capital": 1502410,
+          "epargne_brute": 3059970,
+          "epargne_nette": 1557560,
+          "encours_dette": 18175080,
+          "annuite_dette": 2140460,
+          "bruz_hab": {
+            "recettes_fonctionnement_hab": 1101.55,
+            "depenses_fonctionnement_hab": 988.97,
+            "depenses_equipement_hab": 342.35,
+            "encours_dette_hab": 1077.04,
+            "personnel_hab": 426.58,
+            "impots_locaux_hab": 443.88
+          },
+          "strate_hab": {
+            "recettes_fonctionnement_hab": 1336.52,
+            "depenses_fonctionnement_hab": 1204.21,
+            "depenses_equipement_hab": 386.73,
+            "encours_dette_hab": 963.73,
+            "personnel_hab": 635.99,
+            "impots_locaux_hab": 511.28
+          },
+          "strate": "appartenant à un groupement fiscalisé (FPU)",
+          "taux_tfb": 18.31,
+          "taux_th": 17.11
+        },
+        "2014": {
+          "population": 17067,
+          "recettes_fonctionnement": 17064060,
+          "depenses_fonctionnement": 15625900,
+          "personnel": 7638750,
+          "impots_locaux": 7637930,
+          "dgf": 3068430,
+          "depenses_equipement": 4527840,
+          "emprunts_nouveaux": 3500000,
+          "remboursement_capital": 1684290,
+          "epargne_brute": 2671210,
+          "epargne_nette": 986920,
+          "encours_dette": 19890790,
+          "annuite_dette": 2374980,
+          "bruz_hab": {
+            "recettes_fonctionnement_hab": 999.83,
+            "depenses_fonctionnement_hab": 915.56,
+            "depenses_equipement_hab": 265.3,
+            "encours_dette_hab": 1165.45,
+            "personnel_hab": 447.57,
+            "impots_locaux_hab": 447.53
+          },
+          "strate_hab": {
+            "recettes_fonctionnement_hab": 1336.99,
+            "depenses_fonctionnement_hab": 1224.11,
+            "depenses_equipement_hab": 321.16,
+            "encours_dette_hab": 957.59,
+            "personnel_hab": 660.78,
+            "impots_locaux_hab": 516.25
+          },
+          "strate": "appartenant à un groupement fiscalisé (FPU)",
+          "taux_tfb": 18.31,
+          "taux_th": 17.11
+        },
+        "2015": {
+          "population": 17154,
+          "recettes_fonctionnement": 28615830,
+          "depenses_fonctionnement": 26747730,
+          "personnel": 7867470,
+          "impots_locaux": 7878120,
+          "dgf": 2708500,
+          "depenses_equipement": 1176850,
+          "emprunts_nouveaux": 9705280,
+          "remboursement_capital": 1728130,
+          "epargne_brute": 2394370,
+          "epargne_nette": 666240,
+          "encours_dette": 28178520,
+          "annuite_dette": 3985140,
+          "bruz_hab": {
+            "recettes_fonctionnement_hab": 1668.17,
+            "depenses_fonctionnement_hab": 1559.27,
+            "depenses_equipement_hab": 68.6,
+            "encours_dette_hab": 1642.68,
+            "personnel_hab": 458.64,
+            "impots_locaux_hab": 459.26
+          },
+          "strate_hab": {
+            "recettes_fonctionnement_hab": 1355.16,
+            "depenses_fonctionnement_hab": 1223.21,
+            "depenses_equipement_hab": 268.35,
+            "encours_dette_hab": 944.11,
+            "personnel_hab": 663.88,
+            "impots_locaux_hab": 531.64
+          },
+          "strate": "appartenant à un groupement fiscalisé (FPU)",
+          "taux_tfb": 18.31,
+          "taux_th": 17.11
+        },
+        "2016": {
+          "population": 17343,
+          "recettes_fonctionnement": 17252940,
+          "depenses_fonctionnement": 15005020,
+          "personnel": 8031750,
+          "impots_locaux": 8514300,
+          "dgf": 2350000,
+          "depenses_equipement": 1651310,
+          "emprunts_nouveaux": 1000000,
+          "remboursement_capital": 2487270,
+          "epargne_brute": 3570190,
+          "epargne_nette": 1082920,
+          "encours_dette": 26410330,
+          "annuite_dette": 3089340,
+          "bruz_hab": {
+            "recettes_fonctionnement_hab": 994.81,
+            "depenses_fonctionnement_hab": 865.19,
+            "depenses_equipement_hab": 95.21,
+            "encours_dette_hab": 1522.82,
+            "personnel_hab": 463.11,
+            "impots_locaux_hab": 490.94
+          },
+          "strate_hab": {
+            "recettes_fonctionnement_hab": 1382.21,
+            "depenses_fonctionnement_hab": 1249.0,
+            "depenses_equipement_hab": 262.87,
+            "encours_dette_hab": 918.44,
+            "personnel_hab": 660.06,
+            "impots_locaux_hab": 545.8
+          },
+          "strate": "appartenant à un groupement fiscalisé (FPU)",
+          "taux_tfb": 19.54,
+          "taux_th": 18.26
+        },
+        "2017": {
+          "population": 17863,
+          "recettes_fonctionnement": 18173960,
+          "depenses_fonctionnement": 15824940,
+          "personnel": 7962340,
+          "impots_locaux": 8789020,
+          "dgf": 2233720,
+          "depenses_equipement": 3412670,
+          "emprunts_nouveaux": 0,
+          "remboursement_capital": 2272100,
+          "epargne_brute": 3635380,
+          "epargne_nette": 1363280,
+          "encours_dette": 23948260,
+          "annuite_dette": 2817530,
+          "bruz_hab": {
+            "recettes_fonctionnement_hab": 1017.41,
+            "depenses_fonctionnement_hab": 885.91,
+            "depenses_equipement_hab": 191.05,
+            "encours_dette_hab": 1340.66,
+            "personnel_hab": 445.74,
+            "impots_locaux_hab": 492.02
+          },
+          "strate_hab": {
+            "recettes_fonctionnement_hab": 1334.38,
+            "depenses_fonctionnement_hab": 1209.15,
+            "depenses_equipement_hab": 300.25,
+            "encours_dette_hab": 893.43,
+            "personnel_hab": 660.15,
+            "impots_locaux_hab": 550.4
+          },
+          "strate": "appartenant à un groupement fiscalisé (FPU)",
+          "taux_tfb": 19.54,
+          "taux_th": 18.26
+        },
+        "2018": {
+          "population": 18476,
+          "recettes_fonctionnement": 21212280,
+          "depenses_fonctionnement": 19072910,
+          "personnel": 8079350,
+          "impots_locaux": 9008820,
+          "dgf": 2300210,
+          "depenses_equipement": 3841610,
+          "emprunts_nouveaux": 0,
+          "remboursement_capital": 2242700,
+          "epargne_brute": 3790470,
+          "epargne_nette": 1547780,
+          "encours_dette": 21591280,
+          "annuite_dette": 2738600,
+          "bruz_hab": {
+            "recettes_fonctionnement_hab": 1148.1,
+            "depenses_fonctionnement_hab": 1032.31,
+            "depenses_equipement_hab": 207.92,
+            "encours_dette_hab": 1168.61,
+            "personnel_hab": 437.29,
+            "impots_locaux_hab": 487.6
+          },
+          "strate_hab": {
+            "recettes_fonctionnement_hab": 1335.56,
+            "depenses_fonctionnement_hab": 1200.18,
+            "depenses_equipement_hab": 323.93,
+            "encours_dette_hab": 864.43,
+            "personnel_hab": 652.06,
+            "impots_locaux_hab": 554.42
+          },
+          "strate": "appartenant à un groupement fiscalisé (FPU)",
+          "taux_tfb": 19.54,
+          "taux_th": 18.26
+        },
+        "2019": {
+          "population": 18616,
+          "recettes_fonctionnement": 19867340,
+          "depenses_fonctionnement": 17450470,
+          "personnel": 8277860,
+          "impots_locaux": 9307180,
+          "dgf": 2305210,
+          "depenses_equipement": 3721470,
+          "emprunts_nouveaux": 0,
+          "remboursement_capital": 2116440,
+          "epargne_brute": 3979630,
+          "epargne_nette": 1863190,
+          "encours_dette": 19471800,
+          "annuite_dette": 2558480,
+          "bruz_hab": {
+            "recettes_fonctionnement_hab": 1067.22,
+            "depenses_fonctionnement_hab": 937.39,
+            "depenses_equipement_hab": 199.91,
+            "encours_dette_hab": 1045.97,
+            "personnel_hab": 444.66,
+            "impots_locaux_hab": 499.96
+          },
+          "strate_hab": {
+            "recettes_fonctionnement_hab": 1354.49,
+            "depenses_fonctionnement_hab": 1213.14,
+            "depenses_equipement_hab": 376.48,
+            "encours_dette_hab": 849.87,
+            "personnel_hab": 655.33,
+            "impots_locaux_hab": 562.74
+          },
+          "strate": "appartenant à un groupement fiscalisé (FPU)",
+          "taux_tfb": 19.54,
+          "taux_th": 18.26
+        },
+        "2020": {
+          "population": 18734,
+          "recettes_fonctionnement": 18771340,
+          "depenses_fonctionnement": 16285700,
+          "personnel": 8478350,
+          "impots_locaux": 9590730,
+          "dgf": 2321860,
+          "depenses_equipement": 3838660,
+          "emprunts_nouveaux": 75000,
+          "remboursement_capital": 2155790,
+          "epargne_brute": 4072430,
+          "epargne_nette": 1916640,
+          "encours_dette": 17383490,
+          "annuite_dette": 2544430,
+          "bruz_hab": {
+            "recettes_fonctionnement_hab": 1001.99,
+            "depenses_fonctionnement_hab": 869.31,
+            "depenses_equipement_hab": 204.9,
+            "encours_dette_hab": 927.91,
+            "personnel_hab": 452.56,
+            "impots_locaux_hab": 511.94
+          },
+          "strate_hab": {
+            "recettes_fonctionnement_hab": 1312.91,
+            "depenses_fonctionnement_hab": 1175.89,
+            "depenses_equipement_hab": 309.39,
+            "encours_dette_hab": 846.41,
+            "personnel_hab": 656.62,
+            "impots_locaux_hab": 575.67
+          },
+          "strate": "appartenant à un groupement fiscalisé (FPU)",
+          "taux_tfb": 19.54,
+          "taux_th": 18.26
+        },
+        "2021": {
+          "population": 18972,
+          "recettes_fonctionnement": 20312460,
+          "depenses_fonctionnement": 17172970,
+          "personnel": 8992610,
+          "impots_locaux": 10816080,
+          "dgf": 2324150,
+          "depenses_equipement": 5052550,
+          "emprunts_nouveaux": 0,
+          "remboursement_capital": 2050820,
+          "epargne_brute": 4778580,
+          "epargne_nette": 2727760,
+          "encours_dette": 15333080,
+          "annuite_dette": 2387130,
+          "bruz_hab": {
+            "recettes_fonctionnement_hab": 1070.65,
+            "depenses_fonctionnement_hab": 905.17,
+            "depenses_equipement_hab": 266.32,
+            "encours_dette_hab": 808.2,
+            "personnel_hab": 473.99,
+            "impots_locaux_hab": 570.11
+          },
+          "strate_hab": {
+            "recettes_fonctionnement_hab": 1357.21,
+            "depenses_fonctionnement_hab": 1213.49,
+            "depenses_equipement_hab": 324.39,
+            "encours_dette_hab": 815.72,
+            "personnel_hab": 672.12,
+            "impots_locaux_hab": 576.19
+          },
+          "strate": "appartenant à un groupement fiscalisé (FPU)",
+          "taux_tfb": 41.84,
+          "taux_th": 18.26
+        },
+        "2022": {
+          "population": 19366,
+          "recettes_fonctionnement": 20824410,
+          "depenses_fonctionnement": 18496610,
+          "personnel": 9493520,
+          "impots_locaux": 11256490,
+          "dgf": 2392640,
+          "depenses_equipement": 2461130,
+          "emprunts_nouveaux": 0,
+          "remboursement_capital": 2086420,
+          "epargne_brute": 4069910,
+          "epargne_nette": 1983490,
+          "encours_dette": 13246660,
+          "annuite_dette": 2375160,
+          "bruz_hab": {
+            "recettes_fonctionnement_hab": 1075.31,
+            "depenses_fonctionnement_hab": 955.11,
+            "depenses_equipement_hab": 127.08,
+            "encours_dette_hab": 684.02,
+            "personnel_hab": 490.22,
+            "impots_locaux_hab": 581.25
+          },
+          "strate_hab": {
+            "recettes_fonctionnement_hab": 1409.99,
+            "depenses_fonctionnement_hab": 1277.12,
+            "depenses_equipement_hab": 360.6,
+            "encours_dette_hab": 799.65,
+            "personnel_hab": 699.61,
+            "impots_locaux_hab": 596.63
+          },
+          "strate": "appartenant à un groupement fiscalisé (FPU)",
+          "taux_tfb": 41.84,
+          "taux_th": 18.26
+        },
+        "2023": {
+          "population": 19561,
+          "recettes_fonctionnement": 27096460,
+          "depenses_fonctionnement": 19563960,
+          "personnel": 9835100,
+          "impots_locaux": 12221810,
+          "dgf": 2401450,
+          "depenses_equipement": 3360400,
+          "emprunts_nouveaux": 0,
+          "remboursement_capital": 2123940,
+          "epargne_brute": 9373110,
+          "epargne_nette": 7249170,
+          "encours_dette": 11120990,
+          "annuite_dette": 2361500,
+          "bruz_hab": {
+            "recettes_fonctionnement_hab": 1385.23,
+            "depenses_fonctionnement_hab": 1000.15,
+            "depenses_equipement_hab": 171.79,
+            "encours_dette_hab": 568.53,
+            "personnel_hab": 502.79,
+            "impots_locaux_hab": 624.81
+          },
+          "strate_hab": {
+            "recettes_fonctionnement_hab": 1475.98,
+            "depenses_fonctionnement_hab": 1335.41,
+            "depenses_equipement_hab": 394.11,
+            "encours_dette_hab": 800.7,
+            "personnel_hab": 720.29,
+            "impots_locaux_hab": 645.51
+          },
+          "strate": "appartenant à un groupement fiscalisé (FPU)",
+          "taux_tfb": 41.84,
+          "taux_th": 18.26
+        },
+        "2024": {
+          "population": 20118,
+          "recettes_fonctionnement": 23678930,
+          "depenses_fonctionnement": 20180100,
+          "personnel": 10325920,
+          "impots_locaux": 13909090,
+          "dgf": 2545670,
+          "depenses_equipement": 3164490,
+          "emprunts_nouveaux": 0,
+          "remboursement_capital": 1739610,
+          "epargne_brute": 5393590,
+          "epargne_nette": 3653980,
+          "encours_dette": 9381010,
+          "annuite_dette": 1929550,
+          "bruz_hab": {
+            "recettes_fonctionnement_hab": 1177.0,
+            "depenses_fonctionnement_hab": 1003.09,
+            "depenses_equipement_hab": 157.3,
+            "encours_dette_hab": 466.3,
+            "personnel_hab": 513.27,
+            "impots_locaux_hab": 691.38
+          },
+          "strate_hab": {
+            "recettes_fonctionnement_hab": 1686.05,
+            "depenses_fonctionnement_hab": 1550.67,
+            "depenses_equipement_hab": 438.3,
+            "encours_dette_hab": 986.27,
+            "personnel_hab": 849.36,
+            "impots_locaux_hab": 792.87
+          },
+          "strate": "appartenant à un groupement fiscalisé (FPU)",
+          "taux_tfb": 45.34,
+          "taux_th": 18.26
+        },
+        "2025": {
+          "population": 20118,
+          "recettes_fonctionnement": 26388310,
+          "depenses_fonctionnement": 23291180,
+          "personnel": 10601730,
+          "impots_locaux": 13984500,
+          "dgf": 2556150,
+          "depenses_equipement": 7751510,
+          "emprunts_nouveaux": 0,
+          "remboursement_capital": 1744880,
+          "epargne_brute": 5116950,
+          "epargne_nette": 3372070,
+          "encours_dette": 7635580,
+          "annuite_dette": 1893300,
+          "bruz_hab": {
+            "recettes_fonctionnement_hab": 1311.68,
+            "depenses_fonctionnement_hab": 1157.73,
+            "depenses_equipement_hab": 385.3,
+            "encours_dette_hab": 379.54,
+            "personnel_hab": 526.98,
+            "impots_locaux_hab": 695.12
+          },
+          "strate_hab": {
+            "recettes_fonctionnement_hab": 1690.01,
+            "depenses_fonctionnement_hab": 1561.95,
+            "depenses_equipement_hab": 464.26,
+            "encours_dette_hab": 1001.85,
+            "personnel_hab": 855.94,
+            "impots_locaux_hab": 792.08
+          },
+          "strate": "appartenant à un groupement fiscalisé (FPU)",
+          "taux_tfb": 45.34,
+          "taux_th": 18.26
+        }
+      }
+    },
+    "fiscalite_entreprises": {
+      "source": "OFGL — base fiscale simplifiée (CFE) et dotations des communes (CVAE, IFER, attribution de compensation)",
+      "source_url": "https://data.ofgl.fr/explore/dataset/base-fiscale-simplifiee/",
+      "derniere_maj": "2026-11-28",
+      "beneficiaire": "Rennes Métropole (fiscalité professionnelle unique)",
+      "cfe_annee": 2025,
+      "cfe_produit": 1920110,
+      "cvae_annee": 2023,
+      "cvae_produit": 1612345,
+      "ifer_annee": 2026,
+      "ifer_produit": 160263,
+      "attribution_compensation": -2570,
+      "attribution_compensation_annee": 2026,
+      "cfe_serie": {
+        "2012": 1270016,
+        "2013": 1355071,
+        "2014": 1330040,
+        "2015": 1376746,
+        "2016": 1446652,
+        "2017": 1437340,
+        "2018": 1470985,
+        "2019": 1546335,
+        "2020": 1627212,
+        "2021": 1486249,
+        "2022": 1581563,
+        "2023": 1664398,
+        "2024": 1826778,
+        "2025": 1920110
+      },
+      "note": "Membre de Rennes Métropole, Bruz ne perçoit pas les impôts économiques (CFE, CVAE, IFER) payés par les entreprises de son territoire : ils vont à la Métropole. La commune garde la taxe foncière de leurs locaux et reçoit en retour une dotation de solidarité communautaire. L'attribution de compensation est négative depuis le transfert de la voirie (2014) : c'est la commune qui la verse. Import : scripts/fetch_finances.py"
+    },
+    "emprunt_2026": {
+      "source": "Arrêté municipal DG-2025-207 du 1er décembre 2025 (Mégalis)",
+      "source_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Actes_reglementaires/2025/980210/0dc9cc1fb1625750dfcbeb7074589cf71c8c9851c8271f4a50b3c67c5c8f3906.pdf",
+      "preteur": "Crédit Mutuel de Bretagne",
+      "montant": 4000000,
+      "duree_ans": 15,
+      "taux": "Livret A + 0,45 %",
+      "date_limite_versement": "2026-06-30",
+      "objet": "Construction du 4e groupe scolaire",
+      "note": "Premier emprunt significatif depuis 2016 (hors prêt CAF à taux zéro de 75 000 € en 2020)."
+    },
+    "dob_2026_ppi": {
+      "source": "Rapport d'orientations budgétaires 2026 — conseil municipal du 26 janvier 2026 (Mégalis)",
+      "source_url": "https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1012929/717edc66e620dd9e574cc925699e466f78c14cdf174c8af62e2df462c5b3ad17.pdf",
+      "unite": "milliers d'euros",
+      "valeurs": {
+        "2025": 5393,
+        "2026": 13773,
+        "2027": 6975,
+        "2028": 3922,
+        "2029": 2622,
+        "2030": 1622
+      },
+      "hypotheses": "Recettes +0,68 %/an et dépenses +3 %/an en moyenne de 2025 à 2031 ; fonctionnement du 4e groupe scolaire à partir de 2027."
+    },
+    "series_ofgl": {
+      "source": "OFGL — Comptes des communes, budget principal (opérations réelles)",
+      "source_url": "https://data.ofgl.fr/explore/dataset/ofgl-base-communes/",
+      "derniere_maj": "2026-11-28",
+      "unite": "euros",
+      "note": "Agrégats OFGL en opérations réelles, hors cessions : recettes − dépenses de fonctionnement = épargne brute. 2023 inclut 4,8 M€ exceptionnels (dissolution de la SPL NOA). Import : scripts/fetch_finances.py",
+      "annees": {
+        "2018": {
+          "recettes_fonctionnement": 17774270,
+          "impots_locaux": 10952036,
+          "personnel": 8079349,
+          "depenses_fonctionnement": 13983797,
+          "encours_dette": 21591281,
+          "depenses_equipement": 3817612,
+          "epargne_brute": 3790473
+        },
+        "2019": {
+          "depenses_fonctionnement": 14469324,
+          "encours_dette": 19471805,
+          "depenses_equipement": 2981464,
+          "epargne_brute": 3979632,
+          "impots_locaux": 11292438,
+          "recettes_fonctionnement": 18448956,
+          "personnel": 8277858
+        },
+        "2020": {
+          "recettes_fonctionnement": 18489414,
+          "impots_locaux": 11621006,
+          "personnel": 8478353,
+          "encours_dette": 17383494,
+          "depenses_equipement": 3810930,
+          "depenses_fonctionnement": 14416981,
+          "epargne_brute": 4072432
+        },
+        "2021": {
+          "epargne_brute": 4753938,
+          "recettes_fonctionnement": 20228162,
+          "depenses_equipement": 4641751,
+          "encours_dette": 15333080,
+          "depenses_fonctionnement": 15474224,
+          "impots_locaux": 12854956,
+          "personnel": 8992614
+        },
+        "2022": {
+          "epargne_brute": 4069910,
+          "encours_dette": 13246658,
+          "recettes_fonctionnement": 20500845,
+          "depenses_equipement": 2452288,
+          "personnel": 9493515,
+          "impots_locaux": 13307354,
+          "depenses_fonctionnement": 16430934
+        },
+        "2023": {
+          "depenses_fonctionnement": 17257746,
+          "depenses_equipement": 3042118,
+          "encours_dette": 11120994,
+          "impots_locaux": 14282797,
+          "recettes_fonctionnement": 26630860,
+          "personnel": 9835103,
+          "epargne_brute": 9373114
+        },
+        "2024": {
+          "depenses_fonctionnement": 18239998,
+          "depenses_equipement": 3142887,
+          "encours_dette": 9381012,
+          "personnel": 10325917,
+          "recettes_fonctionnement": 23633587,
+          "epargne_brute": 5393589,
+          "impots_locaux": 16008166
+        },
+        "2025": {
+          "depenses_equipement": 7746649,
+          "recettes_fonctionnement": 23816880,
+          "impots_locaux": 16048996,
+          "personnel": 10601731,
+          "epargne_brute": 5116948,
+          "depenses_fonctionnement": 18699932,
+          "encours_dette": 7635585
+        }
+      }
     }
   },
   "stats_dossiers": {

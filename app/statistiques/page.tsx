@@ -5,6 +5,7 @@ import SiteFooter from "../../components/SiteFooter";
 import StatTile from "../../components/charts/StatTile";
 import LineSeriesChart from "../../components/charts/LineSeriesChart";
 import HBarList from "../../components/charts/HBarList";
+import MultiLineChart from "../../components/charts/MultiLineChart";
 import Provenance from "../../components/charts/Provenance";
 
 export const metadata: Metadata = {
@@ -26,7 +27,7 @@ const SECTIONS = [
   { id: "population", label: "👥 Population" },
   { id: "logement", label: "🏠 Logement" },
   { id: "emploi", label: "💼 Emploi & revenus" },
-  { id: "finances", label: "💶 Finances" },
+  { id: "finances", label: "💶 Budget" },
   { id: "sante", label: "🩺 Santé" },
   { id: "securite", label: "🚔 Sécurité" },
 ];
@@ -94,7 +95,21 @@ export default function StatistiquesPage() {
   ];
 
   const fin = bruz.finances_communales;
-  const dette = fin.dette_par_habitant_serie;
+  const dgfip = fin.series_dgfip;
+  const exos = Object.entries(dgfip.annees).map(([annee, e]) => ({ annee: Number(annee), ...e }));
+  const dernier = exos[exos.length - 1];
+  const meur = (n: number, d = 1) => `${(n / 1_000_000).toLocaleString("fr-FR", { minimumFractionDigits: d, maximumFractionDigits: d })} M€`;
+  const gm = fin.cfu_2025.grandes_masses;
+  // Espaces insécables : « 2,2 M€ · 8 % » ne doit jamais se couper en fin de ligne.
+  const montant = (v: number) => (v >= 1_000_000 ? meur(v) : `${Math.round(v / 1000).toLocaleString("fr-FR")} k€`);
+  const pctDe = (v: number, total: number) => {
+    const pct = (v / total) * 100;
+    return `${montant(v)} · ${pct < 1 ? "< 1" : Math.round(pct)} %`.replace(/ /g, "\u00a0");
+  };
+  const ofgl = fin.series_ofgl;
+  const exosOfgl = Object.entries(ofgl.annees).map(([annee, e]) => ({ annee: Number(annee), ...e }));
+  const capaciteDesendettement = dernier.encours_dette / dernier.epargne_brute;
+  const ent = fin.fiscalite_entreprises;
 
   const sante = bruz.sante;
   const secu = bruz.securite;
@@ -206,26 +221,138 @@ export default function StatistiquesPage() {
 
         {/* ————— Finances ————— */}
         <section id="finances" style={{ marginBottom: 48 }}>
-          <SectionTitle emoji="💶">Finances communales</SectionTitle>
+          <SectionTitle emoji="💶">Le budget de la commune</SectionTitle>
           <TuilesGrid>
-            <StatTile valeur={fin.taxe_fonciere_batie_taux} label={`Taux de taxe foncière bâtie (${fin.annee_taux})`} note="Maintenu au niveau atteint après la hausse de 2024" />
-            <StatTile valeur={`${(fin.cfu_2025.recettes_reelles_fonctionnement / 1_000_000).toLocaleString("fr-FR", { maximumFractionDigits: 1 })} M€`} label="Recettes réelles de fonctionnement (2025)" note="CFU 2025 officiel" />
-            <StatTile valeur={`${fin.cfu_2025.ratio_endettement_pct_rrf.toLocaleString("fr-FR")} %`} label="Dette / recettes de fonctionnement (2025)" note={`${fin.cfu_2023.ratio_endettement_pct_rrf.toLocaleString("fr-FR")} % en 2023`} />
+            <StatTile valeur={meur(gm.total_recettes_reelles_fonctionnement)} label="Recettes de fonctionnement (2025)" note="Dont 2,5 M€ de cessions exceptionnelles" />
+            <StatTile valeur={meur(gm.total_depenses_reelles_fonctionnement)} label="Dépenses de fonctionnement (2025)" note={`Dont ${meur(gm.depenses_fonctionnement[0].valeur)} de personnel`} />
+            <StatTile valeur={meur(gm.total_depenses_reelles_investissement)} label="Dépenses d'investissement (2025)" note={`Dont ${meur(gm.depenses_investissement[0].valeur)} d'équipement`} />
+            <StatTile valeur={meur(dernier.encours_dette)} label={`Dette au 31/12/${dernier.annee}`} note={`${fr(Math.round(dernier.bruz_hab.encours_dette_hab ?? 0))} €/hab · communes de même taille : ${fr(Math.round(dernier.strate_hab.encours_dette_hab ?? 0))} €/hab`} />
+            <StatTile valeur={`${capaciteDesendettement.toLocaleString("fr-FR", { maximumFractionDigits: 1 })} an`} label="Capacité de désendettement (2025)" note="Années d'épargne qu'il faudrait pour rembourser toute la dette" />
+            <StatTile valeur={fin.taxe_fonciere_batie_taux} label={`Taux de taxe foncière bâtie (${fin.annee_taux})`} note="Inchangé depuis la hausse de 2024" />
           </TuilesGrid>
-          <HBarList
-            titre="Encours de dette par habitant"
-            sousTitre="Le recours à l'emprunt accompagne les grands chantiers du mandat (4e groupe scolaire, Hôtel de Ville, ZAC)."
-            items={dette.valeurs.map(v => ({
-              label: String(v.annee),
-              valeur: v.valeur,
-              affiche: `${v.valeur.toLocaleString("fr-FR")} €`,
-              confirme: v.confirme,
-              note: v.source,
-            }))}
-            source="CFU officiels (Mégalis) et DGFiP"
-            sourceUrl="https://data.megalis.bretagne.bzh/?siren=213500473"
+          <div style={{ marginTop: -8, marginBottom: 20 }}>
+            <Provenance source="Recettes, dépenses, investissement : compte financier unique 2025 (Ville de Bruz)" url={gm.source_url} />
+            <Provenance source="Dette, capacité de désendettement, comparaison : DGFiP, comptes individuels des communes" url={dgfip.source_url} />
+            <Provenance source="Taux 2026 : délibération du 9 mars 2026 (Mégalis)" url="https://data.megalis.bretagne.bzh/OpenData/213500473/Deliberation/2026/1046215/7441083a9549c6ac76f64eb7e5ef718e9392d8ce4b90665ebca715428ecf1c4f.pdf" />
+          </div>
+          <CommentLire>
+            Ces montants sont ceux réellement encaissés et dépensés en 2025 (compte financier unique). Le chiffre souvent
+            cité de {meur(fin.bp_2026.total_budget)} pour 2026 est le budget <em>voté</em> : une prévision, qui additionne
+            fonctionnement et investissement et inclut des écritures comptables internes. Il n&apos;est pas comparable au réalisé.
+          </CommentLire>
+
+          <MultiLineChart
+            titre={`Recettes et dépenses de fonctionnement depuis ${exosOfgl[0].annee}`}
+            sousTitre="L'écart entre les deux courbes, c'est l'épargne : ce qui reste pour investir et rembourser la dette. En millions d'euros."
+            series={[
+              { nom: "Recettes", points: exosOfgl.map(e => ({ annee: e.annee, valeur: e.recettes_fonctionnement / 1e6 })) },
+              { nom: "Dépenses", couleur: "#1A4177", points: exosOfgl.map(e => ({ annee: e.annee, valeur: e.depenses_fonctionnement / 1e6 })) },
+            ]}
+            unite=" M€"
+            decimales={1}
+            annotations={[{ annee: 2023, texte: "Dissolution de la SPL NOA" }]}
+            source={ofgl.source}
+            sourceUrl={ofgl.source_url}
           />
-          <CommentLire>{dette.note}</CommentLire>
+          <CommentLire>
+            Opérations réelles, hors ventes de biens. Le pic de 2023 est exceptionnel : la dissolution de la société
+            d&apos;aménagement NOA a rapporté 4,8 M€ non reconductibles. De 2018 à 2025, recettes et dépenses ont progressé au
+            même rythme (+34 %). Mais en 2025, les dépenses (+2,5 %) ont augmenté plus vite que les recettes (+0,8 %), et la
+            Ville prévoit que l&apos;écart se resserre : dépenses +3 % par an, recettes +0,7 % jusqu&apos;en 2031 (rapport
+            d&apos;orientations budgétaires 2026).
+          </CommentLire>
+
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: 16 }}>
+            <HBarList
+              titre="D'où vient l'argent ? (fonctionnement 2025)"
+              sousTitre={`${meur(gm.total_recettes_reelles_fonctionnement)} de recettes réelles`}
+              items={gm.recettes_fonctionnement.map(r => ({
+                label: r.label,
+                valeur: r.valeur,
+                affiche: pctDe(r.valeur, gm.total_recettes_reelles_fonctionnement),
+                muted: "exceptionnel" in r && r.exceptionnel === true,
+              }))}
+              source={gm.source}
+              sourceUrl={gm.source_url}
+            />
+            <HBarList
+              titre="Où va l'argent ? (fonctionnement 2025)"
+              sousTitre={`${meur(gm.total_depenses_reelles_fonctionnement)} de dépenses réelles`}
+              items={gm.depenses_fonctionnement.map(r => ({
+                label: r.label,
+                valeur: r.valeur,
+                affiche: pctDe(r.valeur, gm.total_depenses_reelles_fonctionnement),
+              }))}
+              source={gm.source}
+              sourceUrl={gm.source_url}
+            />
+          </div>
+          <HBarList
+            titre="Ce que la commune a investi en 2025"
+            sousTitre={`${meur(gm.total_depenses_reelles_investissement)} de dépenses réelles d'investissement — dont les travaux du 4e groupe scolaire et de l'Hôtel de Ville`}
+            items={gm.depenses_investissement.filter(r => r.valeur > 10_000).map(r => ({
+              label: r.label,
+              valeur: r.valeur,
+              affiche: pctDe(r.valeur, gm.total_depenses_reelles_investissement),
+            }))}
+            source={gm.source}
+            sourceUrl={gm.source_url}
+          />
+          <CommentLire>{gm.note}</CommentLire>
+
+          <MultiLineChart
+            titre="Dépenses d'équipement par habitant"
+            sousTitre="Travaux, constructions et acquisitions, comparés à la moyenne des communes de même taille. En euros par habitant."
+            series={[
+              { nom: "Bruz", points: exos.map(e => ({ annee: e.annee, valeur: e.bruz_hab.depenses_equipement_hab ?? 0 })) },
+              { nom: "Communes de même taille", reference: true, points: exos.map(e => ({ annee: e.annee, valeur: e.strate_hab.depenses_equipement_hab ?? 0 })) },
+            ]}
+            unite=" €"
+            source={dgfip.source}
+            sourceUrl={dgfip.source_url}
+          />
+          <CommentLire>
+            Jusqu&apos;en 2014, Bruz investissait à peu près comme les communes de sa taille. De 2015 à 2024, elle a investi
+            chaque année nettement moins, souvent deux fois moins ou davantage (2015-2016, 2022-2024) : l&apos;effort est allé
+            au remboursement de la dette héritée de l&apos;emprunt toxique. Le rattrapage commence en 2025 avec le chantier du
+            4e groupe scolaire.
+          </CommentLire>
+
+          <MultiLineChart
+            titre="Dette par habitant depuis 2009"
+            sousTitre="Encours de dette au 31 décembre, rapporté à la population. En euros par habitant."
+            series={[
+              { nom: "Bruz", points: exos.map(e => ({ annee: e.annee, valeur: e.bruz_hab.encours_dette_hab ?? 0 })) },
+              { nom: "Communes de même taille", reference: true, points: exos.map(e => ({ annee: e.annee, valeur: e.strate_hab.encours_dette_hab ?? 0 })) },
+            ]}
+            unite=" €"
+            annotations={[{ annee: 2015, texte: "Sortie de l'emprunt toxique" }]}
+            source={dgfip.source}
+            sourceUrl={dgfip.source_url}
+          />
+          <CommentLire>
+            Le pic de 2015-2016 vient de l&apos;emprunt toxique : pour en sortir, la Ville a financé une indemnité de 9,7 M€,
+            dont l&apos;État rembourse 57,5 % en quinze ans (348 000 € par an). Hormis un prêt de 1 M€ en 2016 et un prêt de la
+            CAF à taux zéro en 2020, la commune n&apos;a plus emprunté : sa dette a été divisée par près de quatre entre 2015
+            et 2025. Un nouveau prêt de {meur(fin.emprunt_2026.montant, 0)} sur{" "}
+            {fin.emprunt_2026.duree_ans} ans a été signé fin 2025 auprès du {fin.emprunt_2026.preteur} pour le 4e groupe
+            scolaire : la dette remontera en 2026. La moyenne de comparaison change en 2024, quand Bruz passe le seuil de
+            20 000 habitants.
+          </CommentLire>
+
+          <div style={{ background: "#fff", border: "1px solid #e2e8f0", borderLeft: "4px solid #1A4177", borderRadius: 10, padding: "16px 20px", marginBottom: 24 }}>
+            <div style={{ fontSize: 15, fontWeight: 700, color: "#0f172a", marginBottom: 6 }}>🏭 Et les entreprises installées à Bruz ?</div>
+            <div style={{ fontSize: 13.5, lineHeight: 1.65, color: "#334155" }}>
+              Leurs impôts économiques ne vont pas à la commune mais à {ent.beneficiaire.split(" (")[0]} : {meur(ent.cfe_produit)} de
+              cotisation foncière des entreprises (CFE) en {ent.cfe_annee} et {meur(ent.cvae_produit)} de CVAE en {ent.cvae_annee}.
+              Bruz ne perçoit que la taxe foncière de leurs locaux et, en retour, une dotation de solidarité versée par la
+              Métropole (incluse dans les « reversements » ci-dessus). L&apos;attribution de compensation est même négative
+              ({fr(ent.attribution_compensation ?? 0)} € par an) : depuis le transfert de la voirie en 2014, c&apos;est la commune
+              qui la verse.
+            </div>
+            <Provenance source={ent.source} url={ent.source_url} />
+          </div>
+
           <LienDossier href="/bruz-en-action/dossiers/D03" label="Dossier Finances : les arbitrages du mandat" />
         </section>
 

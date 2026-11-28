@@ -286,6 +286,60 @@ def validate_bruz() -> None:
     check_no_suspect(data, "bruz.json")
 
 
+def validate_finances() -> None:
+    """bruz.json › finances_communales : recoupement des sources entre elles.
+
+    Né de l'erreur de 2023 (dette affichée à 81 €/hab au lieu de 568) : un
+    ratio repris d'une note synthétique sans le confronter à l'encours en
+    euros. Chaque chiffre affiché par /statistiques doit concorder entre au
+    moins deux sources indépendantes (DGFiP, OFGL, compte financier unique).
+    """
+    data = load("bruz.json")
+    fin = (data or {}).get("finances_communales") or {}
+    dgfip = (fin.get("series_dgfip") or {}).get("annees") or {}
+    ofgl = (fin.get("series_ofgl") or {}).get("annees") or {}
+    if not dgfip or not ofgl:
+        warn("bruz.json › finances : series_dgfip/series_ofgl absentes (lancer scripts/fetch_finances.py)")
+        return
+    tol = 0.01  # 1 %
+
+    def ecart(a: float, b: float) -> float:
+        return abs(a - b) / max(abs(b), 1)
+
+    # 1. Encours de dette : DGFiP et OFGL doivent coïncider sur les années communes.
+    for an in sorted(set(dgfip) & set(ofgl)):
+        a, b = dgfip[an].get("encours_dette"), ofgl[an].get("encours_dette")
+        if a is not None and b is not None and ecart(a, b) > tol:
+            err(f"bruz.json › finances {an} : encours de dette DGFiP {a} ≠ OFGL {b}")
+    # 2. OFGL : recettes − dépenses de fonctionnement = épargne brute.
+    for an, e in ofgl.items():
+        if abs(e["recettes_fonctionnement"] - e["depenses_fonctionnement"] - e["epargne_brute"]) > 1000:
+            err(f"bruz.json › finances {an} : OFGL recettes − dépenses ≠ épargne brute")
+    # 3. Grandes masses du CFU : la somme des postes = le total, et les totaux
+    #    concordent avec les comptes OFGL/DGFiP du même exercice.
+    gm = (fin.get("cfu_2025") or {}).get("grandes_masses")
+    if gm:
+        for bloc, total in (
+            ("recettes_fonctionnement", "total_recettes_reelles_fonctionnement"),
+            ("depenses_fonctionnement", "total_depenses_reelles_fonctionnement"),
+            ("depenses_investissement", "total_depenses_reelles_investissement"),
+        ):
+            somme = sum(x["valeur"] for x in gm[bloc])
+            if abs(somme - gm[total]) > 1:
+                err(f"bruz.json › cfu_2025.grandes_masses.{bloc} : somme {somme:.2f} ≠ {total} {gm[total]}")
+        o25, d25 = ofgl.get("2025"), dgfip.get("2025")
+        if d25 and ecart(gm["total_recettes_reelles_fonctionnement"], d25["recettes_fonctionnement"]) > tol:
+            err("bruz.json › cfu_2025 : recettes réelles de fonctionnement CFU ≠ DGFiP (> 1 %)")
+        if o25 and ecart(gm["depenses_investissement"][0]["valeur"], o25["depenses_equipement"]) > tol:
+            err("bruz.json › cfu_2025 : dépenses d'équipement CFU ≠ OFGL (> 1 %)")
+    # 4. Un champ marqué « ne pas afficher » ne doit être lu par aucune page.
+    root = DATA_DIR.parent
+    pages = list((root / "app").rglob("*.tsx")) + list((root / "components").rglob("*.tsx"))
+    for page in pages:
+        if "_ne_pas_afficher" in page.read_text(encoding="utf-8"):
+            err(f"{page.relative_to(root)} : lit un champ *_ne_pas_afficher de bruz.json")
+
+
 def validate_programme() -> None:
     """programme.json : les 10 priorités pilotent la page /programme, et
     pilier_id doit renvoyer à un pilier existant de promesses.json."""
@@ -431,6 +485,7 @@ def main() -> None:
     validate_evenements()
     validate_elus()
     validate_bruz()
+    validate_finances()
     validate_programme()
     validate_coup_de_pouce()
     validate_parse_only()

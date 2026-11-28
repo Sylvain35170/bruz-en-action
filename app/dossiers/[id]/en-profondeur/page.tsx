@@ -103,11 +103,12 @@ export default async function EnProfondeurPage({ params }: { params: Promise<{ i
           </>)}
           {id === "D03" && (<>
             <h1 style={{ fontSize: "clamp(1.4rem, 3vw, 2.2rem)", fontWeight: 800, lineHeight: 1.2, margin: "0 0 16px", maxWidth: 720, color: "#fff" }}>
-              Les finances de Bruz : ce que tout citoyen devrait savoir avant le CM du 3 juillet
+              Les finances de Bruz : ce que tout citoyen devrait savoir
             </h1>
             <p style={{ fontSize: 16, lineHeight: 1.75, color: "rgba(255,255,255,0.75)", maxWidth: 680, margin: 0 }}>
-              Budget voté dans la tension, projets qui s'accumulent, dette non publiée.
-              Avant que la nouvelle équipe présente ses premières orientations financières, voici les questions qu'on se pose — et les chiffres qu'on attend.
+              Une dette héritée d&apos;un emprunt toxique et remboursée pendant dix ans, des ressources modestes, des projets qui
+              s&apos;accumulent et un nouvel emprunt pour les financer. Les chiffres sont publics mais dispersés : on les rassemble,
+              on les recoupe, et on liste les questions qui restent ouvertes.
             </p>
           </>)}
         </div>
@@ -267,47 +268,55 @@ export default async function EnProfondeurPage({ params }: { params: Promise<{ i
 
           <section style={{ marginBottom: 48 }}>
             <SectionTitle>Les chiffres de base</SectionTitle>
-            <InfoBox icon="💶" titre="10,2 M€ de recettes fiscales directes (2023)">
-              Taxe foncière bâtie, TFNB et CFE combinées. En 2013, ce chiffre était de 7,3 M€ — soit une hausse de <strong>+40 % en dix ans</strong>, tirée à la fois par la croissance de la base taxable (nouveaux habitants, nouvelles entreprises) et les hausses de taux votées.
+            <InfoBox icon="💶" titre="26,6 M€ de recettes et 18,9 M€ de dépenses de fonctionnement en 2025">
+              La fiscalité locale (taxes foncières, taxe sur les résidences secondaires, droits de mutation) en apporte 15,3 M€,
+              soit 58 %. Les dépenses vont d&apos;abord au personnel (10,8 M€, 57 %). La commune a investi 9,5 M€, dont 7,7 M€
+              d&apos;équipement. <em>Source : compte financier unique 2025, recoupé avec la DGFiP et l&apos;OFGL.</em>
             </InfoBox>
-            <InfoBox icon="🏛️" titre="La DGF : une dotation de l'État qui stagne">
-              La Dotation Globale de Fonctionnement versée par l'État à Bruz est estimée à environ 1,5 M€ — stable depuis plusieurs années. Elle couvre une part marginale des dépenses de fonctionnement et <strong>ne peut pas financer les investissements</strong>.
+            <InfoBox icon="🏛️" titre="Une commune aux ressources modestes">
+              La dotation globale de fonctionnement de l&apos;État (2,56 M€ en 2025) représente 127 €/habitant, contre 208 € en
+              moyenne pour les communes de même taille. Le potentiel financier de Bruz est inférieur de 15 % à cette moyenne, et son
+              effort fiscal supérieur (1,30 contre 1,18). <strong>Bruz a moins de ressources et sollicite davantage ses contribuables.</strong>{" "}
+              <em>Source : OFGL, comptes et dotations des communes.</em>
             </InfoBox>
-            <InfoBox icon="📊" titre="La dette : un angle mort du débat public">
-              Le ratio dette/habitant et la capacité de désendettement de Bruz <strong>ne sont pas encore publiés pour 2026</strong>. C'est pourtant le chiffre clé pour évaluer la marge de manœuvre de la nouvelle équipe. On attend le compte administratif 2025.
+            <InfoBox icon="📉" titre="La dette : 7,6 M€ fin 2025, dix ans après l'emprunt toxique">
+              En 2015, la Ville est sortie d&apos;un emprunt indexé sur le franc suisse en payant 9,7 M€ d&apos;indemnité, dont
+              l&apos;État rembourse 57,5 %. Sa dette a culminé à 28,2 M€, puis a baissé chaque année. Fin 2025 : 380 €/habitant,
+              contre 1 002 € pour les communes de même taille, et 1,5 an de capacité de désendettement.{" "}
+              <em>Sources : Chambre régionale des comptes (2018), DGFiP, OFGL.</em>
             </InfoBox>
           </section>
 
           <section style={{ marginBottom: 48 }}>
             <SectionTitle>Les questions que tout citoyen devrait poser</SectionTitle>
             <p style={{ fontSize: 14, color: "#64748b", lineHeight: 1.7, marginBottom: 20 }}>
-              Pas besoin d'être expert-comptable. Ces questions sont celles de n'importe quel contribuable bruzois soucieux de la bonne utilisation des deniers publics.
+              Pas besoin d&apos;être expert-comptable. Certaines réponses sont désormais publiques, d&apos;autres pas encore.
             </p>
             <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
               {[
                 {
-                  q: "Quel est le montant exact du budget 2026 ?",
-                  d: "Le budget a été voté le 9 mars 2026 — mais le montant global (section fonctionnement + investissement) n'a pas été communiqué clairement au public. Le compte administratif 2025 donnera les chiffres réels de l'exercice précédent."
+                  q: "Quel est le montant du budget 2026 ?",
+                  d: "41,6 M€ votés le 9 mars 2026 : 23,6 M€ en fonctionnement et 18,0 M€ en investissement. C'est une prévision ; le réalisé sera connu avec le compte financier unique 2026, courant 2027. Source : maquette du budget primitif 2026 (Mégalis)."
                 },
                 {
                   q: "Quelle est la dette de Bruz par habitant ?",
-                  d: "C'est l'indicateur de référence pour comparer les communes. Pour une ville de 20 000 habitants, la moyenne nationale tourne autour de 700–900 €/habitant. Où se situe Bruz ? La réponse n'est pas publiée."
+                  d: "380 € fin 2025 (7,6 M€), contre 1 002 € en moyenne pour les communes de même taille. Elle va remonter : un prêt de 4 M€ a été signé fin 2025 pour le 4e groupe scolaire. Sources : DGFiP ; arrêté du 1er décembre 2025."
                 },
                 {
                   q: "Combien d'années faudrait-il pour rembourser la dette avec l'épargne brute ?",
-                  d: "La capacité de désendettement (dette / épargne brute annuelle) est le thermomètre financier d'une commune. Au-delà de 12 ans, les marges sont sérieusement contraintes. Pour Bruz : inconnu."
+                  d: "1,5 an fin 2025 (7,6 M€ de dette pour 5,1 M€ d'épargne brute). Le seuil de vigilance se situe autour de 10 à 12 ans. Sources : DGFiP, OFGL."
                 },
                 {
-                  q: "Comment le budget d'investissement 2026 se répartit-il entre les projets ?",
-                  d: "T4 (co-financement Métropole), ZAC Multisites, rénovation piscine Conterie, voirie, numérique… Quelle ligne pour quel montant ? Aucune répartition publique n'a été communiquée à ce jour."
+                  q: "Comment le budget d'investissement se répartit-il entre les projets ?",
+                  d: "Le plan pluriannuel présenté en janvier 2026 donne les grandes enveloppes (13,8 M€ en 2026, dont 7,2 M€ pour le 4e groupe scolaire et l'Hôtel de Ville), mais pas le détail ligne par ligne des autres projets. Source : rapport d'orientations budgétaires 2026."
                 },
                 {
-                  q: "Quel gain fiscal attend-on de Safran ?",
-                  d: "L'arrivée du groupe Safran à Bruz génère une CFE (cotisation foncière des entreprises) significative. Au CM du 20 mars 2026, la majorité est restée prudente sur les chiffres. Le montant attendu n'a pas été communiqué."
+                  q: "Que rapportent les entreprises installées à Bruz, Safran compris ?",
+                  d: "À la commune, peu de chose directement : membre de Rennes Métropole, Bruz ne perçoit ni la CFE (1,9 M€ en 2025) ni la CVAE (1,6 M€ en 2023) de ses entreprises, qui vont à la Métropole. Elle garde la taxe foncière de leurs locaux et reçoit une dotation de solidarité communautaire. Source : OFGL."
                 },
                 {
-                  q: "Les tarifs des services municipaux vont-ils augmenter ?",
-                  d: "Piscine, restauration scolaire, activités sportives, crèches… Les tarifs relèvent des délibérations du conseil. Aucune révision tarifaire n'a été votée publiquement depuis l'installation de la nouvelle équipe."
+                  q: "L'écart entre dépenses et recettes va-t-il se creuser ?",
+                  d: "La Ville elle-même prévoit des dépenses de fonctionnement en hausse de 3 % par an contre 0,7 % pour les recettes jusqu'en 2031, avec l'ouverture du 4e groupe scolaire. Quelles économies ou quelles recettes nouvelles pour tenir ? Source : rapport d'orientations budgétaires 2026."
                 },
               ].map(({ q, d }, i) => (
                 <div key={i} style={{ background: "#fff", border: "1px solid #e2e8f0", borderLeft: "3px solid #E8A040", borderRadius: 8, padding: "16px 20px" }}>
@@ -319,17 +328,17 @@ export default async function EnProfondeurPage({ params }: { params: Promise<{ i
           </section>
 
           <section style={{ marginBottom: 48 }}>
-            <SectionTitle>Les projets qui s'accumulent</SectionTitle>
+            <SectionTitle>Les projets qui s&apos;accumulent</SectionTitle>
             <p style={{ fontSize: 14, color: "#64748b", lineHeight: 1.7, marginBottom: 20 }}>
-              Bruz dit ne pas être une ville riche. Pourtant les engagements financiers du mandat sont nombreux.
+              Bruz dit ne pas être une ville riche, et les chiffres lui donnent raison. Pourtant les engagements financiers du mandat sont nombreux.
             </p>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px,1fr))", gap: 14 }}>
               {[
-                { icon: "🚌", label: "T4 Trambus", detail: "Co-financement Métropole : la part de Bruz reste à chiffrer. Mise en service 2031.", lien: "/bruz-en-action/dossiers/D01" },
-                { icon: "🏗️", label: "ZAC Multisites", detail: "1 700 logements = coût d'équipements publics à anticiper : voirie, réseaux, école.", lien: "/bruz-en-action/dossiers/D02" },
-                { icon: "🏊", label: "Piscine Conterie", detail: "Déficit chronique estimé à plusieurs centaines de milliers d'€/an. Rénovation non budgétée.", lien: "/bruz-en-action/dossiers/D06" },
-                { icon: "🏫", label: "Écoles", detail: "1 700 logements = ~850 enfants scolarisables supplémentaires. Un 4e groupe scolaire est en construction à Ker Lann Sud — anticiper les capacités reste un défi clé du mandat.", lien: "/bruz-en-action/dossiers/D10" },
-                { icon: "🏛️", label: "Hôtel de Ville", detail: "Travaux de rénovation en cours — retour des services prévu fin juin 2026.", lien: null },
+                { icon: "🏫", label: "4e groupe scolaire", detail: "Autorisation de programme de 11 M€, dont 3,1 M€ réalisés fin 2025. Fin des travaux prévue en décembre 2026. Financé en partie par un prêt de 4 M€.", lien: "/bruz-en-action/dossiers/D10" },
+                { icon: "🏛️", label: "Hôtel de Ville", detail: "Rénovation énergétique : enveloppe portée à 2,25 M€ en mai 2026 (+150 000 €). Subvention Fonds vert de 500 000 €.", lien: null },
+                { icon: "🏗️", label: "ZAC Multisites", detail: "1 700 logements = équipements publics à anticiper : voirie, réseaux, écoles. Subvention Fonds vert de 600 000 € pour le secteur Gare.", lien: "/bruz-en-action/dossiers/D02" },
+                { icon: "🚌", label: "T4 Trambus", detail: "Projet porté par Rennes Métropole : la part éventuelle de Bruz (aménagements) reste à chiffrer. Mise en service 2031.", lien: "/bruz-en-action/dossiers/D01" },
+                { icon: "🏊", label: "Piscine Conterie", detail: "La contribution de Bruz au syndicat a fortement augmenté depuis 2019. Voir le dossier.", lien: "/bruz-en-action/dossiers/D06" },
                 { icon: "🔒", label: "Police municipale", detail: "Renforcement promis — coût en personnel et équipements non chiffré publiquement.", lien: "/bruz-en-action/dossiers/D07" },
               ].map(({ icon, label, detail, lien }) => (
                 <div key={label} style={{ background: "#fff", border: "1px solid #e2e8f0", borderRadius: 10, padding: "16px 18px" }}>
@@ -340,32 +349,21 @@ export default async function EnProfondeurPage({ params }: { params: Promise<{ i
                 </div>
               ))}
             </div>
+            <p style={{ fontSize: 12, color: "#94a3b8", marginTop: 12 }}>
+              Sources : délibérations AP/CP des 9 mars et 18 mai 2026, rapport d&apos;orientations budgétaires 2026 (Mégalis) ; Fonds vert (data.gouv.fr).
+            </p>
           </section>
 
           <section style={{ marginBottom: 48 }}>
-            <SectionTitle>L'enjeu du CM du 3 juillet 2026</SectionTitle>
-            <div style={{ background: "#fefce8", border: "1px solid #fde68a", borderLeft: "4px solid #d97706", borderRadius: 12, padding: "20px 24px" }}>
-              <div style={{ fontSize: 13, fontWeight: 700, color: "#92400e", marginBottom: 10 }}>📅 Conseil municipal — vendredi 3 juillet, 19h — Halle Pagnol</div>
-              <p style={{ margin: "0 0 12px", fontSize: 14, color: "#334155", lineHeight: 1.7 }}>
-                C'est la <strong>première séance budgétaire à fort enjeu du mandat Houssin</strong>. Trois mois après l'installation du conseil, la nouvelle équipe va présenter ses premières décisions financières : budget primitif 2026, orientations d'investissement, capacité d'emprunt.
-              </p>
-              <p style={{ margin: 0, fontSize: 14, color: "#334155", lineHeight: 1.7 }}>
-                C'est le moment de vérité entre les promesses de campagne et les contraintes financières héritées de la mandature Salmon.{" "}
-                <strong>La séance est ouverte au public.</strong>
-              </p>
-            </div>
-          </section>
-
-          <section style={{ marginBottom: 48 }}>
-            <SectionTitle>L'effet Safran</SectionTitle>
+            <SectionTitle>L&apos;effet Safran</SectionTitle>
             <p style={{ fontSize: 14, color: "#475569", lineHeight: 1.7, marginBottom: 16 }}>
-              L'arrivée du groupe Safran à Bruz est présentée comme une bonne nouvelle économique. C'en est probablement une — mais ses effets sur les finances communales méritent d'être précisés.
+              L&apos;arrivée du groupe Safran à Bruz est présentée comme une bonne nouvelle économique. C&apos;en est probablement une — mais ses effets sur les finances communales sont souvent mal compris.
             </p>
             <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
               {[
-                { label: "Ce qui est sûr", texte: "Safran génère une CFE (cotisation foncière des entreprises) au bénéfice de Bruz. C'est une recette réelle, versée annuellement.", couleur: "#059669", bg: "#f0fdf4", border: "#bbf7d0" },
-                { label: "Ce qui n'est pas dit", texte: "Le montant de cette CFE n'a pas été communiqué. Au CM du 20 mars 2026, la majorité est restée évasive. On parle de centaines de milliers d'euros — ou de millions ?", couleur: "#d97706", bg: "#fffbeb", border: "#fde68a" },
-                { label: "Ce qui est ignoré", texte: "L'arrivée de salariés Safran = nouveaux habitants potentiels = pression sur les équipements (écoles, transports, logements). La recette fiscale doit être mise en face de ces coûts.", couleur: "#dc2626", bg: "#fef2f2", border: "#fecaca" },
+                { label: "Ce qui est sûr", texte: "La CFE et la CVAE payées par Safran, comme par toutes les entreprises de Bruz, vont à Rennes Métropole et non à la commune (fiscalité professionnelle unique). Pour l'ensemble des entreprises bruzoises : 1,9 M€ de CFE en 2025. La commune perçoit la taxe foncière des bâtiments. Source : OFGL.", couleur: "#059669", bg: "#f0fdf4", border: "#bbf7d0" },
+                { label: "Ce qui n'est pas dit", texte: "Le gain réel pour la commune : le montant de taxe foncière attendu sur les bâtiments de Safran, et l'éventuel effet sur la dotation de solidarité versée par la Métropole, n'ont pas été communiqués.", couleur: "#d97706", bg: "#fffbeb", border: "#fde68a" },
+                { label: "Ce qui est ignoré", texte: "L'arrivée de salariés Safran = nouveaux habitants potentiels = pression sur les équipements (écoles, transports, logements), qui eux sont à la charge de la commune. La recette fiscale doit être mise en face de ces coûts.", couleur: "#dc2626", bg: "#fef2f2", border: "#fecaca" },
               ].map(({ label, texte, couleur, bg, border }) => (
                 <div key={label} style={{ background: bg, border: `1px solid ${border}`, borderRadius: 10, padding: "14px 18px" }}>
                   <div style={{ fontSize: 12, fontWeight: 800, textTransform: "uppercase", letterSpacing: "0.06em", color: couleur, marginBottom: 6 }}>{label}</div>
@@ -382,7 +380,7 @@ export default async function EnProfondeurPage({ params }: { params: Promise<{ i
                 La transparence financière n'est pas optionnelle.
               </p>
               <p style={{ margin: "0 0 12px", fontSize: 14, color: "#334155", lineHeight: 1.75 }}>
-                Une commune bien gérée, c'est une commune qui documente ses choix et les explique aux habitants. Le budget voté en mars 2026 dans une ambiance tendue mérite une lecture publique claire : où vont les 10 M€ de recettes fiscales, quelle est la dette réelle, quels projets sont financés et lesquels ne le sont pas.
+                Une commune bien gérée, c'est une commune qui documente ses choix et les explique aux habitants. Les chiffres existent — compte financier, rapports d&apos;orientations budgétaires, données de l&apos;État — mais ils sont dispersés dans des documents techniques, et parfois contradictoires : la note officielle du CFU 2023 affichait un ratio de dette faux, que nous avions nous-mêmes repris. Une lecture publique claire reste à faire : où vont les 15 M€ de fiscalité locale, quels projets sont financés et lesquels ne le sont pas.
               </p>
               <p style={{ margin: "0 0 12px", fontSize: 14, color: "#334155", lineHeight: 1.75 }}>
                 Ce n'est pas une critique — c'est une attente légitime. Bruz en Action n'a pas de position sur le niveau de dépenses ou le taux d'imposition. On a une position sur l'accès à l'information : les Bruzois ont le droit de comprendre ce que la commune fait de leur argent.
@@ -398,11 +396,11 @@ export default async function EnProfondeurPage({ params }: { params: Promise<{ i
             <SectionTitle>Ce qu'on va surveiller</SectionTitle>
             <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
               {[
-                { periode: "3 juillet 2026", description: "CM — budget primitif 2026 : montants par poste, capacité d'emprunt, orientations d'investissement.", importance: "haute" },
-                { periode: "Été 2026", description: "Compte administratif 2025 : les chiffres réels de l'exercice — dont la dette et l'épargne brute.", importance: "haute" },
-                { periode: "2026", description: "Montant officialisé de la CFE Safran et impact sur les recettes communales.", importance: "haute" },
-                { periode: "2026–2027", description: "Révision éventuelle des tarifs des services : cantine, piscine, activités — pas encore votée.", importance: "moyenne" },
-                { periode: "2027+", description: "Premier bilan financier de la mandature : taux d'exécution du budget d'investissement.", importance: "neutre" },
+                { periode: "Janvier 2027", description: "Débat d'orientation budgétaire 2027, le premier préparé par la nouvelle majorité : le plan pluriannuel d'investissement sera-t-il révisé ?", importance: "haute" },
+                { periode: "Printemps 2027", description: "Compte financier unique 2026 : versement effectif du prêt de 4 M€, dette et épargne brute réelles fin 2026.", importance: "haute" },
+                { periode: "Fin 2026 – 2027", description: "Coût final et ouverture du 4e groupe scolaire (11 M€) ; fin du chantier de l'Hôtel de Ville (2,25 M€).", importance: "haute" },
+                { periode: "2027+", description: "Effet ciseau annoncé : dépenses +3 %/an contre recettes +0,7 %/an. L'épargne brute (21,5 % en 2025) restera-t-elle au-dessus du seuil d'alerte (10 à 15 %) ?", importance: "moyenne" },
+                { periode: "D'ici 2030", description: "Fin de l'aide de l'État pour l'emprunt toxique (348 000 €/an) : comment sera compensée cette recette ?", importance: "neutre" },
               ].map((item, i) => (
                 <div key={i} style={{ display: "flex", gap: 16, background: "#fff", border: "1px solid #e2e8f0", borderRadius: 10, padding: "14px 18px", alignItems: "flex-start" }}>
                   <div style={{ flexShrink: 0, minWidth: 100 }}>
@@ -422,9 +420,9 @@ export default async function EnProfondeurPage({ params }: { params: Promise<{ i
               style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "10px 20px", background: "#0E2F62", color: "#fff", borderRadius: 999, textDecoration: "none", fontSize: 14, fontWeight: 700 }}>
               ← Retour au dossier D03
             </a>
-            <a href="/bruz-en-action/conseils/CM-2026-07-03"
+            <a href="/bruz-en-action/statistiques#finances"
               style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "10px 20px", background: "#fff", border: "1px solid #e2e8f0", color: "#0f172a", borderRadius: 999, textDecoration: "none", fontSize: 14, fontWeight: 600 }}>
-              🏛️ CM du 3 juillet 2026
+              📊 Le budget dans Bruz en chiffres
             </a>
           </div>
 
