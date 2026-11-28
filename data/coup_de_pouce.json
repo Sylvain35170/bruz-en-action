@@ -130,6 +130,24 @@
         "label": "Semaine à Bruz n°858 — du 9 juillet au 27 août 2026 (spécial été)",
         "url": "https://www.ville-bruz.fr/wp-content/uploads/2026/07/Semaine-a-Bruz-n°858-special-ete-du-9-juillet-au-27-aout-2026.pdf"
       }
+    },
+    {
+      "id": "CP10",
+      "type": "association",
+      "titre": "Amicale des donneurs de sang de Bruz — recherche de bénévoles",
+      "chapeau": "Depuis plus de 40 ans, l'Amicale accompagne les collectes mobiles de l'Établissement français du sang (EFS) à Bruz : elle fait connaître les collectes, mobilise les habitants et accueille les donneurs le jour J. Forte d'une quinzaine d'adhérents, elle cherche de nouveaux bénévoles pour informer les habitants et accompagner les collectes. Pour donner son sang, la prise de rendez-vous se fait sur le site de l'EFS.",
+      "besoin": "bénévoles",
+      "lien": "https://dondesang.efs.sante.fr",
+      "contact": "afdsb.bruz@gmail.com",
+      "telephone": null,
+      "date_ajout": "2026-10-28",
+      "dernier_signal": "2026-10-28",
+      "date_fin": null,
+      "active": true,
+      "source": {
+        "label": "Bruz Mag n°262 — novembre-décembre 2026, p. 10",
+        "url": "https://www.ville-bruz.fr/wp-content/uploads/2026/10/Bruz-Mag-n°262-novembre-decembre-2026.pdf"
+      }
     }
   ]
 }
