@@ -70,7 +70,7 @@
 
 ## 🟡 À faire — Technique
 
-- [ ] **Pages « En profondeur » codées en dur (`app/dossiers/[id]/en-profondeur/page.tsx`) : elles dérivent des dossiers** — constaté le 28/11 sur D03, D02 et D07 (affirmations périmées ou contredites par le dossier). Les repasser à chaque enrichissement de dossier ; à terme, tirer leurs chiffres de `dossiers.json` / `bruz.json` plutôt que du TSX. D01 non relu.
+- [ ] **Pages « En profondeur » codées en dur (`app/dossiers/[id]/en-profondeur/page.tsx`) : elles dérivent des dossiers** — constaté le 28/11 sur D03, D02 et D07 (affirmations périmées ou contredites par le dossier). Les repasser à chaque enrichissement de dossier ; à terme, tirer leurs chiffres de `dossiers.json` / `bruz.json` plutôt que du TSX. D01 relu et corrigé le 28/11.
 - [ ] **Liens morts vers ville-bruz.fr (≈ 98)** : la mairie supprime les pages d'événements passés et ne garde en ligne que la dernière « Semaine à Bruz » (n°850 à 863 en 404). Basculer les sources de bulletins vers web.archive.org ou poser `url_expiree: true` ; l'agenda (événements passés purgés à +30 j) peut rester tel quel.
 - [ ] **D02 — « 67 logements au Vert-Buisson » (Ouest-France, juillet 2025)** : le Vert-Buisson n'est pas nommé parmi les six secteurs de la délibération de création de la ZAC (15/12/2025) — rattachement à vérifier.
 
