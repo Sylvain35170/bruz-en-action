@@ -14,7 +14,7 @@
 - [ ] **Trois zooms : urbanisme, finances, RH** — dans l'esprit d'un planning *high level* : ce qui est déjà engagé et qui engage la commune (décidé par d'autres), puis les marges de manœuvre et les blocages pour réaliser le programme. Finances : s'appuyer sur D03 (revu le 28/11) et `/statistiques#finances`. RH : 234 ETP, chapitre 012 à 10,8 M€ (CFU 2025).
 - [ ] **Dossier « écologie, résilience »** — végétalisation accélérée du centre-ville (lien avec EC1 et la place Joly). Peut absorber le dossier environnement / biodiversité prévu plus bas (LPO, label TEN).
 - [ ] **Dossier « eau »** — nouveau dossier, illustration à reprendre de `PROMPTS_ILLUSTRATIONS.md`.
-- [ ] **Interviews *insider* sur les dossiers** — trambus (D01) et ZAC (D02). Prérequis : relire D01 « En profondeur ».
+- [ ] **Interviews *insider* sur les dossiers** — trambus (D01) et ZAC (D02). D01 « En profondeur » relu le 28/11. Règle de rédaction : séparer la parole d'élu (citée, nommée, datée) des faits sourcés. L'interviewé n'est pas une source pour les faits (Patrick est délégué aux mobilités).
 - [ ] **Flash cards pour les réseaux sociaux** — format et outil à définir (extraction depuis les dossiers et `/statistiques`).
 
 ## 🟠 Prioritaire — Fonctionnalités
