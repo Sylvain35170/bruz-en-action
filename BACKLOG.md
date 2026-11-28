@@ -59,6 +59,10 @@
 
 ## 🟡 À faire — Technique
 
+- [ ] **Pages « En profondeur » codées en dur (`app/dossiers/[id]/en-profondeur/page.tsx`) : elles dérivent des dossiers** — constaté le 28/11 sur D03, D02 et D07 (affirmations périmées ou contredites par le dossier). Les repasser à chaque enrichissement de dossier ; à terme, tirer leurs chiffres de `dossiers.json` / `bruz.json` plutôt que du TSX. D01 non relu.
+- [ ] **Liens morts vers ville-bruz.fr (≈ 98)** : la mairie supprime les pages d'événements passés et ne garde en ligne que la dernière « Semaine à Bruz » (n°850 à 863 en 404). Basculer les sources de bulletins vers web.archive.org ou poser `url_expiree: true` ; l'agenda (événements passés purgés à +30 j) peut rester tel quel.
+- [ ] **D02 — « 67 logements au Vert-Buisson » (Ouest-France, juillet 2025)** : le Vert-Buisson n'est pas nommé parmi les six secteurs de la délibération de création de la ZAC (15/12/2025) — rattachement à vérifier.
+
 - [ ] **Build CI fragile : polices Google Fonts téléchargées au build** — le 22/11 (run 45029908026, push de `evenements.json`) `npm run build` a échoué sur `jetbrains_mono` (« Module not found » sur `fonts.gstatic.com`) ; relancé par un nouveau push, succès. Incident réseau du runner, pas de régression de code. Si ça se répète : héberger les polices (`next/font/local`) ou ajouter un retry dans `deploy.yml`. Le site en ligne n'a pas été touché (le déploiement ne se fait qu'après un build réussi).
 - [ ] **CRs réunions** — réimporter les docx (encodage zip raté sur les accents) — fichiers source à relocaliser
 - [ ] **Actus** — enrichir au fil des décisions
